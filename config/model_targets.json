@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "frozen_design": {
     "model_count": 2,
     "library_count": 8,
@@ -35,7 +35,12 @@
       },
       "required_secret_name": "DEEPSEEK_API_KEY",
       "documentation_status": "PASS",
-      "live_qualification_status": "PENDING"
+      "live_qualification_status": "PASS",
+      "live_qualification_report": "evidence/gates/gate0/model_live_qualification.json",
+      "live_qualification_report_sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+      "qualified_at_utc": "2026-08-05T16:32:21+00:00",
+      "observed_response_model": "deepseek-v4-flash",
+      "probe_exact_match": true
     },
     {
       "label": "Model B",
@@ -54,7 +59,12 @@
       },
       "required_secret_name": "GEMINI_API_KEY",
       "documentation_status": "PASS",
-      "live_qualification_status": "PENDING"
+      "live_qualification_status": "PASS",
+      "live_qualification_report": "evidence/gates/gate0/model_live_qualification.json",
+      "live_qualification_report_sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+      "qualified_at_utc": "2026-08-05T16:32:21+00:00",
+      "observed_response_model_version": "gemini-3.1-flash-lite",
+      "probe_exact_match": true
     }
   ],
   "version_drift_policy": {
@@ -71,7 +81,23 @@
   },
   "status": {
     "documentation_qualification": "PASS",
-    "live_endpoint_qualification": "PENDING",
+    "live_endpoint_qualification": "PASS",
     "generation_authorized": false
+  },
+  "prequalification_lock": {
+    "path": "evidence/gates/gate0/model_targets_prequalification.json",
+    "sha256": "d8d048bba349e45a3c2267567c37a3d771011d50ceac885fb8a953149a5cc401",
+    "preserved_for_report_binding": true
+  },
+  "live_qualification_evidence": {
+    "status": "PASS",
+    "qualified_at_utc": "2026-08-05T16:32:21+00:00",
+    "report": "evidence/gates/gate0/model_live_qualification.json",
+    "report_sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+    "returned_metadata_validated": true,
+    "exact_probe_responses": true,
+    "secret_values_stored": false,
+    "generation_authorized": false,
+    "repair_implementation_allowed": false
   }
 }

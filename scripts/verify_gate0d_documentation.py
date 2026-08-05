@@ -89,11 +89,24 @@ require(
     report["conclusion"]["model_substitution_required"] is False,
     "unexpected substitution"
 )
+live_status = targets["status"]["live_endpoint_qualification"]
+
 require(
-    targets["status"]["live_endpoint_qualification"]
-    == "PENDING",
-    "live qualification must remain pending"
+    live_status in ["PENDING", "PASS"],
+    "invalid live-qualification progression"
 )
+
+if live_status == "PASS":
+    require(
+        (
+            ROOT
+            / "evidence"
+            / "gates"
+            / "gate0"
+            / "model_live_qualification.json"
+        ).is_file(),
+        "PASS claimed without live report"
+    )
 require(
     targets["status"]["generation_authorized"] is False,
     "generation enabled before live qualification"
@@ -111,6 +124,9 @@ require(
 print("GATE0D1_MODEL_DOCUMENTATION=PASS")
 print("MODEL_IDENTIFIERS=2")
 print("MODEL_SUBSTITUTION_REQUIRED=NO")
-print("LIVE_ENDPOINT_QUALIFICATION=PENDING")
+print(
+    "LIVE_ENDPOINT_QUALIFICATION="
+    + live_status
+)
 print("GENERATION_AUTHORIZED=NO")
 print("REPAIR_IMPLEMENTATION_ALLOWED=NO")

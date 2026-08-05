@@ -135,14 +135,20 @@
         "provider": "DeepSeek",
         "requested_model_id": "deepseek-v4-flash",
         "proposal_served_version": "DeepSeek-V4-Flash-0731",
-        "qualification_status": "PENDING"
+        "qualification_status": "PASS",
+        "qualification_report": "evidence/gates/gate0/model_live_qualification.json",
+        "qualification_report_sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+        "observed_response_model": "deepseek-v4-flash"
       },
       {
         "label": "Model B",
         "provider": "Google Gemini Developer API",
         "requested_model_id": "gemini-3.1-flash-lite",
         "proposal_served_version": "Gemini 3.1 Flash-Lite",
-        "qualification_status": "PENDING"
+        "qualification_status": "PASS",
+        "qualification_report": "evidence/gates/gate0/model_live_qualification.json",
+        "qualification_report_sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+        "observed_response_model_version": "gemini-3.1-flash-lite"
       }
     ],
     "libraries": [
@@ -213,7 +219,7 @@
     "Gate 6 - post-freeze repair evaluation"
   ],
   "current_status": {
-    "milestone": "Gate 0D1 model documentation complete; Gate 0D2 live qualification pending",
+    "milestone": "Gate 0D2 live model qualification complete; analysis registration, generation-window protocol, and final Gate 0 manifest pending",
     "gate_0": "IN_PROGRESS",
     "gate_1": "NOT_STARTED",
     "gate_2": "NOT_STARTED",
@@ -225,9 +231,9 @@
     "gate_0a_repository_bootstrap": "PASS",
     "gate_0b_environment_qualification": "PASS",
     "gate_0c_proposal_provenance": "PASS",
-    "gate_0d_model_qualification": "PENDING",
+    "gate_0d_model_qualification": "PASS",
     "gate_0d1_model_documentation": "PASS",
-    "gate_0d2_live_model_access": "PENDING"
+    "gate_0d2_live_model_access": "PASS"
   },
   "environment_qualification": {
     "status": "PASS",
@@ -247,10 +253,30 @@
   },
   "model_qualification": {
     "documentation_status": "PASS",
-    "live_access_status": "PENDING",
+    "live_access_status": "PASS",
     "targets": "config/model_targets.json",
     "documentation_report": "evidence/gates/gate0/model_documentation_qualification.json",
     "documentation_report_sha256": "8806bf34fb395a36422fdce0c0d3a715bd465b4ce18c915a218b06e24d913a41",
-    "generation_authorized": false
+    "generation_authorized": false,
+    "current_targets_sha256": "c6171d0f398c422cfcb056ec1293a42c43de831e12320b28cb1762660fba1e38",
+    "prequalification_targets_snapshot": "evidence/gates/gate0/model_targets_prequalification.json",
+    "prequalification_targets_sha256": "d8d048bba349e45a3c2267567c37a3d771011d50ceac885fb8a953149a5cc401",
+    "live_report": "evidence/gates/gate0/model_live_qualification.json",
+    "live_report_sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+    "qualified_at_utc": "2026-08-05T16:32:21+00:00",
+    "deepseek_observed_response_model": "deepseek-v4-flash",
+    "gemini_observed_response_model_version": "gemini-3.1-flash-lite",
+    "returned_metadata_validated": true,
+    "exact_probe_responses": true,
+    "secret_values_stored": false,
+    "pre_success_environmental_incident": {
+      "observed": true,
+      "minimum_observed_count": 1,
+      "exact_attempt_count_machine_captured": false,
+      "classification": "HTTP_402_INSUFFICIENT_BALANCE",
+      "qualification_report_created": false,
+      "experimental_outputs_created": false,
+      "included_in_model_evidence": false
+    }
   }
 }

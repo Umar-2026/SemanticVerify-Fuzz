@@ -50,8 +50,11 @@ require(
     "library order or membership mismatch"
 )
 require(
-    all(item["qualification_status"] == "PENDING" for item in design["models"]),
-    "Gate 0A must not claim unperformed model qualification"
+    all(
+        item["qualification_status"] == "PASS"
+        for item in design["models"]
+    ),
+    "Gate 0D2 model qualification is not PASS"
 )
 
 stage = lock["stage_policy"]
@@ -101,6 +104,34 @@ require(
 require(repair["stratified_cap"] == 40, "repair cap mismatch")
 require(len(repair["acceptance_gates"]) == 5, "repair must have five gates")
 
+current = lock["current_status"]
+
+require(current["gate_0"] == "IN_PROGRESS", "Gate 0 closed too early")
+require(
+    current["gate_0d_model_qualification"] == "PASS",
+    "Gate 0D qualification status mismatch"
+)
+require(
+    current["gate_0d2_live_model_access"] == "PASS",
+    "Gate 0D2 status mismatch"
+)
+
+model_qualification = lock["model_qualification"]
+
+require(
+    model_qualification["live_access_status"] == "PASS",
+    "live model access is not PASS"
+)
+require(
+    model_qualification["live_report_sha256"]
+    == "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+    "live report SHA mismatch"
+)
+require(
+    model_qualification["generation_authorized"] is False,
+    "generation authorized before Gate 0 closes"
+)
+
 digest = hashlib.sha256(LOCK_PATH.read_bytes()).hexdigest()
 
 print("GATE0A_REPOSITORY_BOOTSTRAP=PASS")
@@ -111,5 +142,5 @@ print("CONTRIBUTIONS=4")
 print("RESEARCH_QUESTIONS=5")
 print("LIBRARIES=8")
 print("NEW_GENERATION_ATTEMPTS=800")
-print("MODEL_QUALIFICATION=PENDING")
+print("MODEL_QUALIFICATION=PASS")
 print(f"RESEARCH_LOCK_SHA256={digest}")

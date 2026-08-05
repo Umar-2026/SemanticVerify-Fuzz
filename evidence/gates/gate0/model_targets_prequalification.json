@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "frozen_design": {
+    "model_count": 2,
+    "library_count": 8,
+    "scenarios_per_library": 10,
+    "attempts_per_scenario": 5,
+    "attempts_per_model_library_cell": 50,
+    "total_new_attempts": 800
+  },
+  "generation_parameters": {
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "maximum_output_tokens": 8192,
+    "seed_policy": "Record provider support, supplied value, or default",
+    "stream": false,
+    "raw_response_retention": true,
+    "transport_retry_only": true
+  },
+  "models": [
+    {
+      "label": "Model A",
+      "provider": "DeepSeek",
+      "api_format": "OpenAI-compatible Chat Completions",
+      "base_url": "https://api.deepseek.com",
+      "model_id": "deepseek-v4-flash",
+      "documented_served_version": "DeepSeek-V4-Flash-0731",
+      "thinking_control": {
+        "mode": "non-thinking",
+        "rest_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "required_secret_name": "DEEPSEEK_API_KEY",
+      "documentation_status": "PASS",
+      "live_qualification_status": "PENDING"
+    },
+    {
+      "label": "Model B",
+      "provider": "Google Gemini Developer API",
+      "api_format": "Gemini generateContent REST API",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta",
+      "model_id": "gemini-3.1-flash-lite",
+      "documented_served_version": "Stable alias: gemini-3.1-flash-lite",
+      "thinking_control": {
+        "mode": "minimum-thinking",
+        "generation_config": {
+          "thinkingConfig": {
+            "thinkingLevel": "MINIMAL"
+          }
+        }
+      },
+      "required_secret_name": "GEMINI_API_KEY",
+      "documentation_status": "PASS",
+      "live_qualification_status": "PENDING"
+    }
+  ],
+  "version_drift_policy": {
+    "before_generation": "Both model identifiers, request controls, and returned model/version metadata must pass live qualification.",
+    "during_generation": "A served-version or endpoint-behavior change immediately pauses generation.",
+    "amendment_required_for": [
+      "model identifier unavailable",
+      "served model/version changed",
+      "non-thinking or minimum-thinking control rejected",
+      "endpoint behavior materially changed"
+    ],
+    "price_change_policy": "Archive the new price sheet and update the cost estimate; do not change sampling or retain/discard outputs based on cost.",
+    "no_post_hoc_model_substitution": true
+  },
+  "status": {
+    "documentation_qualification": "PASS",
+    "live_endpoint_qualification": "PENDING",
+    "generation_authorized": false
+  }
+}

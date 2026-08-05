@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.1.0",
+  "gate": "Gate 0D2",
+  "status": "PASS",
+  "qualified_at_utc": "2026-08-05T16:32:21+00:00",
+  "model_target_lock_sha256": "d8d048bba349e45a3c2267567c37a3d771011d50ceac885fb8a953149a5cc401",
+  "secret_handling": {
+    "values_stored": false,
+    "values_printed": false,
+    "values_hashed": false,
+    "failure_text_redacted": true
+  },
+  "deepseek": {
+    "model_id": "deepseek-v4-flash",
+    "models_http_status": 200,
+    "models_latency_ms": 119.527,
+    "available_model_ids": [
+      "deepseek-v4-flash",
+      "deepseek-v4-pro"
+    ],
+    "generation_http_status": 200,
+    "generation_latency_ms": 578.246,
+    "response_model": "deepseek-v4-flash",
+    "response_id_present": true,
+    "finish_reason": "stop",
+    "response_text_chars": 9,
+    "response_text_sha256": "f5becb59afecaeaef23936b8ddcfb974b497e63c69b83c61a013b1e110a08286",
+    "usage": {
+      "prompt_tokens": 23,
+      "completion_tokens": 2,
+      "total_tokens": 25,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 23
+    },
+    "thinking_mode": "disabled",
+    "probe_exact_match": true
+  },
+  "gemini": {
+    "model_id": "gemini-3.1-flash-lite",
+    "models_http_status": 200,
+    "models_latency_ms": [
+      1108.085
+    ],
+    "available_model_ids": [
+      "models/antigravity-preview-05-2026",
+      "models/aqa",
+      "models/deep-research-max-preview-04-2026",
+      "models/deep-research-preview-04-2026",
+      "models/deep-research-pro-preview-12-2025",
+      "models/gemini-2.0-flash",
+      "models/gemini-2.0-flash-001",
+      "models/gemini-2.0-flash-lite",
+      "models/gemini-2.0-flash-lite-001",
+      "models/gemini-2.5-computer-use-preview-10-2025",
+      "models/gemini-2.5-flash",
+      "models/gemini-2.5-flash-image",
+      "models/gemini-2.5-flash-lite",
+      "models/gemini-2.5-flash-native-audio-latest",
+      "models/gemini-2.5-flash-native-audio-preview-09-2025",
+      "models/gemini-2.5-flash-native-audio-preview-12-2025",
+      "models/gemini-2.5-flash-preview-tts",
+      "models/gemini-2.5-pro",
+      "models/gemini-2.5-pro-preview-tts",
+      "models/gemini-3-flash-preview",
+      "models/gemini-3-pro-image",
+      "models/gemini-3-pro-image-preview",
+      "models/gemini-3-pro-preview",
+      "models/gemini-3.1-flash-image",
+      "models/gemini-3.1-flash-image-preview",
+      "models/gemini-3.1-flash-lite",
+      "models/gemini-3.1-flash-lite-image",
+      "models/gemini-3.1-flash-lite-preview",
+      "models/gemini-3.1-flash-live-preview",
+      "models/gemini-3.1-flash-tts-preview",
+      "models/gemini-3.1-pro-preview",
+      "models/gemini-3.1-pro-preview-customtools",
+      "models/gemini-3.5-flash",
+      "models/gemini-3.5-flash-lite",
+      "models/gemini-3.5-live-translate-preview",
+      "models/gemini-3.6-flash",
+      "models/gemini-embedding-001",
+      "models/gemini-embedding-2",
+      "models/gemini-embedding-2-preview",
+      "models/gemini-flash-latest",
+      "models/gemini-flash-lite-latest",
+      "models/gemini-omni-flash-preview",
+      "models/gemini-pro-latest",
+      "models/gemini-robotics-er-1.5-preview",
+      "models/gemini-robotics-er-1.6-preview",
+      "models/gemini-robotics-er-2-preview",
+      "models/gemini-robotics-er-2-streaming-preview",
+      "models/gemma-4-26b-a4b-it",
+      "models/gemma-4-31b-it",
+      "models/imagen-4.0-fast-generate-001",
+      "models/imagen-4.0-generate-001",
+      "models/imagen-4.0-ultra-generate-001",
+      "models/lyria-3-clip-preview",
+      "models/lyria-3-pro-preview",
+      "models/nano-banana-pro-preview",
+      "models/veo-3.1-fast-generate-preview",
+      "models/veo-3.1-generate-preview",
+      "models/veo-3.1-lite-generate-preview"
+    ],
+    "generation_http_status": 200,
+    "generation_latency_ms": 1420.528,
+    "response_model_version": "gemini-3.1-flash-lite",
+    "finish_reason": "STOP",
+    "response_text_chars": 9,
+    "response_text_sha256": "f5becb59afecaeaef23936b8ddcfb974b497e63c69b83c61a013b1e110a08286",
+    "usage": {
+      "promptTokenCount": 6,
+      "candidatesTokenCount": 2,
+      "totalTokenCount": 8,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 6
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "thinking_level": "MINIMAL",
+    "probe_exact_match": true
+  },
+  "generation_authorized": false,
+  "authorization_note": "Live capability qualification passed, but primary generation remains blocked until final Gate 0 freeze.",
+  "repair_implementation_allowed": false
+}
