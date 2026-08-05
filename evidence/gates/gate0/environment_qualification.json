@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "Gate 0B",
+  "status": "PASS",
+  "qualified_at_utc": "2026-08-05T14:43:40+00:00",
+  "repository": {
+    "logical_path": "/openbayes/home/semanticverify-fuzz-research",
+    "physical_path": "/output/semanticverify-fuzz-research"
+  },
+  "platform": {
+    "system": "Linux",
+    "release": "5.15.0-91-generic",
+    "machine": "x86_64",
+    "cpu_count": 16
+  },
+  "commands": {
+    "clang-14": "/usr/bin/clang-14",
+    "clang++-14": "/usr/bin/clang++-14",
+    "llvm-config-14": "/usr/bin/llvm-config-14",
+    "cmake": "/usr/bin/cmake",
+    "ninja": "/usr/bin/ninja",
+    "git": "/usr/bin/git",
+    "python3": "/usr/local/bin/python3"
+  },
+  "versions": {
+    "python": "3.10.18",
+    "git": "git version 2.34.1",
+    "cmake": "cmake version 3.19.3",
+    "ninja": "1.10.1",
+    "clang": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+    "llvm": "14.0.0"
+  },
+  "llvm": {
+    "include_directory": "/usr/lib/llvm-14/include",
+    "library_directory": "/usr/lib/llvm-14/lib",
+    "cmake_directory": "/usr/lib/llvm-14/lib/cmake/llvm",
+    "libtooling_header": "PASS",
+    "cfg_header": "PASS"
+  },
+  "package_versions": {
+    "clang-14": "1:14.0.0-1ubuntu1.1",
+    "clang-tools-14": "1:14.0.0-1ubuntu1.1",
+    "libclang-14-dev": "1:14.0.0-1ubuntu1.1",
+    "lld-14": "1:14.0.0-1ubuntu1.1",
+    "llvm-14-dev": "1:14.0.0-1ubuntu1.1",
+    "ninja-build": "1.10.1-1",
+    "pkg-config": "0.29.2-1ubuntu3"
+  },
+  "tests": {
+    "asan_ubsan_compile": "PASS",
+    "asan_ubsan_run": "PASS",
+    "clang_libtooling_configure": "PASS",
+    "clang_libtooling_build": "PASS",
+    "clang_cfg_runtime": "PASS"
+  },
+  "artifact_digests": {
+    "toolchain_lock_sha256": "11493f6edf40b9a2a333dd5cdbf60dbeb0fe2cea866385c06a39ebc48f8cf1be",
+    "cmake_smoke_sha256": "f494db3b4499029010ba20b7fca6f1be85a0792423e3c2eb447f33002c0a82e4",
+    "cpp_smoke_sha256": "1cff6dbc0562d7b6b2d1935b26be3f510a5ea63237ea30d62e038398918ec227"
+  },
+  "cmake_configure_tail": [
+    "-- Detecting CXX compile features - done",
+    "-- Performing Test HAVE_FFI_CALL",
+    "-- Performing Test HAVE_FFI_CALL - Success",
+    "-- Found FFI: /usr/local/lib/libffi.so  ",
+    "-- Performing Test Terminfo_LINKABLE",
+    "-- Performing Test Terminfo_LINKABLE - Success",
+    "-- Found Terminfo: /usr/local/lib/libtinfo.so  ",
+    "-- Found ZLIB: /usr/local/lib/libz.so (found version \"1.3.1\") ",
+    "-- Found LibXml2: /usr/local/lib/libxml2.so (found version \"2.13.8\") ",
+    "-- Configuring done",
+    "-- Generating done",
+    "-- Build files have been written to: /tmp/svf-gate0b-kmqavhl8/libtooling-build"
+  ],
+  "cmake_build_tail": [
+    "[1/2] Building CXX object CMakeFiles/svf_clang_smoke.dir/main.cpp.o",
+    "[2/2] Linking CXX executable svf_clang_smoke"
+  ],
+  "repair_implementation_allowed": false
+}

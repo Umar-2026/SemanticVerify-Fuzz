@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "short_name": "SemanticVerify-Fuzz",
+    "title": "SemanticVerify-Fuzz: Resource-Centered, Path-Sensitive Verification and Constrained Repair of API-Protocol Violations in LLM-Generated Fuzz Drivers",
+    "domain": [
+      "Software Security",
+      "Static Analysis",
+      "Fuzz Testing"
+    ],
+    "proposal_date": "2026-08-05",
+    "repository": "/openbayes/home/semanticverify-fuzz-research"
+  },
+  "fresh_start": {
+    "enabled": true,
+    "carry_over_prior_implementation": false,
+    "carry_over_prior_data": false,
+    "carry_over_prior_labels": false,
+    "carry_over_prior_results": false,
+    "historical_artifacts_policy": "If later imported, keep only in immutable provenance quarantine; never use as active implementation input or experimental evidence."
+  },
+  "stage_policy": {
+    "current_stage": "Stage A - verification",
+    "repair_implementation_allowed": false,
+    "repair_activation_gate": "Gate V",
+    "no_backflow": true,
+    "stage_a_outputs": [
+      "RQ1",
+      "RQ2",
+      "RQ3",
+      "RQ5"
+    ],
+    "stage_b_outputs": [
+      "RQ4"
+    ]
+  },
+  "contributions": [
+    {
+      "id": "C1",
+      "name": "Fuzz-driver-specific protocol-obligation representation"
+    },
+    {
+      "id": "C2",
+      "name": "Resource-centered path-sensitive protocol verification"
+    },
+    {
+      "id": "C3",
+      "name": "Evidence-guided constrained deterministic repair",
+      "stage": "Post-Gate-V only"
+    },
+    {
+      "id": "C4",
+      "name": "Blindly annotated cross-library empirical evaluation"
+    }
+  ],
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "name": "Natural defect prevalence",
+      "stage": "Stage A"
+    },
+    {
+      "id": "RQ2",
+      "name": "Verification accuracy and uncertainty",
+      "stage": "Stage A"
+    },
+    {
+      "id": "RQ3",
+      "name": "Value of resource-centered path sensitivity",
+      "stage": "Stage A"
+    },
+    {
+      "id": "RQ4",
+      "name": "Constrained repair effectiveness",
+      "stage": "Stage B - post-Gate-V"
+    },
+    {
+      "id": "RQ5",
+      "name": "Analysis-engine transferability",
+      "stage": "Stage A"
+    }
+  ],
+  "implementation_scope": {
+    "language_scope": "C libraries and C-compatible fuzz drivers",
+    "primary_front_end": "Clang LibTooling",
+    "control_flow": "Clang CFG",
+    "analysis": "Custom bounded resource-state propagation",
+    "analysis_scope": "Primarily intraprocedural with reviewed simple helper summaries",
+    "alias_scope": [
+      "direct variables",
+      "assignments",
+      "address-taking",
+      "simple pointer copies",
+      "selected field paths"
+    ],
+    "svf_dependency": false,
+    "universal_c_correctness_claim": false
+  },
+  "verdict_contract": {
+    "base_outcomes": [
+      "VALID",
+      "VIOLATION",
+      "UNKNOWN"
+    ],
+    "serialized_labels": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "unknown_is_valid": false,
+    "unknown_primary_scoring": "Incorrect on eligible gold instances"
+  },
+  "defect_taxonomy": {
+    "D1": "Use before successful initialization",
+    "D2": "Use after failed initialization or activation",
+    "D3": "Use after close, destroy, end, or release",
+    "D4": "Double close, destroy, end, or release",
+    "D5": "Missing cleanup on a success or failure exit",
+    "D6": "Invalid API ordering or missing prerequisite call",
+    "D7": "Ownership misuse",
+    "D8": "Conditionally invalid cleanup or cleanup under the wrong state"
+  },
+  "experimental_design": {
+    "model_count": 2,
+    "library_count": 8,
+    "scenarios_per_library": 10,
+    "attempts_per_scenario_per_model": 5,
+    "total_new_attempts": 800,
+    "preserve_all_raw_outputs": true,
+    "gold_sample_max_compilable_drivers": 140,
+    "models": [
+      {
+        "label": "Model A",
+        "provider": "DeepSeek",
+        "requested_model_id": "deepseek-v4-flash",
+        "proposal_served_version": "DeepSeek-V4-Flash-0731",
+        "qualification_status": "PENDING"
+      },
+      {
+        "label": "Model B",
+        "provider": "Google Gemini Developer API",
+        "requested_model_id": "gemini-3.1-flash-lite",
+        "proposal_served_version": "Gemini 3.1 Flash-Lite",
+        "qualification_status": "PENDING"
+      }
+    ],
+    "libraries": [
+      {
+        "name": "zlib",
+        "role": "development"
+      },
+      {
+        "name": "libpcap",
+        "role": "validation"
+      },
+      {
+        "name": "curl",
+        "role": "held-out"
+      },
+      {
+        "name": "cJSON",
+        "role": "held-out"
+      },
+      {
+        "name": "libtiff",
+        "role": "held-out"
+      },
+      {
+        "name": "libvpx",
+        "role": "held-out"
+      },
+      {
+        "name": "c-ares",
+        "role": "held-out"
+      },
+      {
+        "name": "lcms",
+        "role": "held-out"
+      }
+    ]
+  },
+  "primary_evaluation": {
+    "unit": "Normalized protocol-obligation instance",
+    "endpoint": "Held-out library-macro obligation-level F1",
+    "positive_class": "VIOLATION",
+    "unknown_scored_incorrect": true,
+    "minimum_precision_guard": 0.8,
+    "minimum_decision_coverage_guard": 0.75,
+    "primary_paired_comparison": "Full verifier versus path-insensitive verifier using driver-cluster bootstrap within library strata",
+    "raw_cfg_paths_are_independent_samples": false
+  },
+  "repair_design": {
+    "implementation_status": "PROHIBITED_UNTIL_GATE_V",
+    "confirmatory_minimum_eligible_natural_defects": 20,
+    "stratified_cap": 40,
+    "acceptance_gates": [
+      "Compilation",
+      "Confirmed-defect removal",
+      "No new protocol defect",
+      "Target-API reachability",
+      "Fuzz-input dependency"
+    ]
+  },
+  "gates": [
+    "Gate 0 - research lock",
+    "Gate 1 - specification foundation",
+    "Gate 2 - zlib verification development",
+    "Gate 3 - libpcap validation",
+    "Gate 4 - held-out preparation",
+    "Gate 5 - held-out verification",
+    "Gate V - irreversible verification freeze",
+    "Gate 6 - post-freeze repair evaluation"
+  ],
+  "current_status": {
+    "milestone": "Gate 0B - environment qualification complete",
+    "gate_0": "IN_PROGRESS",
+    "gate_1": "NOT_STARTED",
+    "gate_2": "NOT_STARTED",
+    "gate_3": "NOT_STARTED",
+    "gate_4": "NOT_STARTED",
+    "gate_5": "NOT_STARTED",
+    "gate_v": "NOT_STARTED",
+    "gate_6": "BLOCKED_BY_GATE_V",
+    "gate_0a_repository_bootstrap": "PASS",
+    "gate_0b_environment_qualification": "PASS",
+    "gate_0c_proposal_provenance": "PENDING",
+    "gate_0d_model_qualification": "PENDING"
+  },
+  "environment_qualification": {
+    "status": "PASS",
+    "report": "evidence/gates/gate0/environment_qualification.json",
+    "report_sha256": "e4dd7a2f5e6bd4ebf0105c721a740e41ca16c5d4f4dc00177e3a75fb2d7d32c6",
+    "qualified_toolchain": "Clang/LLVM 14.0.0",
+    "repair_implementation_allowed": false
+  }
+}

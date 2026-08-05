@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "checkpoint": "Gate 0A-0B",
+  "status": "PASS",
+  "gate_0_overall": "IN_PROGRESS",
+  "created_at_utc": "2026-08-05T14:47:03+00:00",
+  "repository": {
+    "logical_path": "/openbayes/home/semanticverify-fuzz-research",
+    "physical_path": "/output/semanticverify-fuzz-research"
+  },
+  "completed": [
+    "Gate 0A repository bootstrap",
+    "Gate 0B environment qualification"
+  ],
+  "pending": [
+    "Gate 0C authoritative proposal provenance",
+    "Gate 0D model/API qualification",
+    "Final Gate 0 registration and freeze"
+  ],
+  "stage": "Stage A - verification",
+  "repair_implementation_allowed": false,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 160,
+      "sha256": "274ea79798c6092c41852781e3de1b8dffa4b791ca97637577df01f3b9174fbf"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1126,
+      "sha256": "255c9d6ce81e40ac15423faafad93b39bdaaa8cc9efc06c1f87632a94504ebcf"
+    },
+    {
+      "path": "config/research_lock.json",
+      "size_bytes": 6889,
+      "sha256": "7f49f0265292a5f157a8e32a47df969bb58fa4b1ebdc36bc087c0fb89ef29dc4"
+    },
+    {
+      "path": "config/toolchain_lock.json",
+      "size_bytes": 904,
+      "sha256": "11493f6edf40b9a2a333dd5cdbf60dbeb0fe2cea866385c06a39ebc48f8cf1be"
+    },
+    {
+      "path": "documentation/CURRENT_STATUS.md",
+      "size_bytes": 1510,
+      "sha256": "dc8c67e1a9761d1c559fe2e389390789fe88bda90029f66ca197e4a1d13787fb"
+    },
+    {
+      "path": "documentation/RESEARCH_CHARTER.md",
+      "size_bytes": 1435,
+      "sha256": "ef2269dc0eea0e772a20be56e095e143ca6e6b8dcfcbc73cc69156dd581bcdda"
+    },
+    {
+      "path": "documentation/decisions/0001-verification-first-no-backflow.md",
+      "size_bytes": 874,
+      "sha256": "67cf62d7e237caa400feca90bff69f4f04e0072b270d69598e2d40edf44d2eba"
+    },
+    {
+      "path": "evidence/gates/gate0/README.md",
+      "size_bytes": 258,
+      "sha256": "1045a4c618c9b3d7eb40641f1a7487c9b2f103f95fe8347c9e27ee2bb8b48d17"
+    },
+    {
+      "path": "evidence/gates/gate0/environment_qualification.json",
+      "size_bytes": 2795,
+      "sha256": "e4dd7a2f5e6bd4ebf0105c721a740e41ca16c5d4f4dc00177e3a75fb2d7d32c6"
+    },
+    {
+      "path": "provenance/proposal/README.md",
+      "size_bytes": 349,
+      "sha256": "d2d32140e36adeeb01ca0103d80b8628543e5163a0d47d020de02e40f000c04f"
+    },
+    {
+      "path": "scripts/bootstrap_gate0b_toolchain.sh",
+      "size_bytes": 428,
+      "sha256": "5289b047cd4d9a36b41b05aacee2580bcf5b65638706c2fc85d38ee8f74e89b5"
+    },
+    {
+      "path": "scripts/create_gate0ab_checkpoint.py",
+      "size_bytes": 1854,
+      "sha256": "1a3aa867f4fee792432594d1a67b39522e59e43ceb14a102eaabd66ac695056c"
+    },
+    {
+      "path": "scripts/qualify_gate0b_environment.py",
+      "size_bytes": 6469,
+      "sha256": "ae84fe82a4d674d5de1ae218e130200dc5f734b25ef3c4dc99c10a299455d33a"
+    },
+    {
+      "path": "scripts/verify_gate0.py",
+      "size_bytes": 4375,
+      "sha256": "0169bc24a03d6040d7daa4f6364b8dad1f9e172d9c00dfa3786112ec9318f5fb"
+    },
+    {
+      "path": "scripts/verify_gate0ab_checkpoint.py",
+      "size_bytes": 3327,
+      "sha256": "ee3693393981e8ab2f550104fc85227d9e84aabc2af23e2c523a1887a1d73296"
+    },
+    {
+      "path": "tests/toolchain_smoke/CMakeLists.txt",
+      "size_bytes": 607,
+      "sha256": "f494db3b4499029010ba20b7fca6f1be85a0792423e3c2eb447f33002c0a82e4"
+    },
+    {
+      "path": "tests/toolchain_smoke/main.cpp",
+      "size_bytes": 1043,
+      "sha256": "1cff6dbc0562d7b6b2d1935b26be3f510a5ea63237ea30d62e038398918ec227"
+    }
+  ]
+}
