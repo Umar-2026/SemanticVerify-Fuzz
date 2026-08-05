@@ -4,6 +4,7 @@ import datetime
 import hashlib
 import json
 import os
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -76,9 +77,184 @@ def content_digest(text):
         text.encode("utf-8")
     ).hexdigest()
 
+require(CONFIG_PATH.is_file(), "model target lock missing")
+
+config_bytes = CONFIG_PATH.read_bytes()
+
+try:
+    model_config = json.loads(config_bytes)
+except json.JSONDecodeError as error:
+    print("GATE0D2_LIVE_MODEL_QUALIFICATION=FAIL")
+    print(f"REASON=model target lock invalid: {error}")
+    print("SECRET_VALUES_STORED=NO")
+    print("GENERATION_AUTHORIZED=NO")
+    print("REPAIR_IMPLEMENTATION_ALLOWED=NO")
+    raise SystemExit(1)
+
+expected_design = {
+    "model_count": 2,
+    "library_count": 8,
+    "scenarios_per_library": 10,
+    "attempts_per_scenario": 5,
+    "attempts_per_model_library_cell": 50,
+    "total_new_attempts": 800
+}
+
+require(
+    model_config.get("frozen_design") == expected_design,
+    "frozen experimental design mismatch"
+)
+
+generation_parameters = model_config.get(
+    "generation_parameters",
+    {}
+)
+
+require(
+    generation_parameters.get("temperature") == 0.2,
+    "locked temperature mismatch"
+)
+require(
+    generation_parameters.get("top_p") == 1.0,
+    "locked top-p mismatch"
+)
+require(
+    generation_parameters.get("stream") is False,
+    "locked streaming policy mismatch"
+)
+
+model_targets = model_config.get("models", [])
+require(len(model_targets) == 2, "model-count mismatch")
+
+deepseek_target = next(
+    (
+        model
+        for model in model_targets
+        if model.get("provider") == "DeepSeek"
+    ),
+    None
+)
+
+gemini_target = next(
+    (
+        model
+        for model in model_targets
+        if model.get("provider")
+        == "Google Gemini Developer API"
+    ),
+    None
+)
+
+require(deepseek_target is not None, "DeepSeek target missing")
+require(gemini_target is not None, "Gemini target missing")
+
+require(
+    deepseek_target.get("base_url")
+    == "https://api.deepseek.com",
+    "DeepSeek base-URL drift"
+)
+require(
+    deepseek_target.get("model_id")
+    == "deepseek-v4-flash",
+    "DeepSeek model-ID drift"
+)
+require(
+    deepseek_target.get("documented_served_version")
+    == "DeepSeek-V4-Flash-0731",
+    "DeepSeek served-version lock drift"
+)
+require(
+    deepseek_target.get("required_secret_name")
+    == "DEEPSEEK_API_KEY",
+    "DeepSeek secret-name drift"
+)
+require(
+    deepseek_target
+    .get("thinking_control", {})
+    .get("rest_body", {})
+    .get("thinking", {})
+    .get("type")
+    == "disabled",
+    "DeepSeek thinking-control drift"
+)
+
+require(
+    gemini_target.get("base_url")
+    == (
+        "https://generativelanguage.googleapis.com/"
+        "v1beta"
+    ),
+    "Gemini base-URL drift"
+)
+require(
+    gemini_target.get("model_id")
+    == "gemini-3.1-flash-lite",
+    "Gemini model-ID drift"
+)
+require(
+    gemini_target.get("documented_served_version")
+    == "Stable alias: gemini-3.1-flash-lite",
+    "Gemini served-version lock drift"
+)
+require(
+    gemini_target.get("required_secret_name")
+    == "GEMINI_API_KEY",
+    "Gemini secret-name drift"
+)
+require(
+    gemini_target
+    .get("thinking_control", {})
+    .get("generation_config", {})
+    .get("thinkingConfig", {})
+    .get("thinkingLevel")
+    == "MINIMAL",
+    "Gemini thinking-control drift"
+)
+
+for target in [deepseek_target, gemini_target]:
+    require(
+        target.get("documentation_status") == "PASS",
+        "model documentation status is not PASS"
+    )
+    require(
+        target.get("live_qualification_status") == "PENDING",
+        "model live status is not PENDING"
+    )
+
+configuration_status = model_config.get("status", {})
+
+require(
+    configuration_status.get("documentation_qualification")
+    == "PASS",
+    "documentation qualification is not PASS"
+)
+require(
+    configuration_status.get("live_endpoint_qualification")
+    == "PENDING",
+    "live endpoint qualification is not PENDING"
+)
+require(
+    configuration_status.get("generation_authorized")
+    is False,
+    "generation unexpectedly authorized"
+)
+
+if REPORT_PATH.exists():
+    print("GATE0D2_LIVE_MODEL_QUALIFICATION=REFUSED")
+    print("REASON=existing live report cannot be overwritten")
+    print("SECRET_VALUES_READ=NO")
+    print("GENERATION_AUTHORIZED=NO")
+    print("REPAIR_IMPLEMENTATION_ALLOWED=NO")
+    raise SystemExit(3)
+
+required_secret_names = [
+    deepseek_target["required_secret_name"],
+    gemini_target["required_secret_name"]
+]
+
 missing = [
     name
-    for name in ["DEEPSEEK_API_KEY", "GEMINI_API_KEY"]
+    for name in required_secret_names
     if not os.environ.get(name)
 ]
 
@@ -90,6 +266,24 @@ if missing:
 
 deepseek_key = os.environ["DEEPSEEK_API_KEY"]
 gemini_key = os.environ["GEMINI_API_KEY"]
+secret_values = [deepseek_key, gemini_key]
+
+for secret_name, secret_value in zip(
+    required_secret_names,
+    secret_values
+):
+    require(
+        secret_value == secret_value.strip(),
+        f"{secret_name} has surrounding whitespace"
+    )
+    require(
+        "\n" not in secret_value,
+        f"{secret_name} contains a newline"
+    )
+    require(
+        "\r" not in secret_value,
+        f"{secret_name} contains a carriage return"
+    )
 
 try:
     ds_models_status, ds_models_body, ds_models_latency = (
@@ -99,6 +293,11 @@ try:
                 "Authorization": f"Bearer {deepseek_key}"
             },
         )
+    )
+
+    require(
+        ds_models_status == 200,
+        "DeepSeek model-list status is not 200"
     )
 
     ds_model_ids = sorted(
@@ -146,6 +345,11 @@ try:
         )
     )
 
+    require(
+        ds_call_status == 200,
+        "DeepSeek generation status is not 200"
+    )
+
     ds_choices = ds_call_body.get("choices", [])
     require(ds_choices, "DeepSeek returned no choices")
 
@@ -155,7 +359,21 @@ try:
         .get("content", "")
     )
 
-    require(bool(ds_content.strip()), "DeepSeek empty response")
+    require(
+        ds_content.strip() == "QUALIFIED",
+        "DeepSeek qualification response mismatch"
+    )
+
+    ds_response_model = ds_call_body.get("model")
+
+    require(
+        ds_response_model
+        in {
+            deepseek_target["model_id"],
+            deepseek_target["documented_served_version"]
+        },
+        "DeepSeek returned unexpected model metadata"
+    )
 
     gemini_models = []
     next_page_token = None
@@ -176,6 +394,11 @@ try:
         gm_status, gm_body, gm_latency = request_json(
             models_url,
             {"x-goog-api-key": gemini_key},
+        )
+
+        require(
+            gm_status == 200,
+            "Gemini model-list status is not 200"
         )
 
         gemini_models_latencies.append(gm_latency)
@@ -231,6 +454,11 @@ try:
         )
     )
 
+    require(
+        gm_call_status == 200,
+        "Gemini generation status is not 200"
+    )
+
     candidates = gm_call_body.get("candidates", [])
     require(candidates, "Gemini returned no candidates")
 
@@ -246,10 +474,34 @@ try:
         if isinstance(part, dict)
     )
 
-    require(bool(gm_content.strip()), "Gemini empty response")
+    require(
+        gm_content.strip() == "QUALIFIED",
+        "Gemini qualification response mismatch"
+    )
+
+    gm_response_version = gm_call_body.get("modelVersion")
+
+    require(
+        isinstance(gm_response_version, str)
+        and bool(gm_response_version),
+        "Gemini returned no modelVersion"
+    )
+
+    normalized_gm_version = (
+        gm_response_version.removeprefix("models/")
+    )
+
+    require(
+        normalized_gm_version
+        == gemini_target["model_id"]
+        or normalized_gm_version.startswith(
+            gemini_target["model_id"] + "-"
+        ),
+        "Gemini returned unexpected modelVersion"
+    )
 
     report = {
-        "schema_version": "1.0.0",
+        "schema_version": "1.1.0",
         "gate": "Gate 0D2",
         "status": "PASS",
         "qualified_at_utc": (
@@ -257,10 +509,14 @@ try:
             .replace(microsecond=0)
             .isoformat()
         ),
+        "model_target_lock_sha256": hashlib.sha256(
+            config_bytes
+        ).hexdigest(),
         "secret_handling": {
             "values_stored": False,
             "values_printed": False,
-            "values_hashed": False
+            "values_hashed": False,
+            "failure_text_redacted": True
         },
         "deepseek": {
             "model_id": "deepseek-v4-flash",
@@ -269,13 +525,14 @@ try:
             "available_model_ids": ds_model_ids,
             "generation_http_status": ds_call_status,
             "generation_latency_ms": ds_call_latency,
-            "response_model": ds_call_body.get("model"),
+            "response_model": ds_response_model,
             "response_id_present": bool(ds_call_body.get("id")),
             "finish_reason": ds_choices[0].get("finish_reason"),
             "response_text_chars": len(ds_content),
             "response_text_sha256": content_digest(ds_content),
             "usage": ds_call_body.get("usage", {}),
-            "thinking_mode": "disabled"
+            "thinking_mode": "disabled",
+            "probe_exact_match": True
         },
         "gemini": {
             "model_id": "gemini-3.1-flash-lite",
@@ -284,14 +541,13 @@ try:
             "available_model_ids": gemini_models,
             "generation_http_status": gm_call_status,
             "generation_latency_ms": gm_call_latency,
-            "response_model_version": (
-                gm_call_body.get("modelVersion")
-            ),
+            "response_model_version": gm_response_version,
             "finish_reason": candidates[0].get("finishReason"),
             "response_text_chars": len(gm_content),
             "response_text_sha256": content_digest(gm_content),
             "usage": gm_call_body.get("usageMetadata", {}),
-            "thinking_level": "MINIMAL"
+            "thinking_level": "MINIMAL",
+            "probe_exact_match": True
         },
         "generation_authorized": False,
         "authorization_note": (
@@ -301,10 +557,32 @@ try:
         "repair_implementation_allowed": False
     }
 
-    REPORT_PATH.write_text(
-        json.dumps(report, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8"
+    serialized_report = (
+        json.dumps(report, indent=2, ensure_ascii=False)
+        + "\n"
+    ).encode("utf-8")
+
+    descriptor, temporary_name = tempfile.mkstemp(
+        prefix=".model_live_qualification.",
+        suffix=".tmp",
+        dir=REPORT_PATH.parent
     )
+    temporary_path = Path(temporary_name)
+
+    try:
+        with os.fdopen(descriptor, "wb") as output:
+            output.write(serialized_report)
+            output.flush()
+            os.fsync(output.fileno())
+
+        os.chmod(temporary_path, 0o644)
+        os.link(temporary_path, REPORT_PATH)
+    except FileExistsError:
+        raise RuntimeError(
+            "live qualification report overwrite refused"
+        ) from None
+    finally:
+        temporary_path.unlink(missing_ok=True)
 
     print("GATE0D2_LIVE_MODEL_QUALIFICATION=PASS")
     print("DEEPSEEK_MODEL_LIST=PASS")
@@ -320,7 +598,19 @@ try:
     )
 
 except Exception as error:
+    reason = str(error)
+
+    for secret_value in secret_values:
+        if secret_value:
+            reason = reason.replace(
+                secret_value,
+                "[REDACTED]"
+            )
+
     print("GATE0D2_LIVE_MODEL_QUALIFICATION=FAIL")
-    print(f"REASON={error}")
+    print(f"REASON={reason}")
+    print("FAILURE_TEXT_SECRET_REDACTION=PASS")
     print("SECRET_VALUES_STORED=NO")
+    print("GENERATION_AUTHORIZED=NO")
+    print("REPAIR_IMPLEMENTATION_ALLOWED=NO")
     raise SystemExit(1)
