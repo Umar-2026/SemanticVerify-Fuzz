@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import datetime
 import hashlib
 import json
 import re
@@ -153,15 +152,37 @@ require(
     "secret-like material detected in proposal XML"
 )
 
+require(REPORT.is_file(), "frozen proposal provenance report missing")
+
+try:
+    frozen_report = json.loads(
+        REPORT.read_text(encoding="utf-8")
+    )
+except (OSError, json.JSONDecodeError) as error:
+    require(
+        False,
+        f"frozen proposal provenance report unreadable: {error}"
+    )
+
+frozen_timestamp = frozen_report.get("verified_at_utc")
+
+require(
+    isinstance(frozen_timestamp, str)
+    and bool(
+        re.fullmatch(
+            r"\d{4}-\d{2}-\d{2}T"
+            r"\d{2}:\d{2}:\d{2}\+00:00",
+            frozen_timestamp
+        )
+    ),
+    "frozen verified_at_utc is invalid"
+)
+
 report = {
     "schema_version": "1.0.0",
     "gate": "Gate 0C",
     "status": "PASS",
-    "verified_at_utc": (
-        datetime.datetime.now(datetime.timezone.utc)
-        .replace(microsecond=0)
-        .isoformat()
-    ),
+    "verified_at_utc": frozen_timestamp,
     "authority": "AUTHORITATIVE",
     "chat_attachment_filename": (
         "SemanticVerify-Fuzz_Verification-First_"
@@ -196,10 +217,32 @@ report = {
     "repair_implementation_allowed": False
 }
 
-REPORT.parent.mkdir(parents=True, exist_ok=True)
-REPORT.write_text(
-    json.dumps(report, indent=2, ensure_ascii=False) + "\n",
-    encoding="utf-8"
+require(
+    frozen_report == report,
+    "frozen proposal provenance report content mismatch"
+)
+
+report_sha256 = hashlib.sha256(REPORT.read_bytes()).hexdigest()
+lock_path = ROOT / "config" / "research_lock.json"
+
+require(lock_path.is_file(), "research lock missing")
+
+try:
+    research_lock = json.loads(
+        lock_path.read_text(encoding="utf-8")
+    )
+except (OSError, json.JSONDecodeError) as error:
+    require(False, f"research lock unreadable: {error}")
+
+pinned_report_sha256 = (
+    research_lock
+    .get("proposal_provenance", {})
+    .get("report_sha256")
+)
+
+require(
+    pinned_report_sha256 == report_sha256,
+    "frozen proposal report SHA-256 differs from research lock"
 )
 
 print("GATE0C_PROPOSAL_PROVENANCE=PASS")
@@ -209,8 +252,9 @@ print("RESEARCH_QUESTIONS=5")
 print("CONTRIBUTIONS=4")
 print("LIBRARIES=8")
 print("REPAIR_IMPLEMENTATION_ALLOWED=NO")
+print("FROZEN_REPORT_MUTATION=NO")
 print(f"PROPOSAL_SHA256={actual_sha256}")
 print(
     "REPORT_SHA256="
-    + hashlib.sha256(REPORT.read_bytes()).hexdigest()
+    + report_sha256
 )
