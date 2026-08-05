@@ -3,12 +3,13 @@
 - Repository logical path: `/openbayes/home/semanticverify-fuzz-research`
 - Repository physical path: `/output/semanticverify-fuzz-research`
 - Current stage: Stage A — verification
-- Current milestone: Gate 0C — proposal provenance complete
+- Current milestone: Gate 0D1 — model documentation complete
 - Gate 0 overall: IN PROGRESS
 - Gate 0A repository bootstrap: PASS
 - Gate 0B environment qualification: PASS
 - Gate 0C proposal provenance: PASS
-- Gate 0D model/API qualification: PENDING
+- Gate 0D1 official model documentation: PASS
+- Gate 0D2 live endpoint/capability qualification: PENDING
 - Gate 1: NOT STARTED
 - Gate 2: NOT STARTED
 - Gate 3: NOT STARTED
@@ -16,32 +17,22 @@
 - Gate 5: NOT STARTED
 - Gate V: NOT STARTED
 - Gate 6: BLOCKED BY GATE V
+- Primary generation: NOT AUTHORIZED
 - Repair implementation: PROHIBITED
 
-## Qualified environment
+## Locked model targets
 
-- Ubuntu 22.04.5 LTS, x86_64
-- 16 vCPU
-- Python 3.10.18
-- Git 2.34.1
-- CMake 3.19.3
-- Ninja 1.10.1
-- Clang/LLVM 14.0.0
-- Clang LibTooling headers and linkage: PASS
-- Clang CFG construction and execution: PASS
-- ASan/UBSan compilation and runtime: PASS
-
-The exact package versions and artifact digests are recorded in:
-
-- `config/toolchain_lock.json`
-- `evidence/gates/gate0/environment_qualification.json`
+- DeepSeek `deepseek-v4-flash`
+- Documented version `DeepSeek-V4-Flash-0731`
+- Google `gemini-3.1-flash-lite`
+- Total design: 2 × 8 × 10 × 5 = 800 new attempts
 
 ## Remaining before Gate 0 closes
 
-1. Upload, archive, and hash the authoritative proposal DOCX.
-2. Qualify the two requested model API identifiers and served versions.
-3. Freeze the model-amendment/stop rule.
-4. Freeze the primary statistical and power-analysis registration.
-5. Create the final Gate 0 manifest and controlled Gate 0 commit.
+1. Configure both API keys through OpenBayes Secret/environment handling.
+2. Run the non-secret live model/capability qualification.
+3. Freeze the statistical power and analysis registration.
+4. Freeze the exact generation-window and retry protocol.
+5. Create and verify the final Gate 0 manifest.
 
-No generated drivers may be opened, and no repair implementation may begin.
+No primary generation, driver inspection, or repair implementation is authorized.

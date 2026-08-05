@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "Gate 0D1",
+  "status": "PASS",
+  "verified_at_utc": "2026-08-05T15:09:35+00:00",
+  "verification_scope": "Official public provider documentation",
+  "deepseek": {
+    "model_id": "deepseek-v4-flash",
+    "served_version": "DeepSeek-V4-Flash-0731",
+    "context_tokens": 1000000,
+    "maximum_output_tokens": 384000,
+    "non_thinking_supported": true,
+    "pricing_usd_per_million_tokens": {
+      "input_cache_hit": 0.0028,
+      "input_cache_miss": 0.14,
+      "output": 0.28
+    },
+    "sources": [
+      "https://api-docs.deepseek.com/quick_start/pricing/",
+      "https://api-docs.deepseek.com/guides/thinking_mode/",
+      "https://api-docs.deepseek.com/api/list-models/"
+    ]
+  },
+  "gemini": {
+    "model_id": "gemini-3.1-flash-lite",
+    "stability": "Stable",
+    "input_token_limit": 1048576,
+    "output_token_limit": 65536,
+    "thinking_supported": true,
+    "minimum_thinking_api_enum": "MINIMAL",
+    "pricing_usd_per_million_tokens": {
+      "standard_text_input": 0.25,
+      "standard_output_including_thinking": 1.5
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/api/generate-content"
+    ]
+  },
+  "conclusion": {
+    "both_requested_identifiers_documented": true,
+    "model_substitution_required": false,
+    "live_account_access_verified": false,
+    "generation_authorized": false
+  },
+  "repair_implementation_allowed": false
+}
