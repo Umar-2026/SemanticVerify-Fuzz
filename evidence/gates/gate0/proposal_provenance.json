@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "Gate 0C",
+  "status": "PASS",
+  "verified_at_utc": "2026-08-05T15:04:03+00:00",
+  "authority": "AUTHORITATIVE",
+  "chat_attachment_filename": "SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal(1).docx",
+  "canonical_repository_filename": "SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+  "canonical_repository_path": "provenance/proposal/SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+  "logical_repository_path": "/openbayes/home/semanticverify-fuzz-research",
+  "physical_repository_path": "/output/semanticverify-fuzz-research",
+  "size_bytes": 245766,
+  "sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21",
+  "chat_attachment_hash_match": true,
+  "docx_zip_integrity": "PASS",
+  "main_document_part": "PASS",
+  "required_markers": {
+    "RESEARCH PROPOSAL": true,
+    "SemanticVerify-Fuzz": true,
+    "Resource-Centered Path-Sensitive Verification and Constrained Repair": true,
+    "API-Protocol Violations in LLM-Generated Fuzz Drivers": true,
+    "2 low-cost API models": true,
+    "10 scenarios": true,
+    "800": true,
+    "zlib": true,
+    "libpcap": true,
+    "DeepSeek V4 Flash-0731": true,
+    "Gemini 3.1 Flash-Lite": true,
+    "Fresh-Start Research Boundary": true,
+    "Gate V": true,
+    "verification freeze": true,
+    "no-backflow": true
+  },
+  "research_questions": {
+    "RQ1": true,
+    "RQ2": true,
+    "RQ3": true,
+    "RQ4": true,
+    "RQ5": true
+  },
+  "contributions": {
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "C4": true
+  },
+  "libraries": {
+    "zlib": true,
+    "libpcap": true,
+    "curl": true,
+    "cJSON": true,
+    "libtiff": true,
+    "libvpx": true,
+    "c-ares": true,
+    "lcms": true
+  },
+  "extracted_xml_secret_scan": {
+    "aws_access_key": "PASS",
+    "generic_sk_key": "PASS",
+    "github_token": "PASS",
+    "private_key": "PASS"
+  },
+  "stage_order": {
+    "stage_a": "verification",
+    "gate_v": "verification freeze",
+    "stage_b": "constrained repair"
+  },
+  "repair_implementation_allowed": false
+}

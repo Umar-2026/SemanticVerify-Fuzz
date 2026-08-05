@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "policy": "Zero carry-over; provenance only",
+  "records": [
+    {
+      "filename": "SemanticVerify-Fuzz_Resource-Centered_Path-Sensitive_Verification_Final_Supervisor_Proposal (1).docx",
+      "size_bytes": 205446,
+      "sha256": "3323f15815dded099664bce0449fea6005db953ea7604d3c2d0b6fcec095b371",
+      "classification": "HISTORICAL_QUARANTINE",
+      "authoritative": false,
+      "active_research_input": false
+    }
+  ]
+}

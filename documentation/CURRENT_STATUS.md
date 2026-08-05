@@ -3,11 +3,11 @@
 - Repository logical path: `/openbayes/home/semanticverify-fuzz-research`
 - Repository physical path: `/output/semanticverify-fuzz-research`
 - Current stage: Stage A — verification
-- Current milestone: Gate 0B — environment qualification complete
+- Current milestone: Gate 0C — proposal provenance complete
 - Gate 0 overall: IN PROGRESS
 - Gate 0A repository bootstrap: PASS
 - Gate 0B environment qualification: PASS
-- Gate 0C proposal provenance: PENDING
+- Gate 0C proposal provenance: PASS
 - Gate 0D model/API qualification: PENDING
 - Gate 1: NOT STARTED
 - Gate 2: NOT STARTED

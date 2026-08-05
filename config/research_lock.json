@@ -213,7 +213,7 @@
     "Gate 6 - post-freeze repair evaluation"
   ],
   "current_status": {
-    "milestone": "Gate 0B - environment qualification complete",
+    "milestone": "Gate 0C complete; Gate 0D model qualification pending",
     "gate_0": "IN_PROGRESS",
     "gate_1": "NOT_STARTED",
     "gate_2": "NOT_STARTED",
@@ -224,7 +224,7 @@
     "gate_6": "BLOCKED_BY_GATE_V",
     "gate_0a_repository_bootstrap": "PASS",
     "gate_0b_environment_qualification": "PASS",
-    "gate_0c_proposal_provenance": "PENDING",
+    "gate_0c_proposal_provenance": "PASS",
     "gate_0d_model_qualification": "PENDING"
   },
   "environment_qualification": {
@@ -233,5 +233,14 @@
     "report_sha256": "e4dd7a2f5e6bd4ebf0105c721a740e41ca16c5d4f4dc00177e3a75fb2d7d32c6",
     "qualified_toolchain": "Clang/LLVM 14.0.0",
     "repair_implementation_allowed": false
+  },
+  "proposal_provenance": {
+    "status": "PASS",
+    "authority": "AUTHORITATIVE",
+    "path": "provenance/proposal/SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+    "size_bytes": 245766,
+    "sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21",
+    "report": "evidence/gates/gate0/proposal_provenance.json",
+    "report_sha256": "0d10d9ef545413223f90ce3ea2745e4277a2026ad605713eaa8f9cf83737fea7"
   }
 }
