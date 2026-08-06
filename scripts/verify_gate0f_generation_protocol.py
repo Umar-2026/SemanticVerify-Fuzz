@@ -82,7 +82,10 @@ require(locked["primary_generation_authorized"] is False, "lock generation autho
 require(locked["repair_implementation_allowed"] is False, "lock repair authorization")
 
 current = lock["current_status"]
-require(current["gate_0"] == "IN_PROGRESS", "Gate 0 closed early")
+require(
+    current["gate_0"] in {"IN_PROGRESS", "PASS"},
+    "Gate 0 status is invalid",
+)
 require(current["gate_0f_generation_protocol"] == "PASS", "Gate 0F status")
 
 print("GATE0F_GENERATION_PROTOCOL_FREEZE=PASS")

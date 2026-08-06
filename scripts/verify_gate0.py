@@ -118,7 +118,7 @@ require(len(repair["acceptance_gates"]) == 5, "repair must have five gates")
 
 current = lock["current_status"]
 
-require(current["gate_0"] == "IN_PROGRESS", "Gate 0 closed too early")
+require(current["gate_0"] == "PASS", "Gate 0 final status mismatch")
 require(
     current["gate_0d_model_qualification"] == "PASS",
     "Gate 0D qualification status mismatch"
@@ -213,10 +213,36 @@ require(
     "Gate 0F current status mismatch"
 )
 
+final_manifest_lock = lock["gate0_final_manifest"]
+final_manifest_path = ROOT / final_manifest_lock["path"]
+
+require(final_manifest_lock["status"] == "PASS", "final manifest lock status")
+require(final_manifest_path.is_file(), "final manifest missing")
+require(
+    hashlib.sha256(final_manifest_path.read_bytes()).hexdigest()
+    == final_manifest_lock["sha256"],
+    "final manifest SHA mismatch"
+)
+final_manifest_document = json.loads(
+    final_manifest_path.read_text(encoding="utf-8")
+)
+require(final_manifest_document["status"] == "PASS", "final manifest status")
+require(
+    final_manifest_document["authorization"]
+    ["primary_generation_authorized"] is False,
+    "generation enabled at Gate 0 closure"
+)
+require(
+    final_manifest_document["authorization"]
+    ["repair_implementation_allowed"] is False,
+    "repair enabled at Gate 0 closure"
+)
+require(current["gate_0g_final_manifest"] == "PASS", "Gate 0G status")
+
 digest = hashlib.sha256(LOCK_PATH.read_bytes()).hexdigest()
 
 print("GATE0A_REPOSITORY_BOOTSTRAP=PASS")
-print("GATE0_OVERALL=IN_PROGRESS")
+print("GATE0_OVERALL=PASS")
 print("CURRENT_STAGE=STAGE_A_VERIFICATION")
 print("REPAIR_IMPLEMENTATION_ALLOWED=NO")
 print("CONTRIBUTIONS=4")
@@ -226,4 +252,6 @@ print("NEW_GENERATION_ATTEMPTS=800")
 print("MODEL_QUALIFICATION=PASS")
 print("ANALYSIS_REGISTRATION=PASS")
 print("GENERATION_PROTOCOL=PASS")
+print("FINAL_GATE0_MANIFEST=PASS")
+print("GENERATION_AUTHORIZED=NO")
 print(f"RESEARCH_LOCK_SHA256={digest}")

@@ -3,8 +3,8 @@
 - Repository logical path: `/openbayes/home/semanticverify-fuzz-research`
 - Repository physical path: `/output/semanticverify-fuzz-research`
 - Current stage: Stage A — verification
-- Current milestone: Gate 0F — generation-window and transport-retry protocol complete
-- Gate 0 overall: IN PROGRESS
+- Current milestone: Gate 0 complete — research design frozen; Gate 1 specification foundation pending
+- Gate 0 overall: PASS
 - Gate 0A repository bootstrap: PASS
 - Gate 0B environment qualification: PASS
 - Gate 0C proposal provenance: PASS
@@ -12,6 +12,7 @@
 - Gate 0D2 live endpoint/capability qualification: PASS
 - Gate 0E statistical analysis and power registration: PASS
 - Gate 0F generation-window and transport-retry protocol: PASS
+- Gate 0G final manifest and research-lock closure: PASS
 - Gate 1: NOT STARTED
 - Gate 2: NOT STARTED
 - Gate 3: NOT STARTED
@@ -55,9 +56,12 @@ balance was insufficient. It created no qualification report and no
 experimental output. The exact failed-attempt count was not machine-captured,
 so no unsupported count is claimed.
 
-## Remaining before Gate 0 closes
+## Next authorized work
 
-1. Create and verify the final Gate 0 manifest.
+1. Begin Gate 1 — specification foundation.
+2. Freeze protocol-source provenance, the system prompt, and all 80 scenario bindings.
+3. Freeze eight library source/build locks and provider price-sheet snapshots.
+4. Create a separate committed execution authorization before any primary call.
 
-No primary generation, driver inspection, or repair implementation is
-authorized.
+Primary generation and held-out driver inspection remain unauthorized. Repair
+implementation remains prohibited until Gate V.

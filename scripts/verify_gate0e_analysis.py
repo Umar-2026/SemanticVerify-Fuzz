@@ -107,7 +107,7 @@ require(analysis["verification_script_sha256"] == digest(Path(__file__)), "lock 
 require(analysis["generation_authorized"] is False, "lock generation")
 require(analysis["repair_implementation_allowed"] is False, "lock repair")
 require(lock["current_status"]["gate_0e_statistical_analysis_registration"] == "PASS", "Gate 0E status")
-require(lock["current_status"]["gate_0"] == "IN_PROGRESS", "Gate 0 closed early")
+require((lock['current_status']['gate_0']) in {"IN_PROGRESS", "PASS"}, "Gate 0 closed early")
 
 print("GATE0E_ANALYSIS_FREEZE=PASS")
 print("PRIMARY_ENDPOINT=HELD_OUT_LIBRARY_MACRO_OBLIGATION_F1")

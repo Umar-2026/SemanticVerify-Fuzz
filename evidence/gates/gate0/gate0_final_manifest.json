@@ -1,0 +1,198 @@
+{
+  "authorization": {
+    "gate_0_closed": true,
+    "generation_blocked_by": [
+      "Gate 1 specification foundation",
+      "frozen system prompt and 80 scenario bindings",
+      "eight library source/build locks",
+      "provider price-sheet snapshots",
+      "committed execution authorization"
+    ],
+    "held_out_driver_inspection_allowed": false,
+    "primary_generation_authorized": false,
+    "repair_activation_gate": "Gate V",
+    "repair_implementation_allowed": false
+  },
+  "base_checkpoint": {
+    "commit": "6e0123ce9d4d8a80e7a7137613948942f6af4c93",
+    "research_lock_pre_close_sha256": "0616953ded51dcebc6e43056262bc87731b88a6204f9fa0c669050e9e8684f07",
+    "secret_scan_pre_close_sha256": "96a24dfc31d5611345b64d731cd292e34f677d1df189b6baaec88fe35f46e4e8",
+    "tracked_file_count": 46,
+    "tree": "3c56b668e17c70593fd9d872d17cfa1dda25d7ae"
+  },
+  "closed_at_utc": "2026-08-06T08:10:08+00:00",
+  "freeze_contract": {
+    "amendment_required_for_frozen_input_change": true,
+    "fresh_start_no_prior_evidence_carryover": true,
+    "no_backflow": true,
+    "research_design_frozen": true,
+    "silent_method_change_allowed": false,
+    "status_metadata_may_advance_only_by_new_commits": true,
+    "verification_before_repair": true
+  },
+  "gate": "Gate 0 Final",
+  "immutable_inputs": {
+    "record_count": 23,
+    "records": [
+      {
+        "path": "config/generation_execution_protocol.json",
+        "sha256": "aae67d6d5d6cf063f92d117efce75b51d015466decf3a17ea4822c8f2e1e38de",
+        "size_bytes": 7713
+      },
+      {
+        "path": "config/model_targets.json",
+        "sha256": "c6171d0f398c422cfcb056ec1293a42c43de831e12320b28cb1762660fba1e38",
+        "size_bytes": 3972
+      },
+      {
+        "path": "config/statistical_analysis_registration.json",
+        "sha256": "c7537ce5d082de904cc7aef4d617c9ff6612b30fdb4740b0667c9eb84ca5b2d4",
+        "size_bytes": 6073
+      },
+      {
+        "path": "config/toolchain_lock.json",
+        "sha256": "11493f6edf40b9a2a333dd5cdbf60dbeb0fe2cea866385c06a39ebc48f8cf1be",
+        "size_bytes": 904
+      },
+      {
+        "path": "documentation/decisions/0001-verification-first-no-backflow.md",
+        "sha256": "67cf62d7e237caa400feca90bff69f4f04e0072b270d69598e2d40edf44d2eba",
+        "size_bytes": 874
+      },
+      {
+        "path": "documentation/decisions/0002-model-freeze-and-amendment-rule.md",
+        "sha256": "6064e7e93a7526b5124f1e6417dbf9a3f72278efdc6f140a5877ba366eb662ae",
+        "size_bytes": 1318
+      },
+      {
+        "path": "documentation/decisions/0003-live-model-qualification-freeze.md",
+        "sha256": "76e64943a71056cd75d491af4ee7c5e27aa062eebacbbf4cf3cbc92fa3d5973a",
+        "size_bytes": 1506
+      },
+      {
+        "path": "documentation/decisions/0004-statistical-analysis-registration-freeze.md",
+        "sha256": "7bd625e22c294a3f6ca7c1f321961723bde1a55968f6f9898cb24626fa764b2a",
+        "size_bytes": 2297
+      },
+      {
+        "path": "documentation/decisions/0005-generation-window-and-transport-retry-freeze.md",
+        "sha256": "4dfebd8c20624ec4ae7204c949d98686611dbd94ce1044c4c081820a9a4169b1",
+        "size_bytes": 1955
+      },
+      {
+        "path": "evidence/gates/gate0/environment_qualification.json",
+        "sha256": "e4dd7a2f5e6bd4ebf0105c721a740e41ca16c5d4f4dc00177e3a75fb2d7d32c6",
+        "size_bytes": 2795
+      },
+      {
+        "path": "evidence/gates/gate0/gate0ab_checkpoint.json",
+        "sha256": "4421a85db1c439a3bd2045ecd527be30c5734ed674e8a760117ce19c06e2c29e",
+        "size_bytes": 3576
+      },
+      {
+        "path": "evidence/gates/gate0/model_documentation_qualification.json",
+        "sha256": "8806bf34fb395a36422fdce0c0d3a715bd465b4ce18c915a218b06e24d913a41",
+        "size_bytes": 1533
+      },
+      {
+        "path": "evidence/gates/gate0/model_live_qualification.json",
+        "sha256": "f0b22b51684605677d4bfbfa4b187227c67093fc4c79792412797e28cb30f5c4",
+        "size_bytes": 4613
+      },
+      {
+        "path": "evidence/gates/gate0/model_targets_prequalification.json",
+        "sha256": "d8d048bba349e45a3c2267567c37a3d771011d50ceac885fb8a953149a5cc401",
+        "size_bytes": 2596
+      },
+      {
+        "path": "evidence/gates/gate0/proposal_provenance.json",
+        "sha256": "0d10d9ef545413223f90ce3ea2745e4277a2026ad605713eaa8f9cf83737fea7",
+        "size_bytes": 2089
+      },
+      {
+        "path": "evidence/gates/gate0/statistical_analysis_registration_pre_simulation.json",
+        "sha256": "8a26244a7be384ce58d1a11f7365054998fd92d4c5b496e07d7b3dfa3d2a7144",
+        "size_bytes": 4797
+      },
+      {
+        "path": "evidence/gates/gate0/statistical_power_curve.json",
+        "sha256": "bb746da67ccdae2eeda232aba36c53ba53ec3d7830fdd726bb4f450aa2ab9b58",
+        "size_bytes": 556575
+      },
+      {
+        "path": "provenance/proposal/SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+        "sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21",
+        "size_bytes": 245766
+      },
+      {
+        "path": "scripts/verify_gate0c_proposal.py",
+        "sha256": "2af3ff8fdb7701ab4a279b5b7b358fb6ee347f4162c7c1c3856d9bf1b34e404f",
+        "size_bytes": 6352
+      },
+      {
+        "path": "scripts/verify_gate0d_documentation.py",
+        "sha256": "64446722099f209ad7c5a065bc691c7bc38106cfae66c409821b2d4934c72dfd",
+        "size_bytes": 3118
+      },
+      {
+        "path": "scripts/verify_gate0d_live.py",
+        "sha256": "1730d9ea56b84c18186b4f2c5d2ec04c6093c75e90b9a00d6b948603312af1dc",
+        "size_bytes": 5518
+      },
+      {
+        "path": "scripts/verify_gate0e_analysis.py",
+        "sha256": "7a93147f7c12fb9703a741d06b70f6e5b53c1c0dcb0b0d4f14677ff7f24b34e5",
+        "size_bytes": 5863
+      },
+      {
+        "path": "scripts/verify_gate0f_generation_protocol.py",
+        "sha256": "c2ac37eafa6f7388ad26b28e8b6cc333a6f8300617d7ca1547c89efea3fa914a",
+        "size_bytes": 4610
+      }
+    ],
+    "records_sha256": "82d5ddedfff4aef2e6f8b35651ace593c676df4cb4f76daa0ae19128d8df09cd"
+  },
+  "mutable_coordination_files_excluded_from_input_hash_set": [
+    "config/research_lock.json",
+    "documentation/CURRENT_STATUS.md",
+    "evidence/gates/gate0/README.md",
+    "evidence/gates/gate0/secret_scan.json",
+    "scripts/verify_gate0.py",
+    "evidence/gates/gate0/gate0_final_manifest.json",
+    "scripts/verify_gate0_final_manifest.py",
+    "scripts/prepare_gate0_final_manifest.py",
+    "documentation/decisions/0006-gate0-final-manifest-and-research-lock-closure.md",
+    "scripts/recover_gate0_final_manifest.py"
+  ],
+  "next_gate": {
+    "id": "Gate 1",
+    "name": "specification foundation",
+    "status": "NOT_STARTED"
+  },
+  "project": {
+    "attempts_per_model_library_scenario": 5,
+    "contribution_count": 4,
+    "current_stage": "Stage A - verification",
+    "library_count": 8,
+    "model_count": 2,
+    "research_question_count": 5,
+    "scenario_count_per_library": 10,
+    "title": "SemanticVerify-Fuzz: Resource-Centered, Path-Sensitive Verification and Constrained Repair of API-Protocol Violations in LLM-Generated Fuzz Drivers",
+    "total_new_attempts": 800
+  },
+  "schema_version": "1.0.0",
+  "secret_policy": {
+    "final_commit_secret_scan_required": true,
+    "secret_values_stored_printed_or_hashed": false
+  },
+  "status": "PASS",
+  "subgates": {
+    "gate_0a_repository_bootstrap": "PASS",
+    "gate_0b_environment_qualification": "PASS",
+    "gate_0c_proposal_provenance": "PASS",
+    "gate_0d1_model_documentation": "PASS",
+    "gate_0d2_live_model_access": "PASS",
+    "gate_0e_statistical_analysis_registration": "PASS",
+    "gate_0f_generation_protocol": "PASS"
+  }
+}

@@ -11,6 +11,7 @@ Completed:
 - Gate 0D2 live endpoint and capability qualification
 - Gate 0E statistical analysis and power registration
 - Gate 0F generation-window and transport-retry protocol
+- Gate 0 final manifest and research-lock closure
 
 Gate 0D2 evidence:
 
@@ -22,4 +23,10 @@ Gate 0E evidence:
 - `statistical_analysis_registration_pre_simulation.json`: immutable design snapshot
 - `statistical_power_curve.json`: deterministic 144-scenario power evidence
 
-Gate 0 remains IN PROGRESS. Only the final Gate 0 manifest remains pending. This directory does not authorize primary generation, held-out inspection, or repair implementation.
+Final Gate 0 evidence:
+
+- `gate0_final_manifest.json`: immutable Gate 0 input manifest
+- Gate 0 status: PASS
+- Next gate: Gate 1 — specification foundation
+
+Gate 0 closure does not authorize primary generation or held-out driver inspection. Repair remains prohibited until Gate V.

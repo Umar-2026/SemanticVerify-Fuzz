@@ -22,7 +22,7 @@
     "simulation_script_sha256": "15dd19839d8bea03a7e5e9a755ea4fa862b937f399a0f1d43548f886be8555b1",
     "status": "PASS",
     "verification_script": "scripts/verify_gate0e_analysis.py",
-    "verification_script_sha256": "5d661f1351d188c0f027a3cd98566fa34f6f15d344444378be0c777dd1323f76"
+    "verification_script_sha256": "7a93147f7c12fb9703a741d06b70f6e5b53c1c0dcb0b0d4f14677ff7f24b34e5"
   },
   "contributions": [
     {
@@ -44,7 +44,7 @@
     }
   ],
   "current_status": {
-    "gate_0": "IN_PROGRESS",
+    "gate_0": "PASS",
     "gate_0a_repository_bootstrap": "PASS",
     "gate_0b_environment_qualification": "PASS",
     "gate_0c_proposal_provenance": "PASS",
@@ -53,6 +53,7 @@
     "gate_0d_model_qualification": "PASS",
     "gate_0e_statistical_analysis_registration": "PASS",
     "gate_0f_generation_protocol": "PASS",
+    "gate_0g_final_manifest": "PASS",
     "gate_1": "NOT_STARTED",
     "gate_2": "NOT_STARTED",
     "gate_3": "NOT_STARTED",
@@ -60,7 +61,7 @@
     "gate_5": "NOT_STARTED",
     "gate_6": "BLOCKED_BY_GATE_V",
     "gate_v": "NOT_STARTED",
-    "milestone": "Gate 0F generation-window and transport-retry protocol complete; final Gate 0 manifest pending"
+    "milestone": "Gate 0 research lock complete; Gate 1 specification foundation pending"
   },
   "defect_taxonomy": {
     "D1": "Use before successful initialization",
@@ -151,6 +152,19 @@
     "carry_over_prior_results": false,
     "enabled": true,
     "historical_artifacts_policy": "If later imported, keep only in immutable provenance quarantine; never use as active implementation input or experimental evidence."
+  },
+  "gate0_final_manifest": {
+    "base_commit": "6e0123ce9d4d8a80e7a7137613948942f6af4c93",
+    "base_tree": "3c56b668e17c70593fd9d872d17cfa1dda25d7ae",
+    "held_out_driver_inspection_allowed": false,
+    "immutable_input_count": 23,
+    "immutable_records_sha256": "82d5ddedfff4aef2e6f8b35651ace593c676df4cb4f76daa0ae19128d8df09cd",
+    "next_gate": "Gate 1 - specification foundation",
+    "path": "evidence/gates/gate0/gate0_final_manifest.json",
+    "primary_generation_authorized": false,
+    "repair_implementation_allowed": false,
+    "sha256": "d7c5495874734a0f2a82289202539d5d63ac2efbcfcffe9efca6770440ee2526",
+    "status": "PASS"
   },
   "gates": [
     "Gate 0 - research lock",

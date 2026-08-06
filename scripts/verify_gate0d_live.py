@@ -205,7 +205,7 @@ require(
     qualification["generation_authorized"] is False,
     "research lock authorizes generation"
 )
-require(current["gate_0"] == "IN_PROGRESS", "Gate 0 closed early")
+require(current["gate_0"] in {"IN_PROGRESS", "PASS"}, "Gate 0 closed early")
 require(
     current["gate_0d2_live_model_access"] == "PASS",
     "Gate 0D2 current status"
