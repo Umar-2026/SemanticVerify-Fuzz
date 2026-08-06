@@ -54,14 +54,15 @@
     "gate_0e_statistical_analysis_registration": "PASS",
     "gate_0f_generation_protocol": "PASS",
     "gate_0g_final_manifest": "PASS",
-    "gate_1": "NOT_STARTED",
+    "gate_1": "IN_PROGRESS",
     "gate_2": "NOT_STARTED",
     "gate_3": "NOT_STARTED",
     "gate_4": "NOT_STARTED",
     "gate_5": "NOT_STARTED",
     "gate_6": "BLOCKED_BY_GATE_V",
     "gate_v": "NOT_STARTED",
-    "milestone": "Gate 0 research lock complete; Gate 1 specification foundation pending"
+    "milestone": "Gate 1A obligation schema and normalization contract complete; Gate 1 specification foundation remains in progress",
+    "gate_1a_obligation_contract": "PASS"
   },
   "defect_taxonomy": {
     "D1": "Use before successful initialization",
@@ -343,5 +344,28 @@
     ],
     "unknown_is_valid": false,
     "unknown_primary_scoring": "Incorrect on eligible gold instances"
+  },
+  "gate1_foundation": {
+    "status": "IN_PROGRESS",
+    "gate1a_obligation_contract": {
+      "status": "PASS",
+      "contract_path": "config/protocol_obligation_contract.json",
+      "contract_sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf",
+      "report_path": "evidence/gates/gate1/gate1a_obligation_contract.json",
+      "report_sha256": "108ab49841e9deec088269aae4f0019d44babd5eab67119cf43eb0e911f6432d",
+      "protocol_schema_path": "config/schemas/protocol_specification.schema.json",
+      "protocol_schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "normalized_instance_schema_path": "config/schemas/normalized_obligation_instance.schema.json",
+      "normalized_instance_schema_sha256": "11688a1b12427a3cc22217b338e810ae5db09b81b34a23e27aef2bd874533c3a",
+      "taxonomy_categories": 8,
+      "serialized_verdicts": 4,
+      "unknown_limitation_codes": 7,
+      "raw_cfg_paths_are_independent_samples": false
+    },
+    "primary_generation_authorized": false,
+    "held_out_driver_inspection_allowed": false,
+    "analyzer_implementation_authorized": false,
+    "repair_implementation_allowed": false,
+    "repair_activation_gate": "Gate V"
   }
 }

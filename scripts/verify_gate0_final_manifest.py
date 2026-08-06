@@ -85,7 +85,10 @@ require(locked["repair_implementation_allowed"] is False, "lock repair")
 current = lock["current_status"]
 require(current["gate_0"] == "PASS", "Gate 0 current status")
 require(current["gate_0g_final_manifest"] == "PASS", "Gate 0G status")
-require(current["gate_1"] == "NOT_STARTED", "Gate 1 started early")
+require(
+    current["gate_1"] in {"NOT_STARTED", "IN_PROGRESS", "PASS"},
+    "Gate 1 lifecycle status",
+)
 require(lock["stage_policy"]["repair_implementation_allowed"] is False, "stage repair")
 require(secret_report["status"] == "PASS", "secret scan")
 

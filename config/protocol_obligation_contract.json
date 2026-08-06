@@ -1,0 +1,264 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "Gate 1A",
+  "status": "PASS_FROZEN",
+  "title": "Protocol Obligation, Verdict, and Normalization Contract",
+  "authority": {
+    "proposal_path": "provenance/proposal/SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+    "proposal_sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21",
+    "proposal_sections": [
+      "4.1 Fuzz-driver-specific protocol obligation",
+      "4.2 Evaluation unit and path normalization",
+      "4.3 Three base outcomes and violation quantifiers",
+      "4.4 Soundness and completeness boundary",
+      "7.2 Defect taxonomy",
+      "7.3 Protocol-specification creation and leakage control",
+      "12 Gate 1 specification foundation",
+      "15 Pre-Experiment Registration Checklist"
+    ]
+  },
+  "frozen_at_utc": "2026-08-06T13:18:01+00:00",
+  "scope": {
+    "language": "C and C-compatible fuzz drivers",
+    "primary_unit": "normalized protocol-obligation instance",
+    "formalism_is_engineering_representation": true,
+    "universal_c_correctness_claim": false,
+    "raw_cfg_paths_are_independent_samples": false,
+    "library_specific_rules_in_this_artifact": false,
+    "analyzer_implementation_in_this_artifact": false
+  },
+  "machine_readable_schemas": {
+    "protocol_specification": {
+      "path": "config/schemas/protocol_specification.schema.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "json_schema_draft": "2020-12"
+    },
+    "normalized_obligation_instance": {
+      "path": "config/schemas/normalized_obligation_instance.schema.json",
+      "sha256": "11688a1b12427a3cc22217b338e810ae5db09b81b34a23e27aef2bd874533c3a",
+      "json_schema_draft": "2020-12"
+    }
+  },
+  "protocol_specification": {
+    "notation": "P=(S,s0,A,delta,F,Omega)",
+    "elements": {
+      "S": "finite set of abstract resource states",
+      "s0": "initial abstract resource state",
+      "A": "API and branch events",
+      "delta": "return- and ownership-conditioned transition relation",
+      "F": "permitted exit states",
+      "Omega": "protocol obligations"
+    },
+    "required_top_level_fields": [
+      "schema_version",
+      "specification_id",
+      "library",
+      "library_revision",
+      "resource_kind",
+      "states",
+      "initial_state",
+      "events",
+      "transitions",
+      "permitted_exit_states",
+      "obligations",
+      "provenance",
+      "author",
+      "reviewer",
+      "creation_date",
+      "freeze_date",
+      "content_sha256"
+    ]
+  },
+  "obligation_rule_required_fields": [
+    "rule_id",
+    "resource_kind",
+    "triggering_event_or_function_exit",
+    "required_pre_state_or_exit_condition",
+    "permitted_transitions",
+    "return_predicate",
+    "ownership_effect",
+    "cleanup_responsibility",
+    "defect_category",
+    "severity",
+    "source_evidence",
+    "specification_author",
+    "creation_date",
+    "freeze_date",
+    "library_revision",
+    "content_sha256"
+  ],
+  "normalized_obligation_instance": {
+    "notation": "O=<driver,resource,rule,program-point-or-exit,abstract-context>",
+    "identity_fields": [
+      "driver_id",
+      "resource_identity",
+      "rule_id",
+      "program_point_or_exit",
+      "abstract_context"
+    ],
+    "required_evidence_fields": [
+      "required_condition",
+      "observed_state_set",
+      "relevant_branch_predicate_class",
+      "raw_witness_paths"
+    ],
+    "one_call_site_may_instantiate_multiple_obligations": true,
+    "one_defect_may_involve_multiple_call_sites": true
+  },
+  "equivalent_path_normalization": {
+    "merge_only_when_all_equal": [
+      "normalized obligation identity",
+      "abstract resource identity",
+      "required condition",
+      "observed state set",
+      "relevant branch predicate class"
+    ],
+    "raw_paths_retained_as_evidence": true,
+    "raw_paths_counted_as_independent_samples": false,
+    "normalization_frozen_before_analyzer_or_baseline_scoring": true
+  },
+  "reporting_levels": [
+    {
+      "level": "obligation",
+      "role": "primary detector and statistical unit"
+    },
+    {
+      "level": "adjudicated defect",
+      "role": "merge obligations representing the same root cause"
+    },
+    {
+      "level": "driver",
+      "role": "whether at least one confirmed defect is present"
+    }
+  ],
+  "eligibility_contract": {
+    "values": [
+      "IN_SCOPE",
+      "OUT_OF_SCOPE"
+    ],
+    "recorded_separately_from_verdict": true,
+    "out_of_scope_receives_validity_verdict": false,
+    "out_of_scope_reason_required": true
+  },
+  "verdict_contract": {
+    "base_outcomes": [
+      "VALID",
+      "VIOLATION",
+      "UNKNOWN"
+    ],
+    "serialized_labels": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "operational_meanings": {
+      "VALID": "All analyzer-consistent abstract states reaching the obligation satisfy the required condition within the declared analysis bounds.",
+      "VIOLATION-MUST": "Every analyzer-consistent abstract state reaching the obligation violates the required condition, or every relevant exit violates a cleanup obligation.",
+      "VIOLATION-MAY": "At least one analyzer-consistent state violates and at least one does not, or bounded merging prevents MUST while retaining an abstract witness.",
+      "UNKNOWN": "The bounded analyzer cannot justify VALID or VIOLATION."
+    },
+    "unknown_is_valid": false,
+    "unknown_on_eligible_gold_primary_scoring": "INCORRECT",
+    "must_may_describe_abstract_states_not_all_concrete_executions": true
+  },
+  "unknown_limitation_codes": [
+    {
+      "code": "U01_UNSUPPORTED_SEMANTICS",
+      "meaning": "required semantics are unsupported"
+    },
+    {
+      "code": "U02_UNRESOLVED_ALIAS",
+      "meaning": "resource aliasing cannot be resolved within scope"
+    },
+    {
+      "code": "U03_UNRESOLVED_INDIRECT_CALL",
+      "meaning": "an indirect call target cannot be resolved"
+    },
+    {
+      "code": "U04_STATE_CAP_EXHAUSTION",
+      "meaning": "the frozen abstract-state cap is exhausted"
+    },
+    {
+      "code": "U05_MISSING_EVIDENCE",
+      "meaning": "required specification or program evidence is missing"
+    },
+    {
+      "code": "U06_OUT_OF_MODEL_INTERACTION",
+      "meaning": "an interaction falls outside the declared model"
+    },
+    {
+      "code": "U07_UNSUPPORTED_SIDE_EFFECT",
+      "meaning": "a relevant side effect is unsupported or unmodelled"
+    }
+  ],
+  "defect_taxonomy": {
+    "D1": "Use before successful initialization",
+    "D2": "Use after failed initialization or activation",
+    "D3": "Use after close, destroy, end, or release",
+    "D4": "Double close, destroy, end, or release",
+    "D5": "Missing cleanup on a success or failure exit",
+    "D6": "Invalid API call ordering or missing prerequisite call",
+    "D7": "Ownership misuse: freeing borrowed data, failing transferred ownership, or wrong owner",
+    "D8": "Conditionally invalid cleanup or cleanup under the wrong state or return condition"
+  },
+  "excluded_unless_entailed_by_frozen_obligation": [
+    "buffer overflow",
+    "arbitrary semantic mistake",
+    "security-boundary violation",
+    "entry-point adequacy",
+    "general vulnerability detection"
+  ],
+  "provenance_schema": {
+    "approved_source_types": [
+      "pinned official API documentation",
+      "public headers at the pinned revision",
+      "pinned implementation source",
+      "pinned upstream tests",
+      "predeclared upstream usage examples"
+    ],
+    "evidence_item_required_fields": [
+      "source_type",
+      "path_or_url",
+      "retrieval_date",
+      "quoted_or_paraphrased_rationale",
+      "content_sha256"
+    ],
+    "rule_authorship_required_fields": [
+      "author",
+      "reviewer",
+      "creation_date",
+      "revision",
+      "freeze_date"
+    ],
+    "second_review_checks": [
+      "evidence completeness",
+      "transition consistency",
+      "ownership effects",
+      "terminal states",
+      "unsupported conditions"
+    ]
+  },
+  "leakage_controls": {
+    "prohibited_before_specification_freeze": [
+      "generated experimental drivers",
+      "manual gold labels",
+      "analyzer output",
+      "repair output",
+      "defect-triggering mutations",
+      "post hoc issue searches prompted by observed failures"
+    ],
+    "held_out_protocols_frozen_before_driver_open_or_annotation": true,
+    "specification_and_analyzer_errors_coded_separately": true,
+    "held_out_primary_result_remains_frozen_after_specification_error": true,
+    "corrected_result_role": "SECONDARY_SENSITIVITY_ANALYSIS_ONLY"
+  },
+  "stage_boundaries": {
+    "current_stage": "Stage A - verification",
+    "primary_generation_authorized": false,
+    "held_out_driver_inspection_allowed": false,
+    "analyzer_implementation_authorized_by_gate1a": false,
+    "repair_implementation_allowed": false,
+    "repair_activation_gate": "Gate V"
+  }
+}
