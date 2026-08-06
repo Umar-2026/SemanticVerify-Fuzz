@@ -5,6 +5,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LOCK_PATH = ROOT / "config" / "research_lock.json"
+ANALYSIS_REGISTRATION_PATH = ROOT / "config" / "statistical_analysis_registration.json"
+ANALYSIS_REPORT_PATH = ROOT / "evidence" / "gates" / "gate0" / "statistical_power_curve.json"
+ANALYSIS_VERIFIER_PATH = ROOT / "scripts" / "verify_gate0e_analysis.py"
 
 def require(condition, message):
     if not condition:
@@ -91,6 +94,15 @@ require(
     evaluation["raw_cfg_paths_are_independent_samples"] is False,
     "raw CFG paths incorrectly treated as independent samples"
 )
+require(evaluation["bootstrap_replicates"] == 2000, "bootstrap count")
+require(evaluation["bootstrap_resampling_unit"] == "driver", "bootstrap unit")
+require(evaluation["bootstrap_stratification"] == "library", "bootstrap strata")
+require(evaluation["alpha_two_sided"] == 0.05, "alpha")
+require(evaluation["planned_ablation_multiplicity"] == "Holm family-wise adjustment", "multiplicity")
+require(evaluation["minimum_positive_obligations"] == 30, "positive obligations")
+require(evaluation["minimum_positive_libraries"] == 5, "positive libraries")
+require(evaluation["post_hoc_sample_expansion"] is False, "sample expansion")
+require(evaluation["analysis_registration_status"] == "PASS", "analysis status")
 
 repair = lock["repair_design"]
 require(
@@ -115,6 +127,10 @@ require(
     current["gate_0d2_live_model_access"] == "PASS",
     "Gate 0D2 status mismatch"
 )
+require(
+    current["gate_0e_statistical_analysis_registration"] == "PASS",
+    "Gate 0E status mismatch"
+)
 
 model_qualification = lock["model_qualification"]
 
@@ -132,6 +148,17 @@ require(
     "generation authorized before Gate 0 closes"
 )
 
+analysis = lock["analysis_registration"]
+require(analysis["status"] == "PASS", "analysis lock status")
+require(analysis["active_registration_sha256"] == hashlib.sha256(ANALYSIS_REGISTRATION_PATH.read_bytes()).hexdigest(), "active registration SHA")
+require(analysis["power_report_sha256"] == hashlib.sha256(ANALYSIS_REPORT_PATH.read_bytes()).hexdigest(), "power report SHA")
+require(analysis["verification_script_sha256"] == hashlib.sha256(ANALYSIS_VERIFIER_PATH.read_bytes()).hexdigest(), "analysis verifier SHA")
+require(analysis["scenario_count"] == 144, "power scenario count")
+require(analysis["bootstrap_replicates"] == 2000, "analysis bootstrap count")
+require(analysis["post_hoc_sample_expansion"] is False, "analysis sample expansion")
+require(analysis["generation_authorized"] is False, "analysis generation")
+require(analysis["repair_implementation_allowed"] is False, "analysis repair")
+
 digest = hashlib.sha256(LOCK_PATH.read_bytes()).hexdigest()
 
 print("GATE0A_REPOSITORY_BOOTSTRAP=PASS")
@@ -143,4 +170,5 @@ print("RESEARCH_QUESTIONS=5")
 print("LIBRARIES=8")
 print("NEW_GENERATION_ATTEMPTS=800")
 print("MODEL_QUALIFICATION=PASS")
+print("ANALYSIS_REGISTRATION=PASS")
 print(f"RESEARCH_LOCK_SHA256={digest}")

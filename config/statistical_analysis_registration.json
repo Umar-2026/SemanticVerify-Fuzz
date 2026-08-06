@@ -1,0 +1,164 @@
+{
+  "authority": "AUTHORITATIVE_PROPOSAL_OPERATIONALIZATION",
+  "authorization": {
+    "driver_inspection_authorized": false,
+    "primary_generation_authorized": false,
+    "repair_implementation_allowed": false
+  },
+  "freeze": {
+    "central_scenario": {
+      "combined_driver_library_icc": 0.05,
+      "eight_obligations_mdi_reached": false,
+      "four_obligations_mdi_reached": false,
+      "positive_conditional_detector_discordance": 0.1,
+      "prevalence": 0.1,
+      "twelve_obligations_claimable_power": 0.8865,
+      "twelve_obligations_median_macro_f1_difference": 0.069727,
+      "twelve_obligations_positive_sensitivity_gain": 0.1
+    },
+    "claimable_mdi_reached_scenarios": 61,
+    "conditional_mdi_reached_scenarios": 61,
+    "frozen_before_primary_generation": true,
+    "generation_authorized": false,
+    "non_reached_scenarios_trigger_sample_expansion": false,
+    "power_report": "evidence/gates/gate0/statistical_power_curve.json",
+    "power_report_sha256": "bb746da67ccdae2eeda232aba36c53ba53ec3d7830fdd726bb4f450aa2ab9b58",
+    "pre_simulation_snapshot": "evidence/gates/gate0/statistical_analysis_registration_pre_simulation.json",
+    "pre_simulation_snapshot_sha256": "8a26244a7be384ce58d1a11f7365054998fd92d4c5b496e07d7b3dfa3d2a7144",
+    "repair_implementation_allowed": false,
+    "scenario_count": 144,
+    "simulation_script": "scripts/run_gate0e_power_simulation.py",
+    "simulation_script_sha256": "15dd19839d8bea03a7e5e9a755ea4fa862b937f399a0f1d43548f886be8555b1"
+  },
+  "gate": "Gate 0E",
+  "power_simulation": {
+    "baseline_effective_sensitivity": 0.6,
+    "baseline_population_precision_planning_value": 0.8,
+    "combined_driver_library_icc_grid": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "discordance_definition": "Probability that full and path-insensitive predictions differ among gold-positive eligible obligations",
+    "eligible_obligations_per_driver_sensitivity_grid": [
+      4,
+      8,
+      12
+    ],
+    "gold_sample_max_compilable_drivers": 140,
+    "held_out_library_count": 6,
+    "icc_split": {
+      "driver_fraction": 0.5,
+      "library_fraction": 0.5
+    },
+    "master_seed": 2026080602,
+    "maximum_gain": "Bounded by each detector-discordance value",
+    "mdi_outputs": [
+      "Conditional MDI given minimum-positive eligibility",
+      "Claimable MDI including probability of minimum-positive eligibility"
+    ],
+    "negative_prediction_difference": "None in the planning simulation; modeled gains arise only from positive-obligation sensitivity",
+    "null_calibration": "Empirical 97.5th percentile of eligible clustered null macro-F1 differences",
+    "planning_drivers_per_held_out_library": 18,
+    "planning_held_out_driver_total": 108,
+    "planning_only": true,
+    "planning_value_is_not_sampling_quota": true,
+    "positive_conditional_detector_discordance_grid": [
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "positive_sensitivity_gain_step": 0.01,
+    "prevalence_grid": [
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "runtime_lock": {
+      "numpy": "2.2.6",
+      "python": "3.10.18"
+    },
+    "simulation_replicates_per_scenario": 2000,
+    "target_power": 0.8,
+    "unknown_treatment": "Absorbed as incorrect effective predictions and receives no power credit"
+  },
+  "primary_analysis": {
+    "bootstrap": {
+      "confidence_interval": "two-sided percentile 95%",
+      "library_macro_weighting": "equal",
+      "random_seed": 2026080601,
+      "replicates": 2000,
+      "resampling_unit": "driver",
+      "stratification": "library"
+    },
+    "claim_guards": {
+      "minimum_decision_coverage": 0.75,
+      "minimum_positive_libraries": 5,
+      "minimum_positive_obligations": 30,
+      "minimum_precision": 0.8
+    },
+    "development_library_excluded": "zlib",
+    "endpoint": "Held-out library-macro obligation-level F1",
+    "held_out_libraries": [
+      "curl",
+      "cJSON",
+      "libtiff",
+      "libvpx",
+      "c-ares",
+      "lcms"
+    ],
+    "must_may_handling": "VIOLATION-MUST and VIOLATION-MAY are pooled for the primary endpoint and reported separately",
+    "negative_class": "VALID",
+    "out_of_scope_handling": "Excluded before accuracy denominators",
+    "positive_class": "VIOLATION",
+    "primary_paired_comparison": "Full verifier minus path-insensitive verifier",
+    "raw_cfg_paths_are_independent_samples": false,
+    "significance": {
+      "alpha_two_sided": 0.05,
+      "confidence_intervals_required": true,
+      "effect_sizes_required": true,
+      "planned_ablation_multiplicity": "Holm family-wise adjustment"
+    },
+    "unit": "Normalized eligible protocol-obligation instance",
+    "unknown_scoring": "UNKNOWN is forced to the wrong binary label: FN for gold VIOLATION and FP for gold VALID",
+    "validation_library_reported_separately": "libpcap",
+    "zero_positive_library_f1": 0.0
+  },
+  "proposal_sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21",
+  "schema_version": "1.0.0",
+  "source_commit_before_registration": "382745b676cc45a4d81f087626086a22caec9d05",
+  "sparse_outcome_rules": {
+    "below_positive_guard": "Withhold confirmatory sensitivity and superiority claims",
+    "category_below_10_positives": "Counts and exact intervals only",
+    "generation_to_reach_desired_defects": false,
+    "post_hoc_sample_expansion": false
+  },
+  "stage": "Stage A - verification",
+  "status": "PASS_FROZEN",
+  "supporting_analysis": {
+    "aggregation": [
+      "library macro",
+      "obligation micro",
+      "defect level",
+      "driver level"
+    ],
+    "artificial_mutations_separated_from_natural_data": true,
+    "exact_binomial_intervals": "two-sided 95% Clopper-Pearson",
+    "prevalence": "Inverse-probability weighted estimates and unweighted counts are both reported",
+    "reporting_strata": [
+      "library",
+      "model",
+      "scenario",
+      "defect category",
+      "MUST/MAY"
+    ],
+    "unknown_outputs": [
+      "decision coverage",
+      "limitation-code frequencies",
+      "decided-case accuracy",
+      "pessimistic sensitivity bounds"
+    ]
+  }
+}
