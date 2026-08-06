@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://semanticverify-fuzz.invalid/schema/annotation-exposure-registry-1.0.0",
+  "title": "Per-person per-driver annotation exposure registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_record_id",
+    "person_role_id",
+    "anonymized_driver_id",
+    "exposure_types",
+    "eligible_to_annotate",
+    "recorded_at_utc"
+  ],
+  "properties": {
+    "registry_record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "person_role_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "anonymized_driver_id": {
+      "type": "string",
+      "pattern": "^SVF-GOLD-[0-9]{4}$"
+    },
+    "exposure_types": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "SEMANTICVERIFY_OUTPUT",
+          "QUARTETFUZZ_OUTPUT",
+          "LLM_REVIEW_OUTPUT",
+          "REPAIR_OUTPUT",
+          "BASELINE_OUTPUT"
+        ]
+      }
+    },
+    "eligible_to_annotate": {
+      "type": "boolean"
+    },
+    "recorded_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "exposure_types": {
+            "minItems": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "eligible_to_annotate": {
+            "const": false
+          }
+        }
+      }
+    }
+  ]
+}

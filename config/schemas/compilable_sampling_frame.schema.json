@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://semanticverify-fuzz.invalid/schema/compilable-sampling-frame-1.0.0",
+  "title": "Compilable-driver sampling-frame record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "attempt_id",
+    "driver_id",
+    "library",
+    "model_label",
+    "scenario_id",
+    "replicate_id",
+    "compilation_status",
+    "compiler_warning_count",
+    "driver_sha256",
+    "build_log_sha256"
+  ],
+  "properties": {
+    "attempt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "driver_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "library": {
+      "enum": [
+        "zlib",
+        "libpcap",
+        "curl",
+        "cJSON",
+        "libtiff",
+        "libvpx",
+        "c-ares",
+        "lcms"
+      ]
+    },
+    "model_label": {
+      "enum": [
+        "Model A",
+        "Model B"
+      ]
+    },
+    "scenario_id": {
+      "type": "string",
+      "pattern": "^S(0[1-9]|10)$"
+    },
+    "replicate_id": {
+      "type": "string",
+      "pattern": "^R0[1-5]$"
+    },
+    "compilation_status": {
+      "const": "COMPILED"
+    },
+    "compiler_warning_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "driver_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "build_log_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}

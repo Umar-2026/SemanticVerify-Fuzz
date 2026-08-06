@@ -3,7 +3,7 @@
 - Repository logical path: `/openbayes/home/semanticverify-fuzz-research`
 - Repository physical path: `/output/semanticverify-fuzz-research`
 - Current stage: Stage A — verification
-- Current milestone: Gate 1A — obligation schema and normalization contract complete
+- Current milestone: Gate 1B — sampling, blind annotation, adjudication, and exposure quarantine complete
 - Gate 0 overall: PASS
 - Gate 0A repository bootstrap: PASS
 - Gate 0B environment qualification: PASS
@@ -15,6 +15,7 @@
 - Gate 0G final manifest and research-lock closure: PASS
 - Gate 1: IN PROGRESS
 - Gate 1A obligation schema and normalization contract: PASS
+- Gate 1B sampling and blind-annotation protocol: PASS
 - Gate 2: NOT STARTED
 - Gate 3: NOT STARTED
 - Gate 4: NOT STARTED
@@ -59,9 +60,9 @@ so no unsupported count is claimed.
 
 ## Next authorized work
 
-1. Continue Gate 1 with the sampling, blind-annotation, adjudication, and exposure-quarantine protocol.
-2. Freeze the system prompt and all 80 exact library-specific scenario bindings.
-3. Freeze eight library source/build locks and provider price-sheet snapshots.
+1. Freeze the system prompt and all 80 exact library-specific scenario bindings.
+2. Freeze eight library source/build locks and provider price-sheet snapshots.
+3. Record the required independent-annotation role roster before annotation begins.
 4. Close Gate 1 with a verified manifest; generation still requires later explicit authorization.
 
 Primary generation and held-out driver inspection remain unauthorized. Repair

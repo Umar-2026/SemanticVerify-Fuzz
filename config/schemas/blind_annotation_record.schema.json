@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://semanticverify-fuzz.invalid/schema/blind-annotation-record-1.0.0",
+  "title": "Blind independent annotation record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "anonymized_driver_id",
+    "annotator_role",
+    "phase",
+    "resource_identity",
+    "rule_or_candidate_id",
+    "program_point_or_exit",
+    "relevant_branch_condition",
+    "required_state",
+    "observed_state",
+    "discovery_decision",
+    "eligibility",
+    "verdict",
+    "defect_category",
+    "evidence_citation",
+    "machine_output_exposure",
+    "submitted_at_utc"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "anonymized_driver_id": {
+      "type": "string",
+      "pattern": "^SVF-GOLD-[0-9]{4}$"
+    },
+    "annotator_role": {
+      "enum": [
+        "ANNOTATOR_A",
+        "ANNOTATOR_B"
+      ]
+    },
+    "phase": {
+      "enum": [
+        "DISCOVERY",
+        "VERDICT"
+      ]
+    },
+    "resource_identity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rule_or_candidate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "program_point_or_exit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "relevant_branch_condition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "required_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "discovery_decision": {
+      "enum": [
+        "PRESENT",
+        "ABSENT"
+      ]
+    },
+    "eligibility": {
+      "enum": [
+        "IN_SCOPE",
+        "OUT_OF_SCOPE",
+        null
+      ]
+    },
+    "verdict": {
+      "enum": [
+        "VALID",
+        "VIOLATION-MUST",
+        "VIOLATION-MAY",
+        null
+      ]
+    },
+    "defect_category": {
+      "enum": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        null
+      ]
+    },
+    "evidence_citation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "machine_output_exposure": {
+      "const": false
+    },
+    "submitted_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "DISCOVERY"
+          }
+        },
+        "required": [
+          "phase"
+        ]
+      },
+      "then": {
+        "properties": {
+          "eligibility": {
+            "const": null
+          },
+          "verdict": {
+            "const": null
+          },
+          "defect_category": {
+            "const": null
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "VERDICT"
+          }
+        },
+        "required": [
+          "phase"
+        ]
+      },
+      "then": {
+        "properties": {
+          "eligibility": {
+            "enum": [
+              "IN_SCOPE",
+              "OUT_OF_SCOPE"
+            ]
+          },
+          "evidence_citation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "VERDICT"
+          },
+          "eligibility": {
+            "const": "OUT_OF_SCOPE"
+          }
+        },
+        "required": [
+          "phase",
+          "eligibility"
+        ]
+      },
+      "then": {
+        "properties": {
+          "verdict": {
+            "const": null
+          },
+          "defect_category": {
+            "const": null
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "VERDICT"
+          },
+          "eligibility": {
+            "const": "IN_SCOPE"
+          }
+        },
+        "required": [
+          "phase",
+          "eligibility"
+        ]
+      },
+      "then": {
+        "properties": {
+          "verdict": {
+            "enum": [
+              "VALID",
+              "VIOLATION-MUST",
+              "VIOLATION-MAY"
+            ]
+          },
+          "required_state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observed_state": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence_citation": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "VERDICT"
+          },
+          "eligibility": {
+            "const": "IN_SCOPE"
+          },
+          "verdict": {
+            "enum": [
+              "VIOLATION-MUST",
+              "VIOLATION-MAY"
+            ]
+          }
+        },
+        "required": [
+          "phase",
+          "eligibility",
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "defect_category": {
+            "enum": [
+              "D1",
+              "D2",
+              "D3",
+              "D4",
+              "D5",
+              "D6",
+              "D7",
+              "D8"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "VERDICT"
+          },
+          "eligibility": {
+            "const": "IN_SCOPE"
+          },
+          "verdict": {
+            "const": "VALID"
+          }
+        },
+        "required": [
+          "phase",
+          "eligibility",
+          "verdict"
+        ]
+      },
+      "then": {
+        "properties": {
+          "defect_category": {
+            "const": null
+          }
+        }
+      }
+    }
+  ]
+}

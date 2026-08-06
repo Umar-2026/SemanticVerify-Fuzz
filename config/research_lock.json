@@ -61,8 +61,9 @@
     "gate_5": "NOT_STARTED",
     "gate_6": "BLOCKED_BY_GATE_V",
     "gate_v": "NOT_STARTED",
-    "milestone": "Gate 1A obligation schema and normalization contract complete; Gate 1 specification foundation remains in progress",
-    "gate_1a_obligation_contract": "PASS"
+    "milestone": "Gate 1B sampling, blind annotation, adjudication, and exposure quarantine protocol complete; Gate 1 remains in progress",
+    "gate_1a_obligation_contract": "PASS",
+    "gate_1b_sampling_annotation_protocol": "PASS"
   },
   "defect_taxonomy": {
     "D1": "Use before successful initialization",
@@ -366,6 +367,23 @@
     "held_out_driver_inspection_allowed": false,
     "analyzer_implementation_authorized": false,
     "repair_implementation_allowed": false,
-    "repair_activation_gate": "Gate V"
+    "repair_activation_gate": "Gate V",
+    "gate1b_sampling_annotation_protocol": {
+      "status": "PASS",
+      "protocol_path": "config/gold_sampling_annotation_protocol.json",
+      "protocol_sha256": "38a1f721320733f86bc633172a9848085e659e1f41c35ee2ffbb8fc86a77ca63",
+      "report_path": "evidence/gates/gate1/gate1b_sampling_annotation_protocol.json",
+      "report_sha256": "b6308be90e88f40bdb3ecc58061b8deaad317a3fdb2a419724d0e0172f61fd2c",
+      "sampling_frame_schema_path": "config/schemas/compilable_sampling_frame.schema.json",
+      "sampling_frame_schema_sha256": "59a2fc3d34f616b11ef8b94277b3b80283d551d2bfdee2fc10320f341ea42083",
+      "annotation_schema_path": "config/schemas/blind_annotation_record.schema.json",
+      "annotation_schema_sha256": "16ff8a450c26c61452efe6b8ae70179749c2d9f4b451c04aa52dd05b5d0567e5",
+      "exposure_schema_path": "config/schemas/annotation_exposure_registry.schema.json",
+      "exposure_schema_sha256": "86ca3b6e451490d84acab503c33665a046825d92cfaed4a1b6932d47dce3303e",
+      "maximum_gold_drivers": 140,
+      "sampling_seed": 2026080603,
+      "post_hoc_sample_expansion": false,
+      "role_roster_required_before_annotation": true
+    }
   }
 }

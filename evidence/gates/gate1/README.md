@@ -10,9 +10,12 @@ Completed:
   UNKNOWN limitation codes, provenance fields, and equivalent-path
   normalization contract.
 
+- Gate 1B: positive-probability gold sampling, whole-driver blind annotation,
+  third-party adjudication, agreement reporting, and per-driver exposure
+  quarantine protocol.
+
 Pending:
 
-- Sampling, blind-annotation, adjudication, and exposure-quarantine protocol.
 - Frozen system prompt and all 80 exact library-specific scenario bindings.
 - Eight source/build locks, provider price snapshots, and final Gate 1 manifest.
 
