@@ -52,6 +52,7 @@
     "gate_0d2_live_model_access": "PASS",
     "gate_0d_model_qualification": "PASS",
     "gate_0e_statistical_analysis_registration": "PASS",
+    "gate_0f_generation_protocol": "PASS",
     "gate_1": "NOT_STARTED",
     "gate_2": "NOT_STARTED",
     "gate_3": "NOT_STARTED",
@@ -59,7 +60,7 @@
     "gate_5": "NOT_STARTED",
     "gate_6": "BLOCKED_BY_GATE_V",
     "gate_v": "NOT_STARTED",
-    "milestone": "Gate 0E statistical analysis and power registration complete; generation-window protocol and final Gate 0 manifest pending"
+    "milestone": "Gate 0F generation-window and transport-retry protocol complete; final Gate 0 manifest pending"
   },
   "defect_taxonomy": {
     "D1": "Use before successful initialization",
@@ -161,6 +162,19 @@
     "Gate V - irreversible verification freeze",
     "Gate 6 - post-freeze repair evaluation"
   ],
+  "generation_protocol": {
+    "all_invocations_retained": true,
+    "complete_http_responses_retried": false,
+    "logical_attempts": 800,
+    "maximum_transport_invocations_per_logical_slot": 3,
+    "path": "config/generation_execution_protocol.json",
+    "primary_generation_authorized": false,
+    "repair_implementation_allowed": false,
+    "sha256": "aae67d6d5d6cf063f92d117efce75b51d015466decf3a17ea4822c8f2e1e38de",
+    "status": "PASS",
+    "window_id": "SVF-PRIMARY-800-V1",
+    "window_state": "FROZEN_NOT_OPEN"
+  },
   "implementation_scope": {
     "alias_scope": [
       "direct variables",

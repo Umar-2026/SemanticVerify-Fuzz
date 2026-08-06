@@ -10,6 +10,7 @@ Completed:
 - Gate 0D1 official model documentation
 - Gate 0D2 live endpoint and capability qualification
 - Gate 0E statistical analysis and power registration
+- Gate 0F generation-window and transport-retry protocol
 
 Gate 0D2 evidence:
 
@@ -21,6 +22,4 @@ Gate 0E evidence:
 - `statistical_analysis_registration_pre_simulation.json`: immutable design snapshot
 - `statistical_power_curve.json`: deterministic 144-scenario power evidence
 
-Gate 0 remains IN PROGRESS. The generation-window protocol and the final
-Gate 0 manifest remain pending. This directory does not
-authorize primary generation, held-out inspection, or repair implementation.
+Gate 0 remains IN PROGRESS. Only the final Gate 0 manifest remains pending. This directory does not authorize primary generation, held-out inspection, or repair implementation.

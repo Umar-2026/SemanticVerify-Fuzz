@@ -159,6 +159,60 @@ require(analysis["post_hoc_sample_expansion"] is False, "analysis sample expansi
 require(analysis["generation_authorized"] is False, "analysis generation")
 require(analysis["repair_implementation_allowed"] is False, "analysis repair")
 
+generation_protocol = lock["generation_protocol"]
+generation_protocol_path = ROOT / generation_protocol["path"]
+
+require(
+    generation_protocol["status"] == "PASS",
+    "Gate 0F generation protocol is not PASS"
+)
+require(
+    generation_protocol_path.is_file(),
+    "Gate 0F generation protocol file missing"
+)
+
+generation_protocol_sha256 = hashlib.sha256(
+    generation_protocol_path.read_bytes()
+).hexdigest()
+
+require(
+    generation_protocol_sha256 == generation_protocol["sha256"],
+    "Gate 0F generation protocol SHA mismatch"
+)
+
+generation_protocol_document = json.loads(
+    generation_protocol_path.read_text(encoding="utf-8")
+)
+
+require(
+    generation_protocol_document["status"] == "PASS_FROZEN",
+    "Gate 0F protocol is not frozen"
+)
+require(
+    generation_protocol_document["logical_attempt_design"]
+    ["logical_slot_count"] == 800,
+    "Gate 0F logical attempt count mismatch"
+)
+require(
+    generation_protocol_document["execution_window"]["state"]
+    == "FROZEN_NOT_OPEN",
+    "generation window opened before authorization"
+)
+require(
+    generation_protocol_document["authorization"]
+    ["primary_generation_authorized"] is False,
+    "primary generation enabled before Gate 0 closes"
+)
+require(
+    generation_protocol_document["authorization"]
+    ["repair_implementation_allowed"] is False,
+    "repair enabled before Gate V"
+)
+require(
+    current["gate_0f_generation_protocol"] == "PASS",
+    "Gate 0F current status mismatch"
+)
+
 digest = hashlib.sha256(LOCK_PATH.read_bytes()).hexdigest()
 
 print("GATE0A_REPOSITORY_BOOTSTRAP=PASS")
@@ -171,4 +225,5 @@ print("LIBRARIES=8")
 print("NEW_GENERATION_ATTEMPTS=800")
 print("MODEL_QUALIFICATION=PASS")
 print("ANALYSIS_REGISTRATION=PASS")
+print("GENERATION_PROTOCOL=PASS")
 print(f"RESEARCH_LOCK_SHA256={digest}")

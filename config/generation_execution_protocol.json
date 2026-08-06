@@ -1,0 +1,220 @@
+{
+  "authority": {
+    "interpretation": "The proposal fixes the experiment and permits retries only for transport failure. Gate 0F supplies the missing operational constants without changing the 800-attempt design.",
+    "proposal_sections": [
+      "7.5 Fixed generation design and sampling-bias control",
+      "15. Pre-Experiment Registration Checklist"
+    ],
+    "proposal_sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21"
+  },
+  "authorization": {
+    "primary_generation_authorized": false,
+    "reason": "Gate 0 is still in progress and Gate 1 prompts/scenarios are not frozen.",
+    "repair_activation_gate": "Gate V",
+    "repair_implementation_allowed": false
+  },
+  "execution_window": {
+    "calendar_timestamp_null_reason": "No primary call is authorized. Actual timestamps are written only by the future execution controller.",
+    "calendar_timestamps": {
+      "closed_at_utc": null,
+      "opened_at_utc": null
+    },
+    "closed_at_utc_rule": "timestamp after all 800 logical slots have terminal records",
+    "no_second_window_without_amendment": true,
+    "opened_at_utc_rule": "timestamp immediately before logical slot 0001",
+    "opening_preconditions": [
+      "final Gate 0 manifest is PASS",
+      "Gate 1 specification foundation is PASS",
+      "system prompt and all 80 scenario bindings are frozen",
+      "both provider capabilities still match Gate 0D2",
+      "price-sheet snapshots and library source locks are archived",
+      "an explicit committed authorization record exists"
+    ],
+    "pause_intervals": "append-only UTC start/end/reason records",
+    "state": "FROZEN_NOT_OPEN",
+    "window_count": 1,
+    "window_id": "SVF-PRIMARY-800-V1"
+  },
+  "gate": "Gate 0F",
+  "logical_attempt_design": {
+    "attempts_per_model_library_scenario": 5,
+    "generation_never_continues_for_target_yield": true,
+    "libraries_in_frozen_order": [
+      "zlib",
+      "libpcap",
+      "curl",
+      "cJSON",
+      "libtiff",
+      "libvpx",
+      "c-ares",
+      "lcms"
+    ],
+    "logical_slot_count": 800,
+    "models": [
+      {
+        "documented_served_version": "DeepSeek-V4-Flash-0731",
+        "expected_response_model": "deepseek-v4-flash",
+        "label": "Model A",
+        "model_id": "deepseek-v4-flash",
+        "provider": "DeepSeek",
+        "thinking_mode": "disabled"
+      },
+      {
+        "expected_response_model_version": "gemini-3.1-flash-lite",
+        "label": "Model B",
+        "model_id": "gemini-3.1-flash-lite",
+        "provider": "Google Gemini Developer API",
+        "thinking_mode": "MINIMAL"
+      }
+    ],
+    "scenarios_per_library": 10,
+    "slot_denominator_never_expands": true,
+    "slot_order": {
+      "global_max_in_flight_requests": 1,
+      "nesting": [
+        "library frozen order",
+        "scenario S01 through S10",
+        "replicate R01 through R05",
+        "Model A then Model B"
+      ],
+      "order_change_allowed": false,
+      "type": "canonical_model-paired_sequential"
+    },
+    "slot_replacement_allowed": false
+  },
+  "pause_and_amendment_contract": {
+    "calls_after_pause_before_resolution": 0,
+    "immediate_pause_conditions": [
+      "returned model or served version differs from frozen target",
+      "non-thinking or minimum-thinking control is rejected",
+      "endpoint behavior materially changes",
+      "authentication, balance, permission, or rate-limit HTTP response",
+      "provider outage or repeated service HTTP errors",
+      "preservation or manifest write fails",
+      "request payload differs from frozen bytes"
+    ],
+    "post_hoc_parameter_change_allowed": false,
+    "resume_requirements": [
+      "root cause recorded",
+      "integrity of all prior records verified",
+      "capability requalification passes",
+      "preregistration amendment committed when required"
+    ],
+    "silent_model_substitution_allowed": false,
+    "triggering_slot_and_response_are_preserved": true
+  },
+  "preservation_contract": {
+    "api_keys_stored_printed_or_hashed": false,
+    "raw_response_retained_per_complete_call": true,
+    "request_payload_retained_secret_free": true,
+    "required_per_invocation_fields": [
+      "window_id",
+      "logical_slot_id",
+      "transport_invocation_number",
+      "provider",
+      "requested_model_id",
+      "returned_model_or_version",
+      "request_started_at_utc",
+      "request_finished_at_utc",
+      "request_parameters",
+      "latency_ms",
+      "HTTP_status_or_transport_failure",
+      "raw_response_path_or_null",
+      "raw_response_sha256_or_null",
+      "token_usage",
+      "cost_basis_and_estimate"
+    ],
+    "required_per_slot_postprocessing_fields": [
+      "terminal_status",
+      "extraction_status",
+      "compiler_command",
+      "compiler_version",
+      "compiler_exit_code",
+      "complete_log_path"
+    ],
+    "response_headers_retained_secret_redacted": true,
+    "sha256_for_every_retained_blob": true,
+    "transport_failure_record_retained_per_invocation": true,
+    "write_mode": "append-only with create-new semantics"
+  },
+  "quarantine_contract": {
+    "automated_preservation_and_build_allowed_after_authorization": true,
+    "held_out_release_condition": "proposal-defined analyzer/specification freeze",
+    "human_inspection_of_held_out_driver_content": false,
+    "repair_prompt_output_or_feedback_allowed": false
+  },
+  "request_contract": {
+    "maximum_output_tokens": 8192,
+    "payload_change_during_retry_allowed": false,
+    "prompt_exclusions": [
+      "protocol rules",
+      "defect examples",
+      "verifier output",
+      "manual labels",
+      "repair feedback"
+    ],
+    "scenario_manifest": "FROZEN_AT_GATE_1",
+    "seed_rule": "Record supplied seed when supported; otherwise record null and the provider default. Never substitute an unregistered seed.",
+    "stream": false,
+    "system_prompt": "FROZEN_AT_GATE_1",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "top_p_rule": "send where supported; otherwise record provider default"
+  },
+  "schema_version": "1.0.0",
+  "status": "PASS_FROZEN",
+  "terminal_status_contract": {
+    "compilation_denominator": "all 800 logical slots",
+    "exactly_one_terminal_status_per_logical_slot": true,
+    "failure_output_discard_allowed": false,
+    "statuses": [
+      "RESPONSE_RECEIVED",
+      "REFUSAL",
+      "TIMEOUT",
+      "API_ERROR",
+      "TRUNCATED_OUTPUT",
+      "MISSING_CODE",
+      "DUPLICATE_OUTPUT",
+      "EXTRACTION_FAILURE",
+      "NON_COMPILATION",
+      "TRANSPORT_FAILURE"
+    ]
+  },
+  "timeout_contract": {
+    "complete_response_deadline_seconds": 300,
+    "connect_timeout_seconds": 30,
+    "timeout_is_distinct_terminal_status": true
+  },
+  "transport_retry_policy": {
+    "all_invocations_retained": true,
+    "deterministic_backoff_seconds": [
+      5,
+      20
+    ],
+    "exhausted_retry_result": "TRANSPORT_FAILURE_TERMINAL",
+    "exhausted_slot_replaced": false,
+    "jitter_seconds": 0,
+    "maximum_retries_after_initial_invocation": 2,
+    "maximum_transport_invocations_per_logical_slot": 3,
+    "non_retryable_failures": [
+      "ANY_COMPLETE_HTTP_RESPONSE_INCLUDING_4XX_OR_5XX",
+      "PROVIDER_API_ERROR_BODY",
+      "REFUSAL_OR_SAFETY_BLOCK",
+      "TRUNCATED_OUTPUT",
+      "MISSING_CODE",
+      "DUPLICATE_OUTPUT",
+      "EXTRACTION_FAILURE",
+      "NON_COMPILATION"
+    ],
+    "retry_invocations_are_new_experimental_attempts": false,
+    "retry_scope": "same logical slot and byte-identical secret-free payload",
+    "retryable_failures": [
+      "DNS_RESOLUTION_FAILURE",
+      "TCP_CONNECT_FAILURE",
+      "TLS_HANDSHAKE_FAILURE",
+      "CONNECTION_RESET_BEFORE_COMPLETE_HTTP_RESPONSE",
+      "CONNECT_TIMEOUT",
+      "READ_TIMEOUT_BEFORE_COMPLETE_HTTP_RESPONSE"
+    ]
+  }
+}

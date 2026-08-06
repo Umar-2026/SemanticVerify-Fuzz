@@ -3,7 +3,7 @@
 - Repository logical path: `/openbayes/home/semanticverify-fuzz-research`
 - Repository physical path: `/output/semanticverify-fuzz-research`
 - Current stage: Stage A — verification
-- Current milestone: Gate 0E — statistical analysis and power registration complete
+- Current milestone: Gate 0F — generation-window and transport-retry protocol complete
 - Gate 0 overall: IN PROGRESS
 - Gate 0A repository bootstrap: PASS
 - Gate 0B environment qualification: PASS
@@ -11,6 +11,7 @@
 - Gate 0D1 official model documentation: PASS
 - Gate 0D2 live endpoint/capability qualification: PASS
 - Gate 0E statistical analysis and power registration: PASS
+- Gate 0F generation-window and transport-retry protocol: PASS
 - Gate 1: NOT STARTED
 - Gate 2: NOT STARTED
 - Gate 3: NOT STARTED
@@ -56,8 +57,7 @@ so no unsupported count is claimed.
 
 ## Remaining before Gate 0 closes
 
-1. Freeze the exact generation-window and retry protocol.
-2. Create and verify the final Gate 0 manifest.
+1. Create and verify the final Gate 0 manifest.
 
 No primary generation, driver inspection, or repair implementation is
 authorized.
