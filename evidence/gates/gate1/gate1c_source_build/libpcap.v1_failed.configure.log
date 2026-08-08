@@ -1,0 +1,153 @@
+-- The C compiler identification is Clang 14.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang-14 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Building 64-bit
+-- Checking C compiler flag -std=gnu99
+-- Performing Test std-gnu99
+-- Performing Test std-gnu99 - Success
+-- Use DYNAMIC runtime
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for bitypes.h
+-- Looking for bitypes.h - not found
+-- Looking for sys/ioccom.h
+-- Looking for sys/ioccom.h - not found
+-- Looking for sys/sockio.h
+-- Looking for sys/sockio.h - not found
+-- Looking for sys/select.h
+-- Looking for sys/select.h - found
+-- Looking for netpacket/packet.h
+-- Looking for netpacket/packet.h - found
+-- Looking for netinet/if_ether.h
+-- Looking for netinet/if_ether.h - found
+-- Performing Test HAVE___ATOMIC_LOAD_N
+-- Performing Test HAVE___ATOMIC_LOAD_N - Success
+-- Performing Test HAVE___ATOMIC_STORE_N
+-- Performing Test HAVE___ATOMIC_STORE_N - Success
+-- Looking for strerror_r
+-- Looking for strerror_r - found
+-- Performing Test HAVE_GNU_STRERROR_R
+-- Performing Test HAVE_GNU_STRERROR_R - Success
+-- Looking for vsnprintf
+-- Looking for vsnprintf - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for strlcpy
+-- Looking for strlcpy - not found
+-- Looking for strlcat
+-- Looking for strlcat - not found
+-- Looking for asprintf
+-- Looking for asprintf - found
+-- Looking for vasprintf
+-- Looking for vasprintf - found
+-- Looking for strtok_r
+-- Looking for strtok_r - found
+-- Looking for vsyslog
+-- Looking for vsyslog - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for putmsg
+-- Looking for putmsg - not found
+-- Looking for putmsg in str
+-- Looking for putmsg in str - not found
+-- Looking for getpass
+-- Looking for getpass - found
+-- Looking for getnetbyname_r
+-- Looking for getnetbyname_r - found
+-- Performing Test HAVE_LINUX_GETNETBYNAME_R
+-- Performing Test HAVE_LINUX_GETNETBYNAME_R - Success
+-- Looking for getprotobyname_r
+-- Looking for getprotobyname_r - found
+-- Performing Test HAVE_LINUX_GETPROTOBYNAME_R
+-- Performing Test HAVE_LINUX_GETPROTOBYNAME_R - Success
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Performing Test HAVE_STRUCT_SOCKADDR_SA_LEN
+-- Performing Test HAVE_STRUCT_SOCKADDR_SA_LEN - Failed
+-- Looking for ffs
+-- Looking for ffs - found
+-- Looking for ffs
+-- Looking for ffs - found
+-- Looking for ether_hostton
+-- Looking for ether_hostton - found
+-- Looking for ether_hostton
+-- Looking for ether_hostton - not found
+-- Looking for ether_hostton
+-- Looking for ether_hostton - found
+-- Looking for native LFS support
+-- Looking for native LFS support - found
+-- Found LFS: TRUE  
+-- Looking for native fseeko support
+-- Looking for native fseeko support - found
+-- Found FSEEKO: TRUE  
+-- Check size of time_t
+-- Check size of time_t - done
+-- 64-bit time_t
+-- Support IPv6
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Not enabling sanitizers
+-- Looking for include files sys/types.h, net/bpf.h
+-- Looking for include files sys/types.h, net/bpf.h - not found
+-- Looking for net/pfilt.h
+-- Looking for net/pfilt.h - not found
+-- Looking for net/enet.h
+-- Looking for net/enet.h - not found
+-- Looking for net/nit.h
+-- Looking for net/nit.h - not found
+-- Looking for sys/net/nit.h
+-- Looking for sys/net/nit.h - not found
+-- Looking for linux/socket.h
+-- Looking for linux/socket.h - found
+-- Looking for net/raw.h
+-- Looking for net/raw.h - not found
+-- Looking for sys/dlpi.h
+-- Looking for sys/dlpi.h - not found
+-- Looking for config/HaikuConfig.h
+-- Looking for config/HaikuConfig.h - not found
+-- Packet capture mechanism type: linux
+-- Performing Test HAVE_STRUCT_TPACKET_AUXDATA_TP_VLAN_TCI
+-- Performing Test HAVE_STRUCT_TPACKET_AUXDATA_TP_VLAN_TCI - Success
+-- Looking for getifaddrs
+-- Looking for getifaddrs - found
+-- Looking for include files sys/types.h, ifaddrs.h
+-- Looking for include files sys/types.h, ifaddrs.h - found
+-- Find-interfaces mechanism type: getad
+-- Looking for linux/net_tstamp.h
+-- Looking for linux/net_tstamp.h - found
+-- Performing Test PCAP_SUPPORT_NETFILTER
+-- Performing Test PCAP_SUPPORT_NETFILTER - Success
+-- Performing Test PCAP_SUPPORT_NETMAP
+-- Performing Test PCAP_SUPPORT_NETMAP - Failed
+-- Could NOT find DAG (missing: DAG_INCLUDE_DIR DAG_LIBRARY DAGCONF_LIBRARY) 
+-- Looking for msg.h
+-- Looking for msg.h - not found
+-- Could NOT find SNF (missing: SNF_INCLUDE_DIR SNF_LIBRARY) 
+-- Could NOT find AirPcap (missing: AirPcap_INCLUDE_DIR AirPcap_LIBRARY) 
+-- Could NOT find TC (missing: TC_INCLUDE_DIR TC_LIBRARY) 
+-- Checking C compiler flag -fvisibility=hidden
+-- Performing Test fvisibility-hidden
+-- Performing Test fvisibility-hidden - Success
+CMake Error at CMakeLists.txt:2921 (message):
+  Neither flex nor win_flex nor lex was found.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/openbayes/home/svf-gate1c-build-qualification-v1/build/libpcap/CMakeFiles/CMakeOutput.log".
+See also "/openbayes/home/svf-gate1c-build-qualification-v1/build/libpcap/CMakeFiles/CMakeError.log".

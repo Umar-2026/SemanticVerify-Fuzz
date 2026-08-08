@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "Gate 1C",
+  "status": "PASS",
+  "frozen_at_utc": "2026-08-08T12:32:06+00:00",
+  "lock_path": "config/library_source_build_lock.json",
+  "lock_sha256": "2be6bd713ce179bdc7f66e67ba1108f4bca5383372bbe653ac924cc290ab7f0e",
+  "library_count": 8,
+  "source_identity_pass": 8,
+  "build_qualification_pass": 8,
+  "build_qualification_fail": 0,
+  "final_build_set": "READY_TO_FREEZE",
+  "persistent_final_configure_logs": 8,
+  "persistent_final_build_logs": 8,
+  "persistent_build_metadata_files": 8,
+  "preserved_failed_configure_logs": 2,
+  "additional_exact_build_packages": {
+    "flex": "2.6.4-8build2",
+    "bison": "2:3.8.2+dfsg-1build1",
+    "nasm": "2.15.05-1"
+  },
+  "library_specific_protocol_rules_created": false,
+  "scenario_bindings_created": 0,
+  "primary_generation_authorized": false,
+  "held_out_driver_inspection_allowed": false,
+  "analyzer_implementation_authorized": false,
+  "repair_implementation_allowed": false
+}

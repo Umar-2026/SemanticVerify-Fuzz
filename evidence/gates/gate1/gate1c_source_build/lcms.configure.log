@@ -1,0 +1,36 @@
+-- The C compiler identification is Clang 14.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/clang-14 - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Searching 16 bit integer - Using unsigned short
+-- Check if the system is big endian - little endian
+-- Looking for gmtime_r
+-- Looking for gmtime_r - found
+-- Performing Test LCMS2_HAVE_GMTIME_S
+-- Performing Test LCMS2_HAVE_GMTIME_S - Failed
+-- Performing Test LCMS2_HAVE_FUNC_ATTRIBUTE_VISIBILITY
+-- Performing Test LCMS2_HAVE_FUNC_ATTRIBUTE_VISIBILITY - Success
+-- Performing Test LCMS2_HAVE_FLAG_FVISIBILITY_HIDDEN
+-- Performing Test LCMS2_HAVE_FLAG_FVISIBILITY_HIDDEN - Success
+-- Performing Test LCMS2_COMPILER_SUPPORTS_SSE2
+-- Performing Test LCMS2_COMPILER_SUPPORTS_SSE2 - Success
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /openbayes/home/svf-gate1c-build-qualification-v3/build/lcms

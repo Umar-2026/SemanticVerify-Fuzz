@@ -61,9 +61,20 @@ so no unsupported count is claimed.
 ## Next authorized work
 
 1. Freeze the system prompt and all 80 exact library-specific scenario bindings.
-2. Freeze eight library source/build locks and provider price-sheet snapshots.
+2. Freeze provider price-sheet snapshots.
 3. Record the required independent-annotation role roster before annotation begins.
 4. Close Gate 1 with a verified manifest; generation still requires later explicit authorization.
 
 Primary generation and held-out driver inspection remain unauthorized. Repair
 implementation remains prohibited until Gate V.
+
+
+## Gate 1C source/build status
+
+Gate 1C source/build freeze: **PASS**.
+
+Eight of eight pinned libraries have verified source identity and a
+successful frozen build recipe. Final curl and lcms qualification uses the
+dependency-stable V3 recipes. Primary generation remains unauthorized.
+Analyzer implementation remains unauthorized. Repair remains prohibited
+until Gate V.

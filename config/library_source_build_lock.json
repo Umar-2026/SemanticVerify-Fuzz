@@ -1,0 +1,538 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "Gate 1C",
+  "status": "PASS_FROZEN",
+  "title": "Eight-Library Exact Source and Build Qualification Lock",
+  "frozen_at_utc": "2026-08-08T12:32:06+00:00",
+  "authority": {
+    "proposal_path": "provenance/proposal/SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+    "proposal_sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21",
+    "gate1a_contract_sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf",
+    "gate1b_protocol_sha256": "38a1f721320733f86bc633172a9848085e659e1f41c35ee2ffbb8fc86a77ca63",
+    "toolchain_lock_path": "config/toolchain_lock.json",
+    "toolchain_lock_sha256": "11493f6edf40b9a2a333dd5cdbf60dbeb0fe2cea866385c06a39ebc48f8cf1be"
+  },
+  "scope": {
+    "library_count": 8,
+    "build_qualified_count": 8,
+    "source_identity_verified_count": 8,
+    "source_submodules_required": false,
+    "generated_driver_content_inspected": false,
+    "primary_generation_performed": false,
+    "analyzer_implementation_performed": false,
+    "repair_implementation_performed": false
+  },
+  "source_snapshot_hash_definition": {
+    "field": "commit_archive_sha256",
+    "method": "SHA-256 of deterministic git archive of the pinned commit using the qualification prefix <library>-<commit>/",
+    "official_release_tarball_hash": false
+  },
+  "build_environment": {
+    "operating_system": "Ubuntu 22.04.5 LTS",
+    "architecture": "x86_64",
+    "clang": "14.0.0",
+    "cmake": "3.19.3",
+    "ninja": "1.10.1",
+    "make_package_version": "4.3-4.1build1",
+    "additional_exact_packages": {
+      "flex": "2.6.4-8build2",
+      "bison": "2:3.8.2+dfsg-1build1",
+      "nasm": "2.15.05-1"
+    },
+    "parallel_build_jobs": 2,
+    "static_library_qualification": true
+  },
+  "qualification_history": {
+    "initial_v1": {
+      "result": "6_OF_8_PASS",
+      "libpcap_failure": "Missing required Flex/Lex generator.",
+      "libvpx_failure": "Unqualified --disable-asm option rejected by pinned source."
+    },
+    "corrective_v2": {
+      "result": "LIBPCAP_AND_LIBVPX_PASS",
+      "changes": [
+        "Install and pin flex 2.6.4-8build2.",
+        "Install and pin bison 2:3.8.2+dfsg-1build1.",
+        "Install and pin nasm 2.15.05-1.",
+        "Use libvpx --as=nasm instead of unsupported --disable-asm."
+      ]
+    },
+    "dependency_stable_v3": {
+      "result": "CURL_AND_LCMS_PASS",
+      "changes": [
+        "curl optional compression/network dependency AUTO settings replaced by explicit OFF values.",
+        "lcms optional TIFF/JPEG/zlib integrations explicitly disabled."
+      ]
+    },
+    "final_result": "8_OF_8_PASS",
+    "failed_attempts_preserved": {
+      "libpcap_v1_path": "evidence/gates/gate1/gate1c_source_build/libpcap.v1_failed.configure.log",
+      "libpcap_v1_sha256": "2c0d386a41dc80152121757421a54b5b6a087ebea25a2cf708a63e37d2be6902",
+      "libvpx_v1_path": "evidence/gates/gate1/gate1c_source_build/libvpx.v1_failed.configure.log",
+      "libvpx_v1_sha256": "a7630d8e7d1f703650a65d63bb8d34616e7d3f104b0c58fb54642add3f980735"
+    }
+  },
+  "libraries": [
+    {
+      "name": "zlib",
+      "role": "development",
+      "source": {
+        "remote": "https://github.com/madler/zlib.git",
+        "tag": "v1.3.2",
+        "tag_type": "annotated",
+        "tag_object": "216c70c020aa53f0c40920d155f808b6b59c9acb",
+        "peeled_commit": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "tree": "79b5a06f88838dd54f90f821e8650254abfedb7e",
+        "commit_archive_sha256": "febf9d99c459f379f53467ec0ada70d8da99b3f49ba9dbc7c84b21592f6ce17e"
+      },
+      "build": {
+        "qualification_workspace": "V1",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DZLIB_BUILD_SHARED=OFF",
+          "-DZLIB_BUILD_STATIC=ON",
+          "-DZLIB_BUILD_TESTING=OFF",
+          "-DZLIB_INSTALL=OFF"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "No optional external dependency required.",
+        "artifact_sha256": "35a0f48b95d3ba921e64dfddcf17ea00a54795963956b8b1d07deb68422b2e6a",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/zlib.configure.log",
+          "configure_log_sha256": "c1a31fe03efd0ceac3b97cf32301db1154ac6e6c4bc0487d24bfc8a02546835f",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/zlib.build.log",
+          "build_log_sha256": "300a70bd2246dc75902553efd08ee974e8a3f68750d524bfcb542b12a3fc4301",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/zlib.CMakeCache.txt",
+          "build_metadata_sha256": "0eabd561df3a7e17fe5b626a949d79d6662b680839b560cd2cd39a81026a342e"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "libpcap",
+      "role": "validation",
+      "source": {
+        "remote": "https://github.com/the-tcpdump-group/libpcap.git",
+        "tag": "libpcap-1.10.6",
+        "tag_type": "annotated",
+        "tag_object": "56b49bd36ca00c2844927581219f84272f614a5c",
+        "peeled_commit": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "tree": "6e91ac97f337382c213e1c6481b63813674bcad4",
+        "commit_archive_sha256": "1fbdf1855ddeeb7cb8dd5274c067522bd75f0d9a8dfcbe7639a50c5ecb52c45a"
+      },
+      "build": {
+        "qualification_workspace": "V2",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_WITH_LIBNL=OFF",
+          "-DDISABLE_BLUETOOTH=ON",
+          "-DDISABLE_DBUS=ON",
+          "-DDISABLE_LINUX_USBMON=ON",
+          "-DDISABLE_RDMA=ON"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "Flex and Bison pinned; optional capture backends disabled.",
+        "artifact_sha256": "06db8932a5d0b23e50a01902a3a320d9183c6d638468149f4861f7969dcc68bd",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/libpcap.configure.log",
+          "configure_log_sha256": "e98f65c4cb9e2b3d1e36c9bad757fbdd42223c7a4ca635a403fb1913f8db2e6f",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/libpcap.build.log",
+          "build_log_sha256": "47a0c831ff8c20a358467079f6a426b5b6b152a0521506f8a84e37b462bf6931",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/libpcap.CMakeCache.txt",
+          "build_metadata_sha256": "1f288609f9476f4d253de23b6fc21c401ebae370e2c989f9923622e98ba7cf3e"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "curl",
+      "role": "held-out",
+      "source": {
+        "remote": "https://github.com/curl/curl.git",
+        "tag": "curl-8_21_0",
+        "tag_type": "annotated",
+        "tag_object": "3f00a2f6fa97f7721b65606954aac979dcb6caac",
+        "peeled_commit": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+        "tree": "e23d273aeb073c04aa5b073b35c9fde16979c896",
+        "commit_archive_sha256": "d69307e6f6207ed87c5c42905fa83fc8186c44279a3f34cf892c6a8157271723"
+      },
+      "build": {
+        "qualification_workspace": "V3",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_STATIC_LIBS=ON",
+          "-DBUILD_CURL_EXE=OFF",
+          "-DBUILD_EXAMPLES=OFF",
+          "-DBUILD_LIBCURL_DOCS=OFF",
+          "-DBUILD_MISC_DOCS=OFF",
+          "-DBUILD_TESTING=OFF",
+          "-DCURL_ENABLE_SSL=OFF",
+          "-DCURL_USE_LIBPSL=OFF",
+          "-DCURL_USE_LIBSSH2=OFF",
+          "-DUSE_NGHTTP2=OFF",
+          "-DCURL_ZLIB=OFF",
+          "-DCURL_ZSTD=OFF",
+          "-DCURL_BROTLI=OFF"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "Final V3 dependency-stable build disables TLS, PSL, SSH2, NGHTTP2, zlib, zstd, and brotli optional integrations.",
+        "artifact_sha256": "126b13dbe516d5686c6d4ef054ed4aa37cb9a504aaea9dfff32cdbc44d429116",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/curl.configure.log",
+          "configure_log_sha256": "de98745b677f75dbde53627634174d1b9432c751af46eb2be57b0f62e3d1d4ce",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/curl.build.log",
+          "build_log_sha256": "015913c7d6c8952f2156a90127f23128f58c49844c813fdaab80d639eead4e5a",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/curl.CMakeCache.txt",
+          "build_metadata_sha256": "acd7ee8f20123034d759178c5c642ad6acd8315946f58cb287d090c83be8ba41"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "cJSON",
+      "role": "held-out",
+      "source": {
+        "remote": "https://github.com/DaveGamble/cJSON.git",
+        "tag": "v1.7.19",
+        "tag_type": "lightweight",
+        "tag_object": "c859b25da02955fef659d658b8f324b5cde87be3",
+        "peeled_commit": "c859b25da02955fef659d658b8f324b5cde87be3",
+        "tree": "9c7b88a72ea9f3658c7f08c26b5cb09470f51761",
+        "commit_archive_sha256": "9d30fc24ed6290447f2f852152c324deb0044f59479afed005357f3d5ea0f03a"
+      },
+      "build": {
+        "qualification_workspace": "V1",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DENABLE_CJSON_TEST=OFF",
+          "-DENABLE_SANITIZERS=OFF"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "Static core-library qualification.",
+        "artifact_sha256": "875e7d573bb4abe736b5ce7a3a95b7422891ce279e835d75bcfef3a675618470",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/cJSON.configure.log",
+          "configure_log_sha256": "c96c4d54fc6dd3bf6d78c4fb118bda7a711c1b0c61220d1e0ec379dff31195c6",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/cJSON.build.log",
+          "build_log_sha256": "2eb63e4a8ebd67d113dfc7136603adea36ab5ea38780d3b1df3690a76e00b495",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/cJSON.CMakeCache.txt",
+          "build_metadata_sha256": "16914392db6d0f0fc67ba7a780207abdd41c1748b488dd90697560da05f959ed"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "libtiff",
+      "role": "held-out",
+      "source": {
+        "remote": "https://gitlab.com/libtiff/libtiff.git",
+        "tag": "v4.7.2",
+        "tag_type": "annotated",
+        "tag_object": "f1cabd542a228e0e8a8ea1f92e825b0063de86fe",
+        "peeled_commit": "d01a94be176f5f6a87f7ee1c0b32e65416aa2b4d",
+        "tree": "383ac4e604330018281e552e169d91a5f3ed25a1",
+        "commit_archive_sha256": "c040cf975f30f74fa586700ce3b5191bc6543b696ed2c99f62c53399960a4ea2"
+      },
+      "build": {
+        "qualification_workspace": "V1",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-Dtiff-tools=OFF",
+          "-Dtiff-tests=OFF",
+          "-Dtiff-docs=OFF",
+          "-Djbig=OFF",
+          "-Djpeg=OFF",
+          "-Dlerc=OFF",
+          "-Dlibdeflate=OFF",
+          "-Dlzma=OFF",
+          "-Dwebp=OFF",
+          "-Dzlib=OFF",
+          "-Dzstd=OFF"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "Optional codecs and external compression integrations disabled.",
+        "artifact_sha256": "c5a4841f14d72041fe67e22b98e0179d1a52173e3bd03e183bdf0d7e526ba4ef",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/libtiff.configure.log",
+          "configure_log_sha256": "903f436e7a18869daf95a81a8a193d6c581199b1653ad764812b0e843ea5ccbb",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/libtiff.build.log",
+          "build_log_sha256": "94c1363f0b616d91117dba077c0235da7f5ea96e3ca4a354935a9e357a26151a",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/libtiff.CMakeCache.txt",
+          "build_metadata_sha256": "cf9c44821861d709591e70de510433ad06524e99d2c72d90569e639763b7d991"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "libvpx",
+      "role": "held-out",
+      "source": {
+        "remote": "https://github.com/webmproject/libvpx.git",
+        "tag": "v1.16.0",
+        "tag_type": "annotated",
+        "tag_object": "04def0a07f8bfa95785e30e6db95036cda17f9b2",
+        "peeled_commit": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+        "tree": "5e48c010122b13fe684e4419d45feee3157d7387",
+        "commit_archive_sha256": "703d3d4a2b2a70b82e3e4a44107f21e621435e61f5f25999b5d392273abac27c"
+      },
+      "build": {
+        "qualification_workspace": "V2",
+        "build_system": "libvpx configure+GNU Make",
+        "configure_environment": {
+          "CC": "/usr/bin/clang-14",
+          "CXX": "/usr/bin/clang++-14",
+          "AR": "/usr/bin/llvm-ar-14",
+          "RANLIB": "/usr/bin/llvm-ranlib-14"
+        },
+        "configure_command": [
+          "<SOURCE>/configure",
+          "--target=x86_64-linux-gcc",
+          "--as=nasm",
+          "--disable-examples",
+          "--disable-tools",
+          "--disable-docs",
+          "--disable-unit-tests"
+        ],
+        "build_command": [
+          "make",
+          "-C",
+          "<BUILD>",
+          "-j2"
+        ],
+        "dependency_policy": "NASM explicitly pinned; assembler auto-selection prohibited.",
+        "artifact_sha256": "dcc6014ef56ccbfb7c371e02460ac9b046c542e215a6274d8aebdc4b3ec7ac8a",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/libvpx.configure.log",
+          "configure_log_sha256": "8e9c60d07ec28666c96f89c8980136ef9463e15bb40f2dc80a05a9d16e6bb681",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/libvpx.build.log",
+          "build_log_sha256": "9bd88d60d0f0dfbd75d37358cfc3ae7fc69d7dd81186f233dfbdb8fcf9f8a7d3",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/libvpx.config.log",
+          "build_metadata_sha256": "93c276860fafce38eaad5d524eb3fa58d129098e66836aed900ce5452c29ec30"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "c-ares",
+      "role": "held-out",
+      "source": {
+        "remote": "https://github.com/c-ares/c-ares.git",
+        "tag": "v1.34.8",
+        "tag_type": "annotated",
+        "tag_object": "63a4c4c71b86e448bcc1c55287c35aa4aa0f4246",
+        "peeled_commit": "c7a3138dcfe3bb0eaaf10c0c24c36dc66dc790ab",
+        "tree": "14315b31d0b2cf5cfde9f0b1544176221393295b",
+        "commit_archive_sha256": "5d61068d46246a6c9d3ae7c0eee580fde06fe30298df6a5b4cdcfbb978e15e31"
+      },
+      "build": {
+        "qualification_workspace": "V1",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_CXX_COMPILER=/usr/bin/clang++-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DCARES_SHARED=OFF",
+          "-DCARES_STATIC=ON",
+          "-DCARES_BUILD_TESTS=OFF",
+          "-DCARES_BUILD_TOOLS=OFF",
+          "-DCARES_BUILD_CONTAINER_TESTS=OFF"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "Static core-library qualification.",
+        "artifact_sha256": "cf2557f712a041dbd0983e2ccd80b266aede978a6fc6f078a9e57089f42262b7",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/c-ares.configure.log",
+          "configure_log_sha256": "cb1e7d063e335c777cd9aec3f8c2be251cc3db3f861a48e1992296db2f63ee4f",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/c-ares.build.log",
+          "build_log_sha256": "65623496c5173ea16ad0086b24600f2f9adb8a162dae4795c115b140dafefb36",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/c-ares.CMakeCache.txt",
+          "build_metadata_sha256": "0ebba019237e42f350cf95fdcf855daf40f0a97205ec82aa65e4c3b52dfe0613"
+        },
+        "status": "PASS"
+      }
+    },
+    {
+      "name": "lcms",
+      "role": "held-out",
+      "source": {
+        "remote": "https://github.com/mm2/Little-CMS.git",
+        "tag": "lcms2.19.1",
+        "tag_type": "lightweight",
+        "tag_object": "21c582a594fe5279f90c0b93437c398f93bf62b0",
+        "peeled_commit": "21c582a594fe5279f90c0b93437c398f93bf62b0",
+        "tree": "11fed2281a421dba849b595357f92466363f1190",
+        "commit_archive_sha256": "a1f057b15c11cbcacf473ae7a30ebd7d81bccfa8e1f1a88fa7cde893e73fc651"
+      },
+      "build": {
+        "qualification_workspace": "V3",
+        "build_system": "CMake+Ninja",
+        "configure_environment": {},
+        "configure_command": [
+          "cmake",
+          "-S",
+          "<SOURCE>",
+          "-B",
+          "<BUILD>",
+          "-G",
+          "Ninja",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_COMPILER=/usr/bin/clang-14",
+          "-DCMAKE_AR=/usr/bin/llvm-ar-14",
+          "-DCMAKE_RANLIB=/usr/bin/llvm-ranlib-14",
+          "-DLCMS2_BUILD_SHARED=OFF",
+          "-DLCMS2_BUILD_STATIC=ON",
+          "-DLCMS2_BUILD_TESTS=OFF",
+          "-DLCMS2_BUILD_TOOLS=OFF",
+          "-DLCMS2_BUILD_JPGICC=OFF",
+          "-DLCMS2_BUILD_TIFICC=OFF",
+          "-DLCMS2_BUILD_TIFDIFF=OFF",
+          "-DLCMS2_WITH_JPEG=OFF",
+          "-DLCMS2_WITH_ZLIB=OFF",
+          "-DLCMS2_WITH_TIFF=OFF"
+        ],
+        "build_command": [
+          "cmake",
+          "--build",
+          "<BUILD>",
+          "--parallel",
+          "2"
+        ],
+        "dependency_policy": "Final V3 dependency-stable build disables JPEG, TIFF and zlib.",
+        "artifact_sha256": "1f9b60abf3abe289fd169aa891db8149c98eb4c213dd7c9a7aef08d9b2ba9e3e",
+        "persistent_evidence": {
+          "configure_log_path": "evidence/gates/gate1/gate1c_source_build/lcms.configure.log",
+          "configure_log_sha256": "69c38a0953dc08c4bc7883b61bb69be73720bf38a3fece70fefa17cb74cd8126",
+          "build_log_path": "evidence/gates/gate1/gate1c_source_build/lcms.build.log",
+          "build_log_sha256": "2240440ce69ad1553b1f40ddd6a89090dcb127ce62c33d7dcc5e114ebc16aed7",
+          "build_metadata_path": "evidence/gates/gate1/gate1c_source_build/lcms.CMakeCache.txt",
+          "build_metadata_sha256": "7a636bd303caafa26d7b079f0651d361bd3c34f1f532ea9dbf7e0879768a71b3"
+        },
+        "status": "PASS"
+      }
+    }
+  ],
+  "stage_boundaries": {
+    "current_stage": "Stage A - verification",
+    "library_specific_protocol_rules_created": false,
+    "scenario_bindings_created": 0,
+    "primary_generation_authorized": false,
+    "held_out_driver_inspection_allowed": false,
+    "analyzer_implementation_authorized_by_gate1c": false,
+    "repair_implementation_allowed": false,
+    "repair_activation_gate": "Gate V"
+  }
+}

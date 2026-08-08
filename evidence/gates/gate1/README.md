@@ -22,3 +22,16 @@ Pending:
 Library-specific protocol rules begin with zlib at Gate 2. Six held-out protocol
 files and scenarios must be frozen before their generated drivers are opened or
 annotated.
+
+
+## Gate 1C exact source/build freeze
+
+Status: **PASS**
+
+All eight libraries have exact source identities and qualified reproducible
+build recipes frozen in `config/library_source_build_lock.json`. Final qualification is 8/8 PASS.
+Qualification logs and build metadata are persisted under
+`evidence/gates/gate1/gate1c_source_build/`.
+
+This gate does not authorize primary generation, held-out driver inspection,
+analyzer implementation, or repair.

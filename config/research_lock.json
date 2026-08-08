@@ -63,7 +63,8 @@
     "gate_v": "NOT_STARTED",
     "milestone": "Gate 1B sampling, blind annotation, adjudication, and exposure quarantine protocol complete; Gate 1 remains in progress",
     "gate_1a_obligation_contract": "PASS",
-    "gate_1b_sampling_annotation_protocol": "PASS"
+    "gate_1b_sampling_annotation_protocol": "PASS",
+    "gate_1c_source_build_lock": "PASS"
   },
   "defect_taxonomy": {
     "D1": "Use before successful initialization",
@@ -384,6 +385,21 @@
       "sampling_seed": 2026080603,
       "post_hoc_sample_expansion": false,
       "role_roster_required_before_annotation": true
+    },
+    "gate1c_source_build_lock": {
+      "status": "PASS",
+      "lock_path": "config/library_source_build_lock.json",
+      "lock_sha256": "2be6bd713ce179bdc7f66e67ba1108f4bca5383372bbe653ac924cc290ab7f0e",
+      "report_path": "evidence/gates/gate1/gate1c_source_build_lock.json",
+      "report_sha256": "ec131711d80e0ae9a7a5100c765b55fd19f09e2037e6938e9812ed6dafd0c8ab",
+      "library_count": 8,
+      "source_identity_pass": 8,
+      "build_qualification_pass": 8,
+      "additional_exact_build_packages": {
+        "flex": "2.6.4-8build2",
+        "bison": "2:3.8.2+dfsg-1build1",
+        "nasm": "2.15.05-1"
+      }
     }
   }
 }

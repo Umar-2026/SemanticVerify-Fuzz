@@ -1,0 +1,24 @@
+[1/24] Generating scanner.c, scanner.h
+[2/24] Generating grammar.c, grammar.h
+[3/24] Building C object CMakeFiles/pcap_static.dir/bpf_dump.c.o
+[4/24] Building C object CMakeFiles/pcap_static.dir/bpf_filter.c.o
+[5/24] Building C object CMakeFiles/pcap_static.dir/bpf_image.c.o
+[6/24] Building C object CMakeFiles/pcap_static.dir/etherent.c.o
+[7/24] Building C object CMakeFiles/pcap_static.dir/fmtutils.c.o
+[8/24] Building C object CMakeFiles/pcap_static.dir/nametoaddr.c.o
+[9/24] Building C object CMakeFiles/pcap_static.dir/optimize.c.o
+[10/24] Building C object CMakeFiles/pcap_static.dir/pcap-common.c.o
+[11/24] Building C object CMakeFiles/pcap_static.dir/pcap-util.c.o
+[12/24] Building C object CMakeFiles/pcap_static.dir/pcap.c.o
+[13/24] Building C object CMakeFiles/pcap_static.dir/savefile.c.o
+[14/24] Building C object CMakeFiles/pcap_static.dir/sf-pcapng.c.o
+[15/24] Building C object CMakeFiles/pcap_static.dir/gencode.c.o
+[16/24] Building C object CMakeFiles/pcap_static.dir/sf-pcap.c.o
+[17/24] Building C object CMakeFiles/pcap_static.dir/missing/strlcat.c.o
+[18/24] Building C object CMakeFiles/pcap_static.dir/missing/strlcpy.c.o
+[19/24] Building C object CMakeFiles/pcap_static.dir/fad-getad.c.o
+[20/24] Building C object CMakeFiles/pcap_static.dir/pcap-netfilter-linux.c.o
+[21/24] Building C object CMakeFiles/pcap_static.dir/pcap-linux.c.o
+[22/24] Building C object CMakeFiles/pcap_static.dir/grammar.c.o
+[23/24] Building C object CMakeFiles/pcap_static.dir/scanner.c.o
+[24/24] Linking C static library libpcap.a
