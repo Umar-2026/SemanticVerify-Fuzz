@@ -1,0 +1,20 @@
+{
+  "api_secret_values_hashed": false,
+  "api_secret_values_printed": false,
+  "api_secret_values_stored": false,
+  "attempt_id": "SVF-PRIMARY-PROVIDER-REQUALIFICATION-V1",
+  "authorization_ready_freeze_commit": "f6ff09b6874520a4301c2456411a62030881329a",
+  "authorization_ready_freeze_tree": "bab2c15f5e955a3e9700a092390feb09b4482408",
+  "authorization_record_present": false,
+  "generation_window_open": false,
+  "performed_at_utc": "2026-08-09T15:31:31+00:00",
+  "primary_generation_request": false,
+  "provider_call_policy": {
+    "application_retries": 0,
+    "deepseek_post_invocations": 1,
+    "gemini_post_invocations": 1,
+    "model_list_calls": 0,
+    "redirect_following": false
+  },
+  "status": "STARTED"
+}

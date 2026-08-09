@@ -1,0 +1,110 @@
+{
+  "authorization_ready_freeze": {
+    "commit": "f6ff09b6874520a4301c2456411a62030881329a",
+    "manifest_path": "evidence/generation_opening/authorization_ready_freeze_v1/authorization_ready_freeze_manifest.v1.json",
+    "manifest_sha256": "4bd7824d0effc6a7c9a28f8745660f094d7f91d2da0c40185a9ae3d04a8d5311",
+    "package_path": "evidence/generation_opening/authorization_ready_freeze_v1/authorization_ready_freeze_package.v1.SHA256SUMS",
+    "package_sha256": "2223dce49b609e963782eaa2fefdf8e35668924ea66fde950999856e109a0908",
+    "tree": "bab2c15f5e955a3e9700a092390feb09b4482408"
+  },
+  "call_policy": {
+    "application_retries": 0,
+    "deepseek_post_invocations_attempted": 1,
+    "gemini_post_invocations_attempted": 1,
+    "model_list_calls": 0,
+    "redirect_following": false
+  },
+  "deepseek": {
+    "complete_http_response": true,
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "finish_reason": "stop",
+    "http_status": 200,
+    "probe_exact_match": true,
+    "raw_response_path": "evidence/generation_opening/provider_requalification_v1/deepseek.response.raw.json",
+    "raw_response_sha256": "8ddd7e3b4bc6d230f54012f96e04c02a2abba56e8f11df1c92c50243bf4bb038",
+    "redacted_headers_path": "evidence/generation_opening/provider_requalification_v1/deepseek.response.headers.redacted.json",
+    "redacted_headers_sha256": "6bcfa2bb3be4be5edbbd488eaa627f3ce248e59499ce964a9d9b40690eaae095",
+    "request_path": "evidence/generation_opening/provider_requalification_v1/deepseek.request.secret-free.json",
+    "request_sha256": "592a18bec9d80d555ca24305f3616f7462b53412cf575b8542483f1a07bf87c0",
+    "requested_model_id": "deepseek-v4-flash",
+    "response_text_chars": 13,
+    "response_text_sha256": "a0d2974431d48323a535091d972c5332b49b3780dca7b3d05e57cb832f75ca83",
+    "retry_performed": false,
+    "returned_model": "deepseek-v4-flash",
+    "status": "PASS",
+    "thinking_mode": "disabled",
+    "transport_classification": null,
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 37,
+      "prompt_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 42
+    }
+  },
+  "gemini": {
+    "complete_http_response": true,
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+    "finish_reason": "STOP",
+    "http_status": 200,
+    "probe_exact_match": true,
+    "raw_response_path": "evidence/generation_opening/provider_requalification_v1/gemini.response.raw.json",
+    "raw_response_sha256": "58b89e71c3213917966569758c7a48c2365aa53e781dee5d2642947ef8e38b97",
+    "redacted_headers_path": "evidence/generation_opening/provider_requalification_v1/gemini.response.headers.redacted.json",
+    "redacted_headers_sha256": "e57fc2fed96f2f9cebc96443fb3cf48cfba19b0341f3ad21b0fca9b3d0e852b6",
+    "request_path": "evidence/generation_opening/provider_requalification_v1/gemini.request.secret-free.json",
+    "request_sha256": "f53a36f62428b7fcecceccd30fbf6ec0086684f7c9f5a6a4518bb277bd2a8609",
+    "requested_model_id": "gemini-3.1-flash-lite",
+    "response_text_chars": 13,
+    "response_text_sha256": "a0d2974431d48323a535091d972c5332b49b3780dca7b3d05e57cb832f75ca83",
+    "retry_performed": false,
+    "returned_model_version": "gemini-3.1-flash-lite",
+    "status": "PASS",
+    "thinking_level": "MINIMAL",
+    "transport_classification": null,
+    "usage": {
+      "candidatesTokenCount": 5,
+      "promptTokenCount": 33,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 33
+        }
+      ],
+      "serviceTier": "standard",
+      "totalTokenCount": 38
+    }
+  },
+  "model_targets": {
+    "path": "config/model_targets.json",
+    "sha256": "c6171d0f398c422cfcb056ec1293a42c43de831e12320b28cb1762660fba1e38"
+  },
+  "performed_at_utc": "2026-08-09T15:31:31+00:00",
+  "report_id": "SVF-PRIMARY-PROVIDER-REQUALIFICATION-V1",
+  "schema_version": 1,
+  "secret_handling": {
+    "environment_names": [
+      "DEEPSEEK_API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "request_headers_persisted": false,
+    "values_hashed": false,
+    "values_printed": false,
+    "values_stored": false
+  },
+  "separation": {
+    "analyzer_implementation_or_execution": false,
+    "authorization_record_created": false,
+    "generated_driver_inspection": false,
+    "generation_window_opened": false,
+    "linked_generated_driver_execution": false,
+    "primary_generation_authorized": false,
+    "primary_generation_performed": false,
+    "primary_generation_prompt_used": false,
+    "repair_implementation_or_execution": false
+  },
+  "status": "PASS"
+}
