@@ -1,0 +1,202 @@
+{
+  "analyzer_implementation_or_execution": false,
+  "authorization": {
+    "generation_window_state": "FROZEN_NOT_OPEN",
+    "primary_generation_authorized": false
+  },
+  "controller_interface": {
+    "path": "config/primary_controller_interface.v1.json",
+    "sha256": "93cdbaec2e9d18886c635ccccaaa42588f330dee7c756970f155d6b63318efcf"
+  },
+  "controller_script": {
+    "path": "scripts/primary_controller_v1.py",
+    "sha256": "9d5645861ba741bb33f1105610bc3a808673505db9ad6963d481fa0c7f269df4"
+  },
+  "failure_count": 0,
+  "failures": [],
+  "generated_driver_inspection": false,
+  "interface_verifier": {
+    "path": "scripts/verify_primary_controller_interface_v1.py",
+    "sha256": "3ebb95eb7a13f71e20f106cef5f0165621b3a937bd6227a1d6b4287c5f5fefdc"
+  },
+  "linked_driver_execution": false,
+  "live_provider_calls": 0,
+  "parser_results": {
+    "complete_http_500": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "API_ERROR"
+    },
+    "deepseek_length": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "TRUNCATED_OUTPUT"
+    },
+    "deepseek_missing_choice": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "EXTRACTION_FAILURE"
+    },
+    "deepseek_model_drift": {
+      "kind": "PAUSE_REQUIRED",
+      "model_text": null,
+      "pause_reason": "RETURNED_MODEL_DRIFT",
+      "terminal_status": null
+    },
+    "deepseek_refusal": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "REFUSAL"
+    },
+    "deepseek_success": {
+      "kind": "MODEL_TEXT",
+      "model_text": "int synthetic_ds_success;\n",
+      "pause_reason": null,
+      "terminal_status": null
+    },
+    "gemini_max_tokens": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "TRUNCATED_OUTPUT"
+    },
+    "gemini_missing_candidate": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "EXTRACTION_FAILURE"
+    },
+    "gemini_model_drift": {
+      "kind": "PAUSE_REQUIRED",
+      "model_text": null,
+      "pause_reason": "RETURNED_MODEL_VERSION_DRIFT",
+      "terminal_status": null
+    },
+    "gemini_prompt_block": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "REFUSAL"
+    },
+    "gemini_success": {
+      "kind": "MODEL_TEXT",
+      "model_text": "alphabeta",
+      "pause_reason": null,
+      "terminal_status": null
+    },
+    "malformed_json": {
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "EXTRACTION_FAILURE"
+    }
+  },
+  "primary_generation_performed": false,
+  "repair_implementation_or_execution": false,
+  "report_id": "SVF-PRIMARY-CONTROLLER-PREFREEZE-DRYRUN-V1",
+  "request_plan": {
+    "path": "config/generation/primary_request_plan.800.v1.json",
+    "sha256": "c30e2c64b3d75fe0f3a7fead7c8a0cf297c949c0a24de124a57f77b9f0de6509"
+  },
+  "request_validation": {
+    "bad_body_hash_count": 0,
+    "bad_slot_identity_count": 0,
+    "request_count": 800
+  },
+  "secret_environment_values_read": false,
+  "status": "PASS",
+  "storage_results": {
+    "overwrite_rejected": true,
+    "synthetic_workspace_persisted": false,
+    "tested_relative_paths": [
+      "slots/SVF-PRIMARY-800-V1-SLOT-0001/invocations/I01/request.body.json",
+      "ledger/invocations/SVF-PRIMARY-800-V1-SLOT-0001.I01.json",
+      "ledger/slots/SVF-PRIMARY-800-V1-SLOT-0001.json"
+    ]
+  },
+  "synthetic_workspace_persisted": false,
+  "transport_results": {
+    "complete_http_error": {
+      "invocations": [
+        {
+          "outcome_type": "http_response",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 1
+        }
+      ],
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": null,
+      "terminal_status": "API_ERROR",
+      "used_backoffs": []
+    },
+    "nonretryable_transport_failure": {
+      "invocations": [
+        {
+          "outcome_type": "transport_failure",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 1
+        }
+      ],
+      "kind": "TERMINAL",
+      "terminal_status": "TRANSPORT_FAILURE",
+      "used_backoffs": []
+    },
+    "retry_exhausted": {
+      "invocations": [
+        {
+          "outcome_type": "transport_failure",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 1
+        },
+        {
+          "outcome_type": "transport_failure",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 2
+        },
+        {
+          "outcome_type": "transport_failure",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 3
+        }
+      ],
+      "kind": "TERMINAL",
+      "terminal_status": "TRANSPORT_FAILURE",
+      "used_backoffs": [
+        5,
+        20
+      ]
+    },
+    "retry_then_success": {
+      "invocations": [
+        {
+          "outcome_type": "transport_failure",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 1
+        },
+        {
+          "outcome_type": "transport_failure",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 2
+        },
+        {
+          "outcome_type": "http_response",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea",
+          "transport_invocation_number": 3
+        }
+      ],
+      "kind": "MODEL_TEXT",
+      "model_text": "synthetic retry success",
+      "pause_reason": null,
+      "terminal_status": null,
+      "used_backoffs": [
+        5,
+        20
+      ]
+    }
+  }
+}

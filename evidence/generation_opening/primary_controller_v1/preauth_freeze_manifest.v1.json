@@ -1,0 +1,113 @@
+{
+  "executable_integrity": {
+    "derived_800_slot_bundle_sha256": "976dbabecddee7daf720703e681ac4e50d4c5774d7a11cd5dc502fa95b48eb71",
+    "provider_body_hash_bundle_sha256": "a15e0d6ce304eb77e871560e3a4a513368ad63219c73bf2dc1364422746198db",
+    "provider_neutral_descriptor_bundle_sha256": "32b5df5b330b96d38ffb7b1ac9b1d162af6a05d7f08757ee9e5a4dbe7368f2f3",
+    "rendered_80_user_message_bundle_sha256": "75402e26962a5ad384efb7a2613f44ffd49ef51d70020d20ceff1d05b210d840"
+  },
+  "frozen_generation_inputs": {
+    "model_targets": {
+      "path": "config/model_targets.json",
+      "sha256": "c6171d0f398c422cfcb056ec1293a42c43de831e12320b28cb1762660fba1e38"
+    },
+    "pricing_snapshot": {
+      "path": "evidence/gates/gate1/provider_pricing/pricing_snapshot.v2.json",
+      "sha256": "a52e4751a1c1095cbf37183c1c658c52a26190c01a302c55710a47f168a187b6"
+    },
+    "scenario_manifest": {
+      "path": "config/generation/scenario_bindings.80.v10.json",
+      "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+    },
+    "system_prompt": {
+      "path": "config/generation/system_prompt.v1.txt",
+      "sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61"
+    },
+    "user_template": {
+      "path": "config/generation/user_message_template.v1.txt",
+      "sha256": "8691601cfd2a7a0ccfd93d6015182078aa0e174dd0d8579c447b0d54150fa745"
+    }
+  },
+  "gate1_base": {
+    "commit": "15ff63bfc82f023f784266bacf04f43abbe82818",
+    "freeze_manifest": {
+      "path": "evidence/gates/gate1/gate1_freeze_manifest.json",
+      "sha256": "5a1693ea337a547af8a75c7ca24558f188dce230db7ce40e36aa4d8130109d1c"
+    },
+    "tree": "da3557bf57db822e8e3b3df1de9266c77be8607d"
+  },
+  "governance": {
+    "decision_0011": {
+      "path": "documentation/decisions/0011-generation-input-provenance-and-controller-boundary.md",
+      "sha256": "007d1d5aff3a2d9f2ddfd6972350d379d653696a952245e46996eae8e5c88ff3",
+      "status": "Accepted"
+    },
+    "generation_protocol": {
+      "path": "config/generation_execution_protocol.json",
+      "sha256": "f10a6093c72e719f55d9fc8acdbc782f1e72be94a0a0a191e1b14faced19d19c"
+    },
+    "historical_assembled_request_bundle_policy": "Gate1 provenance only; not an executable provider-request byte contract",
+    "postprocessing_contract": {
+      "path": "config/primary_postprocessing_contract.v1.json",
+      "sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8",
+      "status": "PASS_FROZEN"
+    }
+  },
+  "manifest_id": "SVF-PRIMARY-CONTROLLER-PREAUTH-FREEZE-V1",
+  "prepared_at_utc": "2026-08-09T08:53:18+00:00",
+  "primary_controller_package": {
+    "controller_core": {
+      "live_transport_implemented": false,
+      "path": "scripts/primary_controller_v1.py",
+      "provider_free_synthetic_mode": true,
+      "sha256": "6a7f4e47086c1062f041ad461dfd0769833cefe4a49cb8fae1a7fc7644a140c2"
+    },
+    "controller_interface": {
+      "path": "config/primary_controller_interface.v1.json",
+      "sha256": "ffc143952f0b7963cb4f8ec5853a0cc3855775cc7a3292e6ca7d1a660fbc1d56",
+      "status": "FROZEN_POST_GATE1_PREAUTH"
+    },
+    "final_dry_run": {
+      "failure_count": 0,
+      "path": "evidence/generation_opening/primary_controller_v1/dry_run.v1.json",
+      "sha256": "0f5f17497f6d798ad81af56a3f4aede4962ce777c5904684600344caf80fa2ca",
+      "status": "PASS"
+    },
+    "interface_verifier": {
+      "failure_count": 0,
+      "path": "scripts/verify_primary_controller_interface_v1.py",
+      "repository_base_check": "construction base commit must be an ancestor of current HEAD and must resolve to the exact frozen construction-base tree",
+      "sha256": "cc0980181996b861df38d841339819e34b0cc0cd226e0fcb97e28c330ac2fe58",
+      "verification_result": "PASS"
+    },
+    "prefreeze_dry_run": {
+      "historical_candidate_evidence": true,
+      "path": "evidence/generation_opening/primary_controller_v1/dry_run.prefreeze.v1.json",
+      "sha256": "edfc5d13d9218d317c3e2111046c9277174393f18237d1afda670a90c18a947a",
+      "status": "PASS"
+    },
+    "request_plan": {
+      "path": "config/generation/primary_request_plan.800.v1.json",
+      "request_count": 800,
+      "sha256": "f6712fb4baa7b895f6de82f111f373bf987f0da9166b944232556b99b6ec0440",
+      "status": "FROZEN_POST_GATE1_PREAUTH"
+    }
+  },
+  "repository_base": {
+    "commit": "76a0178e3abfc6c724c2a4e1d4506681bf81a639",
+    "tree": "19894ce2dff3c908b9449a35471da5984791d942"
+  },
+  "safety_boundary": {
+    "analyzer_implementation_or_execution": false,
+    "generated_driver_inspection": false,
+    "generation_window_state": "FROZEN_NOT_OPEN",
+    "linked_driver_execution": false,
+    "live_provider_calls_in_final_dry_run": 0,
+    "live_provider_calls_in_prefreeze_dry_run": 0,
+    "primary_generation_authorized": false,
+    "primary_generation_performed": false,
+    "repair_implementation_or_execution": false,
+    "separate_committed_generation_opening_authorization_required": true
+  },
+  "scope_note": "This manifest freezes the provider-free preauthorization controller core, request plan, interface, verifier, and synthetic dry-run evidence. It does not open SVF-PRIMARY-800-V1 and does not authorize any provider call.",
+  "status": "FROZEN_POST_GATE1_PREAUTH"
+}

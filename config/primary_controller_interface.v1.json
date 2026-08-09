@@ -1,0 +1,297 @@
+{
+  "append_only_storage_contract": {
+    "compiler_log_template": "slots/{logical_slot_id}/compile.log",
+    "invocation_record_template": "ledger/invocations/{logical_slot_id}.I{transport_invocation_number:02d}.json",
+    "pause_record_template": "ledger/pauses/pause-{pause_sequence:04d}.json",
+    "postprocessing_record_template": "slots/{logical_slot_id}/postprocessing.json",
+    "raw_response_template": "slots/{logical_slot_id}/invocations/I{transport_invocation_number:02d}/response.body.bin",
+    "redacted_response_headers_template": "slots/{logical_slot_id}/invocations/I{transport_invocation_number:02d}/response.headers.redacted.json",
+    "request_body_template": "slots/{logical_slot_id}/invocations/I{transport_invocation_number:02d}/request.body.json",
+    "request_metadata_template": "slots/{logical_slot_id}/invocations/I{transport_invocation_number:02d}/request.meta.json",
+    "root": "evidence/primary_generation/SVF-PRIMARY-800-V1",
+    "secrets_forbidden_in_retained_request_artifacts": true,
+    "sha256_required_for_every_retained_blob": true,
+    "slot_terminal_record_template": "ledger/slots/{logical_slot_id}.json",
+    "transport_failure_template": "slots/{logical_slot_id}/invocations/I{transport_invocation_number:02d}/transport_failure.json",
+    "window_close_record": "window/close.json",
+    "window_open_record": "window/open.json",
+    "write_mode": "append-only create-new; overwrite forbidden"
+  },
+  "authorization_boundary": {
+    "analyzer_implementation_allowed": false,
+    "generated_driver_human_inspection_allowed": false,
+    "generation_window_state": "FROZEN_NOT_OPEN",
+    "live_provider_calls_permitted_by_this_contract": false,
+    "primary_generation_authorized": false,
+    "provider_free_synthetic_controller_dry_run_required": true,
+    "repair_implementation_allowed": false,
+    "separate_committed_generation_opening_authorization_required": true
+  },
+  "complete_http_response_mapping": {
+    "complete_http_response_is_transport_retryable": false,
+    "non_2xx_complete_http_response": "API_ERROR",
+    "provider_api_error_body": "API_ERROR",
+    "raw_response_preserved_before_classification": true
+  },
+  "construction_base": {
+    "commit": "76a0178e3abfc6c724c2a4e1d4506681bf81a639",
+    "tree": "19894ce2dff3c908b9449a35471da5984791d942"
+  },
+  "contract_id": "SVF-PRIMARY-CONTROLLER-INTERFACE-V1",
+  "governance": {
+    "decision_0011": {
+      "path": "documentation/decisions/0011-generation-input-provenance-and-controller-boundary.md",
+      "sha256": "007d1d5aff3a2d9f2ddfd6972350d379d653696a952245e46996eae8e5c88ff3",
+      "status": "Accepted"
+    },
+    "gate1_freeze_manifest": {
+      "path": "evidence/gates/gate1/gate1_freeze_manifest.json",
+      "sha256": "5a1693ea337a547af8a75c7ca24558f188dce230db7ce40e36aa4d8130109d1c"
+    },
+    "historical_assembled_request_hash_policy": "provenance-only; never claim new provider request bytes are identical to historical 5dc642... bundle"
+  },
+  "invocation_record_contract": {
+    "additional_required_fields": [
+      "request_body_sha256",
+      "provider_neutral_descriptor_sha256",
+      "endpoint",
+      "transport_retry_classification",
+      "response_headers_redacted"
+    ],
+    "cost_basis": {
+      "cost_estimate_required": true,
+      "pricing_snapshot_path": "evidence/gates/gate1/provider_pricing/pricing_snapshot.v2.json",
+      "pricing_snapshot_sha256": "a52e4751a1c1095cbf37183c1c658c52a26190c01a302c55710a47f168a187b6",
+      "raw_provider_usage_must_be_preserved": true,
+      "secret_values_are_never_cost_inputs": true
+    },
+    "required_fields": [
+      "window_id",
+      "logical_slot_id",
+      "transport_invocation_number",
+      "provider",
+      "requested_model_id",
+      "returned_model_or_version",
+      "request_started_at_utc",
+      "request_finished_at_utc",
+      "request_parameters",
+      "latency_ms",
+      "HTTP_status_or_transport_failure",
+      "raw_response_path_or_null",
+      "raw_response_sha256_or_null",
+      "token_usage",
+      "cost_basis_and_estimate"
+    ]
+  },
+  "locked_inputs": {
+    "generation_protocol": {
+      "path": "config/generation_execution_protocol.json",
+      "sha256": "f10a6093c72e719f55d9fc8acdbc782f1e72be94a0a0a191e1b14faced19d19c"
+    },
+    "model_targets": {
+      "path": "config/model_targets.json",
+      "sha256": "c6171d0f398c422cfcb056ec1293a42c43de831e12320b28cb1762660fba1e38"
+    },
+    "postprocessing": {
+      "path": "config/primary_postprocessing_contract.v1.json",
+      "sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8"
+    },
+    "pricing_snapshot": {
+      "path": "evidence/gates/gate1/provider_pricing/pricing_snapshot.v2.json",
+      "sha256": "a52e4751a1c1095cbf37183c1c658c52a26190c01a302c55710a47f168a187b6"
+    },
+    "scenario_manifest": {
+      "path": "config/generation/scenario_bindings.80.v10.json",
+      "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+    },
+    "system_prompt": {
+      "path": "config/generation/system_prompt.v1.txt",
+      "sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61"
+    },
+    "user_template": {
+      "path": "config/generation/user_message_template.v1.txt",
+      "sha256": "8691601cfd2a7a0ccfd93d6015182078aa0e174dd0d8579c447b0d54150fa745"
+    }
+  },
+  "message_and_slot_contract": {
+    "canonical_order": [
+      "library frozen order",
+      "scenario S01 through S10",
+      "replicate R01 through R05",
+      "Model A then Model B"
+    ],
+    "derived_slot_bundle_sha256": "976dbabecddee7daf720703e681ac4e50d4c5774d7a11cd5dc502fa95b48eb71",
+    "global_max_in_flight_requests": 1,
+    "logical_slot_count": 800,
+    "logical_slot_id_format": "SVF-PRIMARY-800-V1-SLOT-%04d",
+    "rendered_message_final_lf_required": true,
+    "rendered_user_message_bundle_sha256": "75402e26962a5ad384efb7a2613f44ffd49ef51d70020d20ceff1d05b210d840",
+    "rendered_user_message_count": 80
+  },
+  "pause_contract": {
+    "calls_after_pause_before_resolution": 0,
+    "immediate_pause_conditions": [
+      "returned model or served version differs from frozen target",
+      "non-thinking or minimum-thinking control is rejected",
+      "endpoint behavior materially changes",
+      "authentication, balance, permission, or rate-limit HTTP response",
+      "provider outage or repeated service HTTP errors",
+      "preservation or manifest write fails",
+      "request payload differs from frozen bytes"
+    ],
+    "post_hoc_parameter_change_allowed": false,
+    "resume_requirements": [
+      "root cause recorded",
+      "integrity of all prior records verified",
+      "capability requalification passes",
+      "preregistration amendment committed when required"
+    ],
+    "silent_model_substitution_allowed": false,
+    "triggering_slot_and_response_are_preserved": true
+  },
+  "postprocessing_handoff": {
+    "analyzer_execution_allowed": false,
+    "linked_driver_execution_allowed": false,
+    "provider_model_text_preserved_verbatim": true,
+    "raw_response_preserved_before_extraction": true,
+    "repair_before_gate_v_allowed": false,
+    "repair_execution_allowed": false
+  },
+  "prepared_at_utc": "2026-08-09T08:36:50+00:00",
+  "provider_adapters": {
+    "Model A": {
+      "authentication": {
+        "header_name": "Authorization",
+        "scheme": "Bearer",
+        "secret_env": "DEEPSEEK_API_KEY",
+        "secret_value_hashed": false,
+        "secret_value_printed": false,
+        "secret_value_retained": false
+      },
+      "body_serialization": "UTF-8 JSON; sort_keys=true; separators=(',',':'); ensure_ascii=false; no trailing LF",
+      "content_type": "application/json",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "method": "POST",
+      "provider": "DeepSeek",
+      "requested_model_id": "deepseek-v4-flash",
+      "response_parser": {
+        "candidate_path": "$.choices[0]",
+        "expected_returned_model": "deepseek-v4-flash",
+        "finish_reason_mapping": {
+          "content_filter": "REFUSAL",
+          "insufficient_system_resource": "API_ERROR",
+          "length": "TRUNCATED_OUTPUT",
+          "stop": "PARSE_MODEL_TEXT",
+          "tool_calls": "API_ERROR"
+        },
+        "finish_reason_path": "$.choices[0].finish_reason",
+        "json_required": true,
+        "missing_choice_without_provider_error": "EXTRACTION_FAILURE",
+        "model_text_path": "$.choices[0].message.content",
+        "model_text_type": "string",
+        "returned_model_path": "$.model",
+        "unrecognized_finish_reason": "API_ERROR",
+        "usage_path": "$.usage"
+      },
+      "thinking_control": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "Model B": {
+      "authentication": {
+        "header_name": "x-goog-api-key",
+        "scheme": null,
+        "secret_env": "GEMINI_API_KEY",
+        "secret_value_hashed": false,
+        "secret_value_printed": false,
+        "secret_value_retained": false
+      },
+      "body_serialization": "UTF-8 JSON; sort_keys=true; separators=(',',':'); ensure_ascii=false; no trailing LF",
+      "content_type": "application/json",
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+      "method": "POST",
+      "provider": "Google Gemini Developer API",
+      "requested_model_id": "gemini-3.1-flash-lite",
+      "response_parser": {
+        "candidate_path": "$.candidates[0]",
+        "expected_returned_model": "gemini-3.1-flash-lite",
+        "finish_reason_mapping": {
+          "BLOCKLIST": "REFUSAL",
+          "FINISH_REASON_UNSPECIFIED": "API_ERROR",
+          "IMAGE_PROHIBITED_CONTENT": "REFUSAL",
+          "IMAGE_RECITATION": "REFUSAL",
+          "IMAGE_SAFETY": "REFUSAL",
+          "LANGUAGE": "REFUSAL",
+          "MALFORMED_FUNCTION_CALL": "API_ERROR",
+          "MAX_TOKENS": "TRUNCATED_OUTPUT",
+          "OTHER": "API_ERROR",
+          "PROHIBITED_CONTENT": "REFUSAL",
+          "RECITATION": "REFUSAL",
+          "SAFETY": "REFUSAL",
+          "SPII": "REFUSAL",
+          "STOP": "PARSE_MODEL_TEXT",
+          "TOO_MANY_TOOL_CALLS": "API_ERROR",
+          "UNEXPECTED_TOOL_CALL": "API_ERROR"
+        },
+        "finish_reason_path": "$.candidates[0].finishReason",
+        "json_required": true,
+        "missing_candidate_without_prompt_block_or_provider_error": "EXTRACTION_FAILURE",
+        "model_text_rule": "concatenate, in array order, every string-valued $.candidates[0].content.parts[*].text with no inserted separator",
+        "prompt_block_mapping": "any non-empty promptFeedback.blockReason => REFUSAL",
+        "prompt_block_reason_path": "$.promptFeedback.blockReason",
+        "returned_model_path": "$.modelVersion",
+        "unrecognized_finish_reason": "API_ERROR",
+        "usage_path": "$.usageMetadata"
+      },
+      "thinking_control": {
+        "generationConfig": {
+          "thinkingConfig": {
+            "thinkingLevel": "MINIMAL"
+          }
+        }
+      }
+    }
+  },
+  "request_plan": {
+    "path": "config/generation/primary_request_plan.800.v1.json",
+    "provider_body_hash_bundle_sha256": "a15e0d6ce304eb77e871560e3a4a513368ad63219c73bf2dc1364422746198db",
+    "provider_neutral_descriptor_bundle_sha256": "32b5df5b330b96d38ffb7b1ac9b1d162af6a05d7f08757ee9e5a4dbe7368f2f3",
+    "request_count": 800,
+    "sha256": "f6712fb4baa7b895f6de82f111f373bf987f0da9166b944232556b99b6ec0440"
+  },
+  "slot_terminal_contract": {
+    "exactly_one_terminal_status_per_logical_slot": true,
+    "fixed_denominator": 800,
+    "postprocessing_contract_path": "config/primary_postprocessing_contract.v1.json",
+    "postprocessing_contract_sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8",
+    "terminal_statuses": [
+      "RESPONSE_RECEIVED",
+      "REFUSAL",
+      "TIMEOUT",
+      "API_ERROR",
+      "TRUNCATED_OUTPUT",
+      "MISSING_CODE",
+      "DUPLICATE_OUTPUT",
+      "EXTRACTION_FAILURE",
+      "NON_COMPILATION",
+      "TRANSPORT_FAILURE"
+    ]
+  },
+  "status": "FROZEN_POST_GATE1_PREAUTH",
+  "transport_contract": {
+    "all_transport_invocations_retained": true,
+    "backoff_seconds": [
+      5,
+      20
+    ],
+    "complete_response_deadline_seconds": 300,
+    "connect_timeout_seconds": 30,
+    "jitter_seconds": 0,
+    "maximum_retries_after_initial_invocation": 2,
+    "maximum_transport_invocations_per_logical_slot": 3,
+    "payload_must_be_byte_identical_across_transport_retry": true,
+    "transport_retry_only_before_complete_http_response": true
+  }
+}
