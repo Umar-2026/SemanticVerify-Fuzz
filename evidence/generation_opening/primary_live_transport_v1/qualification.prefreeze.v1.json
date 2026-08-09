@@ -1,0 +1,299 @@
+{
+  "analyzer_implementation_or_execution": false,
+  "api_secret_environment_values_read": false,
+  "authorization_gate": {
+    "authorization_record_exists": false,
+    "current_result": {
+      "authorized": false,
+      "reason": "AUTHORIZATION_RECORD_MISSING"
+    },
+    "secret_reader_call_count": 0
+  },
+  "contract": {
+    "execution_enabled": true,
+    "live_network_calls_allowed": true,
+    "path": "config/primary_live_transport_contract.v1.json",
+    "sha256": "59474347ee27339f1f42247c310786b658f315113dcb2501ab53c9d7ad9b965b",
+    "status": "FROZEN_AUTHORIZATION_READY"
+  },
+  "cost_tests": {
+    "deepseek_derived": {
+      "basis": "derived_cache_split",
+      "cache_hit_tokens": 10,
+      "cache_miss_tokens": 100,
+      "completion_tokens": 20,
+      "estimate_usd": 1.9628000000000002e-05,
+      "status": "PASS"
+    },
+    "deepseek_direct": {
+      "basis": "direct_cache_split",
+      "cache_hit_tokens": 10,
+      "cache_miss_tokens": 100,
+      "completion_tokens": 20,
+      "estimate_usd": 1.9628000000000002e-05,
+      "status": "PASS"
+    },
+    "deepseek_insufficient_usage": {
+      "estimate_usd": null,
+      "reason": "INVALID_COMPLETION_TOKENS",
+      "status": "PAUSE_REQUIRED"
+    },
+    "gemini": {
+      "cached_content_tokens": 0,
+      "candidate_tokens": 20,
+      "estimate_usd": 6.25e-05,
+      "prompt_tokens": 100,
+      "status": "PASS",
+      "thoughts_tokens": 5
+    },
+    "gemini_positive_cache": {
+      "estimate_usd": null,
+      "reason": "UNEXPECTED_POSITIVE_CACHED_CONTENT_USAGE",
+      "status": "PAUSE_REQUIRED"
+    }
+  },
+  "failure_count": 0,
+  "failures": [],
+  "generated_driver_inspection": false,
+  "generation_window_opened": false,
+  "implementation": {
+    "path": "scripts/primary_live_transport_v1.py",
+    "real_https_transport_implemented": true,
+    "real_https_transport_invoked": false,
+    "sha256": "325ef9a7817acaaaa84c0f1ff28c4dfed4c92bf6c3f1cb032c83e5694a4cfbdd"
+  },
+  "linked_driver_execution": false,
+  "live_provider_calls": 0,
+  "prepared_at_utc": "2026-08-09T15:12:37+00:00",
+  "primary_generation_authorized": false,
+  "primary_generation_performed": false,
+  "repair_implementation_or_execution": false,
+  "report_id": "SVF-PRIMARY-LIVE-TRANSPORT-PREFREEZE-QUALIFICATION-V1",
+  "request_integrity": {
+    "bad_request_body_hash_count": 0,
+    "request_count": 800
+  },
+  "status": "PASS",
+  "synthetic_transport": {
+    "deepseek_result": {
+      "cost": {
+        "basis": "direct_cache_split",
+        "cache_hit_tokens": 10,
+        "cache_miss_tokens": 100,
+        "completion_tokens": 20,
+        "estimate_usd": 1.9628000000000002e-05,
+        "status": "PASS"
+      },
+      "invocations": [
+        {
+          "classification": {
+            "kind": "MODEL_TEXT",
+            "model_text": "int synthetic_deepseek;\n",
+            "pause_reason": null,
+            "terminal_status": null
+          },
+          "cost": {
+            "basis": "direct_cache_split",
+            "cache_hit_tokens": 10,
+            "cache_miss_tokens": 100,
+            "completion_tokens": 20,
+            "estimate_usd": 1.9628000000000002e-05,
+            "status": "PASS"
+          },
+          "http_status": 200,
+          "invocation_number": 1,
+          "outcome": "COMPLETE_HTTP_RESPONSE",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea"
+        }
+      ],
+      "kind": "MODEL_TEXT",
+      "model_text": "int synthetic_deepseek;\n",
+      "pause_reason": null,
+      "pause_required": false,
+      "terminal_status": null,
+      "usage": {
+        "completion_tokens": 20,
+        "prompt_cache_hit_tokens": 10,
+        "prompt_cache_miss_tokens": 100,
+        "prompt_tokens": 110,
+        "total_tokens": 130
+      }
+    },
+    "gemini_result": {
+      "cost": {
+        "cached_content_tokens": 0,
+        "candidate_tokens": 20,
+        "estimate_usd": 6.25e-05,
+        "prompt_tokens": 100,
+        "status": "PASS",
+        "thoughts_tokens": 5
+      },
+      "invocations": [
+        {
+          "classification": {
+            "kind": "MODEL_TEXT",
+            "model_text": "int synthetic_gemini;\n",
+            "pause_reason": null,
+            "terminal_status": null
+          },
+          "cost": {
+            "cached_content_tokens": 0,
+            "candidate_tokens": 20,
+            "estimate_usd": 6.25e-05,
+            "prompt_tokens": 100,
+            "status": "PASS",
+            "thoughts_tokens": 5
+          },
+          "http_status": 200,
+          "invocation_number": 1,
+          "outcome": "COMPLETE_HTTP_RESPONSE",
+          "request_body_sha256": "1978d0545f9ccc9a4d8b2a45ea72e61a2753580393e4b0456727e6017a09cce1"
+        }
+      ],
+      "kind": "MODEL_TEXT",
+      "model_text": "int synthetic_gemini;\n",
+      "pause_reason": null,
+      "pause_required": false,
+      "terminal_status": null,
+      "usage": {
+        "candidatesTokenCount": 20,
+        "promptTokenCount": 100,
+        "thoughtsTokenCount": 5,
+        "totalTokenCount": 125
+      }
+    },
+    "http_429_result": {
+      "cost": {
+        "estimate_usd": null,
+        "reason": "INSUFFICIENT_USAGE_METADATA",
+        "status": "PAUSE_REQUIRED"
+      },
+      "invocations": [
+        {
+          "classification": {
+            "kind": "TERMINAL",
+            "model_text": null,
+            "pause_reason": null,
+            "terminal_status": "API_ERROR"
+          },
+          "cost": {
+            "estimate_usd": null,
+            "reason": "INSUFFICIENT_USAGE_METADATA",
+            "status": "PAUSE_REQUIRED"
+          },
+          "http_status": 429,
+          "invocation_number": 1,
+          "outcome": "COMPLETE_HTTP_RESPONSE",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea"
+        }
+      ],
+      "kind": "TERMINAL",
+      "model_text": null,
+      "pause_reason": "AUTHENTICATION_BALANCE_PERMISSION_OR_RATE_LIMIT",
+      "pause_required": true,
+      "terminal_status": "API_ERROR",
+      "usage": null
+    },
+    "model_drift_result": {
+      "cost": {
+        "basis": "direct_cache_split",
+        "cache_hit_tokens": 10,
+        "cache_miss_tokens": 100,
+        "completion_tokens": 20,
+        "estimate_usd": 1.9628000000000002e-05,
+        "status": "PASS"
+      },
+      "invocations": [
+        {
+          "classification": {
+            "kind": "PAUSE_REQUIRED",
+            "model_text": null,
+            "pause_reason": "RETURNED_MODEL_DRIFT",
+            "terminal_status": null
+          },
+          "cost": {
+            "basis": "direct_cache_split",
+            "cache_hit_tokens": 10,
+            "cache_miss_tokens": 100,
+            "completion_tokens": 20,
+            "estimate_usd": 1.9628000000000002e-05,
+            "status": "PASS"
+          },
+          "http_status": 200,
+          "invocation_number": 1,
+          "outcome": "COMPLETE_HTTP_RESPONSE",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea"
+        }
+      ],
+      "kind": "PAUSE_REQUIRED",
+      "model_text": null,
+      "pause_reason": "RETURNED_MODEL_DRIFT",
+      "pause_required": true,
+      "terminal_status": null,
+      "usage": {
+        "completion_tokens": 20,
+        "prompt_cache_hit_tokens": 10,
+        "prompt_cache_miss_tokens": 100,
+        "prompt_tokens": 110,
+        "total_tokens": 130
+      }
+    },
+    "retry_result": {
+      "cost": {
+        "basis": "direct_cache_split",
+        "cache_hit_tokens": 10,
+        "cache_miss_tokens": 100,
+        "completion_tokens": 20,
+        "estimate_usd": 1.9628000000000002e-05,
+        "status": "PASS"
+      },
+      "invocations": [
+        {
+          "classification": "TCP_CONNECT_FAILURE",
+          "invocation_number": 1,
+          "outcome": "TRANSPORT_FAILURE",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea"
+        },
+        {
+          "classification": "READ_TIMEOUT_BEFORE_COMPLETE_HTTP_RESPONSE",
+          "invocation_number": 2,
+          "outcome": "TRANSPORT_FAILURE",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea"
+        },
+        {
+          "classification": {
+            "kind": "MODEL_TEXT",
+            "model_text": "int synthetic_deepseek;\n",
+            "pause_reason": null,
+            "terminal_status": null
+          },
+          "cost": {
+            "basis": "direct_cache_split",
+            "cache_hit_tokens": 10,
+            "cache_miss_tokens": 100,
+            "completion_tokens": 20,
+            "estimate_usd": 1.9628000000000002e-05,
+            "status": "PASS"
+          },
+          "http_status": 200,
+          "invocation_number": 3,
+          "outcome": "COMPLETE_HTTP_RESPONSE",
+          "request_body_sha256": "c573d3bbc2c8d260d05b1c4c198ef5fb2bbe8f4076e8ea65e0e8e3ecc2b0f1ea"
+        }
+      ],
+      "kind": "MODEL_TEXT",
+      "model_text": "int synthetic_deepseek;\n",
+      "pause_reason": null,
+      "pause_required": false,
+      "terminal_status": null,
+      "usage": {
+        "completion_tokens": 20,
+        "prompt_cache_hit_tokens": 10,
+        "prompt_cache_miss_tokens": 100,
+        "prompt_tokens": 110,
+        "total_tokens": 130
+      }
+    }
+  },
+  "synthetic_workspace_persisted": false
+}

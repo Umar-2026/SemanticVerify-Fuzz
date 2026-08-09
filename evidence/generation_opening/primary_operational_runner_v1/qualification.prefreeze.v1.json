@@ -1,0 +1,34 @@
+{
+  "analyzer_implementation_or_execution": false,
+  "api_secret_environment_values_read": false,
+  "authorization_record_created": false,
+  "compiler_version": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+  "contract": {
+    "execution_enabled": true,
+    "live_network_calls_allowed": true,
+    "path": "config/primary_live_transport_contract.v1.json",
+    "sha256": "59474347ee27339f1f42247c310786b658f315113dcb2501ab53c9d7ad9b965b",
+    "status": "FROZEN_AUTHORIZATION_READY"
+  },
+  "failure_count": 0,
+  "failures": [],
+  "generated_driver_human_inspection": false,
+  "generation_window_opened": false,
+  "linked_driver_execution": false,
+  "live_transport": {
+    "path": "scripts/primary_live_transport_v1.py",
+    "sha256": "325ef9a7817acaaaa84c0f1ff28c4dfed4c92bf6c3f1cb032c83e5694a4cfbdd"
+  },
+  "primary_generation_authorized": false,
+  "primary_generation_performed": false,
+  "qualified_at_utc": "2026-08-09T15:12:38+00:00",
+  "real_network_transport_invoked": false,
+  "repair_implementation_or_execution": false,
+  "report_id": "SVF-PRIMARY-OPERATIONAL-RUNNER-PREFREEZE-QUALIFICATION-V1",
+  "runner": {
+    "path": "scripts/primary_operational_runner_v1.py",
+    "sha256": "553ac68643193e64b58be1fc2c8cfbb3d9f24e98f7c7c75834e297d5532fd84e"
+  },
+  "status": "PASS",
+  "synthetic_library_pass_count": 8
+}

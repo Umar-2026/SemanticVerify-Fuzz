@@ -1,0 +1,492 @@
+{
+  "authorization_gate": {
+    "absence_or_failure_behavior": "REFUSE_NETWORK_ACCESS",
+    "authorization_must_be_verified_before_secret_read": true,
+    "authorization_record_currently_exists": false,
+    "authorization_record_must_be_present_in_current_head": true,
+    "authorization_record_must_be_tracked": true,
+    "authorization_record_path": "evidence/generation_opening/primary_generation_authorization.v1.json",
+    "authorization_schema_path": "config/schemas/primary_generation_authorization_record.schema.json",
+    "authorization_schema_sha256": "b49f843be81347558d9decb65793558e45bd6009a6a455a4e5ccdc04a00798a6",
+    "execution_enabled": true,
+    "freeze_commit_must_be_ancestor_of_execution_head": true,
+    "repository_must_be_clean_immediately_before_window_open": true,
+    "required_record_status": "AUTHORIZED_FOR_PRIMARY_WINDOW_OPEN",
+    "required_window_id": "SVF-PRIMARY-800-V1",
+    "window_open_record_created_immediately_before_slot_0001": true
+  },
+  "construction_base": {
+    "commit": "53f1099bcc2c1fb24c18ba388684900a79e23947",
+    "tree": "eb25cdeab6b2bf30d424dbd96149ee14679f127f"
+  },
+  "contract_id": "SVF-PRIMARY-LIVE-TRANSPORT-V1",
+  "cost_accounting": {
+    "DeepSeek": {
+      "formula": "(cache_hit_tokens * input_cache_hit + cache_miss_tokens * input_cache_miss + completion_tokens * output) / 1000000",
+      "invalid_or_insufficient_usage": "PRESERVE_RESPONSE_AND_PAUSE_BEFORE_NEXT_CALL",
+      "rates": {
+        "input_cache_hit": 0.0028,
+        "input_cache_miss": 0.14,
+        "output": 0.28
+      },
+      "unit": "per_1M_tokens",
+      "usage_precedence": [
+        {
+          "name": "direct_cache_split",
+          "required_fields": [
+            "prompt_cache_hit_tokens",
+            "prompt_cache_miss_tokens",
+            "completion_tokens"
+          ]
+        },
+        {
+          "derivation": "cache_hit=prompt_tokens_details.cached_tokens; cache_miss=prompt_tokens-cache_hit",
+          "name": "derive_cache_split",
+          "required_fields": [
+            "prompt_tokens",
+            "prompt_tokens_details.cached_tokens",
+            "completion_tokens"
+          ]
+        }
+      ]
+    },
+    "Gemini": {
+      "formula": "(promptTokenCount * input_rate + (candidatesTokenCount + thoughtsTokenCount_or_zero) * output_including_thinking_rate) / 1000000",
+      "invalid_or_insufficient_usage": "PRESERVE_RESPONSE_AND_PAUSE_BEFORE_NEXT_CALL",
+      "optional_usage_fields": {
+        "cachedContentTokenCount": "must be absent or zero because the frozen request plan does not request explicit cached content",
+        "thoughtsTokenCount": "if absent, reported thinking-token count is recorded as zero for the estimate"
+      },
+      "pricing_tier": "Standard paid",
+      "rates": {
+        "input": 0.25,
+        "output_including_thinking_tokens": 1.5
+      },
+      "required_usage_fields": [
+        "promptTokenCount",
+        "candidatesTokenCount"
+      ],
+      "unexpected_positive_cachedContentTokenCount": "PRESERVE_RESPONSE_AND_PAUSE_BEFORE_NEXT_CALL",
+      "unit": "per_1M_tokens"
+    },
+    "currency": "USD",
+    "estimate_required": true,
+    "pricing_snapshot": {
+      "interpretation": "frozen evidence estimate; not final provider invoice",
+      "path": "evidence/gates/gate1/provider_pricing/pricing_snapshot.v2.json",
+      "sha256": "a52e4751a1c1095cbf37183c1c658c52a26190c01a302c55710a47f168a187b6"
+    },
+    "raw_provider_usage_preserved": true
+  },
+  "decision": {
+    "path": "documentation/decisions/0012-primary-generation-authorization-and-live-transport-boundary.md",
+    "sha256": "8920fb4cd379b02727f4d8efa6e675961ddc9eff48d679f8fb9f4b78f0b61609",
+    "status": "ACCEPTED"
+  },
+  "driver_source_storage_contract": {
+    "authority": "additive Decision 0012 operational storage rule",
+    "bytes_rule": "UTF-8 encoding without BOM of the exact provider-parser logical model-text Unicode string",
+    "driver_source_byte_length_rule": "byte length of the exact bytes retained at driver_source_template",
+    "driver_source_sha256_rule": "SHA-256 of the exact bytes retained at driver_source_template",
+    "driver_source_template": "slots/{logical_slot_id}/driver.c",
+    "duplicate_policy": {
+      "canonical_occurrence": "earliest successfully extracted non-empty occurrence in canonical logical-slot order",
+      "duplicate_source_file_compiled": false,
+      "duplicate_source_file_retained": true,
+      "identity_authority": "exact bytes retained at driver_source_template",
+      "later_exact_duplicate_terminal_status": "DUPLICATE_OUTPUT",
+      "required_duplicate_record": "duplicate_of_logical_slot_id",
+      "scope_fields": [
+        "requested_model_id",
+        "library",
+        "scenario_id"
+      ]
+    },
+    "evidence_root": "evidence/primary_generation/SVF-PRIMARY-800-V1",
+    "forbidden_transformations": [
+      "markdown_fence_stripping",
+      "commentary_stripping",
+      "leading_whitespace_trimming",
+      "trailing_whitespace_trimming",
+      "newline_insertion",
+      "newline_removal",
+      "source_reformatting",
+      "source_repair",
+      "include_insertion",
+      "entrypoint_insertion",
+      "api_call_insertion",
+      "compiler_feedback_repair"
+    ],
+    "frozen_postprocessing_contract_binding": {
+      "path": "config/primary_postprocessing_contract.v1.json",
+      "sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8"
+    },
+    "newline_insertion_or_removal_allowed": false,
+    "no_source_file_terminal_classes": [
+      "REFUSAL",
+      "TIMEOUT",
+      "API_ERROR",
+      "TRUNCATED_OUTPUT",
+      "TRANSPORT_FAILURE",
+      "EXTRACTION_FAILURE",
+      "MISSING_CODE"
+    ],
+    "source_extension": ".c",
+    "transformations_allowed": false,
+    "write_before_compilation": true,
+    "write_before_duplicate_classification": true,
+    "write_condition": "provider parser successfully produced a logical model-text string and the string is not empty or Unicode-whitespace-only",
+    "write_mode": "append-only create-new; overwrite forbidden"
+  },
+  "frozen_preauthorization_package": {
+    "commit": "53f1099bcc2c1fb24c18ba388684900a79e23947",
+    "controller_interface": {
+      "path": "config/primary_controller_interface.v1.json",
+      "sha256": "ffc143952f0b7963cb4f8ec5853a0cc3855775cc7a3292e6ca7d1a660fbc1d56"
+    },
+    "final_provider_free_dry_run": {
+      "path": "evidence/generation_opening/primary_controller_v1/dry_run.v1.json",
+      "sha256": "0f5f17497f6d798ad81af56a3f4aede4962ce777c5904684600344caf80fa2ca"
+    },
+    "freeze_manifest": {
+      "path": "evidence/generation_opening/primary_controller_v1/preauth_freeze_manifest.v1.json",
+      "sha256": "1325f366b554b5fde90fde8153850f588ce228d54e80a8be4ad7dd987972e7e4"
+    },
+    "freeze_package_sha256s": {
+      "path": "evidence/generation_opening/primary_controller_v1/preauth_freeze_package.v1.SHA256SUMS",
+      "sha256": "76eca6d1d5af2ae5c50abe5c2032b5b1d2af460e3e28f9d6448de4b4e07be6a3"
+    },
+    "interface_verifier": {
+      "path": "scripts/verify_primary_controller_interface_v1.py",
+      "sha256": "cc0980181996b861df38d841339819e34b0cc0cd226e0fcb97e28c330ac2fe58"
+    },
+    "provider_free_controller_core": {
+      "path": "scripts/primary_controller_v1.py",
+      "sha256": "6a7f4e47086c1062f041ad461dfd0769833cefe4a49cb8fae1a7fc7644a140c2"
+    },
+    "request_plan": {
+      "path": "config/generation/primary_request_plan.800.v1.json",
+      "sha256": "f6712fb4baa7b895f6de82f111f373bf987f0da9166b944232556b99b6ec0440"
+    }
+  },
+  "immutable_request_boundary": {
+    "canonical_body_serialization": {
+      "encoding": "UTF-8",
+      "ensure_ascii": false,
+      "json_separators": [
+        ",",
+        ":"
+      ],
+      "json_sort_keys": true,
+      "trailing_lf": false
+    },
+    "payload_change_during_retry_allowed": false,
+    "per_invocation_preflight": [
+      "load frozen request record",
+      "canonicalize request_body",
+      "recompute request_body_sha256",
+      "require exact equality with frozen request_body_sha256",
+      "add credential only to outbound HTTP header"
+    ],
+    "request_count": 800,
+    "request_plan_path": "config/generation/primary_request_plan.800.v1.json",
+    "request_plan_sha256": "f6712fb4baa7b895f6de82f111f373bf987f0da9166b944232556b99b6ec0440",
+    "retry_payload_must_be_byte_identical": true
+  },
+  "invocation_record": {
+    "additional_live_transport_fields": [
+      "authorization_record_path",
+      "authorization_record_sha256",
+      "execution_head_commit",
+      "request_body_sha256_verified",
+      "request_body_byte_length",
+      "endpoint",
+      "transport_invocation_number",
+      "transport_retry_classification",
+      "response_headers_redacted",
+      "cost_estimate_status"
+    ],
+    "frozen_required_fields": [
+      "window_id",
+      "logical_slot_id",
+      "transport_invocation_number",
+      "provider",
+      "requested_model_id",
+      "returned_model_or_version",
+      "request_started_at_utc",
+      "request_finished_at_utc",
+      "request_parameters",
+      "latency_ms",
+      "HTTP_status_or_transport_failure",
+      "raw_response_path_or_null",
+      "raw_response_sha256_or_null",
+      "token_usage",
+      "cost_basis_and_estimate"
+    ]
+  },
+  "network_transport": {
+    "complete_http_response_is_transport_retryable": false,
+    "complete_response_deadline_seconds": 300,
+    "connect_timeout_seconds": 30,
+    "deterministic_backoff_seconds": [
+      5,
+      20
+    ],
+    "global_max_in_flight_requests": 1,
+    "implementation_status": "FROZEN_AUTHORIZATION_READY",
+    "jitter_seconds": 0,
+    "live_network_calls_allowed_by_this_candidate": true,
+    "maximum_retries_after_initial_invocation": 2,
+    "maximum_transport_invocations_per_logical_slot": 3,
+    "retry_scope": "same logical slot and byte-identical secret-free request body",
+    "retryable_failures": [
+      "DNS_RESOLUTION_FAILURE",
+      "TCP_CONNECT_FAILURE",
+      "TLS_HANDSHAKE_FAILURE",
+      "CONNECTION_RESET_BEFORE_COMPLETE_HTTP_RESPONSE",
+      "CONNECT_TIMEOUT",
+      "READ_TIMEOUT_BEFORE_COMPLETE_HTTP_RESPONSE"
+    ],
+    "sleep_behavior": "exact frozen deterministic backoff; no jitter",
+    "tls_certificate_validation_required": true
+  },
+  "operational_runner_contract": {
+    "authorization_gate_before_network": true,
+    "authorization_gate_before_secret_read": true,
+    "candidate_state": "FROZEN_AUTHORIZATION_READY",
+    "execution_mode": "fresh_primary_window_only",
+    "global_max_in_flight_requests": 1,
+    "invocation_evidence": {
+      "always_present_additive_fields": [
+        "authorization_record_path",
+        "authorization_record_sha256",
+        "execution_head_commit",
+        "request_body_sha256_verified",
+        "request_body_byte_length",
+        "endpoint",
+        "transport_invocation_number",
+        "transport_retry_classification",
+        "response_headers_redacted",
+        "cost_estimate_status"
+      ],
+      "real_primary_execution_context_fields_non_null": [
+        "authorization_record_path",
+        "authorization_record_sha256",
+        "execution_head_commit"
+      ],
+      "synthetic_qualification_may_use_null_execution_context": true
+    },
+    "live_cli_flag": "--execute-primary",
+    "pause_before_next_call": {
+      "authentication_balance_permission_rate_limit": true,
+      "cost_accounting_failure": true,
+      "endpoint_behavior_material_change": {
+        "deepseek_expected_top_level_any_of": [
+          "choices",
+          "error"
+        ],
+        "gemini_expected_top_level_any_of": [
+          "candidates",
+          "promptFeedback"
+        ],
+        "http_redirect_300_399": "IMMEDIATE_PAUSE",
+        "successful_2xx_missing_provider_envelope": "IMMEDIATE_PAUSE",
+        "successful_2xx_non_json_object": "IMMEDIATE_PAUSE"
+      },
+      "preservation_failure": true,
+      "provider_outage_or_repeated_service_errors": {
+        "counter_rule": "increment on each complete 5xx response from that provider",
+        "immediate_outage_http_statuses": [
+          502,
+          503,
+          504
+        ],
+        "other_provider_responses_change_counter": false,
+        "repeated_error_threshold": 2,
+        "reset_rule": "reset to zero on a complete non-5xx response from that provider",
+        "scope": "per provider/model label",
+        "service_http_status_range": "500-599"
+      },
+      "request_byte_drift": true,
+      "returned_model_or_version_drift": true,
+      "thinking_control_rejection": true
+    },
+    "postprocessing_handoff": {
+      "compiler": "/usr/bin/clang-14",
+      "contract_path": "config/primary_postprocessing_contract.v1.json",
+      "contract_sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8",
+      "driver_source_template": "slots/{logical_slot_id}/driver.c",
+      "driver_source_written_before_compilation": true,
+      "driver_source_written_before_duplicate_classification": true,
+      "duplicate_identity_authority": "exact retained driver-source bytes",
+      "duplicates_compiled": false,
+      "linked_driver_execution": false,
+      "source_repair": false,
+      "weak_main_shim": true
+    },
+    "pre_window_open_checks": [
+      "operational authorization record passes",
+      "authorization record is committed and in current HEAD",
+      "repository is clean",
+      "preauthorization freeze commit is ancestor",
+      "both API secret environment values exist",
+      "compiler version exactly matches frozen contract",
+      "all eight frozen static library artifact hashes match",
+      "all frozen include directories exist",
+      "weak-main shim compiles successfully",
+      "fresh primary evidence root does not already exist"
+    ],
+    "proxy_policy": {
+      "embedded_proxy_credentials_supported": false,
+      "environment_proxy_discovery": true,
+      "http_proxy_fallback": true,
+      "https_over_http_proxy": "HTTP CONNECT followed by TLS to provider",
+      "https_proxy_preferred": true,
+      "no_proxy_honored": true,
+      "proxy_mode_retained": true,
+      "proxy_url_or_hostname_retained": false,
+      "supported_proxy_scheme": "http"
+    },
+    "required_window_confirmation": "SVF-PRIMARY-800-V1",
+    "runner_path": "scripts/primary_operational_runner_v1.py",
+    "separation": {
+      "analyzer": false,
+      "generated_driver_human_inspection": false,
+      "linked_generated_driver_execution": false,
+      "repair": false,
+      "synthetic_qualification_may_call_providers": false,
+      "synthetic_qualification_may_compile_synthetic_sources": true,
+      "synthetic_qualification_may_read_api_secrets": false,
+      "synthetic_qualification_may_use_fake_transport": true
+    },
+    "transport_failure_terminal_mapping": {
+      "CONNECTION_RESET_BEFORE_COMPLETE_HTTP_RESPONSE": "TRANSPORT_FAILURE",
+      "CONNECT_TIMEOUT": "TIMEOUT",
+      "DNS_RESOLUTION_FAILURE": "TRANSPORT_FAILURE",
+      "PROXY_TUNNEL_FAILURE": "TRANSPORT_FAILURE",
+      "READ_TIMEOUT_BEFORE_COMPLETE_HTTP_RESPONSE": "TIMEOUT",
+      "TCP_CONNECT_FAILURE": "TRANSPORT_FAILURE",
+      "TLS_HANDSHAKE_FAILURE": "TRANSPORT_FAILURE"
+    },
+    "window_lifecycle": {
+      "calls_after_pause_before_resolution": 0,
+      "close_record": "window/close.json",
+      "close_record_rule": "create-new only after all 800 logical slots have terminal records",
+      "open_record": "window/open.json",
+      "open_record_rule": "create-new immediately before logical slot 0001",
+      "pause_record_template": "ledger/pauses/pause-{pause_sequence:04d}.json",
+      "resume_after_pause": "not silently supported; requires committed resolution evidence and any required amendment"
+    }
+  },
+  "pause_contract": {
+    "calls_after_pause_before_resolution": 0,
+    "conditions": [
+      "returned model or served version differs from frozen target",
+      "non-thinking or minimum-thinking control is rejected",
+      "endpoint behavior materially changes",
+      "authentication, balance, permission, or rate-limit HTTP response",
+      "provider outage or repeated service HTTP errors",
+      "preservation or manifest write fails",
+      "request payload differs from frozen bytes",
+      "provider usage metadata is insufficient for the frozen cost-estimate contract",
+      "unexpected positive Gemini cached-content usage is reported"
+    ],
+    "resume_requires_new_committed_resolution_evidence": true,
+    "triggering_invocation_preserved": true
+  },
+  "prepared_at_utc": "2026-08-09T09:03:06+00:00",
+  "providers": {
+    "Model A": {
+      "content_type": "application/json",
+      "credential": {
+        "environment_variable": "DEEPSEEK_API_KEY",
+        "hashed": false,
+        "outbound_header": "Authorization",
+        "printed": false,
+        "read_only_after_authorization_pass": true,
+        "scheme": "Bearer",
+        "stored": false
+      },
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "expected_response_model_values": [
+        "deepseek-v4-flash",
+        "DeepSeek-V4-Flash-0731"
+      ],
+      "method": "POST",
+      "model_id": "deepseek-v4-flash",
+      "provider": "DeepSeek",
+      "thinking_control": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "Model B": {
+      "content_type": "application/json",
+      "credential": {
+        "environment_variable": "GEMINI_API_KEY",
+        "hashed": false,
+        "outbound_header": "x-goog-api-key",
+        "printed": false,
+        "read_only_after_authorization_pass": true,
+        "scheme": null,
+        "stored": false
+      },
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+      "expected_response_model_version": "gemini-3.1-flash-lite",
+      "method": "POST",
+      "model_id": "gemini-3.1-flash-lite",
+      "provider": "Google Gemini Developer API",
+      "thinking_control": {
+        "generationConfig": {
+          "thinkingConfig": {
+            "thinkingLevel": "MINIMAL"
+          }
+        }
+      }
+    }
+  },
+  "response_classification": {
+    "complete_http_response_retry": false,
+    "complete_non_2xx_http_response": "API_ERROR",
+    "model_or_version_drift": "PRESERVE_THEN_PAUSE_BEFORE_NEXT_CALL",
+    "postprocessing_authority": {
+      "path": "config/primary_postprocessing_contract.v1.json",
+      "sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8"
+    },
+    "provider_parser_authority": {
+      "path": "config/primary_controller_interface.v1.json",
+      "sha256": "ffc143952f0b7963cb4f8ec5853a0cc3855775cc7a3292e6ca7d1a660fbc1d56"
+    },
+    "thinking_control_rejection": "PRESERVE_THEN_PAUSE_BEFORE_NEXT_CALL"
+  },
+  "response_preservation": {
+    "complete_http_response_retained_even_when_error": true,
+    "credential_headers_never_retained": true,
+    "raw_response_bytes_written_before_classification": true,
+    "raw_response_sha256_required": true,
+    "response_headers_retained_redacted": true,
+    "triggering_pause_response_retained": true,
+    "write_mode": "append-only create-new; overwrite forbidden"
+  },
+  "separation": {
+    "analyzer_implementation_or_execution_allowed": false,
+    "authorization_record_created_by_this_contract": false,
+    "generated_driver_human_inspection_allowed": false,
+    "generation_window_opened": false,
+    "linked_driver_execution_allowed": false,
+    "live_provider_calls_performed": false,
+    "primary_generation_performed": false,
+    "repair_before_gate_v_allowed": false
+  },
+  "status": "FROZEN_AUTHORIZATION_READY",
+  "window_and_storage": {
+    "storage_root": "evidence/primary_generation/SVF-PRIMARY-800-V1",
+    "storage_root_must_not_be_initialized_by_candidate_construction": true,
+    "window_close_record": "window/close.json",
+    "window_closed_at_rule": "write append-only close record after all 800 logical slots have terminal records",
+    "window_id": "SVF-PRIMARY-800-V1",
+    "window_open_record": "window/open.json",
+    "window_opened_at_rule": "write append-only open record immediately before logical slot 0001"
+  }
+}

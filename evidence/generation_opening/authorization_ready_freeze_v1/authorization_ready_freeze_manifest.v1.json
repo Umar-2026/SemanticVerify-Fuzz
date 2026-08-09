@@ -1,0 +1,58 @@
+{
+  "artifact_sha256": {
+    "config/primary_live_transport_contract.v1.json": "59474347ee27339f1f42247c310786b658f315113dcb2501ab53c9d7ad9b965b",
+    "config/schemas/primary_generation_authorization_record.schema.json": "b49f843be81347558d9decb65793558e45bd6009a6a455a4e5ccdc04a00798a6",
+    "documentation/decisions/0012-primary-generation-authorization-and-live-transport-boundary.md": "8920fb4cd379b02727f4d8efa6e675961ddc9eff48d679f8fb9f4b78f0b61609",
+    "evidence/generation_opening/primary_live_transport_v1/qualification.prefreeze.v1.json": "fb3426463864400afaf7e11dd98148f972947b05a3961d8016063693c0396858",
+    "evidence/generation_opening/primary_operational_runner_v1/qualification.prefreeze.v1.json": "66189432f694ea3d19afec7d876ea50b7a10a586b0b122d84ae5629d2e4d3cc3",
+    "scripts/primary_live_transport_v1.py": "325ef9a7817acaaaa84c0f1ff28c4dfed4c92bf6c3f1cb032c83e5694a4cfbdd",
+    "scripts/primary_operational_runner_v1.py": "553ac68643193e64b58be1fc2c8cfbb3d9f24e98f7c7c75834e297d5532fd84e",
+    "scripts/verify_primary_live_transport_contract_v1.py": "a8228271d2199d516b23ae577c022a9e356b297915229b47240952d304ab2e7e"
+  },
+  "authorization_boundary": {
+    "authorization_record_present_at_freeze": false,
+    "capability_enablement_is_authorization": false,
+    "contract_state": "FROZEN_AUTHORIZATION_READY",
+    "decision_0012_status": "Accepted",
+    "execution_capability_enabled": true,
+    "generation_window_open_at_freeze": false,
+    "live_network_capability_enabled": true,
+    "separate_committed_authorization_record_required": true
+  },
+  "hardening": {
+    "http_connect_tls_mock_branch": "PASS",
+    "provider_neutral_transport_failure_detail": "PASS",
+    "proxy_url_or_hostname_retained": false,
+    "raw_exception_detail_persisted": false,
+    "raw_exception_detail_stdout_leak": false
+  },
+  "parent_repository_state": {
+    "commit": "53f1099bcc2c1fb24c18ba388684900a79e23947",
+    "tree": "eb25cdeab6b2bf30d424dbd96149ee14679f127f"
+  },
+  "prepared_at_utc": "2026-08-09T15:19:15+00:00",
+  "provider_free_qualification": {
+    "api_secret_environment_values_read": false,
+    "live_provider_calls": 0,
+    "live_transport": "PASS",
+    "operational_runner": "PASS"
+  },
+  "record_id": "SVF-AUTHORIZATION-READY-FREEZE-V1",
+  "schema_version": 1,
+  "separation": {
+    "analyzer_implementation": false,
+    "generated_driver_human_inspection": false,
+    "linked_generated_driver_execution": false,
+    "primary_generation_authorized": false,
+    "primary_generation_performed": false,
+    "repair_implementation": false
+  },
+  "status": "FROZEN_AUTHORIZATION_READY",
+  "verification": {
+    "clang14_version": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+    "lld14_present": true,
+    "primary_live_transport_contract_verifier": "PASS",
+    "verifier_sha256": "a8228271d2199d516b23ae577c022a9e356b297915229b47240952d304ab2e7e"
+  },
+  "window_id": "SVF-PRIMARY-800-V1"
+}

@@ -1,0 +1,267 @@
+{
+  "$id": "urn:semanticverify-fuzz:primary-generation-authorization-record:v1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorization_scope": {
+      "additionalProperties": false,
+      "properties": {
+        "analyzer": {
+          "const": false
+        },
+        "maximum_logical_slots": {
+          "const": 800
+        },
+        "primary_generation": {
+          "const": true
+        },
+        "repair": {
+          "const": false
+        },
+        "second_window_allowed": {
+          "const": false
+        },
+        "window_open": {
+          "const": true
+        }
+      },
+      "required": [
+        "primary_generation",
+        "window_open",
+        "maximum_logical_slots",
+        "second_window_allowed",
+        "analyzer",
+        "repair"
+      ],
+      "type": "object"
+    },
+    "authorized_at_utc": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "authorized_window_id": {
+      "const": "SVF-PRIMARY-800-V1"
+    },
+    "decision_0012": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "const": "documentation/decisions/0012-primary-generation-authorization-and-live-transport-boundary.md"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "status": {
+          "const": "Accepted"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "status"
+      ],
+      "type": "object"
+    },
+    "freeze_binding": {
+      "additionalProperties": false,
+      "properties": {
+        "controller_core_sha256": {
+          "const": "6a7f4e47086c1062f041ad461dfd0769833cefe4a49cb8fae1a7fc7644a140c2"
+        },
+        "controller_freeze_manifest_sha256": {
+          "const": "1325f366b554b5fde90fde8153850f588ce228d54e80a8be4ad7dd987972e7e4"
+        },
+        "controller_interface_sha256": {
+          "const": "ffc143952f0b7963cb4f8ec5853a0cc3855775cc7a3292e6ca7d1a660fbc1d56"
+        },
+        "generation_protocol_sha256": {
+          "const": "f10a6093c72e719f55d9fc8acdbc782f1e72be94a0a0a191e1b14faced19d19c"
+        },
+        "interface_verifier_sha256": {
+          "const": "cc0980181996b861df38d841339819e34b0cc0cd226e0fcb97e28c330ac2fe58"
+        },
+        "postprocessing_contract_sha256": {
+          "const": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8"
+        },
+        "preauthorization_freeze_commit": {
+          "const": "53f1099bcc2c1fb24c18ba388684900a79e23947"
+        },
+        "request_plan_sha256": {
+          "const": "f6712fb4baa7b895f6de82f111f373bf987f0da9166b944232556b99b6ec0440"
+        }
+      },
+      "required": [
+        "preauthorization_freeze_commit",
+        "request_plan_sha256",
+        "controller_interface_sha256",
+        "controller_core_sha256",
+        "interface_verifier_sha256",
+        "controller_freeze_manifest_sha256",
+        "generation_protocol_sha256",
+        "postprocessing_contract_sha256"
+      ],
+      "type": "object"
+    },
+    "provider_requalification": {
+      "additionalProperties": false,
+      "properties": {
+        "deepseek": {
+          "additionalProperties": false,
+          "properties": {
+            "endpoint": {
+              "const": "https://api.deepseek.com/chat/completions"
+            },
+            "requested_model_id": {
+              "const": "deepseek-v4-flash"
+            },
+            "returned_model": {
+              "enum": [
+                "deepseek-v4-flash",
+                "DeepSeek-V4-Flash-0731"
+              ]
+            },
+            "status": {
+              "const": "PASS"
+            },
+            "thinking_mode": {
+              "const": "disabled"
+            }
+          },
+          "required": [
+            "requested_model_id",
+            "returned_model",
+            "endpoint",
+            "thinking_mode",
+            "status"
+          ],
+          "type": "object"
+        },
+        "gemini": {
+          "additionalProperties": false,
+          "properties": {
+            "endpoint": {
+              "const": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent"
+            },
+            "requested_model_id": {
+              "const": "gemini-3.1-flash-lite"
+            },
+            "returned_model_version": {
+              "const": "gemini-3.1-flash-lite"
+            },
+            "status": {
+              "const": "PASS"
+            },
+            "thinking_level": {
+              "const": "MINIMAL"
+            }
+          },
+          "required": [
+            "requested_model_id",
+            "returned_model_version",
+            "endpoint",
+            "thinking_level",
+            "status"
+          ],
+          "type": "object"
+        },
+        "performed_at_utc": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "report_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "report_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "status": {
+          "const": "PASS"
+        }
+      },
+      "required": [
+        "status",
+        "performed_at_utc",
+        "report_path",
+        "report_sha256",
+        "deepseek",
+        "gemini"
+      ],
+      "type": "object"
+    },
+    "record_id": {
+      "const": "SVF-PRIMARY-GENERATION-AUTHORIZATION-V1"
+    },
+    "repository_preconditions": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_record_must_be_committed": {
+          "const": true
+        },
+        "freeze_commit_must_be_ancestor": {
+          "const": true
+        },
+        "repository_must_be_clean_before_open": {
+          "const": true
+        }
+      },
+      "required": [
+        "authorization_record_must_be_committed",
+        "repository_must_be_clean_before_open",
+        "freeze_commit_must_be_ancestor"
+      ],
+      "type": "object"
+    },
+    "safety_acknowledgements": {
+      "additionalProperties": false,
+      "properties": {
+        "api_secrets_never_persisted_printed_or_hashed": {
+          "const": true
+        },
+        "no_generated_driver_human_inspection_during_generation": {
+          "const": true
+        },
+        "no_linked_driver_execution_during_primary_compilation": {
+          "const": true
+        },
+        "no_repair_before_gate_v": {
+          "const": true
+        },
+        "pause_rule_binding_acknowledged": {
+          "const": true
+        }
+      },
+      "required": [
+        "no_generated_driver_human_inspection_during_generation",
+        "no_linked_driver_execution_during_primary_compilation",
+        "no_repair_before_gate_v",
+        "api_secrets_never_persisted_printed_or_hashed",
+        "pause_rule_binding_acknowledged"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "AUTHORIZED_FOR_PRIMARY_WINDOW_OPEN"
+    }
+  },
+  "required": [
+    "record_id",
+    "schema_version",
+    "status",
+    "authorized_window_id",
+    "authorized_at_utc",
+    "decision_0012",
+    "freeze_binding",
+    "provider_requalification",
+    "repository_preconditions",
+    "authorization_scope",
+    "safety_acknowledgements"
+  ],
+  "title": "SemanticVerify-Fuzz Primary Generation Authorization Record V1",
+  "type": "object"
+}
