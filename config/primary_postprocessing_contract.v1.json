@@ -1,0 +1,279 @@
+{
+  "authorization": {
+    "authorizes_primary_generation": false,
+    "opens_generation_window": false
+  },
+  "compilation": {
+    "alternate_compiler_allowed": false,
+    "common_flags": [
+      "-std=gnu11",
+      "-O0",
+      "-g0",
+      "-Wall",
+      "-fno-color-diagnostics",
+      "-fuse-ld=lld-14"
+    ],
+    "compiler": "/usr/bin/clang-14",
+    "cxx_fallback_allowed": false,
+    "entrypoint_requirement": "NONE",
+    "execute_linked_output": false,
+    "expected_compiler_version": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+    "external_weak_main_shim": {
+      "enabled": true,
+      "purpose": "link-only shim; it does not impose main() or LLVMFuzzerTestOneInput on generated source",
+      "source": "__attribute__((weak))\nint main(void)\n{\n    return 0;\n}\n"
+    },
+    "failure_status": "NON_COMPILATION",
+    "language_mode": "gnu11",
+    "libfuzzer_enabled": false,
+    "linker": "ld.lld-14",
+    "required_feature_symbols_are_compile_gate": false,
+    "required_per_slot_records": [
+      "extraction_status",
+      "compiler_command",
+      "compiler_version",
+      "compiler_exit_code",
+      "compiler_warning_count",
+      "complete_log_path",
+      "complete_log_sha256",
+      "driver_source_sha256",
+      "driver_source_byte_length",
+      "compilation_status",
+      "duplicate_of_logical_slot_id_or_null"
+    ],
+    "sanitizers_enabled": false,
+    "source_extension": ".c",
+    "source_language": "C",
+    "source_repair_allowed": false,
+    "success_rule": "compiler/linker exit code equals zero",
+    "success_status": "COMPILED",
+    "system_link_tail": [
+      "-lm",
+      "-pthread",
+      "-ldl",
+      "-lresolv"
+    ],
+    "warning_policy": {
+      "count_rule": "count combined compiler-output lines containing literal 'warning:'",
+      "positive_warning_class": "COMPILED_WITH_WARNINGS",
+      "warnings_fail_build": false,
+      "zero_warning_class": "CLEAN_COMPILE"
+    }
+  },
+  "compilation_status_mapping": {
+    "API_ERROR": "NOT_ATTEMPTED",
+    "DUPLICATE_OUTPUT": "NOT_ATTEMPTED",
+    "EXTRACTION_FAILURE": "NOT_ATTEMPTED",
+    "MISSING_CODE": "NOT_ATTEMPTED",
+    "NON_COMPILATION": "NON_COMPILATION",
+    "REFUSAL": "NOT_ATTEMPTED",
+    "RESPONSE_RECEIVED": "COMPILED",
+    "TIMEOUT": "NOT_ATTEMPTED",
+    "TRANSPORT_FAILURE": "NOT_ATTEMPTED",
+    "TRUNCATED_OUTPUT": "NOT_ATTEMPTED"
+  },
+  "compile_eligibility": {
+    "compile_duplicate_output": false,
+    "compile_partial_or_unavailable_source": false,
+    "compile_unique_successfully_extracted_source": true,
+    "eligible_only_if": [
+      "no frozen upstream transport/provider terminal status",
+      "provider parser successfully produced logical model text",
+      "logical model text is not empty or Unicode-whitespace-only",
+      "source is not DUPLICATE_OUTPUT under duplicate_policy"
+    ],
+    "ineligible_terminal_statuses": [
+      "REFUSAL",
+      "TIMEOUT",
+      "API_ERROR",
+      "TRUNCATED_OUTPUT",
+      "TRANSPORT_FAILURE",
+      "EXTRACTION_FAILURE",
+      "MISSING_CODE",
+      "DUPLICATE_OUTPUT"
+    ]
+  },
+  "contract_id": "SVF-PRIMARY-POSTPROCESSING-V1",
+  "decision_reference": {
+    "candidate_status": "ACCEPTED",
+    "decision_id": "0010",
+    "path": "documentation/decisions/0010-primary-postprocessing-precedence-and-duplicate-semantics.md"
+  },
+  "duplicate_policy": {
+    "canonical_occurrence": "earliest successfully extracted non-empty source within the same task group",
+    "comparison_order": "canonical_logical_slot_order",
+    "cross_library_identity_is_terminal_duplicate": false,
+    "cross_model_identity_is_terminal_duplicate": false,
+    "cross_scenario_identity_is_terminal_duplicate": false,
+    "duplicate_output_compiled": false,
+    "duplicate_slot_remains_in_fixed_800_denominator": true,
+    "duplicate_slot_replaced": false,
+    "frozen_replicates_per_task_group": 5,
+    "identity_rule": "exact byte identity of preserved extracted source",
+    "later_exact_duplicate_terminal_status": "DUPLICATE_OUTPUT",
+    "lookup_fields": [
+      "driver_source_sha256",
+      "driver_source_byte_length"
+    ],
+    "required_duplicate_record": "duplicate_of_logical_slot_id",
+    "retained_source_bytes_are_identity_authority": true,
+    "scope_fields": [
+      "requested_model_id",
+      "library",
+      "scenario_id"
+    ]
+  },
+  "extraction": {
+    "extraction_failure_rule": "a complete provider response exists but the provider-specific parser cannot produce the logical model-text string",
+    "forbidden_transformations": [
+      "markdown_fence_stripping",
+      "commentary_stripping",
+      "leading_whitespace_trimming",
+      "trailing_whitespace_trimming",
+      "source_reformatting",
+      "source_repair",
+      "include_insertion",
+      "entrypoint_insertion",
+      "api_call_insertion",
+      "compiler_feedback_repair"
+    ],
+    "missing_code_rule": "logical model text is empty or Unicode-whitespace-only",
+    "provider_model_text_preserved_verbatim": true,
+    "raw_response_preserved_before_extraction": true,
+    "success_status": "EXTRACTED_VERBATIM"
+  },
+  "frozen_at_utc": "2026-08-09T07:36:50Z",
+  "gate1_base": {
+    "commit": "15ff63bfc82f023f784266bacf04f43abbe82818",
+    "tree": "da3557bf57db822e8e3b3df1de9266c77be8607d"
+  },
+  "input_locks": {
+    "generation_protocol": {
+      "path": "config/generation_execution_protocol.json",
+      "sha256": "f10a6093c72e719f55d9fc8acdbc782f1e72be94a0a0a191e1b14faced19d19c"
+    },
+    "library_source_build_lock": {
+      "path": "config/library_source_build_lock.json",
+      "sha256": "2be6bd713ce179bdc7f66e67ba1108f4bca5383372bbe653ac924cc290ab7f0e"
+    },
+    "scenario_manifest": {
+      "path": "config/generation/scenario_bindings.80.v10.json",
+      "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+    },
+    "system_prompt": {
+      "path": "config/generation/system_prompt.v1.txt",
+      "sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61"
+    },
+    "toolchain_lock": {
+      "path": "config/toolchain_lock.json",
+      "sha256": "11493f6edf40b9a2a333dd5cdbf60dbeb0fe2cea866385c06a39ebc48f8cf1be"
+    },
+    "user_message_template": {
+      "path": "config/generation/user_message_template.v1.txt",
+      "sha256": "8691601cfd2a7a0ccfd93d6015182078aa0e174dd0d8579c447b0d54150fa745"
+    }
+  },
+  "libraries": {
+    "c-ares": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include",
+        "/openbayes/home/svf-gate1c-build-qualification-v1/build/c-ares"
+      ],
+      "qualification_workspace": "V1",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v1/build/c-ares/lib/libcares.a",
+      "static_artifact_sha256": "cf2557f712a041dbd0983e2ccd80b266aede978a6fc6f078a9e57089f42262b7"
+    },
+    "cJSON": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v1/src/cJSON",
+        "/openbayes/home/svf-gate1c-build-qualification-v1/build/cJSON"
+      ],
+      "qualification_workspace": "V1",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v1/build/cJSON/libcjson.a",
+      "static_artifact_sha256": "875e7d573bb4abe736b5ce7a3a95b7422891ce279e835d75bcfef3a675618470"
+    },
+    "curl": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include"
+      ],
+      "qualification_workspace": "V3",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v3/build/curl/lib/libcurl.a",
+      "static_artifact_sha256": "126b13dbe516d5686c6d4ef054ed4aa37cb9a504aaea9dfff32cdbc44d429116"
+    },
+    "lcms": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include",
+        "/openbayes/home/svf-gate1c-build-qualification-v3/build/lcms"
+      ],
+      "qualification_workspace": "V3",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v3/build/lcms/liblcms2.a",
+      "static_artifact_sha256": "1f9b60abf3abe289fd169aa891db8149c98eb4c213dd7c9a7aef08d9b2ba9e3e"
+    },
+    "libpcap": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v2/src/libpcap",
+        "/openbayes/home/svf-gate1c-build-qualification-v2/build/libpcap"
+      ],
+      "qualification_workspace": "V2",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v2/build/libpcap/libpcap.a",
+      "static_artifact_sha256": "06db8932a5d0b23e50a01902a3a320d9183c6d638468149f4861f7969dcc68bd"
+    },
+    "libtiff": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v1/src/libtiff/libtiff",
+        "/openbayes/home/svf-gate1c-build-qualification-v1/build/libtiff/libtiff"
+      ],
+      "qualification_workspace": "V1",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v1/build/libtiff/libtiff/libtiff.a",
+      "static_artifact_sha256": "c5a4841f14d72041fe67e22b98e0179d1a52173e3bd03e183bdf0d7e526ba4ef"
+    },
+    "libvpx": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx",
+        "/openbayes/home/svf-gate1c-build-qualification-v2/build/libvpx"
+      ],
+      "qualification_workspace": "V2",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v2/build/libvpx/libvpx.a",
+      "static_artifact_sha256": "dcc6014ef56ccbfb7c371e02460ac9b046c542e215a6274d8aebdc4b3ec7ac8a"
+    },
+    "zlib": {
+      "include_dirs": [
+        "/openbayes/home/svf-gate1c-build-qualification-v1/src/zlib",
+        "/openbayes/home/svf-gate1c-build-qualification-v1/build/zlib"
+      ],
+      "qualification_workspace": "V1",
+      "static_artifact": "/openbayes/home/svf-gate1c-build-qualification-v1/build/zlib/libz.a",
+      "static_artifact_sha256": "35a0f48b95d3ba921e64dfddcf17ea00a54795963956b8b1d07deb68422b2e6a"
+    }
+  },
+  "role": "Additive post-Gate1 primary extraction and compilation contract. Closed Gate1 artifacts remain unchanged.",
+  "schema_version": "1.0.0",
+  "separation": {
+    "analyzer_execution_allowed": false,
+    "linked_driver_execution_allowed": false,
+    "primary_compilation_is_dynamic_baseline": false,
+    "repair_before_gate_v_allowed": false,
+    "repair_execution_allowed": false
+  },
+  "status": "PASS_FROZEN",
+  "terminal_status_assignment": {
+    "exactly_one_terminal_status_per_logical_slot": true,
+    "failed_compile_terminal_status": "NON_COMPILATION",
+    "precedence": [
+      "UPSTREAM_TRANSPORT_OR_PROVIDER_TERMINAL",
+      "EXTRACTION_FAILURE",
+      "MISSING_CODE",
+      "DUPLICATE_OUTPUT",
+      "NON_COMPILATION",
+      "RESPONSE_RECEIVED"
+    ],
+    "successful_compile_terminal_status": "RESPONSE_RECEIVED",
+    "upstream_terminal_statuses": [
+      "REFUSAL",
+      "TIMEOUT",
+      "API_ERROR",
+      "TRUNCATED_OUTPUT",
+      "TRANSPORT_FAILURE"
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "analyzer_implementation": false,
+  "compiler_version": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+  "contract_sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8",
+  "decision_0010_sha256": "5a17a09789d8c3d1b2381db1beb014d58d8d143ced85fd3dc0b68499c41a6288",
+  "extraction_results": [
+    {
+      "actual": "EXTRACTED_VERBATIM",
+      "case": "raw_c",
+      "content_unchanged": true,
+      "expected": "EXTRACTED_VERBATIM",
+      "pass": true
+    },
+    {
+      "actual": "EXTRACTED_VERBATIM",
+      "case": "leading_trailing_whitespace",
+      "content_unchanged": true,
+      "expected": "EXTRACTED_VERBATIM",
+      "pass": true
+    },
+    {
+      "actual": "EXTRACTED_VERBATIM",
+      "case": "markdown_fence",
+      "content_unchanged": true,
+      "expected": "EXTRACTED_VERBATIM",
+      "pass": true
+    },
+    {
+      "actual": "EXTRACTED_VERBATIM",
+      "case": "commentary",
+      "content_unchanged": true,
+      "expected": "EXTRACTED_VERBATIM",
+      "pass": true
+    },
+    {
+      "actual": "MISSING_CODE",
+      "case": "empty",
+      "content_unchanged": true,
+      "expected": "MISSING_CODE",
+      "pass": true
+    },
+    {
+      "actual": "MISSING_CODE",
+      "case": "whitespace_only",
+      "content_unchanged": true,
+      "expected": "MISSING_CODE",
+      "pass": true
+    },
+    {
+      "actual": "EXTRACTION_FAILURE",
+      "case": "non_string",
+      "content_unchanged": true,
+      "expected": "EXTRACTION_FAILURE",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "generated_driver_inspection": false,
+  "library_results": {
+    "c-ares": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "cf2557f712a041dbd0983e2ccd80b266aede978a6fc6f078a9e57089f42262b7"
+    },
+    "cJSON": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "875e7d573bb4abe736b5ce7a3a95b7422891ce279e835d75bcfef3a675618470"
+    },
+    "curl": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "126b13dbe516d5686c6d4ef054ed4aa37cb9a504aaea9dfff32cdbc44d429116"
+    },
+    "lcms": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "1f9b60abf3abe289fd169aa891db8149c98eb4c213dd7c9a7aef08d9b2ba9e3e"
+    },
+    "libpcap": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "06db8932a5d0b23e50a01902a3a320d9183c6d638468149f4861f7969dcc68bd"
+    },
+    "libtiff": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "c5a4841f14d72041fe67e22b98e0179d1a52173e3bd03e183bdf0d7e526ba4ef"
+    },
+    "libvpx": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "dcc6014ef56ccbfb7c371e02460ac9b046c542e215a6274d8aebdc4b3ec7ac8a"
+    },
+    "zlib": {
+      "compiler_exit_code": 0,
+      "compiler_log": "",
+      "compiler_warning_count": 0,
+      "linked_executable_created": true,
+      "linked_executable_executed": false,
+      "static_artifact_sha256": "35a0f48b95d3ba921e64dfddcf17ea00a54795963956b8b1d07deb68422b2e6a"
+    }
+  },
+  "linked_executables_executed": false,
+  "live_provider_calls": 0,
+  "primary_generation_performed": false,
+  "qualification_id": "SVF-PRIMARY-POSTPROCESSING-QUALIFICATION-V1",
+  "qualification_runner_sha256": "758343abf8447707b8db4ebca1ef5a8b37f5deeed3df8e22322e74a5c693cda0",
+  "qualification_status": "PASS",
+  "qualified_at_utc": "2026-08-09T07:39:08Z",
+  "repair_implementation": false,
+  "schema_version": "1.0.0",
+  "synthetic_library_pass_count": 8,
+  "verifier_sha256": "b0d168a54f59f83437fe913b38a0fbd82273e3f69f5168258343f6dfbef9608a"
+}
