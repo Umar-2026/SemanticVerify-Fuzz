@@ -1,0 +1,42 @@
+{
+  "calls_after_pause_before_resolution": 0,
+  "continuation": {
+    "first_eligible_slot": 473,
+    "remaining_slots": 328,
+    "resume_authorized": false,
+    "same_window": true,
+    "second_window_authorized": false
+  },
+  "decision": {
+    "path": "documentation/decisions/0013-gemini-zero-output-usage-and-same-window-resume.md",
+    "sha256": "724bb8a19011f81995ac1dc3e2f4de0569c56cfd2a7e5fc47dd0a2755fbd9af5"
+  },
+  "next_boundary": "IMPLEMENT_AND_QUALIFY_SAME_WINDOW_RESUME_V1",
+  "pause_freeze_commit": "25931bfe3f479bdde49a4da2d6731d152a929c41",
+  "pause_freeze_tree": "b85f1d7e305cb69599ec26c6ad73f3aba450010e",
+  "pause_sequence": 1,
+  "record_id": "SVF-PRIMARY-PAUSE-RESOLUTION-0001",
+  "recorded_at_utc": "2026-08-09T17:11:59+00:00",
+  "resolution": {
+    "derived_cost_basis": "DERIVED_ZERO_CANDIDATE_REFUSAL_TOKEN_BALANCE",
+    "derived_cost_estimate_usd": 4.425e-05,
+    "original_evidence_modified": false,
+    "root_cause": "serialized Gemini zero-output refusal usage omitted candidatesTokenCount while the frozen cost validator required it",
+    "slot_0472_reclassified": false,
+    "slot_0472_retried": false
+  },
+  "resolution_contract": {
+    "path": "config/primary_pause_resolution_contract.v1.json",
+    "sha256": "80a6cdd79fc46ad784b7ead2b567bcab8381ffafe28876a7f6f87a63160675c6"
+  },
+  "schema_version": 1,
+  "status": "ROOT_CAUSE_RESOLVED_POLICY_FROZEN_RESUME_NOT_AUTHORIZED",
+  "trigger": {
+    "invocation_ledger_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/ledger/invocations/SVF-PRIMARY-800-V1-SLOT-0472.I01.json",
+    "invocation_ledger_sha256": "505c5ec18b33dfe00eb07851162831b958c2fdd28b518d27b0284136b9cc5e63",
+    "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0472",
+    "pause_reason": "INVALID_USAGE_METADATA",
+    "terminal_status": "REFUSAL"
+  },
+  "window_id": "SVF-PRIMARY-800-V1"
+}

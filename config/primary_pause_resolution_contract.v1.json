@@ -1,0 +1,141 @@
+{
+  "authorization_scope": {
+    "analyzer": false,
+    "live_provider_calls": false,
+    "repair": false,
+    "resolution_policy": true,
+    "resume_execution": false,
+    "resume_implementation_development": true,
+    "second_window": false
+  },
+  "contract_id": "SVF-PRIMARY-PAUSE-RESOLUTION-V1",
+  "decision": {
+    "decision_number": "0013",
+    "path": "documentation/decisions/0013-gemini-zero-output-usage-and-same-window-resume.md",
+    "sha256": "724bb8a19011f81995ac1dc3e2f4de0569c56cfd2a7e5fc47dd0a2755fbd9af5",
+    "status": "Accepted"
+  },
+  "external_semantic_basis": [
+    {
+      "source": "Google Gemini GenerateContent API",
+      "url": "https://ai.google.dev/api/generate-content",
+      "use": "blocked prompts can return no candidates; candidatesTokenCount denotes generated candidate-token total"
+    },
+    {
+      "source": "Protocol Buffers ProtoJSON Format",
+      "url": "https://protobuf.dev/programming-guides/json/",
+      "use": "default-valued scalar fields without presence may be omitted from JSON"
+    }
+  ],
+  "gemini_zero_output_cost_normalization": {
+    "applies_only_when_all_conditions_hold": [
+      "complete HTTP response status is 200-299",
+      "frozen parser terminal status is REFUSAL",
+      "usageMetadata is an object",
+      "promptTokenCount is a non-negative integer",
+      "candidatesTokenCount is absent",
+      "thoughtsTokenCount is absent or a non-negative integer",
+      "cachedContentTokenCount is absent or zero",
+      "toolUsePromptTokenCount is absent or zero",
+      "totalTokenCount is a non-negative integer",
+      "totalTokenCount equals promptTokenCount plus thoughtsTokenCount_or_zero"
+    ],
+    "basis_label": "DERIVED_ZERO_CANDIDATE_REFUSAL_TOKEN_BALANCE",
+    "derived_values": {
+      "absent_cachedContentTokenCount_for_cost": 0,
+      "absent_thoughtsTokenCount_for_cost": 0,
+      "candidatesTokenCount_for_cost": 0
+    },
+    "fallback_on_condition_failure": "PRESERVE_RESPONSE_AND_PAUSE_BEFORE_NEXT_CALL",
+    "original_usage_metadata_modified": false,
+    "provider_bytes_modified": false,
+    "scope": "Model B only"
+  },
+  "next_boundary": "IMPLEMENT_AND_QUALIFY_SAME_WINDOW_RESUME_V1",
+  "pause_freeze_binding": {
+    "commit": "25931bfe3f479bdde49a4da2d6731d152a929c41",
+    "pause_freeze_manifest_sha256": "3b0323632cfde4138224c1baa289a69d54fe7b0260171fe474a70049d1a8e2fd",
+    "pause_freeze_package_sha256": "a9d4cc0b1d3625094a988ba842c3d7343e88952c5bb9a7d4690fb59276cf3488",
+    "pause_record_sha256": "ab2fba00b24d1989c1527a0d0ebf3ac49ddaf998778325371091efe3353db026",
+    "tree": "b85f1d7e305cb69599ec26c6ad73f3aba450010e",
+    "triggering_invocation_ledger_sha256": "505c5ec18b33dfe00eb07851162831b958c2fdd28b518d27b0284136b9cc5e63",
+    "window_open_sha256": "4b5a270375b3f59ebec446b43b5fb1165ec116c5ace8b65a0568f8bbf197b270"
+  },
+  "prepared_at_utc": "2026-08-09T17:11:59+00:00",
+  "resume_preconditions": [
+    "pause-freeze commit is ancestor of execution HEAD",
+    "pause-freeze package fully verifies",
+    "slots 0001-0472 remain contiguous and terminal",
+    "pause-0001 remains immutable with calls-after-pause zero",
+    "no slot 0473-or-later primary artifact exists",
+    "window close record is absent",
+    "additive resume implementation is provider-free qualified",
+    "additive resume implementation is frozen and committed",
+    "fresh provider capability requalification passes and is committed",
+    "separate explicit resume authorization is committed",
+    "operational resume authorization passes before API secrets are read",
+    "frozen compiler and all eight library artifacts still verify"
+  ],
+  "resume_state_reconstruction": {
+    "duplicate_state": "reconstruct mechanically from frozen prior postprocessing and exact retained driver-source bytes; no human source inspection",
+    "prior_evidence_mutable": false,
+    "service_error_state": "reconstruct or independently verify exact provider-specific state at pause boundary"
+  },
+  "root_cause": {
+    "diagnosis": "frozen Gemini cost validator required a serialized candidatesTokenCount even in a zero-output refusal case",
+    "http_status": 200,
+    "model_id": "gemini-3.1-flash-lite",
+    "observed_usage": {
+      "cachedContentTokenCount_present": false,
+      "candidatesTokenCount_present": false,
+      "promptTokenCount": 177,
+      "thoughtsTokenCount_present": false,
+      "totalTokenCount": 177
+    },
+    "pause_reason": "INVALID_USAGE_METADATA",
+    "provider": "Google Gemini Developer API",
+    "terminal_status": "REFUSAL",
+    "triggering_logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0472"
+  },
+  "same_window_resume": {
+    "already_terminal_first_slot": 1,
+    "already_terminal_last_slot": 472,
+    "already_terminal_slot_count": 472,
+    "close_only_after_total_terminal_slots": 800,
+    "existing_window_open_record_retained": true,
+    "final_slot": 800,
+    "first_eligible_resume_slot": 473,
+    "global_max_in_flight_requests": 1,
+    "new_window_open_record": false,
+    "next_pause_sequence": 2,
+    "prior_slot_replay": false,
+    "provider_request_bytes_unchanged": true,
+    "remaining_slot_count": 328,
+    "request_plan_unchanged": true,
+    "same_window_only": true,
+    "second_window": false,
+    "slot_0472_retry": false
+  },
+  "schema_version": 1,
+  "separation": {
+    "analyzer": false,
+    "generated_driver_human_inspection": false,
+    "linked_generated_driver_execution": false,
+    "raw_model_response_human_inspection": false,
+    "repair": false
+  },
+  "status": "FROZEN_RESOLUTION_POLICY_RESUME_NOT_AUTHORIZED",
+  "triggering_slot_additive_cost_resolution": {
+    "cached_content_tokens_for_cost": 0,
+    "candidate_tokens_for_cost": 0,
+    "derived_basis": "DERIVED_ZERO_CANDIDATE_REFUSAL_TOKEN_BALANCE",
+    "derived_estimate_usd": 4.425e-05,
+    "input_rate_usd_per_1m": 0.25,
+    "original_cost_estimate_status": "PAUSE_REQUIRED",
+    "original_invocation_ledger_modified": false,
+    "output_including_thinking_rate_usd_per_1m": 1.5,
+    "prompt_tokens": 177,
+    "thinking_tokens_for_cost": 0
+  },
+  "window_id": "SVF-PRIMARY-800-V1"
+}
