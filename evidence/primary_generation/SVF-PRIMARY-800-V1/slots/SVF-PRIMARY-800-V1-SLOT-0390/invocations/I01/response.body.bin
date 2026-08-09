@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (!json_str) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root == NULL) {\n        free(json_str);\n        return 0;\n    }\n\n    if (cJSON_IsObject(root)) {\n        cJSON *type_field = cJSON_GetObjectItemCaseSensitive(root, \"type\");\n        if (cJSON_IsString(type_field) && (type_field-\u003evaluestring != NULL)) {\n            if (strcmp(type_field-\u003evaluestring, \"command\") == 0) {\n                cJSON *cmd = cJSON_GetObjectItemCaseSensitive(root, \"cmd\");\n                if (cJSON_IsString(cmd)) {\n                    volatile size_t len = strlen(cmd-\u003evaluestring);\n                }\n            } else if (strcmp(type_field-\u003evaluestring, \"data\") == 0) {\n                cJSON *val = cJSON_GetObjectItemCaseSensitive(root, \"value\");\n                if (cJSON_IsNumber(val)) {\n                    volatile double d = val-\u003evaluedouble;\n                }\n            }\n        }\n    } else if (cJSON_IsArray(root)) {\n        cJSON *item = NULL;\n        cJSON_ArrayForEach(item, root) {\n            if (cJSON_IsBool(item)) {\n                volatile int b = cJSON_IsTrue(item);\n            }\n        }\n    }\n\n    cJSON_Delete(root);\n    free(json_str);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPDUGlOe9qVCLJvRme25LqdC0V/Fh+1dFFpx3mmWDflLfzAALUhAY5lq6Nezn3"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 170,
+    "candidatesTokenCount": 481,
+    "totalTokenCount": 651,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 170
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "eKt4as6GDd3NkdUPn-LJ4Q8"
+}

@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0118/driver.c:39:9: warning: unused variable 'status' [-Wunused-variable]
+    int status = pcap_next_ex(handle, &header, &pkt_data);
+        ^
+1 warning generated.

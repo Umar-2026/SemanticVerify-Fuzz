@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (!json_str) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root == NULL) {\n        free(json_str);\n        return 0;\n    }\n\n    /* Transformation 1: Print the tree to a string (serialization) */\n    char *printed = cJSON_Print(root);\n    if (printed != NULL) {\n        cJSON_free(printed);\n    }\n\n    /* Transformation 2: Query the tree for a specific key if it exists */\n    if (cJSON_IsObject(root)) {\n        cJSON *item = cJSON_GetObjectItem(root, \"test_key\");\n        if (item != NULL) {\n            cJSON_GetArraySize(item);\n        }\n    }\n\n    cJSON_Delete(root);\n    free(json_str);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPlQmckdWmfHufd+dasNzXk2cJTL8YyFnYXit7tfyVnfbI2hZpl18oJOWxpr4w"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 163,
+    "candidatesTokenCount": 331,
+    "totalTokenCount": 494,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 163
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "q6p4auPQNNqqnsEPqundMQ"
+}

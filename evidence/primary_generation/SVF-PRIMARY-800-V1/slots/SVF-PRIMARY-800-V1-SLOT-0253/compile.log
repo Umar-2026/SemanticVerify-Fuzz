@@ -1,0 +1,25 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:29:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:46:23: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    ssize_t written = write(fd, data, size);
+                      ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:48:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(fd);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:49:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(tmpfile);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:52:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(fd);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:61:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(tmpfile);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:84:5: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+    unlink(tmpfile);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0253/driver.c:31:14: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+    CURLcode res;
+             ^
+7 warnings and 1 error generated.

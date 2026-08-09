@@ -1,0 +1,13 @@
+{
+  "credential_header_names": [
+    "Authorization"
+  ],
+  "credential_values_retained": false,
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0025",
+  "proxy_mode": "HTTP_CONNECT",
+  "request_body_byte_length": 1049,
+  "request_body_sha256": "224ec5faeb8e23f1a8db9a3726e6231fa15014ef947fec4fe602fde82e1e5a9b",
+  "transport_invocation_number": 1,
+  "window_id": "SVF-PRIMARY-800-V1"
+}

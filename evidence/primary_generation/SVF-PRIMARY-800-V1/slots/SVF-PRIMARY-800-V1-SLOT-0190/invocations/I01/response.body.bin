@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cpcap.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstdint.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) {\n        return 0;\n    }\n\n    char errbuf[PCAP_ERRBUF_SIZE];\n    pcap_t *handle;\n    struct pcap_pkthdr *header;\n    const u_char *pkt_data;\n\n    handle = pcap_create(\"lo\", errbuf);\n    if (handle == NULL) {\n        return 0;\n    }\n\n    if (pcap_set_timeout(handle, 10) != 0) {\n        pcap_close(handle);\n        return 0;\n    }\n\n    int status = pcap_activate(handle);\n    if (status != 0) {\n        pcap_close(handle);\n        return 0;\n    }\n\n    int iterations = data[0] % 5;\n    for (int i = 0; i \u003c iterations; i++) {\n        int res = pcap_next_ex(handle, &header, &pkt_data);\n        if (res == 1) {\n            // Packet captured successfully\n        } else if (res == 0) {\n            // Timeout reached\n        } else if (res \u003c 0) {\n            // Error or EOF\n            break;\n        }\n    }\n\n    pcap_close(handle);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPOKxlYrSM4xPJk3Tp8dCxc2Jy90j7lN78deSVN616a2LfKBstUy+q+YLPFeWY"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 193,
+    "candidatesTokenCount": 356,
+    "totalTokenCount": 549,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 193
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "kqh4apH3D6v-vdIPib-7-Ag"
+}

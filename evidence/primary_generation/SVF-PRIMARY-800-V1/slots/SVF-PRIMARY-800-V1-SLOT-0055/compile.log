@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0055/driver.c:13:14: warning: unused variable 'input_size_raw' [-Wunused-variable]
+    uint32_t input_size_raw = (uint32_t)data[4] | ((uint32_t)data[5] << 8) |
+             ^
+1 warning generated.

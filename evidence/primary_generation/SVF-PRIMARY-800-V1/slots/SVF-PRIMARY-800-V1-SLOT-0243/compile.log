@@ -1,0 +1,10 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0243/driver.c:12:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0243/driver.c:19:11: error: unknown type name 'uint8_t'
+    const uint8_t *path1_data = data + 1;
+          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0243/driver.c:21:11: error: unknown type name 'uint8_t'
+    const uint8_t *path2_data = data + 1 + split;
+          ^
+3 errors generated.

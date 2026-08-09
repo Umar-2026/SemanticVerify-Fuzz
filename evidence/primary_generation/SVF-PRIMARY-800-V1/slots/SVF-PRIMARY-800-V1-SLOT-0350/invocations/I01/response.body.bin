@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (json_str == NULL) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root == NULL) {\n        free(json_str);\n        return 0;\n    }\n\n    if (cJSON_IsObject(root)) {\n        cJSON *child = root-\u003echild;\n        while (child != NULL) {\n            char *name = child-\u003estring;\n            if (name != NULL) {\n                size_t len = strlen(name);\n                (void)len;\n            }\n            child = child-\u003enext;\n        }\n    }\n\n    char *rendered = cJSON_PrintUnformatted(root);\n    if (rendered != NULL) {\n        size_t rendered_len = strlen(rendered);\n        (void)rendered_len;\n        free(rendered);\n    }\n\n    cJSON_Delete(root);\n    free(json_str);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPR6uL6Bi2uGUXJjln6FT5kqdPwaC1tu6HPmB8fIGQWSyr2QITecnnSQOnAmX5"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 163,
+    "candidatesTokenCount": 347,
+    "totalTokenCount": 510,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 163
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "x6p4asfbEs7Y1e8PhayV2A0"
+}

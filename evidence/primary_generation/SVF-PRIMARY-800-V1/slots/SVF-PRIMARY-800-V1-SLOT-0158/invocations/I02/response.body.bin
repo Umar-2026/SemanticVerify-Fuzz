@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cpcap.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cstdint.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 64) {\n        return 0;\n    }\n\n    char errbuf[PCAP_ERRBUF_SIZE];\n    pcap_t *handle = pcap_create(\"lo\", errbuf);\n    if (!handle) {\n        return 0;\n    }\n\n    pcap_set_snaplen(handle, 65535);\n    pcap_set_promisc(handle, 1);\n    pcap_set_timeout(handle, 1);\n\n    if (pcap_activate(handle) != 0) {\n        pcap_close(handle);\n        return 0;\n    }\n\n    struct bpf_program fp;\n    const char *filter_exp = \"udp\";\n    if (pcap_compile(handle, &fp, filter_exp, 0, PCAP_NETMASK_UNKNOWN) == 0) {\n        if (pcap_setfilter(handle, &fp) == 0) {\n            struct pcap_pkthdr *header;\n            const u_char *pkt_data;\n\n            int status = pcap_next_ex(handle, &header, &pkt_data);\n            if (status == 1) {\n                if (header-\u003elen \u003e= 28) {\n                    uint16_t src_port = (pkt_data[20] \u003c\u003c 8) | pkt_data[21];\n                    uint16_t dst_port = (pkt_data[22] \u003c\u003c 8) | pkt_data[23];\n                    (void)src_port;\n                    (void)dst_port;\n                }\n            }\n        }\n        pcap_freecode(&fp);\n    }\n\n    pcap_close(handle);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPizLYxAfvDKIh5mDb1YOdEUgM98kFJMSGS2gyBHxTlvDZZ8sBXfSk2qGNYf1I"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 196,
+    "candidatesTokenCount": 470,
+    "totalTokenCount": 666,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 196
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Dah4auq8G-KtjuMP7ofk2Ak"
+}

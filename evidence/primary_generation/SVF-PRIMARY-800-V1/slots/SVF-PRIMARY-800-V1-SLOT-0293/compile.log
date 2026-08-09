@@ -1,0 +1,16 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0293/driver.c:56:14: warning: unused variable 'res' [-Wunused-variable]
+    CURLcode res = curl_easy_perform(easy);
+             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0293/driver.c:51:5: warning: call to Wcurl_easy_setopt_err_long declared with 'warning' attribute: curl_easy_setopt expects a long argument [-Wattribute-warning]
+    curl_easy_setopt(easy, CURLOPT_VERBOSE, verbose);
+    ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/typecheck-gcc.h:50:13: note: expanded from macro 'curl_easy_setopt'
+            Wcurl_easy_setopt_err_long();                               \
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0293/driver.c:50:5: warning: call to Wcurl_easy_setopt_err_long declared with 'warning' attribute: curl_easy_setopt expects a long argument [-Wattribute-warning]
+    curl_easy_setopt(easy, CURLOPT_FOLLOWLOCATION, follow_redirects);
+    ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/typecheck-gcc.h:50:13: note: expanded from macro 'curl_easy_setopt'
+            Wcurl_easy_setopt_err_long();                               \
+            ^
+3 warnings generated.

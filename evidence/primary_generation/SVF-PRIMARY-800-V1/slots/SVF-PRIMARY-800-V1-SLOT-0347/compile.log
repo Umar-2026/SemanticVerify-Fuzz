@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0347/driver.c:5:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0347/driver.c:75:18: warning: variable 'dummy' set but not used [-Wunused-but-set-variable]
+    volatile int dummy = count;
+                 ^
+1 warning and 1 error generated.

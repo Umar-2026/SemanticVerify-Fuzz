@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cstdint.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 2) {\n        return 0;\n    }\n\n    z_stream strm;\n    memset(&strm, 0, sizeof(strm));\n\n    /* Use the first byte to determine the windowBits strategy */\n    /* 15 + 16 = gzip, 15 = zlib, -15 = raw */\n    int windowBits = 15;\n    uint8_t mode_selector = data[0];\n    if (mode_selector \u003c 85) {\n        windowBits = 15 + 16;\n    } else if (mode_selector \u003c 170) {\n        windowBits = 15;\n    } else {\n        windowBits = -15;\n    }\n\n    if (inflateInit2(&strm, windowBits) != Z_OK) {\n        return 0;\n    }\n\n    uint8_t buffer[1024];\n    strm.next_in = (Bytef *)(data + 1);\n    strm.avail_in = (uInt)(size - 1);\n\n    /* Streaming decompression loop */\n    do {\n        strm.next_out = buffer;\n        strm.avail_out = sizeof(buffer);\n        \n        int ret = inflate(&strm, Z_NO_FLUSH);\n        \n        if (ret == Z_STREAM_END || ret == Z_DATA_ERROR || ret == Z_MEM_ERROR || ret == Z_BUF_ERROR) {\n            break;\n        }\n    } while (strm.avail_out == 0);\n\n    inflateEnd(&strm);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP3RqqtHwXLF9Q0YK6SFf9J7af6zt5yD9C+XwR4+/76oa+rQmRK/VYuXfu3Fwo"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 168,
+    "candidatesTokenCount": 448,
+    "totalTokenCount": 616,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 168
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "v6V4aqWDJ8eHz7IPybzxiQQ"
+}

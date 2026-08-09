@@ -1,0 +1,9 @@
+{
+  "authorization_record_path": "evidence/generation_opening/primary_generation_authorization.v1.json",
+  "authorization_record_sha256": "165ae719af222bd6eec1ebd4c7a7768649490b84af3b5b76bd56d58da633333e",
+  "execution_head_commit": "7fdb1a05334177d50000c0d6a57e2c11111bfc99",
+  "global_max_in_flight_requests": 1,
+  "opened_at_utc": "2026-08-09T16:05:14+00:00",
+  "request_count": 800,
+  "window_id": "SVF-PRIMARY-800-V1"
+}

@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cstdint.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 4) {\n        return 0;\n    }\n\n    size_t half = size / 2;\n    const uint8_t *data1 = data;\n    size_t size1 = half;\n    const uint8_t *data2 = data + half;\n    size_t size2 = size - half;\n\n    z_stream strm;\n    memset(&strm, 0, sizeof(strm));\n\n    if (inflateInit(&strm) != Z_OK) {\n        return 0;\n    }\n\n    uint8_t out[1024];\n\n    strm.next_in = (Bytef *)data1;\n    strm.avail_in = (uInt)size1;\n    strm.next_out = out;\n    strm.avail_out = sizeof(out);\n\n    inflate(&strm, Z_FINISH);\n\n    if (inflateReset(&strm) != Z_OK) {\n        inflateEnd(&strm);\n        return 0;\n    }\n\n    strm.next_in = (Bytef *)data2;\n    strm.avail_in = (uInt)size2;\n    strm.next_out = out;\n    strm.avail_out = sizeof(out);\n\n    inflate(&strm, Z_FINISH);\n\n    inflateEnd(&strm);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPSSg+DjDLAZqkaok+HT88LEboH1shCXzv78l0WmrJqF8yXy6F0SeDwGxdPGND"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 169,
+    "candidatesTokenCount": 392,
+    "totalTokenCount": 561,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 169
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "E6Z4aubVDpPQ28oP3eqx2Qo"
+}

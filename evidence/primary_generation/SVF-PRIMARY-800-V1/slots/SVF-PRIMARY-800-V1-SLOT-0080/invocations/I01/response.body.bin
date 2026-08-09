@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003czlib.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) {\n        return 0;\n    }\n\n    z_stream strm1, strm2;\n    memset(&strm1, 0, sizeof(z_stream));\n    memset(&strm2, 0, sizeof(z_stream));\n\n    if (inflateInit(&strm1) != Z_OK) {\n        return 0;\n    }\n\n    strm1.next_in = (Bytef *)data;\n    strm1.avail_in = (uInt)(size / 2);\n\n    unsigned char out1[1024];\n    strm1.next_out = out1;\n    strm1.avail_out = sizeof(out1);\n\n    inflate(&strm1, Z_NO_FLUSH);\n\n    if (inflateCopy(&strm2, &strm1) == Z_OK) {\n        strm2.next_in = (Bytef *)(data + (size / 2));\n        strm2.avail_in = (uInt)(size - (size / 2));\n\n        unsigned char out2[1024];\n        strm2.next_out = out2;\n        strm2.avail_out = sizeof(out2);\n\n        inflate(&strm2, Z_FINISH);\n        inflateEnd(&strm2);\n    }\n\n    inflateEnd(&strm1);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP/p1tTFX96YZfOQCU+I+FYtDCLza8lReegOsHLv3IGFVc06qNTWf3xgQivSSL"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 168,
+    "candidatesTokenCount": 388,
+    "totalTokenCount": 556,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 168
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "pqZ4apXaEMLxqtsP_aPEyAo"
+}

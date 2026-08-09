@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) return 0;\n\n    z_stream strm_def;\n    z_stream strm_inf;\n    \n    memset(&strm_def, 0, sizeof(strm_def));\n    memset(&strm_inf, 0, sizeof(strm_inf));\n\n    if (deflateInit(&strm_def, Z_DEFAULT_COMPRESSION) != Z_OK) return 0;\n    if (inflateInit(&strm_inf) != Z_OK) {\n        deflateEnd(&strm_def);\n        return 0;\n    }\n\n    size_t max_out = deflateBound(&strm_def, size);\n    uint8_t *compressed = malloc(max_out);\n    uint8_t *decompressed = malloc(size + 1024);\n\n    if (!compressed || !decompressed) {\n        free(compressed);\n        free(decompressed);\n        deflateEnd(&strm_def);\n        inflateEnd(&strm_inf);\n        return 0;\n    }\n\n    strm_def.next_in = (Bytef *)data;\n    strm_def.avail_in = (uInt)size;\n    strm_def.next_out = compressed;\n    strm_def.avail_out = (uInt)max_out;\n\n    if (deflate(&strm_def, Z_FINISH) == Z_STREAM_END) {\n        strm_inf.next_in = compressed;\n        strm_inf.avail_in = (uInt)(max_out - strm_def.avail_out);\n        strm_inf.next_out = decompressed;\n        strm_inf.avail_out = (uInt)(size + 1024);\n\n        inflate(&strm_inf, Z_FINISH);\n    }\n\n    deflateEnd(&strm_def);\n    inflateEnd(&strm_inf);\n    free(compressed);\n    free(decompressed);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPwvkB/kTdPr8Y8QELtLORHtqYAB9wiMSzBdJRgxcFT9vemPWsmjWDAWYcbdH+"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 167,
+    "candidatesTokenCount": 533,
+    "totalTokenCount": 700,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 167
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "1KZ4ar28G7bXjMcP6uaagA4"
+}

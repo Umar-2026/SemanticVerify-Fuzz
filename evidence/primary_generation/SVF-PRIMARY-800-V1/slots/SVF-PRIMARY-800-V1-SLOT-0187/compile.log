@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0187/driver.c:12:20: warning: unused variable 'packet_data' [-Wunused-variable]
+    const uint8_t *packet_data = data + 2;
+                   ^
+1 warning generated.

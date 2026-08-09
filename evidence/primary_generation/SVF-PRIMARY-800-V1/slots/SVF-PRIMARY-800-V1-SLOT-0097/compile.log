@@ -1,0 +1,13 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0097/driver.c:15:12: warning: unused variable 'total_in' [-Wunused-variable]
+    size_t total_in = 0;
+           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0097/driver.c:16:12: warning: unused variable 'total_out' [-Wunused-variable]
+    size_t total_out = 0;
+           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0097/driver.c:18:9: warning: unused variable 'have' [-Wunused-variable]
+    int have;
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0097/driver.c:19:9: warning: unused variable 'err' [-Wunused-variable]
+    int err;
+        ^
+4 warnings generated.

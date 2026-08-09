@@ -1,0 +1,19 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0258/driver.c:10:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0258/driver.c:44:13: error: use of undeclared identifier 'uint8_t'
+            uint8_t *buf = malloc(fsize);
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0258/driver.c:44:22: error: use of undeclared identifier 'buf'
+            uint8_t *buf = malloc(fsize);
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0258/driver.c:45:19: error: use of undeclared identifier 'buf'
+            fread(buf, 1, fsize, f);
+                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0258/driver.c:46:36: error: use of undeclared identifier 'buf'
+            LLVMFuzzerTestOneInput(buf, fsize);
+                                   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0258/driver.c:47:18: error: use of undeclared identifier 'buf'
+            free(buf);
+                 ^
+6 errors generated.

@@ -1,0 +1,5 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0322/driver.c:19:39: warning: implicitly declaring library function 'strlen' with type 'unsigned long (const char *)' [-Wimplicit-function-declaration]
+                volatile size_t len = strlen(item->valuestring);
+                                      ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0322/driver.c:19:39: note: include the header <string.h> or explicitly provide a declaration for 'strlen'
+1 warning generated.

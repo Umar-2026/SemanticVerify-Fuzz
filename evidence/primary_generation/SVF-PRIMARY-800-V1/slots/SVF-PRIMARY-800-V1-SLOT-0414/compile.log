@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0414/driver.c:37:20: warning: unused variable 'copy_len' [-Wunused-variable]
+            size_t copy_len = (scanline_size < (size - offset)) ? scanline_size : (size - offset);
+                   ^
+1 warning generated.

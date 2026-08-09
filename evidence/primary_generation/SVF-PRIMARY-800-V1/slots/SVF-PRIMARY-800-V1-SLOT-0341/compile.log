@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0341/driver.c:27:12: warning: unused variable 'item' [-Wunused-variable]
+    cJSON *item = root;
+           ^
+1 warning generated.

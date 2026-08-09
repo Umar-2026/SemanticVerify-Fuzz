@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003ctiffio.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 4) {\n        return 0;\n    }\n\n    size_t split = size / 2;\n    const uint8_t *data1 = data;\n    size_t size1 = split;\n    const uint8_t *data2 = data + split;\n    size_t size2 = size - split;\n\n    char filename1[] = \"/tmp/fuzz1.tiff\";\n    char filename2[] = \"/tmp/fuzz2.tiff\";\n\n    FILE *f1 = fopen(filename1, \"wb\");\n    if (!f1) return 0;\n    fwrite(data1, 1, size1, f1);\n    fclose(f1);\n\n    FILE *f2 = fopen(filename2, \"wb\");\n    if (!f2) return 0;\n    fwrite(data2, 1, size2, f2);\n    fclose(f2);\n\n    TIFF *tif1 = TIFFOpen(filename1, \"r\");\n    TIFF *tif2 = TIFFOpen(filename2, \"r\");\n\n    if (tif1 && tif2) {\n        uint32_t w1, h1, w2, h2;\n        TIFFGetField(tif1, TIFFTAG_IMAGEWIDTH, &w1);\n        TIFFGetField(tif1, TIFFTAG_IMAGELENGTH, &h1);\n        TIFFGetField(tif2, TIFFTAG_IMAGEWIDTH, &w2);\n        TIFFGetField(tif2, TIFFTAG_IMAGELENGTH, &h2);\n    }\n\n    if (tif1) TIFFClose(tif1);\n    if (tif2) TIFFClose(tif2);\n\n    remove(filename1);\n    remove(filename2);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPagil+E7u5MvlSPiBdbw0fXAIzt6ZW3WTq5+wd8DCj5hnJzBH2Yt7x6rmBS/+"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 158,
+    "candidatesTokenCount": 467,
+    "totalTokenCount": 625,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 158
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "sqx4arKGHeH2xN8P6vXt0Qg"
+}

@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0427/driver.c:16:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(fd);
+        ^
+1 warning generated.

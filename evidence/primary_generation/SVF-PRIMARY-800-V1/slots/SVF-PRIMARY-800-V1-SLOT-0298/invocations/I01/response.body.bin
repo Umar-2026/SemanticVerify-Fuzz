@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nstatic size_t write_callback(void *contents, size_t size, size_t nmemb, void *userp) {\n    return size * nmemb;\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    CURL *curl;\n    CURLcode res;\n    char url[256];\n    char buffer[4096];\n\n    size_t url_len = (size - 1) \u003e 255 ? 255 : (size - 1);\n    memcpy(url, (const char *)data + 1, url_len);\n    url[url_len] = '\\0';\n\n    curl_global_init(CURL_GLOBAL_ALL);\n    curl = curl_easy_init();\n\n    if (curl) {\n        char full_url[300];\n        snprintf(full_url, sizeof(full_url), \"file://%s\", url);\n\n        curl_easy_setopt(curl, CURLOPT_URL, full_url);\n        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);\n        curl_easy_setopt(curl, CURLOPT_WRITEDATA, buffer);\n        curl_easy_setopt(curl, CURLOPT_TIMEOUT_MS, 500L);\n        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT_MS, 500L);\n\n        res = curl_easy_perform(curl);\n\n        curl_easy_cleanup(curl);\n    }\n\n    curl_global_cleanup();\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPtdyJsB532FK0BVJ+yDkFSGnzkyTjrL1r1uoPaP5yxE1232Dgssw5K7x4z9zt"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 197,
+    "candidatesTokenCount": 415,
+    "totalTokenCount": 612,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 197
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "OKp4ao-VDqm2kdUP7L3YiAs"
+}

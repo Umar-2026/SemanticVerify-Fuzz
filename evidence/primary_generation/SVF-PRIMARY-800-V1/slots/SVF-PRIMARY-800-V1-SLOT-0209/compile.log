@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0209/driver.c:57:14: warning: unused variable 'res' [-Wunused-variable]
+    CURLcode res = curl_easy_perform(curl);
+             ^
+1 warning generated.

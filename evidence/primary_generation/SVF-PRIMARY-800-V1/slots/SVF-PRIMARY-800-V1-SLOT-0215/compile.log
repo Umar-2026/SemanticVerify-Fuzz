@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0215/driver.c:89:5: warning: call to Wcurl_easy_setopt_err_cb_data declared with 'warning' attribute: curl_easy_setopt expects a private data pointer as argument [-Wattribute-warning]
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, outbuf);
+    ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/typecheck-gcc.h:132:13: note: expanded from macro 'curl_easy_setopt'
+            Wcurl_easy_setopt_err_cb_data();                            \
+            ^
+1 warning generated.

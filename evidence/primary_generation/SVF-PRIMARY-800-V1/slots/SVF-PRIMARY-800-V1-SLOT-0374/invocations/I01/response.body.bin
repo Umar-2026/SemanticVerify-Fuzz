@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 4) {\n        return 0;\n    }\n\n    cJSON *root = cJSON_CreateObject();\n    if (root == NULL) {\n        return 0;\n    }\n\n    cJSON *array = cJSON_CreateArray();\n    if (array == NULL) {\n        cJSON_Delete(root);\n        return 0;\n    }\n\n    cJSON_AddItemToObject(root, \"fuzz_array\", array);\n\n    for (size_t i = 0; i + 2 \u003c size; i += 3) {\n        cJSON *item;\n        uint8_t type = data[i] % 3;\n\n        if (type == 0) {\n            item = cJSON_CreateNumber((double)data[i + 1]);\n        } else if (type == 1) {\n            char buf[2] = {(char)data[i + 1], '\\0'};\n            item = cJSON_CreateString(buf);\n        } else {\n            item = cJSON_CreateObject();\n            cJSON_AddItemToObject(item, \"nested_key\", cJSON_CreateNumber((double)data[i + 2]));\n        }\n\n        if (item != NULL) {\n            cJSON_AddItemToArray(array, item);\n        }\n    }\n\n    char *out = cJSON_Print(root);\n    if (out != NULL) {\n        free(out);\n    }\n\n    cJSON_Delete(root);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPl5W3bapImiTUnJy7n2wzX/9fal05laT1sBjGqrse9IPlGEJ2D2T56z9b9d3/"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 182,
+    "candidatesTokenCount": 402,
+    "totalTokenCount": 584,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 182
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "D6t4aubiNeyb9MoPxaK4oQg"
+}

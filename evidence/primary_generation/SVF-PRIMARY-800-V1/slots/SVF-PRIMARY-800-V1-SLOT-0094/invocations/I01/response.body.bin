@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cstdint.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) return 0;\n\n    z_stream strm;\n    strm.zalloc = Z_NULL;\n    strm.zfree = Z_NULL;\n    strm.opaque = Z_NULL;\n\n    if (deflateInit(&strm, Z_DEFAULT_COMPRESSION) != Z_OK) {\n        return 0;\n    }\n\n    size_t compressed_size = deflateBound(&strm, size);\n    unsigned char *compressed_data = malloc(compressed_size);\n    if (!compressed_data) {\n        deflateEnd(&strm);\n        return 0;\n    }\n\n    strm.next_in = (Bytef *)data;\n    strm.avail_in = (uInt)size;\n    strm.next_out = compressed_data;\n    strm.avail_out = (uInt)compressed_size;\n\n    if (deflate(&strm, Z_FINISH) != Z_STREAM_END) {\n        free(compressed_data);\n        deflateEnd(&strm);\n        return 0;\n    }\n    size_t actual_compressed_size = strm.total_out;\n    deflateEnd(&strm);\n\n    z_stream strm_inf;\n    strm_inf.zalloc = Z_NULL;\n    strm_inf.zfree = Z_NULL;\n    strm_inf.opaque = Z_NULL;\n    strm_inf.next_in = compressed_data;\n    strm_inf.avail_in = (uInt)actual_compressed_size;\n\n    if (inflateInit(&strm_inf) != Z_OK) {\n        free(compressed_data);\n        return 0;\n    }\n\n    unsigned char *decompressed_data = malloc(size + 1);\n    if (decompressed_data) {\n        strm_inf.next_out = decompressed_data;\n        strm_inf.avail_out = (uInt)size;\n\n        inflate(&strm_inf, Z_FINISH);\n        free(decompressed_data);\n    }\n\n    inflateEnd(&strm_inf);\n    free(compressed_data);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPOFeJLtPRqnrYJdMN3F57/P6Oep9oH3JOK9jBSAY/3+n9djUih8sBO01EkrMX"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 167,
+    "candidatesTokenCount": 583,
+    "totalTokenCount": 750,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 167
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "3aZ4aqm8FKG_juMPn-Fw"
+}

@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (!json_str) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root != NULL) {\n        cJSON *item = cJSON_GetObjectItem(root, \"test_key\");\n        if (item != NULL) {\n            if (cJSON_IsString(item)) {\n                const char *val = item-\u003evaluestring;\n                (void)val;\n            }\n        }\n        cJSON_Delete(root);\n    }\n\n    free(json_str);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPa2JTQoQPh2bmAdKHOc8C6xZ07tQa6DSnxrDyoDEq9WSg20p1xxWFd4NVnS8Y"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 161,
+    "candidatesTokenCount": 250,
+    "totalTokenCount": 411,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 161
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Tap4aruuFrS_vr0PsZneuQw"
+}

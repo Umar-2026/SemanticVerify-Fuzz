@@ -1,0 +1,49 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0281/driver.c:33:28: warning: 'CURLOPT_PROTOCOLS' is deprecated: since 7.85.0. Use CURLOPT_PROTOCOLS_STR [-Wdeprecated-declarations]
+    curl_easy_setopt(curl, CURLOPT_PROTOCOLS, CURLPROTO_FILE);
+                           ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1790:3: note: 'CURLOPT_PROTOCOLS' has been explicitly marked deprecated here
+  CURLOPTDEPRECATED(CURLOPT_PROTOCOLS, CURLOPTTYPE_LONG, 181,
+  ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1123:47: note: expanded from macro 'CURLOPTDEPRECATED'
+#define CURLOPTDEPRECATED(na, t, nu, v, m) na CURL_DEPRECATED(v, m) \
+                                              ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:44:18: note: expanded from macro 'CURL_DEPRECATED'
+  __attribute__((deprecated("since " # version ". " message)))
+                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0281/driver.c:33:28: warning: 'CURLOPT_PROTOCOLS' is deprecated: since 7.85.0. Use CURLOPT_PROTOCOLS_STR [-Wdeprecated-declarations]
+    curl_easy_setopt(curl, CURLOPT_PROTOCOLS, CURLPROTO_FILE);
+                           ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1790:3: note: 'CURLOPT_PROTOCOLS' has been explicitly marked deprecated here
+  CURLOPTDEPRECATED(CURLOPT_PROTOCOLS, CURLOPTTYPE_LONG, 181,
+  ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1123:47: note: expanded from macro 'CURLOPTDEPRECATED'
+#define CURLOPTDEPRECATED(na, t, nu, v, m) na CURL_DEPRECATED(v, m) \
+                                              ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:44:18: note: expanded from macro 'CURL_DEPRECATED'
+  __attribute__((deprecated("since " # version ". " message)))
+                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0281/driver.c:34:28: warning: 'CURLOPT_REDIR_PROTOCOLS' is deprecated: since 7.85.0. Use CURLOPT_REDIR_PROTOCOLS_STR [-Wdeprecated-declarations]
+    curl_easy_setopt(curl, CURLOPT_REDIR_PROTOCOLS, 0L);
+                           ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1796:3: note: 'CURLOPT_REDIR_PROTOCOLS' has been explicitly marked deprecated here
+  CURLOPTDEPRECATED(CURLOPT_REDIR_PROTOCOLS, CURLOPTTYPE_LONG, 182,
+  ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1123:47: note: expanded from macro 'CURLOPTDEPRECATED'
+#define CURLOPTDEPRECATED(na, t, nu, v, m) na CURL_DEPRECATED(v, m) \
+                                              ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:44:18: note: expanded from macro 'CURL_DEPRECATED'
+  __attribute__((deprecated("since " # version ". " message)))
+                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0281/driver.c:34:28: warning: 'CURLOPT_REDIR_PROTOCOLS' is deprecated: since 7.85.0. Use CURLOPT_REDIR_PROTOCOLS_STR [-Wdeprecated-declarations]
+    curl_easy_setopt(curl, CURLOPT_REDIR_PROTOCOLS, 0L);
+                           ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1796:3: note: 'CURLOPT_REDIR_PROTOCOLS' has been explicitly marked deprecated here
+  CURLOPTDEPRECATED(CURLOPT_REDIR_PROTOCOLS, CURLOPTTYPE_LONG, 182,
+  ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:1123:47: note: expanded from macro 'CURLOPTDEPRECATED'
+#define CURLOPTDEPRECATED(na, t, nu, v, m) na CURL_DEPRECATED(v, m) \
+                                              ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/curl/include/curl/curl.h:44:18: note: expanded from macro 'CURL_DEPRECATED'
+  __attribute__((deprecated("since " # version ". " message)))
+                 ^
+4 warnings generated.

@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cpcap.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003csys/socket.h\u003e\n#include \u003cnetinet/in.h\u003e\n#include \u003cnetinet/udp.h\u003e\n#include \u003cnetinet/ip.h\u003e\n#include \u003cunistd.h\u003e\n#include \u003carpa/inet.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1 || size \u003e 1400) return 0;\n\n    char errbuf[PCAP_ERRBUF_SIZE];\n    pcap_t *handle = pcap_create(\"lo\", errbuf);\n    if (!handle) return 0;\n\n    pcap_set_snaplen(handle, 65535);\n    pcap_set_promisc(handle, 1);\n    pcap_set_timeout(handle, 100);\n    \n    if (pcap_activate(handle) != 0) {\n        pcap_close(handle);\n        return 0;\n    }\n\n    int sockfd = socket(AF_INET, SOCK_DGRAM, 0);\n    if (sockfd \u003e= 0) {\n        struct sockaddr_in addr;\n        memset(&addr, 0, sizeof(addr));\n        addr.sin_family = AF_INET;\n        addr.sin_port = htons(12345);\n        addr.sin_addr.s_addr = inet_addr(\"127.0.0.1\");\n\n        sendto(sockfd, data, size, 0, (struct sockaddr *)&addr, sizeof(addr));\n        close(sockfd);\n    }\n\n    struct pcap_pkthdr *header;\n    const u_char *pkt_data;\n    int res = pcap_next_ex(handle, &header, &pkt_data);\n\n    pcap_close(handle);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPh7IdEpgqr9HMUGC6SOFfzge4QI82y7twQ6+4sSsG2GaOppSgCdIhaaYy3dKP"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 185,
+    "candidatesTokenCount": 460,
+    "totalTokenCount": 645,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 185
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Dad4auyaObmEz7IPipWo6Q0"
+}

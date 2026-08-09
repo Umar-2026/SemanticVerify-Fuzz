@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nstatic size_t write_callback(void *contents, size_t size, size_t nmemb, void *userp) {\n    return size * nmemb;\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10 || size \u003e 2048) {\n        return 0;\n    }\n\n    char *url = malloc(size + 8);\n    if (!url) return 0;\n\n    memcpy(url, \"file://\", 7);\n    memcpy(url + 7, data, size);\n    url[size + 7] = '\\0';\n\n    CURL *curl = curl_easy_init();\n    if (curl) {\n        curl_easy_setopt(curl, CURLOPT_URL, url);\n        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);\n        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 1L);\n        curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1L);\n\n        curl_easy_perform(curl);\n        curl_easy_cleanup(curl);\n    }\n\n    free(url);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPHbRhxmoZldptYCPxbkvZ4pHgRLmjbO/cX9tfJl9+Yw2CoibBgH1SIcFz72ud"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 183,
+    "candidatesTokenCount": 318,
+    "totalTokenCount": 501,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 183
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Jal4ariOPJTBqtsPn_CMoQ4"
+}

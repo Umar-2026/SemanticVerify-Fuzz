@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cstdint.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 2) {\n        return 0;\n    }\n\n    size_t split_point = data[0] % size;\n    const uint8_t *part1 = data + 1;\n    size_t size1 = split_point;\n    const uint8_t *part2 = data + 1 + split_point;\n    size_t size2 = size - 1 - split_point;\n\n    z_stream strm1, strm2;\n    memset(&strm1, 0, sizeof(strm1));\n    memset(&strm2, 0, sizeof(strm2));\n\n    if (inflateInit(&strm1) != Z_OK || inflateInit(&strm2) != Z_OK) {\n        return 0;\n    }\n\n    uint8_t buffer[1024];\n\n    strm1.next_in = (Bytef *)part1;\n    strm1.avail_in = (uInt)size1;\n    strm1.next_out = buffer;\n    strm1.avail_out = sizeof(buffer);\n    inflate(&strm1, Z_NO_FLUSH);\n\n    strm2.next_in = (Bytef *)part2;\n    strm2.avail_in = (uInt)size2;\n    strm2.next_out = buffer;\n    strm2.avail_out = sizeof(buffer);\n    inflate(&strm2, Z_NO_FLUSH);\n\n    inflateEnd(&strm1);\n    inflateEnd(&strm2);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPh6I6IPeOjGjNLDGdGd5vEkbCtOkNGR3Uwy7EjbAFIfYUSzJFGNQfFTah2cQT"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 163,
+    "candidatesTokenCount": 439,
+    "totalTokenCount": 602,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 163
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "eKZ4asLfCrGc28oP1eDqoQc"
+}

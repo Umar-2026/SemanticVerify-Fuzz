@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0315/driver.c:14:9: warning: unused variable 'require_null_terminated' [-Wunused-variable]
+    int require_null_terminated = data[1] & 0x01;
+        ^
+1 warning generated.

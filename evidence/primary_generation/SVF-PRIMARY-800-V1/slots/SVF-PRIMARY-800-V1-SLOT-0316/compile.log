@@ -1,0 +1,17 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0316/driver.c:15:20: error: expected ';' after expression
+    cJSON_ParseOpts opts = {
+                   ^
+                   ;
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0316/driver.c:15:5: error: use of undeclared identifier 'cJSON_ParseOpts'
+    cJSON_ParseOpts opts = {
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0316/driver.c:15:21: error: use of undeclared identifier 'opts'
+    cJSON_ParseOpts opts = {
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0316/driver.c:15:28: error: expected expression
+    cJSON_ParseOpts opts = {
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0316/driver.c:21:88: error: use of undeclared identifier 'opts'
+    cJSON *root = cJSON_ParseWithLengthOpts(json_data, parse_size, &return_parse_end, &opts);
+                                                                                       ^
+5 errors generated.

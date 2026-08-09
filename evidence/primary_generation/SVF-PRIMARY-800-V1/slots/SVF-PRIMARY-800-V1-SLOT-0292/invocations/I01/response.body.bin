@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nstatic size_t write_callback(void *contents, size_t size, size_t nmemb, void *userp) {\n    return size * nmemb;\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    CURL *curl;\n    CURLcode res;\n    char url[256];\n    char buffer[4096];\n\n    curl_global_init(CURL_GLOBAL_ALL);\n    curl = curl_easy_init();\n\n    if (curl) {\n        snprintf(url, sizeof(url), \"file:///tmp/fuzz_test_%.*s\", (int)(size \u003e 200 ? 200 : size), data);\n\n        curl_easy_setopt(curl, CURLOPT_URL, url);\n        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);\n        curl_easy_setopt(curl, CURLOPT_WRITEDATA, buffer);\n        curl_easy_setopt(curl, CURLOPT_TIMEOUT_MS, 500L);\n        curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT_MS, 500L);\n\n        res = curl_easy_perform(curl);\n\n        curl_easy_cleanup(curl);\n    }\n\n    curl_global_cleanup();\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP6F7IuU81SuylD8ecsdKdaUg7ItxxAf6jKCnQVW4x2kokn/K35govGRx6MZaQ"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 197,
+    "candidatesTokenCount": 360,
+    "totalTokenCount": 557,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 197
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Iqp4asXsKoG1kdUP2M-CkQs"
+}

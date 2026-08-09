@@ -1,0 +1,8 @@
+{
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0172",
+  "postprocessing_record_path": "slots/SVF-PRIMARY-800-V1-SLOT-0172/postprocessing.json",
+  "postprocessing_record_sha256": "fc0a0b58b3abfaaba5e7c39ff32b97c6de2d40742b2fe75d5769c706971dfab3",
+  "slot_number": 172,
+  "terminal_status": "API_ERROR",
+  "window_id": "SVF-PRIMARY-800-V1"
+}

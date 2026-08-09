@@ -1,0 +1,8 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0276/driver.c:5:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0276/driver.c:10:5: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+    memcpy(filename, data, name_len);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0276/driver.c:10:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+1 warning and 1 error generated.

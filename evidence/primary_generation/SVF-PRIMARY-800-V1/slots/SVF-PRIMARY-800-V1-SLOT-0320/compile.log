@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0320/driver.c:20:9: warning: incompatible pointer types passing 'cJSON **' (aka 'struct cJSON **') to parameter of type 'const char **' [-Wincompatible-pointer-types]
+        &return_parse_end,
+        ^~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/cJSON/cJSON.h:159:103: note: passing argument to parameter 'return_parse_end' here
+CJSON_PUBLIC(cJSON *) cJSON_ParseWithLengthOpts(const char *value, size_t buffer_length, const char **return_parse_end, cJSON_bool require_null_terminated);
+                                                                                                      ^
+1 warning generated.

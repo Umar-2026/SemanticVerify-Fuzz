@@ -1,0 +1,10 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0459/driver.c:15:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(fd);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0459/driver.c:16:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(filename);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0459/driver.c:23:5: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+    unlink(filename);
+    ^
+3 warnings generated.

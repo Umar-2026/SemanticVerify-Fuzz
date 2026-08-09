@@ -1,0 +1,63 @@
+{
+  "HTTP_status_or_transport_failure": 200,
+  "authorization_record_path": "evidence/generation_opening/primary_generation_authorization.v1.json",
+  "authorization_record_sha256": "165ae719af222bd6eec1ebd4c7a7768649490b84af3b5b76bd56d58da633333e",
+  "cost_basis_and_estimate": {
+    "basis": "direct_cache_split",
+    "cache_hit_tokens": 128,
+    "cache_miss_tokens": 52,
+    "completion_tokens": 708,
+    "estimate_usd": 0.0002058784,
+    "status": "PASS"
+  },
+  "cost_estimate_status": "PASS",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "execution_head_commit": "7fdb1a05334177d50000c0d6a57e2c11111bfc99",
+  "latency_ms": 5479,
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0139",
+  "provider": "DeepSeek",
+  "provider_neutral_descriptor_sha256": "3d54386984204ddc9529c55c8130ec9295ec8b2304784b03bf95c7369763c2f9",
+  "raw_response_path_or_null": "slots/SVF-PRIMARY-800-V1-SLOT-0139/invocations/I01/response.body.bin",
+  "raw_response_sha256_or_null": "b0bea92f0695c4c4ea81277fa097e8806a667693d5779376d8a81e4c7855c096",
+  "request_body_byte_length": 1096,
+  "request_body_sha256": "f3a1459aa34fd967217247a15db160e16275a054f878581a0993514251299b87",
+  "request_body_sha256_verified": true,
+  "request_finished_at_utc": "2026-08-09T16:16:13+00:00",
+  "request_parameters": {
+    "library": "libpcap",
+    "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0139",
+    "maximum_output_tokens": 8192,
+    "model_label": "Model A",
+    "provider": "DeepSeek",
+    "replicate_id": "R05",
+    "requested_model_id": "deepseek-v4-flash",
+    "scenario_id": "S04",
+    "seed": null,
+    "seed_rule": "provider default; null recorded because no frozen provider seed is supplied",
+    "seed_transmitted": false,
+    "slot_number": 139,
+    "stream": false,
+    "system_prompt_sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "user_message_sha256": "f41ed54b5fe51a29d020f5e206ea8e38fb4c179106f248bddf93b38bf40f5d8e",
+    "window_id": "SVF-PRIMARY-800-V1"
+  },
+  "request_started_at_utc": "2026-08-09T16:16:08+00:00",
+  "requested_model_id": "deepseek-v4-flash",
+  "response_headers_redacted": true,
+  "returned_model_or_version": "deepseek-v4-flash",
+  "token_usage": {
+    "completion_tokens": 708,
+    "prompt_cache_hit_tokens": 128,
+    "prompt_cache_miss_tokens": 52,
+    "prompt_tokens": 180,
+    "prompt_tokens_details": {
+      "cached_tokens": 128
+    },
+    "total_tokens": 888
+  },
+  "transport_invocation_number": 1,
+  "transport_retry_classification": "COMPLETE_HTTP_RESPONSE_NO_RETRY",
+  "window_id": "SVF-PRIMARY-800-V1"
+}

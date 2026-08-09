@@ -1,0 +1,8 @@
+{
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0464",
+  "postprocessing_record_path": "slots/SVF-PRIMARY-800-V1-SLOT-0464/postprocessing.json",
+  "postprocessing_record_sha256": "c5c643548d173f846cb1257a8787da3f8830bcadea5430ef6dfad27a384e2af3",
+  "slot_number": 464,
+  "terminal_status": "DUPLICATE_OUTPUT",
+  "window_id": "SVF-PRIMARY-800-V1"
+}

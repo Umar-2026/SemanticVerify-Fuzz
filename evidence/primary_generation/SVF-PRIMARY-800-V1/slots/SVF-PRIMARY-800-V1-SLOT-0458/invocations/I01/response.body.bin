@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003ctiffio.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) return 0;\n\n    TIFF *tif = TIFFFdOpen(0, \"fuzz_input\", \"r\");\n    if (!tif) return 0;\n\n    uint32_t width, height;\n    TIFFGetField(tif, TIFFTAG_IMAGEWIDTH, &width);\n    TIFFGetField(tif, TIFFTAG_IMAGELENGTH, &height);\n\n    tsize_t scanline_size = TIFFScanlineSize(tif);\n    if (scanline_size \u003c= 0) {\n        TIFFClose(tif);\n        return 0;\n    }\n\n    void *buf = malloc(scanline_size);\n    if (!buf) {\n        TIFFClose(tif);\n        return 0;\n    }\n\n    for (uint32_t row = 0; row \u003c height; row++) {\n        if (TIFFReadScanline(tif, buf, row, 0) \u003c 0) {\n            break;\n        }\n    }\n\n    free(buf);\n    TIFFClose(tif);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPoJNNp9uVRATw/2uaXwEOxHWwyRx6Jpgbfce2AzOSca8uLh3m6oJzjRnq8YoK"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 167,
+    "candidatesTokenCount": 306,
+    "totalTokenCount": 473,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 167
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "o6x4aqjwGaydjuMP7JaGmAo"
+}

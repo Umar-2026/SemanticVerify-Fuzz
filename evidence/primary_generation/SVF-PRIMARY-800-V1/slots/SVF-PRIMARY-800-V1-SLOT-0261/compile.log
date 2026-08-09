@@ -1,0 +1,28 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:12:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:19:11: error: unknown type name 'uint8_t'
+    const uint8_t *data1 = data;
+          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:21:11: error: unknown type name 'uint8_t'
+    const uint8_t *data2 = data + half;
+          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:30:24: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        if (fd1 != -1) close(fd1);
+                       ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:36:24: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+    ssize_t written1 = write(fd1, data1, size1);
+                       ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:38:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(fd1);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:41:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(file1);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:57:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(file1);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0261/driver.c:77:5: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+    unlink(file1);
+    ^
+6 warnings and 3 errors generated.

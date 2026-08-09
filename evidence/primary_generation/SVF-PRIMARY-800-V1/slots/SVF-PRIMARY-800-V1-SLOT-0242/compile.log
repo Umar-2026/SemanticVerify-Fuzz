@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0242/driver.c:9:14: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+    CURLcode res;
+             ^
+1 warning generated.

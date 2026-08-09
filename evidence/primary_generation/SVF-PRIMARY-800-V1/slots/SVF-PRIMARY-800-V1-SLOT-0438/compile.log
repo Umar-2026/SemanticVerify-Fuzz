@@ -1,0 +1,11 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0438/driver.c:12:17: warning: implicit declaration of function 'TIFFStreamOpen' is invalid in C99 [-Wimplicit-function-declaration]
+    TIFF *tif = TIFFStreamOpen("fuzz.tiff", data, size);
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0438/driver.c:12:11: warning: incompatible integer to pointer conversion initializing 'TIFF *' (aka 'struct tiff *') with an expression of type 'int' [-Wint-conversion]
+    TIFF *tif = TIFFStreamOpen("fuzz.tiff", data, size);
+          ^     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+ld.lld-14: error: undefined symbol: TIFFStreamOpen
+>>> referenced by driver.c
+>>>               /tmp/driver-a54360.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

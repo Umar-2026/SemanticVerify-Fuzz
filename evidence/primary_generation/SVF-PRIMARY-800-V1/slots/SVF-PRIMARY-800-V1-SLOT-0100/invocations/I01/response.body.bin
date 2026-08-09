@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) return 0;\n\n    z_stream strm_def;\n    z_stream strm_inf;\n    \n    unsigned char *compressed = malloc(compressBound(size));\n    unsigned char *decompressed = malloc(size + 1024);\n    if (!compressed || !decompressed) {\n        free(compressed);\n        free(decompressed);\n        return 0;\n    }\n\n    strm_def.zalloc = Z_NULL;\n    strm_def.zfree = Z_NULL;\n    strm_def.opaque = Z_NULL;\n    if (deflateInit(&strm_def, Z_DEFAULT_COMPRESSION) != Z_OK) {\n        free(compressed);\n        free(decompressed);\n        return 0;\n    }\n\n    strm_def.next_in = (Bytef *)data;\n    strm_def.avail_in = (uInt)size;\n    strm_def.next_out = compressed;\n    strm_def.avail_out = (uInt)compressBound(size);\n\n    if (deflate(&strm_def, Z_FINISH) != Z_STREAM_END) {\n        deflateEnd(&strm_def);\n        free(compressed);\n        free(decompressed);\n        return 0;\n    }\n    uInt compressed_size = strm_def.total_out;\n    deflateEnd(&strm_def);\n\n    strm_inf.zalloc = Z_NULL;\n    strm_inf.zfree = Z_NULL;\n    strm_inf.opaque = Z_NULL;\n    strm_inf.next_in = compressed;\n    strm_inf.avail_in = compressed_size;\n    strm_inf.next_out = decompressed;\n    strm_inf.avail_out = (uInt)(size + 1024);\n\n    if (inflateInit(&strm_inf) == Z_OK) {\n        inflate(&strm_inf, Z_FINISH);\n        inflateEnd(&strm_inf);\n    }\n\n    free(compressed);\n    free(decompressed);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPnvuP44uCBsEdwtRVSQxSYUylCDvVe4SYVyMBk3oILeOgJLBXGZg6V+dPClSL"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 167,
+    "candidatesTokenCount": 571,
+    "totalTokenCount": 738,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 167
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "8qZ4apHpGsnUxN8Pyav4gAI"
+}

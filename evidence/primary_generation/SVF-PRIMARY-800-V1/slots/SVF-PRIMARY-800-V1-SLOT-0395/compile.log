@@ -1,0 +1,5 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0395/driver.c:95:21: warning: implicitly declaring library function 'snprintf' with type 'int (char *, unsigned long, const char *, ...)' [-Wimplicit-function-declaration]
+                    snprintf(buf, sizeof(buf), "fuzz_%d", mod_index);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0395/driver.c:95:21: note: include the header <stdio.h> or explicitly provide a declaration for 'snprintf'
+1 warning generated.

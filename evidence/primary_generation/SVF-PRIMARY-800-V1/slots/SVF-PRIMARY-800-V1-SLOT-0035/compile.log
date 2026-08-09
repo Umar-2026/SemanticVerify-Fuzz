@@ -1,0 +1,18 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0035/driver.c:1:1: error: expected identifier or '('
+```c
+^
+In file included from /output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0035/driver.c:3:
+In file included from /usr/include/stdlib.h:395:
+/usr/include/x86_64-linux-gnu/sys/types.h:33:9: error: unknown type name '__u_char'
+typedef __u_char u_char;
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0035/driver.c:26:12: warning: variable 'total_in' set but not used [-Wunused-but-set-variable]
+    size_t total_in = 0;
+           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0035/driver.c:27:12: warning: variable 'total_out' set but not used [-Wunused-but-set-variable]
+    size_t total_out = 0;
+           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0035/driver.c:69:1: error: expected identifier or '('
+```
+^
+2 warnings and 3 errors generated.

@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0345/driver.c:70:18: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+    volatile int result = count;
+                 ^
+1 warning generated.

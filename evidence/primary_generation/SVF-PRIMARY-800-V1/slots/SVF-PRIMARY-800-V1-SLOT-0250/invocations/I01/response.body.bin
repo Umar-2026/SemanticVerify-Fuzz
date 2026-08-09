@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003ccurl/curl.h\u003e\n#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 2) return 0;\n\n    CURL *curl = curl_easy_init();\n    if (!curl) return 0;\n\n    char *filename = (char *)malloc(size + 1);\n    if (!filename) {\n        curl_easy_cleanup(curl);\n        return 0;\n    }\n    memcpy(filename, data, size);\n    filename[size] = '\\0';\n\n    char url[1024];\n    snprintf(url, sizeof(url), \"file://%s\", filename);\n\n    curl_easy_setopt(curl, CURLOPT_URL, url);\n    curl_easy_setopt(curl, CURLOPT_TIMEOUT, 1L);\n    curl_easy_perform(curl);\n\n    curl_easy_reset(curl);\n\n    curl_easy_setopt(curl, CURLOPT_URL, url);\n    curl_easy_setopt(curl, CURLOPT_VERBOSE, 0L);\n    curl_easy_perform(curl);\n\n    free(filename);\n    curl_easy_cleanup(curl);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPCSw7/djt+ctkEzmUr+g7TMvsTXXduoUrALbKrulrWf+a+aITJ2k4m9PMSJRP"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 189,
+    "candidatesTokenCount": 307,
+    "totalTokenCount": 496,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 189
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "dql4aoaMCpO9sOIP0ob56AY"
+}

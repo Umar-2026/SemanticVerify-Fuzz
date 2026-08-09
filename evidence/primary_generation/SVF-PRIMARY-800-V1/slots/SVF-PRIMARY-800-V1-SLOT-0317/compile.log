@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0317/driver.c:30:82: error: too many arguments to function call, expected 4, have 5
+    cJSON *item = cJSON_ParseWithLengthOpts(buffer, json_len, &end_ptr, options, require_null_terminated);
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~                                      ^~~~~~~~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/cJSON/cJSON.h:159:23: note: 'cJSON_ParseWithLengthOpts' declared here
+CJSON_PUBLIC(cJSON *) cJSON_ParseWithLengthOpts(const char *value, size_t buffer_length, const char **return_parse_end, cJSON_bool require_null_terminated);
+                      ^
+1 error generated.

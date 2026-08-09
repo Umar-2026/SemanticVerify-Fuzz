@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    char filename[256];\n    size_t name_len = (size - 1 \u003c 255) ? size - 1 : 255;\n    memcpy(filename, data, name_len);\n    filename[name_len] = '\\0';\n\n    char url[512];\n    snprintf(url, sizeof(url), \"file:///%s\", filename);\n\n    CURLM *multi_handle = curl_multi_init();\n    CURL *easy_handle = curl_easy_init();\n\n    if (multi_handle && easy_handle) {\n        curl_easy_setopt(easy_handle, CURLOPT_URL, url);\n        curl_easy_setopt(easy_handle, CURLOPT_TIMEOUT, 1L);\n        curl_easy_setopt(easy_handle, CURLOPT_NOPROGRESS, 1L);\n\n        curl_multi_add_handle(multi_handle, easy_handle);\n\n        int still_running;\n        curl_multi_perform(multi_handle, &still_running);\n\n        curl_multi_remove_handle(multi_handle, easy_handle);\n    }\n\n    if (easy_handle) {\n        curl_easy_cleanup(easy_handle);\n    }\n    if (multi_handle) {\n        curl_multi_cleanup(multi_handle);\n    }\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPTTEF7+ZZkGnvPFNVGa0vhiK3314Avb2gs4xXQxJ7fKjuUfDGcho8UuPuoIyh"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 193,
+    "candidatesTokenCount": 387,
+    "totalTokenCount": 580,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 193
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "xql4aqHJCtaivdIPneSW8A0"
+}

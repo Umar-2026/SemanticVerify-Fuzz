@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 2) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (!json_str) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root == NULL) {\n        free(json_str);\n        return 0;\n    }\n\n    if (cJSON_IsObject(root)) {\n        cJSON *new_item = cJSON_CreateString(\"fuzzed_value\");\n        cJSON_AddItemToObject(root, \"fuzzed_key\", new_item);\n    }\n\n    char *out = cJSON_PrintUnformatted(root);\n    if (out != NULL) {\n        free(out);\n    }\n\n    cJSON_Delete(root);\n    free(json_str);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPUUj+qfySpZ2SKfegD6RNTiGKYTnd3VVKDoXc96jWaARFjMiCzQeV09vvmYoy"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 171,
+    "candidatesTokenCount": 294,
+    "totalTokenCount": 465,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 171
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "lat4arfZK8G90-kPi6yRoQQ"
+}

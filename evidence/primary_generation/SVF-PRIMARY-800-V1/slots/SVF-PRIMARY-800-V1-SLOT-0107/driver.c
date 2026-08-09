@@ -1,0 +1,82 @@
+#include <pcap/pcap.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <errno.h>
+
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+    if (size < 2) return 0;
+
+    // Create a UDP socket bound to loopback
+    int sock = socket(AF_INET, SOCK_DGRAM, 0);
+    if (sock < 0) return 0;
+
+    struct sockaddr_in addr;
+    memset(&addr, 0, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+    addr.sin_port = 0; // ephemeral port
+
+    if (bind(sock, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
+        close(sock);
+        return 0;
+    }
+
+    // Determine payload size (bounded to avoid huge allocations)
+    size_t payload_len = data[0] % 512;
+    if (payload_len > size - 1) payload_len = size - 1;
+
+    // Send the datagram to ourselves
+    struct sockaddr_in dest;
+    memset(&dest, 0, sizeof(dest));
+    dest.sin_family = AF_INET;
+    dest.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+    dest.sin_port = addr.sin_port; // same port
+
+    ssize_t sent = sendto(sock, data + 1, payload_len, 0,
+                          (struct sockaddr *)&dest, sizeof(dest));
+    if (sent < 0) {
+        close(sock);
+        return 0;
+    }
+
+    // Set up pcap on loopback
+    char errbuf[PCAP_ERRBUF_SIZE];
+    pcap_t *p = pcap_create("lo", errbuf);
+    if (p == NULL) {
+        close(sock);
+        return 0;
+    }
+
+    // Set a short timeout to avoid hanging
+    if (pcap_set_timeout(p, 100) != 0) {
+        pcap_close(p);
+        close(sock);
+        return 0;
+    }
+
+    if (pcap_activate(p) != 0) {
+        pcap_close(p);
+        close(sock);
+        return 0;
+    }
+
+    // Capture one packet
+    struct pcap_pkthdr *header;
+    const u_char *packet;
+    int ret = pcap_next_ex(p, &header, &packet);
+    if (ret == 1) {
+        // Optionally inspect the packet (e.g., check it's UDP)
+        // We just consume it to satisfy the scenario.
+        (void)header;
+        (void)packet;
+    }
+
+    pcap_close(p);
+    close(sock);
+    return 0;
+}

@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0089/driver.c:34:12: warning: variable 'total_out' set but not used [-Wunused-but-set-variable]
+    size_t total_out = 0;
+           ^
+1 warning generated.

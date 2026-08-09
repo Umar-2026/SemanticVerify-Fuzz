@@ -1,0 +1,13 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0161/driver.c:66:31: warning: incompatible function pointer types passing 'int (u_char *, const struct pcap_pkthdr *, const u_char *)' (aka 'int (unsigned char *, const struct pcap_pkthdr *, const unsigned char *)') to parameter of type 'pcap_handler' (aka 'void (*)(unsigned char *, const struct pcap_pkthdr *, const unsigned char *)') [-Wincompatible-function-pointer-types]
+        pcap_loop(handle1, 1, process_packet, NULL);
+                              ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libpcap/pcap/pcap.h:614:51: note: passing argument to parameter here
+PCAP_API int    pcap_loop(pcap_t *, int, pcap_handler, u_char *);
+                                                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0161/driver.c:71:31: warning: incompatible function pointer types passing 'int (u_char *, const struct pcap_pkthdr *, const u_char *)' (aka 'int (unsigned char *, const struct pcap_pkthdr *, const unsigned char *)') to parameter of type 'pcap_handler' (aka 'void (*)(unsigned char *, const struct pcap_pkthdr *, const unsigned char *)') [-Wincompatible-function-pointer-types]
+        pcap_loop(handle2, 1, process_packet, NULL);
+                              ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libpcap/pcap/pcap.h:614:51: note: passing argument to parameter here
+PCAP_API int    pcap_loop(pcap_t *, int, pcap_handler, u_char *);
+                                                     ^
+2 warnings generated.

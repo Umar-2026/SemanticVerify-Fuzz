@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003ctiffio.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cunistd.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    char filename[256];\n    snprintf(filename, sizeof(filename), \"/tmp/fuzz_tiff_%d\", getpid());\n\n    FILE *fp = fopen(filename, \"wb\");\n    if (!fp) {\n        return 0;\n    }\n    fwrite(data, 1, size, fp);\n    fclose(fp);\n\n    TIFF *tif = TIFFOpen(filename, \"r\");\n    if (tif) {\n        uint32_t width = 0, height = 0;\n        uint16_t samples = 0, bps = 0;\n\n        TIFFGetField(tif, TIFFTAG_IMAGEWIDTH, &width);\n        TIFFGetField(tif, TIFFTAG_IMAGELENGTH, &height);\n        TIFFGetField(tif, TIFFTAG_SAMPLESPERPIXEL, &samples);\n        TIFFGetField(tif, TIFFTAG_BITSPERSAMPLE, &bps);\n\n        TIFFClose(tif);\n    }\n\n    unlink(filename);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPkbvW4DUbEy6ONpiy+ZL+iDEjNTZ2uODl9+R5R9BTDjK/euuncN5iO4W3TWVB"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 169,
+    "candidatesTokenCount": 306,
+    "totalTokenCount": 475,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 169
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "vqt4aqK7A5rfz7IPu6ml-Qo"
+}

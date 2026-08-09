@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (!json_str) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root == NULL) {\n        free(json_str);\n        return 0;\n    }\n\n    if (cJSON_IsObject(root)) {\n        cJSON *item = cJSON_GetObjectItemCaseSensitive(root, \"type\");\n        if (cJSON_IsString(item) && (item-\u003evaluestring != NULL)) {\n            if (strcmp(item-\u003evaluestring, \"action\") == 0) {\n                cJSON *val = cJSON_GetObjectItemCaseSensitive(root, \"value\");\n                if (cJSON_IsNumber(val)) {\n                    volatile double d = val-\u003evaluedouble;\n                    (void)d;\n                }\n            } else if (strcmp(item-\u003evaluestring, \"status\") == 0) {\n                cJSON *flag = cJSON_GetObjectItemCaseSensitive(root, \"enabled\");\n                if (cJSON_IsBool(flag)) {\n                    volatile int b = cJSON_IsTrue(flag);\n                    (void)b;\n                }\n            }\n        }\n    } else if (cJSON_IsArray(root)) {\n        cJSON *element = NULL;\n        cJSON_ArrayForEach(element, root) {\n            if (cJSON_IsNumber(element)) {\n                volatile double d = element-\u003evaluedouble;\n                (void)d;\n            }\n        }\n    }\n\n    cJSON_Delete(root);\n    free(json_str);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPf0/2a3cdQ6j8dwI3/UKaSZFwphZeoWIVfxzOMuI072RsM+JCH2/t84spX0EW"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 170,
+    "candidatesTokenCount": 487,
+    "totalTokenCount": 657,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 170
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Qat4aoTyNPbG0-kPta_DsQ0"
+}

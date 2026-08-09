@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    char filename[256];\n    size_t name_len = (size - 1) \u003c 255 ? (size - 1) : 255;\n    memcpy(filename, data + 1, name_len);\n    filename[name_len] = '\\0';\n\n    char url[512];\n    snprintf(url, sizeof(url), \"file:///%s\", filename);\n\n    CURL *easy_handle = curl_easy_init();\n    CURLM *multi_handle = curl_multi_init();\n\n    if (!easy_handle || !multi_handle) {\n        if (easy_handle) curl_easy_cleanup(easy_handle);\n        if (multi_handle) curl_multi_cleanup(multi_handle);\n        return 0;\n    }\n\n    curl_easy_setopt(easy_handle, CURLOPT_URL, url);\n    curl_easy_setopt(easy_handle, CURLOPT_TIMEOUT_MS, 500L);\n    curl_easy_setopt(easy_handle, CURLOPT_NOPROGRESS, 1L);\n\n    curl_multi_add_handle(multi_handle, easy_handle);\n\n    int running_handles;\n    int i;\n    for (i = 0; i \u003c 10; i++) {\n        CURLMcode mc = curl_multi_perform(multi_handle, &running_handles);\n        if (mc != CURLM_OK || running_handles == 0) {\n            break;\n        }\n    }\n\n    curl_multi_remove_handle(multi_handle, easy_handle);\n    curl_easy_cleanup(easy_handle);\n    curl_multi_cleanup(multi_handle);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPRBifBCq8pnwPKlrk2+Hp9a1RbhC3Q6oBrDVKC0msg16PYEzvhjNb9XmdEcEo"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 193,
+    "candidatesTokenCount": 465,
+    "totalTokenCount": 658,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 193
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "1ql4ape_Fc6MjuMPvo_MCA"
+}

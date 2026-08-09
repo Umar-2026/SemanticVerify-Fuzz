@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstring.h\u003e\n#include \"zlib.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) {\n        return 0;\n    }\n\n    size_t dict_size = data[0] % (size / 2 + 1);\n    size_t input_size = size - dict_size - 1;\n    const uint8_t *dict = data + 1;\n    const uint8_t *input = data + 1 + dict_size;\n\n    z_stream strm;\n    memset(&strm, 0, sizeof(strm));\n\n    if (deflateInit(&strm, Z_DEFAULT_COMPRESSION) != Z_OK) {\n        return 0;\n    }\n\n    if (deflateSetDictionary(&strm, dict, (uInt)dict_size) != Z_OK) {\n        deflateEnd(&strm);\n        return 0;\n    }\n\n    uint8_t *out_buf = malloc(deflateBound(&strm, (uLong)input_size));\n    if (!out_buf) {\n        deflateEnd(&strm);\n        return 0;\n    }\n\n    strm.next_in = (Bytef *)input;\n    strm.avail_in = (uInt)input_size;\n    strm.next_out = out_buf;\n    strm.avail_out = (uInt)deflateBound(&strm, (uLong)input_size);\n\n    deflate(&strm, Z_FINISH);\n    deflateEnd(&strm);\n    free(out_buf);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPW6w+s+o4LMtBzOTjdhVnvnjha7Vn4wRT4OlPPpAKEXQxHHADWCOgKA876zyY"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 169,
+    "candidatesTokenCount": 428,
+    "totalTokenCount": 597,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 169
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "G6Z4atLVL5-v28oPif6xuAg"
+}

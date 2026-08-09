@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n#include \u003cunistd.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    size_t split = size / 2;\n    char path1[] = \"/tmp/fuzz1.txt\";\n    char path2[] = \"/tmp/fuzz2.txt\";\n\n    FILE *f1 = fopen(path1, \"wb\");\n    if (!f1) return 0;\n    fwrite(data, 1, split, f1);\n    fclose(f1);\n\n    FILE *f2 = fopen(path2, \"wb\");\n    if (!f2) return 0;\n    fwrite(data + split, 1, size - split, f2);\n    fclose(f2);\n\n    CURL *curl = curl_easy_init();\n    if (curl) {\n        char url1[64];\n        char url2[64];\n        snprintf(url1, sizeof(url1), \"file://%s\", path1);\n        snprintf(url2, sizeof(url2), \"file://%s\", path2);\n\n        curl_easy_setopt(curl, CURLOPT_URL, url1);\n        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 1L);\n        curl_easy_perform(curl);\n\n        curl_easy_setopt(curl, CURLOPT_URL, url2);\n        curl_easy_perform(curl);\n\n        curl_easy_cleanup(curl);\n    }\n\n    unlink(path1);\n    unlink(path2);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPpMs1TAQ2REACjMFbeKZ7zJq+R/EcZmI0nXVBkBVsmcSSrOwFs4GBo1vu39Aq"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 182,
+    "candidatesTokenCount": 411,
+    "totalTokenCount": 593,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 182
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Q6l4arCBCJTmosUPwNqTqQo"
+}

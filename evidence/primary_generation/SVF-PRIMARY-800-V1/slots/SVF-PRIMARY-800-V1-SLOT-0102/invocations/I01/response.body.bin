@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cpcap.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003csys/socket.h\u003e\n#include \u003cnetinet/in.h\u003e\n#include \u003cnetinet/udp.h\u003e\n#include \u003cnetinet/ip.h\u003e\n#include \u003carpa/inet.h\u003e\n#include \u003cunistd.h\u003e\n#include \u003cerrno.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0 || size \u003e 1400) return 0;\n\n    char errbuf[PCAP_ERRBUF_SIZE];\n    pcap_t *handle = pcap_create(\"lo\", errbuf);\n    if (!handle) return 0;\n\n    pcap_set_snaplen(handle, 65535);\n    pcap_set_promisc(handle, 1);\n    pcap_set_timeout(handle, 100);\n\n    if (pcap_activate(handle) != 0) {\n        pcap_close(handle);\n        return 0;\n    }\n\n    int sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);\n    if (sock != -1) {\n        struct sockaddr_in addr;\n        memset(&addr, 0, sizeof(addr));\n        addr.sin_family = AF_INET;\n        addr.sin_port = htons(12345);\n        addr.sin_addr.s_addr = inet_addr(\"127.0.0.1\");\n\n        sendto(sock, data, size, 0, (struct sockaddr *)&addr, sizeof(addr));\n        close(sock);\n    }\n\n    struct pcap_pkthdr *header;\n    const u_char *pkt_data;\n    int res = pcap_next_ex(handle, &header, &pkt_data);\n\n    if (res == 1) {\n        (void)pkt_data;\n    }\n\n    pcap_close(handle);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPKWDZtk23T3Le6iAq8EQJNxxd/GNIXDWiWzsk3BWM4xyXYznXkm+/bX2F8oew"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 185,
+    "candidatesTokenCount": 490,
+    "totalTokenCount": 675,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 185
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "-aZ4aqj_Ds-j9tMPgp2bwA0"
+}

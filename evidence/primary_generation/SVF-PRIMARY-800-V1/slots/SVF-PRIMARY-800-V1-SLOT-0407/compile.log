@@ -1,0 +1,10 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0407/driver.c:16:21: warning: implicit declaration of function 'write' is invalid in C99 [-Wimplicit-function-declaration]
+        ssize_t n = write(fd, data + written, size - written);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0407/driver.c:20:5: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+    close(fd);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0407/driver.c:45:5: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+    unlink(filename);
+    ^
+3 warnings generated.

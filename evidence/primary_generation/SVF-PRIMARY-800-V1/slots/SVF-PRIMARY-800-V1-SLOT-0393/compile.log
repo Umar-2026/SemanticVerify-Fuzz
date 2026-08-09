@@ -1,0 +1,12 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0393/driver.c:66:17: warning: implicitly declaring library function 'snprintf' with type 'int (char *, unsigned long, const char *, ...)' [-Wimplicit-function-declaration]
+                snprintf(buf, sizeof(buf), "%u", mod_param);
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0393/driver.c:66:17: note: include the header <stdio.h> or explicitly provide a declaration for 'snprintf'
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0393/driver.c:79:17: warning: implicit declaration of function 'cJSON_SetNull' is invalid in C99 [-Wimplicit-function-declaration]
+                cJSON_SetNull(target);
+                ^
+2 warnings generated.
+ld.lld-14: error: undefined symbol: cJSON_SetNull
+>>> referenced by driver.c
+>>>               /tmp/driver-d75ae2.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

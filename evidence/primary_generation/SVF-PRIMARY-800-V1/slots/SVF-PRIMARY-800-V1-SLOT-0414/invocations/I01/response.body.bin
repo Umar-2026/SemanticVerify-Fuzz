@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003ctiffio.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) {\n        return 0;\n    }\n\n    TIFF *tif = TIFFOpen(\"/dev/null\", \"w\");\n    if (!tif) {\n        return 0;\n    }\n\n    uint32_t width = (data[0] \u003c\u003c 8) | data[1];\n    uint32_t height = (data[2] \u003c\u003c 8) | data[3];\n    uint16_t samples = (data[4] % 3) + 1;\n    uint16_t bits = 8;\n\n    if (width == 0 || height == 0) {\n        TIFFClose(tif);\n        return 0;\n    }\n\n    TIFFSetField(tif, TIFFTAG_IMAGEWIDTH, width);\n    TIFFSetField(tif, TIFFTAG_IMAGELENGTH, height);\n    TIFFSetField(tif, TIFFTAG_BITSPERSAMPLE, bits);\n    TIFFSetField(tif, TIFFTAG_SAMPLESPERPIXEL, samples);\n    TIFFSetField(tif, TIFFTAG_PLANARCONFIG, PLANARCONFIG_CONTIG);\n    TIFFSetField(tif, TIFFTAG_PHOTOMETRIC, PHOTOMETRIC_RGB);\n\n    size_t scanline_size = TIFFScanlineSize(tif);\n    uint8_t *buf = (uint8_t *)malloc(scanline_size);\n    if (buf) {\n        for (uint32_t row = 0; row \u003c height; row++) {\n            size_t offset = (row * scanline_size) % size;\n            size_t copy_len = (scanline_size \u003c (size - offset)) ? scanline_size : (size - offset);\n            \n            for (size_t i = 0; i \u003c scanline_size; i++) {\n                buf[i] = data[(offset + i) % size];\n            }\n            \n            TIFFWriteScanline(tif, buf, row, 0);\n        }\n        free(buf);\n    }\n\n    TIFFClose(tif);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPFNYEW++Qmkwt6XKpFLtUIfm6r2ICTMJDRsJ0hMGqKRJ1j6MMj3HqFRXo66Bq"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 173,
+    "candidatesTokenCount": 540,
+    "totalTokenCount": 713,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 173
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "26t4avn0CZKE28oPi_LxgAI"
+}

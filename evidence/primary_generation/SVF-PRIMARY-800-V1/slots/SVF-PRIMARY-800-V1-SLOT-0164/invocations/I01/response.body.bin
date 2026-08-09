@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cpcap/pcap.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 64) {\n        return 0;\n    }\n\n    pcap_t *handle1 = NULL;\n    pcap_t *handle2 = NULL;\n    char errbuf[PCAP_ERRBUF_SIZE];\n\n    handle1 = pcap_create(\"lo\", errbuf);\n    handle2 = pcap_create(\"lo\", errbuf);\n\n    if (!handle1 || !handle2) {\n        if (handle1) pcap_close(handle1);\n        if (handle2) pcap_close(handle2);\n        return 0;\n    }\n\n    int snaplen1 = 64 + (data[0] % 1024);\n    int snaplen2 = 64 + (data[1] % 1024);\n\n    pcap_set_snaplen(handle1, snaplen1);\n    pcap_set_snaplen(handle2, snaplen2);\n\n    pcap_set_promisc(handle1, data[2] % 2);\n    pcap_set_promisc(handle2, data[3] % 2);\n\n    if (pcap_activate(handle1) == 0) {\n        int dl1 = pcap_datalink(handle1);\n        (void)dl1;\n    }\n\n    if (pcap_activate(handle2) == 0) {\n        int dl2 = pcap_datalink(handle2);\n        (void)dl2;\n    }\n\n    pcap_close(handle1);\n    pcap_close(handle2);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPNA64oozJYSPzy7tAuZCVULHa9AI0SZqMT+AGej3OvOmDMEDSx/HY1bEp2FnN"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 181,
+    "candidatesTokenCount": 435,
+    "totalTokenCount": 616,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 181
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Lqh4avKUM_2dz7IPlL6skQg"
+}

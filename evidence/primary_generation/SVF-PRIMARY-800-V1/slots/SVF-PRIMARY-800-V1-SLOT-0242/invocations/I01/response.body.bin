@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nint main(int argc, char **argv) {\n    if (argc \u003c 3) return 0;\n\n    CURL *curl;\n    CURLcode res;\n\n    curl_global_init(CURL_GLOBAL_ALL);\n    curl = curl_easy_init();\n\n    if (curl) {\n        /* First operation */\n        curl_easy_setopt(curl, CURLOPT_URL, argv[1]);\n        curl_easy_setopt(curl, CURLOPT_FILETIME, 1L);\n        res = curl_easy_perform(curl);\n\n        /* Reset handle */\n        curl_easy_reset(curl);\n\n        /* Second operation */\n        curl_easy_setopt(curl, CURLOPT_URL, argv[2]);\n        curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);\n        res = curl_easy_perform(curl);\n\n        curl_easy_cleanup(curl);\n    }\n\n    curl_global_cleanup();\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPxm/TUlsjuHoURjeZm2G8yXNsajtN8c/qzQ4xAavXJAJ5fdzO1kG2Jy9vLP1h"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 189,
+    "candidatesTokenCount": 250,
+    "totalTokenCount": 439,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 189
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "X6l4auDKEvOyjuMPmuy9aQ"
+}

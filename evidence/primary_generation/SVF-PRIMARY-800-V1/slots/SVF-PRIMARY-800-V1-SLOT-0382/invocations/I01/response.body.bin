@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"cJSON.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0) {\n        return 0;\n    }\n\n    char *json_str = (char *)malloc(size + 1);\n    if (!json_str) {\n        return 0;\n    }\n    memcpy(json_str, data, size);\n    json_str[size] = '\\0';\n\n    cJSON *root = cJSON_Parse(json_str);\n    if (root == NULL) {\n        free(json_str);\n        return 0;\n    }\n\n    if (cJSON_IsObject(root)) {\n        cJSON *type_field = cJSON_GetObjectItemCaseSensitive(root, \"type\");\n        if (cJSON_IsString(type_field) && (type_field-\u003evaluestring != NULL)) {\n            if (strcmp(type_field-\u003evaluestring, \"action\") == 0) {\n                cJSON *val = cJSON_GetObjectItemCaseSensitive(root, \"value\");\n                if (cJSON_IsNumber(val)) {\n                    volatile double v = val-\u003evaluedouble;\n                    (void)v;\n                }\n            } else if (strcmp(type_field-\u003evaluestring, \"list\") == 0) {\n                cJSON *items = cJSON_GetObjectItemCaseSensitive(root, \"items\");\n                if (cJSON_IsArray(items)) {\n                    cJSON *element = NULL;\n                    cJSON_ArrayForEach(element, items) {\n                        if (cJSON_IsString(element)) {\n                            volatile size_t len = strlen(element-\u003evaluestring);\n                            (void)len;\n                        }\n                    }\n                }\n            }\n        }\n    } else if (cJSON_IsArray(root)) {\n        cJSON *first = cJSON_GetArrayItem(root, 0);\n        if (cJSON_IsBool(first)) {\n            volatile int b = cJSON_IsTrue(first);\n            (void)b;\n        }\n    }\n\n    cJSON_Delete(root);\n    free(json_str);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP7OoeDED+D7596xX5y94J+QrcAYO9Nth43RFxHx+zgl6t8ViiZAuk5i3WTNxS"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 170,
+    "candidatesTokenCount": 537,
+    "totalTokenCount": 707,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 170
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "O6t4aryjCe7IjuMPk_ajkQo"
+}

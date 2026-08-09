@@ -1,0 +1,43 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:6:34: error: unknown type name 'uint8_t'
+int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
+                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:22:5: error: use of undeclared identifier 'uint8_t'
+    uint8_t *compressed = malloc(max_out);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:22:14: error: use of undeclared identifier 'compressed'
+    uint8_t *compressed = malloc(max_out);
+             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:23:5: error: use of undeclared identifier 'uint8_t'
+    uint8_t *decompressed = malloc(size + 1024);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:23:14: error: use of undeclared identifier 'decompressed'
+    uint8_t *decompressed = malloc(size + 1024);
+             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:25:10: error: use of undeclared identifier 'compressed'
+    if (!compressed || !decompressed) {
+         ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:25:25: error: use of undeclared identifier 'decompressed'
+    if (!compressed || !decompressed) {
+                        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:26:14: error: use of undeclared identifier 'compressed'
+        free(compressed);
+             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:27:14: error: use of undeclared identifier 'decompressed'
+        free(decompressed);
+             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:35:25: error: use of undeclared identifier 'compressed'
+    strm_def.next_out = compressed;
+                        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:39:28: error: use of undeclared identifier 'compressed'
+        strm_inf.next_in = compressed;
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:41:29: error: use of undeclared identifier 'decompressed'
+        strm_inf.next_out = decompressed;
+                            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:49:10: error: use of undeclared identifier 'compressed'
+    free(compressed);
+         ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0092/driver.c:50:10: error: use of undeclared identifier 'decompressed'
+    free(decompressed);
+         ^
+14 errors generated.

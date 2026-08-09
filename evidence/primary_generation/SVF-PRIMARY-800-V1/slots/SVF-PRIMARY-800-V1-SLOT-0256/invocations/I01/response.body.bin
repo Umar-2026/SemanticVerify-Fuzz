@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n\nstatic size_t write_callback(char *ptr, size_t size, size_t nmemb, void *userdata) {\n    return size * nmemb;\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    char *filename = malloc(size + 1);\n    if (!filename) return 0;\n    memcpy(filename, data, size);\n    filename[size] = '\\0';\n\n    CURL *curl = curl_easy_init();\n    if (curl) {\n        char url[1024];\n        snprintf(url, sizeof(url), \"file://%s\", filename);\n\n        curl_easy_setopt(curl, CURLOPT_URL, url);\n        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_callback);\n        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 1L);\n        curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1L);\n\n        curl_easy_perform(curl);\n        curl_easy_cleanup(curl);\n    }\n\n    free(filename);\n    return 0;\n}\n\nint main(int argc, char **argv) {\n    curl_global_init(CURL_GLOBAL_ALL);\n    if (argc \u003e 1) {\n        FILE *f = fopen(argv[1], \"rb\");\n        if (f) {\n            fseek(f, 0, SEEK_END);\n            long fsize = ftell(f);\n            fseek(f, 0, SEEK_SET);\n            uint8_t *buf = malloc(fsize);\n            fread(buf, 1, fsize, f);\n            LLVMFuzzerTestOneInput(buf, fsize);\n            free(buf);\n            fclose(f);\n        }\n    }\n    curl_global_cleanup();\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP7gMiLytqe6hWQC4ZwjL93C2EIo5IdnjZ+T3Rz8z8XKck+OQrwMCuQCEIfBaL"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 184,
+    "candidatesTokenCount": 489,
+    "totalTokenCount": 673,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 184
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "hal4au27MaWe2roP082C4A0"
+}

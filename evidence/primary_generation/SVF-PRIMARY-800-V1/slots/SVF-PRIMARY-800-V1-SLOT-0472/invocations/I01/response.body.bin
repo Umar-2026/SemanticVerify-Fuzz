@@ -1,0 +1,23 @@
+{
+  "candidates": [
+    {
+      "content": {},
+      "finishReason": "RECITATION",
+      "index": 0,
+      "finishMessage": "The generated content was filtered because it may contain material that resembles existing copyrighted works. Try rephrasing the prompt. If you think this was an error, [send feedback](https://ai.google.dev/gemini-api/docs/troubleshooting)."
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 177,
+    "totalTokenCount": 177,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 177
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "16x4aobxFJHIrfcPs_mF6Ag"
+}

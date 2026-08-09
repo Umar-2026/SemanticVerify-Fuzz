@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003ccurl/curl.h\u003e\n#include \u003cunistd.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size == 0 || size \u003e 1024 * 1024) {\n        return 0;\n    }\n\n    char filename[] = \"/tmp/fuzz_curl_XXXXXX\";\n    int fd = mkstemp(filename);\n    if (fd \u003c 0) {\n        return 0;\n    }\n\n    if (write(fd, data, size) != (ssize_t)size) {\n        close(fd);\n        unlink(filename);\n        return 0;\n    }\n    close(fd);\n\n    CURL *curl = curl_easy_init();\n    if (curl) {\n        char url[1024];\n        snprintf(url, sizeof(url), \"file://%s\", filename);\n\n        curl_easy_setopt(curl, CURLOPT_URL, url);\n        curl_easy_setopt(curl, CURLOPT_TIMEOUT, 1L);\n        curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 1L);\n\n        curl_easy_perform(curl);\n        curl_easy_cleanup(curl);\n    }\n\n    unlink(filename);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPrGcM3fbCMJPGOWvhSiocvbxXpvFa1q4WLK3AQtkYUYEQnhnwwvL9YFc62GIo"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 182,
+    "candidatesTokenCount": 335,
+    "totalTokenCount": 517,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 182
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "5Kh4aqK-BcygjuMPrfmWuQ8"
+}

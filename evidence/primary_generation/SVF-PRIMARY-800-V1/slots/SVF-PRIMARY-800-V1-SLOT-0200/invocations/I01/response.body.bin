@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cpcap.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstring.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) {\n        return 0;\n    }\n\n    char errbuf[PCAP_ERRBUF_SIZE];\n    pcap_t *handle;\n    struct bpf_program fp;\n    struct pcap_pkthdr *header;\n    const u_char *packet;\n\n    int snaplen = (data[0] \u003c\u003c 8) | data[1];\n    int timeout = (data[2] \u003c\u003c 8) | data[3];\n    \n    handle = pcap_create(\"lo\", errbuf);\n    if (!handle) {\n        return 0;\n    }\n\n    pcap_set_snaplen(handle, snaplen \u003e 0 ? snaplen : 65535);\n    pcap_set_timeout(handle, timeout);\n    pcap_set_promisc(handle, 1);\n\n    if (pcap_activate(handle) != 0) {\n        pcap_close(handle);\n        return 0;\n    }\n\n    if (pcap_compile(handle, &fp, \"udp\", 0, PCAP_NETMASK_UNKNOWN) == 0) {\n        pcap_setfilter(handle, &fp);\n        pcap_freecode(&fp);\n    }\n\n    int iterations = data[4] % 10;\n    for (int i = 0; i \u003c iterations; i++) {\n        int res = pcap_next_ex(handle, &header, &packet);\n        if (res == 1) {\n            if (header-\u003elen \u003e 0 && header-\u003elen \u003c= header-\u003ecaplen) {\n                volatile uint8_t byte = packet[0];\n                (void)byte;\n            }\n        } else if (res \u003c 0) {\n            break;\n        }\n    }\n\n    pcap_close(handle);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPr2gSwDxRYKMKxXf79ayjtLD6KGpHbBhn7dMFX6805pHKdN+DSeYL+ENqKGyy"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 214,
+    "candidatesTokenCount": 494,
+    "totalTokenCount": 708,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 214
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "xqh4atjMCbewqtsPsYzc6Q4"
+}
