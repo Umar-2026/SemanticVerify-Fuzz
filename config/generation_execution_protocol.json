@@ -153,10 +153,10 @@
       "manual labels",
       "repair feedback"
     ],
-    "scenario_manifest": "FROZEN_AT_GATE_1",
+    "scenario_manifest": "config/generation/scenario_bindings.80.v10.json",
     "seed_rule": "Record supplied seed when supported; otherwise record null and the provider default. Never substitute an unregistered seed.",
     "stream": false,
-    "system_prompt": "FROZEN_AT_GATE_1",
+    "system_prompt": "config/generation/system_prompt.v1.txt",
     "temperature": 0.2,
     "top_p": 1.0,
     "top_p_rule": "send where supported; otherwise record provider default"

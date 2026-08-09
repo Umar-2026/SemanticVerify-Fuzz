@@ -1,0 +1,21 @@
+HTTP/1.1 200 Connection established
+
+HTTP/2 200 
+last-modified: Wed, 05 Aug 2026 17:17:44 GMT
+content-type: text/html; charset=utf-8
+vary: Cookie
+vary: Accept-Encoding
+content-security-policy: base-uri 'self'; object-src 'none'; script-src 'strict-dynamic' 'unsafe-inline' https: http: 'nonce-FTYvcAfjiLq0mcLBX39MYaeFtD0OT7' 'unsafe-eval'; frame-ancestors 'self' https://developers.google.com/_d/analytics-iframe https://aistudio.google.com; report-uri https://csp.withgoogle.com/csp/devsite/v2
+strict-transport-security: max-age=63072000; includeSubdomains; preload
+x-xss-protection: 0
+x-content-type-options: nosniff
+cache-control: no-cache, must-revalidate
+expires: 0
+pragma: no-cache
+content-encoding: gzip
+x-cloud-trace-context: cdd56965cf49853403f186404fc9add1
+date: Sat, 08 Aug 2026 17:58:13 GMT
+server: Google Frontend
+content-length: 38407
+alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+

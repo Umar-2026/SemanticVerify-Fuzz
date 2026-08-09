@@ -3,7 +3,7 @@
 - Repository logical path: `/openbayes/home/semanticverify-fuzz-research`
 - Repository physical path: `/output/semanticverify-fuzz-research`
 - Current stage: Stage A — verification
-- Current milestone: Gate 1B — sampling, blind annotation, adjudication, and exposure quarantine complete
+- Current milestone: Gate 1 — specification foundation frozen and closed; generation opening remains separate
 - Gate 0 overall: PASS
 - Gate 0A repository bootstrap: PASS
 - Gate 0B environment qualification: PASS
@@ -13,7 +13,7 @@
 - Gate 0E statistical analysis and power registration: PASS
 - Gate 0F generation-window and transport-retry protocol: PASS
 - Gate 0G final manifest and research-lock closure: PASS
-- Gate 1: IN PROGRESS
+- Gate 1: PASS
 - Gate 1A obligation schema and normalization contract: PASS
 - Gate 1B sampling and blind-annotation protocol: PASS
 - Gate 2: NOT STARTED
@@ -60,14 +60,11 @@ so no unsupported count is claimed.
 
 ## Next authorized work
 
-1. Freeze the system prompt and all 80 exact library-specific scenario bindings.
-2. Freeze provider price-sheet snapshots.
-3. Record the required independent-annotation role roster before annotation begins.
-4. Close Gate 1 with a verified manifest; generation still requires later explicit authorization.
+1. Run the generation-opening preflight against the frozen Gate 1 artifacts.
+2. Re-qualify the live provider/model capabilities required by the frozen generation contract immediately before opening the window.
+3. Create a separate explicit generation authorization only if all opening conditions pass.
 
-Primary generation and held-out driver inspection remain unauthorized. Repair
-implementation remains prohibited until Gate V.
-
+Primary generation and generated-driver inspection remain unauthorized until that separate opening authorization. Analyzer implementation remains deferred to its registered stage, and repair remains blocked until Gate V.
 
 ## Gate 1C source/build status
 

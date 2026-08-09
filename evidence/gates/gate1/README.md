@@ -14,14 +14,16 @@ Completed:
   third-party adjudication, agreement reporting, and per-driver exposure
   quarantine protocol.
 
-Pending:
+- Gate 1C: exact source/build locks for all eight libraries.
 
-- Frozen system prompt and all 80 exact library-specific scenario bindings.
-- Eight source/build locks, provider price snapshots, and final Gate 1 manifest.
+- Gate 1 final freeze: system prompt, all 80 exact library-specific scenario bindings,
+  deterministic user-message template, provider price snapshots, and independent-
+  annotation role roster frozen; final Gate 1 manifest closed.
 
-Library-specific protocol rules begin with zlib at Gate 2. Six held-out protocol
-files and scenarios must be frozen before their generated drivers are opened or
-annotated.
+Library-specific protocol rules begin with zlib at Gate 2. The six held-out
+protocol files must be frozen before their corresponding generated drivers are
+opened or annotated; their scenario bindings are already frozen in the Gate 1
+scenario manifest.
 
 
 ## Gate 1C exact source/build freeze

@@ -1,0 +1,4 @@
+Target library: {library}
+Scenario ID: {scenario_id}
+Task: {task}
+Required feature symbols: {comma-separated required_feature_symbols}

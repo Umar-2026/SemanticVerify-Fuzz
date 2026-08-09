@@ -1,0 +1,76 @@
+{
+  "analyzer_output_exposed": false,
+  "annotation_started": false,
+  "artifact_type": "annotation_role_roster_candidate",
+  "baseline_output_exposed": false,
+  "created_at_utc": "2026-08-09T04:41:38+00:00",
+  "exposure_quarantine_commitment": {
+    "disqualifying_outputs": [
+      "SemanticVerify-Fuzz output",
+      "QuartetFuzz output",
+      "controlled LLM-review output",
+      "baseline output",
+      "repair output"
+    ],
+    "exposure_blocks_annotation_for_that_driver": true,
+    "gold_labels_frozen_before_comparison": true,
+    "per_person_per_driver_registry_required": true
+  },
+  "generated_driver_inspection_started": false,
+  "gold_protocol": {
+    "path": "/openbayes/home/semanticverify-fuzz-research/config/gold_sampling_annotation_protocol.json",
+    "sha256": "38a1f721320733f86bc633172a9848085e659e1f41c35ee2ffbb8fc86a77ca63"
+  },
+  "identity_policy": {
+    "credentials_stored": false,
+    "personal_names_stored": false,
+    "public_or_repository_identifiers": "pseudonymous role identifiers only",
+    "real_human_assignments": "researcher-attested"
+  },
+  "important_boundary": {
+    "this_candidate_does_not_authorize_generation": true,
+    "this_candidate_does_not_freeze_gate1": true,
+    "this_candidate_does_not_start_annotation": true
+  },
+  "primary_generation_authorized": false,
+  "repair_output_exposed": false,
+  "roles": {
+    "ADJUDICATOR_C": {
+      "author_of_research_or_paper": false,
+      "disqualifying_output_exposure_for_future_adjudicated_drivers": "NONE_EXIST_YET",
+      "eligible_under_current_protocol": true,
+      "main_semanticverify_fuzz_analyzer_or_repair_developer": false,
+      "real_human_secured": true,
+      "role": "THIRD_ADJUDICATOR",
+      "role_id": "Adjudicator-C"
+    },
+    "ANNOTATOR_A": {
+      "author_of_research_or_paper": false,
+      "disqualifying_output_exposure_for_future_annotated_drivers": "NONE_EXIST_YET",
+      "eligible_under_current_protocol": true,
+      "main_semanticverify_fuzz_analyzer_or_repair_developer": false,
+      "real_human_secured": true,
+      "role": "PRIMARY_ANNOTATOR",
+      "role_id": "Annotator-A"
+    },
+    "ANNOTATOR_B": {
+      "author_of_research_or_paper": false,
+      "disqualifying_output_exposure_for_future_annotated_drivers": "NONE_EXIST_YET",
+      "eligible_under_current_protocol": true,
+      "main_semanticverify_fuzz_analyzer_or_repair_developer": false,
+      "real_human_secured": true,
+      "role": "PRIMARY_ANNOTATOR",
+      "role_id": "Annotator-B"
+    }
+  },
+  "source_of_assignment_assertions": "Researcher-provided role declarations; no personal names retained.",
+  "status": "FROZEN_GATE1",
+  "version": "SVF-GATE1-ANNOTATION-ROSTER-V1",
+  "workflow_commitment": [
+    "INDEPENDENT_WHOLE_DRIVER_DISCOVERY",
+    "BLINDED_UNION_CONSTRUCTION",
+    "INDEPENDENT_VERDICT_ASSIGNMENT",
+    "THIRD_PARTY_ADJUDICATION",
+    "GOLD_FREEZE"
+  ]
+}

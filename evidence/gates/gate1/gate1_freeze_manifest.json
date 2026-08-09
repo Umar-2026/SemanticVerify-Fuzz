@@ -1,0 +1,61 @@
+{
+  "annotation_roles": {
+    "annotation_started": false,
+    "frozen_sha256": "a06ddab9f2c19235b39f2246c21fd2cf7a7ee51a1d8c06bd1667eaecbf8a4009",
+    "path": "evidence/gates/gate1/annotation_roles/annotation_role_roster.v1.json",
+    "personal_names_stored": false,
+    "real_humans_secured": true,
+    "source_candidate_sha256": "6c7bd402ee4aaf7e89b9158c2f3b2a16bf6e41e70c7ce27b4d6d9b3a5e6cf8ed"
+  },
+  "artifact_type": "gate1_freeze_manifest",
+  "created_at_utc": "2026-08-09T05:00:33+00:00",
+  "execution_boundary": {
+    "analyzer_implementation_performed": false,
+    "generated_driver_inspection_performed": false,
+    "generation_requires_separate_explicit_authorization": true,
+    "live_llm_calls_performed": false,
+    "primary_generation_performed": false,
+    "repair_implementation_performed": false
+  },
+  "frozen_generation_inputs": {
+    "scenario_manifest": {
+      "assembled_80_request_bundle_sha256": "5dc64268d13a7770937a52763f509894888e97dc1d1d737d1e97c91390b3f976",
+      "binding_count": 80,
+      "frozen_sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db",
+      "model_visible_bundle_sha256": "14b6d91841b63fed6776f312bfec5c5c4b523661bee4f0c00da79c563fdd8df2",
+      "path": "config/generation/scenario_bindings.80.v10.json",
+      "source_candidate_sha256": "7a478dcb74a20d16566b97f98c347620eba13c18d1a6400e3748b4232427f9c8"
+    },
+    "system_prompt": {
+      "frozen_sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61",
+      "path": "config/generation/system_prompt.v1.txt",
+      "source_candidate_sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61"
+    },
+    "user_message_template": {
+      "frozen_sha256": "8691601cfd2a7a0ccfd93d6015182078aa0e174dd0d8579c447b0d54150fa745",
+      "path": "config/generation/user_message_template.v1.txt"
+    }
+  },
+  "gate": "Gate 1",
+  "gate1_closed": true,
+  "generation_execution_protocol": {
+    "after_sha256": "f10a6093c72e719f55d9fc8acdbc782f1e72be94a0a0a191e1b14faced19d19c",
+    "before_sha256": "aae67d6d5d6cf063f92d117efce75b51d015466decf3a17ea4822c8f2e1e38de",
+    "path": "config/generation_execution_protocol.json",
+    "placeholder_resolution_only": true
+  },
+  "generation_window": {
+    "state": "FROZEN_NOT_OPEN",
+    "window_id": "SVF-PRIMARY-800-V1"
+  },
+  "primary_generation_authorized": false,
+  "provider_pricing": {
+    "frozen_sha256": "a52e4751a1c1095cbf37183c1c658c52a26190c01a302c55710a47f168a187b6",
+    "path": "evidence/gates/gate1/provider_pricing/pricing_snapshot.v2.json",
+    "raw_official_documentation_archived": true,
+    "source_bundle_sha256s_sha256": "c5138c76ba0c6771c130cd22e4c1f5520cf84e6702bd24c019941d6422e6677d",
+    "source_candidate_sha256": "a4d6449d8e22959c632a6f7b27908a0fbd8d596a1984c9235a2fef5af451e23d"
+  },
+  "status": "FROZEN_GATE1_CLOSED",
+  "version": "SVF-GATE1-FREEZE-PACKAGE-V1"
+}

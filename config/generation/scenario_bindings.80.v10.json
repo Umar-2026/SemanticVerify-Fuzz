@@ -1,0 +1,2399 @@
+{
+  "binding_count": 80,
+  "bindings": [
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate"
+        ],
+        "resource_family": "z_stream/inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit or inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate"
+        ],
+        "task": "Treat the fuzz input as compressed data and attempt streaming decompression using a z_stream-based interface."
+      },
+      "scenario_id": "S01",
+      "task_slug": "stream_decompress_one_input"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "deflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "deflate"
+        ],
+        "resource_family": "z_stream/deflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "deflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "deflate"
+        ],
+        "task": "Compress input data with the streaming compression interface using fuzz-derived compression configuration."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_stream_compression"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate"
+        ],
+        "resource_family": "z_stream/inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate"
+        ],
+        "task": "Use input bytes to select a supported zlib, gzip, or raw decoding mode and attempt streaming decompression."
+      },
+      "scenario_id": "S03",
+      "task_slug": "mode_selected_decompression"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "multiple inflate calls"
+        ],
+        "resource_family": "z_stream/inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit or inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate"
+        ],
+        "task": "Split the fuzz input into several chunks and feed them through one streaming decompression object."
+      },
+      "scenario_id": "S04",
+      "task_slug": "chunked_stream_decompression"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate",
+          "inflateReset",
+          "inflate"
+        ],
+        "resource_family": "reusable z_stream/inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit or inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate",
+          "inflateReset"
+        ],
+        "task": "Use one z_stream object to process two independently derived compressed payloads with the stream reuse facility."
+      },
+      "scenario_id": "S05",
+      "task_slug": "stream_reuse_two_payloads"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "deflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "deflateSetDictionary",
+          "deflate"
+        ],
+        "resource_family": "z_stream plus dictionary buffer",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "deflateInit or deflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "deflate",
+          "deflateSetDictionary"
+        ],
+        "task": "Compress fuzz-derived data using the streaming interface together with a fuzz-derived preset dictionary."
+      },
+      "scenario_id": "S06",
+      "task_slug": "dictionary_assisted_compression"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd on each initialized stream"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate on each stream"
+        ],
+        "resource_family": "two independent z_stream states",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "two inflateInit/inflateInit2 operations"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate"
+        ],
+        "task": "Split the input and process the two parts using two independent z_stream objects."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_independent_streams"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd for initialized states"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate on source/copy"
+        ],
+        "resource_family": "source and copied inflate states",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit or inflateInit2",
+          "inflateCopy"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate",
+          "inflateCopy"
+        ],
+        "task": "Create a streaming decompression state, copy that state, and continue processing two derived input branches."
+      },
+      "scenario_id": "S08",
+      "task_slug": "copied_stream_state"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate and status handling"
+        ],
+        "resource_family": "z_stream/inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit or inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate"
+        ],
+        "task": "Attempt streaming decompression and produce different functional outcomes based on returned zlib status codes."
+      },
+      "scenario_id": "S09",
+      "task_slug": "status_driven_stream_workflow"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "deflateEnd",
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "deflate",
+          "inflate"
+        ],
+        "resource_family": "deflate state plus inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "deflateInit/deflateInit2",
+          "inflateInit/inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "deflate",
+          "inflate"
+        ],
+        "task": "Compress fuzz input with zlib streaming compression and then attempt to decompress the produced data."
+      },
+      "scenario_id": "S10",
+      "task_slug": "compression_round_trip"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close"
+        ],
+        "notes": "S01 linear single-resource archetype; proposal-aligned live capture lifecycle using deterministic loopback traffic.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_next_ex"
+        ],
+        "resource_family": "live loopback pcap_t",
+        "runtime_dependency": "local loopback interface lo; one self-generated UDP datagram; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "bounded local UDP emitter derived from fuzz input"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_next_ex"
+        ],
+        "task": "Use libpcap on the loopback interface to inspect one bounded locally emitted UDP datagram whose payload is derived from fuzz input."
+      },
+      "scenario_id": "S01",
+      "task_slug": "loopback_single_packet_capture"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close"
+        ],
+        "notes": "S02 configured single-resource archetype.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_next_ex"
+        ],
+        "resource_family": "configured live loopback pcap_t",
+        "runtime_dependency": "local loopback interface lo; one self-generated UDP datagram; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "pcap_set_snaplen",
+          "pcap_set_timeout"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_set_snaplen",
+          "pcap_set_timeout",
+          "pcap_activate",
+          "pcap_next_ex"
+        ],
+        "task": "Use a libpcap loopback capture context with bounded fuzz-derived snapshot-length and timeout settings to inspect one locally emitted UDP datagram."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_loopback_capture"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close"
+        ],
+        "notes": "S03 conditional-acquisition archetype; return/status-sensitive paths can arise without exposing expected labels to the model.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_datalink"
+        ],
+        "resource_family": "conditionally available live loopback pcap_t",
+        "runtime_dependency": "local loopback interface lo; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "bounded configuration selected from fuzz input"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_datalink"
+        ],
+        "task": "Attempt to establish a libpcap loopback capture context using bounded input-derived settings and report a capture property when an active context is available."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_live_capture_acquisition"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close"
+        ],
+        "notes": "S04 repeated-use-loop archetype.",
+        "operation_candidates": [
+          "pcap_activate",
+          "multiple pcap_next_ex calls"
+        ],
+        "resource_family": "live loopback pcap_t with repeated capture operations",
+        "runtime_dependency": "local loopback interface lo; bounded self-generated UDP traffic; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "bounded local UDP emitter"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_next_ex"
+        ],
+        "task": "Use one libpcap loopback capture context to inspect a bounded sequence of locally emitted UDP datagrams derived from fuzz input."
+      },
+      "scenario_id": "S04",
+      "task_slug": "repeated_loopback_packet_capture"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close"
+        ],
+        "notes": "S05 reuse/second-operation archetype.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_next_ex",
+          "pcap_datalink"
+        ],
+        "resource_family": "reused live loopback pcap_t",
+        "runtime_dependency": "local loopback interface lo; bounded self-generated UDP traffic; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_next_ex",
+          "pcap_datalink"
+        ],
+        "task": "Use one active libpcap loopback context for two bounded operations: inspect locally generated packet data and query a capture property."
+      },
+      "scenario_id": "S05",
+      "task_slug": "reuse_active_capture_context"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_freecode for successfully compiled programs",
+          "pcap_close"
+        ],
+        "notes": "S06 primary-plus-auxiliary-resource archetype.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_compile",
+          "pcap_setfilter",
+          "pcap_next_ex"
+        ],
+        "resource_family": "live loopback pcap_t plus bpf_program",
+        "runtime_dependency": "local loopback interface lo; deterministic local UDP traffic; bounded filter expression; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "bounded filter expression derived from fuzz input"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_compile",
+          "pcap_setfilter",
+          "pcap_next_ex"
+        ],
+        "task": "Use a libpcap loopback capture context together with a bounded packet-filter expression and inspect a locally emitted UDP datagram."
+      },
+      "scenario_id": "S06",
+      "task_slug": "live_capture_with_filter_program"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close on each acquired handle"
+        ],
+        "notes": "S07 two-peer-resource archetype.",
+        "operation_candidates": [
+          "pcap_activate on each context",
+          "pcap_datalink on each active context"
+        ],
+        "resource_family": "two independent live loopback pcap_t handles",
+        "runtime_dependency": "local loopback interface lo; no external network",
+        "setup_candidates": [
+          "two pcap_create operations on loopback interface lo",
+          "separate bounded settings derived from fuzz input"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_datalink"
+        ],
+        "task": "Create two independent libpcap loopback capture contexts using separate bounded input-derived settings and inspect metadata from each."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_live_loopback_capture_contexts"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_freecode for successfully compiled programs",
+          "pcap_close"
+        ],
+        "notes": "S08 dependent-resource-graph archetype.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_compile",
+          "pcap_setfilter",
+          "pcap_next_ex"
+        ],
+        "resource_family": "live loopback pcap_t plus dependent bpf_program",
+        "runtime_dependency": "local loopback interface lo; deterministic local UDP traffic; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "bounded filter expression derived from fuzz input"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_activate",
+          "pcap_compile",
+          "pcap_setfilter",
+          "pcap_next_ex"
+        ],
+        "task": "Use a libpcap loopback capture context and a filter program derived from that context to inspect bounded locally emitted UDP traffic."
+      },
+      "scenario_id": "S08",
+      "task_slug": "active_capture_filter_dependency_graph"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_close"
+        ],
+        "notes": "S09 multi-exit-workflow archetype.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_next_ex",
+          "status-dependent functional output"
+        ],
+        "resource_family": "status-sensitive live loopback pcap_t",
+        "runtime_dependency": "local loopback interface lo; bounded self-generated UDP traffic; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "pcap_set_timeout"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_set_timeout",
+          "pcap_activate",
+          "pcap_next_ex"
+        ],
+        "task": "Perform a bounded libpcap loopback capture task and produce distinct functional outcomes according to setup, activation, and packet-read results."
+      },
+      "scenario_id": "S09",
+      "task_slug": "live_capture_status_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "pcap_freecode for successfully compiled programs",
+          "pcap_close"
+        ],
+        "notes": "S10 multi-stage-pipeline archetype; proposal-aligned full create/configure/activate/capture family.",
+        "operation_candidates": [
+          "pcap_activate",
+          "pcap_compile",
+          "pcap_setfilter",
+          "pcap_next_ex"
+        ],
+        "resource_family": "configured live loopback pcap_t plus bpf_program",
+        "runtime_dependency": "local loopback interface lo; deterministic local UDP traffic; no external network",
+        "setup_candidates": [
+          "pcap_create on loopback interface lo",
+          "pcap_set_snaplen",
+          "pcap_set_timeout",
+          "bounded packet-filter expression"
+        ]
+      },
+      "library": "libpcap",
+      "model_visible": {
+        "required_feature_symbols": [
+          "pcap_create",
+          "pcap_set_snaplen",
+          "pcap_set_timeout",
+          "pcap_activate",
+          "pcap_compile",
+          "pcap_setfilter",
+          "pcap_next_ex"
+        ],
+        "task": "Implement a bounded libpcap loopback capture pipeline with input-derived capture settings and a bounded packet filter, then inspect locally emitted UDP traffic."
+      },
+      "scenario_id": "S10",
+      "task_slug": "configured_filtered_loopback_capture_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup"
+        ],
+        "notes": "No Internet, DNS, proxy, or remote URL.",
+        "operation_candidates": [
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "resource_family": "CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input file",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Create a bounded local file from fuzz-derived bytes and attempt one file:// transfer with libcurl's easy interface."
+      },
+      "scenario_id": "S01",
+      "task_slug": "local_file_easy_transfer"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup"
+        ],
+        "notes": "Configuration remains meaningful without remote networking.",
+        "operation_candidates": [
+          "multiple curl_easy_setopt calls",
+          "curl_easy_perform"
+        ],
+        "resource_family": "configured CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input file",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Attempt a local file:// transfer using one easy handle with bounded input-derived transfer configuration and an output callback or output buffer."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_local_file_transfer"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup"
+        ],
+        "notes": "Conditional-acquisition scenario is local.",
+        "operation_candidates": [
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "resource_family": "CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input file",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Create an easy-interface object for a bounded local file:// transfer and perform the transfer when an object is available."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_local_easy_acquisition"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup"
+        ],
+        "notes": "Repeated-use scenario requires no external service.",
+        "operation_candidates": [
+          "set local URL and curl_easy_perform twice"
+        ],
+        "resource_family": "reused CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct two bounded local input files",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Use one easy handle to attempt two local file:// transfers backed by bounded files created from separate parts of the fuzz input."
+      },
+      "scenario_id": "S04",
+      "task_slug": "repeated_local_file_transfers"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup"
+        ],
+        "notes": "Reset/reuse is exercised locally.",
+        "operation_candidates": [
+          "curl_easy_perform",
+          "curl_easy_reset",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "resource_family": "reusable CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input files",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_reset",
+          "curl_easy_perform"
+        ],
+        "task": "Use one easy handle for two independently configured local file:// operations and use libcurl's handle-reset facility between them."
+      },
+      "scenario_id": "S05",
+      "task_slug": "local_easy_reset_reuse"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup",
+          "application buffer release if dynamically allocated"
+        ],
+        "notes": "Replaces HTTP-header auxiliary object with a protocol-independent output buffer.",
+        "operation_candidates": [
+          "curl_easy_setopt",
+          "curl_easy_perform",
+          "output callback processing"
+        ],
+        "resource_family": "CURL easy handle plus output buffer",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input file",
+          "curl_easy_init",
+          "prepare bounded output state"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Use one libcurl easy handle together with an application output buffer or write callback to consume bytes from a bounded local file:// transfer."
+      },
+      "scenario_id": "S06",
+      "task_slug": "local_easy_with_output_buffer"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup on each acquired handle"
+        ],
+        "notes": "Two peer handles with no network dependency.",
+        "operation_candidates": [
+          "curl_easy_setopt and curl_easy_perform on each"
+        ],
+        "resource_family": "two independent CURL easy handles",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct two bounded local input files",
+          "two curl_easy_init calls"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Create two independent easy handles and attempt local file:// transfers backed by separate bounded input-derived files."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_local_easy_handles"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_multi_remove_handle",
+          "curl_easy_cleanup",
+          "curl_multi_cleanup"
+        ],
+        "notes": "Multi/easy composition is exercised using a local file.",
+        "operation_candidates": [
+          "curl_easy_setopt",
+          "curl_multi_perform"
+        ],
+        "resource_family": "CURLM multi handle plus CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input file",
+          "curl_multi_init",
+          "curl_easy_init",
+          "curl_multi_add_handle"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_multi_init",
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_multi_add_handle",
+          "curl_multi_perform"
+        ],
+        "task": "Use one libcurl multi handle together with one easy handle to drive a bounded local file:// transfer workflow."
+      },
+      "scenario_id": "S08",
+      "task_slug": "local_multi_easy_composition"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup"
+        ],
+        "notes": "Multi-exit scenario does not rely on remote failures.",
+        "operation_candidates": [
+          "curl_easy_setopt",
+          "curl_easy_perform and CURLcode handling"
+        ],
+        "resource_family": "CURL easy handle",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local path choice",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Attempt a bounded local file:// transfer and produce several functional outcomes according to the returned CURLcode."
+      },
+      "scenario_id": "S09",
+      "task_slug": "local_curlcode_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "curl_easy_cleanup",
+          "curl_global_cleanup"
+        ],
+        "notes": "Header-list requirement removed because it has little functional meaning for file://.",
+        "operation_candidates": [
+          "curl_easy_setopt",
+          "curl_easy_perform",
+          "output processing"
+        ],
+        "resource_family": "global libcurl state plus CURL easy handle plus output buffer",
+        "runtime_dependency": "self-contained local file:// transfer using a harness-created bounded temporary file derived solely from fuzz input",
+        "setup_candidates": [
+          "construct bounded local input file",
+          "curl_global_init",
+          "curl_easy_init"
+        ]
+      },
+      "library": "curl",
+      "model_visible": {
+        "required_feature_symbols": [
+          "curl_global_init",
+          "curl_easy_init",
+          "curl_easy_setopt",
+          "curl_easy_perform"
+        ],
+        "task": "Implement a small libcurl pipeline using library setup, an easy transfer object, bounded fuzz-derived configuration, a local file:// source, and an application output buffer."
+      },
+      "scenario_id": "S10",
+      "task_slug": "global_easy_local_file_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "cJSON inspection APIs"
+        ],
+        "resource_family": "cJSON tree",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_Parse"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_Parse"
+        ],
+        "task": "Parse the fuzz input as JSON and inspect one value from the resulting tree."
+      },
+      "scenario_id": "S01",
+      "task_slug": "parse_one_document"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "tree inspection"
+        ],
+        "resource_family": "cJSON tree",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_ParseWithLengthOpts"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_ParseWithLengthOpts"
+        ],
+        "task": "Parse the fuzz input using cJSON's configurable parsing interface with options derived from the input."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_parse"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "tree inspection"
+        ],
+        "resource_family": "cJSON tree",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_ParseWithLength"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_ParseWithLength"
+        ],
+        "task": "Parse a fuzz-derived JSON region and process selected values when a tree is produced."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_parse"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "iteration and inspection"
+        ],
+        "resource_family": "cJSON tree",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_Parse"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_Parse",
+          "cJSON_ArrayForEach"
+        ],
+        "task": "Parse JSON input and iterate over multiple array or object items in the resulting tree."
+      },
+      "scenario_id": "S04",
+      "task_slug": "iterate_json_items"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "two tree operations"
+        ],
+        "resource_family": "reused cJSON tree",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_Parse"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_Parse"
+        ],
+        "task": "Parse one JSON tree and perform two independently derived transformations or queries on that same tree."
+      },
+      "scenario_id": "S05",
+      "task_slug": "two_tree_operations"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete according to resulting ownership graph"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "cJSON_AddItemToObject"
+        ],
+        "resource_family": "parent cJSON tree plus child cJSON nodes",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_CreateObject",
+          "child creation"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_CreateObject",
+          "cJSON_AddItemToObject"
+        ],
+        "task": "Build a cJSON container and add fuzz-derived child values to it."
+      },
+      "scenario_id": "S06",
+      "task_slug": "parent_child_composition"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete for each created tree"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "tree inspection"
+        ],
+        "resource_family": "two independent cJSON trees",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "two parse operations"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_ParseWithLength"
+        ],
+        "task": "Split the fuzz input and parse two independent JSON documents for separate processing."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_independent_json_trees"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete according to ownership graph"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "AddItem composition APIs"
+        ],
+        "resource_family": "nested cJSON ownership graph",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "container and child creation"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_CreateObject",
+          "cJSON_CreateArray",
+          "cJSON_AddItemToObject",
+          "cJSON_AddItemToArray"
+        ],
+        "task": "Construct a nested JSON object containing an array and fuzz-derived child objects or values."
+      },
+      "scenario_id": "S08",
+      "task_slug": "nested_json_graph"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "type/field inspection and branching"
+        ],
+        "resource_family": "cJSON tree",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_Parse"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_Parse",
+          "cJSON_GetObjectItemCaseSensitive"
+        ],
+        "task": "Parse JSON input and produce different functional outcomes depending on parsed type or field presence."
+      },
+      "scenario_id": "S09",
+      "task_slug": "json_type_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cJSON_Delete",
+          "allocator-compatible release of printed string"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "tree mutation",
+          "cJSON_PrintUnformatted"
+        ],
+        "resource_family": "cJSON tree plus allocated printed string",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cJSON_Parse"
+        ]
+      },
+      "library": "cJSON",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cJSON_Parse",
+          "cJSON_PrintUnformatted"
+        ],
+        "task": "Parse a JSON document, make a fuzz-derived modification, and serialize the resulting tree."
+      },
+      "scenario_id": "S10",
+      "task_slug": "parse_modify_print_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "TIFFGetField"
+        ],
+        "resource_family": "TIFF handle",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen",
+          "TIFFGetField"
+        ],
+        "task": "Treat fuzz-derived data as a TIFF source, open it for reading, and inspect basic image information."
+      },
+      "scenario_id": "S01",
+      "task_slug": "read_one_tiff"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "TIFFSetField",
+          "TIFFWriteScanline"
+        ],
+        "resource_family": "writable TIFF handle",
+        "runtime_dependency": "temporary-file output",
+        "setup_candidates": [
+          "TIFFOpen in write mode"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen",
+          "TIFFSetField",
+          "TIFFWriteScanline"
+        ],
+        "task": "Create a TIFF output and set a small fuzz-derived set of image fields before writing image data."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_tiff_writer"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "read/query APIs"
+        ],
+        "resource_family": "TIFF handle",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen"
+        ],
+        "task": "Attempt to open fuzz-derived TIFF data and inspect image content when an image handle is available."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_tiff_open"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "multiple read operations"
+        ],
+        "resource_family": "TIFF handle",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFReadScanline",
+          "TIFFReadEncodedStrip"
+        ],
+        "task": "Open fuzz-derived TIFF data and attempt to read multiple scanlines or strips through one image handle."
+      },
+      "scenario_id": "S04",
+      "task_slug": "multiple_scanline_reads"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "directory operations and queries"
+        ],
+        "resource_family": "reused TIFF handle",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFReadDirectory"
+        ],
+        "task": "Use one TIFF handle to process information from more than one image directory when available."
+      },
+      "scenario_id": "S05",
+      "task_slug": "multiple_directory_processing"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "buffer release",
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "TIFFReadScanline"
+        ],
+        "resource_family": "TIFF handle plus scanline buffer",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen",
+          "buffer allocation"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFScanlineSize",
+          "TIFFReadScanline"
+        ],
+        "task": "Open TIFF input and use a dynamically sized scanline buffer to inspect image data."
+      },
+      "scenario_id": "S06",
+      "task_slug": "scanline_buffer_workflow"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose on each opened handle"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "read/query operation on each"
+        ],
+        "resource_family": "two independent TIFF handles",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "two TIFFOpen operations"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen"
+        ],
+        "task": "Open two independent fuzz-derived TIFF sources and inspect information from each."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_tiff_handles"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose on both opened handles"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "read from input",
+          "write to output"
+        ],
+        "resource_family": "input TIFF handle plus output TIFF handle",
+        "runtime_dependency": "temporary-file input/output",
+        "setup_candidates": [
+          "open input",
+          "open output"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen",
+          "TIFFReadScanline",
+          "TIFFSetField",
+          "TIFFWriteScanline"
+        ],
+        "task": "Read information or image data from one TIFF handle and use it while constructing a second TIFF output."
+      },
+      "scenario_id": "S08",
+      "task_slug": "tiff_read_write_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "read operation and status handling"
+        ],
+        "resource_family": "TIFF handle",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen",
+          "TIFFReadScanline"
+        ],
+        "task": "Attempt TIFF read operations and implement multiple functional outcomes based on open and read results."
+      },
+      "scenario_id": "S09",
+      "task_slug": "tiff_status_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "buffer release",
+          "TIFFClose"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "TIFFGetField",
+          "TIFFReadEncodedStrip"
+        ],
+        "resource_family": "TIFF handle plus data buffer",
+        "runtime_dependency": "temporary-file input",
+        "setup_candidates": [
+          "TIFFOpen"
+        ]
+      },
+      "library": "libtiff",
+      "model_visible": {
+        "required_feature_symbols": [
+          "TIFFOpen",
+          "TIFFGetField",
+          "TIFFReadEncodedStrip"
+        ],
+        "task": "Open TIFF input, inspect image metadata, and attempt to read representative image data."
+      },
+      "scenario_id": "S10",
+      "task_slug": "metadata_and_image_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_decode",
+          "vpx_codec_get_frame"
+        ],
+        "resource_family": "vpx_codec_ctx_t decoder",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_codec_dec_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_dec_init",
+          "vpx_codec_decode",
+          "vpx_codec_get_frame"
+        ],
+        "task": "Treat the fuzz input as encoded video data and attempt decoding with a libvpx decoder context."
+      },
+      "scenario_id": "S01",
+      "task_slug": "decode_one_buffer"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_encode",
+          "vpx_codec_get_cx_data"
+        ],
+        "resource_family": "vpx_codec_ctx_t encoder",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "encoder config",
+          "vpx_codec_enc_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_enc_init",
+          "vpx_codec_encode",
+          "vpx_codec_get_cx_data"
+        ],
+        "task": "Initialize a libvpx encoder with fuzz-derived bounded configuration and attempt to encode image data."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_encoder"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_decode"
+        ],
+        "resource_family": "vpx_codec_ctx_t decoder",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_codec_dec_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_dec_init",
+          "vpx_codec_decode"
+        ],
+        "task": "Initialize a decoder configuration derived from fuzz input and process encoded data when a decoder is available."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_decoder_init"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "multiple vpx_codec_decode calls",
+          "vpx_codec_get_frame"
+        ],
+        "resource_family": "reused decoder context",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_codec_dec_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_decode",
+          "vpx_codec_get_frame"
+        ],
+        "task": "Split encoded input into multiple chunks and submit them through one libvpx decoder context."
+      },
+      "scenario_id": "S04",
+      "task_slug": "multi_chunk_decode"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "two vpx_codec_encode operations",
+          "vpx_codec_get_cx_data"
+        ],
+        "resource_family": "reused encoder context",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_codec_enc_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_encode",
+          "vpx_codec_get_cx_data"
+        ],
+        "task": "Use one encoder context to encode two independently derived image frames."
+      },
+      "scenario_id": "S05",
+      "task_slug": "two_frame_encode"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_img_free",
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_encode"
+        ],
+        "resource_family": "codec context plus vpx_image_t",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_img_alloc",
+          "vpx_codec_enc_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_img_alloc",
+          "vpx_codec_encode"
+        ],
+        "task": "Use a libvpx codec context together with a dynamically prepared vpx_image_t image."
+      },
+      "scenario_id": "S06",
+      "task_slug": "codec_with_image_object"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy on initialized contexts"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_decode on each"
+        ],
+        "resource_family": "two independent decoder contexts",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "two vpx_codec_dec_init operations"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_dec_init",
+          "vpx_codec_decode"
+        ],
+        "task": "Create two independent decoder contexts and process separate parts of the fuzz input with them."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_decoder_contexts"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_img_free",
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_encode",
+          "vpx_codec_get_cx_data"
+        ],
+        "resource_family": "vpx_image_t plus encoder context",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_img_alloc",
+          "vpx_codec_enc_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_img_alloc",
+          "vpx_codec_enc_init",
+          "vpx_codec_encode",
+          "vpx_codec_get_cx_data"
+        ],
+        "task": "Prepare an image object and use it as input to a libvpx encoder while consuming generated codec packets."
+      },
+      "scenario_id": "S08",
+      "task_slug": "encoder_image_dependency"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_decode and status handling"
+        ],
+        "resource_family": "decoder context",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_codec_dec_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_dec_init",
+          "vpx_codec_decode"
+        ],
+        "task": "Attempt a libvpx codec operation and produce several functional outcomes based on returned codec status."
+      },
+      "scenario_id": "S09",
+      "task_slug": "codec_error_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "vpx_codec_destroy"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "vpx_codec_decode",
+          "vpx_codec_get_frame iteration"
+        ],
+        "resource_family": "decoder context plus decoded-frame views",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "vpx_codec_dec_init"
+        ]
+      },
+      "library": "libvpx",
+      "model_visible": {
+        "required_feature_symbols": [
+          "vpx_codec_dec_init",
+          "vpx_codec_decode",
+          "vpx_codec_get_frame"
+        ],
+        "task": "Initialize a libvpx decoder, submit encoded input, and iterate over any decoded frames produced."
+      },
+      "scenario_id": "S10",
+      "task_slug": "decode_frame_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for a non-NULL callback result",
+          "ares_destroy"
+        ],
+        "notes": "S01 linear single-resource archetype using the qualified modern event-thread asynchronous channel family. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "ares_getaddrinfo with callback",
+          "bounded wait for callback completion"
+        ],
+        "resource_family": "c-ares asynchronous channel with one asynchronous address lookup",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Use a c-ares asynchronous channel with the provided local DNS fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV, perform one bounded address lookup derived from fuzz input, and consume its callback result."
+      },
+      "scenario_id": "S01",
+      "task_slug": "local_async_single_lookup"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for a non-NULL callback result",
+          "ares_destroy"
+        ],
+        "notes": "S02 configured single-resource archetype. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation. The configured-resource distinction from S01 is the bounded timeout configuration.",
+        "operation_candidates": [
+          "ares_getaddrinfo with callback",
+          "bounded wait for callback completion"
+        ],
+        "resource_family": "configured c-ares asynchronous channel",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint",
+          "one bounded timeout configuration supplied through ares_init_options and derived from fuzz input"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Initialize a c-ares asynchronous channel with one bounded timeout configuration derived from fuzz input, configure it to use the provided local DNS fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV, perform one address lookup, and consume its callback result."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_local_async_lookup"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_destroy"
+        ],
+        "notes": "S03 conditional-acquisition archetype; query type/class are restricted to the IN/A contract demonstrated by the qualified local DNS fixture. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "ares_query_dnsrec using ARES_CLASS_IN and ARES_REC_TYPE_A with callback",
+          "bounded wait for callback completion"
+        ],
+        "resource_family": "conditionally available c-ares asynchronous channel",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_query_dnsrec",
+          "ARES_CLASS_IN",
+          "ARES_REC_TYPE_A"
+        ],
+        "task": "Attempt to initialize a c-ares asynchronous channel and, when a channel is available, issue one bounded Internet-class IPv4 A-record query derived from fuzz input against the provided local fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV, then observe the callback outcome."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_async_channel_acquisition"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for non-NULL callback results",
+          "ares_destroy"
+        ],
+        "notes": "S04 repeated-use-loop archetype. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "multiple bounded ares_getaddrinfo operations with callbacks",
+          "bounded waits for callback completion"
+        ],
+        "resource_family": "c-ares asynchronous channel with repeated asynchronous lookups",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Use one c-ares asynchronous channel to issue a bounded sequence of address lookups against the provided local DNS fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV, and consume their callback results."
+      },
+      "scenario_id": "S04",
+      "task_slug": "repeated_async_lookup_loop"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_destroy"
+        ],
+        "notes": "S05 reuse/second-operation archetype; both queries use the IN/A contract demonstrated by the qualified local DNS fixture. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "two bounded ares_query_dnsrec operations using ARES_CLASS_IN and ARES_REC_TYPE_A with callbacks",
+          "bounded waits for callback completion"
+        ],
+        "resource_family": "reused c-ares asynchronous channel",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_query_dnsrec",
+          "ARES_CLASS_IN",
+          "ARES_REC_TYPE_A"
+        ],
+        "task": "Use one c-ares asynchronous channel for two bounded Internet-class IPv4 A-record queries derived from fuzz input against the provided local fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV, and consume both callback outcomes."
+      },
+      "scenario_id": "S05",
+      "task_slug": "reuse_async_channel_two_queries"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for a non-NULL callback result",
+          "ares_destroy"
+        ],
+        "notes": "S06 primary-plus-auxiliary-resource archetype. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "ares_getaddrinfo with callback",
+          "bounded callback-result inspection",
+          "bounded wait for callback completion"
+        ],
+        "resource_family": "c-ares asynchronous channel plus callback-produced address-information object",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Use a c-ares asynchronous channel with the provided local DNS fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV and compute a bounded summary from the address-information delivered to the lookup callback."
+      },
+      "scenario_id": "S06",
+      "task_slug": "async_channel_with_addrinfo_result"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for non-NULL callback results",
+          "ares_destroy on each channel"
+        ],
+        "notes": "S07 two-peer-resource archetype. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "ares_getaddrinfo with callbacks on both channels",
+          "bounded waits for callback completion"
+        ],
+        "resource_family": "two independent c-ares asynchronous channels",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "two ares_init_options channel-initialization operations",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv on each channel using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Create two independent c-ares asynchronous channels, configure both with the provided local DNS fixture endpoint supplied in SVF_CARES_SERVER_CSV, issue one bounded address lookup through each, and consume their callback results."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_async_channels"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_destroy"
+        ],
+        "notes": "S08 dependent-resource-graph archetype; the query uses the IN/A fixture contract, and the callback-visible DNS record is c-ares-owned and read-only during the callback rather than a separately acquired resource. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation. The S08 functional output is fixed to a binary observation of callback-visible DNS-record presence.",
+        "operation_candidates": [
+          "ares_query_dnsrec using ARES_CLASS_IN and ARES_REC_TYPE_A with callback",
+          "inspect whether the callback-visible DNS record is non-NULL",
+          "produce a binary result from that observation",
+          "bounded wait for callback completion"
+        ],
+        "resource_family": "c-ares asynchronous channel plus pending query plus callback-visible DNS record",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_query_dnsrec",
+          "ARES_CLASS_IN",
+          "ARES_REC_TYPE_A"
+        ],
+        "task": "Use a c-ares asynchronous channel and one bounded Internet-class IPv4 A-record query derived from fuzz input against the provided local fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV. In the callback, produce a binary result indicating whether a non-NULL parsed DNS record was received."
+      },
+      "scenario_id": "S08",
+      "task_slug": "async_query_callback_dependency_graph"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for a non-NULL callback result",
+          "ares_destroy"
+        ],
+        "notes": "S09 multi-exit-workflow archetype. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "ares_getaddrinfo with callback",
+          "bounded wait for callback completion",
+          "status-dependent functional output"
+        ],
+        "resource_family": "status-sensitive c-ares asynchronous channel",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Perform a bounded asynchronous c-ares address lookup against the provided local DNS fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV and produce distinct functional outcomes according to initialization and callback status."
+      },
+      "scenario_id": "S09",
+      "task_slug": "async_lookup_status_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "ares_freeaddrinfo for a non-NULL callback result",
+          "ares_destroy"
+        ],
+        "notes": "S10 multi-stage-pipeline archetype using the qualified modern asynchronous channel/callback family. Feasibility qualification used the modern ARES_OPT_EVENT_THREAD mechanism with ARES_EVSYS_DEFAULT. That mechanism is a qualification witness only; it is not a model-visible requirement and is not a protocol obligation.",
+        "operation_candidates": [
+          "ares_getaddrinfo with callback",
+          "bounded callback-result inspection",
+          "bounded wait for callback completion"
+        ],
+        "resource_family": "configured c-ares asynchronous channel plus asynchronous callback result",
+        "runtime_dependency": "deterministic local DNS responder on 127.0.0.1 using an OS-assigned port supplied at runtime through SVF_CARES_SERVER_CSV; callback completion must remain bounded; the generated driver selects a supported event-processing mechanism; no external DNS or external network",
+        "setup_candidates": [
+          "ares_init_options channel initialization",
+          "read the fixture-supplied loopback endpoint from SVF_CARES_SERVER_CSV",
+          "ares_set_servers_csv using that runtime endpoint",
+          "bounded query configuration derived from fuzz input"
+        ]
+      },
+      "library": "c-ares",
+      "model_visible": {
+        "required_feature_symbols": [
+          "ares_init_options",
+          "ares_set_servers_csv",
+          "ares_getaddrinfo"
+        ],
+        "task": "Implement a bounded c-ares asynchronous lookup pipeline using input-derived query settings and the provided local DNS fixture whose endpoint is supplied in SVF_CARES_SERVER_CSV, then consume the callback result."
+      },
+      "scenario_id": "S10",
+      "task_slug": "configured_async_dns_pipeline"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "profile query APIs"
+        ],
+        "resource_family": "cmsHPROFILE",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cmsOpenProfileFromMem"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsOpenProfileFromMem"
+        ],
+        "task": "Treat fuzz input as ICC profile data and inspect information from a profile opened from memory."
+      },
+      "scenario_id": "S01",
+      "task_slug": "open_profile_from_memory"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsDeleteTransform",
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "cmsDoTransform"
+        ],
+        "resource_family": "cmsHTRANSFORM plus profile inputs",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile acquisition",
+          "cmsCreateTransform"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsCreateTransform",
+          "cmsDoTransform"
+        ],
+        "task": "Create a color transform using fuzz-derived bounded intent or format choices and process sample pixel data."
+      },
+      "scenario_id": "S02",
+      "task_slug": "configured_color_transform"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "profile query/transform operation"
+        ],
+        "resource_family": "cmsHPROFILE",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "cmsOpenProfileFromMem"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsOpenProfileFromMem"
+        ],
+        "task": "Open fuzz-derived ICC profile data and inspect or transform data when a profile is available."
+      },
+      "scenario_id": "S03",
+      "task_slug": "conditional_profile_acquisition"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsDeleteTransform",
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "multiple cmsDoTransform calls"
+        ],
+        "resource_family": "reused cmsHTRANSFORM",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile acquisition",
+          "cmsCreateTransform"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsCreateTransform",
+          "cmsDoTransform"
+        ],
+        "task": "Use one color transform to process several fuzz-derived pixel blocks."
+      },
+      "scenario_id": "S04",
+      "task_slug": "repeated_transform_use"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsDeleteTransform",
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "two cmsDoTransform operations"
+        ],
+        "resource_family": "reused cmsHTRANSFORM",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile acquisition",
+          "cmsCreateTransform"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsDoTransform"
+        ],
+        "task": "Use one color transform for two independently derived input buffers."
+      },
+      "scenario_id": "S05",
+      "task_slug": "two_transform_operations"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsFreeToneCurve",
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "profile/tone-curve operations"
+        ],
+        "resource_family": "cmsHPROFILE plus cmsToneCurve",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile creation/acquisition",
+          "cmsBuildGamma"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsBuildGamma"
+        ],
+        "task": "Use an ICC profile workflow together with a fuzz-derived tone-curve object."
+      },
+      "scenario_id": "S06",
+      "task_slug": "profile_with_tone_curve"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsCloseProfile on created/opened profiles"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "profile queries"
+        ],
+        "resource_family": "two independent cmsHPROFILE handles",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "two profile acquisitions"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsOpenProfileFromMem",
+          "cmsCreate_sRGBProfile"
+        ],
+        "task": "Open or create two independent ICC profiles and inspect information from each."
+      },
+      "scenario_id": "S07",
+      "task_slug": "two_profiles"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsDeleteTransform",
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "cmsDoTransform"
+        ],
+        "resource_family": "two cmsHPROFILE resources plus derived cmsHTRANSFORM",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile acquisition",
+          "cmsCreateTransform"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsCreateTransform",
+          "cmsDoTransform"
+        ],
+        "task": "Use an input profile and an output profile to construct a color transform and process fuzz-derived pixel data."
+      },
+      "scenario_id": "S08",
+      "task_slug": "profiles_to_transform_graph"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsDeleteTransform when created",
+          "cmsCloseProfile when created"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "status-dependent processing"
+        ],
+        "resource_family": "profiles plus optional transform",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile acquisition",
+          "cmsCreateTransform"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsOpenProfileFromMem",
+          "cmsCreateTransform"
+        ],
+        "task": "Attempt profile and transform creation and implement different functional outcomes based on which operations succeed."
+      },
+      "scenario_id": "S09",
+      "task_slug": "lcms_multi_exit"
+    },
+    {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "cmsDeleteTransform",
+          "cmsCloseProfile"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "cmsDoTransform"
+        ],
+        "resource_family": "input/output profiles plus transform",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "profile acquisition",
+          "cmsCreateTransform"
+        ]
+      },
+      "library": "lcms",
+      "model_visible": {
+        "required_feature_symbols": [
+          "cmsOpenProfileFromMem",
+          "cmsCreate_sRGBProfile",
+          "cmsCreateTransform",
+          "cmsDoTransform"
+        ],
+        "task": "Open fuzz-derived ICC input, construct a compatible output-profile transform, and process representative pixel data."
+      },
+      "scenario_id": "S10",
+      "task_slug": "icc_transform_pipeline"
+    }
+  ],
+  "critical_separation": {
+    "hidden_research_metadata": "Must never be copied into model prompts; used for protocol/specification review and later analysis only.",
+    "model_visible_fields": "Only model_visible content may later enter generation prompts."
+  },
+  "library_order": [
+    "zlib",
+    "libpcap",
+    "curl",
+    "cJSON",
+    "libtiff",
+    "libvpx",
+    "c-ares",
+    "lcms"
+  ],
+  "scenario_order": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10"
+  ],
+  "schema_version": "0.1.0",
+  "status": "FROZEN_GATE1"
+}

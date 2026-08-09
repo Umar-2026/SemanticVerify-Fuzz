@@ -1,0 +1,108 @@
+{
+  "artifact_type": "provider_pricing_snapshot_candidate",
+  "candidate_version": "SVF-GATE1-PRICING-SNAPSHOT-V2",
+  "created_at_utc": "2026-08-08T18:01:10+00:00",
+  "derived_from_snapshot": {
+    "manifest_sha256": "7b32a25d80759569ff8a48c915b0e7f27c9f7fe8e45b92870f229d4e962e7af0",
+    "raw_evidence_refetched": false,
+    "reason_for_v2": "V1 parser used a substring test that incorrectly reduced the exact DeepSeek version DeepSeek-V4-Flash-0731 to the prefix DeepSeek-V4-Flash, creating a false documentation-drift flag.",
+    "workspace": "/openbayes/home/svf-gate1-provider-pricing-snapshot-v1"
+  },
+  "interpretation": {
+    "deepseek_documentation_version_drift": false,
+    "deepseek_v1_drift_flag_was_parser_false_positive": true,
+    "historical_gate0_evidence_is_not_overwritten": true,
+    "pricing_snapshot_is_not_model_substitution": true,
+    "primary_generation_authorized": false,
+    "research_repository_modified": false
+  },
+  "providers": {
+    "deepseek": {
+      "documentation_version_drift": false,
+      "gate0_documented_served_version": "DeepSeek-V4-Flash-0731",
+      "gate0_model_id": "deepseek-v4-flash",
+      "gate0_provider": "DeepSeek",
+      "model_id_match_gate0": true,
+      "model_version_match_gate0": true,
+      "pricing": {
+        "input_cache_hit": 0.0028,
+        "input_cache_miss": 0.14,
+        "output": 0.28
+      },
+      "pricing_currency": "USD",
+      "pricing_notice": "Retrieved official page states that DeepSeek plans to raise overall API pricing in the near future; this snapshot records only the prices at the archived retrieval time.",
+      "pricing_unit": "per_1M_tokens",
+      "snapshot_model_id": "deepseek-v4-flash",
+      "snapshot_model_version": "DeepSeek-V4-Flash-0731"
+    },
+    "gemini": {
+      "gate0_documented_served_version": "Stable alias: gemini-3.1-flash-lite",
+      "gate0_model_id": "gemini-3.1-flash-lite",
+      "gate0_provider": "Google Gemini Developer API",
+      "model_id_match_gate0": true,
+      "model_version_match_gate0": true,
+      "pricing": {
+        "context_cache_text_image_video": 0.025,
+        "output_including_thinking_tokens": 1.5,
+        "text_image_video_input": 0.25
+      },
+      "pricing_currency": "USD",
+      "pricing_tier": "Standard paid",
+      "pricing_unit": "per_1M_tokens",
+      "snapshot_model_id": "gemini-3.1-flash-lite",
+      "snapshot_model_version": "Stable: gemini-3.1-flash-lite"
+    }
+  },
+  "scope": "Primary generation cost provenance only",
+  "sources": {
+    "deepseek_model_list": {
+      "content_type": "text/html",
+      "effective_domain": "api-docs.deepseek.com",
+      "effective_url": "https://api-docs.deepseek.com/api/list-models/",
+      "extracted_text_sha256": "475a1886fd91e50ebc3494db9abe04fba10df2d108483e2db32bbc5d978edd2b",
+      "headers_sha256": "12518a53d3223348f03da50031cebfc82e5661c3135c7ef90efc7aff9f205a87",
+      "http_status": "200",
+      "raw_html_sha256": "9839d8ae00ff98f3eb94155d902f2b9822eb57d8272643df4e16d75cca657ca0",
+      "requested_url": "https://api-docs.deepseek.com/api/list-models/",
+      "retrieval_ended_utc": "2026-08-08T17:58:12Z",
+      "retrieval_started_utc": "2026-08-08T17:58:12Z"
+    },
+    "deepseek_pricing": {
+      "content_type": "text/html",
+      "effective_domain": "api-docs.deepseek.com",
+      "effective_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "extracted_text_sha256": "e50ee6bc829dbc4e05f64e4ef58d69e2122dea11c9dd04de8171ceb3a7c3db60",
+      "headers_sha256": "1f241b393f6065772722e1352146f2ba0c23bf8066714ed91a7973e784290182",
+      "http_status": "200",
+      "raw_html_sha256": "b7b5819eb2eea0efab609aee5068ee10ef39216f0cab797bfbe5e02e8f807002",
+      "requested_url": "https://api-docs.deepseek.com/quick_start/pricing/",
+      "retrieval_ended_utc": "2026-08-08T17:58:12Z",
+      "retrieval_started_utc": "2026-08-08T17:58:12Z"
+    },
+    "gemini_model": {
+      "content_type": "text/html; charset=utf-8",
+      "effective_domain": "ai.google.dev",
+      "effective_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+      "extracted_text_sha256": "ae5fa80e7e382ab894efe6834375b27a1473dc21e06687d06cd26098b96f2b6b",
+      "headers_sha256": "8ca26e38696e3095d77379f13a9bb5fffa00f590170a5b91280ad442476de87a",
+      "http_status": "200",
+      "raw_html_sha256": "0df5fc7c1bcde0a3d973a64287437870c00ca6d4ba11120650ab6afbffe0a4da",
+      "requested_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite",
+      "retrieval_ended_utc": "2026-08-08T17:58:14Z",
+      "retrieval_started_utc": "2026-08-08T17:58:13Z"
+    },
+    "gemini_pricing": {
+      "content_type": "text/html; charset=utf-8",
+      "effective_domain": "ai.google.dev",
+      "effective_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "extracted_text_sha256": "30a5c146a89eda1bf652f00aed89eb75e4c5bbfeaa0f76e5d375f3c00191cb76",
+      "headers_sha256": "e5bb210fc444f7ce7bdb0cd2067f1f71dfb4574fd3230c8c33f9f7e77f78a4a3",
+      "http_status": "200",
+      "raw_html_sha256": "19a32d6bd457edd8a30a33f0bcd1649e746d70913c66307f7a9d72832edffb22",
+      "requested_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "retrieval_ended_utc": "2026-08-08T17:58:13Z",
+      "retrieval_started_utc": "2026-08-08T17:58:12Z"
+    }
+  },
+  "status": "FROZEN_GATE1"
+}
