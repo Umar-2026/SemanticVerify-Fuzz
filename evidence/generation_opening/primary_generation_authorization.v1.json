@@ -1,0 +1,62 @@
+{
+  "authorization_scope": {
+    "analyzer": false,
+    "maximum_logical_slots": 800,
+    "primary_generation": true,
+    "repair": false,
+    "second_window_allowed": false,
+    "window_open": true
+  },
+  "authorized_at_utc": "2026-08-09T15:52:19+00:00",
+  "authorized_window_id": "SVF-PRIMARY-800-V1",
+  "decision_0012": {
+    "path": "documentation/decisions/0012-primary-generation-authorization-and-live-transport-boundary.md",
+    "sha256": "8920fb4cd379b02727f4d8efa6e675961ddc9eff48d679f8fb9f4b78f0b61609",
+    "status": "Accepted"
+  },
+  "freeze_binding": {
+    "controller_core_sha256": "6a7f4e47086c1062f041ad461dfd0769833cefe4a49cb8fae1a7fc7644a140c2",
+    "controller_freeze_manifest_sha256": "1325f366b554b5fde90fde8153850f588ce228d54e80a8be4ad7dd987972e7e4",
+    "controller_interface_sha256": "ffc143952f0b7963cb4f8ec5853a0cc3855775cc7a3292e6ca7d1a660fbc1d56",
+    "generation_protocol_sha256": "f10a6093c72e719f55d9fc8acdbc782f1e72be94a0a0a191e1b14faced19d19c",
+    "interface_verifier_sha256": "cc0980181996b861df38d841339819e34b0cc0cd226e0fcb97e28c330ac2fe58",
+    "postprocessing_contract_sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8",
+    "preauthorization_freeze_commit": "53f1099bcc2c1fb24c18ba388684900a79e23947",
+    "request_plan_sha256": "f6712fb4baa7b895f6de82f111f373bf987f0da9166b944232556b99b6ec0440"
+  },
+  "provider_requalification": {
+    "deepseek": {
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "requested_model_id": "deepseek-v4-flash",
+      "returned_model": "deepseek-v4-flash",
+      "status": "PASS",
+      "thinking_mode": "disabled"
+    },
+    "gemini": {
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+      "requested_model_id": "gemini-3.1-flash-lite",
+      "returned_model_version": "gemini-3.1-flash-lite",
+      "status": "PASS",
+      "thinking_level": "MINIMAL"
+    },
+    "performed_at_utc": "2026-08-09T15:31:31+00:00",
+    "report_path": "evidence/generation_opening/provider_requalification_v1/provider_requalification.v1.json",
+    "report_sha256": "707e4f6620ec4d4beee0702eb59a2a0550a6bcea33d2c51b34b821ad9d17f74d",
+    "status": "PASS"
+  },
+  "record_id": "SVF-PRIMARY-GENERATION-AUTHORIZATION-V1",
+  "repository_preconditions": {
+    "authorization_record_must_be_committed": true,
+    "freeze_commit_must_be_ancestor": true,
+    "repository_must_be_clean_before_open": true
+  },
+  "safety_acknowledgements": {
+    "api_secrets_never_persisted_printed_or_hashed": true,
+    "no_generated_driver_human_inspection_during_generation": true,
+    "no_linked_driver_execution_during_primary_compilation": true,
+    "no_repair_before_gate_v": true,
+    "pause_rule_binding_acknowledged": true
+  },
+  "schema_version": 1,
+  "status": "AUTHORIZED_FOR_PRIMARY_WINDOW_OPEN"
+}
