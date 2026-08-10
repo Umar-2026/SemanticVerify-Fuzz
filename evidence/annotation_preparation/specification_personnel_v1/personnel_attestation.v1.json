@@ -1,0 +1,61 @@
+{
+  "attestation_basis": {
+    "analyzer_output_has_not_been_released": true,
+    "baseline_output_has_not_been_released": true,
+    "designation_confirmed_by_project_author": true,
+    "gold_annotation_has_not_started": true,
+    "project_controlled_generated_driver_source_has_not_been_released_for_human_semantic_inspection": true,
+    "repair_output_has_not_been_released": true,
+    "reviewer_existing_human_role_evidence_path": "evidence/gates/gate1/annotation_roles/annotation_role_roster.v1.json",
+    "reviewer_existing_human_role_evidence_sha256": "a06ddab9f2c19235b39f2246c21fd2cf7a7ee51a1d8c06bd1667eaecbf8a4009",
+    "specification_author_is_current_project_researcher": true,
+    "specification_reviewer_designation_confirmed": true
+  },
+  "attested_at_utc": "2026-08-10T10:34:05+00:00",
+  "primary_annotation_role_separation": {
+    "Adjudicator-C_reused_as_specification_reviewer": true,
+    "Annotator-A_reused_as_specification_personnel": false,
+    "Annotator-B_reused_as_specification_personnel": false,
+    "adjudicator_reviewer_overlap_is_explicit": true
+  },
+  "record_id": "SVF-SPECIFICATION-PERSONNEL-ATTESTATION-V1",
+  "required_reviewer_checks": [
+    "evidence completeness",
+    "transition consistency",
+    "ownership effects",
+    "terminal states",
+    "unsupported conditions"
+  ],
+  "review_completion_state": {
+    "review_of_library_specifications_completed": false,
+    "review_of_library_specifications_started": false,
+    "this_attestation_is_not_final_specification_review_signoff": true
+  },
+  "schema_version": 1,
+  "specification_author": {
+    "distinct_from_specification_reviewer": true,
+    "identity_storage": "pseudonymous role only in repository",
+    "may_use_analyzer_baseline_or_repair_output": false,
+    "may_use_generated_experimental_drivers_as_specification_evidence": false,
+    "may_use_gold_labels": false,
+    "real_human": true,
+    "role": "SPECIFICATION_AUTHOR",
+    "role_id": "Spec-Author-1"
+  },
+  "specification_reviewer": {
+    "distinct_from_specification_author": true,
+    "dual_role_explicitly_declared": true,
+    "dual_role_silently_reused": false,
+    "may_use_analyzer_baseline_or_repair_output": false,
+    "may_use_generated_experimental_drivers_as_specification_evidence": false,
+    "may_use_gold_labels": false,
+    "real_human": true,
+    "role": "SPECIFICATION_REVIEWER",
+    "role_id": "Spec-Reviewer-1",
+    "underlying_existing_role": "THIRD_ADJUDICATOR",
+    "underlying_existing_role_id": "Adjudicator-C",
+    "underlying_role_roster_path": "evidence/gates/gate1/annotation_roles/annotation_role_roster.v1.json",
+    "underlying_role_roster_sha256": "a06ddab9f2c19235b39f2246c21fd2cf7a7ee51a1d8c06bd1667eaecbf8a4009"
+  },
+  "status": "ATTESTED_FOR_SOURCE_ONLY_SPECIFICATION_AUTHORING"
+}

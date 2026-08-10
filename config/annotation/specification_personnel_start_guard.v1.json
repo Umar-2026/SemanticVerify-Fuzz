@@ -1,0 +1,82 @@
+{
+  "approved_specification_inputs": [
+    "pinned official API documentation",
+    "public headers at the pinned revision",
+    "pinned implementation source",
+    "pinned upstream tests",
+    "predeclared upstream usage examples"
+  ],
+  "authority": {
+    "decision_0016_path": "documentation/decisions/0016-specification-timing-deviation-and-source-only-reconciliation.md",
+    "decision_0016_sha256": "e7f8cfe53eae2065fe23a99c63fcda1db41fe9a151d160fcd1c8105d20b2d091",
+    "decision_0017_path": "documentation/decisions/0017-specification-personnel-assignment-and-authoring-start-guard.md",
+    "decision_0017_sha256": "0690597765a61ed11a0c2daa93b41da8622c2d68b9107c4ad387063ba371d7b5",
+    "personnel_attestation_path": "evidence/annotation_preparation/specification_personnel_v1/personnel_attestation.v1.json",
+    "personnel_attestation_sha256": "667b1cf8507d9ba0ccd3e003b9c22357da0d586fb4a7d8b932e2b13ced2b624d",
+    "recovery_contract_path": "config/annotation/specification_timing_deviation_recovery.v1.json",
+    "recovery_contract_sha256": "eb5a64cef8cc659b8e3c3f84746c91ffee4e9a6e696e600bf6eae7840bdf93bb"
+  },
+  "authorization_after_commit": {
+    "author_library_specifications": true,
+    "freeze_library_specifications_after_review": true,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "inspect_generated_driver_source": false,
+    "inspect_pinned_approved_source_evidence": true,
+    "release_annotation_packets": false,
+    "review_library_specifications": true,
+    "run_baselines": false,
+    "run_controlled_llm_review": false,
+    "start_gold_annotation": false
+  },
+  "created_at_utc": "2026-08-10T10:34:05+00:00",
+  "eight_library_freeze_requirement": {
+    "all_eight_required_before_driver_release": true,
+    "later_correction_role": "SECONDARY_SENSITIVITY_ANALYSIS_ONLY",
+    "obligation_contract_path": "config/protocol_obligation_contract.json",
+    "obligation_contract_sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf",
+    "post_freeze_primary_mutation_allowed": false,
+    "specification_schema_path": "config/schemas/protocol_specification.schema.json",
+    "specification_schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "guard_id": "SVF-SPECIFICATION-AUTHORING-START-GUARD-V1",
+  "next_boundary": "AUTHOR_REVIEW_VALIDATE_AND_FREEZE_EIGHT_LIBRARY_PROTOCOL_SPECIFICATIONS",
+  "personnel": {
+    "author_and_reviewer_distinct": true,
+    "primary_annotators_reused_as_spec_personnel": false,
+    "reviewer_dual_role_explicit": true,
+    "reviewer_real_human_secured": true,
+    "reviewer_underlying_role": "THIRD_ADJUDICATOR",
+    "specification_author_role_id": "Spec-Author-1",
+    "specification_reviewer_role_id": "Spec-Reviewer-1",
+    "specification_reviewer_underlying_role_id": "Adjudicator-C"
+  },
+  "pinned_source_readiness": {
+    "all_eight_checkout_revisions_match_lock": true,
+    "all_eight_have_header_evidence": true,
+    "all_eight_have_implementation_source_evidence": true,
+    "all_eight_pinned_checkouts_found": true,
+    "fixed_library_order": [
+      "zlib",
+      "libpcap",
+      "curl",
+      "cJSON",
+      "libtiff",
+      "libvpx",
+      "c-ares",
+      "lcms"
+    ],
+    "library_count": 8,
+    "source_lock_path": "config/library_source_build_lock.json",
+    "source_lock_sha256": "2be6bd713ce179bdc7f66e67ba1108f4bca5383372bbe653ac924cc290ab7f0e"
+  },
+  "required_second_review_checks": [
+    "evidence completeness",
+    "transition consistency",
+    "ownership effects",
+    "terminal states",
+    "unsupported conditions"
+  ],
+  "schema_version": 1,
+  "status": "PASS_SPEC_AUTHORING_AUTHORIZED_DRIVER_INSPECTION_BLOCKED"
+}

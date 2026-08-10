@@ -1,0 +1,47 @@
+{
+  "construction_head": "5701c391c58cc209b919abb4501c5107159f5084",
+  "construction_tree": "a1c3573d08fad8e04b6ab5d457eff7c4b7cdfa70",
+  "created_at_utc": "2026-08-10T10:34:05+00:00",
+  "decision_0017": {
+    "path": "documentation/decisions/0017-specification-personnel-assignment-and-authoring-start-guard.md",
+    "sha256": "0690597765a61ed11a0c2daa93b41da8622c2d68b9107c4ad387063ba371d7b5"
+  },
+  "freeze_package": {
+    "entry_count": 3,
+    "path": "evidence/annotation_preparation/specification_personnel_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "f37876084165308951972d63cdfe11d87757b09e5be6a2708db497782e38c418"
+  },
+  "next_boundary": "AUTHOR_REVIEW_VALIDATE_AND_FREEZE_EIGHT_LIBRARY_PROTOCOL_SPECIFICATIONS",
+  "personnel_attestation": {
+    "path": "evidence/annotation_preparation/specification_personnel_v1/personnel_attestation.v1.json",
+    "sha256": "667b1cf8507d9ba0ccd3e003b9c22357da0d586fb4a7d8b932e2b13ced2b624d"
+  },
+  "personnel_distinct": true,
+  "record_id": "SVF-SPECIFICATION-PERSONNEL-START-GUARD-FREEZE-V1",
+  "schema_version": 1,
+  "specification_author": {
+    "real_human": true,
+    "role_id": "Spec-Author-1"
+  },
+  "specification_reviewer": {
+    "dual_role": "THIRD_ADJUDICATOR",
+    "real_human_secured": true,
+    "role_id": "Spec-Reviewer-1",
+    "underlying_role_id": "Adjudicator-C"
+  },
+  "stage_state": {
+    "analyzer_implementation_authorized": false,
+    "annotation_packet_release_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_source_human_inspection_authorized": false,
+    "gold_annotation_started": false,
+    "repair_implementation_authorized": false,
+    "specification_authoring_authorized_after_commit": true,
+    "specification_authoring_started": false
+  },
+  "start_guard": {
+    "path": "config/annotation/specification_personnel_start_guard.v1.json",
+    "sha256": "a909bf3e43c1536a76444a37e7434b25241a8a12e0bea18d5612fb6dc42a47b8"
+  },
+  "status": "FROZEN_SPEC_AUTHORING_START_AUTHORIZED"
+}
