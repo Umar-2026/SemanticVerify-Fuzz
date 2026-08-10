@@ -1,0 +1,50 @@
+{
+  "current_frozen_role_roster": {
+    "Adjudicator-C": {
+      "eligible": true,
+      "non_author": true,
+      "not_main_analyzer_or_repair_developer": true,
+      "real_human_secured": true
+    },
+    "Annotator-A": {
+      "eligible": true,
+      "non_author": true,
+      "not_main_analyzer_or_repair_developer": true,
+      "real_human_secured": true
+    },
+    "Annotator-B": {
+      "eligible": true,
+      "non_author": true,
+      "not_main_analyzer_or_repair_developer": true,
+      "real_human_secured": true
+    },
+    "path": "evidence/gates/gate1/annotation_roles/annotation_role_roster.v1.json",
+    "sha256": "a06ddab9f2c19235b39f2246c21fd2cf7a7ee51a1d8c06bd1667eaecbf8a4009"
+  },
+  "evaluated_at_utc": "2026-08-10T09:31:30+00:00",
+  "historical_gate1_snapshot": {
+    "historical_record_mutated": false,
+    "path": "evidence/gates/gate1/gate1b_sampling_annotation_protocol.json",
+    "role_roster_secured_claimed": false,
+    "sha256": "b6308be90e88f40bdb3ecc58061b8deaad317a3fdb2a419724d0e0172f61fd2c"
+  },
+  "interpretation": {
+    "current_personnel_evidence_from_frozen_roster": true,
+    "historical_false_flag_preserved": true,
+    "human_driver_source_inspection_allowed_now": false,
+    "personnel_secured_for_preparation": true,
+    "sample_and_packet_preparation_allowed": true,
+    "separate_packet_release_gate_required": true
+  },
+  "next_boundary": "BUILD_FREEZE_COMPILED_SAMPLING_FRAME_AND_DETERMINISTIC_DRAW_140",
+  "pre_exposure_state": {
+    "analyzer_output_exposed": false,
+    "annotation_started": false,
+    "baseline_output_exposed": false,
+    "generated_driver_inspection_started": false,
+    "repair_output_exposed": false
+  },
+  "record_id": "SVF-ANNOTATION-ROLE-START-GUARD-V1",
+  "schema_version": 1,
+  "status": "PASS_PREPARATION_ONLY_DRIVER_INSPECTION_NOT_RELEASED"
+}

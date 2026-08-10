@@ -1,0 +1,227 @@
+{
+  "anonymization": {
+    "identifier_format": "SVF-GOLD-NNNN",
+    "mapping_separate_from_packets": true,
+    "masked_from_primary_annotators": [
+      "provider and model identity",
+      "attempt and replicate identity",
+      "scenario identifier and prompt text",
+      "analyzer output",
+      "baseline output",
+      "LLM-review output",
+      "repair output"
+    ],
+    "visible_to_primary_annotators": [
+      "complete anonymized driver source",
+      "library identity",
+      "frozen approved protocol specification and its cited evidence"
+    ]
+  },
+  "authority": {
+    "blind_annotation_schema_path": "config/schemas/blind_annotation_record.schema.json",
+    "blind_annotation_schema_sha256": "16ff8a450c26c61452efe6b8ae70179749c2d9f4b451c04aa52dd05b5d0567e5",
+    "completed_corpus_freeze_commit": "1083f247ae19634552ce7c31257246335b7be713",
+    "completed_corpus_freeze_manifest_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/freeze/completed-800/completed_primary_800_freeze_manifest.v1.json",
+    "completed_corpus_freeze_manifest_sha256": "ba34ed8b46c5d71d42803214f44ff4741f216dc77f56f6deff5c7e73ea782267",
+    "exposure_registry_schema_path": "config/schemas/annotation_exposure_registry.schema.json",
+    "exposure_registry_schema_sha256": "86ca3b6e451490d84acab503c33665a046825d92cfaed4a1b6932d47dce3303e",
+    "gold_sampling_protocol_path": "config/gold_sampling_annotation_protocol.json",
+    "gold_sampling_protocol_sha256": "38a1f721320733f86bc633172a9848085e659e1f41c35ee2ffbb8fc86a77ca63",
+    "sampling_frame_schema_path": "config/schemas/compilable_sampling_frame.schema.json",
+    "sampling_frame_schema_sha256": "59a2fc3d34f616b11ef8b94277b3b80283d551d2bfdee2fc10320f341ea42083"
+  },
+  "contract_id": "SVF-BLIND-ANNOTATION-PACKET-CONTRACT-V1",
+  "current_authorization": {
+    "analyzer_implementation": false,
+    "annotation_packet_construction": true,
+    "anonymization_mapping_creation": true,
+    "deterministic_sample_draw": true,
+    "human_driver_source_inspection": false,
+    "repair_implementation": false,
+    "sampling_frame_construction": true
+  },
+  "exposure_quarantine": {
+    "disqualifying_exposure_blocks_annotation": true,
+    "disqualifying_exposures": [
+      "SemanticVerify-Fuzz output",
+      "QuartetFuzz output",
+      "controlled LLM-review output",
+      "baseline output",
+      "repair output"
+    ],
+    "gold_freezes_before_machine_comparison": true,
+    "granularity": "per-person per-driver"
+  },
+  "human_gold": {
+    "evidence_citation_required": true,
+    "in_scope_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY"
+    ],
+    "out_of_scope_receives_validity_verdict": false,
+    "unknown_is_human_gold_label": false,
+    "valid_requires_null_defect_category": true,
+    "violation_requires_D1_through_D8_category": true
+  },
+  "next_boundary": "BUILD_FREEZE_COMPILED_SAMPLING_FRAME_AND_DETERMINISTIC_DRAW_140",
+  "roles": {
+    "developer_label_substitution_allowed": false,
+    "primary_annotators": [
+      "Annotator-A",
+      "Annotator-B"
+    ],
+    "third_adjudicator": "Adjudicator-C"
+  },
+  "sampling": {
+    "compilation_characteristics": {
+      "CLEAN_COMPILE": 321,
+      "COMPILED_WITH_WARNINGS": 166
+    },
+    "derived_allocation": [
+      {
+        "N_h": 48,
+        "inverse_probability_weight": 3.6923076923076925,
+        "library": "zlib",
+        "model_label": "Model A",
+        "n_h": 13,
+        "pi_h": 0.2708333333333333
+      },
+      {
+        "N_h": 25,
+        "inverse_probability_weight": 3.5714285714285716,
+        "library": "zlib",
+        "model_label": "Model B",
+        "n_h": 7,
+        "pi_h": 0.28
+      },
+      {
+        "N_h": 49,
+        "inverse_probability_weight": 3.5,
+        "library": "libpcap",
+        "model_label": "Model A",
+        "n_h": 14,
+        "pi_h": 0.2857142857142857
+      },
+      {
+        "N_h": 25,
+        "inverse_probability_weight": 3.5714285714285716,
+        "library": "libpcap",
+        "model_label": "Model B",
+        "n_h": 7,
+        "pi_h": 0.28
+      },
+      {
+        "N_h": 37,
+        "inverse_probability_weight": 3.3636363636363638,
+        "library": "curl",
+        "model_label": "Model A",
+        "n_h": 11,
+        "pi_h": 0.2972972972972973
+      },
+      {
+        "N_h": 1,
+        "inverse_probability_weight": 1.0,
+        "library": "curl",
+        "model_label": "Model B",
+        "n_h": 1,
+        "pi_h": 1.0
+      },
+      {
+        "N_h": 43,
+        "inverse_probability_weight": 3.5833333333333335,
+        "library": "cJSON",
+        "model_label": "Model A",
+        "n_h": 12,
+        "pi_h": 0.27906976744186046
+      },
+      {
+        "N_h": 19,
+        "inverse_probability_weight": 3.1666666666666665,
+        "library": "cJSON",
+        "model_label": "Model B",
+        "n_h": 6,
+        "pi_h": 0.3157894736842105
+      },
+      {
+        "N_h": 50,
+        "inverse_probability_weight": 3.5714285714285716,
+        "library": "libtiff",
+        "model_label": "Model A",
+        "n_h": 14,
+        "pi_h": 0.28
+      },
+      {
+        "N_h": 17,
+        "inverse_probability_weight": 3.4,
+        "library": "libtiff",
+        "model_label": "Model B",
+        "n_h": 5,
+        "pi_h": 0.29411764705882354
+      },
+      {
+        "N_h": 42,
+        "inverse_probability_weight": 3.5,
+        "library": "libvpx",
+        "model_label": "Model A",
+        "n_h": 12,
+        "pi_h": 0.2857142857142857
+      },
+      {
+        "N_h": 23,
+        "inverse_probability_weight": 3.2857142857142856,
+        "library": "libvpx",
+        "model_label": "Model B",
+        "n_h": 7,
+        "pi_h": 0.30434782608695654
+      },
+      {
+        "N_h": 37,
+        "inverse_probability_weight": 3.3636363636363638,
+        "library": "c-ares",
+        "model_label": "Model A",
+        "n_h": 11,
+        "pi_h": 0.2972972972972973
+      },
+      {
+        "N_h": 16,
+        "inverse_probability_weight": 3.2,
+        "library": "c-ares",
+        "model_label": "Model B",
+        "n_h": 5,
+        "pi_h": 0.3125
+      },
+      {
+        "N_h": 37,
+        "inverse_probability_weight": 3.7,
+        "library": "lcms",
+        "model_label": "Model A",
+        "n_h": 10,
+        "pi_h": 0.2702702702702703
+      },
+      {
+        "N_h": 18,
+        "inverse_probability_weight": 3.6,
+        "library": "lcms",
+        "model_label": "Model B",
+        "n_h": 5,
+        "pi_h": 0.2777777777777778
+      }
+    ],
+    "eligible_driver_count": 487,
+    "eligible_status": "COMPILED",
+    "master_seed": 2026080603,
+    "nonempty_primary_strata": 16,
+    "primary_strata": [
+      "library",
+      "model_label"
+    ],
+    "ranking_material": "UTF-8 string '2026080603|<driver_id>'",
+    "replacement_allowed": false,
+    "reroll_allowed": false,
+    "sample_size": 140,
+    "source_attempt_count": 800
+  },
+  "schema_version": 1,
+  "status": "FROZEN_PRE_SAMPLE_DRIVER_INSPECTION_NOT_AUTHORIZED"
+}

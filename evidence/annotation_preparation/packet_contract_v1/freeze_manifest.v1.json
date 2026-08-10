@@ -1,0 +1,36 @@
+{
+  "authorization": {
+    "analyzer_implementation": false,
+    "deterministic_sample_draw": true,
+    "human_driver_source_inspection": false,
+    "repair_implementation": false,
+    "sampling_frame_construction": true
+  },
+  "compiled_sampling_frame_size": 487,
+  "construction_head": "1083f247ae19634552ce7c31257246335b7be713",
+  "construction_tree": "a4fa8036f6189e55dd60e1a6698707c7d7bafeee",
+  "created_at_utc": "2026-08-10T09:31:30+00:00",
+  "decision_0014": {
+    "path": "documentation/decisions/0014-blind-annotation-packet-contract-and-role-guard.md",
+    "sha256": "fd3ca81d79ae01d54fb2074c19374dc9d4a7f94d42c4e531730e31ffd3d6c3f5",
+    "status": "Accepted"
+  },
+  "freeze_package": {
+    "entry_count": 3,
+    "path": "evidence/annotation_preparation/packet_contract_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "a34e27b0935c71c036c2f0229b34a42b852a6ff4f4635e2857d626f447d3d413"
+  },
+  "gold_sample_size": 140,
+  "next_boundary": "BUILD_FREEZE_COMPILED_SAMPLING_FRAME_AND_DETERMINISTIC_DRAW_140",
+  "packet_contract": {
+    "path": "config/annotation/blind_annotation_packet_contract.v1.json",
+    "sha256": "8a628c002a92fe7a99c609db67a815a020c8b1a05fc304ea51680c455ca91bdc"
+  },
+  "record_id": "SVF-BLIND-ANNOTATION-PACKET-CONTRACT-FREEZE-V1",
+  "role_start_guard": {
+    "path": "evidence/annotation_preparation/role_roster_start_guard.v1.json",
+    "sha256": "d83c05c38f1b1f240459f76458731cb935091f345007e359105fcff9ec8179ff"
+  },
+  "schema_version": 1,
+  "status": "FROZEN_PRE_SAMPLE"
+}
