@@ -1,0 +1,41 @@
+{
+  "construction_head": "7ee6424b17f1d18d78731e4e354d3fa9d539a81e",
+  "construction_tree": "51f62cb0b17944679b8fefcd32da081dad1be9e6",
+  "created_at_utc": "2026-08-10T09:43:05+00:00",
+  "deterministic_draw": {
+    "allocation_exact": true,
+    "diagnostic_reroll": false,
+    "master_seed": 2026080603,
+    "path": "evidence/annotation_preparation/sampling_draw_v1/deterministic_gold_sample_draw.140.v1.json",
+    "selected_driver_id_bundle_sha256": "32e32609340737a18d0357a0f3baa19f078a8664776439a5189ea88918d455c3",
+    "selected_record_count": 140,
+    "selection_recomputation_pass": true,
+    "sha256": "1062d5cb06ef75a42ad299dbd1a92ca4aa3d753c7b6f315d1fc14e6f47951e2d"
+  },
+  "freeze_package": {
+    "entry_count": 2,
+    "path": "evidence/annotation_preparation/sampling_draw_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "7bbade00a1f60a9773f340e91f0486ccb26fc625c41fd51c654357e740143858"
+  },
+  "next_boundary": "FREEZE_ANONYMIZATION_ID_ASSIGNMENT_AND_BUILD_PRE_RELEASE_PACKETS",
+  "record_id": "SVF-COMPILABLE-FRAME-487-AND-DRAW-140-FREEZE-V1",
+  "sampling_frame": {
+    "all_records_schema_valid": true,
+    "path": "evidence/annotation_preparation/sampling_draw_v1/compilable_sampling_frame.487.v1.jsonl",
+    "record_count": 487,
+    "schema_path": "config/schemas/compilable_sampling_frame.schema.json",
+    "schema_sha256": "59a2fc3d34f616b11ef8b94277b3b80283d551d2bfdee2fc10320f341ea42083",
+    "sha256": "adb9844bd29855c6d27d4dcdd147d4fd4eff74a3d3106a6b32bd15401e5d1b38"
+  },
+  "schema_version": 1,
+  "stage_state": {
+    "analyzer_implementation": false,
+    "annotation_packets_created": false,
+    "anonymization_mapping_created": false,
+    "human_driver_source_inspection_authorized": false,
+    "repair_implementation": false,
+    "sample_drawn": true,
+    "sample_frozen": true
+  },
+  "status": "FROZEN_SELECTED_SOURCE_NOT_RELEASED"
+}
