@@ -1,0 +1,34 @@
+{
+  "affected_library_count": 8,
+  "construction_head": "5704797be5b4e92b388c20df0b71a34f552f247b",
+  "construction_tree": "18b7cb3922de0491edaee04dc8d577ce640c95e1",
+  "created_at_utc": "2026-08-10T10:07:56+00:00",
+  "decision_0016": {
+    "path": "documentation/decisions/0016-specification-timing-deviation-and-source-only-reconciliation.md",
+    "sha256": "e7f8cfe53eae2065fe23a99c63fcda1db41fe9a151d160fcd1c8105d20b2d091"
+  },
+  "deviation_confirmed": true,
+  "freeze_package": {
+    "entry_count": 2,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "c9bb5a8592a24e9fbf034deeacf33ca21881a081e3778061ef3550cc96cd15ca"
+  },
+  "next_boundary": "AUDIT_PINNED_SOURCE_SNAPSHOTS_AND_FREEZE_SPEC_AUTHOR_REVIEWER_START_GUARD",
+  "record_id": "SVF-SPECIFICATION-RECONCILIATION-FREEZE-V1",
+  "recovery_contract": {
+    "path": "config/annotation/specification_timing_deviation_recovery.v1.json",
+    "sha256": "eb5a64cef8cc659b8e3c3f84746c91ffee4e9a6e696e600bf6eae7840bdf93bb"
+  },
+  "recovery_mode": "SOURCE_ONLY_BLINDED_RECONCILIATION",
+  "schema_version": 1,
+  "stage_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_source_human_inspection_authorized": false,
+    "gold_annotation_started": false,
+    "library_specifications_authored": false,
+    "repair_implementation_authorized": false,
+    "spec_author_reviewer_attested": false
+  },
+  "status": "FROZEN_RECOVERY_PROTOCOL_SPEC_AUTHORING_BLOCKED"
+}

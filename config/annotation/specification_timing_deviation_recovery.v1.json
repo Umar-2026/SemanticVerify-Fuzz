@@ -1,0 +1,160 @@
+{
+  "approved_source_types": [
+    "pinned official API documentation",
+    "public headers at the pinned revision",
+    "pinned implementation source",
+    "pinned upstream tests",
+    "predeclared upstream usage examples"
+  ],
+  "claim_status": {
+    "affected_library_status_if_disqualifying_exposure_occurs": "EXPLORATORY_ONLY",
+    "fully_preregistered_specification_timing_claim_allowed": false,
+    "primary_verification_analysis_status_if_recovery_passes": "DEVIATION_CONTROLLED_PRIMARY_ANALYSIS",
+    "strict_pre_generation_library_specification_freeze_claim_allowed": false
+  },
+  "contract_id": "SVF-SPECIFICATION-TIMING-DEVIATION-RECOVERY-V1",
+  "current_authorization": {
+    "author_library_specifications": false,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "inspect_generated_driver_source": false,
+    "read_only_pinned_source_snapshot_audit": true,
+    "run_baselines": false,
+    "secure_spec_author_and_reviewer": true,
+    "start_gold_annotation": false
+  },
+  "deviation": {
+    "affected_libraries": [
+      "zlib",
+      "libpcap",
+      "curl",
+      "cJSON",
+      "libtiff",
+      "libvpx",
+      "c-ares",
+      "lcms"
+    ],
+    "affected_library_count": 8,
+    "confirmed": true,
+    "must_be_disclosed_in_reporting": true,
+    "must_not_be_described_as_restoration": true,
+    "recoverable_pre_generation_specifications_found": false,
+    "type": "MISSING_LIBRARY_SPECIFICATIONS_BEFORE_PRIMARY_GENERATION"
+  },
+  "discovery_state": {
+    "analyzer_implementation_started": false,
+    "baseline_output_exposed": false,
+    "deterministic_gold_sample_frozen": true,
+    "generated_driver_content_human_inspected_for_semantics": false,
+    "gold_annotation_started": false,
+    "gold_labels_created": false,
+    "primary_compilation_complete": true,
+    "primary_generation_complete": true,
+    "repair_implementation_started": false,
+    "selected_gold_driver_count": 140
+  },
+  "freeze_requirements": {
+    "all_eight_freeze_before_annotation_source_release": true,
+    "author_attested": true,
+    "generated_semantic_evidence_exposure": false,
+    "provenance_complete": true,
+    "reviewer_attested": true,
+    "rule_level_content_hashes_present": true,
+    "schema_valid": true,
+    "specification_content_hash_present": true
+  },
+  "frozen_authoring_inputs": {
+    "canonical_proposal": {
+      "path": "provenance/proposal/SemanticVerify-Fuzz_Verification-First_Staged-Repair_Proposal.docx",
+      "sha256": "3abc92ee7ac0100a6b9ac148a2ad2a4ca71d187677cb84abf1545de29afb4a21"
+    },
+    "gold_sampling_protocol": {
+      "path": "config/gold_sampling_annotation_protocol.json",
+      "sha256": "38a1f721320733f86bc633172a9848085e659e1f41c35ee2ffbb8fc86a77ca63"
+    },
+    "library_source_build_lock": {
+      "path": "config/library_source_build_lock.json",
+      "sha256": "2be6bd713ce179bdc7f66e67ba1108f4bca5383372bbe653ac924cc290ab7f0e"
+    },
+    "packet_contract": {
+      "path": "config/annotation/blind_annotation_packet_contract.v1.json",
+      "sha256": "8a628c002a92fe7a99c609db67a815a020c8b1a05fc304ea51680c455ca91bdc"
+    },
+    "protocol_obligation_contract": {
+      "path": "config/protocol_obligation_contract.json",
+      "sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf"
+    },
+    "protocol_specification_schema": {
+      "path": "config/schemas/protocol_specification.schema.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+    },
+    "sampling_draw_freeze": {
+      "path": "evidence/annotation_preparation/sampling_draw_v1/freeze_manifest.v1.json",
+      "sha256": "3308046193184f9da4df7d469523971517513d2b4e81f1b6a560fdbf84f0929a"
+    },
+    "sampling_mapping_contract": {
+      "path": "config/annotation/sampling_frame_identifier_mapping.v1.json",
+      "sha256": "322b3a8b7dbc848a37989b8fd764fd9de691585cd389dccc6b3af9c402e8b16b"
+    },
+    "scenario_bindings": {
+      "path": "config/generation/scenario_bindings.80.v10.json",
+      "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+    }
+  },
+  "next_boundary": "AUDIT_PINNED_SOURCE_SNAPSHOTS_AND_FREEZE_SPEC_AUTHOR_REVIEWER_START_GUARD",
+  "personnel_guard": {
+    "personnel_attested": false,
+    "required_second_review_checks": [
+      "evidence completeness",
+      "transition consistency",
+      "ownership effects",
+      "terminal states",
+      "unsupported conditions"
+    ],
+    "reviewer_must_be_distinct_from_author": true,
+    "second_reviewer_required": true,
+    "specification_author_required": true,
+    "specification_authoring_authorized_now": false
+  },
+  "post_freeze_rule": {
+    "later_specification_correction_role": "SECONDARY_SENSITIVITY_ANALYSIS_ONLY",
+    "original_primary_result_retained": true,
+    "primary_specification_mutation_allowed": false
+  },
+  "prohibited_inputs_during_specification_authoring": [
+    "generated experimental driver source",
+    "generated raw model responses",
+    "generated-driver compiler-log semantic contents",
+    "selected-driver membership as specification evidence",
+    "manual gold labels",
+    "annotator observations",
+    "SemanticVerify-Fuzz analyzer output",
+    "baseline output",
+    "QuartetFuzz output",
+    "controlled LLM-review output",
+    "repair output",
+    "defect-triggering mutations",
+    "post-hoc issue searches prompted by observed generated-driver failures",
+    "generated-corpus prevalence or detector-performance feedback"
+  ],
+  "recovery_method": {
+    "all_eight_specs_must_freeze_before_driver_release": true,
+    "fixed_library_order": [
+      "zlib",
+      "libpcap",
+      "curl",
+      "cJSON",
+      "libtiff",
+      "libvpx",
+      "c-ares",
+      "lcms"
+    ],
+    "generated_corpus_may_be_used_as_specification_evidence": false,
+    "name": "SOURCE_ONLY_BLINDED_RECONCILIATION",
+    "outcome_informed_rule_authoring_allowed": false,
+    "sample_membership_may_not_change": true,
+    "sample_reroll_allowed": false
+  },
+  "schema_version": 1,
+  "status": "FROZEN_RECOVERY_PROTOCOL_SPEC_AUTHORING_NOT_STARTED"
+}
