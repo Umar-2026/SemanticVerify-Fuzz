@@ -1,0 +1,257 @@
+{
+  "$id": "SVF-PRIMARY-SAME-WINDOW-RESUME-AUTHORIZATION-V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authorized_at_utc": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "decision_0013": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "const": "documentation/decisions/0013-gemini-zero-output-usage-and-same-window-resume.md"
+        },
+        "sha256": {
+          "const": "724bb8a19011f81995ac1dc3e2f4de0569c56cfd2a7e5fc47dd0a2755fbd9af5"
+        },
+        "status": {
+          "const": "Accepted"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "status"
+      ],
+      "type": "object"
+    },
+    "implementation": {
+      "additionalProperties": false,
+      "properties": {
+        "freeze_commit": {
+          "pattern": "^[0-9a-f]{40}$",
+          "type": "string"
+        },
+        "path": {
+          "const": "scripts/primary_same_window_resume_v1.py"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "freeze_commit"
+      ],
+      "type": "object"
+    },
+    "pause_resolution_contract": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "const": "config/primary_pause_resolution_contract.v1.json"
+        },
+        "sha256": {
+          "const": "80a6cdd79fc46ad784b7ead2b567bcab8381ffafe28876a7f6f87a63160675c6"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "provider_requalification": {
+      "additionalProperties": false,
+      "properties": {
+        "deepseek": {
+          "additionalProperties": false,
+          "properties": {
+            "requested_model_id": {
+              "const": "deepseek-v4-flash"
+            },
+            "returned_model": {
+              "enum": [
+                "deepseek-v4-flash",
+                "DeepSeek-V4-Flash-0731"
+              ]
+            },
+            "status": {
+              "const": "PASS"
+            }
+          },
+          "required": [
+            "requested_model_id",
+            "returned_model",
+            "status"
+          ],
+          "type": "object"
+        },
+        "gemini": {
+          "additionalProperties": false,
+          "properties": {
+            "requested_model_id": {
+              "const": "gemini-3.1-flash-lite"
+            },
+            "returned_model_version": {
+              "const": "gemini-3.1-flash-lite"
+            },
+            "status": {
+              "const": "PASS"
+            }
+          },
+          "required": [
+            "requested_model_id",
+            "returned_model_version",
+            "status"
+          ],
+          "type": "object"
+        },
+        "performed_at_utc": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "report_path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "report_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "status": {
+          "const": "PASS"
+        }
+      },
+      "required": [
+        "status",
+        "performed_at_utc",
+        "report_path",
+        "report_sha256",
+        "deepseek",
+        "gemini"
+      ],
+      "type": "object"
+    },
+    "record_id": {
+      "const": "SVF-PRIMARY-SAME-WINDOW-RESUME-AUTHORIZATION-V1"
+    },
+    "resume_contract": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "const": "config/primary_same_window_resume_contract.v1.json"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "safety_acknowledgements": {
+      "additionalProperties": false,
+      "properties": {
+        "authorization_before_secret_read": {
+          "const": true
+        },
+        "existing_window_open_retained": {
+          "const": true
+        },
+        "no_analyzer": {
+          "const": true
+        },
+        "no_prior_replay": {
+          "const": true
+        },
+        "no_repair": {
+          "const": true
+        },
+        "no_second_window": {
+          "const": true
+        },
+        "no_slot_0472_retry": {
+          "const": true
+        }
+      },
+      "required": [
+        "authorization_before_secret_read",
+        "existing_window_open_retained",
+        "no_second_window",
+        "no_slot_0472_retry",
+        "no_prior_replay",
+        "no_analyzer",
+        "no_repair"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "additionalProperties": false,
+      "properties": {
+        "first_logical_slot": {
+          "const": 473
+        },
+        "last_logical_slot": {
+          "const": 800
+        },
+        "prior_slot_replay": {
+          "const": false
+        },
+        "remaining_logical_slots": {
+          "const": 328
+        },
+        "same_window_only": {
+          "const": true
+        },
+        "second_window": {
+          "const": false
+        },
+        "slot_0472_retry": {
+          "const": false
+        }
+      },
+      "required": [
+        "first_logical_slot",
+        "last_logical_slot",
+        "remaining_logical_slots",
+        "same_window_only",
+        "second_window",
+        "slot_0472_retry",
+        "prior_slot_replay"
+      ],
+      "type": "object"
+    },
+    "status": {
+      "const": "AUTHORIZED_FOR_SAME_WINDOW_RESUME"
+    },
+    "window_id": {
+      "const": "SVF-PRIMARY-800-V1"
+    }
+  },
+  "required": [
+    "record_id",
+    "schema_version",
+    "status",
+    "window_id",
+    "authorized_at_utc",
+    "decision_0013",
+    "pause_resolution_contract",
+    "resume_contract",
+    "implementation",
+    "provider_requalification",
+    "scope",
+    "safety_acknowledgements"
+  ],
+  "type": "object"
+}

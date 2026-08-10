@@ -1,0 +1,115 @@
+{
+  "authorization": {
+    "authorization_before_secret_read": true,
+    "fresh_provider_requalification_required": true,
+    "live_provider_calls_currently_authorized": false,
+    "old_primary_authorization_is_sufficient": false,
+    "resume_authorization_record": "evidence/generation_opening/primary_same_window_resume_authorization.v1.json",
+    "resume_currently_authorized": false,
+    "separate_resume_authorization_required": true
+  },
+  "contract_id": "SVF-PRIMARY-SAME-WINDOW-RESUME-V1",
+  "frozen_bindings": {
+    "decision_0013_sha256": "724bb8a19011f81995ac1dc3e2f4de0569c56cfd2a7e5fc47dd0a2755fbd9af5",
+    "frozen_postprocessing_sha256": "9efc2973ef7792b9dbda5ee6d6c866718c87607ed2f31b114006dbecc95d6aa8",
+    "frozen_runner_sha256": "553ac68643193e64b58be1fc2c8cfbb3d9f24e98f7c7c75834e297d5532fd84e",
+    "frozen_transport_sha256": "325ef9a7817acaaaa84c0f1ff28c4dfed4c92bf6c3f1cb032c83e5694a4cfbdd",
+    "pause_0001_sha256": "ab2fba00b24d1989c1527a0d0ebf3ac49ddaf998778325371091efe3353db026",
+    "pause_freeze_manifest_sha256": "3b0323632cfde4138224c1baa289a69d54fe7b0260171fe474a70049d1a8e2fd",
+    "pause_freeze_package_sha256": "a9d4cc0b1d3625094a988ba842c3d7343e88952c5bb9a7d4690fb59276cf3488",
+    "pause_resolution_contract_sha256": "80a6cdd79fc46ad784b7ead2b567bcab8381ffafe28876a7f6f87a63160675c6",
+    "resolution_record_sha256": "c5611e214fd87dbe0daa81e103de7a34823ff3036a773f7e030e24ce843548a9",
+    "window_open_sha256": "4b5a270375b3f59ebec446b43b5fb1165ec116c5ace8b65a0568f8bbf197b270"
+  },
+  "gemini_zero_output_normalization": {
+    "basis_label": "DERIVED_ZERO_CANDIDATE_REFUSAL_TOKEN_BALANCE",
+    "conditions": [
+      "complete HTTP 2xx response",
+      "terminal status REFUSAL",
+      "usageMetadata is object",
+      "promptTokenCount non-negative integer",
+      "candidatesTokenCount absent",
+      "thoughtsTokenCount absent or non-negative integer",
+      "cachedContentTokenCount absent or zero",
+      "toolUsePromptTokenCount absent or zero",
+      "totalTokenCount non-negative integer",
+      "totalTokenCount equals promptTokenCount plus thoughtsTokenCount_or_zero"
+    ],
+    "decision": "0013",
+    "fallback": "frozen original cost estimator and pause semantics",
+    "missing_candidatesTokenCount_for_cost": 0,
+    "original_usage_metadata_modified": false,
+    "provider_response_bytes_modified": false,
+    "scope": "Model B REFUSAL only"
+  },
+  "implementation": {
+    "frozen_runner_file_mutated": false,
+    "frozen_transport_file_mutated": false,
+    "frozen_transport_logic_mutated": false,
+    "path": "scripts/primary_same_window_resume_v1.py",
+    "sha256": "c48cb1c0ad070957b68d246d6854459cb15c66a6adbb8327ec4843270c77b75f",
+    "transport_strategy": "runtime AST clone of frozen perform_transport with exactly one cost-estimator call replaced"
+  },
+  "next_boundary_after_implementation_freeze": "FRESH_PROVIDER_REQUALIFICATION_FOR_RESUME",
+  "pause_freeze_integrity": {
+    "canonical_duplicate_state_count": 362,
+    "duplicate_output_count": 40,
+    "extracted_verbatim_count": 402,
+    "package_entry_count": 4115,
+    "pause_freeze_commit": "25931bfe3f479bdde49a4da2d6731d152a929c41",
+    "pause_freeze_tree": "b85f1d7e305cb69599ec26c6ad73f3aba450010e",
+    "prior_invocation_record_count": 483,
+    "service_error_state_at_pause": {
+      "Model A": 0,
+      "Model B": 0
+    },
+    "terminal_slot_count": 472
+  },
+  "prepared_at_utc": "2026-08-10T07:43:03+00:00",
+  "resume_authorization_schema": {
+    "path": "config/schemas/primary_resume_authorization_record.schema.json",
+    "sha256": "e807c99018395f21600e1365db602a57bc7dc629db898123cd4b413062ca09b4"
+  },
+  "resume_plan": {
+    "close_only_after_total_terminal_records": 800,
+    "close_record": "window/close.json",
+    "existing_window_open_retained": true,
+    "first_logical_slot": 473,
+    "global_max_in_flight_requests": 1,
+    "last_logical_slot": 800,
+    "new_window_open_record": false,
+    "next_pause_sequence": 2,
+    "prior_slot_replay": false,
+    "remaining_logical_slots": 328,
+    "resume_marker": "ledger/resumes/resume-0001.json",
+    "same_window_only": true,
+    "slot_0472_retry": false
+  },
+  "schema_version": 1,
+  "separation": {
+    "analyzer": false,
+    "api_secret_read_during_qualification": false,
+    "generated_driver_human_inspection": false,
+    "linked_generated_driver_execution": false,
+    "live_provider_call_during_qualification": false,
+    "provider_free_qualification_only_before_freeze": true,
+    "raw_model_response_human_inspection": false,
+    "repair": false,
+    "slot_0473_generation_during_qualification": false
+  },
+  "state_reconstruction": {
+    "duplicate_state": "mechanical exact-byte reconstruction from slots 0001-0472; no human source inspection",
+    "expected_duplicate_counts": {
+      "canonical": 362,
+      "duplicates": 40,
+      "extracted": 402
+    },
+    "expected_service_error_state": {
+      "Model A": 0,
+      "Model B": 0
+    },
+    "service_error_state": "mechanical reconstruction from prior invocation-ledger HTTP metadata"
+  },
+  "status": "FROZEN_IMPLEMENTATION_READY_RESUME_NOT_AUTHORIZED",
+  "window_id": "SVF-PRIMARY-800-V1"
+}

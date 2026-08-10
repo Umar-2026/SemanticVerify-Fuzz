@@ -1,0 +1,75 @@
+{
+  "authorization": {
+    "fresh_provider_requalification_required": true,
+    "live_provider_calls_authorized": false,
+    "resume_execution_authorized": false,
+    "separate_committed_resume_authorization_required": true
+  },
+  "construction_base_commit": "baca4605bee2db92c463c4e74acf30ae8b5e2ec2",
+  "construction_base_tree": "6fe798d9b17b0ac3eb20dd1b777a1698bc7f4615",
+  "decision_0013": {
+    "path": "documentation/decisions/0013-gemini-zero-output-usage-and-same-window-resume.md",
+    "sha256": "724bb8a19011f81995ac1dc3e2f4de0569c56cfd2a7e5fc47dd0a2755fbd9af5"
+  },
+  "freeze_package": {
+    "entry_count": 5,
+    "path": "evidence/generation_opening/same_window_resume_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "142a6320963336b45765814c24b8f3e4e86f89f11b7914ac75b43a88df0e3605"
+  },
+  "next_boundary": "FRESH_PROVIDER_REQUALIFICATION_FOR_RESUME",
+  "pause_resolution_contract": {
+    "path": "config/primary_pause_resolution_contract.v1.json",
+    "sha256": "80a6cdd79fc46ad784b7ead2b567bcab8381ffafe28876a7f6f87a63160675c6"
+  },
+  "prepared_at_utc": "2026-08-10T08:00:57+00:00",
+  "qualification": {
+    "api_secret_values_read": false,
+    "live_provider_calls": 0,
+    "path": "evidence/generation_opening/same_window_resume_v1/qualification.v1.json",
+    "sha256": "9921e3f86d4d9c9d4cd5995f590a821b6a1d85cfb320ea489549af1393c30820",
+    "status": "PASS"
+  },
+  "qualifier": {
+    "path": "scripts/qualify_primary_same_window_resume_v1.py",
+    "sha256": "409e31edb412fc5f7d79515cf5d66dfa30e3d59705ee8ff75ce16ac366861ef8"
+  },
+  "record_id": "SVF-SAME-WINDOW-RESUME-V1-IMPLEMENTATION-FREEZE",
+  "resume_authorization_schema": {
+    "path": "config/schemas/primary_resume_authorization_record.schema.json",
+    "sha256": "e807c99018395f21600e1365db602a57bc7dc629db898123cd4b413062ca09b4"
+  },
+  "resume_contract": {
+    "path": "config/primary_same_window_resume_contract.v1.json",
+    "sha256": "dce0b87e660f703c38bd3fa6807a53172119a639479eb1918cc2bb0f9f81a230"
+  },
+  "resume_implementation": {
+    "path": "scripts/primary_same_window_resume_v1.py",
+    "sha256": "c48cb1c0ad070957b68d246d6854459cb15c66a6adbb8327ec4843270c77b75f"
+  },
+  "resume_scope": {
+    "first_logical_slot": 473,
+    "last_logical_slot": 800,
+    "next_pause_sequence": 2,
+    "prior_472_slot_replay": false,
+    "remaining_logical_slots": 328,
+    "same_window": true,
+    "second_window": false,
+    "slot_0472_retry": false
+  },
+  "schema_version": 1,
+  "separation": {
+    "analyzer": false,
+    "generated_driver_human_inspection": false,
+    "linked_generated_driver_execution": false,
+    "raw_model_response_human_inspection": false,
+    "repair": false
+  },
+  "status": "FROZEN_PROVIDER_FREE_QUALIFIED_RESUME_NOT_AUTHORIZED",
+  "toolchain_observation": {
+    "clang_14_package_version": "1:14.0.0-1ubuntu1.1",
+    "compiler_contract_match": true,
+    "compiler_version_first_line": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+    "lld_14_package_version": "1:14.0.0-1ubuntu1.1"
+  },
+  "window_id": "SVF-PRIMARY-800-V1"
+}
