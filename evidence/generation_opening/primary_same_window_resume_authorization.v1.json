@@ -1,0 +1,59 @@
+{
+  "authorized_at_utc": "2026-08-10T08:15:48+00:00",
+  "decision_0013": {
+    "path": "documentation/decisions/0013-gemini-zero-output-usage-and-same-window-resume.md",
+    "sha256": "724bb8a19011f81995ac1dc3e2f4de0569c56cfd2a7e5fc47dd0a2755fbd9af5",
+    "status": "Accepted"
+  },
+  "implementation": {
+    "freeze_commit": "40559dde3ebea6d27a27d4cd40121507d33bdf32",
+    "path": "scripts/primary_same_window_resume_v1.py",
+    "sha256": "c48cb1c0ad070957b68d246d6854459cb15c66a6adbb8327ec4843270c77b75f"
+  },
+  "pause_resolution_contract": {
+    "path": "config/primary_pause_resolution_contract.v1.json",
+    "sha256": "80a6cdd79fc46ad784b7ead2b567bcab8381ffafe28876a7f6f87a63160675c6"
+  },
+  "provider_requalification": {
+    "deepseek": {
+      "requested_model_id": "deepseek-v4-flash",
+      "returned_model": "deepseek-v4-flash",
+      "status": "PASS"
+    },
+    "gemini": {
+      "requested_model_id": "gemini-3.1-flash-lite",
+      "returned_model_version": "gemini-3.1-flash-lite",
+      "status": "PASS"
+    },
+    "performed_at_utc": "2026-08-10T08:10:17+00:00",
+    "report_path": "evidence/generation_opening/provider_requalification_resume_v1/provider_requalification.resume.v1.json",
+    "report_sha256": "673800e92e26a05962c1cd61b20722ce28009c349309161a2da9961e6d363ae7",
+    "status": "PASS"
+  },
+  "record_id": "SVF-PRIMARY-SAME-WINDOW-RESUME-AUTHORIZATION-V1",
+  "resume_contract": {
+    "path": "config/primary_same_window_resume_contract.v1.json",
+    "sha256": "dce0b87e660f703c38bd3fa6807a53172119a639479eb1918cc2bb0f9f81a230"
+  },
+  "safety_acknowledgements": {
+    "authorization_before_secret_read": true,
+    "existing_window_open_retained": true,
+    "no_analyzer": true,
+    "no_prior_replay": true,
+    "no_repair": true,
+    "no_second_window": true,
+    "no_slot_0472_retry": true
+  },
+  "schema_version": 1,
+  "scope": {
+    "first_logical_slot": 473,
+    "last_logical_slot": 800,
+    "prior_slot_replay": false,
+    "remaining_logical_slots": 328,
+    "same_window_only": true,
+    "second_window": false,
+    "slot_0472_retry": false
+  },
+  "status": "AUTHORIZED_FOR_SAME_WINDOW_RESUME",
+  "window_id": "SVF-PRIMARY-800-V1"
+}
