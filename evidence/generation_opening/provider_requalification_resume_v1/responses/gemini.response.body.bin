@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "SVF-QUALIFIED",
+            "thoughtSignature": "EjQKMgERTTIPdNxVhLveZuq3Ki7hD06Fpbcb4TrUp1jnJqV+A3x2AhJOZlt1k90XzR/WDWLg"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 33,
+    "candidatesTokenCount": 5,
+    "totalTokenCount": 38,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 33
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "aId5ar6VKPjm7M8Pp-yBsQI"
+}

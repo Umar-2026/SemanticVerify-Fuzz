@@ -1,0 +1,110 @@
+{
+  "call_policy": {
+    "deepseek_attempts": 1,
+    "gemini_attempts": 1,
+    "globally_concurrent_requests": 1,
+    "primary_generation_request_used": false,
+    "primary_slot_used": false,
+    "retries": 0,
+    "total_live_call_attempts": 2
+  },
+  "deepseek": {
+    "complete_http_response": true,
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "finish_reason": "stop",
+    "http_status": 200,
+    "probe_exact_match": true,
+    "raw_response_path": "evidence/generation_opening/provider_requalification_resume_v1/responses/deepseek.response.body.bin",
+    "raw_response_sha256": "8bd465f45b06bd778ad86b354441324e6bd203ccb0fea78c59587eac2a65c0c0",
+    "redacted_headers_path": "evidence/generation_opening/provider_requalification_resume_v1/response_headers/deepseek.response.headers.json",
+    "redacted_headers_sha256": "f6e8acc198c0570a37c8d3c62de991a2a5a444feb49123f88f0a3a32f7a452d0",
+    "request_path": "evidence/generation_opening/provider_requalification_resume_v1/requests/deepseek.request.json",
+    "request_sha256": "592a18bec9d80d555ca24305f3616f7462b53412cf575b8542483f1a07bf87c0",
+    "requested_model_id": "deepseek-v4-flash",
+    "response_text_chars": 13,
+    "response_text_sha256": "a0d2974431d48323a535091d972c5332b49b3780dca7b3d05e57cb832f75ca83",
+    "retry_performed": false,
+    "returned_model": "deepseek-v4-flash",
+    "status": "PASS",
+    "transport_exception": null,
+    "usage": {
+      "completion_tokens": 5,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 37,
+      "prompt_tokens": 37,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 42
+    }
+  },
+  "gemini": {
+    "complete_http_response": true,
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+    "finish_reason": "STOP",
+    "http_status": 200,
+    "probe_exact_match": true,
+    "raw_response_path": "evidence/generation_opening/provider_requalification_resume_v1/responses/gemini.response.body.bin",
+    "raw_response_sha256": "7368c30b9387d8f148aae116547e2292c0e378b028e1e39ed9811bec2c61b558",
+    "redacted_headers_path": "evidence/generation_opening/provider_requalification_resume_v1/response_headers/gemini.response.headers.json",
+    "redacted_headers_sha256": "095b9cce12508704511ee2308d90cfc34fef5afc41aee727ddf4ff2cb4ce2380",
+    "request_path": "evidence/generation_opening/provider_requalification_resume_v1/requests/gemini.request.json",
+    "request_sha256": "f53a36f62428b7fcecceccd30fbf6ec0086684f7c9f5a6a4518bb277bd2a8609",
+    "requested_model_id": "gemini-3.1-flash-lite",
+    "response_text_chars": 13,
+    "response_text_sha256": "a0d2974431d48323a535091d972c5332b49b3780dca7b3d05e57cb832f75ca83",
+    "retry_performed": false,
+    "returned_model_version": "gemini-3.1-flash-lite",
+    "status": "PASS",
+    "transport_exception": null,
+    "usage": {
+      "candidatesTokenCount": 5,
+      "promptTokenCount": 33,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 33
+        }
+      ],
+      "serviceTier": "standard",
+      "totalTokenCount": 38
+    }
+  },
+  "performed_at_utc": "2026-08-10T08:10:17+00:00",
+  "probe_provenance": {
+    "basis": "byte-exact reuse of previously PASS provider-capability probes",
+    "deepseek_request_sha256": "592a18bec9d80d555ca24305f3616f7462b53412cf575b8542483f1a07bf87c0",
+    "gemini_request_sha256": "f53a36f62428b7fcecceccd30fbf6ec0086684f7c9f5a6a4518bb277bd2a8609",
+    "previous_report_path": "evidence/generation_opening/provider_requalification_v1/provider_requalification.v1.json",
+    "previous_report_sha256": "707e4f6620ec4d4beee0702eb59a2a0550a6bcea33d2c51b34b821ad9d17f74d"
+  },
+  "report_id": "SVF-PROVIDER-REQUALIFICATION-RESUME-V1",
+  "resume_implementation_freeze": {
+    "commit": "40559dde3ebea6d27a27d4cd40121507d33bdf32",
+    "resume_contract_path": "config/primary_same_window_resume_contract.v1.json",
+    "resume_contract_sha256": "dce0b87e660f703c38bd3fa6807a53172119a639479eb1918cc2bb0f9f81a230",
+    "resume_implementation_path": "scripts/primary_same_window_resume_v1.py",
+    "resume_implementation_sha256": "c48cb1c0ad070957b68d246d6854459cb15c66a6adbb8327ec4843270c77b75f",
+    "tree": "1cbc5e26a1f0e2b14ba3673af0b7c23ca2df28ac"
+  },
+  "schema_version": 1,
+  "secret_handling": {
+    "credentials_sent_only_in_provider_specific_headers": true,
+    "read_from_environment_only": true,
+    "values_hashed": false,
+    "values_in_request_body": false,
+    "values_printed": false,
+    "values_written": false
+  },
+  "separation": {
+    "analyzer_implementation": false,
+    "generated_driver_human_inspection": false,
+    "primary_window_resumed": false,
+    "raw_primary_model_response_human_inspection": false,
+    "repair_implementation": false,
+    "second_window_created": false,
+    "slot_0472_retried": false,
+    "slot_0473_generated": false
+  },
+  "status": "PASS"
+}

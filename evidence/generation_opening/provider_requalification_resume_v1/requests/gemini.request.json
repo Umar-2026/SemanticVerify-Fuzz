@@ -1,0 +1,1 @@
+{"contents":[{"parts":[{"text":"Reply with a short acknowledgement only: SVF-QUALIFIED"}],"role":"user"}],"generationConfig":{"maxOutputTokens":8192,"temperature":0.2,"thinkingConfig":{"thinkingLevel":"MINIMAL"},"topP":1.0},"systemInstruction":{"parts":[{"text":"This is an API capability requalification probe. Do not generate source code or a fuzz driver."}]}}

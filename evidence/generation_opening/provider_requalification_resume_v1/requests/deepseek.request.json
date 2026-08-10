@@ -1,0 +1,1 @@
+{"max_tokens":8192,"messages":[{"content":"This is an API capability requalification probe. Do not generate source code or a fuzz driver.","role":"system"},{"content":"Reply with a short acknowledgement only: SVF-QUALIFIED","role":"user"}],"model":"deepseek-v4-flash","stream":false,"temperature":0.2,"thinking":{"type":"disabled"},"top_p":1.0}

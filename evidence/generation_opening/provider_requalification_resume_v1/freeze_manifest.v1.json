@@ -1,0 +1,26 @@
+{
+  "authorization": {
+    "live_primary_provider_calls_authorized": false,
+    "resume_execution_authorized": false,
+    "separate_resume_authorization_required_next": true
+  },
+  "construction_head": "40559dde3ebea6d27a27d4cd40121507d33bdf32",
+  "construction_tree": "1cbc5e26a1f0e2b14ba3673af0b7c23ca2df28ac",
+  "freeze_package": {
+    "entry_count": 7,
+    "path": "evidence/generation_opening/provider_requalification_resume_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "fab252f8fa81859b4c228bce233df6548c3689586f0411123debd636f4313c2f"
+  },
+  "next_boundary": "CREATE_AND_COMMIT_EXPLICIT_SAME_WINDOW_RESUME_AUTHORIZATION",
+  "performed_at_utc": "2026-08-10T08:10:17+00:00",
+  "provider_call_attempts": 2,
+  "record_id": "SVF-PROVIDER-REQUALIFICATION-RESUME-V1-FREEZE",
+  "report": {
+    "path": "evidence/generation_opening/provider_requalification_resume_v1/provider_requalification.resume.v1.json",
+    "sha256": "673800e92e26a05962c1cd61b20722ce28009c349309161a2da9961e6d363ae7",
+    "status": "PASS"
+  },
+  "retries": 0,
+  "schema_version": 1,
+  "status": "FROZEN_PASS"
+}
