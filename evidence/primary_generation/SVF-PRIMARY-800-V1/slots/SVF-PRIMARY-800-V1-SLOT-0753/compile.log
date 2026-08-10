@@ -1,0 +1,8 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0753/driver.c:25:5: warning: implicit declaration of function 'cmsSetProfileTRC' is invalid in C99 [-Wimplicit-function-declaration]
+    cmsSetProfileTRC(profile, cmsSigGrayTRCTag, curve);
+    ^
+1 warning generated.
+ld.lld-14: error: undefined symbol: cmsSetProfileTRC
+>>> referenced by driver.c
+>>>               /tmp/driver-edc14e.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

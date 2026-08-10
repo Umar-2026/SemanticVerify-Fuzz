@@ -1,0 +1,43 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0665/driver.c:99:12: error: assigning to 'int' from incompatible type 'void'
+    status = ares_getaddrinfo(channel1, hostname, NULL, NULL, addr_callback, &data1);
+           ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0665/driver.c:108:12: error: assigning to 'int' from incompatible type 'void'
+    status = ares_getaddrinfo(channel2, hostname, NULL, NULL, addr_callback, &data2);
+           ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0665/driver.c:131:9: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        ares_fds(channel1, &read_fds, &write_fds);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0665/driver.c:132:9: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        ares_fds(channel2, &read_fds, &write_fds);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0665/driver.c:134:16: warning: 'ares_getsock' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        nfds = ares_getsock(channel1, NULL, 0);
+               ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:909:14: note: 'ares_getsock' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0665/driver.c:136:16: warning: 'ares_getsock' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        nfds = ares_getsock(channel2, NULL, 0);
+               ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:909:14: note: 'ares_getsock' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+4 warnings and 2 errors generated.

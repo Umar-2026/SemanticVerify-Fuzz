@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0759/driver.c:27:53: warning: incompatible pointer types passing 'const cmsCIExyY *' to parameter of type 'const cmsCIExyYTRIPLE *' [-Wincompatible-pointer-types]
+    src_profile = cmsCreateRGBProfile(cmsD50_xyY(), cmsD50_xyY(), curves);
+                                                    ^~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1661:75: note: passing argument to parameter 'Primaries' here
+                                                   const cmsCIExyYTRIPLE* Primaries,
+                                                                          ^
+1 warning generated.

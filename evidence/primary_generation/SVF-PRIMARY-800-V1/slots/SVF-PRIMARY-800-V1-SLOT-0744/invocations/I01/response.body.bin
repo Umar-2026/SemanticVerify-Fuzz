@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstdint.h\u003e\n#include \"lcms2.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 12) {\n        return 0;\n    }\n\n    cmsHPROFILE hInput = cmsCreate_sRGBProfile();\n    cmsHPROFILE hOutput = cmsCreate_sRGBProfile();\n    \n    cmsHTRANSFORM hTransform = cmsCreateTransform(\n        hInput, TYPE_RGB_8,\n        hOutput, TYPE_RGB_8,\n        INTENT_PERCEPTUAL, 0\n    );\n\n    if (!hTransform) {\n        cmsCloseProfile(hInput);\n        cmsCloseProfile(hOutput);\n        return 0;\n    }\n\n    size_t half = size / 2;\n    uint8_t *buffer1 = (uint8_t *)malloc(half);\n    uint8_t *buffer2 = (uint8_t *)malloc(size - half);\n    uint8_t *out1 = (uint8_t *)malloc(half);\n    uint8_t *out2 = (uint8_t *)malloc(size - half);\n\n    if (buffer1 && buffer2 && out1 && out2) {\n        memcpy(buffer1, data, half);\n        memcpy(buffer2, data + half, size - half);\n\n        cmsDoTransform(hTransform, buffer1, out1, (cmsUInt32Number)(half / 3));\n        cmsDoTransform(hTransform, buffer2, out2, (cmsUInt32Number)((size - half) / 3));\n    }\n\n    free(buffer1);\n    free(buffer2);\n    free(out1);\n    free(out2);\n\n    cmsDeleteTransform(hTransform);\n    cmsCloseProfile(hInput);\n    cmsCloseProfile(hOutput);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPU5DNMYO3RzPizePKUoM0zH8pN5k5YB9JltcFtUnjOHkch+TuP1Drv+z/YTR3"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 156,
+    "candidatesTokenCount": 457,
+    "totalTokenCount": 613,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 156
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "CpB5at2ODtu11MkP75rlqQU"
+}

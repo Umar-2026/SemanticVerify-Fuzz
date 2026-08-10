@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\nstatic void callback(void *arg, int status, int timeouts, struct ares_addrinfo *res) {\n    (void)arg;\n    (void)status;\n    (void)timeouts;\n    if (res) {\n        ares_freeaddrinfo(res);\n    }\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    char *hostname = (char *)malloc(size + 1);\n    memcpy(hostname, data, size);\n    hostname[size] = '\\0';\n\n    ares_channel channel1, channel2;\n    struct ares_options options;\n    int optmask = ARES_OPT_FLAGS;\n    options.flags = ARES_FLAG_NOCHECKRESP;\n\n    if (ares_init_options(&channel1, &options, optmask) != ARES_SUCCESS) {\n        free(hostname);\n        return 0;\n    }\n    if (ares_init_options(&channel2, &options, optmask) != ARES_SUCCESS) {\n        ares_destroy(channel1);\n        free(hostname);\n        return 0;\n    }\n\n    const char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (server_csv) {\n        ares_set_servers_csv(channel1, server_csv);\n        ares_set_servers_csv(channel2, server_csv);\n    }\n\n    ares_getaddrinfo(channel1, hostname, NULL, NULL, NULL, callback, NULL);\n    ares_getaddrinfo(channel2, hostname, NULL, NULL, NULL, callback, NULL);\n\n    fd_set read_fds, write_fds;\n    struct timeval tv, *tvp;\n    int nfds;\n\n    for (int i = 0; i \u003c 5; i++) {\n        FD_ZERO(&read_fds);\n        FD_ZERO(&write_fds);\n        nfds = ares_fds(channel1, &read_fds, &write_fds);\n        nfds = ares_fds(channel2, &read_fds, &write_fds);\n        if (nfds == 0) break;\n\n        tvp = ares_timeout(channel1, NULL, &tv);\n        tvp = ares_timeout(channel2, tvp, &tv);\n        select(nfds, &read_fds, &write_fds, NULL, tvp);\n        ares_process(channel1, &read_fds, &write_fds);\n        ares_process(channel2, &read_fds, &write_fds);\n    }\n\n    ares_destroy(channel1);\n    ares_destroy(channel2);\n    free(hostname);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPogZzhXMbwSnVqYFDJr0KoVjk/d0YkeUcR4/vf3uohtg6ay3Z4K7mhPmmwv7W"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 209,
+    "candidatesTokenCount": 685,
+    "totalTokenCount": 894,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 209
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "fI55arCgI-qdxN8P1NvQ2Ao"
+}

@@ -1,0 +1,32 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0679/driver.c:39:5: warning: implicitly declaring library function 'snprintf' with type 'int (char *, unsigned long, const char *, ...)' [-Wimplicit-function-declaration]
+    snprintf(hostname, sizeof(hostname), "%u.%u.%u.%u", ip[0], ip[1], ip[2], ip[3]);
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0679/driver.c:39:5: note: include the header <stdio.h> or explicitly provide a declaration for 'snprintf'
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0679/driver.c:62:74: warning: incompatible function pointer types passing 'void (void *, int, int, unsigned char *, int)' to parameter of type 'ares_callback_dnsrec' (aka 'void (*)(void *, ares_status_t, unsigned long, const struct ares_dns_record *)') [-Wincompatible-function-pointer-types]
+    ares_query_dnsrec(channel, hostname, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, &cb_data, NULL);
+                                                                         ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:864:67: note: passing argument to parameter 'callback' here
+                                             ares_callback_dnsrec callback,
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0679/driver.c:71:16: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        nfds = ares_fds(channel, &readers, &writers);
+               ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0679/driver.c:79:9: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+        ares_process(channel, &readers, &writers);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0679/driver.c:89:29: warning: cast to 'volatile uint8_t *' (aka 'volatile unsigned char *') from smaller integer type 'uint8_t' (aka 'unsigned char') [-Wint-to-pointer-cast]
+    volatile uint8_t *out = (volatile uint8_t *)result;
+                            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.

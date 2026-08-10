@@ -1,0 +1,10 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0589/driver.c:52:25: warning: incompatible pointer to integer conversion initializing 'vpx_codec_err_t' with an expression of type 'const char *' [-Wint-conversion]
+        vpx_codec_err_t detail = vpx_codec_error(&codec);
+                        ^        ~~~~~~~~~~~~~~~~~~~~~~~
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0589/driver.c:56:25: warning: incompatible pointer to integer conversion initializing 'vpx_codec_err_t' with an expression of type 'const char *' [-Wint-conversion]
+        vpx_codec_err_t detail = vpx_codec_error(&codec);
+                        ^        ~~~~~~~~~~~~~~~~~~~~~~~
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0589/driver.c:60:25: warning: incompatible pointer to integer conversion initializing 'vpx_codec_err_t' with an expression of type 'const char *' [-Wint-conversion]
+        vpx_codec_err_t detail = vpx_codec_error(&codec);
+                        ^        ~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.

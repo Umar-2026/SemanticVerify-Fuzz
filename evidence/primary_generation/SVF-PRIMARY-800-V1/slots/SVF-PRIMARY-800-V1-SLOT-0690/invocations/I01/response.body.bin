@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\nstatic void callback(void *arg, int status, int timeouts, struct ares_addrinfo *result) {\n    (void)arg;\n    (void)status;\n    (void)timeouts;\n    if (result) {\n        ares_freeaddrinfo(result);\n    }\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) return 0;\n\n    ares_channel channel;\n    struct ares_options options;\n    int optmask = ARES_OPT_FLAGS;\n    options.flags = ARES_FLAG_NOCHECKRESP;\n\n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        return 0;\n    }\n\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (server_csv) {\n        ares_set_servers_csv(channel, server_csv);\n    }\n\n    char hostname[256];\n    size_t name_len = (size - 1) \u003e 255 ? 255 : (size - 1);\n    memcpy(hostname, data + 1, name_len);\n    hostname[name_len] = '\\0';\n\n    struct ares_addrinfo_hints hints;\n    memset(&hints, 0, sizeof(hints));\n    hints.ai_family = (data[0] % 2 == 0) ? AF_INET : AF_INET6;\n\n    ares_getaddrinfo(channel, hostname, NULL, &hints, callback, NULL);\n\n    struct timeval tv, *tvp;\n    tvp = ares_timeout(channel, NULL, &tv);\n    ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n\n    ares_destroy(channel);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP6JAjOObm6vv9ECgBhh/NcYu+osSRu+XXqEE/QDbAzAvYarCgDWpLyNLdq1WY"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 206,
+    "candidatesTokenCount": 477,
+    "totalTokenCount": 683,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 206
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "zo55ao7iKqGknsEPjbSpwA8"
+}

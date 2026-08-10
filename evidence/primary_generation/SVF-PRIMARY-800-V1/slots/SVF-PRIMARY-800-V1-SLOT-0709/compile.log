@@ -1,0 +1,52 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:24:65: error: too few arguments to function call, expected 2, have 1
+    cmsUInt64Number attributes = cmsGetHeaderAttributes(hProfile);
+                                 ~~~~~~~~~~~~~~~~~~~~~~         ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1545:36: note: 'cmsGetHeaderAttributes' declared here
+CMSAPI void              CMSEXPORT cmsGetHeaderAttributes(cmsHPROFILE hProfile, cmsUInt64Number* Flags);
+                                   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:27:37: warning: incompatible pointer types passing 'cmsUInt32Number[4]' (aka 'unsigned int[4]') to parameter of type 'cmsUInt8Number *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
+    cmsGetHeaderProfileID(hProfile, profileID);
+                                    ^~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1546:96: note: passing argument to parameter 'ProfileID' here
+CMSAPI void              CMSEXPORT cmsGetHeaderProfileID(cmsHPROFILE hProfile, cmsUInt8Number* ProfileID);
+                                                                                               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:31:21: warning: implicit declaration of function 'cmsIsCLM' is invalid in C99 [-Wimplicit-function-declaration]
+    cmsBool isCLM = cmsIsCLM(hProfile);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:41:59: warning: implicit declaration of function 'cmsGetLanguageCode' is invalid in C99 [-Wimplicit-function-declaration]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:41:87: warning: implicit declaration of function 'cmsGetCountryCode' is invalid in C99 [-Wimplicit-function-declaration]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                                                      ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:41:59: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1380:62: note: passing argument to parameter 'LanguageCode' here
+                                                  const char LanguageCode[3], const char CountryCode[3],
+                                                             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:41:87: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1380:90: note: passing argument to parameter 'CountryCode' here
+                                                  const char LanguageCode[3], const char CountryCode[3],
+                                                                                         ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:48:59: warning: implicit declaration of function 'cmsGetLanguageCode' is invalid in C99 [-Wimplicit-function-declaration]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:48:87: warning: implicit declaration of function 'cmsGetCountryCode' is invalid in C99 [-Wimplicit-function-declaration]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                                                      ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:48:59: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1380:62: note: passing argument to parameter 'LanguageCode' here
+                                                  const char LanguageCode[3], const char CountryCode[3],
+                                                             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0709/driver.c:48:87: warning: incompatible integer to pointer conversion passing 'int' to parameter of type 'const char *' [-Wint-conversion]
+                cmsUInt32Number len = cmsMLUgetASCII(mlu, cmsGetLanguageCode(mlu, 0), cmsGetCountryCode(mlu, 0), buffer, sizeof(buffer));
+                                                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1380:90: note: passing argument to parameter 'CountryCode' here
+                                                  const char LanguageCode[3], const char CountryCode[3],
+                                                                                         ^
+10 warnings and 1 error generated.

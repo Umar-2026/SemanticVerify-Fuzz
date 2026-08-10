@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0511/driver.c:38:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+1 warning generated.

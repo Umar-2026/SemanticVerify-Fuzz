@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0593/driver.c:23:36: error: use of undeclared identifier 'VPX_DECODER_USE_THREAD_LOCAL'
+    int flags = (data[0] & 0x01) ? VPX_DECODER_USE_THREAD_LOCAL : 0;
+                                   ^
+1 error generated.

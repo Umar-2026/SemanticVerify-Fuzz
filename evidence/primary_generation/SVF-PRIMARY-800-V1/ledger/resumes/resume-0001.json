@@ -1,0 +1,11 @@
+{
+  "authorization_record_path": "evidence/generation_opening/primary_same_window_resume_authorization.v1.json",
+  "authorization_record_sha256": "e7cbb12be3ccb2e4f2b3f13f3dcc897dc36bf5c24b1a7c3e512e5ac0b7f46959",
+  "execution_head_commit": "1dd55af6b595dccf5aee493892abacd491625bde",
+  "first_logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0473",
+  "implementation_freeze_commit": "40559dde3ebea6d27a27d4cd40121507d33bdf32",
+  "resolved_pause_sequence": 1,
+  "resume_sequence": 1,
+  "resumed_at_utc": "2026-08-10T08:19:33+00:00",
+  "window_id": "SVF-PRIMARY-800-V1"
+}

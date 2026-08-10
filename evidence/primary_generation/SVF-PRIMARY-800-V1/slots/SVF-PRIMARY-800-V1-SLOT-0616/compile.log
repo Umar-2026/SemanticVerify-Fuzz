@@ -1,0 +1,19 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0616/driver.c:11:66: warning: declaration of 'struct addrinfo' will not be visible outside of this function [-Wvisibility]
+static void callback(void *arg, int status, int timeouts, struct addrinfo *res) {
+                                                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0616/driver.c:14:27: warning: incompatible pointer types passing 'struct addrinfo *' to parameter of type 'struct ares_addrinfo *' [-Wincompatible-pointer-types]
+        ares_freeaddrinfo(res);
+                          ^~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:556:59: note: passing argument to parameter 'ai' here
+CARES_EXTERN void ares_freeaddrinfo(struct ares_addrinfo *ai);
+                                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0616/driver.c:52:55: warning: incompatible function pointer types passing 'void (void *, int, int, struct addrinfo *)' to parameter of type 'ares_addrinfo_callback' (aka 'void (*)(void *, int, int, struct ares_addrinfo *)') [-Wincompatible-function-pointer-types]
+    ares_getaddrinfo(channel, hostname, NULL, &hints, callback, &ctx);
+                                                      ^~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:554:59: note: passing argument to parameter 'callback' here
+                                   ares_addrinfo_callback callback, void *arg);
+                                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0616/driver.c:54:25: warning: variable 'tvp' set but not used [-Wunused-but-set-variable]
+    struct timeval tv, *tvp;
+                        ^
+4 warnings generated.

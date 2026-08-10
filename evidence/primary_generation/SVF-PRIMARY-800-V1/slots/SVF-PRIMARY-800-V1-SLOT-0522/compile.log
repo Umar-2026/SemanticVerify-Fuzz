@@ -1,0 +1,5 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0522/driver.c:14:5: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+    memcpy(&cfg, data, sizeof(vpx_codec_dec_cfg_t));
+    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0522/driver.c:14:5: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+1 warning generated.

@@ -1,0 +1,10 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0575/driver.c:23:16: warning: unused variable 'plane_size' [-Wunused-variable]
+        size_t plane_size = (size_t)w * h;
+               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0575/driver.c:57:53: warning: incompatible pointer types passing 'vpx_codec_err_t *' to parameter of type 'vpx_codec_iter_t *' (aka 'const void **') [-Wincompatible-pointer-types]
+        while ((pkt = vpx_codec_get_cx_data(&codec, &res)) != NULL) {
+                                                    ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/./vpx_encoder.h:1138:67: note: passing argument to parameter 'iter' here
+                                                vpx_codec_iter_t *iter);
+                                                                  ^
+2 warnings generated.

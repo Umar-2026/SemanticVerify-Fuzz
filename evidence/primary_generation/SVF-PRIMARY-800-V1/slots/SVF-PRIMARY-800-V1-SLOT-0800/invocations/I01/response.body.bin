@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"lcms2.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 128) {\n        return 0;\n    }\n\n    cmsHPROFILE hInputProfile = cmsOpenProfileFromMem(data, size);\n    if (!hInputProfile) {\n        return 0;\n    }\n\n    cmsHPROFILE hOutputProfile = cmsCreate_sRGBProfile();\n    if (!hOutputProfile) {\n        cmsCloseProfile(hInputProfile);\n        return 0;\n    }\n\n    cmsHTRANSFORM hTransform = cmsCreateTransform(\n        hInputProfile,\n        TYPE_RGB_8,\n        hOutputProfile,\n        TYPE_RGB_8,\n        INTENT_PERCEPTUAL,\n        0\n    );\n\n    if (hTransform) {\n        uint8_t inputPixel[3] = {128, 64, 32};\n        uint8_t outputPixel[3] = {0, 0, 0};\n\n        cmsDoTransform(hTransform, inputPixel, outputPixel, 1);\n\n        cmsDeleteTransform(hTransform);\n    }\n\n    cmsCloseProfile(hInputProfile);\n    cmsCloseProfile(hOutputProfile);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPrSYweLl4KZxUN/SzEE30wNcVxD+tc/F5YzFgTjMviIVfJ9EKRu+xtyG8LCL5"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 183,
+    "candidatesTokenCount": 322,
+    "totalTokenCount": 505,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 183
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "GZF5av7AG8LBqtsPi4CUuQ4"
+}

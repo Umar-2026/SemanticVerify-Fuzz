@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"lcms2.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) {\n        return 0;\n    }\n\n    cmsHPROFILE hProfile = cmsOpenProfileFromMem(data, size);\n    if (hProfile != NULL) {\n        cmsUInt32Number version = cmsGetProfileVersion(hProfile);\n        cmsColorSpaceSignature colorSpace = cmsGetColorSpace(hProfile);\n        cmsColorSpaceSignature pcs = cmsGetPCS(hProfile);\n        cmsDeviceClass deviceClass = cmsGetDeviceClass(hProfile);\n\n        cmsCloseProfile(hProfile);\n    }\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPjeXm6ZS09N50b75zHPSIhoG+O9ur7JE3XLWi/VADwjDfPuNt3E61wVu2UMLI"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 164,
+    "candidatesTokenCount": 183,
+    "totalTokenCount": 347,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 164
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "TI95aqvUMO-tz7IP56XJqAw"
+}

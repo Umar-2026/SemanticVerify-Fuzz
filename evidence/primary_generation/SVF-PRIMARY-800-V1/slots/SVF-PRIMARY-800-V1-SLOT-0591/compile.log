@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0591/driver.c:25:18: error: use of undeclared identifier 'VPX_ERR_CONCEAL'
+        flags |= VPX_ERR_CONCEAL;
+                 ^
+1 error generated.

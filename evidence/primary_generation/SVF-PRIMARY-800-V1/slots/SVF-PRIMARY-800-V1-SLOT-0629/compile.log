@@ -1,0 +1,22 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0629/driver.c:53:70: warning: incompatible function pointer types passing 'void (void *, int, int, unsigned char *, int)' to parameter of type 'ares_callback_dnsrec' (aka 'void (*)(void *, ares_status_t, unsigned long, const struct ares_dns_record *)') [-Wincompatible-function-pointer-types]
+    ares_query_dnsrec(channel, name, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, NULL, NULL);
+                                                                     ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:864:67: note: passing argument to parameter 'callback' here
+                                             ares_callback_dnsrec callback,
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0629/driver.c:64:9: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+        ares_process(channel, &tv);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0629/driver.c:64:34: error: too few arguments to function call, expected 3, have 2
+        ares_process(channel, &tv);
+        ~~~~~~~~~~~~             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:58: note: 'ares_process' declared here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+                                                         ^
+2 warnings and 1 error generated.

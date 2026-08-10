@@ -1,0 +1,16 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0547/driver.c:84:53: warning: incompatible pointer types passing 'vpx_codec_err_t *' to parameter of type 'vpx_codec_iter_t *' (aka 'const void **') [-Wincompatible-pointer-types]
+        while ((pkt = vpx_codec_get_cx_data(&codec, &enc_res)) != NULL) {
+                                                    ^~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/./vpx_encoder.h:1138:67: note: passing argument to parameter 'iter' here
+                                                vpx_codec_iter_t *iter);
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0547/driver.c:94:53: warning: incompatible pointer types passing 'vpx_codec_err_t *' to parameter of type 'vpx_codec_iter_t *' (aka 'const void **') [-Wincompatible-pointer-types]
+        while ((pkt = vpx_codec_get_cx_data(&codec, &enc_res)) != NULL) {
+                                                    ^~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/./vpx_encoder.h:1138:67: note: passing argument to parameter 'iter' here
+                                                vpx_codec_iter_t *iter);
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0547/driver.c:34:9: warning: unused variable 'ret' [-Wunused-variable]
+    int ret;
+        ^
+3 warnings generated.

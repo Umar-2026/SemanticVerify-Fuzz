@@ -1,0 +1,9 @@
+{
+  "classification": "TLS_HANDSHAKE_FAILURE",
+  "detail": "TLS_HANDSHAKE_FAILURE",
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0512",
+  "request_body_sha256": "3942add79c75137d5c770de0ffc84e69ea91478b0f25009bbbc7b4c7b0f0d393",
+  "retryable": true,
+  "transport_invocation_number": 1,
+  "window_id": "SVF-PRIMARY-800-V1"
+}

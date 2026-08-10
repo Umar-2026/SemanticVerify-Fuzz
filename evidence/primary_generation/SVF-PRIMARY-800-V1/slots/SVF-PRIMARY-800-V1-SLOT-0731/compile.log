@@ -1,0 +1,8 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0731/driver.c:108:9: warning: implicit declaration of function 'cmsGetProfileID' is invalid in C99 [-Wimplicit-function-declaration]
+        cmsGetProfileID(input_profile), flags
+        ^
+1 warning generated.
+ld.lld-14: error: undefined symbol: cmsGetProfileID
+>>> referenced by driver.c
+>>>               /tmp/driver-1b2424.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

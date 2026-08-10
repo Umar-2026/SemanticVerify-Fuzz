@@ -1,0 +1,9 @@
+{
+  "classification": "CONNECT_TIMEOUT",
+  "detail": "CONNECT_TIMEOUT",
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0702",
+  "request_body_sha256": "992bff55de1d988587f2c58f22c7365e92d560a16370525a4855d237d42df108",
+  "retryable": true,
+  "transport_invocation_number": 1,
+  "window_id": "SVF-PRIMARY-800-V1"
+}

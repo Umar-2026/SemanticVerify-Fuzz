@@ -1,0 +1,40 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:68:58: error: too many arguments to function call, expected 4, have 5
+            cmsReadRawTag(hProfile, sig, NULL, &tagSize, &tagType);
+            ~~~~~~~~~~~~~                                ^~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1535:36: note: 'cmsReadRawTag' declared here
+CMSAPI cmsUInt32Number   CMSEXPORT cmsReadRawTag(cmsHPROFILE hProfile, cmsTagSignature sig, void* Buffer, cmsUInt32Number BufferSize);
+                                   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:72:69: error: too many arguments to function call, expected 4, have 5
+                    cmsReadRawTag(hProfile, sig, tagData, &tagSize, &tagType);
+                    ~~~~~~~~~~~~~                                   ^~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1535:36: note: 'cmsReadRawTag' declared here
+CMSAPI cmsUInt32Number   CMSEXPORT cmsReadRawTag(cmsHPROFILE hProfile, cmsTagSignature sig, void* Buffer, cmsUInt32Number BufferSize);
+                                   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:258:28: error: use of undeclared identifier 'cmsSigAToB3Tag'
+    if (cmsIsTag(hProfile, cmsSigAToB3Tag)) {
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:291:28: error: use of undeclared identifier 'cmsSigBToA3Tag'
+    if (cmsIsTag(hProfile, cmsSigBToA3Tag)) {
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:370:28: error: use of undeclared identifier 'cmsSigGamutBoundaryDescriptionTag'
+    if (cmsIsTag(hProfile, cmsSigGamutBoundaryDescriptionTag)) {
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:371:9: error: use of undeclared identifier 'cmsGDB'
+        cmsGDB *gdb = (cmsGDB *)cmsReadTag(hProfile, cmsSigGamutBoundaryDescriptionTag);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:371:17: error: use of undeclared identifier 'gdb'
+        cmsGDB *gdb = (cmsGDB *)cmsReadTag(hProfile, cmsSigGamutBoundaryDescriptionTag);
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:371:32: error: expected expression
+        cmsGDB *gdb = (cmsGDB *)cmsReadTag(hProfile, cmsSigGamutBoundaryDescriptionTag);
+                               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:371:24: error: use of undeclared identifier 'cmsGDB'
+        cmsGDB *gdb = (cmsGDB *)cmsReadTag(hProfile, cmsSigGamutBoundaryDescriptionTag);
+                       ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:372:13: error: use of undeclared identifier 'gdb'
+        if (gdb) {
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0705/driver.c:387:32: warning: unused variable 'tech' [-Wunused-variable]
+        cmsTechnologySignature tech = *(cmsTechnologySignature *)cmsReadTag(hProfile, cmsSigTechnologyTag);
+                               ^
+1 warning and 10 errors generated.

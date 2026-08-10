@@ -1,0 +1,17 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0706/driver.c:15:23: error: expected ';' after expression
+        cmsDeviceClass deviceClass = cmsGetDeviceClass(hProfile);
+                      ^
+                      ;
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0706/driver.c:15:9: error: use of undeclared identifier 'cmsDeviceClass'
+        cmsDeviceClass deviceClass = cmsGetDeviceClass(hProfile);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0706/driver.c:15:24: error: use of undeclared identifier 'deviceClass'
+        cmsDeviceClass deviceClass = cmsGetDeviceClass(hProfile);
+                       ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0706/driver.c:18:73: warning: incompatible pointer types passing 'char[256]' to parameter of type 'wchar_t *' (aka 'int *') [-Wincompatible-pointer-types]
+        if (cmsGetProfileInfo(hProfile, cmsInfoDescription, "en", "US", desc, 256) > 0) {
+                                                                        ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1611:70: note: passing argument to parameter 'Buffer' here
+                                                            wchar_t* Buffer, cmsUInt32Number BufferSize);
+                                                                     ^
+1 warning and 3 errors generated.

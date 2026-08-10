@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0771/driver.c:38:12: warning: unused variable 'available' [-Wunused-variable]
+    size_t available = size - half; // This is output_profile_size, but we need pixel data after profiles
+           ^
+1 warning generated.

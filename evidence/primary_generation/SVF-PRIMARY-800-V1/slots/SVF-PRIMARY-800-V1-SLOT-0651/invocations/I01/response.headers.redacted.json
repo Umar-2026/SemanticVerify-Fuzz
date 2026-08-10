@@ -1,0 +1,14 @@
+{
+  "Connection": "keep-alive",
+  "Content-Type": "application/json",
+  "Date": "Mon, 10 Aug 2026 08:38:20 GMT",
+  "EO-Cache-Status": "MISS",
+  "EO-LOG-UUID": "4638865736671798847",
+  "Server": "openresty",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Transfer-Encoding": "chunked",
+  "X-Content-Type-Options": "nosniff",
+  "access-control-allow-credentials": "true",
+  "vary": "origin, access-control-request-method, access-control-request-headers",
+  "x-ds-trace-id": "a9a3782897bb36d9b7860d6a56a00eac"
+}

@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\nstatic void callback(void *arg, ares_status_t status, size_t timeouts, const ares_dns_record_t *dnsrec) {\n    (void)arg;\n    (void)status;\n    (void)timeouts;\n    (void)dnsrec;\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 2 || size \u003e 255) {\n        return 0;\n    }\n\n    char *hostname = (char *)malloc(size + 1);\n    if (!hostname) return 0;\n    memcpy(hostname, data, size);\n    hostname[size] = '\\0';\n\n    ares_channel_t *channel = NULL;\n    struct ares_options options;\n    int optmask = 0;\n\n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        free(hostname);\n        return 0;\n    }\n\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (server_csv) {\n        ares_set_servers_csv(channel, server_csv);\n    }\n\n    ares_query_dnsrec(channel, hostname, ARES_CLASS_IN, ARES_REC_TYPE_A, 0, callback, NULL);\n\n    ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n\n    ares_destroy(channel);\n    free(hostname);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPZj/7Zs1mHiUQVSlNG2Ooy+uu2SOAplvkXMqsRVRetk3Lnm8zRaSgfife7LME"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 241,
+    "candidatesTokenCount": 396,
+    "totalTokenCount": 637,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 241
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "jY15arW_DK7W7M8PwvLowQg"
+}

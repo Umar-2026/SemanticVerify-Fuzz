@@ -1,0 +1,22 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0639/driver.c:30:17: warning: implicit declaration of function 'inet_ntop' is invalid in C99 [-Wimplicit-function-declaration]
+                inet_ntop(AF_INET, &sin->sin_addr, addr, sizeof(addr));
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0639/driver.c:33:17: warning: implicit declaration of function 'inet_ntop' is invalid in C99 [-Wimplicit-function-declaration]
+                inet_ntop(AF_INET6, &sin6->sin6_addr, addr, sizeof(addr));
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0639/driver.c:121:9: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+        ares_process(channel, &tv);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0639/driver.c:121:34: error: too few arguments to function call, expected 3, have 2
+        ares_process(channel, &tv);
+        ~~~~~~~~~~~~             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:58: note: 'ares_process' declared here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+                                                         ^
+3 warnings and 1 error generated.

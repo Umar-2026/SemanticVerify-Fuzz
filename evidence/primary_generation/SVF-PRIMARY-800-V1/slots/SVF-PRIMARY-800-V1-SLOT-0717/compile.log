@@ -1,0 +1,11 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0717/driver.c:62:28: warning: implicit declaration of function 'cmsFormatterForColorspace' is invalid in C99 [-Wimplicit-function-declaration]
+    size_t pixel_size_in = cmsFormatterForColorspace(cmsGetColorSpace(hIn), in_fmt, 0) ? 0 : 0; // not used
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0717/driver.c:62:12: warning: unused variable 'pixel_size_in' [-Wunused-variable]
+    size_t pixel_size_in = cmsFormatterForColorspace(cmsGetColorSpace(hIn), in_fmt, 0) ? 0 : 0; // not used
+           ^
+2 warnings generated.
+ld.lld-14: error: undefined symbol: cmsFormatterForColorspace
+>>> referenced by driver.c
+>>>               /tmp/driver-041a78.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

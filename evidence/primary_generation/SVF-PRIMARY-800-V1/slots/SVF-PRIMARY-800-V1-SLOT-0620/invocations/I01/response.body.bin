@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\ntypedef struct {\n    ares_channel channel;\n    int completed;\n} fuzz_context_t;\n\nstatic void callback(void *arg, int status, int timeouts, struct addrinfo *res) {\n    fuzz_context_t *ctx = (fuzz_context_t *)arg;\n    ctx-\u003ecompleted = 1;\n    if (res) {\n        ares_freeaddrinfo(res);\n    }\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 5) return 0;\n\n    ares_channel channel;\n    struct ares_options options;\n    int optmask = ARES_OPT_TIMEOUTMS;\n    \n    int timeout_ms = (data[0] \u003c\u003c 8) | data[1];\n    if (timeout_ms \u003c 1) timeout_ms = 1;\n    options.timeout = timeout_ms;\n\n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        return 0;\n    }\n\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (server_csv) {\n        ares_set_servers_csv(channel, server_csv);\n    }\n\n    fuzz_context_t ctx = { .channel = channel, .completed = 0 };\n    \n    size_t host_len = size - 2;\n    char *host = malloc(host_len + 1);\n    memcpy(host, data + 2, host_len);\n    host[host_len] = '\\0';\n\n    ares_getaddrinfo(channel, host, NULL, NULL, NULL, callback, &ctx);\n\n    struct timeval tv, *tvp;\n    while (!ctx.completed) {\n        tvp = ares_timeout(channel, NULL, &tv);\n        ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n    }\n\n    ares_destroy(channel);\n    free(host);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPdaEDk5ZyK/FgZWkel60HKBjXYRfJnh9sLSXS9jQoAzVHmfWksx7YsIEmCUW8"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 217,
+    "candidatesTokenCount": 520,
+    "totalTokenCount": 737,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 217
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "cI15atjuOtzjnsEPk42SmQ8"
+}

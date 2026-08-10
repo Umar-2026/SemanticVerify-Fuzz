@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"vpx/vpx_decoder.h\"\n#include \"vpx/vp8dx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c sizeof(vpx_codec_dec_cfg_t) + 1) {\n        return 0;\n    }\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_dec_cfg_t cfg;\n    \n    memcpy(&cfg, data, sizeof(vpx_codec_dec_cfg_t));\n    const uint8_t *payload = data + sizeof(vpx_codec_dec_cfg_t);\n    size_t payload_size = size - sizeof(vpx_codec_dec_cfg_t);\n\n    if (vpx_codec_dec_init(&codec, &vpx_codec_vp8_dx_algo, &cfg, 0) == VPX_CODEC_OK) {\n        vpx_codec_decode(&codec, payload, (unsigned int)payload_size, NULL, 0);\n        vpx_codec_destroy(&codec);\n    }\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPFMFLlcPtBsNebOeI27yLBr8ipm1fm8Rw1m4NmJ0eWVLtZzu1bLcbCNxaV6OI"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 176,
+    "candidatesTokenCount": 291,
+    "totalTokenCount": 467,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 176
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "G4t5aszNO7WkvdIPgIrP4Qo"
+}

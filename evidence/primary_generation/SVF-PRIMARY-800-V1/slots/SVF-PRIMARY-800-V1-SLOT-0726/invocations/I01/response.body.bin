@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \"lcms2.h\"\n#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) {\n        return 0;\n    }\n\n    cmsHPROFILE hProfile = cmsOpenProfileFromMem(data, size);\n    if (hProfile != NULL) {\n        cmsUInt32Number profileVersion = cmsGetProfileVersion(hProfile);\n        cmsColorSpaceSignature colorSpace = cmsGetColorSpace(hProfile);\n        cmsColorSpaceSignature pcs = cmsGetPCS(hProfile);\n        \n        cmsUInt32Number tagCount = cmsGetTagCount(hProfile);\n        if (tagCount \u003e 0) {\n            cmsTagSignature tagSig = cmsGetTagSignature(hProfile, 0);\n            cmsTagTypeSignature tagType = cmsGetTagType(hProfile, tagSig);\n            \n            void* tagData = cmsReadTag(hProfile, tagSig);\n            if (tagData != NULL) {\n                cmsMLU* mlu = cmsMLUalloc(NULL, 1);\n                if (mlu) {\n                    cmsMLUfree(mlu);\n                }\n            }\n        }\n\n        cmsHTRANSFORM hTransform = cmsCreateTransform(hProfile, TYPE_RGB_8, hProfile, TYPE_RGB_8, INTENT_PERCEPTUAL, 0);\n        if (hTransform != NULL) {\n            uint8_t input[3] = {128, 128, 128};\n            uint8_t output[3];\n            cmsDoTransform(hTransform, input, output, 1);\n            cmsDeleteTransform(hTransform);\n        }\n\n        cmsCloseProfile(hProfile);\n    }\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPnz8hyf86ubagKrQDXHhG13EKvI4d3Gnt1dv/D4m611wA9CjwVnFlUAzHtFO0"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 165,
+    "candidatesTokenCount": 429,
+    "totalTokenCount": 594,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 165
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "so95ao7hJrbX7M8Pm86Z4Q8"
+}

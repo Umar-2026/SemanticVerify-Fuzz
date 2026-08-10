@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"vpx/vpx_encoder.h\"\n#include \"vpx/vp8cx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 128) return 0;\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_enc_cfg_t cfg;\n    vpx_image_t img;\n\n    if (vpx_codec_enc_config_default(vpx_codec_vp8_cx(), &cfg, 0) != VPX_CODEC_OK) {\n        return 0;\n    }\n\n    cfg.g_w = (data[0] \u003c\u003c 8) | data[1];\n    cfg.g_h = (data[2] \u003c\u003c 8) | data[3];\n    if (cfg.g_w == 0 || cfg.g_h == 0 || cfg.g_w \u003e 2048 || cfg.g_h \u003e 2048) return 0;\n\n    if (vpx_codec_enc_init(&codec, vpx_codec_vp8_cx(), &cfg, 0) != VPX_CODEC_OK) {\n        return 0;\n    }\n\n    if (vpx_img_alloc(&img, VPX_IMG_FMT_I420, cfg.g_w, cfg.g_h, 1)) {\n        size_t frame_size = cfg.g_w * cfg.g_h * 3 / 2;\n        size_t available = (size \u003e frame_size + 4) ? frame_size : (size - 4);\n        \n        memcpy(img.planes[0], data + 4, available);\n\n        if (vpx_codec_encode(&codec, &img, 0, 1, 0, VPX_DL_REALTIME) == VPX_CODEC_OK) {\n            vpx_codec_iter_t iter = NULL;\n            const vpx_codec_cx_pkt_t *pkt;\n            while ((pkt = vpx_codec_get_cx_data(&codec, &iter)) != NULL) {\n                (void)pkt;\n            }\n        }\n        vpx_img_free(&img);\n    }\n\n    vpx_codec_destroy(&codec);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPYqSJt+G5fRp6Qtc06xR0M3t+jpcazez5528JDsKL+G27IIrPd4XcuT/h0bb7"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 188,
+    "candidatesTokenCount": 581,
+    "totalTokenCount": 769,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 188
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "Fot5aoa0G53yxs0PmZX-8AQ"
+}

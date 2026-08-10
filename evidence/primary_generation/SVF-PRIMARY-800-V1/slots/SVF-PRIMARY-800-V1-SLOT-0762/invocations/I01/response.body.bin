@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \"lcms2.h\"\n#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 128) {\n        return 0;\n    }\n\n    cmsHPROFILE hProfile1 = cmsOpenProfileFromMem(data, size);\n    cmsHPROFILE hProfile2 = cmsCreate_sRGBProfile();\n\n    if (hProfile1 && hProfile2) {\n        cmsUInt32Number version1 = cmsGetProfileVersion(hProfile1);\n        cmsUInt32Number version2 = cmsGetProfileVersion(hProfile2);\n\n        cmsColorSpaceSignature cs1 = cmsGetColorSpace(hProfile1);\n        cmsColorSpaceSignature cs2 = cmsGetColorSpace(hProfile2);\n\n        cmsUInt32Number intent1 = cmsGetHeaderRenderingIntent(hProfile1);\n        cmsUInt32Number intent2 = cmsGetHeaderRenderingIntent(hProfile2);\n\n        (void)version1;\n        (void)version2;\n        (void)cs1;\n        (void)cs2;\n        (void)intent1;\n        (void)intent2;\n    }\n\n    if (hProfile1) {\n        cmsCloseProfile(hProfile1);\n    }\n    if (hProfile2) {\n        cmsCloseProfile(hProfile2);\n    }\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPNTsUjpJtNkENW6EwyCY6iuZlgWZRfVkG3XPuiYSNgrpCGVjYZEEEHnCMDrkL"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 167,
+    "candidatesTokenCount": 336,
+    "totalTokenCount": 503,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 167
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "PJB5atTpLeqqjuMP-dOUiQE"
+}

@@ -1,0 +1,25 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:28:28: warning: unused variable 'colorSpace' [-Wunused-variable]
+    cmsColorSpaceSignature colorSpace = cmsGetColorSpace(hProfile);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:29:28: warning: unused variable 'pcs' [-Wunused-variable]
+    cmsColorSpaceSignature pcs = cmsGetPCS(hProfile);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:30:21: warning: unused variable 'version' [-Wunused-variable]
+    cmsUInt32Number version = cmsGetProfileVersion(hProfile);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:31:21: warning: unused variable 'deviceClass' [-Wunused-variable]
+    cmsUInt32Number deviceClass = cmsGetDeviceClass(hProfile);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:32:21: warning: unused variable 'renderingIntent' [-Wunused-variable]
+    cmsUInt32Number renderingIntent = cmsGetHeaderRenderingIntent(hProfile);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:39:13: warning: unused variable 'hasA2B0' [-Wunused-variable]
+    cmsBool hasA2B0 = cmsIsTag(hProfile, cmsSigAToB0Tag);
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:40:13: warning: unused variable 'hasB2A0' [-Wunused-variable]
+    cmsBool hasB2A0 = cmsIsTag(hProfile, cmsSigBToA0Tag);
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0703/driver.c:41:13: warning: unused variable 'hasGamut' [-Wunused-variable]
+    cmsBool hasGamut = cmsIsTag(hProfile, cmsSigGamutTag);
+            ^
+8 warnings generated.

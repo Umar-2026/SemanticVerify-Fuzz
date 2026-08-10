@@ -1,0 +1,65 @@
+{
+  "HTTP_status_or_transport_failure": 200,
+  "authorization_record_path": "evidence/generation_opening/primary_same_window_resume_authorization.v1.json",
+  "authorization_record_sha256": "e7cbb12be3ccb2e4f2b3f13f3dcc897dc36bf5c24b1a7c3e512e5ac0b7f46959",
+  "cost_basis_and_estimate": {
+    "cached_content_tokens": 0,
+    "candidate_tokens": 288,
+    "estimate_usd": 0.0004745,
+    "prompt_tokens": 170,
+    "status": "PASS",
+    "thoughts_tokens": 0
+  },
+  "cost_estimate_status": "PASS",
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+  "execution_head_commit": "1dd55af6b595dccf5aee493892abacd491625bde",
+  "latency_ms": 1909,
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0772",
+  "provider": "Google Gemini Developer API",
+  "provider_neutral_descriptor_sha256": "4c6ef7fb3bf9a26c27580e790adcac3e6b6fda60821997b874c1036b48dc8ca7",
+  "raw_response_path_or_null": "slots/SVF-PRIMARY-800-V1-SLOT-0772/invocations/I01/response.body.bin",
+  "raw_response_sha256_or_null": "e0e9f64f6d747e0608bf50182507ca5cba0504c0045dbb41b37380baa0e4e790",
+  "request_body_byte_length": 1087,
+  "request_body_sha256": "5ab4576f4b3ef209f310ec84179588745e020fd0da66ee83268ea5fcbd9f7701",
+  "request_body_sha256_verified": true,
+  "request_finished_at_utc": "2026-08-10T08:49:36+00:00",
+  "request_parameters": {
+    "library": "lcms",
+    "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0772",
+    "maximum_output_tokens": 8192,
+    "model_label": "Model B",
+    "provider": "Google Gemini Developer API",
+    "replicate_id": "R01",
+    "requested_model_id": "gemini-3.1-flash-lite",
+    "scenario_id": "S08",
+    "seed": null,
+    "seed_rule": "provider default; null recorded because no frozen provider seed is supplied",
+    "seed_transmitted": false,
+    "slot_number": 772,
+    "stream": false,
+    "system_prompt_sha256": "d67e1f168fcbcb8fbe85ffc38cd1e646487be094de20afbff0a7d9b5cbe1bd61",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "user_message_sha256": "655de843003cce44f64a0fd5413a7093b251a5924d00978948a25b528cbc184a",
+    "window_id": "SVF-PRIMARY-800-V1"
+  },
+  "request_started_at_utc": "2026-08-10T08:49:35+00:00",
+  "requested_model_id": "gemini-3.1-flash-lite",
+  "response_headers_redacted": true,
+  "returned_model_or_version": "gemini-3.1-flash-lite",
+  "token_usage": {
+    "candidatesTokenCount": 288,
+    "promptTokenCount": 170,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 170
+      }
+    ],
+    "serviceTier": "standard",
+    "totalTokenCount": 458
+  },
+  "transport_invocation_number": 1,
+  "transport_retry_classification": "COMPLETE_HTTP_RESPONSE_NO_RETRY",
+  "window_id": "SVF-PRIMARY-800-V1"
+}

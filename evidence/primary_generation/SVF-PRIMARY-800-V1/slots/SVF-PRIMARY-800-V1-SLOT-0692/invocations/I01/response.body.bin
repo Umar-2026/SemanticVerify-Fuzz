@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n#include \u003csys/time.h\u003e\n\nstatic void callback(void *arg, int status, int timeouts, struct ares_addrinfo *result) {\n    if (status == ARES_SUCCESS && result != NULL) {\n        ares_freeaddrinfo(result);\n    }\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) return 0;\n\n    ares_channel channel;\n    struct ares_options options;\n    int optmask = ARES_OPT_FLAGS;\n    \n    options.flags = ARES_FLAG_NOCHECKRESP;\n    \n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        return 0;\n    }\n\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (server_csv) {\n        ares_set_servers_csv(channel, server_csv);\n    }\n\n    char name[64];\n    size_t name_len = (size / 2) \u003e 63 ? 63 : (size / 2);\n    memcpy(name, data, name_len);\n    name[name_len] = '\\0';\n\n    struct ares_addrinfo_hints hints;\n    memset(&hints, 0, sizeof(hints));\n    hints.ai_family = (data[size - 1] % 2 == 0) ? AF_INET : AF_INET6;\n    hints.ai_socktype = SOCK_STREAM;\n\n    ares_getaddrinfo(channel, name, NULL, &hints, callback, NULL);\n\n    struct timeval tv, *tvp;\n    for (int i = 0; i \u003c 5; i++) {\n        tvp = ares_timeout(channel, NULL, &tv);\n        ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n    }\n\n    ares_destroy(channel);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPO49qUWnaW+QyC1eHGJAKAYwNy//JCDKf4yKo7NtexaJzY1CO5BwbVhnZxKFB"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 207,
+    "candidatesTokenCount": 510,
+    "totalTokenCount": 717,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 207
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "2o55atOaOZeWvdIPx7_iiAI"
+}

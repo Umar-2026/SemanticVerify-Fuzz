@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0696/driver.c:33:67: error: too many arguments to function call, expected 6, have 7
+    ares_getaddrinfo(channel, hostname, NULL, &hints, NULL, NULL, callback_arg);
+    ~~~~~~~~~~~~~~~~                                              ^~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:551:19: note: 'ares_getaddrinfo' declared here
+CARES_EXTERN void ares_getaddrinfo(ares_channel_t *channel, const char *node,
+                  ^
+1 error generated.

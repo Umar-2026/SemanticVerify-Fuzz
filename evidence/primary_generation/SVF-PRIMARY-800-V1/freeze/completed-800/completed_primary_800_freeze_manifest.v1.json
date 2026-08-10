@@ -1,0 +1,84 @@
+{
+  "completed_corpus_package": {
+    "entry_count": 7013,
+    "path": "evidence/primary_generation/SVF-PRIMARY-800-V1/freeze/completed-800/completed_primary_800_freeze_package.v1.SHA256SUMS",
+    "sha256": "d4f53dba5c122430f293c752f7f0940773addbea16e5ecb0f45d4d7162cbde53"
+  },
+  "construction_head": "1dd55af6b595dccf5aee493892abacd491625bde",
+  "construction_tree": "8cb01368cc2b1aefa1878b93c1da32c8b44335cc",
+  "evidence_preservation": {
+    "additional_primary_generation_attempts": 0,
+    "failed_or_noncompiling_attempts_replaced": false,
+    "generated_driver_bytes_read_mechanically_for_integrity": true,
+    "generated_driver_content_human_inspected": false,
+    "ignored_log_files_preserved_byte_exact": true,
+    "raw_evidence_whitespace_normalized": false,
+    "raw_model_response_content_human_inspected": false
+  },
+  "execution_scope": {
+    "first_resume_slot": 473,
+    "initial_terminal_prefix": 472,
+    "last_slot": 800,
+    "primary_logical_slots": 800,
+    "prior_472_replayed": false,
+    "same_window_resumed_slots": 328,
+    "second_window_created": false,
+    "slot_0472_retried": false
+  },
+  "extraction_and_duplicates": {
+    "canonical_extracted": 604,
+    "duplicate_link_integrity": "PASS",
+    "duplicate_outputs": 64,
+    "extracted_verbatim": 668
+  },
+  "next_boundary": "BEGIN_BLIND_ANNOTATION_PREPARATION",
+  "prepared_at_utc": "2026-08-10T09:03:03+00:00",
+  "prior_pause_freeze": {
+    "package_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/freeze/pause-0001/pause_freeze_package.v1.SHA256SUMS",
+    "package_sha256": "a9d4cc0b1d3625094a988ba842c3d7343e88952c5bb9a7d4690fb59276cf3488",
+    "verified_entry_count": 4115
+  },
+  "record_id": "SVF-PRIMARY-800-COMPLETED-CORPUS-FREEZE-V1",
+  "resume_run_log": {
+    "byte_exact_copy": true,
+    "byte_length": 21495,
+    "external_source_path": "/openbayes/home/semanticverify-fuzz-primary-resume-20260810T081932Z.log",
+    "repo_preserved_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/run_logs/primary_resume.20260810T081932Z.log",
+    "sha256": "66cdd0f67211966cf61dd2b49b34800ecd1c0d8a75ca44adda08a04d2f189b22"
+  },
+  "schema_version": 1,
+  "stage_separation": {
+    "analyzer_implementation": false,
+    "linked_generated_driver_execution": false,
+    "repair_implementation": false
+  },
+  "status": "FROZEN_COMPLETE_800",
+  "terminal_outcomes": {
+    "API_ERROR": 123,
+    "DUPLICATE_OUTPUT": 64,
+    "NON_COMPILATION": 117,
+    "REFUSAL": 1,
+    "RESPONSE_RECEIVED": 487,
+    "TRANSPORT_FAILURE": 4,
+    "TRUNCATED_OUTPUT": 4
+  },
+  "transport_evidence": {
+    "every_slot_has_invocation_evidence": true,
+    "invocation_ledger_records": 834,
+    "maximum_invocations_per_logical_slot": 3
+  },
+  "window_id": "SVF-PRIMARY-800-V1",
+  "window_lifecycle": {
+    "all_800_logical_slots_terminal": true,
+    "close_record_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/window/close.json",
+    "close_record_sha256": "81361af42025bc0e9c362edea47557c61f5ef721fcf53b41d67e5f331de4c8cf",
+    "open_record_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/window/open.json",
+    "open_record_sha256": "4b5a270375b3f59ebec446b43b5fb1165ec116c5ace8b65a0568f8bbf197b270",
+    "pause_0001_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/ledger/pauses/pause-0001.json",
+    "pause_0001_sha256": "ab2fba00b24d1989c1527a0d0ebf3ac49ddaf998778325371091efe3353db026",
+    "pause_0002_exists": false,
+    "resume_marker_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/ledger/resumes/resume-0001.json",
+    "resume_marker_sha256": "1780a0f6ffb3f931ab8baf69a06a740f16890fc2b9fc44de129f9af5fee52bb6",
+    "terminal_record_count": 800
+  }
+}

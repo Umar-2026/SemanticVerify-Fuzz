@@ -1,0 +1,21 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0549/driver.c:64:5: error: unknown type name 'vpx_codec_dec_cfg_t'; did you mean 'vpx_codec_enc_cfg_t'?
+    vpx_codec_dec_cfg_t dec_cfg;
+    ^~~~~~~~~~~~~~~~~~~
+    vpx_codec_enc_cfg_t
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/./vpx_encoder.h:852:3: note: 'vpx_codec_enc_cfg_t' declared here
+} vpx_codec_enc_cfg_t; /**< alias for struct vpx_codec_enc_cfg */
+  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0549/driver.c:66:13: error: no member named 'threads' in 'struct vpx_codec_enc_cfg'; did you mean 'g_threads'?
+    dec_cfg.threads = 1;
+            ^~~~~~~
+            g_threads
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/./vpx_encoder.h:296:16: note: 'g_threads' declared here
+  unsigned int g_threads;
+               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0549/driver.c:67:13: error: no member named 'w' in 'struct vpx_codec_enc_cfg'
+    dec_cfg.w = WIDTH;
+    ~~~~~~~ ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0549/driver.c:68:13: error: no member named 'h' in 'struct vpx_codec_enc_cfg'
+    dec_cfg.h = HEIGHT;
+    ~~~~~~~ ^
+4 errors generated.

@@ -1,0 +1,13 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0761/driver.c:57:87: warning: incompatible pointer types passing 'char *' to parameter of type 'wchar_t *' (aka 'int *') [-Wincompatible-pointer-types]
+                cmsGetProfileInfo(hProfile1, infoTypes[i], languageCode, countryCode, buf1, len1);
+                                                                                      ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1611:70: note: passing argument to parameter 'Buffer' here
+                                                            wchar_t* Buffer, cmsUInt32Number BufferSize);
+                                                                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0761/driver.c:67:87: warning: incompatible pointer types passing 'char *' to parameter of type 'wchar_t *' (aka 'int *') [-Wincompatible-pointer-types]
+                cmsGetProfileInfo(hProfile2, infoTypes[i], languageCode, countryCode, buf2, len2);
+                                                                                      ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1611:70: note: passing argument to parameter 'Buffer' here
+                                                            wchar_t* Buffer, cmsUInt32Number BufferSize);
+                                                                     ^
+2 warnings generated.

@@ -1,0 +1,58 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:29:16: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        nfds = ares_fds(channel, &readers, &writers);
+               ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:39:9: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+        ares_process(channel, &readers, &writers);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:98:21: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+            nfds1 = ares_fds(chan1, &readers1, &writers1);
+                    ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:102:21: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+            nfds2 = ares_fds(chan2, &readers2, &writers2);
+                    ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:147:13: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+            ares_process(chan1, &read_all, &write_all);
+            ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:152:13: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+            ares_process(chan2, &read_all, &write_all);
+            ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0669/driver.c:22:13: warning: unused function 'process_events' [-Wunused-function]
+static void process_events(ares_channel_t *channel, int *done) {
+            ^
+7 warnings generated.

@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0519/driver.c:66:9: error: no member named 'rc_resize_mode' in 'struct vpx_codec_enc_cfg'
+    cfg.rc_resize_mode = rc_resize_mode;
+    ~~~ ^
+1 error generated.

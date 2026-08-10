@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\ntypedef struct {\n    int received;\n} callback_data_t;\n\nstatic void dns_callback(void *arg, int status, int timeouts, unsigned char *abuf, int alen) {\n    callback_data_t *data = (callback_data_t *)arg;\n    struct ares_dns_record *dnsrec = NULL;\n\n    if (status == ARES_SUCCESS && abuf != NULL && alen \u003e 0) {\n        if (ares_parse_dns_reply(abuf, alen, NULL, &dnsrec) == ARES_SUCCESS) {\n            if (dnsrec != NULL) {\n                data-\u003ereceived = 1;\n                ares_dns_record_destroy(dnsrec);\n            }\n        }\n    }\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1 || size \u003e 255) {\n        return 0;\n    }\n\n    char hostname[256];\n    memcpy(hostname, data, size);\n    hostname[size] = '\\0';\n\n    ares_channel_t *channel;\n    struct ares_options options;\n    int optmask = 0;\n    callback_data_t cb_data = {0};\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n\n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        return 0;\n    }\n\n    if (server_csv) {\n        ares_set_servers_csv(channel, server_csv);\n    }\n\n    ares_query_dnsrec(channel, hostname, ARES_CLASS_IN, ARES_REC_TYPE_A, dns_callback, &cb_data);\n\n    struct timeval tv, *tvp;\n    while (1) {\n        tvp = ares_timeout(channel, NULL, &tv);\n        ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n        if (!ares_has_queries(channel)) break;\n    }\n\n    ares_destroy(channel);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPaS7dn69jAtws++S9YsRT1PGCrPJNV3xaYVE7J3XYaILn70s8eBN+7MoQHQ52"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 245,
+    "candidatesTokenCount": 539,
+    "totalTokenCount": 784,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 245
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "rY55apXFFLKgz7IPlO6OwAc"
+}

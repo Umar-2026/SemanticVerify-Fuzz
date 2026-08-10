@@ -1,0 +1,29 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0673/driver.c:67:126: error: too many arguments to function call, expected 7, have 8
+    ares_status_t status = ares_query_dnsrec(channel, &dnsrec, name, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, &state, NULL);
+                           ~~~~~~~~~~~~~~~~~                                                                                 ^~~~
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:860:28: note: 'ares_query_dnsrec' declared here
+CARES_EXTERN ares_status_t ares_query_dnsrec(ares_channel_t      *channel,
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0673/driver.c:75:5: error: unknown type name 'ares_pollfd_t'; did you mean 'ares_bool_t'?
+    ares_pollfd_t *pollfds = NULL;
+    ^~~~~~~~~~~~~
+    ares_bool_t
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:212:3: note: 'ares_bool_t' declared here
+} ares_bool_t;
+  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0673/driver.c:77:13: warning: implicit declaration of function 'ares_get_pollfds' is invalid in C99 [-Wimplicit-function-declaration]
+        if (ares_get_pollfds(channel, &pollfds, &nfds) != ARES_SUCCESS) {
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0673/driver.c:86:19: warning: implicit declaration of function 'ares_poll' is invalid in C99 [-Wimplicit-function-declaration]
+        int res = ares_poll(pollfds, nfds, &tv);
+                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0673/driver.c:91:9: warning: implicit declaration of function 'ares_free_pollfds' is invalid in C99 [-Wimplicit-function-declaration]
+        ares_free_pollfds(pollfds);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0673/driver.c:95:9: warning: implicit declaration of function 'ares_free_pollfds' is invalid in C99 [-Wimplicit-function-declaration]
+        ares_free_pollfds(pollfds);
+        ^
+4 warnings and 2 errors generated.

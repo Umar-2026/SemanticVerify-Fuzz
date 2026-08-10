@@ -1,0 +1,16 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0620/driver.c:11:66: warning: declaration of 'struct addrinfo' will not be visible outside of this function [-Wvisibility]
+static void callback(void *arg, int status, int timeouts, struct addrinfo *res) {
+                                                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0620/driver.c:15:27: warning: incompatible pointer types passing 'struct addrinfo *' to parameter of type 'struct ares_addrinfo *' [-Wincompatible-pointer-types]
+        ares_freeaddrinfo(res);
+                          ^~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:556:59: note: passing argument to parameter 'ai' here
+CARES_EXTERN void ares_freeaddrinfo(struct ares_addrinfo *ai);
+                                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0620/driver.c:46:65: error: too many arguments to function call, expected 6, have 7
+    ares_getaddrinfo(channel, host, NULL, NULL, NULL, callback, &ctx);
+    ~~~~~~~~~~~~~~~~                                            ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:551:19: note: 'ares_getaddrinfo' declared here
+CARES_EXTERN void ares_getaddrinfo(ares_channel_t *channel, const char *node,
+                  ^
+2 warnings and 1 error generated.

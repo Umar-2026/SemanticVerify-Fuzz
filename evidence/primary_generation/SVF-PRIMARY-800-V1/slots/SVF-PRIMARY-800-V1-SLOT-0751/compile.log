@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0751/driver.c:33:42: error: too many arguments to function call, expected 3, have 4
+                                         &(cmsCIExyY){0.1500, 0.0600, 1.0});
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1660:35: note: 'cmsCreateRGBProfile' declared here
+CMSAPI cmsHPROFILE      CMSEXPORT cmsCreateRGBProfile(const cmsCIExyY* WhitePoint,
+                                  ^
+1 error generated.

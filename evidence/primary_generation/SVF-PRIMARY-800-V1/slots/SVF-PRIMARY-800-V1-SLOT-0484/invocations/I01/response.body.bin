@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003ctiffio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cunistd.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) {\n        return 0;\n    }\n\n    char filename[] = \"/tmp/fuzz_tiff.tiff\";\n    FILE *fp = fopen(filename, \"wb\");\n    if (!fp) {\n        return 0;\n    }\n    fwrite(data, 1, size, fp);\n    fclose(fp);\n\n    TIFFSetErrorHandler(NULL);\n    TIFFSetWarningHandler(NULL);\n\n    TIFF *tif = TIFFOpen(filename, \"r\");\n    if (tif) {\n        uint32_t width, height;\n        TIFFGetField(tif, TIFFTAG_IMAGEWIDTH, &width);\n        TIFFGetField(tif, TIFFTAG_IMAGELENGTH, &height);\n\n        if (width \u003e 0 && height \u003e 0 && width \u003c 10000 && height \u003c 10000) {\n            tsize_t scanline_size = TIFFScanlineSize(tif);\n            if (scanline_size \u003e 0) {\n                void *buf = _TIFFmalloc(scanline_size);\n                if (buf) {\n                    for (uint32_t row = 0; row \u003c height; row++) {\n                        if (TIFFReadScanline(tif, buf, row, 0) \u003c 0) {\n                            break;\n                        }\n                    }\n                    _TIFFfree(buf);\n                }\n            }\n        }\n        TIFFClose(tif);\n    }\n\n    unlink(filename);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPltxYbZWEzABnUl9+VO5aVevejlQTVmdhzD3ejEu94xNZ4ezSXV/8vwh8+gMM"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 165,
+    "candidatesTokenCount": 424,
+    "totalTokenCount": 589,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 165
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "f4p5atv8NdCJqtsPrM3MuAQ"
+}

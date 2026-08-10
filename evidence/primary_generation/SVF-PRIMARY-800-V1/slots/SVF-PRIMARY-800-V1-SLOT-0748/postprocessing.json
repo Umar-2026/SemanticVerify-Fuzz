@@ -1,0 +1,17 @@
+{
+  "compilation_status": "NOT_ATTEMPTED",
+  "compiler_command": null,
+  "compiler_exit_code": null,
+  "compiler_version": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+  "compiler_warning_count": null,
+  "complete_log_path": null,
+  "complete_log_sha256": null,
+  "driver_source_byte_length": null,
+  "driver_source_path_or_null": null,
+  "driver_source_sha256": null,
+  "duplicate_of_logical_slot_id_or_null": null,
+  "extraction_status": null,
+  "linked_driver_execution": false,
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0748",
+  "terminal_status": "API_ERROR"
+}

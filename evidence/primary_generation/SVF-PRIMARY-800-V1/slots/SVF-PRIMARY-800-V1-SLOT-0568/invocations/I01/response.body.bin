@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"vpx/vpx_decoder.h\"\n#include \"vpx/vp8dx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) {\n        return 0;\n    }\n\n    vpx_codec_ctx_t codec1, codec2;\n    vpx_codec_iface_t *interface = vpx_codec_vp8_dx();\n    vpx_codec_dec_cfg_t cfg = {0, 0, 0};\n\n    if (vpx_codec_dec_init(&codec1, interface, &cfg, 0) != VPX_CODEC_OK) {\n        return 0;\n    }\n\n    if (vpx_codec_dec_init(&codec2, interface, &cfg, 0) != VPX_CODEC_OK) {\n        vpx_codec_destroy(&codec1);\n        return 0;\n    }\n\n    size_t split = size / 2;\n    const uint8_t *data1 = data;\n    size_t size1 = split;\n    const uint8_t *data2 = data + split;\n    size_t size2 = size - split;\n\n    vpx_codec_decode(&codec1, data1, size1, NULL, 0);\n    vpx_codec_decode(&codec2, data2, size2, NULL, 0);\n\n    vpx_codec_destroy(&codec1);\n    vpx_codec_destroy(&codec2);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPhBIkF/+MoAPJL+9S3RMeyclUthYrtSR9sf8/ZA4TgmB2JlnpgJfaHTpZYTy9"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 174,
+    "candidatesTokenCount": 389,
+    "totalTokenCount": 563,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 174
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "4ot5ap-VOYqqjuMPw5Sc8Ak"
+}

@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0581/driver.c:30:76: error: use of undeclared identifier 'VPX_DECODER_FLAG_OUTPUT_ALL'
+        decode_res = vpx_codec_decode(&codec, payload, payload_size, NULL, VPX_DECODER_FLAG_OUTPUT_ALL);
+                                                                           ^
+1 error generated.

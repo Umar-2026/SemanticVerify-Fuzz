@@ -1,0 +1,16 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0707/driver.c:30:28: warning: unused variable 'colorSpace' [-Wunused-variable]
+    cmsColorSpaceSignature colorSpace = cmsGetColorSpace(hProfile);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0707/driver.c:31:28: warning: unused variable 'pcs' [-Wunused-variable]
+    cmsColorSpaceSignature pcs = cmsGetPCS(hProfile);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0707/driver.c:32:30: warning: unused variable 'profileClass' [-Wunused-variable]
+    cmsProfileClassSignature profileClass = cmsGetDeviceClass(hProfile);
+                             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0707/driver.c:35:22: warning: unused variable 'version' [-Wunused-variable]
+    cmsFloat64Number version = cmsGetProfileVersion(hProfile);
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0707/driver.c:36:21: warning: unused variable 'intent' [-Wunused-variable]
+    cmsUInt32Number intent = cmsGetHeaderRenderingIntent(hProfile);
+                    ^
+5 warnings generated.

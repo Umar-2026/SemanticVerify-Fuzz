@@ -1,0 +1,17 @@
+{
+  "compilation_status": "NOT_ATTEMPTED",
+  "compiler_command": null,
+  "compiler_exit_code": null,
+  "compiler_version": "Ubuntu clang version 14.0.0-1ubuntu1.1",
+  "compiler_warning_count": null,
+  "complete_log_path": null,
+  "complete_log_sha256": null,
+  "driver_source_byte_length": 936,
+  "driver_source_path_or_null": "slots/SVF-PRIMARY-800-V1-SLOT-0800/driver.c",
+  "driver_source_sha256": "3b5bad50d3f4ae561d733f4f510a97a02fa186b7b52cbcb6b1fa881b2dfc2b3d",
+  "duplicate_of_logical_slot_id_or_null": "SVF-PRIMARY-800-V1-SLOT-0794",
+  "extraction_status": "EXTRACTED_VERBATIM",
+  "linked_driver_execution": false,
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0800",
+  "terminal_status": "DUPLICATE_OUTPUT"
+}

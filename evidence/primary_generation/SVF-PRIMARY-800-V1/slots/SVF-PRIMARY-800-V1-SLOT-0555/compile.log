@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0555/driver.c:19:32: warning: implicit declaration of function 'vpx_codec_vp8_cx' is invalid in C99 [-Wimplicit-function-declaration]
+    vpx_codec_iface_t *iface = vpx_codec_vp8_cx();
+                               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0555/driver.c:19:24: warning: incompatible integer to pointer conversion initializing 'vpx_codec_iface_t *' (aka 'const struct vpx_codec_iface *') with an expression of type 'int' [-Wint-conversion]
+    vpx_codec_iface_t *iface = vpx_codec_vp8_cx();
+                       ^       ~~~~~~~~~~~~~~~~~~
+2 warnings generated.

@@ -1,0 +1,22 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0723/driver.c:22:37: warning: incompatible pointer types passing 'cmsUInt32Number[4]' (aka 'unsigned int[4]') to parameter of type 'cmsUInt8Number *' (aka 'unsigned char *') [-Wincompatible-pointer-types]
+    cmsGetHeaderProfileID(hProfile, profileID);
+                                    ^~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1546:96: note: passing argument to parameter 'ProfileID' here
+CMSAPI void              CMSEXPORT cmsGetHeaderProfileID(cmsHPROFILE hProfile, cmsUInt8Number* ProfileID);
+                                                                                               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0723/driver.c:13:28: warning: unused variable 'colorSpace' [-Wunused-variable]
+    cmsColorSpaceSignature colorSpace = cmsGetColorSpace(hProfile);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0723/driver.c:14:28: warning: unused variable 'pcs' [-Wunused-variable]
+    cmsColorSpaceSignature pcs = cmsGetPCS(hProfile);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0723/driver.c:18:21: warning: unused variable 'manufacturer' [-Wunused-variable]
+    cmsUInt32Number manufacturer = cmsGetHeaderManufacturer(hProfile);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0723/driver.c:19:21: warning: unused variable 'model' [-Wunused-variable]
+    cmsUInt32Number model = cmsGetHeaderModel(hProfile);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0723/driver.c:20:21: warning: unused variable 'creator' [-Wunused-variable]
+    cmsUInt32Number creator = cmsGetHeaderCreator(hProfile);
+                    ^
+6 warnings generated.

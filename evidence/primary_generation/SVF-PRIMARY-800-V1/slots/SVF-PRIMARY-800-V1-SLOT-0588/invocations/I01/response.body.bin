@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"vpx/vpx_decoder.h\"\n#include \"vpx/vp8dx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) return 0;\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_dec_cfg_t cfg = {0, 0, 0};\n    vpx_codec_iface_t *interface = vpx_codec_vp8_dx();\n\n    if (vpx_codec_dec_init(&codec, interface, &cfg, 0) != VPX_CODEC_OK) {\n        return 0;\n    }\n\n    vpx_codec_err_t res = vpx_codec_decode(&codec, data, size, NULL, 0);\n\n    switch (res) {\n        case VPX_CODEC_OK:\n            {\n                vpx_codec_iter_t iter = NULL;\n                vpx_image_t *img;\n                while ((img = vpx_codec_get_frame(&codec, &iter)) != NULL) {\n                    (void)img;\n                }\n            }\n            break;\n        case VPX_CODEC_MEM_ERROR:\n        case VPX_CODEC_ABI_MISMATCH:\n        case VPX_CODEC_INCAPABLE:\n        case VPX_CODEC_UNSUP_BITSTREAM:\n        case VPX_CODEC_UNSUP_FEATURE:\n        case VPX_CODEC_CORRUPT_FRAME:\n        case VPX_CODEC_INVALID_PARAM:\n        case VPX_CODEC_LIST_END:\n        default:\n            break;\n    }\n\n    vpx_codec_destroy(&codec);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPU3jDkDQUZOho/8WiLPXZ9zIdpdQ6PXoVnfDigjwH4BDYf+NcRmvfCJBWTE0I"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 176,
+    "candidatesTokenCount": 440,
+    "totalTokenCount": 616,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 176
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "UIx5aqT7BYaknsEP6v3i4Qo"
+}

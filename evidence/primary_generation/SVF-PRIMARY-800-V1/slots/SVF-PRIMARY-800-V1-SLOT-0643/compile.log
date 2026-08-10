@@ -1,0 +1,71 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:35:74: error: use of undeclared identifier 'ARES_RR_ADDR'; did you mean 'ARES_RR_A_ADDR'?
+                    const unsigned char *addr = ares_dns_rr_get_addr(rr, ARES_RR_ADDR);
+                                                                         ^~~~~~~~~~~~
+                                                                         ARES_RR_A_ADDR
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares_dns_record.h:185:3: note: 'ARES_RR_A_ADDR' declared here
+  ARES_RR_A_ADDR = (ARES_REC_TYPE_A * 100) + 1,
+  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:35:42: warning: incompatible pointer types initializing 'const unsigned char *' with an expression of type 'const struct in_addr *' [-Wincompatible-pointer-types]
+                    const unsigned char *addr = ares_dns_rr_get_addr(rr, ARES_RR_ADDR);
+                                         ^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:88:20: error: variable has incomplete type 'ares_channel_t' (aka 'struct ares_channeldata')
+    ares_channel_t channel;
+                   ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:402:8: note: forward declaration of 'struct ares_channeldata'
+struct ares_channeldata;
+       ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:114:87: error: too few arguments to function call, expected 5, have 4
+    status = ares_dns_record_create(&dnsrec1, 0, ARES_OPCODE_QUERY, ARES_RCODE_NOERROR);
+             ~~~~~~~~~~~~~~~~~~~~~~                                                   ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares_dns_record.h:587:28: note: 'ares_dns_record_create' declared here
+CARES_EXTERN ares_status_t ares_dns_record_create(ares_dns_record_t **dnsrec,
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:119:14: warning: implicit declaration of function 'ares_dns_record_add_query' is invalid in C99 [-Wimplicit-function-declaration]
+    status = ares_dns_record_add_query(dnsrec1, name1, ARES_CLASS_IN, ARES_REC_TYPE_A);
+             ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:126:87: error: too few arguments to function call, expected 5, have 4
+    status = ares_dns_record_create(&dnsrec2, 0, ARES_OPCODE_QUERY, ARES_RCODE_NOERROR);
+             ~~~~~~~~~~~~~~~~~~~~~~                                                   ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares_dns_record.h:587:28: note: 'ares_dns_record_create' declared here
+CARES_EXTERN ares_status_t ares_dns_record_create(ares_dns_record_t **dnsrec,
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:171:20: warning: 'ares_getsock' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        int nfds = ares_getsock(channel, socks, ARES_GETSOCK_MAXNUM);
+                   ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:909:14: note: 'ares_getsock' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:177:23: warning: implicit declaration of function 'ares_getsock_readbits' is invalid in C99 [-Wimplicit-function-declaration]
+            int bit = ares_getsock_readbits(channel, i);
+                      ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:182:19: warning: implicit declaration of function 'ares_getsock_writebits' is invalid in C99 [-Wimplicit-function-declaration]
+            bit = ares_getsock_writebits(channel, i);
+                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:203:25: warning: shift count is negative [-Wshift-count-negative]
+                        FD_ISSET(ARES_SOCKET_BAD, &read_fds) ? ARES_SOCKET_BAD : (max_fd >= 0 ? (ares_socket_t)max_fd : ARES_SOCKET_BAD),
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/sys/select.h:87:30: note: expanded from macro 'FD_ISSET'
+#define FD_ISSET(fd, fdsetp)    __FD_ISSET (fd, fdsetp)
+                                ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/bits/select.h:37:36: note: expanded from macro '__FD_ISSET'
+  ((__FDS_BITS (s)[__FD_ELT (d)] & __FD_MASK (d)) != 0)
+                                   ^~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/sys/select.h:56:40: note: expanded from macro '__FD_MASK'
+#define __FD_MASK(d)    ((__fd_mask) (1UL << ((d) % __NFDBITS)))
+                                          ^  ~~~~~~~~~~~~~~~~~
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0643/driver.c:204:25: warning: shift count is negative [-Wshift-count-negative]
+                        FD_ISSET(ARES_SOCKET_BAD, &write_fds) ? ARES_SOCKET_BAD : (max_fd >= 0 ? (ares_socket_t)max_fd : ARES_SOCKET_BAD));
+                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/sys/select.h:87:30: note: expanded from macro 'FD_ISSET'
+#define FD_ISSET(fd, fdsetp)    __FD_ISSET (fd, fdsetp)
+                                ^~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/bits/select.h:37:36: note: expanded from macro '__FD_ISSET'
+  ((__FDS_BITS (s)[__FD_ELT (d)] & __FD_MASK (d)) != 0)
+                                   ^~~~~~~~~~~~~
+/usr/include/x86_64-linux-gnu/sys/select.h:56:40: note: expanded from macro '__FD_MASK'
+#define __FD_MASK(d)    ((__fd_mask) (1UL << ((d) % __NFDBITS)))
+                                          ^  ~~~~~~~~~~~~~~~~~
+7 warnings and 4 errors generated.

@@ -1,0 +1,9 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0780/driver.c:31:49: warning: implicitly declaring library function 'malloc' with type 'void *(unsigned long)' [-Wimplicit-function-declaration]
+            uint8_t *output_buffer = (uint8_t *)malloc(pixels * 4);
+                                                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0780/driver.c:31:49: note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0780/driver.c:34:17: warning: implicitly declaring library function 'free' with type 'void (void *)' [-Wimplicit-function-declaration]
+                free(output_buffer);
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0780/driver.c:34:17: note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+2 warnings generated.

@@ -1,0 +1,8 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0574/driver.c:33:13: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned long)' [-Wimplicit-function-declaration]
+            memcpy(img.planes[i], data, p_size);
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0574/driver.c:33:13: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0574/driver.c:12:21: warning: unused variable 'res' [-Wunused-variable]
+    vpx_codec_err_t res;
+                    ^
+2 warnings generated.

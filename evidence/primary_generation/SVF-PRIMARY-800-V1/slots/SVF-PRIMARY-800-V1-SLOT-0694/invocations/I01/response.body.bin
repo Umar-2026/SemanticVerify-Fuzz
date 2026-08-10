@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) return 0;\n\n    ares_channel channel;\n    struct ares_options options;\n    int optmask = ARES_OPT_FLAGS;\n    options.flags = ARES_FLAG_NOCHECKRESP;\n\n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        return 0;\n    }\n\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (server_csv) {\n        ares_set_servers_csv(channel, server_csv);\n    }\n\n    char hostname[256];\n    size_t host_len = (size / 2) \u003e 255 ? 255 : (size / 2);\n    memcpy(hostname, data, host_len);\n    hostname[host_len] = '\\0';\n\n    struct ares_addrinfo_hints hints = {0};\n    hints.ai_family = AF_UNSPEC;\n    hints.ai_socktype = SOCK_STREAM;\n\n    void *callback_arg = NULL;\n    ares_getaddrinfo(channel, hostname, NULL, &hints, NULL, NULL, &callback_arg);\n\n    struct timeval tv, *tvp;\n    for (int i = 0; i \u003c 5; i++) {\n        tvp = ares_timeout(channel, NULL, &tv);\n        ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n    }\n\n    ares_destroy(channel);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPmAIcp9H+XSi/kWcfXf6Yqi0sPcuH+Z/U+YuHhXutJCleckFSAprDu4ksGCiY"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 207,
+    "candidatesTokenCount": 428,
+    "totalTokenCount": 635,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 207
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "4455artv7siO4w-T9qORCg"
+}

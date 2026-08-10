@@ -1,0 +1,25 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:17:9: warning: implicit declaration of function 'close' is invalid in C99 [-Wimplicit-function-declaration]
+        close(fd);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:18:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(filename);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:26:9: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+        unlink(filename);
+        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:58:25: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+                        unlink(filename);
+                        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:72:25: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+                        unlink(filename);
+                        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:78:25: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+                        unlink(filename);
+                        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:85:21: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+                    unlink(filename);
+                    ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0481/driver.c:93:5: warning: implicit declaration of function 'unlink' is invalid in C99 [-Wimplicit-function-declaration]
+    unlink(filename);
+    ^
+8 warnings generated.

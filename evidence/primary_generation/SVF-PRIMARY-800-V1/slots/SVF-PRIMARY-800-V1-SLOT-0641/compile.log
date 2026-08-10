@@ -1,0 +1,13 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0641/driver.c:71:71: warning: incompatible function pointer types passing 'void (void *, int, int, unsigned char *, int)' to parameter of type 'ares_callback_dnsrec' (aka 'void (*)(void *, ares_status_t, unsigned long, const struct ares_dns_record *)') [-Wincompatible-function-pointer-types]
+    ares_query_dnsrec(channel, name1, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, &res1, NULL);
+                                                                      ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:864:67: note: passing argument to parameter 'callback' here
+                                             ares_callback_dnsrec callback,
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0641/driver.c:72:71: warning: incompatible function pointer types passing 'void (void *, int, int, unsigned char *, int)' to parameter of type 'ares_callback_dnsrec' (aka 'void (*)(void *, ares_status_t, unsigned long, const struct ares_dns_record *)') [-Wincompatible-function-pointer-types]
+    ares_query_dnsrec(channel, name2, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, &res2, NULL);
+                                                                      ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:864:67: note: passing argument to parameter 'callback' here
+                                             ares_callback_dnsrec callback,
+                                                                  ^
+2 warnings generated.

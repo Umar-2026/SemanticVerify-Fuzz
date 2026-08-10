@@ -1,0 +1,20 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0726/driver.c:19:43: warning: implicit declaration of function 'cmsGetTagType' is invalid in C99 [-Wimplicit-function-declaration]
+            cmsTagTypeSignature tagType = cmsGetTagType(hProfile, tagSig);
+                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0726/driver.c:19:33: warning: unused variable 'tagType' [-Wunused-variable]
+            cmsTagTypeSignature tagType = cmsGetTagType(hProfile, tagSig);
+                                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0726/driver.c:12:25: warning: unused variable 'profileVersion' [-Wunused-variable]
+        cmsUInt32Number profileVersion = cmsGetProfileVersion(hProfile);
+                        ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0726/driver.c:13:32: warning: unused variable 'colorSpace' [-Wunused-variable]
+        cmsColorSpaceSignature colorSpace = cmsGetColorSpace(hProfile);
+                               ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0726/driver.c:14:32: warning: unused variable 'pcs' [-Wunused-variable]
+        cmsColorSpaceSignature pcs = cmsGetPCS(hProfile);
+                               ^
+5 warnings generated.
+ld.lld-14: error: undefined symbol: cmsGetTagType
+>>> referenced by driver.c
+>>>               /tmp/driver-afe2a5.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

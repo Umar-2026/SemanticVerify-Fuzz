@@ -1,0 +1,35 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0675/driver.c:19:28: warning: implicit declaration of function 'ares_parse_dns_reply' is invalid in C99 [-Wimplicit-function-declaration]
+        ares_status_t rv = ares_parse_dns_reply(abuf, alen, &dnsrec);
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0675/driver.c:73:70: warning: incompatible function pointer types passing 'void (void *, int, int, unsigned char *, int)' to parameter of type 'ares_callback_dnsrec' (aka 'void (*)(void *, ares_status_t, unsigned long, const struct ares_dns_record *)') [-Wincompatible-function-pointer-types]
+    ares_query_dnsrec(channel, name, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, &state, NULL);
+                                                                     ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:864:67: note: passing argument to parameter 'callback' here
+                                             ares_callback_dnsrec callback,
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0675/driver.c:87:20: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        int nfds = ares_fds(channel, &read_fds, &write_fds);
+                   ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0675/driver.c:96:34: warning: incompatible pointer to integer conversion passing 'fd_set *' to parameter of type 'ares_socket_t' (aka 'int') [-Wint-conversion]
+        ares_process_fd(channel, &read_fds, &write_fds);
+                                 ^~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:962:60: note: passing argument to parameter 'read_fd' here
+                                           ares_socket_t   read_fd,
+                                                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0675/driver.c:96:45: warning: incompatible pointer to integer conversion passing 'fd_set *' to parameter of type 'ares_socket_t' (aka 'int') [-Wint-conversion]
+        ares_process_fd(channel, &read_fds, &write_fds);
+                                            ^~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:963:60: note: passing argument to parameter 'write_fd' here
+                                           ares_socket_t   write_fd);
+                                                           ^
+5 warnings generated.
+ld.lld-14: error: undefined symbol: ares_parse_dns_reply
+>>> referenced by driver.c
+>>>               /tmp/driver-cae1ab.o:(query_callback)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

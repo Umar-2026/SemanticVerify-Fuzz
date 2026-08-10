@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0654/driver.c:59:25: warning: variable 'tvp' set but not used [-Wunused-but-set-variable]
+    struct timeval tv, *tvp;
+                        ^
+1 warning generated.

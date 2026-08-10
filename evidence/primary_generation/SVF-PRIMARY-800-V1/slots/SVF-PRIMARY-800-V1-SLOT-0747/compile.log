@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0747/driver.c:41:12: warning: unused variable 'bytes1' [-Wunused-variable]
+    size_t bytes1 = pixels1 * 3;
+           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0747/driver.c:42:12: warning: unused variable 'bytes2' [-Wunused-variable]
+    size_t bytes2 = pixels2 * 3;
+           ^
+2 warnings generated.

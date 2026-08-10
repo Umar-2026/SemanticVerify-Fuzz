@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"vpx/vpx_encoder.h\"\n#include \"vpx/vp8cx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1024) return 0;\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_enc_cfg_t cfg;\n    vpx_image_t raw;\n    vpx_codec_err_t res;\n\n    res = vpx_codec_enc_config_default(vpx_codec_vp8_cx(), &cfg, 0);\n    if (res) return 0;\n\n    cfg.g_w = 16;\n    cfg.g_h = 16;\n    cfg.g_timebase.num = 1;\n    cfg.g_timebase.den = 30;\n\n    if (vpx_codec_enc_init(&codec, vpx_codec_vp8_cx(), &cfg, 0)) {\n        return 0;\n    }\n\n    if (!vpx_img_alloc(&raw, VPX_IMG_FMT_I420, cfg.g_w, cfg.g_h, 1)) {\n        vpx_codec_destroy(&codec);\n        return 0;\n    }\n\n    size_t frame_size = (cfg.g_w * cfg.g_h * 3) / 2;\n    size_t copy_size = (size \u003c frame_size) ? size : frame_size;\n    memcpy(raw.planes[0], data, copy_size);\n\n    vpx_codec_encode(&codec, &raw, 0, 1, 0, VPX_DL_REALTIME);\n\n    vpx_img_free(&raw);\n    vpx_codec_destroy(&codec);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP/22Cd2G4hnT2aoYIsAkzXMziec9hO3pe9CYxPQemmlW/ddi8UoBrA18dL8Ew"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 176,
+    "candidatesTokenCount": 465,
+    "totalTokenCount": 641,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 176
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "x4t5aqrrEJyj9tMP0J6i-A0"
+}

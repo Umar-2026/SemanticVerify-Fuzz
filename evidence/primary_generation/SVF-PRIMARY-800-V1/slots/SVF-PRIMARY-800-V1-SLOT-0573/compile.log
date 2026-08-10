@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0573/driver.c:24:18: error: use of undeclared identifier 'VPX_IMG_FLAG_HIGHBITDEPTH'
+        flags |= VPX_IMG_FLAG_HIGHBITDEPTH;
+                 ^
+1 error generated.

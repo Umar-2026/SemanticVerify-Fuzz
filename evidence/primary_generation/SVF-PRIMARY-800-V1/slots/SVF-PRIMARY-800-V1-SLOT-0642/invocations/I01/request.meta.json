@@ -1,0 +1,13 @@
+{
+  "credential_header_names": [
+    "x-goog-api-key"
+  ],
+  "credential_values_retained": false,
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent",
+  "logical_slot_id": "SVF-PRIMARY-800-V1-SLOT-0642",
+  "proxy_mode": "HTTP_CONNECT",
+  "request_body_byte_length": 1270,
+  "request_body_sha256": "cb408920b31c26ab95835ef0968573eb43e923ef9b3a45af4d831445366bde4a",
+  "transport_invocation_number": 1,
+  "window_id": "SVF-PRIMARY-800-V1"
+}

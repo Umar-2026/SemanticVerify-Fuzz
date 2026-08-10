@@ -1,0 +1,13 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0680/driver.c:15:13: warning: implicit declaration of function 'ares_parse_dns_reply' is invalid in C99 [-Wimplicit-function-declaration]
+        if (ares_parse_dns_reply(abuf, alen, NULL, &dnsrec) == ARES_SUCCESS) {
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0680/driver.c:47:96: error: too few arguments to function call, expected 7, have 6
+    ares_query_dnsrec(channel, hostname, ARES_CLASS_IN, ARES_REC_TYPE_A, dns_callback, &cb_data);
+    ~~~~~~~~~~~~~~~~~                                                                          ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:860:28: note: 'ares_query_dnsrec' declared here
+CARES_EXTERN ares_status_t ares_query_dnsrec(ares_channel_t      *channel,
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0680/driver.c:53:14: warning: implicit declaration of function 'ares_has_queries' is invalid in C99 [-Wimplicit-function-declaration]
+        if (!ares_has_queries(channel)) break;
+             ^
+2 warnings and 1 error generated.

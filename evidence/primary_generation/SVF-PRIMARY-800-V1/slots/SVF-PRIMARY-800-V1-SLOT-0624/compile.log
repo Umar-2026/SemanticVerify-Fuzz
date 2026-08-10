@@ -1,0 +1,10 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0624/driver.c:44:97: error: too many arguments to function call, expected 7, have 8
+    ares_query_dnsrec(channel, hostname, ARES_CLASS_IN, ARES_REC_TYPE_A, 0, dns_callback, NULL, NULL);
+    ~~~~~~~~~~~~~~~~~                                                                           ^~~~
+/usr/lib/llvm-14/lib/clang/14.0.0/include/stddef.h:89:16: note: expanded from macro 'NULL'
+#  define NULL ((void*)0)
+               ^~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:860:28: note: 'ares_query_dnsrec' declared here
+CARES_EXTERN ares_status_t ares_query_dnsrec(ares_channel_t      *channel,
+                           ^
+1 error generated.

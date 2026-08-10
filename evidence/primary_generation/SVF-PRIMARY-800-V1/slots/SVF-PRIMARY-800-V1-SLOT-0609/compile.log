@@ -1,0 +1,13 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0609/driver.c:66:16: warning: 'ares_getsock' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+    int bits = ares_getsock(channel, sockets, ARES_GETSOCK_MAXNUM);
+               ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:909:14: note: 'ares_getsock' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0609/driver.c:64:9: warning: unused variable 'nfds' [-Wunused-variable]
+    int nfds;
+        ^
+2 warnings generated.

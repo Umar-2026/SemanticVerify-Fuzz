@@ -1,0 +1,48 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0561/driver.c:9:12: error: expected ')'
+static int vpx_codec_dec_init(vpx_codec_ctx_t *ctx, vpx_codec_iface_t *iface, const vpx_codec_dec_cfg_t *cfg, unsigned long flags) {
+           ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:144:50: note: expanded from macro 'vpx_codec_dec_init'
+  vpx_codec_dec_init_ver(ctx, iface, cfg, flags, VPX_DECODER_ABI_VERSION)
+                                                 ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:44:4: note: expanded from macro 'VPX_DECODER_ABI_VERSION'
+  (3 + VPX_CODEC_ABI_VERSION) /**<\hideinitializer*/
+   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0561/driver.c:9:12: note: to match this '('
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:144:50: note: expanded from macro 'vpx_codec_dec_init'
+  vpx_codec_dec_init_ver(ctx, iface, cfg, flags, VPX_DECODER_ABI_VERSION)
+                                                 ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:44:3: note: expanded from macro 'VPX_DECODER_ABI_VERSION'
+  (3 + VPX_CODEC_ABI_VERSION) /**<\hideinitializer*/
+  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0561/driver.c:9:12: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+static int vpx_codec_dec_init(vpx_codec_ctx_t *ctx, vpx_codec_iface_t *iface, const vpx_codec_dec_cfg_t *cfg, unsigned long flags) {
+           ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:144:50: note: expanded from macro 'vpx_codec_dec_init'
+  vpx_codec_dec_init_ver(ctx, iface, cfg, flags, VPX_DECODER_ABI_VERSION)
+                                                 ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:44:4: note: expanded from macro 'VPX_DECODER_ABI_VERSION'
+  (3 + VPX_CODEC_ABI_VERSION) /**<\hideinitializer*/
+   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0561/driver.c:9:12: error: static declaration of 'vpx_codec_dec_init_ver' follows non-static declaration
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:144:3: note: expanded from macro 'vpx_codec_dec_init'
+  vpx_codec_dec_init_ver(ctx, iface, cfg, flags, VPX_DECODER_ABI_VERSION)
+  ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:134:17: note: previous declaration is here
+vpx_codec_err_t vpx_codec_dec_init_ver(vpx_codec_ctx_t *ctx,
+                ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0561/driver.c:9:12: warning: omitting the parameter name in a function definition is a C2x extension [-Wc2x-extensions]
+static int vpx_codec_dec_init(vpx_codec_ctx_t *ctx, vpx_codec_iface_t *iface, const vpx_codec_dec_cfg_t *cfg, unsigned long flags) {
+           ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:144:50: note: expanded from macro 'vpx_codec_dec_init'
+  vpx_codec_dec_init_ver(ctx, iface, cfg, flags, VPX_DECODER_ABI_VERSION)
+                                                 ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:44:4: note: expanded from macro 'VPX_DECODER_ABI_VERSION'
+  (3 + VPX_CODEC_ABI_VERSION) /**<\hideinitializer*/
+   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0561/driver.c:17:12: error: static declaration of 'vpx_codec_decode' follows non-static declaration
+static int vpx_codec_decode(vpx_codec_ctx_t *ctx, const uint8_t *data, size_t data_sz, void *user_priv, unsigned long deadline) {
+           ^
+/openbayes/home/svf-gate1c-build-qualification-v2/src/libvpx/vpx/vpx_decoder.h:216:17: note: previous declaration is here
+vpx_codec_err_t vpx_codec_decode(vpx_codec_ctx_t *ctx, const uint8_t *data,
+                ^
+2 warnings and 3 errors generated.

@@ -1,0 +1,34 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0618/driver.c:11:66: warning: declaration of 'struct addrinfo' will not be visible outside of this function [-Wvisibility]
+static void callback(void *arg, int status, int timeouts, struct addrinfo *res) {
+                                                                 ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0618/driver.c:15:27: warning: incompatible pointer types passing 'struct addrinfo *' to parameter of type 'struct ares_addrinfo *' [-Wincompatible-pointer-types]
+        ares_freeaddrinfo(res);
+                          ^~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:556:59: note: passing argument to parameter 'ai' here
+CARES_EXTERN void ares_freeaddrinfo(struct ares_addrinfo *ai);
+                                                          ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0618/driver.c:46:65: error: too many arguments to function call, expected 6, have 7
+    ares_getaddrinfo(channel, host, NULL, NULL, NULL, callback, &ctx);
+    ~~~~~~~~~~~~~~~~                                            ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:551:19: note: 'ares_getaddrinfo' declared here
+CARES_EXTERN void ares_getaddrinfo(ares_channel_t *channel, const char *node,
+                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0618/driver.c:55:16: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        nfds = ares_fds(channel, &read_fds, &write_fds);
+               ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0618/driver.c:63:9: warning: 'ares_process' is deprecated: Use ares_process_fds instead [-Wdeprecated-declarations]
+        ares_process(channel, &read_fds, &write_fds);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:918:14: note: 'ares_process' has been explicitly marked deprecated here
+CARES_EXTERN CARES_DEPRECATED_FOR(ares_process_fds) void ares_process(
+             ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+4 warnings and 1 error generated.

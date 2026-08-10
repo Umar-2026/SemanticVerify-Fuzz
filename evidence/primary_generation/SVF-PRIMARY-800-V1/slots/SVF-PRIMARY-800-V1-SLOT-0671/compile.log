@@ -1,0 +1,14 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0671/driver.c:65:70: warning: incompatible function pointer types passing 'void (void *, int, int, ares_dns_record_t *)' (aka 'void (void *, int, int, struct ares_dns_record *)') to parameter of type 'ares_callback_dnsrec' (aka 'void (*)(void *, ares_status_t, unsigned long, const struct ares_dns_record *)') [-Wincompatible-function-pointer-types]
+    ares_query_dnsrec(channel, name, ARES_CLASS_IN, ARES_REC_TYPE_A, query_callback, &state, NULL);
+                                                                     ^~~~~~~~~~~~~~
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:864:67: note: passing argument to parameter 'callback' here
+                                             ares_callback_dnsrec callback,
+                                                                  ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0671/driver.c:70:9: warning: implicit declaration of function 'ares_queue_wait' is invalid in C99 [-Wimplicit-function-declaration]
+        ares_queue_wait(channel, 1000);
+        ^
+2 warnings generated.
+ld.lld-14: error: undefined symbol: ares_queue_wait
+>>> referenced by driver.c
+>>>               /tmp/driver-a89522.o:(LLVMFuzzerTestOneInput)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)

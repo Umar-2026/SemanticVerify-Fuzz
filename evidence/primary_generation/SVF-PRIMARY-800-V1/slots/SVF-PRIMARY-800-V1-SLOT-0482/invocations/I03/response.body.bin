@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003ctiffio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstdint.h\u003e\n#include \u003cstring.h\u003e\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 10) {\n        return 0;\n    }\n\n    char filename[] = \"/tmp/fuzz.tiff\";\n    FILE *fp = fopen(filename, \"wb\");\n    if (!fp) {\n        return 0;\n    }\n    fwrite(data, 1, size, fp);\n    fclose(fp);\n\n    TIFF *tif = TIFFOpen(filename, \"r\");\n    if (tif) {\n        uint32_t width, height;\n        TIFFGetField(tif, TIFFTAG_IMAGEWIDTH, &width);\n        TIFFGetField(tif, TIFFTAG_IMAGELENGTH, &height);\n\n        if (width \u003e 0 && height \u003e 0) {\n            tsize_t scanline_size = TIFFScanlineSize(tif);\n            if (scanline_size \u003e 0) {\n                void *buf = _TIFFmalloc(scanline_size);\n                if (buf) {\n                    for (uint32_t row = 0; row \u003c height; row++) {\n                        if (TIFFReadScanline(tif, buf, row, 0) \u003c 0) {\n                            break;\n                        }\n                    }\n                    _TIFFfree(buf);\n                }\n            }\n        }\n        TIFFClose(tif);\n    }\n\n    remove(filename);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPp9K27VRxjFKBWOVI5o4tABtDNdRRRxFsGytlftekllSokyTfevYQwOHf6q3P"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 165,
+    "candidatesTokenCount": 377,
+    "totalTokenCount": 542,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 165
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "dYp5aq6HFpm9qtsPo7Tp8Qw"
+}

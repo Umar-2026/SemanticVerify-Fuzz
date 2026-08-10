@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \"vpx/vpx_encoder.h\"\n#include \"vpx/vp8cx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 16) return 0;\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_enc_cfg_t cfg;\n    vpx_image_t img;\n\n    vpx_codec_enc_config_default(vpx_codec_vp8_cx(), &cfg, 0);\n    cfg.g_w = 16;\n    cfg.g_h = 16;\n    cfg.g_timebase.num = 1;\n    cfg.g_timebase.den = 30;\n\n    if (vpx_codec_enc_init(&codec, vpx_codec_vp8_cx(), &cfg, 0) != VPX_CODEC_OK) {\n        return 0;\n    }\n\n    if (vpx_img_alloc(&img, VPX_IMG_FMT_I420, cfg.g_w, cfg.g_h, 1)) {\n        size_t plane_size = cfg.g_w * cfg.g_h;\n        size_t uv_size = (cfg.g_w / 2) * (cfg.g_h / 2);\n\n        if (size \u003e= plane_size + 2 * uv_size) {\n            memcpy(img.planes[VPX_PLANE_Y], data, plane_size);\n            memcpy(img.planes[VPX_PLANE_U], data + plane_size, uv_size);\n            memcpy(img.planes[VPX_PLANE_V], data + plane_size + uv_size, uv_size);\n\n            vpx_codec_encode(&codec, &img, 0, 1, 0, VPX_DL_REALTIME);\n        }\n\n        vpx_img_free(&img);\n    }\n\n    vpx_codec_destroy(&codec);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPXFpfdK+srEI62zHttZWp/Ou4qEuOsBRsYrniEoETD6urdM1VykpMHlYJNsii"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 176,
+    "candidatesTokenCount": 510,
+    "totalTokenCount": 686,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 176
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "tYt5auSnFLmEz7IPipWo6Q0"
+}

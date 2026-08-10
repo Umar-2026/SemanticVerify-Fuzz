@@ -1,0 +1,25 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0763/driver.c:51:65: warning: incompatible pointer types passing 'char *' to parameter of type 'wchar_t *' (aka 'int *') [-Wincompatible-pointer-types]
+                cmsGetProfileInfo(h1, infoTypes[i], "en", "US", buf1, len1);
+                                                                ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1611:70: note: passing argument to parameter 'Buffer' here
+                                                            wchar_t* Buffer, cmsUInt32Number BufferSize);
+                                                                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0763/driver.c:61:65: warning: incompatible pointer types passing 'char *' to parameter of type 'wchar_t *' (aka 'int *') [-Wincompatible-pointer-types]
+                cmsGetProfileInfo(h2, infoTypes[i], "en", "US", buf2, len2);
+                                                                ^~~~
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1611:70: note: passing argument to parameter 'Buffer' here
+                                                            wchar_t* Buffer, cmsUInt32Number BufferSize);
+                                                                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0763/driver.c:96:60: error: too few arguments to function call, expected 2, have 1
+    cmsUInt64Number attributes1 = cmsGetHeaderAttributes(h1);
+                                  ~~~~~~~~~~~~~~~~~~~~~~   ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1545:36: note: 'cmsGetHeaderAttributes' declared here
+CMSAPI void              CMSEXPORT cmsGetHeaderAttributes(cmsHPROFILE hProfile, cmsUInt64Number* Flags);
+                                   ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0763/driver.c:97:60: error: too few arguments to function call, expected 2, have 1
+    cmsUInt64Number attributes2 = cmsGetHeaderAttributes(h2);
+                                  ~~~~~~~~~~~~~~~~~~~~~~   ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1545:36: note: 'cmsGetHeaderAttributes' declared here
+CMSAPI void              CMSEXPORT cmsGetHeaderAttributes(cmsHPROFILE hProfile, cmsUInt64Number* Flags);
+                                   ^
+2 warnings and 2 errors generated.

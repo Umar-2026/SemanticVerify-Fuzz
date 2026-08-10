@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstddef.h\u003e\n#include \"vpx/vpx_decoder.h\"\n#include \"vpx/vp8dx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1) {\n        return 0;\n    }\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_dec_cfg_t cfg = {0, 0, 0};\n    vpx_codec_iface_t *interface = vpx_codec_vp8_dx();\n\n    if (vpx_codec_dec_init(&codec, interface, &cfg, 0) != VPX_CODEC_OK) {\n        return 0;\n    }\n\n    if (vpx_codec_decode(&codec, data, size, NULL, 0) == VPX_CODEC_OK) {\n        vpx_codec_iter_t iter = NULL;\n        vpx_image_t *img;\n        while ((img = vpx_codec_get_frame(&codec, &iter)) != NULL) {\n            // Frame successfully decoded, no further action needed for fuzzing\n        }\n    }\n\n    vpx_codec_destroy(&codec);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIP33axg3kOk2WfeS+8PJI0ibtSx4A70bTuerxJFWJSoX9bTbjhmhYtfjAcfR+D"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 186,
+    "candidatesTokenCount": 308,
+    "totalTokenCount": 494,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 186
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "2Yp5at-NDLeCqtsPxNqK-AE"
+}

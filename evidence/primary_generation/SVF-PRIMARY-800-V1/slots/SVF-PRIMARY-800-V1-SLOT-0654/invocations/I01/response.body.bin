@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdio.h\u003e\n#include \u003cstdlib.h\u003e\n#include \u003cstring.h\u003e\n#include \u003cares.h\u003e\n\ntypedef struct {\n    int count;\n    size_t total_len;\n} addr_summary_t;\n\nstatic void addrinfo_callback(void *arg, int status, int timeouts, struct ares_addrinfo *result) {\n    addr_summary_t *summary = (addr_summary_t *)arg;\n    if (status == ARES_SUCCESS && result && result-\u003enodes) {\n        struct ares_addrinfo_node *node = result-\u003enodes;\n        while (node) {\n            summary-\u003ecount++;\n            if (node-\u003eai_addr) {\n                summary-\u003etotal_len += node-\u003eai_addrlen;\n            }\n            node = node-\u003eai_next;\n        }\n        ares_freeaddrinfo(result);\n    }\n}\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 2) return 0;\n\n    char *server_csv = getenv(\"SVF_CARES_SERVER_CSV\");\n    if (!server_csv) return 0;\n\n    char *hostname = (char *)malloc(size + 1);\n    memcpy(hostname, data, size);\n    hostname[size] = '\\0';\n\n    ares_channel channel;\n    struct ares_options options;\n    int optmask = ARES_OPT_FLAGS;\n    options.flags = ARES_FLAG_NOCHECKRESP;\n\n    if (ares_init_options(&channel, &options, optmask) != ARES_SUCCESS) {\n        free(hostname);\n        return 0;\n    }\n\n    if (ares_set_servers_csv(channel, server_csv) != ARES_SUCCESS) {\n        ares_destroy(channel);\n        free(hostname);\n        return 0;\n    }\n\n    addr_summary_t summary = {0, 0};\n    struct ares_addrinfo_hints hints = {0};\n    hints.ai_family = AF_UNSPEC;\n    hints.ai_socktype = SOCK_STREAM;\n\n    ares_getaddrinfo(channel, hostname, NULL, &hints, addrinfo_callback, &summary);\n\n    struct timeval tv, *tvp;\n    for (int i = 0; i \u003c 5; i++) {\n        tvp = ares_timeout(channel, NULL, &tv);\n        ares_process_fd(channel, ARES_SOCKET_BAD, ARES_SOCKET_BAD);\n    }\n\n    ares_destroy(channel);\n    free(hostname);\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPe6rktSWi6st/fw0n4CglmNtV11d6jI9U+JegZhv1qzMWU5Z9nN/LjRno1cEu"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 208,
+    "candidatesTokenCount": 624,
+    "totalTokenCount": 832,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 208
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "L455aqaLHtmX28oP4LaNuA4"
+}

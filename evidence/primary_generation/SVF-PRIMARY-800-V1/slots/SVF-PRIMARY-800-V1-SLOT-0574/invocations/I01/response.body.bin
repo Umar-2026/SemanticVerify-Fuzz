@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "#include \u003cstdint.h\u003e\n#include \u003cstdlib.h\u003e\n#include \"vpx/vpx_encoder.h\"\n#include \"vpx/vp8cx.h\"\n\nint LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {\n    if (size \u003c 1024) return 0;\n\n    vpx_codec_ctx_t codec;\n    vpx_codec_enc_cfg_t cfg;\n    vpx_image_t img;\n    vpx_codec_err_t res;\n\n    vpx_codec_enc_config_default(vpx_codec_vp8_cx(), &cfg, 0);\n    cfg.g_w = 16;\n    cfg.g_h = 16;\n    cfg.g_timebase.num = 1;\n    cfg.g_timebase.den = 30;\n\n    if (vpx_codec_enc_init(&codec, vpx_codec_vp8_cx(), &cfg, 0)) {\n        return 0;\n    }\n\n    if (!vpx_img_alloc(&img, VPX_IMG_FMT_I420, cfg.g_w, cfg.g_h, 1)) {\n        vpx_codec_destroy(&codec);\n        return 0;\n    }\n\n    size_t plane_size = cfg.g_w * cfg.g_h;\n    if (size \u003e= plane_size * 3 / 2) {\n        for (int i = 0; i \u003c 3; i++) {\n            size_t p_size = (i == 0) ? plane_size : plane_size / 4;\n            memcpy(img.planes[i], data, p_size);\n            data += p_size;\n        }\n\n        vpx_codec_encode(&codec, &img, 0, 1, 0, VPX_DL_REALTIME);\n\n        const vpx_codec_cx_pkt_t *pkt;\n        vpx_codec_iter_t iter = NULL;\n        while ((pkt = vpx_codec_get_cx_data(&codec, &iter)) != NULL) {\n            (void)pkt;\n        }\n    }\n\n    vpx_img_free(&img);\n    vpx_codec_destroy(&codec);\n\n    return 0;\n}",
+            "thoughtSignature": "EjQKMgERTTIPszGEQgNdZGISPRGbSNeKzgX0ojVn4gkV8IwXDEzlfIihGIV7/PuqK8rlHumD"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 197,
+    "candidatesTokenCount": 556,
+    "totalTokenCount": 753,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 197
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-3.1-flash-lite",
+  "responseId": "HIx5arHxMpyykdUPgrWQyAg"
+}

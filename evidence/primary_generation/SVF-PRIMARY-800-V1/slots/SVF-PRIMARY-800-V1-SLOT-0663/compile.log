@@ -1,0 +1,34 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0663/driver.c:82:9: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        ares_fds(channel1, &read_fds, &write_fds);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0663/driver.c:83:9: warning: 'ares_fds' is deprecated: Use ARES_OPT_EVENT_THREAD or ARES_OPT_SOCK_STATE_CB instead [-Wdeprecated-declarations]
+        ares_fds(channel2, &read_fds, &write_fds);
+        ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:904:19: note: 'ares_fds' has been explicitly marked deprecated here
+CARES_EXTERN      CARES_DEPRECATED_FOR(
+                  ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:153:22: note: expanded from macro 'CARES_DEPRECATED_FOR'
+      __attribute__((deprecated("Use " #f " instead")))
+                     ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0663/driver.c:101:13: warning: implicit declaration of function 'nanosleep' is invalid in C99 [-Wimplicit-function-declaration]
+            nanosleep(&ts, NULL);
+            ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0663/driver.c:104:57: error: too few arguments to function call, expected 4, have 3
+        ares_process_fds(channel1, &read_fds, &write_fds);
+        ~~~~~~~~~~~~~~~~                                ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:957:28: note: 'ares_process_fds' declared here
+CARES_EXTERN ares_status_t ares_process_fds(ares_channel_t         *channel,
+                           ^
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0663/driver.c:105:57: error: too few arguments to function call, expected 4, have 3
+        ares_process_fds(channel2, &read_fds, &write_fds);
+        ~~~~~~~~~~~~~~~~                                ^
+/openbayes/home/svf-gate1c-build-qualification-v1/src/c-ares/include/ares.h:957:28: note: 'ares_process_fds' declared here
+CARES_EXTERN ares_status_t ares_process_fds(ares_channel_t         *channel,
+                           ^
+3 warnings and 2 errors generated.

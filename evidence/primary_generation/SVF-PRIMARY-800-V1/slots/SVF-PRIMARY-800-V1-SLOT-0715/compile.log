@@ -1,0 +1,4 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0715/driver.c:65:12: warning: unused variable 'dataBytes' [-Wunused-variable]
+    size_t dataBytes = numPixels * inPixelSize;
+           ^
+1 warning generated.

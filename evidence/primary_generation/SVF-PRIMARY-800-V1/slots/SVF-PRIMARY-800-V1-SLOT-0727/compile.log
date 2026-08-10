@@ -1,0 +1,7 @@
+/output/semanticverify-fuzz-research/evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0727/driver.c:15:65: error: too few arguments to function call, expected 3, have 2
+    cmsUInt32Number intentCount = cmsGetSupportedIntents(0, NULL);
+                                  ~~~~~~~~~~~~~~~~~~~~~~        ^
+/openbayes/home/svf-gate1c-build-qualification-v3/src/lcms/include/lcms2.h:1740:35: note: 'cmsGetSupportedIntents' declared here
+CMSAPI cmsUInt32Number  CMSEXPORT cmsGetSupportedIntents(cmsUInt32Number nMax, cmsUInt32Number* Codes, char** Descriptions);
+                                  ^
+1 error generated.
