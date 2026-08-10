@@ -1,0 +1,42 @@
+{
+  "authorization": {
+    "analyzer_implementation": false,
+    "build_sampling_frame": true,
+    "deterministic_draw_140": true,
+    "human_driver_source_inspection": false,
+    "repair_implementation": false
+  },
+  "construction_head": "b4ea211850ea5690587d56bbd291a250e8e609ad",
+  "construction_tree": "bd55c69739d6f49eaa06e24bb15cdc273fea6d64",
+  "created_at_utc": "2026-08-10T09:39:02+00:00",
+  "decision_0015": {
+    "path": "documentation/decisions/0015-sampling-frame-identifier-and-build-log-mapping.md",
+    "sha256": "bfa2ed1b4de49f9ed765397b967319bd58c6a029dfa6a0ce13add8af018f9c3e",
+    "status": "Accepted"
+  },
+  "eligible_compiled_records": 487,
+  "freeze_package": {
+    "entry_count": 2,
+    "path": "evidence/annotation_preparation/identifier_mapping_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "4bc5c59ad088fae7ba4bb38162aea554cc531d2b4357f55773d81f03a454a760"
+  },
+  "mapping": {
+    "attempt_id": "logical_slot_id",
+    "build_log_sha256": "complete_log_sha256",
+    "driver_id": "logical_slot_id",
+    "driver_sha256": "driver_source_sha256"
+  },
+  "mapping_contract": {
+    "path": "config/annotation/sampling_frame_identifier_mapping.v1.json",
+    "sha256": "322b3a8b7dbc848a37989b8fd764fd9de691585cd389dccc6b3af9c402e8b16b"
+  },
+  "next_boundary": "BUILD_VALIDATE_FREEZE_487_FRAME_AND_DETERMINISTIC_140_DRAW",
+  "record_id": "SVF-SAMPLING-FRAME-IDENTIFIER-MAPPING-FREEZE-V1",
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_SAMPLE_DRAW",
+  "validation": {
+    "build_log_hashes_byte_verified": 487,
+    "mapped_records_schema_valid": 487,
+    "sample_drawn": false
+  }
+}

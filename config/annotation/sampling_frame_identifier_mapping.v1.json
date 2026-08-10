@@ -1,0 +1,74 @@
+{
+  "authority": {
+    "completed_corpus_freeze_manifest_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/freeze/completed-800/completed_primary_800_freeze_manifest.v1.json",
+    "completed_corpus_freeze_manifest_sha256": "ba34ed8b46c5d71d42803214f44ff4741f216dc77f56f6deff5c7e73ea782267",
+    "construction_head": "b4ea211850ea5690587d56bbd291a250e8e609ad",
+    "decision_0014_path": "documentation/decisions/0014-blind-annotation-packet-contract-and-role-guard.md",
+    "decision_0014_sha256": "fd3ca81d79ae01d54fb2074c19374dc9d4a7f94d42c4e531730e31ffd3d6c3f5",
+    "gold_sampling_protocol_path": "config/gold_sampling_annotation_protocol.json",
+    "gold_sampling_protocol_sha256": "38a1f721320733f86bc633172a9848085e659e1f41c35ee2ffbb8fc86a77ca63",
+    "packet_contract_path": "config/annotation/blind_annotation_packet_contract.v1.json",
+    "packet_contract_sha256": "8a628c002a92fe7a99c609db67a815a020c8b1a05fc304ea51680c455ca91bdc",
+    "sampling_frame_schema_path": "config/schemas/compilable_sampling_frame.schema.json",
+    "sampling_frame_schema_sha256": "59a2fc3d34f616b11ef8b94277b3b80283d551d2bfdee2fc10320f341ea42083"
+  },
+  "authorization_after_commit": {
+    "build_487_record_sampling_frame": true,
+    "human_driver_source_inspection": false,
+    "perform_frozen_deterministic_140_driver_draw": true,
+    "validate_frame_against_frozen_schema": true
+  },
+  "contract_id": "SVF-COMPILABLE-SAMPLING-FRAME-IDENTIFIER-MAPPING-V1",
+  "eligibility_scope": {
+    "compilation_status": "COMPILED",
+    "eligible_record_count": 487
+  },
+  "mapping": {
+    "attempt_id": {
+      "source_field": "logical_slot_id",
+      "transformation": "IDENTITY"
+    },
+    "build_log_sha256": {
+      "byte_integrity_verified_for_all_eligible_records": true,
+      "source_field": "complete_log_sha256",
+      "transformation": "IDENTITY"
+    },
+    "driver_id": {
+      "rationale": "one logical primary generation attempt denotes one candidate generated driver",
+      "source_field": "logical_slot_id",
+      "transformation": "IDENTITY"
+    },
+    "driver_sha256": {
+      "source_field": "driver_source_sha256",
+      "transformation": "IDENTITY"
+    }
+  },
+  "next_boundary": "BUILD_VALIDATE_FREEZE_487_FRAME_AND_DETERMINISTIC_140_DRAW",
+  "safety": {
+    "analyzer_implementation": false,
+    "compiler_log_bytes_hashed_mechanically": true,
+    "compiler_log_text_inspected": false,
+    "driver_source_bytes_read": false,
+    "driver_source_content_inspected": false,
+    "generation_evidence_modified": false,
+    "raw_model_response_content_inspected": false,
+    "repair_implementation": false
+  },
+  "sampling_effect": {
+    "driver_id_under_this_mapping": "logical_slot_id",
+    "master_seed": 2026080603,
+    "ranking_material": "UTF-8 string '2026080603|<driver_id>'",
+    "sample_draw_performed_by_this_contract": false
+  },
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_SAMPLE_DRAW",
+  "validation": {
+    "complete_log_byte_hash_verified": 487,
+    "complete_log_file_present": 487,
+    "complete_log_sha256_present_and_valid": 487,
+    "driver_source_sha256_present_and_valid": 487,
+    "logical_slot_id_unique": true,
+    "schema_valid_mapped_records": 487,
+    "unique_driver_source_sha256": 487
+  }
+}
