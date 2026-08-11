@@ -1,0 +1,66 @@
+{
+  "author": "Spec-Author-1",
+  "checkpoint_package": {
+    "entry_count": 2,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v1/author_checkpoint.v1.SHA256SUMS",
+    "sha256": "1db3dd2f36b8378cc4a8008087954544990c1b675f63eabafa6253857b680021"
+  },
+  "construction_head": "5288fbd4ea7c458fb7f1524ff01e08f30b009c45",
+  "construction_tree": "fb4a5ff69793de9be6d53f527b1d90b6d4d4694d",
+  "corrections_before_checkpoint": [
+    {
+      "change": "whitespace-sensitive deflateEnd literal replaced by semantic regex",
+      "protocol_semantics_changed": false,
+      "type": "source_assertion_implementation"
+    },
+    {
+      "change": "required pinned library_revision added to each of 13 obligation objects",
+      "protocol_semantics_changed": false,
+      "type": "schema_conformance"
+    }
+  ],
+  "created_at_utc": "2026-08-11T07:24:54+00:00",
+  "library": "zlib",
+  "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+  "next_boundary": "INDEPENDENT_HUMAN_SPEC_REVIEW_OF_EXACT_ZLIB_AUTHOR_CHECKPOINT",
+  "record_id": "SVF-ZLIB-SPECIFICATION-AUTHOR-CHECKPOINT-V1",
+  "review_packet": {
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v1/zlib_spec_reviewer_packet.v1.md",
+    "sha256": "f7e62f25359d80d46e88a80dbdc5f135341212e5dbad6d9022c2f5574b21dc46"
+  },
+  "review_state": {
+    "final_specification_created": false,
+    "final_specification_frozen": false,
+    "human_review_completed": false,
+    "human_review_started": false,
+    "reviewer_signoff_present": false
+  },
+  "reviewer": "Spec-Reviewer-1",
+  "safety_state": {
+    "analyzer_implementation_started": false,
+    "baseline_execution_started": false,
+    "generated_driver_source_inspected": false,
+    "gold_annotation_started": false,
+    "repair_implementation_started": false,
+    "selected_sample_membership_used_as_evidence": false
+  },
+  "schema_projection": {
+    "in_memory_only": true,
+    "obligation_library_revision_present": true,
+    "projection_is_frozen_specification": false,
+    "projection_written": false,
+    "valid": true
+  },
+  "schema_version": 1,
+  "status": "AUTHOR_CHECKPOINT_NOT_REVIEWED_NOT_FROZEN",
+  "working_draft": {
+    "core_obligation_count": 13,
+    "event_count": 11,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v1/zlib_source_only_working_fsm_draft.v1.json",
+    "provenance_record_count": 6,
+    "review_candidate_count": 1,
+    "sha256": "cb2738329164537bba86282668bfabf51599fac1292309f150a68a32f2571573",
+    "state_count": 8,
+    "transition_count": 16
+  }
+}
