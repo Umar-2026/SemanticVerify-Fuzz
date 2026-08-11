@@ -1,0 +1,42 @@
+{
+  "canonicalization_contract": {
+    "path": "config/protocol_content_hash_canonicalization.v1.json",
+    "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f"
+  },
+  "construction_head": "5ff085e3292a9a0bd2630589b86517594296e606",
+  "construction_tree": "21cf6ee645e6f5a0a58e8dff9e920079f9d86dbd",
+  "created_at_utc": "2026-08-11T06:41:27+00:00",
+  "decision": {
+    "path": "documentation/decisions/0018-protocol-content-hash-canonicalization.md",
+    "sha256": "1ee0c8c297b7e4053687df24c0a75b5e4c20868bf8b2c5f56f84f1d7b4a00188"
+  },
+  "executable_helper": {
+    "path": "scripts/protocol_content_hash_v1.py",
+    "self_test": "PASS",
+    "sha256": "4c906f41a3f42dfad619f62c59242ca3e9b84cff9b5731785790a07ebc10df7a"
+  },
+  "freeze_package": {
+    "entry_count": 4,
+    "path": "evidence/annotation_preparation/protocol_content_hash_semantics_v1/freeze_package.v1.SHA256SUMS",
+    "sha256": "cbbef31d32b438e69576e2b04b7fc8e06ee9edd10304addc34a87a2e8b7464cf"
+  },
+  "next_boundary": "AUTHOR_ZLIB_SOURCE_ONLY_WORKING_FSM_DRAFT_WITH_EXPLICIT_EVIDENCE_BINDINGS",
+  "qualification": {
+    "path": "evidence/annotation_preparation/protocol_content_hash_semantics_v1/qualification.v1.json",
+    "sha256": "cb75060992e98e72c918cc427d79d65075b24889c1871465f06ddb611f988186",
+    "status": "PASS"
+  },
+  "record_id": "SVF-PROTOCOL-CONTENT-HASH-SEMANTICS-FREEZE-V1",
+  "schema_version": 1,
+  "semantic_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "hash_semantics_resolved": true,
+    "library_specification_authored": false,
+    "library_specification_frozen": false,
+    "repair_implementation_authorized": false
+  },
+  "status": "FROZEN_BEFORE_FIRST_LIBRARY_SPECIFICATION_DRAFT"
+}

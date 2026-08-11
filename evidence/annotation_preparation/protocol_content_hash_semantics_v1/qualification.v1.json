@@ -1,0 +1,48 @@
+{
+  "contract_path": "config/protocol_content_hash_canonicalization.v1.json",
+  "contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+  "generated_corpus_used": false,
+  "helper_path": "scripts/protocol_content_hash_v1.py",
+  "helper_sha256": "4c906f41a3f42dfad619f62c59242ca3e9b84cff9b5731785790a07ebc10df7a",
+  "network_used": false,
+  "performed_at_utc": "2026-08-11T06:41:27+00:00",
+  "record_id": "SVF-PROTOCOL-CONTENT-HASH-QUALIFICATION-V1",
+  "schema_version": 1,
+  "status": "PASS",
+  "tests": {
+    "canonical_json_vector": {
+      "canonical_utf8_hex": "7b2261223a22ceb1222c227a223a397d",
+      "input": {
+        "a": "α",
+        "z": 9
+      },
+      "sha256": "8f264c8655e266b9a626a11db9a6aea9a59344d59de099a43fc40f31c9ee2766"
+    },
+    "key_order_invariance": true,
+    "obligation_self_field_exclusion": {
+      "computed_sha256": "914b83882765fe27743d5ce0a71ed6928c20cd89a0a90c0e51b3f6d5280765d5",
+      "input": {
+        "content_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+        "resource_kind": "z_stream",
+        "rule_id": "ZLIB-DEMO-R1"
+      }
+    },
+    "own_hash_field_value_does_not_change_object_hash": true,
+    "semantic_mutation_changes_hash": true,
+    "specification_self_field_exclusion": {
+      "computed_sha256": "ff404ad838934ab6c252e5b85fa2ffbd874055601fc68796da71e477fcfccd14",
+      "input": {
+        "content_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "obligations": [
+          {
+            "content_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+            "rule_id": "R1"
+          }
+        ],
+        "schema_version": "1.0.0",
+        "specification_id": "demo"
+      },
+      "nested_obligation_hash_participates": true
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "canonical_json": {
+    "allow_nan": false,
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "insignificant_whitespace": false,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "trailing_lf": false
+  },
+  "computation_order": [
+    "freeze provenance source artifact hashes",
+    "finalize obligation objects except obligation content_sha256",
+    "compute each obligation content_sha256",
+    "finalize complete specification except top-level content_sha256",
+    "compute top-level specification content_sha256",
+    "verify all hashes before specification freeze"
+  ],
+  "contract_id": "SVF-PROTOCOL-CONTENT-HASH-CANONICALIZATION-V1",
+  "created_at_utc": "2026-08-11T06:41:27+00:00",
+  "dependencies": {
+    "protocol_obligation_contract_path": "config/protocol_obligation_contract.json",
+    "protocol_obligation_contract_sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf",
+    "protocol_specification_schema_path": "config/schemas/protocol_specification.schema.json",
+    "protocol_specification_schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "specification_authoring_start_guard_path": "config/annotation/specification_personnel_start_guard.v1.json",
+    "specification_authoring_start_guard_sha256": "a909bf3e43c1536a76444a37e7434b25241a8a12e0bea18d5612fb6dc42a47b8"
+  },
+  "draft_boundary": {
+    "final_hashes_computed_only_after_required_review_fields_are_fixed": true,
+    "schema_conformance_alone_does_not_imply_freeze": true,
+    "working_draft_is_not_frozen_specification": true
+  },
+  "next_boundary": "AUTHOR_ZLIB_SOURCE_ONLY_WORKING_FSM_DRAFT_WITH_EXPLICIT_EVIDENCE_BINDINGS",
+  "obligation_content_sha256": {
+    "algorithm": "SHA-256",
+    "input": "canonical JSON bytes of the complete obligation object after omitting only its own content_sha256 field",
+    "nested_or_other_fields_retained": true,
+    "own_content_sha256_field": "OMITTED",
+    "replacement_value_used": false
+  },
+  "prohibited_effects": {
+    "author_library_protocol_rules": false,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "inspect_generated_driver_source": false,
+    "release_annotation_packets": false,
+    "run_baselines": false,
+    "run_controlled_llm_review": false,
+    "start_gold_annotation": false
+  },
+  "provenance_content_sha256": {
+    "algorithm": "SHA-256",
+    "excerpt_only_hash": false,
+    "input": "exact bytes of the cited approved pinned source artifact",
+    "json_record_hash": false,
+    "whole_artifact_bytes": true
+  },
+  "reason": "protocol content_sha256 fields were required but their self-field exclusion semantics were not previously specified",
+  "schema_version": 1,
+  "specification_content_sha256": {
+    "algorithm": "SHA-256",
+    "input": "canonical JSON bytes of the complete specification object after omitting only the top-level content_sha256 field",
+    "nested_obligation_content_sha256_values_retained": true,
+    "provenance_content_sha256_values_retained": true,
+    "replacement_value_used": false,
+    "top_level_content_sha256_field": "OMITTED"
+  },
+  "status": "FROZEN_BEFORE_FIRST_LIBRARY_SPECIFICATION_DRAFT"
+}
