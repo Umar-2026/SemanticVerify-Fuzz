@@ -1,0 +1,53 @@
+{
+  "analyzer_or_baseline_or_repair_execution_authorized_by_this_record": false,
+  "candidate_decision": {
+    "candidate_id": "ZLIB-CAND-R14",
+    "decision": "ACCEPT"
+  },
+  "current_checkpoint_approved_for_finalization": false,
+  "current_checkpoint_must_remain_immutable": true,
+  "current_checkpoint_rejected": false,
+  "generated_driver_evidence_used_for_this_record": false,
+  "human_review_evidence": {
+    "byte_preserved": true,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_human_review_v1/completed_spec_reviewer_packet.v1.md",
+    "sha256": "1d9f3db47693f0549357347f1b6c36c5226c82ed018d1f60db35c2f89c3b6c1e"
+  },
+  "mandatory_review_decisions": {
+    "evidence_completeness": "REVISION_REQUIRED",
+    "ownership_effects": "REVISION_REQUIRED",
+    "terminal_permitted_exit_states": "PASS",
+    "transition_consistency": "REVISION_REQUIRED",
+    "unsupported_conditions_and_scope": "REVISION_REQUIRED"
+  },
+  "next_boundary": "AUTHOR_ZLIB_SOURCE_ONLY_SUCCESSOR_REVISION_V2_FROM_HUMAN_REVIEW",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-ZLIB-V1-HUMAN-SPECIFICATION-REVIEW",
+  "recorded_at_utc": "2026-08-15T16:23:44+00:00",
+  "reviewed_author_checkpoint_commit": "b2164d375cfc4dbc2e58702c8a57c311b93eb320",
+  "reviewed_draft": {
+    "immutable": true,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v1/zlib_source_only_working_fsm_draft.v1.json",
+    "sha256": "cb2738329164537bba86282668bfabf51599fac1292309f150a68a32f2571573"
+  },
+  "reviewer": {
+    "name": "Abdul Raheem Shahzad",
+    "recorded_confirmation": "ARS",
+    "review_date_as_supplied": "15 / August / 2026",
+    "role": "Spec-Reviewer-1"
+  },
+  "schema_version": 1,
+  "successor_revision_required": true,
+  "successor_revision_requirements": [
+    "Correct EV-ZLIB-TEST-005 rationale: example.c does not demonstrate reset workflows.",
+    "Resolve or explicitly scope repeated inflate behavior after Z_STREAM_END using sufficient approved evidence.",
+    "Include D1-D8 defect-category definitions in reviewer-visible specification material.",
+    "Define whether DEFLATE_READY/DEFLATE_ACTIVE represent documented call history or exact implementation status; do not describe post-error dictionary use as documented-valid.",
+    "Define lifecycle semantics for INIT_FAILED and RELEASED, including whether reinitialization starts a fresh lifecycle.",
+    "Remove T15 from source-oriented ZLIB-R02 or model source validity with a separate ownership-neutral source-side relation.",
+    "Define open-world versus closed-world transition-table semantics and the meaning of an absent transition.",
+    "Explicitly handle or exclude additional relevant stateful zlib APIs such as deflateCopy, deflateParams, deflateResetKeep, deflateSetHeader, inflateSetDictionary, inflateReset2, inflatePrime, inflateSync, and inflateGetHeader.",
+    "Explicitly include or exclude gzip-wrapper stream mode and state whether claims depend on a pinned build configuration.",
+    "Promote ZLIB-CAND-R14 as an accepted ownership rule, with appropriate evidence and explicitly defined resource scope."
+  ]
+}

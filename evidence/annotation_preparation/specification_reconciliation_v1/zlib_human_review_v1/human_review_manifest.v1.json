@@ -1,0 +1,19 @@
+{
+  "construction_head": "b2164d375cfc4dbc2e58702c8a57c311b93eb320",
+  "construction_tree": "961f0d954db30a63b4e884c8af26edb3e1c939b9",
+  "created_at_utc": "2026-08-15T16:23:44+00:00",
+  "final_zlib_specification_frozen": false,
+  "human_review_completed": true,
+  "human_review_package_sha256": "d25fe4f1003eb48dcaa3817ee3d57043899bca4c7fabe36da9c5e480adba4316",
+  "human_review_record_sha256": "38db57f9a038ba1d052ccb8b33b703c0f85600b4323b818b0a2d611293dc9822",
+  "human_review_sha256": "1d9f3db47693f0549357347f1b6c36c5226c82ed018d1f60db35c2f89c3b6c1e",
+  "next_boundary": "AUTHOR_ZLIB_SOURCE_ONLY_SUCCESSOR_REVISION_V2_FROM_HUMAN_REVIEW",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-ZLIB-V1-HUMAN-REVIEW-FREEZE",
+  "reviewed_draft_sha256": "cb2738329164537bba86282668bfabf51599fac1292309f150a68a32f2571573",
+  "schema_version": 1,
+  "status": "HUMAN_REVIEW_RECORDED_REVISION_REQUIRED",
+  "successor_v2_required": true,
+  "v1_checkpoint_immutable": true,
+  "zlib_cand_r14": "ACCEPT"
+}
