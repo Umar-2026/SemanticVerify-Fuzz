@@ -1,0 +1,33 @@
+{
+  "binding_proof_path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_binding_review_v4/v3_repository_binding_proof.v1.json",
+  "binding_proof_sha256": "7f93a493e428ebd87d05cf0f854820582d2fcc5c8052141b99b420249982ee41",
+  "canonical_zlib_specification_frozen": false,
+  "checkpoint_sums_sha256": "37bfa9e4050d0ef9ff5a474975abf905948bd76300b91333a0eee419bb621ea0",
+  "construction_parent_commit": "92ed53c571c0141b55322bf88fa0481af32ee4ae",
+  "construction_parent_tree": "73ee59ba4f1db54421239112bfe26b44c1332e68",
+  "created_at_utc": "2026-08-16T14:07:06+00:00",
+  "human_binding_review_completed": false,
+  "next_boundary": "INDEPENDENT_HUMAN_REVIEW_OF_V4_BINDING_ONLY_CHECKPOINT",
+  "offline_verifier_path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_binding_review_v4/verify_v3_repository_binding.py",
+  "offline_verifier_sha256": "da74b963d019d9adbd7e90be8d1ad14357abb7946c64325113babd823f790e6b",
+  "only_remaining_review_issue": "INDEPENDENT_REPOSITORY_TARGET_BINDING",
+  "protocol_semantic_change": false,
+  "protocol_specification_v4_created": false,
+  "raw_blob_object_count": 1,
+  "raw_commit_object_count": 1,
+  "raw_git_object_count": 7,
+  "raw_tree_object_count": 5,
+  "record_id": "SVF-ZLIB-V4-BINDING-ONLY-REVIEW-CHECKPOINT",
+  "record_schema_version": 1,
+  "reviewer_packet_path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_binding_review_v4/zlib_binding_reviewer_packet.v4.md",
+  "reviewer_packet_sha256": "e2cd6abdd30a0c0525ee09bba5e175ab3521aa020d45dc0adfa651cb6938618a",
+  "status": "BINDING_ONLY_CHECKPOINT_NOT_HUMAN_REVIEWED",
+  "technical_review_target": {
+    "author_checkpoint_commit": "b06e52bf66b0d93efd34a27fc5515ca5f70d6e5e",
+    "git_blob_oid": "4898445e63de1b4b2fdbe7ca072a1d05258ab0b0",
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v3/zlib_source_only_successor_working_fsm_draft.v3.json",
+    "sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+    "specification_id": "zlib.z-stream.lifecycle.v3"
+  },
+  "v3_modified": false
+}

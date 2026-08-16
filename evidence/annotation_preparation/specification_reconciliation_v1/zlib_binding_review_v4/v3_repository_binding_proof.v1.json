@@ -1,0 +1,138 @@
+{
+  "classification": "BINDING_ONLY_REVIEW_EVIDENCE",
+  "content_exposure_boundary": {
+    "full_git_bundle_included": false,
+    "full_repository_export_included": false,
+    "included_blob_objects": 1,
+    "included_commit_objects": 1,
+    "included_tree_objects": 5,
+    "only_included_blob": "exact V3 specification target",
+    "unrelated_repository_blob_contents_included": false
+  },
+  "created_at_utc": "2026-08-16T14:07:06+00:00",
+  "prior_human_review": {
+    "completed_v3_review_sha256": "f4e8e2c74584e6adf7bfb5225f4463631ddc6bdc20173f2528127d3def355606",
+    "only_remaining_issue": "INDEPENDENT_REPOSITORY_TARGET_BINDING",
+    "overall_decision": "REVISION_REQUIRED",
+    "technical_specification_change_required": false,
+    "v3_review_record_sha256": "1848093b51f037e3b48ae3290fcab44e8eccbea702fac1c16f89c67bc6339ba7"
+  },
+  "proof_claim": "The raw commit object self-hashes to the V3 author commit; the commit names the supplied root tree; the supplied tree objects establish the exact repository path to the supplied V3 blob; the blob self-hashes to its Git object ID; and the blob bytes have SHA-256 8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e. The package-local V3 JSON must be byte-identical to that blob.",
+  "protocol_semantic_change": false,
+  "protocol_specification_version_created": false,
+  "raw_git_objects": [
+    {
+      "git_oid": "b06e52bf66b0d93efd34a27fc5515ca5f70d6e5e",
+      "object_type": "commit",
+      "package_path": "objects/01_commit_b06e52bf66b0d93efd34a27fc5515ca5f70d6e5e.raw",
+      "raw_byte_count": 294,
+      "raw_sha256": "4afd05f1ef23f6d90e4d1c9d179b02f1b271bfd1ee57a80a27e0e3434518ecb3",
+      "sequence": 1
+    },
+    {
+      "git_oid": "616d5f83f55b08687186580d8f77c5a75d4b6f7b",
+      "object_type": "tree",
+      "package_path": "objects/02_tree_616d5f83f55b08687186580d8f77c5a75d4b6f7b.raw",
+      "raw_byte_count": 286,
+      "raw_sha256": "175dd35134871437abdf190dd992d628bc434a911182a4d89978e72939de29e7",
+      "sequence": 2
+    },
+    {
+      "git_oid": "d1cd86376d7f585d89044027f84f4126eca1f6cf",
+      "object_type": "tree",
+      "package_path": "objects/03_tree_d1cd86376d7f585d89044027f84f4126eca1f6cf.raw",
+      "raw_byte_count": 171,
+      "raw_sha256": "90df1435be4258b9a154c7802f6b02c87126259234f951092f3e76e8162f21db",
+      "sequence": 3
+    },
+    {
+      "git_oid": "9e002955c1c03f5db0afdd046bd484d547315f7f",
+      "object_type": "tree",
+      "package_path": "objects/04_tree_9e002955c1c03f5db0afdd046bd484d547315f7f.raw",
+      "raw_byte_count": 367,
+      "raw_sha256": "695b0675f94e6d73e88397f9ddb1ac410ad6bb99eec4cd1143e7ab7a51c4fdd3",
+      "sequence": 4
+    },
+    {
+      "git_oid": "6f9e3a7b58fdd47dc631ade25f59ba2e9e710ea1",
+      "object_type": "tree",
+      "package_path": "objects/05_tree_6f9e3a7b58fdd47dc631ade25f59ba2e9e710ea1.raw",
+      "raw_byte_count": 345,
+      "raw_sha256": "d8c681d3534340d2daec4c8fd81bf9dcf37a7e40c74cd7b08f10f161815b7c7c",
+      "sequence": 5
+    },
+    {
+      "git_oid": "37c522e8b06526ab40c931b0de4ec88ecb8bd0c8",
+      "object_type": "tree",
+      "package_path": "objects/06_tree_37c522e8b06526ab40c931b0de4ec88ecb8bd0c8.raw",
+      "raw_byte_count": 327,
+      "raw_sha256": "e5a39eb46f79e9b66ebbb31237523d61c6450c9265fc05842a56bcb65fbc21c5",
+      "sequence": 6
+    },
+    {
+      "git_oid": "4898445e63de1b4b2fdbe7ca072a1d05258ab0b0",
+      "object_type": "blob",
+      "package_path": "objects/07_blob_4898445e63de1b4b2fdbe7ca072a1d05258ab0b0.raw",
+      "raw_byte_count": 37735,
+      "raw_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+      "sequence": 7
+    }
+  ],
+  "record_id": "SVF-ZLIB-V3-REPOSITORY-BINDING-PROOF-V1",
+  "record_schema_version": 1,
+  "repository_binding": {
+    "git_object_format": "sha1",
+    "merkle_path": [
+      {
+        "depth": 0,
+        "target_mode": "40000",
+        "target_name": "evidence",
+        "target_oid": "d1cd86376d7f585d89044027f84f4126eca1f6cf",
+        "tree_entry_count": 8,
+        "tree_oid": "616d5f83f55b08687186580d8f77c5a75d4b6f7b"
+      },
+      {
+        "depth": 1,
+        "target_mode": "40000",
+        "target_name": "annotation_preparation",
+        "target_oid": "9e002955c1c03f5db0afdd046bd484d547315f7f",
+        "tree_entry_count": 4,
+        "tree_oid": "d1cd86376d7f585d89044027f84f4126eca1f6cf"
+      },
+      {
+        "depth": 2,
+        "target_mode": "40000",
+        "target_name": "specification_reconciliation_v1",
+        "target_oid": "6f9e3a7b58fdd47dc631ade25f59ba2e9e710ea1",
+        "tree_entry_count": 7,
+        "tree_oid": "9e002955c1c03f5db0afdd046bd484d547315f7f"
+      },
+      {
+        "depth": 3,
+        "target_mode": "40000",
+        "target_name": "zlib_working_draft_v3",
+        "target_oid": "37c522e8b06526ab40c931b0de4ec88ecb8bd0c8",
+        "tree_entry_count": 7,
+        "tree_oid": "6f9e3a7b58fdd47dc631ade25f59ba2e9e710ea1"
+      },
+      {
+        "depth": 4,
+        "target_mode": "100644",
+        "target_name": "zlib_source_only_successor_working_fsm_draft.v3.json",
+        "target_oid": "4898445e63de1b4b2fdbe7ca072a1d05258ab0b0",
+        "tree_entry_count": 5,
+        "tree_oid": "37c522e8b06526ab40c931b0de4ec88ecb8bd0c8"
+      }
+    ],
+    "v3_author_commit": "b06e52bf66b0d93efd34a27fc5515ca5f70d6e5e",
+    "v3_author_root_tree": "616d5f83f55b08687186580d8f77c5a75d4b6f7b",
+    "v3_blob_content_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+    "v3_blob_oid": "4898445e63de1b4b2fdbe7ca072a1d05258ab0b0"
+  },
+  "technical_review_target": {
+    "expected_content_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+    "package_local_target": "03_zlib_source_only_successor_working_fsm_draft.v3.json",
+    "repository_path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v3/zlib_source_only_successor_working_fsm_draft.v3.json",
+    "specification_id": "zlib.z-stream.lifecycle.v3"
+  }
+}
