@@ -1,0 +1,14 @@
+{
+  "canonical_zlib_specification_frozen": false,
+  "completed_review_sha256": "f4e8e2c74584e6adf7bfb5225f4463631ddc6bdc20173f2528127d3def355606",
+  "human_review_package_sha256": "8bad62af2bf3340ff95a602809cdc9c353d5c2007e9debc28374b20eb650c854",
+  "human_review_record_sha256": "1848093b51f037e3b48ae3290fcab44e8eccbea702fac1c16f89c67bc6339ba7",
+  "next_boundary": "SOURCE_ONLY_V4_REPOSITORY_BINDING_CLOSURE_AUDIT",
+  "only_remaining_issue": "INDEPENDENT_REPOSITORY_TARGET_BINDING",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-ZLIB-V3-HUMAN-REVIEW-MANIFEST",
+  "status": "HUMAN_REVIEW_RECORDED_REVISION_REQUIRED",
+  "v3_checkpoint_immutable": true,
+  "v4_protocol_semantic_change_required": false,
+  "v4_successor_required": true
+}
