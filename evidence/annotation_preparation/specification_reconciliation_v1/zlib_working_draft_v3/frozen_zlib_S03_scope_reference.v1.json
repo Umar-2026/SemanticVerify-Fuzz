@@ -1,0 +1,64 @@
+{
+  "classification": "GOVERNANCE_SCOPE_EVIDENCE_NOT_PROTOCOL_OBLIGATION_PROVENANCE",
+  "created_at_utc": "2026-08-16T12:26:42+00:00",
+  "record_id": "SVF-ZLIB-S03-FROZEN-SCOPE-REFERENCE-V1",
+  "record_schema_version": 1,
+  "scope_interpretation": {
+    "frozen_task": "Use input bytes to select a supported zlib, gzip, or raw decoding mode and attempt streaming decompression.",
+    "generation_scope_includes": [
+      "zlib decoding mode",
+      "gzip decoding mode",
+      "raw decoding mode"
+    ],
+    "protocol_specification_use": "Review-scope governance evidence only. It is not added to protocol obligation provenance.",
+    "required_feature_symbols": [
+      "z_stream",
+      "inflate"
+    ]
+  },
+  "source_manifest": {
+    "gate1_closure_commit": "15ff63bfc82f023f784266bacf04f43abbe82818",
+    "gate1_freeze_manifest_entry": {
+      "assembled_80_request_bundle_sha256": "5dc64268d13a7770937a52763f509894888e97dc1d1d737d1e97c91390b3f976",
+      "binding_count": 80,
+      "frozen_sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db",
+      "model_visible_bundle_sha256": "14b6d91841b63fed6776f312bfec5c5c4b523661bee4f0c00da79c563fdd8df2",
+      "path": "config/generation/scenario_bindings.80.v10.json",
+      "source_candidate_sha256": "7a478dcb74a20d16566b97f98c347620eba13c18d1a6400e3748b4232427f9c8"
+    },
+    "gate1_freeze_package_binding": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db  config/generation/scenario_bindings.80.v10.json",
+    "path": "config/generation/scenario_bindings.80.v10.json",
+    "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+  },
+  "zlib_s03": {
+    "canonical_object_sha256": "4027fd91f65a64f47cf5c67ab824b77fd05333ca2ad4d7cac2c33d61cf34efd1",
+    "canonicalization": "UTF-8 JSON; ensure_ascii=false; sort_keys=true; separators=(',', ':'); no trailing LF",
+    "object": {
+      "binding_status": "DRAFT_REVIEW_REQUIRED",
+      "hidden_research_metadata": {
+        "cleanup_candidates": [
+          "inflateEnd"
+        ],
+        "notes": "",
+        "operation_candidates": [
+          "inflate"
+        ],
+        "resource_family": "z_stream/inflate state",
+        "runtime_dependency": "memory-only",
+        "setup_candidates": [
+          "inflateInit2"
+        ]
+      },
+      "library": "zlib",
+      "model_visible": {
+        "required_feature_symbols": [
+          "z_stream",
+          "inflate"
+        ],
+        "task": "Use input bytes to select a supported zlib, gzip, or raw decoding mode and attempt streaming decompression."
+      },
+      "scenario_id": "S03",
+      "task_slug": "mode_selected_decompression"
+    }
+  }
+}
