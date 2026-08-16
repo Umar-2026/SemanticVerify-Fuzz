@@ -1,0 +1,45 @@
+{
+  "analyzer_implementation_authorized": false,
+  "baseline_execution_authorized": false,
+  "canonical_libpcap_specification_created": false,
+  "decision_0020": {
+    "path": "documentation/decisions/0020-libpcap-v1-source-only-authoring-scope-freeze.md",
+    "sha256": "f2bed5a076cfc434bb2fbfb4e0fdb7ad7fff77bbeea0f34c57b1c96a37a69a6e"
+  },
+  "frozen_at_utc": "2026-08-16T15:38:02+00:00",
+  "generated_driver_source_read": false,
+  "gold_annotation_authorized": false,
+  "in_scope_function_count": 13,
+  "in_scope_functions": [
+    "pcap_create",
+    "pcap_set_snaplen",
+    "pcap_set_promisc",
+    "pcap_set_timeout",
+    "pcap_set_immediate_mode",
+    "pcap_set_buffer_size",
+    "pcap_activate",
+    "pcap_datalink",
+    "pcap_next_ex",
+    "pcap_compile",
+    "pcap_setfilter",
+    "pcap_freecode",
+    "pcap_close"
+  ],
+  "libpcap_v1_working_draft_created": false,
+  "library": "libpcap",
+  "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+  "next_boundary": "AUTHOR_LIBPCAP_SOURCE_ONLY_WORKING_DRAFT_V1",
+  "pcap_datalink_primary_evidence": "pcap_datalink.3pcap.in",
+  "record_id": "SVF-LIBPCAP-V1-AUTHORING-SCOPE-FREEZE",
+  "repair_implementation_authorized": false,
+  "scenario_manifest": {
+    "path": "config/generation/scenario_bindings.80.v10.json",
+    "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+  },
+  "scope_contract": {
+    "path": "config/annotation/libpcap_v1_authoring_scope.v1.json",
+    "sha256": "52ed3d09c6031c7d256e59246aa44ff741d358a784f32516a9f503abe5110d65"
+  },
+  "source_evidence_count": 17,
+  "status": "FROZEN_BEFORE_LIBPCAP_V1_WORKING_DRAFT"
+}

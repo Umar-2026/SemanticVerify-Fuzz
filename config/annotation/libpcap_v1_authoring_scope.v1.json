@@ -1,0 +1,442 @@
+{
+  "active_handle_operations": {
+    "functions": [
+      "pcap_datalink",
+      "pcap_next_ex",
+      "pcap_compile",
+      "pcap_setfilter"
+    ],
+    "required_state": "ACTIVE_OWNED"
+  },
+  "authoring_constraints": {
+    "analyzer_output_may_be_read": false,
+    "baseline_output_may_be_read": false,
+    "generated_driver_source_may_be_read": false,
+    "gold_labels_may_be_read": false,
+    "llm_review_output_may_be_read": false,
+    "repair_output_may_be_read": false,
+    "scope_change_after_driver_visibility": false,
+    "selected_sample_membership_may_be_used_as_protocol_evidence": false,
+    "working_draft_authoring_authorized_after_this_freeze": true
+  },
+  "borrowed_value_rules": {
+    "copy_required_for_use_beyond_documented_borrow_lifetime": true,
+    "next_in_scope_packet_read_invalidates_prior_borrowed_values": true,
+    "pcap_next_ex_header_caller_free_allowed": false,
+    "pcap_next_ex_packet_data_caller_free_allowed": false
+  },
+  "borrowed_values": {
+    "PCAP_NEXT_EX_HEADER": {
+      "caller_free_allowed": false,
+      "lifetime_rule_in_scope": true,
+      "ownership": "LIBRARY_OWNED_BORROWED",
+      "producer": "pcap_next_ex"
+    },
+    "PCAP_NEXT_EX_PACKET_DATA": {
+      "caller_free_allowed": false,
+      "lifetime_rule_in_scope": true,
+      "ownership": "LIBRARY_OWNED_BORROWED",
+      "producer": "pcap_next_ex"
+    }
+  },
+  "bpf_program_rules": {
+    "pcap_compile_requires_active_handle": true,
+    "pcap_compile_success_return": 0,
+    "pcap_setfilter_failure_cancels_freecode_obligation": false,
+    "pcap_setfilter_requires_active_handle": true,
+    "pcap_setfilter_requires_valid_compiled_program": true,
+    "pcap_setfilter_transfers_program_ownership": false,
+    "same_handle_identity_coupling_required": false,
+    "second_pcap_freecode_automatically_D4": false,
+    "second_pcap_freecode_rationale": "Pinned gencode.c resets bf_len and sets bf_insns to NULL, therefore repeated freecode is not classified as D4 merely by call count.",
+    "successful_compile_requires_eventual_pcap_freecode": true
+  },
+  "contract_id": "SVF-LIBPCAP-V1-SOURCE-ONLY-AUTHORING-SCOPE",
+  "defect_category_projection": {
+    "D1": [
+      "active-only operation before successful activation",
+      "pcap_compile or pcap_setfilter before successful activation"
+    ],
+    "D2": [
+      "active-only handle use after negative pcap_activate result"
+    ],
+    "D3": [
+      "use of pcap_t after pcap_close",
+      "use of bpf_program as live program after pcap_freecode",
+      "use of borrowed packet/header after documented lifetime"
+    ],
+    "D4": [
+      "double pcap_close"
+    ],
+    "D5": [
+      "missing pcap_close for an acquired handle on an exit",
+      "missing pcap_freecode after successful pcap_compile"
+    ],
+    "D6": [
+      "pre-activation setter after activation",
+      "pcap_activate on an already active handle",
+      "pcap_setfilter without a valid compiled program",
+      "other source-documented invalid ordering among in-scope calls"
+    ],
+    "D7": [
+      "freeing pcap_next_ex packet data",
+      "freeing pcap_next_ex packet header",
+      "other documented ownership misuse for an in-scope resource"
+    ],
+    "D8": [
+      "pcap_close conditioned on wrong acquisition/activation branch",
+      "pcap_freecode conditioned on wrong pcap_compile result",
+      "cleanup under wrong documented state or return condition"
+    ]
+  },
+  "explicitly_excluded_functions": [
+    "pcap_open_live",
+    "pcap_open_offline",
+    "pcap_open_offline_with_tstamp_precision",
+    "pcap_open_dead",
+    "pcap_open_dead_with_tstamp_precision",
+    "pcap_next",
+    "pcap_dispatch",
+    "pcap_loop",
+    "pcap_breakloop",
+    "pcap_snapshot",
+    "pcap_stats",
+    "pcap_setnonblock",
+    "pcap_getnonblock",
+    "pcap_set_datalink",
+    "pcap_list_datalinks",
+    "pcap_free_datalinks",
+    "pcap_set_tstamp_type",
+    "pcap_list_tstamp_types",
+    "pcap_free_tstamp_types",
+    "pcap_set_tstamp_precision",
+    "pcap_get_tstamp_precision",
+    "pcap_inject",
+    "pcap_sendpacket",
+    "pcap_findalldevs",
+    "pcap_freealldevs",
+    "pcap_lookupdev",
+    "pcap_lookupnet",
+    "pcap_dump_open",
+    "pcap_dump",
+    "pcap_dump_close"
+  ],
+  "frozen_at_utc": "2026-08-16T15:38:02+00:00",
+  "in_scope_functions": [
+    "pcap_create",
+    "pcap_set_snaplen",
+    "pcap_set_promisc",
+    "pcap_set_timeout",
+    "pcap_set_immediate_mode",
+    "pcap_set_buffer_size",
+    "pcap_activate",
+    "pcap_datalink",
+    "pcap_next_ex",
+    "pcap_compile",
+    "pcap_setfilter",
+    "pcap_freecode",
+    "pcap_close"
+  ],
+  "library": "libpcap",
+  "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+  "next_boundary": "AUTHOR_LIBPCAP_SOURCE_ONLY_WORKING_DRAFT_V1",
+  "observational_non_transition_functions": {
+    "functions": [
+      "pcap_geterr",
+      "pcap_perror"
+    ],
+    "policy": "Diagnostic use is permitted where documented but does not create a separate V1 resource transition."
+  },
+  "pcap_handle_rules": {
+    "activation_failure_retains_owned_handle_requiring_close": true,
+    "activation_warning_status_ge_0_counts_as_active": true,
+    "close_required_after_activation_failure": true,
+    "close_required_after_successful_activation": true,
+    "close_required_on_early_exit_after_successful_create": true,
+    "close_required_when_pcap_create_returns_null": false,
+    "double_pcap_close_is_in_scope": true,
+    "reactivate_active_handle_allowed": false,
+    "successful_create_requires_eventual_close": true
+  },
+  "pre_activation_configuration_family": {
+    "documented_activated_result": "PCAP_ERROR_ACTIVATED",
+    "functions": [
+      "pcap_set_snaplen",
+      "pcap_set_promisc",
+      "pcap_set_timeout",
+      "pcap_set_immediate_mode",
+      "pcap_set_buffer_size"
+    ],
+    "post_activation_invocation": "PROTOCOL_ORDERING_VIOLATION",
+    "required_state": "UNACTIVATED_OWNED"
+  },
+  "primary_resources": {
+    "BPF_PROGRAM": {
+      "c_type": "struct bpf_program",
+      "creation": {
+        "pcap_compile_failure": "NO_NEW_VALID_PROGRAM",
+        "pcap_compile_return_0": "COMPILED_OWNED"
+      },
+      "release": {
+        "function": "pcap_freecode",
+        "result_state": "FREED_OR_EMPTY",
+        "successful_compile_requires_release": true
+      },
+      "states": [
+        "NO_VALID_PROGRAM",
+        "COMPILED_OWNED",
+        "FREED_OR_EMPTY"
+      ]
+    },
+    "PCAP_HANDLE": {
+      "activation": {
+        "pcap_activate_status_ge_0": "ACTIVE_OWNED",
+        "pcap_activate_status_lt_0": "ACTIVATION_FAILED_OWNED"
+      },
+      "c_type": "pcap_t *",
+      "creation": {
+        "pcap_create_non_null": "UNACTIVATED_OWNED",
+        "pcap_create_null": "NO_HANDLE"
+      },
+      "release": {
+        "function": "pcap_close",
+        "owned_states": [
+          "UNACTIVATED_OWNED",
+          "ACTIVE_OWNED",
+          "ACTIVATION_FAILED_OWNED"
+        ],
+        "result_state": "CLOSED"
+      },
+      "states": [
+        "NO_HANDLE",
+        "UNACTIVATED_OWNED",
+        "ACTIVE_OWNED",
+        "ACTIVATION_FAILED_OWNED",
+        "CLOSED"
+      ]
+    }
+  },
+  "scenario_manifest": {
+    "cleanup_candidates_by_scenario": {
+      "S01": [
+        "pcap_close"
+      ],
+      "S02": [
+        "pcap_close"
+      ],
+      "S03": [
+        "pcap_close"
+      ],
+      "S04": [
+        "pcap_close"
+      ],
+      "S05": [
+        "pcap_close"
+      ],
+      "S06": [
+        "pcap_freecode for successfully compiled programs",
+        "pcap_close"
+      ],
+      "S07": [
+        "pcap_close on each acquired handle"
+      ],
+      "S08": [
+        "pcap_freecode for successfully compiled programs",
+        "pcap_close"
+      ],
+      "S09": [
+        "pcap_close"
+      ],
+      "S10": [
+        "pcap_freecode for successfully compiled programs",
+        "pcap_close"
+      ]
+    },
+    "explicit_model_visible_symbol_union": [
+      "pcap_activate",
+      "pcap_compile",
+      "pcap_create",
+      "pcap_datalink",
+      "pcap_next_ex",
+      "pcap_set_snaplen",
+      "pcap_set_timeout",
+      "pcap_setfilter"
+    ],
+    "path": "config/generation/scenario_bindings.80.v10.json",
+    "required_feature_symbols_by_scenario": {
+      "S01": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "S02": [
+        "pcap_create",
+        "pcap_set_snaplen",
+        "pcap_set_timeout",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "S03": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_datalink"
+      ],
+      "S04": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "S05": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_next_ex",
+        "pcap_datalink"
+      ],
+      "S06": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_compile",
+        "pcap_setfilter",
+        "pcap_next_ex"
+      ],
+      "S07": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_datalink"
+      ],
+      "S08": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_compile",
+        "pcap_setfilter",
+        "pcap_next_ex"
+      ],
+      "S09": [
+        "pcap_create",
+        "pcap_set_timeout",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "S10": [
+        "pcap_create",
+        "pcap_set_snaplen",
+        "pcap_set_timeout",
+        "pcap_activate",
+        "pcap_compile",
+        "pcap_setfilter",
+        "pcap_next_ex"
+      ]
+    },
+    "scenario_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10"
+    ],
+    "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+  },
+  "scope_interpretation_notes": {
+    "arbitrary_non_protocol_bugs_excluded": true,
+    "broader_libpcap_api_surface_not_modeled": true,
+    "buffer_size_retained_in_pre_activation_family": true,
+    "capture_property_tasks_are_anchored_to_pcap_datalink": true,
+    "immediate_mode_retained_in_pre_activation_family": true,
+    "pcap_datalink_name_conversion_pages_are_not_primary_api_evidence": true,
+    "pcap_datalink_primary_evidence_file": "pcap_datalink.3pcap.in",
+    "pcap_next_ex_is_frozen_packet_read_api": true,
+    "pcap_next_keyword_hit_was_substring_artifact": true,
+    "pcap_open_live_not_entitled_by_frozen_scenarios": true,
+    "snapshot_length_term_does_not_entitle_pcap_snapshot": true,
+    "snapshot_length_term_means_pcap_set_snaplen": true
+  },
+  "scope_selection_policy": {
+    "additional_platform_specific_or_specialized_setters_in_scope": false,
+    "bounded_generic_configuration_family": [
+      "pcap_set_snaplen",
+      "pcap_set_promisc",
+      "pcap_set_timeout",
+      "pcap_set_immediate_mode",
+      "pcap_set_buffer_size"
+    ],
+    "bounded_generic_configuration_family_frozen_before_driver_visibility": true,
+    "generic_configuration_family_rationale": "The five pinned-source-documented live-capture configuration functions are frozen as the bounded pre-activation configuration family before any generated libpcap driver source is inspected.",
+    "required_feature_symbols_in_scope_when_protocol_bearing": true
+  },
+  "source_evidence": [
+    {
+      "path": "pcap/pcap.h",
+      "sha256": "a18377a304f254e93e7d5059eec87d28c46b44cdad6fb174cff315440cae87b0"
+    },
+    {
+      "path": "pcap.c",
+      "sha256": "0cef77dc8385eefa5902df7c7abd42d8dd43ee68a72afa0c80f701e4efc202c9"
+    },
+    {
+      "path": "gencode.c",
+      "sha256": "8326daaddd56a9eab15a8c4c09666873e5e056922c2f1cc0a5918958f8953113"
+    },
+    {
+      "path": "pcap.3pcap.in",
+      "sha256": "ba3ef9b9fc1874cf0372ba757fb2494827abca69d4a23333ab758c435a7643b4"
+    },
+    {
+      "path": "pcap_create.3pcap",
+      "sha256": "b9cc4a57b5ef4ffed8647c33440eec3c2365f587d7a01d2c5971918498854c55"
+    },
+    {
+      "path": "pcap_activate.3pcap",
+      "sha256": "ca5461684af7e4107fc817c0f599249ff8ef6827d88540a9df2a9e9826049655"
+    },
+    {
+      "path": "pcap_close.3pcap",
+      "sha256": "7cbb72168caf80000b58a1d294f5ef18db075745c302bc137d38f3d7d4a088bc"
+    },
+    {
+      "path": "pcap_set_snaplen.3pcap",
+      "sha256": "4cad03c340197b1bca2554716a232945651fafe950f3522e0bea37b02f19a45c"
+    },
+    {
+      "path": "pcap_set_promisc.3pcap",
+      "sha256": "1282eecdf67079ddad1ed23bb7dc5a29bbfcc880f364af53b722daef22ca6287"
+    },
+    {
+      "path": "pcap_set_timeout.3pcap",
+      "sha256": "ffbf8ed8e594dbff786ff5727e77c914a24ca04dc3b6ff1cb611e796e91c04cf"
+    },
+    {
+      "path": "pcap_set_immediate_mode.3pcap.in",
+      "sha256": "14509e13caa40e35dcf37cf77bdbeb3c5c3b62cf0629a01adccc8b8d5e319111"
+    },
+    {
+      "path": "pcap_set_buffer_size.3pcap",
+      "sha256": "513c91d6e340a8afa58b0939914fb646403ce5f2fda0a0b874b3fd6b6f17e7d1"
+    },
+    {
+      "path": "pcap_datalink.3pcap.in",
+      "sha256": "434c12ea9f01c6badf1cc3ef5009392df2dbe32761435baff3d091a62cdb9d09"
+    },
+    {
+      "path": "pcap_next_ex.3pcap",
+      "sha256": "becc1379a3072cedffc8bdfb76a187c6c448f52a79332d1af0dc853f2cb62efc"
+    },
+    {
+      "path": "pcap_compile.3pcap.in",
+      "sha256": "c021ead1c9f04d8601d3afcc164baae8e704d1952c85e93767c1ccd5d9624323"
+    },
+    {
+      "path": "pcap_setfilter.3pcap",
+      "sha256": "8cfc4d0c8a76d0fb6ffb8c5f3fd5d82228e50d6ca82eb2e7995b3ac3315b9fce"
+    },
+    {
+      "path": "pcap_freecode.3pcap",
+      "sha256": "3d97c939069feadce4f62d576ceddf9409e68c60d97faf6084228f70255d79e6"
+    }
+  ],
+  "status": "FROZEN_BEFORE_LIBPCAP_V1_WORKING_DRAFT"
+}
