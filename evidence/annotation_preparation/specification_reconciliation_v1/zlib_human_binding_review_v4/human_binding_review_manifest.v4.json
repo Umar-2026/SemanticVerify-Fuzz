@@ -1,0 +1,19 @@
+{
+  "approval_target_ambiguous": false,
+  "binding_decision": "PASS",
+  "canonical_zlib_specification_frozen": false,
+  "completed_review_sha256": "8400b58b6b2ae2f5566e8e71ccf90bd472f895875ae0f1e232394f03cc36203f",
+  "corrected_confirmation_verified": true,
+  "exact_approved_specification_id": "zlib.z-stream.lifecycle.v3",
+  "exact_approved_v3_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+  "human_binding_review_package_sha256": "c3f539f7422230b967506229b1eb836ac9cec1e014cbb728817604ea708a21d7",
+  "human_binding_review_record_sha256": "b5d3d5ff188c497674d6a8e4a6b1e0cb181374f1dd49e16f5658b4178d29fd84",
+  "next_boundary": "SOURCE_ONLY_ZLIB_CANONICAL_FINALIZATION_PREFLIGHT",
+  "overall_decision": "APPROVE_EXACT_DRAFT_FOR_FINALIZATION",
+  "protocol_semantic_change": false,
+  "protocol_specification_v4_created": false,
+  "record_id": "SVF-ZLIB-V4-BINDING-HUMAN-APPROVAL-MANIFEST",
+  "repository_binding_issue_closed": true,
+  "semantic_review_loop_closed": true,
+  "status": "EXACT_V3_APPROVED_FOR_CANONICAL_FINALIZATION"
+}
