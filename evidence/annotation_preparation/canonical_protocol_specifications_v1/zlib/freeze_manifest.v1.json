@@ -1,0 +1,26 @@
+{
+  "analyzer_implementation_authorized": false,
+  "approved_source_v3_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+  "baseline_execution_authorized": false,
+  "canonical_specification": {
+    "content_sha256": "3461269e60f3b824bef3c62335d24e9eda5552b1a939bea4c720983e39a25049",
+    "file_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+    "freeze_date": "2026-08-16",
+    "path": "config/protocol_specifications/zlib.json",
+    "specification_id": "zlib.z-stream.lifecycle.v3"
+  },
+  "canonical_specification_immutable_after_this_freeze": true,
+  "finalization_record": {
+    "path": "evidence/annotation_preparation/canonical_protocol_specifications_v1/zlib/finalization_record.v1.json",
+    "sha256": "a0b8777dde80ebdc5d31a802a92fdfac676f5f1ff856968e690a540fef2d9bd1"
+  },
+  "frozen_at_utc": "2026-08-16T14:56:58+00:00",
+  "generated_driver_source_inspection_authorized": false,
+  "gold_annotation_authorized": false,
+  "next_boundary": "NEXT_LIBRARY_SOURCE_ONLY_SPECIFICATION_AUTHORING",
+  "path_governance_commit": "60b83e9c3dc88c26b323d1661075f1201fe1615e",
+  "protocol_semantic_change": false,
+  "record_id": "SVF-ZLIB-CANONICAL-SPECIFICATION-FREEZE-V1",
+  "repair_implementation_authorized": false,
+  "status": "FROZEN_CANONICAL_ZLIB_SPECIFICATION"
+}
