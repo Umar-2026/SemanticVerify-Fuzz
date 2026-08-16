@@ -1,0 +1,38 @@
+{
+  "analyzer_implementation_authorized": false,
+  "approved_zlib_v3_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+  "baseline_execution_authorized": false,
+  "canonical_paths": {
+    "c-ares": "config/protocol_specifications/c-ares.json",
+    "cJSON": "config/protocol_specifications/cjson.json",
+    "curl": "config/protocol_specifications/curl.json",
+    "lcms": "config/protocol_specifications/lcms.json",
+    "libpcap": "config/protocol_specifications/libpcap.json",
+    "libtiff": "config/protocol_specifications/libtiff.json",
+    "libvpx": "config/protocol_specifications/libvpx.json",
+    "zlib": "config/protocol_specifications/zlib.json"
+  },
+  "canonical_root": "config/protocol_specifications",
+  "decision_0019": {
+    "path": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9"
+  },
+  "first_library": "zlib",
+  "frozen_at_utc": "2026-08-16T14:53:54+00:00",
+  "generated_driver_source_inspection_authorized": false,
+  "gold_annotation_authorized": false,
+  "library_count": 8,
+  "locked_zlib_freeze_date": "2026-08-16",
+  "machine_readable_contract": {
+    "path": "config/annotation/canonical_protocol_specification_paths.v1.json",
+    "sha256": "4c6471d51627997f58b6c6bca833d364edc4c51e5aa7b80d0c34be8d63d19aaa"
+  },
+  "next_boundary": "CREATE_EXACT_FINAL_ZLIB_SPECIFICATION_AT_AUTHORITATIVE_PATH",
+  "prospective_zlib_final_content_sha256": "3461269e60f3b824bef3c62335d24e9eda5552b1a939bea4c720983e39a25049",
+  "protocol_semantic_change": false,
+  "record_id": "SVF-CANONICAL-PROTOCOL-SPECIFICATION-PATHS-V1-FREEZE",
+  "repair_implementation_authorized": false,
+  "status": "FROZEN_BEFORE_FIRST_CANONICAL_LIBRARY_SPECIFICATION",
+  "zlib_canonical_specification_created": false,
+  "zlib_canonical_specification_frozen": false
+}
