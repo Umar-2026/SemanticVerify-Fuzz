@@ -1,0 +1,1050 @@
+{
+  "author": "Spec-Author-1",
+  "authoring_scope_binding": {
+    "decision_0020_path": "documentation/decisions/0020-libpcap-v1-source-only-authoring-scope-freeze.md",
+    "decision_0020_sha256": "f2bed5a076cfc434bb2fbfb4e0fdb7ad7fff77bbeea0f34c57b1c96a37a69a6e",
+    "pinned_libpcap_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+    "scope_contract_path": "config/annotation/libpcap_v1_authoring_scope.v1.json",
+    "scope_contract_sha256": "52ed3d09c6031c7d256e59246aa44ff741d358a784f32516a9f503abe5110d65"
+  },
+  "candidate_specification_fields": {
+    "author": "Spec-Author-1",
+    "creation_date": "2026-08-16",
+    "events": [
+      {
+        "event_id": "E01_PCAP_CREATE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_create"
+      },
+      {
+        "event_id": "E02_PRE_ACTIVATION_CONFIG",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_set_snaplen or pcap_set_promisc or pcap_set_timeout or pcap_set_immediate_mode or pcap_set_buffer_size"
+      },
+      {
+        "event_id": "E03_PCAP_ACTIVATE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_activate"
+      },
+      {
+        "event_id": "E04_PCAP_DATALINK",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_datalink"
+      },
+      {
+        "event_id": "E05_PCAP_NEXT_EX",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_next_ex"
+      },
+      {
+        "event_id": "E06_PCAP_COMPILE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_compile; transition tracked for the struct bpf_program resource while the associated pcap_t active-state requirement is a precondition"
+      },
+      {
+        "event_id": "E07_PCAP_SETFILTER",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_setfilter; capture-handle state is tracked while valid compiled-program state is a separate resource precondition"
+      },
+      {
+        "event_id": "E08_PCAP_FREECODE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_freecode"
+      },
+      {
+        "event_id": "E09_PCAP_CLOSE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "pcap_close"
+      },
+      {
+        "event_id": "E10_FUNCTION_EXIT",
+        "event_kind": "FUNCTION_EXIT",
+        "symbol_or_condition": "enclosing fuzz-driver function return or exit"
+      }
+    ],
+    "initial_state": "NO_HANDLE",
+    "library": "libpcap",
+    "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+    "obligations": [
+      {
+        "cleanup_responsibility": "Successful creation acquires a pcap_t that remains caller-owned until pcap_close.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D1",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T03",
+          "T04",
+          "T14"
+        ],
+        "required_pre_state_or_exit_condition": "A non-NULL return from pcap_create must establish UNACTIVATED_OWNED before the acquired pcap_t is used.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "prior pcap_create return != NULL",
+        "rule_id": "LIBPCAP-R01",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-H-001",
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-CREATE-005"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:any modeled pcap_t operation requiring an acquired handle"
+      },
+      {
+        "cleanup_responsibility": "A failed create does not establish the successful-handle pcap_close cleanup obligation.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D2",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "pcap_create returning NULL leaves NO_HANDLE; the failed acquisition result is not a usable capture handle.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "prior pcap_create return == NULL",
+        "rule_id": "LIBPCAP-R02",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-CREATE-005",
+          "EV-LIBPCAP-MAN-PCAP-004"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:modeled pcap_t use after pcap_create failure"
+      },
+      {
+        "cleanup_responsibility": "Configuration does not release the acquired handle; eventual pcap_close remains required.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D6",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T03"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_set_snaplen, pcap_set_promisc, pcap_set_timeout, pcap_set_immediate_mode, and pcap_set_buffer_size require UNACTIVATED_OWNED. Calling them after activation is an ordering violation.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "valid pre-activation configuration return == 0; an activated handle yields PCAP_ERROR_ACTIVATED where documented",
+        "rule_id": "LIBPCAP-R03",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-SNAPLEN-008",
+          "EV-LIBPCAP-MAN-PROMISC-009",
+          "EV-LIBPCAP-MAN-TIMEOUT-010",
+          "EV-LIBPCAP-MAN-IMMEDIATE-011",
+          "EV-LIBPCAP-MAN-BUFFER-012"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pre-activation configuration family"
+      },
+      {
+        "cleanup_responsibility": "Activation does not transfer ownership. The acquired handle still requires pcap_close.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D6",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T04",
+          "T05"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_activate is modeled from UNACTIVATED_OWNED. Reactivation of an already ACTIVE_OWNED handle is invalid.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "return >= 0 establishes ACTIVE_OWNED; return < 0 establishes ACTIVATION_FAILED_OWNED",
+        "rule_id": "LIBPCAP-R04",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-ACTIVATE-006",
+          "EV-LIBPCAP-MAN-PCAP-004"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_activate"
+      },
+      {
+        "cleanup_responsibility": "The failed-activation handle remains owned and must be closed with pcap_close.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D2",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "ACTIVATION_FAILED_OWNED is not an active-use state. After a negative pcap_activate result, active-only operations are not permitted.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "prior pcap_activate return < 0",
+        "rule_id": "LIBPCAP-R05",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-ACTIVATE-006",
+          "EV-LIBPCAP-MAN-PCAP-004",
+          "EV-LIBPCAP-MAN-DATALINK-013",
+          "EV-LIBPCAP-MAN-SETFILTER-016"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_datalink|pcap_next_ex|pcap_compile|pcap_setfilter after failed activation"
+      },
+      {
+        "cleanup_responsibility": "Caller is responsible for pcap_close after successful creation, including pre-activation exits and activation-failure exits.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D5",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T14"
+        ],
+        "required_pre_state_or_exit_condition": "Every non-NULL pcap_create acquisition must reach CLOSED through pcap_close on every relevant normal or error exit.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "pcap_create return != NULL",
+        "rule_id": "LIBPCAP-R06",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-CREATE-005",
+          "EV-LIBPCAP-MAN-ACTIVATE-006",
+          "EV-LIBPCAP-MAN-CLOSE-007",
+          "EV-LIBPCAP-MAN-PCAP-004",
+          "EV-LIBPCAP-C-002"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "FUNCTION_EXIT"
+      },
+      {
+        "cleanup_responsibility": "Cleanup must be guarded by successful handle acquisition and must not be omitted merely because activation failed.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D8",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T14"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_close cleanup is tied to a currently acquired UNACTIVATED_OWNED, ACTIVE_OWNED, or ACTIVATION_FAILED_OWNED handle; pcap_create returning NULL creates no successful-handle cleanup obligation.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "corresponding acquisition succeeded",
+        "rule_id": "LIBPCAP-R07",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-CREATE-005",
+          "EV-LIBPCAP-MAN-ACTIVATE-006",
+          "EV-LIBPCAP-MAN-CLOSE-007",
+          "EV-LIBPCAP-MAN-PCAP-004"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_close conditioned on acquisition/activation result"
+      },
+      {
+        "cleanup_responsibility": "pcap_close releases the current pcap_t resource; later reuse requires a fresh logical acquisition.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D3",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "CLOSED is not a live capture-handle state. A fresh pcap_create acquisition is required for a new logical resource instance.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": null,
+        "rule_id": "LIBPCAP-R08",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-CLOSE-007"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:stateful modeled pcap_t operation after pcap_close"
+      },
+      {
+        "cleanup_responsibility": "Exactly one release is required for each currently-live pcap_t acquisition.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D4",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T14"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_close requires a currently owned capture handle. A second pcap_close after CLOSED is invalid.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": null,
+        "rule_id": "LIBPCAP-R09",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-CLOSE-007"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_close"
+      },
+      {
+        "cleanup_responsibility": "The metadata query does not release capture-handle ownership.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D1",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T06"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_datalink requires ACTIVE_OWNED; a handle created by pcap_create but not yet successfully activated is not a valid pre-state.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "handle is ACTIVE_OWNED",
+        "rule_id": "LIBPCAP-R10",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-DATALINK-013"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_datalink"
+      },
+      {
+        "cleanup_responsibility": "The pcap_t remains caller-owned until pcap_close. A return of 1 additionally yields library-owned borrowed header/data values.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D1",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "BORROW",
+        "permitted_transitions": [
+          "T07",
+          "T08"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_next_ex requires an ACTIVE_OWNED live-capture handle in this scenario-bounded specification.",
+        "resource_kind": "libpcap.pcap_t.handle",
+        "return_predicate": "handle is ACTIVE_OWNED",
+        "rule_id": "LIBPCAP-R11",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-H-001",
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-NEXTEX-014"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_next_ex"
+      },
+      {
+        "cleanup_responsibility": "Caller may inspect or copy the values but does not own their storage.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D7",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "BORROW",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "The struct pcap_pkthdr and packet-data pointers yielded by a successful pcap_next_ex are library-owned borrowed values and must not be freed by the caller.",
+        "resource_kind": "libpcap.pcap_next_ex.borrowed_packet_view",
+        "return_predicate": "pcap_next_ex return == 1",
+        "rule_id": "LIBPCAP-R12",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-NEXTEX-014"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "CALLER_DEALLOCATION:pcap_next_ex returned packet header or packet data"
+      },
+      {
+        "cleanup_responsibility": "Copy data that must outlive the documented borrowed-value lifetime.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D3",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "A borrowed header/data view is not guaranteed to remain valid after the next packet-reading call. For this frozen V1 scope, a later pcap_next_ex invalidates reliance on the prior borrowed view unless it was copied.",
+        "resource_kind": "libpcap.pcap_next_ex.borrowed_packet_view",
+        "return_predicate": "prior borrow was not copied before subsequent packet-read call",
+        "rule_id": "LIBPCAP-R13",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-NEXTEX-014"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "USE:prior pcap_next_ex packet header or data after a subsequent in-scope pcap_next_ex call"
+      },
+      {
+        "cleanup_responsibility": "Successful compilation creates caller-owned compiled program state requiring eventual pcap_freecode.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D1",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "ACQUIRE",
+        "permitted_transitions": [
+          "T09",
+          "T10"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_compile requires the associated pcap_t to be ACTIVE_OWNED. For a fresh BPF logical resource instance, the destination program state is NO_VALID_PROGRAM before compilation.",
+        "resource_kind": "libpcap.bpf_program",
+        "return_predicate": "associated handle ACTIVE_OWNED; return == 0 acquires COMPILED_OWNED",
+        "rule_id": "LIBPCAP-R14",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-GENCODE-003",
+          "EV-LIBPCAP-MAN-COMPILE-015"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_compile"
+      },
+      {
+        "cleanup_responsibility": "Caller is responsible for pcap_freecode for every successfully compiled program.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D5",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T12"
+        ],
+        "required_pre_state_or_exit_condition": "Each pcap_compile return == 0 creates COMPILED_OWNED state that must reach FREED_OR_EMPTY through pcap_freecode on every relevant exit.",
+        "resource_kind": "libpcap.bpf_program",
+        "return_predicate": "pcap_compile return == 0",
+        "rule_id": "LIBPCAP-R15",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-GENCODE-003",
+          "EV-LIBPCAP-MAN-COMPILE-015",
+          "EV-LIBPCAP-MAN-FREECODE-017"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "FUNCTION_EXIT after successful pcap_compile"
+      },
+      {
+        "cleanup_responsibility": "Guard successful-program use and cleanup on pcap_compile return == 0.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D8",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T10"
+        ],
+        "required_pre_state_or_exit_condition": "A failed pcap_compile from a fresh NO_VALID_PROGRAM resource does not create a new valid compiled program or the successful-compile cleanup obligation.",
+        "resource_kind": "libpcap.bpf_program",
+        "return_predicate": "pcap_compile return != 0",
+        "rule_id": "LIBPCAP-R16",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-GENCODE-003",
+          "EV-LIBPCAP-MAN-COMPILE-015",
+          "EV-LIBPCAP-MAN-FREECODE-017"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_freecode or pcap_setfilter conditioned on pcap_compile result"
+      },
+      {
+        "cleanup_responsibility": "Filter installation does not release either the capture handle or caller-owned compiled-program cleanup duty.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D6",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T11"
+        ],
+        "required_pre_state_or_exit_condition": "pcap_setfilter requires an ACTIVE_OWNED capture handle and a valid COMPILED_OWNED bpf_program.",
+        "resource_kind": "libpcap.filter_installation",
+        "return_predicate": "associated pcap_t is ACTIVE_OWNED and associated bpf_program is COMPILED_OWNED",
+        "rule_id": "LIBPCAP-R17",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-C-002",
+          "EV-LIBPCAP-MAN-COMPILE-015",
+          "EV-LIBPCAP-MAN-SETFILTER-016",
+          "EV-LIBPCAP-MAN-FREECODE-017"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_setfilter"
+      },
+      {
+        "cleanup_responsibility": "The caller retains the eventual pcap_freecode obligation whether pcap_setfilter succeeds or fails.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D7",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T11",
+          "T12"
+        ],
+        "required_pre_state_or_exit_condition": "Passing a valid compiled program to pcap_setfilter does not transfer caller ownership of the bpf_program.",
+        "resource_kind": "libpcap.bpf_program",
+        "return_predicate": "program was successfully produced by pcap_compile",
+        "rule_id": "LIBPCAP-R18",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-COMPILE-015",
+          "EV-LIBPCAP-MAN-SETFILTER-016",
+          "EV-LIBPCAP-MAN-FREECODE-017",
+          "EV-LIBPCAP-GENCODE-003"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_setfilter followed by later program cleanup"
+      },
+      {
+        "cleanup_responsibility": "A later compilation, if desired, begins a fresh logical BPF resource lifecycle; this V1 does not infer reuse without a fresh successful compile.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D3",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "FREED_OR_EMPTY is not COMPILED_OWNED. A program whose compiled storage has been released cannot be treated as a live compiled filter program.",
+        "resource_kind": "libpcap.bpf_program",
+        "return_predicate": null,
+        "rule_id": "LIBPCAP-R19",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-GENCODE-003",
+          "EV-LIBPCAP-MAN-SETFILTER-016",
+          "EV-LIBPCAP-MAN-FREECODE-017"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:pcap_setfilter or other modeled live-program use after pcap_freecode"
+      },
+      {
+        "cleanup_responsibility": "Apply pcap_close and pcap_freecode independently to each owned resource on all relevant exits.",
+        "creation_date": "2026-08-16",
+        "defect_category": "D8",
+        "library_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T12",
+          "T14"
+        ],
+        "required_pre_state_or_exit_condition": "Each successfully acquired pcap_t and each successfully compiled bpf_program is tracked by resource identity. Cleanup of one resource does not discharge the cleanup obligation of another independent resource.",
+        "resource_kind": "libpcap.protocol_resource_family",
+        "return_predicate": "cleanup is conditioned on the corresponding resource's own successful acquisition",
+        "rule_id": "LIBPCAP-R20",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-LIBPCAP-MAN-CREATE-005",
+          "EV-LIBPCAP-MAN-CLOSE-007",
+          "EV-LIBPCAP-MAN-COMPILE-015",
+          "EV-LIBPCAP-MAN-FREECODE-017"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "FUNCTION_EXIT or cleanup branch involving pcap_t and/or bpf_program resources"
+      }
+    ],
+    "permitted_exit_states": [
+      "NO_HANDLE",
+      "CLOSED",
+      "NO_VALID_PROGRAM",
+      "FREED_OR_EMPTY"
+    ],
+    "provenance": [
+      {
+        "content_sha256": "a18377a304f254e93e7d5059eec87d28c46b44cdad6fb174cff315440cae87b0",
+        "evidence_id": "EV-LIBPCAP-H-001",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap/pcap.h",
+        "quoted_or_paraphrased_rationale": "Pinned public declarations and constants for the modeled libpcap capture-handle, activation, packet, filter-program, and cleanup API surface.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "PUBLIC_HEADER"
+      },
+      {
+        "content_sha256": "0cef77dc8385eefa5902df7c7abd42d8dd43ee68a72afa0c80f701e4efc202c9",
+        "evidence_id": "EV-LIBPCAP-C-002",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap.c",
+        "quoted_or_paraphrased_rationale": "Pinned implementation evidence for activation guards, pre-activation configuration checks, active-handle dispatch, reactivation rejection, and pcap_close resource release.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+      },
+      {
+        "content_sha256": "8326daaddd56a9eab15a8c4c09666873e5e056922c2f1cc0a5918958f8953113",
+        "evidence_id": "EV-LIBPCAP-GENCODE-003",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/gencode.c",
+        "quoted_or_paraphrased_rationale": "Pinned implementation evidence for pcap_compile activation checking and pcap_freecode release/reset of the compiled BPF program structure.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+      },
+      {
+        "content_sha256": "ba3ef9b9fc1874cf0372ba757fb2494827abca69d4a23333ab758c435a7643b4",
+        "evidence_id": "EV-LIBPCAP-MAN-PCAP-004",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap.3pcap.in",
+        "quoted_or_paraphrased_rationale": "Pinned upstream general libpcap documentation for pcap_create/pcap_activate lifecycle and closing a created handle when activation fails.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "b9cc4a57b5ef4ffed8647c33440eec3c2365f587d7a01d2c5971918498854c55",
+        "evidence_id": "EV-LIBPCAP-MAN-CREATE-005",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_create.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream API documentation for creating a not-yet-activated capture handle and distinguishing successful handle acquisition from NULL failure.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "ca5461684af7e4107fc817c0f599249ff8ef6827d88540a9df2a9e9826049655",
+        "evidence_id": "EV-LIBPCAP-MAN-ACTIVATE-006",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_activate.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream API documentation for activation return semantics: zero success, positive warning, negative error, and active-handle lifecycle.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "7cbb72168caf80000b58a1d294f5ef18db075745c302bc137d38f3d7d4a088bc",
+        "evidence_id": "EV-LIBPCAP-MAN-CLOSE-007",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_close.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream API documentation for closing a capture handle and releasing associated resources.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "4cad03c340197b1bca2554716a232945651fafe950f3522e0bea37b02f19a45c",
+        "evidence_id": "EV-LIBPCAP-MAN-SNAPLEN-008",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_set_snaplen.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation identifying pcap_set_snaplen as a not-yet-activated handle configuration operation and PCAP_ERROR_ACTIVATED after activation.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "1282eecdf67079ddad1ed23bb7dc5a29bbfcc880f364af53b722daef22ca6287",
+        "evidence_id": "EV-LIBPCAP-MAN-PROMISC-009",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_set_promisc.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation identifying pcap_set_promisc as a pre-activation configuration operation.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "ffbf8ed8e594dbff786ff5727e77c914a24ca04dc3b6ff1cb611e796e91c04cf",
+        "evidence_id": "EV-LIBPCAP-MAN-TIMEOUT-010",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_set_timeout.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation identifying pcap_set_timeout as a pre-activation setting and PCAP_ERROR_ACTIVATED after activation.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "14509e13caa40e35dcf37cf77bdbeb3c5c3b62cf0629a01adccc8b8d5e319111",
+        "evidence_id": "EV-LIBPCAP-MAN-IMMEDIATE-011",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_set_immediate_mode.3pcap.in",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation identifying pcap_set_immediate_mode as a not-yet-activated capture-handle setting and PCAP_ERROR_ACTIVATED after activation.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "513c91d6e340a8afa58b0939914fb646403ce5f2fda0a0b874b3fd6b6f17e7d1",
+        "evidence_id": "EV-LIBPCAP-MAN-BUFFER-012",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_set_buffer_size.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation identifying pcap_set_buffer_size as a pre-activation capture-handle configuration operation.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "434c12ea9f01c6badf1cc3ef5009392df2dbe32761435baff3d091a62cdb9d09",
+        "evidence_id": "EV-LIBPCAP-MAN-DATALINK-013",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_datalink.3pcap.in",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation requiring an activated capture handle before querying its link-layer type.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "becc1379a3072cedffc8bdfb76a187c6c448f52a79332d1af0dc853f2cb62efc",
+        "evidence_id": "EV-LIBPCAP-MAN-NEXTEX-014",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_next_ex.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation for packet-read return semantics and for library-owned packet-header/data pointers that the caller must not free and must copy for use beyond their documented lifetime.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "c021ead1c9f04d8601d3afcc164baae8e704d1952c85e93767c1ccd5d9624323",
+        "evidence_id": "EV-LIBPCAP-MAN-COMPILE-015",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_compile.3pcap.in",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation for compiling a filter expression into a bpf_program and interpreting the compile return value.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "8cfc4d0c8a76d0fb6ffb8c5f3fd5d82228e50d6ca82eb2e7995b3ac3315b9fce",
+        "evidence_id": "EV-LIBPCAP-MAN-SETFILTER-016",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_setfilter.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation for installing a compiled filter and rejecting an unactivated capture handle.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      },
+      {
+        "content_sha256": "3d97c939069feadce4f62d576ceddf9409e68c60d97faf6084228f70255d79e6",
+        "evidence_id": "EV-LIBPCAP-MAN-FREECODE-017",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/libpcap/pcap_freecode.3pcap",
+        "quoted_or_paraphrased_rationale": "Pinned upstream documentation for freeing a compiled BPF program produced by pcap_compile.",
+        "retrieval_date": "2026-08-16",
+        "source_type": "OFFICIAL_API_DOCUMENTATION"
+      }
+    ],
+    "resource_kind": "libpcap.protocol_resource_family",
+    "reviewer": "Spec-Reviewer-1",
+    "schema_version": "1.0.0",
+    "specification_id": "libpcap.live-capture.lifecycle.v1",
+    "states": [
+      "NO_HANDLE",
+      "UNACTIVATED_OWNED",
+      "ACTIVE_OWNED",
+      "ACTIVATION_FAILED_OWNED",
+      "CLOSED",
+      "NO_VALID_PROGRAM",
+      "COMPILED_OWNED",
+      "FREED_OR_EMPTY"
+    ],
+    "transitions": [
+      {
+        "event_id": "E01_PCAP_CREATE",
+        "from_states": [
+          "NO_HANDLE"
+        ],
+        "ownership_effect": "ACQUIRE",
+        "return_predicate": "pcap_create return != NULL",
+        "to_states": [
+          "UNACTIVATED_OWNED"
+        ],
+        "transition_id": "T01"
+      },
+      {
+        "event_id": "E01_PCAP_CREATE",
+        "from_states": [
+          "NO_HANDLE"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "pcap_create return == NULL",
+        "to_states": [
+          "NO_HANDLE"
+        ],
+        "transition_id": "T02"
+      },
+      {
+        "event_id": "E02_PRE_ACTIVATION_CONFIG",
+        "from_states": [
+          "UNACTIVATED_OWNED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "configuration call return == 0",
+        "to_states": [
+          "UNACTIVATED_OWNED"
+        ],
+        "transition_id": "T03"
+      },
+      {
+        "event_id": "E03_PCAP_ACTIVATE",
+        "from_states": [
+          "UNACTIVATED_OWNED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "pcap_activate return >= 0; zero is success and positive values are warnings",
+        "to_states": [
+          "ACTIVE_OWNED"
+        ],
+        "transition_id": "T04"
+      },
+      {
+        "event_id": "E03_PCAP_ACTIVATE",
+        "from_states": [
+          "UNACTIVATED_OWNED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "pcap_activate return < 0",
+        "to_states": [
+          "ACTIVATION_FAILED_OWNED"
+        ],
+        "transition_id": "T05"
+      },
+      {
+        "event_id": "E04_PCAP_DATALINK",
+        "from_states": [
+          "ACTIVE_OWNED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "call is made on an activated handle; query does not release handle ownership",
+        "to_states": [
+          "ACTIVE_OWNED"
+        ],
+        "transition_id": "T06"
+      },
+      {
+        "event_id": "E05_PCAP_NEXT_EX",
+        "from_states": [
+          "ACTIVE_OWNED"
+        ],
+        "ownership_effect": "BORROW",
+        "return_predicate": "pcap_next_ex return == 1",
+        "to_states": [
+          "ACTIVE_OWNED"
+        ],
+        "transition_id": "T07"
+      },
+      {
+        "event_id": "E05_PCAP_NEXT_EX",
+        "from_states": [
+          "ACTIVE_OWNED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "pcap_next_ex return != 1; no new packet/header borrow is created by this call and the pcap_t remains caller-owned until pcap_close",
+        "to_states": [
+          "ACTIVE_OWNED"
+        ],
+        "transition_id": "T08"
+      },
+      {
+        "event_id": "E06_PCAP_COMPILE",
+        "from_states": [
+          "NO_VALID_PROGRAM"
+        ],
+        "ownership_effect": "ACQUIRE",
+        "return_predicate": "associated pcap_t is ACTIVE_OWNED and pcap_compile return == 0",
+        "to_states": [
+          "COMPILED_OWNED"
+        ],
+        "transition_id": "T09"
+      },
+      {
+        "event_id": "E06_PCAP_COMPILE",
+        "from_states": [
+          "NO_VALID_PROGRAM"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "associated pcap_t is ACTIVE_OWNED and pcap_compile return != 0; no new valid compiled program is acquired",
+        "to_states": [
+          "NO_VALID_PROGRAM"
+        ],
+        "transition_id": "T10"
+      },
+      {
+        "event_id": "E07_PCAP_SETFILTER",
+        "from_states": [
+          "ACTIVE_OWNED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "associated bpf_program is COMPILED_OWNED; pcap_setfilter does not release pcap_t ownership or transfer caller ownership of the program",
+        "to_states": [
+          "ACTIVE_OWNED"
+        ],
+        "transition_id": "T11"
+      },
+      {
+        "event_id": "E08_PCAP_FREECODE",
+        "from_states": [
+          "COMPILED_OWNED"
+        ],
+        "ownership_effect": "RELEASE",
+        "return_predicate": "successful compiled-program ownership is currently live",
+        "to_states": [
+          "FREED_OR_EMPTY"
+        ],
+        "transition_id": "T12"
+      },
+      {
+        "event_id": "E08_PCAP_FREECODE",
+        "from_states": [
+          "FREED_OR_EMPTY"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "same still-live struct bpf_program was previously normalized by pcap_freecode; pinned implementation has bf_len == 0 and bf_insns == NULL",
+        "to_states": [
+          "FREED_OR_EMPTY"
+        ],
+        "transition_id": "T13"
+      },
+      {
+        "event_id": "E09_PCAP_CLOSE",
+        "from_states": [
+          "UNACTIVATED_OWNED",
+          "ACTIVE_OWNED",
+          "ACTIVATION_FAILED_OWNED"
+        ],
+        "ownership_effect": "RELEASE",
+        "return_predicate": "corresponding acquired pcap_t is currently caller-owned",
+        "to_states": [
+          "CLOSED"
+        ],
+        "transition_id": "T14"
+      }
+    ]
+  },
+  "canonical_specification_frozen": false,
+  "created_at_utc": "2026-08-16T15:59:38+00:00",
+  "defect_taxonomy": {
+    "D1": "Use before successful initialization",
+    "D2": "Use after failed initialization or activation",
+    "D3": "Use after close, destroy, end, or release",
+    "D4": "Double close, destroy, end, or release",
+    "D5": "Missing cleanup on a success or failure exit",
+    "D6": "Invalid API call ordering or missing prerequisite call",
+    "D7": "Ownership misuse: freeing borrowed data, failing transferred ownership, or wrong owner",
+    "D8": "Conditionally invalid cleanup or cleanup under the wrong state or return condition"
+  },
+  "designated_reviewer": "Spec-Reviewer-1",
+  "explicit_unsupported_or_out_of_scope_conditions": [
+    "The functions frozen in config/annotation/libpcap_v1_authoring_scope.v1.json under explicitly_excluded_functions are outside this scenario-bounded V1 modeled API set.",
+    "pcap_open_live and the offline/dead-handle families are not silently treated as equivalent to the modeled pcap_create plus pcap_activate lifecycle.",
+    "pcap_next, pcap_dispatch, pcap_loop, and pcap_breakloop are outside V1; the borrowed-value lifetime rule is instantiated only for the later in-scope pcap_next_ex call.",
+    "pcap_snapshot is outside V1; the frozen scenario phrase snapshot-length is represented by pcap_set_snaplen.",
+    "Timestamp, statistics, non-blocking, injection, dumper, device-discovery, and datalink-mutation APIs remain outside this V1 model.",
+    "No same-handle identity coupling between the pcap_t used for pcap_compile and a later pcap_setfilter call is invented beyond the frozen scope.",
+    "Reuse of a previously freed bpf_program as a fresh compile destination is not inferred as a transition in this V1; a fresh logical lifecycle must be established before such reuse is claimed valid.",
+    "General packet-processing correctness, arbitrary C bugs, buffer errors, network behavior, and memory-safety defects outside explicit protocol obligations are not classified by this specification.",
+    "Absence of a transition in this partial relation does not silently imply either validity or violation."
+  ],
+  "finalization_requirements": [
+    "Spec-Reviewer-1 must independently review this exact immutable V1 author checkpoint using only approved pinned source evidence and the frozen scope materials.",
+    "The dual-resource initial-state representation must receive an explicit reviewer decision; it must not be silently accepted.",
+    "Any requested semantic revision creates a new immutable successor author checkpoint; this V1 file must not be edited in place after review.",
+    "Only after exact human approval may obligation freeze_date and Decision-0018 content_sha256 fields be assigned.",
+    "Only after obligation hashes are fixed may top-level freeze_date and content_sha256 be assigned.",
+    "The final canonical specification must validate against the unmodified protocol specification schema.",
+    "Generated drivers, sample membership, raw model responses, generated compiler semantic contents, gold labels, analyzer output, baseline output, LLM-review output, and repair output must remain excluded from specification evidence and review."
+  ],
+  "generated_corpus_used_as_specification_evidence": false,
+  "next_boundary": "INDEPENDENT_HUMAN_SPEC_REVIEW_OF_EXACT_LIBPCAP_V1_AUTHOR_CHECKPOINT",
+  "post_generation_timing_deviation_disclosure_required": true,
+  "record_id": "SVF-LIBPCAP-SOURCE-ONLY-WORKING-FSM-DRAFT-V1",
+  "record_schema_version": 1,
+  "required_reviewer_checks": [
+    "evidence completeness and exact source-byte hashes",
+    "state/event/transition consistency",
+    "pcap_t ownership and activation semantics",
+    "BPF-program ownership and cleanup semantics",
+    "borrowed packet-header/data ownership and lifetime",
+    "terminal and permitted exit states",
+    "resource-identity independence",
+    "dual-resource initial-state representation under the single-schema initial_state field",
+    "unsupported conditions and frozen-scope alignment",
+    "defect-category projection D1-D8"
+  ],
+  "review_candidate_rules_not_yet_in_core_obligations": [],
+  "review_completed": false,
+  "reviewer_underlying_role": "Adjudicator-C",
+  "reviewer_visible_semantics_v1": {
+    "borrowed_packet_views": {
+      "caller_may_free_header": false,
+      "caller_may_free_packet_data": false,
+      "copy_required_for_use_beyond_documented_lifetime": true,
+      "subsequent_in_scope_pcap_next_ex_invalidates_reliance_on_prior_view": true,
+      "successful_pcap_next_ex_creates_borrowed_header_and_data": true
+    },
+    "bpf_program_lifecycle": {
+      "failed_compile_acquires_new_valid_program": false,
+      "pcap_setfilter_failure_cancels_freecode_obligation": false,
+      "pcap_setfilter_transfers_program_ownership": false,
+      "repeated_freecode_automatically_D4": false,
+      "repeated_freecode_interpretation": "T13 applies only to the same still-live struct bpf_program object after the pinned pcap_freecode implementation has normalized bf_len to zero and bf_insns to NULL. It does not authorize use of the released program as COMPILED_OWNED.",
+      "successful_compile_acquires_program": true,
+      "successful_compile_requires_eventual_freecode": true,
+      "successful_compile_return": 0
+    },
+    "dual_resource_initial_state_representation": {
+      "bpf_program_local_start_state": "NO_VALID_PROGRAM",
+      "interpretation": "The protocol schema exposes one required top-level initial_state. The V1 resource family contains two independently tracked logical resource kinds. NO_HANDLE is the schema-level default because every frozen scenario begins its capture lifecycle with pcap_create. A fresh struct bpf_program logical resource begins locally in NO_VALID_PROGRAM when pcap_compile is analyzed. This representation must be explicitly accepted or rejected by the reviewer.",
+      "pcap_handle_local_start_state": "NO_HANDLE",
+      "schema_level_initial_state": "NO_HANDLE",
+      "silent_equation_of_no_handle_and_no_valid_program": false
+    },
+    "handle_activation": {
+      "negative_activation_result_still_requires_close": true,
+      "pcap_activate_return_ge_0": "ACTIVE_OWNED",
+      "pcap_activate_return_lt_0": "ACTIVATION_FAILED_OWNED",
+      "pcap_create_non_null": "UNACTIVATED_OWNED",
+      "positive_activate_result_is_warning_but_active": true,
+      "reactivation_of_active_handle_modeled_valid": false
+    },
+    "partial_transition_relation": {
+      "absence_of_transition_implies_validity": false,
+      "absence_of_transition_implies_violation": false,
+      "obligation_driven": true,
+      "violation_requires_explicit_obligation": true
+    },
+    "pre_activation_configuration": {
+      "functions": [
+        "pcap_set_snaplen",
+        "pcap_set_promisc",
+        "pcap_set_timeout",
+        "pcap_set_immediate_mode",
+        "pcap_set_buffer_size"
+      ],
+      "post_activation_call_is_protocol_ordering_violation": true,
+      "required_state": "UNACTIVATED_OWNED"
+    },
+    "resource_identity": {
+      "cleanup_of_one_resource_discharges_another": false,
+      "pcap_t_handles_tracked_independently": true,
+      "same_handle_identity_coupling_for_compile_and_setfilter": false,
+      "successful_bpf_programs_tracked_independently": true
+    },
+    "resource_instance_lifecycle": {
+      "ACTIVATION_FAILED_OWNED": "Still-owned handle state requiring pcap_close; not an active-use state.",
+      "CLOSED": "Terminal for the current pcap_t logical resource instance; later pcap_create begins a fresh instance.",
+      "FREED_OR_EMPTY": "No live compiled-program ownership remains. A later successful compile, if modeled in a future lifecycle, is a fresh logical BPF resource instance."
+    }
+  },
+  "scenario_scope": [
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S01"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_set_snaplen",
+        "pcap_set_timeout",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S02"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_datalink"
+      ],
+      "scenario_id": "S03"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S04"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_next_ex",
+        "pcap_datalink"
+      ],
+      "scenario_id": "S05"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_compile",
+        "pcap_setfilter",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S06"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_datalink"
+      ],
+      "scenario_id": "S07"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_activate",
+        "pcap_compile",
+        "pcap_setfilter",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S08"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_set_timeout",
+        "pcap_activate",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S09"
+    },
+    {
+      "required_feature_symbols": [
+        "pcap_create",
+        "pcap_set_snaplen",
+        "pcap_set_timeout",
+        "pcap_activate",
+        "pcap_compile",
+        "pcap_setfilter",
+        "pcap_next_ex"
+      ],
+      "scenario_id": "S10"
+    }
+  ],
+  "source_only_reconciliation": true,
+  "status": "WORKING_DRAFT_V1_AUTHOR_CHECKPOINT_NOT_REVIEWED_NOT_FROZEN"
+}

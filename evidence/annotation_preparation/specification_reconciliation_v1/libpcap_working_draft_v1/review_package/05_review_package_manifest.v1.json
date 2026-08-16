@@ -1,0 +1,28 @@
+{
+  "analyzer_output_included": false,
+  "baseline_output_included": false,
+  "created_at_utc": "2026-08-16T15:59:39+00:00",
+  "decision_0020_sha256": "f2bed5a076cfc434bb2fbfb4e0fdb7ad7fff77bbeea0f34c57b1c96a37a69a6e",
+  "generated_driver_source_included": false,
+  "gold_labels_included": false,
+  "next_boundary": "INDEPENDENT_HUMAN_SPEC_REVIEW_OF_EXACT_LIBPCAP_V1_AUTHOR_CHECKPOINT",
+  "package_files": {
+    "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/review_package/01_repository_binding.v1.json": "d538bae35da1eef2aaea1058de5f885ddea92478862e55eab307d95b6533b548",
+    "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/review_package/02_libpcap_spec_reviewer_packet.v1.md": "14020d7a3ea17a2afdf91e86e87f3e430f96f67f47ba619bb5faaf475e625796",
+    "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/review_package/03_libpcap_source_only_working_fsm_draft.v1.json": "2a2723eba8cac78c004b846fc1fe71e786730c9aeecc6800e81ee6f2e318687a",
+    "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/review_package/04_verify_review_package.v1.py": "ee94b72653ea62014fc398507e5669695ca6c7755c8fb89b6848f64c5d034c1d"
+  },
+  "pinned_libpcap_revision": "a999701dca5c873779281938baee6bc185a8d4dc",
+  "record_id": "SVF-LIBPCAP-V1-REVIEW-PACKAGE-MANIFEST",
+  "repair_output_included": false,
+  "review_target": {
+    "author_checkpoint_commit": "a2344c4905555388bbecd53834ca6627cdbe808a",
+    "git_blob": "de11a08a6737f5a29734d2b41f7fd5c19cca8522",
+    "repository_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/libpcap_source_only_working_fsm_draft.v1.json",
+    "sha256": "2a2723eba8cac78c004b846fc1fe71e786730c9aeecc6800e81ee6f2e318687a"
+  },
+  "reviewer_role": "Spec-Reviewer-1",
+  "reviewer_underlying_role": "Adjudicator-C",
+  "scope_contract_sha256": "52ed3d09c6031c7d256e59246aa44ff741d358a784f32516a9f503abe5110d65",
+  "status": "READY_FOR_INDEPENDENT_HUMAN_REVIEW"
+}
