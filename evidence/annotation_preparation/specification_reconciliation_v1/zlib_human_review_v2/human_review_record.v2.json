@@ -1,0 +1,74 @@
+{
+  "analyzer_implementation_authorized": false,
+  "baseline_execution_authorized": false,
+  "canonical_zlib_specification_frozen": false,
+  "closure_decisions": {
+    "1": "REVISION_REQUIRED",
+    "10": "PASS",
+    "2": "PASS",
+    "3": "PASS",
+    "4": "PASS",
+    "5": "PASS",
+    "6": "PASS",
+    "7": "PASS",
+    "8": "PASS",
+    "9": "REVISION_REQUIRED"
+  },
+  "completed_review": {
+    "byte_count": 18495,
+    "byte_preserved": true,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_human_review_v2/completed_spec_reviewer_packet.v2.md",
+    "sha256": "e921490a4462d8a8774192b79b7dcebe58487333fa5fa8a812959b131f01227d"
+  },
+  "generated_driver_source_inspection_authorized": false,
+  "gold_annotation_authorized": false,
+  "mandatory_review_decisions": {
+    "Evidence completeness": "REVISION_REQUIRED",
+    "Ownership effects": "PASS",
+    "Specific R14 review": "PASS",
+    "Terminal / permitted exit states": "PASS",
+    "Transition consistency": "PASS",
+    "Unsupported conditions and scope": "PASS"
+  },
+  "next_boundary": "SOURCE_ONLY_V3_SUCCESSOR_CLOSURE_AUDIT",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-ZLIB-V2-HUMAN-SPEC-REVIEW",
+  "record_schema_version": 1,
+  "recorded_at_utc": "2026-08-16T11:52:37+00:00",
+  "repair_implementation_authorized": false,
+  "review_target": {
+    "author_checkpoint_commit": "d1ab67c1fa313d97289fac96f226717a5b91e2aa",
+    "draft_path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v2/zlib_source_only_successor_working_fsm_draft.v2.json",
+    "draft_sha256": "9f6e035fb275fb34e5f9ab34a6267f3b416b80a7aae8a7a1741c445c20457e5d",
+    "pristine_reviewer_packet_sha256": "55d5d88cde3df86866566d6763bd91beb6ba064f15e72c9b347c38e4dfab73b5",
+    "specification_id": "zlib.z-stream.lifecycle.v2"
+  },
+  "reviewer": {
+    "human_name": "Abdul Raheem Shahzad",
+    "human_review_date": "2026-08-16",
+    "independent_review_confirmation": true,
+    "role_id": "Spec-Reviewer-1",
+    "underlying_role": "Adjudicator-C"
+  },
+  "successor_revision_requirements": [
+    {
+      "requirement": "Remove EV-ZLIB-TEST-005 from ZLIB-R12 source_evidence because example.c does not demonstrate deflateReset or inflateReset workflows; retain applicable pinned header and implementation evidence.",
+      "requirement_id": "V2-RR-01",
+      "type": "SPECIFICATION_EVIDENCE_CORRECTION"
+    },
+    {
+      "requirement": "Correct the successor reviewer packet/package description so the immutable JSON review-target location matches the actual packaged root location, while continuing to bind the exact target by SHA-256.",
+      "requirement_id": "V2-RR-02",
+      "type": "REVIEW_PACKAGE_PATH_CORRECTION"
+    },
+    {
+      "requirement": "Supply an approved pinned frozen-S03 artifact or approved reference in the successor review package so the exact S03 gzip-scope reconciliation can be independently verified.",
+      "requirement_id": "V2-RR-03",
+      "type": "FROZEN_SCENARIO_EVIDENCE_COMPLETENESS"
+    }
+  ],
+  "v2_checkpoint_approved_for_finalization": false,
+  "v2_checkpoint_immutable": true,
+  "v2_checkpoint_rejected": false,
+  "v3_successor_required": true
+}

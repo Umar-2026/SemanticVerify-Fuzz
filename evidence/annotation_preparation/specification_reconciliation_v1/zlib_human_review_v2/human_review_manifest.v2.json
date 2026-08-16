@@ -1,0 +1,12 @@
+{
+  "canonical_zlib_specification_frozen": false,
+  "completed_review_sha256": "e921490a4462d8a8774192b79b7dcebe58487333fa5fa8a812959b131f01227d",
+  "human_review_package_sha256": "deb70f8a7c9c42361b23fe4a33de7c305d6c915379752d35342a7a1a44638beb",
+  "human_review_record_sha256": "f21e7b6ad8c31acd8decc8b2d4983184028ca67528a5ac480c7fcf6ef7c149fd",
+  "next_boundary": "SOURCE_ONLY_V3_SUCCESSOR_CLOSURE_AUDIT",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-ZLIB-V2-HUMAN-REVIEW-MANIFEST",
+  "status": "HUMAN_REVIEW_RECORDED_REVISION_REQUIRED",
+  "v2_checkpoint_immutable": true,
+  "v3_successor_required": true
+}
