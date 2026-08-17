@@ -1,0 +1,68 @@
+{
+  "binding_deficiency": {
+    "classification": "PROVENANCE_AND_IMMUTABLE_BINDING_ONLY",
+    "exact_v1_predecessor_bytes_required": true,
+    "required_correction": "Prepare a corrected immutable re-review handoff that independently exposes Git history/object binding for the exact V2 author checkpoint and includes the exact V1 predecessor bytes.",
+    "required_git_material": true,
+    "substantive_protocol_failure": false
+  },
+  "blocking_review_item": "V2-RR01",
+  "completed_review": {
+    "external_source_path": "/openbayes/home/libpcap-v2-independent-human-review-handoff-20260817/manual_review/02_libpcap_v2_spec_reviewer_packet.MANUAL_REVIEW_COPY.v2.md",
+    "original_handoff_archive_sha256": "07ee89d70881aba38b9696a8f2a043554e765efa261db16e8afc36e76ab8fb54",
+    "repository_record_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/human_review_v2/01_completed_human_review.v2.md",
+    "sha256": "2fc0db873c94f443f6a149974896cf74ea121203e1af50f6384b4a5ca738bb6b"
+  },
+  "created_at_utc": "2026-08-17T14:36:59+00:00",
+  "immutability": {
+    "canonical_finalization_allowed": false,
+    "corrected_review_handoff_successor_required": true,
+    "edit_v2_author_checkpoint_in_place": false,
+    "semantic_v3_successor_required": false
+  },
+  "next_boundary": "PREPARE_CORRECTED_LIBPCAP_V2_BINDING_ONLY_REREVIEW_HANDOFF",
+  "overall_decision": "REVISION_REQUIRED",
+  "prohibited_evidence_used_for_specification_revision": {
+    "analyzer_output": false,
+    "baseline_output": false,
+    "generated_driver_source": false,
+    "gold_labels": false,
+    "llm_review_output": false,
+    "repair_output": false,
+    "selected_sample_membership": false
+  },
+  "record_id": "SVF-LIBPCAP-V2-HUMAN-REVIEW-DECISION",
+  "review_item_decisions": {
+    "V2-RR01": "REVISION_REQUIRED",
+    "V2-RR02": "PASS",
+    "V2-RR03": "PASS",
+    "V2-RR04": "PASS",
+    "V2-RR05": "PASS",
+    "V2-RR06": "PASS",
+    "V2-RR07": "PASS",
+    "V2-RR08": "PASS"
+  },
+  "review_target": {
+    "author_checkpoint_commit": "342ea862912e53b1ebec70f2e53e57db10d7846c",
+    "author_checkpoint_tree": "1e8253e52be0a0d41fbe436c738d0011a02e33fa",
+    "draft_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/libpcap_source_only_working_fsm_draft.v2.json",
+    "draft_sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221",
+    "git_blob": "2f5782b744edc3e7684b459241cf079a77da1ab7",
+    "immutable": true,
+    "specification_id": "libpcap.live-capture.lifecycle.v2"
+  },
+  "reviewer": {
+    "date": "17 / August / 2026",
+    "human_name": "Abdul Raheem Shahzad",
+    "role_id": "Spec-Reviewer-1",
+    "signature_or_recorded_confirmation": "ARS",
+    "underlying_role": "Adjudicator-C"
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_REVISION_REQUIRED_BINDING_ONLY",
+  "substantive_protocol_review": {
+    "original_v1_rr08_closed": true,
+    "protocol_semantic_revision_required": false,
+    "v2_rr02_through_v2_rr08": "PASS",
+    "v2_technical_draft_semantic_change_authorized": false
+  }
+}
