@@ -1,0 +1,135 @@
+{
+  "created_at_utc": "2026-08-17T10:19:29+00:00",
+  "next_boundary": "PACKAGE_LIBPCAP_V2_INDEPENDENT_HUMAN_REVIEW_MATERIALS",
+  "predecessor_v1": {
+    "author_checkpoint_commit": "a2344c4905555388bbecd53834ca6627cdbe808a",
+    "blocking_item": "RR-08",
+    "decision_record_sha256": "045df13fc17a2c18d030ff2661d2d96fcf76b52e248a183ad4593250ef295d54",
+    "draft_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/libpcap_source_only_working_fsm_draft.v1.json",
+    "draft_sha256": "2a2723eba8cac78c004b846fc1fe71e786730c9aeecc6800e81ee6f2e318687a",
+    "edit_in_place_allowed": false,
+    "human_review_commit": "74b4b05f8acc06242e9fb815402efe22d0094761",
+    "human_review_sha256": "fd94ec4a552c97e9ee61f550f426ce2e2d8c23ca3ab558f45774cf52766142d4",
+    "overall_decision": "REVISION_REQUIRED"
+  },
+  "prohibited_evidence_used": {
+    "analyzer_output": false,
+    "baseline_output": false,
+    "generated_driver_source": false,
+    "gold_labels": false,
+    "llm_review_output": false,
+    "repair_output": false,
+    "selected_sample_membership": false
+  },
+  "record_id": "SVF-LIBPCAP-V2-AUTHOR-CHECKPOINT",
+  "repository_base": {
+    "parent_commit": "74b4b05f8acc06242e9fb815402efe22d0094761",
+    "parent_tree": "c235ed9387ed87a55a724a95d92204e892450e57"
+  },
+  "revision_scope": {
+    "api_scope_changed": false,
+    "change": "Replace the unreachable union-of-local-state representation with a single 15-state direct-product representation under the unchanged schema.",
+    "events_changed": false,
+    "obligation_semantics_changed": false,
+    "provenance_changed": false,
+    "review_item": "RR-08",
+    "schema_changed": false,
+    "synthetic_events_added": false
+  },
+  "status": "IMMUTABLE_AUTHOR_CHECKPOINT_AWAITING_HUMAN_REVIEW",
+  "transition_expansion": {
+    "T01": [
+      "T01__BPF__NO_VALID_PROGRAM",
+      "T01__BPF__COMPILED_OWNED",
+      "T01__BPF__FREED_OR_EMPTY"
+    ],
+    "T02": [
+      "T02__BPF__NO_VALID_PROGRAM",
+      "T02__BPF__COMPILED_OWNED",
+      "T02__BPF__FREED_OR_EMPTY"
+    ],
+    "T03": [
+      "T03__BPF__NO_VALID_PROGRAM",
+      "T03__BPF__COMPILED_OWNED",
+      "T03__BPF__FREED_OR_EMPTY"
+    ],
+    "T04": [
+      "T04__BPF__NO_VALID_PROGRAM",
+      "T04__BPF__COMPILED_OWNED",
+      "T04__BPF__FREED_OR_EMPTY"
+    ],
+    "T05": [
+      "T05__BPF__NO_VALID_PROGRAM",
+      "T05__BPF__COMPILED_OWNED",
+      "T05__BPF__FREED_OR_EMPTY"
+    ],
+    "T06": [
+      "T06__BPF__NO_VALID_PROGRAM",
+      "T06__BPF__COMPILED_OWNED",
+      "T06__BPF__FREED_OR_EMPTY"
+    ],
+    "T07": [
+      "T07__BPF__NO_VALID_PROGRAM",
+      "T07__BPF__COMPILED_OWNED",
+      "T07__BPF__FREED_OR_EMPTY"
+    ],
+    "T08": [
+      "T08__BPF__NO_VALID_PROGRAM",
+      "T08__BPF__COMPILED_OWNED",
+      "T08__BPF__FREED_OR_EMPTY"
+    ],
+    "T09": [
+      "T09__PCAP__NO_HANDLE",
+      "T09__PCAP__UNACTIVATED_OWNED",
+      "T09__PCAP__ACTIVE_OWNED",
+      "T09__PCAP__ACTIVATION_FAILED_OWNED",
+      "T09__PCAP__CLOSED"
+    ],
+    "T10": [
+      "T10__PCAP__NO_HANDLE",
+      "T10__PCAP__UNACTIVATED_OWNED",
+      "T10__PCAP__ACTIVE_OWNED",
+      "T10__PCAP__ACTIVATION_FAILED_OWNED",
+      "T10__PCAP__CLOSED"
+    ],
+    "T11": [
+      "T11__BPF__NO_VALID_PROGRAM",
+      "T11__BPF__COMPILED_OWNED",
+      "T11__BPF__FREED_OR_EMPTY"
+    ],
+    "T12": [
+      "T12__PCAP__NO_HANDLE",
+      "T12__PCAP__UNACTIVATED_OWNED",
+      "T12__PCAP__ACTIVE_OWNED",
+      "T12__PCAP__ACTIVATION_FAILED_OWNED",
+      "T12__PCAP__CLOSED"
+    ],
+    "T13": [
+      "T13__PCAP__NO_HANDLE",
+      "T13__PCAP__UNACTIVATED_OWNED",
+      "T13__PCAP__ACTIVE_OWNED",
+      "T13__PCAP__ACTIVATION_FAILED_OWNED",
+      "T13__PCAP__CLOSED"
+    ],
+    "T14": [
+      "T14__BPF__NO_VALID_PROGRAM",
+      "T14__BPF__COMPILED_OWNED",
+      "T14__BPF__FREED_OR_EMPTY"
+    ]
+  },
+  "v2_author_checkpoint": {
+    "canonical_specification_frozen": false,
+    "content_hashes_deferred": true,
+    "draft_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/libpcap_source_only_working_fsm_draft.v2.json",
+    "draft_sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221",
+    "event_count": 10,
+    "expected_git_blob": "2f5782b744edc3e7684b459241cf079a77da1ab7",
+    "freeze_date_deferred": true,
+    "human_review_completed": false,
+    "obligation_count": 20,
+    "product_initial_state": "NO_HANDLE__BPF__NO_VALID_PROGRAM",
+    "specification_id": "libpcap.live-capture.lifecycle.v2",
+    "state_count": 15,
+    "transition_count": 50
+  }
+}
