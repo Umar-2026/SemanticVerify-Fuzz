@@ -1,0 +1,48 @@
+{
+  "analyzer_output_read": false,
+  "baseline_output_read": false,
+  "canonical_specification_frozen": false,
+  "created_at_utc": "2026-08-17T10:22:36+00:00",
+  "generated_driver_source_read": false,
+  "gold_labels_read": false,
+  "human_review_completed": false,
+  "llm_review_output_read": false,
+  "next_boundary": "PREPARE_EXTERNAL_LIBPCAP_V2_HUMAN_REVIEW_HANDOFF",
+  "package_files": {
+    "draft_copy": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/review_package/03_libpcap_source_only_working_fsm_draft.v2.json",
+    "offline_verifier": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/review_package/06_verify_review_package.v2.py",
+    "repository_binding": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/review_package/01_repository_binding.v2.json",
+    "reviewer_packet": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/review_package/02_libpcap_v2_spec_reviewer_packet.v2.md",
+    "v1_completed_review_copy": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/review_package/04_v1_completed_human_review.v1.md",
+    "v1_decision_copy": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/review_package/05_v1_human_review_decision_record.v1.json"
+  },
+  "record_id": "SVF-LIBPCAP-V2-INDEPENDENT-REVIEW-PACKAGE",
+  "repair_output_read": false,
+  "review_scope": {
+    "mandatory_review_items": [
+      "V2-RR01",
+      "V2-RR02",
+      "V2-RR03",
+      "V2-RR04",
+      "V2-RR05",
+      "V2-RR06",
+      "V2-RR07",
+      "V2-RR08"
+    ],
+    "overall_decisions": [
+      "APPROVE_EXACT_V2_DRAFT_FOR_FINALIZATION",
+      "REVISION_REQUIRED",
+      "REJECT"
+    ],
+    "primary_question": "Does V2 close V1 RR-08 without changing already-approved semantics?"
+  },
+  "review_target": {
+    "author_checkpoint_commit": "342ea862912e53b1ebec70f2e53e57db10d7846c",
+    "author_checkpoint_tree": "1e8253e52be0a0d41fbe436c738d0011a02e33fa",
+    "git_blob": "2f5782b744edc3e7684b459241cf079a77da1ab7",
+    "repository_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/libpcap_source_only_working_fsm_draft.v2.json",
+    "sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221"
+  },
+  "selected_sample_membership_read": false,
+  "status": "AWAITING_INDEPENDENT_HUMAN_REVIEW"
+}
