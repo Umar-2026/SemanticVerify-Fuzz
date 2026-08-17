@@ -1,0 +1,73 @@
+{
+  "analyzer_output_read": false,
+  "baseline_output_read": false,
+  "canonical_specification_frozen": false,
+  "created_at_utc": "2026-08-17T16:45:12+00:00",
+  "generated_driver_source_read": false,
+  "gold_labels_read": false,
+  "human_review_completed": false,
+  "llm_review_output_read": false,
+  "next_boundary": "PREPARE_EXTERNAL_CURL_V2_HUMAN_REVIEW_HANDOFF",
+  "overall_review_decision": null,
+  "package_files": [
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/01_repository_binding.v2.json",
+      "sha256": "99bc69333bdb3c19922b4f30ffd38eddf253c815ab3885ec30ab76a6d82430a7"
+    },
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/02_curl_v2_scope_reviewer_packet.v2.md",
+      "sha256": "159243bfeeacdaa80364057f437c6fa5eee51de63883585c26b7dd415662d4b5"
+    },
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/03_curl_v2_authoring_scope.v2.json",
+      "sha256": "f8a5a0d360ad68478649a549744e4d13f22aec7d7edcc60116052906424b52df"
+    },
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/04_curl_v1_authoring_scope.v1.json",
+      "sha256": "d8e020cc14bd6c8ea9d679ba0f736bdce6098763d9b8ac0c0f95edaf8d9fd9c7"
+    },
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/05_decision_0021.v1.md",
+      "sha256": "9ef22ab551184808d3185c95d7286ab3c296bf6d9c29736c0312b84df78f18eb"
+    },
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/06_decision_0022.v2.md",
+      "sha256": "f4bfbc72fcc218f56b8223bf0d36a0db24edd40e59fab21de6fbbac71406cf8b"
+    },
+    {
+      "path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/review_package/07_verify_review_package.v2.py",
+      "sha256": "a6e0cd3ac9908e1c072c535f71186d89ebe1615f59d26a8fc2803a3ed0d1f057"
+    }
+  ],
+  "predecessor_v1": {
+    "freeze_commit": "9b3a33a358cd9cd0d4837b7221426d2e96d42239",
+    "path": "config/annotation/curl_v1_authoring_scope.v1.json",
+    "sha256": "d8e020cc14bd6c8ea9d679ba0f736bdce6098763d9b8ac0c0f95edaf8d9fd9c7"
+  },
+  "record_id": "SVF-CURL-V2-SCOPE-SUCCESSOR-INDEPENDENT-REVIEW-PACKAGE",
+  "record_schema_version": 1,
+  "repair_output_read": false,
+  "review_scope": [
+    "exact immutable predecessor/target binding",
+    "global runtime readiness semantics",
+    "explicit global cleanup obligation",
+    "global cleanup D4 reconciliation",
+    "multi-perform post-error condition",
+    "easy/multi membership semantics",
+    "cleanup-order normative strength",
+    "API/source/scenario preservation",
+    "source-only quarantine"
+  ],
+  "review_target": {
+    "author_checkpoint_commit": "fae56e4f5196fd0460046723ef9d6a4e26234612",
+    "author_checkpoint_tree": "0cb044dd10d48908895425512f5a2e7c1e8633b9",
+    "git_blob": "5c88a9e00d9ad2e8e4a59aa41488dec016c58cad",
+    "immutable": true,
+    "repository_path": "config/annotation/curl_v2_authoring_scope.v2.json",
+    "sha256": "f8a5a0d360ad68478649a549744e4d13f22aec7d7edcc60116052906424b52df"
+  },
+  "scope_frozen": false,
+  "selected_sample_membership_read": false,
+  "status": "AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "technical_working_draft_authorized": false
+}
