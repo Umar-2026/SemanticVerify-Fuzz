@@ -1,0 +1,26 @@
+{
+  "analyzer_implementation_authorized": false,
+  "approved_source_v2_sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221",
+  "baseline_execution_authorized": false,
+  "canonical_specification": {
+    "content_sha256": "370da6351b59f6134ae09477d8941d8ab119adad7f4230540758e09326b47c4f",
+    "file_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "freeze_date": "2026-08-17",
+    "path": "config/protocol_specifications/libpcap.json",
+    "specification_id": "libpcap.live-capture.lifecycle.v2"
+  },
+  "canonical_specification_immutable_after_this_freeze": true,
+  "finalization_record": {
+    "path": "evidence/annotation_preparation/canonical_protocol_specifications_v1/libpcap/finalization_record.v1.json",
+    "sha256": "33ab1a50bd0a9868dda76d181d3fcbdd1ce7301370e557072145de62a5e5770e"
+  },
+  "frozen_at_utc": "2026-08-17T15:45:52+00:00",
+  "generated_driver_source_inspection_authorized": false,
+  "gold_annotation_authorized": false,
+  "next_boundary": "NEXT_LIBRARY_SOURCE_ONLY_SPECIFICATION_AUTHORING",
+  "path_governance_commit": "60b83e9c3dc88c26b323d1661075f1201fe1615e",
+  "protocol_semantic_change": false,
+  "record_id": "SVF-LIBPCAP-CANONICAL-SPECIFICATION-FREEZE-V1",
+  "repair_implementation_authorized": false,
+  "status": "FROZEN_CANONICAL_LIBPCAP_SPECIFICATION"
+}
