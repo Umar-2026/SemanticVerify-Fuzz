@@ -1,0 +1,62 @@
+{
+  "analyzer_implementation_authorized": false,
+  "baseline_execution_authorized": false,
+  "canonical_curl_specification_created": false,
+  "curl_v1_working_draft_created": false,
+  "decision_0021": {
+    "path": "documentation/decisions/0021-curl-v1-source-only-authoring-scope-freeze.md",
+    "sha256": "9ef22ab551184808d3185c95d7286ab3c296bf6d9c29736c0312b84df78f18eb"
+  },
+  "frozen_at_utc": "2026-08-17T16:13:35+00:00",
+  "generated_driver_source_read": false,
+  "gold_annotation_authorized": false,
+  "hidden_lifecycle_closure_function_count": 4,
+  "hidden_lifecycle_closure_functions": [
+    "curl_easy_cleanup",
+    "curl_global_cleanup",
+    "curl_multi_cleanup",
+    "curl_multi_remove_handle"
+  ],
+  "in_scope_function_count": 12,
+  "in_scope_functions": [
+    "curl_easy_init",
+    "curl_easy_setopt",
+    "curl_easy_perform",
+    "curl_easy_reset",
+    "curl_easy_cleanup",
+    "curl_multi_init",
+    "curl_multi_add_handle",
+    "curl_multi_perform",
+    "curl_multi_remove_handle",
+    "curl_multi_cleanup",
+    "curl_global_init",
+    "curl_global_cleanup"
+  ],
+  "library": "curl",
+  "library_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+  "model_visible_function_count": 8,
+  "model_visible_functions": [
+    "curl_easy_init",
+    "curl_easy_perform",
+    "curl_easy_reset",
+    "curl_easy_setopt",
+    "curl_global_init",
+    "curl_multi_add_handle",
+    "curl_multi_init",
+    "curl_multi_perform"
+  ],
+  "next_boundary": "AUTHOR_CURL_SOURCE_ONLY_WORKING_DRAFT_V1",
+  "one_hop_api_expansion": false,
+  "record_id": "SVF-CURL-V1-AUTHORING-SCOPE-FREEZE",
+  "repair_implementation_authorized": false,
+  "scenario_manifest": {
+    "path": "config/generation/scenario_bindings.80.v10.json",
+    "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+  },
+  "scope_contract": {
+    "path": "config/annotation/curl_v1_authoring_scope.v1.json",
+    "sha256": "d8e020cc14bd6c8ea9d679ba0f736bdce6098763d9b8ac0c0f95edaf8d9fd9c7"
+  },
+  "source_evidence_count": 21,
+  "status": "FROZEN_BEFORE_CURL_V1_WORKING_DRAFT"
+}
