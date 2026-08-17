@@ -1,0 +1,62 @@
+{
+  "completed_binding_only_rereview": {
+    "binding_rr01": "PASS",
+    "overall_decision": "APPROVE_EXACT_V2_DRAFT_FOR_FINALIZATION",
+    "repository_record_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/binding_only_rereview_v1/01_completed_binding_only_rereview.v1.md",
+    "sha256": "3166037d74c2062ccdfd55d6a300cb32b334b54a47cca791beb45cca6a5fbeb3"
+  },
+  "corrected_binding_handoff": {
+    "archive_path": "/openbayes/home/libpcap-v2-binding-only-rereview-handoff-20260817.tar.gz",
+    "archive_sha256": "74047dd4e55c9af41c98bd3b99e32433c443511de43babf8857358b2fad4775b",
+    "git_metadata_blob_object_count": 0,
+    "handoff_sums_sha256": "d39281b844a08c53abbba8c4ecb6ca90e4a2d835e40aa64b978c34bb9e9051f1",
+    "manifest_sha256": "7be2f9e31ccb877bdd2ef2ff335235ad02aba140d0dee3224f0d3abf45fd793c",
+    "v1_to_v2_lineage_independently_verifiable": true,
+    "verifier_result": "PASS",
+    "verifier_sha256": "8d504a5de42b1bca5ab7fec8f78f81d2b40d94c560eb0681e0895781db05c8fd"
+  },
+  "finalization_authorization": {
+    "allowed_changes": [
+      "deferred freeze metadata",
+      "Decision-0018 content hashes"
+    ],
+    "canonical_finalization_allowed": true,
+    "semantic_modification_allowed": false,
+    "v3_semantic_successor_required": false
+  },
+  "next_boundary": "FINALIZE_LIBPCAP_V2_CANONICAL_SPECIFICATION",
+  "prior_review": {
+    "completed_review_sha256": "2fc0db873c94f443f6a149974896cf74ea121203e1af50f6384b4a5ca738bb6b",
+    "decision_record_sha256": "05f22aa92ef2fa17471e45e72627e6dacdc790862907f5b6bf0f4004b037bbc5",
+    "prior_blocking_item": "V2-RR01",
+    "prior_overall_decision": "REVISION_REQUIRED",
+    "v2_rr02_through_v2_rr08": "PASS"
+  },
+  "quarantine": {
+    "analyzer_output_read": false,
+    "baseline_output_read": false,
+    "generated_driver_source_read": false,
+    "gold_labels_read": false,
+    "llm_review_output_read": false,
+    "repair_output_read": false,
+    "selected_sample_membership_read": false
+  },
+  "record_id": "SVF-LIBPCAP-V2-BINDING-ONLY-REREVIEW-APPROVAL",
+  "recorded_at_utc": "2026-08-17T15:18:43+00:00",
+  "review_target": {
+    "author_checkpoint_commit": "342ea862912e53b1ebec70f2e53e57db10d7846c",
+    "author_checkpoint_tree": "1e8253e52be0a0d41fbe436c738d0011a02e33fa",
+    "draft_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/libpcap_source_only_working_fsm_draft.v2.json",
+    "draft_sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221",
+    "git_blob": "2f5782b744edc3e7684b459241cf079a77da1ab7",
+    "semantic_change_since_prior_review": false,
+    "specification_id": "libpcap.live-capture.lifecycle.v2"
+  },
+  "reviewer": {
+    "date": "17 / August / 2026",
+    "human_name": "Abdul Raheem Shahzad",
+    "role_id": "Spec-Reviewer-1",
+    "signature_or_recorded_confirmation": "ARS"
+  },
+  "status": "APPROVED_EXACT_V2_DRAFT_FOR_FINALIZATION"
+}
