@@ -1,0 +1,54 @@
+{
+  "analyzer_output_read": false,
+  "baseline_output_read": false,
+  "blocking_review_item": "RR-08",
+  "completed_review": {
+    "repository_record_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/human_review_v1/01_completed_human_review.v1.md",
+    "sha256": "fd94ec4a552c97e9ee61f550f426ce2e2d8c23ca3ab558f45774cf52766142d4",
+    "source_handoff_path": "/openbayes/home/libpcap-v1-independent-human-review-handoff-20260816/manual_review/02_libpcap_spec_reviewer_packet.MANUAL_REVIEW_COPY.v1.md"
+  },
+  "created_at_utc": "2026-08-17T10:06:33+00:00",
+  "generated_driver_source_read": false,
+  "gold_labels_read": false,
+  "llm_review_output_read": false,
+  "next_boundary": "AUTHOR_LIBPCAP_V2_SUCCESSOR_FOR_RR08_ONLY",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-LIBPCAP-V1-HUMAN-REVIEW-DECISION",
+  "repair_output_read": false,
+  "review_target": {
+    "author_checkpoint_commit": "a2344c4905555388bbecd53834ca6627cdbe808a",
+    "git_blob": "de11a08a6737f5a29734d2b41f7fd5c19cca8522",
+    "immutable": true,
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v1/libpcap_source_only_working_fsm_draft.v1.json",
+    "sha256": "2a2723eba8cac78c004b846fc1fe71e786730c9aeecc6800e81ee6f2e318687a"
+  },
+  "reviewer": {
+    "date": "17 / August / 2026",
+    "human_name": "Abdul Raheem Shahzad",
+    "role_id": "Spec-Reviewer-1",
+    "signature_or_recorded_confirmation": "ARS",
+    "underlying_role": "Adjudicator-C"
+  },
+  "revision_basis": {
+    "representation_defect": "The existing protocol schema exposes one machine-readable initial_state. V1 declares NO_HANDLE as that state while NO_VALID_PROGRAM exists only as an independently asserted local BPF start condition. Therefore the BPF lifecycle is not structurally reachable through the single declared state relation.",
+    "required_successor_action": "Create an immutable V2 successor that structurally encodes resource-local initial states and resource scope, or another unambiguous schema-approved multi-resource representation.",
+    "unrelated_protocol_semantic_change_authorized": false
+  },
+  "rr_decisions": {
+    "RR-01": "PASS",
+    "RR-02": "PASS",
+    "RR-03": "PASS",
+    "RR-04": "PASS",
+    "RR-05": "PASS",
+    "RR-06": "PASS",
+    "RR-07": "PASS",
+    "RR-08": "REVISION_REQUIRED",
+    "RR-09": "PASS",
+    "RR-10": "PASS"
+  },
+  "selected_sample_membership_read": false,
+  "status": "COMPLETED_HUMAN_REVIEW_REVISION_REQUIRED",
+  "v1_canonical_finalization_allowed": false,
+  "v1_edit_in_place_allowed": false,
+  "v2_successor_required": true
+}
