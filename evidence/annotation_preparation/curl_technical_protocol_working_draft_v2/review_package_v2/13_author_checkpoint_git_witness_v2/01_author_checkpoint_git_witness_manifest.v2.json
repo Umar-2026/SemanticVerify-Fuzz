@@ -1,0 +1,37 @@
+{
+  "archive_sha256": "b77e22323f98ab3a8ab3e227276bcc2ff95d04033dfed5495a42bed642a37d51",
+  "author_commit": "a9042429155a161bd5c089910e7557b907808db6",
+  "author_tree": "00a4fce0e91b0216e2e26efb46201e2aa9fa8f4c",
+  "decision_0030_blob": "2460750ba8ece9c5d74ff9accd122c7123fa24f2",
+  "decision_0030_path": "documentation/decisions/0030-curl-technical-working-draft-v2-successor-author-checkpoint.md",
+  "object_count": 8,
+  "object_oids": [
+    "00a4fce0e91b0216e2e26efb46201e2aa9fa8f4c",
+    "2460750ba8ece9c5d74ff9accd122c7123fa24f2",
+    "85b4745825ad4f39f2215b8287a558f4345016ca",
+    "a9042429155a161bd5c089910e7557b907808db6",
+    "bdeb409e3f6d87ffbfeb4f91976cc03d75d9826c",
+    "c29dd4653d28f135d3dd0d9dcd0a605a71f629ec",
+    "e3f8e708b3d5e3fa7c4898585d88e206aee3a584",
+    "e9d323d5dac5ce8c28653fbb40868703daf15c4c"
+  ],
+  "object_types": {
+    "00a4fce0e91b0216e2e26efb46201e2aa9fa8f4c": "tree",
+    "2460750ba8ece9c5d74ff9accd122c7123fa24f2": "blob",
+    "85b4745825ad4f39f2215b8287a558f4345016ca": "tree",
+    "a9042429155a161bd5c089910e7557b907808db6": "commit",
+    "bdeb409e3f6d87ffbfeb4f91976cc03d75d9826c": "tree",
+    "c29dd4653d28f135d3dd0d9dcd0a605a71f629ec": "tree",
+    "e3f8e708b3d5e3fa7c4898585d88e206aee3a584": "tree",
+    "e9d323d5dac5ce8c28653fbb40868703daf15c4c": "blob"
+  },
+  "parent_commit_objects_included": false,
+  "record_id": "SVF-CURL-TECHNICAL-V2-AUTHOR-CHECKPOINT-MINIMAL-GIT-WITNESS",
+  "type_counts": {
+    "blob": 2,
+    "commit": 1,
+    "tree": 5
+  },
+  "v2_blob": "e9d323d5dac5ce8c28653fbb40868703daf15c4c",
+  "v2_path": "config/annotation/curl_technical_protocol_working_draft.v2.json"
+}

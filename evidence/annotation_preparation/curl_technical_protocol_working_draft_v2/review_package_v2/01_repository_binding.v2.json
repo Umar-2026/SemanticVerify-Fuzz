@@ -1,0 +1,32 @@
+{
+  "author_checkpoint": {
+    "commit": "a9042429155a161bd5c089910e7557b907808db6",
+    "parent": "eba1cb67f5a7c6b2ea8348634f397204a2bbb0d3",
+    "tree": "00a4fce0e91b0216e2e26efb46201e2aa9fa8f4c"
+  },
+  "author_decision": {
+    "git_blob": "2460750ba8ece9c5d74ff9accd122c7123fa24f2",
+    "path": "documentation/decisions/0030-curl-technical-working-draft-v2-successor-author-checkpoint.md"
+  },
+  "predecessor_review": {
+    "completed_v1_human_review_decision": "REVISION_REQUIRED",
+    "completed_v1_human_review_sha256": "e253340d540a06cd24af501c569154869ac0324d677995b7266349ba097973cc",
+    "v1_working_draft_sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6"
+  },
+  "record_id": "SVF-CURL-TECHNICAL-V2-INDEPENDENT-REVIEW-PACKAGE-BINDING",
+  "review_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false,
+    "v2_independent_human_review_completed": false
+  },
+  "review_target": {
+    "git_blob": "e9d323d5dac5ce8c28653fbb40868703daf15c4c",
+    "path": "config/annotation/curl_technical_protocol_working_draft.v2.json",
+    "sha256": "63c17bbd0a09365fad9d3f0445fdc2115a8a0e945f622a39c745f31e1baf3d31"
+  }
+}

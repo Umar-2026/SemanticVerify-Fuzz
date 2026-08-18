@@ -1,0 +1,59 @@
+{
+  "authorization_commit": "eba1cb67f5a7c6b2ea8348634f397204a2bbb0d3",
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "frozen_boundaries": {
+    "api_surface_changed": false,
+    "api_surface_function_count": 12,
+    "pinned_curl_revision_changed": false,
+    "scenario_manifest_changed": false,
+    "source_evidence_class_changed": false,
+    "v1_modified": false
+  },
+  "human_review": {
+    "implemented_items": [
+      "TS-RR05",
+      "TS-RR06",
+      "TS-RR07",
+      "TS-RR08",
+      "TS-RR09",
+      "TS-RR10",
+      "TS-RR11",
+      "TS-RR12",
+      "TS-RR13",
+      "TS-RR14"
+    ],
+    "overall_decision": "REVISION_REQUIRED",
+    "sha256": "e253340d540a06cd24af501c569154869ac0324d677995b7266349ba097973cc"
+  },
+  "next_boundary": "BUILD_CURL_TECHNICAL_WORKING_DRAFT_V2_INDEPENDENT_REVIEW_PACKAGE",
+  "predecessor": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v1.json",
+    "sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6"
+  },
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V2-AUTHOR-RESOLUTION",
+  "resolution_summary": {
+    "TS-RR05": "curl_multi_cleanup successful release/detachment/obligation discharge is conditioned on CURLM_OK; failed cleanup remains conservative.",
+    "TS-RR06": "The same return-conditioned cleanup discipline applies in the post-error multi state.",
+    "TS-RR07": "Machine-readable verdict-valued fields are restricted to exactly VALID, VIOLATION-MUST, VIOLATION-MAY, and UNKNOWN.",
+    "TS-RR08": "Explicit D1, D2, cleanup-specific D4, NULL easy cleanup, NULL multi cleanup, and failed multi-cleanup obligation handling are represented.",
+    "TS-RR09": "Exit with EXPLICIT_CLEANUP_DUE is D5 VIOLATION-MUST.",
+    "TS-RR10": "Multi cleanup ordering is represented as a non-enforceable recommendation; successful attached cleanup is not an enforceable violation solely for skipped explicit remove.",
+    "TS-RR11": "Plain multi-perform repetition after non-CURLM_OK without complete recovery is D6 VIOLATION-MUST; complete remove-and-re-add recovery is explicitly modeled.",
+    "TS-RR12": "The source-grounded NULL easy-init runtime state set is preserved and downstream events use feasible-state verdict joins.",
+    "TS-RR13": "Wrong-multi remove is D7 VIOLATION-MUST and actual membership is preserved.",
+    "TS-RR14": "Final-reference global cleanup with live modeled resources is state-sensitive D8 VIOLATION-MUST."
+  },
+  "status": "AUTHOR_SUCCESSOR_IMPLEMENTED_AWAITING_INDEPENDENT_REVIEW",
+  "successor": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v2.json",
+    "sha256": "63c17bbd0a09365fad9d3f0445fdc2115a8a0e945f622a39c745f31e1baf3d31"
+  }
+}

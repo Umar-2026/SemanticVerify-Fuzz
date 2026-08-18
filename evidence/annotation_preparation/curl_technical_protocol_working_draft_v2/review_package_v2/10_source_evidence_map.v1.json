@@ -1,0 +1,202 @@
+{
+  "frozen_scope_semantic_dependencies": [
+    "runtime readiness and explicit cleanup obligation are separate",
+    "implicit curl_easy_init readiness is not the same explicit cleanup duty",
+    "curl_multi_init requires prior runtime readiness",
+    "unmatched curl_global_cleanup is not automatic D4",
+    "easy cleanup requires detached membership",
+    "multi does not own/finalize caller easy handles",
+    "multi-perform error creates post-error uncertainty",
+    "whole multi cleanup sequence must not be silently strengthened to MUST"
+  ],
+  "key_assertions": [
+    {
+      "claim": "curl_easy_init can invoke implicit global initialization when the runtime is not initialized.",
+      "evidence": [
+        {
+          "lines": "326-357",
+          "path": "lib/easy.c",
+          "sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483"
+        }
+      ],
+      "id": "SRC-GLOBAL-01"
+    },
+    {
+      "claim": "curl_global_cleanup is reference-counted in the pinned implementation and is a no-op when the count is already zero.",
+      "evidence": [
+        {
+          "lines": "250-285",
+          "path": "lib/easy.c",
+          "sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483"
+        }
+      ],
+      "id": "SRC-GLOBAL-02"
+    },
+    {
+      "claim": "curl_easy_perform is not permitted while the easy handle is attached to a multi handle.",
+      "evidence": [
+        {
+          "lines": "59-60",
+          "path": "docs/libcurl/curl_easy_perform.md",
+          "sha256": "6fe91c0b04879dcaac1036bc1307bb3fb85be6102d47d788af7f2c620ba098c7"
+        },
+        {
+          "lines": "34-37",
+          "path": "docs/libcurl/curl_multi_add_handle.md",
+          "sha256": "8964c4ff62cd009f6fa7ca72d5a0bfcf19822e259c2352f785d9b83e1084a90a"
+        }
+      ],
+      "id": "SRC-EASY-01"
+    },
+    {
+      "claim": "curl_easy_perform returns a CURLcode and a transfer failure does not release the easy handle.",
+      "evidence": [
+        {
+          "lines": "81-83",
+          "path": "docs/libcurl/curl_easy_perform.md",
+          "sha256": "6fe91c0b04879dcaac1036bc1307bb3fb85be6102d47d788af7f2c620ba098c7"
+        },
+        {
+          "lines": "770-825",
+          "path": "lib/easy.c",
+          "sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483"
+        }
+      ],
+      "id": "SRC-EASY-02"
+    },
+    {
+      "claim": "curl_easy_reset resets options but preserves specified caches/live connection information and does not release the handle.",
+      "evidence": [
+        {
+          "lines": "31-37",
+          "path": "docs/libcurl/curl_easy_reset.md",
+          "sha256": "d2b6932349acbdf4d3e230ecda20cf13edf66520e47b3d43bffa87b2948e7cc0"
+        },
+        {
+          "lines": "1085-1118",
+          "path": "lib/easy.c",
+          "sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483"
+        }
+      ],
+      "id": "SRC-EASY-03"
+    },
+    {
+      "claim": "curl_easy_cleanup releases a valid easy handle.",
+      "evidence": [
+        {
+          "lines": "834-847",
+          "path": "lib/easy.c",
+          "sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483"
+        }
+      ],
+      "id": "SRC-EASY-04"
+    },
+    {
+      "claim": "A successful curl_multi_init creates a multi handle and documentation requires a corresponding curl_multi_cleanup.",
+      "evidence": [
+        {
+          "lines": "32-35",
+          "path": "docs/libcurl/curl_multi_init.md",
+          "sha256": "6be119495ff8b99a79e5d45e4bb1be3aeeee3046e2b54cdb0e11565fdfaaa445"
+        },
+        {
+          "lines": "368-375",
+          "path": "lib/multi.c",
+          "sha256": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+        }
+      ],
+      "id": "SRC-MULTI-01"
+    },
+    {
+      "claim": "Successful add creates membership; duplicate/previous membership causes CURLM_ADDED_ALREADY in the pinned implementation.",
+      "evidence": [
+        {
+          "lines": "466-535",
+          "path": "lib/multi.c",
+          "sha256": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+        },
+        {
+          "lines": "32-37,54-59",
+          "path": "docs/libcurl/curl_multi_add_handle.md",
+          "sha256": "8964c4ff62cd009f6fa7ca72d5a0bfcf19822e259c2352f785d9b83e1084a90a"
+        }
+      ],
+      "id": "SRC-MULTI-02"
+    },
+    {
+      "claim": "Successful remove restores easy-interface eligibility; repeated remove of an already detached handle is a no-op success in the pinned implementation.",
+      "evidence": [
+        {
+          "lines": "30-41",
+          "path": "docs/libcurl/curl_multi_remove_handle.md",
+          "sha256": "88809d1245dc0c66a672aedaba53a69fa7aa4dbb5d68eab3e1d8ff5946720938"
+        },
+        {
+          "lines": "784-835",
+          "path": "lib/multi.c",
+          "sha256": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+        }
+      ],
+      "id": "SRC-MULTI-03"
+    },
+    {
+      "claim": "A non-CURLM_OK curl_multi_perform return leaves transfer state uncertain and plain continuation is not documented as valid.",
+      "evidence": [
+        {
+          "lines": "59-62,103-111",
+          "path": "docs/libcurl/curl_multi_perform.md",
+          "sha256": "5b85efb586d552e0632a25b25b1642b26e82192694c8be5dfb86cffa5e23ae2e"
+        },
+        {
+          "lines": "2925-2977",
+          "path": "lib/multi.c",
+          "sha256": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+        }
+      ],
+      "id": "SRC-MULTI-04"
+    },
+    {
+      "claim": "Multi cleanup does not free caller-owned easy handles; documentation describes remove-easy-cleanup-multi ordering, while pinned implementation clears remaining associations.",
+      "evidence": [
+        {
+          "lines": "31-42",
+          "path": "docs/libcurl/curl_multi_cleanup.md",
+          "sha256": "ad4d80cc39186e65e3a5e10231f41e61a8e4f8a16179013e98ee90a83ac4e67d"
+        },
+        {
+          "lines": "108-121",
+          "path": "docs/libcurl/libcurl-multi.md",
+          "sha256": "19b8aa18f2bd6a5c9bb4b33568cd669513a2fb7185afd3bd4a8e7bf6cb30b3c2"
+        },
+        {
+          "lines": "2979-3055",
+          "path": "lib/multi.c",
+          "sha256": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+        }
+      ],
+      "id": "SRC-MULTI-05"
+    },
+    {
+      "claim": "curl_easy_setopt operates on an easy handle and returns a CURLcode; its return does not release the handle.",
+      "evidence": [
+        {
+          "lines": "2926-2952",
+          "path": "lib/setopt.c",
+          "sha256": "3738ff6a04a09f4941b9d9b7c79d2882a999fc20f0dcaf543ce5385eb4972dcc"
+        }
+      ],
+      "id": "SRC-SETOPT-01"
+    }
+  ],
+  "pinned_source": {
+    "commit": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "tree": "e23d273aeb073c04aa5b073b35c9fde16979c896"
+  },
+  "prohibited_evidence_used": false,
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V1-SOURCE-EVIDENCE-MAP",
+  "working_draft": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v1.json",
+    "sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6",
+    "status": "WORKING_DRAFT_NOT_CANONICAL"
+  }
+}
