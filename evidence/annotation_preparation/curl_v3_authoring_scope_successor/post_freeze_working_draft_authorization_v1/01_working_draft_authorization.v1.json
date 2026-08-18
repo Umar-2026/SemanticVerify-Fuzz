@@ -1,0 +1,47 @@
+{
+  "authorization_decision": {
+    "path": "documentation/decisions/0026-curl-v3-post-freeze-technical-working-draft-authorization.md",
+    "sha256": "6d4d9e19074834cfbbacb5125f9a11e7f13651693e70333120ad6c13525f36c1"
+  },
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": true,
+    "v3_scope_freeze_authorized": true,
+    "v3_scope_frozen": true
+  },
+  "authorized_activity": {
+    "author_side_working_draft_validation": true,
+    "source_grounded_protocol_formalization": true,
+    "technical_working_draft_authoring": true
+  },
+  "completed_scope_freeze": {
+    "decision_0025_sha256": "235066254503cc0729fbbf66bd640ee7042b549b9df9e26c7c6f53ee3b90937c",
+    "repository_commit": "0992b2ae03702e29471d59f192daf43a8924314d",
+    "repository_tree": "4ed8c5c1d8936eff6c9da44aee69371f0c9d4e7a",
+    "scope_frozen": true
+  },
+  "evidence_boundary": {
+    "analyzer_output_evidence_allowed": false,
+    "approved_source_evidence_only": true,
+    "baseline_output_evidence_allowed": false,
+    "generated_driver_evidence_allowed": false,
+    "gold_label_evidence_allowed": false,
+    "repair_output_evidence_allowed": false
+  },
+  "exact_frozen_v3_scope": {
+    "author_checkpoint_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "author_checkpoint_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "next_boundary": "AUTHOR_SOURCE_GROUNDED_CURL_TECHNICAL_PROTOCOL_WORKING_DRAFT",
+  "record_id": "SVF-CURL-V3-POST-FREEZE-TECHNICAL-WORKING-DRAFT-AUTHORIZATION-V1",
+  "status": "TECHNICAL_WORKING_DRAFT_AUTHORIZED",
+  "technical_specification_review_required_before_canonicalization": true
+}
