@@ -1,0 +1,46 @@
+{
+  "analyzer_implementation_authorized": false,
+  "approved_source_evidence_count": 21,
+  "author_checkpoint": {
+    "commit": "06a626c90bd18b6645a66117c5562c200734ccc1",
+    "tree": "f86c25370a7b74b493cf22491e925b420ae3d303"
+  },
+  "baseline_execution_authorized": false,
+  "canonical_curl_specification_authorized": false,
+  "decision_0027": {
+    "git_blob": "4d2f9eced54e406d8f9212464351a749f9af88e1",
+    "sha256": "2488407a4e4a5e6f0c6881e446bf9a5f9627bf3fe0187b5417c9885739adc6e6"
+  },
+  "generated_driver_inspection_authorized": false,
+  "gold_annotation_authorized": false,
+  "human_reviewer_identity_initially_blank": true,
+  "minimal_git_witness_archive_sha256": "96e7c013ee2ab6f5081c382711b0d39a74be76db2332e9150efa7843167e8ea8",
+  "next_boundary": "BUILD_EXTERNAL_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_HANDOFF",
+  "overall_review_decision_initially_blank": true,
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V1-INDEPENDENT-REVIEW-PACKAGE",
+  "repair_authorized": false,
+  "review_decisions_initially_blank": true,
+  "review_items": [
+    "TS-RR01",
+    "TS-RR02",
+    "TS-RR03",
+    "TS-RR04",
+    "TS-RR05",
+    "TS-RR06",
+    "TS-RR07",
+    "TS-RR08",
+    "TS-RR09",
+    "TS-RR10",
+    "TS-RR11",
+    "TS-RR12",
+    "TS-RR13",
+    "TS-RR14",
+    "TS-RR15"
+  ],
+  "review_target": {
+    "git_blob": "4e4b87319aa2f09b5618d2a0b8e0a076788a2e10",
+    "path": "03_curl_technical_protocol_working_draft.v1.json",
+    "sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6"
+  },
+  "status": "AWAITING_REAL_INDEPENDENT_HUMAN_TECHNICAL_REVIEW"
+}

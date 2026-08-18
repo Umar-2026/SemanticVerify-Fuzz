@@ -1,0 +1,30 @@
+{
+  "author_checkpoint": {
+    "commit": "06a626c90bd18b6645a66117c5562c200734ccc1",
+    "parent": "cb864ac93023ee288343b8bcdc0267b07dc28114",
+    "tree": "f86c25370a7b74b493cf22491e925b420ae3d303"
+  },
+  "canonical_curl_specification_authorized": false,
+  "decision_0027": {
+    "git_blob": "4d2f9eced54e406d8f9212464351a749f9af88e1",
+    "package_path": "04_decision_0027.AUTHOR_CHECKPOINT.md",
+    "repository_path": "documentation/decisions/0027-curl-technical-protocol-working-draft-v1-author-checkpoint.md",
+    "sha256": "2488407a4e4a5e6f0c6881e446bf9a5f9627bf3fe0187b5417c9885739adc6e6"
+  },
+  "frozen_v3": {
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "human_technical_review_completed": false,
+  "next_boundary": "INDEPENDENT_HUMAN_TECHNICAL_SPECIFICATION_REVIEW",
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V1-INDEPENDENT-REVIEW-BINDING",
+  "working_draft": {
+    "git_blob": "4e4b87319aa2f09b5618d2a0b8e0a076788a2e10",
+    "package_path": "03_curl_technical_protocol_working_draft.v1.json",
+    "repository_path": "config/annotation/curl_technical_protocol_working_draft.v1.json",
+    "sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6",
+    "status": "WORKING_DRAFT_NOT_CANONICAL"
+  },
+  "working_draft_authorization": {
+    "decision_0026_sha256": "6d4d9e19074834cfbbacb5125f9a11e7f13651693e70333120ad6c13525f36c1"
+  }
+}

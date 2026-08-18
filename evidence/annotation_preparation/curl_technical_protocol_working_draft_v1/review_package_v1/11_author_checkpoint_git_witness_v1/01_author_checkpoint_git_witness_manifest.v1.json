@@ -1,0 +1,31 @@
+{
+  "archive_sha256": "96e7c013ee2ab6f5081c382711b0d39a74be76db2332e9150efa7843167e8ea8",
+  "author_commit": "06a626c90bd18b6645a66117c5562c200734ccc1",
+  "author_tree": "f86c25370a7b74b493cf22491e925b420ae3d303",
+  "included_tree_objects": [
+    "f86c25370a7b74b493cf22491e925b420ae3d303",
+    "98806c90b3133d618fd504066835140e0a309c5b",
+    "0433a94b2146ec72767fbcf100c885845612391c",
+    "e2d35b0f0653b041509136255d093f2fa5a57e37",
+    "23f4b761e0db9a7daacc8043cfccd8adf8c5219a"
+  ],
+  "object_inventory": {
+    "blobs": 2,
+    "commits": 1,
+    "total": 8,
+    "trees": 5
+  },
+  "only_target_file_blobs_included": true,
+  "parent_commit_objects_included": false,
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V1-MINIMAL-GIT-WITNESS",
+  "target_paths": {
+    "config/annotation/curl_technical_protocol_working_draft.v1.json": {
+      "blob": "4e4b87319aa2f09b5618d2a0b8e0a076788a2e10",
+      "sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6"
+    },
+    "documentation/decisions/0027-curl-technical-protocol-working-draft-v1-author-checkpoint.md": {
+      "blob": "4d2f9eced54e406d8f9212464351a749f9af88e1",
+      "sha256": "2488407a4e4a5e6f0c6881e446bf9a5f9627bf3fe0187b5417c9885739adc6e6"
+    }
+  }
+}
