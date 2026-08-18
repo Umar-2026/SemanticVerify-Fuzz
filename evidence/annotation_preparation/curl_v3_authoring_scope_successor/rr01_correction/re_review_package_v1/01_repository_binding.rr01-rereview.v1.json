@@ -1,0 +1,76 @@
+{
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": false,
+    "v3_scope_freeze_authorized": false,
+    "v3_scope_frozen": false
+  },
+  "decision_0023": {
+    "edited_in_place": false,
+    "sha256": "c774bb667930ef9ceaedc5ca5d25e88d57da3ffefa10de639ef6a20f7d2271d1",
+    "status": "IMMUTABLE_HISTORICAL_RECORD_WITH_REVIEWED_PRESENTATION_DEFECT"
+  },
+  "decision_0024": {
+    "blob": "ca72e87d5668c649eb64db8fc04f457eeebc5d0c",
+    "commit": "36400fa2028df6ccaf176780ba8ff21017a68262",
+    "sha256": "df22dc70c572407c1968859f6fd86a20d847062b2130a08484670c06a340915b",
+    "status": "IMMUTABLE_RR01_CORRECTION_RECORD",
+    "tree": "d7afbc0a4c159530f5687c93dca2bad823e55f77"
+  },
+  "exact_v2_predecessor": {
+    "path": "config/annotation/curl_v2_authoring_scope.v2.json",
+    "sha256": "f8a5a0d360ad68478649a549744e4d13f22aec7d7edcc60116052906424b52df"
+  },
+  "exact_v3_target": {
+    "author_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "author_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "edited_after_prior_review": false,
+    "git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "human_re_review_completed": false,
+  "minimal_git_witness": {
+    "archive_sha256": "3710cd5b49fa3e80610724756bae7376fc196c23de36f2f110ab6074d256e181",
+    "blob_count": 2,
+    "commit_count": 2,
+    "object_count": 10,
+    "parent_history_included": false,
+    "repository_commit": "3fee40ebd6f8eedd5f33eb414b8646fc72548814",
+    "repository_tree": "3de2e86cb476c708b421c4682e62ec593098020d",
+    "tree_count": 6,
+    "unrelated_file_blobs_included": false
+  },
+  "next_boundary": "COMMIT_RR01_RE_REVIEW_PACKAGE_THEN_PREPARE_EXTERNAL_HUMAN_HANDOFF",
+  "overall_re_review_decision": null,
+  "prior_completed_v3_review": {
+    "V3-RR01": "REVISION_REQUIRED",
+    "V3-RR02": "PASS",
+    "V3-RR03": "PASS",
+    "V3-RR04": "PASS",
+    "overall": "REVISION_REQUIRED",
+    "repository_commit": "713587c654f9c24f8fd3e7a3b3ad3638ec81a6fe",
+    "repository_tree": "c1bebcd5a2e46ee3c00917e23571aac5074dd603",
+    "sha256": "3e77a9456d49ccd0001ad839b1e2a32478d45a05cc94b0ba115cdd667a45afb9"
+  },
+  "quarantine": {
+    "analyzer_output_included": false,
+    "baseline_output_included": false,
+    "compiler_log_semantic_contents_included": false,
+    "generated_driver_source_included": false,
+    "gold_labels_included": false,
+    "llm_review_output_included": false,
+    "raw_model_responses_included": false,
+    "repair_output_included": false,
+    "selected_sample_membership_included": false
+  },
+  "record_id": "SVF-CURL-V3-RR01-CORRECTED-INDEPENDENT-RE-REVIEW-REPOSITORY-BINDING-V1",
+  "review_scope": "Previously blocking V3-RR01 only; prior V3-RR02 through V3-RR04 remain recorded PASS and are not silently rewritten.",
+  "rr01_re_review_decision": null,
+  "status": "AWAITING_INDEPENDENT_HUMAN_RR01_RE_REVIEW"
+}

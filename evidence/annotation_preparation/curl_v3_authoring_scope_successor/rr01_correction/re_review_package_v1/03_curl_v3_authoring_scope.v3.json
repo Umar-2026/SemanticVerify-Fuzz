@@ -1,0 +1,640 @@
+{
+  "author": "Spec-Author-1",
+  "author_checkpoint_created_at_utc": "2026-08-18T08:58:43.440326+00:00",
+  "authoring_constraints": {
+    "analyzer_output_may_be_read": false,
+    "baseline_output_may_be_read": false,
+    "generated_driver_source_may_be_read": false,
+    "gold_labels_may_be_read": false,
+    "llm_review_output_may_be_read": false,
+    "repair_output_may_be_read": false,
+    "scope_change_after_driver_visibility": false,
+    "selected_sample_membership_may_be_used_as_protocol_evidence": false,
+    "scope_freeze_authorized_after_exact_v3_human_approval": true,
+    "technical_working_draft_authorized_immediately_after_exact_v3_human_approval": false,
+    "technical_working_draft_authorized_only_after_completed_v3_scope_freeze": true,
+    "technical_working_draft_authorized_now": false
+  },
+  "contract_id": "SVF-CURL-V3-SOURCE-ONLY-AUTHORING-SCOPE-SUCCESSOR",
+  "defect_category_projection": {
+    "D1": [
+      "easy-handle operation before successful easy-handle acquisition",
+      "multi-handle operation before successful multi-handle acquisition",
+      "source-documented live-resource operation before the corresponding in-scope resource exists",
+      "curl_multi_init or another non-exempt in-scope libcurl operation while actual global runtime readiness is UNINITIALIZED"
+    ],
+    "D2": [
+      "easy-handle operation on a null curl_easy_init result",
+      "multi-handle operation on a null curl_multi_init result",
+      "continuation that relies on an explicitly failed in-scope acquisition result",
+      "in-scope libcurl use after curl_global_init returned non-CURLE_OK"
+    ],
+    "D3": [
+      "use of an easy handle after curl_easy_cleanup",
+      "use of a multi handle after curl_multi_cleanup",
+      "source-documented use of an in-scope resource after release"
+    ],
+    "D4": [
+      "double curl_easy_cleanup of the same released easy handle",
+      "double curl_multi_cleanup of the same released multi handle"
+    ],
+    "D5": [
+      "missing curl_easy_cleanup after successful non-null curl_easy_init on a relevant exit",
+      "missing curl_multi_cleanup after successful non-null curl_multi_init on a relevant exit",
+      "missing matching curl_global_cleanup after successful explicit curl_global_init in the bounded S10 global-state scenario"
+    ],
+    "D6": [
+      "curl_easy_perform while that easy handle remains attached to a multi handle",
+      "curl_easy_cleanup before required detachment from its multi handle",
+      "multi/easy cleanup in an order contradicting pinned documentation",
+      "curl_global_cleanup before the bounded explicit-global-use region is finished",
+      "other pinned-source-documented invalid ordering among the twelve in-scope calls",
+      "plain curl_multi_perform continuation after a non-CURLM_OK multi-perform result without documented remove/re-add recovery; final MUST/MAY strength requires independent review"
+    ],
+    "D7": [
+      "treating curl_multi_add_handle as transferring ownership of the easy handle to the multi handle",
+      "assuming curl_multi_cleanup frees individual easy handles",
+      "other pinned-source-documented ownership misuse among bounded resources"
+    ],
+    "D8": [
+      "curl_easy_cleanup conditioned on the wrong easy-acquisition branch",
+      "curl_multi_cleanup conditioned on the wrong multi-acquisition branch",
+      "curl_multi_remove_handle conditioned on the wrong membership branch",
+      "curl_global_cleanup conditioned on the wrong explicit-global-initialization branch",
+      "cleanup under the wrong documented resource state or result condition",
+      "curl_global_cleanup under a runtime/ownership condition that prematurely removes required global readiness while modeled libcurl use remains live"
+    ]
+  },
+  "designated_reviewer": "Spec-Reviewer-1",
+  "easy_handle_rules": {
+    "cleanup_releases_easy_handle": true,
+    "cleanup_required_after_non_null_init": true,
+    "easy_perform_after_multi_remove_allowed": true,
+    "easy_perform_repeated_use_allowed": true,
+    "easy_perform_while_attached_to_multi_allowed": false,
+    "easy_reset_releases_handle": false,
+    "easy_reset_resets_options_to_post_init_defaults": true,
+    "easy_setopt_is_live_handle_operation": true,
+    "perform_failure_releases_handle": false,
+    "post_cleanup_use_allowed": false
+  },
+  "explicitly_excluded_functions": [
+    "curl_easy_duphandle",
+    "curl_easy_getinfo",
+    "curl_easy_option_by_id",
+    "curl_easy_option_by_name",
+    "curl_easy_option_next",
+    "curl_easy_strerror",
+    "curl_global_init_mem",
+    "curl_global_sslset",
+    "curl_global_trace",
+    "curl_multi_fdset",
+    "curl_multi_get_handles",
+    "curl_multi_info_read",
+    "curl_multi_poll",
+    "curl_multi_setopt",
+    "curl_multi_socket_action",
+    "curl_multi_wait",
+    "curl_version_info"
+  ],
+  "global_state_rules": {
+    "curl_easy_init_is_documented_auto_init_exception": true,
+    "curl_easy_init_success_predicate": "return != NULL",
+    "curl_multi_init_is_not_documented_auto_init_exception": true,
+    "explicit_global_init_success_predicate": "return == CURLE_OK",
+    "failed_explicit_global_init_establishes_runtime_ready": false,
+    "failed_explicit_global_init_permits_other_libcurl_use": false,
+    "global_cleanup_when_implicit_reference_exists_can_change_runtime_state": true,
+    "global_cleanup_zero_reference_implementation_is_noop": true,
+    "global_init_documented_before_other_libcurl_calls": true,
+    "premature_global_cleanup_with_live_libcurl_use_is_state_sensitive": true,
+    "runtime_readiness_and_explicit_cleanup_obligation_are_separate": true,
+    "unmatched_global_cleanup_is_automatic_D4": false,
+    "v2_reference_model_is_bounded_not_unbounded": true
+  },
+  "human_review_completed": false,
+  "in_scope_functions": [
+    "curl_easy_init",
+    "curl_easy_setopt",
+    "curl_easy_perform",
+    "curl_easy_reset",
+    "curl_easy_cleanup",
+    "curl_multi_init",
+    "curl_multi_add_handle",
+    "curl_multi_perform",
+    "curl_multi_remove_handle",
+    "curl_multi_cleanup",
+    "curl_global_init",
+    "curl_global_cleanup"
+  ],
+  "library": "curl",
+  "library_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+  "multi_easy_membership_rules": {
+    "add_handle_changes_membership_on_documented_success": true,
+    "add_handle_success_predicate": "return == CURLM_OK",
+    "curl_easy_perform_while_attached_is_prohibited": true,
+    "easy_cleanup_requires_detached_membership": true,
+    "easy_cleanup_requires_prior_detachment_strong_source_rule": true,
+    "easy_handle_ownership_transferred_to_multi": false,
+    "easy_handle_remains_caller_owned_while_attached": true,
+    "multi_cleanup_frees_easy_handles": false,
+    "multi_cleanup_requires_individual_easy_cleanup_after_detachment": true,
+    "multi_cleanup_with_attached_easy_structural_effect": "Pinned implementation clears the easy-to-multi association while leaving the easy handle caller-owned; normative classification for skipping explicit curl_multi_remove_handle is review-required.",
+    "remove_handle_changes_membership_on_documented_success": true,
+    "remove_handle_success_predicate": "return == CURLM_OK",
+    "removed_easy_handle_remains_caller_owned": true,
+    "repeated_add_error_is_not_by_itself_a_protocol_violation": true,
+    "repeated_add_when_already_attached_pinned_implementation_result": "CURLM_ADDED_ALREADY",
+    "repeated_remove_when_already_detached_is_automatic_D4": false,
+    "repeated_remove_when_already_detached_pinned_implementation_result": "CURLM_OK no-op",
+    "successful_remove_reenables_easy_perform": true
+  },
+  "multi_perform_error_rules": {
+    "curl_multi_cleanup_allowed_as_release_path": true,
+    "curl_multi_remove_handle_allowed_in_post_error_condition": true,
+    "documented_recovery_condition": "remove all handles and add handles again before resuming curl_multi_perform on the same multi handle",
+    "error_establishes_post_error_condition": true,
+    "error_predicate": "return != CURLM_OK",
+    "normative_strength_of_plain_repeat": "INDEPENDENT_HUMAN_REVIEW_REQUIRED_MUST_OR_MAY",
+    "plain_repeat_curl_multi_perform_after_error": "NOT_DOCUMENTED_AS_VALID_CONTINUATION",
+    "post_error_local_multi_state": "MULTI_OWNED_POST_ERROR_UNCERTAIN",
+    "success_predicate": "return == CURLM_OK"
+  },
+  "next_boundary": "INDEPENDENT_HUMAN_REVIEW_OF_EXACT_CURL_V3_SCOPE_SUCCESSOR",
+  "normative_strength_review_items": {
+    "EASY-CLEANUP-WHILE-ATTACHED": {
+      "review_required": true,
+      "source_fact": "curl_easy_cleanup documentation says to first remove an easy handle from the multi handle before it is closed",
+      "v2_author_position": "retain as a strong membership prerequisite candidate"
+    },
+    "EXPLICIT-GLOBAL-CLEANUP": {
+      "must_vs_may_review_required": true,
+      "source_wording": "curl_global_cleanup should be called once for each explicit curl_global_init after libcurl use is complete",
+      "v2_author_position": "track the explicit cleanup responsibility separately from runtime readiness"
+    },
+    "GLOBAL-CLEANUP-D4": {
+      "review_required": true,
+      "v1_interpretation": "unmatched extra curl_global_cleanup was automatically D4",
+      "v2_author_position": "remove automatic call-count D4 classification; evaluate runtime state and cleanup timing path-sensitively"
+    },
+    "MULTI-CLEANUP-ORDER": {
+      "must_vs_may_or_recommendation_review_required": true,
+      "source_wording": "the order of cleaning up should be",
+      "v2_author_position": "do not silently strengthen the whole sequence to unconditional MUST"
+    },
+    "MULTI-PERFORM-ERROR": {
+      "must_vs_may_review_required": true,
+      "source_fact": "after non-CURLM_OK, transfer states are uncertain and curl_multi_perform should not simply be called again",
+      "v2_author_position": "represent an explicit post-error condition"
+    }
+  },
+  "option_surface_policy": {
+    "application_output_buffer_is_libcurl_owned_resource": false,
+    "arbitrary_application_memory_bugs_in_scope": false,
+    "curl_easy_setopt_handle_lifecycle_in_scope": true,
+    "full_CURLOPT_specific_pointer_lifetime_surface_in_scope": false,
+    "rationale": "The frozen scenarios identify curl_easy_setopt as protocol-bearing but do not freeze the complete CURLOPT-specific ownership and pointer-lifetime surface."
+  },
+  "predecessor_scope_binding": {
+    "decision_0021_path": "documentation/decisions/0021-curl-v1-source-only-authoring-scope-freeze.md",
+    "decision_0021_sha256": "9ef22ab551184808d3185c95d7286ab3c296bf6d9c29736c0312b84df78f18eb",
+    "predecessor_edit_in_place_allowed": false,
+    "successor_required_because": [
+      "The frozen V1 EXPLICIT_GLOBAL_STATE cannot distinguish a genuinely uninitialized libcurl runtime from runtime readiness established implicitly by successful curl_easy_init.",
+      "curl_multi_perform has a documented non-CURLM_OK post-error condition in which transfer states are uncertain and plain repetition is not the documented continuation discipline.",
+      "The V1 D4 projection over-strengthens an unmatched extra curl_global_cleanup as an automatic double-cleanup defect.",
+      "The broader multi cleanup sequence uses 'should' wording and therefore requires explicit normative-strength review."
+    ],
+    "v1_scope_freeze_commit": "9b3a33a358cd9cd0d4837b7221426d2e96d42239",
+    "v1_scope_freeze_tree": "5933e2ea78dc3e503251e47be49c16f8971cbda3",
+    "v1_scope_path": "config/annotation/curl_v1_authoring_scope.v1.json",
+    "v1_scope_remains_immutable": true,
+    "v1_scope_sha256": "d8e020cc14bd6c8ea9d679ba0f736bdce6098763d9b8ac0c0f95edaf8d9fd9c7"
+  },
+  "primary_resources": {
+    "EASY_HANDLE": {
+      "c_type": "CURL *",
+      "creation": {
+        "curl_easy_init_non_null": "EASY_OWNED",
+        "curl_easy_init_null": "NO_EASY"
+      },
+      "membership_states": [
+        "DETACHED",
+        "ATTACHED_TO_MULTI"
+      ],
+      "release": {
+        "function": "curl_easy_cleanup",
+        "required_membership": "DETACHED",
+        "result_state": "EASY_CLOSED"
+      },
+      "states": [
+        "NO_EASY",
+        "EASY_OWNED",
+        "EASY_CLOSED"
+      ]
+    },
+    "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION": {
+      "bounded_scope": "Tracks the single explicit curl_global_init/curl_global_cleanup obligation exercised by frozen scenario S10 independently from actual runtime readiness.",
+      "implicit_easy_init_readiness_automatically_establishes_same_explicit_obligation": false,
+      "normative_strength_of_missing_explicit_cleanup": "INDEPENDENT_HUMAN_REVIEW_REQUIRED_MUST_OR_MAY",
+      "repeated_explicit_global_init_beyond_bounded_s10_pair": "OUTSIDE_V2_CORE_RETURN_UNKNOWN_NOT_INVENTED",
+      "states": [
+        "NO_EXPLICIT_CLEANUP_DUE",
+        "EXPLICIT_CLEANUP_DUE",
+        "EXPLICIT_CLEANUP_DISCHARGED"
+      ],
+      "successful_explicit_global_init_establishes_cleanup_due": true
+    },
+    "GLOBAL_RUNTIME_REFERENCE_STATE": {
+      "bounded_scope": "V2 distinguishes actual process-wide libcurl runtime readiness from the explicit curl_global_init cleanup obligation. The model is bounded to the frozen curl scenarios and does not attempt an unbounded reference-count abstraction.",
+      "curl_easy_init_auto_initialization_exception": true,
+      "curl_multi_init_auto_initializes_runtime": false,
+      "source_grounded_transitions": {
+        "cleanup_from_implicit_only": "may release the remaining runtime reference; classification is state/path-sensitive rather than automatic D4",
+        "curl_easy_init_when_runtime_already_ready": "does not add a second implicit reference in the bounded model",
+        "matching_cleanup_from_explicit_only": "RUNTIME_READY_EXPLICIT_ONLY -> RUNTIME_UNINITIALIZED",
+        "matching_cleanup_from_implicit_plus_explicit": "RUNTIME_READY_IMPLICIT_PLUS_EXPLICIT -> RUNTIME_READY_IMPLICIT_ONLY",
+        "successful_curl_easy_init_from_uninitialized": "RUNTIME_UNINITIALIZED -> RUNTIME_READY_IMPLICIT_ONLY",
+        "successful_explicit_curl_global_init_after_implicit_readiness": "RUNTIME_READY_IMPLICIT_ONLY -> RUNTIME_READY_IMPLICIT_PLUS_EXPLICIT",
+        "successful_explicit_curl_global_init_from_uninitialized": "RUNTIME_UNINITIALIZED -> RUNTIME_READY_EXPLICIT_ONLY"
+      },
+      "states": [
+        "RUNTIME_UNINITIALIZED",
+        "RUNTIME_READY_IMPLICIT_ONLY",
+        "RUNTIME_READY_EXPLICIT_ONLY",
+        "RUNTIME_READY_IMPLICIT_PLUS_EXPLICIT"
+      ]
+    },
+    "MULTI_HANDLE": {
+      "c_type": "CURLM *",
+      "creation": {
+        "curl_multi_init_non_null": "MULTI_OWNED",
+        "curl_multi_init_null": "NO_MULTI"
+      },
+      "post_error_state_added_in_v2": true,
+      "post_error_state_trigger": "curl_multi_perform return != CURLM_OK",
+      "release": {
+        "function": "curl_multi_cleanup",
+        "result_state": "MULTI_CLOSED"
+      },
+      "states": [
+        "NO_MULTI",
+        "MULTI_OWNED",
+        "MULTI_CLOSED",
+        "MULTI_OWNED_POST_ERROR_UNCERTAIN"
+      ]
+    }
+  },
+  "reviewer_underlying_role": "Adjudicator-C",
+  "scenario_manifest": {
+    "bounded_protocol_api_union": [
+      "curl_easy_cleanup",
+      "curl_easy_init",
+      "curl_easy_perform",
+      "curl_easy_reset",
+      "curl_easy_setopt",
+      "curl_global_cleanup",
+      "curl_global_init",
+      "curl_multi_add_handle",
+      "curl_multi_cleanup",
+      "curl_multi_init",
+      "curl_multi_perform",
+      "curl_multi_remove_handle"
+    ],
+    "cleanup_candidates_by_scenario": {
+      "S01": [
+        "curl_easy_cleanup"
+      ],
+      "S02": [
+        "curl_easy_cleanup"
+      ],
+      "S03": [
+        "curl_easy_cleanup"
+      ],
+      "S04": [
+        "curl_easy_cleanup"
+      ],
+      "S05": [
+        "curl_easy_cleanup"
+      ],
+      "S06": [
+        "curl_easy_cleanup",
+        "application buffer release if dynamically allocated"
+      ],
+      "S07": [
+        "curl_easy_cleanup on each acquired handle"
+      ],
+      "S08": [
+        "curl_multi_remove_handle",
+        "curl_easy_cleanup",
+        "curl_multi_cleanup"
+      ],
+      "S09": [
+        "curl_easy_cleanup"
+      ],
+      "S10": [
+        "curl_easy_cleanup",
+        "curl_global_cleanup"
+      ]
+    },
+    "explicit_model_visible_symbol_union": [
+      "curl_easy_init",
+      "curl_easy_perform",
+      "curl_easy_reset",
+      "curl_easy_setopt",
+      "curl_global_init",
+      "curl_multi_add_handle",
+      "curl_multi_init",
+      "curl_multi_perform"
+    ],
+    "hidden_lifecycle_closure_only": [
+      "curl_easy_cleanup",
+      "curl_global_cleanup",
+      "curl_multi_cleanup",
+      "curl_multi_remove_handle"
+    ],
+    "path": "config/generation/scenario_bindings.80.v10.json",
+    "required_feature_symbols_by_scenario": {
+      "S01": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S02": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S03": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S04": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S05": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_reset",
+        "curl_easy_perform"
+      ],
+      "S06": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S07": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S08": [
+        "curl_multi_init",
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_multi_add_handle",
+        "curl_multi_perform"
+      ],
+      "S09": [
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ],
+      "S10": [
+        "curl_global_init",
+        "curl_easy_init",
+        "curl_easy_setopt",
+        "curl_easy_perform"
+      ]
+    },
+    "scenario_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10"
+    ],
+    "sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db"
+  },
+  "scope_frozen": false,
+  "scope_interpretation_notes": {
+    "api_surface_unchanged_from_v1": true,
+    "application_output_buffer_is_not_automatically_a_libcurl_owned_resource": true,
+    "arbitrary_non_protocol_bugs_excluded": true,
+    "broader_curl_api_surface_not_modeled": true,
+    "curl_easy_init_auto_init_exception_is_preserved": true,
+    "curl_easy_init_without_explicit_global_init_not_automatically_violation": true,
+    "curl_easy_perform_failure_is_not_automatic_protocol_violation": true,
+    "curl_multi_init_requires_prior_runtime_readiness": true,
+    "curl_off_t_is_a_type_not_an_in_scope_function": true,
+    "extra_global_cleanup_not_call_count_D4": true,
+    "full_CURLOPT_specific_semantics_not_auto_included": true,
+    "multi_perform_post_error_condition_explicit": true,
+    "one_hop_api_expansion_remains_disabled": true,
+    "one_hop_documentation_references_do_not_expand_scope": true,
+    "repeated_easy_perform_on_live_detached_handle_is_allowed": true,
+    "repeated_multi_remove_detached_is_noop_success_in_pinned_implementation": true,
+    "reset_is_not_release": true,
+    "v1_scope_remains_immutable": true,
+    "v2_is_successor_not_erratum": true,
+    "v2_not_yet_frozen": true,
+    "whole_multi_cleanup_sequence_not_silently_strengthened_to_MUST": true
+  },
+  "scope_selection_policy": {
+    "cleanup_and_membership_closure_added_when_required_to_complete_lifecycle": true,
+    "hidden_only_lifecycle_closure": [
+      "curl_easy_cleanup",
+      "curl_global_cleanup",
+      "curl_multi_cleanup",
+      "curl_multi_remove_handle"
+    ],
+    "one_hop_api_expansion": false,
+    "required_feature_symbols_in_scope_when_protocol_bearing": true,
+    "strict_model_visible_symbol_union": [
+      "curl_easy_init",
+      "curl_easy_perform",
+      "curl_easy_reset",
+      "curl_easy_setopt",
+      "curl_global_init",
+      "curl_multi_add_handle",
+      "curl_multi_init",
+      "curl_multi_perform"
+    ],
+    "twelve_function_bounded_surface_frozen_before_driver_visibility": true
+  },
+  "source_evidence": [
+    {
+      "path": "docs/libcurl/curl_easy_cleanup.md",
+      "sha256": "d39b972fe61d57d72ab60c310d8fe8ea06b253cb008bceee7535fbaed36851a7"
+    },
+    {
+      "path": "docs/libcurl/curl_easy_init.md",
+      "sha256": "59b98da718399b47958e3e1d812accaa05b9a1016c62797bf490dd215e6b1927"
+    },
+    {
+      "path": "docs/libcurl/curl_easy_perform.md",
+      "sha256": "6fe91c0b04879dcaac1036bc1307bb3fb85be6102d47d788af7f2c620ba098c7"
+    },
+    {
+      "path": "docs/libcurl/curl_easy_reset.md",
+      "sha256": "d2b6932349acbdf4d3e230ecda20cf13edf66520e47b3d43bffa87b2948e7cc0"
+    },
+    {
+      "path": "docs/libcurl/curl_easy_setopt.md",
+      "sha256": "8b6f4283da3eb20a16f320cd90baaa9d8276b585750a782916451422e87cc951"
+    },
+    {
+      "path": "docs/libcurl/curl_global_cleanup.md",
+      "sha256": "dce5ac828e85d5e1a303333163c1d71d3503816241f71809a7824370387bc1a1"
+    },
+    {
+      "path": "docs/libcurl/curl_global_init.md",
+      "sha256": "0cb6702df283336798293eae8b5e57775852f56ea237b03384bdfabe27be7cbc"
+    },
+    {
+      "path": "docs/libcurl/curl_multi_add_handle.md",
+      "sha256": "8964c4ff62cd009f6fa7ca72d5a0bfcf19822e259c2352f785d9b83e1084a90a"
+    },
+    {
+      "path": "docs/libcurl/curl_multi_cleanup.md",
+      "sha256": "ad4d80cc39186e65e3a5e10231f41e61a8e4f8a16179013e98ee90a83ac4e67d"
+    },
+    {
+      "path": "docs/libcurl/curl_multi_init.md",
+      "sha256": "6be119495ff8b99a79e5d45e4bb1be3aeeee3046e2b54cdb0e11565fdfaaa445"
+    },
+    {
+      "path": "docs/libcurl/curl_multi_perform.md",
+      "sha256": "5b85efb586d552e0632a25b25b1642b26e82192694c8be5dfb86cffa5e23ae2e"
+    },
+    {
+      "path": "docs/libcurl/curl_multi_remove_handle.md",
+      "sha256": "88809d1245dc0c66a672aedaba53a69fa7aa4dbb5d68eab3e1d8ff5946720938"
+    },
+    {
+      "path": "docs/libcurl/libcurl-easy.md",
+      "sha256": "5b1e2b2c3cc94bbee837c306b9ce8afa0be1bb148f8d18fbc6374876d3d5ec94"
+    },
+    {
+      "path": "docs/libcurl/libcurl-multi.md",
+      "sha256": "19b8aa18f2bd6a5c9bb4b33568cd669513a2fb7185afd3bd4a8e7bf6cb30b3c2"
+    },
+    {
+      "path": "docs/libcurl/libcurl.md",
+      "sha256": "be4b4285651cc5cf1bc7cbbed79a8a1d5d2dfd72974115ec86843de3541bb81a"
+    },
+    {
+      "path": "include/curl/curl.h",
+      "sha256": "f17ab2d4b216bd96df937dbe494ecae1ea167a3f0e56b8dea83cd32a58cca18a"
+    },
+    {
+      "path": "include/curl/easy.h",
+      "sha256": "f101da02dd373151ea7b00082cb62c9d6e482361ab26b6d430ee96aab1b71565"
+    },
+    {
+      "path": "include/curl/multi.h",
+      "sha256": "ab3278832925f69a68852e2c6b5a300884ee5f974a2291b642a7d1ef1ed49af9"
+    },
+    {
+      "path": "lib/easy.c",
+      "sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483"
+    },
+    {
+      "path": "lib/multi.c",
+      "sha256": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+    },
+    {
+      "path": "lib/setopt.c",
+      "sha256": "3738ff6a04a09f4941b9d9b7c79d2882a999fc20f0dcaf543ce5385eb4972dcc"
+    }
+  ],
+  "status": "IMMUTABLE_V3_SCOPE_SUCCESSOR_AUTHOR_CHECKPOINT_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "v2_revision_scope": {
+    "api_function_set_changed": false,
+    "canonical_protocol_specification_authorized": false,
+    "generated_corpus_used": false,
+    "pinned_library_revision_changed": false,
+    "scenario_manifest_changed": false,
+    "semantic_successor_changes": [
+      "GLOBAL_RUNTIME_READINESS",
+      "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION_SEPARATION",
+      "MULTI_PERFORM_POST_ERROR_CONDITION",
+      "GLOBAL_CLEANUP_D4_RECONCILIATION",
+      "MULTI_CLEANUP_ORDER_NORMATIVE_STRENGTH",
+      "REPEATED_MULTI_REMOVE_NOOP_SUCCESS"
+    ],
+    "source_evidence_set_changed": false,
+    "technical_protocol_working_draft_authorized": false
+  },
+  "working_draft_representation_requirement": {
+    "independent_resource_families_present": true,
+    "required_components": [
+      "GLOBAL_RUNTIME_REFERENCE_STATE",
+      "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION",
+      "EASY_HANDLE",
+      "MULTI_HANDLE",
+      "EASY_MULTI_MEMBERSHIP",
+      "MULTI_PERFORM_POST_ERROR_CONDITION"
+    ],
+    "requirement": "Only after independent human approval of this exact V3 scope and subsequent completion of the separate V3 scope-freeze boundary may technical working-draft authoring be authorized. That future draft must use a schema-valid combined/product-state representation or another independently reviewable schema-approved representation that makes every modeled fresh condition structurally reachable. Runtime readiness must not be conflated with explicit-global cleanup responsibility. The multi-perform post-error condition must be structurally represented or represented by an explicit path-sensitive obligation. No synthetic initialization or recovery API event may be invented.",
+    "schema_single_initial_state_constraint_acknowledged": true,
+    "synthetic_protocol_events_may_be_invented": false
+  },
+  "v3_authorization_boundary": {
+    "blocking_predecessor_review_item": "V2-RR07",
+    "human_review_of_exact_v3_required": true,
+    "exact_v3_human_approval_authorizes_scope_freeze_step_only": true,
+    "scope_freeze_must_be_completed_before_technical_working_draft": true,
+    "technical_working_draft_authorized_before_completed_scope_freeze": false,
+    "required_sequence": [
+      "INDEPENDENT_HUMAN_REVIEW_OF_EXACT_V3_SCOPE",
+      "SCOPE_FREEZE_AUTHORIZATION",
+      "COMPLETED_V3_SCOPE_FREEZE",
+      "TECHNICAL_WORKING_DRAFT_AUTHORIZATION"
+    ],
+    "current_state": {
+      "human_review_completed": false,
+      "scope_freeze_authorized": false,
+      "scope_frozen": false,
+      "technical_working_draft_authorized": false
+    }
+  },
+  "v3_predecessor_binding": {
+    "predecessor_scope_path": "config/annotation/curl_v2_authoring_scope.v2.json",
+    "predecessor_scope_sha256": "f8a5a0d360ad68478649a549744e4d13f22aec7d7edcc60116052906424b52df",
+    "predecessor_author_checkpoint_commit": "fae56e4f5196fd0460046723ef9d6a4e26234612",
+    "predecessor_author_checkpoint_tree": "0cb044dd10d48908895425512f5a2e7c1e8633b9",
+    "predecessor_edit_in_place_allowed": false,
+    "completed_v2_human_review_commit": "f01c66ca65e08a20114525739a5ed777cb428742",
+    "completed_v2_human_review_tree": "f04080ca5cf1854209b932c00241904c70e762ab",
+    "completed_v2_human_review_path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/human_review_v2/01_completed_human_review.v2.md",
+    "completed_v2_human_review_sha256": "cbd09e4596d95943ce30295cf3fef5369905049397336ea818fa57f8ec593f4f",
+    "v2_review_decision_record_path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/human_review_v2/02_human_review_decision_record.v2.json",
+    "v2_review_decision_record_sha256": "6a063e01d67588934d6eb03da8461a3e708c88f993379d0bd980ea69c1d0e54a",
+    "v2_review_checksum_manifest_sha256": "f0cb4a7b3e44675b886d0da137d75655b08d81605bf5f66c49efe99051300273",
+    "v2_review_overall_decision": "REVISION_REQUIRED",
+    "blocking_review_item": "V2-RR07"
+  },
+  "v3_revision_scope": {
+    "classification": "DOWNSTREAM_AUTHORIZATION_BOUNDARY_ONLY",
+    "protocol_semantics_changed": false,
+    "api_function_set_changed": false,
+    "pinned_library_revision_changed": false,
+    "scenario_manifest_changed": false,
+    "source_evidence_set_changed": false,
+    "rr01_through_rr06_semantics_preserved": true,
+    "v2_edit_in_place_allowed": false,
+    "required_correction": "Human approval of the exact scope may authorize only the separate scope-freeze step. Technical working-draft authoring becomes eligible only after that exact approved scope has subsequently completed its scope-freeze boundary.",
+    "technical_protocol_working_draft_authorized": false,
+    "canonical_protocol_specification_authorized": false,
+    "generated_corpus_used": false
+  }
+}

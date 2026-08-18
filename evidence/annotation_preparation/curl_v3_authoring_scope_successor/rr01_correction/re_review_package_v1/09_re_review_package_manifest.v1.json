@@ -1,0 +1,52 @@
+{
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": false,
+    "v3_scope_freeze_authorized": false,
+    "v3_scope_frozen": false
+  },
+  "corrective_evidence": {
+    "decision_0024_included": true,
+    "historical_decision_0023_preserved": true,
+    "minimal_git_witness_included": true
+  },
+  "human_re_review_completed": false,
+  "next_boundary": "COMMIT_PACKAGE_AND_PREPARE_EXTERNAL_RR01_RE_REVIEW_HANDOFF",
+  "overall_re_review_decision": null,
+  "package_contents": [
+    "01_repository_binding.rr01-rereview.v1.json",
+    "02_curl_v3_rr01_corrected_reviewer_packet.v1.md",
+    "03_curl_v3_authoring_scope.v3.json",
+    "04_curl_v2_authoring_scope.v2.json",
+    "05_decision_0023.HISTORICAL_IMMUTABLE.md",
+    "06_decision_0024.RR01_CORRECTION.md",
+    "07_completed_v3_human_review.REVISION_REQUIRED.md",
+    "08_prior_v3_human_review_decision_record.json",
+    "09_re_review_package_manifest.v1.json",
+    "10_minimal_git_witness_v1/",
+    "11_verify_rr01_re_review_package.v1.py",
+    "12_rr01_re_review_package.v1.SHA256SUMS"
+  ],
+  "prior_review_state": {
+    "V3-RR01": "REVISION_REQUIRED",
+    "V3-RR02": "PASS",
+    "V3-RR03": "PASS",
+    "V3-RR04": "PASS",
+    "overall": "REVISION_REQUIRED"
+  },
+  "record_id": "SVF-CURL-V3-RR01-CORRECTED-INDEPENDENT-RE-REVIEW-PACKAGE-V1",
+  "review_boundary": "previously blocking V3-RR01 correction evidence only",
+  "review_target": "exact unchanged curl V3 authoring-scope successor",
+  "rr01_re_review_decisions": {
+    "RR01-R1": null,
+    "RR01-R2": null,
+    "RR01-R3": null,
+    "RR01-R4": null
+  },
+  "status": "IMMUTABLE_AUTHOR_PACKAGE_AWAITING_INDEPENDENT_HUMAN_RE_REVIEW"
+}
