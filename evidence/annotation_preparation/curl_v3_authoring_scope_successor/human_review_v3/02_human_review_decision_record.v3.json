@@ -1,0 +1,76 @@
+{
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": false,
+    "v3_scope_freeze_authorized": false,
+    "v3_scope_frozen": false
+  },
+  "blocking_review_item": "V3-RR01",
+  "completed_review": {
+    "repository_record_path": "evidence/annotation_preparation/curl_v3_authoring_scope_successor/human_review_v3/01_completed_human_review.v3.md",
+    "sha256": "3e77a9456d49ccd0001ad839b1e2a32478d45a05cc94b0ba115cdd667a45afb9"
+  },
+  "correction_path_status": {
+    "exact_correction_mechanism_selected": false,
+    "must_correct_decision_0023_record_without_editing_existing_bytes": true,
+    "must_provide_independently_resolvable_git_commit_tree_evidence": true,
+    "requires_rr01_blocker_inspection": true
+  },
+  "immutability": {
+    "completed_human_review_edit_in_place_allowed": false,
+    "decision_0023_current_bytes_preserved_pending_correction_path": true,
+    "existing_review_package_edit_in_place_allowed": false,
+    "v3_edit_in_place_allowed": false
+  },
+  "next_boundary": "INSPECT_V3_RR01_BLOCKERS_AND_SELECT_IMMUTABLE_CORRECTION_PATH",
+  "overall_decision": "REVISION_REQUIRED",
+  "passed_findings": {
+    "downstream_authorizations_remain_blocked": true,
+    "rr07_authorization_boundary_corrected": true,
+    "v2_rr01_through_rr06_semantics_preserved": true
+  },
+  "record_id": "SVF-CURL-V3-HUMAN-REVIEW-DECISION",
+  "recorded_at_utc": "2026-08-18T13:24:07.683951+00:00",
+  "review_item_decisions": {
+    "V3-RR01": "REVISION_REQUIRED",
+    "V3-RR02": "PASS",
+    "V3-RR03": "PASS",
+    "V3-RR04": "PASS"
+  },
+  "review_package": {
+    "commit": "ef18a954093fda6ebfbafed863d0016a07b27d28",
+    "tree": "4262b2b331db0d3bc8de04d91d07923f42bfe0ed"
+  },
+  "review_target": {
+    "author_checkpoint_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "author_checkpoint_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "edit_in_place_allowed": false,
+    "git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "immutable": true,
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "reviewer": {
+    "date": "18 / August / 2026",
+    "human_name": "Abdul Raheem Shahzad",
+    "role_id": "Spec-Reviewer-1",
+    "signature_or_recorded_confirmation": "ARS",
+    "underlying_role": "Adjudicator-C"
+  },
+  "rr01_blockers": [
+    {
+      "description": "The external handoff did not contain Git repository metadata, Git objects, or a Git bundle sufficient for the reviewer to independently resolve the claimed V3 author commit to its tree and exact target blob.",
+      "id": "GIT_COMMIT_TREE_EVIDENCE_NOT_INDEPENDENTLY_RESOLVABLE"
+    },
+    {
+      "description": "Decision 0023 contains a malformed duplicate predecessor SHA-256 line and requires a corrected immutable record.",
+      "id": "DECISION_0023_MALFORMED_DUPLICATE_PREDECESSOR_SHA_LINE"
+    }
+  ],
+  "status": "COMPLETED_HUMAN_REVIEW_REVISION_REQUIRED"
+}
