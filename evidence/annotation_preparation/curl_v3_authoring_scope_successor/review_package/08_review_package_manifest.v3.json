@@ -1,0 +1,43 @@
+{
+  "allowed_overall_decisions": [
+    "APPROVE_EXACT_V3_SCOPE_FOR_FREEZE",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "canonical_specification_authorized": false,
+  "human_review_completed": false,
+  "next_boundary": "PREPARE_EXTERNAL_CURL_V3_INDEPENDENT_HUMAN_REVIEW_HANDOFF",
+  "overall_review_decision": null,
+  "quarantine": {
+    "analyzer_output_read": false,
+    "baseline_output_read": false,
+    "compiler_log_semantic_contents_read": false,
+    "generated_driver_source_read": false,
+    "gold_labels_read": false,
+    "llm_review_output_read": false,
+    "raw_model_responses_read": false,
+    "repair_output_read": false,
+    "selected_sample_membership_read": false
+  },
+  "record_id": "SVF-CURL-V3-INDEPENDENT-HUMAN-REVIEW-PACKAGE",
+  "repair_authorized": false,
+  "review_items": [
+    "V3-RR01",
+    "V3-RR02",
+    "V3-RR03",
+    "V3-RR04"
+  ],
+  "review_target": {
+    "author_checkpoint_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "author_checkpoint_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "immutable": true,
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "scope_freeze_authorized": false,
+  "scope_frozen": false,
+  "technical_working_draft_authorized": false,
+  "v2_semantic_core_preserved": true,
+  "v3_change_classification": "DOWNSTREAM_AUTHORIZATION_BOUNDARY_ONLY"
+}

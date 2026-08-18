@@ -1,0 +1,41 @@
+{
+  "completed_v2_review": {
+    "V2_RR01_through_V2_RR06": "PASS",
+    "V2_RR07": "REVISION_REQUIRED",
+    "completed_review_sha256": "cbd09e4596d95943ce30295cf3fef5369905049397336ea818fa57f8ec593f4f",
+    "decision_record_sha256": "6a063e01d67588934d6eb03da8461a3e708c88f993379d0bd980ea69c1d0e54a",
+    "overall_decision": "REVISION_REQUIRED",
+    "repository_commit": "f01c66ca65e08a20114525739a5ed777cb428742"
+  },
+  "current_authorization": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "human_review_completed": false,
+    "repair_authorized": false,
+    "scope_freeze_authorized": false,
+    "scope_frozen": false,
+    "technical_working_draft_authorized": false
+  },
+  "decision_0023": {
+    "path": "documentation/decisions/0023-curl-v3-rr07-authorization-boundary-successor.md",
+    "sha256": "c774bb667930ef9ceaedc5ca5d25e88d57da3ffefa10de639ef6a20f7d2271d1"
+  },
+  "predecessor_v2": {
+    "author_checkpoint_commit": "fae56e4f5196fd0460046723ef9d6a4e26234612",
+    "edit_in_place_allowed": false,
+    "path": "config/annotation/curl_v2_authoring_scope.v2.json",
+    "sha256": "f8a5a0d360ad68478649a549744e4d13f22aec7d7edcc60116052906424b52df"
+  },
+  "record_id": "SVF-CURL-V3-INDEPENDENT-REVIEW-BINDING",
+  "review_target": {
+    "author_checkpoint_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "author_checkpoint_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "immutable": true,
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  }
+}

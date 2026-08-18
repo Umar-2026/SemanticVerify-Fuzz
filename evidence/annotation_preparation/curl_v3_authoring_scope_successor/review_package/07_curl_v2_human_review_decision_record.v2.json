@@ -1,0 +1,69 @@
+{
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_v2_scope_freeze_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": false
+  },
+  "blocking_review_item": "V2-RR07",
+  "completed_review": {
+    "external_handoff_archive_sha256": "0e2ee891659e6706029cc0714fa7a95b6f59b59025083ed2cb6809fe68c401e5",
+    "repository_record_path": "evidence/annotation_preparation/curl_v2_authoring_scope_successor/human_review_v2/01_completed_human_review.v2.md",
+    "sha256": "cbd09e4596d95943ce30295cf3fef5369905049397336ea818fa57f8ec593f4f"
+  },
+  "next_boundary": "PREPARE_CURL_V3_SOURCE_ONLY_SCOPE_SUCCESSOR",
+  "overall_decision": "REVISION_REQUIRED",
+  "quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "compiler_log_semantic_contents_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "record_id": "SVF-CURL-V2-HUMAN-REVIEW-DECISION",
+  "recorded_at_utc": "2026-08-18T08:48:06.678272+00:00",
+  "review_item_decisions": {
+    "V2-RR01": "PASS",
+    "V2-RR02": "PASS",
+    "V2-RR03": "PASS",
+    "V2-RR04": "PASS",
+    "V2-RR05": "PASS",
+    "V2-RR06": "PASS",
+    "V2-RR07": "REVISION_REQUIRED"
+  },
+  "review_target": {
+    "author_checkpoint_commit": "fae56e4f5196fd0460046723ef9d6a4e26234612",
+    "author_checkpoint_tree": "0cb044dd10d48908895425512f5a2e7c1e8633b9",
+    "git_blob": "5c88a9e00d9ad2e8e4a59aa41488dec016c58cad",
+    "immutable": true,
+    "path": "config/annotation/curl_v2_authoring_scope.v2.json",
+    "sha256": "f8a5a0d360ad68478649a549744e4d13f22aec7d7edcc60116052906424b52df"
+  },
+  "reviewer": {
+    "date": "18 / August / 2026",
+    "human_name": "Abdul Raheem Shahzad",
+    "role_id": "Spec-Reviewer-1",
+    "signature_or_recorded_confirmation": "ARS",
+    "underlying_role": "Adjudicator-C"
+  },
+  "revision_requirement": {
+    "classification": "DOWNSTREAM_AUTHORIZATION_BOUNDARY",
+    "required_sequence": [
+      "human review",
+      "scope-freeze authorization",
+      "completed scope freeze",
+      "technical working-draft authorization"
+    ],
+    "semantic_core_rr01_through_rr06_passed": true,
+    "v2_edit_in_place_allowed": false,
+    "v3_scope_successor_required": true
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_REVISION_REQUIRED"
+}
