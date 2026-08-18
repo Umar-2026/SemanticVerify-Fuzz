@@ -1,0 +1,51 @@
+{
+  "completed_review": {
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v1/completed_human_review_v1/01_completed_human_technical_review.v1.md",
+    "recorded_confirmation": "ARS",
+    "reviewer_date": "19 / August / 2026",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "e253340d540a06cd24af501c569154869ac0324d677995b7266349ba097973cc"
+  },
+  "governance_effect": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false,
+    "working_draft_v1_remains_immutable": true,
+    "working_draft_v2_successor_required": true
+  },
+  "item_decisions": {
+    "TS-RR01": "PASS",
+    "TS-RR02": "PASS",
+    "TS-RR03": "PASS",
+    "TS-RR04": "PASS",
+    "TS-RR05": "REVISION_REQUIRED",
+    "TS-RR06": "REVISION_REQUIRED",
+    "TS-RR07": "REVISION_REQUIRED",
+    "TS-RR08": "REVISION_REQUIRED",
+    "TS-RR09": "REVISION_REQUIRED",
+    "TS-RR10": "REVISION_REQUIRED",
+    "TS-RR11": "REVISION_REQUIRED",
+    "TS-RR12": "REVISION_REQUIRED",
+    "TS-RR13": "REVISION_REQUIRED",
+    "TS-RR14": "REVISION_REQUIRED",
+    "TS-RR15": "PASS"
+  },
+  "next_boundary": "AUTHORIZE_CURL_TECHNICAL_WORKING_DRAFT_V2_SUCCESSOR",
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V1-COMPLETED-HUMAN-REVIEW",
+  "review_target": {
+    "author_checkpoint_commit": "06a626c90bd18b6645a66117c5562c200734ccc1",
+    "author_checkpoint_tree": "f86c25370a7b74b493cf22491e925b420ae3d303",
+    "external_handoff_archive_sha256": "84d0ae012a9befd37c690670a2aeedb7002b66f895f71f4ca4632b8438ab1c9e",
+    "review_package_commit": "c56e1023d830f2b08f7d9edf0b25213eb6d2c69c",
+    "review_package_tree": "f2032c78a84b4d25ed81481dfb557db67b3da5c7",
+    "working_draft_path": "config/annotation/curl_technical_protocol_working_draft.v1.json",
+    "working_draft_sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6"
+  },
+  "review_type": "independent_human_technical_specification_review"
+}
