@@ -1,0 +1,56 @@
+{
+  "authorization": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false,
+    "v1_in_place_edit_authorized": false,
+    "v2_author_checkpoint_authorized": true,
+    "v2_successor_authoring_authorized": true
+  },
+  "authorization_basis": {
+    "completed_human_review_commit": "d8fce56e46a5c8e203aeb12c0fc6abb3945e749b",
+    "completed_human_review_sha256": "e253340d540a06cd24af501c569154869ac0324d677995b7266349ba097973cc",
+    "completed_human_review_tree": "d58bdcebb92ed359a1586919f987ea76a5d0a05f",
+    "frozen_v3_scope_path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "frozen_v3_scope_sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb",
+    "overall_human_review_decision": "REVISION_REQUIRED",
+    "scenario_manifest_path": "config/generation/scenario_bindings.80.v10.json",
+    "scenario_manifest_sha256": "a7ab361e6e2d41d9051e48bc7626f0be37c1df9ec35f788a9a019b010054a2db",
+    "v1_working_draft_path": "config/annotation/curl_technical_protocol_working_draft.v1.json",
+    "v1_working_draft_sha256": "80498e0c4e021700e2a2c09654a852e67b16df86d61fbb28857d14a12fed44c6"
+  },
+  "frozen_invariants": {
+    "api_surface_changes_authorized": false,
+    "api_surface_function_count": 12,
+    "approved_source_evidence_class_changes_authorized": false,
+    "generated_driver_evidence_authorized": false,
+    "pinned_curl_revision_changes_authorized": false,
+    "scenario_manifest_changes_authorized": false
+  },
+  "next_boundary": "CREATE_CURL_TECHNICAL_WORKING_DRAFT_V2_SUCCESSOR_AUTHOR_CHECKPOINT",
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V2-SUCCESSOR-AUTHORIZATION",
+  "required_human_review_corrections": {
+    "TS-RR05": "Condition curl_multi_cleanup release, cleanup-obligation discharge, and structural detachment effects on CURLM_OK; failed cleanup must remain conservative.",
+    "TS-RR06": "Apply the same return-conditioned cleanup discipline in the post-error multi state.",
+    "TS-RR07": "Restrict verdict-valued fields to exactly VALID, VIOLATION-MUST, VIOLATION-MAY, and UNKNOWN; move qualifiers to separate metadata fields.",
+    "TS-RR08": "Complete explicit D1/D2/D4 mappings and NULL-cleanup cases, and preserve the multi D5 obligation after failed cleanup.",
+    "TS-RR09": "Classify exit with EXPLICIT_CLEANUP_DUE after successful explicit curl_global_init as D5 VIOLATION-MUST.",
+    "TS-RR10": "Represent remove/easy-cleanup/multi-cleanup ordering as a non-enforceable recommendation; successful multi cleanup with attached easy handles is not a violation solely for skipped explicit remove.",
+    "TS-RR11": "Classify plain curl_multi_perform repetition after non-CURLM_OK without complete documented recovery as D6 VIOLATION-MUST and model complete remove-and-re-add recovery.",
+    "TS-RR12": "Preserve the two-state NULL curl_easy_init runtime post-state and evaluate downstream events across feasible states using verdict join semantics rather than blanket UNKNOWN.",
+    "TS-RR13": "Classify wrong-multi curl_multi_remove_handle as D7 VIOLATION-MUST and preserve the actual membership relation.",
+    "TS-RR14": "Classify curl_global_cleanup that removes the final runtime reference while modeled easy or multi resources remain live as state-sensitive D8 VIOLATION-MUST."
+  },
+  "required_next_review": "INDEPENDENT_HUMAN_TECHNICAL_REVIEW_OF_EXACT_V2_SUCCESSOR",
+  "status": "AUTHORIZED_FOR_SOURCE_ONLY_V2_SUCCESSOR_AUTHORING",
+  "successor_identity": {
+    "authorized_path": "config/annotation/curl_technical_protocol_working_draft.v2.json",
+    "predecessor_must_remain_immutable": true,
+    "predecessor_version": "V1",
+    "successor_version": "V2"
+  }
+}
