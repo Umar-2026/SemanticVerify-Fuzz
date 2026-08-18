@@ -1,0 +1,66 @@
+{
+  "authorization_state_after_human_re_review": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": false,
+    "v3_scope_freeze_authorized": true,
+    "v3_scope_frozen": false
+  },
+  "completed_re_review": {
+    "repository_record_path": "evidence/annotation_preparation/curl_v3_authoring_scope_successor/rr01_correction/human_re_review_v1/01_completed_rr01_human_re_review.v1.md",
+    "sha256": "ed5707f6b54a89123f0c59b136a15feb5e62cec3e0e645df08737051bfab169b",
+    "size_bytes": 8424
+  },
+  "decisions": {
+    "RR01-R1": "PASS",
+    "RR01-R2": "PASS",
+    "RR01-R3": "PASS",
+    "RR01-R4": "PASS",
+    "overall": "APPROVE_EXACT_V3_SCOPE_FOR_FREEZE"
+  },
+  "exact_v3_target": {
+    "author_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "author_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "edited_after_review": false,
+    "git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "immutability": {
+    "completed_review_edit_in_place_allowed": false,
+    "decision_0023_edit_in_place_allowed": false,
+    "decision_0024_edit_in_place_allowed": false,
+    "v3_scope_edit_in_place_allowed": false
+  },
+  "interpretation": "Human approval authorizes only the subsequent separate freeze operation for the exact approved V3 scope. It does not itself constitute completion of that freeze and does not authorize the technical protocol working draft.",
+  "next_boundary": "EXECUTE_SEPARATE_EXACT_CURL_V3_SCOPE_FREEZE",
+  "prior_v3_review_preserved": {
+    "V3-RR01": "REVISION_REQUIRED",
+    "V3-RR02": "PASS",
+    "V3-RR03": "PASS",
+    "V3-RR04": "PASS",
+    "overall": "REVISION_REQUIRED"
+  },
+  "record_id": "SVF-CURL-V3-RR01-COMPLETED-INDEPENDENT-HUMAN-RE-REVIEW-V1",
+  "review_boundary": "Previously blocking curl V3-RR01 correction evidence only",
+  "reviewer": {
+    "date": "18 / August / 2026",
+    "human_name": "Abdul Raheem Shahzad",
+    "role_id": "Spec-Reviewer-1",
+    "signature_or_recorded_confirmation": "ARS"
+  },
+  "rr01_correction_evidence": {
+    "corrected_re_review_package_commit": "d3a6b176edc07a8344f6dfa43b986033091bf077",
+    "corrected_re_review_package_tree": "f031615e066b4d07f5bcb0dcb96aeb53f417abf8",
+    "decision_0024_sha256": "df22dc70c572407c1968859f6fd86a20d847062b2130a08484670c06a340915b",
+    "historical_decision_0023_sha256": "c774bb667930ef9ceaedc5ca5d25e88d57da3ffefa10de639ef6a20f7d2271d1",
+    "minimal_git_witness_archive_sha256": "3710cd5b49fa3e80610724756bae7376fc196c23de36f2f110ab6074d256e181",
+    "minimal_git_witness_commit": "3fee40ebd6f8eedd5f33eb414b8646fc72548814",
+    "minimal_git_witness_tree": "3de2e86cb476c708b421c4682e62ec593098020d"
+  },
+  "status": "COMPLETED_AND_APPROVED_FOR_SEPARATE_SCOPE_FREEZE"
+}
