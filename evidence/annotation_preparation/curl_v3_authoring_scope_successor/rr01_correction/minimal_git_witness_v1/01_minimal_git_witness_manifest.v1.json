@@ -1,0 +1,70 @@
+{
+  "allowed_blob_ids": [
+    "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "ca72e87d5668c649eb64db8fc04f457eeebc5d0c"
+  ],
+  "archive": {
+    "bare_repository_root": "curl-v3-rr01-minimal.git",
+    "path": "02_curl_v3_rr01_minimal_git_witness.v1.tar.gz",
+    "sha256": "3710cd5b49fa3e80610724756bae7376fc196c23de36f2f110ab6074d256e181",
+    "size_bytes": 16839
+  },
+  "authorization_state": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "technical_working_draft_authorized": false,
+    "v3_scope_freeze_authorized": false,
+    "v3_scope_frozen": false
+  },
+  "decision_0024_binding": {
+    "blob": "ca72e87d5668c649eb64db8fc04f457eeebc5d0c",
+    "commit": "36400fa2028df6ccaf176780ba8ff21017a68262",
+    "content_sha256": "df22dc70c572407c1968859f6fd86a20d847062b2130a08484670c06a340915b",
+    "decisions_tree": "b0dee06283fb23755bf083d9ee4418fc7845238b",
+    "documentation_tree": "d92bebf220976883985fdbd2e4d7cb12ddfe1880",
+    "path": "documentation/decisions/0024-curl-v3-rr01-binding-and-handoff-correction.md",
+    "root_tree": "d7afbc0a4c159530f5687c93dca2bad823e55f77"
+  },
+  "exact_object_inventory": {
+    "blobs": 2,
+    "commits": 2,
+    "total": 10,
+    "trees": 6
+  },
+  "excluded_history": {
+    "decision_0024_parent": "713587c654f9c24f8fd3e7a3b3ad3638ec81a6fe",
+    "full_repository_history_included": false,
+    "parent_objects_included": false,
+    "v3_parent": "f01c66ca65e08a20114525739a5ed777cb428742"
+  },
+  "next_boundary": "PREPARE_CORRECTED_V3_RR01_EXTERNAL_INDEPENDENT_RE_REVIEW_HANDOFF",
+  "object_format": "sha1",
+  "purpose": "Provide independently resolvable Git commit-tree-path-blob evidence for curl V3 RR01 re-review without exposing repository history or unrelated file blobs.",
+  "quarantine": {
+    "analyzer_output_blobs_included": false,
+    "baseline_output_blobs_included": false,
+    "compiler_log_semantic_blobs_included": false,
+    "generated_driver_blobs_included": false,
+    "gold_label_blobs_included": false,
+    "llm_review_output_blobs_included": false,
+    "raw_model_response_blobs_included": false,
+    "repair_output_blobs_included": false,
+    "selected_sample_membership_blobs_included": false,
+    "unrelated_file_blobs_included": false
+  },
+  "record_id": "SVF-CURL-V3-RR01-QUARANTINE-SAFE-MINIMAL-GIT-OBJECT-WITNESS-V1",
+  "status": "IMMUTABLE_GIT_BINDING_EVIDENCE",
+  "v3_binding": {
+    "annotation_tree": "83b72c61fb778bcc16751442dafdbf32def6c315",
+    "blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "config_tree": "650ab6378bd22ea18fbca773f34be62a0699f234",
+    "content_sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb",
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "root_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20"
+  }
+}
