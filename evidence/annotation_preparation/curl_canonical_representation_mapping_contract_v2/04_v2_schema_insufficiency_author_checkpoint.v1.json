@@ -1,0 +1,31 @@
+{
+  "author_checkpoint_effect": {
+    "curl_json_created": false,
+    "curl_json_materialization_is_authorized": false,
+    "positive_mapping_is_approved": false,
+    "schema_insufficiency_is_independently_approved": false,
+    "schema_successor_is_authorized": false,
+    "v2_is_approved": false
+  },
+  "authoring_base_commit": "04920f75e55628c9e52be842037ef848fcd4fa05",
+  "authoring_base_tree": "7c4bb49c04e821838a108348c7fb22edc878a81e",
+  "bindings": {
+    "approved_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "frozen_schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "v1_human_review_sha256": "a19d4a6132be417798b027794045227949ea40265e11714543e85ef1c325ad73",
+    "v1_mapping_contract_sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+    "v2_authorization_sha256": "5d3771c4748731642f3068722e986e65479a9b85d1087737e2faeb2dc76b073b"
+  },
+  "exact_v2_contract": {
+    "author_outcome": "FROZEN_SCHEMA_INSUFFICICIENCY_DEMONSTRATED_SCHEMA_SUCCESSOR_REQUIRED",
+    "contract_kind": "FORMAL_FROZEN_SCHEMA_INSUFFICIENCY_PROOF",
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v2.json",
+    "sha256": "f2badbc07895e8baff078a0ce617ceb6ff02d39c7634a9e38b3b8a46a18d811c",
+    "size_bytes": 18515
+  },
+  "immutability": "Exact V2 becomes immutable when this author checkpoint is committed. Independent technical review is required.",
+  "next_boundary": "CREATE_INDEPENDENT_REVIEW_PACKAGE_FOR_CURL_MAPPING_CONTRACT_V2_SCHEMA_INSUFFICIENCY_PROOF",
+  "record_id": "SVF-CURL-CANONICAL-MAPPING-CONTRACT-V2-SCHEMA-INSUFFICIENCY-AUTHOR-CHECKPOINT",
+  "recorded_at_utc": "2026-08-19T14:23:37Z",
+  "status": "AUTHOR_CHECKPOINT_INDEPENDENT_REVIEW_REQUIRED"
+}

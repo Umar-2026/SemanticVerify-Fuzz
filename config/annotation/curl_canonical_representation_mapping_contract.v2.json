@@ -1,0 +1,453 @@
+{
+  "approved_v4_semantic_container_hashes": {
+    "api_surface": "c3ec09ab541ce749c01c492875cb090c9971f79a4dd0fb3ba62649f0a2d437a2",
+    "cross_resource_rules": "820cc3cb457486679fe950b756e89f8f326acf0f6b3fa501522c011bd400b0b3",
+    "defect_taxonomy": "b69ee78d6966baddd3d48a75a0823b99df9bea55b9e3eaede31a994a7adc6cef",
+    "easy_handle_rules": "e9e49ab502f7e0d46f4c19777a5b55122207d1fada7c52d4aca13d758768d6e6",
+    "exit_obligations": "d2ce5c2cc24effc1b227384779a14475531f964bc8031872bb7d418902c9ac53",
+    "global_runtime_rules": "884e1f9a6e4929ecd889c50943e2950c1b8c91fa9062642ccb249b447219c1e7",
+    "multi_handle_rules": "e865bc0f1140d37339fe900eb3c99c3c62cf18e2ae9f8b6359a5983c1f022aa6",
+    "resources": "edfb84299c3d298ee0fa315d15ae059931216255ac9fad171001b63922fd5490",
+    "return_condition_policy": "c71f6a72a92fa5bf9c193e13edfc008791c72488b1943cbd2c1d7cfad4edecbe",
+    "verdict_semantics": "e7465eea48b881cfbfe3e5f42945b906b41fdb4a8bf893d8a11713a38031dce3"
+  },
+  "author_outcome": "FROZEN_SCHEMA_INSUFFICICIENCY_DEMONSTRATED_SCHEMA_SUCCESSOR_REQUIRED",
+  "author_outcome_interpretation": "The existing frozen schema is insufficient under the exact current losslessness and admissibility contract. This V2 author outcome does not itself authorize creation or adoption of a successor schema.",
+  "canonical_materialization_safe": false,
+  "canonical_schema_successor_authorized": false,
+  "canonical_schema_successor_required": true,
+  "contract_kind": "FORMAL_FROZEN_SCHEMA_INSUFFICIENCY_PROOF",
+  "contract_version": "V2",
+  "curl_json_created": false,
+  "curl_json_creation_authorized": false,
+  "downstream_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "canonical_schema_modification": false,
+    "canonical_schema_successor_creation": false,
+    "curl_json_materialization": false,
+    "positive_mapping_approval": false,
+    "repair": false
+  },
+  "evidence_quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "formal_insufficiency_argument": {
+    "admissibility_constraints": {
+      "machine_verdict_contract_change_allowed": false,
+      "opaque_payload_packing_allowed": false,
+      "protocol_rule_addition_allowed": false,
+      "protocol_rule_removal_allowed": false,
+      "protocol_rule_semantic_change_allowed": false,
+      "schema_modification_allowed": false,
+      "schema_successor_creation_allowed": false,
+      "semantic_protocol_event_invention_allowed": false,
+      "source_evidence_change_allowed": false
+    },
+    "candidate_carrier_classes_considered": [
+      {
+        "carrier_class": "NEW_FIRST_CLASS_SCHEMA_FIELD",
+        "reason": "Frozen schema has additionalProperties=false and schema modification/successor creation is not authorized.",
+        "result": "INADMISSIBLE"
+      },
+      {
+        "carrier_class": "OPAQUE_FREE_FORM_STRING_ENCODING",
+        "reason": "Opaque payload packing is explicitly prohibited by the V2 authorization.",
+        "result": "INADMISSIBLE"
+      },
+      {
+        "carrier_class": "SYNTHETIC_API_BRANCH_OR_EXIT_EVENTS",
+        "reason": "Semantic protocol-event invention is explicitly prohibited.",
+        "result": "INADMISSIBLE"
+      },
+      {
+        "carrier_class": "REPURPOSE_EXISTING_PROTOCOL_FIELDS_FOR_MACHINE_POLICY",
+        "reason": "Using protocol state/event/transition fields to encode verdict-join and analysis-policy semantics changes the semantic role of those fields and cannot satisfy the required forward/reverse typed accounting without an unreviewed encoding convention.",
+        "result": "INADMISSIBLE"
+      },
+      {
+        "carrier_class": "DIRECT_SAME_PURPOSE_STRUCTURAL_CARRIER",
+        "result": "ABSENT_FOR_REQUIRED_V4_CONCEPTS",
+        "witnesses": [
+          "V2-O1-MEMBERSHIP-RELATION",
+          "V2-O2-FOUR-VERDICT-AND-JOIN-POLICY",
+          "V2-O3-PATH-AND-SET-VALUED-REASONING"
+        ]
+      }
+    ],
+    "claim_scope": "This is not a claim that every theoretically imaginable encoding into arbitrary strings is mathematically impossible. It is a claim about admissible mappings under the exact frozen schema, approved V4 semantics, and V2 authorization constraints.",
+    "frozen_schema_insufficiency_demonstrated_under_current_contract": true,
+    "lossless_mapping_to_existing_frozen_schema_demonstrated": false,
+    "positive_mapping_candidate_authored": false,
+    "proof_conclusion": "Under the current frozen schema and exact V2 authorization constraints, no admissible lossless structural mapping is available that preserves every required approved V4 semantic container without prohibited encoding or semantic-category repurposing.",
+    "required_losslessness_contract": {
+      "all_10_v4_semantic_containers_preserved": true,
+      "all_3_exit_obligations_accounted_for": true,
+      "all_64_rule_records_accounted_for": true,
+      "forward_accounting_required": true,
+      "four_verdict_contract_preserved": true,
+      "membership_sensitive_semantics_preserved": true,
+      "path_sensitive_semantics_preserved": true,
+      "reverse_accounting_required": true,
+      "set_valued_state_reasoning_preserved": true,
+      "unknown_first_class_preserved": true
+    },
+    "schema_successor_authorized_by_this_contract": false,
+    "schema_successor_required": true,
+    "theorem_id": "V2-T1-FROZEN-SCHEMA-INSUFFICIENCY-UNDER-AUTHORIZED-LOSSLESSNESS-CONSTRAINTS"
+  },
+  "frozen_inventory": {
+    "allowed_machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "api_surface_function_count": 12,
+    "cross_resource_rule_count": 4,
+    "easy_handle_rule_count": 21,
+    "exit_obligation_count": 3,
+    "global_runtime_rule_count": 10,
+    "multi_handle_rule_count": 29,
+    "resource_component_count": 5,
+    "semantic_container_count": 10,
+    "total_rule_record_count": 64
+  },
+  "frozen_schema_structural_facts": {
+    "all_schema_property_names": [
+      "author",
+      "cleanup_responsibility",
+      "content_sha256",
+      "creation_date",
+      "defect_category",
+      "event_id",
+      "event_kind",
+      "events",
+      "evidence_id",
+      "freeze_date",
+      "from_states",
+      "initial_state",
+      "library",
+      "library_revision",
+      "obligations",
+      "ownership_effect",
+      "path_or_url",
+      "permitted_exit_states",
+      "permitted_transitions",
+      "provenance",
+      "quoted_or_paraphrased_rationale",
+      "required_pre_state_or_exit_condition",
+      "resource_kind",
+      "retrieval_date",
+      "return_predicate",
+      "reviewer",
+      "rule_id",
+      "schema_version",
+      "severity",
+      "source_evidence",
+      "source_type",
+      "specification_author",
+      "specification_id",
+      "states",
+      "symbol_or_condition",
+      "to_states",
+      "transition_id",
+      "transitions",
+      "triggering_event_or_function_exit"
+    ],
+    "event_kind_enum": [
+      "API_CALL",
+      "BRANCH",
+      "FUNCTION_EXIT"
+    ],
+    "obligation_fields": [
+      "cleanup_responsibility",
+      "content_sha256",
+      "creation_date",
+      "defect_category",
+      "freeze_date",
+      "library_revision",
+      "ownership_effect",
+      "permitted_transitions",
+      "required_pre_state_or_exit_condition",
+      "resource_kind",
+      "return_predicate",
+      "rule_id",
+      "severity",
+      "source_evidence",
+      "specification_author",
+      "triggering_event_or_function_exit"
+    ],
+    "obligation_object_typed_field_count": 0,
+    "required_top_level_fields": [
+      "schema_version",
+      "specification_id",
+      "library",
+      "library_revision",
+      "resource_kind",
+      "states",
+      "initial_state",
+      "events",
+      "transitions",
+      "permitted_exit_states",
+      "obligations",
+      "provenance",
+      "author",
+      "reviewer",
+      "creation_date",
+      "freeze_date",
+      "content_sha256"
+    ],
+    "state_item_type": "string",
+    "top_level_additional_properties": false,
+    "transition_fields": [
+      "event_id",
+      "from_states",
+      "ownership_effect",
+      "return_predicate",
+      "to_states",
+      "transition_id"
+    ]
+  },
+  "immutability_policy": "Once this author checkpoint is committed, exact V2 is immutable. Any correction requires a separately authorized successor.",
+  "independent_review_requirement": {
+    "approval_must_not_be_synthetic": true,
+    "required": true,
+    "review_target": "Exact immutable V2 schema-insufficiency proof.",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "schema_successor_may_not_be_authorized_by_this_review": true
+  },
+  "input_bindings": {
+    "approved_curl_v4": {
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8"
+    },
+    "completed_v1_human_review": {
+      "sha256": "a19d4a6132be417798b027794045227949ea40265e11714543e85ef1c325ad73"
+    },
+    "completed_v1_human_review_record": {
+      "sha256": "b7a8572b3893d83e411c4d79a56682c9b3a47345ed25396df5dcc4556d8a161d"
+    },
+    "frozen_canonical_schema": {
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+    },
+    "mapping_contract_v1": {
+      "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257"
+    },
+    "v2_successor_authorization": {
+      "sha256": "5d3771c4748731642f3068722e986e65479a9b85d1087737e2faeb2dc76b073b"
+    }
+  },
+  "library": "curl",
+  "lossless_v4_to_frozen_schema_mapping_proven": false,
+  "next_boundary": "CREATE_INDEPENDENT_REVIEW_PACKAGE_FOR_CURL_MAPPING_CONTRACT_V2_SCHEMA_INSUFFICIENCY_PROOF",
+  "positive_mapping_algorithm_approved": false,
+  "positive_mapping_algorithm_defined": false,
+  "purpose": "Determine whether exact approved curl V4 can be represented losslessly in the existing frozen canonical protocol schema under the exact authorized representation boundary.",
+  "schema_id": "semanticverify-fuzz.curl-canonical-representation-mapping-contract.v2",
+  "status": "AUTHOR_CHECKPOINT_INDEPENDENT_REVIEW_REQUIRED",
+  "structural_obstruction_witnesses": [
+    {
+      "frozen_schema_facts": {
+        "explicit_membership_property_present": false,
+        "parameterized_resource_relation_field_present": false,
+        "states_are_strings": true,
+        "transition_fields": [
+          "event_id",
+          "from_states",
+          "ownership_effect",
+          "return_predicate",
+          "to_states",
+          "transition_id"
+        ]
+      },
+      "inadmissible_fallbacks": [
+        "Packing the relation into arbitrary strings would be opaque payload encoding, explicitly unauthorized.",
+        "Inventing protocol events solely to encode membership metadata would violate the prohibition on semantic protocol-event invention.",
+        "Adding a membership field requires schema supersession, which is not authorized at V2 authoring time."
+      ],
+      "obstruction_id": "V2-O1-MEMBERSHIP-RELATION",
+      "required_semantics": {
+        "ownership_transfer_on_add": false,
+        "relation": "easy_handle -> zero_or_one_multi_handle",
+        "successful_add": "DETACHED -> ATTACHED_TO_SPECIFIC_MULTI",
+        "successful_remove": "ATTACHED_TO_SPECIFIC_MULTI -> DETACHED"
+      },
+      "semantic_hash": "3f51e8eebb26333dbce0c710a120ecdffec881c82f221a4b5d6c6edfc0fda0b2",
+      "status": "STRUCTURAL_CARRIER_OBSTRUCTION",
+      "v4_source_path": "$.resources.EASY_MULTI_MEMBERSHIP",
+      "why_direct_lossless_carrier_is_absent": "The approved semantic object is an identity-sensitive relation between an easy handle and zero-or-one specific multi handle. The frozen schema provides protocol-state strings and ordinary transition fields but no first-class relation/binding carrier."
+    },
+    {
+      "frozen_schema_facts": {
+        "explicit_feasible_state_join_policy_property_present": false,
+        "explicit_machine_verdict_property_present": false,
+        "explicit_verdict_semantics_property_present": false
+      },
+      "inadmissible_fallbacks": [
+        "Encoding the complete verdict policy inside free-form strings would be opaque payload packing.",
+        "Representing verdict-join policy as API/branch/function-exit events would repurpose protocol-event semantics and would introduce synthetic protocol behavior.",
+        "Dropping the policy violates the V2 requirement to preserve all ten approved V4 semantic containers."
+      ],
+      "obstruction_id": "V2-O2-FOUR-VERDICT-AND-JOIN-POLICY",
+      "required_semantics": {
+        "allowed_machine_verdicts": [
+          "VALID",
+          "VIOLATION-MUST",
+          "VIOLATION-MAY",
+          "UNKNOWN"
+        ],
+        "feasible_state_join_policy": {
+          "all_feasible_states_same_verdict": "use the common verdict",
+          "mixed_VALID_and_enforceable_violation": "VIOLATION-MAY",
+          "normative_strength_or_model_coverage_unresolved": "UNKNOWN",
+          "unknown_never_silently_becomes_valid": true
+        }
+      },
+      "semantic_hash": "e7465eea48b881cfbfe3e5f42945b906b41fdb4a8bf893d8a11713a38031dce3",
+      "status": "STRUCTURAL_CARRIER_OBSTRUCTION",
+      "v4_source_path": "$.verdict_semantics",
+      "why_direct_lossless_carrier_is_absent": "The frozen schema defines protocol states/events/transitions/obligations but has no first-class structural field for the four machine verdicts or the feasible-state verdict join policy that distinguishes VIOLATION-MAY from UNKNOWN."
+    },
+    {
+      "frozen_schema_facts": {
+        "explicit_join_semantics_property_present": false,
+        "explicit_path_sensitive_property_present": false,
+        "explicit_set_valued_reasoning_property_present": false
+      },
+      "inadmissible_fallbacks": [
+        "Encoding machine policy into state/event description strings would be opaque payload packing.",
+        "Replacing policy with additional protocol transitions would change the semantic category from analysis policy to protocol behavior.",
+        "Omitting these semantics violates the V2 preservation requirement."
+      ],
+      "obstruction_id": "V2-O3-PATH-AND-SET-VALUED-REASONING",
+      "required_semantics": {
+        "path_sensitive": true,
+        "set_valued_state_reasoning": "Known finite feasible state alternatives are evaluated explicitly; the existence of a set-valued state does not itself force UNKNOWN.",
+        "unknown_is_first_class": true,
+        "unknown_must_never_be_converted_to_valid": true
+      },
+      "semantic_hash": "dd645ad929e40bcfa2af2353817d55ad76596f464991f2417c4ac1b57c0be408",
+      "status": "STRUCTURAL_CARRIER_OBSTRUCTION",
+      "v4_source_path": "$.representation_policy",
+      "why_direct_lossless_carrier_is_absent": "Path sensitivity and finite set-valued feasible-state reasoning are approved machine-semantics contracts, not individual API state transitions. The frozen schema provides no structural machine-policy carrier for these semantics."
+    },
+    {
+      "frozen_schema_facts": {
+        "canonical_obligation_fields": [
+          "cleanup_responsibility",
+          "content_sha256",
+          "creation_date",
+          "defect_category",
+          "freeze_date",
+          "library_revision",
+          "ownership_effect",
+          "permitted_transitions",
+          "required_pre_state_or_exit_condition",
+          "resource_kind",
+          "return_predicate",
+          "rule_id",
+          "severity",
+          "source_evidence",
+          "specification_author",
+          "triggering_event_or_function_exit"
+        ],
+        "canonical_obligation_object_typed_field_count": 0,
+        "canonical_obligation_object_typed_fields": []
+      },
+      "obstruction_id": "V2-O4-STRUCTURED-RULE-PAYLOAD",
+      "status": "SUPPORTING_STRUCTURAL_OBSTRUCTION",
+      "structured_value_occurrence_count": 12,
+      "structured_value_occurrences": [
+        {
+          "family": "global_runtime_rules",
+          "field": "effect",
+          "rule_id": "G01",
+          "value_type": "dict"
+        },
+        {
+          "family": "global_runtime_rules",
+          "field": "effect",
+          "rule_id": "G02",
+          "value_type": "dict"
+        },
+        {
+          "family": "global_runtime_rules",
+          "field": "effect",
+          "rule_id": "G03",
+          "value_type": "dict"
+        },
+        {
+          "family": "global_runtime_rules",
+          "field": "effect",
+          "rule_id": "G05",
+          "value_type": "dict"
+        },
+        {
+          "family": "global_runtime_rules",
+          "field": "effect",
+          "rule_id": "G06",
+          "value_type": "dict"
+        },
+        {
+          "family": "global_runtime_rules",
+          "field": "effect",
+          "rule_id": "G07",
+          "value_type": "dict"
+        },
+        {
+          "family": "easy_handle_rules",
+          "field": "effect",
+          "rule_id": "E01",
+          "value_type": "dict"
+        },
+        {
+          "family": "easy_handle_rules",
+          "field": "effect",
+          "rule_id": "E02",
+          "value_type": "dict"
+        },
+        {
+          "family": "easy_handle_rules",
+          "field": "effect",
+          "rule_id": "E03",
+          "value_type": "dict"
+        },
+        {
+          "family": "easy_handle_rules",
+          "field": "runtime_post_state",
+          "rule_id": "E04",
+          "value_type": "list"
+        },
+        {
+          "family": "easy_handle_rules",
+          "field": "excludes",
+          "rule_id": "E12",
+          "value_type": "list"
+        },
+        {
+          "family": "multi_handle_rules",
+          "field": "excludes",
+          "rule_id": "M15",
+          "value_type": "list"
+        }
+      ],
+      "v4_source_paths": [
+        "$.global_runtime_rules",
+        "$.easy_handle_rules",
+        "$.multi_handle_rules",
+        "$.cross_resource_rules",
+        "$.exit_obligations"
+      ],
+      "why_this_is_a_supporting_obstruction": "Approved V4 rules contain structured list/dictionary payloads, while canonical obligations contain no object-typed carrier. A distributed projection would require a separately defined semantic decomposition and reverse reconstruction proof; free-form string serialization is explicitly prohibited."
+    }
+  ]
+}
