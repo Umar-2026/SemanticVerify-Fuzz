@@ -1,0 +1,48 @@
+{
+  "author_checkpoint_commit": "d4c41e682882f6053fd6657a7f0f82a402697354",
+  "author_checkpoint_parent": "15d96d809cb7c9e03ac3baf49500fcb206987fad",
+  "expected_object_counts": {
+    "blob": 2,
+    "commit": 1,
+    "total_raw_objects": 8,
+    "tree": 5
+  },
+  "objects": {
+    "annotation_tree": {
+      "file": "04_annotation_tree.raw",
+      "oid": "a0b11ee230bd67f1f8f9e19de574c48bfa46a205"
+    },
+    "commit": {
+      "file": "01_author_commit.raw",
+      "oid": "d4c41e682882f6053fd6657a7f0f82a402697354"
+    },
+    "config_tree": {
+      "file": "03_config_tree.raw",
+      "oid": "43304dc9c98791cf71339aa62082211b90c1cbcc"
+    },
+    "decision_0033_blob": {
+      "file": "08_decision_0033_blob.raw",
+      "oid": "af99db5023a6e1b9c1ce2eaf05eb4b5a9e365db7",
+      "path": "documentation/decisions/0033-curl-technical-working-draft-v3-author-checkpoint.md"
+    },
+    "decisions_tree": {
+      "file": "06_decisions_tree.raw",
+      "oid": "53ddfa0ad5c943170f11e8e1f90ace7ad0940b1c"
+    },
+    "documentation_tree": {
+      "file": "05_documentation_tree.raw",
+      "oid": "83c0cae943800440a7fe51d50b2a867d1765657a"
+    },
+    "root_tree": {
+      "file": "02_root_tree.raw",
+      "oid": "d6878d64e639566a5cedaa95891947c23815b989"
+    },
+    "v3_blob": {
+      "file": "07_v3_blob.raw",
+      "oid": "086adbf28333b27683441da0475c275087409e57",
+      "path": "config/annotation/curl_technical_protocol_working_draft.v3.json"
+    }
+  },
+  "parent_commit_object_included": false,
+  "witness_id": "SVF-CURL-V3-AUTHOR-CHECKPOINT-MINIMAL-GIT-WITNESS"
+}

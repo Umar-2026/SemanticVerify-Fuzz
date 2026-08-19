@@ -1,0 +1,63 @@
+{
+  "authorization_commit": "15d96d809cb7c9e03ac3baf49500fcb206987fad",
+  "authorization_tree": "4a4704eea30b3d56974ed0b327c1556744e305db",
+  "completed_v2_human_review": {
+    "overall_decision": "REVISION_REQUIRED",
+    "revision_required_items": [
+      "V2-RR05",
+      "V2-RR06",
+      "V2-RR09",
+      "V2-RR10",
+      "V2-RR12"
+    ],
+    "sha256": "597699068c3ba7bf480204c67d88d940f400c7425442a081a18198908b1e029e"
+  },
+  "implemented_corrections": {
+    "V3-C01": "Implemented by new rules M26 and M27.",
+    "V3-C02": "Implemented by new rules M28 and M29.",
+    "V3-C03": "Resolved explicit global-cleanup missing-at-exit normative status to MUST.",
+    "V3-C04": "Changed operative E04 enforcement to SOURCE_GROUNDED.",
+    "V3-C05": "Removed operative E04 review_item NR04 while preserving the exact two-state runtime post-state and dependent feasible-state verdict policy.",
+    "V3-C06": "Constrained M10 to a live valid supplied multi and live easy handle.",
+    "V3-C07": "Constrained M11 to a live valid supplied multi and live easy handle while preserving D7 VIOLATION-MUST, CURLM_BAD_EASY_HANDLE, and original membership.",
+    "V3-C08": "Created exact V3-bound source traceability using frozen V3 scope and unchanged PREAPPROVED_SOURCE_ONLY evidence."
+  },
+  "next_boundary": "BUILD_INDEPENDENT_CURL_TECHNICAL_WORKING_DRAFT_V3_REVIEW_PACKAGE",
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "predecessor": {
+    "must_remain_immutable": true,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v2.json",
+    "sha256": "63c17bbd0a09365fad9d3f0445fdc2115a8a0e945f622a39c745f31e1baf3d31"
+  },
+  "preserved_boundaries": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "pinned_curl_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "pinned_curl_tree": "e23d273aeb073c04aa5b073b35c9fde16979c896",
+    "synthetic_protocol_events_invented": false,
+    "twelve_function_api_surface": true
+  },
+  "resolution_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V3-AUTHOR-RESOLUTION",
+  "successor": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "schema_id": "curl.technical-protocol-working-draft.v3",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330,
+    "status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V3_AUTHOR_CHECKPOINT"
+  }
+}

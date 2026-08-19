@@ -1,0 +1,70 @@
+{
+  "approved_source_evidence": {
+    "class": "PREAPPROVED_SOURCE_ONLY",
+    "file_count": 21
+  },
+  "author_checkpoint": {
+    "commit": "d4c41e682882f6053fd6657a7f0f82a402697354",
+    "parent": "15d96d809cb7c9e03ac3baf49500fcb206987fad",
+    "tree": "d6878d64e639566a5cedaa95891947c23815b989"
+  },
+  "author_checkpoint_record": {
+    "sha256": "fa590e70528bdd310c0fc7c8464c7ba61f47d0f8bd5c8a508c99f8f0ae63103c"
+  },
+  "author_resolution": {
+    "sha256": "ff4be9c776444397a5469339d7928b7287524206f68abf10575d44c53e1ffcf6"
+  },
+  "binding_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V3-INDEPENDENT-REVIEW-BINDING",
+  "completed_v2_human_review": {
+    "overall_decision": "REVISION_REQUIRED",
+    "sha256": "597699068c3ba7bf480204c67d88d940f400c7425442a081a18198908b1e029e"
+  },
+  "decision_0031": {
+    "sha256": "9663402a5f7a9864dc5c5adb3c80c3cc6d54a1ffc596b3b8a0f2f7c721e6f478"
+  },
+  "decision_0032": {
+    "sha256": "491885b8b4a127f237595f1e14cb91896ca030c3d5c6e49c738436799840c966"
+  },
+  "decision_0033": {
+    "git_blob": "af99db5023a6e1b9c1ce2eaf05eb4b5a9e365db7",
+    "sha256": "7022a717e9c0f0fd450244a6db37788c97f087f4d4041311bdc0c917697275bb"
+  },
+  "frozen_v3_scope": {
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "predecessor_v2": {
+    "immutable": true,
+    "sha256": "63c17bbd0a09365fad9d3f0445fdc2115a8a0e945f622a39c745f31e1baf3d31"
+  },
+  "review_target": {
+    "git_blob": "086adbf28333b27683441da0475c275087409e57",
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "schema_id": "curl.technical-protocol-working-draft.v3",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330,
+    "status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V3_AUTHOR_CHECKPOINT"
+  },
+  "reviewer_state": {
+    "human_identity": "BLANK",
+    "overall_decision": "BLANK",
+    "review_item_decisions": "BLANK",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "successor_authorization": {
+    "commit": "15d96d809cb7c9e03ac3baf49500fcb206987fad",
+    "sha256": "6b90015b4e47279fe711916eb8e2d2f4d3bb79aa77f1683d20c0af945892d17b"
+  },
+  "successor_rule_source_traceability": {
+    "sha256": "b1577d92fe49d73682c3125730332fe2b5541d3e69abee75d84f08d2841e7063"
+  }
+}

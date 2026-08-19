@@ -1,0 +1,126 @@
+{
+  "authoring_constraints": {
+    "no_generated_driver_derived_rule": true,
+    "no_new_api_function": true,
+    "no_new_evidence_class": true,
+    "only_review_required_successor_corrections_may_change_semantics": true,
+    "v2_must_not_be_modified": true,
+    "v3_must_be_a_new_file": true,
+    "v3_requires_new_author_checkpoint_before_independent_review": true
+  },
+  "authorization_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V3-SUCCESSOR-AUTHORIZATION",
+  "authorization_type": "IMMUTABLE_SUCCESSOR_AUTHORING_ONLY",
+  "authorized_correction_sources": [
+    "V2-RR05",
+    "V2-RR06",
+    "V2-RR09",
+    "V2-RR10",
+    "V2-RR12"
+  ],
+  "authorized_successor": {
+    "authoring_authorized": true,
+    "canonicalization_authorized": false,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "predecessor_in_place_edit_authorized": false,
+    "schema_id": "curl.technical-protocol-working-draft.v3"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "must_preserve": {
+    "allowed_machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "frozen_api_surface": [
+      "curl_global_init",
+      "curl_global_cleanup",
+      "curl_easy_init",
+      "curl_easy_setopt",
+      "curl_easy_perform",
+      "curl_easy_reset",
+      "curl_easy_cleanup",
+      "curl_multi_init",
+      "curl_multi_add_handle",
+      "curl_multi_perform",
+      "curl_multi_remove_handle",
+      "curl_multi_cleanup"
+    ],
+    "frozen_api_surface_function_count": 12,
+    "synthetic_protocol_events_may_be_invented": false,
+    "v2_immutable": true
+  },
+  "next_boundary": "AUTHOR_CURL_TECHNICAL_WORKING_DRAFT_V3_SUCCESSOR",
+  "predecessor": {
+    "completed_human_review_commit": "96b5ff417206fa2f1fe9e8e5c9d499561d4e6d7b",
+    "completed_human_review_sha256": "597699068c3ba7bf480204c67d88d940f400c7425442a081a18198908b1e029e",
+    "completed_human_review_tree": "6c8304aa228019c2a1d5cfe2cc4af856843ba6cd",
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "config/annotation/curl_technical_protocol_working_draft.v2.json",
+    "sha256": "63c17bbd0a09365fad9d3f0445fdc2115a8a0e945f622a39c745f31e1baf3d31"
+  },
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "generated_driver_compiler_log_semantic_content",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "required_successor_corrections": [
+    {
+      "id": "V3-C01",
+      "requirement": "Add explicit D1 VIOLATION-MUST rules for curl_multi_add_handle and curl_multi_remove_handle when the easy argument is not backed by successful easy-handle acquisition.",
+      "source_review_item": "V2-RR05"
+    },
+    {
+      "id": "V3-C02",
+      "requirement": "Add explicit D2 VIOLATION-MUST rules for curl_multi_add_handle and curl_multi_remove_handle when the easy argument is the NULL result of failed curl_easy_init; record CURLM_BAD_EASY_HANDLE and no membership change.",
+      "source_review_item": "V2-RR05"
+    },
+    {
+      "id": "V3-C03",
+      "requirement": "Resolve stale EXPLICIT_GLOBAL_CLEANUP_OBLIGATION.missing_at_exit_normative_status to MUST or remove the stale field while preserving D5 MUST VIOLATION-MUST.",
+      "source_review_item": "V2-RR06"
+    },
+    {
+      "id": "V3-C04",
+      "requirement": "Change operative E04 enforcement from IMPLEMENTATION_DERIVED_REVIEW_REQUIRED to a resolved source-grounded status.",
+      "source_review_item": "V2-RR09"
+    },
+    {
+      "id": "V3-C05",
+      "requirement": "Remove operative pending review_item NR04 from E04 or move it to clearly historical resolved-review provenance while preserving the exact two-state NULL curl_easy_init runtime post-state and feasible-state verdict joins.",
+      "source_review_item": "V2-RR09"
+    },
+    {
+      "id": "V3-C06",
+      "requirement": "Constrain M10 to a live valid supplied multi handle and a live already-detached easy handle.",
+      "source_review_item": "V2-RR10"
+    },
+    {
+      "id": "V3-C07",
+      "requirement": "Constrain M11 to a live valid supplied multi handle and a live easy handle attached to a different original multi; preserve D7 VIOLATION-MUST, CURLM_BAD_EASY_HANDLE, and the original membership.",
+      "source_review_item": "V2-RR10"
+    },
+    {
+      "id": "V3-C08",
+      "requirement": "Create an exact V3-successor-bound rule-to-source traceability record using frozen V3 scope and/or the unchanged approved pinned source evidence.",
+      "source_review_item": "V2-RR12"
+    }
+  ]
+}

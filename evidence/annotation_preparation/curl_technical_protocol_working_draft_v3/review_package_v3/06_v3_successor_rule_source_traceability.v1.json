@@ -1,0 +1,144 @@
+{
+  "approved_sources": {
+    "docs/libcurl/curl_easy_init.md": "59b98da718399b47958e3e1d812accaa05b9a1016c62797bf490dd215e6b1927",
+    "docs/libcurl/curl_global_cleanup.md": "dce5ac828e85d5e1a303333163c1d71d3503816241f71809a7824370387bc1a1",
+    "docs/libcurl/curl_global_init.md": "0cb6702df283336798293eae8b5e57775852f56ea237b03384bdfabe27be7cbc",
+    "docs/libcurl/curl_multi_add_handle.md": "8964c4ff62cd009f6fa7ca72d5a0bfcf19822e259c2352f785d9b83e1084a90a",
+    "docs/libcurl/curl_multi_remove_handle.md": "88809d1245dc0c66a672aedaba53a69fa7aa4dbb5d68eab3e1d8ff5946720938",
+    "include/curl/multi.h": "ab3278832925f69a68852e2c6b5a300884ee5f974a2291b642a7d1ef1ed49af9",
+    "lib/easy.c": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483",
+    "lib/multi.c": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3"
+  },
+  "corrected_subject_traceability": [
+    {
+      "correction_id": "V3-C03",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR06",
+      "source_paths": [
+        "docs/libcurl/curl_global_init.md",
+        "docs/libcurl/curl_global_cleanup.md",
+        "lib/easy.c"
+      ],
+      "successor_subject": "resources.EXPLICIT_GLOBAL_CLEANUP_OBLIGATION.missing_at_exit_normative_status"
+    },
+    {
+      "correction_ids": [
+        "V3-C04",
+        "V3-C05"
+      ],
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR09",
+      "source_paths": [
+        "docs/libcurl/curl_easy_init.md",
+        "lib/easy.c"
+      ],
+      "successor_subject": "E04"
+    },
+    {
+      "correction_id": "V3-C06",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR10",
+      "source_paths": [
+        "docs/libcurl/curl_multi_remove_handle.md",
+        "include/curl/multi.h",
+        "lib/multi.c"
+      ],
+      "successor_subject": "M10"
+    },
+    {
+      "correction_id": "V3-C07",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR10",
+      "source_paths": [
+        "docs/libcurl/curl_multi_remove_handle.md",
+        "include/curl/multi.h",
+        "lib/multi.c"
+      ],
+      "successor_subject": "M11"
+    },
+    {
+      "correction_id": "V3-C01",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR05",
+      "source_paths": [
+        "docs/libcurl/curl_multi_add_handle.md",
+        "include/curl/multi.h",
+        "lib/multi.c"
+      ],
+      "successor_subject": "M26"
+    },
+    {
+      "correction_id": "V3-C01",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR05",
+      "source_paths": [
+        "docs/libcurl/curl_multi_remove_handle.md",
+        "include/curl/multi.h",
+        "lib/multi.c"
+      ],
+      "successor_subject": "M27"
+    },
+    {
+      "correction_id": "V3-C02",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR05",
+      "source_paths": [
+        "docs/libcurl/curl_easy_init.md",
+        "docs/libcurl/curl_multi_add_handle.md",
+        "include/curl/multi.h",
+        "lib/easy.c",
+        "lib/multi.c"
+      ],
+      "successor_subject": "M28"
+    },
+    {
+      "correction_id": "V3-C02",
+      "frozen_scope_support": true,
+      "human_review_item": "V2-RR05",
+      "source_paths": [
+        "docs/libcurl/curl_easy_init.md",
+        "docs/libcurl/curl_multi_remove_handle.md",
+        "include/curl/multi.h",
+        "lib/easy.c",
+        "lib/multi.c"
+      ],
+      "successor_subject": "M29"
+    }
+  ],
+  "evidence_class": "PREAPPROVED_SOURCE_ONLY",
+  "explicit_quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "frozen_scope_binding": {
+    "path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb"
+  },
+  "human_review_binding": {
+    "overall_decision": "REVISION_REQUIRED",
+    "sha256": "597699068c3ba7bf480204c67d88d940f400c7425442a081a18198908b1e029e"
+  },
+  "pinned_source": {
+    "commit": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "tree": "e23d273aeb073c04aa5b073b35c9fde16979c896"
+  },
+  "predecessor_binding": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v2.json",
+    "sha256": "63c17bbd0a09365fad9d3f0445fdc2115a8a0e945f622a39c745f31e1baf3d31"
+  },
+  "successor_binding": {
+    "checkpoint_status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V3_AUTHOR_CHECKPOINT",
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "schema_id": "curl.technical-protocol-working-draft.v3",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330
+  },
+  "traceability_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V3-RULE-SOURCE-TRACEABILITY"
+}
