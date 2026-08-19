@@ -1,0 +1,90 @@
+{
+  "completed_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 12,
+      "REVISION_REQUIRED": 0
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "19 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "overall_decision": "APPROVE_EXACT_WORKING_DRAFT_V4_FOR_CANONICALIZATION",
+    "repository_path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v4/completed_human_review_v4/01_completed_human_technical_review.v4.md",
+    "review_item_decisions": {
+      "V4-RR01": "PASS",
+      "V4-RR02": "PASS",
+      "V4-RR03": "PASS",
+      "V4-RR04": "PASS",
+      "V4-RR05": "PASS",
+      "V4-RR06": "PASS",
+      "V4-RR07": "PASS",
+      "V4-RR08": "PASS",
+      "V4-RR09": "PASS",
+      "V4-RR10": "PASS",
+      "V4-RR11": "PASS",
+      "V4-RR12": "PASS"
+    },
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "074814c04922f7cbc5fa41ef460cbde74dcb32529c09ef5752cf1d0f511f2aed",
+    "size_bytes": 24722
+  },
+  "next_boundary": "AUTHORIZE_CANONICAL_CURL_SPECIFICATION_FROM_APPROVED_V4",
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "canonical_curl_specification_created": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "preserved_contract": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "easy_handle_rule_count": 21,
+    "frozen_api_surface_function_count": 12,
+    "machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "multi_handle_rule_count": 29,
+    "protocol_container_count": 10,
+    "protocol_rule_semantic_change_from_v3": false,
+    "v4_p01_platform_independent_path_comparison": "PASS",
+    "v4_p02_fresh_v4_bound_review_package": "PASS"
+  },
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "generated_driver_compiler_log_semantic_content",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V4-COMPLETED-HUMAN-REVIEW",
+  "review_target": {
+    "author_checkpoint_commit": "b98d76536376b21fc6f2e85a060e960e1681453c",
+    "author_checkpoint_tree": "e7243cda2f8afd9b6cceff793ab0cfa723fabbe5",
+    "immutable": true,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "review_package_checksum_manifest_sha256": "5d5d19a0f151767b59ebb88fb1f9d573c1ca96df5318585e01bde6fa218f639f",
+    "review_package_commit": "e123bd412eb316b0857365e03788b19596fb7406",
+    "review_package_tree": "1f31c28940b046427ede83bcd18cec3c6b118fda",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "technical_effect": {
+    "approved_v4_must_remain_immutable": true,
+    "exact_v4_technically_adequate_for_later_canonicalization_authorization": true,
+    "human_review_itself_authorizes_canonicalization": false,
+    "human_review_itself_creates_canonical_curl_json": false,
+    "separate_canonicalization_authorization_required": true
+  }
+}

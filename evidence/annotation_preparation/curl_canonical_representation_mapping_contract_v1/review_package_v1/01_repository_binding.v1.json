@@ -1,0 +1,41 @@
+{
+  "assistant_generated_or_synthetic_human_approval_present": false,
+  "author_checkpoint": {
+    "commit": "afc2bb285f3b9adef8129f106c1c941b14d6f10c",
+    "parent": "fc3b85c999199e8b45d683fb675a701444478472",
+    "tree": "ace5a3cd3b2797c7a312403656391aa6da4908bb"
+  },
+  "author_conclusion": {
+    "canonical_materialization_safe": false,
+    "curl_json_created": false,
+    "lossless_v4_to_frozen_schema_mapping_proven": false,
+    "positive_mapping_algorithm_authored": false
+  },
+  "corrected_reference_precedent": {
+    "libpcap_canonical_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "libpcap_source_sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221",
+    "zlib_canonical_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+    "zlib_source_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e"
+  },
+  "exact_approved_v4": {
+    "immutable": true,
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "exact_mapping_contract": {
+    "immutable": true,
+    "package_path": "03_exact_mapping_contract.v1.json",
+    "repository_path": "config/annotation/curl_canonical_representation_mapping_contract.v1.json",
+    "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+    "size_bytes": 10879
+  },
+  "frozen_canonical_schema": {
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "human_review_decisions_present": false,
+  "human_review_status": "PENDING",
+  "next_boundary": "EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF",
+  "record_id": "SVF-CURL-CANONICAL-MAPPING-CONTRACT-V1-REVIEW-PACKAGE-BINDING",
+  "review_subject": "curl Canonical Representation Mapping Contract V1",
+  "reviewer_role_id": "Spec-Technical-Reviewer-1"
+}

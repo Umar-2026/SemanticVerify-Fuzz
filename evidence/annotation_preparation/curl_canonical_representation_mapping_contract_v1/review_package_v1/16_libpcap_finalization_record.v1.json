@@ -1,0 +1,90 @@
+{
+  "approved_source": {
+    "candidate_json_path": "$.candidate_specification_fields",
+    "human_approval_record_path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/binding_only_rereview_v1/02_binding_only_rereview_decision_record.v1.json",
+    "human_approval_record_sha256": "41ddc7f95ba5b51d1919f4aa20853a91ecb4b9535b6b740d1da2b12b396197e1",
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/libpcap_working_draft_v2/libpcap_source_only_working_fsm_draft.v2.json",
+    "sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221"
+  },
+  "canonical_specification": {
+    "content_sha256": "370da6351b59f6134ae09477d8941d8ab119adad7f4230540758e09326b47c4f",
+    "file_byte_count": 47285,
+    "file_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "freeze_date": "2026-08-17",
+    "path": "config/protocol_specifications/libpcap.json",
+    "schema_valid": true,
+    "specification_id": "libpcap.live-capture.lifecycle.v2"
+  },
+  "hash_governance": {
+    "contract_path": "config/protocol_content_hash_canonicalization.v1.json",
+    "contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "schema_path": "config/schemas/protocol_specification.schema.json",
+    "schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "next_boundary": "NEXT_LIBRARY_SOURCE_ONLY_SPECIFICATION_AUTHORING",
+  "obligation_content_sha256": {
+    "LIBPCAP-R01": "c19929019370aa8d36c4296e395cb5ea949f14c4fbe21fbb98b8633d2b3150aa",
+    "LIBPCAP-R02": "dec8c065058c5db951c6df88e4286d4df183be386d782001a19ec47295b9d259",
+    "LIBPCAP-R03": "8913fed3915d189e5fc3179e51485a4fbbd60ee7f49caf06e76ac7023fb36714",
+    "LIBPCAP-R04": "420074125acdea1b9d24c7f06a671f23ede8084e168bbe6c7b38016d111b9ac0",
+    "LIBPCAP-R05": "4631f1f75eda8951b8dd132496ddbb64079b6018e7a28f7e02807c502a02d65b",
+    "LIBPCAP-R06": "8d402dc99fd5b43f7fe4ebccd0dfa423e33374802f10532c23e78ba22d21fd33",
+    "LIBPCAP-R07": "3560ec7bf820ff783dd4dc3d8b1e18c31a7ae50520d6da25526cc6ca6b3e601e",
+    "LIBPCAP-R08": "d5d438ec886f1238272c5246c482013a23ba0209c82f02300c3712782a7658bd",
+    "LIBPCAP-R09": "428faa11189afbf172d27982df0781b6deccfb2949b4323461d8ce6bed919536",
+    "LIBPCAP-R10": "b0b32d58534f80af2fb7a821cc4e44c2ec76e0554bccb541143b95b02141f23a",
+    "LIBPCAP-R11": "4b541ff0aa93c417bd5f9b9121e8d95520b2c8cd378ce004aee63b453d671be1",
+    "LIBPCAP-R12": "e06c563da1ef867b1ffa9ce5476f86bae8f131b8061a588471cd0763965a4cc2",
+    "LIBPCAP-R13": "42cf3f81d7ba0759cf240d6dd0d0b77cc82620e5dd28544567e1a40b7a66a388",
+    "LIBPCAP-R14": "a7c3b1db23cf13780cc2bcafefd881b06fe512fe557f7a92b33232847974a3f0",
+    "LIBPCAP-R15": "aa0fe3b56806943116ecf680ff57f1fa67bf59bee39f5ce504d9e56832981b89",
+    "LIBPCAP-R16": "26e577f49503bdb1bc04d2766e7f62e6fdb1e662d133ee2aa3c1e8814005cabd",
+    "LIBPCAP-R17": "510a890a664c10cde4d6bb3ae6c428c06b696b927a14446d49252b8db295a20e",
+    "LIBPCAP-R18": "db48148e2b5b20257e09e7eea0312cd5d8fff61d23796f30e5bf1fd5efd871a6",
+    "LIBPCAP-R19": "bd1d7f9601247f4af3cd9e79a0903e95dcbd381121d6f50d1c9830823e877bd8",
+    "LIBPCAP-R20": "04f0dd2b87c425699b9bd47fd9fb894ace3d1fe39904890e8edb2b2043cf6e75"
+  },
+  "path_governance": {
+    "decision_0019_path": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "decision_0019_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "path_contract_path": "config/annotation/canonical_protocol_specification_paths.v1.json",
+    "path_contract_sha256": "4c6471d51627997f58b6c6bca833d364edc4c51e5aa7b80d0c34be8d63d19aaa"
+  },
+  "provenance_content_sha256": {
+    "EV-LIBPCAP-C-002": "0cef77dc8385eefa5902df7c7abd42d8dd43ee68a72afa0c80f701e4efc202c9",
+    "EV-LIBPCAP-GENCODE-003": "8326daaddd56a9eab15a8c4c09666873e5e056922c2f1cc0a5918958f8953113",
+    "EV-LIBPCAP-H-001": "a18377a304f254e93e7d5059eec87d28c46b44cdad6fb174cff315440cae87b0",
+    "EV-LIBPCAP-MAN-ACTIVATE-006": "ca5461684af7e4107fc817c0f599249ff8ef6827d88540a9df2a9e9826049655",
+    "EV-LIBPCAP-MAN-BUFFER-012": "513c91d6e340a8afa58b0939914fb646403ce5f2fda0a0b874b3fd6b6f17e7d1",
+    "EV-LIBPCAP-MAN-CLOSE-007": "7cbb72168caf80000b58a1d294f5ef18db075745c302bc137d38f3d7d4a088bc",
+    "EV-LIBPCAP-MAN-COMPILE-015": "c021ead1c9f04d8601d3afcc164baae8e704d1952c85e93767c1ccd5d9624323",
+    "EV-LIBPCAP-MAN-CREATE-005": "b9cc4a57b5ef4ffed8647c33440eec3c2365f587d7a01d2c5971918498854c55",
+    "EV-LIBPCAP-MAN-DATALINK-013": "434c12ea9f01c6badf1cc3ef5009392df2dbe32761435baff3d091a62cdb9d09",
+    "EV-LIBPCAP-MAN-FREECODE-017": "3d97c939069feadce4f62d576ceddf9409e68c60d97faf6084228f70255d79e6",
+    "EV-LIBPCAP-MAN-IMMEDIATE-011": "14509e13caa40e35dcf37cf77bdbeb3c5c3b62cf0629a01adccc8b8d5e319111",
+    "EV-LIBPCAP-MAN-NEXTEX-014": "becc1379a3072cedffc8bdfb76a187c6c448f52a79332d1af0dc853f2cb62efc",
+    "EV-LIBPCAP-MAN-PCAP-004": "ba3ef9b9fc1874cf0372ba757fb2494827abca69d4a23333ab758c435a7643b4",
+    "EV-LIBPCAP-MAN-PROMISC-009": "1282eecdf67079ddad1ed23bb7dc5a29bbfcc880f364af53b722daef22ca6287",
+    "EV-LIBPCAP-MAN-SETFILTER-016": "8cfc4d0c8a76d0fb6ffb8c5f3fd5d82228e50d6ca82eb2e7995b3ac3315b9fce",
+    "EV-LIBPCAP-MAN-SNAPLEN-008": "4cad03c340197b1bca2554716a232945651fafe950f3522e0bea37b02f19a45c",
+    "EV-LIBPCAP-MAN-TIMEOUT-010": "ffbf8ed8e594dbff786ff5727e77c914a24ca04dc3b6ff1cb611e796e91c04cf"
+  },
+  "record_id": "SVF-LIBPCAP-CANONICAL-SPECIFICATION-FINALIZATION-V1",
+  "recorded_at_utc": "2026-08-17T15:45:52+00:00",
+  "semantic_immutability": {
+    "approved_v2_semantics_preserved": true,
+    "only_added_fields": [
+      "freeze_date",
+      "content_sha256"
+    ],
+    "protocol_semantic_change": false
+  },
+  "stage_boundaries": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_source_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_implementation_authorized": false
+  },
+  "status": "CANONICAL_LIBPCAP_SPECIFICATION_READY_FOR_FREEZE_COMMIT"
+}

@@ -1,0 +1,119 @@
+{
+  "assistant_generated_or_synthetic_human_approval_present": false,
+  "author_checkpoint_commit": "afc2bb285f3b9adef8129f106c1c941b14d6f10c",
+  "author_checkpoint_tree": "ace5a3cd3b2797c7a312403656391aa6da4908bb",
+  "blank_human_review_packet": "02_mapping_contract_v1_reviewer_packet.BLANK.v1.md",
+  "curl_json_present": false,
+  "exact_contract_sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+  "human_review_status": "PENDING",
+  "next_boundary": "EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF",
+  "package_subject": "curl Canonical Representation Mapping Contract V1",
+  "payload_file_count": 20,
+  "payload_files": [
+    {
+      "path": "01_repository_binding.v1.json",
+      "sha256": "8439443386a0d059edadd8ce6c3f257b580b6f0fe7ec07109c19f79bd5214015",
+      "size_bytes": 1858
+    },
+    {
+      "path": "02_mapping_contract_v1_reviewer_packet.BLANK.v1.md",
+      "sha256": "ba4389fa2e9a99fe343094c08ccf0b32319ad9db69c97f552baaf3cadf4f1298",
+      "size_bytes": 6988
+    },
+    {
+      "path": "03_exact_mapping_contract.v1.json",
+      "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+      "size_bytes": 10879
+    },
+    {
+      "path": "04_decision_0039_author_checkpoint.md",
+      "sha256": "430b4174a35fafa5ee47efae17f286ff6cf6f8dca4edbbc4aad9e622d07c122c",
+      "size_bytes": 3308
+    },
+    {
+      "path": "05_mapping_contract_author_checkpoint.v1.json",
+      "sha256": "3609760cc3167ff78043bb6671c39ee0761ffae97475bbe32e2db588044aa42b",
+      "size_bytes": 1416
+    },
+    {
+      "path": "06_exact_approved_curl_technical_working_draft.v4.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033
+    },
+    {
+      "path": "07_frozen_protocol_specification_schema.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "size_bytes": 8047
+    },
+    {
+      "path": "08_canonicalization_authorization.v1.json",
+      "sha256": "5cd2a3a6b090bd900c2efecfe63d187ad5e6d3660a3819109a69431abfd54926",
+      "size_bytes": 5899
+    },
+    {
+      "path": "09_decision_0038_canonicalization_authorization.md",
+      "sha256": "89406573fedd329d75180d747dab68dad7dcd22b6fa662bf8df4307c63e93cad",
+      "size_bytes": 3591
+    },
+    {
+      "path": "10_completed_v4_human_review_record.v1.json",
+      "sha256": "5f0f4252a8255ddfbb62a73f8c6b14a7c758770ede4eba38181dd14f6381ecb6",
+      "size_bytes": 3467
+    },
+    {
+      "path": "11_completed_v4_human_review.md",
+      "sha256": "074814c04922f7cbc5fa41ef460cbde74dcb32529c09ef5752cf1d0f511f2aed",
+      "size_bytes": 24722
+    },
+    {
+      "path": "12_decision_0037_v4_human_review_approved.md",
+      "sha256": "44d0b493eb3a86b7e8b113144620433989d88199c4b56e39e00334aec1bc96d6",
+      "size_bytes": 2935
+    },
+    {
+      "path": "13_zlib_finalization_record.v1.json",
+      "sha256": "a0b8777dde80ebdc5d31a802a92fdfac676f5f1ff856968e690a540fef2d9bd1",
+      "size_bytes": 4354
+    },
+    {
+      "path": "14_zlib_pre_freeze_source_record.v3.json",
+      "sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+      "size_bytes": 37735
+    },
+    {
+      "path": "15_zlib_frozen_canonical.json",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "16_libpcap_finalization_record.v1.json",
+      "sha256": "33ab1a50bd0a9868dda76d181d3fcbdd1ce7301370e557072145de62a5e5770e",
+      "size_bytes": 6087
+    },
+    {
+      "path": "17_libpcap_pre_freeze_source_record.v2.json",
+      "sha256": "3ee8459dd2cff6dc8f5dd538a0f8d54a9ceda740d5ea7d977a0a9d34093c3221",
+      "size_bytes": 71421
+    },
+    {
+      "path": "18_libpcap_frozen_canonical.json",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "19_protocol_content_hash_canonicalization.v1.json",
+      "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "size_bytes": 3190
+    },
+    {
+      "path": "21_verify_review_package.v1.py",
+      "sha256": "52480e1a37ed7a6381f973530563c3a9547e4153e8bc409ee6a4a283adad05e9",
+      "size_bytes": 14356
+    }
+  ],
+  "positive_mapping_algorithm_present": false,
+  "record_id": "SVF-CURL-CANONICAL-MAPPING-CONTRACT-V1-INDEPENDENT-REVIEW-PACKAGE",
+  "review_item_count": 10,
+  "reviewer_role_id": "Spec-Technical-Reviewer-1",
+  "status": "READY_FOR_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF"
+}

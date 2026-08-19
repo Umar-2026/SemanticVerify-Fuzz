@@ -1,0 +1,131 @@
+{
+  "authorization_id": "SVF-CURL-CANONICAL-SPECIFICATION-FROM-APPROVED-V4",
+  "authorization_parent_repository_state": {
+    "commit": "ceeafb3600531f89a832df874ab28e81823f7f7c",
+    "parent": "e123bd412eb316b0857365e03788b19596fb7406",
+    "tree": "cdc9806d776c4222d4142f86fdf17ae86e1cfeec"
+  },
+  "authorization_stage": "PRE_MATERIALIZATION",
+  "authorization_type": "CANONICAL_SPECIFICATION_MATERIALIZATION_FROM_EXACT_APPROVED_V4",
+  "authorized_target": {
+    "creation_authorized": true,
+    "overwrite_authorized": false,
+    "path": "config/protocol_specifications/curl.json",
+    "source_v4_in_place_edit_authorized": false,
+    "target_must_not_preexist": true
+  },
+  "authorized_transformation_boundary": {
+    "api_surface_change_authorized": false,
+    "canonical_metadata_transformation_authorized": true,
+    "defect_taxonomy_change_authorized": false,
+    "machine_verdict_contract_change_authorized": false,
+    "new_evidence_class_authorized": false,
+    "protocol_rule_addition_authorized": false,
+    "protocol_rule_removal_authorized": false,
+    "protocol_rule_semantic_change_authorized": false,
+    "source_evidence_change_authorized": false,
+    "synthetic_protocol_event_authorized": false
+  },
+  "canonicalization_state_after_this_authorization": {
+    "approved_v4_remains_immutable": true,
+    "canonical_curl_specification_authorized": true,
+    "canonical_curl_specification_created": false,
+    "canonical_curl_specification_frozen": false
+  },
+  "downstream_non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "exact_approved_source": {
+    "author_checkpoint_commit": "b98d76536376b21fc6f2e85a060e960e1681453c",
+    "author_checkpoint_tree": "e7243cda2f8afd9b6cceff793ab0cfa723fabbe5",
+    "must_remain_immutable": true,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "important_stage_rule": "The authorization verifier created at this boundary is a PRE-MATERIALIZATION verifier and must not be reused after curl.json legitimately exists. Later stages must validate this authorization record directly.",
+  "independent_human_approval": {
+    "completed_review_path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v4/completed_human_review_v4/01_completed_human_technical_review.v4.md",
+    "completed_review_record_commit": "ceeafb3600531f89a832df874ab28e81823f7f7c",
+    "completed_review_record_path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v4/completed_human_review_v4/02_completed_human_technical_review_record.v1.json",
+    "completed_review_record_sha256": "5f0f4252a8255ddfbb62a73f8c6b14a7c758770ede4eba38181dd14f6381ecb6",
+    "completed_review_record_size_bytes": 3467,
+    "completed_review_record_tree": "cdc9806d776c4222d4142f86fdf17ae86e1cfeec",
+    "completed_review_sha256": "074814c04922f7cbc5fa41ef460cbde74dcb32529c09ef5752cf1d0f511f2aed",
+    "completed_review_size_bytes": 24722,
+    "decision_distribution": {
+      "FAIL": 0,
+      "PASS": 12,
+      "REVISION_REQUIRED": 0
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "19 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "overall_decision": "APPROVE_EXACT_WORKING_DRAFT_V4_FOR_CANONICALIZATION",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "must_preserve_exactly": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "easy_handle_rule_count": 21,
+    "frozen_api_surface_function_count": 12,
+    "machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "multi_handle_rule_count": 29,
+    "pinned_curl_commit": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "pinned_curl_tree": "e23d273aeb073c04aa5b073b35c9fde16979c896",
+    "protocol_semantic_container_count": 10,
+    "protocol_semantic_containers": [
+      "api_surface",
+      "resources",
+      "return_condition_policy",
+      "verdict_semantics",
+      "defect_taxonomy",
+      "global_runtime_rules",
+      "easy_handle_rules",
+      "multi_handle_rules",
+      "cross_resource_rules",
+      "exit_obligations"
+    ]
+  },
+  "next_boundary": "INSPECT_CANONICAL_SPECIFICATION_CONVENTIONS_BEFORE_CURL_MATERIALIZATION",
+  "prohibited_evidence_boundary": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "required_canonicalization_evidence": {
+    "canonical_checksum_manifest": true,
+    "canonical_file_identity_record": true,
+    "canonical_finalization_record": true,
+    "canonical_freeze_manifest": true,
+    "exact_v4_to_canonical_protocol_semantic_equality_verification": true,
+    "post_materialization_repository_scope_verification": true
+  },
+  "required_pre_materialization_inspection": {
+    "inspection_mode": "READ_ONLY",
+    "materialization_before_inspection_authorized": false,
+    "purpose": "Determine exact repository canonical-specification metadata and freeze/finalization conventions without changing approved V4 protocol semantics.",
+    "reference_specifications": [
+      "config/protocol_specifications/zlib.json",
+      "config/protocol_specifications/libpcap.json"
+    ],
+    "required": true
+  }
+}

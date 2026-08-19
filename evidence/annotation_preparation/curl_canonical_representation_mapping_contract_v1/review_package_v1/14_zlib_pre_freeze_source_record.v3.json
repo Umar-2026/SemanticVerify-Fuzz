@@ -1,0 +1,872 @@
+{
+  "author": "Spec-Author-1",
+  "candidate_specification_fields": {
+    "author": "Spec-Author-1",
+    "creation_date": "2026-08-16",
+    "events": [
+      {
+        "event_id": "E01_DEFLATE_INIT",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "deflateInit or deflateInit2"
+      },
+      {
+        "event_id": "E02_DEFLATE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "deflate"
+      },
+      {
+        "event_id": "E03_DEFLATE_END",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "deflateEnd"
+      },
+      {
+        "event_id": "E04_DEFLATE_RESET",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "deflateReset"
+      },
+      {
+        "event_id": "E05_DEFLATE_SET_DICTIONARY",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "deflateSetDictionary"
+      },
+      {
+        "event_id": "E06_INFLATE_INIT",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "inflateInit or inflateInit2"
+      },
+      {
+        "event_id": "E07_INFLATE",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "inflate"
+      },
+      {
+        "event_id": "E08_INFLATE_END",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "inflateEnd"
+      },
+      {
+        "event_id": "E09_INFLATE_RESET",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "inflateReset"
+      },
+      {
+        "event_id": "E10_INFLATE_COPY",
+        "event_kind": "API_CALL",
+        "symbol_or_condition": "inflateCopy; transition tracked for destination resource"
+      },
+      {
+        "event_id": "E11_FUNCTION_EXIT",
+        "event_kind": "FUNCTION_EXIT",
+        "symbol_or_condition": "enclosing fuzz-driver function return or exit"
+      }
+    ],
+    "initial_state": "UNINITIALIZED",
+    "library": "zlib",
+    "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+    "obligations": [
+      {
+        "cleanup_responsibility": "Successful initialization acquires internal state and eventual matching deflateEnd remains required.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D1",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T03",
+          "T04",
+          "T06",
+          "T07",
+          "T08"
+        ],
+        "required_pre_state_or_exit_condition": "Successful deflateInit or deflateInit2 must establish a live deflate state before stateful deflate operations.",
+        "resource_kind": "zlib.z_stream.deflate",
+        "return_predicate": "prior initialization return == Z_OK",
+        "rule_id": "ZLIB-R01",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-ZPIPE-004"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:deflate|deflateReset|deflateSetDictionary"
+      },
+      {
+        "cleanup_responsibility": "A live inflate state remains owned until inflateEnd releases it.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D1",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T11",
+          "T12",
+          "T14",
+          "T17"
+        ],
+        "required_pre_state_or_exit_condition": "A successful documented creation of the inflate source state must precede stateful inflate use.",
+        "resource_kind": "zlib.z_stream.inflate",
+        "return_predicate": "required predecessor return == Z_OK",
+        "rule_id": "ZLIB-R02",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-ZPIPE-004",
+          "EV-ZLIB-INFCOVER-006"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:inflate|inflateReset|inflateCopy(source)"
+      },
+      {
+        "cleanup_responsibility": "Failed initialization does not establish the normal successful-init cleanup obligation.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D2",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "INIT_FAILED is not a valid deflate-use state; a fresh successful initialization is required.",
+        "resource_kind": "zlib.z_stream.deflate",
+        "return_predicate": "prior deflateInit/deflateInit2 return != Z_OK",
+        "rule_id": "ZLIB-R03",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-ZPIPE-004"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:deflate|deflateReset|deflateSetDictionary after failed deflate initialization"
+      },
+      {
+        "cleanup_responsibility": "Failed initialization does not establish the normal successful-init cleanup obligation.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D2",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "INIT_FAILED is not a valid inflate-use state; a fresh successful initialization is required.",
+        "resource_kind": "zlib.z_stream.inflate",
+        "return_predicate": "prior inflateInit/inflateInit2 return != Z_OK",
+        "rule_id": "ZLIB-R04",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-ZPIPE-004"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:inflate|inflateReset|inflateCopy(source) after failed inflate initialization"
+      },
+      {
+        "cleanup_responsibility": "End releases internal state and sets implementation state to Z_NULL.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D3",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [],
+        "required_pre_state_or_exit_condition": "RELEASED is not a live stream state; new successful initialization is required before subsequent stateful use.",
+        "resource_kind": "zlib.z_stream.internal_state",
+        "return_predicate": null,
+        "rule_id": "ZLIB-R05",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-INFCOVER-006"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:stateful deflate/inflate operation after corresponding End"
+      },
+      {
+        "cleanup_responsibility": "Exactly one matching release is required for each currently-live acquisition.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D4",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T05",
+          "T13"
+        ],
+        "required_pre_state_or_exit_condition": "End requires a corresponding currently-live acquired state; a second End after RELEASED is invalid.",
+        "resource_kind": "zlib.z_stream.internal_state",
+        "return_predicate": null,
+        "rule_id": "ZLIB-R06",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-INFCOVER-006"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:deflateEnd|inflateEnd"
+      },
+      {
+        "cleanup_responsibility": "Caller is responsible for matching deflateEnd on normal and error exits after successful initialization.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D5",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T05"
+        ],
+        "required_pre_state_or_exit_condition": "Every successful deflate initialization must reach RELEASED through deflateEnd on every relevant function exit.",
+        "resource_kind": "zlib.z_stream.deflate",
+        "return_predicate": "successful deflate initialization return == Z_OK",
+        "rule_id": "ZLIB-R07",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-ZPIPE-004",
+          "EV-ZLIB-TEST-005"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "FUNCTION_EXIT"
+      },
+      {
+        "cleanup_responsibility": "Caller is responsible for matching inflateEnd on normal and error exits after successful initialization.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D5",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T13"
+        ],
+        "required_pre_state_or_exit_condition": "Every successful inflate initialization must reach RELEASED through inflateEnd on every relevant function exit.",
+        "resource_kind": "zlib.z_stream.inflate",
+        "return_predicate": "successful inflate initialization return == Z_OK",
+        "rule_id": "ZLIB-R08",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-ZPIPE-004",
+          "EV-ZLIB-TEST-005"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "FUNCTION_EXIT"
+      },
+      {
+        "cleanup_responsibility": "Successful destination copy acquires internal state independently requiring matching inflateEnd.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D5",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "ACQUIRE",
+        "permitted_transitions": [
+          "T15",
+          "T13"
+        ],
+        "required_pre_state_or_exit_condition": "A destination for which inflateCopy returned Z_OK owns an independent copied inflate state and must reach RELEASED through inflateEnd.",
+        "resource_kind": "zlib.z_stream.inflate_copy_destination",
+        "return_predicate": "inflateCopy return == Z_OK",
+        "rule_id": "ZLIB-R09",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-INFCOVER-006"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "FUNCTION_EXIT after successful inflateCopy"
+      },
+      {
+        "cleanup_responsibility": "Reset retains ownership; End releases ownership.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D6",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T05",
+          "T06"
+        ],
+        "required_pre_state_or_exit_condition": "When state is DEFLATE_STREAM_END, only deflateReset or deflateEnd are permitted.",
+        "resource_kind": "zlib.z_stream.deflate",
+        "return_predicate": "prior deflate return == Z_STREAM_END",
+        "rule_id": "ZLIB-R10",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL after deflate returned Z_STREAM_END"
+      },
+      {
+        "cleanup_responsibility": "Dictionary configuration does not release stream ownership.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D6",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T07",
+          "T08"
+        ],
+        "required_pre_state_or_exit_condition": "For zlib-wrapped deflate call immediately after init/reset and before deflate; raw deflate permits the documented completed-block-boundary exception.",
+        "resource_kind": "zlib.z_stream.deflate",
+        "return_predicate": "return == Z_OK only when documented ordering/state requirements hold",
+        "rule_id": "ZLIB-R11",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-TEST-005"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:deflateSetDictionary"
+      },
+      {
+        "cleanup_responsibility": "Internal allocation remains owned after reset; eventual matching End remains required.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D5",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "NONE",
+        "permitted_transitions": [
+          "T06",
+          "T14"
+        ],
+        "required_pre_state_or_exit_condition": "Reset requires a valid live corresponding stream state and returns the resource to a reusable state without releasing ownership.",
+        "resource_kind": "zlib.z_stream.internal_state",
+        "return_predicate": "reset return == Z_OK",
+        "rule_id": "ZLIB-R12",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-H-001",
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-INF-003"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:deflateReset|inflateReset"
+      },
+      {
+        "cleanup_responsibility": "Guard matching cleanup by successful acquisition; failed initialization does not carry the normal successful-init cleanup obligation.",
+        "creation_date": "2026-08-11",
+        "defect_category": "D8",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "RELEASE",
+        "permitted_transitions": [
+          "T05",
+          "T13"
+        ],
+        "required_pre_state_or_exit_condition": "Cleanup obligation exists only for a resource whose corresponding initialization or copy successfully acquired a live state.",
+        "resource_kind": "zlib.z_stream.internal_state",
+        "return_predicate": "acquisition return == Z_OK",
+        "rule_id": "ZLIB-R13",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-DEF-002",
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-ZPIPE-004",
+          "EV-ZLIB-INFCOVER-006"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:deflateEnd|inflateEnd conditioned on initialization/copy result"
+      },
+      {
+        "cleanup_responsibility": "A successful inflateCopy acquires an independent destination inflate state that must later be released with inflateEnd. inflateCopy must not overwrite a destination that still owns a live modeled internal state.",
+        "creation_date": "2026-08-15",
+        "defect_category": "D7",
+        "library_revision": "da607da739fa6047df13e66a2af6b8bec7c2a498",
+        "ownership_effect": "ACQUIRE",
+        "permitted_transitions": [
+          "T15"
+        ],
+        "required_pre_state_or_exit_condition": "Before inflateCopy, the destination must not already own any live modeled zlib internal state. The destination is treated as a fresh/uninitialized logical resource slot; a RELEASED prior lifecycle may be reused only as a fresh logical FSM instance.",
+        "resource_kind": "zlib.z_stream.internal_state_family",
+        "return_predicate": "inflateCopy return == Z_OK",
+        "rule_id": "ZLIB-R14",
+        "severity": "UNSPECIFIED",
+        "source_evidence": [
+          "EV-ZLIB-INF-003",
+          "EV-ZLIB-H-001"
+        ],
+        "specification_author": "Spec-Author-1",
+        "triggering_event_or_function_exit": "API_CALL:inflateCopy(destination)"
+      }
+    ],
+    "permitted_exit_states": [
+      "UNINITIALIZED",
+      "INIT_FAILED",
+      "RELEASED"
+    ],
+    "provenance": [
+      {
+        "content_sha256": "818667d6ab6a37fe7469cb06a7f0cb2c2cb2f2c948a03e5accf1a4a74bf3020a",
+        "evidence_id": "EV-ZLIB-H-001",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/zlib.h",
+        "quoted_or_paraphrased_rationale": "Normative public API lifecycle evidence for deflate/inflate initialization, use, return states, reset, end, dictionary ordering, and inflateCopy.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PUBLIC_HEADER"
+      },
+      {
+        "content_sha256": "ea9ca4eb51b1a71aaf214b99f4a9fab177253d6268cae8e4c26d44d1812e52c2",
+        "evidence_id": "EV-ZLIB-DEF-002",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/deflate.c",
+        "quoted_or_paraphrased_rationale": "Pinned implementation evidence for allocation, failed-allocation cleanup, state checking, reset, dictionary ordering, and deflateEnd release semantics.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+      },
+      {
+        "content_sha256": "90221ea7d762e7044057f6ad5013e969086c6ba3d3051716b7aa786d7a6362ec",
+        "evidence_id": "EV-ZLIB-INF-003",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/inflate.c",
+        "quoted_or_paraphrased_rationale": "Pinned implementation evidence for allocation, failed-init cleanup, state checking, reset, inflateEnd release, and inflateCopy allocation.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+      },
+      {
+        "content_sha256": "e79717cefd20043fb78d730fd3b9d9cdf8f4642307fc001879dc82ddb468509f",
+        "evidence_id": "EV-ZLIB-ZPIPE-004",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/examples/zpipe.c",
+        "quoted_or_paraphrased_rationale": "Upstream proper-use example showing initialization return checks and matching end cleanup on normal and error exits.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PREDECLARED_UPSTREAM_EXAMPLE"
+      },
+      {
+        "content_sha256": "be1b050aad808cdb016c01f42568d3a62ee37dd7b2b56bef0ade21be8d9fee0d",
+        "evidence_id": "EV-ZLIB-TEST-005",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/test/example.c",
+        "quoted_or_paraphrased_rationale": "Pinned upstream example/test demonstrating successful initialization followed by use and matching End cleanup, and deflateSetDictionary after successful initialization. It does not demonstrate deflateReset or inflateReset workflows.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PINNED_UPSTREAM_TEST"
+      },
+      {
+        "content_sha256": "37718912b22c68942a469f971cbb47500d24dc4f6258db271edd417f0eb69a5e",
+        "evidence_id": "EV-ZLIB-INFCOVER-006",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/test/infcover.c",
+        "quoted_or_paraphrased_rationale": "Pinned upstream coverage test exercising invalid stream states, reset behavior, initialization failure cases, and inflateCopy outcomes.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PINNED_UPSTREAM_TEST"
+      },
+      {
+        "content_sha256": "e6a43bd0e24ab2cf5fa1dca630859e9a2f6a721f033f75faf179f5c0299e4fe2",
+        "evidence_id": "EV-ZLIB-INFLATE-H-007",
+        "path_or_url": "/openbayes/home/svf-gate1c-source-qualification-v1/zlib/inflate.h",
+        "quoted_or_paraphrased_rationale": "Pinned inflate internal-state definition. The inflate_mode enumeration places DONE inside the valid HEAD-through-SYNC state range and describes DONE as remaining until reset. The file also defines GUNZIP unless NO_GZIP is selected at compilation. Used with inflate.c to resolve repeated inflate behavior after Z_STREAM_END without introducing a broad prohibition.",
+        "retrieval_date": "2026-08-11",
+        "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+      }
+    ],
+    "resource_kind": "zlib.z_stream.internal_state_family",
+    "reviewer": "Spec-Reviewer-1",
+    "schema_version": "1.0.0",
+    "specification_id": "zlib.z-stream.lifecycle.v3",
+    "states": [
+      "UNINITIALIZED",
+      "INIT_FAILED",
+      "DEFLATE_READY",
+      "DEFLATE_ACTIVE",
+      "DEFLATE_STREAM_END",
+      "INFLATE_LIVE",
+      "INFLATE_STREAM_END",
+      "RELEASED"
+    ],
+    "transitions": [
+      {
+        "event_id": "E01_DEFLATE_INIT",
+        "from_states": [
+          "UNINITIALIZED"
+        ],
+        "ownership_effect": "ACQUIRE",
+        "return_predicate": "return == Z_OK",
+        "to_states": [
+          "DEFLATE_READY"
+        ],
+        "transition_id": "T01"
+      },
+      {
+        "event_id": "E01_DEFLATE_INIT",
+        "from_states": [
+          "UNINITIALIZED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return != Z_OK",
+        "to_states": [
+          "INIT_FAILED"
+        ],
+        "transition_id": "T02"
+      },
+      {
+        "event_id": "E02_DEFLATE",
+        "from_states": [
+          "DEFLATE_READY",
+          "DEFLATE_ACTIVE"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return != Z_STREAM_END and allocated deflate state remains live",
+        "to_states": [
+          "DEFLATE_ACTIVE"
+        ],
+        "transition_id": "T03"
+      },
+      {
+        "event_id": "E02_DEFLATE",
+        "from_states": [
+          "DEFLATE_READY",
+          "DEFLATE_ACTIVE"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return == Z_STREAM_END",
+        "to_states": [
+          "DEFLATE_STREAM_END"
+        ],
+        "transition_id": "T04"
+      },
+      {
+        "event_id": "E03_DEFLATE_END",
+        "from_states": [
+          "DEFLATE_READY",
+          "DEFLATE_ACTIVE",
+          "DEFLATE_STREAM_END"
+        ],
+        "ownership_effect": "RELEASE",
+        "return_predicate": "corresponding allocated deflate state is live; deflateEnd releases internal state",
+        "to_states": [
+          "RELEASED"
+        ],
+        "transition_id": "T05"
+      },
+      {
+        "event_id": "E04_DEFLATE_RESET",
+        "from_states": [
+          "DEFLATE_READY",
+          "DEFLATE_ACTIVE",
+          "DEFLATE_STREAM_END"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return == Z_OK",
+        "to_states": [
+          "DEFLATE_READY"
+        ],
+        "transition_id": "T06"
+      },
+      {
+        "event_id": "E05_DEFLATE_SET_DICTIONARY",
+        "from_states": [
+          "DEFLATE_READY"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return == Z_OK; zlib-wrapped stream immediately after init/reset and before any deflate",
+        "to_states": [
+          "DEFLATE_READY"
+        ],
+        "transition_id": "T07"
+      },
+      {
+        "event_id": "E05_DEFLATE_SET_DICTIONARY",
+        "from_states": [
+          "DEFLATE_ACTIVE"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return == Z_OK only for raw deflate at documented completed block boundary with all input consumed and output delivered",
+        "to_states": [
+          "DEFLATE_ACTIVE"
+        ],
+        "transition_id": "T08"
+      },
+      {
+        "event_id": "E06_INFLATE_INIT",
+        "from_states": [
+          "UNINITIALIZED"
+        ],
+        "ownership_effect": "ACQUIRE",
+        "return_predicate": "return == Z_OK",
+        "to_states": [
+          "INFLATE_LIVE"
+        ],
+        "transition_id": "T09"
+      },
+      {
+        "event_id": "E06_INFLATE_INIT",
+        "from_states": [
+          "UNINITIALIZED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return != Z_OK",
+        "to_states": [
+          "INIT_FAILED"
+        ],
+        "transition_id": "T10"
+      },
+      {
+        "event_id": "E07_INFLATE",
+        "from_states": [
+          "INFLATE_LIVE"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return != Z_STREAM_END while allocated inflate state remains live",
+        "to_states": [
+          "INFLATE_LIVE"
+        ],
+        "transition_id": "T11"
+      },
+      {
+        "event_id": "E07_INFLATE",
+        "from_states": [
+          "INFLATE_LIVE"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return == Z_STREAM_END",
+        "to_states": [
+          "INFLATE_STREAM_END"
+        ],
+        "transition_id": "T12"
+      },
+      {
+        "event_id": "E08_INFLATE_END",
+        "from_states": [
+          "INFLATE_LIVE",
+          "INFLATE_STREAM_END"
+        ],
+        "ownership_effect": "RELEASE",
+        "return_predicate": "valid allocated inflate state",
+        "to_states": [
+          "RELEASED"
+        ],
+        "transition_id": "T13"
+      },
+      {
+        "event_id": "E09_INFLATE_RESET",
+        "from_states": [
+          "INFLATE_LIVE",
+          "INFLATE_STREAM_END"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return == Z_OK",
+        "to_states": [
+          "INFLATE_LIVE"
+        ],
+        "transition_id": "T14"
+      },
+      {
+        "event_id": "E10_INFLATE_COPY",
+        "from_states": [
+          "UNINITIALIZED"
+        ],
+        "ownership_effect": "ACQUIRE",
+        "return_predicate": "source valid and return == Z_OK",
+        "to_states": [
+          "INFLATE_LIVE"
+        ],
+        "transition_id": "T15"
+      },
+      {
+        "event_id": "E10_INFLATE_COPY",
+        "from_states": [
+          "UNINITIALIZED"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "return != Z_OK",
+        "to_states": [
+          "UNINITIALIZED"
+        ],
+        "transition_id": "T16"
+      },
+      {
+        "event_id": "E07_INFLATE",
+        "from_states": [
+          "INFLATE_STREAM_END"
+        ],
+        "ownership_effect": "NONE",
+        "return_predicate": "inflate return == Z_STREAM_END",
+        "to_states": [
+          "INFLATE_STREAM_END"
+        ],
+        "transition_id": "T17"
+      }
+    ]
+  },
+  "canonical_specification_frozen": false,
+  "created_at_utc": "2026-08-16T12:26:42+00:00",
+  "defect_taxonomy": {
+    "D1": "Use before successful initialization",
+    "D2": "Use after failed initialization or activation",
+    "D3": "Use after close, destroy, end, or release",
+    "D4": "Double close, destroy, end, or release",
+    "D5": "Missing cleanup on a success or failure exit",
+    "D6": "Invalid API call ordering or missing prerequisite call",
+    "D7": "Ownership misuse: freeing borrowed data, failing transferred ownership, or wrong owner",
+    "D8": "Conditionally invalid cleanup or cleanup under the wrong state or return condition"
+  },
+  "designated_reviewer": "Spec-Reviewer-1",
+  "explicit_unsupported_or_out_of_scope_conditions": [
+    "gzFile-family file APIs are outside this scenario-bounded z_stream protocol specification.",
+    "inflateBack-family APIs are outside this scenario-bounded z_stream protocol specification.",
+    "deflateCopy, deflateParams, deflateResetKeep, deflateSetHeader, inflateSetDictionary, inflateReset2, inflatePrime, inflateSync, and inflateGetHeader are explicitly outside this version's modeled API set unless a later reviewed specification revision brings them into scope.",
+    "gzip wrapper mode itself is not excluded: core modeled z_stream initialization, use, reset, copy, ownership, and End obligations apply to supported zlib, raw, and gzip wrapper modes. Wrapper-specific metadata/header obligations are not added.",
+    "Absence of a transition from the partial transition relation does not by itself mean protocol validity or violation.",
+    "No general post-Z_STREAM_END inflate prohibition is asserted; T17 models repeated inflate in DONE as returning Z_STREAM_END while remaining in INFLATE_STREAM_END.",
+    "The deflateSetDictionary raw-deflate block-boundary exception is limited to the conditions documented by the pinned public header and implementation; post-error dictionary use is not described as documented-valid.",
+    "General compression correctness, arbitrary C semantic errors, buffer overflows, and memory-safety defects are outside the protocol specification unless entailed by an explicit modeled protocol obligation."
+  ],
+  "finalization_requirements": [
+    "Spec-Reviewer-1 must independently review this exact V2 author checkpoint using only approved pinned source evidence.",
+    "All five mandatory review areas must receive an explicit PASS, REVISION_REQUIRED, or FAIL decision.",
+    "The reviewer must explicitly verify the ten V1-review closure actions in this successor revision.",
+    "Any requested semantic revision creates a new immutable successor checkpoint; this V2 must not be edited in place after review.",
+    "Only after exact human approval may obligation freeze_date and content_sha256 fields be assigned.",
+    "Only after obligation hashes are fixed may top-level freeze_date and content_sha256 be assigned using Decision 0018.",
+    "The final canonical specification must validate against the unmodified protocol specification schema.",
+    "Generated drivers, sample membership, raw model responses, generated compiler semantic contents, gold labels, analyzer output, baseline output, LLM-review output, and repair output must remain excluded from specification evidence and review."
+  ],
+  "generated_corpus_used_as_specification_evidence": false,
+  "human_review_v1_successor_closure": {
+    "closures": {
+      "1": "Corrected EV-ZLIB-TEST-005; no reset-workflow claim.",
+      "10": "Promoted human-accepted ZLIB-CAND-R14 to core ZLIB-R14 with D7 ownership semantics.",
+      "2": "Added pinned inflate.h evidence and T17 repeated-inflate Z_STREAM_END self-transition.",
+      "3": "Added reviewer-visible frozen D1-D8 definitions.",
+      "4": "Defined DEFLATE_READY/DEFLATE_ACTIVE as documented call-history abstractions rather than exact private statuses.",
+      "5": "Defined INIT_FAILED and RELEASED as terminal for the current logical resource instance; later reuse starts a fresh logical lifecycle.",
+      "6": "Removed T15 from source-oriented ZLIB-R02 and retained T15 only as destination acquisition semantics.",
+      "7": "Defined the FSM as an obligation-driven partial transition relation; absence does not silently imply validity.",
+      "8": "Explicitly listed reviewer-identified additional stateful APIs as outside this scenario-bounded modeled API set.",
+      "9": "Reconciled gzip scope with frozen S03: core z_stream lifecycle obligations include supported gzip wrapper mode; wrapper-specific extra APIs remain separately scoped."
+    },
+    "prior_overall_decision": "REVISION_REQUIRED",
+    "prior_review_record_sha256": "38db57f9a038ba1d052ccb8b33b703c0f85600b4323b818b0a2d611293dc9822"
+  },
+  "human_review_v2_successor_closure": {
+    "closures": {
+      "V2-RR-01": {
+        "action": "Removed EV-ZLIB-TEST-005 from ZLIB-R12.source_evidence only; retained EV-ZLIB-H-001, EV-ZLIB-DEF-002, and EV-ZLIB-INF-003.",
+        "status": "ADDRESSED_FOR_V3_REVIEW"
+      },
+      "V2-RR-02": {
+        "action": "The V3 reviewer packet explicitly distinguishes the repository immutable target path from the package-local immutable target path and binds both to the same exact V3 SHA-256.",
+        "status": "ADDRESSED_IN_V3_REVIEW_PACKET"
+      },
+      "V2-RR-03": {
+        "action": "A dedicated frozen zlib S03 governance-scope reference is supplied in the V3 review package, including the exact S03 object, source manifest SHA-256, canonical S03 object SHA-256, and Gate-1 freeze bindings.",
+        "status": "ADDRESSED_IN_V3_REVIEW_PACKAGE"
+      }
+    },
+    "prior_overall_decision": "REVISION_REQUIRED",
+    "prior_review_record_sha256": "f21e7b6ad8c31acd8decc8b2d4983184028ca67528a5ac480c7fcf6ef7c149fd",
+    "prior_review_sha256": "e921490a4462d8a8774192b79b7dcebe58487333fa5fa8a812959b131f01227d"
+  },
+  "next_boundary": "INDEPENDENT_HUMAN_SPEC_REVIEW_OF_EXACT_ZLIB_V3_AUTHOR_CHECKPOINT",
+  "post_generation_timing_deviation_disclosure_required": true,
+  "record_id": "SVF-ZLIB-SOURCE-ONLY-SUCCESSOR-WORKING-FSM-DRAFT-V3",
+  "record_schema_version": 1,
+  "required_reviewer_checks": [
+    "evidence completeness",
+    "transition consistency",
+    "ownership effects",
+    "terminal states",
+    "unsupported conditions"
+  ],
+  "review_candidate_rules_not_yet_in_core_obligations": [],
+  "review_completed": false,
+  "reviewer_underlying_role": "Adjudicator-C",
+  "reviewer_visible_semantics_v2": {
+    "additional_stateful_api_scope": {
+      "explicitly_out_of_scope_for_this_scenario_bounded_specification": [
+        "deflateCopy",
+        "deflateParams",
+        "deflateResetKeep",
+        "deflateSetHeader",
+        "inflateSetDictionary",
+        "inflateReset2",
+        "inflatePrime",
+        "inflateSync",
+        "inflateGetHeader"
+      ],
+      "silent_validity_for_unmodeled_interaction": false
+    },
+    "deflate_state_abstraction": {
+      "DEFLATE_ACTIVE": "Documented call-history abstraction: at least one deflate call has occurred and Z_STREAM_END has not been returned in the current lifecycle.",
+      "DEFLATE_READY": "Documented call-history abstraction: successful deflate initialization or reset with no subsequent deflate call in the current lifecycle.",
+      "post_error_dictionary_use_documented_valid": false,
+      "private_implementation_status_equivalence": false
+    },
+    "format_scope": {
+      "build_availability_claim": "No independent protocol claim is made that every build configuration enables gzip. Core lifecycle obligations apply when the corresponding supported wrapper mode is selected.",
+      "core_z_stream_lifecycle_modes": [
+        "zlib wrapper",
+        "raw deflate",
+        "gzip wrapper"
+      ],
+      "gzip_specific_metadata_or_header_obligations_added": false,
+      "gzip_wrapper_mode_globally_out_of_scope": false
+    },
+    "inflateCopy_source_destination_split": {
+      "destination": "T15 is the successful destination ACQUIRE transition.",
+      "source": "Source validity is a precondition with ownership effect NONE; T15 is not a source-side transition."
+    },
+    "inflate_stream_end_behavior": {
+      "broad_post_stream_end_inflate_prohibition": false,
+      "evidence": [
+        "EV-ZLIB-INF-003",
+        "EV-ZLIB-INFLATE-H-007"
+      ],
+      "modeled_transition": "T17",
+      "semantics": "INFLATE_STREAM_END -- inflate / Z_STREAM_END --> INFLATE_STREAM_END"
+    },
+    "resource_instance_lifecycle": {
+      "INIT_FAILED": "Terminal for the current failed acquisition attempt.",
+      "RELEASED": "Terminal for the current successfully acquired resource instance.",
+      "already_live_reinitialization_inferred_valid": false,
+      "fsm_identity": "One logical FSM instance models one acquisition attempt or one successfully acquired internal-state lifecycle.",
+      "later_initialization": "A later initialization or copy after INIT_FAILED or RELEASED begins a fresh logical FSM instance rather than an outgoing transition of the old instance."
+    },
+    "transition_relation_semantics": {
+      "absent_transition": "Absence alone does not establish validity or violation. A protocol violation requires an explicit frozen obligation. An in-scope interaction with insufficient modeled semantics must not be silently treated as valid.",
+      "closed_world_model_of_all_zlib_behavior": false,
+      "model": "obligation-driven partial transition relation"
+    }
+  },
+  "scenario_scope": [
+    {
+      "scenario_id": "S01",
+      "task_slug": "stream_decompress_one_input"
+    },
+    {
+      "scenario_id": "S02",
+      "task_slug": "configured_stream_compression"
+    },
+    {
+      "scenario_id": "S03",
+      "task_slug": "mode_selected_decompression"
+    },
+    {
+      "scenario_id": "S04",
+      "task_slug": "chunked_stream_decompression"
+    },
+    {
+      "scenario_id": "S05",
+      "task_slug": "stream_reuse_two_payloads"
+    },
+    {
+      "scenario_id": "S06",
+      "task_slug": "dictionary_assisted_compression"
+    },
+    {
+      "scenario_id": "S07",
+      "task_slug": "two_independent_streams"
+    },
+    {
+      "scenario_id": "S08",
+      "task_slug": "copied_stream_state"
+    },
+    {
+      "scenario_id": "S09",
+      "task_slug": "status_driven_stream_workflow"
+    },
+    {
+      "scenario_id": "S10",
+      "task_slug": "compression_round_trip"
+    }
+  ],
+  "schema_correction_history": {
+    "correction": "library_revision added to every obligation using the exact pinned zlib revision",
+    "previous_projection_failure": "all 13 obligation objects omitted required library_revision",
+    "protocol_semantics_changed": false
+  },
+  "source_only_reconciliation": true,
+  "status": "SUCCESSOR_WORKING_DRAFT_V3_AUTHOR_CHECKPOINT_NOT_REVIEWED_NOT_FROZEN",
+  "supersedes_author_checkpoint": {
+    "draft_sha256": "9f6e035fb275fb34e5f9ab34a6267f3b416b80a7aae8a7a1741c445c20457e5d",
+    "human_review_overall_decision": "REVISION_REQUIRED",
+    "human_review_record_sha256": "f21e7b6ad8c31acd8decc8b2d4983184028ca67528a5ac480c7fcf6ef7c149fd",
+    "human_review_sha256": "e921490a4462d8a8774192b79b7dcebe58487333fa5fa8a812959b131f01227d",
+    "record_id": "SVF-ZLIB-SOURCE-ONLY-SUCCESSOR-WORKING-FSM-DRAFT-V2"
+  }
+}

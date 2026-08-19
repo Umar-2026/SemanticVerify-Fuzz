@@ -1,0 +1,73 @@
+{
+  "approved_source": {
+    "human_approval_record_path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_human_binding_review_v4/human_binding_review_record.v4.json",
+    "human_approval_record_sha256": "b5d3d5ff188c497674d6a8e4a6b1e0cb181374f1dd49e16f5658b4178d29fd84",
+    "path": "evidence/annotation_preparation/specification_reconciliation_v1/zlib_working_draft_v3/zlib_source_only_successor_working_fsm_draft.v3.json",
+    "sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e"
+  },
+  "canonical_specification": {
+    "content_sha256": "3461269e60f3b824bef3c62335d24e9eda5552b1a939bea4c720983e39a25049",
+    "file_byte_count": 21792,
+    "file_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+    "freeze_date": "2026-08-16",
+    "path": "config/protocol_specifications/zlib.json",
+    "schema_valid": true,
+    "specification_id": "zlib.z-stream.lifecycle.v3"
+  },
+  "hash_governance": {
+    "contract_path": "config/protocol_content_hash_canonicalization.v1.json",
+    "contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "schema_path": "config/schemas/protocol_specification.schema.json",
+    "schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "next_boundary": "NEXT_LIBRARY_SOURCE_ONLY_SPECIFICATION_AUTHORING",
+  "obligation_content_sha256": {
+    "ZLIB-R01": "9d636c141713a8946221f7b8d7a824c94067d5fb6003bf22f2390572348f9ae7",
+    "ZLIB-R02": "306a8ab923375cd5825f1c3547f4dc41d896bf8ee88e8215f611ba1193fdd611",
+    "ZLIB-R03": "a074ca068361b9d535c409b22825b8ef02f62558e2add27477f523bad099e150",
+    "ZLIB-R04": "7e9055556d93475dfe7679efa830002afd8d722e88159cd8c93c6798f8f18d05",
+    "ZLIB-R05": "cd14529fdfdbc9c096777b5210162928e4acc4c25edf8511f873ce881a97f80e",
+    "ZLIB-R06": "e49acc6e9c75c64461a2f950e3570f2150dae2f3922be5006c0569d618f2affb",
+    "ZLIB-R07": "5faaee2d1d1a532660e59f9b30b926978fa34f0036a47f5097a1b6c9d748bf2e",
+    "ZLIB-R08": "0427525b365e524ab909946b033691b2c273d5bc5e05fe0f4a1c91420fcb2dc8",
+    "ZLIB-R09": "d62bf7fe1786e9c0cea7ee21dbf9d1528b45b9660f280550782ef04f6597db01",
+    "ZLIB-R10": "b533515d45051c6adc6bde559259f07cdedc9b02e713c18a3d9f1b229f7c16b9",
+    "ZLIB-R11": "9137fc07ea344a993f4ad561ebbdbc4474be1d4a3b0c99805beb2120aa63b53e",
+    "ZLIB-R12": "ffe589b7c213bdd0a60e9e30c2c04d700fe4b6303637b3f1c83cbd5f12b2fb9c",
+    "ZLIB-R13": "fc9d3ca5e4156acfa6d7980401c5c76beecfafcdbcd7ec0249f1c827101fc4e6",
+    "ZLIB-R14": "02d4fc8f0d4e07d46364f51ba6e3bdebbd7aab153b3aad8aa88aab6f7bc4f7da"
+  },
+  "path_governance": {
+    "decision_0019_path": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "decision_0019_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "path_contract_path": "config/annotation/canonical_protocol_specification_paths.v1.json",
+    "path_contract_sha256": "4c6471d51627997f58b6c6bca833d364edc4c51e5aa7b80d0c34be8d63d19aaa"
+  },
+  "provenance_content_sha256": {
+    "EV-ZLIB-DEF-002": "ea9ca4eb51b1a71aaf214b99f4a9fab177253d6268cae8e4c26d44d1812e52c2",
+    "EV-ZLIB-H-001": "818667d6ab6a37fe7469cb06a7f0cb2c2cb2f2c948a03e5accf1a4a74bf3020a",
+    "EV-ZLIB-INF-003": "90221ea7d762e7044057f6ad5013e969086c6ba3d3051716b7aa786d7a6362ec",
+    "EV-ZLIB-INFCOVER-006": "37718912b22c68942a469f971cbb47500d24dc4f6258db271edd417f0eb69a5e",
+    "EV-ZLIB-INFLATE-H-007": "e6a43bd0e24ab2cf5fa1dca630859e9a2f6a721f033f75faf179f5c0299e4fe2",
+    "EV-ZLIB-TEST-005": "be1b050aad808cdb016c01f42568d3a62ee37dd7b2b56bef0ade21be8d9fee0d",
+    "EV-ZLIB-ZPIPE-004": "e79717cefd20043fb78d730fd3b9d9cdf8f4642307fc001879dc82ddb468509f"
+  },
+  "record_id": "SVF-ZLIB-CANONICAL-SPECIFICATION-FINALIZATION-V1",
+  "recorded_at_utc": "2026-08-16T14:56:58+00:00",
+  "semantic_immutability": {
+    "approved_v3_semantics_preserved": true,
+    "only_added_fields": [
+      "freeze_date",
+      "content_sha256"
+    ],
+    "protocol_semantic_change": false
+  },
+  "stage_boundaries": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_source_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_implementation_authorized": false
+  },
+  "status": "CANONICAL_ZLIB_SPECIFICATION_READY_FOR_FREEZE_COMMIT"
+}
