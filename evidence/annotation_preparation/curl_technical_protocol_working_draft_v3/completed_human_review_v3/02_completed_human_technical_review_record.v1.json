@@ -1,0 +1,119 @@
+{
+  "accepted_protocol_semantics": {
+    "successor_protocol_rule_semantics_must_be_preserved": true,
+    "v3_rr03": true,
+    "v3_rr04": true,
+    "v3_rr05": true,
+    "v3_rr06": true,
+    "v3_rr07": true,
+    "v3_rr08": true,
+    "v3_rr09": true,
+    "v3_rr10": true,
+    "v3_rr11": true
+  },
+  "completed_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 10,
+      "REVISION_REQUIRED": 2
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "19 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "overall_decision": "REVISION_REQUIRED",
+    "repository_path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v3/completed_human_review_v3/01_completed_human_technical_review.v3.md",
+    "review_item_decisions": {
+      "V3-RR01": "PASS",
+      "V3-RR02": "REVISION_REQUIRED",
+      "V3-RR03": "PASS",
+      "V3-RR04": "PASS",
+      "V3-RR05": "PASS",
+      "V3-RR06": "PASS",
+      "V3-RR07": "PASS",
+      "V3-RR08": "PASS",
+      "V3-RR09": "PASS",
+      "V3-RR10": "PASS",
+      "V3-RR11": "PASS",
+      "V3-RR12": "REVISION_REQUIRED"
+    },
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "size_bytes": 22983
+  },
+  "must_preserve": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "pinned_curl_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "protocol_rule_semantics": true,
+    "twelve_function_api_surface": true,
+    "working_draft_v3_immutable": true
+  },
+  "next_boundary": "AUTHORIZE_CURL_TECHNICAL_WORKING_DRAFT_V4_SUCCESSOR",
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "record_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V3-COMPLETED-HUMAN-REVIEW",
+  "required_successor_corrections": [
+    {
+      "id": "NEXT-C01",
+      "requirement": "Correct V3-inherited internal purpose text so the new successor describes the correct immediate predecessor and successor boundary.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "NEXT-C02",
+      "requirement": "Correct governance.working_draft_version and related version-specific internal governance metadata to the successor version.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "NEXT-C03",
+      "requirement": "Correct predecessor version, path, SHA-256, and immutable-predecessor metadata so the successor binds exact immutable V3.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "NEXT-C04",
+      "requirement": "Correct completed-review metadata so it binds the completed V3 human review rather than an earlier V1/V2-era review artifact.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "NEXT-C05",
+      "requirement": "Correct successor-authorization metadata and replace stale v1_in_place_edit_authorized naming with the correct immutable predecessor boundary.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "NEXT-C06",
+      "requirement": "Correct version-specific explicit_non_claims and internal successor-resolution metadata so they refer to the new successor, completed V3 review, and the new bounded corrections.",
+      "source_review_item": "V3-RR12"
+    },
+    {
+      "id": "NEXT-C07",
+      "requirement": "Make review-package source-path comparison platform-independent, normalizing path separators without changing the approved 21-file source path/hash set or evidence semantics.",
+      "source_review_item": "V3-RR12"
+    },
+    {
+      "id": "NEXT-C08",
+      "requirement": "Regenerate successor-bound traceability, author checkpoint, review package manifest, verifier, and checksums before another independent review.",
+      "source_review_item": "V3-RR12"
+    }
+  ],
+  "review_target": {
+    "author_checkpoint_commit": "d4c41e682882f6053fd6657a7f0f82a402697354",
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "review_package_commit": "eba2cd1766a08d6021999260e508664b415bad30",
+    "review_package_tree": "34e6de3a5563f5c89634e6f7f0cbcd9053715678",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330
+  }
+}
