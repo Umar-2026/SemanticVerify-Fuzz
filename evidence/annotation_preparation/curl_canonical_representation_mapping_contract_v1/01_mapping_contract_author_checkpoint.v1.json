@@ -1,0 +1,38 @@
+{
+  "approved_v4": {
+    "immutable": true,
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "author_result": {
+    "canonical_materialization_safe": false,
+    "curl_json_created": false,
+    "human_review_completed": false,
+    "human_review_required": true,
+    "lossless_mapping_proven": false,
+    "positive_mapping_algorithm_authored": false
+  },
+  "contract": {
+    "immutable_after_checkpoint": true,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v1.json",
+    "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+    "size_bytes": 10879
+  },
+  "frozen_canonical_schema": {
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "next_boundary": "BUILD_INDEPENDENT_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V1_REVIEW_PACKAGE",
+  "record_id": "SVF-CURL-CANONICAL-REPRESENTATION-MAPPING-CONTRACT-V1-AUTHOR-CHECKPOINT",
+  "repository_parent_binding": {
+    "commit": "fc3b85c999199e8b45d683fb675a701444478472",
+    "tree": "36122c1345051b023662790099b1dfa7d4ea6ee1"
+  },
+  "semantic_boundary": {
+    "protocol_rule_addition": false,
+    "protocol_rule_removal": false,
+    "protocol_rule_semantic_change": false,
+    "source_evidence_change": false,
+    "synthetic_protocol_event_addition": false
+  },
+  "status": "AUTHOR_CHECKPOINT_REVIEW_REQUIRED"
+}
