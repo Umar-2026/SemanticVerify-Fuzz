@@ -1,0 +1,143 @@
+{
+  "authoring_constraints": {
+    "no_generated_driver_derived_metadata": true,
+    "no_new_api_function": true,
+    "no_new_evidence_class": true,
+    "no_new_protocol_rule": true,
+    "no_removed_protocol_rule": true,
+    "only_review_required_metadata_corrections_authorized": true,
+    "protocol_rule_objects_must_not_change_semantically": true,
+    "v3_must_not_be_modified": true,
+    "v4_must_be_new_file": true,
+    "v4_requires_new_independent_human_review": true,
+    "v4_requires_separate_author_checkpoint": true
+  },
+  "authorization_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V4-SUCCESSOR-AUTHORIZATION",
+  "authorization_type": "IMMUTABLE_METADATA_SUCCESSOR_AUTHORING_ONLY",
+  "authorized_successor": {
+    "authoring_authorized": true,
+    "canonicalization_authorized": false,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "predecessor_in_place_edit_authorized": false,
+    "protocol_rule_semantic_change_authorized": false,
+    "schema_id": "curl.technical-protocol-working-draft.v4"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "must_preserve_exactly": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "cross_resource_rules_semantics": true,
+    "defect_taxonomy_semantics": true,
+    "easy_handle_rules_semantics": true,
+    "exit_obligations_semantics": true,
+    "frozen_api_surface_function_count": 12,
+    "global_runtime_rules_semantics": true,
+    "machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "multi_handle_rules_semantics": true,
+    "pinned_curl_commit": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "pinned_curl_tree": "e23d273aeb073c04aa5b073b35c9fde16979c896",
+    "protocol_rule_semantics_from_v3": true,
+    "return_condition_policy_semantics": true,
+    "synthetic_protocol_events_may_be_invented": false,
+    "verdict_semantics": true
+  },
+  "next_boundary": "INSPECT_V3_METADATA_FOR_EXACT_BOUNDED_V4_AUTHORING",
+  "predecessor": {
+    "completed_human_review_commit": "0f6625753452944bbedeab66a77a4098a6e349a9",
+    "completed_human_review_sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "completed_human_review_tree": "a822ec4504071e0edbdc8b77c0eda8ea3974cdbc",
+    "immutable": true,
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330
+  },
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "generated_driver_compiler_log_semantic_content",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "required_downstream_review_package_corrections": [
+    {
+      "id": "V4-P01",
+      "requirement": "Implement platform-independent source-path comparison in the next review-package verifier by normalizing path separators before comparison while preserving exact logical relative paths.",
+      "source_review_item": "V3-RR12"
+    },
+    {
+      "id": "V4-P02",
+      "requirement": "Regenerate exact V4-bound traceability, author checkpoint, review package manifest, verifier, and checksums before independent review.",
+      "source_review_item": "V3-RR12"
+    }
+  ],
+  "required_v4_draft_corrections": [
+    {
+      "id": "V4-C01",
+      "requirement": "Correct internal purpose text so V4 identifies exact immutable V3 as its immediate predecessor and describes the V4 successor boundary.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "V4-C02",
+      "requirement": "Correct governance.working_draft_version and all operative version-specific governance metadata to V4.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "V4-C03",
+      "requirement": "Correct predecessor version, path, SHA-256, size, and immutable predecessor bindings to exact Working Draft V3.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "V4-C04",
+      "requirement": "Correct completed-human-review metadata to exact completed V3 human review SHA, decision, commit, and tree.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "V4-C05",
+      "requirement": "Correct successor-authorization metadata and remove or rename stale v1_in_place_edit_authorized-era operative metadata so the immutable predecessor boundary refers to V3.",
+      "source_review_item": "V3-RR02"
+    },
+    {
+      "id": "V4-C06",
+      "requirement": "Correct version-specific explicit_non_claims and operative internal successor-resolution metadata so they bind V4, completed V3 review, and the V3-RR02/V3-RR12 correction boundary.",
+      "source_review_item": "V3-RR12"
+    }
+  ],
+  "review_basis": {
+    "accepted_protocol_rule_semantics_must_be_preserved": true,
+    "pass_items_to_preserve": [
+      "V3-RR01",
+      "V3-RR03",
+      "V3-RR04",
+      "V3-RR05",
+      "V3-RR06",
+      "V3-RR07",
+      "V3-RR08",
+      "V3-RR09",
+      "V3-RR10",
+      "V3-RR11"
+    ],
+    "revision_required_items": [
+      "V3-RR02",
+      "V3-RR12"
+    ]
+  }
+}

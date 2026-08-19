@@ -1,0 +1,126 @@
+{
+  "completed_v3_human_review_binding": {
+    "commit": "0f6625753452944bbedeab66a77a4098a6e349a9",
+    "overall_decision": "REVISION_REQUIRED",
+    "revision_required_items": [
+      "V3-RR02",
+      "V3-RR12"
+    ],
+    "sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "size_bytes": 22983,
+    "tree": "a822ec4504071e0edbdc8b77c0eda8ea3974cdbc"
+  },
+  "downstream_review_package_requirements": {
+    "V4-P01": "Platform-independent logical source-path comparison remains required for the V4 independent-review package verifier.",
+    "V4-P02": "Fresh V4-bound author checkpoint, review package manifest, verifier, checksums, and independent review remain required."
+  },
+  "evidence_boundary": {
+    "analyzer_output_used": false,
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "immutable_predecessor_binding": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330
+  },
+  "implemented_metadata_correction_traceability": [
+    {
+      "correction_id": "V4-C01",
+      "source_review_item": "V3-RR02",
+      "successor_subjects": [
+        "purpose"
+      ]
+    },
+    {
+      "correction_id": "V4-C02",
+      "source_review_item": "V3-RR02",
+      "successor_subjects": [
+        "governance.working_draft_version"
+      ]
+    },
+    {
+      "correction_id": "V4-C03",
+      "source_review_item": "V3-RR02",
+      "successor_subjects": [
+        "governance.predecessor_working_draft_version",
+        "governance.predecessor_path",
+        "governance.predecessor_sha256",
+        "governance.predecessor_size_bytes"
+      ]
+    },
+    {
+      "correction_id": "V4-C04",
+      "source_review_item": "V3-RR02",
+      "successor_subjects": [
+        "governance.completed_human_review_sha256",
+        "governance.completed_human_review_decision",
+        "governance.completed_human_review_path",
+        "governance.completed_human_review_size_bytes",
+        "governance.completed_human_review_commit",
+        "governance.completed_human_review_tree"
+      ]
+    },
+    {
+      "correction_id": "V4-C05",
+      "removed_stale_subjects": [
+        "governance.v1_in_place_edit_authorized"
+      ],
+      "source_review_item": "V3-RR02",
+      "successor_subjects": [
+        "governance.successor_authorization_commit",
+        "governance.successor_authorization_tree",
+        "governance.predecessor_in_place_edit_authorized"
+      ]
+    },
+    {
+      "correction_id": "V4-C06",
+      "source_review_item": "V3-RR12",
+      "successor_subjects": [
+        "human_review_successor_resolution",
+        "explicit_non_claims[9:13]"
+      ]
+    }
+  ],
+  "next_boundary": "BUILD_INDEPENDENT_CURL_TECHNICAL_WORKING_DRAFT_V4_REVIEW_PACKAGE",
+  "preservation_contract": {
+    "accepted_v3_protocol_semantics_preserved": true,
+    "new_api_function": false,
+    "new_evidence_class": false,
+    "new_protocol_rule": false,
+    "protocol_rule_semantic_change": false,
+    "removed_protocol_rule": false
+  },
+  "preserved_protocol_container_sha256": {
+    "api_surface": "c3ec09ab541ce749c01c492875cb090c9971f79a4dd0fb3ba62649f0a2d437a2",
+    "cross_resource_rules": "820cc3cb457486679fe950b756e89f8f326acf0f6b3fa501522c011bd400b0b3",
+    "defect_taxonomy": "b69ee78d6966baddd3d48a75a0823b99df9bea55b9e3eaede31a994a7adc6cef",
+    "easy_handle_rules": "e9e49ab502f7e0d46f4c19777a5b55122207d1fada7c52d4aca13d758768d6e6",
+    "exit_obligations": "d2ce5c2cc24effc1b227384779a14475531f964bc8031872bb7d418902c9ac53",
+    "global_runtime_rules": "884e1f9a6e4929ecd889c50943e2950c1b8c91fa9062642ccb249b447219c1e7",
+    "multi_handle_rules": "e865bc0f1140d37339fe900eb3c99c3c62cf18e2ae9f8b6359a5983c1f022aa6",
+    "resources": "edfb84299c3d298ee0fa315d15ae059931216255ac9fad171001b63922fd5490",
+    "return_condition_policy": "c71f6a72a92fa5bf9c193e13edfc008791c72488b1943cbd2c1d7cfad4edecbe",
+    "verdict_semantics": "e7465eea48b881cfbfe3e5f42945b906b41fdb4a8bf893d8a11713a38031dce3"
+  },
+  "successor_binding": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "schema_id": "curl.technical-protocol-working-draft.v4",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033,
+    "status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V4_AUTHOR_CHECKPOINT"
+  },
+  "traceability_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V4-METADATA-SUCCESSOR-TRACEABILITY",
+  "v4_authorization_binding": {
+    "commit": "cee5299cf80b633019ea6c98efc065b46aade1dd",
+    "tree": "37528cfdc0379b2e999eb8f8d83c7b036b1bb04e"
+  }
+}

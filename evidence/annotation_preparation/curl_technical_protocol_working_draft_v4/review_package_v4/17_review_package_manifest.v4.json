@@ -1,0 +1,62 @@
+{
+  "evidence_boundary": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "prohibited_evidence_present": false
+  },
+  "human_state_at_package_creation": {
+    "overall_decision": "BLANK",
+    "review_item_decisions": "BLANK",
+    "reviewer_identity": "BLANK"
+  },
+  "next_boundary": "CREATE_EXTERNAL_CURL_TECHNICAL_V4_INDEPENDENT_HUMAN_REVIEW_HANDOFF",
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "package_file_contract": {
+    "checksum_entry_count": 46,
+    "checksum_manifest_excludes_itself": true,
+    "expected_total_file_count": 47
+  },
+  "package_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V4-INDEPENDENT-HUMAN-REVIEW-PACKAGE",
+  "review_target": {
+    "author_checkpoint_commit": "b98d76536376b21fc6f2e85a060e960e1681453c",
+    "author_checkpoint_tree": "e7243cda2f8afd9b6cceff793ab0cfa723fabbe5",
+    "decision_0036_blob": "7a5e40c290200e7dea91a9910f4e414990e3b309",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033,
+    "v4_blob": "c7bafecdf8d35395f183f8551e1318ebb13db92f"
+  },
+  "v4_p01": {
+    "platform_independent_logical_source_path_comparison": "IMPLEMENTED_IN_PACKAGE_VERIFIER",
+    "windows_backslash_normalization_self_test": true
+  },
+  "v4_p02": {
+    "fresh_checksums": true,
+    "fresh_manifest": true,
+    "fresh_v4_bound_review_package": "IMPLEMENTED_BY_THIS_PACKAGE",
+    "fresh_verifier": true,
+    "independent_human_review": "PENDING"
+  },
+  "v4_review_items": [
+    "V4-RR01",
+    "V4-RR02",
+    "V4-RR03",
+    "V4-RR04",
+    "V4-RR05",
+    "V4-RR06",
+    "V4-RR07",
+    "V4-RR08",
+    "V4-RR09",
+    "V4-RR10",
+    "V4-RR11",
+    "V4-RR12"
+  ]
+}

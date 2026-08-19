@@ -1,0 +1,42 @@
+{
+  "approved_source_file_count": 21,
+  "evidence_class": "PREAPPROVED_SOURCE_ONLY",
+  "files": {
+    "docs/libcurl/curl_easy_cleanup.md": "d39b972fe61d57d72ab60c310d8fe8ea06b253cb008bceee7535fbaed36851a7",
+    "docs/libcurl/curl_easy_init.md": "59b98da718399b47958e3e1d812accaa05b9a1016c62797bf490dd215e6b1927",
+    "docs/libcurl/curl_easy_perform.md": "6fe91c0b04879dcaac1036bc1307bb3fb85be6102d47d788af7f2c620ba098c7",
+    "docs/libcurl/curl_easy_reset.md": "d2b6932349acbdf4d3e230ecda20cf13edf66520e47b3d43bffa87b2948e7cc0",
+    "docs/libcurl/curl_easy_setopt.md": "8b6f4283da3eb20a16f320cd90baaa9d8276b585750a782916451422e87cc951",
+    "docs/libcurl/curl_global_cleanup.md": "dce5ac828e85d5e1a303333163c1d71d3503816241f71809a7824370387bc1a1",
+    "docs/libcurl/curl_global_init.md": "0cb6702df283336798293eae8b5e57775852f56ea237b03384bdfabe27be7cbc",
+    "docs/libcurl/curl_multi_add_handle.md": "8964c4ff62cd009f6fa7ca72d5a0bfcf19822e259c2352f785d9b83e1084a90a",
+    "docs/libcurl/curl_multi_cleanup.md": "ad4d80cc39186e65e3a5e10231f41e61a8e4f8a16179013e98ee90a83ac4e67d",
+    "docs/libcurl/curl_multi_init.md": "6be119495ff8b99a79e5d45e4bb1be3aeeee3046e2b54cdb0e11565fdfaaa445",
+    "docs/libcurl/curl_multi_perform.md": "5b85efb586d552e0632a25b25b1642b26e82192694c8be5dfb86cffa5e23ae2e",
+    "docs/libcurl/curl_multi_remove_handle.md": "88809d1245dc0c66a672aedaba53a69fa7aa4dbb5d68eab3e1d8ff5946720938",
+    "docs/libcurl/libcurl-easy.md": "5b1e2b2c3cc94bbee837c306b9ce8afa0be1bb148f8d18fbc6374876d3d5ec94",
+    "docs/libcurl/libcurl-multi.md": "19b8aa18f2bd6a5c9bb4b33568cd669513a2fb7185afd3bd4a8e7bf6cb30b3c2",
+    "docs/libcurl/libcurl.md": "be4b4285651cc5cf1bc7cbbed79a8a1d5d2dfd72974115ec86843de3541bb81a",
+    "include/curl/curl.h": "f17ab2d4b216bd96df937dbe494ecae1ea167a3f0e56b8dea83cd32a58cca18a",
+    "include/curl/easy.h": "f101da02dd373151ea7b00082cb62c9d6e482361ab26b6d430ee96aab1b71565",
+    "include/curl/multi.h": "ab3278832925f69a68852e2c6b5a300884ee5f974a2291b642a7d1ef1ed49af9",
+    "lib/easy.c": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483",
+    "lib/multi.c": "b5dc84f15ed14179acbd06ae6b108331c46dd6c7067395282f0d1a2c42a5cdf3",
+    "lib/setopt.c": "3738ff6a04a09f4941b9d9b7c79d2882a999fc20f0dcaf543ce5385eb4972dcc"
+  },
+  "inherited_source_set": {
+    "predecessor_review_package": "curl_technical_protocol_working_draft_v3/review_package_v3",
+    "same_hashes_as_v3": true,
+    "same_paths_as_v3": true
+  },
+  "logical_path_policy": {
+    "canonical_form": "POSIX_RELATIVE_PATH",
+    "filesystem_join_policy": "JOIN_CANONICAL_LOGICAL_PATH_PARTS",
+    "hash_semantics_changed": false,
+    "normalize_backslash_to_forward_slash": true,
+    "platform_independent_comparison": true
+  },
+  "manifest_id": "SVF-CURL-TECHNICAL-V4-APPROVED-SOURCE-EVIDENCE",
+  "pinned_curl_commit": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+  "pinned_curl_tree": "e23d273aeb073c04aa5b073b35c9fde16979c896"
+}

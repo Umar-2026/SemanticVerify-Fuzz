@@ -1,0 +1,68 @@
+{
+  "author_checkpoint": {
+    "commit": "b98d76536376b21fc6f2e85a060e960e1681453c",
+    "decision_0036_blob": "7a5e40c290200e7dea91a9910f4e414990e3b309",
+    "parent": "cee5299cf80b633019ea6c98efc065b46aade1dd",
+    "tree": "e7243cda2f8afd9b6cceff793ab0cfa723fabbe5",
+    "v4_blob": "c7bafecdf8d35395f183f8551e1318ebb13db92f"
+  },
+  "binding_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V4-INDEPENDENT-REVIEW-PACKAGE",
+  "completed_v3_human_review": {
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "10_completed_v3_human_technical_review.v1.md",
+    "revision_required_items": [
+      "V3-RR02",
+      "V3-RR12"
+    ],
+    "sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "size_bytes": 22983
+  },
+  "human_review_state": {
+    "V4_RR01_to_V4_RR12": "BLANK",
+    "human_reviewer_identity": "BLANK",
+    "overall_decision": "BLANK",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "immutable_predecessor": {
+    "path": "11_curl_technical_protocol_working_draft.v3.json",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330
+  },
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "review_target": {
+    "path": "03_curl_technical_protocol_working_draft.v4.json",
+    "repository_path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "schema_id": "curl.technical-protocol-working-draft.v4",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "source_evidence": {
+    "evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "file_count": 21,
+    "platform_independent_logical_path_comparison": true
+  },
+  "v4_corrections": {
+    "draft_metadata_corrections": [
+      "V4-C01",
+      "V4-C02",
+      "V4-C03",
+      "V4-C04",
+      "V4-C05",
+      "V4-C06"
+    ],
+    "protocol_rule_semantic_change": false,
+    "review_package_corrections": [
+      "V4-P01",
+      "V4-P02"
+    ]
+  }
+}

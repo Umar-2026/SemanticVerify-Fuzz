@@ -1,0 +1,80 @@
+{
+  "authorization_binding": {
+    "commit": "cee5299cf80b633019ea6c98efc065b46aade1dd",
+    "pre_authoring_only_verifier_reused": false,
+    "tree": "37528cfdc0379b2e999eb8f8d83c7b036b1bb04e"
+  },
+  "bound_author_artifacts": {
+    "author_resolution_sha256": "1318180499cf6bd7f22fe5dbb6e9f508ed8421e3ac0d4e2cdf296e981f674376",
+    "metadata_successor_traceability_sha256": "15301111eb9ad97d3df555dbacc26f459f20301eed1d9c60076528f2e98499d7"
+  },
+  "checkpoint_id": "SVF-CURL-TECHNICAL-WORKING-DRAFT-V4-AUTHOR-CHECKPOINT",
+  "checkpoint_type": "SOURCE_ONLY_IMMUTABLE_METADATA_SUCCESSOR_AUTHOR_CHECKPOINT",
+  "completed_v3_human_review_binding": {
+    "commit": "0f6625753452944bbedeab66a77a4098a6e349a9",
+    "overall_decision": "REVISION_REQUIRED",
+    "revision_required_items": [
+      "V3-RR02",
+      "V3-RR12"
+    ],
+    "sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "tree": "a822ec4504071e0edbdc8b77c0eda8ea3974cdbc"
+  },
+  "downstream_review_package_requirements": {
+    "V4-P01_platform_independent_source_path_comparison": "PENDING",
+    "V4-P02_fresh_v4_bound_review_package": "PENDING"
+  },
+  "evidence_boundary": {
+    "approved_source_evidence_class": "PREAPPROVED_SOURCE_ONLY",
+    "approved_source_file_count": 21,
+    "prohibited_evidence_used": false
+  },
+  "final_checkpoint_identity": {
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "schema_id": "curl.technical-protocol-working-draft.v4",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033,
+    "status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V4_AUTHOR_CHECKPOINT"
+  },
+  "immutable_predecessor": {
+    "immutable": true,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "size_bytes": 41330
+  },
+  "implemented_metadata_corrections": [
+    "V4-C01",
+    "V4-C02",
+    "V4-C03",
+    "V4-C04",
+    "V4-C05",
+    "V4-C06"
+  ],
+  "next_boundary": "BUILD_INDEPENDENT_CURL_TECHNICAL_WORKING_DRAFT_V4_REVIEW_PACKAGE",
+  "non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_authorized": false,
+    "selected_sample_membership_inspection_authorized": false
+  },
+  "precheckpoint_authoring_identity": {
+    "sha256": "60b63f3621f54efca5c6a57b52794535ce9d6e71878385ea66f8a30b7303810e",
+    "size_bytes": 41010,
+    "status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V4_AUTHORING"
+  },
+  "protocol_preservation": {
+    "all_protocol_containers_preserved": true,
+    "easy_handle_rule_count": 21,
+    "four_machine_verdict_contract_preserved": true,
+    "multi_handle_rule_count": 29,
+    "new_protocol_rule_count": 0,
+    "protocol_container_count": 10,
+    "protocol_rule_semantic_change": false,
+    "removed_protocol_rule_count": 0,
+    "twelve_function_api_surface_preserved": true
+  }
+}

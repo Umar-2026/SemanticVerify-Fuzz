@@ -1,0 +1,25 @@
+{
+  "author_checkpoint_commit": "b98d76536376b21fc6f2e85a060e960e1681453c",
+  "author_checkpoint_parent": "cee5299cf80b633019ea6c98efc065b46aade1dd",
+  "author_checkpoint_tree": "e7243cda2f8afd9b6cceff793ab0cfa723fabbe5",
+  "bound_paths": {
+    "decision_0036": "documentation/decisions/0036-curl-technical-working-draft-v4-author-checkpoint.md",
+    "v4": "config/annotation/curl_technical_protocol_working_draft.v4.json"
+  },
+  "object_ids": {
+    "annotation_tree": "4707a7a38d433925f0e2ee7496af4ff52f1b719b",
+    "config_tree": "d4034685c0ed26b46ba1f6d6a2ea56e730a6a179",
+    "decision_0036_blob": "7a5e40c290200e7dea91a9910f4e414990e3b309",
+    "decisions_tree": "b73b07f096af03fa9b8a04f9a436900b7556de7e",
+    "documentation_tree": "2f98752556e22f03f9592e77a9d00bd56472ac52",
+    "v4_blob": "c7bafecdf8d35395f183f8551e1318ebb13db92f"
+  },
+  "parent_commit_objects_present": false,
+  "witness_id": "SVF-CURL-TECHNICAL-V4-AUTHOR-CHECKPOINT-MINIMAL-GIT-WITNESS",
+  "witness_object_counts": {
+    "blob": 2,
+    "commit": 1,
+    "total_raw_objects": 8,
+    "tree": 5
+  }
+}
