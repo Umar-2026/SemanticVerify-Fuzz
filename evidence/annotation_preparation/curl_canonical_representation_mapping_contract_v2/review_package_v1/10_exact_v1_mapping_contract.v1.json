@@ -1,0 +1,252 @@
+{
+  "allowed_human_review_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_human_review_decisions": [
+    "APPROVE_MAPPING_BLOCKER_CONTRACT",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "approved_v4_semantic_inventory": {
+    "api_surface_function_count": 12,
+    "exit_obligation_record_count": 3,
+    "protocol_semantic_container_count": 10,
+    "protocol_semantic_container_sha256": {
+      "api_surface": "c3ec09ab541ce749c01c492875cb090c9971f79a4dd0fb3ba62649f0a2d437a2",
+      "cross_resource_rules": "820cc3cb457486679fe950b756e89f8f326acf0f6b3fa501522c011bd400b0b3",
+      "defect_taxonomy": "b69ee78d6966baddd3d48a75a0823b99df9bea55b9e3eaede31a994a7adc6cef",
+      "easy_handle_rules": "e9e49ab502f7e0d46f4c19777a5b55122207d1fada7c52d4aca13d758768d6e6",
+      "exit_obligations": "d2ce5c2cc24effc1b227384779a14475531f964bc8031872bb7d418902c9ac53",
+      "global_runtime_rules": "884e1f9a6e4929ecd889c50943e2950c1b8c91fa9062642ccb249b447219c1e7",
+      "multi_handle_rules": "e865bc0f1140d37339fe900eb3c99c3c62cf18e2ae9f8b6359a5983c1f022aa6",
+      "resources": "edfb84299c3d298ee0fa315d15ae059931216255ac9fad171001b63922fd5490",
+      "return_condition_policy": "c71f6a72a92fa5bf9c193e13edfc008791c72488b1943cbd2c1d7cfad4edecbe",
+      "verdict_semantics": "e7465eea48b881cfbfe3e5f42945b906b41fdb4a8bf893d8a11713a38031dce3"
+    },
+    "protocol_semantic_containers": [
+      "api_surface",
+      "resources",
+      "return_condition_policy",
+      "verdict_semantics",
+      "defect_taxonomy",
+      "global_runtime_rules",
+      "easy_handle_rules",
+      "multi_handle_rules",
+      "cross_resource_rules",
+      "exit_obligations"
+    ],
+    "representation_policy": {
+      "membership_sensitive": true,
+      "normative_strength_uncertainty_must_not_be_silently_strengthened": true,
+      "ownership_sensitive": true,
+      "path_sensitive": true,
+      "resource_centered": true,
+      "return_sensitive": true,
+      "set_valued_state_reasoning": "Known finite feasible state alternatives are evaluated explicitly; the existence of a set-valued state does not itself force UNKNOWN.",
+      "synthetic_protocol_events_invented": false,
+      "unknown_is_first_class": true,
+      "unknown_must_never_be_converted_to_valid": true
+    },
+    "resource_component_count": 5,
+    "resource_components": [
+      "EASY_HANDLE",
+      "EASY_MULTI_MEMBERSHIP",
+      "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION",
+      "GLOBAL_RUNTIME_REFERENCE_STATE",
+      "MULTI_HANDLE"
+    ],
+    "rule_family_counts": {
+      "cross_resource_rules": 4,
+      "easy_handle_rules": 21,
+      "global_runtime_rules": 10,
+      "multi_handle_rules": 29
+    },
+    "total_rule_record_count": 64
+  },
+  "canonicalization_authorization_binding": {
+    "canonical_target": "config/protocol_specifications/curl.json",
+    "creation_authorized": true,
+    "materialization_preconditions_satisfied": false,
+    "path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v4/09_canonical_curl_specification_authorization.v1.json",
+    "repository_commit": "fc3b85c999199e8b45d683fb675a701444478472",
+    "repository_tree": "36122c1345051b023662790099b1dfa7d4ea6ee1"
+  },
+  "contract_kind": "NEGATIVE_FEASIBILITY_AND_REPRESENTATION_REVIEW_GATE",
+  "corrected_reference_finalization_precedent": {
+    "candidate_core_field_count": 15,
+    "canonical_shaped_candidate_required_before_freeze": true,
+    "fsm_reconstruction_during_finalization": false,
+    "obligation_level_finalization_field_names": [
+      "freeze_date",
+      "content_sha256"
+    ],
+    "obligation_semantic_reauthoring_during_finalization": false,
+    "protocol_semantic_change_during_finalization": false,
+    "reference_libraries": [
+      "zlib",
+      "libpcap"
+    ],
+    "top_level_finalization_field_names": [
+      "freeze_date",
+      "content_sha256"
+    ]
+  },
+  "current_mapping_resolution": {
+    "author_conclusion": "NO_REFERENCE_STYLE_CANONICAL_CANDIDATE_PRESENT_AND_NO_REVIEWED_LOSSLESS_MAPPING_CURRENTLY_EXISTS",
+    "canonical_materialization_safe": false,
+    "canonical_obligation_reauthoring_defined": false,
+    "curl_json_may_be_created_under_this_contract_before_review": false,
+    "lossless_v4_to_frozen_schema_mapping_proven": false,
+    "positive_mapping_algorithm_defined": false,
+    "product_state_construction_defined": false,
+    "synthetic_event_mapping_defined": false
+  },
+  "downstream_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_materialization": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "repair": false,
+    "selected_sample_membership_inspection": false
+  },
+  "exact_approved_v4_binding": {
+    "immutable": true,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "frozen_canonical_schema_binding": {
+    "additional_properties_allowed": false,
+    "finalization_field_names": [
+      "freeze_date",
+      "content_sha256"
+    ],
+    "path": "config/schemas/protocol_specification.schema.json",
+    "pre_freeze_core_field_count": 15,
+    "pre_freeze_core_fields": [
+      "author",
+      "creation_date",
+      "events",
+      "initial_state",
+      "library",
+      "library_revision",
+      "obligations",
+      "permitted_exit_states",
+      "provenance",
+      "resource_kind",
+      "reviewer",
+      "schema_version",
+      "specification_id",
+      "states",
+      "transitions"
+    ],
+    "schema_version": "1.0.0",
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "top_level_required_field_count": 17
+  },
+  "human_review": {
+    "assistant_generated_or_synthetic_human_approval_permitted": false,
+    "overall_decision": null,
+    "required": true,
+    "review_item_decisions": {},
+    "review_status": "PENDING",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "immutability_rule": "After this author checkpoint is committed, V1 must not be edited in place. Any correction requires a separately authorized successor.",
+  "independent_review_requirements": [
+    {
+      "review_id": "CMR-RR01",
+      "subject": "Exact V4, frozen schema, and authorization bindings"
+    },
+    {
+      "review_id": "CMR-RR02",
+      "subject": "Corrected zlib/libpcap pre-freeze candidate precedent"
+    },
+    {
+      "review_id": "CMR-RR03",
+      "subject": "Absence of reference-style canonical candidate in exact V4"
+    },
+    {
+      "review_id": "CMR-RR04",
+      "subject": "Accounting for all ten approved V4 semantic containers"
+    },
+    {
+      "review_id": "CMR-RR05",
+      "subject": "64 frozen rule records and three exit obligations preserved as source semantics"
+    },
+    {
+      "review_id": "CMR-RR06",
+      "subject": "Absence of canonical event/transition/obligation/provenance records in V4"
+    },
+    {
+      "review_id": "CMR-RR07",
+      "subject": "Existing transformation authorization does not authorize unreviewed FSM reconstruction or synthetic events"
+    },
+    {
+      "review_id": "CMR-RR08",
+      "subject": "Current lossless mapping is correctly classified as NOT PROVEN"
+    },
+    {
+      "review_id": "CMR-RR09",
+      "subject": "curl.json remains prohibited until successor resolution"
+    },
+    {
+      "review_id": "CMR-RR10",
+      "subject": "Determine successor direction: reviewed positive mapping contract versus separately authorized canonical-schema successor"
+    }
+  ],
+  "next_boundary": "BUILD_INDEPENDENT_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V1_REVIEW_PACKAGE",
+  "observed_schema_gap": {
+    "candidate_specification_fields_present": false,
+    "canonical_core_fields_present_at_v4_top_level": [
+      "library"
+    ],
+    "canonical_event_records_present": false,
+    "canonical_obligation_projection_required_for_current_schema": true,
+    "canonical_payload_fields_missing_from_v4_top_level": [
+      "states",
+      "initial_state",
+      "events",
+      "transitions",
+      "obligations",
+      "permitted_exit_states",
+      "provenance"
+    ],
+    "canonical_prefreeze_obligation_records_present": false,
+    "canonical_provenance_projection_required_for_current_schema": true,
+    "canonical_provenance_records_present": false,
+    "canonical_transition_records_present": false,
+    "fsm_construction_required_for_current_schema": true,
+    "reference_style_canonical_candidate_present": false
+  },
+  "post_review_resolution_policy": {
+    "if_approved": "The reviewed result establishes only that direct canonical materialization under the current frozen schema is not yet justified. It does not itself authorize a new schema or positive mapping.",
+    "if_reviewer_identifies_valid_positive_mapping": "Do not edit this immutable V1 in place. Create a separately authorized successor mapping contract containing the exact deterministic mapping and subject it to independent review.",
+    "if_schema_successor_is_required": "Obtain separate governance authorization before modifying or superseding the frozen canonical schema."
+  },
+  "prohibited_evidence_used": {
+    "analyzer_output": false,
+    "baseline_output": false,
+    "generated_driver_compiler_log_semantic_content": false,
+    "generated_driver_source": false,
+    "gold_labels": false,
+    "llm_review_output": false,
+    "raw_model_responses": false,
+    "repair_output": false,
+    "selected_sample_membership": false
+  },
+  "purpose": "Determine whether exact independently approved curl Technical Working Draft V4 can be transformed into the frozen canonical protocol-specification schema without protocol-rule addition, removal, semantic change, synthetic protocol events, source-evidence change, or unreviewed FSM reconstruction.",
+  "schema_id": "curl.canonical-representation-mapping-contract.v1",
+  "status": "AUTHOR_CHECKPOINT_REVIEW_REQUIRED",
+  "why_positive_mapping_is_not_authored_in_v1": [
+    "The corrected zlib/libpcap precedent requires the canonical-shaped candidate to exist before freeze; finalization itself does not construct an FSM.",
+    "Exact approved curl V4 contains no canonical-shaped 15-field candidate and none of the canonical states/events/transitions/obligations/permitted_exit_states/provenance arrays.",
+    "Producing the frozen canonical schema would therefore require new state-product, event-ID, transition-ID, obligation-field, and provenance-projection decisions.",
+    "The existing authorization permits canonical metadata transformation but explicitly prohibits protocol-rule semantic change, rule addition/removal, source-evidence change, and synthetic protocol events.",
+    "A positive mapping must therefore be separately specified and independently reviewed before it may affect a canonical artifact."
+  ]
+}

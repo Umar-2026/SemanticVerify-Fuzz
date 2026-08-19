@@ -1,0 +1,77 @@
+{
+  "approved_v4_binding": {
+    "immutable": true,
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "downstream_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "canonical_schema_successor": false,
+    "curl_json_materialization": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "positive_mapping_algorithm": false,
+    "repair": false,
+    "selected_sample_membership_inspection": false
+  },
+  "evidence_quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "exact_human_review": {
+    "assistant_generated_or_synthetic": false,
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 10,
+      "REVISION_REQUIRED": 0
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "19 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "overall_decision": "APPROVE_MAPPING_BLOCKER_CONTRACT",
+    "path": "evidence/annotation_preparation/curl_canonical_representation_mapping_contract_v1/completed_human_review_v1/01_completed_human_mapping_contract_review.v1.md",
+    "review_item_count": 10,
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "a19d4a6132be417798b027794045227949ea40265e11714543e85ef1c325ad73",
+    "size_bytes": 24169
+  },
+  "exact_mapping_contract": {
+    "author_checkpoint_commit": "afc2bb285f3b9adef8129f106c1c941b14d6f10c",
+    "author_checkpoint_tree": "ace5a3cd3b2797c7a312403656391aa6da4908bb",
+    "immutable": true,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v1.json",
+    "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+    "size_bytes": 10879
+  },
+  "frozen_canonical_schema_binding": {
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "human_review_effect": {
+    "canonical_materialization_safe": false,
+    "canonical_schema_successor_approved": false,
+    "curl_json_authorized_by_this_review": false,
+    "curl_json_created": false,
+    "lossless_v4_to_frozen_schema_mapping_proven": false,
+    "mapping_blocker_contract_v1_approved": true,
+    "positive_mapping_algorithm_approved": false
+  },
+  "immutability_rule": "Exact mapping-contract V1 and this completed human review copy must remain immutable after recording. Any positive mapping or schema-successor work requires a separately authorized successor.",
+  "independent_review_package": {
+    "commit": "d4095c66934e4987069f4b00f1aa64acc15598be",
+    "immutable": true,
+    "tree": "e5d3440224aa4bd43d601808eb56b5582b885d06"
+  },
+  "next_boundary": "AUTHORIZE_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V2_SUCCESSOR",
+  "record_id": "SVF-CURL-CANONICAL-MAPPING-CONTRACT-V1-COMPLETED-HUMAN-REVIEW",
+  "recorded_at_utc": "2026-08-19T14:08:29Z",
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED"
+}

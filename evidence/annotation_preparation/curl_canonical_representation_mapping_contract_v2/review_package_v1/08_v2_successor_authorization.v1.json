@@ -1,0 +1,173 @@
+{
+  "authorized_v2_target": {
+    "approval_by_authoring": false,
+    "authoring_authorized": true,
+    "canonical_materialization_by_authoring": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v2.json",
+    "successor_version": "V2"
+  },
+  "completed_v1_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 10,
+      "REVISION_REQUIRED": 0
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "19 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "overall_decision": "APPROVE_MAPPING_BLOCKER_CONTRACT",
+    "review_effect": "V1 blocker conclusion approved; no positive mapping, schema successor, or curl.json materialization approved.",
+    "review_record_sha256": "b7a8572b3893d83e411c4d79a56682c9b3a47345ed25396df5dcc4556d8a161d",
+    "review_sha256": "a19d4a6132be417798b027794045227949ea40265e11714543e85ef1c325ad73",
+    "review_size_bytes": 24169,
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "downstream_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "canonical_schema_modification": false,
+    "canonical_schema_successor_creation": false,
+    "curl_json_materialization": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "positive_mapping_approval": false,
+    "repair": false,
+    "selected_sample_membership_inspection": false
+  },
+  "exact_approved_v4_binding": {
+    "immutable": true,
+    "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "size_bytes": 41033
+  },
+  "frozen_canonical_schema_binding": {
+    "path": "config/schemas/protocol_specification.schema.json",
+    "schema_mutation_authorized": false,
+    "schema_successor_authorized": false,
+    "schema_version": "1.0.0",
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "immutability_policy": "V1, approved V4, frozen canonical schema, and completed V1 human review remain immutable. Once V2 reaches its author checkpoint, V2 must also become immutable and any correction must use a separately authorized successor.",
+  "independent_review_requirement": {
+    "curl_json_may_be_materialized_before_review": false,
+    "positive_mapping_may_be_used_before_review": false,
+    "required": true,
+    "review_must_occur_after_v2_author_checkpoint": true,
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "next_boundary": "AUTHOR_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V2",
+  "predecessor_v1": {
+    "author_checkpoint_commit": "afc2bb285f3b9adef8129f106c1c941b14d6f10c",
+    "completed_human_review_recording_commit": "f9cbcdc75129cc715267885ca1d21197192bdd25",
+    "immutable": true,
+    "in_place_edit_authorized": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v1.json",
+    "review_package_commit": "d4095c66934e4987069f4b00f1aa64acc15598be",
+    "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+    "size_bytes": 10879
+  },
+  "prohibited_evidence": {
+    "analyzer_output": true,
+    "baseline_output": true,
+    "generated_driver_compiler_log_semantic_content": true,
+    "generated_driver_source": true,
+    "gold_labels": true,
+    "llm_review_output": true,
+    "raw_model_responses": true,
+    "repair_output": true,
+    "selected_sample_membership": true
+  },
+  "purpose": "Authorize an immutable V2 successor mapping contract that may formally specify and test a deterministic representation mapping from exact approved curl Technical Working Draft V4 into the existing frozen canonical protocol-specification schema. The authorization permits representational design inside the mapping-contract artifact only; it does not approve the resulting mapping and does not authorize canonical materialization.",
+  "record_id": "SVF-CURL-CANONICAL-REPRESENTATION-MAPPING-CONTRACT-V2-SUCCESSOR-AUTHORIZATION",
+  "recorded_at_utc": "2026-08-19T14:12:52Z",
+  "representation_design_boundary": {
+    "api_surface_change_authorized": false,
+    "candidate_mapping_may_be_called_lossless_before_independent_review": false,
+    "candidate_representation_decisions_are_approved_by_authoring": false,
+    "candidate_representation_decisions_may_be_authored": true,
+    "defect_taxonomy_change_authorized": false,
+    "machine_verdict_contract_change_authorized": false,
+    "new_api_function_authorized": false,
+    "new_defect_category_authorized": false,
+    "new_evidence_class_authorized": false,
+    "new_machine_verdict_authorized": false,
+    "new_protocol_semantics_authorized": false,
+    "new_source_evidence_authorized": false,
+    "opaque_payload_packing_authorized": false,
+    "protocol_rule_addition_authorized": false,
+    "protocol_rule_removal_authorized": false,
+    "protocol_rule_semantic_change_authorized": false,
+    "representational_event_ids_for_existing_v4_semantics_authorized": true,
+    "rule_merging_with_semantic_loss_authorized": false,
+    "rule_splitting_with_new_semantics_authorized": false,
+    "rule_strengthening_authorized": false,
+    "rule_weakening_authorized": false,
+    "semantic_protocol_event_invention_authorized": false,
+    "source_evidence_change_authorized": false
+  },
+  "required_v2_outcome": {
+    "allowed_outcomes": [
+      "DETERMINISTIC_LOSSLESS_MAPPING_CANDIDATE_AUTHORED_FOR_REVIEW",
+      "FROZEN_SCHEMA_INSUFFICICIENCY_DEMONSTRATED_SCHEMA_SUCCESSOR_REQUIRED",
+      "V2_MAPPING_DESIGN_REQUIRES_REVISION"
+    ],
+    "note": "The V2 author must not silently choose schema supersession. If the frozen schema is shown insufficient, V2 may document that conclusion, but schema-successor work requires separate governance authorization."
+  },
+  "status": "AUTHORIZED_FOR_V2_MAPPING_CONTRACT_AUTHORING_ONLY",
+  "v2_authoring_may_define_candidate_representation": {
+    "all_64_rule_records_to_obligation_accounting": true,
+    "api_function_and_return_condition_event_projection": true,
+    "approved_source_provenance_projection": true,
+    "canonical_initial_state_projection": true,
+    "canonical_state_inventory_projection": true,
+    "composite_or_product_state_encoding": true,
+    "forward_accounting_proof": true,
+    "from_state_and_to_state_projection": true,
+    "function_exit_event_projection": true,
+    "machine_checkable_losslessness_checks": true,
+    "membership_effect_projection": true,
+    "ownership_effect_projection": true,
+    "path_condition_projection": true,
+    "permitted_exit_state_projection": true,
+    "representational_event_identifiers": true,
+    "representational_transition_identifiers": true,
+    "return_predicate_projection": true,
+    "reverse_accounting_proof": true,
+    "three_exit_obligations_to_canonical_obligation_accounting": true
+  },
+  "v2_required_semantic_accounting": {
+    "allowed_machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "approved_v4_semantic_container_count": 10,
+    "cross_resource_rule_count": 4,
+    "easy_handle_rule_count": 21,
+    "exit_obligation_count": 3,
+    "frozen_api_surface_function_count": 12,
+    "global_runtime_rule_count": 10,
+    "membership_sensitive_semantics_must_be_preserved": true,
+    "multi_handle_rule_count": 29,
+    "ownership_sensitive_semantics_must_be_preserved": true,
+    "path_sensitive_semantics_must_be_preserved": true,
+    "required_containers": [
+      "api_surface",
+      "resources",
+      "return_condition_policy",
+      "verdict_semantics",
+      "defect_taxonomy",
+      "global_runtime_rules",
+      "easy_handle_rules",
+      "multi_handle_rules",
+      "cross_resource_rules",
+      "exit_obligations"
+    ],
+    "resource_component_count": 5,
+    "return_sensitive_semantics_must_be_preserved": true,
+    "total_rule_record_count": 64,
+    "unknown_must_remain_first_class": true
+  }
+}

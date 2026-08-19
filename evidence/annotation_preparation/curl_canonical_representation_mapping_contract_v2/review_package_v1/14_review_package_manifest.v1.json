@@ -1,0 +1,92 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_V2_SCHEMA_INSUFFICIENCY_PROOF",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "author_checkpoint_commit": "9bc2d448cf2c08a728174090c3d819bbdb9e28f1",
+  "author_checkpoint_tree": "9cb9b34bbeb45cc5916543a04e0f0dad8f54af50",
+  "curl_json_created": false,
+  "human_review_completed": false,
+  "next_boundary": "CREATE_EXTERNAL_V2_SCHEMA_INSUFFICIENCY_HUMAN_REVIEW_HANDOFF",
+  "package_id": "SVF-CURL-MAPPING-CONTRACT-V2-SCHEMA-INSUFFICIENCY-INDEPENDENT-REVIEW-PACKAGE-V1",
+  "package_members": [
+    {
+      "path": "01_repository_binding.v1.json",
+      "sha256": "fe7cc0b58dff4d3cb686a2033ae19020235e55d5cdf8c0710a59d9b423f63873",
+      "size_bytes": 1043
+    },
+    {
+      "path": "02_v2_schema_insufficiency_reviewer_packet.BLANK.v1.md",
+      "sha256": "eee75a1932e560134bc3bf672234d2f9c341724c1094006e0d172fe54954aaf4",
+      "size_bytes": 7377
+    },
+    {
+      "path": "03_exact_v2_mapping_contract.v2.json",
+      "sha256": "f2badbc07895e8baff078a0ce617ceb6ff02d39c7634a9e38b3b8a46a18d811c",
+      "size_bytes": 18515
+    },
+    {
+      "path": "04_v2_schema_insufficiency_author_checkpoint.v1.json",
+      "sha256": "a3d7fd5514781654ebc9e7ce7f7859da10698d047c6764d02da04967e9072d31",
+      "size_bytes": 1781
+    },
+    {
+      "path": "05_decision_0042.md",
+      "sha256": "6b16ffc6531b3a5a5d9677319e3232bc62b067dfebcead4bbcf18e8ea3062897",
+      "size_bytes": 2153
+    },
+    {
+      "path": "06_exact_approved_curl_v4.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033
+    },
+    {
+      "path": "07_frozen_canonical_schema.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "size_bytes": 8047
+    },
+    {
+      "path": "08_v2_successor_authorization.v1.json",
+      "sha256": "5d3771c4748731642f3068722e986e65479a9b85d1087737e2faeb2dc76b073b",
+      "size_bytes": 7967
+    },
+    {
+      "path": "09_decision_0041.md",
+      "sha256": "261acb0f2d8432bcf9769a911f258ba654a2cce4dae69e74c2dd3963ae8c89c0",
+      "size_bytes": 3211
+    },
+    {
+      "path": "10_exact_v1_mapping_contract.v1.json",
+      "sha256": "31d606f98f2c819291103ba7403214206ccde1d8e5e0e9103f0659c227622257",
+      "size_bytes": 10879
+    },
+    {
+      "path": "11_completed_v1_human_review.md",
+      "sha256": "a19d4a6132be417798b027794045227949ea40265e11714543e85ef1c325ad73",
+      "size_bytes": 24169
+    },
+    {
+      "path": "12_completed_v1_human_review_record.v1.json",
+      "sha256": "b7a8572b3893d83e411c4d79a56682c9b3a47345ed25396df5dcc4556d8a161d",
+      "size_bytes": 3241
+    },
+    {
+      "path": "13_decision_0040.md",
+      "sha256": "3040ee6a2bdfcdd2cd9adefaacbb4d189fc2d42152baefdc08f71983b4b83381",
+      "size_bytes": 2530
+    }
+  ],
+  "review_item_count": 10,
+  "review_target_sha256": "f2badbc07895e8baff078a0ce617ceb6ff02d39c7634a9e38b3b8a46a18d811c",
+  "review_target_size_bytes": 18515,
+  "reviewer_role_id": "Spec-Technical-Reviewer-1",
+  "schema_successor_authorized": false,
+  "status": "READY_FOR_INDEPENDENT_HUMAN_TECHNICAL_REVIEW",
+  "synthetic_human_approval_present": false
+}

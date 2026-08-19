@@ -1,0 +1,22 @@
+{
+  "curl_json_present": false,
+  "exact_review_target": {
+    "author_outcome": "FROZEN_SCHEMA_INSUFFICICIENCY_DEMONSTRATED_SCHEMA_SUCCESSOR_REQUIRED",
+    "contract_kind": "FORMAL_FROZEN_SCHEMA_INSUFFICIENCY_PROOF",
+    "independently_approved": false,
+    "path": "03_exact_v2_mapping_contract.v2.json",
+    "sha256": "f2badbc07895e8baff078a0ce617ceb6ff02d39c7634a9e38b3b8a46a18d811c",
+    "size_bytes": 18515
+  },
+  "next_boundary": "REAL_INDEPENDENT_HUMAN_REVIEW_OF_V2_SCHEMA_INSUFFICIENCY_PROOF",
+  "package_id": "SVF-CURL-MAPPING-CONTRACT-V2-SCHEMA-INSUFFICIENCY-INDEPENDENT-REVIEW-PACKAGE-V1",
+  "package_status": "INDEPENDENT_HUMAN_REVIEW_REQUIRED",
+  "repository_binding": {
+    "author_checkpoint_commit": "9bc2d448cf2c08a728174090c3d819bbdb9e28f1",
+    "author_checkpoint_tree": "9cb9b34bbeb45cc5916543a04e0f0dad8f54af50",
+    "parent_commit": "04920f75e55628c9e52be842037ef848fcd4fa05"
+  },
+  "reviewer_role_id": "Spec-Technical-Reviewer-1",
+  "schema_successor_authorized": false,
+  "synthetic_human_approval_permitted": false
+}
