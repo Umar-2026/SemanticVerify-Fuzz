@@ -1,0 +1,28 @@
+{
+  "authoring_base_commit": "0dafd611d424ec2308e127a14e9ae8c28fbd9dad",
+  "authoring_base_tree": "85981ae0d45bf56ddb9e6d964e39dfdf86ee6887",
+  "corrected_review_items": {
+    "V2-RR01": "Future V3 review handoff must include portable Git-object evidence. The V2 human decision is not retroactively changed.",
+    "V2-RR08": "Formal losslessness boundary now explicitly preserves ownership-sensitive, return-sensitive, and complete exact V4 representation-policy semantics."
+  },
+  "exact_v3_contract": {
+    "author_outcome": "FROZEN_SCHEMA_INSUFFICICIENCY_DEMONSTRATED_SCHEMA_SUCCESSOR_REQUIRED",
+    "independently_approved": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v3.json",
+    "sha256": "ef401d5d04656f67ce4148c5cc6848368a9d68449f1296c64189d1422eebdb97",
+    "size_bytes": 24750
+  },
+  "next_boundary": "CREATE_INDEPENDENT_REVIEW_PACKAGE_FOR_CURL_MAPPING_CONTRACT_V3_CORRECTED_SCHEMA_INSUFFICIENCY_PROOF",
+  "non_authorizations": {
+    "analyzer": false,
+    "baseline": false,
+    "curl_json": false,
+    "positive_mapping": false,
+    "repair": false,
+    "schema_modification": false,
+    "schema_successor": false
+  },
+  "record_id": "SVF-CURL-MAPPING-CONTRACT-V3-CORRECTIVE-AUTHOR-CHECKPOINT",
+  "recorded_at_utc": "2026-08-20T12:48:31Z",
+  "status": "AUTHOR_CHECKPOINT_INDEPENDENT_REVIEW_REQUIRED"
+}
