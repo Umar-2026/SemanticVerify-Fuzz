@@ -1,0 +1,116 @@
+{
+  "authorized_administrative_successor_updates": {
+    "contract_kind_successor_label": true,
+    "contract_version_to_v4": true,
+    "corrective_successor_metadata_for_v3_rr10": true,
+    "immutability_policy_to_bind_exact_v4_after_checkpoint": true,
+    "independent_review_requirement_review_target_to_exact_v4": true,
+    "input_binding_to_exact_v3_and_v3_review": true,
+    "input_binding_to_this_v4_authorization": true,
+    "next_boundary_to_v4_independent_review_package": true,
+    "purpose_to_describe_rr10_corrective_successor": true,
+    "schema_id_to_v4": true,
+    "status_to_new_author_checkpoint_review_required": true
+  },
+  "authorized_v4_target": {
+    "authoring_authorized": true,
+    "curl_json_materialization_authorized": false,
+    "independent_review_required": true,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+    "self_approval_authorized": false
+  },
+  "completed_v3_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 9,
+      "REVISION_REQUIRED": 1
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "record_sha256": "1424b72fee385ca2335c3f678faa74fdd4ba3a86fa4ea69899e7bef6bd6e43c2",
+    "revision_required_items": [
+      "V3-RR10"
+    ],
+    "schema_insufficiency_conclusion_rejected": false,
+    "sha256": "96afd2a552443ecbdb321f8087612a0771838216272cb8fd43d14f8b8e203b14"
+  },
+  "downstream_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "canonical_schema_modification": false,
+    "canonical_schema_successor_authoring": false,
+    "curl_json_materialization": false,
+    "positive_mapping_approval": false,
+    "repair": false
+  },
+  "future_v4_independent_review_requirement": {
+    "approval_does_not_authorize_schema_successor": true,
+    "approval_must_not_be_synthetic": true,
+    "must_verify_exact_v4_self_review_target": true,
+    "must_verify_v3_rr10_correction": true,
+    "must_verify_v3_semantic_preservation": true,
+    "portable_git_object_evidence_required": true,
+    "required": true,
+    "reviewer_role_id": "Spec-Technical-Reviewer-1"
+  },
+  "immutability_policy": "Exact V3 remains immutable. Once exact V4 is committed at its author checkpoint, exact V4 also becomes immutable. Any later correction requires another separately authorized successor.",
+  "next_boundary": "AUTHOR_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V4_CORRECTIVE_SUCCESSOR",
+  "predecessor_v3": {
+    "author_checkpoint_commit": "eeffef65a0ab2c9982e0cb708376635b096fec07",
+    "completed_review_record_commit": "66a19c7e75c8fa2874655bb75a0ab9e9eac28a4a",
+    "immutable": true,
+    "in_place_edit_authorized": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v3.json",
+    "review_package_commit": "bbe7431c1102e1f8667fe4bed9d39fd4618d9dff",
+    "sha256": "ef401d5d04656f67ce4148c5cc6848368a9d68449f1296c64189d1422eebdb97",
+    "size_bytes": 24750
+  },
+  "record_id": "SVF-CURL-CANONICAL-REPRESENTATION-MAPPING-CONTRACT-V4-CORRECTIVE-SUCCESSOR-AUTHORIZATION",
+  "recorded_at_utc": "2026-08-20T13:55:58Z",
+  "required_preservation": {
+    "3_exit_obligation_accounting": true,
+    "64_rule_accounting": true,
+    "all_v3_admissibility_constraints": true,
+    "all_v3_candidate_carrier_classifications": true,
+    "all_v3_frozen_inventory": true,
+    "all_v3_frozen_schema_structural_facts": true,
+    "all_v3_proof_semantics": true,
+    "all_v3_structural_obstruction_witnesses": true,
+    "all_v3_v4_semantic_container_bindings": true,
+    "complete_v4_representation_policy_binding": true,
+    "first_class_unknown_preservation": true,
+    "forward_accounting_requirement": true,
+    "four_verdict_contract_preservation": true,
+    "membership_sensitive_preservation": true,
+    "ownership_sensitive_preservation": true,
+    "path_sensitive_preservation": true,
+    "portable_git_object_evidence_requirement_for_review": true,
+    "return_sensitive_preservation": true,
+    "reverse_accounting_requirement": true,
+    "scoped_schema_insufficiency_conclusion": true,
+    "set_valued_reasoning_preservation": true
+  },
+  "required_rr10_correction": {
+    "defect": "STALE_INTERNAL_INDEPENDENT_REVIEW_TARGET",
+    "predecessor_stale_value": "Exact immutable V2 schema-insufficiency proof.",
+    "require_unambiguous_self_target": true,
+    "required_location": "$.independent_review_requirement.review_target",
+    "required_successor_value": "Exact immutable V4 corrective schema-insufficiency proof."
+  },
+  "semantic_non_authorizations": {
+    "api_surface_change": false,
+    "defect_taxonomy_change": false,
+    "losslessness_requirement_removal": false,
+    "machine_verdict_change": false,
+    "new_protocol_semantics": false,
+    "opaque_payload_packing": false,
+    "proof_obstruction_semantic_change": false,
+    "protocol_rule_addition": false,
+    "protocol_rule_removal": false,
+    "protocol_rule_strengthening": false,
+    "protocol_rule_weakening": false,
+    "source_evidence_change": false,
+    "synthetic_protocol_event_invention": false
+  },
+  "status": "AUTHORIZED_FOR_V4_RR10_CORRECTIVE_AUTHORING_ONLY"
+}

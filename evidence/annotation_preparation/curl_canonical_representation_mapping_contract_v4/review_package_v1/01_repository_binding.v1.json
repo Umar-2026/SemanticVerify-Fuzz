@@ -1,0 +1,17 @@
+{
+  "author_checkpoint_commit": "390acaac338c1259dc67632d42db137707366e36",
+  "author_checkpoint_tree": "f426da2294cda67aa89d5e062245d64ce2eb3a48",
+  "curl_json_created": false,
+  "exact_v4_review_target": "Exact immutable V4 corrective schema-insufficiency proof.",
+  "exact_v4_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+  "exact_v4_size_bytes": 26601,
+  "independently_approved": false,
+  "package_id": "SVF-CURL-MAPPING-CONTRACT-V4-INDEPENDENT-REVIEW-PACKAGE-V1",
+  "portable_git_object_evidence_included": true,
+  "predecessor_v3_only_revision_item": "V3-RR10",
+  "predecessor_v3_review_outcome": "REVISION_REQUIRED",
+  "schema_successor_authorized": false,
+  "status": "INDEPENDENT_HUMAN_TECHNICAL_REVIEW_REQUIRED",
+  "v3_rr10_author_level_correction": "COMPLETE",
+  "v3_substantive_proof_preserved": true
+}

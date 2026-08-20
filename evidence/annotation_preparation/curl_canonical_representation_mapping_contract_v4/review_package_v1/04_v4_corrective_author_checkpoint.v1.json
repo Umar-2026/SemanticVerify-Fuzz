@@ -1,0 +1,39 @@
+{
+  "authoring_base_commit": "913720cfdb417ba98e7772a5a76567c16388fffe",
+  "authoring_base_tree": "52cd2d265da4eb998fc214fbabe662abb577d3e7",
+  "exact_v4_contract": {
+    "author_outcome": "FROZEN_SCHEMA_INSUFFICICIENCY_DEMONSTRATED_SCHEMA_SUCCESSOR_REQUIRED",
+    "immutable_after_checkpoint": true,
+    "independently_approved": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+    "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+    "size_bytes": 26601
+  },
+  "next_boundary": "CREATE_INDEPENDENT_REVIEW_PACKAGE_FOR_CURL_MAPPING_CONTRACT_V4_RR10_CORRECTED_SCHEMA_INSUFFICIENCY_PROOF",
+  "non_authorizations": {
+    "analyzer": false,
+    "baseline": false,
+    "curl_json": false,
+    "positive_mapping": false,
+    "repair": false,
+    "schema_modification": false,
+    "schema_successor": false
+  },
+  "portable_git_object_evidence_required_for_review": true,
+  "predecessor_v3": {
+    "human_review_outcome": "REVISION_REQUIRED",
+    "immutable": true,
+    "revision_required_item": "V3-RR10",
+    "sha256": "ef401d5d04656f67ce4148c5cc6848368a9d68449f1296c64189d1422eebdb97"
+  },
+  "record_id": "SVF-CURL-MAPPING-CONTRACT-V4-RR10-CORRECTIVE-AUTHOR-CHECKPOINT",
+  "recorded_at_utc": "2026-08-20T14:00:41Z",
+  "rr10_correction": {
+    "author_level_correction_complete": true,
+    "location": "$.independent_review_requirement.review_target",
+    "new_value": "Exact immutable V4 corrective schema-insufficiency proof.",
+    "old_value": "Exact immutable V2 schema-insufficiency proof."
+  },
+  "status": "AUTHOR_CHECKPOINT_INDEPENDENT_REVIEW_REQUIRED",
+  "substantive_v3_proof_preserved": true
+}
