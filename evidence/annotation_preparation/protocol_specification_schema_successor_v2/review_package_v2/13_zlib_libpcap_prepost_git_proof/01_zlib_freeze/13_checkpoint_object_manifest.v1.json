@@ -1,0 +1,19 @@
+{
+  "commit": "e12adfe2d502f6915a094c2f39a46e426ddc0522",
+  "config_tree": "3d5f2b17c79a4bc1fe766bc44f94cff4c32aee04",
+  "label": "zlib_freeze",
+  "libpcap": null,
+  "parent": "60b83e9c3dc88c26b323d1661075f1201fe1615e",
+  "parent_config_tree": "420714398fe5b0ea9dec8dfa56be7ccd3223cf7f",
+  "parent_libpcap": null,
+  "parent_protocol_specifications_tree": null,
+  "parent_root_tree": "ff28e9dd6c5b8ebc8013ccba6b227b4ee1fe7f0b",
+  "parent_zlib": null,
+  "protocol_specifications_tree": "3d0a6fcbeae4abcc089d630e06f6ce8e60d1972e",
+  "root_tree": "b72c39af16af29f283b770006d87624a71047363",
+  "zlib": {
+    "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+    "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+    "size_bytes": 21792
+  }
+}

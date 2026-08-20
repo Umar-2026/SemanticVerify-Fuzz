@@ -1,0 +1,694 @@
+{
+  "allowed_overall_decisions": [
+    "APPROVE_PROTOCOL_SPECIFICATION_SCHEMA_V2_CANDIDATE",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "corrective_evidence": {
+    "baseline_file_hashes_included": true,
+    "checkpoint_and_parent_commit_objects_included": true,
+    "exact_libpcap_bytes_included": true,
+    "exact_zlib_bytes_included": true,
+    "portable_prepost_verifier_included": true,
+    "reviewer_readable_comparison_manifest_included": true,
+    "root_config_protocol_tree_objects_included": true,
+    "semantic_content_hashes_included": true,
+    "zlib_libpcap_blob_objects_included": true
+  },
+  "corrective_review_items": [
+    "SV2-RR02-CORRECTIVE",
+    "SV2-RR09-CORRECTIVE"
+  ],
+  "curl_json_created": false,
+  "files": [
+    {
+      "path": "00_corrective_package_scope.v1.md",
+      "sha256": "4de74d82db8a32c2dc8b97bc4c76d7bd1765adcde88bd6abb74fe0689077f581",
+      "size_bytes": 702
+    },
+    {
+      "path": "01_corrective_package_binding.v1.json",
+      "sha256": "c6baf730a29e7191d92703674af2147b951b8a8deac01ea440d35bdbc94a8d28",
+      "size_bytes": 1972
+    },
+    {
+      "path": "02_corrective_reviewer_packet.BLANK.v2.md",
+      "sha256": "2a44be32031a1d5f245acc033c11acf0c4340cd6bc9006c3ae96bc3affd532e5",
+      "size_bytes": 2916
+    },
+    {
+      "path": "03_exact_unchanged_protocol_specification_schema_v2_candidate.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "04_frozen_protocol_specification_schema_v1.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "size_bytes": 8047
+    },
+    {
+      "path": "05_prior_completed_human_review.REVISION_REQUIRED.v1.md",
+      "sha256": "19e94cf48cbe9b5df537feb2abb350a80bfcef752e4da4d8bed3282077d67c98",
+      "size_bytes": 8404
+    },
+    {
+      "path": "06_prior_completed_human_review_record.v1.json",
+      "sha256": "043798215fe75ceaf61650118254b1cc3d6d046c1d292a487bf6698be090b2a6",
+      "size_bytes": 4164
+    },
+    {
+      "path": "07_decision_0052.md",
+      "sha256": "8f544be98fa68013ae5819017357498a21426fadf8cceee1399e6a92bbe60c78",
+      "size_bytes": 2485
+    },
+    {
+      "path": "08_decision_0053.md",
+      "sha256": "9ff2ffc997d622681622f22116d568eafc5931bce8b74f8394ccd930bdf6d674",
+      "size_bytes": 2579
+    },
+    {
+      "path": "09_corrective_review_package_v2_authorization.v1.json",
+      "sha256": "89f6cfa3c722bcef7caec4b847ca5811084bf015a87c780804f9c42de2bdfc89",
+      "size_bytes": 5241
+    },
+    {
+      "path": "10_exact_frozen_zlib_canonical_specification.json",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "11_exact_frozen_libpcap_canonical_specification.json",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "12_predecessor_review_package_v1/01_repository_binding.v1.json",
+      "sha256": "90f81a4dcfd53079c96b116138b4cb22a53728fe041248b84b2f82662bf7e9e5",
+      "size_bytes": 799
+    },
+    {
+      "path": "12_predecessor_review_package_v1/02_schema_v2_reviewer_packet.BLANK.v1.md",
+      "sha256": "1fe18ace47f0e0e1157e1460fb178421abb246471bd21c016850cb9b17431a0a",
+      "size_bytes": 3621
+    },
+    {
+      "path": "12_predecessor_review_package_v1/03_exact_protocol_specification_schema_v2_candidate.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "12_predecessor_review_package_v1/04_schema_v2_successor_design_record.v1.json",
+      "sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+      "size_bytes": 7425
+    },
+    {
+      "path": "12_predecessor_review_package_v1/05_decision_0051.md",
+      "sha256": "25897fe4741f513504eee4dc9a5da1f1de01855851670326435a726af807b105",
+      "size_bytes": 3182
+    },
+    {
+      "path": "12_predecessor_review_package_v1/06_schema_v2_authoring_authorization.v1.json",
+      "sha256": "96da6d7c3ea3da6e235182f93e2a228931ad7f5002648242f7bd786742bfd6f7",
+      "size_bytes": 7790
+    },
+    {
+      "path": "12_predecessor_review_package_v1/07_decision_0050.md",
+      "sha256": "28da67718afc1473b3aa55a4253306e1bd10d735bd556d89b0ed19ead89f2dbc",
+      "size_bytes": 3508
+    },
+    {
+      "path": "12_predecessor_review_package_v1/08_frozen_protocol_specification_schema_v1.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "size_bytes": 8047
+    },
+    {
+      "path": "12_predecessor_review_package_v1/09_exact_approved_curl_mapping_contract_v4.json",
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+      "size_bytes": 26601
+    },
+    {
+      "path": "12_predecessor_review_package_v1/10_completed_v4_human_review.APPROVED.md",
+      "sha256": "6933bc89ab522e853640cc42f8ce3925e3fbc027a65ebc2f38bc083bf593649d",
+      "size_bytes": 17101
+    },
+    {
+      "path": "12_predecessor_review_package_v1/11_completed_v4_human_review_record.v1.json",
+      "sha256": "292a4a569139d4b09dc341579ab25bfdba0db60e44d7b42da36cf2ab0740e53d",
+      "size_bytes": 3832
+    },
+    {
+      "path": "12_predecessor_review_package_v1/12_decision_0049.md",
+      "sha256": "c454fc1a28fc6bd92b9cd74a10113e5f0bf3c8306f0a286515cafe4f3ca47d0a",
+      "size_bytes": 2049
+    },
+    {
+      "path": "12_predecessor_review_package_v1/13_exact_approved_curl_technical_v4.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033
+    },
+    {
+      "path": "12_predecessor_review_package_v1/14_decision_0019.md",
+      "sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+      "size_bytes": 3498
+    },
+    {
+      "path": "12_predecessor_review_package_v1/15_canonical_protocol_specification_paths.v1.json",
+      "sha256": "4c6471d51627997f58b6c6bca833d364edc4c51e5aa7b80d0c34be8d63d19aaa",
+      "size_bytes": 3035
+    },
+    {
+      "path": "12_predecessor_review_package_v1/16_protocol_content_hash_canonicalization.v1.json",
+      "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "size_bytes": 3190
+    },
+    {
+      "path": "12_predecessor_review_package_v1/17_original_repository_post_authoring_schema_v2_verifier.v1.py",
+      "sha256": "bf56a68216c4e31ee913954531f440b72f06ea6e789c77724321e2e6527be3e0",
+      "size_bytes": 20933
+    },
+    {
+      "path": "12_predecessor_review_package_v1/18_schema_v2_author_checkpoint.v1.SHA256SUMS",
+      "sha256": "f7217fc1cfdfa20fb3122a11b1a1d6c9c51f66baad5d70599275810bba7b6cd1",
+      "size_bytes": 659
+    },
+    {
+      "path": "12_predecessor_review_package_v1/19_review_package_manifest.v1.json",
+      "sha256": "3bb3f044b4b8e3d62a84dfc621c3512cf064796ca58cd0422ad4bcde50f39ed0",
+      "size_bytes": 7067
+    },
+    {
+      "path": "12_predecessor_review_package_v1/20_verify_review_package.v1.py",
+      "sha256": "23d2d543c90326959f7e5744cf3cf968530ad7268dd5d6613c8bc9da5d744317",
+      "size_bytes": 9922
+    },
+    {
+      "path": "12_predecessor_review_package_v1/21_review_package.v1.SHA256SUMS",
+      "sha256": "560858b14dec0d3c693062547eab3a00a954ba08d4413696be3e0828151cf0c3",
+      "size_bytes": 2948
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/01_checkpoint_commit.raw",
+      "sha256": "8dca36e8ff6f975c7b0fb3e41ca5dd210381e164acf976ff2e74c46eecf3ca1d",
+      "size_bytes": 289
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/02_checkpoint_root_tree.raw",
+      "sha256": "9ebe5e9f15ddda785f0343af220ded9a2a4042f5885d634403e7415c77c4d54a",
+      "size_bytes": 286
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/03_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/04_schemas_tree.raw",
+      "sha256": "78c20e0e512c3d5ff5cc2aa66f1db9de608193465684eb232f93321a95849ce1",
+      "size_bytes": 547
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/05_schema_v2_blob.raw",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/06_git_object_manifest.v1.json",
+      "sha256": "7bd2392a31415a6cc4e9ddbae6fd0ee20ca337bc4a9269f74c1a92d06896f064",
+      "size_bytes": 526
+    },
+    {
+      "path": "12_predecessor_review_package_v1/22_git_object_proof/07_verify_git_object_proof.v1.py",
+      "sha256": "a55272c371a6f1cdbb34a219d5932083d9d3f90ac98b3ea77ded1931be6b90c4",
+      "size_bytes": 2415
+    },
+    {
+      "path": "12_zlib_libpcap_prepost_comparison_manifest.v1.json",
+      "sha256": "76217205d93d8e5650f2df253d39183b34c73da608abd44c15f792b2bbe454ba",
+      "size_bytes": 10764
+    },
+    {
+      "path": "12_zlib_libpcap_prepost_comparison_report.v1.md",
+      "sha256": "d6b7848773e5b8d1621a674ffb381f2bd68f75cbf0df7ccedd267a187d27c847",
+      "size_bytes": 1785
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/00_git_proof_index.v1.json",
+      "sha256": "aa09bb66521b98da8f5a8d30d434e60a13e983b3c76e96c765637e1d8b0af653",
+      "size_bytes": 1895
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/01_checkpoint_commit.raw",
+      "sha256": "6439a135022cda56c7fc6abda61a64c60303b22d39f6ac938b95ddbeea1261d7",
+      "size_bytes": 284
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/02_checkpoint_root_tree.raw",
+      "sha256": "c42cd95c2016aeca49640c8dc5794adfff88468a14ec5d9cc82d019dcc8f88e2",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/03_checkpoint_config_tree.raw",
+      "sha256": "f7a7976d93d800b08ecc2386cb41ef8779411c76eab3c266fb68e6519233884e",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "5de81a9550fd2353900f6f3159b2839b877af4d697095b597f4c8239e9949d4c",
+      "size_bytes": 37
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/07_parent_commit.raw",
+      "sha256": "0881274d0d83f836b8b9e5922444eff0e1fbb02b46483fe7b44393913f80bce6",
+      "size_bytes": 282
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/08_parent_root_tree.raw",
+      "sha256": "fc83de32af28b2761a44b9b2f57afdbbb4121cf9f6bb81f5d74631146266e8a9",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/09_parent_config_tree.raw",
+      "sha256": "eecf361acf1018574987a1b564e18e68d2b0d5663815cc9b66a78dee8051d046",
+      "size_bytes": 972
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/01_zlib_freeze/13_checkpoint_object_manifest.v1.json",
+      "sha256": "24af897dd9f7c9e96e6d54f02886f525a8e247f2889a2f2f60af59ea21695da3",
+      "size_bytes": 767
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/01_checkpoint_commit.raw",
+      "sha256": "b619f9ea835a00eb37f69f64256e650a2b7f78a31b1c96a7aa8cc52c4ddaf0da",
+      "size_bytes": 281
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/02_checkpoint_root_tree.raw",
+      "sha256": "76652852cdc43699c47c04521c347a9149fae8ccb8219abbc246e9ed109639a4",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/03_checkpoint_config_tree.raw",
+      "sha256": "164a670604d15351698740c4cf81454a958da7551dcea52dbb9615fd2a2198a1",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/06_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/07_parent_commit.raw",
+      "sha256": "caec983a338b6a987abbe7264db665e44151560cfccf19a95f73b07c15451be4",
+      "size_bytes": 288
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/08_parent_root_tree.raw",
+      "sha256": "a59110448e18a24b1b9bff5cc5bd765a7309488df945a8a56cf033dd18d9efc5",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/09_parent_config_tree.raw",
+      "sha256": "026e9a389675391f565e8bc29235ead2b40c38181662cca21d04882c84a4463f",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/10_parent_protocol_specifications_tree.raw",
+      "sha256": "5de81a9550fd2353900f6f3159b2839b877af4d697095b597f4c8239e9949d4c",
+      "size_bytes": 37
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/11_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/02_libpcap_freeze/13_checkpoint_object_manifest.v1.json",
+      "sha256": "a73ab9a2db97b8189c4c5fd0e993d7caa74d48e26367aea5a4805e106b4910b5",
+      "size_bytes": 1134
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/01_checkpoint_commit.raw",
+      "sha256": "204c3fe7ec0377aedfb123e109dba2086fccf3f09c5d3ef5f03f08acb0ba72d6",
+      "size_bytes": 299
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/02_checkpoint_root_tree.raw",
+      "sha256": "58b46b70fea53662745c328e5f9084d93fe2567604dd556ebe9a9a91210ff4e7",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/03_checkpoint_config_tree.raw",
+      "sha256": "57c3a69484ea8e9a65b351621fd96c6fde0e82d2edfbdab249ec1062daa0656b",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/06_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/07_parent_commit.raw",
+      "sha256": "adea01ac5a123e5e56972b38da341d52c39959f283645015f7bccad5c7a701d2",
+      "size_bytes": 273
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/08_parent_root_tree.raw",
+      "sha256": "4aeaeefbc332b2c553a889d35e8cd5dd3c753e4b5c8cb70ed5e6cdfa922a4385",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/09_parent_config_tree.raw",
+      "sha256": "57c3a69484ea8e9a65b351621fd96c6fde0e82d2edfbdab249ec1062daa0656b",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/10_parent_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/11_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/12_parent_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/03_schema_v2_authorization/13_checkpoint_object_manifest.v1.json",
+      "sha256": "6968f1801633544b420fa08177e18cd44e5fb78e362ee7d3cd786e45a385f828",
+      "size_bytes": 1306
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/01_checkpoint_commit.raw",
+      "sha256": "8dca36e8ff6f975c7b0fb3e41ca5dd210381e164acf976ff2e74c46eecf3ca1d",
+      "size_bytes": 289
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/02_checkpoint_root_tree.raw",
+      "sha256": "9ebe5e9f15ddda785f0343af220ded9a2a4042f5885d634403e7415c77c4d54a",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/03_checkpoint_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/06_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/07_parent_commit.raw",
+      "sha256": "204c3fe7ec0377aedfb123e109dba2086fccf3f09c5d3ef5f03f08acb0ba72d6",
+      "size_bytes": 299
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/08_parent_root_tree.raw",
+      "sha256": "58b46b70fea53662745c328e5f9084d93fe2567604dd556ebe9a9a91210ff4e7",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/09_parent_config_tree.raw",
+      "sha256": "57c3a69484ea8e9a65b351621fd96c6fde0e82d2edfbdab249ec1062daa0656b",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/10_parent_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/11_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/12_parent_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/04_schema_v2_author_checkpoint/13_checkpoint_object_manifest.v1.json",
+      "sha256": "121c34a85fb51a45f71fbb89ed7025e096039cc67dbe273938535948c7f7474b",
+      "size_bytes": 1310
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/01_checkpoint_commit.raw",
+      "sha256": "433bfb51e6915cc7728dbefe77308f3a4d2d6490a5147e2d8a89c5f43005aa2f",
+      "size_bytes": 283
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/02_checkpoint_root_tree.raw",
+      "sha256": "0b0f661fbcd0caae3644018e898a13b57c063fcea37968ffa3a7a8ab823ed698",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/03_checkpoint_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/06_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/07_parent_commit.raw",
+      "sha256": "8dca36e8ff6f975c7b0fb3e41ca5dd210381e164acf976ff2e74c46eecf3ca1d",
+      "size_bytes": 289
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/08_parent_root_tree.raw",
+      "sha256": "9ebe5e9f15ddda785f0343af220ded9a2a4042f5885d634403e7415c77c4d54a",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/09_parent_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/10_parent_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/11_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/12_parent_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/05_review_package_v1/13_checkpoint_object_manifest.v1.json",
+      "sha256": "02c2e449b8e0538bd862cac8373ee62caeec3423534d686f65cbf97072c679eb",
+      "size_bytes": 1300
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/01_checkpoint_commit.raw",
+      "sha256": "c228e0a5499e6b6b192066268212b2e795037bca04da2e54b3ef03194221f4e4",
+      "size_bytes": 276
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/02_checkpoint_root_tree.raw",
+      "sha256": "4c51b775ab7d9642b55d6b18add9037b0f7d20695fda3230d025135c21582175",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/03_checkpoint_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/06_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/07_parent_commit.raw",
+      "sha256": "433bfb51e6915cc7728dbefe77308f3a4d2d6490a5147e2d8a89c5f43005aa2f",
+      "size_bytes": 283
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/08_parent_root_tree.raw",
+      "sha256": "0b0f661fbcd0caae3644018e898a13b57c063fcea37968ffa3a7a8ab823ed698",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/09_parent_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/10_parent_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/11_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/12_parent_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/06_completed_review_record/13_checkpoint_object_manifest.v1.json",
+      "sha256": "b98aff9554df3cc57fa76c922a637f07459a787f75f0ceb2f9101b7e0c296b7d",
+      "size_bytes": 1306
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/01_checkpoint_commit.raw",
+      "sha256": "10c614057f66ce82af57e836c010d49e5d473f14e48f189403a5b906a446bc2b",
+      "size_bytes": 288
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/02_checkpoint_root_tree.raw",
+      "sha256": "feffcfd383075b1f91c755497c3a049a9026ca868d3712e494791a470f52258d",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/03_checkpoint_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/04_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/05_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/06_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/07_parent_commit.raw",
+      "sha256": "c228e0a5499e6b6b192066268212b2e795037bca04da2e54b3ef03194221f4e4",
+      "size_bytes": 276
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/08_parent_root_tree.raw",
+      "sha256": "4c51b775ab7d9642b55d6b18add9037b0f7d20695fda3230d025135c21582175",
+      "size_bytes": 286
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/09_parent_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/10_parent_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/11_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/12_parent_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/07_corrective_package_v2_authorization/13_checkpoint_object_manifest.v1.json",
+      "sha256": "81cb0ca9247c73b05d6b3faba6e856bc1757a3648c1744fcb6a59762942abc06",
+      "size_bytes": 1318
+    },
+    {
+      "path": "13_zlib_libpcap_prepost_git_proof/99_verify_portable_zlib_libpcap_git_proof.v1.py",
+      "sha256": "6e79b8d41418e5eba2cce5f5dd0762e729cf672d9bceca58563dde871870e68c",
+      "size_bytes": 7786
+    }
+  ],
+  "human_decisions_initially_blank": true,
+  "package_id": "SVF-SCHEMA-V2-CORRECTIVE-INDEPENDENT-REVIEW-PACKAGE-V2",
+  "positive_v4_to_v2_mapping_defined": false,
+  "predecessor_review": {
+    "counts": "8 PASS / 2 REVISION_REQUIRED / 0 FAIL",
+    "overall_decision": "REVISION_REQUIRED",
+    "revision_required_items": [
+      "SV2-RR02",
+      "SV2-RR09"
+    ]
+  },
+  "review_target": {
+    "schema_v2_changed_from_review_package_v1": false,
+    "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "schema_v2_size_bytes": 43030
+  },
+  "schema_v2_activated": false,
+  "status": "READY_FOR_CORRECTIVE_INDEPENDENT_HUMAN_REREVIEW",
+  "synthetic_human_decision": false
+}

@@ -1,0 +1,143 @@
+{
+  "authorized_author_checkpoint_deliverables": {
+    "checkpoint_checksum_manifest": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/06_schema_v2_successor_author_checkpoint.v1.SHA256SUMS",
+    "decision_record": "documentation/decisions/0051-protocol-specification-schema-v2-successor-author-checkpoint.md",
+    "post_authoring_verifier": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/05_verify_schema_v2_successor_author_checkpoint.v1.py",
+    "schema_v2_candidate": "config/schemas/protocol_specification.v2.schema.json",
+    "schema_v2_design_record": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json"
+  },
+  "authorized_schema_v2_candidate": {
+    "activation_authorized": false,
+    "authoring_authorized": true,
+    "canonical_use_authorized": false,
+    "immutable_after_author_checkpoint": true,
+    "independent_human_review_required": true,
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "protocol_specification_schema_version": "2.0.0"
+  },
+  "decision_0019_boundary": {
+    "canonical_specification_root": "config/protocol_specifications/",
+    "curl_canonical_path_remains": "config/protocol_specifications/curl.json",
+    "current_machine_readable_path_map": "config/annotation/canonical_protocol_specification_paths.v1.json",
+    "current_path_map_sha256": "4c6471d51627997f58b6c6bca833d364edc4c51e5aa7b80d0c34be8d63d19aaa",
+    "decision_0019_rule_requiring_unmodified_v1_schema_changed": false,
+    "decision_0019_superseded_by_this_authorization": false,
+    "future_activation_requires_separate_decision_0019_successor_or_amendment": true
+  },
+  "design_scope": {
+    "closed_schema_requirement": "The successor must remain structurally explicit and closed at normative object boundaries; arbitrary free-form escape payloads must not be used to bypass the reviewed representation problem.",
+    "genericity_requirement": "New structural carriers must be protocol-specification concepts, not curl-named one-off fields when a generic representation is possible.",
+    "purpose": "Create a generic successor of the frozen protocol-specification schema that can structurally represent the exact independently approved curl V4 semantic requirements without opaque packing, synthetic protocol-event invention, or protocol-semantic change.",
+    "required_curl_v4_coverage": {
+      "all_10_semantic_containers": true,
+      "all_3_exit_obligations": true,
+      "all_4_structural_obstruction_classes_addressed": true,
+      "all_64_rules": true,
+      "complete_10_field_representation_policy_preserved": true,
+      "complete_17_field_losslessness_boundary_preserved": true
+    },
+    "required_first_class_structural_capabilities": {
+      "feasible_state_join_policy": true,
+      "first_class_unknown_semantics": true,
+      "forward_semantic_accounting": true,
+      "freeze_and_content_hash_compatibility": true,
+      "machine_verdict_vocabulary": [
+        "VALID",
+        "VIOLATION-MUST",
+        "VIOLATION-MAY",
+        "UNKNOWN"
+      ],
+      "multi_resource_identity": true,
+      "ownership_sensitive_semantics": true,
+      "path_sensitive_reasoning_policy": true,
+      "return_sensitive_semantics": true,
+      "reverse_semantic_accounting": true,
+      "set_valued_state_reasoning_policy": true,
+      "structured_provenance_compatibility": true,
+      "structured_rule_payloads": true,
+      "typed_resource_relationships_and_membership": true
+    }
+  },
+  "evidence_quarantine": {
+    "analyzer_output_allowed": false,
+    "baseline_output_allowed": false,
+    "generated_driver_compiler_log_semantic_content_allowed": false,
+    "generated_driver_source_allowed": false,
+    "gold_labels_allowed": false,
+    "llm_review_output_allowed": false,
+    "raw_model_responses_allowed": false,
+    "repair_output_allowed": false,
+    "selected_sample_membership_allowed": false
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "canonical_curl_freeze": false,
+    "curl_json_materialization": false,
+    "delete_v1_schema": false,
+    "llm_reviewer_execution": false,
+    "modify_canonical_path_map": false,
+    "modify_hash_canonicalization_contract": false,
+    "modify_protocol_obligation_contract": false,
+    "modify_v1_schema": false,
+    "positive_v4_to_v2_mapping": false,
+    "repair": false,
+    "supersede_decision_0019": false
+  },
+  "frozen_v1_schema_binding": {
+    "immutable": true,
+    "in_place_modification_authorized": false,
+    "path": "config/schemas/protocol_specification.schema.json",
+    "protocol_specification_schema_version": "1.0.0",
+    "replacement_or_deletion_authorized": false,
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "hash_contract_boundary": {
+    "current_contract_modification_authorized": false,
+    "current_contract_path": "config/protocol_content_hash_canonicalization.v1.json",
+    "current_contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "hash_semantics_may_not_be_silently_changed": true,
+    "schema_v2_activation_may_require_separate_hash_contract_successor": true
+  },
+  "immutability_policy": "The frozen V1 schema, exact approved V4 mapping contract, completed V4 human review, existing zlib/libpcap canonical specifications, Decision-0019 path mapping, and current content-hash contract remain unchanged by this authorization. Once the V2 schema candidate reaches its author checkpoint it becomes immutable pending independent review.",
+  "next_boundary": "AUTHOR_PROTOCOL_SPECIFICATION_SCHEMA_V2_SUCCESSOR_CANDIDATE",
+  "record_id": "SVF-PROTOCOL-SPECIFICATION-CANONICAL-SCHEMA-V2-SUCCESSOR-AUTHORING-AUTHORIZATION",
+  "recorded_at_utc": "2026-08-20T15:01:25Z",
+  "required_independent_review_after_authoring": {
+    "must_verify_all_four_v4_obstruction_classes_have_first_class_carriers": true,
+    "must_verify_complete_v4_losslessness_boundary_is_structurally_representable": true,
+    "must_verify_exact_schema_candidate_bytes": true,
+    "must_verify_no_opaque_payload_escape": true,
+    "must_verify_no_protocol_semantic_change": true,
+    "must_verify_no_synthetic_protocol_event_escape": true,
+    "must_verify_no_unauthorized_activation": true,
+    "must_verify_v1_schema_immutability": true,
+    "required": true
+  },
+  "status": "AUTHORIZED_FOR_SCHEMA_V2_SUCCESSOR_AUTHORING_ONLY",
+  "technical_basis": {
+    "exact_approved_mapping_contract_v4": {
+      "human_review_counts": {
+        "FAIL": 0,
+        "PASS": 10,
+        "REVISION_REQUIRED": 0
+      },
+      "human_review_outcome": "APPROVE_V4_RR10_CORRECTED_SCHEMA_INSUFFICIENCY_PROOF",
+      "human_review_record_path": "evidence/annotation_preparation/curl_canonical_representation_mapping_contract_v4/completed_human_review_v1/02_completed_v4_human_review_record.v1.json",
+      "human_review_record_sha256": "292a4a569139d4b09dc341579ab25bfdba0db60e44d7b42da36cf2ab0740e53d",
+      "path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+      "scoped_schema_insufficiency_independently_approved": true,
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070"
+    }
+  },
+  "v1_compatibility_and_non_migration": {
+    "automatic_migration_of_existing_v1_specs_authorized": false,
+    "existing_v1_specifications_remain_governed_by_v1_schema": true,
+    "libpcap_v1_frozen_specification_remains_unchanged": true,
+    "rewriting_existing_v1_specs_authorized": false,
+    "v2_author_must_document_v1_to_v2_compatibility_inventory": true,
+    "zlib_v1_frozen_specification_remains_unchanged": true
+  }
+}

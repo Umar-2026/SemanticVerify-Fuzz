@@ -1,0 +1,83 @@
+{
+  "evidence_quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "exact_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 10,
+      "REVISION_REQUIRED": 0
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "20 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "item_decisions": {
+      "V4-RR01": "PASS",
+      "V4-RR02": "PASS",
+      "V4-RR03": "PASS",
+      "V4-RR04": "PASS",
+      "V4-RR05": "PASS",
+      "V4-RR06": "PASS",
+      "V4-RR07": "PASS",
+      "V4-RR08": "PASS",
+      "V4-RR09": "PASS",
+      "V4-RR10": "PASS"
+    },
+    "overall_decision": "APPROVE_V4_RR10_CORRECTED_SCHEMA_INSUFFICIENCY_PROOF",
+    "path": "evidence/annotation_preparation/curl_canonical_representation_mapping_contract_v4/completed_human_review_v1/01_completed_v4_human_review.APPROVED.v1.md",
+    "quarantined_evidence_used": false,
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "6933bc89ab522e853640cc42f8ce3925e3fbc027a65ebc2f38bc083bf593649d",
+    "size_bytes": 17101,
+    "synthetic_or_assistant_generated": false
+  },
+  "exact_v4_binding": {
+    "author_checkpoint_commit": "390acaac338c1259dc67632d42db137707366e36",
+    "author_checkpoint_tree": "f426da2294cda67aa89d5e062245d64ce2eb3a48",
+    "immutable": true,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+    "review_package_commit": "b3ab2136e3fecc9820fc8d08bc1e65a3e06e360f",
+    "review_package_tree": "20b4855d31da5cf1810d65c6538b6421f043488a",
+    "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+    "size_bytes": 26601
+  },
+  "governance_consequence": "The completed independent review establishes the technical need for a separately governed canonical-schema-successor process. It does not itself authorize authoring or modifying that schema successor.",
+  "immutability_rule": "Exact V4 and the exact completed V4 human review remain immutable. Any later correction requires a separately governed successor.",
+  "independently_accepted_findings": {
+    "complete_losslessness_boundary_preserved": true,
+    "complete_v4_representation_policy_binding_preserved": true,
+    "governance_consequence_and_next_boundary": true,
+    "no_unauthorized_semantic_schema_or_materialization_action": true,
+    "portable_original_git_object_binding": true,
+    "scoped_frozen_schema_insufficiency_conclusion_supported": true,
+    "structural_obstruction_and_admissibility_preserved": true,
+    "v3_immutability_and_v4_successor_boundary": true,
+    "v3_rr10_self_review_target_correction": true,
+    "v3_substantive_proof_semantics_preserved": true
+  },
+  "next_boundary": "AUTHORIZE_CURL_CANONICAL_SCHEMA_SUCCESSOR_AUTHORING",
+  "record_id": "SVF-CURL-MAPPING-CONTRACT-V4-COMPLETED-HUMAN-REVIEW-APPROVAL",
+  "recorded_at_utc": "2026-08-20T14:55:04Z",
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_APPROVED",
+  "technical_interpretation": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_schema_modification_authorized": false,
+    "canonical_schema_successor_authorized": false,
+    "canonical_schema_successor_technically_required": true,
+    "curl_json_materialization_authorized": false,
+    "exact_v4_approved": true,
+    "positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "scoped_frozen_schema_insufficiency_conclusion_independently_approved": true
+  }
+}

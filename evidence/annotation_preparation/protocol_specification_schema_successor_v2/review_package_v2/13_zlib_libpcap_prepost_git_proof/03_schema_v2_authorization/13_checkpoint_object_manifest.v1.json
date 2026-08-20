@@ -1,0 +1,31 @@
+{
+  "commit": "dc6371ceaa189d0a39ae5a93e131cb85ebe328d8",
+  "config_tree": "81b8c745c8014897a530c0cfabaa9f0265e37e2a",
+  "label": "schema_v2_authorization",
+  "libpcap": {
+    "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "size_bytes": 47285
+  },
+  "parent": "9243848a5a255993a3994e4ef6af210fa0b001c6",
+  "parent_config_tree": "81b8c745c8014897a530c0cfabaa9f0265e37e2a",
+  "parent_libpcap": {
+    "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "size_bytes": 47285
+  },
+  "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+  "parent_root_tree": "410c93783687de2a9def845908ed2cd210e56bce",
+  "parent_zlib": {
+    "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+    "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+    "size_bytes": 21792
+  },
+  "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+  "root_tree": "9f415f735555fa83e73bf4eaaf3f64c9eb148ec9",
+  "zlib": {
+    "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+    "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+    "size_bytes": 21792
+  }
+}

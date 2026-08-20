@@ -1,0 +1,118 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-CORRECTIVE-REVIEW-PACKAGE-V2-AUTHORING-AUTHORIZATION",
+  "authorized_at_utc": "2026-08-20T16:54:06Z",
+  "authorized_successor": {
+    "authoring_authorized": true,
+    "human_re_review_required": true,
+    "package_kind": "CORRECTIVE_INDEPENDENT_REVIEW_PACKAGE_SUCCESSOR",
+    "package_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/review_package_v2",
+    "scope_limited_to_prior_rr02_rr09_evidence_findings": true
+  },
+  "basis": {
+    "completed_human_review_record_commit": "c2c1e28c235c158eb36759d167c3700bfd8042f4",
+    "completed_human_review_record_sha256": "043798215fe75ceaf61650118254b1cc3d6d046c1d292a487bf6698be090b2a6",
+    "completed_human_review_record_tree": "821fe30390f00c1034a13a38fd5fa9cc06eebc60",
+    "completed_human_review_sha256": "19e94cf48cbe9b5df537feb2abb350a80bfcef752e4da4d8bed3282077d67c98",
+    "overall_review_outcome": "REVISION_REQUIRED",
+    "passing_items_preserved": [
+      "SV2-RR01",
+      "SV2-RR03",
+      "SV2-RR04",
+      "SV2-RR05",
+      "SV2-RR06",
+      "SV2-RR07",
+      "SV2-RR08",
+      "SV2-RR10"
+    ],
+    "revision_required_items": [
+      "SV2-RR02",
+      "SV2-RR09"
+    ]
+  },
+  "corrective_review_semantics": {
+    "corrective_package_must_be_new_immutable_successor": true,
+    "corrective_re_review_must_issue_new_overall_decision": true,
+    "corrective_re_review_must_reassess_rr02": true,
+    "corrective_re_review_must_reassess_rr09": true,
+    "prior_eight_pass_decisions_remain_recorded_history": true,
+    "prior_human_review_must_not_be_edited_or_overwritten": true,
+    "prior_rr02_rr09_revision_required_decisions_remain_recorded_history": true
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "authorize_positive_v4_to_v2_mapping": false,
+    "create_curl_json": false,
+    "define_positive_v4_to_v2_mapping": false,
+    "execute_analyzer": false,
+    "execute_baseline": false,
+    "execute_repair": false,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "modify_completed_human_review_v1": false,
+    "modify_hash_contract": false,
+    "modify_review_package_v1": false,
+    "modify_schema_v2_candidate": false,
+    "supersede_decision_0019": false
+  },
+  "immutable_inputs": {
+    "completed_human_review_v1": {
+      "may_modify": false,
+      "sha256": "19e94cf48cbe9b5df537feb2abb350a80bfcef752e4da4d8bed3282077d67c98"
+    },
+    "review_package_v1": {
+      "commit": "41753d7f7b6f26836ff6c2a4b12bb13084f069e9",
+      "may_modify": false,
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/review_package_v1",
+      "tree": "143e16303264da0e1c97b1f68dc29c8ae64596e9"
+    },
+    "schema_v2_candidate": {
+      "may_modify": false,
+      "path": "config/schemas/protocol_specification.v2.schema.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    }
+  },
+  "next_boundary": "AUTHOR_SCHEMA_V2_CORRECTIVE_REVIEW_PACKAGE_V2_RR02_RR09_EVIDENCE_ONLY",
+  "required_corrective_evidence": {
+    "comparison_checkpoints": [
+      "dc6371ceaa189d0a39ae5a93e131cb85ebe328d8",
+      "5195de4842668fdd1ef587e4dbe969e53f80dd5c",
+      "41753d7f7b6f26836ff6c2a4b12bb13084f069e9",
+      "c2c1e28c235c158eb36759d167c3700bfd8042f4"
+    ],
+    "libpcap": {
+      "baseline_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "canonical_freeze_commit": "b1635239e29ff6dd9a3188e264c4e6a816977aae",
+      "canonical_path": "config/protocol_specifications/libpcap.json",
+      "expected_content_sha256": "370da6351b59f6134ae09477d8941d8ab119adad7f4230540758e09326b47c4f",
+      "expected_file_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73"
+    },
+    "protocol_specifications_tree_preflight": {
+      "completed_review_record": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "libpcap_freeze": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "review_package_v1": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "schema_v2_author_checkpoint": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "schema_v2_authorization": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "zlib_freeze": "3d0a6fcbeae4abcc089d630e06f6ce8e60d1972e"
+    },
+    "required_proof_forms": [
+      "exact canonical bytes",
+      "baseline SHA-256 values",
+      "pre/post SHA-256 equality",
+      "portable original Git commit objects",
+      "portable original Git root/config/protocol_specifications tree objects",
+      "portable original Git zlib/libpcap blob objects",
+      "commit-to-tree-to-file binding",
+      "baseline-to-checkpoint blob identity",
+      "reviewer-readable comparison manifest"
+    ],
+    "zlib": {
+      "baseline_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "canonical_freeze_commit": "e12adfe2d502f6915a094c2f39a46e426ddc0522",
+      "canonical_path": "config/protocol_specifications/zlib.json",
+      "expected_content_sha256": "3461269e60f3b824bef3c62335d24e9eda5552b1a939bea4c720983e39a25049",
+      "expected_file_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+    }
+  },
+  "status": "AUTHORIZED_FOR_CORRECTIVE_REVIEW_PACKAGE_V2_AUTHORING_RR02_RR09_EVIDENCE_ONLY"
+}

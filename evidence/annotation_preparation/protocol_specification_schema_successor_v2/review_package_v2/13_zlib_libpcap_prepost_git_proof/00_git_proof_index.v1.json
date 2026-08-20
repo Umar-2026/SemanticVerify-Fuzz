@@ -1,0 +1,50 @@
+{
+  "checkpoints": [
+    {
+      "commit": "e12adfe2d502f6915a094c2f39a46e426ddc0522",
+      "directory": "01_zlib_freeze",
+      "label": "zlib_freeze",
+      "parent": "60b83e9c3dc88c26b323d1661075f1201fe1615e"
+    },
+    {
+      "commit": "b1635239e29ff6dd9a3188e264c4e6a816977aae",
+      "directory": "02_libpcap_freeze",
+      "label": "libpcap_freeze",
+      "parent": "d1c97dcd2c94d396df25870e9547145f559398af"
+    },
+    {
+      "commit": "dc6371ceaa189d0a39ae5a93e131cb85ebe328d8",
+      "directory": "03_schema_v2_authorization",
+      "label": "schema_v2_authorization",
+      "parent": "9243848a5a255993a3994e4ef6af210fa0b001c6"
+    },
+    {
+      "commit": "5195de4842668fdd1ef587e4dbe969e53f80dd5c",
+      "directory": "04_schema_v2_author_checkpoint",
+      "label": "schema_v2_author_checkpoint",
+      "parent": "dc6371ceaa189d0a39ae5a93e131cb85ebe328d8"
+    },
+    {
+      "commit": "41753d7f7b6f26836ff6c2a4b12bb13084f069e9",
+      "directory": "05_review_package_v1",
+      "label": "review_package_v1",
+      "parent": "5195de4842668fdd1ef587e4dbe969e53f80dd5c"
+    },
+    {
+      "commit": "c2c1e28c235c158eb36759d167c3700bfd8042f4",
+      "directory": "06_completed_review_record",
+      "label": "completed_review_record",
+      "parent": "41753d7f7b6f26836ff6c2a4b12bb13084f069e9"
+    },
+    {
+      "commit": "bf6cf53d54c105353906f02c6fa117668b635eae",
+      "directory": "07_corrective_package_v2_authorization",
+      "label": "corrective_package_v2_authorization",
+      "parent": "c2c1e28c235c158eb36759d167c3700bfd8042f4"
+    }
+  ],
+  "libpcap_expected_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+  "libpcap_expected_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+  "zlib_expected_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+  "zlib_expected_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+}

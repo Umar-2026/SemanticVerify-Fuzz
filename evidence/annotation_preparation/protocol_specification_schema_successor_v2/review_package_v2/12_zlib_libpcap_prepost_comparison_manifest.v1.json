@@ -1,0 +1,229 @@
+{
+  "checkpoints": [
+    {
+      "commit": "e12adfe2d502f6915a094c2f39a46e426ddc0522",
+      "config_tree": "3d5f2b17c79a4bc1fe766bc44f94cff4c32aee04",
+      "label": "zlib_freeze",
+      "libpcap": null,
+      "parent": "60b83e9c3dc88c26b323d1661075f1201fe1615e",
+      "parent_config_tree": "420714398fe5b0ea9dec8dfa56be7ccd3223cf7f",
+      "parent_libpcap": null,
+      "parent_protocol_specifications_tree": null,
+      "parent_root_tree": "ff28e9dd6c5b8ebc8013ccba6b227b4ee1fe7f0b",
+      "parent_zlib": null,
+      "protocol_specifications_tree": "3d0a6fcbeae4abcc089d630e06f6ce8e60d1972e",
+      "root_tree": "b72c39af16af29f283b770006d87624a71047363",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    },
+    {
+      "commit": "b1635239e29ff6dd9a3188e264c4e6a816977aae",
+      "config_tree": "c81cb58f526a0fcf9cd79434a949b0af32515cca",
+      "label": "libpcap_freeze",
+      "libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent": "d1c97dcd2c94d396df25870e9547145f559398af",
+      "parent_config_tree": "c36da31ec00c6c62e538e4fa698cb25737bbf1cc",
+      "parent_libpcap": null,
+      "parent_protocol_specifications_tree": "3d0a6fcbeae4abcc089d630e06f6ce8e60d1972e",
+      "parent_root_tree": "2424bac5d7ed806947205fe2bd6fe27ee504112f",
+      "parent_zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      },
+      "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "root_tree": "f764c4b409b68b22b789f8ced35c2c3eb66a3d35",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    },
+    {
+      "commit": "dc6371ceaa189d0a39ae5a93e131cb85ebe328d8",
+      "config_tree": "81b8c745c8014897a530c0cfabaa9f0265e37e2a",
+      "label": "schema_v2_authorization",
+      "libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent": "9243848a5a255993a3994e4ef6af210fa0b001c6",
+      "parent_config_tree": "81b8c745c8014897a530c0cfabaa9f0265e37e2a",
+      "parent_libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "parent_root_tree": "410c93783687de2a9def845908ed2cd210e56bce",
+      "parent_zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      },
+      "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "root_tree": "9f415f735555fa83e73bf4eaaf3f64c9eb148ec9",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    },
+    {
+      "commit": "5195de4842668fdd1ef587e4dbe969e53f80dd5c",
+      "config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "label": "schema_v2_author_checkpoint",
+      "libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent": "dc6371ceaa189d0a39ae5a93e131cb85ebe328d8",
+      "parent_config_tree": "81b8c745c8014897a530c0cfabaa9f0265e37e2a",
+      "parent_libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "parent_root_tree": "9f415f735555fa83e73bf4eaaf3f64c9eb148ec9",
+      "parent_zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      },
+      "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "root_tree": "d4f91a83b02af04509712431883c3437685cd000",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    },
+    {
+      "commit": "41753d7f7b6f26836ff6c2a4b12bb13084f069e9",
+      "config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "label": "review_package_v1",
+      "libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent": "5195de4842668fdd1ef587e4dbe969e53f80dd5c",
+      "parent_config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "parent_libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "parent_root_tree": "d4f91a83b02af04509712431883c3437685cd000",
+      "parent_zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      },
+      "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "root_tree": "143e16303264da0e1c97b1f68dc29c8ae64596e9",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    },
+    {
+      "commit": "c2c1e28c235c158eb36759d167c3700bfd8042f4",
+      "config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "label": "completed_review_record",
+      "libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent": "41753d7f7b6f26836ff6c2a4b12bb13084f069e9",
+      "parent_config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "parent_libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "parent_root_tree": "143e16303264da0e1c97b1f68dc29c8ae64596e9",
+      "parent_zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      },
+      "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "root_tree": "821fe30390f00c1034a13a38fd5fa9cc06eebc60",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    },
+    {
+      "commit": "bf6cf53d54c105353906f02c6fa117668b635eae",
+      "config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "label": "corrective_package_v2_authorization",
+      "libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent": "c2c1e28c235c158eb36759d167c3700bfd8042f4",
+      "parent_config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "parent_libpcap": {
+        "blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+        "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+        "size_bytes": 47285
+      },
+      "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "parent_root_tree": "821fe30390f00c1034a13a38fd5fa9cc06eebc60",
+      "parent_zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      },
+      "protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "root_tree": "1c120d2385a58630ba617f0b51a676eb38b63dd4",
+      "zlib": {
+        "blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+        "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+        "size_bytes": 21792
+      }
+    }
+  ],
+  "claims": {
+    "later_governance_parent_checkpoint_pairs_preserve_both_artifacts": true,
+    "libpcap_byte_identity_from_own_freeze_through_corrective_authorization": true,
+    "libpcap_git_blob_identity_from_own_freeze_through_corrective_authorization": true,
+    "schema_v2_candidate_modified": false,
+    "zlib_byte_identity_from_own_freeze_through_corrective_authorization": true,
+    "zlib_git_blob_identity_from_own_freeze_through_corrective_authorization": true
+  },
+  "libpcap": {
+    "baseline_commit": "b1635239e29ff6dd9a3188e264c4e6a816977aae",
+    "canonical_path": "config/protocol_specifications/libpcap.json",
+    "expected_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "expected_content_sha256": "370da6351b59f6134ae09477d8941d8ab119adad7f4230540758e09326b47c4f",
+    "expected_file_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73"
+  },
+  "purpose": "Provide independently verifiable corrective evidence for prior SV2-RR02 and SV2-RR09 findings.",
+  "record_id": "SVF-SCHEMA-V2-RR02-RR09-ZLIB-LIBPCAP-PREPOST-COMPARISON",
+  "zlib": {
+    "baseline_commit": "e12adfe2d502f6915a094c2f39a46e426ddc0522",
+    "canonical_path": "config/protocol_specifications/zlib.json",
+    "expected_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+    "expected_content_sha256": "3461269e60f3b824bef3c62335d24e9eda5552b1a939bea4c720983e39a25049",
+    "expected_file_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+  }
+}

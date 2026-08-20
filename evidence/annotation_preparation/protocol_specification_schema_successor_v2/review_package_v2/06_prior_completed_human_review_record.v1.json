@@ -1,0 +1,92 @@
+{
+  "completed_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 8,
+      "REVISION_REQUIRED": 2
+    },
+    "decisions": {
+      "SV2-RR01": "PASS",
+      "SV2-RR02": "REVISION_REQUIRED",
+      "SV2-RR03": "PASS",
+      "SV2-RR04": "PASS",
+      "SV2-RR05": "PASS",
+      "SV2-RR06": "PASS",
+      "SV2-RR07": "PASS",
+      "SV2-RR08": "PASS",
+      "SV2-RR09": "REVISION_REQUIRED",
+      "SV2-RR10": "PASS"
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_human_review_v1/01_completed_schema_v2_human_review.REVISION_REQUIRED.v1.md",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "20 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "19e94cf48cbe9b5df537feb2abb350a80bfcef752e4da4d8bed3282077d67c98",
+    "size_bytes": 8404
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_materialization": false,
+    "decision_0019_supersession": false,
+    "hash_contract_modification": false,
+    "modify_schema_v2_candidate": false,
+    "patch_review_package_v1_in_place": false,
+    "positive_v4_to_v2_mapping": false,
+    "repair": false
+  },
+  "next_boundary": "AUTHORIZE_SCHEMA_V2_CORRECTIVE_REVIEW_PACKAGE_SUCCESSOR_FOR_RR02_RR09_ONLY",
+  "record_id": "SVF-PROTOCOL-SPECIFICATION-SCHEMA-V2-HUMAN-REVIEW-REVISION-REQUIRED-RECORD",
+  "recorded_at_utc": "2026-08-20T16:50:18Z",
+  "review_package_v1": {
+    "checksum_manifest_sha256": "560858b14dec0d3c693062547eab3a00a954ba08d4413696be3e0828151cf0c3",
+    "commit": "41753d7f7b6f26836ff6c2a4b12bb13084f069e9",
+    "immutable": true,
+    "manifest_sha256": "3bb3f044b4b8e3d62a84dfc621c3512cf064796ca58cd0422ad4bcde50f39ed0",
+    "patch_in_place_authorized": false,
+    "tree": "143e16303264da0e1c97b1f68dc29c8ae64596e9"
+  },
+  "review_target": {
+    "author_checkpoint_commit": "5195de4842668fdd1ef587e4dbe969e53f80dd5c",
+    "author_checkpoint_tree": "d4f91a83b02af04509712431883c3437685cd000",
+    "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "size_bytes": 43030
+  },
+  "revision_required_findings": {
+    "SV2-RR02": {
+      "finding": "Review Package V1 does not independently establish that the frozen zlib and libpcap canonical specification bytes were neither migrated nor rewritten across the relevant pre/post governance checkpoints.",
+      "required_correction": [
+        "Supply exact zlib canonical bytes and established baseline hash.",
+        "Supply exact libpcap canonical bytes and established baseline hash.",
+        "Supply independently verifiable pre/post Git-object evidence.",
+        "Bind protocol_specifications subtree/tree objects where required.",
+        "Allow reviewer to independently compare relevant parent/checkpoint state."
+      ]
+    },
+    "SV2-RR09": {
+      "finding": "Review Package V1 does not independently establish through byte or Git-object evidence that the frozen zlib and libpcap V1 canonical artifacts remained untouched.",
+      "required_correction": [
+        "Provide independent pre/post byte evidence for zlib.json.",
+        "Provide independent pre/post byte evidence for libpcap.json.",
+        "Provide Git-object/tree bindings sufficient to verify immutability."
+      ]
+    }
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_REVISION_REQUIRED",
+  "technical_interpretation": {
+    "corrective_review_package_successor_required": true,
+    "corrective_scope_limited_to_rr02_rr09_evidence_deficiencies": true,
+    "review_package_v1_must_remain_immutable": true,
+    "revision_is_review_package_evidence_scope": true,
+    "schema_v2_candidate_must_remain_immutable": true,
+    "schema_v2_candidate_rejected": false,
+    "schema_v2_candidate_requires_content_change": false,
+    "schema_v2_candidate_technically_approved": false
+  }
+}
