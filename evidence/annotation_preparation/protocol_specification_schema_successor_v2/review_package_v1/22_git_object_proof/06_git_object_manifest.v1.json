@@ -1,0 +1,10 @@
+{
+  "checkpoint_commit": "5195de4842668fdd1ef587e4dbe969e53f80dd5c",
+  "checkpoint_root_tree": "d4f91a83b02af04509712431883c3437685cd000",
+  "config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+  "schema_v2_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+  "schema_v2_path": "config/schemas/protocol_specification.v2.schema.json",
+  "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+  "schema_v2_size_bytes": 43030,
+  "schemas_tree": "b4046d983d58ebf7482d3b2db0de1d704f228a53"
+}
