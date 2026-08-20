@@ -1,0 +1,32 @@
+{
+  "checkpoint_commit": "eeffef65a0ab2c9982e0cb708376635b096fec07",
+  "git_object_hash_algorithm": "sha1",
+  "path_chain": [
+    {
+      "entry_name": "config",
+      "expected_object": "bb5b4b4e1c0cc695af56a47385f40b1a45e4189f",
+      "expected_type": "tree",
+      "parent_tree": "de149c84681855ca1b00f306df4f04cc6debe4d3"
+    },
+    {
+      "entry_name": "annotation",
+      "expected_object": "c354db29238056a4d34ac0546ed5bc10e4e723aa",
+      "expected_type": "tree",
+      "parent_tree": "bb5b4b4e1c0cc695af56a47385f40b1a45e4189f"
+    },
+    {
+      "entry_name": "curl_canonical_representation_mapping_contract.v3.json",
+      "expected_object": "000d7e3e811bf6f34821ac967d8a6c9f520e1388",
+      "expected_type": "blob",
+      "parent_tree": "c354db29238056a4d34ac0546ed5bc10e4e723aa"
+    }
+  ],
+  "privacy_scope": "Only the checkpoint commit object, tree objects along the target path, and exact target V3 blob are included. Unrelated repository blob contents are deliberately excluded.",
+  "proof_kind": "MINIMAL_ORIGINAL_GIT_OBJECT_PATH_PROOF",
+  "purpose": "Allow an external reviewer to recompute the original Git commit object ID, declared root tree, target path linkage, target blob object ID, exact target bytes, SHA-256, and size without access to unrelated repository contents.",
+  "root_tree": "de149c84681855ca1b00f306df4f04cc6debe4d3",
+  "target_blob": "000d7e3e811bf6f34821ac967d8a6c9f520e1388",
+  "target_repository_path": "config/annotation/curl_canonical_representation_mapping_contract.v3.json",
+  "target_sha256": "ef401d5d04656f67ce4148c5cc6848368a9d68449f1296c64189d1422eebdb97",
+  "target_size_bytes": 24750
+}

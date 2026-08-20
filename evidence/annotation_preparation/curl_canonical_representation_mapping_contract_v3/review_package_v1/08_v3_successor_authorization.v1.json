@@ -1,0 +1,98 @@
+{
+  "authorized_v3_target": {
+    "authoring_authorized": true,
+    "curl_json_materialization_authorized": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v3.json",
+    "self_approval_authorized": false
+  },
+  "completed_v2_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 8,
+      "REVISION_REQUIRED": 2
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "record_sha256": "945c8c0eb42a996cdb8777791c5d262cc3908b8c5f643af8479f56095222aed4",
+    "revision_required_items": [
+      "V2-RR01",
+      "V2-RR08"
+    ],
+    "sha256": "d688196db67da6cf9e359046ab612e78117fc54c9166122a9523729270df50d5"
+  },
+  "downstream_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "canonical_schema_modification": false,
+    "canonical_schema_successor_authoring": false,
+    "curl_json_materialization": false,
+    "positive_mapping_approval": false,
+    "repair": false
+  },
+  "exact_v4_binding": {
+    "immutable": true,
+    "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8"
+  },
+  "frozen_schema_binding": {
+    "immutable": true,
+    "modification_authorized": false,
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "successor_authorized": false
+  },
+  "immutability_policy": "Exact V2 remains immutable. Once V3 author checkpoint is committed, exact V3 also becomes immutable.",
+  "independent_review_requirement": {
+    "approval_must_not_be_synthetic": true,
+    "portable_git_evidence_required_in_review_handoff": true,
+    "required": true,
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "v3_author_checkpoint_required_before_review": true
+  },
+  "next_boundary": "AUTHOR_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V3",
+  "predecessor_v2": {
+    "author_checkpoint_commit": "9bc2d448cf2c08a728174090c3d819bbdb9e28f1",
+    "completed_review_record_commit": "b4da11e933964e1f5b279e132197051b5b2255d4",
+    "immutable": true,
+    "in_place_edit_authorized": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v2.json",
+    "review_package_commit": "6687d4ddaba7401756bd24e024f39223db79c33f",
+    "sha256": "f2badbc07895e8baff078a0ce617ceb6ff02d39c7634a9e38b3b8a46a18d811c"
+  },
+  "record_id": "SVF-CURL-CANONICAL-REPRESENTATION-MAPPING-CONTRACT-V3-SUCCESSOR-AUTHORIZATION",
+  "recorded_at_utc": "2026-08-20T12:45:44Z",
+  "rr01_future_review_package_requirement": {
+    "acceptable_evidence": "A read-only Git bundle or equivalent sealed Git-object package containing the V3 author checkpoint commit and reachable objects sufficient to independently verify the declared commit, tree, and exact V3 repository-path bytes.",
+    "local_repository_verification_already_passed_for_v2": true,
+    "portable_git_object_evidence_required": true,
+    "v2_human_rr01_decision_retroactively_changed": false
+  },
+  "rr08_required_corrective_scope": {
+    "complete_exact_v4_representation_policy_must_be_bound": true,
+    "complete_exact_v4_representation_policy_must_be_machine_checkably_accounted": true,
+    "explicit_ownership_sensitive_semantics_preserved": true,
+    "explicit_return_sensitive_semantics_preserved": true,
+    "preserve_all_valid_v2_proof_content": true,
+    "retain_64_rule_and_3_exit_obligation_accounting": true,
+    "retain_all_10_semantic_container_bindings": true,
+    "retain_first_class_unknown": true,
+    "retain_forward_accounting_requirement": true,
+    "retain_four_verdict_contract": true,
+    "retain_membership_sensitive_semantics": true,
+    "retain_path_sensitive_semantics": true,
+    "retain_reverse_accounting_requirement": true,
+    "retain_set_valued_state_reasoning": true
+  },
+  "semantic_non_authorizations": {
+    "api_surface_change": false,
+    "defect_taxonomy_change": false,
+    "machine_verdict_change": false,
+    "new_protocol_semantics": false,
+    "opaque_payload_packing": false,
+    "protocol_rule_addition": false,
+    "protocol_rule_removal": false,
+    "protocol_rule_strengthening": false,
+    "protocol_rule_weakening": false,
+    "source_evidence_change": false,
+    "synthetic_protocol_event_invention": false
+  },
+  "status": "AUTHORIZED_FOR_V3_CORRECTIVE_AUTHORING_ONLY"
+}

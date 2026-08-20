@@ -1,0 +1,15 @@
+{
+  "author_checkpoint_commit": "eeffef65a0ab2c9982e0cb708376635b096fec07",
+  "author_checkpoint_tree": "de149c84681855ca1b00f306df4f04cc6debe4d3",
+  "curl_json_created": false,
+  "exact_v3_sha256": "ef401d5d04656f67ce4148c5cc6848368a9d68449f1296c64189d1422eebdb97",
+  "exact_v3_size_bytes": 24750,
+  "independently_approved": false,
+  "package_id": "SVF-CURL-MAPPING-CONTRACT-V3-INDEPENDENT-REVIEW-PACKAGE-V1",
+  "portable_git_object_evidence_included": true,
+  "predecessor_v2_review_outcome": "REVISION_REQUIRED",
+  "rr08_author_level_correction": "COMPLETE",
+  "schema_successor_authorized": false,
+  "status": "INDEPENDENT_HUMAN_TECHNICAL_REVIEW_REQUIRED",
+  "v4_representation_policy_sha256": "dd645ad929e40bcfa2af2353817d55ad76596f464991f2417c4ac1b57c0be408"
+}

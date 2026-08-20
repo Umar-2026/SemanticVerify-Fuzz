@@ -1,0 +1,77 @@
+{
+  "evidence_quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "exact_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 8,
+      "REVISION_REQUIRED": 2
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "20 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "item_decisions": {
+      "V2-RR01": "REVISION_REQUIRED",
+      "V2-RR02": "PASS",
+      "V2-RR03": "PASS",
+      "V2-RR04": "PASS",
+      "V2-RR05": "PASS",
+      "V2-RR06": "PASS",
+      "V2-RR07": "PASS",
+      "V2-RR08": "REVISION_REQUIRED",
+      "V2-RR09": "PASS",
+      "V2-RR10": "PASS"
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "evidence/annotation_preparation/curl_canonical_representation_mapping_contract_v2/completed_human_review_v1/01_completed_v2_human_review.REVISION_REQUIRED.v1.md",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "d688196db67da6cf9e359046ab612e78117fc54c9166122a9523729270df50d5",
+    "size_bytes": 25643,
+    "synthetic_or_assistant_generated": false
+  },
+  "exact_v2_binding": {
+    "author_checkpoint_commit": "9bc2d448cf2c08a728174090c3d819bbdb9e28f1",
+    "author_checkpoint_tree": "9cb9b34bbeb45cc5916543a04e0f0dad8f54af50",
+    "immutable": true,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v2.json",
+    "review_package_commit": "6687d4ddaba7401756bd24e024f39223db79c33f",
+    "sha256": "f2badbc07895e8baff078a0ce617ceb6ff02d39c7634a9e38b3b8a46a18d811c"
+  },
+  "immutability_rule": "Exact V2 and exact completed human review remain immutable. Corrections require a separately authorized successor.",
+  "next_boundary": "AUTHORIZE_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V3_SUCCESSOR",
+  "record_id": "SVF-CURL-MAPPING-CONTRACT-V2-COMPLETED-HUMAN-REVIEW",
+  "recorded_at_utc": "2026-08-20T12:43:39Z",
+  "review_findings": {
+    "rr01": {
+      "human_decision": "REVISION_REQUIRED",
+      "local_followup_changes_human_decision": false,
+      "local_repository_followup_verification": "PASS",
+      "reason": "External handoff lacked source Git repository or Git bundle needed for independent commit/tree/object verification.",
+      "required_future_package_correction": "Include read-only Git repository evidence or a Git bundle containing the author checkpoint and reachable objects."
+    },
+    "rr08": {
+      "human_decision": "REVISION_REQUIRED",
+      "reason": "V2 formal required_losslessness_contract omitted explicit ownership-sensitive and return-sensitive preservation.",
+      "required_successor_correction": "A separately authorized successor must explicitly preserve ownership-sensitive and return-sensitive semantics and machine-checkably bind the complete approved V4 representation-policy boundary.",
+      "v2_in_place_edit_authorized": false
+    }
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_REVISION_REQUIRED",
+  "technical_interpretation": {
+    "canonical_schema_successor_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "exact_v2_approved": false,
+    "exact_v2_revision_required": true,
+    "positive_mapping_approved": false,
+    "schema_insufficiency_conclusion_rejected": false
+  }
+}
