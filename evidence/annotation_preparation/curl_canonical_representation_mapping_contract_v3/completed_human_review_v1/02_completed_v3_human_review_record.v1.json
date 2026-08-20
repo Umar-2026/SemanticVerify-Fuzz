@@ -1,0 +1,90 @@
+{
+  "evidence_quarantine": {
+    "analyzer_output_used": false,
+    "baseline_output_used": false,
+    "generated_driver_compiler_log_semantic_content_used": false,
+    "generated_driver_source_used": false,
+    "gold_labels_used": false,
+    "llm_review_output_used": false,
+    "raw_model_responses_used": false,
+    "repair_output_used": false,
+    "selected_sample_membership_used": false
+  },
+  "exact_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 9,
+      "REVISION_REQUIRED": 1
+    },
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "20 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "item_decisions": {
+      "V3-RR01": "PASS",
+      "V3-RR02": "PASS",
+      "V3-RR03": "PASS",
+      "V3-RR04": "PASS",
+      "V3-RR05": "PASS",
+      "V3-RR06": "PASS",
+      "V3-RR07": "PASS",
+      "V3-RR08": "PASS",
+      "V3-RR09": "PASS",
+      "V3-RR10": "REVISION_REQUIRED"
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "evidence/annotation_preparation/curl_canonical_representation_mapping_contract_v3/completed_human_review_v1/01_completed_v3_human_review.REVISION_REQUIRED.v1.md",
+    "reviewer_role_id": "Spec-Technical-Reviewer-1",
+    "sha256": "96afd2a552443ecbdb321f8087612a0771838216272cb8fd43d14f8b8e203b14",
+    "size_bytes": 19684,
+    "synthetic_or_assistant_generated": false
+  },
+  "exact_v3_binding": {
+    "author_checkpoint_commit": "eeffef65a0ab2c9982e0cb708376635b096fec07",
+    "author_checkpoint_tree": "de149c84681855ca1b00f306df4f04cc6debe4d3",
+    "immutable": true,
+    "in_place_edit_authorized": false,
+    "path": "config/annotation/curl_canonical_representation_mapping_contract.v3.json",
+    "review_package_commit": "bbe7431c1102e1f8667fe4bed9d39fd4618d9dff",
+    "sha256": "ef401d5d04656f67ce4148c5cc6848368a9d68449f1296c64189d1422eebdb97",
+    "size_bytes": 24750
+  },
+  "immutability_rule": "Exact V3 and exact completed V3 human review remain immutable. The V3-RR10 correction requires a separately authorized successor.",
+  "next_boundary": "AUTHORIZE_CURL_CANONICAL_REPRESENTATION_MAPPING_CONTRACT_V4_CORRECTIVE_SUCCESSOR",
+  "record_id": "SVF-CURL-MAPPING-CONTRACT-V3-COMPLETED-HUMAN-REVIEW",
+  "recorded_at_utc": "2026-08-20T13:53:50Z",
+  "review_findings": {
+    "V3-RR01": {
+      "decision": "PASS",
+      "predecessor_v2_rr01_portability_problem_resolved": true
+    },
+    "V3-RR03_to_V3-RR06": {
+      "complete_retained_semantic_accounting_verified": true,
+      "complete_v4_representation_policy_binding_verified": true,
+      "decision": "PASS",
+      "ownership_sensitive_preservation_verified": true,
+      "return_sensitive_preservation_verified": true
+    },
+    "V3-RR08": {
+      "decision": "PASS",
+      "scoped_schema_insufficiency_conclusion_supported": true
+    },
+    "V3-RR10": {
+      "actual_value": "Exact immutable V2 schema-insufficiency proof.",
+      "decision": "REVISION_REQUIRED",
+      "defect": "STALE_INTERNAL_INDEPENDENT_REVIEW_TARGET",
+      "required_correction": "A separately authorized corrective successor must unambiguously identify that exact successor artifact as the independent review target.",
+      "v3_in_place_edit_authorized": false
+    }
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_REVISION_REQUIRED",
+  "technical_interpretation": {
+    "canonical_schema_successor_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "exact_v3_approved": false,
+    "exact_v3_revision_required": true,
+    "positive_mapping_approved": false,
+    "schema_insufficiency_conclusion_rejected": false,
+    "v2_rr01_problem_resolved_in_v3": true,
+    "v2_rr08_problem_resolved_in_v3": true
+  }
+}
