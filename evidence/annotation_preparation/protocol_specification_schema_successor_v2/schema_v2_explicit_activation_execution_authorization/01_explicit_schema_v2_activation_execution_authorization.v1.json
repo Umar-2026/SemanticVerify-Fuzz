@@ -1,0 +1,75 @@
+{
+  "approval_chain": {
+    "activation_artifact_finalization_AF01_to_AF10_pass_count": 10,
+    "activation_artifact_finalization_fail_count": 0,
+    "activation_artifact_finalization_revision_required_count": 0,
+    "activation_governance_human_approved": true,
+    "schema_v2_candidate_human_approved": true,
+    "v2_hash_active_form_human_approved": true
+  },
+  "authorization_id": "SVF-SCHEMA-V2-EXPLICIT-ACTIVATION-EXECUTION-AUTHORIZATION-V1",
+  "authorization_type": "PRE_ACTIVATION_EXECUTION_ONLY",
+  "authorized_exact_installations": {
+    "v2_hash_contract": {
+      "destination_bytes_must_equal_source_bytes": true,
+      "destination_path": "config/protocol_content_hash_canonicalization.v2.json",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json",
+      "source_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "transformation_allowed": false
+    },
+    "version_dispatch": {
+      "destination_bytes_must_equal_source_bytes": true,
+      "destination_path": "config/protocol_specification_schema_version_dispatch.v1.json",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/02_active_form_version_dispatch.REVIEW_CANDIDATE.json",
+      "source_sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee",
+      "transformation_allowed": false
+    }
+  },
+  "baseline": {
+    "head": "7c32d7a51d2a93de254c1bdc52237b1896f924bf",
+    "parent": "47b4169c150f2ff85ea911bf743b8119c0a73558",
+    "tree": "989df870c66c5d3a0672583bce725be364ca0a37"
+  },
+  "current_effect": {
+    "active_v2_hash_contract_installed": false,
+    "active_version_dispatch_installed": false,
+    "decision_0019_successor_adopted": false,
+    "schema_v2_activated": false
+  },
+  "decision_0019_successor_adoption": {
+    "adoption_mode": "EXACT_SHA256_BOUND_ADOPTION_BY_REFERENCE_IN_EXPLICIT_ACTIVATION_DECISION",
+    "decision_0019_must_remain_byte_immutable": true,
+    "future_activation_decision_path": "documentation/decisions/0066-activate-schema-v2-and-adopt-decision-0019-successor.md",
+    "reviewed_active_form_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/05_active_form_decision_0019_successor.REVIEW_CANDIDATE.md",
+    "reviewed_active_form_sha256": "a96f9d8b6811a9f9170a18de9ff8be6f80a3704b9e6a13c59fbb88e423bec3bb"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_creation_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false
+  },
+  "future_activation_execution": {
+    "decision_0019_existing_path_must_not_be_modified": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "future_activation_record_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_execution_v1",
+    "libpcap_existing_path_must_not_be_modified": "config/protocol_specifications/libpcap.json",
+    "must_be_atomic_single_commit": true,
+    "required_new_active_paths": [
+      "config/protocol_content_hash_canonicalization.v2.json",
+      "config/protocol_specification_schema_version_dispatch.v1.json",
+      "documentation/decisions/0066-activate-schema-v2-and-adopt-decision-0019-successor.md"
+    ],
+    "schema_v2_existing_path_must_not_be_modified": "config/schemas/protocol_specification.v2.schema.json",
+    "v1_hash_existing_path_must_not_be_modified": "config/protocol_content_hash_canonicalization.v1.json",
+    "zlib_existing_path_must_not_be_modified": "config/protocol_specifications/zlib.json"
+  },
+  "next_boundary": "EXECUTE_EXPLICIT_SCHEMA_V2_ACTIVATION_UNDER_DECISION_0065",
+  "retired_verifier_constraints": {
+    "all_historical_initial_blank_verifiers_rerun": false,
+    "decision_0063_prepackage_authorization_verifier_rerun": false
+  },
+  "status": "AUTHORIZED_FOR_EXACT_FUTURE_ACTIVATION_EXECUTION_NOT_YET_ACTIVATED"
+}
