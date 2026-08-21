@@ -1,0 +1,82 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-RESIDUAL-LOSSLESSNESS-INSUFFICIENCY-PROOF-AUTHORIZATION-V1",
+  "authorization_type": "PRE_PROOF_AUTHORING_ONLY",
+  "authorized_future_artifacts": {
+    "independent_review_package_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v1",
+    "residual_insufficiency_proof_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_proof_v1"
+  },
+  "baseline": {
+    "head": "7b40f4385c2964edd95c4d90a0a3a1090c1b9ccd",
+    "parent": "aa4b85e74f56adab581faf379a09ee69ce1ec30f",
+    "tree": "82f5faa7a7b9c45a4d9633bf3720da4f09bc8116"
+  },
+  "current_effect": {
+    "curl_json_created": false,
+    "positive_mapping_defined": false,
+    "residual_insufficiency_proof_authored": false,
+    "schema_successor_authorized": false
+  },
+  "exact_inputs": {
+    "active_schema_v2": {
+      "path": "config/schemas/protocol_specification.v2.schema.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+    },
+    "active_v2_hash_contract": {
+      "path": "config/protocol_content_hash_canonicalization.v2.json",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9"
+    },
+    "active_version_dispatch": {
+      "path": "config/protocol_specification_schema_version_dispatch.v1.json",
+      "sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee"
+    },
+    "curl_v4": {
+      "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8"
+    },
+    "historical_mapping_contract_v4": {
+      "path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070"
+    }
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authorization": false,
+    "repair": false,
+    "schema_v2_modification": false,
+    "schema_v3_or_other_schema_successor_authoring": false
+  },
+  "mechanically_recomputed_preauthoring_findings": {
+    "current_schema_v2_sufficient_for_exact_v4_lossless_mapping": false,
+    "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+    "lossless_v4_to_v2_mapping_proven": false,
+    "schema_v2_explicit_enforcement_carrier_present": false,
+    "unresolved_representation_policy_fields": [
+      "normative_strength_uncertainty_must_not_be_silently_strengthened",
+      "resource_centered",
+      "synthetic_protocol_events_invented"
+    ],
+    "v4_enforcement_value_count": 15,
+    "v4_rule_record_count": 64,
+    "verdict_to_enforcement_ambiguous_group_count": 3
+  },
+  "next_boundary": "AUTHOR_RESIDUAL_SCHEMA_V2_LOSSLESSNESS_INSUFFICIENCY_PROOF_V1",
+  "proof_requirements": {
+    "account_for_all_three_unresolved_representation_policy_fields": true,
+    "bind_exact_active_v2_schema_sha256": true,
+    "bind_exact_v4_sha256": true,
+    "distinguish_resolved_historical_obstructions_from_residual_v2_gaps": true,
+    "include_forward_and_reverse_losslessness_boundary": true,
+    "independent_human_technical_review_required": true,
+    "preserve_historical_v1_insufficiency_proof": true,
+    "prove_or_refute_enforcement_reconstructibility": true
+  },
+  "retired_verifier_constraints": {
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "historical_initial_blank_verifiers_rerun": false
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_RESIDUAL_SCHEMA_V2_INSUFFICIENCY_PROOF_AND_PREPARE_INDEPENDENT_REVIEW_ONLY"
+}
