@@ -1,0 +1,112 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-HASH-CONTRACT-FINALIZATION-AUTHORIZATION-V1",
+  "authorized_active_form": {
+    "eventual_active_path": "config/protocol_content_hash_canonicalization.v2.json",
+    "exact_permitted_changes": [
+      {
+        "from": "REVIEW_CANDIDATE_NOT_ACTIVE",
+        "json_path": "$.status",
+        "to": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION"
+      },
+      {
+        "from": true,
+        "json_path": "$.draft_boundary.review_candidate_is_not_active_contract",
+        "to": false
+      },
+      {
+        "from": true,
+        "json_path": "$.draft_boundary.active_path_must_not_be_created_until_later_reviewed_activation_decision",
+        "to": false
+      }
+    ],
+    "expected_canonical_json_sha256": "8f90f681c8942471ee05afc8d1fbb12d8208858163bc7f59695c26a82d48c4f6",
+    "expected_review_candidate_file_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "expected_review_candidate_file_size_bytes": 3154,
+    "other_values_may_change": false,
+    "review_candidate_only": true,
+    "target_status": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION",
+    "top_level_keys_may_be_added": false,
+    "top_level_keys_may_be_removed": false
+  },
+  "authorized_at_utc": "2026-08-21T13:29:18Z",
+  "authorized_finalization_package": {
+    "authoring_authorized": true,
+    "human_review_required": true,
+    "must_contain_blank_independent_human_review_packet": true,
+    "must_contain_checksum_manifest": true,
+    "must_contain_exact_active_form_review_candidate": true,
+    "must_contain_machine_verified_semantic_diff": true,
+    "must_contain_self_contained_verifier": true,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1"
+  },
+  "basis": {
+    "activation_governance_human_approval_record_sha256": "a118cfd294f5a00fd0f8e124e464c791eaf97229c643b44b981882294191ef18",
+    "activation_governance_package_human_approved": true,
+    "activation_governance_review_state": "9 PASS / 0 REVISION_REQUIRED / 0 FAIL",
+    "repository_commit": "aec3bd047cf83a1ddb5244fb7c28c79389fcd64e",
+    "schema_v2_activated": false
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "activate_version_dispatch_policy": false,
+    "adopt_decision_0019_successor": false,
+    "authorize_analyzer_execution": false,
+    "authorize_analyzer_implementation": false,
+    "authorize_baseline_execution": false,
+    "authorize_positive_v4_to_v2_mapping": false,
+    "authorize_repair": false,
+    "create_active_v2_hash_contract": false,
+    "create_curl_json": false,
+    "define_positive_v4_to_v2_mapping": false,
+    "install_active_form_at_active_path": false,
+    "modify_libpcap": false,
+    "modify_schema_v2": false,
+    "modify_source_reviewed_hash_candidate": false,
+    "modify_v1_hash_contract": false,
+    "modify_zlib": false
+  },
+  "finalization_problem": {
+    "direct_byte_identical_install_safe": false,
+    "minimal_consistent_change_count": 3,
+    "reason": "The reviewed V2 hash-contract bytes retain an internal REVIEW_CANDIDATE_NOT_ACTIVE status and two candidate-only draft-boundary flags set to true. Installing those exact bytes at the active path would create an internally contradictory active artifact.",
+    "status_only_finalization_safe": false
+  },
+  "must_preserve_exactly": [
+    "$.contract_id",
+    "$.schema_version",
+    "$.reason",
+    "$.dependencies",
+    "$.canonical_json",
+    "$.schema_content_sha256_carriers",
+    "$.specification_content_sha256",
+    "$.provenance_content_sha256",
+    "$.computation_order",
+    "$.prohibited_effects",
+    "$.draft_boundary.final_hashes_computed_only_after_required_review_fields_are_fixed",
+    "$.draft_boundary.schema_conformance_alone_does_not_imply_freeze"
+  ],
+  "next_boundary": "AUTHOR_ACTIVE_SCHEMA_V2_HASH_CONTRACT_FINALIZATION_PACKAGE_V1",
+  "review_requirements": {
+    "HF01": "Verify exact source reviewed V2 hash-contract binding.",
+    "HF02": "Verify exactly three authorized scalar changes and no others.",
+    "HF03": "Verify target status semantics are temporally and operationally accurate.",
+    "HF04": "Verify all content-hash/canonicalization semantics remain unchanged.",
+    "HF05": "Verify exact approved Schema V2 dependency remains unchanged.",
+    "HF06": "Verify V1 hash contract and frozen V1 canonical artifacts remain unchanged.",
+    "HF07": "Verify active-path installation remains deferred until a later explicit activation decision.",
+    "HF08": "Verify no positive V4-to-V2 mapping, curl.json, analyzer, baseline, or repair authorization is introduced."
+  },
+  "source_reviewed_v2_hash_contract": {
+    "immutable": true,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/07_proposed_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+    "size_bytes": 3126,
+    "status": "REVIEW_CANDIDATE_NOT_ACTIVE"
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_ACTIVE_FORM_HASH_CONTRACT_FINALIZATION_PACKAGE_ONLY",
+  "target_status_semantics": {
+    "reason": "The V1 historical status FROZEN_BEFORE_FIRST_LIBRARY_SPECIFICATION_DRAFT must not be copied literally because library protocol drafting has already occurred. The proposed V2 status instead states the relevant true boundary: the V2 hash contract is frozen before the first Schema-V2 canonical protocol specification is created.",
+    "requires_independent_human_review": true,
+    "value": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "active_form_candidate": {
+    "canonical_json_sha256": "8f90f681c8942471ee05afc8d1fbb12d8208858163bc7f59695c26a82d48c4f6",
+    "exact_delta_count": 3,
+    "exact_diff_sha256": "6adc2bd96b229359666d07d78c6ff5c16ccb7a1724c07c7a5ba8fa12b39be732",
+    "installed": false,
+    "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "size_bytes": 3154
+  },
+  "active_v2_hash_contract_created": false,
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SCHEMA_V2_HASH_CONTRACT_ACTIVE_FORM",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "created_at_utc": "2026-08-21T13:37:01Z",
+  "curl_json_created": false,
+  "finalization_package": {
+    "checksum_manifest_sha256": "e8adcd3725a3623b05879bed89c176155794e71085f97615b0b054577cc42b37",
+    "commit": "96f210caec3b16380afdbd4bb0b231b701b3ae94",
+    "immutable": true,
+    "manifest_sha256": "b5c3ea2758b16f911947bc902e709b9026b9733e004d1e49b1389ff301c18f13",
+    "parent": "886f3869df4a9880fe2f61f54a56dafd65afe927",
+    "tree": "81bbcd3a3fbf2976245cb1b9c9e6b67e887b23dc"
+  },
+  "handoff_id": "SVF-SCHEMA-V2-HASH-FINALIZATION-HUMAN-REVIEW-HANDOFF-V1",
+  "initial_blank_state_verifier_rule": "Run exactly once before reviewer editing and never rerun after any reviewer edit.",
+  "manual_review_file": "manual_review/16_hash_finalization_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+  "manual_review_initial_sha256": "d7a464319d93df53834df0bcb1f966f67903ed05846c9a6319cc11d70009694a",
+  "manual_review_initial_size_bytes": 1095,
+  "positive_v4_to_v2_mapping_defined": false,
+  "postcommit_noninterference_proof": {
+    "active_v2_hash_absent": true,
+    "checksum_manifest_sha256": "ef196eb76b24564035fdbd90a7843658c8b6955af8b1eb1175d3b028c69be8f8",
+    "curl_json_absent": true,
+    "decision_0019_unchanged": true,
+    "decision_0059_unchanged": true,
+    "libpcap_unchanged": true,
+    "manifest_sha256": "7ca1e62e058053b5251c345b778f3e8f57008cb62171abbee8f02e59703b9b5a",
+    "package_authoring_changed_only_package_path": true,
+    "schema_v2_unchanged": true,
+    "v1_hash_contract_unchanged": true,
+    "zlib_unchanged": true
+  },
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_scope": "HF01_THROUGH_HF08",
+  "schema_v2_activated": false,
+  "status": "READY_FOR_REAL_INDEPENDENT_HUMAN_REVIEW",
+  "synthetic_human_decision": false
+}
