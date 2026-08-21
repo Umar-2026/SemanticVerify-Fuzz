@@ -1,0 +1,71 @@
+{
+  "activation_decision": {
+    "path": "documentation/decisions/0066-activate-schema-v2-and-adopt-decision-0019-successor.md",
+    "sha256": "6bd97e92f97f77d7e7e36bbc9a334ad115f1ebe8f8a2e9f3d0d2b2c361da65d2",
+    "size_bytes": 3253
+  },
+  "activation_effect": {
+    "active_v2_hash_contract_installed": true,
+    "active_version_dispatch_installed": true,
+    "decision_0019_successor_adopted": true,
+    "schema_v2_activated": true
+  },
+  "activation_type": "EXACT_REVIEWED_ARTIFACT_INSTALLATION_AND_SHA_BOUND_SUCCESSOR_ADOPTION",
+  "active_v2_hash_contract": {
+    "byte_identical": true,
+    "destination_path": "config/protocol_content_hash_canonicalization.v2.json",
+    "destination_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "installed": true,
+    "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "source_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9"
+  },
+  "active_version_dispatch": {
+    "byte_identical": true,
+    "destination_path": "config/protocol_specification_schema_version_dispatch.v1.json",
+    "destination_sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee",
+    "installed": true,
+    "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/02_active_form_version_dispatch.REVIEW_CANDIDATE.json",
+    "source_sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee"
+  },
+  "authorization": {
+    "authorization_commit": "aa4b85e74f56adab581faf379a09ee69ce1ec30f",
+    "authorization_sha256": "bceacdf4e892c6361fcd12941b0d9eda8a77a50ef0bce0ae276a49461644734d",
+    "decision": "documentation/decisions/0065-authorize-explicit-schema-v2-activation-execution.md"
+  },
+  "decision_0019_successor": {
+    "adopted_by_reference": true,
+    "historical_decision_0019_modified": false,
+    "reviewed_active_form_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/05_active_form_decision_0019_successor.REVIEW_CANDIDATE.md",
+    "reviewed_active_form_sha256": "a96f9d8b6811a9f9170a18de9ff8be6f80a3704b9e6a13c59fbb88e423bec3bb"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false
+  },
+  "immutable_existing_artifacts": {
+    "decision_0019_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "libpcap_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "v1_hash_contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "zlib_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+  },
+  "next_boundary": "ASSESS_POSITIVE_V4_TO_V2_MAPPING_READINESS",
+  "record_id": "SVF-SCHEMA-V2-ACTIVATION-EXECUTION-V1",
+  "retired_verifier_constraints": {
+    "decision_0063_prepackage_authorization_verifier_rerun": false,
+    "decision_0065_pre_activation_verifier_final_run_completed": true,
+    "decision_0065_pre_activation_verifier_must_never_run_again": true,
+    "historical_initial_blank_verifiers_rerun": false
+  },
+  "schema_v2": {
+    "activated": true,
+    "modified_by_activation": false,
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+  },
+  "status": "SCHEMA_V2_ACTIVE"
+}
