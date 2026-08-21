@@ -1,0 +1,102 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_RESIDUAL_SCHEMA_V2_INSUFFICIENCY_PROOF",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_type": "PRE_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "baseline": {
+    "head": "7ebdbaa024595156a7034abca4909d7065a81a45",
+    "parent": "eac9636a132c796bb7dbbbe2560c090722f43061",
+    "tree": "e6556fa58a68f1f5c29e6e72cef14e6404950203"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authorization": false,
+    "proof_v1_modification": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false
+  },
+  "immutable_author_checkpoint": {
+    "checkpoint_commit": "7ebdbaa024595156a7034abca4909d7065a81a45",
+    "checkpoint_tree": "e6556fa58a68f1f5c29e6e72cef14e6404950203",
+    "decision_0068": {
+      "path": "documentation/decisions/0068-record-residual-schema-v2-losslessness-insufficiency-proof-author-checkpoint.md",
+      "sha256": "62b145c402716864533da8e067518b92176b88de07367cdd2296e546c3936863"
+    },
+    "proof_json": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_proof_v1/01_residual_schema_v2_losslessness_insufficiency_proof.v1.json",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0"
+    },
+    "proof_md": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_proof_v1/02_residual_schema_v2_losslessness_insufficiency_proof.v1.md",
+      "sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b"
+    }
+  },
+  "mandatory_review_items": [
+    {
+      "question": "Does the review package bind exactly to immutable Proof V1 and its exact V4 and active Schema-V2 inputs?",
+      "review_item_id": "RI01"
+    },
+    {
+      "question": "Does Proof V1 correctly distinguish the four historical obstructions already addressed by active Schema V2 from the newly claimed residual gaps?",
+      "review_item_id": "RI02"
+    },
+    {
+      "question": "Is the R1 enforcement argument technically valid under the stated admissibility boundary, including 64/64 enforcement coverage, 15 distinct values, no explicit Schema-V2 enforcement carrier, and the reported non-derivability from verdict and defect-plus-verdict?",
+      "review_item_id": "RI03"
+    },
+    {
+      "question": "Is the proof careful not to overclaim information-theoretic impossibility, and does it correctly limit the conclusion to the existing V4 losslessness/admissibility contract?",
+      "review_item_id": "RI04"
+    },
+    {
+      "question": "Are the three residual representation-policy fields correctly identified as lacking explicit machine-checkable Schema-V2 policy carriers?",
+      "review_item_id": "RI05"
+    },
+    {
+      "question": "Does the proof correctly distinguish semantic_accounting/unit accountability from actual field-level lossless semantic encoding and reverse reconstruction?",
+      "review_item_id": "RI06"
+    },
+    {
+      "question": "Is the author-candidate conclusion that a positive V4-to-V2 mapping is not currently justified supported by the evidence presented?",
+      "review_item_id": "RI07"
+    },
+    {
+      "question": "If residual insufficiency is approved, is the appropriate next governance boundary assessment of a schema successor rather than immediate successor authoring, positive mapping, or curl.json materialization?",
+      "review_item_id": "RI08"
+    }
+  ],
+  "next_boundary": "AUTHOR_RESIDUAL_SCHEMA_V2_INSUFFICIENCY_INDEPENDENT_REVIEW_PACKAGE_V1",
+  "retired_verifier_constraints": {
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "decision_0067_pre_proof_authoring_verifier_rerun": false,
+    "historical_initial_blank_state_verifiers_rerun": false
+  },
+  "review_package_target": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v1",
+    "purpose": "INDEPENDENT_HUMAN_TECHNICAL_REVIEW_OF_EXACT_IMMUTABLE_PROOF_V1"
+  },
+  "review_requirements": {
+    "independent_human_technical_reviewer_required": true,
+    "initial_blank_state_verifier_must_run_at_most_once_before_reviewer_edit": true,
+    "proof_bytes_must_not_be_modified": true,
+    "review_package_must_be_self_contained": true,
+    "reviewer_must_edit_only_manual_review_copy_in_external_handoff": true,
+    "reviewer_must_not_be_replaced_by_synthetic_assistant_decision": true,
+    "reviewer_packet_must_have_blank_decision_fields_initially": true
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_EXACT_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_ONLY"
+}

@@ -1,0 +1,204 @@
+{
+  "RI01_binding_evidence": {
+    "exact_copies_present": true,
+    "proof_is_author_candidate": true
+  },
+  "RI02_historical_resolved_obstructions": {
+    "count": 4,
+    "important": "These historical obstructions are not reused as the residual insufficiency argument.",
+    "results": [
+      {
+        "active_v2_direct_carrier_test": "PASS",
+        "historical_witness_present": true,
+        "obstruction_id": "V2-O1-MEMBERSHIP-RELATION",
+        "schema_tokens": [
+          "\"relation_types\"",
+          "\"relation_bindings\"",
+          "\"membership_sensitivity\""
+        ]
+      },
+      {
+        "active_v2_direct_carrier_test": "PASS",
+        "historical_witness_present": true,
+        "obstruction_id": "V2-O2-FOUR-VERDICT-AND-JOIN-POLICY",
+        "schema_tokens": [
+          "\"verdict_vocabulary\"",
+          "\"verdict_aggregation\"",
+          "\"violation_may_when\""
+        ]
+      },
+      {
+        "active_v2_direct_carrier_test": "PASS",
+        "historical_witness_present": true,
+        "obstruction_id": "V2-O3-PATH-AND-SET-VALUED-REASONING",
+        "schema_tokens": [
+          "\"path_sensitivity\"",
+          "\"state_domain\"",
+          "\"join_operator\"",
+          "\"path_conditions\""
+        ]
+      },
+      {
+        "active_v2_direct_carrier_test": "PASS",
+        "historical_witness_present": true,
+        "obstruction_id": "V2-O4-STRUCTURED-RULE-PAYLOAD",
+        "schema_tokens": [
+          "\"semantic_rules\"",
+          "\"preconditions\"",
+          "\"effects\"",
+          "\"resource_bindings\"",
+          "\"relation_bindings\""
+        ]
+      }
+    ]
+  },
+  "RI03_enforcement_evidence": {
+    "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+    "defect_plus_verdict_to_enforcement_ambiguous_groups": [
+      {
+        "defect": "<NO_DEFECT>",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST_PREREQUISITE",
+          "MUST_RELEASE_RULE",
+          "MUST_RESOURCE_OWNERSHIP_FACT",
+          "SOURCE_GROUNDED",
+          "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+          "SOURCE_GROUNDED_RECOVERY",
+          "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+          "STATE_SENSITIVE"
+        ],
+        "verdict": "<NO_EXPLICIT_VERDICT>"
+      },
+      {
+        "defect": "<NO_DEFECT>",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "NON_ENFORCEABLE_RECOMMENDATION",
+          "SOURCE_GROUNDED",
+          "SOURCE_GROUNDED_EXCEPTION",
+          "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+          "SOURCE_GROUNDED_REPEATED_USE_ALLOWED"
+        ],
+        "verdict": "VALID"
+      },
+      {
+        "defect": "D1",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST"
+        ],
+        "verdict": "VIOLATION-MUST"
+      },
+      {
+        "defect": "D2",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST"
+        ],
+        "verdict": "VIOLATION-MUST"
+      }
+    ],
+    "distinct_enforcement_value_count": 15,
+    "distinct_enforcement_values": [
+      "FROZEN_V3_RULE",
+      "MUST",
+      "MUST_PREREQUISITE",
+      "MUST_RELEASE_RULE",
+      "MUST_RESOURCE_OWNERSHIP_FACT",
+      "NON_ENFORCEABLE_RECOMMENDATION",
+      "OUTSIDE_BOUNDED_CORE_DO_NOT_INVENT",
+      "SOURCE_GROUNDED",
+      "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+      "SOURCE_GROUNDED_EXCEPTION",
+      "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+      "SOURCE_GROUNDED_RECOVERY",
+      "SOURCE_GROUNDED_REPEATED_USE_ALLOWED",
+      "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+      "STATE_SENSITIVE"
+    ],
+    "explicit_schema_v2_enforcement_carrier_present": false,
+    "rule_record_count": 64,
+    "rules_with_enforcement": 64,
+    "verdict_to_enforcement_ambiguous_group_count": 3,
+    "verdict_to_enforcement_ambiguous_groups": {
+      "<NO_EXPLICIT_VERDICT>": [
+        "FROZEN_V3_RULE",
+        "MUST_PREREQUISITE",
+        "MUST_RELEASE_RULE",
+        "MUST_RESOURCE_OWNERSHIP_FACT",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+        "SOURCE_GROUNDED_RECOVERY",
+        "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+        "STATE_SENSITIVE"
+      ],
+      "VALID": [
+        "FROZEN_V3_RULE",
+        "NON_ENFORCEABLE_RECOMMENDATION",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_EXCEPTION",
+        "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+        "SOURCE_GROUNDED_REPEATED_USE_ALLOWED"
+      ],
+      "VIOLATION-MUST": [
+        "FROZEN_V3_RULE",
+        "MUST"
+      ]
+    }
+  },
+  "RI04_claim_scope": {
+    "abstract_information_theoretic_impossibility_claimed": false,
+    "claim": "INSUFFICIENCY_UNDER_EXISTING_EXACT_V4_LOSSLESSNESS_AND_ADMISSIBILITY_CONSTRAINTS"
+  },
+  "RI05_representation_policy_evidence": {
+    "unresolved_exact_field_count": 3,
+    "unresolved_fields": [
+      {
+        "explicit_schema_carrier_present": false,
+        "explicit_schema_token": "normative_strength",
+        "field": "normative_strength_uncertainty_must_not_be_silently_strengthened",
+        "source_value": true
+      },
+      {
+        "explicit_schema_carrier_present": false,
+        "explicit_schema_token": "resource_centered",
+        "field": "resource_centered",
+        "source_value": true
+      },
+      {
+        "explicit_schema_carrier_present": false,
+        "explicit_schema_token": "synthetic_protocol_events",
+        "field": "synthetic_protocol_events_invented",
+        "source_value": false
+      }
+    ]
+  },
+  "RI06_semantic_accounting_boundary": {
+    "accounting_itself_proves_lossless_encoding": false,
+    "forward_accounting_schema_supported": true,
+    "reverse_accounting_schema_supported": true
+  },
+  "RI07_positive_mapping_boundary": {
+    "positive_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_currently_justified_by_proof": false
+  },
+  "RI08_next_governance_boundary": {
+    "curl_json_materialization_currently_authorized": false,
+    "if_residual_insufficiency_human_approved": "ASSESS_SCHEMA_SUCCESSOR_GOVERNANCE",
+    "schema_successor_authoring_currently_authorized": false
+  },
+  "evidence_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-INDEPENDENT-REVIEW-EVIDENCE-V1",
+  "exact_package_inputs": {
+    "active_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "curl_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "historical_mapping_v4_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+    "proof_json_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+    "proof_md_sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b"
+  },
+  "human_review_state": {
+    "reviewer_decision_present": false,
+    "synthetic_reviewer_decision": false
+  },
+  "status": "REVIEW_EVIDENCE_ONLY_NO_HUMAN_DECISION"
+}
