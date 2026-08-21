@@ -1,0 +1,98 @@
+{
+  "closed_findings": {
+    "SV2-RR02": {
+      "evidence_conclusion": "The supplied zlib/libpcap canonical byte, content-hash, Git-object, path/tree, checkpoint, and immediate-parent evidence independently establishes non-migration/non-rewrite through the checkpoints evaluated by Corrective Review Package V2.",
+      "status": "CLOSED_BY_CORRECTIVE_REREVIEW_PASS"
+    }
+  },
+  "completed_corrective_human_rereview": {
+    "aggregate_counts": {
+      "FAIL": 0,
+      "PASS": 9,
+      "REVISION_REQUIRED": 1
+    },
+    "corrective_counts": {
+      "FAIL": 0,
+      "PASS": 1,
+      "REVISION_REQUIRED": 1
+    },
+    "corrective_decisions": {
+      "SV2-RR02-CORRECTIVE": "PASS",
+      "SV2-RR09-CORRECTIVE": "REVISION_REQUIRED"
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_corrective_human_rereview_v2/01_completed_schema_v2_corrective_human_rereview.REVISION_REQUIRED.v2.md",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "21 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "80852675eeb63508644e20caa4b7c6fdd5d73cd361bd9b072474e12521c3ac40",
+    "size_bytes": 5413
+  },
+  "corrective_review_package_v2": {
+    "checksum_manifest_sha256": "de583d227d8869bafda83219bab02c02ca718129d9209626e39dc1ed4f52fdcf",
+    "commit": "75dd1d9c5a3d01d72b76f9d76e8abb56113187e5",
+    "immutable": true,
+    "manifest_sha256": "68902be116599ff915b8efadcb58b4fbb3107d4abf35d330d723c42f69922bd4",
+    "parent": "bf6cf53d54c105353906f02c6fa117668b635eae",
+    "patch_in_place_authorized": false,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/review_package_v2",
+    "tree": "d2bc2301cea0ef87aeae7b37278ba1d5440aae57"
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "authorize_positive_v4_to_v2_mapping": false,
+    "create_curl_json": false,
+    "define_positive_v4_to_v2_mapping": false,
+    "execute_analyzer": false,
+    "execute_baseline": false,
+    "execute_repair": false,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "modify_hash_contract": false,
+    "modify_review_package_v2": false,
+    "modify_schema_v2_candidate": false,
+    "supersede_decision_0019": false
+  },
+  "next_boundary": "AUTHORIZE_SCHEMA_V2_CORRECTIVE_REVIEW_PACKAGE_V3_FOR_SV2_RR09_ONLY",
+  "record_id": "SVF-SCHEMA-V2-CORRECTIVE-HUMAN-REREVIEW-V2-REVISION-REQUIRED-RECORD",
+  "recorded_at_utc": "2026-08-21T11:29:22Z",
+  "remaining_open_findings": {
+    "SV2-RR09": {
+      "remaining_deficiency": "Corrective Review Package V2 does not itself contain portable checkpoint/immediate-parent proof for the package's own commit 75dd1d9c5a3d01d72b76f9d76e8abb56113187e5.",
+      "required_successor_evidence": [
+        "Original Package V2 commit object.",
+        "Immediate-parent commit object.",
+        "Package V2 checkpoint root tree.",
+        "Immediate-parent root tree.",
+        "Checkpoint and parent config trees.",
+        "Checkpoint and parent protocol_specifications trees.",
+        "Checkpoint and parent Schema V2 blob/path bindings.",
+        "Checkpoint and parent zlib.json blob/path bindings.",
+        "Checkpoint and parent libpcap.json blob/path bindings.",
+        "Portable verifier establishing commit-to-tree-to-path-to-blob identity.",
+        "Reviewer-readable proof that Package V2 authoring changed only review-package evidence and did not modify Schema V2, zlib.json, or libpcap.json."
+      ],
+      "status": "REVISION_REQUIRED_OPEN"
+    }
+  },
+  "review_target": {
+    "schema_v2_changed": false,
+    "schema_v2_path": "config/schemas/protocol_specification.v2.schema.json",
+    "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "schema_v2_size_bytes": 43030
+  },
+  "status": "COMPLETED_CORRECTIVE_HUMAN_REREVIEW_RECORDED_REVISION_REQUIRED",
+  "technical_interpretation": {
+    "corrective_review_package_v3_successor_required": true,
+    "remaining_revision_scope": "SV2-RR09-EVIDENCE-ONLY",
+    "review_package_v2_must_remain_immutable": true,
+    "review_package_v2_patch_in_place_allowed": false,
+    "schema_v2_candidate_approved": false,
+    "schema_v2_candidate_content_change_required": false,
+    "schema_v2_candidate_must_remain_immutable": true,
+    "schema_v2_candidate_rejected": false,
+    "sv2_rr02_corrective_closed": true,
+    "sv2_rr09_corrective_closed": false
+  }
+}

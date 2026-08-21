@@ -1,0 +1,246 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_PROTOCOL_SPECIFICATION_SCHEMA_V2_CANDIDATE",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "curl_json_created": false,
+  "files": [
+    {
+      "path": "00_package_scope.v3.md",
+      "sha256": "70eb41b95f457306c5f54245e9354463bed379a2369495dbdff1d455b4034ad8",
+      "size_bytes": 787
+    },
+    {
+      "path": "01_package_binding.v3.json",
+      "sha256": "064572bc97ee7dffeede06412ea21b484c31e3cfed4639abef34d968e52ced47",
+      "size_bytes": 1869
+    },
+    {
+      "path": "02_rr09_reviewer_packet.BLANK.v3.md",
+      "sha256": "af6cf4a9cd016e2adb518b400f3bd9e5478fcc911aac12a8af17c75f4d7ca507",
+      "size_bytes": 2144
+    },
+    {
+      "path": "03_exact_unchanged_protocol_specification_schema_v2_candidate.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "04_exact_frozen_zlib_canonical_specification.json",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "05_exact_frozen_libpcap_canonical_specification.json",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "06_prior_completed_corrective_rereview.REVISION_REQUIRED.v2.md",
+      "sha256": "80852675eeb63508644e20caa4b7c6fdd5d73cd361bd9b072474e12521c3ac40",
+      "size_bytes": 5413
+    },
+    {
+      "path": "07_prior_corrective_rereview_record.v2.json",
+      "sha256": "01486959b88c17e4f4259d8fd3d6b45177081b6d85aeb83784b6c221b7b514c9",
+      "size_bytes": 4517
+    },
+    {
+      "path": "08_decision_0054.md",
+      "sha256": "f26eb810708238677b3ff6a9e403d2c80e326beae1de32a3e856eba6b05f3da6",
+      "size_bytes": 3331
+    },
+    {
+      "path": "09_decision_0055.md",
+      "sha256": "af03d4a22cf9e045e4be7a5de24ac935672a989a9d7b146e98cf6c6d2f75565e",
+      "size_bytes": 3876
+    },
+    {
+      "path": "10_review_package_v3_authorization.v1.json",
+      "sha256": "720ee16cc35082ef347799f0b24a64b1ef3b7234086104eb471b78c1e568162e",
+      "size_bytes": 6846
+    },
+    {
+      "path": "11_review_package_v2_binding.v1.json",
+      "sha256": "c6baf730a29e7191d92703674af2147b951b8a8deac01ea440d35bdbc94a8d28",
+      "size_bytes": 1972
+    },
+    {
+      "path": "12_review_package_v2_manifest.v2.json",
+      "sha256": "68902be116599ff915b8efadcb58b4fbb3107d4abf35d330d723c42f69922bd4",
+      "size_bytes": 30083
+    },
+    {
+      "path": "13_review_package_v2_checksum_manifest.v2.SHA256SUMS",
+      "sha256": "de583d227d8869bafda83219bab02c02ca718129d9209626e39dc1ed4f52fdcf",
+      "size_bytes": 19659
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/00_proof_manifest.v1.json",
+      "sha256": "e07b7ca7fc985f8fd40868a1b79feecae7ce1e9724be15a165fb9a8a3988cc10",
+      "size_bytes": 26443
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/01_checkpoint_commit.raw",
+      "sha256": "19e5e1564a87c5f2632384cd4f8b9fa20dda13812a2d82d7ab21bf194b68c446",
+      "size_bytes": 280
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/02_parent_commit.raw",
+      "sha256": "10c614057f66ce82af57e836c010d49e5d473f14e48f189403a5b906a446bc2b",
+      "size_bytes": 288
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/03_checkpoint_root_tree.raw",
+      "sha256": "5cec7780add33b7686c3c0ad9bafcfdc01b287a9e866613a30c8d63a579233b9",
+      "size_bytes": 286
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/04_parent_root_tree.raw",
+      "sha256": "feffcfd383075b1f91c755497c3a049a9026ca868d3712e494791a470f52258d",
+      "size_bytes": 286
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/05_checkpoint_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/06_parent_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/07_checkpoint_schemas_tree.raw",
+      "sha256": "78c20e0e512c3d5ff5cc2aa66f1db9de608193465684eb232f93321a95849ce1",
+      "size_bytes": 547
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/08_parent_schemas_tree.raw",
+      "sha256": "78c20e0e512c3d5ff5cc2aa66f1db9de608193465684eb232f93321a95849ce1",
+      "size_bytes": 547
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/09_checkpoint_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/10_parent_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/11_checkpoint_evidence_tree.raw",
+      "sha256": "63816237f04a825145f1b7b068c2b17beebec7d2aef6f61d2a57cd20ef08ba67",
+      "size_bytes": 171
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/12_parent_evidence_tree.raw",
+      "sha256": "dfb3f12257de8c08598ae958d9fd50643f745db2961df1fdb4caab2ed0539680",
+      "size_bytes": 171
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/13_checkpoint_annotation_preparation_tree.raw",
+      "sha256": "80c20111acd7900ea8091e58799cbbff0705cf4642410f442b32d46f0ea561bb",
+      "size_bytes": 1362
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/14_parent_annotation_preparation_tree.raw",
+      "sha256": "af4a14700e1f72f4e15286d01a184f80a860b97510fb849e267738f36eec5434",
+      "size_bytes": 1362
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/15_checkpoint_schema_successor_root_tree.raw",
+      "sha256": "f041d5859488c9209003cbfcd16397b97a908629e3ae55d7f22bbcfc69b8f514",
+      "size_bytes": 701
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/16_parent_schema_successor_root_tree.raw",
+      "sha256": "4accf80cfa69668c4ef4383b46d1e14f9531427933ce00d3cc1b124f9ee0d72a",
+      "size_bytes": 657
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/17_checkpoint_review_package_v2_tree.raw",
+      "sha256": "ac25138f8f9d0b44c7fefd3253f0f13d7b00eaa4faa556bcbea2874ab3fa2023",
+      "size_bytes": 1341
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/18_checkpoint_schema_v2_blob.raw",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/19_parent_schema_v2_blob.raw",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/20_checkpoint_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/21_parent_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/22_checkpoint_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/23_parent_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/24_changed_paths.v1.txt",
+      "sha256": "8dd48172e8f34aa5460aff978df126387e5ac4dc4788410f82380b318490880f",
+      "size_bytes": 23095
+    },
+    {
+      "path": "14_package_v2_checkpoint_parent_git_proof/99_verify_package_v2_checkpoint_parent_proof.v1.py",
+      "sha256": "5f2b271897aa13aef0637884985e57df910f3e5eef2705621c26bf5261a77659",
+      "size_bytes": 10624
+    },
+    {
+      "path": "15_package_v2_checkpoint_parent_noninterference_report.v1.md",
+      "sha256": "5f8a0b67862b806d9b21ae9b37dfb017992c324d5e3c445b62a40426b9b1e0f9",
+      "size_bytes": 2125
+    },
+    {
+      "path": "16_verify_corrective_review_package_v3.v1.py",
+      "sha256": "86744a66a08c790c03e970ebed02e8e9a2aace4316c34a67cb68cd7a61400db0",
+      "size_bytes": 5799
+    }
+  ],
+  "human_decisions_initially_blank": true,
+  "human_review_scope": "SV2-RR09-ONLY",
+  "package_id": "SVF-SCHEMA-V2-CORRECTIVE-REVIEW-PACKAGE-V3-RR09-ONLY",
+  "package_v2_checkpoint_proof": {
+    "changed_path_scope_proof_included": true,
+    "checkpoint_commit": "75dd1d9c5a3d01d72b76f9d76e8abb56113187e5",
+    "parent_commit": "bf6cf53d54c105353906f02c6fa117668b635eae",
+    "portable_commit_tree_blob_proof_included": true
+  },
+  "positive_v4_to_v2_mapping_defined": false,
+  "postcommit_proof_must_not_modify_package_v3": true,
+  "postcommit_v3_noninterference_handoff_proof_required": true,
+  "prior_aggregate_review_state": "9 PASS / 1 REVISION_REQUIRED / 0 FAIL",
+  "schema_v2_activated": false,
+  "schema_v2_changed": false,
+  "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+  "scope": "SV2-RR09-EVIDENCE-ONLY",
+  "status": "READY_FOR_EXTERNAL_POSTCOMMIT_PROOF_THEN_HUMAN_REREVIEW",
+  "sv2_rr02_status": "PASS_CLOSED",
+  "sv2_rr09_status": "REVISION_REQUIRED_OPEN",
+  "synthetic_human_decision": false
+}

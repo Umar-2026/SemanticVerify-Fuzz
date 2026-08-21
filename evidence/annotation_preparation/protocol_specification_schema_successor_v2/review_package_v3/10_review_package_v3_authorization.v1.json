@@ -1,0 +1,129 @@
+{
+  "anti_recursion_handoff_requirement": {
+    "after_review_package_v3_commit": "Create a separate read-only external handoff proof for the exact Review Package V3 commit and its immediate parent without modifying Review Package V3.",
+    "enabled": true,
+    "postcommit_proof_must_not_modify_review_package_v3": true,
+    "reason": "A committed package cannot contain proof of its own future Git commit without creating a self-reference problem.",
+    "required_postcommit_handoff_checks": [
+      "Bind Review Package V3 commit and immediate parent.",
+      "Bind checkpoint and parent root trees.",
+      "Bind checkpoint and parent config trees.",
+      "Demonstrate checkpoint/parent config-tree identity.",
+      "Bind Schema V2 path/blob at checkpoint and parent.",
+      "Bind zlib.json path/blob at checkpoint and parent.",
+      "Bind libpcap.json path/blob at checkpoint and parent.",
+      "Demonstrate V3 authoring did not modify Schema V2, zlib.json, or libpcap.json.",
+      "Supply this proof to the human reviewer alongside immutable Review Package V3."
+    ]
+  },
+  "authorization_id": "SVF-SCHEMA-V2-CORRECTIVE-REVIEW-PACKAGE-V3-RR09-ONLY-AUTHORIZATION",
+  "authorized_at_utc": "2026-08-21T11:35:00Z",
+  "authorized_successor": {
+    "authoring_authorized": true,
+    "human_rereview_required": true,
+    "package_kind": "RR09_ONLY_CORRECTIVE_INDEPENDENT_REVIEW_PACKAGE_SUCCESSOR",
+    "package_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/review_package_v3",
+    "schema_v2_content_change_authorized": false,
+    "scope": "SV2-RR09-EVIDENCE-ONLY"
+  },
+  "basis": {
+    "aggregate_review_state": "9 PASS / 1 REVISION_REQUIRED / 0 FAIL",
+    "closed_item": "SV2-RR02",
+    "completed_corrective_rereview_record_sha256": "01486959b88c17e4f4259d8fd3d6b45177081b6d85aeb83784b6c221b7b514c9",
+    "completed_corrective_rereview_sha256": "80852675eeb63508644e20caa4b7c6fdd5d73cd361bd9b072474e12521c3ac40",
+    "decision_0054_commit": "72aa19f72f8adf951fd21e71523f3ac3542e25ae",
+    "decision_0054_tree": "3b06aa8647453c200c29a2e0fd043396bce2a1dd",
+    "remaining_open_item": "SV2-RR09",
+    "remaining_scope": "SV2-RR09-EVIDENCE-ONLY"
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "authorize_positive_v4_to_v2_mapping": false,
+    "create_curl_json": false,
+    "define_positive_v4_to_v2_mapping": false,
+    "execute_analyzer": false,
+    "execute_baseline": false,
+    "execute_repair": false,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "modify_hash_contract": false,
+    "modify_prior_human_reviews": false,
+    "modify_review_package_v1": false,
+    "modify_review_package_v2": false,
+    "modify_schema_v2_candidate": false,
+    "supersede_decision_0019": false
+  },
+  "immutable_inputs": {
+    "completed_corrective_human_rereview_v2": {
+      "may_modify": false,
+      "sha256": "80852675eeb63508644e20caa4b7c6fdd5d73cd361bd9b072474e12521c3ac40"
+    },
+    "review_package_v2": {
+      "commit": "75dd1d9c5a3d01d72b76f9d76e8abb56113187e5",
+      "may_modify": false,
+      "parent": "bf6cf53d54c105353906f02c6fa117668b635eae",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/review_package_v2",
+      "tree": "d2bc2301cea0ef87aeae7b37278ba1d5440aae57"
+    },
+    "schema_v2_candidate": {
+      "may_modify": false,
+      "path": "config/schemas/protocol_specification.v2.schema.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    }
+  },
+  "next_boundary": "AUTHOR_SCHEMA_V2_CORRECTIVE_REVIEW_PACKAGE_V3_FOR_SV2_RR09_ONLY",
+  "required_package_v2_checkpoint_proof": {
+    "changed_path_count": 133,
+    "changed_paths_all_within_review_package_v2": true,
+    "checkpoint_commit": "75dd1d9c5a3d01d72b76f9d76e8abb56113187e5",
+    "checkpoint_config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+    "checkpoint_libpcap_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "checkpoint_parent_config_tree_identical": true,
+    "checkpoint_parent_libpcap_blob_identical": true,
+    "checkpoint_parent_protocol_specifications_tree_identical": true,
+    "checkpoint_parent_schema_v2_blob_identical": true,
+    "checkpoint_parent_schemas_tree_identical": true,
+    "checkpoint_parent_zlib_blob_identical": true,
+    "checkpoint_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+    "checkpoint_root_tree": "d2bc2301cea0ef87aeae7b37278ba1d5440aae57",
+    "checkpoint_schema_v2_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "checkpoint_schemas_tree": "b4046d983d58ebf7482d3b2db0de1d704f228a53",
+    "checkpoint_zlib_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+    "immediate_parent_commit": "bf6cf53d54c105353906f02c6fa117668b635eae",
+    "immediate_parent_root_tree": "1c120d2385a58630ba617f0b51a676eb38b63dd4",
+    "parent_config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+    "parent_libpcap_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "parent_protocol_specifications_tree": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+    "parent_schema_v2_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "parent_schemas_tree": "b4046d983d58ebf7482d3b2db0de1d704f228a53",
+    "parent_zlib_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea"
+  },
+  "required_v3_evidence": [
+    "Exact immutable Package V2 commit object.",
+    "Exact immutable Package V2 immediate-parent commit object.",
+    "Checkpoint and parent root-tree objects.",
+    "Checkpoint and parent config-tree objects.",
+    "Checkpoint and parent schemas-tree objects.",
+    "Checkpoint and parent protocol_specifications-tree objects.",
+    "Checkpoint and parent Schema V2 blob objects.",
+    "Checkpoint and parent zlib.json blob objects.",
+    "Checkpoint and parent libpcap.json blob objects.",
+    "Portable commit-to-root-to-config-to-schemas-to-Schema-V2 proof.",
+    "Portable commit-to-root-to-config-to-protocol_specifications-to-zlib proof.",
+    "Portable commit-to-root-to-config-to-protocol_specifications-to-libpcap proof.",
+    "Reviewer-readable checkpoint-versus-parent comparison.",
+    "Reviewer-readable changed-path scope showing Package V2 commit changes are confined to review_package_v2.",
+    "Machine-verifiable proof that checkpoint and parent config trees are identical."
+  ],
+  "review_semantics": {
+    "approval_does_not_activate_schema_v2": true,
+    "if_rr09_passes": "Reviewer may issue overall APPROVE_PROTOCOL_SPECIFICATION_SCHEMA_V2_CANDIDATE.",
+    "new_human_rereview_scope": "SV2-RR09-ONLY",
+    "no_synthetic_human_decision": true,
+    "sv2_rr02_must_not_be_reopened": true,
+    "sv2_rr02_status": "PASS_CLOSED",
+    "sv2_rr09_requires_new_human_rereview": true
+  },
+  "status": "AUTHORIZED_FOR_CORRECTIVE_REVIEW_PACKAGE_V3_AUTHORING_SV2_RR09_EVIDENCE_ONLY"
+}
