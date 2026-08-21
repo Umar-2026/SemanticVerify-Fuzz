@@ -1,0 +1,96 @@
+{
+  "activation_governance_package": {
+    "checksum_manifest_sha256": "ef528e002fed0db3cb1faa99642898f3053cd3e4d326763d2cc8e26d028b82a7",
+    "commit": "30840f40d2b76d50ad543f43621641eb43016ad2",
+    "human_approved": true,
+    "immutable": true,
+    "manifest_sha256": "5338a5347ce73dbf6420e4c7eb5c1c87c0fbcee41598888d84c531034eedd71c",
+    "parent": "f48fe86761ed5687d7a6e311b5b617363b141b4c",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1",
+    "tree": "b36673ffb10c440ca5e6da77a9ef28cdb5b8cf9c"
+  },
+  "completed_human_review": {
+    "final_counts": {
+      "FAIL": 0,
+      "PASS": 9,
+      "REVISION_REQUIRED": 0
+    },
+    "overall_decision": "APPROVE_SCHEMA_V2_ACTIVATION_GOVERNANCE_PACKAGE",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_activation_governance_human_review_v1/01_completed_activation_governance_human_review.APPROVED.v1.md",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "21 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "2b5421a0466bdec575e87f035fb303c8ed1b610bc242c14a977870b4b87d2109",
+    "size_bytes": 7345
+  },
+  "governance_interpretation": {
+    "activation_governance_package_human_approved": true,
+    "active_v2_hash_contract_created": false,
+    "all_AG01_through_AG09_pass": true,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "decision_0019_modified_in_place": false,
+    "decision_0019_successor_adopted": false,
+    "decision_0019_superseded": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false,
+    "schema_v2_activation_authorized_by_this_record": false,
+    "schema_v2_candidate_human_approved": true
+  },
+  "next_boundary": "PREFLIGHT_SCHEMA_V2_ACTIVATION_DECISION",
+  "postcommit_noninterference_proof": {
+    "checksum_manifest_sha256": "d28336184b566c630dfe44bc9906daf4f985a2f72f1a6c0726c19f31d868567e",
+    "decision_0019_unchanged": true,
+    "libpcap_unchanged": true,
+    "manifest_sha256": "36724321570e9ab03f524d7aa905bb3322d6a20c5522ffc30047fbd04c72b029",
+    "package_authoring_changed_only_package_path": true,
+    "recorded_copy_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_activation_governance_human_review_v1/03_postcommit_package_noninterference_proof",
+    "schema_v2_unchanged": true,
+    "v1_hash_contract_unchanged": true,
+    "zlib_unchanged": true
+  },
+  "record_id": "SVF-SCHEMA-V2-ACTIVATION-GOVERNANCE-HUMAN-APPROVAL-V1",
+  "recorded_at_utc": "2026-08-21T13:17:37Z",
+  "required_next_governance": [
+    "Perform a read-only activation preflight against the exact approved activation-governance package and completed human approval record.",
+    "Only a later explicit activation decision may adopt the reviewed Decision-0019 successor/version-dispatch policy.",
+    "Only that later explicit activation decision may install or bind the exact reviewed Schema-V2 hash contract at its active path.",
+    "Schema V2 must remain inactive until that later activation decision passes all repository-bound preconditions.",
+    "Positive V4-to-V2 mapping remains a separate later governance boundary even after Schema V2 activation."
+  ],
+  "review_candidates": {
+    "decision_0019_successor": {
+      "adopted": false,
+      "approved_as_part_of_governance_package": true,
+      "sha256": "8665163eb5d4f7a8718ba3ed2d3973ba928fea85789c23696599a2d6ea02bbb3"
+    },
+    "proposed_v2_hash_contract": {
+      "approved_as_part_of_governance_package": true,
+      "installed_at_active_path": false,
+      "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+      "size_bytes": 3126
+    },
+    "version_dispatch_policy": {
+      "active": false,
+      "approved_as_part_of_governance_package": true,
+      "sha256": "5a91a9938af7029edff6b91b8b624b2f0712680d49fad3abd1be29e649944bce"
+    }
+  },
+  "review_item_state": {
+    "AG01": "PASS",
+    "AG02": "PASS",
+    "AG03": "PASS",
+    "AG04": "PASS",
+    "AG05": "PASS",
+    "AG06": "PASS",
+    "AG07": "PASS",
+    "AG08": "PASS",
+    "AG09": "PASS"
+  },
+  "status": "ACTIVATION_GOVERNANCE_PACKAGE_HUMAN_APPROVED_NOT_ACTIVATED"
+}

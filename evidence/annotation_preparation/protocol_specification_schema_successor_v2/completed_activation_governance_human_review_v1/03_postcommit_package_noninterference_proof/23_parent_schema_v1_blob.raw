@@ -1,0 +1,347 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://semanticverify-fuzz.invalid/schema/protocol-specification-1.0.0",
+  "title": "SemanticVerify-Fuzz protocol specification",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "specification_id",
+    "library",
+    "library_revision",
+    "resource_kind",
+    "states",
+    "initial_state",
+    "events",
+    "transitions",
+    "permitted_exit_states",
+    "obligations",
+    "provenance",
+    "author",
+    "reviewer",
+    "creation_date",
+    "freeze_date",
+    "content_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "specification_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "library": {
+      "type": "string",
+      "minLength": 1
+    },
+    "library_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_kind": {
+      "type": "string",
+      "minLength": 1
+    },
+    "states": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "initial_state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "events": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "event_id",
+          "event_kind",
+          "symbol_or_condition"
+        ],
+        "properties": {
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "event_kind": {
+            "enum": [
+              "API_CALL",
+              "BRANCH",
+              "FUNCTION_EXIT"
+            ]
+          },
+          "symbol_or_condition": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "transitions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "transition_id",
+          "from_states",
+          "event_id",
+          "to_states",
+          "return_predicate",
+          "ownership_effect"
+        ],
+        "properties": {
+          "transition_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_states": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_states": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "return_predicate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ownership_effect": {
+            "enum": [
+              "NONE",
+              "ACQUIRE",
+              "BORROW",
+              "TRANSFER_IN",
+              "TRANSFER_OUT",
+              "RELEASE",
+              "UNKNOWN"
+            ]
+          }
+        }
+      }
+    },
+    "permitted_exit_states": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "obligations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "rule_id",
+          "resource_kind",
+          "triggering_event_or_function_exit",
+          "required_pre_state_or_exit_condition",
+          "permitted_transitions",
+          "return_predicate",
+          "ownership_effect",
+          "cleanup_responsibility",
+          "defect_category",
+          "severity",
+          "source_evidence",
+          "specification_author",
+          "creation_date",
+          "freeze_date",
+          "library_revision",
+          "content_sha256"
+        ],
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resource_kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "triggering_event_or_function_exit": {
+            "type": "string",
+            "minLength": 1
+          },
+          "required_pre_state_or_exit_condition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "permitted_transitions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "return_predicate": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "ownership_effect": {
+            "enum": [
+              "NONE",
+              "ACQUIRE",
+              "BORROW",
+              "TRANSFER_IN",
+              "TRANSFER_OUT",
+              "RELEASE",
+              "UNKNOWN"
+            ]
+          },
+          "cleanup_responsibility": {
+            "type": "string",
+            "minLength": 1
+          },
+          "defect_category": {
+            "enum": [
+              "D1",
+              "D2",
+              "D3",
+              "D4",
+              "D5",
+              "D6",
+              "D7",
+              "D8"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "LOW",
+              "MEDIUM",
+              "HIGH",
+              "UNSPECIFIED"
+            ]
+          },
+          "source_evidence": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "specification_author": {
+            "type": "string",
+            "minLength": 1
+          },
+          "creation_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "freeze_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "library_revision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence_id",
+          "source_type",
+          "path_or_url",
+          "retrieval_date",
+          "quoted_or_paraphrased_rationale",
+          "content_sha256"
+        ],
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_type": {
+            "enum": [
+              "OFFICIAL_API_DOCUMENTATION",
+              "PUBLIC_HEADER",
+              "PINNED_IMPLEMENTATION_SOURCE",
+              "PINNED_UPSTREAM_TEST",
+              "PREDECLARED_UPSTREAM_EXAMPLE"
+            ]
+          },
+          "path_or_url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieval_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "quoted_or_paraphrased_rationale": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "creation_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "freeze_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  }
+}
