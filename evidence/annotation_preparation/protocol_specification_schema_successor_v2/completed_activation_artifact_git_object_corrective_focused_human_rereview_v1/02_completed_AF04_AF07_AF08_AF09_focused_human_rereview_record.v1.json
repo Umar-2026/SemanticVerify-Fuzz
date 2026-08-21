@@ -1,0 +1,62 @@
+{
+  "aggregate_AF01_to_AF10_state": {
+    "FAIL": 0,
+    "PASS": 10,
+    "REVISION_REQUIRED": 0
+  },
+  "approval_effect": {
+    "active_v2_hash_contract_installed": false,
+    "active_version_dispatch_installed": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "corrective_evidence_human_approved": true,
+    "curl_json_created": false,
+    "decision_0019_successor_adopted": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false
+  },
+  "closed_prior_pass_items": [
+    "AF01",
+    "AF02",
+    "AF03",
+    "AF05",
+    "AF06",
+    "AF10"
+  ],
+  "completed_review": {
+    "file": "01_completed_AF04_AF07_AF08_AF09_focused_human_rereview.v1.md",
+    "item_decisions": {
+      "AF04": "PASS",
+      "AF07": "PASS",
+      "AF08": "PASS",
+      "AF09": "PASS"
+    },
+    "overall_decision": "APPROVE_AF04_AF07_AF08_AF09_CORRECTIVE_EVIDENCE",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "2026-08-21",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "reviewer_stated_zip_sha256": "e165dab32a743bc94dbd93c31861387327c881c937cc16229326677aad1e9762",
+    "sha256": "1f531a54bce1c6f7a8aeeb9531a834fbf55bdc30b4242439bc48de79222fc170",
+    "size_bytes": 4438
+  },
+  "corrective_package": {
+    "checksum_sha256": "3179e8dfada39018c9c58bea433a46c52ff83112dff484a9c03d085f54ee14b0",
+    "commit": "47b4169c150f2ff85ea911bf743b8119c0a73558",
+    "manifest_sha256": "50e0cc638fc65b8f81fd766d7d1a2bca28001b1c819b529f8af7b1e729cdfa67",
+    "parent": "c24976218895e2a90d61cabefacdbb66b2f7d550",
+    "tree": "e3f86e3f33d01af1ad62ecf236b97eecb99207c5"
+  },
+  "decision_0063_authorization_commit": "c24976218895e2a90d61cabefacdbb66b2f7d550",
+  "next_boundary": "ASSESS_EXPLICIT_SCHEMA_V2_ACTIVATION_READINESS",
+  "record_id": "SVF-AF04-AF07-AF08-AF09-COMPLETED-FOCUSED-HUMAN-REREVIEW-RECORD-V1",
+  "record_type": "HISTORICAL_HUMAN_REVIEW_APPROVAL_RECORD_ONLY",
+  "retired_verifier_constraints": {
+    "decision_0063_prepackage_authorization_verifier_rerun": false,
+    "focused_initial_blank_verifier_rerun": false
+  },
+  "status": "AF01_TO_AF10_HUMAN_REVIEW_COMPLETE_10_PASS_RECORD_ONLY_NOT_ACTIVATED"
+}
