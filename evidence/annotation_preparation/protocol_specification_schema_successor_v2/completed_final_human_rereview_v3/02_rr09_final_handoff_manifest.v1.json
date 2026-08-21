@@ -1,0 +1,59 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_PROTOCOL_SPECIFICATION_SCHEMA_V2_CANDIDATE",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "created_at_utc": "2026-08-21T11:42:25Z",
+  "curl_json_created": false,
+  "handoff_id": "SVF-SCHEMA-V2-RR09-FINAL-CORRECTIVE-HUMAN-REREVIEW-HANDOFF",
+  "human_review_scope": "SV2-RR09-ONLY",
+  "initial_blank_state_verifier_rule": "Run once before human editing and never rerun after reviewer edit.",
+  "manual_review_file": "manual_review/02_rr09_reviewer_packet.MANUAL_REREVIEW_COPY.v3.md",
+  "manual_review_initial_sha256": "af6cf4a9cd016e2adb518b400f3bd9e5478fcc911aac12a8af17c75f4d7ca507",
+  "manual_review_initial_size_bytes": 2144,
+  "manual_review_initial_state": "BLANK",
+  "positive_v4_to_v2_mapping_defined": false,
+  "postcommit_v3_noninterference_proof": {
+    "changed_path_count": 44,
+    "changed_paths_all_within_review_package_v3": true,
+    "checkpoint_commit": "3b07d7e661a94f664dd37b5fd54f85231a5c70ff",
+    "checksum_manifest_sha256": "54e5de95c7a4ae74942d34a517088d25a7dc5eb813a800035fc11bdc2fe27aec",
+    "config_tree_identical": true,
+    "directory": "postcommit_v3_noninterference_proof",
+    "libpcap_identical": true,
+    "manifest_sha256": "106b80dc1baf94af95ef8af213d3ccebfbfc24d395c7ef2219889954cdd7f0de",
+    "parent_commit": "a48cab96025afa717c731a787104846272287856",
+    "proof_is_external_to_package_v3": true,
+    "proof_modifies_package_v3": false,
+    "schema_v2_identical": true,
+    "zlib_identical": true
+  },
+  "prior_review_state": {
+    "aggregate": "9 PASS / 1 REVISION_REQUIRED / 0 FAIL",
+    "sv2_rr02": "PASS_CLOSED",
+    "sv2_rr09": "REVISION_REQUIRED_OPEN"
+  },
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_package_v3": {
+    "checksum_manifest_sha256": "1daf9cacc46757ad974ce442ec147035871cbc0c253a0150ffaa54caa1415c5f",
+    "commit": "3b07d7e661a94f664dd37b5fd54f85231a5c70ff",
+    "immutable": true,
+    "manifest_sha256": "a60c44547acd42842b236e5e50560c2e2fc34edd3a2c3ce0ab8a52b788ac3ec9",
+    "parent": "a48cab96025afa717c731a787104846272287856",
+    "tree": "1393d344b39d79714d400112ed5d454fcf2a9d2f"
+  },
+  "review_target": {
+    "schema_v2_changed": false,
+    "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "schema_v2_size_bytes": 43030
+  },
+  "schema_v2_activated": false,
+  "status": "READY_FOR_REAL_HUMAN_REREVIEW_SV2_RR09_ONLY",
+  "synthetic_human_decision": false
+}
