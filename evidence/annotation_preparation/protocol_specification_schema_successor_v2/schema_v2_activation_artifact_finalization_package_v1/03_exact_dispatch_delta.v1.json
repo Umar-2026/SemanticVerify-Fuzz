@@ -1,0 +1,18 @@
+{
+  "all_other_json_values_identical": true,
+  "artifact": "Schema V2 version-dispatch active-form finalization",
+  "changes": [
+    {
+      "from": "REVIEW_CANDIDATE_NOT_ACTIVE",
+      "json_path": "$.status",
+      "to": "ACTIVE_UPON_EXPLICIT_SCHEMA_V2_ACTIVATION_DECISION"
+    }
+  ],
+  "exact_delta_count": 1,
+  "future_active_path": "config/protocol_specification_schema_version_dispatch.v1.json",
+  "future_active_path_created_by_package": false,
+  "source_sha256": "5a91a9938af7029edff6b91b8b624b2f0712680d49fad3abd1be29e649944bce",
+  "target_canonical_json_sha256": "2333c2521db84ddb347b23a956acebdc6ad713c61cc890b76d7b04d0b8d2fc7f",
+  "target_sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee",
+  "target_size_bytes": 1334
+}

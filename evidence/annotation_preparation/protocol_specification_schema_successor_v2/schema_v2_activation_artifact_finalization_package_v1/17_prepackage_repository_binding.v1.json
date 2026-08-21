@@ -1,0 +1,66 @@
+{
+  "authoring_checkpoint_state": {
+    "active_v2_hash_contract_absent": true,
+    "active_version_dispatch_policy_absent": true,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "curl_json_absent": true,
+    "decision_0019_successor_adopted": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false
+  },
+  "binding_id": "SVF-SCHEMA-V2-ACTIVATION-ARTIFACT-FINALIZATION-PREPACKAGE-BINDING-V1",
+  "checkpoint_commit": "6eba8a1fc69c0b1146e033b031f5948a245bd84b",
+  "checkpoint_config_tree": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+  "checkpoint_documentation_tree": "33adb6befe244d24ddfe90680d7388c98da4de05",
+  "checkpoint_parent": "3e9cc5706ba9975b8272733aecbec07ced06b411",
+  "checkpoint_tree": "67a80e37f8c94c2c5878f4ddde4da1943e7a5dc6",
+  "repository_artifacts": {
+    "approved_v2_hash_active_form": {
+      "git_blob": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9"
+    },
+    "decision_0019": {
+      "git_blob": "2b4f46282ab05ff41e2610facb3fb26aa697983b",
+      "sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9"
+    },
+    "decision_0061": {
+      "git_blob": "736b233b0eb76409f1c46b115b36cf3774ea4057"
+    },
+    "decision_0061_authorization": {
+      "git_blob": "30b10e99f827cc426da28bfb3cc76f29b5a4c630",
+      "sha256": "7751d101532a9abb1bd896d10601e0cda29352255d3bce5c1491c62a9d8d199a"
+    },
+    "hash_active_form_human_approval_record": {
+      "git_blob": "a114e47cbfdd41913d06ad741266dc78a103d7a9",
+      "sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a"
+    },
+    "libpcap": {
+      "git_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73"
+    },
+    "reviewed_decision_0019_successor": {
+      "git_blob": "59108efbaf48513de06a97421a304a432e2742d4",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/05_proposed_decision_0019_successor.REVIEW_CANDIDATE.md",
+      "sha256": "8665163eb5d4f7a8718ba3ed2d3973ba928fea85789c23696599a2d6ea02bbb3"
+    },
+    "reviewed_version_dispatch": {
+      "git_blob": "b1d557c432b944dad7a35da96db63d3148ad8b26",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/09_version_dispatch_policy.REVIEW_CANDIDATE.json",
+      "sha256": "5a91a9938af7029edff6b91b8b624b2f0712680d49fad3abd1be29e649944bce"
+    },
+    "schema_v2": {
+      "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+    },
+    "v1_hash_contract": {
+      "git_blob": "3ccba2ea7b9e43ebc0859901c05f211bbdbd400b",
+      "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f"
+    },
+    "zlib": {
+      "git_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+    }
+  }
+}

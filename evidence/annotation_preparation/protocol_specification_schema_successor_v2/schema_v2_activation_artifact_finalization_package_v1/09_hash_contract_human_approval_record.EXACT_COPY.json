@@ -1,0 +1,77 @@
+{
+  "approved_active_form": {
+    "canonical_json_sha256": "8f90f681c8942471ee05afc8d1fbb12d8208858163bc7f59695c26a82d48c4f6",
+    "exact_delta_count": 3,
+    "exact_delta_sha256": "6adc2bd96b229359666d07d78c6ff5c16ccb7a1724c07c7a5ba8fa12b39be732",
+    "human_approved": true,
+    "installed_at_active_path": false,
+    "repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "size_bytes": 3154,
+    "target_status": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION"
+  },
+  "completed_human_review": {
+    "HF01": "PASS",
+    "HF02": "PASS",
+    "HF03": "PASS",
+    "HF04": "PASS",
+    "HF05": "PASS",
+    "HF06": "PASS",
+    "HF07": "PASS",
+    "HF08": "PASS",
+    "final_counts": {
+      "FAIL": 0,
+      "PASS": 8,
+      "REVISION_REQUIRED": 0
+    },
+    "overall_decision": "APPROVE_SCHEMA_V2_HASH_CONTRACT_ACTIVE_FORM",
+    "review_date": "21 / August / 2026",
+    "reviewer_confirmation": "ARS",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "c1e0284dc6ca14dc1194c7afc7e280ac52f908eabe24c4f9567651f24717da67",
+    "size_bytes": 5952
+  },
+  "evidence_bindings": {
+    "decision_0019_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "finalization_authorization_sha256": "87ac9317e19bad653c5a820685ba4102cd87a959a9acae037331109b6bd63e47",
+    "finalization_package_checksum_sha256": "e8adcd3725a3623b05879bed89c176155794e71085f97615b0b054577cc42b37",
+    "finalization_package_manifest_sha256": "b5c3ea2758b16f911947bc902e709b9026b9733e004d1e49b1389ff301c18f13",
+    "handoff_manifest_sha256": "1466dc7845612e386596968abe4b7c475a9d38d8136ff6e93a7fe8ff1bc80a3d",
+    "postcommit_noninterference_checksum_sha256": "ef196eb76b24564035fdbd90a7843658c8b6955af8b1eb1175d3b028c69be8f8",
+    "postcommit_noninterference_manifest_sha256": "7ca1e62e058053b5251c345b778f3e8f57008cb62171abbee8f02e59703b9b5a",
+    "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "v1_hash_contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f"
+  },
+  "governance_interpretation": {
+    "active_v2_hash_contract_created": false,
+    "active_v2_hash_contract_installation_authorized_by_this_record": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "decision_0019_successor_adopted": false,
+    "decision_0019_superseded": false,
+    "hash_contract_active_form_human_approved": true,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false,
+    "schema_v2_activation_authorized_by_this_record": false,
+    "version_dispatch_policy_activated": false
+  },
+  "next_boundary": "PREFLIGHT_SCHEMA_V2_ACTIVATION_AFTER_HASH_FINALIZATION_HUMAN_APPROVAL",
+  "record_id": "SVF-SCHEMA-V2-HASH-CONTRACT-ACTIVE-FORM-HUMAN-APPROVAL-V1",
+  "recorded_at_utc": "2026-08-21T14:29:30Z",
+  "repository_basis": {
+    "active_form_blob_oid": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+    "commit": "96f210caec3b16380afdbd4bb0b231b701b3ae94",
+    "package_subtree_oid": "a0a0e45e5147b93fc9ab438322b34f083507599f",
+    "tree": "81bbcd3a3fbf2976245cb1b9c9e6b67e887b23dc"
+  },
+  "source_reviewed_v2_hash_contract": {
+    "immutable": true,
+    "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0"
+  },
+  "status": "SCHEMA_V2_HASH_CONTRACT_ACTIVE_FORM_HUMAN_APPROVED_NOT_INSTALLED_NOT_ACTIVATED"
+}
