@@ -1,0 +1,26 @@
+{
+  "all_other_values_identical": true,
+  "changes": [
+    {
+      "from": true,
+      "json_path": "$.draft_boundary.active_path_must_not_be_created_until_later_reviewed_activation_decision",
+      "to": false
+    },
+    {
+      "from": true,
+      "json_path": "$.draft_boundary.review_candidate_is_not_active_contract",
+      "to": false
+    },
+    {
+      "from": "REVIEW_CANDIDATE_NOT_ACTIVE",
+      "json_path": "$.status",
+      "to": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION"
+    }
+  ],
+  "diff_id": "SVF-SCHEMA-V2-HASH-CONTRACT-ACTIVE-FORM-EXACT-DELTA-V1",
+  "exact_delta_count": 3,
+  "source_sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+  "target_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+  "top_level_keys_added": [],
+  "top_level_keys_removed": []
+}

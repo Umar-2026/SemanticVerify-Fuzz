@@ -1,0 +1,223 @@
+{
+  "HF01_through_HF08_required": true,
+  "active_form_candidate_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+  "active_form_candidate_size_bytes": 3154,
+  "active_form_canonical_json_sha256": "8f90f681c8942471ee05afc8d1fbb12d8208858163bc7f59695c26a82d48c4f6",
+  "active_form_target_status": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION",
+  "active_v2_hash_contract_created": false,
+  "all_other_hash_contract_semantics_preserved": true,
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SCHEMA_V2_HASH_CONTRACT_ACTIVE_FORM",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "analyzer_authorized": false,
+  "baseline_authorized": false,
+  "basis_commit": "886f3869df4a9880fe2f61f54a56dafd65afe927",
+  "curl_json_created": false,
+  "decision_0019_successor_adopted": false,
+  "exact_delta_count": 3,
+  "files": [
+    {
+      "path": "00_package_scope.v1.md",
+      "sha256": "dce8bb784d9456e218859fab491c2b18d9ed4f04ca54d7e1959bda1cffb9c832",
+      "size_bytes": 713
+    },
+    {
+      "path": "01_finalization_binding.v1.json",
+      "sha256": "c80a08b1ead4653f7e81392da116ffc8125349efe89ec256933ec94862ce79ff",
+      "size_bytes": 1472
+    },
+    {
+      "path": "02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "size_bytes": 3154
+    },
+    {
+      "path": "03_exact_three_scalar_delta.v1.json",
+      "sha256": "6adc2bd96b229359666d07d78c6ff5c16ccb7a1724c07c7a5ba8fa12b39be732",
+      "size_bytes": 843
+    },
+    {
+      "path": "04_exact_source_reviewed_v2_hash_contract.json",
+      "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+      "size_bytes": 3126
+    },
+    {
+      "path": "05_exact_finalization_authorization.json",
+      "sha256": "87ac9317e19bad653c5a820685ba4102cd87a959a9acae037331109b6bd63e47",
+      "size_bytes": 5646
+    },
+    {
+      "path": "06_exact_decision_0059.md",
+      "sha256": "7284ce490179e044c1d5ccea9c55b3fe66f7d88b36f44a69eb3cbe089228b199",
+      "size_bytes": 4557
+    },
+    {
+      "path": "07_exact_activation_governance_human_approval_record.json",
+      "sha256": "a118cfd294f5a00fd0f8e124e464c791eaf97229c643b44b981882294191ef18",
+      "size_bytes": 4486
+    },
+    {
+      "path": "08_exact_approved_schema_v2.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "09_exact_frozen_v1_hash_contract.json",
+      "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "size_bytes": 3190
+    },
+    {
+      "path": "10_exact_frozen_v1_schema.json",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "size_bytes": 8047
+    },
+    {
+      "path": "11_exact_decision_0019.md",
+      "sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+      "size_bytes": 3498
+    },
+    {
+      "path": "12_exact_frozen_zlib_v1.json",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "13_exact_frozen_libpcap_v1.json",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "14_HF01_HF08_review_matrix.v1.json",
+      "sha256": "0ac5e955ac30f963326460a1cefa53dffaacb811f87bb2a8846a2ddcde990c91",
+      "size_bytes": 1563
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/00_prepackage_binding_manifest.v1.json",
+      "sha256": "4f26d550532f575b4bad112861bde69ece7ee07a6083bc56a8fbd8701f389aa8",
+      "size_bytes": 2921
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/01_basis_commit.raw",
+      "sha256": "253c76be3e63f57ca55694c8d6f0d5dda6961aed0c3183723717e6edcccb0649",
+      "size_bytes": 290
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/02_basis_root_tree.raw",
+      "sha256": "6a1cafe8d60690a52f1d6e9d68bc84839fc96a1fd67b5eceecc8970a79c1e26d",
+      "size_bytes": 286
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/03_config_tree.raw",
+      "sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "size_bytes": 1022
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/04_schemas_tree.raw",
+      "sha256": "78c20e0e512c3d5ff5cc2aa66f1db9de608193465684eb232f93321a95849ce1",
+      "size_bytes": 547
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/05_protocol_specifications_tree.raw",
+      "sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "size_bytes": 77
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/06_documentation_tree.raw",
+      "sha256": "848a288ff3509faa5b5ae202229460663f10d861c059563a83804fa4fab005fb",
+      "size_bytes": 128
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/07_decisions_tree.raw",
+      "sha256": "9d79789be7ae1ccdaa2a83dc3fde90957d6fd2b8b6ba04247be5f69d520b0068",
+      "size_bytes": 5312
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/08_evidence_tree.raw",
+      "sha256": "bdeea2f9635367300d7e749e7adaf53c5298f483bc274d0eb6e7d423fabb3c61",
+      "size_bytes": 171
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/09_annotation_preparation_tree.raw",
+      "sha256": "12c0a6e2696e8c56f5492f2322e6b86504b900317f84c7c42edfa83bac03a125",
+      "size_bytes": 1362
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/10_schema_successor_root_tree.raw",
+      "sha256": "d59ecc50b4e68f2cb862d7b3f60b685b6f15df23e6c3ab1bfde29760e6efafd6",
+      "size_bytes": 1231
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/11_source_hash_blob.raw",
+      "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+      "size_bytes": 3126
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/12_approval_blob.raw",
+      "sha256": "a118cfd294f5a00fd0f8e124e464c791eaf97229c643b44b981882294191ef18",
+      "size_bytes": 4486
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/13_schema_v2_blob.raw",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/14_schema_v1_blob.raw",
+      "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "size_bytes": 8047
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/15_hash_v1_blob.raw",
+      "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "size_bytes": 3190
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/16_decision_0019_blob.raw",
+      "sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+      "size_bytes": 3498
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/17_zlib_blob.raw",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "size_bytes": 21792
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/18_libpcap_blob.raw",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    {
+      "path": "15_prepackage_repository_binding_proof/99_verify_prepackage_hash_finalization_binding.v1.py",
+      "sha256": "db9486cbf17970a386291f3965a653dea5fd5472ca18bf0b44903a86b256e4dc",
+      "size_bytes": 4486
+    },
+    {
+      "path": "16_hash_finalization_reviewer_packet.BLANK.v1.md",
+      "sha256": "d7a464319d93df53834df0bcb1f966f67903ed05846c9a6319cc11d70009694a",
+      "size_bytes": 1095
+    },
+    {
+      "path": "17_verify_schema_v2_hash_contract_finalization_package.v1.py",
+      "sha256": "db879bc6a98551e14c166601275966ba9cb2602bed971b529c84e2278a0ce47a",
+      "size_bytes": 9720
+    }
+  ],
+  "human_review_fields_initially_blank": true,
+  "human_review_required_before_active_install": true,
+  "package_id": "SVF-SCHEMA-V2-HASH-CONTRACT-FINALIZATION-PACKAGE-V1",
+  "positive_v4_to_v2_mapping_defined": false,
+  "postcommit_package_noninterference_handoff_proof_required": true,
+  "postcommit_proof_must_not_modify_package": true,
+  "repair_authorized": false,
+  "schema_v2_activated": false,
+  "source_reviewed_contract_sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+  "status": "READY_FOR_INDEPENDENT_HUMAN_REVIEW_NOT_INSTALLED",
+  "version_dispatch_activated": false
+}

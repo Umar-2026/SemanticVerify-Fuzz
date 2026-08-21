@@ -1,0 +1,34 @@
+{
+  "HF01": {
+    "title": "Exact source binding",
+    "required_result": "The active-form candidate is derived from the exact previously reviewed V2 hash-contract source."
+  },
+  "HF02": {
+    "title": "Exact three-scalar delta",
+    "required_result": "Exactly three scalar values change and every other JSON value and key is preserved."
+  },
+  "HF03": {
+    "title": "Target-status semantic accuracy",
+    "required_result": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION truthfully describes the intended activation boundary."
+  },
+  "HF04": {
+    "title": "Hash/canonicalization semantic preservation",
+    "required_result": "Canonical JSON rules, content-hash carrier accounting, specification hashing, provenance hashing, computation order, and prohibited effects remain unchanged."
+  },
+  "HF05": {
+    "title": "Schema V2 dependency preservation",
+    "required_result": "The exact approved Schema V2 path and SHA-256 remain unchanged."
+  },
+  "HF06": {
+    "title": "Frozen V1 non-interference",
+    "required_result": "The V1 hash contract, V1 schema, zlib, and libpcap remain unchanged."
+  },
+  "HF07": {
+    "title": "Installation remains deferred",
+    "required_result": "This package does not create the active V2 hash-contract path or activate Schema V2; installation requires a later explicit activation decision."
+  },
+  "HF08": {
+    "title": "No downstream side effects",
+    "required_result": "No positive V4-to-V2 mapping, curl.json creation, analyzer implementation/execution, baseline execution, or repair is authorized."
+  }
+}

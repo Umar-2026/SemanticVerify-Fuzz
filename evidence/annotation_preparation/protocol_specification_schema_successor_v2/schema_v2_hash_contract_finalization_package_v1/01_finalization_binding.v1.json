@@ -1,0 +1,30 @@
+{
+  "package_id": "SVF-SCHEMA-V2-HASH-CONTRACT-FINALIZATION-PACKAGE-V1",
+  "status": "READY_FOR_INDEPENDENT_HUMAN_REVIEW_NOT_INSTALLED",
+  "basis_commit": "886f3869df4a9880fe2f61f54a56dafd65afe927",
+  "basis_tree": "6465e345a5f7cb308d13404841cfb4af48fe06ba",
+  "source_reviewed_contract": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/07_proposed_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+    "size_bytes": 3126,
+    "status": "REVIEW_CANDIDATE_NOT_ACTIVE",
+    "immutable": true
+  },
+  "authorized_active_form": {
+    "target_status": "FROZEN_BEFORE_FIRST_SCHEMA_V2_CANONICAL_SPECIFICATION",
+    "expected_file_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "expected_file_size_bytes": 3154,
+    "expected_canonical_json_sha256": "8f90f681c8942471ee05afc8d1fbb12d8208858163bc7f59695c26a82d48c4f6",
+    "exact_delta_count": 3,
+    "installed_at_active_path": false
+  },
+  "active_path": "config/protocol_content_hash_canonicalization.v2.json",
+  "active_path_created": false,
+  "schema_v2_activated": false,
+  "decision_0019_successor_adopted": false,
+  "version_dispatch_activated": false,
+  "positive_v4_to_v2_mapping_defined": false,
+  "curl_json_created": false,
+  "human_review_required": true,
+  "postcommit_package_noninterference_handoff_proof_required": true
+}

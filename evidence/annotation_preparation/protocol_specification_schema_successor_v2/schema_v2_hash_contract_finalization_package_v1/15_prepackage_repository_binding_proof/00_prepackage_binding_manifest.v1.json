@@ -1,0 +1,48 @@
+{
+  "active_v2_hash_absent": true,
+  "basis_commit": "886f3869df4a9880fe2f61f54a56dafd65afe927",
+  "basis_root_tree": "6465e345a5f7cb308d13404841cfb4af48fe06ba",
+  "blob_oids": {
+    "approval": "fd675cf749476bb783dcccf8006c4f765599f7cd",
+    "decision_0019": "2b4f46282ab05ff41e2610facb3fb26aa697983b",
+    "hash_v1": "3ccba2ea7b9e43ebc0859901c05f211bbdbd400b",
+    "libpcap": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "schema_v1": "228e09c7e06a037a556586d7290bb3d6ae621a38",
+    "schema_v2": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "source_hash": "b8d7bda44831dcd6913d5359b97358f2bf65713b",
+    "zlib": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea"
+  },
+  "curl_json_absent": true,
+  "expected_sha256": {
+    "approval": "a118cfd294f5a00fd0f8e124e464c791eaf97229c643b44b981882294191ef18",
+    "decision_0019": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "hash_v1": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "libpcap": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "schema_v1": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "schema_v2": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "source_hash": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+    "zlib": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+  },
+  "file_paths": {
+    "approval": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_activation_governance_human_review_v1/04_completed_activation_governance_human_approval_record.v1.json",
+    "decision_0019": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "hash_v1": "config/protocol_content_hash_canonicalization.v1.json",
+    "libpcap": "config/protocol_specifications/libpcap.json",
+    "schema_v1": "config/schemas/protocol_specification.schema.json",
+    "schema_v2": "config/schemas/protocol_specification.v2.schema.json",
+    "source_hash": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/07_proposed_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "zlib": "config/protocol_specifications/zlib.json"
+  },
+  "finalization_package_absent": true,
+  "proof_id": "SVF-SCHEMA-V2-HASH-FINALIZATION-PREPACKAGE-BINDING-V1",
+  "tree_oids": {
+    "annotation_preparation": "e306e5ce6e9b999f613dfd809f5fb69a384901eb",
+    "config": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+    "decisions": "4b3ac1ec5d11a3dec5f03c187510b7a06834fbb4",
+    "documentation": "df92f5982daffe4b15d36a362e5557301c678c56",
+    "evidence": "65e3db55718e8bfe6cfcb0da073fe7a1fad5b949",
+    "protocol_specifications": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+    "schema_successor_root": "fa8f774e162f755561473518922fc942bda74496",
+    "schemas": "b4046d983d58ebf7482d3b2db0de1d704f228a53"
+  }
+}
