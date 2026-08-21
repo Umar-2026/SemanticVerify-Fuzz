@@ -1,0 +1,28 @@
+{
+  "policy_id": "SVF-PROTOCOL-SCHEMA-VERSION-DISPATCH-V1",
+  "status": "REVIEW_CANDIDATE_NOT_ACTIVE",
+  "canonical_root": "config/protocol_specifications/",
+  "dispatch": {
+    "1.0.0": {
+      "schema_path": "config/schemas/protocol_specification.schema.json",
+      "schema_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+      "hash_contract_path": "config/protocol_content_hash_canonicalization.v1.json",
+      "hash_contract_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "existing_frozen_artifacts_remain_unchanged": true
+    },
+    "2.0.0": {
+      "schema_path": "config/schemas/protocol_specification.v2.schema.json",
+      "schema_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "hash_contract_path": "config/protocol_content_hash_canonicalization.v2.json",
+      "eligible_only_after_separate_reviewed_activation": true
+    }
+  },
+  "unsupported_or_missing_schema_version": "REJECT",
+  "heuristic_fallback_between_schema_versions": false,
+  "migration_of_existing_v1_artifacts": false,
+  "positive_v4_to_v2_mapping_implied": false,
+  "curl_json_creation_implied": false,
+  "analyzer_authorization_implied": false,
+  "baseline_authorization_implied": false,
+  "repair_authorization_implied": false
+}

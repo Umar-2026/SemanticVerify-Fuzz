@@ -1,0 +1,604 @@
+{
+  "manifest_id": "SVF-AF04-AF07-AF08-AF09-RAW-GIT-OBJECT-MANIFEST-V1",
+  "object_count": 41,
+  "object_hash_algorithm": "sha1",
+  "object_type_counts": {
+    "blob": 22,
+    "commit": 2,
+    "tree": 17
+  },
+  "objects": [
+    {
+      "expected_git_oid": "07e954000af70ccaa2704bee52dd22a9253fd5bb",
+      "file": "raw_git_objects/blob/07e954000af70ccaa2704bee52dd22a9253fd5bb.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/17_prepackage_repository_binding.v1.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/17_prepackage_repository_binding.v1.json"
+      ],
+      "raw_content_sha256": "f4eb7f410f5ea7d1369455df302e264dc4e1a38ab086fbe0fe7d37d0a4bda48a",
+      "raw_content_size": 3149
+    },
+    {
+      "expected_git_oid": "19d952da5b150762c98ddf8da63b3fee9b56340e",
+      "file": "raw_git_objects/blob/19d952da5b150762c98ddf8da63b3fee9b56340e.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/18_AF01_AF10_review_matrix.v1.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/18_AF01_AF10_review_matrix.v1.md"
+      ],
+      "raw_content_sha256": "775044b85068d178823f156b90a7c649e63ce71aaa2d570c6b819e50adfceab9",
+      "raw_content_size": 1448
+    },
+    {
+      "expected_git_oid": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "file": "raw_git_objects/blob/245fc02f538c21cff5de25f4a6a3c297e915e40f.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/12_schema_v2.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/12_schema_v2.EXACT_COPY.json",
+        "checkpoint_core:schema_v2:target_blob:config/schemas/protocol_specification.v2.schema.json",
+        "parent_core:schema_v2:target_blob:config/schemas/protocol_specification.v2.schema.json"
+      ],
+      "raw_content_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "raw_content_size": 43030
+    },
+    {
+      "expected_git_oid": "2b4f46282ab05ff41e2610facb3fb26aa697983b",
+      "file": "raw_git_objects/blob/2b4f46282ab05ff41e2610facb3fb26aa697983b.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/14_decision_0019.EXACT_COPY.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/14_decision_0019.EXACT_COPY.md",
+        "checkpoint_core:decision_0019:target_blob:documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+        "parent_core:decision_0019:target_blob:documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md"
+      ],
+      "raw_content_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+      "raw_content_size": 3498
+    },
+    {
+      "expected_git_oid": "30b10e99f827cc426da28bfb3cc76f29b5a4c630",
+      "file": "raw_git_objects/blob/30b10e99f827cc426da28bfb3cc76f29b5a4c630.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/10_decision_0061_authorization.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/10_decision_0061_authorization.EXACT_COPY.json"
+      ],
+      "raw_content_sha256": "7751d101532a9abb1bd896d10601e0cda29352255d3bce5c1491c62a9d8d199a",
+      "raw_content_size": 5891
+    },
+    {
+      "expected_git_oid": "3ccba2ea7b9e43ebc0859901c05f211bbdbd400b",
+      "file": "raw_git_objects/blob/3ccba2ea7b9e43ebc0859901c05f211bbdbd400b.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/13_v1_hash_contract.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/13_v1_hash_contract.EXACT_COPY.json",
+        "checkpoint_core:v1_hash_contract:target_blob:config/protocol_content_hash_canonicalization.v1.json",
+        "parent_core:v1_hash_contract:target_blob:config/protocol_content_hash_canonicalization.v1.json"
+      ],
+      "raw_content_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "raw_content_size": 3190
+    },
+    {
+      "expected_git_oid": "4f1583c8bc1d5569e4d80f8464acfcb0a8714017",
+      "file": "raw_git_objects/blob/4f1583c8bc1d5569e4d80f8464acfcb0a8714017.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/02_active_form_version_dispatch.REVIEW_CANDIDATE.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/02_active_form_version_dispatch.REVIEW_CANDIDATE.json"
+      ],
+      "raw_content_sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee",
+      "raw_content_size": 1334
+    },
+    {
+      "expected_git_oid": "59108efbaf48513de06a97421a304a432e2742d4",
+      "file": "raw_git_objects/blob/59108efbaf48513de06a97421a304a432e2742d4.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/07_source_decision_0019_successor.REVIEWED_COPY.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/07_source_decision_0019_successor.REVIEWED_COPY.md",
+        "checkpoint_core:reviewed_decision_0019_successor_source:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/05_proposed_decision_0019_successor.REVIEW_CANDIDATE.md",
+        "parent_core:reviewed_decision_0019_successor_source:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/05_proposed_decision_0019_successor.REVIEW_CANDIDATE.md"
+      ],
+      "raw_content_sha256": "8665163eb5d4f7a8718ba3ed2d3973ba928fea85789c23696599a2d6ea02bbb3",
+      "raw_content_size": 2158
+    },
+    {
+      "expected_git_oid": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "file": "raw_git_objects/blob/5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/15_zlib.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/15_zlib.EXACT_COPY.json",
+        "checkpoint_core:zlib:target_blob:config/protocol_specifications/zlib.json",
+        "parent_core:zlib:target_blob:config/protocol_specifications/zlib.json"
+      ],
+      "raw_content_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "raw_content_size": 21792
+    },
+    {
+      "expected_git_oid": "6918d66d1f25f38556755256b190708b5c58c15f",
+      "file": "raw_git_objects/blob/6918d66d1f25f38556755256b190708b5c58c15f.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/20_verify_schema_v2_activation_artifact_finalization_package.v1.py",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/20_verify_schema_v2_activation_artifact_finalization_package.v1.py"
+      ],
+      "raw_content_sha256": "8da2981e63e1125618a5e33f5f6418b389686e435642b084178d689a3601b074",
+      "raw_content_size": 13322
+    },
+    {
+      "expected_git_oid": "6ad0bced240152ac641b2ade7cf7c02c6f7cbaad",
+      "file": "raw_git_objects/blob/6ad0bced240152ac641b2ade7cf7c02c6f7cbaad.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/05_active_form_decision_0019_successor.REVIEW_CANDIDATE.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/05_active_form_decision_0019_successor.REVIEW_CANDIDATE.md"
+      ],
+      "raw_content_sha256": "a96f9d8b6811a9f9170a18de9ff8be6f80a3704b9e6a13c59fbb88e423bec3bb",
+      "raw_content_size": 2203
+    },
+    {
+      "expected_git_oid": "736b233b0eb76409f1c46b115b36cf3774ea4057",
+      "file": "raw_git_objects/blob/736b233b0eb76409f1c46b115b36cf3774ea4057.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/11_decision_0061.EXACT_COPY.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/11_decision_0061.EXACT_COPY.md"
+      ],
+      "raw_content_sha256": "cafce7d5ac212055d8fd8b86602a579f7db421c7dd9e61613bba702a90a95996",
+      "raw_content_size": 3316
+    },
+    {
+      "expected_git_oid": "73b5a6d2e34312a9172d3b541fbe746fc31d6202",
+      "file": "raw_git_objects/blob/73b5a6d2e34312a9172d3b541fbe746fc31d6202.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/21_schema_v2_activation_artifact_finalization_package_manifest.v1.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/21_schema_v2_activation_artifact_finalization_package_manifest.v1.json"
+      ],
+      "raw_content_sha256": "b417548998afb9636d3c24e5abdb9a90588fb82dea74e4342ea637a84bc42fb9",
+      "raw_content_size": 4568
+    },
+    {
+      "expected_git_oid": "7d7529c7487ab56736d4c06945606b833543f3df",
+      "file": "raw_git_objects/blob/7d7529c7487ab56736d4c06945606b833543f3df.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/06_exact_successor_transformations.v1.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/06_exact_successor_transformations.v1.json"
+      ],
+      "raw_content_sha256": "9ca49aeb18bbc56817c8a6808e96be72710084a28f6d2dc6b31ec37335028959",
+      "raw_content_size": 1334
+    },
+    {
+      "expected_git_oid": "7de8b036d0df48dc398e6104ce3c3708d02fafac",
+      "file": "raw_git_objects/blob/7de8b036d0df48dc398e6104ce3c3708d02fafac.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/19_activation_artifact_finalization_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/19_activation_artifact_finalization_reviewer_packet.REVIEW_DRAFT.v1.md"
+      ],
+      "raw_content_sha256": "68a178f51b3a12bc3b918211a3332b4ef54f2432b5468a46673c89c00b2faadf",
+      "raw_content_size": 1305
+    },
+    {
+      "expected_git_oid": "a114e47cbfdd41913d06ad741266dc78a103d7a9",
+      "file": "raw_git_objects/blob/a114e47cbfdd41913d06ad741266dc78a103d7a9.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/09_hash_contract_human_approval_record.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/09_hash_contract_human_approval_record.EXACT_COPY.json",
+        "checkpoint_core:hash_active_form_human_approval_record:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1/04_completed_hash_contract_finalization_human_approval_record.v1.json",
+        "parent_core:hash_active_form_human_approval_record:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1/04_completed_hash_contract_finalization_human_approval_record.v1.json"
+      ],
+      "raw_content_sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a",
+      "raw_content_size": 3810
+    },
+    {
+      "expected_git_oid": "a5971255d176603e5abc60669a4a80cd0a8cceb1",
+      "file": "raw_git_objects/blob/a5971255d176603e5abc60669a4a80cd0a8cceb1.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/22_schema_v2_activation_artifact_finalization_package.v1.SHA256SUMS",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/22_schema_v2_activation_artifact_finalization_package.v1.SHA256SUMS"
+      ],
+      "raw_content_sha256": "be2c504098c5e4d7f706e60f36429a9eba5f84dd43e473c08215cd68470aebea",
+      "raw_content_size": 5027
+    },
+    {
+      "expected_git_oid": "a68262bd089802bfc59518c7440f2e6ff138ac5e",
+      "file": "raw_git_objects/blob/a68262bd089802bfc59518c7440f2e6ff138ac5e.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/03_exact_dispatch_delta.v1.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/03_exact_dispatch_delta.v1.json"
+      ],
+      "raw_content_sha256": "0022fa44ed6af9de0e369a316713ed016a8d1f7565680cecae9c6b8b0ee41650",
+      "raw_content_size": 758
+    },
+    {
+      "expected_git_oid": "b13340a7e11f6673ad88734f4d5370e28d751942",
+      "file": "raw_git_objects/blob/b13340a7e11f6673ad88734f4d5370e28d751942.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/01_scope_and_binding.v1.md",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/01_scope_and_binding.v1.md"
+      ],
+      "raw_content_sha256": "3f62a90d10440e904ee2a7e9e07eb98ee5477d6745e99f96953805677dfd63c1",
+      "raw_content_size": 2083
+    },
+    {
+      "expected_git_oid": "b1d557c432b944dad7a35da96db63d3148ad8b26",
+      "file": "raw_git_objects/blob/b1d557c432b944dad7a35da96db63d3148ad8b26.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/04_source_version_dispatch.REVIEWED_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/04_source_version_dispatch.REVIEWED_COPY.json",
+        "checkpoint_core:reviewed_version_dispatch_source:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/09_version_dispatch_policy.REVIEW_CANDIDATE.json",
+        "parent_core:reviewed_version_dispatch_source:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/09_version_dispatch_policy.REVIEW_CANDIDATE.json"
+      ],
+      "raw_content_sha256": "5a91a9938af7029edff6b91b8b624b2f0712680d49fad3abd1be29e649944bce",
+      "raw_content_size": 1311
+    },
+    {
+      "expected_git_oid": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "file": "raw_git_objects/blob/ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/16_libpcap.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/16_libpcap.EXACT_COPY.json",
+        "checkpoint_core:libpcap:target_blob:config/protocol_specifications/libpcap.json",
+        "parent_core:libpcap:target_blob:config/protocol_specifications/libpcap.json"
+      ],
+      "raw_content_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "raw_content_size": 47285
+    },
+    {
+      "expected_git_oid": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "file": "raw_git_objects/blob/fd9648f4e0eee7e4516927dc1e370a0d69920ea2.raw",
+      "git_object_type": "blob",
+      "logical_role": "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/08_approved_v2_hash_contract_active_form.EXACT_COPY.json",
+      "logical_roles": [
+        "checkpoint_added:blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/08_approved_v2_hash_contract_active_form.EXACT_COPY.json",
+        "checkpoint_core:approved_v2_hash_active_form:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json",
+        "parent_core:approved_v2_hash_active_form:target_blob:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json"
+      ],
+      "raw_content_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "raw_content_size": 3154
+    },
+    {
+      "expected_git_oid": "6eba8a1fc69c0b1146e033b031f5948a245bd84b",
+      "file": "raw_git_objects/commit/6eba8a1fc69c0b1146e033b031f5948a245bd84b.raw",
+      "git_object_type": "commit",
+      "logical_role": "parent_commit",
+      "logical_roles": [
+        "parent_commit"
+      ],
+      "raw_content_sha256": "ba35d45640b72504f7dc58355de143b2b9aa3368553c1f74fef77c845367b617",
+      "raw_content_size": 289
+    },
+    {
+      "expected_git_oid": "fa64f7810443d14cd710600cd48ae9f9fedbb04a",
+      "file": "raw_git_objects/commit/fa64f7810443d14cd710600cd48ae9f9fedbb04a.raw",
+      "git_object_type": "commit",
+      "logical_role": "checkpoint_commit",
+      "logical_roles": [
+        "checkpoint_commit"
+      ],
+      "raw_content_sha256": "9d4902c9e16cea749cc77c9982c3ebd1d00707e5cd3bc3714a6ec6d2329a8c14",
+      "raw_content_size": 287
+    },
+    {
+      "expected_git_oid": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+      "file": "raw_git_objects/tree/265a81bd8cb903b1bcff0d42c1d7336c12119711.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:zlib:tree:config/protocol_specifications",
+      "logical_roles": [
+        "checkpoint_absence:config/protocol_specifications/curl.json:tree:config/protocol_specifications",
+        "checkpoint_core:libpcap:tree:config/protocol_specifications",
+        "checkpoint_core:zlib:tree:config/protocol_specifications",
+        "parent_absence:config/protocol_specifications/curl.json:tree:config/protocol_specifications",
+        "parent_core:libpcap:tree:config/protocol_specifications",
+        "parent_core:zlib:tree:config/protocol_specifications"
+      ],
+      "raw_content_sha256": "d82b0a3e71d12e1abc69bf5e60da44566a746c40cabd3d8e1535210c700b0436",
+      "raw_content_size": 77
+    },
+    {
+      "expected_git_oid": "311c16c52a39738eac47255be5f029c9202ebdf9",
+      "file": "raw_git_objects/tree/311c16c52a39738eac47255be5f029c9202ebdf9.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_diff_tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+      "logical_roles": [
+        "checkpoint_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "checkpoint_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "checkpoint_core:reviewed_decision_0019_successor_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "checkpoint_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "checkpoint_diff_tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "checkpoint_original_package:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2"
+      ],
+      "raw_content_sha256": "4cd09c48a3b5632c1b62f5839ce20dbbf1e46c793f2d8c923cb0a83a6dde8d21",
+      "raw_content_size": 1547
+    },
+    {
+      "expected_git_oid": "33adb6befe244d24ddfe90680d7388c98da4de05",
+      "file": "raw_git_objects/tree/33adb6befe244d24ddfe90680d7388c98da4de05.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:decision_0019:tree:documentation",
+      "logical_roles": [
+        "checkpoint_core:decision_0019:tree:documentation",
+        "checkpoint_documentation:target_tree:documentation",
+        "parent_core:decision_0019:tree:documentation",
+        "parent_documentation:target_tree:documentation"
+      ],
+      "raw_content_sha256": "c50cda7b6389a06283226686a151077584ec3641a8bc46e824f92aa0c52c23a7",
+      "raw_content_size": 128
+    },
+    {
+      "expected_git_oid": "35474699b67e2ea0b94fe62febd56a18e84c5dda",
+      "file": "raw_git_objects/tree/35474699b67e2ea0b94fe62febd56a18e84c5dda.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1",
+      "logical_roles": [
+        "checkpoint_core:reviewed_decision_0019_successor_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1",
+        "checkpoint_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1",
+        "parent_core:reviewed_decision_0019_successor_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1",
+        "parent_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1"
+      ],
+      "raw_content_sha256": "8c35d65b6184e1f5a75b9c0442d6e9a38f241d9a52cf6cce8e1f3339e392c552",
+      "raw_content_size": 1645
+    },
+    {
+      "expected_git_oid": "45c034d98de2cafb9c1f17fe664054474b9335a5",
+      "file": "raw_git_objects/tree/45c034d98de2cafb9c1f17fe664054474b9335a5.raw",
+      "git_object_type": "tree",
+      "logical_role": "parent_diff_tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+      "logical_roles": [
+        "parent_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "parent_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "parent_core:reviewed_decision_0019_successor_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "parent_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "parent_diff_tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+        "parent_original_package_absence:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2"
+      ],
+      "raw_content_sha256": "ffa666b7afd3b48cff624d8bbbb4eb176ee8df3734b821531e5ce2056312f3e1",
+      "raw_content_size": 1467
+    },
+    {
+      "expected_git_oid": "67a80e37f8c94c2c5878f4ddde4da1943e7a5dc6",
+      "file": "raw_git_objects/tree/67a80e37f8c94c2c5878f4ddde4da1943e7a5dc6.raw",
+      "git_object_type": "tree",
+      "logical_role": "parent_diff_tree:$ROOT",
+      "logical_roles": [
+        "parent_absence:config/protocol_content_hash_canonicalization.v2.json:root",
+        "parent_absence:config/protocol_content_hash_canonicalization.v2.json:tree:",
+        "parent_absence:config/protocol_specification_schema_version_dispatch.v1.json:root",
+        "parent_absence:config/protocol_specification_schema_version_dispatch.v1.json:tree:",
+        "parent_absence:config/protocol_specifications/curl.json:root",
+        "parent_absence:config/protocol_specifications/curl.json:tree:",
+        "parent_config:root",
+        "parent_config:tree:",
+        "parent_core:approved_v2_hash_active_form:root",
+        "parent_core:approved_v2_hash_active_form:tree:",
+        "parent_core:decision_0019:root",
+        "parent_core:decision_0019:tree:",
+        "parent_core:hash_active_form_human_approval_record:root",
+        "parent_core:hash_active_form_human_approval_record:tree:",
+        "parent_core:libpcap:root",
+        "parent_core:libpcap:tree:",
+        "parent_core:reviewed_decision_0019_successor_source:root",
+        "parent_core:reviewed_decision_0019_successor_source:tree:",
+        "parent_core:reviewed_version_dispatch_source:root",
+        "parent_core:reviewed_version_dispatch_source:tree:",
+        "parent_core:schema_v2:root",
+        "parent_core:schema_v2:tree:",
+        "parent_core:v1_hash_contract:root",
+        "parent_core:v1_hash_contract:tree:",
+        "parent_core:zlib:root",
+        "parent_core:zlib:tree:",
+        "parent_diff_tree:$ROOT",
+        "parent_documentation:root",
+        "parent_documentation:tree:",
+        "parent_original_package_absence:root",
+        "parent_original_package_absence:tree:"
+      ],
+      "raw_content_sha256": "afbba4f7fc2930d931a41900e87ff007537e31dadb3e09b9400cfa8415eb7196",
+      "raw_content_size": 286
+    },
+    {
+      "expected_git_oid": "7563e625d8a483654a4290575a14bea63ee933dc",
+      "file": "raw_git_objects/tree/7563e625d8a483654a4290575a14bea63ee933dc.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:decision_0019:tree:documentation/decisions",
+      "logical_roles": [
+        "checkpoint_core:decision_0019:tree:documentation/decisions",
+        "parent_core:decision_0019:tree:documentation/decisions"
+      ],
+      "raw_content_sha256": "fac7569df54e240792757b76ebad36b000990b1079b0f3fb6d273a6f9dd75b70",
+      "raw_content_size": 5504
+    },
+    {
+      "expected_git_oid": "842a19e77b52a795caeb1c19cfe8e1b07cf4e047",
+      "file": "raw_git_objects/tree/842a19e77b52a795caeb1c19cfe8e1b07cf4e047.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_diff_tree:evidence",
+      "logical_roles": [
+        "checkpoint_core:approved_v2_hash_active_form:tree:evidence",
+        "checkpoint_core:hash_active_form_human_approval_record:tree:evidence",
+        "checkpoint_core:reviewed_decision_0019_successor_source:tree:evidence",
+        "checkpoint_core:reviewed_version_dispatch_source:tree:evidence",
+        "checkpoint_diff_tree:evidence",
+        "checkpoint_original_package:tree:evidence"
+      ],
+      "raw_content_sha256": "37e9ad423d75cef4703cbae497d1183691b2f8b691c95dcbd0f795dfef853965",
+      "raw_content_size": 171
+    },
+    {
+      "expected_git_oid": "98a0d3ecff7f63cb132549f0feec0e59a78234a6",
+      "file": "raw_git_objects/tree/98a0d3ecff7f63cb132549f0feec0e59a78234a6.raw",
+      "git_object_type": "tree",
+      "logical_role": "parent_diff_tree:evidence",
+      "logical_roles": [
+        "parent_core:approved_v2_hash_active_form:tree:evidence",
+        "parent_core:hash_active_form_human_approval_record:tree:evidence",
+        "parent_core:reviewed_decision_0019_successor_source:tree:evidence",
+        "parent_core:reviewed_version_dispatch_source:tree:evidence",
+        "parent_diff_tree:evidence",
+        "parent_original_package_absence:tree:evidence"
+      ],
+      "raw_content_sha256": "74c1477d9659386825c4d26dd043b43de1d0e80a912c145308340a099acc1b1f",
+      "raw_content_size": 171
+    },
+    {
+      "expected_git_oid": "9bb36f1a7d1bb303341f65ded8f0c63796d5c7cd",
+      "file": "raw_git_objects/tree/9bb36f1a7d1bb303341f65ded8f0c63796d5c7cd.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_diff_tree:$ROOT",
+      "logical_roles": [
+        "checkpoint_absence:config/protocol_content_hash_canonicalization.v2.json:root",
+        "checkpoint_absence:config/protocol_content_hash_canonicalization.v2.json:tree:",
+        "checkpoint_absence:config/protocol_specification_schema_version_dispatch.v1.json:root",
+        "checkpoint_absence:config/protocol_specification_schema_version_dispatch.v1.json:tree:",
+        "checkpoint_absence:config/protocol_specifications/curl.json:root",
+        "checkpoint_absence:config/protocol_specifications/curl.json:tree:",
+        "checkpoint_config:root",
+        "checkpoint_config:tree:",
+        "checkpoint_core:approved_v2_hash_active_form:root",
+        "checkpoint_core:approved_v2_hash_active_form:tree:",
+        "checkpoint_core:decision_0019:root",
+        "checkpoint_core:decision_0019:tree:",
+        "checkpoint_core:hash_active_form_human_approval_record:root",
+        "checkpoint_core:hash_active_form_human_approval_record:tree:",
+        "checkpoint_core:libpcap:root",
+        "checkpoint_core:libpcap:tree:",
+        "checkpoint_core:reviewed_decision_0019_successor_source:root",
+        "checkpoint_core:reviewed_decision_0019_successor_source:tree:",
+        "checkpoint_core:reviewed_version_dispatch_source:root",
+        "checkpoint_core:reviewed_version_dispatch_source:tree:",
+        "checkpoint_core:schema_v2:root",
+        "checkpoint_core:schema_v2:tree:",
+        "checkpoint_core:v1_hash_contract:root",
+        "checkpoint_core:v1_hash_contract:tree:",
+        "checkpoint_core:zlib:root",
+        "checkpoint_core:zlib:tree:",
+        "checkpoint_diff_tree:$ROOT",
+        "checkpoint_documentation:root",
+        "checkpoint_documentation:tree:",
+        "checkpoint_original_package:root",
+        "checkpoint_original_package:tree:"
+      ],
+      "raw_content_sha256": "4cf6e7bc9e7c5f55e32f6863c7e97d15ec719a623f3179bcd120688f1f9cdac1",
+      "raw_content_size": 286
+    },
+    {
+      "expected_git_oid": "a0a0e45e5147b93fc9ab438322b34f083507599f",
+      "file": "raw_git_objects/tree/a0a0e45e5147b93fc9ab438322b34f083507599f.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1",
+      "logical_roles": [
+        "checkpoint_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1",
+        "parent_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1"
+      ],
+      "raw_content_sha256": "353ad0afdb428f911fd3e27f79833df44c7b9ec06d04a77f47965e3cc2973dc2",
+      "raw_content_size": 1356
+    },
+    {
+      "expected_git_oid": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+      "file": "raw_git_objects/tree/a86c0022a0d264a1195ed3fcd0b9424b85742c2d.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:schema_v2:tree:config",
+      "logical_roles": [
+        "checkpoint_absence:config/protocol_content_hash_canonicalization.v2.json:tree:config",
+        "checkpoint_absence:config/protocol_specification_schema_version_dispatch.v1.json:tree:config",
+        "checkpoint_absence:config/protocol_specifications/curl.json:tree:config",
+        "checkpoint_config:target_tree:config",
+        "checkpoint_core:libpcap:tree:config",
+        "checkpoint_core:schema_v2:tree:config",
+        "checkpoint_core:v1_hash_contract:tree:config",
+        "checkpoint_core:zlib:tree:config",
+        "parent_absence:config/protocol_content_hash_canonicalization.v2.json:tree:config",
+        "parent_absence:config/protocol_specification_schema_version_dispatch.v1.json:tree:config",
+        "parent_absence:config/protocol_specifications/curl.json:tree:config",
+        "parent_config:target_tree:config",
+        "parent_core:libpcap:tree:config",
+        "parent_core:schema_v2:tree:config",
+        "parent_core:v1_hash_contract:tree:config",
+        "parent_core:zlib:tree:config"
+      ],
+      "raw_content_sha256": "526e04d56562ca8b95707c4924b3f2aa5f61b2343c132d5c7afe0b1f0080003a",
+      "raw_content_size": 1022
+    },
+    {
+      "expected_git_oid": "a968ed604dcb639fe20f8c364676e2d222c2f8d7",
+      "file": "raw_git_objects/tree/a968ed604dcb639fe20f8c364676e2d222c2f8d7.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1",
+      "logical_roles": [
+        "checkpoint_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1",
+        "parent_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1"
+      ],
+      "raw_content_sha256": "99643690c6e7374ebc2cc0044f0e043ec76bd2ac697b33265ef71388d6061d2b",
+      "raw_content_size": 540
+    },
+    {
+      "expected_git_oid": "b4046d983d58ebf7482d3b2db0de1d704f228a53",
+      "file": "raw_git_objects/tree/b4046d983d58ebf7482d3b2db0de1d704f228a53.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_core:schema_v2:tree:config/schemas",
+      "logical_roles": [
+        "checkpoint_core:schema_v2:tree:config/schemas",
+        "parent_core:schema_v2:tree:config/schemas"
+      ],
+      "raw_content_sha256": "78c20e0e512c3d5ff5cc2aa66f1db9de608193465684eb232f93321a95849ce1",
+      "raw_content_size": 547
+    },
+    {
+      "expected_git_oid": "dbeed3d8b8d0bce1d7e670a93eef652d745d280f",
+      "file": "raw_git_objects/tree/dbeed3d8b8d0bce1d7e670a93eef652d745d280f.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_diff_tree:evidence/annotation_preparation",
+      "logical_roles": [
+        "checkpoint_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation",
+        "checkpoint_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation",
+        "checkpoint_core:reviewed_decision_0019_successor_source:tree:evidence/annotation_preparation",
+        "checkpoint_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation",
+        "checkpoint_diff_tree:evidence/annotation_preparation",
+        "checkpoint_original_package:tree:evidence/annotation_preparation"
+      ],
+      "raw_content_sha256": "eb0177cd5dc788b2d108950d3fb8239c7a877bc4954ff59e63d394efb517cd05",
+      "raw_content_size": 1362
+    },
+    {
+      "expected_git_oid": "f2e01db7ebe24d48736fa73d05854b0d3e3f2076",
+      "file": "raw_git_objects/tree/f2e01db7ebe24d48736fa73d05854b0d3e3f2076.raw",
+      "git_object_type": "tree",
+      "logical_role": "checkpoint_added:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1",
+      "logical_roles": [
+        "checkpoint_added:tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1",
+        "checkpoint_original_package:target_tree:evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1"
+      ],
+      "raw_content_sha256": "eca894e1b0efa5e9fc0f7a395c4edc563a9492b9e92429706d536e9527987d85",
+      "raw_content_size": 1594
+    },
+    {
+      "expected_git_oid": "f65d9fd0c9bbe088534c0b3b71f56b646995bff8",
+      "file": "raw_git_objects/tree/f65d9fd0c9bbe088534c0b3b71f56b646995bff8.raw",
+      "git_object_type": "tree",
+      "logical_role": "parent_diff_tree:evidence/annotation_preparation",
+      "logical_roles": [
+        "parent_core:approved_v2_hash_active_form:tree:evidence/annotation_preparation",
+        "parent_core:hash_active_form_human_approval_record:tree:evidence/annotation_preparation",
+        "parent_core:reviewed_decision_0019_successor_source:tree:evidence/annotation_preparation",
+        "parent_core:reviewed_version_dispatch_source:tree:evidence/annotation_preparation",
+        "parent_diff_tree:evidence/annotation_preparation",
+        "parent_original_package_absence:tree:evidence/annotation_preparation"
+      ],
+      "raw_content_sha256": "ddc584ff9e0f65b59b5cdd37f5d60ac03e615b2ce321084ffbec384a079e18f8",
+      "raw_content_size": 1362
+    }
+  ],
+  "oid_recomputation_rule": "SHA1(type + ASCII_SPACE + decimal_content_length + NUL + raw_content)",
+  "raw_object_content_definition": "raw content bytes returned by git cat-file TYPE OID"
+}

@@ -1,0 +1,28 @@
+{
+  "all_other_text_byte_preserved": true,
+  "artifact": "Decision-0019 successor active-form finalization",
+  "decision_0019_historical_file_modified": false,
+  "exact_transformation_count": 3,
+  "operative_before_later_explicit_activation": false,
+  "source_sha256": "8665163eb5d4f7a8718ba3ed2d3973ba928fea85789c23696599a2d6ea02bbb3",
+  "source_size_bytes": 2158,
+  "target_sha256": "a96f9d8b6811a9f9170a18de9ff8be6f80a3704b9e6a13c59fbb88e423bec3bb",
+  "target_size_bytes": 2203,
+  "transformations": [
+    {
+      "from": "# REVIEW CANDIDATE \u2014 Successor to Decision 0019 for Version-Dispatched Canonical Protocol Specifications",
+      "id": "TITLE",
+      "to": "# Successor to Decision 0019 for Version-Dispatched Canonical Protocol Specifications"
+    },
+    {
+      "from": "Status: REVIEW CANDIDATE \u2014 NOT ACTIVE",
+      "id": "STATUS",
+      "to": "Status: ACTIVE UPON EXPLICIT SCHEMA V2 ACTIVATION DECISION"
+    },
+    {
+      "from": "This text becomes operative only if a later explicit reviewed activation\ndecision adopts it. Until then it is a review candidate only.",
+      "id": "ACTIVATION_BLOCK",
+      "to": "This text is operative only upon adoption by the explicit reviewed Schema V2 activation\ndecision. Before that adoption, this finalized active-form text remains review evidence only."
+    }
+  ]
+}

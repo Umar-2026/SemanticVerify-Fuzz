@@ -1,0 +1,184 @@
+{
+  "absence_proofs": [
+    {
+      "checkpoint_absent": true,
+      "parent_absent": true,
+      "path": "config/protocol_content_hash_canonicalization.v2.json"
+    },
+    {
+      "checkpoint_absent": true,
+      "parent_absent": true,
+      "path": "config/protocol_specification_schema_version_dispatch.v1.json"
+    },
+    {
+      "checkpoint_absent": true,
+      "parent_absent": true,
+      "path": "config/protocol_specifications/curl.json"
+    }
+  ],
+  "checkpoint": {
+    "commit_oid": "fa64f7810443d14cd710600cd48ae9f9fedbb04a",
+    "exact_parent_oid": "6eba8a1fc69c0b1146e033b031f5948a245bd84b",
+    "root_tree_oid": "9bb36f1a7d1bb303341f65ded8f0c63796d5c7cd"
+  },
+  "closed_PASS_items_not_reopened": [
+    "AF01",
+    "AF02",
+    "AF03",
+    "AF05",
+    "AF06",
+    "AF10"
+  ],
+  "core_path_bindings": {
+    "approved_v2_hash_active_form": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "expected_file_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "exported_raw_blob_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "parent_blob_oid": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json"
+    },
+    "decision_0019": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "2b4f46282ab05ff41e2610facb3fb26aa697983b",
+      "expected_file_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+      "exported_raw_blob_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+      "parent_blob_oid": "2b4f46282ab05ff41e2610facb3fb26aa697983b",
+      "path": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md"
+    },
+    "hash_active_form_human_approval_record": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "a114e47cbfdd41913d06ad741266dc78a103d7a9",
+      "expected_file_sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a",
+      "exported_raw_blob_sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a",
+      "parent_blob_oid": "a114e47cbfdd41913d06ad741266dc78a103d7a9",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1/04_completed_hash_contract_finalization_human_approval_record.v1.json"
+    },
+    "libpcap": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "expected_file_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "exported_raw_blob_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "parent_blob_oid": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "path": "config/protocol_specifications/libpcap.json"
+    },
+    "reviewed_decision_0019_successor_source": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "59108efbaf48513de06a97421a304a432e2742d4",
+      "expected_file_sha256": "8665163eb5d4f7a8718ba3ed2d3973ba928fea85789c23696599a2d6ea02bbb3",
+      "exported_raw_blob_sha256": "8665163eb5d4f7a8718ba3ed2d3973ba928fea85789c23696599a2d6ea02bbb3",
+      "parent_blob_oid": "59108efbaf48513de06a97421a304a432e2742d4",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/05_proposed_decision_0019_successor.REVIEW_CANDIDATE.md"
+    },
+    "reviewed_version_dispatch_source": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "b1d557c432b944dad7a35da96db63d3148ad8b26",
+      "expected_file_sha256": "5a91a9938af7029edff6b91b8b624b2f0712680d49fad3abd1be29e649944bce",
+      "exported_raw_blob_sha256": "5a91a9938af7029edff6b91b8b624b2f0712680d49fad3abd1be29e649944bce",
+      "parent_blob_oid": "b1d557c432b944dad7a35da96db63d3148ad8b26",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/09_version_dispatch_policy.REVIEW_CANDIDATE.json"
+    },
+    "schema_v2": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "expected_file_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "exported_raw_blob_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "parent_blob_oid": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "path": "config/schemas/protocol_specification.v2.schema.json"
+    },
+    "v1_hash_contract": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "3ccba2ea7b9e43ebc0859901c05f211bbdbd400b",
+      "expected_file_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "exported_raw_blob_sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+      "parent_blob_oid": "3ccba2ea7b9e43ebc0859901c05f211bbdbd400b",
+      "path": "config/protocol_content_hash_canonicalization.v1.json"
+    },
+    "zlib": {
+      "blob_oid_identical": true,
+      "checkpoint_blob_oid": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "expected_file_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "exported_raw_blob_sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "parent_blob_oid": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "path": "config/protocol_specifications/zlib.json"
+    }
+  },
+  "decision_0062_completed_review_record_sha256": "3ac5ac4d3c68a9726fdd2c6148d8121c270f94b19eeb714dd2fb76684ebe934f",
+  "decision_0063_authorization_sha256": "c8725561b71ecc72fb0d5da93b968eed70c4d7948a83baa2dd28eff66d045f8e",
+  "governance_effects": {
+    "active_v2_hash_contract_installed": false,
+    "active_version_dispatch_installed": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "curl_json_created": false,
+    "decision_0019_successor_adopted": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false
+  },
+  "open_AF_items": [
+    "AF04",
+    "AF07",
+    "AF08",
+    "AF09"
+  ],
+  "original_package_change_scope": {
+    "all_changed_paths_under_package_prefix": true,
+    "checkpoint_package_tree_oid": "f2e01db7ebe24d48736fa73d05854b0d3e3f2076",
+    "expected_changed_leaf_path_count": 22,
+    "expected_changed_leaf_paths": [
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/01_scope_and_binding.v1.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/02_active_form_version_dispatch.REVIEW_CANDIDATE.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/03_exact_dispatch_delta.v1.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/04_source_version_dispatch.REVIEWED_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/05_active_form_decision_0019_successor.REVIEW_CANDIDATE.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/06_exact_successor_transformations.v1.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/07_source_decision_0019_successor.REVIEWED_COPY.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/08_approved_v2_hash_contract_active_form.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/09_hash_contract_human_approval_record.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/10_decision_0061_authorization.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/11_decision_0061.EXACT_COPY.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/12_schema_v2.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/13_v1_hash_contract.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/14_decision_0019.EXACT_COPY.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/15_zlib.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/16_libpcap.EXACT_COPY.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/17_prepackage_repository_binding.v1.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/18_AF01_AF10_review_matrix.v1.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/19_activation_artifact_finalization_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/20_verify_schema_v2_activation_artifact_finalization_package.v1.py",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/21_schema_v2_activation_artifact_finalization_package_manifest.v1.json",
+      "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1/22_schema_v2_activation_artifact_finalization_package.v1.SHA256SUMS"
+    ],
+    "package_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_artifact_finalization_package_v1",
+    "parent_package_path_absent": true
+  },
+  "parent": {
+    "commit_oid": "6eba8a1fc69c0b1146e033b031f5948a245bd84b",
+    "root_tree_oid": "67a80e37f8c94c2c5878f4ddde4da1943e7a5dc6"
+  },
+  "portable_verifier_requirements": {
+    "git_executable_required": false,
+    "parse_raw_binary_tree_objects": true,
+    "parse_raw_commit_objects": true,
+    "prove_absence_from_exported_trees": true,
+    "recompute_checkpoint_parent_leaf_diff": true,
+    "recompute_exported_object_ids": true,
+    "repository_access_required": false,
+    "resolve_core_paths_from_exported_trees": true,
+    "verify_checkpoint_parent_relationship": true,
+    "verify_exact_22_path_package_only_scope": true
+  },
+  "proof_id": "SVF-AF04-AF07-AF08-AF09-PORTABLE-GIT-OBJECT-CORRECTIVE-PROOF-V1",
+  "raw_object_manifest": "08_raw_git_object_manifest.v1.json",
+  "shared_subtree_bindings": {
+    "checkpoint_config_tree_oid": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+    "checkpoint_documentation_tree_oid": "33adb6befe244d24ddfe90680d7388c98da4de05",
+    "config_tree_identical": true,
+    "documentation_tree_identical": true,
+    "parent_config_tree_oid": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+    "parent_documentation_tree_oid": "33adb6befe244d24ddfe90680d7388c98da4de05"
+  },
+  "status": "EVIDENCE_ONLY_REVIEW_CANDIDATE"
+}
