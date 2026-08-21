@@ -1,0 +1,157 @@
+{
+  "activation_governance_requirements": {
+    "AG01": {
+      "mandatory": true,
+      "requirement": "Define exact Schema V2 activation scope without modifying the approved Schema V2 candidate."
+    },
+    "AG02": {
+      "mandatory": true,
+      "requirement": "Propose an explicit Decision 0019 amendment or successor that permits version-dispatched canonical validation."
+    },
+    "AG03": {
+      "mandatory": true,
+      "requirement": "Define a Schema V2-specific content-hash and canonicalization contract; do not silently reuse the V1 contract."
+    },
+    "AG04": {
+      "mandatory": true,
+      "requirement": "Preserve frozen zlib and libpcap V1 artifacts byte-for-byte and Git-blob-for-Git-blob without migration."
+    },
+    "AG05": {
+      "mandatory": true,
+      "requirement": "Define explicit version-dispatch/coexistence semantics: schema_version 1.0.0 artifacts remain governed by V1 schema and V1 hash contract; schema_version 2.0.0 artifacts may be governed by approved V2 schema and a separately approved V2 hash contract only after activation."
+    },
+    "AG06": {
+      "mandatory": true,
+      "requirement": "Keep Schema V2 activation semantically separate from any positive V4-to-V2 mapping contract."
+    },
+    "AG07": {
+      "mandatory": true,
+      "requirement": "Do not create or materialize curl.json as part of activation governance."
+    },
+    "AG08": {
+      "mandatory": true,
+      "requirement": "Do not authorize analyzer implementation/execution, baseline execution, or repair as a side effect."
+    },
+    "AG09": {
+      "mandatory": true,
+      "requirement": "Require independent review/verification of the activation governance package before any decision marks Schema V2 active."
+    }
+  },
+  "approved_schema_v2_candidate": {
+    "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "may_modify": false,
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "size_bytes": 43030,
+    "version": "2.0.0"
+  },
+  "authorization_id": "SVF-SCHEMA-V2-ACTIVATION-GOVERNANCE-AUTHORIZATION-V1",
+  "authorized_at_utc": "2026-08-21T12:25:43Z",
+  "authorized_governance_package": {
+    "activation_authorized": false,
+    "authoring_authorized": true,
+    "human_review_required": true,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1",
+    "schema_v2_candidate_modification_authorized": false
+  },
+  "basis": {
+    "final_approval_record_sha256": "6a7c8c836071fe42522330f7b9ff75ec3cba3a855853756c3588c7a04844e1f8",
+    "final_review_state": "10 PASS / 0 REVISION_REQUIRED / 0 FAIL",
+    "final_schema_v2_human_approval_commit": "9f7229f41f0fc1c1a3dbc36668d13e941ea02568",
+    "final_schema_v2_human_approval_tree": "7da57db2e1a890229bdb06670a1a121edbd4802d",
+    "schema_v2_candidate_activated": false,
+    "schema_v2_candidate_human_approved": true
+  },
+  "decision_0019_change_policy": {
+    "activation_package_may_contain_proposed_successor_text": true,
+    "existing_decision_0019_must_remain_historical_immutable_record": true,
+    "may_modify_decision_0019_in_place": false,
+    "must_use_new_successor_or_explicit_amendment_decision": true
+  },
+  "existing_governance": {
+    "canonical_root": "config/protocol_specifications/",
+    "current_frozen_schema_under_that_rule": "config/schemas/protocol_specification.schema.json",
+    "decision_0019_currently_amended_for_v2": false,
+    "decision_0019_currently_superseded": false,
+    "decision_0019_path": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "decision_0019_sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "decision_0019_size_bytes": 3498,
+    "existing_rule": "Canonical artifacts must validate against the unmodified frozen protocol-specification schema."
+  },
+  "explicit_non_authorizations": {
+    "activate_schema_v2": false,
+    "authorize_positive_v4_to_v2_mapping": false,
+    "create_active_v2_hash_contract": false,
+    "create_curl_json": false,
+    "define_positive_v4_to_v2_mapping": false,
+    "execute_analyzer": false,
+    "execute_baseline": false,
+    "execute_repair": false,
+    "implement_analyzer": false,
+    "implement_repair": false,
+    "migrate_libpcap": false,
+    "migrate_zlib": false,
+    "modify_decision_0019_in_place": false,
+    "modify_schema_v2_candidate": false,
+    "modify_v1_hash_contract": false,
+    "modify_v1_schema": false,
+    "supersede_decision_0019_now": false
+  },
+  "frozen_v1_canonical_artifacts": {
+    "libpcap": {
+      "git_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "must_remain_unmigrated": true,
+      "path": "config/protocol_specifications/libpcap.json",
+      "schema_version": "1.0.0",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73"
+    },
+    "zlib": {
+      "git_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "must_remain_unmigrated": true,
+      "path": "config/protocol_specifications/zlib.json",
+      "schema_version": "1.0.0",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+    }
+  },
+  "frozen_v1_hash_contract": {
+    "contract_id": "SVF-PROTOCOL-CONTENT-HASH-CANONICALIZATION-V1",
+    "may_modify": false,
+    "may_silently_reuse_for_schema_v2": false,
+    "path": "config/protocol_content_hash_canonicalization.v1.json",
+    "schema_dependency_path": "config/schemas/protocol_specification.schema.json",
+    "schema_dependency_sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f"
+  },
+  "next_boundary": "AUTHOR_SCHEMA_V2_ACTIVATION_GOVERNANCE_PACKAGE_V1",
+  "proposed_v2_hash_contract": {
+    "eventual_reserved_path": "config/protocol_content_hash_canonicalization.v2.json",
+    "governance_package_may_contain_review_candidate_copy": true,
+    "may_be_activated_by_this_authorization": false,
+    "may_be_created_by_this_authorization_step": false,
+    "must_bind_exact_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+  },
+  "required_governance_package_contents": [
+    "Exact immutable Schema V2 candidate binding.",
+    "Exact Decision 0019 binding and reviewer-readable conflict analysis.",
+    "Exact frozen V1 schema and V1 hash-contract bindings.",
+    "Exact frozen zlib/libpcap byte and Git-blob bindings.",
+    "Proposed Decision 0019 amendment/successor text.",
+    "Proposed V1/V2 schema-version dispatch and coexistence policy.",
+    "Proposed Schema V2 content-hash/canonicalization contract candidate.",
+    "Proof that the proposed V2 hash contract is explicitly Schema V2-bound.",
+    "Proof that V1 hash behavior and frozen V1 artifacts are unchanged.",
+    "Explicit activation criteria and rollback/non-activation conditions.",
+    "Explicit separation from positive V4-to-V2 mapping.",
+    "Explicit prohibition on curl.json creation during activation governance.",
+    "Explicit prohibition on analyzer/baseline/repair authorization.",
+    "Blank independent human activation-governance review packet.",
+    "Self-contained verifier and checksum manifest."
+  ],
+  "review_requirement": {
+    "independent_human_review_required": true,
+    "review_must_cover_all_AG01_through_AG09": true,
+    "reviewer_must_not_be_synthetically_filled": true,
+    "schema_v2_must_remain_inactive_until_reviewed_activation_decision": true
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_SCHEMA_V2_ACTIVATION_GOVERNANCE_PACKAGE_ONLY"
+}

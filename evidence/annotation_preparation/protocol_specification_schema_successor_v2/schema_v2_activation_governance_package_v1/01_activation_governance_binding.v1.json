@@ -1,0 +1,48 @@
+{
+  "package_id": "SVF-SCHEMA-V2-ACTIVATION-GOVERNANCE-PACKAGE-V1",
+  "status": "REVIEW_CANDIDATE_NOT_ACTIVE",
+  "basis_commit": "f48fe86761ed5687d7a6e311b5b617363b141b4c",
+  "basis_tree": "2569598aa5f5c1d462deecea3e499cbe7625f67b",
+  "schema_v2": {
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "version": "2.0.0",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "size_bytes": 43030,
+    "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "human_approved": true,
+    "modified_by_package": false,
+    "activated": false
+  },
+  "decision_0019": {
+    "path": "documentation/decisions/0019-canonical-library-protocol-specification-path-convention.md",
+    "sha256": "50e273ecb6af838bc83d2499a2ed3a71607bc7c0cf8d74bd2622b56c2fefafa9",
+    "size_bytes": 3498,
+    "modified_in_place": false,
+    "superseded_now": false
+  },
+  "v1_hash_contract": {
+    "path": "config/protocol_content_hash_canonicalization.v1.json",
+    "sha256": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "modified": false,
+    "silently_reused_for_v2": false
+  },
+  "frozen_v1_artifacts": {
+    "zlib": {
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1",
+      "git_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "migrated": false
+    },
+    "libpcap": {
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "git_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "migrated": false
+    }
+  },
+  "proposed_v2_hash_active_path": "config/protocol_content_hash_canonicalization.v2.json",
+  "active_v2_hash_contract_created": false,
+  "positive_v4_to_v2_mapping_defined": false,
+  "curl_json_created": false,
+  "schema_v2_activated": false,
+  "human_review_required": true,
+  "postcommit_package_noninterference_handoff_proof_required": true
+}

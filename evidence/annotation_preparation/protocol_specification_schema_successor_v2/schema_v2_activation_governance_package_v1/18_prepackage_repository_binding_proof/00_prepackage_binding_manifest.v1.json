@@ -1,0 +1,43 @@
+{
+  "basis_commit": "f48fe86761ed5687d7a6e311b5b617363b141b4c",
+  "basis_root_tree": "2569598aa5f5c1d462deecea3e499cbe7625f67b",
+  "blob_oids": {
+    "hash_v1": "3ccba2ea7b9e43ebc0859901c05f211bbdbd400b",
+    "libpcap": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+    "path_map": "fac845a26caf5ff736163fc782fa0c3935101477",
+    "schema_v1": "228e09c7e06a037a556586d7290bb3d6ae621a38",
+    "schema_v2": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "zlib": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea"
+  },
+  "claims": {
+    "canonical_path_map_bound": true,
+    "libpcap_frozen_v1_bound": true,
+    "schema_v2_exact_approved_bytes_bound": true,
+    "v1_hash_contract_bound": true,
+    "v1_schema_bound": true,
+    "zlib_frozen_v1_bound": true
+  },
+  "expected_sha256": {
+    "hash_v1": "5fb33fe68520e906a6fcc325e998229eecd94d44ed7fe2bcb0012d6b18f3211f",
+    "libpcap": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "path_map": "4c6471d51627997f58b6c6bca833d364edc4c51e5aa7b80d0c34be8d63d19aaa",
+    "schema_v1": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34",
+    "schema_v2": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "zlib": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+  },
+  "file_paths": {
+    "hash_v1": "config/protocol_content_hash_canonicalization.v1.json",
+    "libpcap": "config/protocol_specifications/libpcap.json",
+    "path_map": "config/annotation/canonical_protocol_specification_paths.v1.json",
+    "schema_v1": "config/schemas/protocol_specification.schema.json",
+    "schema_v2": "config/schemas/protocol_specification.v2.schema.json",
+    "zlib": "config/protocol_specifications/zlib.json"
+  },
+  "proof_id": "SVF-SCHEMA-V2-ACTIVATION-GOVERNANCE-PREPACKAGE-BINDING-V1",
+  "tree_oids": {
+    "annotation": "75b41982c19e97e0a1aa31f09eb0a73601d936e1",
+    "config": "a86c0022a0d264a1195ed3fcd0b9424b85742c2d",
+    "protocol_specifications": "265a81bd8cb903b1bcff0d42c1d7336c12119711",
+    "schemas": "b4046d983d58ebf7482d3b2db0de1d704f228a53"
+  }
+}

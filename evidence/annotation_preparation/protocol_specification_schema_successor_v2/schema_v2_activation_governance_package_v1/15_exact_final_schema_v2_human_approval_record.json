@@ -1,0 +1,99 @@
+{
+  "external_postcommit_v3_noninterference_proof": {
+    "changed_paths_all_within_review_package_v3": true,
+    "checksum_manifest_sha256": "54e5de95c7a4ae74942d34a517088d25a7dc5eb813a800035fc11bdc2fe27aec",
+    "manifest_sha256": "106b80dc1baf94af95ef8af213d3ccebfbfc24d395c7ef2219889954cdd7f0de",
+    "recorded_copy_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_final_human_rereview_v3/03_postcommit_v3_noninterference_proof",
+    "review_package_v3_authoring_did_not_modify_libpcap": true,
+    "review_package_v3_authoring_did_not_modify_schema_v2": true,
+    "review_package_v3_authoring_did_not_modify_zlib": true
+  },
+  "final_human_review": {
+    "final_counts": {
+      "FAIL": 0,
+      "PASS": 10,
+      "REVISION_REQUIRED": 0
+    },
+    "overall_decision": "APPROVE_PROTOCOL_SPECIFICATION_SCHEMA_V2_CANDIDATE",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_final_human_rereview_v3/01_completed_schema_v2_rr09_final_human_rereview.APPROVED.v3.md",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "21 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "d1ff72158d11886f5685ec65cd4da8023d0cf066d8f08e6fb57836e033bd0cee",
+    "size_bytes": 4384,
+    "sv2_rr09_final_corrective": "PASS"
+  },
+  "final_review_item_state": {
+    "SV2-RR01": "PASS",
+    "SV2-RR02": "PASS_CLOSED",
+    "SV2-RR03": "PASS",
+    "SV2-RR04": "PASS",
+    "SV2-RR05": "PASS",
+    "SV2-RR06": "PASS",
+    "SV2-RR07": "PASS",
+    "SV2-RR08": "PASS",
+    "SV2-RR09": "PASS_CLOSED",
+    "SV2-RR10": "PASS"
+  },
+  "frozen_v1_artifacts": {
+    "libpcap": {
+      "changed": false,
+      "git_blob": "ce4ea9b2d97c1ca570b004dc1c4869eb067f8c5d",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73"
+    },
+    "zlib": {
+      "changed": false,
+      "git_blob": "5e4d5744f9da0b1a2723d4ec834f9ad03b7e64ea",
+      "sha256": "f4c94c1c151b893e2e4f1fae7d43b1196432cbcceaa7f9428968d45f2f77b7b1"
+    }
+  },
+  "governance_interpretation": {
+    "all_ten_schema_v2_review_items_pass": true,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "decision_0019_superseded": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false,
+    "schema_v2_activation_authorized_by_this_record": false,
+    "schema_v2_candidate_human_approved": true,
+    "schema_v2_candidate_rejected": false,
+    "schema_v2_content_change_required": false,
+    "v2_hash_contract_activated": false
+  },
+  "next_boundary": "AUTHORIZE_SCHEMA_V2_ACTIVATION_GOVERNANCE",
+  "record_id": "SVF-PROTOCOL-SPECIFICATION-SCHEMA-V2-FINAL-HUMAN-APPROVAL-V3",
+  "recorded_at_utc": "2026-08-21T12:19:03Z",
+  "required_next_governance": [
+    "Separately authorize Schema V2 activation governance.",
+    "Resolve the Decision 0019 V1-only schema-binding rule by an explicit successor or amendment.",
+    "Define and approve the Schema V2 content-hash/canonicalization contract before V2 activation if required.",
+    "Keep Schema V2 activation separate from positive V4-to-V2 mapping.",
+    "Do not create curl.json until a separately authorized positive V4-to-V2 mapping contract has been reviewed and approved."
+  ],
+  "review_package_v3": {
+    "checksum_manifest_sha256": "1daf9cacc46757ad974ce442ec147035871cbc0c253a0150ffaa54caa1415c5f",
+    "commit": "3b07d7e661a94f664dd37b5fd54f85231a5c70ff",
+    "immutable": true,
+    "manifest_sha256": "a60c44547acd42842b236e5e50560c2e2fc34edd3a2c3ce0ab8a52b788ac3ec9",
+    "parent": "a48cab96025afa717c731a787104846272287856",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/review_package_v3",
+    "tree": "1393d344b39d79714d400112ed5d454fcf2a9d2f"
+  },
+  "schema_v2_candidate": {
+    "activated": false,
+    "content_change_required": false,
+    "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "human_technical_review_approved": true,
+    "must_remain_immutable": true,
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "schema_version": "2.0.0",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "size_bytes": 43030
+  },
+  "status": "FINAL_HUMAN_TECHNICAL_REVIEW_APPROVED_SCHEMA_V2_CANDIDATE"
+}

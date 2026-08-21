@@ -1,0 +1,81 @@
+{
+  "canonical_root": "config/protocol_specifications",
+  "contract_id": "SVF-CANONICAL-PROTOCOL-SPECIFICATION-PATHS-V1",
+  "created_at_utc": "2026-08-16T14:53:54+00:00",
+  "libraries": [
+    {
+      "canonical_path": "config/protocol_specifications/zlib.json",
+      "library": "zlib",
+      "slug": "zlib"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/libpcap.json",
+      "library": "libpcap",
+      "slug": "libpcap"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/curl.json",
+      "library": "curl",
+      "slug": "curl"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/cjson.json",
+      "library": "cJSON",
+      "slug": "cjson"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/libtiff.json",
+      "library": "libtiff",
+      "slug": "libtiff"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/libvpx.json",
+      "library": "libvpx",
+      "slug": "libvpx"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/c-ares.json",
+      "library": "c-ares",
+      "slug": "c-ares"
+    },
+    {
+      "canonical_path": "config/protocol_specifications/lcms.json",
+      "library": "lcms",
+      "slug": "lcms"
+    }
+  ],
+  "path_semantics": {
+    "canonical_file_contains_schema_valid_protocol_specification_object": true,
+    "canonical_file_is_immutable_after_freeze": true,
+    "canonical_path_content_hashing_follows_decision_0018": true,
+    "canonical_path_created_only_after_required_human_review": true,
+    "human_review_records_remain_outside_canonical_root": true,
+    "one_canonical_primary_specification_per_library": true,
+    "post_freeze_correction_overwrites_canonical_file": false,
+    "post_freeze_corrections_require_separate_governed_artifact": true,
+    "review_packets_remain_outside_canonical_root": true,
+    "working_drafts_remain_outside_canonical_root": true
+  },
+  "purpose": "Freeze the canonical repository paths for the eight library-specific protocol specifications before the first canonical specification artifact is created.",
+  "stage_boundaries": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "generated_driver_source_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "repair_implementation_authorized": false
+  },
+  "status": "PASS_FROZEN_BEFORE_FIRST_CANONICAL_LIBRARY_SPECIFICATION",
+  "zlib_first_finalization_binding": {
+    "approved_source_sha256": "8691897759d6267fde52dd76df9199802163b41cd11bfadd3dde534df623632e",
+    "approved_source_specification": "zlib.z-stream.lifecycle.v3",
+    "canonical_file_created_by_this_contract": false,
+    "canonical_path": "config/protocol_specifications/zlib.json",
+    "locked_freeze_date": "2026-08-16",
+    "only_allowed_finalization_additions": [
+      "freeze_date",
+      "content_sha256"
+    ],
+    "prospective_final_content_sha256": "3461269e60f3b824bef3c62335d24e9eda5552b1a939bea4c720983e39a25049",
+    "semantic_change_allowed": false
+  }
+}

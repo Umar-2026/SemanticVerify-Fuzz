@@ -1,0 +1,73 @@
+{
+  "AG01": {
+    "title": "Activation scope",
+    "required_result": "Exact approved Schema V2 may become eligible for version-dispatched canonical validation only after a later reviewed activation decision.",
+    "package_artifacts": [
+      "05_proposed_decision_0019_successor.REVIEW_CANDIDATE.md",
+      "09_version_dispatch_policy.REVIEW_CANDIDATE.json",
+      "16_activation_criteria_and_nonactivation_conditions.v1.md"
+    ]
+  },
+  "AG02": {
+    "title": "Decision 0019 successor",
+    "required_result": "Decision 0019 remains immutable; a new successor decision must introduce V1/V2 dispatch.",
+    "package_artifacts": [
+      "03_exact_decision_0019.md",
+      "04_decision_0019_conflict_analysis.v1.md",
+      "05_proposed_decision_0019_successor.REVIEW_CANDIDATE.md"
+    ]
+  },
+  "AG03": {
+    "title": "Schema V2 hash contract",
+    "required_result": "V2 receives a separately versioned hash/canonicalization contract explicitly bound to the exact approved V2 schema.",
+    "package_artifacts": [
+      "06_exact_v1_hash_contract.json",
+      "07_proposed_v2_hash_contract.REVIEW_CANDIDATE.json",
+      "08_hash_contract_comparison.v1.md"
+    ]
+  },
+  "AG04": {
+    "title": "Frozen V1 non-migration",
+    "required_result": "zlib and libpcap remain byte-identical and Git-blob-identical.",
+    "package_artifacts": [
+      "12_exact_frozen_zlib_v1.json",
+      "13_exact_frozen_libpcap_v1.json",
+      "18_prepackage_repository_binding_proof"
+    ]
+  },
+  "AG05": {
+    "title": "Version dispatch and coexistence",
+    "required_result": "schema_version 1.0.0 dispatches to V1; schema_version 2.0.0 dispatches to V2 only after activation; unknown versions reject.",
+    "package_artifacts": [
+      "09_version_dispatch_policy.REVIEW_CANDIDATE.json"
+    ]
+  },
+  "AG06": {
+    "title": "Mapping separation",
+    "required_result": "Schema activation does not define or authorize positive V4-to-V2 mapping.",
+    "package_artifacts": [
+      "16_activation_criteria_and_nonactivation_conditions.v1.md"
+    ]
+  },
+  "AG07": {
+    "title": "No curl materialization",
+    "required_result": "No curl.json is created by this package or by activation governance review.",
+    "package_artifacts": [
+      "16_activation_criteria_and_nonactivation_conditions.v1.md"
+    ]
+  },
+  "AG08": {
+    "title": "No downstream execution authorization",
+    "required_result": "No analyzer, baseline, or repair authorization follows from this package.",
+    "package_artifacts": [
+      "16_activation_criteria_and_nonactivation_conditions.v1.md"
+    ]
+  },
+  "AG09": {
+    "title": "Independent review before activation",
+    "required_result": "All AG01-AG09 must pass independent human review before a later activation decision.",
+    "package_artifacts": [
+      "17_activation_governance_reviewer_packet.BLANK.v1.md"
+    ]
+  }
+}
