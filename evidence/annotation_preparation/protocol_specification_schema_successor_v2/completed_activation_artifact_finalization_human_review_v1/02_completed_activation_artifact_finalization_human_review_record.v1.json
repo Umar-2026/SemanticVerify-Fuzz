@@ -1,0 +1,87 @@
+{
+  "bound_external_handoff": {
+    "completed_manual_review_sha256": "72f5eb515529ee509140d606066c38b743cea76ad34a1272f982ef99b028e2d1",
+    "initial_archive_sha256": "a25bccb22410e05de825919616aafdcc3bce71aed0f09ed176bcef32ff3e54a8",
+    "initial_checksum_sha256": "9bd266496b95564fb890bee106aeb877246bbfd70c5d6e21e61af11af253201a",
+    "initial_manual_review_sha256": "68a178f51b3a12bc3b918211a3332b4ef54f2432b5468a46673c89c00b2faadf",
+    "manifest_sha256": "5d508c1510179fcd22799bbde1fe287a22c6f8aa6a396b60770d2caa17bb69d7"
+  },
+  "bound_external_postcommit_proof": {
+    "checksum_sha256": "816461c56d98616e9dc66d2cc671cb9196b9999e2fd094cca89d48726af14269",
+    "manifest_sha256": "04d699ff387a1ae3f67b95a10b0da82f7ecaf1f0bf27d06a37d326d021a9c563"
+  },
+  "bound_package": {
+    "checksum_sha256": "be2c504098c5e4d7f706e60f36429a9eba5f84dd43e473c08215cd68470aebea",
+    "commit": "fa64f7810443d14cd710600cd48ae9f9fedbb04a",
+    "manifest_sha256": "b417548998afb9636d3c24e5abdb9a90588fb82dea74e4342ea637a84bc42fb9",
+    "parent": "6eba8a1fc69c0b1146e033b031f5948a245bd84b",
+    "tree": "9bb36f1a7d1bb303341f65ded8f0c63796d5c7cd"
+  },
+  "governance_effects": {
+    "active_v2_hash_contract_installed": false,
+    "active_version_dispatch_installed": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "decision_0019_modified": false,
+    "decision_0019_successor_adopted": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_v2_activated": false
+  },
+  "human_review": {
+    "AF01": "PASS",
+    "AF02": "PASS",
+    "AF03": "PASS",
+    "AF04": "REVISION_REQUIRED",
+    "AF05": "PASS",
+    "AF06": "PASS",
+    "AF07": "REVISION_REQUIRED",
+    "AF08": "REVISION_REQUIRED",
+    "AF09": "REVISION_REQUIRED",
+    "AF10": "PASS",
+    "fail_count": 0,
+    "open_items": [
+      "AF04",
+      "AF07",
+      "AF08",
+      "AF09"
+    ],
+    "overall_decision": "REVISION_REQUIRED",
+    "pass_count": 6,
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "2026-08-21",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "revision_required_count": 4,
+    "sha256": "72f5eb515529ee509140d606066c38b743cea76ad34a1272f982ef99b028e2d1",
+    "size_bytes": 6548
+  },
+  "next_boundary": "AUTHOR_EVIDENCE_ONLY_CORRECTIVE_SUCCESSOR_GOVERNANCE_AUTHORIZATION_FOR_AF04_AF07_AF08_AF09",
+  "record_id": "SVF-SCHEMA-V2-ACTIVATION-ARTIFACT-FINALIZATION-HUMAN-REVIEW-RECORD-V1",
+  "record_only": true,
+  "reviewer_required_remedy": {
+    "evidence_only": true,
+    "focused_rereview_items": [
+      "AF04",
+      "AF07",
+      "AF08",
+      "AF09"
+    ],
+    "prove_active_dispatch_path_absence_required": true,
+    "prove_active_v2_hash_path_absence_required": true,
+    "prove_checkpoint_parent_relationship_required": true,
+    "prove_commit_to_tree_to_path_to_blob_bindings_required": true,
+    "prove_core_artifact_immutability_required": true,
+    "prove_curl_json_absence_required": true,
+    "prove_package_only_change_scope_required": true,
+    "raw_git_blob_objects_required": true,
+    "raw_git_commit_objects_required": true,
+    "raw_git_nested_tree_objects_required": true,
+    "raw_git_root_tree_objects_required": true,
+    "recompute_git_object_ids_required": true
+  },
+  "status": "ACTIVATION_ARTIFACT_FINALIZATION_HUMAN_REVIEW_REVISION_REQUIRED_RECORDED"
+}
