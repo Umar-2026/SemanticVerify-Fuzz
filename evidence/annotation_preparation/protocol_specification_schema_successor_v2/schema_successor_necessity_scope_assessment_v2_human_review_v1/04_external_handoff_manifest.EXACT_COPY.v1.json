@@ -1,0 +1,70 @@
+{
+  "corrective_assessment_v2_state": {
+    "independent_human_review_completed": false,
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "selected_outcome_is_human_approved": false,
+    "synthetic_reviewer_decision": false
+  },
+  "explicit_non_authorizations": {
+    "analyzer_implementation_or_execution": false,
+    "baseline_execution": false,
+    "corrective_v2_modification": false,
+    "curl_json_creation": false,
+    "exhaustive_v2_capability_study_authoring": false,
+    "positive_mapping_authorization": false,
+    "positive_v4_to_successor_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "handoff_id": "SVF-CORRECTIVE-ASSESSMENT-V2-CVR01-CVR08-INDEPENDENT-HUMAN-REVIEW-HANDOFF-20260822",
+  "immutable_review_package_v1": {
+    "checksum_manifest_sha256": "a94e3d36ca3a129fea352ab426aa0b5b7171c86e89a000b9183de2c71adbc010",
+    "external_path": "package",
+    "manifest_sha256": "1fe2ada20b9e8b54eb57f34e457336107b5b33b1605210f138a446669bf4d03d",
+    "repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_successor_necessity_scope_assessment_v2_review_package_v1",
+    "review_evidence_sha256": "80b80c33c68906605daa8b2197bae83b9329a00cb69ae26f6e12b7b105d58357"
+  },
+  "manual_review": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "editable_path": "manual_review/15_corrective_v2_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "initial_blank_sha256": "248e3f567ca361c7c4afe54d1b7dfcc40064022cafd2f7b1b65981edacaafa44",
+    "initial_blank_size_bytes": 3996,
+    "mandatory_review_items": [
+      "CVR01",
+      "CVR02",
+      "CVR03",
+      "CVR04",
+      "CVR05",
+      "CVR06",
+      "CVR07",
+      "CVR08"
+    ]
+  },
+  "next_boundary": "HUMAN_REVIEWER_EDITS_ONLY_CVR01_CVR08_MANUAL_REVIEW_COPY",
+  "one_time_initial_blank_verifier": {
+    "consumption_marker": "INITIAL_BLANK_VERIFIER_CONSUMED.v1",
+    "maximum_successful_runs": 1,
+    "must_never_rerun_after_reviewer_edit": true,
+    "must_run_before_reviewer_edit": true,
+    "path": "02_verify_INITIAL_BLANK_CVR01_CVR08_handoff.v1.py"
+  },
+  "source_repository_checkpoint": {
+    "commit": "2f0e56aaaef3ac58a274f48fba42ab58ced259d1",
+    "parent": "203d6db5ffd43f04985e2d295c89652c59a6670d",
+    "tree": "9ef1bb9e44939516159f945f493f214f1cbc0a3b"
+  },
+  "status": "EXTERNAL_INDEPENDENT_HUMAN_REVIEW_PRE_REVIEW"
+}

@@ -1,0 +1,60 @@
+{
+  "completed_review": {
+    "exact_copy_filename": "01_completed_cvr01_cvr08_human_review.EXACT_COPY.v1.md",
+    "item_decisions": {
+      "CVR01": "PASS",
+      "CVR02": "PASS",
+      "CVR03": "PASS",
+      "CVR04": "PASS",
+      "CVR05": "PASS",
+      "CVR06": "PASS",
+      "CVR07": "PASS",
+      "CVR08": "PASS"
+    },
+    "overall_decision": "APPROVE_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2",
+    "reviewer": {
+      "date": "22 / August / 2026",
+      "name": "Abdul Raheem Shahzad",
+      "recorded_confirmation": "ARS",
+      "role": "Spec-Reviewer-1"
+    },
+    "sha256": "fdb770d807d08946656fb70caa336de9f88d39b47bf3bf5963e8a32503f1ea9c",
+    "size_bytes": 9277
+  },
+  "human_review_interpretation": {
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "corrective_assessment_v2_human_approved": true,
+    "curl_json_authorized": false,
+    "exhaustive_v2_capability_study_authorized": false,
+    "further_evidence_required_human_approved": true,
+    "positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_successor_required_human_approved": false
+  },
+  "immutable_handoff_binding": {
+    "handoff_immutable_checksum_sha256": "cea544920198ef79fda3e001227a2c42b8357cac1481497d6213d64e812669a7",
+    "handoff_manifest_sha256": "f16e614be98ea9e2b38a7b2cd787f2fb0a51ff02cc0cc8189681bce5b31c1c74",
+    "review_package_checksum_sha256": "a94e3d36ca3a129fea352ab426aa0b5b7171c86e89a000b9183de2c71adbc010",
+    "review_package_manifest_sha256": "1fe2ada20b9e8b54eb57f34e457336107b5b33b1605210f138a446669bf4d03d"
+  },
+  "next_boundary": "SEPARATELY_RECORD_COMPLETED_CORRECTIVE_ASSESSMENT_V2_HUMAN_REVIEW_IN_REPOSITORY",
+  "pre_review_binding": {
+    "consumption_marker_sha256": "cca3d2c5a1f292875663918e3cd1dac8ca76e9fde8fd6d8f69eb55ca4ff8dfd4",
+    "initial_blank_sha256": "248e3f567ca361c7c4afe54d1b7dfcc40064022cafd2f7b1b65981edacaafa44",
+    "initial_blank_size_bytes": 3996,
+    "initial_blank_state_verified_before_reviewer_edit": true,
+    "initial_blank_verifier_permanently_retired": true,
+    "initial_blank_verifier_rerun_after_reviewer_edit": false,
+    "initial_blank_verifier_successful_run_count": 1
+  },
+  "record_id": "SVF-CORRECTIVE-ASSESSMENT-V2-CVR01-CVR08-COMPLETED-HUMAN-REVIEW-EXTERNAL-RECORD-V1",
+  "review_subject": {
+    "assessment": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V2",
+    "author_candidate_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "bounded_outcome_human_approved": "FURTHER_EVIDENCE_REQUIRED",
+    "completed_human_review_outcome": "APPROVE_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2"
+  },
+  "status": "COMPLETED_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_VALIDATED_EXTERNALLY"
+}

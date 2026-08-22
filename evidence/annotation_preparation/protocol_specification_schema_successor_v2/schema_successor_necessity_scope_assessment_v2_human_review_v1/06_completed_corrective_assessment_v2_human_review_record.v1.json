@@ -1,0 +1,69 @@
+{
+  "bounded_human_approval": {
+    "corrective_assessment_v2_human_approved": true,
+    "further_evidence_required_human_approved": true,
+    "no_successor_required_with_proven_v2_mapping_human_approved": false,
+    "schema_successor_required_human_approved": false
+  },
+  "completed_human_review": {
+    "exact_review_sha256": "fdb770d807d08946656fb70caa336de9f88d39b47bf3bf5963e8a32503f1ea9c",
+    "exact_review_size_bytes": 9277,
+    "external_completed_review_checksum_sha256": "0665e5dc5f714aa0c9885d7a6be53f51f11da906bfbf56c3f3d717dfd2db5efe",
+    "external_completed_review_record_sha256": "c71a4d2d1e9853b7dedd0390aa0aa6462db74e4a73c7f24dca17658257aaac31",
+    "item_decisions": {
+      "CVR01": "PASS",
+      "CVR02": "PASS",
+      "CVR03": "PASS",
+      "CVR04": "PASS",
+      "CVR05": "PASS",
+      "CVR06": "PASS",
+      "CVR07": "PASS",
+      "CVR08": "PASS"
+    },
+    "overall_decision": "APPROVE_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2",
+    "reviewer": {
+      "date": "22 / August / 2026",
+      "name": "Abdul Raheem Shahzad",
+      "recorded_confirmation": "ARS",
+      "role": "Spec-Reviewer-1"
+    }
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "exhaustive_v2_capability_study_authoring": false,
+    "positive_mapping_authorization": false,
+    "positive_v4_to_successor_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "initial_blank_review_provenance": {
+    "consumption_marker_sha256": "cca3d2c5a1f292875663918e3cd1dac8ca76e9fde8fd6d8f69eb55ca4ff8dfd4",
+    "initial_blank_sha256": "248e3f567ca361c7c4afe54d1b7dfcc40064022cafd2f7b1b65981edacaafa44",
+    "initial_blank_size_bytes": 3996,
+    "one_time_initial_blank_verifier_permanently_retired": true,
+    "one_time_initial_blank_verifier_rerun_after_reviewer_edit": false,
+    "one_time_initial_blank_verifier_successful_run_count": 1
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_EXHAUSTIVE_ADMISSIBLE_EXISTING_SCHEMA_V2_MULTIFIELD_CAPABILITY_STUDY",
+  "record_id": "SVF-CORRECTIVE-ASSESSMENT-V2-COMPLETED-HUMAN-REVIEW-REPOSITORY-RECORD-V1",
+  "review_package_binding": {
+    "external_handoff_manifest_sha256": "f16e614be98ea9e2b38a7b2cd787f2fb0a51ff02cc0cc8189681bce5b31c1c74",
+    "package_checksum_sha256": "a94e3d36ca3a129fea352ab426aa0b5b7171c86e89a000b9183de2c71adbc010",
+    "package_manifest_sha256": "1fe2ada20b9e8b54eb57f34e457336107b5b33b1605210f138a446669bf4d03d"
+  },
+  "review_subject": {
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V2",
+    "assessment_json_sha256": "94e056db6a2b9eb993b4cea379491dbc69bc528115b755704b2ff587580b55dc",
+    "assessment_md_sha256": "e54d8ea0039c87a33ae4d07593428ac1d003bf7648fe9511d12fee5d35d1bd30",
+    "author_candidate_selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "human_approved_selected_outcome": "FURTHER_EVIDENCE_REQUIRED"
+  },
+  "status": "COMPLETED_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_APPROVED_AND_RECORDED"
+}
