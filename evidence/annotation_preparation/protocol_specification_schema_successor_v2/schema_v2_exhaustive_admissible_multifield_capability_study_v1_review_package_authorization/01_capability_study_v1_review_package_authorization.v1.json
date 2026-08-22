@@ -1,0 +1,112 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SCHEMA_V2_CAPABILITY_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-SCHEMA-V2-CAPABILITY-STUDY-V1-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_type": "PRE_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "additional_capability_evidence_authoring": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "capability_study_v1_modification": false,
+    "curl_json_creation": false,
+    "operational_positive_v4_to_successor_mapping_authoring": false,
+    "operational_positive_v4_to_v2_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false,
+    "semantic_role_relation_formalization": false
+  },
+  "human_review_requirements": {
+    "external_writable_manual_review_copy_required": true,
+    "independent_human_technical_review_required": true,
+    "initial_blank_state_verifier_must_never_run_after_reviewer_edit": true,
+    "initial_reviewer_packet_must_be_blank": true,
+    "one_time_initial_blank_state_verifier_max_successful_run_count": 1,
+    "one_time_initial_blank_state_verifier_required": true,
+    "synthetic_reviewer_decision_allowed": false
+  },
+  "mandatory_review_items": {
+    "CSR01": {
+      "focus": "EXACT_IMMUTABLE_BINDING",
+      "question": "Does the package bind exactly to immutable Capability Study V1, its four principal study artifacts, Decision 0084, and the reviewed predecessor governance evidence?"
+    },
+    "CSR02": {
+      "focus": "INVENTORY_AND_COUNT_INTEGRITY",
+      "question": "Are the study inventories and mechanically asserted counts internally consistent, including 10 V4 semantic containers, 109 semantic units, 531 leaf fields, 57 field classes, 64 rules, 3 exit obligations, 10 representation-policy fields, 15 enforcement values, 171 Schema-V2 property paths, 123 distinct property names, and the stated rule-only ambiguity counts?"
+    },
+    "CSR03": {
+      "focus": "POSITIVE_PATH_NOT_PROVEN",
+      "question": "Is the study correct that a positive admissible existing-Schema-V2 mapping path is not yet proven because no complete constructive witness demonstrates exact forward encoding, deterministic exact reverse reconstruction, collision freedom, and semantic noninterference for every required V4 semantic unit?"
+    },
+    "CSR04": {
+      "focus": "NEGATIVE_PATH_NOT_PROVEN_AND_EXHAUSTIVENESS_LIMIT",
+      "question": "Is the study correct that a negative impossibility result is also not yet proven because the admissibility criterion 'semantically related carriers only' is not represented by a complete machine-readable relation and the admissible multi-field composition space therefore has not been exhaustively machine-enumerated and eliminated?"
+    },
+    "CSR05": {
+      "focus": "OUTCOME_STRENGTH_AND_NON_OVERCLAIM",
+      "question": "Given CSR03 and CSR04, is FURTHER_EVIDENCE_REQUIRED the strongest supported bounded conclusion without asserting either that an admissible existing-V2 mapping exists or that none can exist?"
+    },
+    "CSR06": {
+      "focus": "RESIDUAL_EXACTNESS_AND_SAME_NAME_NONINFERENCE",
+      "question": "Does the study appropriately retain unresolved exactness classes including enforcement, normative-strength uncertainty preservation, resource-centered semantics, synthetic-protocol-event non-invention, and additional rule/exit metadata, without treating absence of same-named Schema-V2 properties as an impossibility proof?"
+    },
+    "CSR07": {
+      "focus": "INVENTORY_VS_EXHAUSTIVE_ELIMINATION_DISTINCTION",
+      "question": "Does the study correctly preserve the distinction between exhaustive inventory/screening and proven exhaustive elimination of all admissible compositions, including the limitation implied by open string-valued semantically typed Schema-V2 carriers?"
+    },
+    "CSR08": {
+      "focus": "GOVERNANCE_BOUNDARY_AND_NON_AUTHORIZATION",
+      "question": "Are the governance boundaries correct: the study is author-candidate only; approval would approve only the bounded study result; and no operational positive mapping, schema successor, Schema V3, curl.json, analyzer, baseline, or repair action is thereby authorized?"
+    }
+  },
+  "next_boundary": "AUTHOR_CAPABILITY_STUDY_V1_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_V1",
+  "retired_verifier_constraints": {
+    "RI01_C_initial_blank_state_verifier_rerun": false,
+    "SR01_SR08_initial_blank_state_verifier_rerun": false,
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "decision_0067_pre_proof_verifier_rerun": false,
+    "decision_0069_pre_review_package_verifier_rerun": false,
+    "decision_0071_pre_corrective_package_verifier_rerun": false,
+    "decision_0073_pre_assessment_verifier_rerun": false,
+    "decision_0075_pre_review_package_verifier_rerun": false,
+    "decision_0078_pre_corrective_v2_verifier_rerun": false,
+    "decision_0080_pre_review_package_verifier_rerun": false,
+    "decision_0083_pre_study_verifier_rerun": false,
+    "initial_blank_CVR01_CVR08_verifier_rerun": false
+  },
+  "review_interpretation_constraints": {
+    "approval_would_authorize_positive_mapping_contract": false,
+    "approval_would_authorize_schema_successor": false,
+    "approval_would_establish_admissible_composition_exhaustiveness": false,
+    "approval_would_human_approve_capability_study_v1": true,
+    "approval_would_human_approve_selected_outcome_further_evidence_required": true,
+    "approval_would_prove_negative_existing_v2_mapping_impossibility": false,
+    "approval_would_prove_positive_existing_v2_mapping": false
+  },
+  "review_subject": {
+    "candidate_multifield_composition_matrix_sha256": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45",
+    "decision_0084_commit": "b04352c2251790ab881786c9b77235481f1f475e",
+    "schema_v2_carrier_inventory_sha256": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "selected_outcome_human_approved": false,
+    "semantic_unit_inventory_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "study_checksum_manifest_sha256": "68d2a28fb99b3fbb4df2e93ddd7569efb97a35367e08ec823afd9e89fc5848b2",
+    "study_id": "SVF-EXHAUSTIVE-ADMISSIBLE-EXISTING-SCHEMA-V2-MULTIFIELD-CAPABILITY-STUDY-V1",
+    "study_json_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+    "study_markdown_sha256": "7976e9d079a1df6ef20f183f37a290398a6214079a5b08674aa9ea68b25c600c",
+    "study_status": "AUTHOR_CANDIDATE"
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_CAPABILITY_STUDY_V1_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_V1_ONLY"
+}
