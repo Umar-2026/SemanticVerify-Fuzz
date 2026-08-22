@@ -1,0 +1,227 @@
+{
+  "SA01_exact_binding": {
+    "curl_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "proof_v1_json_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+    "proof_v1_md_sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b",
+    "review_chain_state": "ALL_ITEMS_PASS_CLOSED_AFTER_FOCUSED_CORRECTIVE_REREVIEW",
+    "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+  },
+  "SA02_existing_schema_v2_alternative_assessment": {
+    "alternative_A_direct_existing_v2_carriers": {
+      "basis": [
+        "No explicit Schema-V2 enforcement carrier exists.",
+        "Three exact representation-policy assertions lack explicit machine-checkable Schema-V2 carriers.",
+        "Reviewed field-level lossless reverse reconstruction remains unproven for additional rule and exit-obligation fields."
+      ],
+      "result": "NOT_SUFFICIENT"
+    },
+    "alternative_B_derive_enforcement_from_existing_verdict_or_defect_verdict": {
+      "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+      "result": "NOT_ADMISSIBLE_AS_EXACT_RECONSTRUCTION",
+      "verdict_to_enforcement_ambiguous_group_count": 3
+    },
+    "alternative_C_repurpose_unrelated_existing_v2_fields": {
+      "reason": "Semantic-field repurposing does not establish an admissible exact inverse representation.",
+      "result": "REJECTED_BY_EXISTING_ADMISSIBILITY_CONSTRAINTS"
+    },
+    "alternative_D_opaque_packing_or_external_per_rule_lookup": {
+      "reason": "The reviewed contract disallows opaque packing and external lookup substitution as a substitute for semantic representation.",
+      "result": "REJECTED_BY_EXISTING_ADMISSIBILITY_CONSTRAINTS"
+    },
+    "alternative_E_semantic_accounting_only": {
+      "reason": "Forward/reverse unit accounting binds source units to carriers but does not itself encode missing source semantics or prove field-level exact reverse reconstruction.",
+      "result": "NOT_SUFFICIENT"
+    },
+    "proven_admissible_existing_v2_mapping_path_available": false
+  },
+  "SA03_minimum_explicit_semantic_carrier_scope": {
+    "must_preserve_enforcement_semantics": {
+      "distinct_source_values": [
+        "FROZEN_V3_RULE",
+        "MUST",
+        "MUST_PREREQUISITE",
+        "MUST_RELEASE_RULE",
+        "MUST_RESOURCE_OWNERSHIP_FACT",
+        "NON_ENFORCEABLE_RECOMMENDATION",
+        "OUTSIDE_BOUNDED_CORE_DO_NOT_INVENT",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+        "SOURCE_GROUNDED_EXCEPTION",
+        "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+        "SOURCE_GROUNDED_RECOVERY",
+        "SOURCE_GROUNDED_REPEATED_USE_ALLOWED",
+        "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+        "STATE_SENSITIVE"
+      ],
+      "minimum_requirement": "A machine-checkable semantic carrier or carrier composition must preserve each source enforcement classification without semantic strengthening, weakening, opaque packing, or external lookup and must support deterministic exact reverse reconstruction.",
+      "source_rule_coverage": 64
+    },
+    "must_preserve_three_representation_policy_assertions": [
+      {
+        "field": "normative_strength_uncertainty_must_not_be_silently_strengthened",
+        "minimum_requirement": "Explicit machine-checkable preservation and exact reconstruction of the normative-strength uncertainty policy.",
+        "source_value": true
+      },
+      {
+        "field": "resource_centered",
+        "minimum_requirement": "Explicit machine-checkable preservation and exact reconstruction of the resource-centered policy.",
+        "source_value": true
+      },
+      {
+        "field": "synthetic_protocol_events_invented",
+        "minimum_requirement": "Explicit machine-checkable preservation and exact reconstruction of the prohibition on invented synthetic protocol events.",
+        "source_value": false
+      }
+    ],
+    "requirement_type": "CAPABILITY_REQUIREMENTS_NOT_SCHEMA_DESIGN"
+  },
+  "SA04_complete_field_level_scope": {
+    "already_directly_carried_fields_do_not_remove_need_for_whole_record_roundtrip": [
+      "rule_id",
+      "defect",
+      "verdict"
+    ],
+    "exit_obligation_count": 3,
+    "exit_obligation_field_inventory": [
+      "classification_note",
+      "condition",
+      "defect",
+      "discharge_condition",
+      "enforcement",
+      "failed_cleanup_effect",
+      "missing_cleanup_verdict",
+      "required_discharge",
+      "resource"
+    ],
+    "exit_obligation_fields_requiring_explicit_mapping_or_formal_decomposition_proof": [
+      "classification_note",
+      "condition",
+      "defect",
+      "discharge_condition",
+      "enforcement",
+      "failed_cleanup_effect",
+      "missing_cleanup_verdict",
+      "required_discharge",
+      "resource"
+    ],
+    "important": "The successor scope must not be artificially narrowed to enforcement plus three policy fields; every V4 source field must be either directly preserved or covered by a reviewed deterministic semantic decomposition and inverse reconstruction proof.",
+    "rule_field_inventory": [
+      "argument_scope",
+      "classification_note",
+      "cleanup_obligation_effect",
+      "condition",
+      "defect",
+      "dependent_reasoning_policy",
+      "effect",
+      "enforcement",
+      "excludes",
+      "fact",
+      "function",
+      "precedence",
+      "precondition",
+      "reason",
+      "recommendation",
+      "return",
+      "return_behavior",
+      "return_note",
+      "rule_id",
+      "runtime_post_state",
+      "structural_effect",
+      "verdict"
+    ],
+    "rule_fields_requiring_explicit_mapping_or_formal_decomposition_proof": [
+      "argument_scope",
+      "classification_note",
+      "cleanup_obligation_effect",
+      "condition",
+      "dependent_reasoning_policy",
+      "effect",
+      "enforcement",
+      "excludes",
+      "fact",
+      "function",
+      "precedence",
+      "precondition",
+      "reason",
+      "recommendation",
+      "return",
+      "return_behavior",
+      "return_note",
+      "runtime_post_state",
+      "structural_effect"
+    ]
+  },
+  "SA05_semantic_accounting_boundary": {
+    "minimum_successor_requirement": "Semantic accounting may continue to provide forward/reverse source-unit traceability, but each referenced destination carrier must itself semantically encode enough information for deterministic preservation and exact reverse reconstruction.",
+    "semantic_accounting_alone_is_not_missing_semantic_storage": true,
+    "semantic_accounting_may_remain_accounting_layer": true
+  },
+  "SA06_backward_compatibility_and_migration": {
+    "active_schema_v2_artifacts_must_remain_historically_immutable": true,
+    "current_schema_v2_remains_active_until_separate_successor_activation": true,
+    "existing_libpcap_schema_v1_specification_must_remain_unchanged": true,
+    "existing_zlib_schema_v1_specification_must_remain_unchanged": true,
+    "migration_policy": "No mandatory migration of already frozen zlib/libpcap specifications is justified by the curl-specific successor requirement. Any successor applies through separately reviewed version dispatch and explicit document schema_version binding.",
+    "successor_must_not_silently_reinterpret_existing_v1_or_v2_documents": true,
+    "version_dispatch_must_support_explicit_version_selection": true
+  },
+  "SA07_minimum_future_governance_sequence_if_successor_is_required": [
+    "Independently review and approve this necessity/scope assessment.",
+    "Separately authorize successor-schema authoring.",
+    "Author a successor candidate without modifying historical Schema V1 or active Schema V2 artifacts.",
+    "Machine-check the successor against the minimum semantic-carrier and roundtrip requirements.",
+    "Conduct independent human technical review of the successor candidate.",
+    "Separately finalize successor hash/canonicalization and version-dispatch governance.",
+    "Separately authorize and execute successor activation.",
+    "After activation, separately authorize a positive curl V4-to-successor mapping contract.",
+    "Machine-check and independently review exact forward preservation and reverse reconstruction for all V4 semantic containers, 64 rules, three exit obligations, policy assertions, and all source fields.",
+    "Only after the positive mapping is approved may curl canonical materialization be separately authorized.",
+    "Analyzer implementation/execution remains outside this assessment and requires its own project-stage authorization."
+  ],
+  "SA08_conclusion": {
+    "allowed_outcomes": [
+      "NO_SUCCESSOR_REQUIRED_WITH_PROVEN_ADMISSIBLE_V2_MAPPING_PATH",
+      "SCHEMA_SUCCESSOR_REQUIRED",
+      "FURTHER_EVIDENCE_REQUIRED"
+    ],
+    "bounded_interpretation": "A schema successor is required if the project continues to require exact lossless canonical representation of curl V4 under the existing reviewed admissibility constraints. This is not a claim that Schema V2 is generally invalid or information-theoretically incapable under arbitrary encoding rules.",
+    "schema_successor_authoring_authorized_by_this_assessment": false,
+    "selected_outcome": "SCHEMA_SUCCESSOR_REQUIRED",
+    "successor_version_number_preselected": false,
+    "why_FURTHER_EVIDENCE_REQUIRED_not_selected": "The evidentiary question of the identified Schema-V2 residual insufficiency has already undergone independent review, corrective provenance rereview, and closure. The unresolved issue is now representational capability, not missing review evidence.",
+    "why_NO_SUCCESSOR_REQUIRED_not_selected": "No admissible deterministic exact V4-to-existing-V2 mapping path has been proven, while the residual Schema-V2 insufficiency proof and its corrective review chain are complete and PASS_CLOSED."
+  },
+  "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V1",
+  "claim_boundary": {
+    "abstract_information_theoretic_impossibility_claimed": false,
+    "claim_that_schema_v2_is_insufficient_for_the_reviewed_exact_v4_contract": true,
+    "general_claim_that_schema_v2_is_UNUSABLE": false,
+    "scope": "EXACT_CURL_V4_LOSSLESS_CANONICALIZATION_UNDER_EXISTING_REVIEWED_ADMISSIBILITY_CONSTRAINTS"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false
+  },
+  "human_review_state": {
+    "independent_human_technical_review_completed": false,
+    "synthetic_reviewer_decision": false
+  },
+  "next_boundary": "AUTHORIZE_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_FOR_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V1",
+  "reviewed_basis": {
+    "all_RI01_to_RI08_review_items_pass_closed": true,
+    "focused_RI01_corrective_decision": "PASS",
+    "historical_first_round_overall_decision": "REVISION_REQUIRED",
+    "historical_first_round_overall_decision_rewritten": false,
+    "residual_insufficiency_proof_review_chain_complete": true,
+    "synthetic_overall_reviewer_approval_created": false
+  },
+  "status": "AUTHOR_ASSESSMENT_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_TECHNICAL_REVIEW"
+}
