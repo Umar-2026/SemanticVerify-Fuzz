@@ -1,0 +1,290 @@
+{
+  "authorization": {
+    "authorization_commit": "eac9636a132c796bb7dbbbe2560c090722f43061",
+    "authorization_sha256": "6504ceae1c9b050797fd65bc4e189c40d9586b5dbabe9e2e7c414a1bf4e84ee1",
+    "decision": "documentation/decisions/0067-authorize-residual-schema-v2-losslessness-insufficiency-proof.md"
+  },
+  "candidate_conclusion": {
+    "exact_positive_v4_to_v2_mapping_currently_justified": false,
+    "independent_human_technical_review_required": true,
+    "residual_schema_v2_insufficiency_under_existing_contract": true,
+    "review_outcomes_may_include": [
+      "APPROVE_RESIDUAL_SCHEMA_V2_INSUFFICIENCY_PROOF",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "schema_successor_authoring_currently_authorized": false
+  },
+  "claim_scope": "INSUFFICIENCY_UNDER_THE_EXISTING_EXACT_V4_LOSSLESSNESS_AND_ADMISSIBILITY_CONSTRAINTS_NOT_A_CLAIM_OF_ABSTRACT_INFORMATION_THEORETIC_IMPOSSIBILITY",
+  "exact_inputs": {
+    "active_schema_v2": {
+      "path": "config/schemas/protocol_specification.v2.schema.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+    },
+    "active_v2_hash_contract": {
+      "path": "config/protocol_content_hash_canonicalization.v2.json",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9"
+    },
+    "active_version_dispatch": {
+      "path": "config/protocol_specification_schema_version_dispatch.v1.json",
+      "sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee"
+    },
+    "curl_technical_working_draft_v4": {
+      "path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8"
+    },
+    "historical_mapping_contract_v4": {
+      "path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070"
+    }
+  },
+  "exit_obligation_boundary": {
+    "field_level_lossless_mapping_proven": false,
+    "source_exit_obligation_count": 3,
+    "unit_level_schema_carrier_present": true
+  },
+  "explicit_non_claims": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "independent_human_review_completed": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "positive_v4_to_v2_mapping_defined": false,
+    "repair_authorized": false,
+    "schema_successor_authorized": false,
+    "schema_v2_modified": false,
+    "schema_v3_authored": false
+  },
+  "historical_losslessness_contract": {
+    "all_10_v4_semantic_containers_preserved": true,
+    "all_3_exit_obligations_accounted_for": true,
+    "all_64_rule_records_accounted_for": true,
+    "complete_exact_v4_representation_policy_machine_checkably_bound": true,
+    "complete_exact_v4_representation_policy_preserved": true,
+    "forward_accounting_required": true,
+    "four_verdict_contract_preserved": true,
+    "membership_sensitive_semantics_preserved": true,
+    "normative_strength_uncertainty_policy_preserved": true,
+    "ownership_sensitive_semantics_preserved": true,
+    "path_sensitive_semantics_preserved": true,
+    "resource_centered_semantics_preserved": true,
+    "return_sensitive_semantics_preserved": true,
+    "reverse_accounting_required": true,
+    "set_valued_state_reasoning_preserved": true,
+    "synthetic_protocol_events_invented_false_policy_preserved": true,
+    "unknown_first_class_preserved": true
+  },
+  "historical_obstruction_status_under_active_schema_v2": [
+    {
+      "obstruction_id": "V2-O1-MEMBERSHIP-RELATION",
+      "status_under_active_schema_v2": "STRUCTURAL_CARRIER_NOW_PRESENT",
+      "v2_carriers": [
+        "/resource_model/relation_types",
+        "/semantic_rules/*/relation_bindings",
+        "/semantic_rules/*/resource_bindings"
+      ]
+    },
+    {
+      "obstruction_id": "V2-O2-FOUR-VERDICT-AND-JOIN-POLICY",
+      "status_under_active_schema_v2": "STRUCTURAL_CARRIER_NOW_PRESENT",
+      "v2_carriers": [
+        "/semantic_policy/verdict_vocabulary",
+        "/semantic_policy/verdict_aggregation"
+      ]
+    },
+    {
+      "obstruction_id": "V2-O3-PATH-AND-SET-VALUED-REASONING",
+      "status_under_active_schema_v2": "STRUCTURAL_CARRIER_NOW_PRESENT",
+      "v2_carriers": [
+        "/semantic_policy/reasoning_model/path_sensitivity",
+        "/semantic_policy/reasoning_model/state_domain",
+        "/semantic_policy/reasoning_model/join_operator",
+        "/semantic_rules/*/preconditions/path_conditions"
+      ]
+    },
+    {
+      "obstruction_id": "V2-O4-STRUCTURED-RULE-PAYLOAD",
+      "status_under_active_schema_v2": "STRUCTURAL_CARRIERS_NOW_PRESENT",
+      "v2_carriers": [
+        "/semantic_rules/*/preconditions",
+        "/semantic_rules/*/effects",
+        "/semantic_rules/*/resource_bindings",
+        "/semantic_rules/*/relation_bindings"
+      ]
+    }
+  ],
+  "next_boundary": "PREPARE_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_FOR_RESIDUAL_SCHEMA_V2_INSUFFICIENCY_PROOF_V1",
+  "proof_id": "SVF-SCHEMA-V2-RESIDUAL-LOSSLESSNESS-INSUFFICIENCY-PROOF-V1",
+  "residual_gap_R1_enforcement_semantics": {
+    "admissibility_boundary": [
+      "Do not encode enforcement labels in arbitrary state, event, description, evidence, ID, or other semantically unrelated strings.",
+      "Do not repurpose rule_kind, verdict, defect_category, source_evidence, or semantic_container merely as an opaque enforcement-value carrier.",
+      "Do not rely on an external per-rule lookup table to claim that canonical Schema-V2 bytes themselves preserve the enforcement semantic."
+    ],
+    "candidate_finding": "The exact V4 enforcement classification is not presently carried by a first-class semantically typed Schema-V2 field, and it is not derivable from verdict alone or defect-plus-verdict. Under the existing admissibility constraints, exact reverse reconstruction of this source semantic has not been established.",
+    "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+    "defect_plus_verdict_to_enforcement_ambiguous_groups": [
+      {
+        "defect": "<NO_DEFECT>",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST_PREREQUISITE",
+          "MUST_RELEASE_RULE",
+          "MUST_RESOURCE_OWNERSHIP_FACT",
+          "SOURCE_GROUNDED",
+          "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+          "SOURCE_GROUNDED_RECOVERY",
+          "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+          "STATE_SENSITIVE"
+        ],
+        "verdict": "<NO_EXPLICIT_VERDICT>"
+      },
+      {
+        "defect": "<NO_DEFECT>",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "NON_ENFORCEABLE_RECOMMENDATION",
+          "SOURCE_GROUNDED",
+          "SOURCE_GROUNDED_EXCEPTION",
+          "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+          "SOURCE_GROUNDED_REPEATED_USE_ALLOWED"
+        ],
+        "verdict": "VALID"
+      },
+      {
+        "defect": "D1",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST"
+        ],
+        "verdict": "VIOLATION-MUST"
+      },
+      {
+        "defect": "D2",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST"
+        ],
+        "verdict": "VIOLATION-MUST"
+      }
+    ],
+    "distinct_enforcement_value_count": 15,
+    "distinct_enforcement_values": [
+      "FROZEN_V3_RULE",
+      "MUST",
+      "MUST_PREREQUISITE",
+      "MUST_RELEASE_RULE",
+      "MUST_RESOURCE_OWNERSHIP_FACT",
+      "NON_ENFORCEABLE_RECOMMENDATION",
+      "OUTSIDE_BOUNDED_CORE_DO_NOT_INVENT",
+      "SOURCE_GROUNDED",
+      "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+      "SOURCE_GROUNDED_EXCEPTION",
+      "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+      "SOURCE_GROUNDED_RECOVERY",
+      "SOURCE_GROUNDED_REPEATED_USE_ALLOWED",
+      "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+      "STATE_SENSITIVE"
+    ],
+    "explicit_v2_enforcement_carrier_present": false,
+    "rules_with_enforcement_field": 64,
+    "v4_rule_record_count": 64,
+    "verdict_to_enforcement_ambiguous_group_count": 3,
+    "verdict_to_enforcement_ambiguous_groups": {
+      "<NO_EXPLICIT_VERDICT>": [
+        "FROZEN_V3_RULE",
+        "MUST_PREREQUISITE",
+        "MUST_RELEASE_RULE",
+        "MUST_RESOURCE_OWNERSHIP_FACT",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+        "SOURCE_GROUNDED_RECOVERY",
+        "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+        "STATE_SENSITIVE"
+      ],
+      "VALID": [
+        "FROZEN_V3_RULE",
+        "NON_ENFORCEABLE_RECOMMENDATION",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_EXCEPTION",
+        "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+        "SOURCE_GROUNDED_REPEATED_USE_ALLOWED"
+      ],
+      "VIOLATION-MUST": [
+        "FROZEN_V3_RULE",
+        "MUST"
+      ]
+    }
+  },
+  "residual_gap_R2_representation_policy": {
+    "candidate_finding": "Three exact V4 representation-policy assertions remain without explicit machine-checkable Schema-V2 policy carriers; structural resemblance or derived intent is not treated as exact reverse reconstruction.",
+    "unresolved_field_count": 3,
+    "unresolved_fields": [
+      {
+        "candidate_existing_carriers": [
+          "/semantic_policy/reasoning_model/unknown_handling",
+          "/semantic_policy/verdict_aggregation/unknown_when"
+        ],
+        "explicit_schema_token_present": false,
+        "field": "normative_strength_uncertainty_must_not_be_silently_strengthened",
+        "residual_issue": "Existing UNKNOWN handling does not explicitly encode the stronger policy that unresolved normative strength must never be silently strengthened.",
+        "source_value": true
+      },
+      {
+        "candidate_existing_carriers": [
+          "/resource_model",
+          "/semantic_rules/*/resource_bindings",
+          "/exit_obligations/*/resource_bindings"
+        ],
+        "explicit_schema_token_present": false,
+        "field": "resource_centered",
+        "residual_issue": "Resource structure is mandatory, but the exact V4 policy assertion resource_centered=true is not independently encoded as a machine-checkable policy field.",
+        "source_value": true
+      },
+      {
+        "candidate_existing_carriers": [
+          "/events/*/event_kind"
+        ],
+        "explicit_schema_token_present": false,
+        "field": "synthetic_protocol_events_invented",
+        "residual_issue": "The event-kind vocabulary does not establish provenance or a machine-checkable prohibition against inventing synthetic protocol events.",
+        "source_value": false
+      }
+    ]
+  },
+  "semantic_accounting_boundary": {
+    "accounting_alone_proves_semantic_encoding": false,
+    "forward_accounting_supported_by_schema": true,
+    "reason": "Accounting binds source units to schema carriers but cannot substitute for proof that those carriers preserve and reconstruct each source semantic.",
+    "reverse_accounting_supported_by_schema": true
+  },
+  "status": "AUTHOR_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_TECHNICAL_REVIEW",
+  "supporting_gap_R3_rule_field_decomposition": {
+    "all_64_rule_records_field_level_losslessly_mapped": false,
+    "all_64_rule_records_unit_accountable": true,
+    "interpretation": "Absence of a same-named property does not by itself prove impossibility, but each such semantic field requires an admissible deterministic decomposition and reverse-reconstruction argument before a positive mapping can be approved.",
+    "rule_fields_without_same_named_v2_property": [
+      "argument_scope",
+      "classification_note",
+      "cleanup_obligation_effect",
+      "condition",
+      "defect",
+      "dependent_reasoning_policy",
+      "enforcement",
+      "excludes",
+      "fact",
+      "function",
+      "precedence",
+      "precondition",
+      "reason",
+      "recommendation",
+      "return",
+      "return_behavior",
+      "return_note",
+      "runtime_post_state",
+      "structural_effect",
+      "verdict"
+    ]
+  }
+}

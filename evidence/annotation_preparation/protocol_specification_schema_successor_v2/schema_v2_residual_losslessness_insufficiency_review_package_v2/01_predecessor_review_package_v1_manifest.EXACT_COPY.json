@@ -1,0 +1,124 @@
+{
+  "authoring_authorization": {
+    "authorization_commit": "6eb3221f71072a0518b5a14a5f0da790c94e51f6",
+    "authorization_sha256": "0af2553566e8345fb3eb7ecf9b6c6afdf0818cc7e773643f7735f24080dff3eb",
+    "decision": "documentation/decisions/0069-authorize-residual-schema-v2-insufficiency-review-package-authoring.md"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_implementation_or_execution": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_v4_to_v2_mapping": false,
+    "proof_modification": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false
+  },
+  "human_review_state": {
+    "completed": false,
+    "synthetic_decision": false
+  },
+  "initial_blank_reviewer_packet": {
+    "filename": "11_residual_schema_v2_insufficiency_reviewer_packet.REVIEW_DRAFT.v1.md",
+    "sha256": "b8309f9704699a610f50339556896f2cf3c234dbb9a221097858a7fdd9203058",
+    "size_bytes": 3674
+  },
+  "next_boundary": "CREATE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_WITH_ONE_TIME_INITIAL_BLANK_STATE_VERIFIER",
+  "package_files": [
+    {
+      "filename": "01_residual_schema_v2_insufficiency_proof.EXACT_COPY.v1.json",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "size_bytes": 11911
+    },
+    {
+      "filename": "02_residual_schema_v2_insufficiency_proof_summary.EXACT_COPY.v1.md",
+      "sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b",
+      "size_bytes": 4377
+    },
+    {
+      "filename": "03_curl_technical_protocol_working_draft_v4.EXACT_COPY.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033
+    },
+    {
+      "filename": "04_active_protocol_specification_v2_schema.EXACT_COPY.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "filename": "05_historical_curl_mapping_contract_v4.EXACT_COPY.json",
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+      "size_bytes": 26601
+    },
+    {
+      "filename": "06_active_v2_hash_contract.EXACT_COPY.json",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "size_bytes": 3154
+    },
+    {
+      "filename": "07_active_version_dispatch.EXACT_COPY.json",
+      "sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee",
+      "size_bytes": 1334
+    },
+    {
+      "filename": "08_decision_0068_author_checkpoint.EXACT_COPY.md",
+      "sha256": "62b145c402716864533da8e067518b92176b88de07367cdd2296e546c3936863",
+      "size_bytes": 2383
+    },
+    {
+      "filename": "09_decision_0069_review_package_authorization.EXACT_COPY.json",
+      "sha256": "0af2553566e8345fb3eb7ecf9b6c6afdf0818cc7e773643f7735f24080dff3eb",
+      "size_bytes": 5098
+    },
+    {
+      "filename": "10_residual_insufficiency_review_evidence.v1.json",
+      "sha256": "49dc3acefb0ce02db8e2606d8112c8e6bda958ec0d02ae9dc0b0868f685cb831",
+      "size_bytes": 6751
+    },
+    {
+      "filename": "11_residual_schema_v2_insufficiency_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "sha256": "b8309f9704699a610f50339556896f2cf3c234dbb9a221097858a7fdd9203058",
+      "size_bytes": 3674
+    },
+    {
+      "filename": "12_verify_residual_schema_v2_insufficiency_review_package.v1.py",
+      "sha256": "ea22d95fdbd86840eb3501d2c872bf0add39c3bf6f90b147c16b41cb73dfb9b6",
+      "size_bytes": 9410
+    }
+  ],
+  "package_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-INDEPENDENT-REVIEW-PACKAGE-V1",
+  "proof_author_checkpoint": {
+    "commit": "7ebdbaa024595156a7034abca4909d7065a81a45",
+    "proof_json_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+    "proof_md_sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b",
+    "tree": "e6556fa58a68f1f5c29e6e72cef14e6404950203"
+  },
+  "review_evidence": {
+    "filename": "10_residual_insufficiency_review_evidence.v1.json",
+    "sha256": "49dc3acefb0ce02db8e2606d8112c8e6bda958ec0d02ae9dc0b0868f685cb831",
+    "size_bytes": 6751
+  },
+  "review_scope": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_RESIDUAL_SCHEMA_V2_INSUFFICIENCY_PROOF",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "mandatory_review_items": [
+      "RI01",
+      "RI02",
+      "RI03",
+      "RI04",
+      "RI05",
+      "RI06",
+      "RI07",
+      "RI08"
+    ]
+  },
+  "status": "IMMUTABLE_AUTHOR_PACKAGE_AWAITING_EXTERNAL_INDEPENDENT_HUMAN_REVIEW"
+}

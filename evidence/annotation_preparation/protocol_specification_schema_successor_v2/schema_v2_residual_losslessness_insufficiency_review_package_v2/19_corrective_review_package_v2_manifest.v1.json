@@ -1,0 +1,148 @@
+{
+  "authoring_authorization": {
+    "authorization_sha256": "1428e00abca3cfad285f9cd1f7d6bde7f0dc3f8a0479b9a574a7e2fbab2a078e",
+    "decision_0071_commit": "1d107f98cec018ef086becb1e34636ac29561f69"
+  },
+  "corrective_evidence": {
+    "filename": "16_RI01_corrective_activation_provenance_evidence.v1.json",
+    "sha256": "bc0c333c8c9f55baa76e830dc89bf9c5a4cbddd4bab288d9fcca6d0d432a2c84",
+    "size_bytes": 5713
+  },
+  "corrective_scope": {
+    "added_evidence_categories": [
+      "schema_v2_human_approval",
+      "activation_corrective_evidence_human_approval",
+      "explicit_activation_authorization",
+      "actual_activation_decision",
+      "activation_execution_record",
+      "active_hash_contract",
+      "active_version_dispatch",
+      "portable_git_commit_tree_parent_and_path_content_provenance"
+    ],
+    "evidence_only": true,
+    "focused_RI01_rereview_only": true
+  },
+  "explicit_non_authorizations": {
+    "RI02_to_RI08_reopening": false,
+    "analyzer_implementation_or_execution": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_v4_to_v2_mapping": false,
+    "proof_v1_modification": false,
+    "repair": false,
+    "review_package_v1_modification": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false
+  },
+  "human_rereview_state": {
+    "completed": false,
+    "synthetic_decision": false
+  },
+  "initial_blank_reviewer_packet": {
+    "filename": "17_RI01_focused_reviewer_packet.REVIEW_DRAFT.v1.md",
+    "sha256": "71b415928579b842bdf4a5511b34b6a7f23d0f765eb7c66123b5a9401a62034e",
+    "size_bytes": 2212
+  },
+  "next_boundary": "CREATE_EXTERNAL_FOCUSED_RI01_HUMAN_REREVIEW_HANDOFF_WITH_ONE_TIME_INITIAL_BLANK_STATE_VERIFIER",
+  "package_files": [
+    {
+      "filename": "01_predecessor_review_package_v1_manifest.EXACT_COPY.json",
+      "sha256": "be45fdffcd4ce463ba3b78b57ac9594309353deeaa14e2f007f985a171849244",
+      "size_bytes": 4626
+    },
+    {
+      "filename": "02_predecessor_review_package_v1_checksums.EXACT_COPY.SHA256SUMS",
+      "sha256": "38dc6b809fd1528ebe877adac7da8d3ee05c038479b9267c80b2b02624201f6f",
+      "size_bytes": 1610
+    },
+    {
+      "filename": "03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "size_bytes": 11911
+    },
+    {
+      "filename": "04_residual_insufficiency_proof_v1_summary.EXACT_COPY.md",
+      "sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b",
+      "size_bytes": 4377
+    },
+    {
+      "filename": "05_protocol_specification_v2_schema.EXACT_COPY.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "filename": "06_completed_human_review_v1.EXACT_COPY.md",
+      "sha256": "c169b26960349c4829109493f946d4f7115191a830ec35a28ff7a50e6df8c74d",
+      "size_bytes": 9047
+    },
+    {
+      "filename": "07_schema_v2_human_approval_decision_0056.EXACT_COPY.md",
+      "sha256": "7eb9026652651f07d8aa281852b3f057de37f09171e1391c0e416d80f7e3b608",
+      "size_bytes": 3352
+    },
+    {
+      "filename": "08_activation_corrective_approval_decision_0064.EXACT_COPY.md",
+      "sha256": "73e4d29278a5cf4368630210d4dc69c9d0b18b03795b9756e5acf5a563fbc4ad",
+      "size_bytes": 1786
+    },
+    {
+      "filename": "09_explicit_activation_authorization_decision_0065.EXACT_COPY.md",
+      "sha256": "ea7dba8c77b6c6ae75e81e68a817b551fb2d138e536a1ea15eab75e2c3c28d63",
+      "size_bytes": 2826
+    },
+    {
+      "filename": "10_schema_v2_activation_decision_0066.EXACT_COPY.md",
+      "sha256": "6bd97e92f97f77d7e7e36bbc9a334ad115f1ebe8f8a2e9f3d0d2b2c361da65d2",
+      "size_bytes": 3253
+    },
+    {
+      "filename": "11_schema_v2_activation_execution_record.EXACT_COPY.json",
+      "sha256": "8384e173d6c0cac2e78941e33ea8d4aaf45677fa5a59fb00370d5fd2b564d06a",
+      "size_bytes": 3826
+    },
+    {
+      "filename": "12_active_v2_hash_contract.EXACT_COPY.json",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "size_bytes": 3154
+    },
+    {
+      "filename": "13_active_schema_version_dispatch.EXACT_COPY.json",
+      "sha256": "67a96c3eda8de95fa6c55342d5d33ea725e16cea8af21fcb4f3b8945b9d4eeee",
+      "size_bytes": 1334
+    },
+    {
+      "filename": "14_decision_0071_corrective_authorization.EXACT_COPY.json",
+      "sha256": "1428e00abca3cfad285f9cd1f7d6bde7f0dc3f8a0479b9a574a7e2fbab2a078e",
+      "size_bytes": 4417
+    },
+    {
+      "filename": "15_schema_v2_activation_git_provenance.bundle",
+      "sha256": "b673aef4d4fc669911abdb94240c3363934e40c328c712b2d716b395ac7084de",
+      "size_bytes": 4470823
+    },
+    {
+      "filename": "16_RI01_corrective_activation_provenance_evidence.v1.json",
+      "sha256": "bc0c333c8c9f55baa76e830dc89bf9c5a4cbddd4bab288d9fcca6d0d432a2c84",
+      "size_bytes": 5713
+    },
+    {
+      "filename": "17_RI01_focused_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "sha256": "71b415928579b842bdf4a5511b34b6a7f23d0f765eb7c66123b5a9401a62034e",
+      "size_bytes": 2212
+    },
+    {
+      "filename": "18_verify_corrective_review_package_v2.v1.py",
+      "sha256": "67823adf3c862d3f62813bd8eeee9ce544497f7f392764c916d6398d712d20d3",
+      "size_bytes": 11973
+    }
+  ],
+  "package_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-CORRECTIVE-REVIEW-PACKAGE-V2",
+  "status": "IMMUTABLE_AUTHOR_PACKAGE_AWAITING_FOCUSED_RI01_INDEPENDENT_HUMAN_REREVIEW",
+  "successor_relationship": {
+    "RI02_to_RI08": "PASS_CLOSED",
+    "predecessor_checksum_manifest_sha256": "38dc6b809fd1528ebe877adac7da8d3ee05c038479b9267c80b2b02624201f6f",
+    "predecessor_manifest_sha256": "be45fdffcd4ce463ba3b78b57ac9594309353deeaa14e2f007f985a171849244",
+    "proof_v1_modified": false,
+    "successor_of_review_package_v1": true
+  }
+}
