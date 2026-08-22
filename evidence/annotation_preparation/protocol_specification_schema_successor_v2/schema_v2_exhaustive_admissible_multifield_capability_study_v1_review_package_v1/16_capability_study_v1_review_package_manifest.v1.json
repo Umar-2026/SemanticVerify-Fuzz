@@ -1,0 +1,153 @@
+{
+  "current_capability_state": {
+    "admissible_composition_exhaustiveness_established": false,
+    "negative_existing_v2_mapping_path_impossibility_proven": false,
+    "positive_existing_v2_mapping_path_proven": false,
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "selected_outcome_human_approved": false
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "additional_capability_evidence_authoring": false,
+    "analyzer_implementation_or_execution": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "operational_positive_mapping_contract_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false,
+    "semantic_role_relation_formalization": false
+  },
+  "next_boundary": "CREATE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_FOR_CSR01_TO_CSR08",
+  "package_file_inventory": [
+    {
+      "filename": "01_capability_study_v1.EXACT_COPY.json",
+      "sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+      "size_bytes": 7404
+    },
+    {
+      "filename": "02_v4_semantic_unit_inventory.EXACT_COPY.json",
+      "sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+      "size_bytes": 203561
+    },
+    {
+      "filename": "03_schema_v2_carrier_inventory.EXACT_COPY.json",
+      "sha256": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+      "size_bytes": 80491
+    },
+    {
+      "filename": "04_candidate_multifield_composition_matrix.EXACT_COPY.json",
+      "sha256": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45",
+      "size_bytes": 126533
+    },
+    {
+      "filename": "05_capability_study_v1.EXACT_COPY.md",
+      "sha256": "7976e9d079a1df6ef20f183f37a290398a6214079a5b08674aa9ea68b25c600c",
+      "size_bytes": 3658
+    },
+    {
+      "filename": "06_capability_study_v1_checksums.EXACT_COPY.SHA256SUMS",
+      "sha256": "68d2a28fb99b3fbb4df2e93ddd7569efb97a35367e08ec823afd9e89fc5848b2",
+      "size_bytes": 881
+    },
+    {
+      "filename": "07_pre_study_authorization_verifier_consumed.EXACT_COPY.v1",
+      "sha256": "0dc3641be811e2d1ce1aa859fabd4ab78edf9d8e1832440f72fa1e58835a8d51",
+      "size_bytes": 380
+    },
+    {
+      "filename": "08_decision_0084_author_checkpoint.EXACT_COPY.md",
+      "sha256": "d0d9a3885d0479f19673a114ead2f54df42351739d79bef8434b586b79f82dc7",
+      "size_bytes": 4372
+    },
+    {
+      "filename": "09_decision_0085_review_package_authorization.EXACT_COPY.json",
+      "sha256": "638d103b5045508a7567e48efd7638530b7b952bd67d9bf55d136ed8ebb6bb49",
+      "size_bytes": 6989
+    },
+    {
+      "filename": "10_decision_0085.EXACT_COPY.md",
+      "sha256": "06cf32adac408ccaf4d0747572dee9b265afa116510c38ea9e1f30bb6b562b39",
+      "size_bytes": 3308
+    },
+    {
+      "filename": "11_predecessor_completed_corrective_v2_human_review_record.EXACT_COPY.json",
+      "sha256": "d6d1142315f3830abfd2f5d33ca4fff120d1c814d07f80b1b4eb6c96ae0378c1",
+      "size_bytes": 3241
+    },
+    {
+      "filename": "12_capability_study_v1_review_evidence.v1.json",
+      "sha256": "9766125637872af3bd06d556edfa3271b9e85687d888d317f43cfed2a1bde2d6",
+      "size_bytes": 7212
+    },
+    {
+      "filename": "13_capability_study_v1_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "sha256": "730e8da013e3d0d4455fbd3413766f654ab65d11c51f47c880db4b9d2ced354e",
+      "size_bytes": 4473
+    },
+    {
+      "filename": "14_pre_review_package_authorization_verifier_consumed.v1",
+      "sha256": "dbc4ac230ce28eb8f68392e1bf6a34a764e45811fd9183779360974b211999e0",
+      "size_bytes": 420
+    },
+    {
+      "filename": "15_verify_capability_study_v1_review_package.v1.py",
+      "sha256": "7dfaffd722f0f33218a01dd039407f5d358ba233d4af52915acc414333d6b499",
+      "size_bytes": 9621
+    }
+  ],
+  "package_id": "SVF-SCHEMA-V2-CAPABILITY-STUDY-V1-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-PACKAGE-V1",
+  "pre_package_authorization_verifier": {
+    "final_run": "PASS",
+    "final_run_output_sha256": "a27d1793e47e6f54ed171f4f8fdd56d88594e3d762c206c7ad8752ec800ce1bc",
+    "permanently_retired": true,
+    "rerun_allowed": false,
+    "sha256": "8e737e083e7c11c3f7407bad8b2c51157fdd022178e2d63023796da15a3869ff"
+  },
+  "review_evidence": {
+    "filename": "12_capability_study_v1_review_evidence.v1.json",
+    "sha256": "9766125637872af3bd06d556edfa3271b9e85687d888d317f43cfed2a1bde2d6",
+    "size_bytes": 7212
+  },
+  "review_scope": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_SCHEMA_V2_CAPABILITY_STUDY_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "independent_human_technical_review_required": true,
+    "mandatory_review_items": [
+      "CSR01",
+      "CSR02",
+      "CSR03",
+      "CSR04",
+      "CSR05",
+      "CSR06",
+      "CSR07",
+      "CSR08"
+    ],
+    "synthetic_reviewer_decision_allowed": false
+  },
+  "reviewer_packet_initial_state": {
+    "CSR01_to_CSR08_decisions_blank": true,
+    "filename": "13_capability_study_v1_reviewer_packet.REVIEW_DRAFT.v1.md",
+    "overall_decision_blank": true,
+    "reviewer_identity_fields_blank": true,
+    "sha256": "730e8da013e3d0d4455fbd3413766f654ab65d11c51f47c880db4b9d2ced354e",
+    "size_bytes": 4473
+  },
+  "status": "IMMUTABLE_AUTHOR_REVIEW_PACKAGE_PRE_HUMAN_REVIEW",
+  "study_binding": {
+    "decision_0084_commit": "b04352c2251790ab881786c9b77235481f1f475e",
+    "decision_0085_commit": "a924c2112cb1c17062495bbd588cc1b2d2864815",
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "selected_outcome_human_approved": false,
+    "study_json_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b"
+  }
+}
