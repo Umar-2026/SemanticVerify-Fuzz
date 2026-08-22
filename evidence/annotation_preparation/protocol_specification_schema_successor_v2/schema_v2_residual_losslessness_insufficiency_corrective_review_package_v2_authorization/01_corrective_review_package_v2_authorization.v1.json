@@ -1,0 +1,85 @@
+{
+  "allowed_focused_RI01_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-EVIDENCE-ONLY-CORRECTIVE-REVIEW-PACKAGE-V2-AUTHORIZATION",
+  "authorization_type": "PRE_CORRECTIVE_PACKAGE_AUTHORING_ONLY",
+  "authorized_corrective_package": {
+    "RI01_focused_rereview_only": true,
+    "completed_human_review_must_be_included_exactly": true,
+    "evidence_only": true,
+    "proof_v1_bytes_must_remain_unchanged": true,
+    "successor_of_review_package_v1": true,
+    "target_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2",
+    "technical_review_evidence_RI02_to_RI08_must_remain_unchanged": true
+  },
+  "explicit_non_authorizations": {
+    "RI02_to_RI08_reopening": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_v4_to_v2_mapping": false,
+    "proof_v1_modification": false,
+    "repair": false,
+    "review_package_v1_modification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false
+  },
+  "human_review_basis": {
+    "RI01": "REVISION_REQUIRED",
+    "RI02_to_RI08": "PASS_CLOSED",
+    "completed_review_sha256": "c169b26960349c4829109493f946d4f7115191a830ec35a28ff7a50e6df8c74d",
+    "completed_review_size_bytes": 9047,
+    "corrective_scope": "ACTIVATION_AND_PROVENANCE_EVIDENCE_ONLY",
+    "overall_decision": "REVISION_REQUIRED"
+  },
+  "immutable_predecessors": {
+    "proof_v1_json_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+    "proof_v1_md_sha256": "c9eddfbdfc29d3e3409dd4e674499e0712fdd604751e9fe01948cef9e5cff57b",
+    "review_package_v1_checksum_manifest_sha256": "38dc6b809fd1528ebe877adac7da8d3ee05c038479b9267c80b2b02624201f6f",
+    "review_package_v1_manifest_sha256": "be45fdffcd4ce463ba3b78b57ac9594309353deeaa14e2f007f985a171849244"
+  },
+  "mandatory_corrective_review_question": "Does the added approval, activation, and Git provenance evidence independently establish that the exact supplied Schema-V2 bytes are the active Schema-V2 input bound to the reviewed repository checkpoint?",
+  "next_boundary": "AUTHOR_EVIDENCE_ONLY_CORRECTIVE_REVIEW_PACKAGE_V2_FOR_FOCUSED_RI01_REREVIEW",
+  "required_corrective_evidence": {
+    "activation_execution_record": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_execution_v1/01_schema_v2_activation_execution_record.v1.json",
+      "sha256": "8384e173d6c0cac2e78941e33ea8d4aaf45677fa5a59fb00370d5fd2b564d06a"
+    },
+    "activation_git_provenance": {
+      "commit": "7b40f4385c2964edd95c4d90a0a3a1090c1b9ccd",
+      "parent": "aa4b85e74f56adab581faf379a09ee69ce1ec30f",
+      "require_commit_object_verification": true,
+      "require_exact_path_blob_or_content_binding": true,
+      "require_tree_parent_verification": true,
+      "tree": "82f5faa7a7b9c45a4d9633bf3720da4f09bc8116"
+    },
+    "explicit_activation_authorization_record": {
+      "path": "documentation/decisions/0065-authorize-explicit-schema-v2-activation-execution.md",
+      "sha256": "ea7dba8c77b6c6ae75e81e68a817b551fb2d138e536a1ea15eab75e2c3c28d63"
+    },
+    "focused_activation_artifact_approval_record": {
+      "path": "documentation/decisions/0064-record-AF04-AF07-AF08-AF09-corrective-evidence-human-approval.md",
+      "sha256": "73e4d29278a5cf4368630210d4dc69c9d0b18b03795b9756e5acf5a563fbc4ad"
+    },
+    "schema_v2_activation_decision": {
+      "path": "documentation/decisions/0066-activate-schema-v2-and-adopt-decision-0019-successor.md",
+      "sha256": "6bd97e92f97f77d7e7e36bbc9a334ad115f1ebe8f8a2e9f3d0d2b2c361da65d2"
+    },
+    "schema_v2_approval_record": {
+      "path": "documentation/decisions/0056-record-final-schema-v2-candidate-human-approval.md",
+      "sha256": "7eb9026652651f07d8aa281852b3f057de37f09171e1391c0e416d80f7e3b608"
+    }
+  },
+  "retired_verifier_constraints": {
+    "RI01_to_RI08_initial_blank_verifier_rerun": false,
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "decision_0067_pre_proof_verifier_rerun": false,
+    "decision_0069_pre_review_package_verifier_rerun": false
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_EVIDENCE_ONLY_CORRECTIVE_REVIEW_PACKAGE_V2_FOR_RI01_ONLY"
+}

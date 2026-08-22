@@ -1,0 +1,56 @@
+{
+  "completed_review": {
+    "exact_copy_filename": "01_completed_residual_schema_v2_insufficiency_human_review.EXACT_COPY.v1.md",
+    "review_date": "22 / August / 2026",
+    "reviewer_confirmation": "ARS",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "c169b26960349c4829109493f946d4f7115191a830ec35a28ff7a50e6df8c74d",
+    "size_bytes": 9047
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_v4_to_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false
+  },
+  "item_decisions": {
+    "RI01": "REVISION_REQUIRED",
+    "RI02": "PASS",
+    "RI03": "PASS",
+    "RI04": "PASS",
+    "RI05": "PASS",
+    "RI06": "PASS",
+    "RI07": "PASS",
+    "RI08": "PASS"
+  },
+  "next_boundary": "AUTHOR_EVIDENCE_ONLY_CORRECTIVE_REVIEW_PACKAGE_V2_FOR_FOCUSED_RI01_REREVIEW",
+  "overall_decision": "REVISION_REQUIRED",
+  "record_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-HUMAN-REVIEW-V1",
+  "required_corrective_evidence": {
+    "exact_activation_authorization_lineage": true,
+    "exact_activation_execution_record": true,
+    "exact_active_schema_v2_hash_binding": true,
+    "exact_schema_v2_activation_decision": true,
+    "exact_schema_v2_approval_record": true,
+    "git_commit_tree_parent_provenance_for_activation": true
+  },
+  "review_interpretation": {
+    "RI01_revision_scope": "ACTIVATION_AND_PROVENANCE_EVIDENCE",
+    "RI02_to_RI08_pass_closed_for_this_review": true,
+    "corrective_scope": "EVIDENCE_ONLY",
+    "proof_v1_revision_required": false,
+    "review_package_v1_in_place_edit_authorized": false,
+    "technical_residual_insufficiency_argument_rejected": false
+  },
+  "review_subject": {
+    "proof_id": "SVF-SCHEMA-V2-RESIDUAL-LOSSLESSNESS-INSUFFICIENCY-PROOF-V1",
+    "review_package_checkpoint_commit": "8e6ca92eed85b195cc67b251a948b0d1fed2e95e",
+    "review_package_id": "SVF-RESIDUAL-SCHEMA-V2-INSUFFICIENCY-INDEPENDENT-REVIEW-PACKAGE-V1"
+  },
+  "status": "COMPLETED_INDEPENDENT_HUMAN_REVIEW_RECORDED"
+}
