@@ -1,0 +1,132 @@
+{
+  "assessment": {
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V1",
+    "assessment_json_sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+    "assessment_md_sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+    "author_candidate_conclusion": "SCHEMA_SUCCESSOR_REQUIRED",
+    "author_candidate_conclusion_is_human_approval": false
+  },
+  "authoring_authorization": {
+    "authorization_sha256": "048f0ef1f6ea78ea5c222b17b6965de0a703c164ef28c7d02845750daf133ed1",
+    "decision_0075_commit": "105d925018bf21ab46a5f893e52c1778ba47b80d"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_implementation_or_execution": false,
+    "assessment_modification": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "human_review_state": {
+    "completed": false,
+    "synthetic_decision": false
+  },
+  "initial_blank_reviewer_packet": {
+    "filename": "12_schema_successor_assessment_reviewer_packet.REVIEW_DRAFT.v1.md",
+    "sha256": "f3034c7125fc66f551dc5af0c743e496a196b37591000dae9b9c46655df712b1",
+    "size_bytes": 4014
+  },
+  "next_boundary": "CREATE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_FOR_SR01_TO_SR08",
+  "package_files": [
+    {
+      "filename": "01_schema_successor_necessity_scope_assessment.EXACT_COPY.v1.json",
+      "sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+      "size_bytes": 11294
+    },
+    {
+      "filename": "02_schema_successor_necessity_scope_assessment.EXACT_COPY.v1.md",
+      "sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+      "size_bytes": 7520
+    },
+    {
+      "filename": "03_schema_successor_necessity_scope_assessment_checksums.EXACT_COPY.SHA256SUMS",
+      "sha256": "4613b93ed93457fb6f18277ae45971f1d9808c299d773f6378c489b09fd941ea",
+      "size_bytes": 366
+    },
+    {
+      "filename": "04_decision_0074_author_checkpoint.EXACT_COPY.md",
+      "sha256": "7dd8e20114a00662236619892410265800770eb2b8953452c101da771b6ac028",
+      "size_bytes": 3770
+    },
+    {
+      "filename": "05_decision_0075_review_package_authorization.EXACT_COPY.json",
+      "sha256": "048f0ef1f6ea78ea5c222b17b6965de0a703c164ef28c7d02845750daf133ed1",
+      "size_bytes": 5217
+    },
+    {
+      "filename": "06_original_completed_residual_insufficiency_review.EXACT_COPY.md",
+      "sha256": "c169b26960349c4829109493f946d4f7115191a830ec35a28ff7a50e6df8c74d",
+      "size_bytes": 9047
+    },
+    {
+      "filename": "07_focused_RI01_C_completed_rereview.EXACT_COPY.md",
+      "sha256": "ad29020ad67b43e1603e6e81a1b635c5b722b77d6a429ecdd2510b53f7c42494",
+      "size_bytes": 6012
+    },
+    {
+      "filename": "08_residual_schema_v2_insufficiency_proof.EXACT_COPY.v1.json",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "size_bytes": 11911
+    },
+    {
+      "filename": "09_curl_technical_protocol_working_draft_v4.EXACT_COPY.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033
+    },
+    {
+      "filename": "10_active_protocol_specification_v2_schema.EXACT_COPY.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "filename": "11_assessment_review_evidence.v1.json",
+      "sha256": "a77a14294baa6bdbebabdd59c9fce3952974b2f682e305857165015c05ebac30",
+      "size_bytes": 8415
+    },
+    {
+      "filename": "12_schema_successor_assessment_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "sha256": "f3034c7125fc66f551dc5af0c743e496a196b37591000dae9b9c46655df712b1",
+      "size_bytes": 4014
+    },
+    {
+      "filename": "13_verify_schema_successor_assessment_review_package.v1.py",
+      "sha256": "f2768680f0fb307fca5318f67220f9b807b2e5b8e4cd6f31a5c04e13fa021b20",
+      "size_bytes": 9747
+    }
+  ],
+  "package_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-INDEPENDENT-REVIEW-PACKAGE-V1",
+  "review_evidence": {
+    "filename": "11_assessment_review_evidence.v1.json",
+    "sha256": "a77a14294baa6bdbebabdd59c9fce3952974b2f682e305857165015c05ebac30",
+    "size_bytes": 8415
+  },
+  "review_scope": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "mandatory_review_items": [
+      "SR01",
+      "SR02",
+      "SR03",
+      "SR04",
+      "SR05",
+      "SR06",
+      "SR07",
+      "SR08"
+    ]
+  },
+  "status": "IMMUTABLE_AUTHOR_PACKAGE_AWAITING_INDEPENDENT_HUMAN_TECHNICAL_REVIEW"
+}

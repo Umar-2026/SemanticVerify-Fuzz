@@ -1,0 +1,87 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "author_candidate_conclusion": {
+    "allowed_assessment_outcomes": [
+      "NO_SUCCESSOR_REQUIRED_WITH_PROVEN_ADMISSIBLE_V2_MAPPING_PATH",
+      "SCHEMA_SUCCESSOR_REQUIRED",
+      "FURTHER_EVIDENCE_REQUIRED"
+    ],
+    "author_conclusion_must_not_be_treated_as_human_approval": true,
+    "reviewer_must_independently_evaluate": true,
+    "selected_outcome": "SCHEMA_SUCCESSOR_REQUIRED"
+  },
+  "authorization_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-INDEPENDENT-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_type": "PRE_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "authorized_review_package": {
+    "may_include_blank_SR01_to_SR08_reviewer_template": true,
+    "may_include_exact_assessment_json": true,
+    "may_include_exact_assessment_md": true,
+    "may_include_exact_decision_0074": true,
+    "may_include_exact_review_chain_evidence": true,
+    "may_include_machine_checkable_residual_scope_evidence": true,
+    "target_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_successor_necessity_scope_assessment_review_package_v1"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "assessment_modification": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "positive_mapping_authorization": false,
+    "positive_v4_to_successor_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "mandatory_review_items": {
+    "SR01": "Verify exact immutable binding to Assessment V1, its reviewed basis, and Decision 0074 author checkpoint.",
+    "SR02": "Evaluate whether the assessment fairly considered admissible existing-Schema-V2 alternatives before selecting SCHEMA_SUCCESSOR_REQUIRED, rather than assuming a successor in advance.",
+    "SR03": "Evaluate the enforcement residual argument: 64/64 rule coverage, 15 enforcement values, absent explicit Schema-V2 enforcement carrier, and non-derivability from verdict or defect-plus-verdict.",
+    "SR04": "Evaluate whether the minimum successor semantic scope correctly includes the three unresolved representation-policy assertions and does not silently strengthen, weaken, or replace their semantics.",
+    "SR05": "Evaluate whether all other V4 rule-field and exit-obligation field-level preservation and reverse-reconstruction gaps remain in scope rather than being narrowed only to enforcement plus three policy assertions.",
+    "SR06": "Evaluate the semantic-accounting boundary and whether unit accountability is correctly distinguished from actual semantic encoding and exact reverse reconstruction.",
+    "SR07": "Evaluate backward compatibility and the proposed minimum future governance sequence, including immutability of frozen zlib/libpcap and historical Schema-V1/Schema-V2 artifacts.",
+    "SR08": "Evaluate whether the bounded conclusion SCHEMA_SUCCESSOR_REQUIRED is supported under the existing exact V4 losslessness/admissibility contract, without overclaiming general Schema-V2 invalidity or abstract information-theoretic impossibility."
+  },
+  "next_boundary": "AUTHOR_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_INDEPENDENT_REVIEW_PACKAGE_V1",
+  "retired_verifier_constraints": {
+    "RI01_C_initial_blank_state_verifier_rerun": false,
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "decision_0067_pre_proof_verifier_rerun": false,
+    "decision_0069_pre_review_package_verifier_rerun": false,
+    "decision_0071_pre_corrective_package_verifier_rerun": false,
+    "decision_0073_pre_assessment_verifier_rerun": false
+  },
+  "review_requirements": {
+    "assessment_bytes_must_remain_immutable": true,
+    "external_manual_review_copy_required": true,
+    "independent_human_technical_reviewer_required": true,
+    "initial_blank_state_verifier_maximum_successful_runs": 1,
+    "initial_blank_state_verifier_must_never_rerun_after_reviewer_edit": true,
+    "review_package_must_be_self_contained": true,
+    "reviewer_packet_must_be_initially_blank": true,
+    "synthetic_reviewer_decision_allowed": false
+  },
+  "review_subject": {
+    "assessment_checksum_manifest_sha256": "4613b93ed93457fb6f18277ae45971f1d9808c299d773f6378c489b09fd941ea",
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V1",
+    "assessment_json_sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+    "assessment_md_sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+    "assessment_status": "AUTHOR_ASSESSMENT_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_TECHNICAL_REVIEW",
+    "author_checkpoint_commit": "b509889a12fd3c19d0bda24a220b60184f0acbf5",
+    "author_checkpoint_tree": "2c53ee47cbcb1af81b11bf7268e46832115f389a"
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_FOR_ASSESSMENT_V1_ONLY"
+}

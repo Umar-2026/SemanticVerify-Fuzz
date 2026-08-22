@@ -1,0 +1,232 @@
+{
+  "SR01_exact_binding": {
+    "assessment_json_sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+    "assessment_md_sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+    "decision_0074_sha256": "7dd8e20114a00662236619892410265800770eb2b8953452c101da771b6ac028",
+    "review_chain": {
+      "RI01_corrective": "PASS",
+      "RI01_original": "REVISION_REQUIRED",
+      "RI02_to_RI08": "PASS_CLOSED",
+      "all_items_pass_closed": true,
+      "historical_first_round_overall_decision": "REVISION_REQUIRED",
+      "historical_overall_rewritten": false
+    }
+  },
+  "SR02_existing_v2_alternatives": {
+    "derive_enforcement": "NOT_ADMISSIBLE_AS_EXACT_RECONSTRUCTION",
+    "direct_existing_carriers": "NOT_SUFFICIENT",
+    "opaque_packing_or_external_lookup": "REJECTED_BY_EXISTING_ADMISSIBILITY_CONSTRAINTS",
+    "proven_admissible_existing_v2_mapping_path_available": false,
+    "repurpose_unrelated_fields": "REJECTED_BY_EXISTING_ADMISSIBILITY_CONSTRAINTS",
+    "semantic_accounting_only": "NOT_SUFFICIENT"
+  },
+  "SR03_enforcement_residual": {
+    "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+    "defect_plus_verdict_to_enforcement_ambiguous_groups": [
+      {
+        "defect": "<NO_DEFECT>",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST_PREREQUISITE",
+          "MUST_RELEASE_RULE",
+          "MUST_RESOURCE_OWNERSHIP_FACT",
+          "SOURCE_GROUNDED",
+          "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+          "SOURCE_GROUNDED_RECOVERY",
+          "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+          "STATE_SENSITIVE"
+        ],
+        "verdict": "<NO_EXPLICIT_VERDICT>"
+      },
+      {
+        "defect": "<NO_DEFECT>",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "NON_ENFORCEABLE_RECOMMENDATION",
+          "SOURCE_GROUNDED",
+          "SOURCE_GROUNDED_EXCEPTION",
+          "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+          "SOURCE_GROUNDED_REPEATED_USE_ALLOWED"
+        ],
+        "verdict": "VALID"
+      },
+      {
+        "defect": "D1",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST"
+        ],
+        "verdict": "VIOLATION-MUST"
+      },
+      {
+        "defect": "D2",
+        "enforcement_values": [
+          "FROZEN_V3_RULE",
+          "MUST"
+        ],
+        "verdict": "VIOLATION-MUST"
+      }
+    ],
+    "distinct_enforcement_value_count": 15,
+    "distinct_enforcement_values": [
+      "FROZEN_V3_RULE",
+      "MUST",
+      "MUST_PREREQUISITE",
+      "MUST_RELEASE_RULE",
+      "MUST_RESOURCE_OWNERSHIP_FACT",
+      "NON_ENFORCEABLE_RECOMMENDATION",
+      "OUTSIDE_BOUNDED_CORE_DO_NOT_INVENT",
+      "SOURCE_GROUNDED",
+      "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+      "SOURCE_GROUNDED_EXCEPTION",
+      "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+      "SOURCE_GROUNDED_RECOVERY",
+      "SOURCE_GROUNDED_REPEATED_USE_ALLOWED",
+      "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+      "STATE_SENSITIVE"
+    ],
+    "explicit_schema_v2_enforcement_carrier_present": false,
+    "rule_record_total": 64,
+    "rules_with_enforcement": 64,
+    "verdict_to_enforcement_ambiguous_group_count": 3,
+    "verdict_to_enforcement_ambiguous_groups": {
+      "<NO_EXPLICIT_VERDICT>": [
+        "FROZEN_V3_RULE",
+        "MUST_PREREQUISITE",
+        "MUST_RELEASE_RULE",
+        "MUST_RESOURCE_OWNERSHIP_FACT",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+        "SOURCE_GROUNDED_RECOVERY",
+        "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+        "STATE_SENSITIVE"
+      ],
+      "VALID": [
+        "FROZEN_V3_RULE",
+        "NON_ENFORCEABLE_RECOMMENDATION",
+        "SOURCE_GROUNDED",
+        "SOURCE_GROUNDED_EXCEPTION",
+        "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+        "SOURCE_GROUNDED_REPEATED_USE_ALLOWED"
+      ],
+      "VIOLATION-MUST": [
+        "FROZEN_V3_RULE",
+        "MUST"
+      ]
+    }
+  },
+  "SR04_representation_policy_scope": {
+    "explicit_schema_v2_carriers_present": {
+      "enforcement": false,
+      "normative_strength": false,
+      "resource_centered": false,
+      "synthetic_protocol_events": false
+    },
+    "unresolved_assertions": [
+      "normative_strength_uncertainty_must_not_be_silently_strengthened=true",
+      "resource_centered=true",
+      "synthetic_protocol_events_invented=false"
+    ]
+  },
+  "SR05_complete_field_scope": {
+    "exit_obligation_count": 3,
+    "exit_obligation_field_inventory": [
+      "classification_note",
+      "condition",
+      "defect",
+      "discharge_condition",
+      "enforcement",
+      "failed_cleanup_effect",
+      "missing_cleanup_verdict",
+      "required_discharge",
+      "resource"
+    ],
+    "other_rule_and_exit_field_gaps_remain_in_scope": true,
+    "rule_field_inventory": [
+      "argument_scope",
+      "classification_note",
+      "cleanup_obligation_effect",
+      "condition",
+      "defect",
+      "dependent_reasoning_policy",
+      "effect",
+      "enforcement",
+      "excludes",
+      "fact",
+      "function",
+      "precedence",
+      "precondition",
+      "reason",
+      "recommendation",
+      "return",
+      "return_behavior",
+      "return_note",
+      "rule_id",
+      "runtime_post_state",
+      "structural_effect",
+      "verdict"
+    ],
+    "rule_fields_requiring_mapping_or_decomposition_proof": [
+      "argument_scope",
+      "classification_note",
+      "cleanup_obligation_effect",
+      "condition",
+      "dependent_reasoning_policy",
+      "effect",
+      "enforcement",
+      "excludes",
+      "fact",
+      "function",
+      "precedence",
+      "precondition",
+      "reason",
+      "recommendation",
+      "return",
+      "return_behavior",
+      "return_note",
+      "runtime_post_state",
+      "structural_effect"
+    ]
+  },
+  "SR06_semantic_accounting_boundary": {
+    "semantic_accounting_alone_is_not_missing_semantic_storage": true,
+    "semantic_accounting_may_remain_accounting_layer": true
+  },
+  "SR07_backward_compatibility_and_governance": {
+    "compatibility": {
+      "active_schema_v2_artifacts_must_remain_historically_immutable": true,
+      "current_schema_v2_remains_active_until_separate_successor_activation": true,
+      "existing_libpcap_schema_v1_specification_must_remain_unchanged": true,
+      "existing_zlib_schema_v1_specification_must_remain_unchanged": true,
+      "migration_policy": "No mandatory migration of already frozen zlib/libpcap specifications is justified by the curl-specific successor requirement. Any successor applies through separately reviewed version dispatch and explicit document schema_version binding.",
+      "successor_must_not_silently_reinterpret_existing_v1_or_v2_documents": true,
+      "version_dispatch_must_support_explicit_version_selection": true
+    },
+    "future_governance_sequence": [
+      "Independently review and approve this necessity/scope assessment.",
+      "Separately authorize successor-schema authoring.",
+      "Author a successor candidate without modifying historical Schema V1 or active Schema V2 artifacts.",
+      "Machine-check the successor against the minimum semantic-carrier and roundtrip requirements.",
+      "Conduct independent human technical review of the successor candidate.",
+      "Separately finalize successor hash/canonicalization and version-dispatch governance.",
+      "Separately authorize and execute successor activation.",
+      "After activation, separately authorize a positive curl V4-to-successor mapping contract.",
+      "Machine-check and independently review exact forward preservation and reverse reconstruction for all V4 semantic containers, 64 rules, three exit obligations, policy assertions, and all source fields.",
+      "Only after the positive mapping is approved may curl canonical materialization be separately authorized.",
+      "Analyzer implementation/execution remains outside this assessment and requires its own project-stage authorization."
+    ]
+  },
+  "SR08_bounded_conclusion": {
+    "abstract_information_theoretic_impossibility_claimed": false,
+    "author_candidate_outcome": "SCHEMA_SUCCESSOR_REQUIRED",
+    "general_schema_v2_invalidity_claimed": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_version_preselected": false
+  },
+  "evidence_id": "SVF-SCHEMA-SUCCESSOR-ASSESSMENT-INDEPENDENT-REVIEW-EVIDENCE-V1",
+  "human_review_state": {
+    "completed": false,
+    "synthetic_decision": false
+  },
+  "status": "REVIEW_EVIDENCE_ONLY_NO_HUMAN_DECISION"
+}
