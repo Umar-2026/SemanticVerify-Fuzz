@@ -1,0 +1,101 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-CORRECTIVE-ASSESSMENT-V2-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_type": "PRE_CORRECTIVE_V2_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "authorized_package": {
+    "may_include_blank_CVR01_to_CVR08_reviewer_packet": true,
+    "may_include_exact_assessment_v1": true,
+    "may_include_exact_corrective_v2_json": true,
+    "may_include_exact_corrective_v2_md": true,
+    "may_include_exact_decision_0079": true,
+    "may_include_exact_v1_completed_human_review": true,
+    "may_include_exact_v1_human_review_record": true,
+    "may_include_machine_checkable_corrective_review_evidence": true,
+    "target_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_successor_necessity_scope_assessment_v2_review_package_v1"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "corrective_v2_modification": false,
+    "curl_json_creation": false,
+    "exhaustive_v2_capability_study_authoring": false,
+    "positive_mapping_authorization": false,
+    "positive_v4_to_successor_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "mandatory_review_items": {
+    "CVR01": "Verify exact immutable binding to Corrective Assessment V2, Decision 0079, and the completed Assessment-V1 human review.",
+    "CVR02": "Verify the SR02 correction: V2 distinguishes no currently proven admissible exact V4-to-V2 mapping from the stronger unproven claim that no admissible existing-V2 mapping can exist.",
+    "CVR03": "Verify that V2 does not use absence of a same-named Schema-V2 carrier as proof of impossibility and correctly leaves semantically related multi-field Schema-V2 compositions unresolved.",
+    "CVR04": "Verify the SR07 correction: positive V4-to-successor mapping authoring, complete exact roundtrip machine checking, and independent mapping/roundtrip review all precede successor activation.",
+    "CVR05": "Verify the SR08 correction: selected outcome is FURTHER_EVIDENCE_REQUIRED and neither SCHEMA_SUCCESSOR_REQUIRED nor NO_SUCCESSOR_REQUIRED is asserted from the current evidence.",
+    "CVR06": "Verify preservation of the reviewed technical findings, including enforcement residual evidence, the three unresolved representation-policy assertions, complete rule/exit field scope, semantic-accounting boundary, and backward-compatibility constraints, without converting them into an impossibility claim.",
+    "CVR07": "Verify historical SR01 and SR03-SR06 PASS results are preserved as historical review facts but do not automatically approve the new Corrective Assessment V2 bytes.",
+    "CVR08": "Verify the bounded governance conclusion and explicit non-authorizations: no exhaustive V2 capability study, schema successor, Schema V3, positive mapping, curl.json, analyzer, baseline, or repair is authorized by Corrective Assessment V2."
+  },
+  "next_boundary": "AUTHOR_CORRECTIVE_ASSESSMENT_V2_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_V1",
+  "predecessor_review_binding": {
+    "assessment_v1_completed_review_sha256": "e81cf41aa331e371541cb3b3c8b9392e66ccedbf8b87a3e9ed3943dee8a5fd22",
+    "assessment_v1_overall_human_decision": "REVISION_REQUIRED",
+    "historical_item_decisions": {
+      "SR01": "PASS",
+      "SR02": "REVISION_REQUIRED",
+      "SR03": "PASS",
+      "SR04": "PASS",
+      "SR05": "PASS",
+      "SR06": "PASS",
+      "SR07": "REVISION_REQUIRED",
+      "SR08": "REVISION_REQUIRED"
+    },
+    "historical_pass_results_do_not_automatically_approve_v2": true,
+    "historical_pass_results_must_not_be_rewritten": true
+  },
+  "retired_verifier_constraints": {
+    "RI01_C_initial_blank_state_verifier_rerun": false,
+    "SR01_SR08_initial_blank_state_verifier_rerun": false,
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "decision_0067_pre_proof_verifier_rerun": false,
+    "decision_0069_pre_review_package_verifier_rerun": false,
+    "decision_0071_pre_corrective_package_verifier_rerun": false,
+    "decision_0073_pre_assessment_verifier_rerun": false,
+    "decision_0075_pre_review_package_verifier_rerun": false,
+    "decision_0078_pre_corrective_v2_verifier_rerun": false
+  },
+  "review_requirements": {
+    "external_writable_manual_review_copy_required": true,
+    "independent_human_technical_reviewer_required": true,
+    "initial_blank_reviewer_packet_required": true,
+    "initial_blank_verifier_maximum_successful_runs": 1,
+    "initial_blank_verifier_must_never_rerun_after_reviewer_edit": true,
+    "one_time_initial_blank_state_verifier_required": true,
+    "reviewer_must_independently_evaluate_v2_bytes": true,
+    "self_contained_review_package_required": true,
+    "synthetic_reviewer_decision_allowed": false
+  },
+  "review_subject": {
+    "assessment_checksum_manifest_sha256": "d606edaa2229b20b3f43012bcf669bb107ba0136812dbdfa44ca45e7c492072a",
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V2",
+    "assessment_json_sha256": "94e056db6a2b9eb993b4cea379491dbc69bc528115b755704b2ff587580b55dc",
+    "assessment_md_sha256": "e54d8ea0039c87a33ae4d07593428ac1d003bf7648fe9511d12fee5d35d1bd30",
+    "decision_0079_commit": "fa8bf9fdf85b27eee9b98a4faf4b376498b7a0b2",
+    "decision_0079_tree": "3d15e7e331124811139741bbcd0cf24160905faf",
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "selected_outcome_is_human_approved": false
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_FOR_CORRECTIVE_ASSESSMENT_V2_ONLY"
+}

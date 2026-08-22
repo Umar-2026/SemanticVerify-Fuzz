@@ -1,0 +1,903 @@
+{
+  "api_surface": [
+    "curl_global_init",
+    "curl_global_cleanup",
+    "curl_easy_init",
+    "curl_easy_setopt",
+    "curl_easy_perform",
+    "curl_easy_reset",
+    "curl_easy_cleanup",
+    "curl_multi_init",
+    "curl_multi_add_handle",
+    "curl_multi_perform",
+    "curl_multi_remove_handle",
+    "curl_multi_cleanup"
+  ],
+  "cross_resource_rules": [
+    {
+      "condition": "multi cleanup occurs while easy handles remain attached",
+      "enforcement": "MUST_RESOURCE_OWNERSHIP_FACT",
+      "fact": "multi cleanup does not discharge those easy handles' individual cleanup obligations",
+      "rule_id": "X01"
+    },
+    {
+      "classification_note": "This rule does not apply when another runtime reference remains ready, after all modeled resources have completed their lifecycles, or to a zero-reference implementation no-op.",
+      "condition": "curl_global_cleanup removes the final runtime reference and therefore transitions runtime to RUNTIME_UNINITIALIZED while any modeled easy or multi resource remains live",
+      "defect": "D8",
+      "effect": "the real runtime transition to RUNTIME_UNINITIALIZED still occurs; the cleanup event itself is D8 VIOLATION-MUST; every later operation requiring runtime readiness is evaluated from the resulting uninitialized runtime state",
+      "enforcement": "MUST",
+      "rule_id": "X02",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "easy remains attached to multi",
+      "enforcement": "SOURCE_GROUNDED",
+      "fact": "transfer completion alone does not detach the easy handle",
+      "rule_id": "X03"
+    },
+    {
+      "condition": "easy is successfully removed from multi",
+      "enforcement": "SOURCE_GROUNDED",
+      "fact": "curl_easy_perform becomes permitted again on that live easy handle",
+      "rule_id": "X04"
+    }
+  ],
+  "defect_taxonomy": {
+    "D1": "use before successful initialization or while required runtime readiness is absent",
+    "D2": "use after failed initialization or failed activation",
+    "D3": "use after close, destroy, end, release, or cleanup",
+    "D4": "double close, destroy, end, release, or cleanup where source semantics make the second release invalid",
+    "D5": "missing required cleanup on success or failure exit",
+    "D6": "invalid call ordering or missing prerequisite",
+    "D7": "ownership or resource-association misuse",
+    "D8": "conditionally invalid cleanup or cleanup under the wrong state/return condition"
+  },
+  "easy_handle_rules": [
+    {
+      "condition": "runtime == RUNTIME_UNINITIALIZED and return != NULL",
+      "effect": {
+        "explicit_cleanup_obligation": "unchanged / no explicit obligation created",
+        "new_easy": "EASY_OWNED_DETACHED",
+        "runtime": "RUNTIME_READY_IMPLICIT_ONLY"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_easy_init",
+      "rule_id": "E01"
+    },
+    {
+      "condition": "runtime already ready and return != NULL",
+      "effect": {
+        "new_easy": "EASY_OWNED_DETACHED",
+        "runtime": "unchanged; no additional implicit reference in bounded model"
+      },
+      "enforcement": "FROZEN_V3_RULE",
+      "function": "curl_easy_init",
+      "rule_id": "E02"
+    },
+    {
+      "condition": "runtime already ready and return == NULL",
+      "effect": {
+        "new_easy": "NO_EASY_RESOURCE",
+        "runtime": "unchanged"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_easy_init",
+      "rule_id": "E03"
+    },
+    {
+      "classification_note": "A NULL curl_easy_init result creates no easy-handle resource and no explicit global-cleanup obligation; the source-grounded runtime post-state set itself remains unchanged.",
+      "condition": "runtime == RUNTIME_UNINITIALIZED and return == NULL",
+      "dependent_reasoning_policy": "Evaluate each subsequent event across every feasible runtime post-state. If every feasible state yields the same verdict, use that verdict. If at least one feasible state is VALID and at least one feasible state is an enforceable violation, join to VIOLATION-MAY. Use UNKNOWN only for unresolved normative strength, insufficient evidence, or bounded-model coverage uncertainty.",
+      "effect": "No easy resource exists. Pinned implementation permits at least two internal failure positions: global initialization can fail before readiness, or Curl_open can fail after successful implicit global initialization.",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_easy_init",
+      "rule_id": "E04",
+      "runtime_post_state": [
+        "RUNTIME_UNINITIALIZED",
+        "RUNTIME_READY_IMPLICIT_ONLY"
+      ]
+    },
+    {
+      "effect": "easy lifetime and membership state unchanged",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_easy_setopt",
+      "precondition": "easy handle is live",
+      "return_note": "CURLcode failure is not by itself a resource-protocol violation.",
+      "rule_id": "E05"
+    },
+    {
+      "effect": "easy remains live and detached regardless of transfer success/failure",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_easy_perform",
+      "precondition": "easy == EASY_OWNED_DETACHED",
+      "return_note": "A transfer failure does not release the easy handle.",
+      "rule_id": "E06"
+    },
+    {
+      "condition": "easy == EASY_ATTACHED_TO_MULTI",
+      "defect": "D6",
+      "enforcement": "MUST",
+      "function": "curl_easy_perform",
+      "reason": "curl_easy_perform is explicitly prohibited while the easy handle is added to a multi handle.",
+      "rule_id": "E07",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "same live detached easy is used again after a prior perform returned",
+      "enforcement": "SOURCE_GROUNDED_REPEATED_USE_ALLOWED",
+      "function": "curl_easy_perform",
+      "rule_id": "E08",
+      "verdict": "VALID"
+    },
+    {
+      "effect": "options reset; lifetime ownership and cleanup obligation remain",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_easy_reset",
+      "precondition": "easy handle is live",
+      "rule_id": "E09"
+    },
+    {
+      "condition": "easy == EASY_OWNED_DETACHED",
+      "effect": "EASY_RELEASED",
+      "enforcement": "MUST_RELEASE_RULE",
+      "function": "curl_easy_cleanup",
+      "rule_id": "E10"
+    },
+    {
+      "condition": "easy == EASY_ATTACHED_TO_MULTI",
+      "defect": "D6",
+      "enforcement": "MUST",
+      "function": "curl_easy_cleanup",
+      "reason": "Frozen V3 requires prior detachment as a strong source rule.",
+      "rule_id": "E11",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "classification_note": "A repeated curl_easy_cleanup after release is classified by the cleanup-specific D4 rule instead of this generic D3 rule.",
+      "condition": "any ordinary easy-handle use after EASY_RELEASED",
+      "defect": "D3",
+      "enforcement": "MUST",
+      "excludes": [
+        "curl_easy_cleanup"
+      ],
+      "rule_id": "E12",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "program exits with an EASY_OWNED_DETACHED or EASY_ATTACHED_TO_MULTI resource originating from non-NULL curl_easy_init",
+      "defect": "D5",
+      "enforcement": "MUST",
+      "rule_id": "E13",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary use before any successful curl_easy_init acquisition",
+      "defect": "D1",
+      "enforcement": "MUST",
+      "function": "curl_easy_setopt",
+      "rule_id": "E14",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary use before any successful curl_easy_init acquisition",
+      "defect": "D1",
+      "enforcement": "MUST",
+      "function": "curl_easy_perform",
+      "rule_id": "E15",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary use before any successful curl_easy_init acquisition",
+      "defect": "D1",
+      "enforcement": "MUST",
+      "function": "curl_easy_reset",
+      "rule_id": "E16",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary continuation using a NULL curl_easy_init result",
+      "defect": "D2",
+      "enforcement": "MUST",
+      "function": "curl_easy_setopt",
+      "rule_id": "E17",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary continuation using a NULL curl_easy_init result",
+      "defect": "D2",
+      "enforcement": "MUST",
+      "function": "curl_easy_perform",
+      "rule_id": "E18",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary continuation using a NULL curl_easy_init result",
+      "defect": "D2",
+      "enforcement": "MUST",
+      "function": "curl_easy_reset",
+      "rule_id": "E19",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "classification_note": "Explicit exception to failed-acquisition ordinary-use rules.",
+      "condition": "easy argument is NULL",
+      "effect": "documented no-op; no resource released and no obligation discharged",
+      "enforcement": "SOURCE_GROUNDED_EXCEPTION",
+      "function": "curl_easy_cleanup",
+      "rule_id": "E20",
+      "verdict": "VALID"
+    },
+    {
+      "condition": "the same easy resource is already EASY_RELEASED and the argument is the released non-NULL resource",
+      "defect": "D4",
+      "enforcement": "MUST",
+      "function": "curl_easy_cleanup",
+      "precedence": "cleanup-specific D4 takes precedence over generic D3 use-after-release",
+      "rule_id": "E21",
+      "verdict": "VIOLATION-MUST"
+    }
+  ],
+  "exit_obligations": [
+    {
+      "condition": "successful non-NULL curl_easy_init created live handle",
+      "defect": "D5",
+      "missing_cleanup_verdict": "VIOLATION-MUST",
+      "required_discharge": "curl_easy_cleanup after required detachment",
+      "resource": "EASY_HANDLE"
+    },
+    {
+      "condition": "successful non-NULL curl_multi_init created live handle",
+      "defect": "D5",
+      "discharge_condition": "return == CURLM_OK",
+      "failed_cleanup_effect": "cleanup obligation remains outstanding",
+      "missing_cleanup_verdict": "VIOLATION-MUST",
+      "required_discharge": "curl_multi_cleanup returning CURLM_OK",
+      "resource": "MULTI_HANDLE"
+    },
+    {
+      "classification_note": "This obligation exists only after successful explicit curl_global_init.",
+      "condition": "successful explicit curl_global_init created EXPLICIT_CLEANUP_DUE",
+      "defect": "D5",
+      "enforcement": "MUST",
+      "missing_cleanup_verdict": "VIOLATION-MUST",
+      "required_discharge": "matching curl_global_cleanup for the successful explicit curl_global_init obligation",
+      "resource": "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION"
+    }
+  ],
+  "explicit_non_claims": [
+    "This file is not canonical curl.json.",
+    "No generated-driver evidence was used.",
+    "No selected-sample membership was used as protocol evidence.",
+    "No gold labels were used.",
+    "No analyzer output was used.",
+    "No baseline output was used.",
+    "No repair output was used.",
+    "No unresolved review item is silently converted to VALID.",
+    "No unresolved SHOULD/MAY wording is silently upgraded to MUST.",
+    "Working Draft V4 has not yet received independent human technical approval.",
+    "Working Draft V4 is not a canonical curl specification.",
+    "No generated-driver evidence was used to author Working Draft V4.",
+    "No selected-sample membership, gold labels, analyzer output, baseline output, LLM-review output, or repair output was used to author Working Draft V4."
+  ],
+  "global_runtime_rules": [
+    {
+      "condition": "return == CURLE_OK and runtime == RUNTIME_UNINITIALIZED",
+      "effect": {
+        "explicit_cleanup_obligation": "EXPLICIT_CLEANUP_DUE",
+        "runtime": "RUNTIME_READY_EXPLICIT_ONLY"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_global_init",
+      "rule_id": "G01"
+    },
+    {
+      "condition": "return == CURLE_OK and runtime == RUNTIME_READY_IMPLICIT_ONLY",
+      "effect": {
+        "explicit_cleanup_obligation": "EXPLICIT_CLEANUP_DUE",
+        "runtime": "RUNTIME_READY_IMPLICIT_PLUS_EXPLICIT"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_global_init",
+      "rule_id": "G02"
+    },
+    {
+      "condition": "return != CURLE_OK and prior runtime not ready",
+      "effect": {
+        "explicit_cleanup_obligation": "EXPLICIT_CLEANUP_NONE",
+        "runtime": "RUNTIME_NOT_READY_AFTER_EXPLICIT_INIT_FAILURE"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_global_init",
+      "rule_id": "G03"
+    },
+    {
+      "condition": "runtime == RUNTIME_NOT_READY_AFTER_EXPLICIT_INIT_FAILURE and an ordinary libcurl API other than governance-reviewed recovery/reinitialization is invoked",
+      "defect": "D2",
+      "enforcement": "FROZEN_V3_RULE",
+      "rule_id": "G04",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "runtime == RUNTIME_READY_EXPLICIT_ONLY and explicit_cleanup_obligation == EXPLICIT_CLEANUP_DUE",
+      "effect": {
+        "explicit_cleanup_obligation": "EXPLICIT_CLEANUP_NONE",
+        "runtime": "RUNTIME_UNINITIALIZED"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_global_cleanup",
+      "rule_id": "G05"
+    },
+    {
+      "condition": "runtime == RUNTIME_READY_IMPLICIT_PLUS_EXPLICIT and explicit_cleanup_obligation == EXPLICIT_CLEANUP_DUE",
+      "effect": {
+        "explicit_cleanup_obligation": "EXPLICIT_CLEANUP_NONE",
+        "runtime": "RUNTIME_READY_IMPLICIT_ONLY"
+      },
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_global_cleanup",
+      "rule_id": "G06"
+    },
+    {
+      "classification_note": "This is not automatically D4 merely because no explicit cleanup obligation exists. Consequences are state/path-sensitive, especially if live libcurl resources remain.",
+      "condition": "runtime == RUNTIME_READY_IMPLICIT_ONLY and explicit_cleanup_obligation == EXPLICIT_CLEANUP_NONE",
+      "effect": {
+        "explicit_cleanup_obligation": "EXPLICIT_CLEANUP_NONE",
+        "runtime": "RUNTIME_UNINITIALIZED"
+      },
+      "enforcement": "STATE_SENSITIVE",
+      "function": "curl_global_cleanup",
+      "rule_id": "G07"
+    },
+    {
+      "classification_note": "VALID only with respect to the reviewed D4 double-cleanup projection; a zero-reference curl_global_cleanup is an implementation-level no-op. Other independently applicable rules are evaluated separately.",
+      "condition": "runtime == RUNTIME_UNINITIALIZED",
+      "effect": "implementation-level zero-reference no-op",
+      "enforcement": "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+      "function": "curl_global_cleanup",
+      "rule_id": "G08",
+      "verdict": "VALID"
+    },
+    {
+      "condition": "successful explicit curl_global_init occurs while an explicit cleanup obligation is already due beyond the bounded reviewed case",
+      "enforcement": "OUTSIDE_BOUNDED_CORE_DO_NOT_INVENT",
+      "rule_id": "G09",
+      "verdict": "UNKNOWN"
+    },
+    {
+      "classification_note": "Applies only to an explicit cleanup obligation created by successful explicit curl_global_init; implicit readiness alone does not create it.",
+      "condition": "program exits with EXPLICIT_CLEANUP_DUE",
+      "defect": "D5",
+      "enforcement": "MUST",
+      "rule_id": "G10",
+      "verdict": "VIOLATION-MUST"
+    }
+  ],
+  "governance": {
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "canonical_curl_specification_authorized": false,
+    "canonical_specification_authorized": false,
+    "completed_human_review_commit": "0f6625753452944bbedeab66a77a4098a6e349a9",
+    "completed_human_review_decision": "REVISION_REQUIRED",
+    "completed_human_review_path": "evidence/annotation_preparation/curl_technical_protocol_working_draft_v3/completed_human_review_v3/01_completed_human_technical_review.v3.md",
+    "completed_human_review_sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "completed_human_review_size_bytes": 22983,
+    "completed_human_review_tree": "a822ec4504071e0edbdc8b77c0eda8ea3974cdbc",
+    "frozen_scope_author_commit": "7de6fc01797ae68cbd64406b850a3198f71cc702",
+    "frozen_scope_author_tree": "c5f96b844e5803cccd04c9f64a55754dc6c77e20",
+    "frozen_scope_git_blob": "931c24cc46c99f23ee352455d3e8c93e57e63401",
+    "frozen_scope_path": "config/annotation/curl_v3_authoring_scope.v3.json",
+    "frozen_scope_sha256": "ede7e1422b9553f73377432474deb282852b619a5b004cd7c4d00033c0a37abb",
+    "generated_driver_inspection_authorized": false,
+    "gold_annotation_authorized": false,
+    "independent_technical_review_required": true,
+    "post_freeze_authorization_commit": "cb864ac93023ee288343b8bcdc0267b07dc28114",
+    "predecessor_in_place_edit_authorized": false,
+    "predecessor_path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "predecessor_sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "predecessor_size_bytes": 41330,
+    "predecessor_working_draft_version": "V3",
+    "repair_authorized": false,
+    "scope_freeze_commit": "0992b2ae03702e29471d59f192daf43a8924314d",
+    "selected_sample_membership_inspection_authorized": false,
+    "successor_authorization_commit": "cee5299cf80b633019ea6c98efc065b46aade1dd",
+    "successor_authorization_tree": "37528cfdc0379b2e999eb8f8d83c7b036b1bb04e",
+    "technical_working_draft_authorized": true,
+    "working_draft_version": "V4"
+  },
+  "human_review_successor_resolution": {
+    "accepted_protocol_rule_semantics_preserved": true,
+    "downstream_review_package_corrections_pending": [
+      "V4-P01",
+      "V4-P02"
+    ],
+    "historical_resolved_review_provenance_location": "resolved_independent_review_items",
+    "implemented_metadata_corrections": [
+      "V4-C01",
+      "V4-C02",
+      "V4-C03",
+      "V4-C04",
+      "V4-C05",
+      "V4-C06"
+    ],
+    "overall_decision": "REVISION_REQUIRED",
+    "predecessor_path": "config/annotation/curl_technical_protocol_working_draft.v3.json",
+    "predecessor_sha256": "2c10317a7a1fa745d64b461bb318ac2aa1e3e23439ca261c8cd746d1ea3f8ac2",
+    "predecessor_size_bytes": 41330,
+    "predecessor_working_draft_version": "V3",
+    "preserved_pass_review_items": [
+      "V3-RR01",
+      "V3-RR03",
+      "V3-RR04",
+      "V3-RR05",
+      "V3-RR06",
+      "V3-RR07",
+      "V3-RR08",
+      "V3-RR09",
+      "V3-RR10",
+      "V3-RR11"
+    ],
+    "source_review_commit": "0f6625753452944bbedeab66a77a4098a6e349a9",
+    "source_review_items": [
+      "V3-RR02",
+      "V3-RR12"
+    ],
+    "source_review_sha256": "9a15b13cea29bcbcbfff349c9b9bcb113a9d9a4e01afe03727d7be8dbd87c327",
+    "source_review_tree": "a822ec4504071e0edbdc8b77c0eda8ea3974cdbc",
+    "successor_authorization_commit": "cee5299cf80b633019ea6c98efc065b46aade1dd",
+    "successor_authorization_tree": "37528cfdc0379b2e999eb8f8d83c7b036b1bb04e",
+    "successor_working_draft_version": "V4"
+  },
+  "library": "curl",
+  "multi_handle_rules": [
+    {
+      "condition": "return != NULL",
+      "effect": "create MULTI_OWNED",
+      "enforcement": "MUST_PREREQUISITE",
+      "function": "curl_multi_init",
+      "precondition": "global runtime is ready",
+      "rule_id": "M01"
+    },
+    {
+      "condition": "global runtime is not ready",
+      "defect": "D1",
+      "enforcement": "FROZEN_V3_RULE",
+      "function": "curl_multi_init",
+      "reason": "curl_multi_init is not an implicit-global-init exception.",
+      "rule_id": "M02",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "runtime ready and return == NULL",
+      "effect": "NO_MULTI_RESOURCE",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_init",
+      "rule_id": "M03"
+    },
+    {
+      "condition": "return == CURLM_OK and easy is detached",
+      "effect": "easy becomes EASY_ATTACHED_TO_MULTI for that multi; ownership remains with caller",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_add_handle",
+      "precondition": "multi is live and easy is live",
+      "rule_id": "M04"
+    },
+    {
+      "classification_note": "Duplicate add returning CURLM_ADDED_ALREADY is not by itself an enforceable protocol violation; membership remains unchanged.",
+      "condition": "easy is already attached and call returns CURLM_ADDED_ALREADY",
+      "effect": "membership unchanged",
+      "enforcement": "FROZEN_V3_RULE",
+      "function": "curl_multi_add_handle",
+      "reason": "Frozen V3 explicitly says repeated-add error is not by itself a protocol violation.",
+      "rule_id": "M05",
+      "verdict": "VALID"
+    },
+    {
+      "condition": "return == CURLM_OK",
+      "effect": "multi remains MULTI_OWNED; individual transfer success is not implied by CURLM_OK",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_perform",
+      "precondition": "multi == MULTI_OWNED",
+      "rule_id": "M06"
+    },
+    {
+      "condition": "return != CURLM_OK",
+      "effect": "multi becomes MULTI_OWNED_POST_ERROR_UNCERTAIN",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_perform",
+      "precondition": "multi == MULTI_OWNED",
+      "rule_id": "M07"
+    },
+    {
+      "classification_note": "Plain repetition after non-CURLM_OK without complete documented remove-and-re-add recovery is prohibited.",
+      "condition": "multi == MULTI_OWNED_POST_ERROR_UNCERTAIN and the application plainly repeats curl_multi_perform without documented recovery",
+      "defect": "D6",
+      "effect": "multi remains MULTI_OWNED_POST_ERROR_UNCERTAIN unless a separate source-backed recovery or cleanup transition applies",
+      "enforcement": "MUST",
+      "function": "curl_multi_perform",
+      "rule_id": "M08",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "multi is MULTI_OWNED or MULTI_OWNED_POST_ERROR_UNCERTAIN and easy is attached to that same multi and return == CURLM_OK",
+      "effect": "easy becomes EASY_OWNED_DETACHED",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_remove_handle",
+      "rule_id": "M09"
+    },
+    {
+      "classification_note": "For a live valid supplied multi handle and a live easy handle, repeated removal of an already detached easy handle is not by itself an enforceable protocol violation; pinned implementation returns CURLM_OK. Invalid, NULL, or released supplied-multi cases are handled by their applicable D1, D2, or D3 rules before membership comparison.",
+      "condition": "easy is already detached",
+      "effect": "no membership change; pinned implementation returns CURLM_OK",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_remove_handle",
+      "precondition": "supplied multi is live and valid and easy is live",
+      "rule_id": "M10",
+      "verdict": "VALID"
+    },
+    {
+      "classification_note": "For a live valid supplied multi handle and a live easy handle, this wrong-multi case is distinct from valid repeated removal of an already detached easy handle. Invalid, NULL, or released supplied-multi cases are handled by their applicable D1, D2, or D3 rules before membership comparison.",
+      "condition": "easy is attached to a different multi than the supplied multi",
+      "defect": "D7",
+      "effect": "pinned implementation returns CURLM_BAD_EASY_HANDLE; the easy handle remains attached to its actual original multi; no successful detachment occurs",
+      "enforcement": "MUST",
+      "function": "curl_multi_remove_handle",
+      "precondition": "supplied multi is live and valid and easy is live",
+      "rule_id": "M11",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "classification_note": "Only CURLM_OK establishes successful multi release.",
+      "cleanup_obligation_effect": "DISCHARGED",
+      "condition": "live multi has zero externally owned easy handles attached and curl_multi_cleanup returns CURLM_OK",
+      "effect": "MULTI_RELEASED",
+      "enforcement": "SOURCE_GROUNDED",
+      "function": "curl_multi_cleanup",
+      "rule_id": "M12"
+    },
+    {
+      "classification_note": "Skipping explicit remove is not, solely by itself, an enforceable violation when curl_multi_cleanup succeeds.",
+      "cleanup_obligation_effect": "MULTI_OBLIGATION_DISCHARGED",
+      "condition": "one or more caller-owned easy handles remain attached and curl_multi_cleanup returns CURLM_OK",
+      "enforcement": "NON_ENFORCEABLE_RECOMMENDATION",
+      "function": "curl_multi_cleanup",
+      "recommendation": "Preferred documented ordering is curl_multi_remove_handle, curl_easy_cleanup, then curl_multi_cleanup.",
+      "rule_id": "M13",
+      "structural_effect": "Successful cleanup clears remaining easy-to-multi associations without freeing caller-owned easy handles. Affected easy handles remain live, detached, caller-owned, and retain their individual curl_easy_cleanup obligations.",
+      "verdict": "VALID"
+    },
+    {
+      "condition": "program exits with MULTI_OWNED or MULTI_OWNED_POST_ERROR_UNCERTAIN",
+      "defect": "D5",
+      "enforcement": "MUST",
+      "rule_id": "M14",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "classification_note": "A repeated curl_multi_cleanup after release is classified by the cleanup-specific D4 rule instead of this generic D3 rule.",
+      "condition": "ordinary multi-handle use after MULTI_RELEASED",
+      "defect": "D3",
+      "enforcement": "MUST",
+      "excludes": [
+        "curl_multi_cleanup"
+      ],
+      "rule_id": "M15",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary multi operation before any successful curl_multi_init acquisition",
+      "defect": "D1",
+      "enforcement": "MUST",
+      "function": "curl_multi_add_handle",
+      "rule_id": "M16",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary multi operation before any successful curl_multi_init acquisition",
+      "defect": "D1",
+      "enforcement": "MUST",
+      "function": "curl_multi_perform",
+      "rule_id": "M17",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary multi operation before any successful curl_multi_init acquisition",
+      "defect": "D1",
+      "enforcement": "MUST",
+      "function": "curl_multi_remove_handle",
+      "rule_id": "M18",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary continuation using a NULL curl_multi_init result",
+      "defect": "D2",
+      "enforcement": "MUST",
+      "function": "curl_multi_add_handle",
+      "rule_id": "M19",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary continuation using a NULL curl_multi_init result",
+      "defect": "D2",
+      "enforcement": "MUST",
+      "function": "curl_multi_perform",
+      "rule_id": "M20",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "condition": "ordinary continuation using a NULL curl_multi_init result",
+      "defect": "D2",
+      "enforcement": "MUST",
+      "function": "curl_multi_remove_handle",
+      "rule_id": "M21",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "classification_note": "Explicitly modeled NULL cleanup behavior; no successful cleanup effect may be inferred from the call.",
+      "condition": "multi argument is NULL",
+      "effect": "no multi resource is released, no membership relation is detached, and no cleanup obligation is discharged",
+      "enforcement": "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+      "function": "curl_multi_cleanup",
+      "return": "CURLM_BAD_HANDLE",
+      "rule_id": "M22"
+    },
+    {
+      "condition": "the same multi resource is already MULTI_RELEASED and the argument is the released non-NULL resource",
+      "defect": "D4",
+      "enforcement": "MUST",
+      "function": "curl_multi_cleanup",
+      "precedence": "cleanup-specific D4 takes precedence over generic D3 use-after-release",
+      "rule_id": "M23",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "classification_note": "A failed cleanup attempt is not treated as successful release or recovery.",
+      "condition": "multi is a live MULTI_OWNED or MULTI_OWNED_POST_ERROR_UNCERTAIN resource and curl_multi_cleanup returns non-CURLM_OK",
+      "effect": "do not assert MULTI_RELEASED; keep the multi cleanup obligation outstanding; do not assert complete easy-handle detachment; membership facts not established by the failed cleanup remain conservatively unresolved",
+      "enforcement": "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+      "function": "curl_multi_cleanup",
+      "rule_id": "M24"
+    },
+    {
+      "classification_note": "Partial removal or re-addition before all error-time handles are removed does not clear MULTI_OWNED_POST_ERROR_UNCERTAIN.",
+      "condition": "multi == MULTI_OWNED_POST_ERROR_UNCERTAIN, every easy handle that was attached at the error has first been successfully removed, and at least one handle is then successfully re-added before the next curl_multi_perform",
+      "effect": "the complete documented remove-all then successful re-add sequence returns the multi handle to MULTI_OWNED and clears the post-error recovery requirement",
+      "enforcement": "SOURCE_GROUNDED_RECOVERY",
+      "function": "curl_multi_add_handle",
+      "rule_id": "M25"
+    },
+    {
+      "argument_scope": "easy_argument",
+      "classification_note": "The easy-argument D1 classification is evaluated independently of the supplied multi argument. Applicable multi-argument D1, D2, or D3 rules remain separately applicable and may determine an earlier pinned return when the supplied multi itself is invalid.",
+      "condition": "easy argument is used before any successful curl_easy_init acquisition",
+      "defect": "D1",
+      "effect": "no easy-to-multi membership is created or changed",
+      "enforcement": "MUST",
+      "function": "curl_multi_add_handle",
+      "return_behavior": "when the supplied multi has passed live-valid validation, pinned implementation returns CURLM_BAD_EASY_HANDLE",
+      "rule_id": "M26",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "argument_scope": "easy_argument",
+      "classification_note": "The easy-argument D1 classification is evaluated independently of the supplied multi argument. Applicable multi-argument D1, D2, or D3 rules remain separately applicable and may determine an earlier pinned return when the supplied multi itself is invalid.",
+      "condition": "easy argument is used before any successful curl_easy_init acquisition",
+      "defect": "D1",
+      "effect": "no easy-to-multi membership is detached or changed",
+      "enforcement": "MUST",
+      "function": "curl_multi_remove_handle",
+      "return_behavior": "when the supplied multi has passed live-valid validation, pinned implementation returns CURLM_BAD_EASY_HANDLE",
+      "rule_id": "M27",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "argument_scope": "easy_argument",
+      "classification_note": "This definite D2 classification applies across every feasible runtime state represented for the failed curl_easy_init result and is not weakened to VIOLATION-MAY or UNKNOWN merely because that runtime post-state is set-valued. The easy-argument classification is independent of applicable supplied-multi D1, D2, or D3 rules.",
+      "condition": "easy argument is the NULL result of a failed curl_easy_init",
+      "defect": "D2",
+      "effect": "no easy-to-multi membership is created or changed",
+      "enforcement": "MUST",
+      "function": "curl_multi_add_handle",
+      "return_behavior": "when the supplied multi has passed live-valid validation, pinned implementation returns CURLM_BAD_EASY_HANDLE",
+      "rule_id": "M28",
+      "verdict": "VIOLATION-MUST"
+    },
+    {
+      "argument_scope": "easy_argument",
+      "classification_note": "This definite D2 classification applies across every feasible runtime state represented for the failed curl_easy_init result and is not weakened to VIOLATION-MAY or UNKNOWN merely because that runtime post-state is set-valued. The easy-argument classification is independent of applicable supplied-multi D1, D2, or D3 rules.",
+      "condition": "easy argument is the NULL result of a failed curl_easy_init",
+      "defect": "D2",
+      "effect": "no easy-to-multi membership is detached or changed",
+      "enforcement": "MUST",
+      "function": "curl_multi_remove_handle",
+      "return_behavior": "when the supplied multi has passed live-valid validation, pinned implementation returns CURLM_BAD_EASY_HANDLE",
+      "rule_id": "M29",
+      "verdict": "VIOLATION-MUST"
+    }
+  ],
+  "next_required_boundary": "BUILD_INDEPENDENT_CURL_TECHNICAL_WORKING_DRAFT_V4_REVIEW_PACKAGE",
+  "open_independent_review_items": [],
+  "pinned_source": {
+    "approved_source_file_count": 21,
+    "repository_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "repository_tree": "e23d273aeb073c04aa5b073b35c9fde16979c896"
+  },
+  "purpose": "Source-grounded resource-centered path-sensitive protocol model for the frozen twelve-function curl authoring surface. Working Draft V4 is an immutable metadata-only successor to exact Working Draft V3, required by the completed independent human technical review of V3 (V3-RR02 and V3-RR12). All accepted V3 protocol-rule semantics are preserved unchanged.",
+  "representation_policy": {
+    "membership_sensitive": true,
+    "normative_strength_uncertainty_must_not_be_silently_strengthened": true,
+    "ownership_sensitive": true,
+    "path_sensitive": true,
+    "resource_centered": true,
+    "return_sensitive": true,
+    "set_valued_state_reasoning": "Known finite feasible state alternatives are evaluated explicitly; the existence of a set-valued state does not itself force UNKNOWN.",
+    "synthetic_protocol_events_invented": false,
+    "unknown_is_first_class": true,
+    "unknown_must_never_be_converted_to_valid": true
+  },
+  "resolved_independent_review_items": [
+    {
+      "human_review_item": "TS-RR09",
+      "resolution": "Outstanding EXPLICIT_CLEANUP_DUE at exit is D5 VIOLATION-MUST.",
+      "review_item": "NR01"
+    },
+    {
+      "human_review_item": "TS-RR10",
+      "resolution": "Preferred remove/easy-cleanup/multi-cleanup order is a non-enforceable recommendation; successful multi cleanup may structurally detach remaining easy handles.",
+      "review_item": "NR02"
+    },
+    {
+      "human_review_item": "TS-RR11",
+      "resolution": "Plain multi-perform repetition after non-CURLM_OK without complete recovery is D6 VIOLATION-MUST.",
+      "review_item": "NR03"
+    },
+    {
+      "human_review_item": "TS-RR12",
+      "resolution": "Keep the two-state NULL easy-init runtime post-state and use feasible-state verdict joins.",
+      "review_item": "NR04"
+    },
+    {
+      "human_review_item": "TS-RR13",
+      "resolution": "Wrong-multi remove is D7 VIOLATION-MUST and preserves actual membership.",
+      "review_item": "NR05"
+    },
+    {
+      "human_review_item": "TS-RR14",
+      "resolution": "Final-reference global cleanup while modeled resources remain live is state-sensitive D8 VIOLATION-MUST.",
+      "review_item": "NR06"
+    }
+  ],
+  "resources": {
+    "EASY_HANDLE": {
+      "cleanup_obligation": "A non-NULL curl_easy_init result creates an easy-handle cleanup obligation.",
+      "ownership": "CALLER_OWNED",
+      "release": "curl_easy_cleanup on a live detached easy handle releases it.",
+      "states": [
+        "NO_EASY_RESOURCE",
+        "EASY_OWNED_DETACHED",
+        "EASY_ATTACHED_TO_MULTI",
+        "EASY_RELEASED"
+      ]
+    },
+    "EASY_MULTI_MEMBERSHIP": {
+      "ownership_transfer_on_add": false,
+      "relation": "easy_handle -> zero_or_one_multi_handle",
+      "successful_add": "DETACHED -> ATTACHED_TO_SPECIFIC_MULTI",
+      "successful_remove": "ATTACHED_TO_SPECIFIC_MULTI -> DETACHED"
+    },
+    "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION": {
+      "established_by": "successful explicit curl_global_init within the bounded core model",
+      "missing_at_exit_normative_status": "MUST",
+      "not_automatically_established_by": "implicit readiness caused by curl_easy_init",
+      "states": [
+        "EXPLICIT_CLEANUP_NONE",
+        "EXPLICIT_CLEANUP_DUE"
+      ]
+    },
+    "GLOBAL_RUNTIME_REFERENCE_STATE": {
+      "notes": [
+        "Runtime readiness is distinct from the explicit global-cleanup obligation.",
+        "curl_easy_init may establish implicit runtime readiness.",
+        "curl_multi_init is not an auto-initialization exception.",
+        "The explicit-init-failure state formalizes the frozen rule that a failed explicit curl_global_init does not establish readiness and does not permit subsequent ordinary libcurl use."
+      ],
+      "states": [
+        "RUNTIME_UNINITIALIZED",
+        "RUNTIME_NOT_READY_AFTER_EXPLICIT_INIT_FAILURE",
+        "RUNTIME_READY_EXPLICIT_ONLY",
+        "RUNTIME_READY_IMPLICIT_ONLY",
+        "RUNTIME_READY_IMPLICIT_PLUS_EXPLICIT"
+      ]
+    },
+    "MULTI_HANDLE": {
+      "cleanup_obligation": "A non-NULL curl_multi_init result requires corresponding curl_multi_cleanup.",
+      "ownership": "CALLER_OWNED",
+      "post_error_recovery": {
+        "clear_condition": "complete removal followed by successful re-add",
+        "partial_sequence_effect": "post-error uncertainty remains active",
+        "required_sequence": [
+          "successfully remove every easy handle attached at the error",
+          "after complete removal, successfully add handle(s) again",
+          "only then resume ordinary curl_multi_perform"
+        ],
+        "trigger": "curl_multi_perform returns non-CURLM_OK"
+      },
+      "post_error_trigger": "curl_multi_perform return != CURLM_OK",
+      "states": [
+        "NO_MULTI_RESOURCE",
+        "MULTI_OWNED",
+        "MULTI_OWNED_POST_ERROR_UNCERTAIN",
+        "MULTI_RELEASED"
+      ]
+    }
+  },
+  "return_condition_policy": {
+    "curl_easy_init": {
+      "failure": "return == NULL",
+      "null_result_state_join_policy": "Preserve all source-grounded feasible runtime post-states. Evaluate subsequent events over each state; mixed VALID/enforceable-violation outcomes join to VIOLATION-MAY rather than blanket UNKNOWN.",
+      "success": "return != NULL"
+    },
+    "curl_easy_perform": "CURLcode transfer failure does not itself release the easy handle",
+    "curl_easy_setopt": "CURLcode option-setting failure does not itself release the easy handle",
+    "curl_global_init": {
+      "failure": "return != CURLE_OK",
+      "success": "return == CURLE_OK"
+    },
+    "curl_multi_add_handle": {
+      "membership_change": "return == CURLM_OK"
+    },
+    "curl_multi_cleanup": {
+      "failure_condition": "return != CURLM_OK",
+      "failure_effects": [
+        "do not assert MULTI_RELEASED",
+        "do not discharge the multi cleanup obligation",
+        "do not assert complete easy-handle detachment",
+        "represent unresolved membership conservatively"
+      ],
+      "null_argument_behavior": {
+        "cleanup_obligation_effect": "NONE",
+        "release_effect": "NONE",
+        "return": "CURLM_BAD_HANDLE"
+      },
+      "success_condition": "return == CURLM_OK",
+      "success_effects": [
+        "multi transitions to MULTI_RELEASED",
+        "multi cleanup obligation is discharged",
+        "remaining easy-to-multi associations are structurally cleared",
+        "caller-owned easy handles are not freed",
+        "individual easy cleanup obligations remain"
+      ]
+    },
+    "curl_multi_init": {
+      "failure": "return == NULL",
+      "success": "return != NULL"
+    },
+    "curl_multi_perform": {
+      "normal_multi_state": "return == CURLM_OK",
+      "post_error_multi_state": "return != CURLM_OK"
+    },
+    "curl_multi_remove_handle": {
+      "documented_membership_change": "return == CURLM_OK when attached to supplied multi"
+    }
+  },
+  "schema_id": "curl.technical-protocol-working-draft.v4",
+  "status": "SOURCE_ONLY_TECHNICAL_WORKING_DRAFT_V4_AUTHOR_CHECKPOINT",
+  "verdict_semantics": {
+    "UNKNOWN": "The available frozen scope/source evidence or bounded representation does not justify VALID or an enforceable violation verdict, including cases whose normative strength is explicitly awaiting independent technical review.",
+    "VALID": "All modeled source-backed preconditions and obligations are satisfied for the analyzed path/state, and no unresolved normative-strength or model-coverage uncertainty controls the result.",
+    "VIOLATION-MAY": "The analysis retains multiple feasible path/state alternatives and at least one violates an enforceable source-backed protocol rule while at least one does not. This verdict expresses path/state uncertainty, not uncertainty about whether a source statement is normative.",
+    "VIOLATION-MUST": "The analyzed path/state definitely violates an enforceable source-backed protocol rule.",
+    "allowed_machine_verdicts": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ],
+    "feasible_state_join_policy": {
+      "all_feasible_states_same_verdict": "use the common verdict",
+      "mixed_VALID_and_enforceable_violation": "VIOLATION-MAY",
+      "normative_strength_or_model_coverage_unresolved": "UNKNOWN",
+      "unknown_never_silently_becomes_valid": true
+    }
+  }
+}

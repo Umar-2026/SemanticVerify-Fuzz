@@ -1,0 +1,98 @@
+{
+  "CVR01_exact_binding": {
+    "assessment_v1_completed_review_sha256": "e81cf41aa331e371541cb3b3c8b9392e66ccedbf8b87a3e9ed3943dee8a5fd22",
+    "assessment_v1_review_record_sha256": "5d9598ca8ffe2b6c718387225a507f62025b9ede10548bf9b0882690d2c6c316",
+    "assessment_v1_review_record_size": 3685,
+    "corrective_v2_json_sha256": "94e056db6a2b9eb993b4cea379491dbc69bc528115b755704b2ff587580b55dc",
+    "corrective_v2_md_sha256": "e54d8ea0039c87a33ae4d07593428ac1d003bf7648fe9511d12fee5d35d1bd30",
+    "decision_0079_sha256": "3f2ffbba2bebf33f749fab1d0b3403c5b12aaff5e747c4b367c17694ad9bd742",
+    "decision_0080_authorization_sha256": "9cba113bbd03641acca9608ab1f63a60736a6d9211f6dd7551fe0a9642f61fb8",
+    "decision_0080_sha256": "3e46e63bf409b747b0b4be36dc2445d5a9a611dd527aa47185849e114af04fa8"
+  },
+  "CVR02_sr02_corrected_distinction": {
+    "proposition_A": "NO_ADMISSIBLE_EXACT_V4_TO_V2_MAPPING_IS_CURRENTLY_PROVEN",
+    "proposition_A_does_not_entail_proposition_B": true,
+    "proposition_A_supported": true,
+    "proposition_B": "NO_ADMISSIBLE_EXISTING_V2_MAPPING_CAN_EXIST",
+    "proposition_B_supported": false
+  },
+  "CVR03_multifield_capability_boundary": {
+    "absence_of_same_named_carrier_treated_as_impossibility": false,
+    "exhaustive_admissible_v2_capability_argument_available": false,
+    "same_named_carrier_observations": {
+      "enforcement": false,
+      "normative_strength": false,
+      "resource_centered": false,
+      "synthetic_protocol_events": false
+    },
+    "semantically_related_multifield_schema_v2_compositions_exhaustively_assessed": false
+  },
+  "CVR04_corrected_governance_order": {
+    "complete_exact_roundtrip_machine_check_precedes_successor_activation": true,
+    "curl_json_materialization_after_activation_and_separate_authorization": true,
+    "independent_mapping_roundtrip_review_precedes_successor_activation": true,
+    "positive_mapping_precedes_successor_activation": true
+  },
+  "CVR05_corrected_outcome": {
+    "no_successor_required_selected": false,
+    "positive_existing_v2_mapping_proven": false,
+    "schema_successor_required_selected": false,
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED"
+  },
+  "CVR06_preserved_technical_findings": {
+    "backward_compatibility_requirements_preserved": true,
+    "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+    "distinct_enforcement_value_count": 15,
+    "distinct_enforcement_values": [
+      "FROZEN_V3_RULE",
+      "MUST",
+      "MUST_PREREQUISITE",
+      "MUST_RELEASE_RULE",
+      "MUST_RESOURCE_OWNERSHIP_FACT",
+      "NON_ENFORCEABLE_RECOMMENDATION",
+      "OUTSIDE_BOUNDED_CORE_DO_NOT_INVENT",
+      "SOURCE_GROUNDED",
+      "SOURCE_GROUNDED_CONSERVATIVE_STATE",
+      "SOURCE_GROUNDED_EXCEPTION",
+      "SOURCE_GROUNDED_NO_AUTOMATIC_D4",
+      "SOURCE_GROUNDED_RECOVERY",
+      "SOURCE_GROUNDED_REPEATED_USE_ALLOWED",
+      "SOURCE_GROUNDED_RETURN_BEHAVIOR",
+      "STATE_SENSITIVE"
+    ],
+    "other_rule_and_exit_field_gaps_remain_in_scope": true,
+    "rule_record_total": 64,
+    "rules_with_enforcement": 64,
+    "semantic_accounting_alone_sufficient_for_field_losslessness": false,
+    "technical_findings_converted_into_global_impossibility_claim": false,
+    "unresolved_representation_policy_assertion_count": 3,
+    "verdict_to_enforcement_ambiguous_group_count": 3
+  },
+  "CVR07_historical_pass_handling": {
+    "historical_pass_items": [
+      "SR01",
+      "SR03",
+      "SR04",
+      "SR05",
+      "SR06"
+    ],
+    "historical_pass_results_automatically_approve_corrective_v2": false,
+    "historical_pass_results_preserved": true
+  },
+  "CVR08_governance_non_authorizations": {
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "curl_json_creation_authorized": false,
+    "exhaustive_v2_capability_study_authorized": false,
+    "positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authoring_authorized": false
+  },
+  "evidence_id": "SVF-CORRECTIVE-ASSESSMENT-V2-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-EVIDENCE-V1",
+  "human_review_state": {
+    "completed": false,
+    "synthetic_decision": false
+  },
+  "status": "REVIEW_EVIDENCE_ONLY_NO_HUMAN_DECISION"
+}

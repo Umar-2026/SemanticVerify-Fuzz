@@ -1,0 +1,131 @@
+{
+  "CV2_SR02_correction": {
+    "corrected_distinction": {
+      "proposition_A": "NO_ADMISSIBLE_EXACT_V4_TO_V2_MAPPING_IS_CURRENTLY_PROVEN",
+      "proposition_A_does_not_entail_proposition_B": true,
+      "proposition_A_supported": true,
+      "proposition_B": "NO_ADMISSIBLE_EXISTING_V2_MAPPING_CAN_EXIST",
+      "proposition_B_supported": false
+    },
+    "corrective_interpretation": "The current record establishes unresolved representational sufficiency, not proven impossibility of every admissible existing-V2 composition.",
+    "exhaustive_existing_v2_capability_argument_available": false,
+    "exhaustive_existing_v2_capability_study_authorized_by_decision_0078": false,
+    "predecessor_problem": "Assessment V1 moved from absence of a proven admissible exact existing-V2 mapping to the stronger conclusion that a schema successor is required without exhaustively resolving semantically related multi-field Schema-V2 compositions.",
+    "semantically_related_multifield_schema_v2_compositions_exhaustively_assessed": false
+  },
+  "CV2_SR07_correction": {
+    "complete_roundtrip_machine_check_precedes_successor_activation": true,
+    "corrected_future_governance_order_if_a_successor_later_becomes_supported": [
+      "Independently approve the necessity/capability conclusion that supports considering a successor.",
+      "Separately authorize successor-schema candidate authoring.",
+      "Author and machine-check the successor-schema candidate without modifying historical schemas.",
+      "Separately authorize a positive curl V4-to-successor mapping candidate and complete exact roundtrip proof.",
+      "Author the positive mapping candidate and machine-check complete forward preservation and deterministic exact reverse reconstruction for all required curl V4 semantics.",
+      "Independently human-review the successor candidate together with the positive mapping and exact roundtrip evidence required for activation readiness.",
+      "Resolve all review deficiencies before activation readiness can be established.",
+      "Separately finalize successor hash/canonicalization and version-dispatch governance.",
+      "Separately authorize successor activation only after the positive mapping and exact roundtrip review have passed.",
+      "Execute successor activation.",
+      "Only after activation, separately authorize curl.json canonical materialization."
+    ],
+    "curl_json_materialization_after_activation_and_separate_authorization": true,
+    "independent_mapping_and_roundtrip_review_precedes_successor_activation": true,
+    "positive_mapping_authoring_precedes_successor_activation": true
+  },
+  "CV2_SR08_correction": {
+    "allowed_outcomes": [
+      "NO_SUCCESSOR_REQUIRED_WITH_PROVEN_ADMISSIBLE_V2_MAPPING_PATH",
+      "SCHEMA_SUCCESSOR_REQUIRED",
+      "FURTHER_EVIDENCE_REQUIRED"
+    ],
+    "evidence_needed_to_resolve_the_question": "A separately authorized exhaustive admissible existing-Schema-V2 capability study or equivalent reviewed argument must determine whether any semantically related multi-field V2 composition can provide deterministic exact forward preservation and reverse reconstruction under the existing admissibility constraints.",
+    "schema_successor_required_may_be_reconsidered_only_after_separately_authorized_new_evidence": true,
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "why_no_successor_required_not_selected": "No admissible exact V4-to-V2 mapping path has been positively defined, machine-checked, and independently reviewed.",
+    "why_schema_successor_required_not_selected": "The reviewed evidence has not exhaustively ruled out all admissible semantically related multi-field compositions of existing Schema-V2 carriers."
+  },
+  "artifact_role": "CORRECTIVE_SUCCESSOR_TO_ASSESSMENT_V1",
+  "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V2",
+  "claim_boundary": {
+    "absence_of_same_named_carrier_treated_as_impossibility": false,
+    "abstract_information_theoretic_impossibility_claimed": false,
+    "exact_problem": "WHETHER_ACTIVE_SCHEMA_V2_HAS_BEEN_SHOWN_SUFFICIENT_OR_INSUFFICIENT_FOR_EXACT_CURL_V4_LOSSLESS_CANONICALIZATION_UNDER_EXISTING_REVIEWED_ADMISSIBILITY_CONSTRAINTS",
+    "general_schema_v2_invalidity_claimed": false
+  },
+  "current_governance_conclusion": {
+    "next_evidentiary_question": "CAN_ANY_ADMISSIBLE_SEMANTICALLY_RELATED_MULTI_FIELD_SCHEMA_V2_COMPOSITION_SUPPORT_EXACT_V4_FORWARD_PRESERVATION_AND_DETERMINISTIC_REVERSE_RECONSTRUCTION",
+    "positive_existing_v2_mapping_proven": false,
+    "schema_successor_authoring_justified_now": false,
+    "schema_successor_required_human_approved": false,
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "assessment_v1_modification": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "exhaustive_v2_capability_study_authoring": false,
+    "positive_mapping_authorization": false,
+    "positive_v4_to_successor_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "historical_pass_item_handling": {
+    "SR01": "PASS_PRESERVED_HISTORICALLY",
+    "SR03": "PASS_PRESERVED_HISTORICALLY",
+    "SR04": "PASS_PRESERVED_HISTORICALLY",
+    "SR05": "PASS_PRESERVED_HISTORICALLY",
+    "SR06": "PASS_PRESERVED_HISTORICALLY",
+    "automatic_human_approval_of_corrective_v2": false,
+    "new_corrective_v2_bytes_require_independent_review": true
+  },
+  "human_review_binding": {
+    "SR01": "PASS",
+    "SR02": "REVISION_REQUIRED",
+    "SR03": "PASS",
+    "SR04": "PASS",
+    "SR05": "PASS",
+    "SR06": "PASS",
+    "SR07": "REVISION_REQUIRED",
+    "SR08": "REVISION_REQUIRED",
+    "completed_review_sha256": "e81cf41aa331e371541cb3b3c8b9392e66ccedbf8b87a3e9ed3943dee8a5fd22",
+    "historical_pass_results_automatically_approve_v2": false,
+    "historical_pass_results_preserved": true
+  },
+  "human_review_state": {
+    "corrective_v2_independent_human_technical_review_completed": false,
+    "synthetic_reviewer_decision": false
+  },
+  "next_boundary": "AUTHORIZE_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_FOR_CORRECTIVE_ASSESSMENT_V2",
+  "predecessor": {
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V1",
+    "assessment_json_sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+    "assessment_md_sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+    "historical_author_candidate_conclusion": "SCHEMA_SUCCESSOR_REQUIRED",
+    "historical_author_candidate_conclusion_human_approved": false,
+    "human_review_overall": "REVISION_REQUIRED",
+    "modified_in_place": false,
+    "must_remain_immutable": true
+  },
+  "preserved_reviewed_findings": {
+    "backward_compatibility_requirements_remain_applicable": true,
+    "defect_plus_verdict_to_enforcement_ambiguous_group_count": 4,
+    "distinct_enforcement_values": 15,
+    "enforcement_rule_coverage": 64,
+    "explicit_schema_v2_enforcement_carrier_present": false,
+    "other_rule_and_exit_field_gaps_remain_in_scope": true,
+    "semantic_accounting_alone_sufficient_for_field_level_losslessness": false,
+    "unresolved_representation_policy_assertions": [
+      "normative_strength_uncertainty_must_not_be_silently_strengthened=true",
+      "resource_centered=true",
+      "synthetic_protocol_events_invented=false"
+    ],
+    "verdict_to_enforcement_ambiguous_group_count": 3
+  },
+  "status": "AUTHOR_CORRECTIVE_ASSESSMENT_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_TECHNICAL_REVIEW"
+}

@@ -1,0 +1,159 @@
+{
+  "authoring_authorization": {
+    "authorization_sha256": "9cba113bbd03641acca9608ab1f63a60736a6d9211f6dd7551fe0a9642f61fb8",
+    "decision_0080_commit": "203d6db5ffd43f04985e2d295c89652c59a6670d"
+  },
+  "explicit_non_authorizations": {
+    "analyzer_implementation_or_execution": false,
+    "baseline_execution": false,
+    "corrective_v2_modification": false,
+    "curl_json_creation": false,
+    "exhaustive_v2_capability_study_authoring": false,
+    "positive_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "human_review_state": {
+    "completed": false,
+    "synthetic_decision": false
+  },
+  "initial_blank_reviewer_packet": {
+    "filename": "15_corrective_v2_reviewer_packet.REVIEW_DRAFT.v1.md",
+    "sha256": "248e3f567ca361c7c4afe54d1b7dfcc40064022cafd2f7b1b65981edacaafa44",
+    "size_bytes": 3996
+  },
+  "next_boundary": "CREATE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_FOR_CVR01_TO_CVR08",
+  "package_files": [
+    {
+      "filename": "01_corrective_assessment_v2.EXACT_COPY.json",
+      "sha256": "94e056db6a2b9eb993b4cea379491dbc69bc528115b755704b2ff587580b55dc",
+      "size_bytes": 7742
+    },
+    {
+      "filename": "02_corrective_assessment_v2.EXACT_COPY.md",
+      "sha256": "e54d8ea0039c87a33ae4d07593428ac1d003bf7648fe9511d12fee5d35d1bd30",
+      "size_bytes": 6105
+    },
+    {
+      "filename": "03_corrective_assessment_v2_checksums.EXACT_COPY.SHA256SUMS",
+      "sha256": "d606edaa2229b20b3f43012bcf669bb107ba0136812dbdfa44ca45e7c492072a",
+      "size_bytes": 399
+    },
+    {
+      "filename": "04_decision_0079_author_checkpoint.EXACT_COPY.md",
+      "sha256": "3f2ffbba2bebf33f749fab1d0b3403c5b12aaff5e747c4b367c17694ad9bd742",
+      "size_bytes": 3639
+    },
+    {
+      "filename": "05_decision_0080_review_package_authorization.EXACT_COPY.json",
+      "sha256": "9cba113bbd03641acca9608ab1f63a60736a6d9211f6dd7551fe0a9642f61fb8",
+      "size_bytes": 5962
+    },
+    {
+      "filename": "06_decision_0080.EXACT_COPY.md",
+      "sha256": "3e46e63bf409b747b0b4be36dc2445d5a9a611dd527aa47185849e114af04fa8",
+      "size_bytes": 3325
+    },
+    {
+      "filename": "07_completed_assessment_v1_human_review.EXACT_COPY.md",
+      "sha256": "e81cf41aa331e371541cb3b3c8b9392e66ccedbf8b87a3e9ed3943dee8a5fd22",
+      "size_bytes": 9949
+    },
+    {
+      "filename": "08_assessment_v1_human_review_record.EXACT_COPY.json",
+      "sha256": "5d9598ca8ffe2b6c718387225a507f62025b9ede10548bf9b0882690d2c6c316",
+      "size_bytes": 3685
+    },
+    {
+      "filename": "09_assessment_v1.EXACT_COPY.json",
+      "sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+      "size_bytes": 11294
+    },
+    {
+      "filename": "10_assessment_v1.EXACT_COPY.md",
+      "sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+      "size_bytes": 7520
+    },
+    {
+      "filename": "11_residual_schema_v2_insufficiency_proof.EXACT_COPY.json",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "size_bytes": 11911
+    },
+    {
+      "filename": "12_curl_technical_protocol_working_draft_v4.EXACT_COPY.json",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033
+    },
+    {
+      "filename": "13_active_protocol_specification_v2_schema.EXACT_COPY.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "filename": "14_corrective_v2_review_evidence.v1.json",
+      "sha256": "80b80c33c68906605daa8b2197bae83b9329a00cb69ae26f6e12b7b105d58357",
+      "size_bytes": 4217
+    },
+    {
+      "filename": "15_corrective_v2_reviewer_packet.REVIEW_DRAFT.v1.md",
+      "sha256": "248e3f567ca361c7c4afe54d1b7dfcc40064022cafd2f7b1b65981edacaafa44",
+      "size_bytes": 3996
+    },
+    {
+      "filename": "16_verify_corrective_v2_review_package.v1.py",
+      "sha256": "22b42a2edf02c9cef37fb1a08e29497426ce3401eb2d7bdc43a5f322d8d1231d",
+      "size_bytes": 7126
+    }
+  ],
+  "package_id": "SVF-CORRECTIVE-ASSESSMENT-V2-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-PACKAGE-V1",
+  "predecessor_human_review": {
+    "completed_review_sha256": "e81cf41aa331e371541cb3b3c8b9392e66ccedbf8b87a3e9ed3943dee8a5fd22",
+    "historical_pass_items": [
+      "SR01",
+      "SR03",
+      "SR04",
+      "SR05",
+      "SR06"
+    ],
+    "overall_decision": "REVISION_REQUIRED",
+    "review_record_sha256": "5d9598ca8ffe2b6c718387225a507f62025b9ede10548bf9b0882690d2c6c316"
+  },
+  "review_evidence": {
+    "filename": "14_corrective_v2_review_evidence.v1.json",
+    "sha256": "80b80c33c68906605daa8b2197bae83b9329a00cb69ae26f6e12b7b105d58357",
+    "size_bytes": 4217
+  },
+  "review_scope": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "mandatory_review_items": [
+      "CVR01",
+      "CVR02",
+      "CVR03",
+      "CVR04",
+      "CVR05",
+      "CVR06",
+      "CVR07",
+      "CVR08"
+    ]
+  },
+  "review_subject": {
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V2",
+    "assessment_json_sha256": "94e056db6a2b9eb993b4cea379491dbc69bc528115b755704b2ff587580b55dc",
+    "assessment_md_sha256": "e54d8ea0039c87a33ae4d07593428ac1d003bf7648fe9511d12fee5d35d1bd30",
+    "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "selected_outcome_is_human_approved": false
+  },
+  "status": "IMMUTABLE_AUTHOR_PACKAGE_AWAITING_INDEPENDENT_HUMAN_TECHNICAL_REVIEW"
+}
