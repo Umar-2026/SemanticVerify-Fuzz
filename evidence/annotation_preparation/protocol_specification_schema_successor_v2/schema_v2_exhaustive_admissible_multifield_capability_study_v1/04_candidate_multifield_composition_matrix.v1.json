@@ -1,0 +1,4245 @@
+{
+  "all_admissible_semantically_related_compositions_machine_enumerated": false,
+  "all_field_classes_screened": true,
+  "all_mathematically_possible_multifield_combinations_enumerated": false,
+  "all_semantic_units_screened": true,
+  "composition_class_analysis": [
+    {
+      "composition_class": "SEMANTIC_POLICY_CONSTANT_AND_STRUCTURED_POLICY_COMPOSITION",
+      "rejection_reason": null,
+      "status": "PARTIAL_STRUCTURAL_ALIGNMENT_IDENTIFIED_EXACT_V4_ROUNDTRIP_NOT_COMPLETE"
+    },
+    {
+      "composition_class": "RESOURCE_MODEL_RESOURCE_AND_RELATION_COMPOSITION",
+      "rejection_reason": null,
+      "status": "CANDIDATE_CLASS_REQUIRES_COMPLETE_CONSTRUCTIVE_MAPPING"
+    },
+    {
+      "composition_class": "EVENT_RETURN_CLASS_AND_RETURN_CONDITION_COMPOSITION",
+      "rejection_reason": null,
+      "status": "CANDIDATE_CLASS_REQUIRES_COMPLETE_CONSTRUCTIVE_MAPPING"
+    },
+    {
+      "composition_class": "SEMANTIC_RULE_BINDING_PRECONDITION_EFFECT_COMPOSITION",
+      "rejection_reason": null,
+      "status": "CANDIDATE_CLASS_REQUIRES_COMPLETE_CONSTRUCTIVE_MAPPING"
+    },
+    {
+      "composition_class": "EXIT_OBLIGATION_PRECONDITION_AND_EXIT_STATE_COMPOSITION",
+      "rejection_reason": null,
+      "status": "CANDIDATE_CLASS_REQUIRES_COMPLETE_CONSTRUCTIVE_MAPPING"
+    },
+    {
+      "composition_class": "SEMANTIC_ACCOUNTING_AS_SEMANTIC_PAYLOAD_STORAGE",
+      "rejection_reason": "SEMANTIC_ACCOUNTING_AS_SUBSTITUTE_FOR_SEMANTIC_STORAGE_PROHIBITED",
+      "status": "REJECTED_BY_AUTHORIZATION"
+    },
+    {
+      "composition_class": "PROVENANCE_AS_HIDDEN_SEMANTIC_PAYLOAD_STORAGE",
+      "rejection_reason": "PROVENANCE_IS_EVIDENCE_BINDING_NOT_GENERAL_SEMANTIC_STORAGE",
+      "status": "REJECTED_BY_AUTHORIZATION"
+    },
+    {
+      "composition_class": "OPAQUE_OR_FREE_TEXT_PACKING",
+      "rejection_reason": "OPAQUE_BLOB_AND_FREE_TEXT_HIDDEN_SEMANTIC_STORAGE_PROHIBITED",
+      "status": "REJECTED_BY_AUTHORIZATION"
+    },
+    {
+      "composition_class": "UNRELATED_FIELD_REPURPOSING",
+      "rejection_reason": "SEMANTICALLY_UNRELATED_FIELD_REPURPOSING_PROHIBITED",
+      "status": "REJECTED_BY_AUTHORIZATION"
+    },
+    {
+      "composition_class": "OPEN_STRING_SEMANTICALLY_RELATED_CARRIER_COMPOSITIONS",
+      "rejection_reason": null,
+      "status": "UNRESOLVED_ADMISSIBILITY_SPACE_NOT_MACHINE_ENUMERATED"
+    },
+    {
+      "composition_class": "CROSS_FAMILY_MULTI_FIELD_NATIVE_STRUCTURED_COMPOSITIONS",
+      "rejection_reason": null,
+      "status": "UNRESOLVED_FULL_COMPOSITION_SPACE_NOT_MACHINE_ENUMERATED"
+    }
+  ],
+  "curl_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+  "field_class_analysis": [
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model.resource_types"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "resources"
+      ],
+      "v4_field_class": "EASY_HANDLE"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model.relation_types",
+        "$.semantic_policy.reasoning_model.membership_sensitivity"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.membership_sensitivity"
+          ],
+          "schema_property": "membership_sensitivity",
+          "score": 0.25,
+          "token_overlap": [
+            "membership"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "resources"
+      ],
+      "v4_field_class": "EASY_MULTI_MEMBERSHIP"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations",
+        "$.semantic_rules[].cleanup_responsibility"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].cleanup_responsibility"
+          ],
+          "schema_property": "cleanup_responsibility",
+          "score": 0.2,
+          "token_overlap": [
+            "cleanup"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].exit_obligation_id"
+          ],
+          "schema_property": "exit_obligation_id",
+          "score": 0.2,
+          "token_overlap": [
+            "obligation"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_accounting.inventory.exit_obligation_count"
+          ],
+          "schema_property": "exit_obligation_count",
+          "score": 0.166667,
+          "token_overlap": [
+            "obligation"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "resources"
+      ],
+      "v4_field_class": "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model.resource_types[].states",
+        "$.semantic_policy.reasoning_model.state_domain"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.state_domain"
+          ],
+          "schema_property": "state_domain",
+          "score": 0.2,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.relation_state_requirements",
+            "$.semantic_rules[].preconditions.relation_state_requirements"
+          ],
+          "schema_property": "relation_state_requirements",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements",
+            "$.semantic_rules[].preconditions.resource_state_requirements"
+          ],
+          "schema_property": "resource_state_requirements",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.resource_state_updates"
+          ],
+          "schema_property": "resource_state_updates",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "resources"
+      ],
+      "v4_field_class": "GLOBAL_RUNTIME_REFERENCE_STATE"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model.resource_types"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "resources"
+      ],
+      "v4_field_class": "MULTI_HANDLE"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.reasoning_model.unknown_handling",
+        "$.semantic_policy.verdict_aggregation.unknown_when",
+        "$.semantic_policy.verdict_vocabulary"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.unknown_handling"
+          ],
+          "schema_property": "unknown_handling",
+          "score": 0.5,
+          "token_overlap": [
+            "unknown"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_when"
+          ],
+          "schema_property": "unknown_when",
+          "score": 0.5,
+          "token_overlap": [
+            "unknown"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+          ],
+          "schema_property": "unknown_must_not_collapse_to_valid",
+          "score": 0.2,
+          "token_overlap": [
+            "unknown"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "verdict_semantics"
+      ],
+      "v4_field_class": "UNKNOWN"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.verdict_aggregation.valid_when",
+        "$.semantic_policy.verdict_vocabulary"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.valid_when"
+          ],
+          "schema_property": "valid_when",
+          "score": 0.5,
+          "token_overlap": [
+            "valid"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+          ],
+          "schema_property": "unknown_must_not_collapse_to_valid",
+          "score": 0.2,
+          "token_overlap": [
+            "valid"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "verdict_semantics"
+      ],
+      "v4_field_class": "VALID"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.verdict_aggregation.violation_may_when",
+        "$.semantic_policy.verdict_vocabulary"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.violation_may_when"
+          ],
+          "schema_property": "violation_may_when",
+          "score": 0.666667,
+          "token_overlap": [
+            "may",
+            "violation"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.violation_must_when"
+          ],
+          "schema_property": "violation_must_when",
+          "score": 0.25,
+          "token_overlap": [
+            "violation"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "verdict_semantics"
+      ],
+      "v4_field_class": "VIOLATION-MAY"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.verdict_aggregation.violation_must_when",
+        "$.semantic_policy.verdict_vocabulary"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.violation_must_when"
+          ],
+          "schema_property": "violation_must_when",
+          "score": 0.666667,
+          "token_overlap": [
+            "must",
+            "violation"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.violation_may_when"
+          ],
+          "schema_property": "violation_may_when",
+          "score": 0.25,
+          "token_overlap": [
+            "violation"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+          ],
+          "schema_property": "unknown_must_not_collapse_to_valid",
+          "score": 0.166667,
+          "token_overlap": [
+            "must"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "verdict_semantics"
+      ],
+      "v4_field_class": "VIOLATION-MUST"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.verdict_vocabulary"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.relation_state_requirements[].allowed_states",
+            "$.exit_obligations[].preconditions.resource_state_requirements[].allowed_states",
+            "$.exit_obligations[].required_relation_exit_states[].allowed_states",
+            "$.exit_obligations[].required_resource_exit_states[].allowed_states",
+            "$.semantic_rules[].preconditions.relation_state_requirements[].allowed_states",
+            "$.semantic_rules[].preconditions.resource_state_requirements[].allowed_states"
+          ],
+          "schema_property": "allowed_states",
+          "score": 0.25,
+          "token_overlap": [
+            "allowed"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+            "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+          ],
+          "schema_property": "allowed_return_class_ids",
+          "score": 0.2,
+          "token_overlap": [
+            "allowed"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "verdict_semantics"
+      ],
+      "v4_field_class": "allowed_machine_verdicts"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].relation_bindings",
+        "$.semantic_rules[].resource_bindings"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 4,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "argument_scope"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 22,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "exit_obligations",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "classification_note"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations",
+        "$.semantic_rules[].cleanup_responsibility",
+        "$.semantic_rules[].effects"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.ownership_updates[].effect"
+          ],
+          "schema_property": "effect",
+          "score": 0.333333,
+          "token_overlap": [
+            "effect"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].cleanup_responsibility"
+          ],
+          "schema_property": "cleanup_responsibility",
+          "score": 0.25,
+          "token_overlap": [
+            "cleanup"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].exit_obligation_id"
+          ],
+          "schema_property": "exit_obligation_id",
+          "score": 0.25,
+          "token_overlap": [
+            "obligation"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_accounting.inventory.exit_obligation_count"
+          ],
+          "schema_property": "exit_obligation_count",
+          "score": 0.2,
+          "token_overlap": [
+            "obligation"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 2,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "cleanup_obligation_effect"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].symbol_or_condition",
+        "$.exit_obligations[].preconditions",
+        "$.semantic_rules[].preconditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+            "$.semantic_rules[].preconditions.path_conditions[].condition_id"
+          ],
+          "schema_property": "condition_id",
+          "score": 1.0,
+          "token_overlap": [
+            "condition"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.path_conditions[].condition_kind",
+            "$.semantic_rules[].preconditions.path_conditions[].condition_kind"
+          ],
+          "schema_property": "condition_kind",
+          "score": 0.5,
+          "token_overlap": [
+            "condition"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].symbol_or_condition"
+          ],
+          "schema_property": "symbol_or_condition",
+          "score": 0.333333,
+          "token_overlap": [
+            "condition"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 64,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "exit_obligations",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "condition"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_easy_init"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_easy_perform"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_easy_setopt"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_global_init"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_multi_add_handle"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].cleanup_responsibility"
+          ],
+          "schema_property": "cleanup_responsibility",
+          "score": 0.25,
+          "token_overlap": [
+            "cleanup"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_multi_cleanup"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_multi_init"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_multi_perform"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "return_condition_policy"
+      ],
+      "v4_field_class": "curl_multi_remove_handle"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].defect_category"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].defect_category"
+          ],
+          "schema_property": "defect_category",
+          "score": 0.5,
+          "token_overlap": [
+            "defect"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 33,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "exit_obligations",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "defect"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.reasoning_model"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model"
+          ],
+          "schema_property": "reasoning_model",
+          "score": 0.25,
+          "token_overlap": [
+            "reasoning"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy"
+          ],
+          "schema_property": "semantic_policy",
+          "score": 0.25,
+          "token_overlap": [
+            "policy"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_accounting.inventory.representation_policy_field_count"
+          ],
+          "schema_property": "representation_policy_field_count",
+          "score": 0.166667,
+          "token_overlap": [
+            "policy"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules"
+      ],
+      "v4_field_class": "dependent_reasoning_policy"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations[].preconditions",
+        "$.exit_obligations[].required_relation_exit_states",
+        "$.exit_obligations[].required_resource_exit_states"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+            "$.semantic_rules[].preconditions.path_conditions[].condition_id"
+          ],
+          "schema_property": "condition_id",
+          "score": 0.5,
+          "token_overlap": [
+            "condition"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.path_conditions[].condition_kind",
+            "$.semantic_rules[].preconditions.path_conditions[].condition_kind"
+          ],
+          "schema_property": "condition_kind",
+          "score": 0.333333,
+          "token_overlap": [
+            "condition"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].symbol_or_condition"
+          ],
+          "schema_property": "symbol_or_condition",
+          "score": 0.25,
+          "token_overlap": [
+            "condition"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "exit_obligations"
+      ],
+      "v4_field_class": "discharge_condition"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].effects"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.ownership_updates[].effect"
+          ],
+          "schema_property": "effect",
+          "score": 1.0,
+          "token_overlap": [
+            "effect"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 35,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [
+        "$.semantic_rules[].effects.ownership_updates[].effect"
+      ],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "effect"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 65,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "exit_obligations",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "enforcement"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].preconditions.path_conditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 2,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "excludes"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model",
+        "$.semantic_rules[].preconditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 3,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "cross_resource_rules"
+      ],
+      "v4_field_class": "fact"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations[].required_relation_exit_states",
+        "$.exit_obligations[].required_resource_exit_states",
+        "$.semantic_rules[].effects"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.ownership_updates[].effect"
+          ],
+          "schema_property": "effect",
+          "score": 0.333333,
+          "token_overlap": [
+            "effect"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].cleanup_responsibility"
+          ],
+          "schema_property": "cleanup_responsibility",
+          "score": 0.25,
+          "token_overlap": [
+            "cleanup"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "exit_obligations"
+      ],
+      "v4_field_class": "failed_cleanup_effect"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.reasoning_model.join_operator",
+        "$.semantic_policy.reasoning_model.state_domain"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.join_operator"
+          ],
+          "schema_property": "join_operator",
+          "score": 0.2,
+          "token_overlap": [
+            "join"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy"
+          ],
+          "schema_property": "semantic_policy",
+          "score": 0.2,
+          "token_overlap": [
+            "policy"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.state_domain"
+          ],
+          "schema_property": "state_domain",
+          "score": 0.2,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.relation_state_requirements",
+            "$.semantic_rules[].preconditions.relation_state_requirements"
+          ],
+          "schema_property": "relation_state_requirements",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements",
+            "$.semantic_rules[].preconditions.resource_state_requirements"
+          ],
+          "schema_property": "resource_state_requirements",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.resource_state_updates"
+          ],
+          "schema_property": "resource_state_updates",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_accounting.inventory.representation_policy_field_count"
+          ],
+          "schema_property": "representation_policy_field_count",
+          "score": 0.142857,
+          "token_overlap": [
+            "policy"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "verdict_semantics"
+      ],
+      "v4_field_class": "feasible_state_join_policy"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].symbol_or_condition",
+        "$.semantic_rules[].trigger_event_ids"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 53,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "function"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model.relation_types[].relation_kind",
+        "$.semantic_policy.reasoning_model.membership_sensitivity"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.membership_sensitivity"
+          ],
+          "schema_property": "membership_sensitivity",
+          "score": 0.333333,
+          "token_overlap": [
+            "membership"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "membership_sensitive"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations[].verdict_if_violated"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].cleanup_responsibility"
+          ],
+          "schema_property": "cleanup_responsibility",
+          "score": 0.25,
+          "token_overlap": [
+            "cleanup"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation"
+          ],
+          "schema_property": "verdict_aggregation",
+          "score": 0.25,
+          "token_overlap": [
+            "verdict"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_vocabulary"
+          ],
+          "schema_property": "verdict_vocabulary",
+          "score": 0.25,
+          "token_overlap": [
+            "verdict"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].verdict_if_violated",
+            "$.semantic_rules[].verdict_if_violated"
+          ],
+          "schema_property": "verdict_if_violated",
+          "score": 0.2,
+          "token_overlap": [
+            "verdict"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 3,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "exit_obligations"
+      ],
+      "v4_field_class": "missing_cleanup_verdict"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.verdict_aggregation",
+        "$.semantic_rules[].verdict_if_violated"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+          ],
+          "schema_property": "unknown_must_not_collapse_to_valid",
+          "score": 0.181818,
+          "token_overlap": [
+            "must",
+            "not"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.violation_must_when"
+          ],
+          "schema_property": "violation_must_when",
+          "score": 0.1,
+          "token_overlap": [
+            "must"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "normative_strength_uncertainty_must_not_be_silently_strengthened"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model.resource_types[].ownership_tracking",
+        "$.semantic_policy.reasoning_model.ownership_sensitivity",
+        "$.semantic_rules[].effects.ownership_updates"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.ownership_sensitivity"
+          ],
+          "schema_property": "ownership_sensitivity",
+          "score": 0.333333,
+          "token_overlap": [
+            "ownership"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model.resource_types[].ownership_tracking"
+          ],
+          "schema_property": "ownership_tracking",
+          "score": 0.333333,
+          "token_overlap": [
+            "ownership"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.ownership_updates"
+          ],
+          "schema_property": "ownership_updates",
+          "score": 0.333333,
+          "token_overlap": [
+            "ownership"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "ownership_sensitive"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.reasoning_model.infeasible_path_handling",
+        "$.semantic_policy.reasoning_model.path_sensitivity",
+        "$.semantic_rules[].preconditions.path_conditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.path_conditions",
+            "$.semantic_rules[].preconditions.path_conditions"
+          ],
+          "schema_property": "path_conditions",
+          "score": 0.333333,
+          "token_overlap": [
+            "path"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.path_sensitivity"
+          ],
+          "schema_property": "path_sensitivity",
+          "score": 0.333333,
+          "token_overlap": [
+            "path"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.infeasible_path_handling"
+          ],
+          "schema_property": "infeasible_path_handling",
+          "score": 0.25,
+          "token_overlap": [
+            "path"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.provenance[].path_or_url"
+          ],
+          "schema_property": "path_or_url",
+          "score": 0.25,
+          "token_overlap": [
+            "path"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "path_sensitive"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].preconditions",
+        "$.semantic_rules[].rule_kind",
+        "$.semantic_rules[].trigger_event_ids"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 2,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "precedence"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].preconditions"
+      ],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 9,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "precondition"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 4,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "reason"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [],
+      "lexical_screening_candidates_only": [],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "recommendation"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations[].required_relation_exit_states",
+        "$.exit_obligations[].required_resource_exit_states"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].required_relation_exit_states"
+          ],
+          "schema_property": "required_relation_exit_states",
+          "score": 0.2,
+          "token_overlap": [
+            "required"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].required_resource_exit_states"
+          ],
+          "schema_property": "required_resource_exit_states",
+          "score": 0.2,
+          "token_overlap": [
+            "required"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 3,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "exit_obligations"
+      ],
+      "v4_field_class": "required_discharge"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations[].resource_bindings",
+        "$.resource_model.resource_types"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+            "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+            "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+            "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+            "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id"
+          ],
+          "schema_property": "resource_binding_id",
+          "score": 0.5,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].resource_bindings",
+            "$.semantic_rules[].resource_bindings"
+          ],
+          "schema_property": "resource_bindings",
+          "score": 0.5,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model.resource_types[].resource_kind"
+          ],
+          "schema_property": "resource_kind",
+          "score": 0.5,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model"
+          ],
+          "schema_property": "resource_model",
+          "score": 0.5,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].resource_bindings[].resource_type_id",
+            "$.resource_model.resource_types[].resource_type_id",
+            "$.semantic_rules[].resource_bindings[].resource_type_id"
+          ],
+          "schema_property": "resource_type_id",
+          "score": 0.5,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model.resource_types"
+          ],
+          "schema_property": "resource_types",
+          "score": 0.5,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].affected_resource_type_ids"
+          ],
+          "schema_property": "affected_resource_type_ids",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements",
+            "$.semantic_rules[].preconditions.resource_state_requirements"
+          ],
+          "schema_property": "resource_state_requirements",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 3,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "exit_obligations"
+      ],
+      "v4_field_class": "resource"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [
+        "$.resource_model",
+        "$.semantic_rules[].relation_bindings",
+        "$.semantic_rules[].resource_bindings"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+            "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+            "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+            "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+            "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id"
+          ],
+          "schema_property": "resource_binding_id",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].resource_bindings",
+            "$.semantic_rules[].resource_bindings"
+          ],
+          "schema_property": "resource_bindings",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model.resource_types[].resource_kind"
+          ],
+          "schema_property": "resource_kind",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model"
+          ],
+          "schema_property": "resource_model",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].resource_bindings[].resource_type_id",
+            "$.resource_model.resource_types[].resource_type_id",
+            "$.semantic_rules[].resource_bindings[].resource_type_id"
+          ],
+          "schema_property": "resource_type_id",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.resource_model.resource_types"
+          ],
+          "schema_property": "resource_types",
+          "score": 0.333333,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].affected_resource_type_ids"
+          ],
+          "schema_property": "affected_resource_type_ids",
+          "score": 0.25,
+          "token_overlap": [
+            "resource"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements",
+            "$.semantic_rules[].preconditions.resource_state_requirements"
+          ],
+          "schema_property": "resource_state_requirements",
+          "score": 0.25,
+          "token_overlap": [
+            "resource"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "resource_centered"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.events[].return_classes[].return_class_id"
+          ],
+          "schema_property": "return_class_id",
+          "score": 0.5,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].return_classes"
+          ],
+          "schema_property": "return_classes",
+          "score": 0.5,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions",
+            "$.semantic_rules[].preconditions.return_conditions"
+          ],
+          "schema_property": "return_conditions",
+          "score": 0.5,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.return_sensitivity"
+          ],
+          "schema_property": "return_sensitivity",
+          "score": 0.5,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+            "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+          ],
+          "schema_property": "allowed_return_class_ids",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "return"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.events[].return_classes[].return_class_id"
+          ],
+          "schema_property": "return_class_id",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].return_classes"
+          ],
+          "schema_property": "return_classes",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions",
+            "$.semantic_rules[].preconditions.return_conditions"
+          ],
+          "schema_property": "return_conditions",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.return_sensitivity"
+          ],
+          "schema_property": "return_sensitivity",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+            "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+          ],
+          "schema_property": "allowed_return_class_ids",
+          "score": 0.25,
+          "token_overlap": [
+            "return"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 4,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "return_behavior"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.events[].return_classes[].return_class_id"
+          ],
+          "schema_property": "return_class_id",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].return_classes"
+          ],
+          "schema_property": "return_classes",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions",
+            "$.semantic_rules[].preconditions.return_conditions"
+          ],
+          "schema_property": "return_conditions",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.return_sensitivity"
+          ],
+          "schema_property": "return_sensitivity",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+            "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+          ],
+          "schema_property": "allowed_return_class_ids",
+          "score": 0.25,
+          "token_overlap": [
+            "return"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 2,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules"
+      ],
+      "v4_field_class": "return_note"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.events[].return_classes",
+        "$.semantic_policy.reasoning_model.return_sensitivity",
+        "$.semantic_rules[].preconditions.return_conditions"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.events[].return_classes[].return_class_id"
+          ],
+          "schema_property": "return_class_id",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.events[].return_classes"
+          ],
+          "schema_property": "return_classes",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions",
+            "$.semantic_rules[].preconditions.return_conditions"
+          ],
+          "schema_property": "return_conditions",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.return_sensitivity"
+          ],
+          "schema_property": "return_sensitivity",
+          "score": 0.333333,
+          "token_overlap": [
+            "return"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+            "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+          ],
+          "schema_property": "allowed_return_class_ids",
+          "score": 0.25,
+          "token_overlap": [
+            "return"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "return_sensitive"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].rule_id"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].rule_id"
+          ],
+          "schema_property": "rule_id",
+          "score": 1.0,
+          "token_overlap": [
+            "rule"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_accounting.inventory.rule_count"
+          ],
+          "schema_property": "rule_count",
+          "score": 0.5,
+          "token_overlap": [
+            "rule"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].rule_kind"
+          ],
+          "schema_property": "rule_kind",
+          "score": 0.5,
+          "token_overlap": [
+            "rule"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 64,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [
+        "$.semantic_rules[].rule_id"
+      ],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "rule_id"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].effects.relation_updates",
+        "$.semantic_rules[].effects.resource_state_updates"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.state_domain"
+          ],
+          "schema_property": "state_domain",
+          "score": 0.25,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.relation_state_requirements",
+            "$.semantic_rules[].preconditions.relation_state_requirements"
+          ],
+          "schema_property": "relation_state_requirements",
+          "score": 0.2,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements",
+            "$.semantic_rules[].preconditions.resource_state_requirements"
+          ],
+          "schema_property": "resource_state_requirements",
+          "score": 0.2,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.resource_state_updates"
+          ],
+          "schema_property": "resource_state_updates",
+          "score": 0.2,
+          "token_overlap": [
+            "state"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "easy_handle_rules"
+      ],
+      "v4_field_class": "runtime_post_state"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.reasoning_model.join_operator",
+        "$.semantic_policy.reasoning_model.state_domain"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model"
+          ],
+          "schema_property": "reasoning_model",
+          "score": 0.2,
+          "token_overlap": [
+            "reasoning"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.state_domain"
+          ],
+          "schema_property": "state_domain",
+          "score": 0.2,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.relation_state_requirements",
+            "$.semantic_rules[].preconditions.relation_state_requirements"
+          ],
+          "schema_property": "relation_state_requirements",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.resource_state_requirements",
+            "$.semantic_rules[].preconditions.resource_state_requirements"
+          ],
+          "schema_property": "resource_state_requirements",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.resource_state_updates"
+          ],
+          "schema_property": "resource_state_updates",
+          "score": 0.166667,
+          "token_overlap": [
+            "state"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "set_valued_state_reasoning"
+    },
+    {
+      "analysis_status": "MULTIFIELD_CANDIDATE_IDENTIFIED_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_rules[].effects.ownership_updates",
+        "$.semantic_rules[].effects.relation_updates",
+        "$.semantic_rules[].effects.resource_state_updates"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_rules[].effects.ownership_updates[].effect"
+          ],
+          "schema_property": "effect",
+          "score": 0.5,
+          "token_overlap": [
+            "effect"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "structural_effect"
+    },
+    {
+      "analysis_status": "UNRESOLVED_EXACTNESS",
+      "curated_semantically_related_candidate_paths": [
+        "$.events"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.events"
+          ],
+          "schema_property": "events",
+          "score": 0.25,
+          "token_overlap": [
+            "events"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "synthetic_protocol_events_invented"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.reasoning_model.unknown_handling"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.events[].return_classes[].return_class_id"
+          ],
+          "schema_property": "return_class_id",
+          "score": 0.25,
+          "token_overlap": [
+            "class"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.unknown_handling"
+          ],
+          "schema_property": "unknown_handling",
+          "score": 0.25,
+          "token_overlap": [
+            "unknown"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_when"
+          ],
+          "schema_property": "unknown_when",
+          "score": 0.25,
+          "token_overlap": [
+            "unknown"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+            "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+          ],
+          "schema_property": "allowed_return_class_ids",
+          "score": 0.2,
+          "token_overlap": [
+            "class"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+          ],
+          "schema_property": "unknown_must_not_collapse_to_valid",
+          "score": 0.142857,
+          "token_overlap": [
+            "unknown"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "unknown_is_first_class"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+          ],
+          "schema_property": "unknown_must_not_collapse_to_valid",
+          "score": 0.375,
+          "token_overlap": [
+            "must",
+            "unknown",
+            "valid"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.reasoning_model.unknown_handling"
+          ],
+          "schema_property": "unknown_handling",
+          "score": 0.142857,
+          "token_overlap": [
+            "unknown"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.unknown_when"
+          ],
+          "schema_property": "unknown_when",
+          "score": 0.142857,
+          "token_overlap": [
+            "unknown"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.valid_when"
+          ],
+          "schema_property": "valid_when",
+          "score": 0.142857,
+          "token_overlap": [
+            "valid"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation.violation_must_when"
+          ],
+          "schema_property": "violation_must_when",
+          "score": 0.125,
+          "token_overlap": [
+            "must"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 1,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "representation_policy"
+      ],
+      "v4_field_class": "unknown_must_never_be_converted_to_valid"
+    },
+    {
+      "analysis_status": "STRUCTURALLY_ALIGNED_CANDIDATE_NOT_ROUNDTRIP_PROVEN",
+      "curated_semantically_related_candidate_paths": [
+        "$.exit_obligations[].verdict_if_violated",
+        "$.semantic_rules[].verdict_if_violated"
+      ],
+      "lexical_screening_candidates_only": [
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_aggregation"
+          ],
+          "schema_property": "verdict_aggregation",
+          "score": 0.5,
+          "token_overlap": [
+            "verdict"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.semantic_policy.verdict_vocabulary"
+          ],
+          "schema_property": "verdict_vocabulary",
+          "score": 0.5,
+          "token_overlap": [
+            "verdict"
+          ]
+        },
+        {
+          "schema_paths": [
+            "$.exit_obligations[].verdict_if_violated",
+            "$.semantic_rules[].verdict_if_violated"
+          ],
+          "schema_property": "verdict_if_violated",
+          "score": 0.333333,
+          "token_overlap": [
+            "verdict"
+          ]
+        }
+      ],
+      "negative_impossibility_proven": false,
+      "occurrence_count": 37,
+      "positive_exact_mapping_proven": false,
+      "same_named_schema_paths": [],
+      "source_containers": [
+        "cross_resource_rules",
+        "easy_handle_rules",
+        "global_runtime_rules",
+        "multi_handle_rules"
+      ],
+      "v4_field_class": "verdict"
+    }
+  ],
+  "field_class_count": 57,
+  "matrix_id": "SVF-CURL-V4-TO-EXISTING-SCHEMA-V2-MULTIFIELD-CANDIDATE-COMPOSITION-MATRIX-V1",
+  "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+  "status": "SCREENING_COMPLETE_EXACT_CAPABILITY_NOT_PROVEN",
+  "unit_analysis": [
+    {
+      "candidate_schema_v2_carrier_families": [
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "cleanup_obligation",
+        "ownership",
+        "release",
+        "states"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "resources",
+      "unit_id": "RESOURCE::EASY_HANDLE"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "ownership_transfer_on_add",
+        "relation",
+        "successful_add",
+        "successful_remove"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "resources",
+      "unit_id": "RESOURCE::EASY_MULTI_MEMBERSHIP"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "established_by",
+        "missing_at_exit_normative_status",
+        "not_automatically_established_by",
+        "states"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "resources",
+      "unit_id": "RESOURCE::EXPLICIT_GLOBAL_CLEANUP_OBLIGATION"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "notes",
+        "states"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "resources",
+      "unit_id": "RESOURCE::GLOBAL_RUNTIME_REFERENCE_STATE"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "cleanup_obligation",
+        "ownership",
+        "post_error_recovery",
+        "post_error_trigger",
+        "states"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "resources",
+      "unit_id": "RESOURCE::MULTI_HANDLE"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::00"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::01"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::02"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::03"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::04"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::05"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::06"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::07"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::08"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::09"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::10"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "api_surface",
+      "unit_id": "API_SURFACE::11"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "failure",
+        "null_result_state_join_policy",
+        "success"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_easy_init"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_easy_perform"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_easy_setopt"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "failure",
+        "success"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_global_init"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "membership_change"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_multi_add_handle"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "failure_condition",
+        "failure_effects",
+        "null_argument_behavior",
+        "success_condition",
+        "success_effects"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_multi_cleanup"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "failure",
+        "success"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_multi_init"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "normal_multi_state",
+        "post_error_multi_state"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_multi_perform"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "documented_membership_change"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "return_condition_policy",
+      "unit_id": "RETURN_POLICY::curl_multi_remove_handle"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::membership_sensitive"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::normative_strength_uncertainty_must_not_be_silently_strengthened"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::ownership_sensitive"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::path_sensitive"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::resource_centered"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::return_sensitive"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::set_valued_state_reasoning"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::synthetic_protocol_events_invented"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::unknown_is_first_class"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "representation_policy",
+      "unit_id": "REPRESENTATION_POLICY::unknown_must_never_be_converted_to_valid"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "verdict_semantics",
+      "unit_id": "VERDICT_SEMANTICS::UNKNOWN"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "verdict_semantics",
+      "unit_id": "VERDICT_SEMANTICS::VALID"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "verdict_semantics",
+      "unit_id": "VERDICT_SEMANTICS::VIOLATION-MAY"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "verdict_semantics",
+      "unit_id": "VERDICT_SEMANTICS::VIOLATION-MUST"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "verdict_semantics",
+      "unit_id": "VERDICT_SEMANTICS::allowed_machine_verdicts"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_policy"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "all_feasible_states_same_verdict",
+        "mixed_VALID_and_enforceable_violation",
+        "normative_strength_or_model_coverage_unresolved",
+        "unknown_never_silently_becomes_valid"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "verdict_semantics",
+      "unit_id": "VERDICT_SEMANTICS::feasible_state_join_policy"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G01"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G02"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G03"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G04"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G05"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G06"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G07"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G08"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G09"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "global_runtime_rules",
+      "unit_id": "RULE::global_runtime_rules::G10"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E01"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E02"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E03"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "dependent_reasoning_policy",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "runtime_post_state"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E04"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "return_note",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E05"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "return_note",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E06"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E07"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E08"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E09"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E10"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E11"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "excludes",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E12"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E13"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E14"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E15"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E16"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E17"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E18"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E19"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E20"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "precedence",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "easy_handle_rules",
+      "unit_id": "RULE::easy_handle_rules::E21"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M01"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M02"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M03"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M04"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M05"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M06"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M07"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M08"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M09"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M10"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M11"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "cleanup_obligation_effect",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M12"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "cleanup_obligation_effect",
+        "condition",
+        "enforcement",
+        "function",
+        "recommendation",
+        "rule_id",
+        "structural_effect",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M13"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M14"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "excludes",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M15"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M16"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M17"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M18"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M19"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M20"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M21"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "return",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M22"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "precedence",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M23"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M24"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M25"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M26"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M27"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M28"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "multi_handle_rules",
+      "unit_id": "RULE::multi_handle_rules::M29"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "cross_resource_rules",
+      "unit_id": "RULE::cross_resource_rules::X01"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "cross_resource_rules",
+      "unit_id": "RULE::cross_resource_rules::X02"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "cross_resource_rules",
+      "unit_id": "RULE::cross_resource_rules::X03"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "semantic_rules",
+        "events",
+        "resource_model"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "cross_resource_rules",
+      "unit_id": "RULE::cross_resource_rules::X04"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "exit_obligations",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "exit_obligations",
+      "unit_id": "EXIT_OBLIGATION::00"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "exit_obligations",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "condition",
+        "defect",
+        "discharge_condition",
+        "failed_cleanup_effect",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "exit_obligations",
+      "unit_id": "EXIT_OBLIGATION::01"
+    },
+    {
+      "candidate_schema_v2_carrier_families": [
+        "exit_obligations",
+        "resource_model",
+        "events"
+      ],
+      "candidate_screening_completed": true,
+      "field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ],
+      "negative_impossibility_proven": false,
+      "positive_exact_mapping_proven": false,
+      "source_container": "exit_obligations",
+      "unit_id": "EXIT_OBLIGATION::02"
+    }
+  ],
+  "unit_analysis_count": 109
+}
