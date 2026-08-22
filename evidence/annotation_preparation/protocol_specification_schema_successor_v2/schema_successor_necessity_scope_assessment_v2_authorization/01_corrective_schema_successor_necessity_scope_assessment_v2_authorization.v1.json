@@ -1,0 +1,123 @@
+{
+  "authorization_id": "SVF-CORRECTIVE-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V2-AUTHORIZATION-V1",
+  "authorization_type": "PRE_CORRECTIVE_ASSESSMENT_V2_AUTHORING_ONLY",
+  "authorized_output": {
+    "artifact_type": "CORRECTIVE_SUCCESSOR_ASSESSMENT",
+    "assessment_v1_edit_in_place": false,
+    "schema_successor_authoring": false,
+    "schema_version_preselection": false,
+    "target_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_successor_necessity_scope_assessment_v2"
+  },
+  "completed_human_review": {
+    "item_decisions": {
+      "SR01": "PASS",
+      "SR02": "REVISION_REQUIRED",
+      "SR03": "PASS",
+      "SR04": "PASS",
+      "SR05": "PASS",
+      "SR06": "PASS",
+      "SR07": "REVISION_REQUIRED",
+      "SR08": "REVISION_REQUIRED"
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "review_sha256": "e81cf41aa331e371541cb3b3c8b9392e66ccedbf8b87a3e9ed3943dee8a5fd22",
+    "schema_successor_required_human_approved": false
+  },
+  "corrective_v2_must_preserve": {
+    "all_other_rule_and_exit_field_gaps_remain_in_scope": true,
+    "backward_compatibility_requirements": true,
+    "bounded_claim_not_general_schema_v2_invalidity": true,
+    "enforcement_residual_evidence": true,
+    "historical_schema_v1_and_schema_v2_immutability": true,
+    "no_abstract_information_theoretic_impossibility_claim": true,
+    "semantic_accounting_is_not_semantic_storage": true,
+    "three_representation_policy_gaps": true
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "assessment_v1_modification": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "exhaustive_v2_capability_study_authoring": false,
+    "positive_mapping_authorization": false,
+    "positive_v4_to_successor_mapping_authoring": false,
+    "positive_v4_to_v2_mapping_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_modification": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "historical_pass_items": {
+    "SR01": "PASS",
+    "SR03": "PASS",
+    "SR04": "PASS",
+    "SR05": "PASS",
+    "SR06": "PASS",
+    "automatic_approval_of_corrective_v2_bytes": false,
+    "corrective_v2_must_not_rewrite_historical_review": true,
+    "preserve_historical_results": true
+  },
+  "mandatory_corrective_items": {
+    "CV2_SR02": {
+      "current_evidence_supported_outcome": "FURTHER_EVIDENCE_REQUIRED",
+      "required_correction": "Corrective Assessment V2 must not infer impossibility from absence of same-named Schema-V2 properties. It must distinguish 'no admissible exact V2 mapping is currently proven' from 'no admissible V2 mapping can exist'.",
+      "review_issue": "Assessment V1 did not exhaustively rule out admissible semantically related multi-field compositions of existing Schema-V2 carriers.",
+      "stronger_SCHEMA_SUCCESSOR_REQUIRED_outcome_allowed_without_new_exhaustive_capability_argument": false
+    },
+    "CV2_SR07": {
+      "curl_json_materialization_must_remain_after_activation_and_separate_authorization": true,
+      "required_correction": "Any future successor governance sequence must place separately authorized positive V4-to-successor mapping authoring, complete exact forward-preservation and reverse-reconstruction proof, machine checking, and independent human technical review before successor activation.",
+      "review_issue": "Assessment V1 placed successor activation before positive mapping and complete exact roundtrip proof/review."
+    },
+    "CV2_SR08": {
+      "required_correction": "Under the evidence currently available to Corrective Assessment V2, selected_outcome must be FURTHER_EVIDENCE_REQUIRED. A later stronger conclusion requires a separately produced and independently reviewed exhaustive admissible-V2 capability argument.",
+      "required_selected_outcome_for_corrective_assessment_v2": "FURTHER_EVIDENCE_REQUIRED",
+      "review_issue": "SCHEMA_SUCCESSOR_REQUIRED was stronger than the current reviewed evidence supports."
+    }
+  },
+  "mandatory_corrective_v2_conclusion_contract": {
+    "allowed_outcomes": [
+      "NO_SUCCESSOR_REQUIRED_WITH_PROVEN_ADMISSIBLE_V2_MAPPING_PATH",
+      "SCHEMA_SUCCESSOR_REQUIRED",
+      "FURTHER_EVIDENCE_REQUIRED"
+    ],
+    "future_exhaustive_v2_capability_study_may_change_conclusion_only_after_separate_authorization_and_review": true,
+    "reason": "Decision 0078 authorizes correction of Assessment V1 using the already reviewed evidence. It does not authorize or provide a new exhaustive capability proof that rules out every admissible semantically related existing-Schema-V2 composition.",
+    "schema_successor_required_may_not_be_selected_in_corrective_v2": true,
+    "selected_outcome_under_current_evidence": "FURTHER_EVIDENCE_REQUIRED"
+  },
+  "mandatory_future_governance_order_if_successor_later_becomes_supported": [
+    "Independently approve the relevant necessity/capability conclusion.",
+    "Separately authorize successor-schema candidate authoring.",
+    "Author and machine-check the successor candidate.",
+    "Separately authorize a positive curl V4-to-successor mapping candidate and exact roundtrip proof.",
+    "Machine-check complete forward preservation and deterministic exact reverse reconstruction across all required V4 semantics.",
+    "Independently review and approve the successor candidate together with the positive mapping and exact roundtrip evidence required for activation readiness.",
+    "Separately finalize hash/canonicalization and version-dispatch governance.",
+    "Separately authorize successor activation only after mapping and exact roundtrip review have passed.",
+    "Execute successor activation.",
+    "Only after activation, separately authorize curl.json canonical materialization."
+  ],
+  "next_boundary": "AUTHOR_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2",
+  "predecessor_assessment": {
+    "assessment_id": "SVF-SCHEMA-SUCCESSOR-NECESSITY-SCOPE-ASSESSMENT-V1",
+    "assessment_json_sha256": "be64ed3755b5c1a525c23e5e6b1472a35b84a5b3640ce22990dbceb5a41bdb70",
+    "assessment_md_sha256": "1137858f4da8cdfaaa7b88332f581f810f9f286f7b4ca71530b186abfc884008",
+    "author_candidate_conclusion": "SCHEMA_SUCCESSOR_REQUIRED",
+    "human_approved": false,
+    "must_remain_immutable": true
+  },
+  "retired_verifier_constraints": {
+    "RI01_C_initial_blank_state_verifier_rerun": false,
+    "SR01_SR08_initial_blank_state_verifier_rerun": false,
+    "decision_0065_pre_activation_verifier_rerun": false,
+    "decision_0067_pre_proof_verifier_rerun": false,
+    "decision_0069_pre_review_package_verifier_rerun": false,
+    "decision_0071_pre_corrective_package_verifier_rerun": false,
+    "decision_0073_pre_assessment_verifier_rerun": false,
+    "decision_0075_pre_review_package_verifier_rerun": false
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_CORRECTIVE_SCHEMA_SUCCESSOR_NECESSITY_SCOPE_ASSESSMENT_V2_ONLY"
+}
