@@ -1,0 +1,64 @@
+{
+  "bounded_non_authorizations": {
+    "admissible_composition_exhaustiveness_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "constructive_positive_mapping_witness_authorized": false,
+    "curl_json_authorized": false,
+    "exhaustive_composition_enumeration_authorized": false,
+    "formalization_v1_human_approval_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_positive_mapping_authorized": false,
+    "partial_relation_outcome_human_approval_created": false,
+    "positive_existing_v2_mapping_path_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false
+  },
+  "decision_0091_pre_package_verifier_final_run": {
+    "output_sha256": "bc73615f76b04d27f00fb05032ff686bf0a4d7a7c993565f00a6bbaa9f42cac9",
+    "output_size_bytes": 1315,
+    "permanently_retired": true,
+    "rerun_allowed": false,
+    "status": "PASS"
+  },
+  "evidence_counts": {
+    "leaf_field_records": 531,
+    "lexical_only_pairs_retained_unresolved": 125,
+    "matrix_field_classes": 57,
+    "not_semantically_related_pairs": 969,
+    "schema_v2_property_paths": 171,
+    "semantic_role_pairs": 9747,
+    "semantic_units": 109,
+    "semantically_related_pairs": 113,
+    "unresolved_pairs": 8665
+  },
+  "formalization_selected_outcome": "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED",
+  "formalization_selected_outcome_human_approved": false,
+  "human_decision_created": false,
+  "human_review_state": "BLANK_UNREVIEWED",
+  "immutable_bindings": {
+    "decision_0090_sha256": "96c5a9719101bf384022b7d8378df1a5e60abf0cb096ea5d9cbcd03be4e2a8b4",
+    "decision_0091_authorization_sha256": "be6f78129e16ba3738cbd460e43cac603f261b86951065615531a68d7eef88b5",
+    "decision_0091_pre_package_verifier_sha256": "b221024566fb4d08f94232ae745df4b62d60084dc71b12d825a147ecbebb1b4a",
+    "decision_0091_sha256": "cf61a39592b8b906094beb263fd74b93032837999fd0605f8b9ffd1b3d384eb7",
+    "formalization_summary_sha256": "0efc848991f0f1580542b8d6e380c55df6d2b370147f236800621b24b51ee600",
+    "relation_sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+    "traceability_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "next_boundary": "CREATE_EXTERNAL_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_HANDOFF_SRR01_SRR08",
+  "package_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-PACKAGE-V1",
+  "review_items": [
+    "SRR01",
+    "SRR02",
+    "SRR03",
+    "SRR04",
+    "SRR05",
+    "SRR06",
+    "SRR07",
+    "SRR08"
+  ],
+  "reviewer_identity_prepopulated": false,
+  "reviewer_role": "Spec-Technical-Reviewer-1",
+  "status": "IMMUTABLE_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_V1"
+}
