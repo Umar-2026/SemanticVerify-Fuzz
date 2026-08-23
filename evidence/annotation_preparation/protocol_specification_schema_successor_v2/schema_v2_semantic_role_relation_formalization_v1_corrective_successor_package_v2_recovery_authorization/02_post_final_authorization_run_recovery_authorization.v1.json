@@ -1,0 +1,94 @@
+{
+  "all_other_partial_package_files_must_remain_byte_exact": true,
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-CORRECTIVE-SUCCESSOR-PACKAGE-V2-POST-FINAL-RUN-RECOVERY-AUTHORIZATION",
+  "authorized_mutations": [
+    {
+      "mutation_type": "EXACT_ONE_SITE_VALIDATOR_SELF_REFERENCE_CORRECTION",
+      "new_text_lines": [
+        "absolute_path_prefix = \"/\" + \"openbayes\" + \"/\"",
+        "",
+        "if absolute_path_prefix in script_text:"
+      ],
+      "old_text": "if \"/openbayes/\" in script_text:",
+      "path": "05_verify_corrective_successor_package_v2.py",
+      "semantic_effect": "PRESERVE_THE_ABSOLUTE_PATH_PROHIBITION_WHILE_PREVENTING_THE_CHECK_FROM_MATCHING_ITS_OWN_LITERAL"
+    },
+    {
+      "mutation_type": "DEPENDENT_CHECKSUM_MANIFEST_REGENERATION",
+      "path": "07_corrective_successor_package_v2.SHA256SUMS",
+      "reason": "AUTHORIZED_SAFE_VERIFIER_BYTE_CHANGE_REQUIRES_UPDATED_PACKAGE_CHECKSUM_BINDING"
+    }
+  ],
+  "bounded_nonclaims": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "focused_human_approval_exists": false,
+    "focused_human_rereview_completed": false,
+    "formalization_v1_approved": false,
+    "operational_positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false,
+    "schema_version_preselected": false
+  },
+  "decision_0095_authorization_verifier": {
+    "final_allowed_output_sha256": "07c8cbaf7ac1c7adf393c340d77c316c9663c4c61e3216489b19ff021e317ce5",
+    "final_allowed_output_size_bytes": 980,
+    "final_allowed_run_completed": true,
+    "final_allowed_run_result": "PASS",
+    "permanently_retired": true,
+    "rerun_authorized": false,
+    "sha256": "4c4a1feca0496055035e57389f0c581542e97ac72a46d10137f657208743093b"
+  },
+  "diagnosed_failure": {
+    "absolute_path_dependency_found_outside_self_check": false,
+    "failure_class": "VALIDATOR_SELF_REFERENCE_FALSE_POSITIVE",
+    "literal_hit_count": 1,
+    "literal_occurs_only_in_self_check": true,
+    "relation_row_defect_identified": false,
+    "research_evidence_defect_identified": false,
+    "safe_verifier_literal": "/openbayes/",
+    "srr04_erratum_defect_identified": false
+  },
+  "next_boundary": "RUN_RECOVERY_AUTHORIZATION_VERIFIER_FINAL_ALLOWED_TIME_THEN_APPLY_ONLY_THE_ONE_SITE_SAFE_VERIFIER_CORRECTION_AND_REGENERATE_PACKAGE_CHECKSUM_MANIFEST",
+  "post_recovery_requirements": {
+    "all_non_authorized_package_files_must_match_pre_recovery_snapshot": true,
+    "decision_0095_authorization_verifier_must_not_be_executed": true,
+    "new_safe_verifier_must_pass": true,
+    "new_safe_verifier_must_reject_literal_absolute_openbayes_dependencies": true,
+    "new_safe_verifier_must_remain_package_local": true,
+    "package_checksum_manifest_must_bind_corrected_safe_verifier": true
+  },
+  "pre_recovery_partial_package_snapshot": {
+    "file_count": 47,
+    "inventory_sha256": "7696e37f1f19b0fe5731eaea55e48d762467d7c1397ab234e76c7610315ba2c7",
+    "inventory_size_bytes": 6977,
+    "package_checksum_manifest_sha256": "510e5ba577d2bcc2c9f094ac9d1ef613be22dc489af61910966e87c44b15c6bf",
+    "package_checksum_manifest_size_bytes": 6863,
+    "safe_verifier_sha256": "20324afe760f80ed7405b6987788bb6e9d969d7addfa8b4f7dd4c03bb6271ba0",
+    "safe_verifier_size_bytes": 25681
+  },
+  "recovery_authorization_verifier_lifecycle": {
+    "may_run_before_recovery_mutation": true,
+    "must_run_final_allowed_time_immediately_before_recovery_mutation": true,
+    "permanently_retired_once_safe_verifier_recovery_mutation_begins": true,
+    "rerun_after_recovery_mutation_begins": false
+  },
+  "recovery_must_not_modify": [
+    "01_corrective_successor_package_v2_manifest.json",
+    "02_srr04_lexical_accounting_erratum.v2.json",
+    "03_srr04_lexical_accounting_erratum.v2.md",
+    "04_focused_rereview_packet.BLANK.v2.md",
+    "06_decision_0095_authorization_verifier_consumed.v1.json",
+    "source_evidence/**",
+    "formalization_v1_exact/**",
+    "review_package_v1_exact/**",
+    "completed_human_review_v1_exact/**",
+    "decision_0095_authorization_exact/**",
+    "governance_decisions_exact/**"
+  ],
+  "recovery_trigger": "POST_FINAL_AUTHORIZATION_RUN_SAFE_VERIFIER_SELF_REFERENCE_FALSE_POSITIVE",
+  "status": "AUTHORIZED_FOR_NARROW_EVIDENCE_ONLY_RECOVERY"
+}
