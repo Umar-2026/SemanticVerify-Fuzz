@@ -1,0 +1,138 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-RELATION-INFORMED-EXHAUSTIVE-ADMISSIBLE-COMPOSITION-STUDY-V1-INDEPENDENT-HUMAN-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_successful_execution_verifier_is_permanently_retired": true,
+    "final_successful_output_must_be_recorded_byte_exactly": true,
+    "must_never_be_rerun_after_review_package_authoring_begins": true,
+    "verifier_may_be_executed_once_immediately_before_review_package_authoring": true
+  },
+  "authorized_artifact": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1 Review Package V1",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json": false,
+    "negative_existing_v2_mapping_impossibility": false,
+    "operational_mapping_contract": false,
+    "operational_v4_to_v2_mapping": false,
+    "positive_existing_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "item_decision_values": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "next_boundary": "RUN_DECISION_0104_AUTHORIZATION_VERIFIER_ONCE_THEN_AUTHOR_INDEPENDENT_HUMAN_REVIEW_PACKAGE_V1",
+  "overall_decision_values": [
+    "APPROVE_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "compiler_log_semantic_contents",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "required_review_items": [
+    {
+      "id": "RIAC01",
+      "question": "Does the review package bind the exact Decision-0103 Study V1 artifacts, source checkpoint, and safe-verifier evidence without altering the author-candidate study?",
+      "title": "Exact Study V1 integrity and immutable source binding"
+    },
+    {
+      "id": "RIAC02",
+      "question": "Are the complete 57-by-171 relation domain, 9,747 pair total, and 113/969/8,665 classification totals correctly reproduced and interpreted?",
+      "title": "Relation-domain and classification accounting correctness"
+    },
+    {
+      "id": "RIAC03",
+      "question": "Are the 109 semantic units and 531 source leaf records correctly bound, while the distinct matrix and unit-inventory field-class vocabularies remain explicitly non-equated?",
+      "title": "Semantic-unit, leaf-record, and field-class-domain distinction"
+    },
+    {
+      "id": "RIAC04",
+      "question": "Does the study correctly keep all 17 losslessness requirements in scope while avoiding an unsupported claim that an exact 17-item machine-readable requirement inventory was rebound when the authorized inputs did not uniquely expose one?",
+      "title": "Seventeen losslessness requirements and requirement-inventory limitation"
+    },
+    {
+      "id": "RIAC05",
+      "question": "Does the study correctly avoid promoting UNRESOLVED relations, lexical screening, candidate-family membership, or open-string storage capacity into positive semantic-losslessness evidence?",
+      "title": "Semantic admissibility and anti-promotion rules"
+    },
+    {
+      "id": "RIAC06",
+      "question": "Is FURTHER_EVIDENCE_REQUIRED a sound bounded conclusion given that the reviewed field-class relation domain is complete but the whole-V4 admissible semantic-unit composition universe and cross-unit coherence search are not proven complete?",
+      "title": "Soundness of global FURTHER_EVIDENCE_REQUIRED outcome"
+    },
+    {
+      "id": "RIAC07",
+      "question": "Is the one-time A02 successful output preserved byte-exactly, is its consumption correctly recorded, is A02 permanently retired, and can Study V1 be verified without executing A02 again?",
+      "title": "Decision-0102 A02 lifecycle and reproducibility"
+    },
+    {
+      "id": "RIAC08",
+      "question": "Does Study V1 remain an author-candidate without claiming positive mapping, negative impossibility, whole-V4 exhaustiveness, operational mapping authority, schema-successor authority, curl.json authority, analyzer authority, baseline authority, or repair authority?",
+      "title": "Governance boundary and technical nonclaims"
+    }
+  ],
+  "required_review_package_contents": {
+    "blank_manual_reviewer_packet": true,
+    "exact_decision_0102_authorization_evidence": true,
+    "exact_decision_0103": true,
+    "exact_study_v1_artifacts": true,
+    "manifest_and_checksum_closure": true,
+    "portable_source_bindings": true,
+    "safe_package_local_verifier": true
+  },
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_package_boundary": {
+    "review_package_is_not_governance_adoption": true,
+    "review_package_is_not_human_approval": true,
+    "review_package_is_not_operational_authorization": true,
+    "study_bytes_must_not_be_modified": true,
+    "study_outcome_must_not_be_changed_by_package_authoring": true
+  },
+  "review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "reviewer_independence_requirements": {
+    "author_must_not_synthesize_reviewer_decisions": true,
+    "overall_decision_must_not_be_prepopulated": true,
+    "reviewer_identity_must_not_be_prepopulated": true,
+    "reviewer_item_decisions_must_not_be_prepopulated": true,
+    "reviewer_notes_must_not_be_prepopulated": true
+  },
+  "source_checkpoint": {
+    "decision_0103_commit": "320ed582665f5a17de0f81684fa829fae6f94099",
+    "decision_0103_sha256": "75d962331741137325f32af5826ac07f3aa1d67914c896b629f8213974b2087f",
+    "decision_0103_tree": "6a419a97936eeb09be81b85e86637f9b9096fbfe",
+    "study_v1_git_tree": "bb55744db442f718daa56f8f38733e3ef4819b1a"
+  },
+  "status": "AUTHORIZED_FOR_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "study_bindings": {
+    "authorization_consumption_record_sha256": "022a8c1fa5f6630261a91e815c1c9339037188b103ae97634a8b7a48c03a2753",
+    "authorization_final_output_sha256": "82cd248d4d323b691c8635ba9d1b992dfe4dbe0de7033b7a9eb92f0f4ce4bb50",
+    "exhaustiveness_accounting_sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+    "study_checksum_manifest_sha256": "aa58e9221db7fa0c2bc17b2831e051ce6d7574c000d35d4f92c26ae923340140",
+    "study_json_sha256": "a8d28b09e78e1466eb5bb0991289879b28b10abd1dd1f9197d138ca723718f6f",
+    "study_report_sha256": "d0de61d7285ae8ba2c3ff2fcf2048f8c8dca145f87929a93262ab26c2e4b2642",
+    "study_safe_verifier_sha256": "b0ff1cb58eee830aa97c2759b54c78a96c9190c3c173a59483ee459bce8e8d22"
+  },
+  "study_state": {
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "independent_human_review_required": true,
+    "status": "AUTHOR_CANDIDATE"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "decision_0106_authorization_bindings": {
+    "authorization_checksum_sha256": "1da2366d9c7df19414e915eca3155a12750b196ee99c2da25e2760de14167645",
+    "authorization_record_sha256": "1573946c7a891f2c63c97594a1598b09992fc7506a6d719e6d15e2a237991188",
+    "authorization_verifier_sha256": "933e0baa38f0809e71038f8626980b8469ddd6cd6e3279720ad37501e8ece4e9",
+    "consumption_record_sha256": "b615e2f1124d200f204a80b0cfac190e47a6f92342b81ec16ed27b728b9120b2",
+    "consumption_record_size_bytes": 669,
+    "final_output_sha256": "7a17ee881db3a1c96ed2787d0e2ce4c458c630ceb1da613b5f14e38cec5fb0ce",
+    "final_output_size_bytes": 749,
+    "verifier_state": "PERMANENTLY_RETIRED"
+  },
+  "governance_boundary": {
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "curl_json_authorized": false,
+    "human_review_decision_exists": false,
+    "operational_positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "study_governance_adopted": false
+  },
+  "handoff_id": "SVF-SCHEMA-V2-RELATION-INFORMED-STUDY-V1-EXTERNAL-INDEPENDENT-REVIEW-HANDOFF-V1",
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED"
+  },
+  "review_contract": {
+    "overall_decision_prepopulated": false,
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "RIAC01",
+      "RIAC02",
+      "RIAC03",
+      "RIAC04",
+      "RIAC05",
+      "RIAC06",
+      "RIAC07",
+      "RIAC08"
+    ],
+    "reviewer_decisions_prepopulated": false,
+    "reviewer_identity_prepopulated": false,
+    "reviewer_notes_prepopulated": false
+  },
+  "review_package_bindings": {
+    "blank_reviewer_packet_sha256": "a60a89c97292b62303a5a8f9c5fa0c3c2796f964a46cf544232d2d8202124166",
+    "checksum_manifest_sha256": "8bce3796572a48ef3140c34055c251b555d809f404a0a27c9e913d18aceaa606",
+    "file_count": 24,
+    "manifest_sha256": "d2dcaf72e2ebacd79efe1305672065632e11108621910b57ba319b4a9ceed9ae",
+    "safe_verifier_sha256": "9e0cb169350002ef42ece37e1b23d5f601fa454322a82447f818e29c9b2eefee"
+  },
+  "review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "source_checkpoint": {
+    "decision_0106_authorization_git_tree": "b75120ea6ea4332ca0c49bf83d6db14f604e0fcb",
+    "decision_0106_commit": "616dba126c9f90c833dd4ccd6a9bdf4de60da047",
+    "decision_0106_tree": "ec70467739832d034d5a96e8cb953ff06617a550",
+    "review_package_v1_git_tree": "a43856c2b63941eaf379b4157669bc8590d585d1"
+  },
+  "status": "BLANK_READY_FOR_INDEPENDENT_HUMAN_REVIEW",
+  "study_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "study_status": "AUTHOR_CANDIDATE"
+}

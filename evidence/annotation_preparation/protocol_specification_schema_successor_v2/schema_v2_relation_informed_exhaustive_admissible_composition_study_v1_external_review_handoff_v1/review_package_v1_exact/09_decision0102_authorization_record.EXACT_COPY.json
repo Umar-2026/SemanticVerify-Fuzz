@@ -1,0 +1,122 @@
+{
+  "active_schema": {
+    "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "modification_authorized": false,
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "size_bytes": 43030,
+    "version": "2.0.0"
+  },
+  "approved_relation_evidence": {
+    "classification_totals": {
+      "NOT_SEMANTICALLY_RELATED": 969,
+      "SEMANTICALLY_RELATED": 113,
+      "UNRESOLVED": 8665
+    },
+    "field_class_domain_count": 57,
+    "relation_artifact_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/02_v4_field_class_to_schema_v2_property_path_relation.v1.json",
+    "relation_artifact_sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+    "relation_pair_count": 9747,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "source_leaf_record_count": 531,
+    "traceability_artifact_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+    "traceability_artifact_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "authorization_id": "SVF-SCHEMA-V2-RELATION-INFORMED-EXHAUSTIVE-ADMISSIBLE-COMPOSITION-STUDY-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_successful_execution_verifier_is_permanently_retired": true,
+    "final_successful_execution_must_be_recorded_byte_exactly": true,
+    "must_never_be_rerun_after_study_authoring_begins": true,
+    "verifier_may_be_executed_once_immediately_before_study_authoring": true
+  },
+  "authorized_artifact": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "authorized_study_scope": {
+    "active_schema_v2_only": true,
+    "all_109_semantic_units_in_scope": true,
+    "all_17_v4_losslessness_requirements_in_scope": true,
+    "cross_unit_joint_coherence_required": true,
+    "every_pruning_rule_requires_machine_checkable_or_explicit_human_auditable_justification": true,
+    "finite_admissible_composition_universe_required": true,
+    "machine_readable_exhaustiveness_accounting_required": true,
+    "relation_informed": true,
+    "semantic_role_compatibility_required": true,
+    "sound_dominance_or_equivalence_pruning_permitted": true,
+    "structural_schema_constraints_required": true
+  },
+  "carrier_semantics_constraints": {
+    "arbitrary_text_serialization_is_not_automatically_lossless_semantic_mapping": true,
+    "candidate_family_membership_is_screening_context_not_positive_relation_proof": true,
+    "open_or_unconstrained_string_storage_capacity_is_not_semantic_losslessness_proof": true,
+    "semantic_accounting_paths_must_not_be_used_as_storage_for_prohibited_semantic_content": true
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "constructive_operational_mapping_contract": false,
+    "curl_json": false,
+    "operational_v4_to_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false
+  },
+  "global_allowed_outcomes": [
+    "POSITIVE_EXISTING_V2_MAPPING_WITNESS_IDENTIFIED",
+    "NEGATIVE_EXISTING_V2_MAPPING_IMPOSSIBILITY_PROVEN",
+    "FURTHER_EVIDENCE_REQUIRED"
+  ],
+  "next_boundary": "RUN_AUTHORIZATION_VERIFIER_ONCE_THEN_AUTHOR_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_V1",
+  "per_unit_allowed_outcomes": [
+    "LOSSLESS_COMPOSITION_WITNESS",
+    "PROVEN_NO_ADMISSIBLE_LOSSLESS_COMPOSITION",
+    "UNRESOLVED"
+  ],
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "compiler_log_semantic_contents",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "relation_class_semantics": {
+    "NOT_SEMANTICALLY_RELATED": "EXCLUDED_FROM_ADMISSIBLE_SEMANTIC_STORAGE_COMPOSITIONS",
+    "SEMANTICALLY_RELATED": "MAY_ENTER_ADMISSIBLE_COMPOSITION_SEARCH_AS_POSITIVE_RELATION_EVIDENCE",
+    "UNRESOLVED": "MAY_ENTER_SEARCH_ONLY_AS_UNRESOLVED_CANDIDATE_AND_MUST_NOT_BE_PROMOTED_TO_POSITIVE_RELATION_WITHOUT_EXPLICIT_JUSTIFICATION",
+    "absence_from_prior_screening": "NOT_NEGATIVE_PROOF"
+  },
+  "required_composition_accounting": {
+    "enumerate_or_soundly_eliminate_all_admissible_candidate_compositions": true,
+    "record_cross_unit_collision_and_coexistence_checks": true,
+    "record_each_equivalence_class_or_dominance_class": true,
+    "record_each_pruning_rule": true,
+    "record_per_unit_coverage": true,
+    "record_remaining_evaluated_compositions": true,
+    "record_total_candidate_space_before_pruning": true,
+    "record_unresolved_semantic_dependencies": true
+  },
+  "required_domain_distinctions": {
+    "lexical_screening_is_not_semantic_proof": true,
+    "matrix_field_class_vocabulary_count": 57,
+    "unit_inventory_field_class_vocabulary_count": 57,
+    "vocabularies_must_not_be_equated_or_merged": true
+  },
+  "source_checkpoint": {
+    "decision_0101_commit": "dd42c933687f4f6282a5929a4f7769968aeef319",
+    "decision_0101_sha256": "17252642f6b2383a0e64475685f4db05b3746fb5a21612f6b056cc607420763f",
+    "decision_0101_tree": "0146cd005267ac356f5e7b94873996aab97ceb57",
+    "review_chain_closure_git_tree": "b6ae03169c759d11bd614db128c0cf94fb64900b"
+  },
+  "status": "AUTHORIZED_FOR_AUTHORING_ONLY",
+  "study_state_after_authoring": {
+    "author_candidate_only": true,
+    "independent_human_review_required_before_governance_use": true,
+    "no_automatic_governance_adoption": true
+  }
+}

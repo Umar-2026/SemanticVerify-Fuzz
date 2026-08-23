@@ -1,0 +1,193 @@
+{
+  "decision_0106_authorization_source_git_tree": "b75120ea6ea4332ca0c49bf83d6db14f604e0fcb",
+  "files": [
+    {
+      "path": "01_README_REVIEWER_HANDOFF.v1.md",
+      "sha256": "8a042f2565719f03c0fb384c768b1566491c4d232bd7d37e3a9aebc16a3e6385",
+      "size_bytes": 1032
+    },
+    {
+      "path": "02_source_binding_manifest.v1.json",
+      "sha256": "430a9541233ef88d340a0e2b3425941651bdbb457a973903597db910e291ec1b",
+      "size_bytes": 2753
+    },
+    {
+      "path": "03_decision0106_a02_final_output.EXACT_COPY.v1.txt",
+      "sha256": "7a17ee881db3a1c96ed2787d0e2ce4c458c630ceb1da613b5f14e38cec5fb0ce",
+      "size_bytes": 749
+    },
+    {
+      "path": "04_decision0106_a02_consumption_record.v1.json",
+      "sha256": "b615e2f1124d200f204a80b0cfac190e47a6f92342b81ec16ed27b728b9120b2",
+      "size_bytes": 669
+    },
+    {
+      "path": "05_decision0105.EXACT_COPY.md",
+      "sha256": "3b39b58b1646cdac883f91db49bf003b76571f8814d91cb337b9cff71b91fd35",
+      "size_bytes": 3196
+    },
+    {
+      "path": "06_decision0106.EXACT_COPY.md",
+      "sha256": "db89b52e1215d4f2bdcae223f4e7f6cf7adbd0bc0a825d52b6dcabe448842d66",
+      "size_bytes": 3966
+    },
+    {
+      "path": "07_verify_external_independent_review_handoff.v1.py",
+      "sha256": "9afd2ba0dd832df8a50beb1f342f724754becec3a89bdc7eedabe60867851bc3",
+      "size_bytes": 9258
+    },
+    {
+      "path": "decision0106_authorization_exact/01_external_independent_review_handoff_authorization.v1.json",
+      "sha256": "1573946c7a891f2c63c97594a1598b09992fc7506a6d719e6d15e2a237991188",
+      "size_bytes": 4653
+    },
+    {
+      "path": "decision0106_authorization_exact/02_verify_external_independent_review_handoff_authoring_authorization.v1.py",
+      "sha256": "933e0baa38f0809e71038f8626980b8469ddd6cd6e3279720ad37501e8ece4e9",
+      "size_bytes": 6203
+    },
+    {
+      "path": "decision0106_authorization_exact/03_external_independent_review_handoff_authorization.v1.SHA256SUMS",
+      "sha256": "1da2366d9c7df19414e915eca3155a12750b196ee99c2da25e2760de14167645",
+      "size_bytes": 269
+    },
+    {
+      "path": "review_package_v1_exact/01_study_v1.EXACT_COPY.json",
+      "sha256": "a8d28b09e78e1466eb5bb0991289879b28b10abd1dd1f9197d138ca723718f6f",
+      "size_bytes": 98536
+    },
+    {
+      "path": "review_package_v1_exact/02_exhaustiveness_accounting.EXACT_COPY.json",
+      "sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+      "size_bytes": 98246
+    },
+    {
+      "path": "review_package_v1_exact/03_study_report.EXACT_COPY.md",
+      "sha256": "d0de61d7285ae8ba2c3ff2fcf2048f8c8dca145f87929a93262ab26c2e4b2642",
+      "size_bytes": 2513
+    },
+    {
+      "path": "review_package_v1_exact/04_decision0102_a02_final_output.EXACT_COPY.txt",
+      "sha256": "82cd248d4d323b691c8635ba9d1b992dfe4dbe0de7033b7a9eb92f0f4ce4bb50",
+      "size_bytes": 875
+    },
+    {
+      "path": "review_package_v1_exact/05_decision0102_a02_consumption_record.EXACT_COPY.json",
+      "sha256": "022a8c1fa5f6630261a91e815c1c9339037188b103ae97634a8b7a48c03a2753",
+      "size_bytes": 843
+    },
+    {
+      "path": "review_package_v1_exact/06_study_safe_verifier.EXACT_COPY.py",
+      "sha256": "b0ff1cb58eee830aa97c2759b54c78a96c9190c3c173a59483ee459bce8e8d22",
+      "size_bytes": 7861
+    },
+    {
+      "path": "review_package_v1_exact/07_study_checksum_manifest.EXACT_COPY.SHA256SUMS",
+      "sha256": "aa58e9221db7fa0c2bc17b2831e051ce6d7574c000d35d4f92c26ae923340140",
+      "size_bytes": 708
+    },
+    {
+      "path": "review_package_v1_exact/08_decision0103.EXACT_COPY.md",
+      "sha256": "75d962331741137325f32af5826ac07f3aa1d67914c896b629f8213974b2087f",
+      "size_bytes": 4258
+    },
+    {
+      "path": "review_package_v1_exact/09_decision0102_authorization_record.EXACT_COPY.json",
+      "sha256": "c0370ce7e52c7dfb74e375c1a5885119f5b086be759027dc8ae09d9db80c628d",
+      "size_bytes": 5834
+    },
+    {
+      "path": "review_package_v1_exact/10_decision0102_a02.RETIRED_EXACT_COPY.py",
+      "sha256": "6781df3a0b4fcf1c8bc2ce59b7f017106ce2a158d15e68cf5557781532f77af2",
+      "size_bytes": 5728
+    },
+    {
+      "path": "review_package_v1_exact/11_decision0102_authorization_checksum.EXACT_COPY.SHA256SUMS",
+      "sha256": "949938100623931a3146beefa49fdfa4c6c2cd7eeaeb9249fe19843fb629e15c",
+      "size_bytes": 313
+    },
+    {
+      "path": "review_package_v1_exact/12_active_schema_v2.EXACT_COPY.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "path": "review_package_v1_exact/13_relation_artifact.EXACT_COPY.json",
+      "sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+      "size_bytes": 10875847
+    },
+    {
+      "path": "review_package_v1_exact/14_traceability_artifact.EXACT_COPY.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "size_bytes": 732713
+    },
+    {
+      "path": "review_package_v1_exact/15_decision0104_review_package_authorization_record.EXACT_COPY.json",
+      "sha256": "1e2e8ab6752cf720345ebc0151cd4ed561cf84a82f73dc9cbcfec36eaaeb82cf",
+      "size_bytes": 6967
+    },
+    {
+      "path": "review_package_v1_exact/16_decision0104_a02.RETIRED_EXACT_COPY.py",
+      "sha256": "f656d264d1ec42f059c4dae2d3ee8dba79949d2aa583f3a58ee426bee896b4b0",
+      "size_bytes": 9399
+    },
+    {
+      "path": "review_package_v1_exact/17_decision0104_authorization_checksum.EXACT_COPY.SHA256SUMS",
+      "sha256": "b3707447d2a09b348e8346c96d122d997e768f3945eec2f2ab4ccd8991b9c6a7",
+      "size_bytes": 281
+    },
+    {
+      "path": "review_package_v1_exact/18_decision0104_a02_final_output.EXACT_COPY.txt",
+      "sha256": "8d5823e67e4ef21d0e8a37abbbae18e16ece2d9c9dee719edbc9fea9492793da",
+      "size_bytes": 824
+    },
+    {
+      "path": "review_package_v1_exact/19_decision0104_a02_consumption_record.v1.json",
+      "sha256": "48ea6f98077553df95fbfa36f0e6483a4e5984bbe48a46c3e3328bc5063203bf",
+      "size_bytes": 640
+    },
+    {
+      "path": "review_package_v1_exact/20_decision0104.EXACT_COPY.md",
+      "sha256": "410fc3450d2b3edb604bab7e2ad59fb7643e48f63da3304f4ab86a4430f3df53",
+      "size_bytes": 4715
+    },
+    {
+      "path": "review_package_v1_exact/21_RIAC01_RIAC08_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+      "sha256": "a60a89c97292b62303a5a8f9c5fa0c3c2796f964a46cf544232d2d8202124166",
+      "size_bytes": 3373
+    },
+    {
+      "path": "review_package_v1_exact/22_review_package_manifest.v1.json",
+      "sha256": "d2dcaf72e2ebacd79efe1305672065632e11108621910b57ba319b4a9ceed9ae",
+      "size_bytes": 5954
+    },
+    {
+      "path": "review_package_v1_exact/23_verify_relation_informed_study_v1_review_package.v1.py",
+      "sha256": "9e0cb169350002ef42ece37e1b23d5f601fa454322a82447f818e29c9b2eefee",
+      "size_bytes": 11011
+    },
+    {
+      "path": "review_package_v1_exact/24_review_package.v1.SHA256SUMS",
+      "sha256": "8bce3796572a48ef3140c34055c251b555d809f404a0a27c9e913d18aceaa606",
+      "size_bytes": 2557
+    }
+  ],
+  "handoff_id": "SVF-SCHEMA-V2-RELATION-INFORMED-STUDY-V1-EXTERNAL-INDEPENDENT-REVIEW-HANDOFF-V1",
+  "handoff_state": "BLANK_READY_FOR_INDEPENDENT_HUMAN_REVIEW",
+  "immutable_review_package_source_git_tree": "a43856c2b63941eaf379b4157669bc8590d585d1",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_items": [
+    "RIAC01",
+    "RIAC02",
+    "RIAC03",
+    "RIAC04",
+    "RIAC05",
+    "RIAC06",
+    "RIAC07",
+    "RIAC08"
+  ],
+  "review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "reviewer_decisions_prepopulated": false,
+  "reviewer_identity_prepopulated": false,
+  "study_outcome": "FURTHER_EVIDENCE_REQUIRED"
+}
