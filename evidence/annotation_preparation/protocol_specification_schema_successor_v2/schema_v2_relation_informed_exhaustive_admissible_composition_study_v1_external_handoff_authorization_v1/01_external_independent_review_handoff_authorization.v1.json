@@ -1,0 +1,112 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-RELATION-INFORMED-STUDY-V1-EXTERNAL-INDEPENDENT-REVIEW-HANDOFF-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_successful_execution_verifier_is_permanently_retired": true,
+    "final_successful_output_must_be_recorded_byte_exactly": true,
+    "must_never_be_rerun_after_handoff_authoring_begins": true,
+    "verifier_may_be_executed_once_immediately_before_handoff_authoring": true
+  },
+  "authorized_artifact": "External Independent Human Review Handoff V1",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json": false,
+    "human_review_decision": false,
+    "negative_existing_v2_mapping_impossibility": false,
+    "operational_mapping_contract": false,
+    "operational_v4_to_v2_mapping": false,
+    "positive_existing_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "next_boundary": "RUN_DECISION_0106_AUTHORIZATION_VERIFIER_ONCE_THEN_AUTHOR_EXTERNAL_INDEPENDENT_REVIEW_HANDOFF_V1",
+  "planned_external_artifacts": {
+    "editable_packet_initial_bytes_must_equal_internal_blank_packet": true,
+    "editable_reviewer_packet_path": "/openbayes/home/19_RIAC01_RIAC08_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "external_editable_packet_may_be_modified_only_by_independent_reviewer": true,
+    "immutable_zip_must_never_be_modified_after_creation": true,
+    "zip_path": "/openbayes/home/19_relation_informed_study_v1_independent_review_handoff.v1.zip"
+  },
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "compiler_log_semantic_contents",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "required_handoff_contents": {
+    "decision_0105_exact_copy": true,
+    "decision_0106_authorization_consumption_record": true,
+    "decision_0106_authorization_evidence": true,
+    "decision_0106_authorization_final_output": true,
+    "external_zip": true,
+    "handoff_checksum_closure": true,
+    "immutable_review_package_v1_exact_copy": true,
+    "package_local_safe_handoff_verifier": true,
+    "separate_external_editable_manual_reviewer_packet": true,
+    "source_binding_manifest": true
+  },
+  "retired_verifier_constraints": {
+    "decision_0102_a02_remains_permanently_retired": true,
+    "decision_0104_a02_remains_permanently_retired": true,
+    "neither_retired_verifier_may_be_executed": true
+  },
+  "review_contract": {
+    "item_decision_values": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "overall_decision_must_not_be_prepopulated": true,
+    "overall_decision_values": [
+      "APPROVE_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "RIAC01",
+      "RIAC02",
+      "RIAC03",
+      "RIAC04",
+      "RIAC05",
+      "RIAC06",
+      "RIAC07",
+      "RIAC08"
+    ],
+    "reviewer_decisions_must_not_be_prepopulated": true,
+    "reviewer_identity_must_not_be_prepopulated": true,
+    "reviewer_notes_must_not_be_prepopulated": true
+  },
+  "review_package_bindings": {
+    "blank_reviewer_packet_sha256": "a60a89c97292b62303a5a8f9c5fa0c3c2796f964a46cf544232d2d8202124166",
+    "blank_reviewer_packet_size_bytes": 3373,
+    "review_package_checksum_sha256": "8bce3796572a48ef3140c34055c251b555d809f404a0a27c9e913d18aceaa606",
+    "review_package_file_count": 24,
+    "review_package_manifest_sha256": "d2dcaf72e2ebacd79efe1305672065632e11108621910b57ba319b4a9ceed9ae",
+    "review_package_safe_verifier_sha256": "9e0cb169350002ef42ece37e1b23d5f601fa454322a82447f818e29c9b2eefee"
+  },
+  "review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "source_checkpoint": {
+    "decision_0105_commit": "0e76454cef50c4e8383c50561ad3a5818d2aeccd",
+    "decision_0105_sha256": "3b39b58b1646cdac883f91db49bf003b76571f8814d91cb337b9cff71b91fd35",
+    "decision_0105_tree": "0c1fef773a20eb3606ce8e821f43eedff05fe553",
+    "review_package_v1_git_tree": "a43856c2b63941eaf379b4157669bc8590d585d1"
+  },
+  "status": "AUTHORIZED_FOR_EXTERNAL_HANDOFF_AUTHORING_ONLY",
+  "study_state": {
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "status": "AUTHOR_CANDIDATE"
+  }
+}
