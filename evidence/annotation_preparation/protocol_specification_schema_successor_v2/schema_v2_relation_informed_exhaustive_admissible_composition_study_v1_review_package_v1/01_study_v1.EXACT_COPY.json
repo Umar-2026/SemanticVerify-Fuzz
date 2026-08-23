@@ -1,0 +1,2740 @@
+{
+  "active_schema": {
+    "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+    "modified": false,
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "version": "2.0.0"
+  },
+  "admissibility_rules": {
+    "candidate_family_membership": "SCREENING_CONTEXT_ONLY",
+    "lexical_screening": "NOT_SEMANTIC_PROOF",
+    "matrix_and_unit_field_class_vocabularies_equated": false,
+    "not_semantically_related": "EXCLUDED_FROM_ADMISSIBLE_SEMANTIC_STORAGE",
+    "open_or_unconstrained_string": "NOT_AUTOMATIC_SEMANTIC_LOSSLESSNESS",
+    "semantically_related": "POSITIVE_RELATION_EVIDENCE_ONLY",
+    "unresolved": "NOT_AUTOMATICALLY_POSITIVE"
+  },
+  "approved_input_bindings": {
+    "matrix_field_class_count": 57,
+    "relation_pair_count": 9747,
+    "relation_sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "source_leaf_record_count": 531,
+    "traceability_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "authorized_by": "Decision 0102",
+  "exhaustiveness_accounting": {
+    "exact_bound_17_item_requirement_inventory_found": false,
+    "field_class_relation_domain_complete": true,
+    "field_class_relation_domain_size": 9747,
+    "joint_cross_unit_coherence_search_complete": false,
+    "losslessness_requirement_count_in_scope": 17,
+    "semantic_unit_inventory_complete": true,
+    "semantic_unit_inventory_size": 109,
+    "semantic_unit_to_carrier_admissibility_domain_complete": false,
+    "whole_v4_admissible_composition_universe_proven_complete": false
+  },
+  "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "global_outcome_basis": [
+    {
+      "code": "UNRESOLVED_RELATION_MASS_REMAINS",
+      "detail": "8665 of 9747 reviewed field-class/property-path relation pairs remain UNRESOLVED and may not be promoted to positive semantic relation evidence."
+    },
+    {
+      "code": "DISTINCT_FIELD_CLASS_VOCABULARIES_MUST_NOT_BE_EQUATED",
+      "detail": "The matrix relation-domain field-class vocabulary and unit-inventory field-class vocabulary remain distinct traceability domains; no silent name-based merge is permitted."
+    },
+    {
+      "code": "UNIT_LEVEL_SCREENING_IS_NOT_LOSSLESS_WITNESS",
+      "detail": "Candidate carrier families, screening flags, and traceability bindings are context for search and do not themselves establish a unit-level lossless composition witness."
+    },
+    {
+      "code": "WHOLE_V4_CROSS_UNIT_COHERENCE_NOT_PROVEN",
+      "detail": "The bound evidence does not prove a complete joint assignment satisfying coexistence, collision, overwrite, and semantic-independence constraints for all 109 semantic units."
+    },
+    {
+      "code": "EXACT_17_ITEM_REQUIREMENT_INVENTORY_NOT_MACHINE_REBOUND_IN_BOUND_INPUTS",
+      "detail": "Decision 0102 requires all 17 losslessness requirements to be in scope, but the two bound formalization inputs do not expose a unique machine-discoverable 17-item requirement inventory. Requirement-level exhaustive closure therefore cannot be claimed."
+    }
+  ],
+  "interpretation": "The complete 57-by-171 reviewed field-class relation domain is available, but the bound evidence does not support a sound complete whole-V4 composition universe without promoting unresolved relations, equating distinct field-class vocabularies, or treating screening/storage capacity as semantic proof. The study therefore terminates conservatively as FURTHER_EVIDENCE_REQUIRED rather than manufacturing a positive witness or negative impossibility result.",
+  "losslessness_requirement_results": [
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 1,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 2,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 3,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 4,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 5,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 6,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 7,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 8,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 9,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 10,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 11,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 12,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 13,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 14,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 15,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 16,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    },
+    {
+      "reason": "Requirement is in scope by Decision 0102, but an exact 17-item machine-readable requirement inventory is not uniquely rebound in the authorized relation/traceability input pair.",
+      "requirement_index": 17,
+      "source_item_sha256": null,
+      "status": "UNRESOLVED"
+    }
+  ],
+  "next_boundary": "AUTHOR_AND_REVIEW_A_HUMAN_REVIEW_PACKAGE_FOR_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_V1",
+  "per_semantic_unit_results": [
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 0,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::EASY_HANDLE",
+      "study_unit_id": "U001",
+      "traceability_field_classes": [
+        "cleanup_obligation",
+        "ownership",
+        "release",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 1,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::EASY_MULTI_MEMBERSHIP",
+      "study_unit_id": "U002",
+      "traceability_field_classes": [
+        "ownership_transfer_on_add",
+        "relation",
+        "successful_add",
+        "successful_remove"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 2,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::EXPLICIT_GLOBAL_CLEANUP_OBLIGATION",
+      "study_unit_id": "U003",
+      "traceability_field_classes": [
+        "established_by",
+        "missing_at_exit_normative_status",
+        "not_automatically_established_by",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 3,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::GLOBAL_RUNTIME_REFERENCE_STATE",
+      "study_unit_id": "U004",
+      "traceability_field_classes": [
+        "notes",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 4,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::MULTI_HANDLE",
+      "study_unit_id": "U005",
+      "traceability_field_classes": [
+        "cleanup_obligation",
+        "ownership",
+        "post_error_recovery",
+        "post_error_trigger",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 5,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::00",
+      "study_unit_id": "U006",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 6,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::01",
+      "study_unit_id": "U007",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 7,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::02",
+      "study_unit_id": "U008",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 8,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::03",
+      "study_unit_id": "U009",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 9,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::04",
+      "study_unit_id": "U010",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 10,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::05",
+      "study_unit_id": "U011",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 11,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::06",
+      "study_unit_id": "U012",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 12,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::07",
+      "study_unit_id": "U013",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 13,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::08",
+      "study_unit_id": "U014",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 14,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::09",
+      "study_unit_id": "U015",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 15,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::10",
+      "study_unit_id": "U016",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 16,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::11",
+      "study_unit_id": "U017",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 17,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_easy_init",
+      "study_unit_id": "U018",
+      "traceability_field_classes": [
+        "failure",
+        "null_result_state_join_policy",
+        "success"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 18,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_easy_perform",
+      "study_unit_id": "U019",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 19,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_easy_setopt",
+      "study_unit_id": "U020",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 20,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_global_init",
+      "study_unit_id": "U021",
+      "traceability_field_classes": [
+        "failure",
+        "success"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 21,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_add_handle",
+      "study_unit_id": "U022",
+      "traceability_field_classes": [
+        "membership_change"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 22,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_cleanup",
+      "study_unit_id": "U023",
+      "traceability_field_classes": [
+        "failure_condition",
+        "failure_effects",
+        "null_argument_behavior",
+        "success_condition",
+        "success_effects"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 23,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_init",
+      "study_unit_id": "U024",
+      "traceability_field_classes": [
+        "failure",
+        "success"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 24,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_perform",
+      "study_unit_id": "U025",
+      "traceability_field_classes": [
+        "normal_multi_state",
+        "post_error_multi_state"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 25,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_remove_handle",
+      "study_unit_id": "U026",
+      "traceability_field_classes": [
+        "documented_membership_change"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 26,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::membership_sensitive",
+      "study_unit_id": "U027",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 27,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::normative_strength_uncertainty_must_not_be_silently_strengthened",
+      "study_unit_id": "U028",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 28,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::ownership_sensitive",
+      "study_unit_id": "U029",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 29,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::path_sensitive",
+      "study_unit_id": "U030",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 30,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::resource_centered",
+      "study_unit_id": "U031",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 31,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::return_sensitive",
+      "study_unit_id": "U032",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 32,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::set_valued_state_reasoning",
+      "study_unit_id": "U033",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 33,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::synthetic_protocol_events_invented",
+      "study_unit_id": "U034",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 34,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::unknown_is_first_class",
+      "study_unit_id": "U035",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 35,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::unknown_must_never_be_converted_to_valid",
+      "study_unit_id": "U036",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 36,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::UNKNOWN",
+      "study_unit_id": "U037",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 37,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::VALID",
+      "study_unit_id": "U038",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 38,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::VIOLATION-MAY",
+      "study_unit_id": "U039",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 39,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::VIOLATION-MUST",
+      "study_unit_id": "U040",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 40,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::allowed_machine_verdicts",
+      "study_unit_id": "U041",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 41,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::feasible_state_join_policy",
+      "study_unit_id": "U042",
+      "traceability_field_classes": [
+        "all_feasible_states_same_verdict",
+        "mixed_VALID_and_enforceable_violation",
+        "normative_strength_or_model_coverage_unresolved",
+        "unknown_never_silently_becomes_valid"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 42,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G01",
+      "study_unit_id": "U043",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 43,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G02",
+      "study_unit_id": "U044",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 44,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G03",
+      "study_unit_id": "U045",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 45,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G04",
+      "study_unit_id": "U046",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 46,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G05",
+      "study_unit_id": "U047",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 47,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G06",
+      "study_unit_id": "U048",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 48,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G07",
+      "study_unit_id": "U049",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 49,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G08",
+      "study_unit_id": "U050",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 50,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G09",
+      "study_unit_id": "U051",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 51,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G10",
+      "study_unit_id": "U052",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 52,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E01",
+      "study_unit_id": "U053",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 53,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E02",
+      "study_unit_id": "U054",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 54,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E03",
+      "study_unit_id": "U055",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 55,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E04",
+      "study_unit_id": "U056",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "dependent_reasoning_policy",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "runtime_post_state"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 56,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E05",
+      "study_unit_id": "U057",
+      "traceability_field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "return_note",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 57,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E06",
+      "study_unit_id": "U058",
+      "traceability_field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "return_note",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 58,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E07",
+      "study_unit_id": "U059",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 59,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E08",
+      "study_unit_id": "U060",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 60,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E09",
+      "study_unit_id": "U061",
+      "traceability_field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 61,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E10",
+      "study_unit_id": "U062",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 62,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E11",
+      "study_unit_id": "U063",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 63,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E12",
+      "study_unit_id": "U064",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "excludes",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 64,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E13",
+      "study_unit_id": "U065",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 65,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E14",
+      "study_unit_id": "U066",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 66,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E15",
+      "study_unit_id": "U067",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 67,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E16",
+      "study_unit_id": "U068",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 68,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E17",
+      "study_unit_id": "U069",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 69,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E18",
+      "study_unit_id": "U070",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 70,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E19",
+      "study_unit_id": "U071",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 71,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E20",
+      "study_unit_id": "U072",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 72,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E21",
+      "study_unit_id": "U073",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "precedence",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 73,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M01",
+      "study_unit_id": "U074",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 74,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M02",
+      "study_unit_id": "U075",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 75,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M03",
+      "study_unit_id": "U076",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 76,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M04",
+      "study_unit_id": "U077",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 77,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M05",
+      "study_unit_id": "U078",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 78,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M06",
+      "study_unit_id": "U079",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 79,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M07",
+      "study_unit_id": "U080",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 80,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M08",
+      "study_unit_id": "U081",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 81,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M09",
+      "study_unit_id": "U082",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 82,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M10",
+      "study_unit_id": "U083",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 83,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M11",
+      "study_unit_id": "U084",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 84,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M12",
+      "study_unit_id": "U085",
+      "traceability_field_classes": [
+        "classification_note",
+        "cleanup_obligation_effect",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 85,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M13",
+      "study_unit_id": "U086",
+      "traceability_field_classes": [
+        "classification_note",
+        "cleanup_obligation_effect",
+        "condition",
+        "enforcement",
+        "function",
+        "recommendation",
+        "rule_id",
+        "structural_effect",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 86,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M14",
+      "study_unit_id": "U087",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 87,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M15",
+      "study_unit_id": "U088",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "excludes",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 88,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M16",
+      "study_unit_id": "U089",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 89,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M17",
+      "study_unit_id": "U090",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 90,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M18",
+      "study_unit_id": "U091",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 91,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M19",
+      "study_unit_id": "U092",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 92,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M20",
+      "study_unit_id": "U093",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 93,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M21",
+      "study_unit_id": "U094",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 94,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M22",
+      "study_unit_id": "U095",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "return",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 95,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M23",
+      "study_unit_id": "U096",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "precedence",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 96,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M24",
+      "study_unit_id": "U097",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 97,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M25",
+      "study_unit_id": "U098",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 98,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M26",
+      "study_unit_id": "U099",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 99,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M27",
+      "study_unit_id": "U100",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 100,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M28",
+      "study_unit_id": "U101",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 101,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M29",
+      "study_unit_id": "U102",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 102,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X01",
+      "study_unit_id": "U103",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 103,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X02",
+      "study_unit_id": "U104",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 104,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X03",
+      "study_unit_id": "U105",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 105,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X04",
+      "study_unit_id": "U106",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "exit_obligations",
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 106,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "EXIT_OBLIGATION::00",
+      "study_unit_id": "U107",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "exit_obligations",
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 107,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "EXIT_OBLIGATION::01",
+      "study_unit_id": "U108",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "discharge_condition",
+        "failed_cleanup_effect",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "exit_obligations",
+        "resource_model"
+      ],
+      "outcome": "UNRESOLVED",
+      "reason": "Traceability and screening metadata are not promoted to a LOSSLESS_COMPOSITION_WITNESS without an explicit semantically justified admissible composition.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 108,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "EXIT_OBLIGATION::02",
+      "study_unit_id": "U109",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ]
+    }
+  ],
+  "relation_classification_totals": {
+    "NOT_SEMANTICALLY_RELATED": 969,
+    "SEMANTICALLY_RELATED": 113,
+    "UNRESOLVED": 8665
+  },
+  "review_requirement": "INDEPENDENT_HUMAN_REVIEW_REQUIRED_BEFORE_GOVERNANCE_USE",
+  "status": "AUTHOR_CANDIDATE",
+  "study_id": "SVF-SCHEMA-V2-RELATION-INFORMED-EXHAUSTIVE-ADMISSIBLE-COMPOSITION-STUDY-V1",
+  "technical_nonclaims": {
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_witness_identified": false,
+    "schema_successor_authoring_authorized": false,
+    "whole_v4_admissible_composition_exhaustiveness_established": false
+  }
+}

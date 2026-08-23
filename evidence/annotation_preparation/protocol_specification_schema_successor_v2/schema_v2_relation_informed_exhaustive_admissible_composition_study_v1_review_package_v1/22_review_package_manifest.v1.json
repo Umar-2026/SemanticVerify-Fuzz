@@ -1,0 +1,157 @@
+{
+  "decision_0102_a02_state": "PERMANENTLY_RETIRED",
+  "decision_0104_a02_state": "PERMANENTLY_RETIRED",
+  "files": [
+    {
+      "name": "01_study_v1.EXACT_COPY.json",
+      "role": "exact_author_candidate_study",
+      "sha256": "a8d28b09e78e1466eb5bb0991289879b28b10abd1dd1f9197d138ca723718f6f",
+      "size_bytes": 98536
+    },
+    {
+      "name": "02_exhaustiveness_accounting.EXACT_COPY.json",
+      "role": "exact_exhaustiveness_accounting",
+      "sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+      "size_bytes": 98246
+    },
+    {
+      "name": "03_study_report.EXACT_COPY.md",
+      "role": "exact_study_report",
+      "sha256": "d0de61d7285ae8ba2c3ff2fcf2048f8c8dca145f87929a93262ab26c2e4b2642",
+      "size_bytes": 2513
+    },
+    {
+      "name": "04_decision0102_a02_final_output.EXACT_COPY.txt",
+      "role": "retired_decision0102_a02_final_output",
+      "sha256": "82cd248d4d323b691c8635ba9d1b992dfe4dbe0de7033b7a9eb92f0f4ce4bb50",
+      "size_bytes": 875
+    },
+    {
+      "name": "05_decision0102_a02_consumption_record.EXACT_COPY.json",
+      "role": "retired_decision0102_a02_consumption_record",
+      "sha256": "022a8c1fa5f6630261a91e815c1c9339037188b103ae97634a8b7a48c03a2753",
+      "size_bytes": 843
+    },
+    {
+      "name": "06_study_safe_verifier.EXACT_COPY.py",
+      "role": "exact_safe_study_verifier",
+      "sha256": "b0ff1cb58eee830aa97c2759b54c78a96c9190c3c173a59483ee459bce8e8d22",
+      "size_bytes": 7861
+    },
+    {
+      "name": "07_study_checksum_manifest.EXACT_COPY.SHA256SUMS",
+      "role": "exact_study_checksum_manifest",
+      "sha256": "aa58e9221db7fa0c2bc17b2831e051ce6d7574c000d35d4f92c26ae923340140",
+      "size_bytes": 708
+    },
+    {
+      "name": "08_decision0103.EXACT_COPY.md",
+      "role": "exact_decision0103",
+      "sha256": "75d962331741137325f32af5826ac07f3aa1d67914c896b629f8213974b2087f",
+      "size_bytes": 4258
+    },
+    {
+      "name": "09_decision0102_authorization_record.EXACT_COPY.json",
+      "role": "exact_decision0102_authorization_record",
+      "sha256": "c0370ce7e52c7dfb74e375c1a5885119f5b086be759027dc8ae09d9db80c628d",
+      "size_bytes": 5834
+    },
+    {
+      "name": "10_decision0102_a02.RETIRED_EXACT_COPY.py",
+      "role": "retired_decision0102_a02_hash_only",
+      "sha256": "6781df3a0b4fcf1c8bc2ce59b7f017106ce2a158d15e68cf5557781532f77af2",
+      "size_bytes": 5728
+    },
+    {
+      "name": "11_decision0102_authorization_checksum.EXACT_COPY.SHA256SUMS",
+      "role": "exact_decision0102_authorization_checksum",
+      "sha256": "949938100623931a3146beefa49fdfa4c6c2cd7eeaeb9249fe19843fb629e15c",
+      "size_bytes": 313
+    },
+    {
+      "name": "12_active_schema_v2.EXACT_COPY.json",
+      "role": "portable_active_schema_v2",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    {
+      "name": "13_relation_artifact.EXACT_COPY.json",
+      "role": "portable_reviewed_relation_artifact",
+      "sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+      "size_bytes": 10875847
+    },
+    {
+      "name": "14_traceability_artifact.EXACT_COPY.json",
+      "role": "portable_reviewed_traceability_artifact",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "size_bytes": 732713
+    },
+    {
+      "name": "15_decision0104_review_package_authorization_record.EXACT_COPY.json",
+      "role": "exact_decision0104_authorization_record",
+      "sha256": "1e2e8ab6752cf720345ebc0151cd4ed561cf84a82f73dc9cbcfec36eaaeb82cf",
+      "size_bytes": 6967
+    },
+    {
+      "name": "16_decision0104_a02.RETIRED_EXACT_COPY.py",
+      "role": "retired_decision0104_a02_hash_only",
+      "sha256": "f656d264d1ec42f059c4dae2d3ee8dba79949d2aa583f3a58ee426bee896b4b0",
+      "size_bytes": 9399
+    },
+    {
+      "name": "17_decision0104_authorization_checksum.EXACT_COPY.SHA256SUMS",
+      "role": "exact_decision0104_authorization_checksum",
+      "sha256": "b3707447d2a09b348e8346c96d122d997e768f3945eec2f2ab4ccd8991b9c6a7",
+      "size_bytes": 281
+    },
+    {
+      "name": "18_decision0104_a02_final_output.EXACT_COPY.txt",
+      "role": "decision0104_a02_final_output",
+      "sha256": "8d5823e67e4ef21d0e8a37abbbae18e16ece2d9c9dee719edbc9fea9492793da",
+      "size_bytes": 824
+    },
+    {
+      "name": "19_decision0104_a02_consumption_record.v1.json",
+      "role": "decision0104_a02_consumption_record",
+      "sha256": "48ea6f98077553df95fbfa36f0e6483a4e5984bbe48a46c3e3328bc5063203bf",
+      "size_bytes": 640
+    },
+    {
+      "name": "20_decision0104.EXACT_COPY.md",
+      "role": "exact_decision0104",
+      "sha256": "410fc3450d2b3edb604bab7e2ad59fb7643e48f63da3304f4ab86a4430f3df53",
+      "size_bytes": 4715
+    },
+    {
+      "name": "21_RIAC01_RIAC08_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+      "role": "blank_manual_reviewer_packet",
+      "sha256": "a60a89c97292b62303a5a8f9c5fa0c3c2796f964a46cf544232d2d8202124166",
+      "size_bytes": 3373
+    },
+    {
+      "name": "23_verify_relation_informed_study_v1_review_package.v1.py",
+      "role": "package_local_safe_verifier",
+      "sha256": "9e0cb169350002ef42ece37e1b23d5f601fa454322a82447f818e29c9b2eefee",
+      "size_bytes": 11011
+    }
+  ],
+  "operational_permissions_granted": false,
+  "package_id": "SVF-SCHEMA-V2-RELATION-INFORMED-EXHAUSTIVE-ADMISSIBLE-COMPOSITION-STUDY-V1-REVIEW-PACKAGE-V1",
+  "package_state": "BLANK_READY_FOR_INDEPENDENT_HUMAN_REVIEW",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_decisions_prepopulated": false,
+  "review_items": [
+    "RIAC01",
+    "RIAC02",
+    "RIAC03",
+    "RIAC04",
+    "RIAC05",
+    "RIAC06",
+    "RIAC07",
+    "RIAC08"
+  ],
+  "review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "reviewer_identity_prepopulated": false,
+  "study_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "study_status": "AUTHOR_CANDIDATE"
+}

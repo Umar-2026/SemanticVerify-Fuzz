@@ -1,0 +1,13 @@
+{
+  "authorization_verifier_sha256": "f656d264d1ec42f059c4dae2d3ee8dba79949d2aa583f3a58ee426bee896b4b0",
+  "decision_0102_a02_remained_retired_and_was_not_executed": true,
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "8d5823e67e4ef21d0e8a37abbbae18e16ece2d9c9dee719edbc9fea9492793da",
+  "final_output_size_bytes": 824,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "record_id": "SVF-DECISION-0104-REVIEW-PACKAGE-A02-FINAL-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "review_package_authoring_began_immediately_after_successful_run": true,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}
