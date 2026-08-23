@@ -1,0 +1,89 @@
+{
+  "authorized_recovery": {
+    "changed_file_count": 2,
+    "changed_files": [
+      "05_verify_corrective_successor_package_v2.py",
+      "07_corrective_successor_package_v2.SHA256SUMS"
+    ],
+    "post_recovery_package_checksum_sha256": "a6dc0402138a5c59a59202795d3616e67439b20ff5df4a0c1ccf27caa3eb7f95",
+    "post_recovery_package_checksum_size_bytes": 6863,
+    "post_recovery_safe_verifier_sha256": "2c053a69dd183faa896364a61e5a2c337876c59735313c421e2acb63cd13a63a",
+    "post_recovery_safe_verifier_size_bytes": 25736,
+    "pre_recovery_package_checksum_sha256": "510e5ba577d2bcc2c9f094ac9d1ef613be22dc489af61910966e87c44b15c6bf",
+    "pre_recovery_safe_verifier_sha256": "20324afe760f80ed7405b6987788bb6e9d969d7addfa8b4f7dd4c03bb6271ba0",
+    "result": "PASS",
+    "unauthorized_package_file_change_count": 0,
+    "unchanged_file_count": 45
+  },
+  "bounded_nonclaims": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "operational_positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false,
+    "schema_version_preselected": false
+  },
+  "corrective_successor_package_v2": {
+    "file_count": 47,
+    "package_checksum_sha256": "a6dc0402138a5c59a59202795d3616e67439b20ff5df4a0c1ccf27caa3eb7f95",
+    "safe_verifier_sha256": "2c053a69dd183faa896364a61e5a2c337876c59735313c421e2acb63cd13a63a",
+    "status": "AUTHOR_CANDIDATE_AWAITING_FOCUSED_INDEPENDENT_HUMAN_REREVIEW",
+    "total_size_bytes": 23815716
+  },
+  "decision_0095_authorization_verifier": {
+    "permanently_retired": true,
+    "rerun_allowed": false,
+    "sha256": "4c4a1feca0496055035e57389f0c581542e97ac72a46d10137f657208743093b"
+  },
+  "decision_0096_recovery_authorization": {
+    "decision_commit": "cd37ccfece32f725e5d97a801dd3c2f6217035c7",
+    "final_allowed_output_sha256": "3ffce5cec14ed4bee20d13a0d2242db1a4a6e2d1264fa521a13bf0b7480238ee",
+    "final_allowed_output_size_bytes": 899,
+    "final_allowed_run_completed": true,
+    "final_allowed_run_result": "PASS",
+    "final_output_persistence_method": "BYTE_EXACT_RECONSTRUCTION_FROM_OBSERVED_TERMINAL_OUTPUT",
+    "reconstruction_cryptographically_matches_original_tee_hash_and_size": true,
+    "recovery_authorization_verifier_permanently_retired": true,
+    "recovery_authorization_verifier_rerun_allowed": false,
+    "recovery_authorization_verifier_sha256": "180c58974f894788884d75f9e0ae8964e4d2a9df5ff418e52b1856c282a920e4"
+  },
+  "immutability_at_author_checkpoint": {
+    "all_9747_relation_rows": true,
+    "completed_revision_required_human_review": true,
+    "formalization_v1": true,
+    "original_formalization_v1_report": true,
+    "original_review_package_v1": true,
+    "recovered_corrective_successor_package_v2_after_commit": true
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_EXTERNAL_FOCUSED_REREVIEW_HANDOFF_FOR_SRR02_C_SRR04_C_SRR05_C_SRR08_C",
+  "post_recovery_safe_verification": {
+    "output_sha256": "74f52ce59a8edeba7f9e30fda28f3e514d1b8216094afe15d9ffe790e14dd8c0",
+    "output_size_bytes": 1939,
+    "result": "PASS",
+    "self_contained_package_local_verifier": true
+  },
+  "record_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-CORRECTIVE-SUCCESSOR-PACKAGE-V2-RECOVERY-COMPLETION-V1",
+  "review_state": {
+    "carried_forward_pass_items": [
+      "SRR01",
+      "SRR03",
+      "SRR06",
+      "SRR07"
+    ],
+    "focused_human_approval_exists": false,
+    "focused_human_decision_exists": false,
+    "focused_items_awaiting_rereview": [
+      "SRR02-C",
+      "SRR04-C",
+      "SRR05-C",
+      "SRR08-C"
+    ],
+    "focused_rereview_packet": "BLANK",
+    "formalization_v1_approved": false,
+    "original_overall_human_review": "REVISION_REQUIRED"
+  },
+  "status": "RECOVERY_COMPLETE_AUTHOR_CHECKPOINT_READY"
+}

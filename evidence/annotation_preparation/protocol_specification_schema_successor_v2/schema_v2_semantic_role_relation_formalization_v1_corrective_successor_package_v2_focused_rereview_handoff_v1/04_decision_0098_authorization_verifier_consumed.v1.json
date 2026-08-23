@@ -1,0 +1,12 @@
+{
+  "authorization_verifier_must_never_be_rerun": true,
+  "authorization_verifier_permanently_retired": true,
+  "authorization_verifier_sha256": "c7471c76132ec2a5cd1889eaec4ae6ad549f5b59a694d556bf08be7634ee51d4",
+  "final_allowed_output_sha256": "fa0a680bd599714d9ae12d76f4539d0e02b5fa3a6de21e7963b7050fda96c33b",
+  "final_allowed_output_size_bytes": 866,
+  "final_allowed_run_performed": true,
+  "final_allowed_run_result": "PASS",
+  "handoff_authoring_started_after_final_run": true,
+  "record_id": "SVF-DECISION-0098-FOCUSED-REREVIEW-HANDOFF-AUTHORIZATION-VERIFIER-CONSUMPTION-V1",
+  "retirement_trigger": "EXTERNAL_FOCUSED_REREVIEW_HANDOFF_V1_AUTHORING_BEGAN_AFTER_FINAL_ALLOWED_PASS"
+}

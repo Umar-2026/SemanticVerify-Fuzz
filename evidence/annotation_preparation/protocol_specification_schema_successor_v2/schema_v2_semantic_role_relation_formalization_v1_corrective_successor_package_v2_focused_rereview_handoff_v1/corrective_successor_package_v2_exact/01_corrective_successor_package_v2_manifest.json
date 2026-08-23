@@ -1,0 +1,80 @@
+{
+  "authoritative_source_bindings": {
+    "02_v4_semantic_unit_inventory.v1.json": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "03_schema_v2_carrier_inventory.v1.json": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+    "04_candidate_multifield_composition_matrix.v1.json": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45"
+  },
+  "authoritative_structural_counts": {
+    "lexical_only_not_semantically_related": 5,
+    "lexical_only_semantically_related": 0,
+    "lexical_only_total": 125,
+    "lexical_only_unresolved": 120,
+    "matrix_field_classes": 57,
+    "matrix_unit_analysis_records": 109,
+    "relation_not_semantically_related": 969,
+    "relation_rows": 9747,
+    "relation_semantically_related": 113,
+    "relation_unresolved": 8665,
+    "reviewed_leaf_fields": 531,
+    "reviewed_semantic_units": 109,
+    "schema_v2_property_paths": 171
+  },
+  "authorization_verifier_lifecycle": {
+    "decision_0095_authorization_verifier_final_run_completed": true,
+    "decision_0095_authorization_verifier_permanently_retired": true,
+    "decision_0095_authorization_verifier_rerun_allowed": false
+  },
+  "bounded_nonclaims": {
+    "admissible_composition_exhaustiveness_established": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_positive_mapping_authorized": false,
+    "positive_existing_v2_mapping_path_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false,
+    "schema_version_preselected": false
+  },
+  "carried_forward_pass_items": [
+    "SRR01",
+    "SRR03",
+    "SRR06",
+    "SRR07"
+  ],
+  "corrective_scope": {
+    "SRR02-C": "Exact reviewed source artifacts and machine-verifiable source-to-derived domain binding.",
+    "SRR04-C": "Presentation/accounting erratum only: 125 total lexical-only candidate pairs = 120 UNRESOLVED + 5 NOT_SEMANTICALLY_RELATED + 0 SEMANTICALLY_RELATED.",
+    "SRR05-C": "Self-contained 531-leaf, 109-unit, matrix-unit-analysis, field-class, candidate-family, and family-to-carrier-path binding.",
+    "SRR08-C": "Package-local reproducibility with a safe verifier requiring no repository-relative source layout."
+  },
+  "f03_candidate_family_domain_structure": "DICT_FROM_CANDIDATE_FAMILY_TO_FULL_SCHEMA_V2_CARRIER_FAMILY_PATH_LIST",
+  "focused_corrective_items": [
+    "SRR02-C",
+    "SRR04-C",
+    "SRR05-C",
+    "SRR08-C"
+  ],
+  "formalization_v1_approved": false,
+  "human_review_state": {
+    "focused_human_approval_exists": false,
+    "focused_human_decision_exists": false,
+    "focused_rereview_packet": "BLANK",
+    "required_reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "immutability": {
+    "all_9747_original_relation_rows": true,
+    "completed_revision_required_human_review": true,
+    "original_blank_review_packet": true,
+    "original_formalization_v1": true,
+    "original_formalization_v1_report": true,
+    "original_overall_revision_required_decision": true,
+    "original_review_package_v1": true
+  },
+  "next_boundary": "AUTHOR_CHECKPOINT_THEN_SEPARATELY_PREPARE_EXTERNAL_FOCUSED_REREVIEW_HANDOFF",
+  "package_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-CORRECTIVE-SUCCESSOR-PACKAGE-V2",
+  "source_review_overall_decision": "REVISION_REQUIRED",
+  "status": "AUTHOR_CANDIDATE_AWAITING_FOCUSED_INDEPENDENT_HUMAN_REREVIEW"
+}

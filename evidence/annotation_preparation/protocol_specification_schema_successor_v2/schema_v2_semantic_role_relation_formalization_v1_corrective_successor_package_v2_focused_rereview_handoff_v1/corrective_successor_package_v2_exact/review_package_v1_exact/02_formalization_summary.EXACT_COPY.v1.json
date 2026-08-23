@@ -1,0 +1,56 @@
+{
+  "artifact_sha256": {
+    "field_class_to_schema_v2_property_path_relation": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+    "semantic_unit_context_and_leaf_traceability": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "author_candidate_interpretation": {
+    "admissible_composition_exhaustiveness_established": false,
+    "constructive_positive_mapping_witness_authored": false,
+    "exhaustive_admissible_composition_enumeration_performed": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "positive_existing_v2_mapping_path_proven": false,
+    "schema_successor_requirement_determined": false
+  },
+  "formalization_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1",
+  "formalization_policy": {
+    "absence_from_prior_candidate_matrix_used_as_negative_proof": false,
+    "lexical_only_candidates_promoted_to_related": false,
+    "raw_v4_all_scalar_leaf_walk_used_as_domain_authority": false,
+    "reviewed_109_semantic_unit_inventory_used_as_unit_domain_authority": true,
+    "reviewed_171_carrier_inventory_used_as_schema_path_domain_authority": true,
+    "reviewed_531_leaf_inventory_used_as_leaf_domain_authority": true,
+    "reviewed_matrix_57_field_classes_used_as_relation_domain_authority": true,
+    "semantic_accounting_used_as_semantic_storage": false,
+    "two_distinct_57_element_field_class_vocabularies_conflated": false
+  },
+  "human_review_required_before_governance_use": true,
+  "immutable_input_sha256": {
+    "candidate_multifield_composition_matrix": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45",
+    "schema_v2_carrier_inventory": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+    "v4_semantic_unit_inventory": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d"
+  },
+  "next_boundary": "INDEPENDENT_HUMAN_TECHNICAL_REVIEW_REQUIRED_BEFORE_GOVERNANCE_USE",
+  "reviewed_domain_accounting": {
+    "field_class_to_schema_path_pair_count": 9747,
+    "leaf_to_unit_accounting_complete": true,
+    "lexical_only_pair_count": 125,
+    "matrix_and_unit_inventory_57_element_domains_equal": false,
+    "matrix_field_class_pair_coverage_complete": true,
+    "not_semantically_related_pair_count": 969,
+    "schema_v2_distinct_property_name_count": 123,
+    "schema_v2_open_unconstrained_string_path_count": 59,
+    "schema_v2_path_pair_coverage_complete": true,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_context_record_count": 109,
+    "semantically_related_pair_count": 113,
+    "unit_inventory_declared_field_class_union_count": 57,
+    "unresolved_pair_count": 8665,
+    "v4_leaf_field_count": 531,
+    "v4_matrix_field_class_count": 57,
+    "v4_semantic_container_count": 10,
+    "v4_semantic_unit_count": 109
+  },
+  "selected_outcome": "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED",
+  "selected_outcome_human_approved": false,
+  "status": "AUTHOR_CANDIDATE"
+}

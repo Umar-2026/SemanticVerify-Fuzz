@@ -1,0 +1,67 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "approval_rule": "All SRR01 through SRR08 must PASS for APPROVE_SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1.",
+  "bounded_review_meaning": {
+    "admissible_composition_exhaustiveness_established_by_approval_alone": false,
+    "negative_existing_v2_mapping_impossibility_proven_by_approval_alone": false,
+    "operational_positive_mapping_authorized_by_approval_alone": false,
+    "positive_existing_v2_mapping_path_proven_by_approval_alone": false,
+    "schema_successor_authoring_authorized_by_approval_alone": false
+  },
+  "decision_0090_commit": "55cdd77baf2cf9a44789dcc2625edb617dae4011",
+  "decision_0091_commit": "a7bb92df5a0164c4c314ce76dd2e5f0457b5fb7d",
+  "formalization_selected_outcome": "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED",
+  "formalization_selected_outcome_human_approved": false,
+  "formalization_status": "AUTHOR_CANDIDATE",
+  "human_decision_created": false,
+  "human_supplied_fields": [
+    "SRR01 decision and notes",
+    "SRR02 decision and notes",
+    "SRR03 decision and notes",
+    "SRR04 decision and notes",
+    "SRR05 decision and notes",
+    "SRR06 decision and notes",
+    "SRR07 decision and notes",
+    "SRR08 decision and notes",
+    "overall decision",
+    "human reviewer name",
+    "human reviewer signature or recorded confirmation",
+    "human reviewer date"
+  ],
+  "mandatory_review_items": {
+    "SRR01": "Package integrity and exact artifact binding",
+    "SRR02": "Authoritative reviewed-domain correctness",
+    "SRR03": "Two distinct 57-element vocabularies",
+    "SRR04": "Conservative 9,747-pair classification policy",
+    "SRR05": "Leaf, unit, and carrier-family traceability",
+    "SRR06": "Bounded technical interpretation",
+    "SRR07": "Admissibility and nonclaim preservation",
+    "SRR08": "Governance boundary and reproducibility"
+  },
+  "next_boundary": "EXTERNAL_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_HANDOFF_SRR01_SRR08",
+  "package_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-INDEPENDENT-HUMAN-TECHNICAL-REVIEW-PACKAGE-V1",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_target": "SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1",
+  "reviewed_evidence_counts": {
+    "leaf_field_records": 531,
+    "lexical_only_pairs_retained_unresolved": 125,
+    "matrix_field_classes": 57,
+    "not_semantically_related_pairs": 969,
+    "schema_v2_property_paths": 171,
+    "semantic_role_pairs": 9747,
+    "semantic_units": 109,
+    "semantically_related_pairs": 113,
+    "unresolved_pairs": 8665
+  },
+  "reviewer_identity_prepopulated": false,
+  "status": "IMMUTABLE_BLANK_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE"
+}

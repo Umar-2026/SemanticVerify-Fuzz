@@ -1,0 +1,325 @@
+{
+  "binding_manifest_id": "SVF-CORRECTIVE-SUCCESSOR-PACKAGE-V2-EXTERNAL-FOCUSED-REREVIEW-HANDOFF-V1-SOURCE-BINDINGS",
+  "corrective_successor_package_v2_source_git_tree": "3ac8a4b0d19917a12ea02db208becf87d4b81f8f",
+  "expected_group_file_counts": {
+    "corrective_successor_package_v2_exact": 47,
+    "decision_0098_authorization_exact": 4,
+    "governance_decisions_exact": 2,
+    "recovery_completion_v1_exact": 5
+  },
+  "groups": {
+    "corrective_successor_package_v2_exact": {
+      "file_count": 47,
+      "files": [
+        {
+          "path": "01_corrective_successor_package_v2_manifest.json",
+          "sha256": "f1773106a7b97eda909fc7baccdc311942a77e484d7a7243cb72003842bfb05e",
+          "size_bytes": 3574
+        },
+        {
+          "path": "02_srr04_lexical_accounting_erratum.v2.json",
+          "sha256": "5abe754121f024a1b256d02432567a35a1d743a1d931959d6785cb559f70970f",
+          "size_bytes": 2294
+        },
+        {
+          "path": "03_srr04_lexical_accounting_erratum.v2.md",
+          "sha256": "47529e2bb782f58842eac9a5d463754d81d5edbc178ae1746f0033dc234b6c29",
+          "size_bytes": 2084
+        },
+        {
+          "path": "04_focused_rereview_packet.BLANK.v2.md",
+          "sha256": "60185126f93d5a113722545108c4b798563b6088f9b92945ccb7cd16840db75e",
+          "size_bytes": 1307
+        },
+        {
+          "path": "05_verify_corrective_successor_package_v2.py",
+          "sha256": "2c053a69dd183faa896364a61e5a2c337876c59735313c421e2acb63cd13a63a",
+          "size_bytes": 25736
+        },
+        {
+          "path": "06_decision_0095_authorization_verifier_consumed.v1.json",
+          "sha256": "ef9a0a67d3ad319cdc6b791c5b009ac6b87137bf1e99ca10a8f9e5ef17a35409",
+          "size_bytes": 770
+        },
+        {
+          "path": "07_corrective_successor_package_v2.SHA256SUMS",
+          "sha256": "a6dc0402138a5c59a59202795d3616e67439b20ff5df4a0c1ccf27caa3eb7f95",
+          "size_bytes": 6863
+        },
+        {
+          "path": "completed_human_review_v1_exact/01_completed_srr01_srr08_human_review.EXACT_COPY.v1.md",
+          "sha256": "4504b8fd74e8bd699fcdb4b600f72f706d429cee7126bc432bfe7adb1b9ba9f1",
+          "size_bytes": 10821
+        },
+        {
+          "path": "completed_human_review_v1_exact/02_completed_srr01_srr08_human_review_record.v1.json",
+          "sha256": "d6b0d58c6adf3ba6b5b2ad848b4ef5469c213e8b37b0bd66284ed2b437b6b106",
+          "size_bytes": 3139
+        },
+        {
+          "path": "completed_human_review_v1_exact/03_verify_repository_completed_srr01_srr08_human_review.v1.py",
+          "sha256": "776a8369ab658fa3f63481c6f7305c5ae5746ad031718a48bce88c3749dc32fb",
+          "size_bytes": 6864
+        },
+        {
+          "path": "completed_human_review_v1_exact/04_completed_srr01_srr08_human_review.v1.SHA256SUMS",
+          "sha256": "f400d2faa36f5837ae8adf3e5473f78a5fb06728b1118d311db25deabb5a29f6",
+          "size_bytes": 368
+        },
+        {
+          "path": "decision_0095_authorization_exact/01_corrective_successor_package_v2_authorization.v1.json",
+          "sha256": "9555633555ed0eb918b27d877d7e8f0c2568847e3570a15919e998a27e91533e",
+          "size_bytes": 7213
+        },
+        {
+          "path": "decision_0095_authorization_exact/02_verify_corrective_successor_package_v2_authorization.v1.py",
+          "sha256": "4c4a1feca0496055035e57389f0c581542e97ac72a46d10137f657208743093b",
+          "size_bytes": 8565
+        },
+        {
+          "path": "decision_0095_authorization_exact/03_corrective_successor_package_v2_authorization.v1.SHA256SUMS",
+          "sha256": "08918d9f551ff6869b0ac96ccf95037158519ecbdd9f84623b2a041916bb8c71",
+          "size_bytes": 251
+        },
+        {
+          "path": "decision_0095_authorization_exact/04_final_allowed_authorization_verifier_output.v1.txt",
+          "sha256": "07c8cbaf7ac1c7adf393c340d77c316c9663c4c61e3216489b19ff021e317ce5",
+          "size_bytes": 980
+        },
+        {
+          "path": "formalization_v1_exact/01_schema_v2_semantic_role_relation_formalization.v1.json",
+          "sha256": "0efc848991f0f1580542b8d6e380c55df6d2b370147f236800621b24b51ee600",
+          "size_bytes": 2948
+        },
+        {
+          "path": "formalization_v1_exact/02_v4_field_class_to_schema_v2_property_path_relation.v1.json",
+          "sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+          "size_bytes": 10875847
+        },
+        {
+          "path": "formalization_v1_exact/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+          "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+          "size_bytes": 732713
+        },
+        {
+          "path": "formalization_v1_exact/04_schema_v2_semantic_role_relation_formalization.v1.md",
+          "sha256": "7b71d98c63afabc6d3b5eaf72f07e0ee2e4a6707520d80032a9d51b9540878d4",
+          "size_bytes": 2888
+        },
+        {
+          "path": "formalization_v1_exact/05_pre_formalization_authorization_verifier_consumed.v1",
+          "sha256": "55005f555ec580c0e623033137930fa976412aa48dc0acaddc49e767d87bb391",
+          "size_bytes": 417
+        },
+        {
+          "path": "formalization_v1_exact/06_verify_schema_v2_semantic_role_relation_formalization.v1.py",
+          "sha256": "842763889dd0958a39b9403832c97d2ea83cbbf8c91bc529931323f3e62f38b0",
+          "size_bytes": 14963
+        },
+        {
+          "path": "formalization_v1_exact/07_schema_v2_semantic_role_relation_formalization.v1.SHA256SUMS",
+          "sha256": "46cbb87c47ce4332c98a80bd769346129d7a54f5cb6aa037d62a7016025e45f6",
+          "size_bytes": 749
+        },
+        {
+          "path": "governance_decisions_exact/0090-record-schema-v2-semantic-role-relation-formalization-v1-author-checkpoint.md",
+          "sha256": "96c5a9719101bf384022b7d8378df1a5e60abf0cb096ea5d9cbcd03be4e2a8b4",
+          "size_bytes": 5173
+        },
+        {
+          "path": "governance_decisions_exact/0093-record-recovered-schema-v2-semantic-role-relation-formalization-v1-independent-human-review-package.md",
+          "sha256": "c353fce2180df00cffc183cc536d2707bce870ae4bd86a1351fe5a24ab586355",
+          "size_bytes": 4094
+        },
+        {
+          "path": "governance_decisions_exact/0094-record-completed-revision-required-human-review-of-schema-v2-semantic-role-relation-formalization-v1.md",
+          "sha256": "8d18d8fa5c1c16e2f3502ba63abcd21b245b1ebe577c4c546586b343cd14812c",
+          "size_bytes": 3632
+        },
+        {
+          "path": "governance_decisions_exact/0095-authorize-evidence-only-corrective-successor-package-v2-for-schema-v2-semantic-role-relation-formalization-v1.md",
+          "sha256": "1391132c706286a975f4c9b4720d85adab842b26acc30ac9a082c69979e3308f",
+          "size_bytes": 5739
+        },
+        {
+          "path": "review_package_v1_exact/01_review_scope_and_evidence.v1.json",
+          "sha256": "65667f4e2c8b57ae1897f40e1fc61562efc43c518075178bf5d5d665976e21e0",
+          "size_bytes": 2841
+        },
+        {
+          "path": "review_package_v1_exact/02_formalization_summary.EXACT_COPY.v1.json",
+          "sha256": "0efc848991f0f1580542b8d6e380c55df6d2b370147f236800621b24b51ee600",
+          "size_bytes": 2948
+        },
+        {
+          "path": "review_package_v1_exact/03_field_class_to_schema_v2_property_path_relation.EXACT_COPY.v1.json",
+          "sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+          "size_bytes": 10875847
+        },
+        {
+          "path": "review_package_v1_exact/04_semantic_unit_context_and_leaf_traceability.EXACT_COPY.v1.json",
+          "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+          "size_bytes": 732713
+        },
+        {
+          "path": "review_package_v1_exact/05_formalization_report.EXACT_COPY.v1.md",
+          "sha256": "7b71d98c63afabc6d3b5eaf72f07e0ee2e4a6707520d80032a9d51b9540878d4",
+          "size_bytes": 2888
+        },
+        {
+          "path": "review_package_v1_exact/06_decision_0089_verifier_consumption_marker.EXACT_COPY.v1",
+          "sha256": "55005f555ec580c0e623033137930fa976412aa48dc0acaddc49e767d87bb391",
+          "size_bytes": 417
+        },
+        {
+          "path": "review_package_v1_exact/07_formalization_safe_verifier.EXACT_COPY.v1.py",
+          "sha256": "842763889dd0958a39b9403832c97d2ea83cbbf8c91bc529931323f3e62f38b0",
+          "size_bytes": 14963
+        },
+        {
+          "path": "review_package_v1_exact/08_formalization_checksum_manifest.EXACT_COPY.v1.SHA256SUMS",
+          "sha256": "46cbb87c47ce4332c98a80bd769346129d7a54f5cb6aa037d62a7016025e45f6",
+          "size_bytes": 749
+        },
+        {
+          "path": "review_package_v1_exact/09_decision_0090.EXACT_COPY.md",
+          "sha256": "96c5a9719101bf384022b7d8378df1a5e60abf0cb096ea5d9cbcd03be4e2a8b4",
+          "size_bytes": 5173
+        },
+        {
+          "path": "review_package_v1_exact/10_decision_0091_review_package_authorization.EXACT_COPY.v1.json",
+          "sha256": "be6f78129e16ba3738cbd460e43cac603f261b86951065615531a68d7eef88b5",
+          "size_bytes": 7515
+        },
+        {
+          "path": "review_package_v1_exact/11_decision_0091_pre_review_package_verifier.EXACT_COPY.v1.py",
+          "sha256": "b221024566fb4d08f94232ae745df4b62d60084dc71b12d825a147ecbebb1b4a",
+          "size_bytes": 6018
+        },
+        {
+          "path": "review_package_v1_exact/12_decision_0091_authorization_checksum.EXACT_COPY.v1.SHA256SUMS",
+          "sha256": "76dc4ddefd9395138ed287cd03b402df74f026e9c10812c96b3cd2289ad25ae2",
+          "size_bytes": 297
+        },
+        {
+          "path": "review_package_v1_exact/13_decision_0091.EXACT_COPY.md",
+          "sha256": "cf61a39592b8b906094beb263fd74b93032837999fd0605f8b9ffd1b3d384eb7",
+          "size_bytes": 4538
+        },
+        {
+          "path": "review_package_v1_exact/14_pre_review_package_authorization_verifier_consumed.v1",
+          "sha256": "2ea22aedeca53f2e372ef938e468b60be8bf13a41dac995ec76eec95063566ee",
+          "size_bytes": 421
+        },
+        {
+          "path": "review_package_v1_exact/15_semantic_role_relation_formalization_v1_reviewer_packet.BLANK.v1.md",
+          "sha256": "84aa233232268866aaf9a5b8db673ed1c42e0519c7231162dece7f53a7c4ad3b",
+          "size_bytes": 4742
+        },
+        {
+          "path": "review_package_v1_exact/16_verify_semantic_role_relation_formalization_v1_review_package.v1.py",
+          "sha256": "4ebef4df999fd0b9b506b7c4e6a9d52c30804dce58f3bb9f63d8e30ce34a831f",
+          "size_bytes": 8133
+        },
+        {
+          "path": "review_package_v1_exact/17_semantic_role_relation_formalization_v1_review_package_manifest.v1.json",
+          "sha256": "ae8e4af6affc156e7774b61d9a360a9b630034b6d25f2fe37d620cf6c73e2ba5",
+          "size_bytes": 2808
+        },
+        {
+          "path": "review_package_v1_exact/18_semantic_role_relation_formalization_v1_review_package.v1.SHA256SUMS",
+          "sha256": "75c40450b8a398b077c0214e16da0a20fa089e8c991a56b1bdf92d5d5fc623a1",
+          "size_bytes": 2075
+        },
+        {
+          "path": "source_evidence/02_v4_semantic_unit_inventory.v1.json",
+          "sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+          "size_bytes": 203561
+        },
+        {
+          "path": "source_evidence/03_schema_v2_carrier_inventory.v1.json",
+          "sha256": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+          "size_bytes": 80491
+        },
+        {
+          "path": "source_evidence/04_candidate_multifield_composition_matrix.v1.json",
+          "sha256": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45",
+          "size_bytes": 126533
+        }
+      ]
+    },
+    "decision_0098_authorization_exact": {
+      "file_count": 4,
+      "files": [
+        {
+          "path": "01_focused_rereview_handoff_authorization.v1.json",
+          "sha256": "45b3963a0a942752b14991445923f834221116fc893e2bc32730caf2811a5fbc",
+          "size_bytes": 4667
+        },
+        {
+          "path": "02_verify_focused_rereview_handoff_authorization.v1.py",
+          "sha256": "c7471c76132ec2a5cd1889eaec4ae6ad549f5b59a694d556bf08be7634ee51d4",
+          "size_bytes": 8386
+        },
+        {
+          "path": "03_focused_rereview_handoff_authorization.v1.SHA256SUMS",
+          "sha256": "9cb0cf0fdfe492798891aeb9ab3992d9d5d4a15768ed4a0ffb8dfb3a78984db7",
+          "size_bytes": 237
+        },
+        {
+          "path": "04_final_allowed_handoff_authorization_verifier_output.v1.txt",
+          "sha256": "fa0a680bd599714d9ae12d76f4539d0e02b5fa3a6de21e7963b7050fda96c33b",
+          "size_bytes": 866
+        }
+      ]
+    },
+    "governance_decisions_exact": {
+      "file_count": 2,
+      "files": [
+        {
+          "path": "0097-record-recovery-completion-and-corrective-successor-package-v2-author-checkpoint.md",
+          "sha256": "0df5e4527dcbc130bd11327d1c3dd5c4f170552a2761ffb61e55fcfe64bc1923",
+          "size_bytes": 5943
+        },
+        {
+          "path": "0098-authorize-external-focused-rereview-handoff-for-corrective-successor-package-v2.md",
+          "sha256": "41225b0e6f8f0c92c022e5f138f88ed7c39f055b2e4541819a66f4fdc07f6d0c",
+          "size_bytes": 4461
+        }
+      ]
+    },
+    "recovery_completion_v1_exact": {
+      "file_count": 5,
+      "files": [
+        {
+          "path": "01_final_recovery_authorization_verifier_output.EXACT_RECONSTRUCTED.v1.txt",
+          "sha256": "3ffce5cec14ed4bee20d13a0d2242db1a4a6e2d1264fa521a13bf0b7480238ee",
+          "size_bytes": 899
+        },
+        {
+          "path": "02_recovery_completion_record.v1.json",
+          "sha256": "3885824812d292d29849c4212f11b7918a93969bca6ce7440cabe215629752e6",
+          "size_bytes": 3914
+        },
+        {
+          "path": "03_post_recovery_safe_successor_verifier_output.v1.txt",
+          "sha256": "74f52ce59a8edeba7f9e30fda28f3e514d1b8216094afe15d9ffe790e14dd8c0",
+          "size_bytes": 1939
+        },
+        {
+          "path": "04_verify_recovery_completion_and_corrective_successor_package_v2_author_checkpoint.v1.py",
+          "sha256": "4b27a4016abfa20fac6f7df54c3ebececdc26c1b6d4d29abcf8a071c36b6cf9a",
+          "size_bytes": 10042
+        },
+        {
+          "path": "05_recovery_completion_and_author_checkpoint.v1.SHA256SUMS",
+          "sha256": "f4b90529ebf0e28ff07b436ab07e527ed6bee58e42f5578938dda5405b5261eb",
+          "size_bytes": 522
+        }
+      ]
+    }
+  },
+  "handoff_authorization_commit": "100fb6e746440d07a3b8a11aea13bdf1362765d9",
+  "recovery_completion_v1_source_git_tree": "b51b921c570a74be310bfc192b15970b4f3b4f83",
+  "source_author_checkpoint_commit": "a5dfec8ce2222c0f4e1a380f37239e4a68dd26b8"
+}

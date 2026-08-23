@@ -1,0 +1,44 @@
+{
+  "corrected_statement": "There are 125 reviewed lexical-only candidate pairs in total: 120 are UNRESOLVED and five semantic_accounting pairs are NOT_SEMANTICALLY_RELATED; none are SEMANTICALLY_RELATED.",
+  "correction_type": "PRESENTATION_ACCOUNTING_ONLY",
+  "erratum_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-SRR04-CORRECTIVE-ERRATUM-V2",
+  "five_explicit_negative_pairs": [
+    {
+      "schema_v2_property_path": "$.semantic_accounting.inventory.exit_obligation_count",
+      "v4_matrix_field_class": "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION"
+    },
+    {
+      "schema_v2_property_path": "$.semantic_accounting.inventory.exit_obligation_count",
+      "v4_matrix_field_class": "cleanup_obligation_effect"
+    },
+    {
+      "schema_v2_property_path": "$.semantic_accounting.inventory.representation_policy_field_count",
+      "v4_matrix_field_class": "dependent_reasoning_policy"
+    },
+    {
+      "schema_v2_property_path": "$.semantic_accounting.inventory.representation_policy_field_count",
+      "v4_matrix_field_class": "feasible_state_join_policy"
+    },
+    {
+      "schema_v2_property_path": "$.semantic_accounting.inventory.rule_count",
+      "v4_matrix_field_class": "rule_id"
+    }
+  ],
+  "machine_readable_basis": {
+    "NOT_SEMANTICALLY_RELATED": 5,
+    "SEMANTICALLY_RELATED": 0,
+    "UNRESOLVED": 120,
+    "predicate": "reviewed_lexical_only_candidate == true",
+    "total": 125
+  },
+  "nonclaim": "This erratum corrects presentation/accounting only. It does not establish an operational V4-to-V2 mapping, mapping impossibility, admissible-composition exhaustiveness, schema-successor necessity, or authorization for curl.json, analyzer, baseline, or repair.",
+  "original_artifact": "formalization_v1_exact/04_schema_v2_semantic_role_relation_formalization.v1.md",
+  "original_artifact_sha256": "7b71d98c63afabc6d3b5eaf72f07e0ee2e4a6707520d80032a9d51b9540878d4",
+  "original_relation_row_count": 9747,
+  "original_relation_sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+  "original_report_modification": false,
+  "original_sentence": "In particular, 125 lexical-screening-only pairs remain unresolved.",
+  "relation_row_modification": false,
+  "relation_row_reclassification": false,
+  "status": "CORRECTIVE_SUCCESSOR_ERRATUM"
+}
