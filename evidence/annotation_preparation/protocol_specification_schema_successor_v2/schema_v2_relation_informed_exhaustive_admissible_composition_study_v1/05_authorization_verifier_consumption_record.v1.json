@@ -1,0 +1,13 @@
+{
+  "authorization_verifier_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_relation_informed_exhaustive_admissible_composition_study_authorization_v1/02_verify_relation_informed_exhaustive_admissible_composition_study_authoring_authorization.v1.py",
+  "authorization_verifier_sha256": "6781df3a0b4fcf1c8bc2ce59b7f017106ce2a158d15e68cf5557781532f77af2",
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "82cd248d4d323b691c8635ba9d1b992dfe4dbe0de7033b7a9eb92f0f4ce4bb50",
+  "final_output_size_bytes": 875,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "record_id": "SVF-DECISION-0102-A02-FINAL-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "study_authoring_began_immediately_after_successful_run": true,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}
