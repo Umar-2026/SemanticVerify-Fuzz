@@ -1,0 +1,81 @@
+{
+  "bounded_non_authorizations": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "constructive_positive_mapping_witness_authorized": false,
+    "curl_json_authorized": false,
+    "exhaustive_admissible_composition_enumeration_authorized": false,
+    "operational_positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false,
+    "schema_version_preselected": false
+  },
+  "corrective_resolution": {
+    "SRR02": {
+      "corrective_decision": "PASS",
+      "corrective_item": "SRR02-C",
+      "effective_resolution": "CLOSED_BY_CORRECTIVE_PASS"
+    },
+    "SRR04": {
+      "corrective_decision": "PASS",
+      "corrective_item": "SRR04-C",
+      "effective_resolution": "CLOSED_BY_CORRECTIVE_PASS"
+    },
+    "SRR05": {
+      "corrective_decision": "PASS",
+      "corrective_item": "SRR05-C",
+      "effective_resolution": "CLOSED_BY_CORRECTIVE_PASS"
+    },
+    "SRR08": {
+      "corrective_decision": "PASS",
+      "corrective_item": "SRR08-C",
+      "effective_resolution": "CLOSED_BY_CORRECTIVE_PASS"
+    }
+  },
+  "decision": "PASS_CLOSED",
+  "effective_review_state": {
+    "all_original_review_criteria_satisfied": true,
+    "corrective_successor_package_v2_governance_adopted": true,
+    "formalization_v1_governance_approval": true,
+    "formalization_v1_governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+    "formalization_v1_review_chain": "PASS_CLOSED"
+  },
+  "focused_review": {
+    "corrective_successor_package_v2_human_approved": true,
+    "independent_human_review_completed": true,
+    "overall_decision": "APPROVE_CORRECTIVE_SUCCESSOR_PACKAGE_V2",
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "governance_action": "ADOPT_CORRECTIVE_FOCUSED_HUMAN_APPROVAL_AND_CLOSE_FORMALIZATION_V1_REVIEW_CHAIN",
+  "historical_original_review": {
+    "carried_forward_pass_items": [
+      "SRR01",
+      "SRR03",
+      "SRR06",
+      "SRR07"
+    ],
+    "historical_decision_remains_immutable": true,
+    "overall_decision": "REVISION_REQUIRED"
+  },
+  "next_boundary": "SEPARATELY_DECIDE_WHETHER_TO_AUTHORIZE_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_UNDER_ACTIVE_SCHEMA_V2",
+  "record_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-REVIEW-CHAIN-CLOSURE-V1",
+  "source_checkpoint": {
+    "completed_review_git_tree": "0cf6eafe8c317ff7f3f1f11649664f058aefb2ec",
+    "completed_review_packet_sha256": "30973cde36434c4737be4359ba316f579af6a58ca5c0cd9ff1155cab03e902ce",
+    "completed_review_record_sha256": "08e458c46cdbfd66d500a2dac33110a16569dbb6db999252364d9ecf8d44a8b4",
+    "completed_review_safe_verifier_sha256": "70dfc8dee94436f25057de242cb67db9cf1661bb958128a3780d7fd24e1951ba",
+    "decision_0100_commit": "6662ebc20dff2dcf763372f57a9a6cfeebddb657",
+    "decision_0100_sha256": "4e038237f3b923fb304e8e7d80854a41d09aa9fef2a27e122def985c4db1cb39",
+    "decision_0100_tree": "0ff8faf228a3008ab796dad7aa022b825990dc15"
+  },
+  "technical_outcome": {
+    "admissible_composition_exhaustiveness_established": false,
+    "formalization_v1_author_outcome": "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED",
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "outcome_preserved": true,
+    "positive_existing_v2_mapping_proven": false
+  }
+}
