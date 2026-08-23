@@ -1,0 +1,102 @@
+{
+  "author_checkpoint_binding": {
+    "corrective_successor_package_v2_checksum_sha256": "a6dc0402138a5c59a59202795d3616e67439b20ff5df4a0c1ccf27caa3eb7f95",
+    "corrective_successor_package_v2_git_tree": "3ac8a4b0d19917a12ea02db208becf87d4b81f8f",
+    "corrective_successor_package_v2_safe_verifier_sha256": "2c053a69dd183faa896364a61e5a2c337876c59735313c421e2acb63cd13a63a",
+    "decision_0097_commit": "a5dfec8ce2222c0f4e1a380f37239e4a68dd26b8",
+    "decision_0097_sha256": "0df5e4527dcbc130bd11327d1c3dd5c4f170552a2761ffb61e55fcfe64bc1923",
+    "decision_0097_tree": "e75653d5977cc8b3319dfe9a9d0f371def344643",
+    "recovery_completion_evidence_git_tree": "b51b921c570a74be310bfc192b15970b4f3b4f83"
+  },
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-CORRECTIVE-SUCCESSOR-PACKAGE-V2-EXTERNAL-FOCUSED-REREVIEW-HANDOFF-AUTHORIZATION",
+  "authorization_type": "PRE_HANDOFF_PACKAGE_AUTHORING_ONLY",
+  "authorization_verifier_lifecycle": {
+    "may_run_before_handoff_authoring": true,
+    "must_run_final_allowed_time_immediately_before_handoff_authoring": true,
+    "permanently_retired_once_handoff_authoring_begins": true,
+    "rerun_after_handoff_authoring_begins": false
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json": false,
+    "focused_human_approval": false,
+    "focused_human_review_completion": false,
+    "formalization_v1_approval": false,
+    "operational_positive_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false
+  },
+  "focused_rereview_contract": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CORRECTIVE_SUCCESSOR_PACKAGE_V2",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "approval_requires_all_four_focused_items_pass": true,
+    "no_decision_may_be_synthesized_by_author": true,
+    "reviewer_decisions_must_be_blank_at_handoff_checkpoint": true,
+    "reviewer_identity_must_be_blank_at_handoff_checkpoint": true,
+    "reviewer_notes_must_be_blank_at_handoff_checkpoint": true,
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "handoff_scope_boundary": {
+    "SRR02-C": "Review exact reviewed-source portability and source-to-derived domain binding.",
+    "SRR04-C": "Review corrective lexical-only presentation/accounting erratum: 125 total = 120 UNRESOLVED + 5 NOT_SEMANTICALLY_RELATED + 0 SEMANTICALLY_RELATED, with no relation-row reclassification.",
+    "SRR05-C": "Review self-contained leaf/unit/unit-analysis/candidate-family/family-path traceability.",
+    "SRR08-C": "Review self-contained package portability and reproducibility using package-local verification."
+  },
+  "immutability": {
+    "all_9747_relation_rows": true,
+    "completed_revision_required_human_review": true,
+    "corrective_successor_package_v2": true,
+    "decision_0097": true,
+    "formalization_v1": true,
+    "original_formalization_v1_report": true,
+    "original_review_package_v1": true,
+    "recovery_completion_evidence": true
+  },
+  "next_boundary": "RUN_DECISION_0098_HANDOFF_AUTHORIZATION_VERIFIER_FINAL_ALLOWED_TIME_THEN_AUTHOR_EXTERNAL_FOCUSED_REREVIEW_HANDOFF_V1",
+  "required_handoff_contents": {
+    "handoff_verifier_must_be_package_local": true,
+    "handoff_verifier_must_not_execute_retired_decision_0095_verifier": true,
+    "handoff_verifier_must_not_execute_retired_decision_0096_recovery_verifier": true,
+    "handoff_verifier_must_verify_blank_human_fields": true,
+    "handoff_verifier_must_verify_exact_git_and_sha_bindings": true,
+    "must_include_blank_focused_rereview_packet": true,
+    "must_include_byte_exact_corrective_successor_package_v2": true,
+    "must_include_byte_exact_recovery_completion_evidence": true,
+    "must_include_checksum_manifest": true,
+    "must_include_decision_0097_exact_copy": true,
+    "must_include_handoff_manifest": true,
+    "must_include_self_contained_handoff_verifier": true
+  },
+  "source_review_state": {
+    "carried_forward_pass_items": [
+      "SRR01",
+      "SRR03",
+      "SRR06",
+      "SRR07"
+    ],
+    "focused_human_approval_exists": false,
+    "focused_human_decision_exists": false,
+    "focused_rereview_items": [
+      "SRR02-C",
+      "SRR04-C",
+      "SRR05-C",
+      "SRR08-C"
+    ],
+    "formalization_v1_approved": false,
+    "original_overall_decision": "REVISION_REQUIRED",
+    "original_overall_decision_must_remain_immutable": true
+  },
+  "status": "AUTHORIZED_FOR_EXTERNAL_FOCUSED_REREVIEW_HANDOFF_AUTHORING_ONLY"
+}
