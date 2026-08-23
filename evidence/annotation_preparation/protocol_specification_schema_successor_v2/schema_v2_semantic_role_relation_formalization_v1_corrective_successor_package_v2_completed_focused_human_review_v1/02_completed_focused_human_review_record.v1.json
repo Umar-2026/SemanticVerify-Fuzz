@@ -1,0 +1,62 @@
+{
+  "bounded_interpretation": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "governance_adoption_of_focused_approval": false,
+    "human_review_approval_recorded": true,
+    "operational_positive_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false,
+    "schema_version_preselected": false
+  },
+  "completed_review_packet": {
+    "immutable_blank_handoff_overwritten": false,
+    "recorded_as_separate_evidence": true,
+    "sha256": "30973cde36434c4737be4359ba316f579af6a58ca5c0cd9ff1155cab03e902ce",
+    "size_bytes": 4546
+  },
+  "focused_item_decisions": {
+    "SRR02-C": "PASS",
+    "SRR04-C": "PASS",
+    "SRR05-C": "PASS",
+    "SRR08-C": "PASS"
+  },
+  "next_boundary": "SEPARATELY_ASSESS_GOVERNANCE_ADOPTION_AND_REVISION_CHAIN_CLOSURE_OF_COMPLETED_FOCUSED_APPROVAL",
+  "overall_focused_decision": "APPROVE_CORRECTIVE_SUCCESSOR_PACKAGE_V2",
+  "record_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-CORRECTIVE-SUCCESSOR-PACKAGE-V2-COMPLETED-FOCUSED-HUMAN-REVIEW-V1",
+  "review_chain_state": {
+    "carried_forward_pass_items": [
+      "SRR01",
+      "SRR03",
+      "SRR06",
+      "SRR07"
+    ],
+    "corrective_successor_package_v2_human_approved": true,
+    "focused_human_approval_exists": true,
+    "focused_human_review_completed": true,
+    "focused_items_all_pass": true,
+    "formalization_v1_governance_approval": false,
+    "original_overall_human_review": "REVISION_REQUIRED",
+    "original_review_remains_immutable": true,
+    "revision_chain_governance_closed": false
+  },
+  "review_target": "Corrective Successor Package V2",
+  "reviewer": {
+    "date": "23 / August / 2026",
+    "name": "Abdul Raheem Shahzad",
+    "recorded_confirmation": "ARS",
+    "role": "Spec-Technical-Reviewer-1"
+  },
+  "source_handoff": {
+    "blank_review_packet_sha256": "60185126f93d5a113722545108c4b798563b6088f9b92945ccb7cd16840db75e",
+    "decision_0099_commit": "7a5ece94e7c44a3399213c0f10ef65ff3f20f3d5",
+    "decision_0099_sha256": "421a7bf9d5c2c492e7c24318256b05fd3b98f05f0fd1131b63a3311bb409bac7",
+    "decision_0099_tree": "dfbc541a98c5c66567d230218ff7d03147ef6d20",
+    "handoff_git_tree": "ce4f54ba5b7582988a0bb5e69a63bdf48bdd6f2b",
+    "handoff_manifest_sha256": "9f422486beac76064b8e6f4fd46300326b088b79b6355e808edbbf0f689af492"
+  },
+  "status": "COMPLETED_FOCUSED_HUMAN_REVIEW_RECORDED"
+}
