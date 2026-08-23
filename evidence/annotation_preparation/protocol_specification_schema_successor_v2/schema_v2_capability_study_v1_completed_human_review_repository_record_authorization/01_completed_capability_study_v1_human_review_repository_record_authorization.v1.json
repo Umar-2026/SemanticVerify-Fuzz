@@ -1,0 +1,84 @@
+{
+  "authorization_id": "SVF-RECORD-COMPLETED-CAPABILITY-STUDY-V1-HUMAN-REVIEW-IN-REPOSITORY-AUTHORIZATION-V1",
+  "authorization_type": "PRE_REPOSITORY_HUMAN_REVIEW_RECORD_AUTHORING_ONLY",
+  "authorized_repository_record_scope": {
+    "checksum_manifest": true,
+    "decision_author_checkpoint": true,
+    "exact_completed_human_review_copy": true,
+    "machine_readable_human_review_record": true,
+    "safe_post_recording_verifier": true
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "additional_capability_evidence_authoring": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "operational_positive_v4_to_successor_mapping_authoring": false,
+    "operational_positive_v4_to_v2_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false,
+    "semantic_role_relation_formalization": false
+  },
+  "external_completed_review_binding": {
+    "completed_review_checksum_sha256": "251069b76f43536b014f7b8780b9cfea2ab1be6b0ca9805ad754ef6af0f1e6e1",
+    "completed_review_checksum_size_bytes": 357,
+    "completed_review_record_sha256": "72d8482899c160209f5f2f91f1aeb973ed06b8d72c079a424160516c66086442",
+    "completed_review_record_size_bytes": 3063,
+    "completed_review_sha256": "355de778d41ab0648ef84150c37c6c162725b41582144cb028525b87e25e2856",
+    "completed_review_size_bytes": 9778,
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "22 / August / 2026",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "human_reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "human_review_state": {
+    "CSR01": "PASS",
+    "CSR02": "PASS",
+    "CSR03": "PASS",
+    "CSR04": "PASS",
+    "CSR05": "PASS",
+    "CSR06": "PASS",
+    "CSR07": "PASS",
+    "CSR08": "PASS",
+    "admissible_composition_exhaustiveness_established": false,
+    "capability_study_v1_human_approved": true,
+    "further_evidence_required_human_approved": true,
+    "negative_existing_v2_mapping_path_impossibility_proven": false,
+    "overall": "APPROVE_SCHEMA_V2_CAPABILITY_STUDY_V1",
+    "positive_existing_v2_mapping_path_proven": false
+  },
+  "mandatory_recording_constraints": {
+    "bounded_approval_semantics_must_not_be_strengthened": true,
+    "bounded_approval_semantics_must_not_be_weakened": true,
+    "external_completed_review_must_be_copied_byte_exactly": true,
+    "external_machine_readable_record_must_be_preserved": true,
+    "human_decisions_must_not_be_modified": true,
+    "repository_record_must_state_composition_exhaustiveness_not_established": true,
+    "repository_record_must_state_further_evidence_required_human_approved": true,
+    "repository_record_must_state_negative_impossibility_not_proven": true,
+    "repository_record_must_state_positive_mapping_not_proven": true,
+    "reviewer_identity_must_not_be_modified": true
+  },
+  "next_boundary": "AUTHOR_REPOSITORY_COMPLETED_CAPABILITY_STUDY_V1_HUMAN_REVIEW_RECORD",
+  "repository_checkpoint": {
+    "decision_0086_sha256": "907207eab8fd7920965f4cf909237052a4b80d456c48e959886ca920c9c3a936",
+    "head": "c4e978cb24309a1d5c0de9a2287ee677c2601c60",
+    "tree": "b28b357e2e87db91e293b48581abb4719947756c"
+  },
+  "retired_verifier_constraints": {
+    "CSR01_CSR08_initial_blank_verifier_rerun": false,
+    "decision_0083_pre_study_verifier_rerun": false,
+    "decision_0085_pre_review_package_verifier_rerun": false
+  },
+  "status": "AUTHORIZED_TO_RECORD_COMPLETED_CAPABILITY_STUDY_V1_HUMAN_REVIEW_IN_REPOSITORY_ONLY",
+  "study_binding": {
+    "review_package_checksum_sha256": "0633f0e0c98adce6e2f1b8e2418d433ec444cd0627d736f3cf0218d31122c1a2",
+    "review_package_manifest_sha256": "9824153c75dd89a0312667ed4aa6db457a31b40f5b19cfe6e8232e7105648025",
+    "study_json_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b"
+  }
+}
