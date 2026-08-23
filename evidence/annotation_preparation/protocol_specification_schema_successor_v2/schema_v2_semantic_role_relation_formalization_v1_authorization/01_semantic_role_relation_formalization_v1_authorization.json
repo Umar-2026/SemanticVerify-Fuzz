@@ -1,0 +1,114 @@
+{
+  "admissibility_constraints": {
+    "deterministic_forward_and_reverse_required_for_any_future_positive_mapping_claim": true,
+    "external_lookup_for_reverse_reconstruction_forbidden": true,
+    "four_verdict_contract_must_be_preserved": true,
+    "free_text_hidden_semantic_storage_forbidden": true,
+    "full_v4_semantic_recovery_required_for_any_future_positive_mapping_claim": true,
+    "lossy_normalization_forbidden": true,
+    "native_structured_carriers_only": true,
+    "normative_strength_uncertainty_must_be_preserved": true,
+    "opaque_blob_packing_forbidden": true,
+    "ownership_membership_path_return_and_set_valued_semantics_must_be_preserved": true,
+    "resource_centered_semantics_must_be_preserved": true,
+    "schema_v2_validity_required": true,
+    "semantic_accounting_as_substitute_for_semantic_storage_forbidden": true,
+    "semantically_related_carriers_only": true,
+    "silent_semantic_strengthening_forbidden": true,
+    "silent_semantic_weakening_forbidden": true,
+    "synthetic_protocol_event_non_invention_must_be_preserved": true,
+    "unknown_first_class_semantics_must_be_preserved": true,
+    "unrelated_field_repurposing_forbidden": true
+  },
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-AUTHORIZATION",
+  "authorization_type": "PRE_SEMANTIC_ROLE_RELATION_FORMALIZATION_AUTHORING_ONLY",
+  "authorized_evidence_scope": {
+    "artifact": "SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1",
+    "human_review_required_before_governance_use": true,
+    "machine_readable_relation_required": true,
+    "purpose": "Formalize the semantically-related-carrier relation needed to evaluate admissible existing-Schema-V2 multi-field compositions without presupposing a positive or negative mapping result.",
+    "required_accounting": [
+      "complete_domain_inventory",
+      "classified_pair_count",
+      "semantically_related_pair_count",
+      "not_semantically_related_pair_count",
+      "unresolved_pair_count",
+      "field_class_coverage",
+      "semantic_unit_context_refinement_coverage",
+      "schema_v2_path_coverage",
+      "open_string_carrier_accounting",
+      "forward_traceability_to_v4_semantic_units",
+      "reverse_traceability_to_schema_v2_carriers"
+    ],
+    "required_justification_per_nontrivial_relation": true,
+    "required_pair_classifications": [
+      "SEMANTICALLY_RELATED",
+      "NOT_SEMANTICALLY_RELATED",
+      "UNRESOLVED"
+    ],
+    "required_relation_levels": [
+      "V4_FIELD_CLASS_TO_SCHEMA_V2_PROPERTY_PATH",
+      "V4_SEMANTIC_UNIT_CONTEXT_REFINEMENT_WHERE_FIELD_CLASS_LEVEL_IS_INSUFFICIENT"
+    ],
+    "schema_v2_distinct_property_name_count": 123,
+    "schema_v2_open_unconstrained_string_path_count": 59,
+    "schema_v2_property_path_count": 171,
+    "v4_field_class_count": 57,
+    "v4_leaf_field_count": 531,
+    "v4_semantic_container_count": 10,
+    "v4_semantic_unit_count": 109
+  },
+  "expected_author_candidate_outcome_space": [
+    "COMPLETE_MACHINE_READABLE_SEMANTIC_ROLE_RELATION_ESTABLISHED",
+    "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED",
+    "RELATION_FORMALIZATION_INSUFFICIENT"
+  ],
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "constructive_positive_mapping_witness_authoring": false,
+    "curl_json_creation": false,
+    "exhaustive_composition_enumeration_or_elimination": false,
+    "operational_positive_v4_to_successor_mapping_authoring": false,
+    "operational_positive_v4_to_v2_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "formalization_nonclaims": {
+    "admissible_composition_exhaustiveness_established_by_authorization": false,
+    "negative_existing_v2_mapping_impossibility_proven_by_formalization_alone": false,
+    "operational_mapping_created": false,
+    "positive_existing_v2_mapping_path_proven_by_formalization_alone": false,
+    "schema_successor_not_required": false,
+    "schema_successor_required": false
+  },
+  "governance_basis": {
+    "admissible_composition_exhaustiveness_established": false,
+    "capability_study_v1_human_approved": true,
+    "decision_0088_commit": "462d02de40db53bf8e12431e4ea92f93bddc2071",
+    "decision_0088_sha256": "763ad10144d5e96e6765cd6ed421a619874921c9ecce15409352d0f4871aab94",
+    "further_evidence_required_human_approved": true,
+    "negative_existing_v2_mapping_path_impossibility_proven": false,
+    "positive_existing_v2_mapping_path_proven": false
+  },
+  "immutable_inputs": {
+    "capability_study_v1_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+    "completed_human_review_record_sha256": "72d8482899c160209f5f2f91f1aeb973ed06b8d72c079a424160516c66086442",
+    "completed_human_review_sha256": "355de778d41ab0648ef84150c37c6c162725b41582144cb028525b87e25e2856",
+    "curl_technical_protocol_working_draft_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+  },
+  "next_boundary": "AUTHOR_SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1",
+  "retired_verifier_constraints": {
+    "CSR01_CSR08_initial_blank_verifier_rerun": false,
+    "decision_0083_pre_study_verifier_rerun": false,
+    "decision_0085_pre_review_package_verifier_rerun": false,
+    "decision_0087_pre_record_verifier_rerun": false
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1_ONLY"
+}
