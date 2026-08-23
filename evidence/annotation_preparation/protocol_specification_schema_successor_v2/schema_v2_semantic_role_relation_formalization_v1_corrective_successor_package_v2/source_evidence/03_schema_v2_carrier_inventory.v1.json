@@ -1,0 +1,2661 @@
+{
+  "distinct_property_name_count": 123,
+  "inventory_id": "SVF-ACTIVE-SCHEMA-V2-CARRIER-INVENTORY-FOR-CAPABILITY-STUDY-V1",
+  "open_unconstrained_string_path_count": 59,
+  "open_unconstrained_string_paths": [
+    "$.author",
+    "$.content_sha256",
+    "$.creation_date",
+    "$.events[].event_id",
+    "$.events[].return_classes[].return_class_id",
+    "$.events[].symbol_or_condition",
+    "$.exit_obligations[].exit_obligation_id",
+    "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+    "$.exit_obligations[].preconditions.path_conditions[].referenced_event_id",
+    "$.exit_obligations[].preconditions.relation_state_requirements[].relation_binding_id",
+    "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+    "$.exit_obligations[].preconditions.return_conditions[].event_id",
+    "$.exit_obligations[].relation_bindings[].binding_id",
+    "$.exit_obligations[].relation_bindings[].relation_type_id",
+    "$.exit_obligations[].relation_bindings[].source_resource_binding_id",
+    "$.exit_obligations[].relation_bindings[].target_resource_binding_id",
+    "$.exit_obligations[].required_relation_exit_states[].relation_binding_id",
+    "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+    "$.exit_obligations[].resource_bindings[].binding_id",
+    "$.exit_obligations[].resource_bindings[].resource_type_id",
+    "$.exit_obligations[].semantic_container",
+    "$.freeze_date",
+    "$.library",
+    "$.library_revision",
+    "$.provenance[].content_sha256",
+    "$.provenance[].evidence_id",
+    "$.provenance[].path_or_url",
+    "$.provenance[].quoted_or_paraphrased_rationale",
+    "$.provenance[].retrieval_date",
+    "$.resource_model.relation_types[].description",
+    "$.resource_model.relation_types[].relation_type_id",
+    "$.resource_model.relation_types[].source_resource_type_id",
+    "$.resource_model.relation_types[].target_resource_type_id",
+    "$.resource_model.resource_types[].description",
+    "$.resource_model.resource_types[].resource_kind",
+    "$.resource_model.resource_types[].resource_type_id",
+    "$.reviewer",
+    "$.semantic_accounting.forward_accounting[].source_container",
+    "$.semantic_accounting.forward_accounting[].source_unit_id",
+    "$.semantic_accounting.reverse_accounting[].schema_carrier",
+    "$.semantic_rules[].cleanup_responsibility",
+    "$.semantic_rules[].defect_category",
+    "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+    "$.semantic_rules[].effects.relation_updates[].relation_binding_id",
+    "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+    "$.semantic_rules[].preconditions.path_conditions[].condition_id",
+    "$.semantic_rules[].preconditions.path_conditions[].referenced_event_id",
+    "$.semantic_rules[].preconditions.relation_state_requirements[].relation_binding_id",
+    "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id",
+    "$.semantic_rules[].preconditions.return_conditions[].event_id",
+    "$.semantic_rules[].relation_bindings[].binding_id",
+    "$.semantic_rules[].relation_bindings[].relation_type_id",
+    "$.semantic_rules[].relation_bindings[].source_resource_binding_id",
+    "$.semantic_rules[].relation_bindings[].target_resource_binding_id",
+    "$.semantic_rules[].resource_bindings[].binding_id",
+    "$.semantic_rules[].resource_bindings[].resource_type_id",
+    "$.semantic_rules[].rule_id",
+    "$.semantic_rules[].semantic_container",
+    "$.specification_id"
+  ],
+  "property_name_to_paths": {
+    "affected_relation_type_ids": [
+      "$.events[].affected_relation_type_ids"
+    ],
+    "affected_resource_type_ids": [
+      "$.events[].affected_resource_type_ids"
+    ],
+    "allowed_return_class_ids": [
+      "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+      "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids"
+    ],
+    "allowed_states": [
+      "$.exit_obligations[].preconditions.relation_state_requirements[].allowed_states",
+      "$.exit_obligations[].preconditions.resource_state_requirements[].allowed_states",
+      "$.exit_obligations[].required_relation_exit_states[].allowed_states",
+      "$.exit_obligations[].required_resource_exit_states[].allowed_states",
+      "$.semantic_rules[].preconditions.relation_state_requirements[].allowed_states",
+      "$.semantic_rules[].preconditions.resource_state_requirements[].allowed_states"
+    ],
+    "author": [
+      "$.author"
+    ],
+    "binding_id": [
+      "$.exit_obligations[].relation_bindings[].binding_id",
+      "$.exit_obligations[].resource_bindings[].binding_id",
+      "$.semantic_rules[].relation_bindings[].binding_id",
+      "$.semantic_rules[].resource_bindings[].binding_id"
+    ],
+    "cardinality": [
+      "$.resource_model.relation_types[].cardinality"
+    ],
+    "cleanup_responsibility": [
+      "$.semantic_rules[].cleanup_responsibility"
+    ],
+    "condition_id": [
+      "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+      "$.semantic_rules[].preconditions.path_conditions[].condition_id"
+    ],
+    "condition_kind": [
+      "$.exit_obligations[].preconditions.path_conditions[].condition_kind",
+      "$.semantic_rules[].preconditions.path_conditions[].condition_kind"
+    ],
+    "content_sha256": [
+      "$.content_sha256",
+      "$.provenance[].content_sha256"
+    ],
+    "creation_date": [
+      "$.creation_date"
+    ],
+    "defect_category": [
+      "$.semantic_rules[].defect_category"
+    ],
+    "description": [
+      "$.resource_model.relation_types[].description",
+      "$.resource_model.resource_types[].description"
+    ],
+    "distinct_identity_from": [
+      "$.exit_obligations[].resource_bindings[].distinct_identity_from",
+      "$.semantic_rules[].resource_bindings[].distinct_identity_from"
+    ],
+    "effect": [
+      "$.semantic_rules[].effects.ownership_updates[].effect"
+    ],
+    "effects": [
+      "$.semantic_rules[].effects"
+    ],
+    "event_id": [
+      "$.events[].event_id",
+      "$.exit_obligations[].preconditions.return_conditions[].event_id",
+      "$.semantic_rules[].preconditions.return_conditions[].event_id"
+    ],
+    "event_kind": [
+      "$.events[].event_kind"
+    ],
+    "events": [
+      "$.events"
+    ],
+    "evidence_id": [
+      "$.provenance[].evidence_id"
+    ],
+    "exit_obligation_count": [
+      "$.semantic_accounting.inventory.exit_obligation_count"
+    ],
+    "exit_obligation_id": [
+      "$.exit_obligations[].exit_obligation_id"
+    ],
+    "exit_obligations": [
+      "$.exit_obligations"
+    ],
+    "forward_accounting": [
+      "$.semantic_accounting.forward_accounting"
+    ],
+    "forward_complete": [
+      "$.semantic_accounting.forward_complete"
+    ],
+    "freeze_date": [
+      "$.freeze_date"
+    ],
+    "identity_model": [
+      "$.resource_model.resource_types[].identity_model"
+    ],
+    "infeasible_path_handling": [
+      "$.semantic_policy.reasoning_model.infeasible_path_handling"
+    ],
+    "initial_states": [
+      "$.resource_model.relation_types[].initial_states",
+      "$.resource_model.resource_types[].initial_states"
+    ],
+    "inventory": [
+      "$.semantic_accounting.inventory"
+    ],
+    "join_operator": [
+      "$.semantic_policy.reasoning_model.join_operator"
+    ],
+    "library": [
+      "$.library"
+    ],
+    "library_revision": [
+      "$.library_revision"
+    ],
+    "losslessness_requirement_count": [
+      "$.semantic_accounting.inventory.losslessness_requirement_count"
+    ],
+    "membership_sensitivity": [
+      "$.semantic_policy.reasoning_model.membership_sensitivity"
+    ],
+    "operands": [
+      "$.events[].return_classes[].operands"
+    ],
+    "operation": [
+      "$.semantic_rules[].effects.relation_updates[].operation"
+    ],
+    "operator": [
+      "$.events[].return_classes[].operator"
+    ],
+    "ownership_sensitivity": [
+      "$.semantic_policy.reasoning_model.ownership_sensitivity"
+    ],
+    "ownership_tracking": [
+      "$.resource_model.resource_types[].ownership_tracking"
+    ],
+    "ownership_updates": [
+      "$.semantic_rules[].effects.ownership_updates"
+    ],
+    "path_conditions": [
+      "$.exit_obligations[].preconditions.path_conditions",
+      "$.semantic_rules[].preconditions.path_conditions"
+    ],
+    "path_or_url": [
+      "$.provenance[].path_or_url"
+    ],
+    "path_sensitivity": [
+      "$.semantic_policy.reasoning_model.path_sensitivity"
+    ],
+    "permitted_exit_states": [
+      "$.resource_model.resource_types[].permitted_exit_states"
+    ],
+    "polarity": [
+      "$.exit_obligations[].preconditions.path_conditions[].polarity",
+      "$.semantic_rules[].preconditions.path_conditions[].polarity"
+    ],
+    "preconditions": [
+      "$.exit_obligations[].preconditions",
+      "$.semantic_rules[].preconditions"
+    ],
+    "presence": [
+      "$.exit_obligations[].preconditions.relation_state_requirements[].presence",
+      "$.exit_obligations[].required_relation_exit_states[].presence",
+      "$.semantic_rules[].preconditions.relation_state_requirements[].presence"
+    ],
+    "provenance": [
+      "$.provenance"
+    ],
+    "quoted_or_paraphrased_rationale": [
+      "$.provenance[].quoted_or_paraphrased_rationale"
+    ],
+    "reasoning_model": [
+      "$.semantic_policy.reasoning_model"
+    ],
+    "referenced_event_id": [
+      "$.exit_obligations[].preconditions.path_conditions[].referenced_event_id",
+      "$.semantic_rules[].preconditions.path_conditions[].referenced_event_id"
+    ],
+    "relation_binding_id": [
+      "$.exit_obligations[].preconditions.relation_state_requirements[].relation_binding_id",
+      "$.exit_obligations[].required_relation_exit_states[].relation_binding_id",
+      "$.semantic_rules[].effects.relation_updates[].relation_binding_id",
+      "$.semantic_rules[].preconditions.relation_state_requirements[].relation_binding_id"
+    ],
+    "relation_bindings": [
+      "$.exit_obligations[].relation_bindings",
+      "$.semantic_rules[].relation_bindings"
+    ],
+    "relation_kind": [
+      "$.resource_model.relation_types[].relation_kind"
+    ],
+    "relation_state_requirements": [
+      "$.exit_obligations[].preconditions.relation_state_requirements",
+      "$.semantic_rules[].preconditions.relation_state_requirements"
+    ],
+    "relation_type_id": [
+      "$.exit_obligations[].relation_bindings[].relation_type_id",
+      "$.resource_model.relation_types[].relation_type_id",
+      "$.semantic_rules[].relation_bindings[].relation_type_id"
+    ],
+    "relation_types": [
+      "$.resource_model.relation_types"
+    ],
+    "relation_updates": [
+      "$.semantic_rules[].effects.relation_updates"
+    ],
+    "representation_policy_field_count": [
+      "$.semantic_accounting.inventory.representation_policy_field_count"
+    ],
+    "required_relation_exit_states": [
+      "$.exit_obligations[].required_relation_exit_states"
+    ],
+    "required_resource_exit_states": [
+      "$.exit_obligations[].required_resource_exit_states"
+    ],
+    "resource_binding_id": [
+      "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+      "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+      "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+      "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+      "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id"
+    ],
+    "resource_bindings": [
+      "$.exit_obligations[].resource_bindings",
+      "$.semantic_rules[].resource_bindings"
+    ],
+    "resource_kind": [
+      "$.resource_model.resource_types[].resource_kind"
+    ],
+    "resource_model": [
+      "$.resource_model"
+    ],
+    "resource_state_requirements": [
+      "$.exit_obligations[].preconditions.resource_state_requirements",
+      "$.semantic_rules[].preconditions.resource_state_requirements"
+    ],
+    "resource_state_updates": [
+      "$.semantic_rules[].effects.resource_state_updates"
+    ],
+    "resource_type_id": [
+      "$.exit_obligations[].resource_bindings[].resource_type_id",
+      "$.resource_model.resource_types[].resource_type_id",
+      "$.semantic_rules[].resource_bindings[].resource_type_id"
+    ],
+    "resource_types": [
+      "$.resource_model.resource_types"
+    ],
+    "retrieval_date": [
+      "$.provenance[].retrieval_date"
+    ],
+    "return_class_id": [
+      "$.events[].return_classes[].return_class_id"
+    ],
+    "return_classes": [
+      "$.events[].return_classes"
+    ],
+    "return_conditions": [
+      "$.exit_obligations[].preconditions.return_conditions",
+      "$.semantic_rules[].preconditions.return_conditions"
+    ],
+    "return_sensitivity": [
+      "$.semantic_policy.reasoning_model.return_sensitivity"
+    ],
+    "reverse_accounting": [
+      "$.semantic_accounting.reverse_accounting"
+    ],
+    "reverse_complete": [
+      "$.semantic_accounting.reverse_complete"
+    ],
+    "reviewer": [
+      "$.reviewer"
+    ],
+    "role": [
+      "$.exit_obligations[].resource_bindings[].role",
+      "$.semantic_rules[].resource_bindings[].role"
+    ],
+    "rule_count": [
+      "$.semantic_accounting.inventory.rule_count"
+    ],
+    "rule_id": [
+      "$.semantic_rules[].rule_id"
+    ],
+    "rule_kind": [
+      "$.semantic_rules[].rule_kind"
+    ],
+    "same_identity_as": [
+      "$.exit_obligations[].resource_bindings[].same_identity_as",
+      "$.semantic_rules[].resource_bindings[].same_identity_as"
+    ],
+    "schema_carrier": [
+      "$.semantic_accounting.reverse_accounting[].schema_carrier"
+    ],
+    "schema_carriers": [
+      "$.semantic_accounting.forward_accounting[].schema_carriers"
+    ],
+    "schema_version": [
+      "$.schema_version"
+    ],
+    "semantic_accounting": [
+      "$.semantic_accounting"
+    ],
+    "semantic_container": [
+      "$.exit_obligations[].semantic_container",
+      "$.semantic_rules[].semantic_container"
+    ],
+    "semantic_container_count": [
+      "$.semantic_accounting.inventory.semantic_container_count"
+    ],
+    "semantic_policy": [
+      "$.semantic_policy"
+    ],
+    "semantic_rules": [
+      "$.semantic_rules"
+    ],
+    "source_container": [
+      "$.semantic_accounting.forward_accounting[].source_container"
+    ],
+    "source_evidence": [
+      "$.exit_obligations[].source_evidence",
+      "$.semantic_rules[].source_evidence"
+    ],
+    "source_max": [
+      "$.resource_model.relation_types[].cardinality.source_max"
+    ],
+    "source_min": [
+      "$.resource_model.relation_types[].cardinality.source_min"
+    ],
+    "source_resource_binding_id": [
+      "$.exit_obligations[].relation_bindings[].source_resource_binding_id",
+      "$.semantic_rules[].relation_bindings[].source_resource_binding_id"
+    ],
+    "source_resource_type_id": [
+      "$.resource_model.relation_types[].source_resource_type_id"
+    ],
+    "source_type": [
+      "$.provenance[].source_type"
+    ],
+    "source_unit_id": [
+      "$.semantic_accounting.forward_accounting[].source_unit_id"
+    ],
+    "source_unit_ids": [
+      "$.semantic_accounting.reverse_accounting[].source_unit_ids"
+    ],
+    "source_unit_kind": [
+      "$.semantic_accounting.forward_accounting[].source_unit_kind"
+    ],
+    "specification_id": [
+      "$.specification_id"
+    ],
+    "state_domain": [
+      "$.semantic_policy.reasoning_model.state_domain"
+    ],
+    "stateful": [
+      "$.resource_model.relation_types[].stateful"
+    ],
+    "states": [
+      "$.resource_model.relation_types[].states",
+      "$.resource_model.resource_types[].states"
+    ],
+    "symbol_or_condition": [
+      "$.events[].symbol_or_condition"
+    ],
+    "target_max": [
+      "$.resource_model.relation_types[].cardinality.target_max"
+    ],
+    "target_min": [
+      "$.resource_model.relation_types[].cardinality.target_min"
+    ],
+    "target_resource_binding_id": [
+      "$.exit_obligations[].relation_bindings[].target_resource_binding_id",
+      "$.semantic_rules[].relation_bindings[].target_resource_binding_id"
+    ],
+    "target_resource_type_id": [
+      "$.resource_model.relation_types[].target_resource_type_id"
+    ],
+    "to_states": [
+      "$.semantic_rules[].effects.relation_updates[].to_states",
+      "$.semantic_rules[].effects.resource_state_updates[].to_states"
+    ],
+    "transfer_target_resource_binding_id": [
+      "$.semantic_rules[].effects.ownership_updates[].transfer_target_resource_binding_id"
+    ],
+    "trigger_event_ids": [
+      "$.semantic_rules[].trigger_event_ids"
+    ],
+    "unknown_handling": [
+      "$.semantic_policy.reasoning_model.unknown_handling"
+    ],
+    "unknown_must_not_collapse_to_valid": [
+      "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid"
+    ],
+    "unknown_when": [
+      "$.semantic_policy.verdict_aggregation.unknown_when"
+    ],
+    "valid_when": [
+      "$.semantic_policy.verdict_aggregation.valid_when"
+    ],
+    "verdict_aggregation": [
+      "$.semantic_policy.verdict_aggregation"
+    ],
+    "verdict_if_violated": [
+      "$.exit_obligations[].verdict_if_violated",
+      "$.semantic_rules[].verdict_if_violated"
+    ],
+    "verdict_vocabulary": [
+      "$.semantic_policy.verdict_vocabulary"
+    ],
+    "violation_may_when": [
+      "$.semantic_policy.verdict_aggregation.violation_may_when"
+    ],
+    "violation_must_when": [
+      "$.semantic_policy.verdict_aggregation.violation_must_when"
+    ]
+  },
+  "property_path_count": 171,
+  "property_paths": [
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.author",
+      "property_name": "author",
+      "required": true,
+      "top_level_family": "author",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.content_sha256",
+      "property_name": "content_sha256",
+      "required": true,
+      "top_level_family": "content_sha256",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.creation_date",
+      "property_name": "creation_date",
+      "required": true,
+      "top_level_family": "creation_date",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events",
+      "property_name": "events",
+      "required": true,
+      "top_level_family": "events",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].affected_relation_type_ids",
+      "property_name": "affected_relation_type_ids",
+      "required": true,
+      "top_level_family": "events",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].affected_resource_type_ids",
+      "property_name": "affected_resource_type_ids",
+      "required": true,
+      "top_level_family": "events",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].event_id",
+      "property_name": "event_id",
+      "required": true,
+      "top_level_family": "events",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "API_CALL",
+        "BRANCH",
+        "FUNCTION_EXIT"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.events[].event_kind",
+      "property_name": "event_kind",
+      "required": true,
+      "top_level_family": "events",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].return_classes",
+      "property_name": "return_classes",
+      "required": true,
+      "top_level_family": "events",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].return_classes[].operands",
+      "property_name": "operands",
+      "required": true,
+      "top_level_family": "events",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "EQ",
+        "NE",
+        "LT",
+        "LE",
+        "GT",
+        "GE",
+        "IN",
+        "NOT_IN",
+        "BITMASK_ALL",
+        "BITMASK_ANY",
+        "IS_NULL",
+        "IS_NON_NULL",
+        "BOOLEAN_TRUE",
+        "BOOLEAN_FALSE"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.events[].return_classes[].operator",
+      "property_name": "operator",
+      "required": true,
+      "top_level_family": "events",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].return_classes[].return_class_id",
+      "property_name": "return_class_id",
+      "required": true,
+      "top_level_family": "events",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.events[].symbol_or_condition",
+      "property_name": "symbol_or_condition",
+      "required": true,
+      "top_level_family": "events",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations",
+      "property_name": "exit_obligations",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].exit_obligation_id",
+      "property_name": "exit_obligation_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions",
+      "property_name": "preconditions",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.path_conditions",
+      "property_name": "path_conditions",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+      "property_name": "condition_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "EVENT_REACHED",
+        "EVENT_NOT_REACHED",
+        "BRANCH_TAKEN",
+        "BRANCH_NOT_TAKEN",
+        "FUNCTION_EXIT_REACHED"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.exit_obligations[].preconditions.path_conditions[].condition_kind",
+      "property_name": "condition_kind",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.path_conditions[].polarity",
+      "property_name": "polarity",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "boolean"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.path_conditions[].referenced_event_id",
+      "property_name": "referenced_event_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.relation_state_requirements",
+      "property_name": "relation_state_requirements",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.relation_state_requirements[].allowed_states",
+      "property_name": "allowed_states",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "PRESENT",
+        "ABSENT"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.exit_obligations[].preconditions.relation_state_requirements[].presence",
+      "property_name": "presence",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.relation_state_requirements[].relation_binding_id",
+      "property_name": "relation_binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.resource_state_requirements",
+      "property_name": "resource_state_requirements",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.resource_state_requirements[].allowed_states",
+      "property_name": "allowed_states",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+      "property_name": "resource_binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.return_conditions",
+      "property_name": "return_conditions",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+      "property_name": "allowed_return_class_ids",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].preconditions.return_conditions[].event_id",
+      "property_name": "event_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].relation_bindings",
+      "property_name": "relation_bindings",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].relation_bindings[].binding_id",
+      "property_name": "binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].relation_bindings[].relation_type_id",
+      "property_name": "relation_type_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].relation_bindings[].source_resource_binding_id",
+      "property_name": "source_resource_binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].relation_bindings[].target_resource_binding_id",
+      "property_name": "target_resource_binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].required_relation_exit_states",
+      "property_name": "required_relation_exit_states",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].required_relation_exit_states[].allowed_states",
+      "property_name": "allowed_states",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "PRESENT",
+        "ABSENT"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.exit_obligations[].required_relation_exit_states[].presence",
+      "property_name": "presence",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].required_relation_exit_states[].relation_binding_id",
+      "property_name": "relation_binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].required_resource_exit_states",
+      "property_name": "required_resource_exit_states",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].required_resource_exit_states[].allowed_states",
+      "property_name": "allowed_states",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+      "property_name": "resource_binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].resource_bindings",
+      "property_name": "resource_bindings",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].resource_bindings[].binding_id",
+      "property_name": "binding_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].resource_bindings[].distinct_identity_from",
+      "property_name": "distinct_identity_from",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].resource_bindings[].resource_type_id",
+      "property_name": "resource_type_id",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "SUBJECT",
+        "SOURCE",
+        "TARGET",
+        "OWNER",
+        "MEMBER",
+        "CONTAINER",
+        "PEER"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.exit_obligations[].resource_bindings[].role",
+      "property_name": "role",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].resource_bindings[].same_identity_as",
+      "property_name": "same_identity_as",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].semantic_container",
+      "property_name": "semantic_container",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.exit_obligations[].source_evidence",
+      "property_name": "source_evidence",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "VALID",
+        "VIOLATION-MUST",
+        "VIOLATION-MAY",
+        "UNKNOWN"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.exit_obligations[].verdict_if_violated",
+      "property_name": "verdict_if_violated",
+      "required": true,
+      "top_level_family": "exit_obligations",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.freeze_date",
+      "property_name": "freeze_date",
+      "required": true,
+      "top_level_family": "freeze_date",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.library",
+      "property_name": "library",
+      "required": true,
+      "top_level_family": "library",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.library_revision",
+      "property_name": "library_revision",
+      "required": true,
+      "top_level_family": "library_revision",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.provenance",
+      "property_name": "provenance",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.provenance[].content_sha256",
+      "property_name": "content_sha256",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.provenance[].evidence_id",
+      "property_name": "evidence_id",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.provenance[].path_or_url",
+      "property_name": "path_or_url",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.provenance[].quoted_or_paraphrased_rationale",
+      "property_name": "quoted_or_paraphrased_rationale",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.provenance[].retrieval_date",
+      "property_name": "retrieval_date",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "OFFICIAL_API_DOCUMENTATION",
+        "PUBLIC_HEADER",
+        "PINNED_IMPLEMENTATION_SOURCE",
+        "PINNED_UPSTREAM_TEST",
+        "PREDECLARED_UPSTREAM_EXAMPLE"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.provenance[].source_type",
+      "property_name": "source_type",
+      "required": true,
+      "top_level_family": "provenance",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model",
+      "property_name": "resource_model",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types",
+      "property_name": "relation_types",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].cardinality",
+      "property_name": "cardinality",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].cardinality.source_max",
+      "property_name": "source_max",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "anyOf"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].cardinality.source_min",
+      "property_name": "source_min",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].cardinality.target_max",
+      "property_name": "target_max",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "anyOf"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].cardinality.target_min",
+      "property_name": "target_min",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].description",
+      "property_name": "description",
+      "required": false,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].initial_states",
+      "property_name": "initial_states",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "MEMBERSHIP",
+        "ASSOCIATION",
+        "OWNERSHIP",
+        "ALIAS",
+        "DEPENDENCY"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.resource_model.relation_types[].relation_kind",
+      "property_name": "relation_kind",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].relation_type_id",
+      "property_name": "relation_type_id",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].source_resource_type_id",
+      "property_name": "source_resource_type_id",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].stateful",
+      "property_name": "stateful",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "boolean"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].states",
+      "property_name": "states",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.relation_types[].target_resource_type_id",
+      "property_name": "target_resource_type_id",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types",
+      "property_name": "resource_types",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types[].description",
+      "property_name": "description",
+      "required": false,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "SYMBOLIC_HANDLE",
+        "OBJECT_INSTANCE",
+        "PROCESS_GLOBAL",
+        "LOGICAL_SLOT",
+        "COMPOSITE_IDENTITY"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.resource_model.resource_types[].identity_model",
+      "property_name": "identity_model",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types[].initial_states",
+      "property_name": "initial_states",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "NOT_TRACKED",
+        "TRACKED"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.resource_model.resource_types[].ownership_tracking",
+      "property_name": "ownership_tracking",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types[].permitted_exit_states",
+      "property_name": "permitted_exit_states",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types[].resource_kind",
+      "property_name": "resource_kind",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types[].resource_type_id",
+      "property_name": "resource_type_id",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.resource_model.resource_types[].states",
+      "property_name": "states",
+      "required": true,
+      "top_level_family": "resource_model",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.reviewer",
+      "property_name": "reviewer",
+      "required": true,
+      "top_level_family": "reviewer",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "2.0.0",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.schema_version",
+      "property_name": "schema_version",
+      "required": true,
+      "top_level_family": "schema_version",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting",
+      "property_name": "semantic_accounting",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.forward_accounting",
+      "property_name": "forward_accounting",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.forward_accounting[].schema_carriers",
+      "property_name": "schema_carriers",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.forward_accounting[].source_container",
+      "property_name": "source_container",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.forward_accounting[].source_unit_id",
+      "property_name": "source_unit_id",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "RESOURCE",
+        "RELATION",
+        "POLICY",
+        "RULE",
+        "EXIT_OBLIGATION"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_accounting.forward_accounting[].source_unit_kind",
+      "property_name": "source_unit_kind",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": true,
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_accounting.forward_complete",
+      "property_name": "forward_complete",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.inventory",
+      "property_name": "inventory",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.inventory.exit_obligation_count",
+      "property_name": "exit_obligation_count",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.inventory.losslessness_requirement_count",
+      "property_name": "losslessness_requirement_count",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.inventory.representation_policy_field_count",
+      "property_name": "representation_policy_field_count",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.inventory.rule_count",
+      "property_name": "rule_count",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.inventory.semantic_container_count",
+      "property_name": "semantic_container_count",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "integer"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.reverse_accounting",
+      "property_name": "reverse_accounting",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.reverse_accounting[].schema_carrier",
+      "property_name": "schema_carrier",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_accounting.reverse_accounting[].source_unit_ids",
+      "property_name": "source_unit_ids",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": true,
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_accounting.reverse_complete",
+      "property_name": "reverse_complete",
+      "required": true,
+      "top_level_family": "semantic_accounting",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_policy",
+      "property_name": "semantic_policy",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "object"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model",
+      "property_name": "reasoning_model",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "EXCLUDE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.infeasible_path_handling",
+      "property_name": "infeasible_path_handling",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "UNION_OF_FEASIBLE_STATES",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.join_operator",
+      "property_name": "join_operator",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "RELATION_MEMBERSHIP_SENSITIVE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.membership_sensitivity",
+      "property_name": "membership_sensitivity",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "RESOURCE_OWNERSHIP_SENSITIVE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.ownership_sensitivity",
+      "property_name": "ownership_sensitivity",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "PATH_SENSITIVE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.path_sensitivity",
+      "property_name": "path_sensitivity",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "RETURN_PREDICATE_SENSITIVE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.return_sensitivity",
+      "property_name": "return_sensitivity",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "SET_OF_FEASIBLE_STATES",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.state_domain",
+      "property_name": "state_domain",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "FIRST_CLASS_PRESERVE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.reasoning_model.unknown_handling",
+      "property_name": "unknown_handling",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_aggregation",
+      "property_name": "verdict_aggregation",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": true,
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid",
+      "property_name": "unknown_must_not_collapse_to_valid",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "EVIDENCE_OR_MODEL_INSUFFICIENT_FOR_SAFE_CLASSIFICATION",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_aggregation.unknown_when",
+      "property_name": "unknown_when",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "NO_FEASIBLE_PATH_VIOLATES_AND_EVIDENCE_SUFFICIENT",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_aggregation.valid_when",
+      "property_name": "valid_when",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "SOME_BUT_NOT_ALL_FEASIBLE_PATHS_VIOLATE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_aggregation.violation_may_when",
+      "property_name": "violation_may_when",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": "ALL_FEASIBLE_PATHS_VIOLATE",
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_aggregation.violation_must_when",
+      "property_name": "violation_must_when",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": [
+        "VALID",
+        "VIOLATION-MUST",
+        "VIOLATION-MAY",
+        "UNKNOWN"
+      ],
+      "enum": null,
+      "has_const": true,
+      "has_enum": false,
+      "path": "$.semantic_policy.verdict_vocabulary",
+      "property_name": "verdict_vocabulary",
+      "required": true,
+      "top_level_family": "semantic_policy",
+      "type": "<unspecified>"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules",
+      "property_name": "semantic_rules",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].cleanup_responsibility",
+      "property_name": "cleanup_responsibility",
+      "required": false,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].defect_category",
+      "property_name": "defect_category",
+      "required": false,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects",
+      "property_name": "effects",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.ownership_updates",
+      "property_name": "ownership_updates",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "ACQUIRE",
+        "RELEASE",
+        "TRANSFER",
+        "RETAIN",
+        "NONE"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].effects.ownership_updates[].effect",
+      "property_name": "effect",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+      "property_name": "resource_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.ownership_updates[].transfer_target_resource_binding_id",
+      "property_name": "transfer_target_resource_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "anyOf"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.relation_updates",
+      "property_name": "relation_updates",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "ADD",
+        "REMOVE",
+        "SET_STATE",
+        "RETAIN"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].effects.relation_updates[].operation",
+      "property_name": "operation",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.relation_updates[].relation_binding_id",
+      "property_name": "relation_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.relation_updates[].to_states",
+      "property_name": "to_states",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.resource_state_updates",
+      "property_name": "resource_state_updates",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+      "property_name": "resource_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].effects.resource_state_updates[].to_states",
+      "property_name": "to_states",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": false,
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions",
+      "property_name": "preconditions",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "object"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.path_conditions",
+      "property_name": "path_conditions",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.path_conditions[].condition_id",
+      "property_name": "condition_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "EVENT_REACHED",
+        "EVENT_NOT_REACHED",
+        "BRANCH_TAKEN",
+        "BRANCH_NOT_TAKEN",
+        "FUNCTION_EXIT_REACHED"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].preconditions.path_conditions[].condition_kind",
+      "property_name": "condition_kind",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.path_conditions[].polarity",
+      "property_name": "polarity",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "boolean"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.path_conditions[].referenced_event_id",
+      "property_name": "referenced_event_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.relation_state_requirements",
+      "property_name": "relation_state_requirements",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.relation_state_requirements[].allowed_states",
+      "property_name": "allowed_states",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "PRESENT",
+        "ABSENT"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].preconditions.relation_state_requirements[].presence",
+      "property_name": "presence",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.relation_state_requirements[].relation_binding_id",
+      "property_name": "relation_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.resource_state_requirements",
+      "property_name": "resource_state_requirements",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.resource_state_requirements[].allowed_states",
+      "property_name": "allowed_states",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id",
+      "property_name": "resource_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.return_conditions",
+      "property_name": "return_conditions",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids",
+      "property_name": "allowed_return_class_ids",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].preconditions.return_conditions[].event_id",
+      "property_name": "event_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].relation_bindings",
+      "property_name": "relation_bindings",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].relation_bindings[].binding_id",
+      "property_name": "binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].relation_bindings[].relation_type_id",
+      "property_name": "relation_type_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].relation_bindings[].source_resource_binding_id",
+      "property_name": "source_resource_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].relation_bindings[].target_resource_binding_id",
+      "property_name": "target_resource_binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].resource_bindings",
+      "property_name": "resource_bindings",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].resource_bindings[].binding_id",
+      "property_name": "binding_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].resource_bindings[].distinct_identity_from",
+      "property_name": "distinct_identity_from",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].resource_bindings[].resource_type_id",
+      "property_name": "resource_type_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "SUBJECT",
+        "SOURCE",
+        "TARGET",
+        "OWNER",
+        "MEMBER",
+        "CONTAINER",
+        "PEER"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].resource_bindings[].role",
+      "property_name": "role",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].resource_bindings[].same_identity_as",
+      "property_name": "same_identity_as",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].rule_id",
+      "property_name": "rule_id",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "STATE_PRECONDITION",
+        "STATE_TRANSITION",
+        "OWNERSHIP",
+        "ORDERING",
+        "RELATION",
+        "RETURN_DEPENDENT",
+        "CLEANUP",
+        "CROSS_RESOURCE"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].rule_kind",
+      "property_name": "rule_kind",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].semantic_container",
+      "property_name": "semantic_container",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].source_evidence",
+      "property_name": "source_evidence",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.semantic_rules[].trigger_event_ids",
+      "property_name": "trigger_event_ids",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "array"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": [
+        "VALID",
+        "VIOLATION-MUST",
+        "VIOLATION-MAY",
+        "UNKNOWN"
+      ],
+      "has_const": false,
+      "has_enum": true,
+      "path": "$.semantic_rules[].verdict_if_violated",
+      "property_name": "verdict_if_violated",
+      "required": true,
+      "top_level_family": "semantic_rules",
+      "type": "string"
+    },
+    {
+      "additional_properties": "<UNSPECIFIED>",
+      "const": null,
+      "enum": null,
+      "has_const": false,
+      "has_enum": false,
+      "path": "$.specification_id",
+      "property_name": "specification_id",
+      "required": true,
+      "top_level_family": "specification_id",
+      "type": "string"
+    }
+  ],
+  "schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+  "top_level_additional_properties": false,
+  "top_level_property_count": 16
+}

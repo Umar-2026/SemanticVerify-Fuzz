@@ -1,0 +1,13 @@
+{
+  "authorization_verifier_must_never_be_rerun": true,
+  "authorization_verifier_permanently_retired": true,
+  "authorization_verifier_sha256": "4c4a1feca0496055035e57389f0c581542e97ac72a46d10137f657208743093b",
+  "corrective_successor_package_v2_authoring_started_after_final_run": true,
+  "final_allowed_output_sha256": "07c8cbaf7ac1c7adf393c340d77c316c9663c4c61e3216489b19ff021e317ce5",
+  "final_allowed_output_size_bytes": 980,
+  "final_allowed_run_performed": true,
+  "final_allowed_run_result": "PASS",
+  "record_id": "SVF-DECISION-0095-AUTHORIZATION-VERIFIER-CONSUMPTION-V1",
+  "retirement_trigger": "AUTHORING_OF_CORRECTIVE_SUCCESSOR_PACKAGE_V2_BEGAN_AFTER_FINAL_ALLOWED_PASS",
+  "safe_post_authoring_verifier": "05_verify_corrective_successor_package_v2.py"
+}

@@ -1,0 +1,58 @@
+{
+  "bounded_effect": {
+    "admissible_composition_exhaustiveness_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "corrective_work_requires_successor_artifacts": true,
+    "curl_json_authorized": false,
+    "formalization_v1_approved": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_positive_mapping_authorized": false,
+    "original_human_review_must_remain_immutable": true,
+    "original_review_package_v1_must_remain_immutable": true,
+    "positive_existing_v2_mapping_path_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false
+  },
+  "completed_review": {
+    "decisions": {
+      "SRR01": "PASS",
+      "SRR02": "REVISION_REQUIRED",
+      "SRR03": "PASS",
+      "SRR04": "REVISION_REQUIRED",
+      "SRR05": "REVISION_REQUIRED",
+      "SRR06": "PASS",
+      "SRR07": "PASS",
+      "SRR08": "REVISION_REQUIRED"
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "23 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "4504b8fd74e8bd699fcdb4b600f72f706d429cee7126bc432bfe7adb1b9ba9f1",
+    "size_bytes": 10821
+  },
+  "five_lexical_only_explicit_negative_pairs": [
+    "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION \u00d7 $.semantic_accounting.inventory.exit_obligation_count",
+    "cleanup_obligation_effect \u00d7 $.semantic_accounting.inventory.exit_obligation_count",
+    "dependent_reasoning_policy \u00d7 $.semantic_accounting.inventory.representation_policy_field_count",
+    "feasible_state_join_policy \u00d7 $.semantic_accounting.inventory.representation_policy_field_count",
+    "rule_id \u00d7 $.semantic_accounting.inventory.rule_count"
+  ],
+  "next_boundary": "SEPARATELY_AUTHORIZE_CORRECTIVE_SUCCESSOR_PACKAGE_FOR_SRR02_SRR04_SRR05_SRR08",
+  "record_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-COMPLETED-HUMAN-REVIEW-V1",
+  "review_findings": {
+    "SRR02": "The original reviewed semantic-unit inventory, carrier inventory, and candidate composition matrix are absent from the handoff, preventing independent exact-domain source verification.",
+    "SRR04": "The 125 lexical-only pairs are not all unresolved: 120 are UNRESOLVED and five semantic_accounting pairs are NOT_SEMANTICALLY_RELATED.",
+    "SRR05": "Internal traceability is coherent, but exact preservation against the original reviewed semantic-unit inventory and matrix unit-analysis evidence cannot be independently established from the handoff alone.",
+    "SRR08": "The handoff is not self-contained for formalization reproduction because the safe formalization verifier depends on original reviewed artifacts and repository-relative layout not included in the handoff."
+  },
+  "review_package_checkpoint": {
+    "commit": "915b701a2d359cb26049ec99ce25d8f21c866ab1",
+    "decision": "0093",
+    "tree": "8bc47e05cf6d26325452db716f5773c7341392c3"
+  },
+  "review_target": "SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1",
+  "status": "COMPLETED_INDEPENDENT_HUMAN_REVIEW_RECORDED"
+}

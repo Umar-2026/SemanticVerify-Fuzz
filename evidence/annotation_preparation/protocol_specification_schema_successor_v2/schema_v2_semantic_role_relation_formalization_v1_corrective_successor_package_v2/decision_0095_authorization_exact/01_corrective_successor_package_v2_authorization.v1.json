@@ -1,0 +1,177 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-CORRECTIVE-SUCCESSOR-PACKAGE-V2-AUTHORIZATION",
+  "authorization_type": "PRE_CORRECTIVE_SUCCESSOR_PACKAGE_AUTHORING_ONLY",
+  "authorization_verifier_lifecycle": {
+    "may_run_before_successor_package_authoring": true,
+    "must_run_final_allowed_time_immediately_before_successor_package_authoring": true,
+    "permanently_retired_once_successor_package_authoring_begins": true,
+    "rerun_after_successor_package_authoring_begins": false
+  },
+  "bounded_nonclaims": {
+    "admissible_composition_exhaustiveness_established": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "formalization_v1_currently_approved": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_positive_mapping_authorized": false,
+    "positive_existing_v2_mapping_path_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_authorized": false,
+    "schema_version_preselected": false
+  },
+  "exact_portability_source_bindings": {
+    "02_v4_semantic_unit_inventory.v1.json": {
+      "required_in_successor_package": true,
+      "sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+      "size_bytes": 203561
+    },
+    "03_schema_v2_carrier_inventory.v1.json": {
+      "required_in_successor_package": true,
+      "sha256": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+      "size_bytes": 80491
+    },
+    "04_candidate_multifield_composition_matrix.v1.json": {
+      "required_in_successor_package": true,
+      "sha256": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45",
+      "size_bytes": 126533
+    }
+  },
+  "immutability_constraints": {
+    "all_9747_relation_rows": true,
+    "completed_revision_required_human_review": true,
+    "decision_0093": true,
+    "decision_0094": true,
+    "formalization_v1": true,
+    "formalization_v1_original_report": true,
+    "original_blank_reviewer_packet": true,
+    "review_package_v1": true
+  },
+  "next_boundary": "AUTHOR_CORRECTIVE_SUCCESSOR_PACKAGE_V2_AFTER_FINAL_ALLOWED_AUTHORIZATION_VERIFIER_RUN",
+  "required_corrective_scope": {
+    "SRR02": {
+      "require_exact_source_artifacts": true,
+      "require_machine_checkable_derived_domain_binding": true,
+      "required_counts": {
+        "leaf_fields": 531,
+        "matrix_field_classes": 57,
+        "schema_v2_property_paths": 171,
+        "semantic_units": 109
+      }
+    },
+    "SRR04": {
+      "correction_type": "SUCCESSOR_PRESENTATION_ACCOUNTING_ERRATUM_ONLY",
+      "five_explicit_negative_pairs": [
+        {
+          "schema_v2_property_path": "$.semantic_accounting.inventory.exit_obligation_count",
+          "v4_matrix_field_class": "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION"
+        },
+        {
+          "schema_v2_property_path": "$.semantic_accounting.inventory.exit_obligation_count",
+          "v4_matrix_field_class": "cleanup_obligation_effect"
+        },
+        {
+          "schema_v2_property_path": "$.semantic_accounting.inventory.representation_policy_field_count",
+          "v4_matrix_field_class": "dependent_reasoning_policy"
+        },
+        {
+          "schema_v2_property_path": "$.semantic_accounting.inventory.representation_policy_field_count",
+          "v4_matrix_field_class": "feasible_state_join_policy"
+        },
+        {
+          "schema_v2_property_path": "$.semantic_accounting.inventory.rule_count",
+          "v4_matrix_field_class": "rule_id"
+        }
+      ],
+      "lexical_only_not_semantically_related": 5,
+      "lexical_only_predicate": "reviewed_lexical_only_candidate == true",
+      "lexical_only_semantically_related": 0,
+      "lexical_only_total": 125,
+      "lexical_only_unresolved": 120,
+      "original_report_modification_authorized": false,
+      "relation_row_reclassification_authorized": false,
+      "required_corrected_statement": "There are 125 reviewed lexical-only candidate pairs in total: 120 are UNRESOLVED and five semantic_accounting pairs are NOT_SEMANTICALLY_RELATED; none are SEMANTICALLY_RELATED."
+    },
+    "SRR05": {
+      "require_exact_source_to_derived_traceability_checks": true,
+      "require_self_contained_leaf_to_unit_binding": true,
+      "require_self_contained_unit_analysis_binding": true,
+      "required_leaf_count": 531,
+      "required_semantic_unit_count": 109,
+      "required_unit_analysis_count": 109
+    },
+    "SRR08": {
+      "require_self_contained_package_layout": true,
+      "require_self_contained_safe_verifier": true,
+      "safe_verifier_must_not_depend_on_repository_relative_paths": true,
+      "safe_verifier_must_verify_all_bounded_nonclaims": true,
+      "safe_verifier_must_verify_corrective_erratum": true,
+      "safe_verifier_must_verify_exact_source_hashes": true
+    }
+  },
+  "review_chain_policy": {
+    "SRR01": "PASS_CARRIED_FORWARD",
+    "SRR02": "REQUIRES_FOCUSED_REREVIEW",
+    "SRR03": "PASS_CARRIED_FORWARD",
+    "SRR04": "REQUIRES_FOCUSED_REREVIEW",
+    "SRR05": "REQUIRES_FOCUSED_REREVIEW",
+    "SRR06": "PASS_CARRIED_FORWARD",
+    "SRR07": "PASS_CARRIED_FORWARD",
+    "SRR08": "REQUIRES_FOCUSED_REREVIEW",
+    "focused_rereview_may_close_original_revision_items": true,
+    "original_overall_revision_required_decision_may_be_rewritten": false
+  },
+  "source_human_review": {
+    "carried_forward_pass_items": [
+      "SRR01",
+      "SRR03",
+      "SRR06",
+      "SRR07"
+    ],
+    "completed_review_sha256": "4504b8fd74e8bd699fcdb4b600f72f706d429cee7126bc432bfe7adb1b9ba9f1",
+    "focused_revision_items": [
+      "SRR02",
+      "SRR04",
+      "SRR05",
+      "SRR08"
+    ],
+    "original_overall_decision_must_remain_immutable": true,
+    "overall_decision": "REVISION_REQUIRED"
+  },
+  "status": "AUTHORIZED_FOR_EVIDENCE_ONLY_CORRECTIVE_SUCCESSOR_PACKAGE_V2_AUTHORING",
+  "successor_package_requirements": {
+    "focused_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "focused_overall_decisions": [
+      "APPROVE_CORRECTIVE_SUCCESSOR_PACKAGE_V2",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "focused_rereview_items": [
+      "SRR02-C",
+      "SRR04-C",
+      "SRR05-C",
+      "SRR08-C"
+    ],
+    "focused_reviewer_role": "Spec-Technical-Reviewer-1",
+    "human_decisions_must_be_blank_at_package_checkpoint": true,
+    "human_reviewer_identity_must_be_blank_at_package_checkpoint": true,
+    "must_include_blank_focused_rereview_packet": true,
+    "must_include_checksum_manifest": true,
+    "must_include_decision_0093": true,
+    "must_include_decision_0094": true,
+    "must_include_exact_completed_revision_required_review": true,
+    "must_include_exact_original_formalization_artifacts": true,
+    "must_include_human_readable_srr04_erratum": true,
+    "must_include_machine_readable_srr04_erratum": true,
+    "must_include_manifest": true,
+    "must_include_self_contained_safe_verifier": true,
+    "must_include_three_exact_source_artifacts": true,
+    "package_name": "schema_v2_semantic_role_relation_formalization_v1_corrective_successor_package_v2"
+  }
+}

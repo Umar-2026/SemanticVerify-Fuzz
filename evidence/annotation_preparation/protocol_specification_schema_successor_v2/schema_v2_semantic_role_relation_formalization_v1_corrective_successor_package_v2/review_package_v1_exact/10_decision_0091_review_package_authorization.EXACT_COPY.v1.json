@@ -1,0 +1,141 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "approval_if_eventually_granted_is_bounded": {
+    "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED_may_be_human_approved": true,
+    "admissible_composition_exhaustiveness_would_be_established": false,
+    "formalization_v1_may_be_human_approved": true,
+    "negative_existing_v2_mapping_impossibility_would_be_proven": false,
+    "operational_positive_mapping_would_be_authorized": false,
+    "positive_existing_v2_mapping_path_would_be_proven": false,
+    "schema_successor_authoring_would_be_authorized": false
+  },
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-ROLE-RELATION-FORMALIZATION-V1-INDEPENDENT-HUMAN-REVIEW-PACKAGE-AUTHORIZATION",
+  "authorization_type": "PRE_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "explicit_non_authorizations": {
+    "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED_human_approval": false,
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "constructive_positive_mapping_witness_authoring": false,
+    "curl_json_creation": false,
+    "exhaustive_admissible_composition_enumeration": false,
+    "formalization_v1_human_approval": false,
+    "formalization_v1_modification": false,
+    "human_review_decision_creation": false,
+    "human_reviewer_identity_prepopulation": false,
+    "operational_positive_v4_to_successor_mapping_authoring": false,
+    "operational_positive_v4_to_v2_mapping_authoring": false,
+    "positive_mapping_authorization": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_authoring": false,
+    "schema_version_preselection": false
+  },
+  "governance_basis": {
+    "decision_0090_commit": "55cdd77baf2cf9a44789dcc2625edb617dae4011",
+    "decision_0090_sha256": "96c5a9719101bf384022b7d8378df1a5e60abf0cb096ea5d9cbcd03be4e2a8b4",
+    "decision_0090_tree": "3436f85a95be22469ead53646cf93049da0b4112",
+    "formalization_selected_outcome": "PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED",
+    "formalization_selected_outcome_human_approved": false,
+    "formalization_status": "AUTHOR_CANDIDATE",
+    "independent_human_technical_review_required": true
+  },
+  "immutable_review_inputs": {
+    "decision_0089_verifier_consumption_marker": {
+      "sha256": "55005f555ec580c0e623033137930fa976412aa48dc0acaddc49e767d87bb391",
+      "size_bytes": 417
+    },
+    "decision_0090": {
+      "sha256": "96c5a9719101bf384022b7d8378df1a5e60abf0cb096ea5d9cbcd03be4e2a8b4",
+      "size_bytes": 5173
+    },
+    "field_class_to_schema_v2_property_path_relation": {
+      "sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+      "size_bytes": 10875847
+    },
+    "formalization_checksum_manifest": {
+      "sha256": "46cbb87c47ce4332c98a80bd769346129d7a54f5cb6aa037d62a7016025e45f6",
+      "size_bytes": 749
+    },
+    "formalization_markdown": {
+      "sha256": "7b71d98c63afabc6d3b5eaf72f07e0ee2e4a6707520d80032a9d51b9540878d4",
+      "size_bytes": 2888
+    },
+    "formalization_summary": {
+      "sha256": "0efc848991f0f1580542b8d6e380c55df6d2b370147f236800621b24b51ee600",
+      "size_bytes": 2948
+    },
+    "safe_post_formalization_verifier": {
+      "sha256": "842763889dd0958a39b9403832c97d2ea83cbbf8c91bc529931323f3e62f38b0",
+      "size_bytes": 14963
+    },
+    "semantic_unit_context_and_leaf_traceability": {
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "size_bytes": 732713
+    }
+  },
+  "mandatory_review_items": {
+    "SRR01": {
+      "required_question": "Does the package bind byte-exactly to Decision 0090 and all Formalization V1 author-candidate artifacts, with no post-checkpoint semantic modification?",
+      "title": "Package integrity and exact artifact binding"
+    },
+    "SRR02": {
+      "required_question": "Is the formalization correctly based on the reviewed 531 leaf records, 109 semantic units, 57 matrix field classes, and 171 Schema-V2 carrier paths, with the raw 642-scalar V4 traversal explicitly excluded as domain authority?",
+      "title": "Authoritative reviewed-domain correctness"
+    },
+    "SRR03": {
+      "required_question": "Does the formalization correctly preserve the non-equivalence between the semantic-unit field-class vocabulary and field_class_analysis.v4_field_class, without merging, equating, or silently translating the two domains?",
+      "title": "Two distinct 57-element vocabularies"
+    },
+    "SRR04": {
+      "required_question": "Are all 9,747 pairs accounted for with exactly 113 SEMANTICALLY_RELATED, 969 NOT_SEMANTICALLY_RELATED, and 8,665 UNRESOLVED, with 125 lexical-only pairs left unresolved, absence from prior screening not treated as negative proof, and semantic_accounting used only as the explicit negative basis?",
+      "title": "Conservative 9,747-pair classification policy"
+    },
+    "SRR05": {
+      "required_question": "Are all 531 reviewed leaf records and all 109 semantic units preserved and correctly bound to reviewed unit-analysis evidence, while carrier-family expansion remains screening context rather than automatic semantic-relatedness classification?",
+      "title": "Leaf, unit, and carrier-family traceability"
+    },
+    "SRR06": {
+      "required_question": "Is PARTIAL_RELATION_FURTHER_EVIDENCE_REQUIRED the strongest supported author-candidate result, without claiming a proven positive existing-V2 mapping path, a proven negative mapping impossibility, or admissible-composition exhaustiveness?",
+      "title": "Bounded technical interpretation"
+    },
+    "SRR07": {
+      "required_question": "Does the formalization preserve the reviewed admissibility boundaries, including no opaque semantic packing, no hidden free-text semantic storage, no unrelated-field repurposing, no semantic_accounting as semantic storage, and no silent strengthening or weakening?",
+      "title": "Admissibility and nonclaim preservation"
+    },
+    "SRR08": {
+      "required_question": "Is the author-candidate formalization reproducibly verifiable with the safe verifier, are retired verifiers kept retired, and does the package avoid authorizing operational mapping, schema-successor work, curl.json, analyzer, baseline, or repair?",
+      "title": "Governance boundary and reproducibility"
+    }
+  },
+  "next_boundary": "AUTHOR_SCHEMA_V2_SEMANTIC_ROLE_RELATION_FORMALIZATION_V1_INDEPENDENT_HUMAN_REVIEW_PACKAGE_V1",
+  "retired_verifier_constraints": {
+    "CSR01_CSR08_initial_blank_verifier_rerun": false,
+    "decision_0083_pre_study_verifier_rerun": false,
+    "decision_0085_pre_review_package_verifier_rerun": false,
+    "decision_0087_pre_record_verifier_rerun": false,
+    "decision_0089_pre_formalization_verifier_rerun": false
+  },
+  "review_requirements": {
+    "all_PASS_required_for_approval": true,
+    "all_SRR01_through_SRR08_require_explicit_decision": true,
+    "human_decision_must_not_be_synthesized": true,
+    "independent_human_technical_review_required": true,
+    "reviewer_confirmation_must_be_human_supplied": true,
+    "reviewer_date_must_be_human_supplied": true,
+    "reviewer_must_not_be_prepopulated_by_authoring_step": true,
+    "reviewer_name_must_be_human_supplied": true,
+    "reviewer_role_required": "Spec-Technical-Reviewer-1"
+  },
+  "status": "AUTHORIZED_TO_AUTHOR_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE_V1_ONLY"
+}
