@@ -1,0 +1,40 @@
+{
+  "all_17_requirement_provenance_bindings_resolved": true,
+  "bound_composite_count": 0,
+  "bound_exact_count": 17,
+  "carrier_admissibility_claimed": false,
+  "decision_0126_a02": {
+    "final_output_sha256": "aa7beb98d50f322d00069fb00fa75eb0d33a581a1b07bc8a7fe3343f08459e34",
+    "final_output_size_bytes": 864,
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "independent_human_review_required": true,
+  "negative_mapping_impossibility_proof_constructed": false,
+  "next_boundary": "SEPARATELY_AUTHORIZE_INDEPENDENT_HUMAN_REVIEW_OF_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1",
+  "outcome_scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+  "positive_mapping_witness_constructed": false,
+  "prior_governance_result_modified": false,
+  "prior_semantic_unit_carrier_pair_state_modified": false,
+  "requirement_count": 17,
+  "status": "AUTHOR_CANDIDATE",
+  "study_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-BINDING-RESOLUTION-STUDY-V1",
+  "study_outcome": "REQUIREMENT_PROVENANCE_RESOLVED",
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  },
+  "unresolved_count": 0,
+  "whole_v4_admissible_composition_exhaustiveness_claimed": false
+}
