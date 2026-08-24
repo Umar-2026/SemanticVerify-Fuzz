@@ -1,0 +1,111 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-BINDING-RESOLUTION-STUDY-V1-INDEPENDENT-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_type": "PRE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "decision_0127_checkpoint": {
+    "commit": "579e6b31df30d40acfa7dfc64152cb45b37e59fe",
+    "study_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2",
+    "tree": "2cb05fabbb1ddc78a7716c42de399a4a3c19f8ce"
+  },
+  "exact_subject_artifacts": {
+    "binding_matrix_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "checksum_closure_sha256": "a1e5f4ffad170b471f48a9cdd668bdac1582afc66bb6a635be4a1d626a7919f6",
+    "decision_0126_a02_consumption_record_sha256": "9b922a3b4c3b0553964a1644645c0ccf6ab7468742855860524f1918aab2f5f8",
+    "decision_0126_a02_exact_output_sha256": "aa7beb98d50f322d00069fb00fa75eb0d33a581a1b07bc8a7fe3343f08459e34",
+    "decision_0127_sha256": "e0fbcc68f6ecf95e7f8d26898d3374338115dd005fb047e221a832001c90c352",
+    "machine_readable_accounting_sha256": "44fad8ce51ec19d3f87349460d44a867b3349b3c4f17130b994a8b603913bc07",
+    "safe_verifier_sha256": "8e95ccffa89eba415bcf12e8c47e69b68486d181dde249dcb2c21b31223f177d",
+    "source_evidence_inventory_sha256": "96bb1dc5a0d25621dc1736b3637a34a6af4c846464e6a8c1dc5535226d1e0853",
+    "study_report_sha256": "d86afc4b0b229b1db35c5c423565c9ef6af00992856d0b9e458333b7a153b13d"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "negative_mapping_impossibility_proof_authoring": false,
+    "operational_mapping": false,
+    "positive_mapping_witness_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "semantic_unit_carrier_pair_reclassification": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "independence_requirement": "INDEPENDENT_HUMAN_REVIEW",
+  "next_boundary": "RUN_DECISION_0128_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_V1_AUTHORING",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "retired_verifier_constraints": {
+    "decision_0126_a02_rerun": false,
+    "previous_retired_a02_verifiers_rerun": false
+  },
+  "review_items": {
+    "RPR01": {
+      "criterion": "Verify the exact Decision-0127 checkpoint, immutable study artifacts, Git-tree binding, checksum closure, source hashes, and safe-verifier reproducibility without modifying the author-candidate study.",
+      "title": "Exact review-subject integrity and reproducibility"
+    },
+    "RPR02": {
+      "criterion": "Verify exactly 17 unique requirement identities are bound to the canonical V4 losslessness-object keys, the canonical object SHA-256 is c869079bfbd395b479e2dd8f2f1bcc31aabeababe0e24fc1542c6d35d210602e, and no numeric-count-only inference or invented requirement identity is used.",
+      "title": "Canonical 17-requirement identity correctness"
+    },
+    "RPR03": {
+      "criterion": "Verify each requirement's exact primary binding to curl canonical representation mapping contract V4 and corroborating bindings to the Schema-V2 successor design-record snapshot and residual-losslessness proof snapshot, including source SHA-256, Git blob, structural path, and value equality.",
+      "title": "Exact immutable provenance-chain correctness"
+    },
+    "RPR04": {
+      "criterion": "Verify requirement count 17, BOUND_EXACT 17, BOUND_COMPOSITE 0, UNRESOLVED 0, and that REQUIREMENT_PROVENANCE_RESOLVED is supported only for requirement identity and immutable source provenance.",
+      "title": "Binding accounting correctness"
+    },
+    "RPR05": {
+      "criterion": "Verify historical index-only unresolved records remain historical evidence, no semantic equivalence from placeholder index to canonical key order is claimed, and no requirement content is invented, reconstructed from memory, or inferred merely from the count 17.",
+      "title": "Historical-placeholder and anti-inference boundary"
+    },
+    "RPR06": {
+      "criterion": "Verify no semantic-unit/carrier pair is reclassified, the existing 18,639 pair state is not modified, carrier admissibility is not claimed, no positive mapping witness is constructed, no negative mapping-impossibility proof is constructed, and whole-V4 exhaustiveness is not claimed.",
+      "title": "Technical nonclaim preservation"
+    },
+    "RPR07": {
+      "criterion": "Verify the study and review package do not authorize operational mapping, active Schema-V2 modification, schema-successor authoring, schema-version preselection, Schema V3, curl.json, analyzer implementation/execution, baseline execution, or repair.",
+      "title": "Operational nonauthorization preservation"
+    },
+    "RPR08": {
+      "criterion": "Determine whether the exact evidence supports the bounded author-candidate conclusion REQUIREMENT_PROVENANCE_RESOLVED while preserving all stated technical and operational nonclaims.",
+      "title": "Bounded overall technical conclusion"
+    }
+  },
+  "review_package_requirements": {
+    "include_checksum_closure": true,
+    "include_exact_authorization": true,
+    "include_exact_decision_0127": true,
+    "include_exact_study_v1": true,
+    "include_reviewer_packet": true,
+    "include_safe_package_verifier": true,
+    "include_source_binding_manifest": true,
+    "reviewer_decision_must_not_be_synthesized": true,
+    "reviewer_packet_initially_blank": true
+  },
+  "review_subject": {
+    "bound_composite_count": 0,
+    "bound_exact_count": 17,
+    "canonical_losslessness_object_sha256": "c869079bfbd395b479e2dd8f2f1bcc31aabeababe0e24fc1542c6d35d210602e",
+    "outcome_scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+    "requirement_count": 17,
+    "status": "AUTHOR_CANDIDATE",
+    "study_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-BINDING-RESOLUTION-STUDY-V1",
+    "study_outcome": "REQUIREMENT_PROVENANCE_RESOLVED",
+    "unresolved_count": 0
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED"
+}

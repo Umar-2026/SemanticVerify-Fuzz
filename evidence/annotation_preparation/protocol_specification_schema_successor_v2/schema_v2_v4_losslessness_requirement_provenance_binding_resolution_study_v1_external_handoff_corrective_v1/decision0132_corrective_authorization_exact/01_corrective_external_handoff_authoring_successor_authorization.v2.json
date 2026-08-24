@@ -1,0 +1,95 @@
+{
+  "authorization_id": "SVF-V4-LOSSLESSNESS-PROVENANCE-RPR01-RPR08-EXTERNAL-HANDOFF-CORRECTIVE-SUCCESSOR-AUTHORIZATION-V2",
+  "authorization_type": "PRE_CORRECTIVE_EXTERNAL_HANDOFF_AUTHORING_ONLY",
+  "corrective_successor_scope": {
+    "authorize_new_one_time_pre_handoff_verifier": true,
+    "new_verifier_must_bind_to_immediate_successor_of_decision_0130": true,
+    "new_verifier_must_not_execute_any_retired_a02": true,
+    "new_verifier_must_not_execute_failed_a02": true,
+    "new_verifier_must_not_require_current_head_equals_decision_0129_commit": true,
+    "new_verifier_must_require_current_head_parent_equals_decision_0130_commit": true,
+    "new_verifier_must_verify_failed_a02_retirement_evidence": true,
+    "new_verifier_must_verify_review_package_v1_unchanged": true,
+    "successful_new_verifier_may_author_external_handoff_v1": true,
+    "successful_new_verifier_may_create_blank_editable_manual_reviewer_packet": true,
+    "successful_new_verifier_may_create_external_zip": true
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_conclusion": false,
+    "curl_json_creation": false,
+    "negative_mapping_impossibility_proof": false,
+    "operational_mapping": false,
+    "positive_mapping_witness": false,
+    "record_human_review_decision": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "semantic_unit_carrier_pair_reclassification": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "failed_pre_handoff_verifier": {
+    "execution_result": "FAIL",
+    "failure_cause": "OLD_A02_REQUIRED_CURRENT_HEAD_TO_EQUAL_DECISION0129_PARENT_INSTEAD_OF_DECISION0130_AUTHORIZATION_CHECKPOINT",
+    "failure_class": "AUTHORIZATION_VERIFIER_CHECKPOINT_BINDING_DEFECT",
+    "failure_marker": "FAIL|DECISION0129_CHECKPOINT",
+    "must_never_be_rerun": true,
+    "patch_in_place_authorized": false,
+    "rerun_authorized": false,
+    "sha256": "ed9ce5e278f1f2b9b49f7d11715faafbbd8e0873b20c961c4173d943e04965f4",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "failure_evidence": {
+    "consumption_sentinel_sha256": "a977c957e4e8fc9177147d257c64014cfaba0cc98bbbcd13ba44e1da7dd35bf0",
+    "consumption_sentinel_size_bytes": 201,
+    "failed_attempt_reached_handoff_authoring": false,
+    "failed_final_output_sha256": "4635ef9374bd8edb6278b185635033ce86fa891f387a821d656f626f71dd5a56",
+    "failed_final_output_size_bytes": 29,
+    "partial_handoff_artifacts_exist": false
+  },
+  "failure_interpretation": {
+    "failure_is_governance_or_verifier_lifecycle_only": true,
+    "human_review_performed": false,
+    "requirement_provenance_result_falsified": false,
+    "review_package_v1_falsified": false,
+    "reviewer_decision_present": false,
+    "study_v1_falsified": false
+  },
+  "next_boundary": "RUN_DECISION_0132_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_CORRECTIVE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_V1_AUTHORING",
+  "predecessor_decision_0130_checkpoint": {
+    "commit": "acccf40b8636609e7d98fd3a7d9575529777470d",
+    "decision_0130_sha256": "4b4d191a81a4aac78a65f15857c87740d3bf118f7c2b72822da5d8c9192ea241",
+    "failed_external_handoff_authorization_v1_git_tree": "030017ebc1daaa22b4031a1a4b82533652ab7490",
+    "parent_decision_0129_commit": "7ddaaa2e24a065053c132700292023dfaca9c428",
+    "review_package_v1_git_tree": "35794b450ed9bcde337f4ea4b7de35dd8218cc03",
+    "tree": "b9e9c557cac213f5b1f66354e61db7ccc4a3e725"
+  },
+  "retired_verifier_constraints": {
+    "all_other_retired_a02_reruns": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false,
+    "decision_0130_a02_rerun": false
+  },
+  "review_scope_preserved": {
+    "human_review_performed": false,
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "RPR01",
+      "RPR02",
+      "RPR03",
+      "RPR04",
+      "RPR05",
+      "RPR06",
+      "RPR07",
+      "RPR08"
+    ],
+    "reviewer_decision": null,
+    "reviewer_decision_must_not_be_synthesized": true
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED"
+}

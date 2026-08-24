@@ -1,0 +1,235 @@
+{
+  "corrective_verifier_lifecycle": {
+    "decision_0132_a02_final_output_sha256": "6a8c289eed739222b9b13018b488547194893b664dec8eeff62e99e14444adf4",
+    "decision_0132_a02_final_output_size": 1128,
+    "decision_0132_a02_must_never_be_rerun": true,
+    "decision_0132_a02_state": "PERMANENTLY_RETIRED",
+    "failed_decision_0130_a02_rerun_authorized": false,
+    "failed_decision_0130_a02_state": "PERMANENTLY_RETIRED"
+  },
+  "decision_0132_checkpoint": {
+    "commit": "a7f27a45609d1602bfde674c0ebd40d54f5ca01a",
+    "corrective_authorization_v2_git_tree": "4b31f4f726222883080869796d7e86c2784bb4e2",
+    "decision_0129_commit": "7ddaaa2e24a065053c132700292023dfaca9c428",
+    "failed_decision_0130_authorization_v1_git_tree": "030017ebc1daaa22b4031a1a4b82533652ab7490",
+    "parent_decision_0130_commit": "acccf40b8636609e7d98fd3a7d9575529777470d",
+    "review_package_v1_git_tree": "35794b450ed9bcde337f4ea4b7de35dd8218cc03",
+    "tree": "fdd60d6b7608017892811c8f1a005b23bdf36165"
+  },
+  "exact_review_package_copy": {
+    "file_count": 30,
+    "files": [
+      {
+        "handoff_relative_path": "review_package_v1_exact/01_review_subject_manifest.v1.json",
+        "sha256": "4a3520a1a6d1e5b3a39aebbb1683a0014113df71b8c531860c03965acdc16971",
+        "size_bytes": 3146
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/02_source_binding_manifest.v1.json",
+        "sha256": "36a73d21e508f64d283b26087be9b31bbce7993f7148fb82f37bac77dc36fff0",
+        "size_bytes": 6097
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/03_RPR01_RPR08_reviewer_packet.BLANK.v1.md",
+        "sha256": "1f96825a9d035b256c436b24a39d877f4983460b0f10323f29847224c891721d",
+        "size_bytes": 4132
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/04_decision0128_a02_final_output.EXACT_COPY.v1.txt",
+        "sha256": "5604b771dd5fa05d27db12a74103ce18738d11ceaa06cdfaaa44a2079e79229e",
+        "size_bytes": 1161
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/05_decision0128_a02_consumption_record.v1.json",
+        "sha256": "045c56b143f4639fdeaecaeeafa5c41f9f33c3d9294270581896fdf72177f733",
+        "size_bytes": 661
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/06_repository_checkpoint.bundle",
+        "sha256": "ab2aed74d6b082137d8560bd21578323faf5a543f335ccea45dfc361454ebacf",
+        "size_bytes": 9826990
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/07_repository_checkpoint_bundle_manifest.v1.json",
+        "sha256": "b1e2fc738646b49f679207b1d34c77940382634361afebb24742d19ba24a7d2a",
+        "size_bytes": 669
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/08_review_package_report.v1.md",
+        "sha256": "30d2a173b1e8c97f07bd8a49ce5123763b96e95b5d7925472e2a26dc19b97027",
+        "size_bytes": 1851
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/09_verify_independent_review_package_v1.py",
+        "sha256": "fed89d94840f92db7eca1b62a28abad32a0b4e0d7152421b078c64262c125163",
+        "size_bytes": 6006
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/10_review_package_v1.SHA256SUMS",
+        "sha256": "dab21242a05948ec595cc5e84a2a6132478d2e6d8e3f1a9dd30a48b9de585f70",
+        "size_bytes": 4428
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/decision0127.EXACT_COPY.md",
+        "sha256": "e0fbcc68f6ecf95e7f8d26898d3374338115dd005fb047e221a832001c90c352",
+        "size_bytes": 3552
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/decision0128.EXACT_COPY.md",
+        "sha256": "6dcea36bc5ba2baec1ff83d1e7b5205c557dc8382f829edddd6250310349f55f",
+        "size_bytes": 2998
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/decision0128_authorization_exact/01_independent_human_review_package_authorization.v1.json",
+        "sha256": "8b07d515e8dafd6945a9052a223d4ce986ed35a0516391604724ba703e1c85af",
+        "size_bytes": 6420
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/decision0128_authorization_exact/02_verify_independent_human_review_package_authoring_authorization.v1.py",
+        "sha256": "e99e86cee319cf0063b99e6122095ef9f217c87d55f26a6ec135d45895a1feb5",
+        "size_bytes": 5511
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/decision0128_authorization_exact/03_independent_human_review_package_authorization.v1.SHA256SUMS",
+        "sha256": "4f5c721158b3c99457463c868dedf3af7f1166c2a395bbec24545a2048bd96ed",
+        "size_bytes": 263
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "size_bytes": 26601
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/config/annotation/curl_technical_protocol_working_draft.v4.json",
+        "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+        "size_bytes": 41033
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+        "sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+        "size_bytes": 7425
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_authorization/01_exhaustive_admissible_existing_schema_v2_multifield_capability_study_authorization.v1.json",
+        "sha256": "a8ca219ee246c99c5d3c6ef2771eda7ec4fad2532358baf0cd592c1b00e6eab3",
+        "size_bytes": 11050
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_v1_review_package_v1/01_capability_study_v1.EXACT_COPY.json",
+        "sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+        "size_bytes": 7404
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+        "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+        "size_bytes": 11911
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/02_losslessness_requirement_binding_assessment.v1.json",
+        "sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5",
+        "size_bytes": 9153
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/01_17_requirement_provenance_binding_matrix.v1.json",
+        "sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+        "size_bytes": 41169
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/02_source_evidence_inventory.v1.json",
+        "sha256": "96bb1dc5a0d25621dc1736b3637a34a6af4c846464e6a8c1dc5535226d1e0853",
+        "size_bytes": 3560
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/03_machine_readable_accounting.v1.json",
+        "sha256": "44fad8ce51ec19d3f87349460d44a867b3349b3c4f17130b994a8b603913bc07",
+        "size_bytes": 1788
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/04_study_report.v1.md",
+        "sha256": "d86afc4b0b229b1db35c5c423565c9ef6af00992856d0b9e458333b7a153b13d",
+        "size_bytes": 2470
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/05_decision0126_a02_final_output.EXACT_COPY.v1.txt",
+        "sha256": "aa7beb98d50f322d00069fb00fa75eb0d33a581a1b07bc8a7fe3343f08459e34",
+        "size_bytes": 864
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/06_decision0126_a02_consumption_record.v1.json",
+        "sha256": "9b922a3b4c3b0553964a1644645c0ccf6ab7468742855860524f1918aab2f5f8",
+        "size_bytes": 605
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/07_verify_v4_losslessness_requirement_provenance_binding_resolution_study.v1.py",
+        "sha256": "8e95ccffa89eba415bcf12e8c47e69b68486d181dde249dcb2c21b31223f177d",
+        "size_bytes": 9676
+      },
+      {
+        "handoff_relative_path": "review_package_v1_exact/study_v1_exact/08_v4_losslessness_requirement_provenance_binding_resolution_study.v1.SHA256SUMS",
+        "sha256": "a1e5f4ffad170b471f48a9cdd668bdac1582afc66bb6a635be4a1d626a7919f6",
+        "size_bytes": 790
+      }
+    ]
+  },
+  "failed_predecessor_attempt": {
+    "failure_class": "AUTHORIZATION_VERIFIER_CHECKPOINT_BINDING_DEFECT",
+    "failure_marker": "FAIL|DECISION0129_CHECKPOINT",
+    "handoff_authoring_began": false,
+    "technical_review_package_falsified": false
+  },
+  "governance_state": {
+    "human_review_recorded": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "study_governance_adopted": false,
+    "whole_v4_exhaustiveness_proven": false
+  },
+  "handoff_state": "AWAITING_EXTERNAL_INDEPENDENT_HUMAN_REVIEW",
+  "manifest_id": "SVF-V4-LOSSLESSNESS-PROVENANCE-RPR01-RPR08-CORRECTIVE-EXTERNAL-HANDOFF-V1",
+  "manual_reviewer_packet": {
+    "author_prefilled_review_decisions": false,
+    "author_synthesized_overall_decision": false,
+    "author_synthesized_reviewer_identity": false,
+    "author_synthesized_reviewer_notes": false,
+    "human_review_performed_at_handoff": false,
+    "initial_blank_packet_sha256": "1f96825a9d035b256c436b24a39d877f4983460b0f10323f29847224c891721d",
+    "initial_copy_is_byte_exact": true,
+    "reviewer_decision_present_at_handoff": false,
+    "reviewer_identity_present_at_handoff": false
+  },
+  "next_boundary": "AWAIT_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_COMPLETION_FOR_RPR01_RPR08",
+  "operational_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "operational_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false
+  },
+  "review_subject": {
+    "outcome_scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "RPR01",
+      "RPR02",
+      "RPR03",
+      "RPR04",
+      "RPR05",
+      "RPR06",
+      "RPR07",
+      "RPR08"
+    ],
+    "study": "V4 Losslessness Requirement Provenance and Binding Resolution Study V1",
+    "study_outcome_under_review": "REQUIREMENT_PROVENANCE_RESOLVED"
+  },
+  "reviewer_return_requirement": "RETURN_COMPLETED_RPR01_RPR08_MANUAL_REVIEW_PACKET",
+  "sealed_repository_bundle": {
+    "bundle_sha256": "ab2aed74d6b082137d8560bd21578323faf5a543f335ccea45dfc361454ebacf",
+    "checkpoint_commit": "7f13e5569c5d25c9c104a9b1dd68516471b6017a",
+    "checkpoint_role": "DECISION_0128_PRE_REVIEW_PACKAGE_CHECKPOINT"
+  }
+}
