@@ -1,0 +1,74 @@
+{
+  "approved_scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+  "author_candidate_outcome": "REQUIREMENT_PROVENANCE_RESOLVED",
+  "completed_reviewer_packet": {
+    "byte_exact_copy_recorded": true,
+    "human_review_completed": true,
+    "human_reviewer_date": "2026-08-24",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "human_reviewer_role": "Spec-Technical-Reviewer-1",
+    "human_reviewer_signature_or_recorded_confirmation": "ARS",
+    "overall_decision": "APPROVE_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1",
+    "reviewer_decision_synthesized": false,
+    "rpr01": "PASS",
+    "rpr02": "PASS",
+    "rpr03": "PASS",
+    "rpr04": "PASS",
+    "rpr05": "PASS",
+    "rpr06": "PASS",
+    "rpr07": "PASS",
+    "rpr08": "PASS",
+    "sha256": "f133c13bdaeb71055bd839663332c921556dc516544e19e655f204032d33af71",
+    "size_bytes": 7251
+  },
+  "decision_0133_checkpoint": {
+    "commit": "e6380d2b72250d5e33ba41134679c3bda0e6fc19",
+    "corrective_external_handoff_v1_git_tree": "050d80d79457a88265a42f4a795a5735f1171291",
+    "decision_0133_sha256": "c444997de152ff46ad1b8d4b0720f8b84dc926aed37231506e96f8f6cabf93c3",
+    "parent_decision_0132_commit": "a7f27a45609d1602bfde674c0ebd40d54f5ca01a",
+    "tree": "257f1815e3269cd3d1c748c5be6560a2cc960ae7"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_conclusion": false,
+    "curl_json_creation": false,
+    "existing_18639_pair_state_modification": false,
+    "negative_mapping_impossibility_proof": false,
+    "operational_mapping": false,
+    "positive_mapping_witness": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "semantic_unit_carrier_pair_reclassification": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "governance_state": {
+    "completed_human_review_recorded": true,
+    "governance_adoption_authorized_by_this_record": false,
+    "study_governance_adopted": false
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_GOVERNANCE_ADOPTION_OF_REVIEWED_REQUIREMENT_PROVENANCE_RESOLVED_OUTCOME",
+  "record_id": "SVF-V4-LOSSLESSNESS-PROVENANCE-RPR01-RPR08-COMPLETED-HUMAN-REVIEW-V1",
+  "record_status": "COMPLETED_INDEPENDENT_HUMAN_REVIEW_RECORDED",
+  "retired_verifier_policy": {
+    "any_previous_retired_a02_rerun": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false,
+    "decision_0130_a02_rerun": false,
+    "decision_0132_a02_rerun": false
+  },
+  "review_interpretation": {
+    "approval_is_bounded": true,
+    "carrier_admissibility_proven": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "requirement_provenance_result_approved": true,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  },
+  "review_subject": "V4 Losslessness Requirement Provenance and Binding Resolution Study V1"
+}
