@@ -1,0 +1,99 @@
+{
+  "authorization_id": "SVF-SUCR-CLOSED-REVIEW-CHAIN-AND-BOUNDED-STUDY-V1-GOVERNANCE-ADOPTION-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_run_state": "PERMANENTLY_RETIRED",
+    "initial_state": "ACTIVE_UNCONSUMED",
+    "may_execute_exactly_once_immediately_before_governance_adoption_authoring": true,
+    "rerun_after_governance_adoption_authoring_begins": false,
+    "successful_output_must_be_preserved_byte_exactly": true
+  },
+  "governance_adoption_contract": {
+    "adopted_bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "authorized_governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+    "must_not_authorize_active_schema_v2_modification": true,
+    "must_not_authorize_analyzer": true,
+    "must_not_authorize_baseline": true,
+    "must_not_authorize_repair": true,
+    "must_not_authorize_schema_successor": true,
+    "must_not_claim_negative_existing_v2_mapping_impossibility": true,
+    "must_not_claim_positive_existing_v2_mapping": true,
+    "must_not_claim_whole_v4_exhaustiveness": true,
+    "must_not_create_curl_json": true,
+    "must_not_create_operational_authority": true,
+    "must_not_create_schema_v3": true,
+    "must_not_preselect_schema_version": true,
+    "must_not_rewrite_author_candidate_artifact": true,
+    "must_not_upgrade_further_evidence_required": true,
+    "must_preserve_focused_corrective_review": true,
+    "must_preserve_historical_review_findings": true,
+    "must_preserve_original_study_artifact": true,
+    "must_require_review_chain_pass_closed": true
+  },
+  "next_boundary": "RUN_DECISION_0124_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_GOVERNANCE_ADOPTION_V1_AUTHORING",
+  "pre_adoption_state": {
+    "governance_adoption_authored": false,
+    "governance_adoption_authorized": true,
+    "governance_adoption_status": null,
+    "review_chain_closed": true,
+    "study_governance_adopted": false
+  },
+  "required_governance_adoption_artifacts": {
+    "checksum_closure_required": true,
+    "decision_0124_a02_consumption_record_required": true,
+    "decision_0124_a02_final_output_exact_copy_required": true,
+    "human_readable_governance_adoption_report_required": true,
+    "machine_readable_governance_adoption_record_required": true,
+    "safe_post_authoring_verifier_required": true
+  },
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "decision_0110_a02": "PERMANENTLY_RETIRED",
+    "decision_0112_a02": "PERMANENTLY_RETIRED",
+    "decision_0114_a02": "PERMANENTLY_RETIRED",
+    "decision_0117_a02": "PERMANENTLY_RETIRED",
+    "decision_0119_a02": "PERMANENTLY_RETIRED",
+    "decision_0122_a02": "PERMANENTLY_RETIRED",
+    "retired_verifiers_must_not_be_executed": true
+  },
+  "review_chain_state": {
+    "closure_assessment_outcome": "PASS_CLOSED",
+    "focused_sucr01_c": "PASS",
+    "historical_findings_must_remain_immutable": true,
+    "historical_overall": "REVISION_REQUIRED",
+    "historical_sucr01": "REVISION_REQUIRED",
+    "historical_sucr02_through_sucr08": "PASS",
+    "review_chain_closed": true
+  },
+  "source_checkpoint": {
+    "corrective_successor_package_v2_git_tree": "dd34182886703f72fc5bfa4df899ad2bccbf4744",
+    "decision_0123_commit": "3909f365a5602b444464af471194c18df36d35a4",
+    "decision_0123_tree": "0270228ee4e084ddb9492b2f676d6fca49c8f960",
+    "focused_completed_rereview_v1_git_tree": "170c04d5dedf3a900edcf9d2a7ebc92b298b48a9",
+    "original_completed_review_v1_git_tree": "e8178b937ab376faca698d35cc57d6e3785fbbb5",
+    "review_chain_closure_assessment_v1_git_tree": "18d6b1b77994d6827b878a498e1556487921fda7",
+    "study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051"
+  },
+  "status": "AUTHORIZED_FOR_GOVERNANCE_ADOPTION_AUTHORING_ONLY",
+  "study_state_before_governance_adoption": {
+    "artifact_status": "AUTHOR_CANDIDATE",
+    "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false
+  },
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  }
+}
