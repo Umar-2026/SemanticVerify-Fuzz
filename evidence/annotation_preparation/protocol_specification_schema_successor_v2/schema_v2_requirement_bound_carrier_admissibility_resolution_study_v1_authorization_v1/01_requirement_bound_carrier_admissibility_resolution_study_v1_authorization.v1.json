@@ -1,0 +1,122 @@
+{
+  "authorization_id": "SVF-SCHEMA-V2-REQUIREMENT-BOUND-CARRIER-ADMISSIBILITY-RESOLUTION-STUDY-V1-AUTHORIZATION",
+  "authorization_type": "PRE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_STUDY_AUTHORING_ONLY",
+  "authorized_study": {
+    "candidate_family_membership_automatically_proves_admissibility": false,
+    "existing_pair_domain": "EXISTING_18639_SEMANTIC_UNIT_BY_SCHEMA_PATH_PAIRS_READ_ONLY",
+    "lexical_similarity_automatically_proves_admissibility": false,
+    "multi_path_composite_candidates": "MAY_BE_ASSESSED_WHEN_EXPLICITLY_JUSTIFIED_BY_REQUIREMENT_SEMANTICS",
+    "name": "Schema-V2 Requirement-Bound Carrier Admissibility Resolution Study V1",
+    "open_string_capacity_automatically_proves_admissibility": false,
+    "prior_unresolved_relation_automatically_promoted": false,
+    "purpose": "Assess whether each of the 17 governance-bound V4 losslessness requirements has semantically adequate existing Schema-V2 carrier support, while preserving all prior pair classifications and without constructing or authorizing a mapping.",
+    "requirement_domain": "EXACT_17_GOVERNANCE_ADOPTED_REQUIREMENT_IDENTITIES",
+    "schema_domain": "ACTIVE_SCHEMA_V2_ONLY",
+    "semantic_unit_domain": "EXISTING_109_SEMANTIC_UNITS_READ_ONLY",
+    "single_path_candidates": "MAY_BE_ASSESSED"
+  },
+  "classification_rules": {
+    "ADMISSIBLE_COMPOSITE": "Allowed only with an explicit finite multi-path carrier composition and a requirement-level reconstruction argument preserving the complete requirement semantics.",
+    "ADMISSIBLE_EXACT": "Allowed only with an exact requirement-to-existing-Schema-V2-carrier semantic witness and immutable evidence.",
+    "NO_ADMISSIBLE_CARRIER_PROVEN": "Allowed only when the study proves that the requirement-specific authorized carrier search domain is exhaustive and every candidate is semantically inadequate. Absence of a discovered witness is insufficient.",
+    "UNRESOLVED": "Required whenever admissibility or non-admissibility cannot be proven from the authorized evidence."
+  },
+  "critical_scope_boundaries": {
+    "active_schema_v2_bytes_must_remain_unchanged": true,
+    "all_17_admissible_does_not_by_itself_prove_joint_mapping_coherence": true,
+    "approved_v4_bytes_must_remain_unchanged": true,
+    "prior_18639_pair_state_must_remain_unchanged": true,
+    "requirement_local_admissibility_is_not_positive_mapping": true,
+    "requirement_local_nonadmissibility_is_not_global_mapping_impossibility": true,
+    "whole_v4_exhaustiveness_not_inferred": true
+  },
+  "decision_0136_checkpoint": {
+    "bounded_governance_adoption_v1_git_tree": "9893bd5dc8d7472f1177c373fa89d289de9ca59f",
+    "commit": "ea07e29b61e2a9d76a852be7acfdd1d942aa367d",
+    "parent_decision_0135_commit": "92d745dd3186ef8a528196976b283f75d7bd43b8",
+    "requirement_provenance_study_v1_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2",
+    "tree": "ab39a1f9cea358cecda12de673424f33f75b6bcb"
+  },
+  "exact_technical_source_basis": {
+    "active_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "approved_curl_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "canonical_representation_mapping_contract_v4_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "global_negative_mapping_impossibility_proof": false,
+    "modify_historical_18639_pair_state": false,
+    "operational_positive_mapping_contract": false,
+    "reclassify_historical_semantic_unit_carrier_pairs": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "governance_adopted_requirement_basis": {
+    "bound_composite_count": 0,
+    "bound_exact_count": 17,
+    "outcome": "REQUIREMENT_PROVENANCE_RESOLVED",
+    "requirement_count": 17,
+    "requirement_provenance_matrix_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+    "unresolved_count": 0
+  },
+  "historical_carrier_study_basis": {
+    "git_tree": "3f04237bdc58c2be56e85628de5923b87578a051",
+    "historical_pair_count": 18639,
+    "historical_pair_reclassification_authorized": false,
+    "historical_pair_state_mutable_by_successor_study": false,
+    "historical_schema_path_count": 171,
+    "historical_semantic_unit_count": 109,
+    "requirement_binding_assessment_sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5",
+    "requirement_binding_assessment_size_bytes": 9153
+  },
+  "next_boundary": "RUN_DECISION_0137_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_STUDY_V1_AUTHORING",
+  "per_requirement_allowed_classifications": [
+    "ADMISSIBLE_EXACT",
+    "ADMISSIBLE_COMPOSITE",
+    "NO_ADMISSIBLE_CARRIER_PROVEN",
+    "UNRESOLVED"
+  ],
+  "pre_study_verifier_policy": {
+    "current_head_parent_must_equal_decision_0136": true,
+    "execution_checkpoint": "IMMEDIATE_SUCCESSOR_OF_DECISION_0136",
+    "must_not_execute_retired_a02": true,
+    "must_reverify_governance_adoption": true,
+    "must_reverify_source_hashes": true,
+    "new_one_time_verifier_required": true,
+    "successful_run_may_author_study_v1_only": true
+  },
+  "prohibited_evidence": {
+    "analyzer_output": true,
+    "baseline_output": true,
+    "compiler_log_semantic_contents": true,
+    "generated_driver_source": true,
+    "gold_labels": true,
+    "llm_review_output": true,
+    "raw_model_responses": true,
+    "repair_output": true,
+    "selected_sample_membership": true
+  },
+  "retired_verifier_policy": {
+    "any_previous_retired_a02_rerun": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false,
+    "decision_0130_a02_rerun": false,
+    "decision_0132_a02_rerun": false,
+    "decision_0135_a02_rerun": false
+  },
+  "status": "AUTHORIZED_NOT_YET_STUDIED",
+  "study_outcome_rule": {
+    "fallback_condition": "One or more requirements remain UNRESOLVED.",
+    "fallback_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "resolved_condition": "All 17 requirements have a non-UNRESOLVED requirement-level carrier classification.",
+    "resolved_outcome": "REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLVED"
+  }
+}
