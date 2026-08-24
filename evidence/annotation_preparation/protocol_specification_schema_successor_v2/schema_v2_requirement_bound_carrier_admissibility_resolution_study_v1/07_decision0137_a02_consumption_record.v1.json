@@ -1,0 +1,13 @@
+{
+  "authorization_verifier_sha256": "954174f6a01761da8a00f8d1f130ab21c064bc4b681121b752b7c7d00dffbd1c",
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "782cb09c9d0567e526f13b3f4b73f493d84464bae453dc42be76f7ea1d2f6798",
+  "final_output_size_bytes": 1064,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "previous_retired_a02_verifiers_executed": false,
+  "record_id": "SVF-DECISION-0137-A02-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "study_authoring_began_immediately_after_successful_run": true,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}
