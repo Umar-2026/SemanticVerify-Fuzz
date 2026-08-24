@@ -1,0 +1,29 @@
+{
+  "accepted_explicit_cross_unit_constraint_count": 0,
+  "accepted_explicit_cross_unit_constraints": [],
+  "artifact_id": "SVF-SCHEMA-V2-CROSS-UNIT-COHERENCE-CONSTRAINT-INVENTORY-V1",
+  "complete_cross_unit_constraint_inventory_proven": false,
+  "interpretation": "Keyword or structural screening alone is insufficient to establish an explicit provenance-bound cross-unit semantic constraint; no constraint is promoted without separate semantic proof.",
+  "inventory_scope": "PROVENANCE_BOUND_EXPLICIT_CROSS_UNIT_CONSTRAINT_DISCOVERY",
+  "screening_hit_count": 2,
+  "screening_hits": [
+    {
+      "json_path": "$.exhaustiveness_accounting",
+      "key": "joint_cross_unit_coherence_search_complete",
+      "screening_status": "SCREENING_ONLY_NOT_ACCEPTED_AS_EXPLICIT_CROSS_UNIT_CONSTRAINT",
+      "source": "prior_study_v1",
+      "source_sha256": "a8d28b09e78e1466eb5bb0991289879b28b10abd1dd1f9197d138ca723718f6f"
+    },
+    {
+      "json_path": "$.human_review_basis",
+      "key": "independent_human_review_completed",
+      "screening_status": "SCREENING_ONLY_NOT_ACCEPTED_AS_EXPLICIT_CROSS_UNIT_CONSTRAINT",
+      "source": "governance_adoption_v1",
+      "source_sha256": "de4f4dddbd222d1d100cd2aa6845db1ccaf57459d6c7f6b7ba72663c0ecbac43"
+    }
+  ],
+  "status": "AUTHOR_CANDIDATE",
+  "whole_v4_composition_enumeration_authorized": false,
+  "whole_v4_composition_enumeration_performed": false,
+  "whole_v4_exhaustiveness_claim": false
+}

@@ -1,0 +1,77 @@
+{
+  "adopted_bounded_findings": {
+    "field_class_relation_domain_complete": true,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "positive_existing_v2_mapping_witness_identified": false,
+    "semantic_unit_inventory_complete": true,
+    "whole_v4_admissible_composition_exhaustiveness_established": false,
+    "whole_v4_admissible_composition_universe_proven_complete": false
+  },
+  "adopted_review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "adoption_id": "SVF-SCHEMA-V2-RELATION-INFORMED-EXHAUSTIVE-ADMISSIBLE-COMPOSITION-STUDY-V1-GOVERNANCE-ADOPTION-V1",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json": false,
+    "negative_existing_v2_mapping_impossibility": false,
+    "operational_mapping_contract": false,
+    "operational_v4_to_v2_mapping": false,
+    "positive_existing_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "governance_adoption": {
+    "adopted_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "completed_human_review_adopted": true,
+    "governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+    "reviewed_bounded_study_outcome_adopted": true,
+    "source_study_artifact_remains_immutable": true,
+    "source_study_artifact_status_remains": "AUTHOR_CANDIDATE",
+    "study_governance_approved": true,
+    "technical_outcome_changed_by_governance_adoption": false
+  },
+  "human_review_basis": {
+    "RIAC01": "PASS",
+    "RIAC02": "PASS",
+    "RIAC03": "PASS",
+    "RIAC04": "PASS",
+    "RIAC05": "PASS",
+    "RIAC06": "PASS",
+    "RIAC07": "PASS",
+    "RIAC08": "PASS",
+    "independent_human_review_completed": true,
+    "overall_review_decision": "APPROVE_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_V1",
+    "review_date": "23 / August / 2026",
+    "reviewer": "Abdul Raheem Shahzad",
+    "reviewer_confirmation": "ARS",
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "interpretation": {
+    "does_not_convert_absence_of_positive_witness_to_impossibility": true,
+    "does_not_convert_unresolved_evidence_to_positive_evidence": true,
+    "does_not_establish_whole_v4_exhaustiveness": true,
+    "does_not_modify_active_schema_v2": true,
+    "does_not_preselect_schema_successor_version": true,
+    "meaning": "The independently reviewed Study V1 integrity and its conservative FURTHER_EVIDENCE_REQUIRED technical conclusion are accepted for governance use."
+  },
+  "next_boundary": "SEPARATELY_DECIDE_WHAT_ADDITIONAL_TECHNICAL_EVIDENCE_IS_AUTHORIZED_TO_RESOLVE_FURTHER_EVIDENCE_REQUIRED_WITHOUT_PRESELECTING_POSITIVE_MAPPING_OR_SCHEMA_SUCCESSOR",
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "retired_a02_verifiers_executed_during_governance_adoption": false
+  },
+  "source_checkpoint": {
+    "completed_human_review_v1_git_tree": "4fc390ae5fbc4699ec5791133a5daffa8fa382d2",
+    "decision_0108_commit": "6e03ec63f44812e3e1d2779291f689aa20194abb",
+    "decision_0108_sha256": "2ef3a1a1d8b73827bbc0c9d419e2db92aaa50cf402bd95a9c907a216ff84fe70",
+    "decision_0108_tree": "905d7fa318a6f262d067927aa27eeefaded9b2c4",
+    "study_v1_git_tree": "bb55744db442f718daa56f8f38733e3ef4819b1a"
+  },
+  "status": "GOVERNANCE_ADOPTED_WITH_BOUNDED_TECHNICAL_OUTCOME"
+}

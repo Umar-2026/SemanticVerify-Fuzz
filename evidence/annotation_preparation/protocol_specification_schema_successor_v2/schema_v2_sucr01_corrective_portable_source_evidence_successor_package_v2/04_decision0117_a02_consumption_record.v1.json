@@ -1,0 +1,20 @@
+{
+  "authorization_verifier_sha256": "b0116a3e10c38819d9bb6415a41aaa29a7d39a90363e40e2cbe2ed4b61acd646",
+  "corrective_package_v2_authoring_began_immediately_after_successful_run": true,
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "943613f01ec61c7676e3e8359902e641f771d36dba3fdd493e027038c3210a98",
+  "final_output_size_bytes": 1188,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "previous_retired_a02_verifiers_remained_unexecuted": {
+    "decision_0102_a02": true,
+    "decision_0104_a02": true,
+    "decision_0106_a02": true,
+    "decision_0110_a02": true,
+    "decision_0112_a02": true,
+    "decision_0114_a02": true
+  },
+  "record_id": "SVF-DECISION-0117-SUCR01-CORRECTIVE-SUCCESSOR-PACKAGE-V2-AUTHORIZATION-VERIFIER-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}

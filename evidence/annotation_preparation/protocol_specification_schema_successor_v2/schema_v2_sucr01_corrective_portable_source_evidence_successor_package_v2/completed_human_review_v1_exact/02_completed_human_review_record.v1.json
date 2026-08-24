@@ -1,0 +1,84 @@
+{
+  "completed_review": {
+    "crlf_count": 81,
+    "item_decisions": {
+      "SUCR01": "REVISION_REQUIRED",
+      "SUCR02": "PASS",
+      "SUCR03": "PASS",
+      "SUCR04": "PASS",
+      "SUCR05": "PASS",
+      "SUCR06": "PASS",
+      "SUCR07": "PASS",
+      "SUCR08": "PASS"
+    },
+    "line_count": 82,
+    "overall_decision": "REVISION_REQUIRED",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "24 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "b41c4f737be70cf3de0f837f0f46b186a4d6ac12e7d49ad5e263bcddfb76f50a",
+    "size_bytes": 9603
+  },
+  "corrective_package_state": {
+    "authored": false,
+    "authorized": false,
+    "focused_rereview_authorized": false,
+    "focused_rereview_completed": false,
+    "review_chain_pass_closed": false
+  },
+  "external_handoff_zip": {
+    "entry_count": 34,
+    "sha256": "dbe2682fb7cdedf860250b510f6d4f0e74ce6cb86dfbb53f25d79e6e3c0549cc",
+    "size_bytes": 249480
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_SUCR01_CORRECTIVE_PORTABLE_SOURCE_EVIDENCE_SUCCESSOR_PACKAGE_V2",
+  "record_id": "SVF-SCHEMA-V2-SEMANTIC-UNIT-CARRIER-STUDY-V1-COMPLETED-HUMAN-REVIEW-V1",
+  "required_sucr01_corrective_evidence_classes": [
+    "active Schema V2",
+    "relation artifact",
+    "traceability artifact",
+    "prior Study V1",
+    "governance-adoption evidence"
+  ],
+  "retired_verifiers": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "decision_0110_a02": "PERMANENTLY_RETIRED",
+    "decision_0112_a02": "PERMANENTLY_RETIRED",
+    "decision_0114_a02": "PERMANENTLY_RETIRED"
+  },
+  "review_interpretation": {
+    "bounded_technical_outcome_remains": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "original_overall_review_remains": "REVISION_REQUIRED",
+    "review_chain_closed": false,
+    "study_approved": false,
+    "sucr01_corrective_action_required": true,
+    "sucr01_corrective_scope": "SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+    "sucr02_through_sucr08_may_be_carried_forward_as_original_pass_findings": true
+  },
+  "source_checkpoint": {
+    "decision_0115_commit": "3d4d37040bfd954523feacb3a7dd9699a5da49d3",
+    "decision_0115_tree": "d51301dc97f447d413881d3f63f48b02ab891e98",
+    "external_review_handoff_v1_git_tree": "4bc7bc0da6718058aff3cba7426c578f39acd3ea",
+    "study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051"
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_REVISION_REQUIRED_NOT_GOVERNANCE_ADOPTED",
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  }
+}

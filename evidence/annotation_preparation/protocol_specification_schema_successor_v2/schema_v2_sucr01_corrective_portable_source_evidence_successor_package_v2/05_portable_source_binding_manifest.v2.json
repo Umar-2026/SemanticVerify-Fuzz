@@ -1,0 +1,138 @@
+{
+  "all_required_source_classes_present": true,
+  "artifact_id": "SVF-SUCR01-CORRECTIVE-PORTABLE-SOURCE-BINDING-MANIFEST-V2",
+  "corrective_scope": "SUCR01_ONLY_SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+  "portable_source_class_count": 6,
+  "semantic_source_modification_performed": false,
+  "source_checkpoint": {
+    "decision_0117_authorization_git_tree": "e3b9cd649a5a3b4356aee9d359a69405616e626a",
+    "decision_0117_commit": "f2321de05eb68c8220130f4554be6006d3f582ad",
+    "decision_0117_tree": "159dfe564f83cc98a226ed8fa8cc0abeb8be81ba"
+  },
+  "sources": {
+    "active_schema_v2": {
+      "binding_type": "BYTE_EXACT_FILE",
+      "byte_exact_binding_verified": true,
+      "portable_package_path": "portable_sources/active_schema_v2/protocol_specification.v2.schema.json",
+      "portable_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "portable_size_bytes": 43030,
+      "source_git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "source_repository_path": "config/schemas/protocol_specification.v2.schema.json",
+      "source_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "source_size_bytes": 43030
+    },
+    "decision_0109_governance_adoption": {
+      "binding_type": "BYTE_EXACT_FILE",
+      "byte_exact_binding_verified": true,
+      "portable_package_path": "portable_sources/0109-governance-adopt-reviewed-bounded-outcome-of-relation-informed-study-v1.EXACT_COPY.md",
+      "portable_sha256": "1728f262195cd0f72bc744e566150a94c3fa28f1a6410150c5788bd24a8b5237",
+      "portable_size_bytes": 3515,
+      "source_git_blob": "1aebad968e9687e701eb87b73698c06d6f81c5c6",
+      "source_repository_path": "documentation/decisions/0109-governance-adopt-reviewed-bounded-outcome-of-relation-informed-study-v1.md",
+      "source_sha256": "1728f262195cd0f72bc744e566150a94c3fa28f1a6410150c5788bd24a8b5237",
+      "source_size_bytes": 3515
+    },
+    "governance_adoption_evidence_v1": {
+      "binding_type": "EXACT_DIRECTORY_WITH_SOURCE_GIT_TREE",
+      "portable_directory_inventory_complete": true,
+      "portable_file_count": 3,
+      "portable_file_inventory": [
+        {
+          "executable": false,
+          "relative_path": "01_governance_adoption_assessment.v1.json",
+          "sha256": "de4f4dddbd222d1d100cd2aa6845db1ccaf57459d6c7f6b7ba72663c0ecbac43",
+          "size_bytes": 3610
+        },
+        {
+          "executable": true,
+          "relative_path": "02_verify_governance_adoption.v1.py",
+          "sha256": "844d8572168103fa538ebf3cd3ec2804d653fbef927b214c6616e190f0f9fe70",
+          "size_bytes": 7301
+        },
+        {
+          "executable": false,
+          "relative_path": "03_governance_adoption.v1.SHA256SUMS",
+          "sha256": "5b7a5e45c18be1c317e04cbcc5e0fd820ae54bf1f1b9e2159c872ead970259fa",
+          "size_bytes": 210
+        }
+      ],
+      "portable_package_path": "portable_sources/governance_adoption_v1_exact",
+      "source_git_tree": "b5e2ccf604fc874cfa64e4831b66c22f669ade78",
+      "source_repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_relation_informed_exhaustive_admissible_composition_study_v1_governance_adoption_v1"
+    },
+    "prior_relation_informed_study_v1": {
+      "binding_type": "EXACT_DIRECTORY_WITH_SOURCE_GIT_TREE",
+      "portable_directory_inventory_complete": true,
+      "portable_file_count": 7,
+      "portable_file_inventory": [
+        {
+          "executable": false,
+          "relative_path": "01_relation_informed_exhaustive_admissible_composition_study.v1.json",
+          "sha256": "a8d28b09e78e1466eb5bb0991289879b28b10abd1dd1f9197d138ca723718f6f",
+          "size_bytes": 98536
+        },
+        {
+          "executable": false,
+          "relative_path": "02_exhaustiveness_accounting.v1.json",
+          "sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+          "size_bytes": 98246
+        },
+        {
+          "executable": false,
+          "relative_path": "03_study_report.v1.md",
+          "sha256": "d0de61d7285ae8ba2c3ff2fcf2048f8c8dca145f87929a93262ab26c2e4b2642",
+          "size_bytes": 2513
+        },
+        {
+          "executable": false,
+          "relative_path": "04_authorization_verifier_final_output.EXACT_COPY.v1.txt",
+          "sha256": "82cd248d4d323b691c8635ba9d1b992dfe4dbe0de7033b7a9eb92f0f4ce4bb50",
+          "size_bytes": 875
+        },
+        {
+          "executable": false,
+          "relative_path": "05_authorization_verifier_consumption_record.v1.json",
+          "sha256": "022a8c1fa5f6630261a91e815c1c9339037188b103ae97634a8b7a48c03a2753",
+          "size_bytes": 843
+        },
+        {
+          "executable": true,
+          "relative_path": "06_verify_relation_informed_exhaustive_admissible_composition_study.v1.py",
+          "sha256": "b0ff1cb58eee830aa97c2759b54c78a96c9190c3c173a59483ee459bce8e8d22",
+          "size_bytes": 7861
+        },
+        {
+          "executable": false,
+          "relative_path": "07_relation_informed_exhaustive_admissible_composition_study.v1.SHA256SUMS",
+          "sha256": "aa58e9221db7fa0c2bc17b2831e051ce6d7574c000d35d4f92c26ae923340140",
+          "size_bytes": 708
+        }
+      ],
+      "portable_package_path": "portable_sources/prior_relation_informed_study_v1_exact",
+      "source_git_tree": "bb55744db442f718daa56f8f38733e3ef4819b1a",
+      "source_repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_relation_informed_exhaustive_admissible_composition_study_v1"
+    },
+    "semantic_role_relation_artifact": {
+      "binding_type": "BYTE_EXACT_FILE",
+      "byte_exact_binding_verified": true,
+      "portable_package_path": "portable_sources/semantic_role_relation/02_v4_field_class_to_schema_v2_property_path_relation.v1.json",
+      "portable_sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+      "portable_size_bytes": 10875847,
+      "source_git_blob": "133426afc578210b10921e76dac2a200f827c953",
+      "source_repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/02_v4_field_class_to_schema_v2_property_path_relation.v1.json",
+      "source_sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+      "source_size_bytes": 10875847
+    },
+    "semantic_role_traceability_artifact": {
+      "binding_type": "BYTE_EXACT_FILE",
+      "byte_exact_binding_verified": true,
+      "portable_package_path": "portable_sources/semantic_role_traceability/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "portable_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "portable_size_bytes": 732713,
+      "source_git_blob": "877225ffab98272684726b8a1caf5db5fe0946e5",
+      "source_repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "source_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "source_size_bytes": 732713
+    }
+  }
+}
