@@ -1,0 +1,133 @@
+{
+  "authorization_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-BINDING-RESOLUTION-STUDY-V1-AUTHORIZATION",
+  "authorization_verifier_lifecycle": {
+    "after_final_run_state": "PERMANENTLY_RETIRED",
+    "initial_state": "ACTIVE_UNCONSUMED",
+    "may_execute_exactly_once_immediately_before_study_authoring": true,
+    "rerun_after_study_authoring_begins": false,
+    "successful_output_must_be_preserved_byte_exactly": true
+  },
+  "governance_state": {
+    "adopted_bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+    "review_chain_closed": true,
+    "review_chain_closure_outcome": "PASS_CLOSED",
+    "study_governance_adopted": true
+  },
+  "governed_study_v1_bindings": {
+    "checksum_file_sha256": "4a3120241af95c90f935a01c750c88a5d6eda15c513f15b9b377b25b39710795",
+    "checksum_file_size_bytes": 931,
+    "losslessness_requirement_binding_assessment_sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5",
+    "losslessness_requirement_binding_assessment_size_bytes": 9153,
+    "safe_verifier_sha256": "4b8c99000699589bc100fd558b7e64fcb70d40139294eb78faafbb4f10584dde",
+    "safe_verifier_size_bytes": 8707
+  },
+  "next_boundary": "RUN_DECISION_0126_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1_AUTHORING",
+  "pre_study_state": {
+    "existing_17_requirement_source_binding_resolved": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "positive_existing_v2_mapping_proven": false,
+    "study_authored": false,
+    "study_authorized": true,
+    "study_outcome": null,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  },
+  "required_study_artifacts": {
+    "17_requirement_provenance_binding_matrix_required": true,
+    "checksum_closure_required": true,
+    "decision_0126_a02_consumption_record_required": true,
+    "decision_0126_a02_final_output_exact_copy_required": true,
+    "human_readable_study_report_required": true,
+    "machine_readable_accounting_required": true,
+    "safe_post_authoring_verifier_required": true,
+    "source_evidence_inventory_required": true
+  },
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "decision_0110_a02": "PERMANENTLY_RETIRED",
+    "decision_0112_a02": "PERMANENTLY_RETIRED",
+    "decision_0114_a02": "PERMANENTLY_RETIRED",
+    "decision_0117_a02": "PERMANENTLY_RETIRED",
+    "decision_0119_a02": "PERMANENTLY_RETIRED",
+    "decision_0122_a02": "PERMANENTLY_RETIRED",
+    "decision_0124_a02": "PERMANENTLY_RETIRED",
+    "retired_verifiers_must_not_be_executed": true
+  },
+  "source_checkpoint": {
+    "decision_0125_commit": "8c363e4216493d402cedab8e2f73d1b2bd23245a",
+    "decision_0125_tree": "28243d46da8a13f5019cbdefaffb01f249a70773",
+    "focused_completed_rereview_v1_git_tree": "170c04d5dedf3a900edcf9d2a7ebc92b298b48a9",
+    "governance_adoption_v1_git_tree": "28a768d8dedc6f8614f7f0c23c19674df481a3ac",
+    "governed_study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051",
+    "original_completed_review_v1_git_tree": "e8178b937ab376faca698d35cc57d6e3785fbbb5",
+    "review_chain_closure_assessment_v1_git_tree": "18d6b1b77994d6827b878a498e1556487921fda7"
+  },
+  "status": "AUTHORIZED_FOR_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1_AUTHORING_ONLY",
+  "study_contract": {
+    "allowed_requirement_binding_classifications": [
+      "BOUND_EXACT",
+      "BOUND_COMPOSITE",
+      "UNRESOLVED"
+    ],
+    "allowed_study_outcomes": [
+      "REQUIREMENT_PROVENANCE_RESOLVED",
+      "FURTHER_EVIDENCE_REQUIRED"
+    ],
+    "bound_composite_meaning": "The requirement is supported by a finite explicitly enumerated set of immutable source locations whose conjunction reconstructs the requirement without semantic invention.",
+    "bound_exact_meaning": "The requirement is supported by one explicit immutable source location with sufficient context.",
+    "further_evidence_required_condition": "At least one of the 17 requirements remains UNRESOLVED.",
+    "must_distinguish_direct_source_text_from_author_inference": true,
+    "must_not_author_schema_successor": true,
+    "must_not_authorize_analyzer": true,
+    "must_not_authorize_baseline": true,
+    "must_not_authorize_repair": true,
+    "must_not_change_existing_18639_pair_state": true,
+    "must_not_claim_carrier_admissibility": true,
+    "must_not_claim_whole_v4_composition_exhaustiveness": true,
+    "must_not_construct_negative_mapping_impossibility_proof": true,
+    "must_not_construct_positive_mapping_witness": true,
+    "must_not_create_curl_json": true,
+    "must_not_invent_new_losslessness_requirements": true,
+    "must_not_modify_active_schema_v2": true,
+    "must_not_preselect_schema_version": true,
+    "must_not_reclassify_semantic_unit_carrier_pairs": true,
+    "must_not_treat_absence_as_negative_proof": true,
+    "must_preserve_existing_requirement_ids": true,
+    "must_record_binding_rationale": true,
+    "must_record_source_artifact_identity": true,
+    "must_record_source_path_or_structural_location": true,
+    "must_record_source_sha256_or_git_identity_where_available": true,
+    "must_record_unresolved_reason_when_unresolved": true,
+    "permitted_evidence_scope": "Immutable approved protocol-specification, provenance, schema, governance, decision, and study evidence only.",
+    "primary_question": "Can each of the existing 17 losslessness requirements be bound to explicit immutable V4 provenance evidence with sufficient source context for later losslessness reasoning?",
+    "prohibited_evidence": [
+      "generated-driver source",
+      "selected-sample membership",
+      "raw model responses",
+      "compiler-log semantic contents",
+      "gold labels",
+      "analyzer output",
+      "baseline output",
+      "LLM-review output",
+      "repair output"
+    ],
+    "requirement_inventory_size": 17,
+    "requirement_provenance_resolved_condition": "All 17 existing losslessness requirements have either BOUND_EXACT or BOUND_COMPOSITE provenance with no UNRESOLVED requirement.",
+    "study_name": "V4 Losslessness Requirement Provenance and Binding Resolution Study V1",
+    "unresolved_meaning": "Available approved evidence does not establish an explicit lossless provenance binding."
+  },
+  "technical_nonauthorizations": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "operational_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false
+  }
+}
