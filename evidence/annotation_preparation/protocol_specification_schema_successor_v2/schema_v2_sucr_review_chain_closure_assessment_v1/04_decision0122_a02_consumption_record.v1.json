@@ -1,0 +1,13 @@
+{
+  "authorization_verifier_sha256": "1a7b74994b82311db4b2cc78e251008b5f161f20722d6b92ceeac613515de865",
+  "closure_assessment_authoring_began_immediately_after_successful_run": true,
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "e0fb192d0038711653e3109b7e8139dbc03fb1c97d42d440b4b3f8af959bfecf",
+  "final_output_size_bytes": 932,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "previous_retired_a02_verifiers_remained_unexecuted": true,
+  "record_id": "SVF-DECISION-0122-CLOSURE-ASSESSMENT-AUTHORIZATION-VERIFIER-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}
