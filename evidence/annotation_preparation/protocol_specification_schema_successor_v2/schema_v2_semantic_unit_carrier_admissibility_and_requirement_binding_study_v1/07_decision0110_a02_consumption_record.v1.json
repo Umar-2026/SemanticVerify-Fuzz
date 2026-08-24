@@ -1,0 +1,15 @@
+{
+  "authorization_verifier_sha256": "6544c325041e816373a8d5586be90e49223519b070a3df92037aca5738ab4d8e",
+  "decision_0102_a02_remained_retired": true,
+  "decision_0104_a02_remained_retired": true,
+  "decision_0106_a02_remained_retired": true,
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "ff3be9a0d9b206d64e01a5e1665b203a34a2b89a637e3d4e2148582bfebe9f74",
+  "final_output_size_bytes": 1026,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "record_id": "SVF-DECISION-0110-STUDY-AUTHORIZATION-VERIFIER-FINAL-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "study_authoring_began_immediately_after_successful_run": true,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}
