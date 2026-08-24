@@ -1,0 +1,127 @@
+{
+  "authorization_id": "SVF-RBCA01-RBCA08-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-AUTHORIZATION-V1",
+  "authorization_type": "PRE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING_ONLY",
+  "authorized_external_handoff_artifacts": {
+    "editable_external_reviewer_packet": true,
+    "editable_packet_source_must_be_exact_blank_package_packet": true,
+    "external_handoff_instructions": true,
+    "external_handoff_manifest": true,
+    "external_zip_must_contain_review_package_v1": true,
+    "external_zip_must_include_checksum_closure": true,
+    "external_zip_must_include_safe_verifier": true,
+    "external_zip_must_include_sealed_repository_checkpoint": true,
+    "external_zip_must_preserve_package_local_blank_packet": true,
+    "immutable_external_zip": true
+  },
+  "decision_0140_checkpoint": {
+    "commit": "cbce1a415bdca9ff8b32d47b5268a37504de35cc",
+    "parent_decision_0139_commit": "c9cf1bf0c9a3b59714e08f966f9c98acbd309fd7",
+    "review_package_authorization_v1_git_tree": "a752c306c41b1cc3c341ff154dd03cb31500ae7b",
+    "review_package_v1_git_tree": "94a907e55c8473f434d8675a7b5e46c63aad7533",
+    "study_v1_git_tree": "ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3",
+    "tree": "09106d2d21fc05ce589ff8ba1ca50ec72ca42567"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "historical_pair_reclassification": false,
+    "human_review_decision_recording": false,
+    "operational_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_crosswalk_authoring": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "study_governance_adoption": false
+  },
+  "external_handoff_authoring_verifier_policy": {
+    "current_head_parent_must_equal_decision_0140": true,
+    "execution_checkpoint": "IMMEDIATE_SUCCESSOR_OF_DECISION_0140",
+    "must_not_execute_retired_a02": true,
+    "must_reverify_blank_reviewer_packet": true,
+    "must_reverify_human_review_not_performed": true,
+    "must_reverify_review_package_v1": true,
+    "must_reverify_sealed_bundle_semantics": true,
+    "new_one_time_verifier_required": true,
+    "successful_run_may_author_external_handoff_only": true
+  },
+  "external_reviewer_packet_policy": {
+    "author_may_not_prefill_item_decisions": true,
+    "author_may_not_prefill_overall_decision": true,
+    "author_may_not_prefill_reviewer_confirmation": true,
+    "author_may_not_prefill_reviewer_date": true,
+    "author_may_not_prefill_reviewer_name": true,
+    "author_may_not_synthesize_reviewer_notes": true,
+    "initial_external_copy_must_be_byte_exact_to_blank_package_packet": true,
+    "real_human_reviewer_may_edit_external_copy_after_handoff": true,
+    "repository_package_blank_packet_must_remain_immutable": true
+  },
+  "handoff_subject": {
+    "human_review_performed": false,
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "RBCA01",
+      "RBCA02",
+      "RBCA03",
+      "RBCA04",
+      "RBCA05",
+      "RBCA06",
+      "RBCA07",
+      "RBCA08"
+    ],
+    "reviewer_decision_present": false,
+    "reviewer_decision_synthesized": false,
+    "study_outcome_under_review": "FURTHER_EVIDENCE_REQUIRED",
+    "study_status": "AUTHOR_CANDIDATE",
+    "unresolved_count": 17
+  },
+  "next_boundary": "RUN_DECISION_0141_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_EXTERNAL_RBCA01_RBCA08_HANDOFF_AUTHORING",
+  "retired_verifier_policy": {
+    "any_previous_retired_a02_rerun": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false,
+    "decision_0130_a02_rerun": false,
+    "decision_0132_a02_rerun": false,
+    "decision_0135_a02_rerun": false,
+    "decision_0137_a02_rerun": false,
+    "decision_0139_a02_rerun": false
+  },
+  "review_package_exact_bindings": {
+    "blank_reviewer_packet_sha256": "4b0df835c5bfd59f2d023204f5a1a2ede11a293d7168f862413777ccd846210b",
+    "blank_reviewer_packet_size_bytes": 4134,
+    "decision_0140_sha256": "8f63f34ef6c991c6b7332d2bc2d843ca6662da2b92c30e9813bb8f446781aac9",
+    "portable_source_manifest_sha256": "da9017a6a2e35f5d132b97c4d8638b52f7ac37029807689ff7da6cf73da07838",
+    "review_package_checksum_sha256": "a5d27075381591c76abc63590b301ac4082adc33698cefb11d9e5bf934be07ee",
+    "review_subject_manifest_sha256": "8bf84c0e5265165a4fc7b617470e6cb1c4dea6865f8935dcc6888ba49466c539",
+    "safe_review_package_verifier_sha256": "db1f315a2a5c37821007e705bba9d8e2addaee21c49d87c1f837c45067d20397",
+    "sealed_repository_bundle_sha256": "a5f9f0ced2ea7e057da8faaede9d58ce5428d420967c9b6715044f873ab27741",
+    "sealed_repository_bundle_size_bytes": 15194638
+  },
+  "reviewer_instructions_required": {
+    "choose_exactly_one_overall_review_decision": true,
+    "do_not_modify_immutable_zip": true,
+    "extract_external_zip": true,
+    "independently_decide_RBCA01_through_RBCA08": true,
+    "inspect_review_subject_and_portable_evidence": true,
+    "provide_name_confirmation_date_and_role": true,
+    "return_completed_external_reviewer_packet": true,
+    "run_package_safe_verifier": true
+  },
+  "sealed_bundle_semantics": {
+    "bundle_checkpoint_interpretation_must_not_be_changed": true,
+    "bundle_is_decision_0140_checkpoint": false,
+    "checkpoint_commit": "c9cf1bf0c9a3b59714e08f966f9c98acbd309fd7",
+    "checkpoint_role": "DECISION_0139_PRE_REVIEW_PACKAGE_CHECKPOINT"
+  },
+  "status": "AUTHORIZED_NOT_YET_HANDED_OFF",
+  "technical_nonclaims_preserved": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}
