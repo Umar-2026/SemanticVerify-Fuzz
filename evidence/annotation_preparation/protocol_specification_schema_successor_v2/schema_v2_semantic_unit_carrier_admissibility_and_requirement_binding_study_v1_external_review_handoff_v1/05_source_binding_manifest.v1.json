@@ -1,0 +1,38 @@
+{
+  "artifact_id": "SVF-SEMANTIC-UNIT-CARRIER-STUDY-V1-EXTERNAL-REVIEW-HANDOFF-SOURCE-BINDING-V1",
+  "blank_reviewer_packet": {
+    "sha256": "38f1021657d06716ac28709ec98be6d9d992a4c451b41569b0f60c651f68a8db",
+    "size_bytes": 3685
+  },
+  "decision_0114_authorization_copy": {
+    "byte_exact": true,
+    "file_count": 3
+  },
+  "human_review_decision_exists": false,
+  "review_contract": {
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "SUCR01",
+      "SUCR02",
+      "SUCR03",
+      "SUCR04",
+      "SUCR05",
+      "SUCR06",
+      "SUCR07",
+      "SUCR08"
+    ]
+  },
+  "review_package_copy": {
+    "byte_exact": true,
+    "file_count": 23
+  },
+  "source_checkpoint": {
+    "decision_0113_commit": "3a49841fccd905bbad3cdf74b36156b0eefaf9d8",
+    "decision_0114_authorization_git_tree": "92067ec13dc69d7cd40d756e1a7abbd738a8696d",
+    "decision_0114_commit": "f15db85b8a43d5ccd828a7b57d9a3de086887d0c",
+    "decision_0114_tree": "ae7b77ea241bdff1d0317e143516dea446f7f011",
+    "review_package_v1_git_tree": "e3d3c93a723b9d4c085a81ec0d0be11df852601a",
+    "study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051"
+  },
+  "study_governance_adopted": false
+}

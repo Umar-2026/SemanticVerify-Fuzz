@@ -1,0 +1,64 @@
+{
+  "artifact_id": "SVF-SCHEMA-V2-SEMANTIC-UNIT-CARRIER-ADMISSIBILITY-AND-REQUIREMENT-BINDING-STUDY-V1-ACCOUNTING",
+  "bounded_findings": {
+    "cross_unit_constraint_screening_recorded": true,
+    "losslessness_requirement_count_preserved_without_invented_text": true,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "positive_existing_v2_mapping_witness_identified": false,
+    "unit_carrier_cartesian_domain_formalized": true,
+    "whole_v4_admissible_composition_exhaustiveness_established": false
+  },
+  "cross_unit_coherence": {
+    "accepted_explicit_constraint_count": 0,
+    "complete_constraint_inventory_proven": false,
+    "screening_hit_count": 2,
+    "whole_v4_composition_enumeration_performed": false
+  },
+  "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "governance_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "operational_mapping_authorized": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "study_governance_adopted": false
+  },
+  "independent_human_review_required": true,
+  "relation_source_accounting": {
+    "field_class_count": 57,
+    "field_class_relation_evidence_automatically_promoted_to_unit_level": false,
+    "not_semantically_related_count": 969,
+    "property_path_count": 171,
+    "relation_pair_count": 9747,
+    "semantically_related_count": 113,
+    "unresolved_count": 8665
+  },
+  "requirement_provenance_binding": {
+    "bound_count": 0,
+    "requirement_count_in_scope": 17,
+    "requirement_provenance_binding_complete": false,
+    "unique_authoritative_inventory_bound": false,
+    "unresolved_source_binding_count": 17
+  },
+  "semantic_unit_carrier_domain": {
+    "candidate_admissible_count": 0,
+    "cartesian_pair_count": 18639,
+    "complete_cartesian_coverage": true,
+    "not_admissible_count": 0,
+    "pair_count_observed": 18639,
+    "pair_uniqueness": true,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "unit_level_admissibility_domain_formalized": true,
+    "unit_level_admissibility_resolved": false,
+    "unresolved_count": 18639
+  },
+  "source_adopted_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "source_governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+  "status": "AUTHOR_CANDIDATE"
+}

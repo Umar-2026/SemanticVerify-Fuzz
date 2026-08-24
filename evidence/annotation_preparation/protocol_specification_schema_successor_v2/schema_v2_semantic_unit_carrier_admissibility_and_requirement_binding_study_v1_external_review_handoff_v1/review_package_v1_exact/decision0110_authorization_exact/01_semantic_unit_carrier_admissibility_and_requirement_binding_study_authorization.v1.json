@@ -1,0 +1,136 @@
+{
+  "allowed_study_outcomes": [
+    "EVIDENCE_DOMAINS_FORMALIZED_FURTHER_COMPOSITION_STUDY_POSSIBLE",
+    "FURTHER_EVIDENCE_REQUIRED"
+  ],
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-UNIT-CARRIER-ADMISSIBILITY-AND-REQUIREMENT-BINDING-STUDY-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_run_state": "PERMANENTLY_RETIRED",
+    "initial_state": "ACTIVE_UNCONSUMED",
+    "may_execute_exactly_once_immediately_before_study_authoring": true,
+    "rerun_after_study_authoring_begins": false,
+    "successful_output_must_be_preserved_byte_exactly": true
+  },
+  "authorized_source_policy": {
+    "active_schema_v2": true,
+    "approved_relation_formalization_and_traceability": true,
+    "governance_approved_protocol_specification_evidence": true,
+    "pre_existing_protocol_specification_governance_artifacts_for_requirement_provenance_discovery": true,
+    "source_discovery_may_not_use_prohibited_driver_or_evaluation_evidence": true,
+    "study_v1_and_governance_adoption_evidence": true
+  },
+  "authorized_study": "Schema-V2 Semantic-Unit Carrier Admissibility and Requirement Binding Study V1",
+  "authorized_workstreams": {
+    "cross_unit_coherence_constraint_inventory": {
+      "goal": "Identify explicit cross-unit dependencies, joint-storage constraints, ordering constraints, exclusivity constraints, and coherence requirements needed before any whole-V4 composition-universe enumeration.",
+      "must_be_provenance_bound": true,
+      "must_distinguish_explicit_constraint_from_inference": true,
+      "whole_v4_composition_enumeration_authorized": false,
+      "whole_v4_exhaustiveness_claim_authorized": false
+    },
+    "losslessness_requirement_provenance_binding": {
+      "allowed_requirement_binding_statuses": [
+        "BOUND_TO_UNIQUE_AUTHORITATIVE_SOURCE_ITEM",
+        "UNRESOLVED_SOURCE_BINDING"
+      ],
+      "coincidental_seventeen_item_arrays_are_not_requirement_inventory": true,
+      "goal": "Attempt to bind each of the 17 losslessness requirements to a unique pre-existing authoritative source item with exact provenance.",
+      "if_unique_binding_cannot_be_proven": "RECORD_UNRESOLVED_SOURCE_BINDING",
+      "inference_from_requirement_count_only_prohibited": true,
+      "invented_requirement_text_prohibited": true,
+      "requirement_count_in_scope": 17,
+      "semantic_reconstruction_from_memory_prohibited": true
+    },
+    "semantic_unit_carrier_admissibility_domain": {
+      "absence_from_prior_screening_is_not_negative_proof": true,
+      "allowed_pair_classifications": [
+        "CANDIDATE_ADMISSIBLE",
+        "NOT_ADMISSIBLE",
+        "UNRESOLVED"
+      ],
+      "candidate_admissible_does_not_mean_lossless": true,
+      "candidate_admissible_does_not_mean_operational_mapping": true,
+      "lexical_match_is_not_semantic_admissibility_proof": true,
+      "open_string_capacity_is_not_losslessness_proof": true,
+      "required_cartesian_pair_count": 18639,
+      "required_complete_cartesian_coverage": true,
+      "required_pair_uniqueness": true,
+      "schema_v2_property_path_count": 171,
+      "semantic_unit_count": 109,
+      "unresolved_must_not_be_promoted_to_admissible": true
+    }
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json": false,
+    "negative_existing_v2_mapping_impossibility": false,
+    "operational_mapping_contract": false,
+    "operational_v4_to_v2_mapping": false,
+    "positive_existing_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false,
+    "whole_v4_composition_enumeration": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "field_class_domain_safety": {
+    "field_class_relation_evidence_may_be_used_as_support_but_not_as_automatic_unit_level_classification": true,
+    "matrix_field_class_vocabulary_count": 57,
+    "unit_carrier_classification_must_be_unit_context_specific": true,
+    "unit_inventory_field_class_vocabulary_count": 57,
+    "vocabularies_must_not_be_equated": true
+  },
+  "governance_basis": {
+    "adopted_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "positive_existing_v2_mapping_proven": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  },
+  "motivation": "Resolve explicitly identified evidence gaps underlying the governance-adopted FURTHER_EVIDENCE_REQUIRED outcome without preselecting positive mapping, negative impossibility, or schema successor.",
+  "next_boundary": "RUN_DECISION_0110_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_STUDY_AUTHORING_AND_RECORD_FINAL_OUTPUT",
+  "prohibited_evidence": [
+    "generated_driver_source",
+    "selected_sample_membership",
+    "raw_model_responses",
+    "compiler_log_semantic_contents",
+    "gold_labels",
+    "analyzer_output",
+    "baseline_output",
+    "llm_review_output",
+    "repair_output"
+  ],
+  "required_study_outputs": [
+    "semantic_unit_carrier_admissibility_matrix",
+    "losslessness_requirement_binding_assessment",
+    "cross_unit_coherence_constraint_inventory",
+    "machine_readable_accounting",
+    "human_readable_study_report",
+    "authorization_verifier_final_output_exact_copy",
+    "authorization_verifier_consumption_record",
+    "safe_post_authoring_verifier",
+    "checksum_closure"
+  ],
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "retired_verifiers_must_not_be_executed": true
+  },
+  "source_checkpoint": {
+    "decision_0109_commit": "3287e24b06e0badbefdf3e8103ec482b4acc71a5",
+    "decision_0109_tree": "06e70e777c32a560ba090d2e13ea79af74d4e188",
+    "governance_adoption_v1_git_tree": "b5e2ccf604fc874cfa64e4831b66c22f669ade78",
+    "study_v1_git_tree": "bb55744db442f718daa56f8f38733e3ef4819b1a"
+  },
+  "status": "AUTHORIZED_FOR_STUDY_AUTHORING_ONLY",
+  "study_completion_state": {
+    "governance_adoption_automatic": false,
+    "independent_human_review_required": true,
+    "status_after_authoring": "AUTHOR_CANDIDATE"
+  }
+}

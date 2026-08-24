@@ -1,0 +1,70 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SEMANTIC_UNIT_CARRIER_ADMISSIBILITY_AND_REQUIREMENT_BINDING_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "decision_0114_a02": {
+    "final_output_sha256": "d1b74b0746c0f6459eee454d17cb9fca2ca0dccaf2a42d7be762e54d80191d8c",
+    "final_output_size_bytes": 951,
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "external_editable_packet_initial_state": {
+    "byte_identical_to_internal_blank_packet": true,
+    "path": "/openbayes/home/22_SUCR01_SUCR08_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "reviewer_may_edit": true,
+    "sha256": "38f1021657d06716ac28709ec98be6d9d992a4c451b41569b0f60c651f68a8db",
+    "size_bytes": 3685
+  },
+  "external_immutable_zip": {
+    "path": "/openbayes/home/22_semantic_unit_carrier_study_v1_independent_review_handoff.v1.zip",
+    "reviewer_may_edit": false
+  },
+  "handoff_id": "SVF-SCHEMA-V2-SEMANTIC-UNIT-CARRIER-ADMISSIBILITY-AND-REQUIREMENT-BINDING-STUDY-V1-EXTERNAL-REVIEW-HANDOFF-V1",
+  "human_review_state": {
+    "human_review_decision_exists": false,
+    "item_decisions_prepopulated": false,
+    "overall_decision_prepopulated": false,
+    "reviewer_identity_prepopulated": false,
+    "reviewer_notes_prepopulated": false
+  },
+  "next_boundary": "SEND_IMMUTABLE_ZIP_AND_EDITABLE_SUCR_PACKET_TO_SPEC_TECHNICAL_REVIEWER_1_AND_WAIT_FOR_COMPLETED_REVIEW",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_items": [
+    "SUCR01",
+    "SUCR02",
+    "SUCR03",
+    "SUCR04",
+    "SUCR05",
+    "SUCR06",
+    "SUCR07",
+    "SUCR08"
+  ],
+  "review_target": "Schema-V2 Semantic-Unit Carrier Admissibility and Requirement Binding Study V1",
+  "state": "BLANK_READY_FOR_EXTERNAL_INDEPENDENT_HUMAN_REVIEW",
+  "study_state": {
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "status": "AUTHOR_CANDIDATE"
+  },
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "curl_json_authorized": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

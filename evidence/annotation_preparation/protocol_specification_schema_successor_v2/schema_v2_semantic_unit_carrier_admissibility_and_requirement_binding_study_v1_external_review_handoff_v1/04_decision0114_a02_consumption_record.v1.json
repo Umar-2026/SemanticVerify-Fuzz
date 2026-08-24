@@ -1,0 +1,17 @@
+{
+  "authorization_verifier_sha256": "3139be91d0a6618e928c803ccc81b330a440e4c5ee63a90f95f0cccf6a751fd4",
+  "decision_0102_a02_remained_retired": true,
+  "decision_0104_a02_remained_retired": true,
+  "decision_0106_a02_remained_retired": true,
+  "decision_0110_a02_remained_retired": true,
+  "decision_0112_a02_remained_retired": true,
+  "external_handoff_authoring_began_immediately_after_successful_run": true,
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "d1b74b0746c0f6459eee454d17cb9fca2ca0dccaf2a42d7be762e54d80191d8c",
+  "final_output_size_bytes": 951,
+  "final_run_result": "PASS",
+  "must_never_be_rerun": true,
+  "record_id": "SVF-DECISION-0114-EXTERNAL-HANDOFF-AUTHORIZATION-VERIFIER-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}
