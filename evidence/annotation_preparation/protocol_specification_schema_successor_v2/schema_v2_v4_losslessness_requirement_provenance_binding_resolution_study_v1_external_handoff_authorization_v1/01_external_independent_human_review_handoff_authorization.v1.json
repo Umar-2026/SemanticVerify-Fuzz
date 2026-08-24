@@ -1,0 +1,91 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-V4-LOSSLESSNESS-PROVENANCE-STUDY-V1-RPR01-RPR08-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-AUTHORIZATION-V1",
+  "authorization_type": "PRE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING_ONLY",
+  "bound_review_package": {
+    "blank_reviewer_packet_sha256": "1f96825a9d035b256c436b24a39d877f4983460b0f10323f29847224c891721d",
+    "checksum_closure_sha256": "dab21242a05948ec595cc5e84a2a6132478d2e6d8e3f1a9dd30a48b9de585f70",
+    "decision_0129_sha256": "c2390666adaa7c2a92f514516f62aed3db044432041696e63988772657f273a1",
+    "human_review_performed": false,
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_item_count": 8,
+    "review_items": [
+      "RPR01",
+      "RPR02",
+      "RPR03",
+      "RPR04",
+      "RPR05",
+      "RPR06",
+      "RPR07",
+      "RPR08"
+    ],
+    "review_subject_manifest_sha256": "4a3520a1a6d1e5b3a39aebbb1683a0014113df71b8c531860c03965acdc16971",
+    "reviewer_decision_present": false,
+    "safe_verifier_sha256": "fed89d94840f92db7eca1b62a28abad32a0b4e0d7152421b078c64262c125163",
+    "source_binding_manifest_sha256": "36a73d21e508f64d283b26087be9b31bbce7993f7148fb82f37bac77dc36fff0"
+  },
+  "decision_0129_checkpoint": {
+    "commit": "7ddaaa2e24a065053c132700292023dfaca9c428",
+    "review_package_git_tree": "35794b450ed9bcde337f4ea4b7de35dd8218cc03",
+    "tree": "2335405893a975a264352a6ece5dc318fe9ae670"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_conclusion": false,
+    "curl_json_creation": false,
+    "human_review_decision_recording": false,
+    "negative_mapping_impossibility_proof_authoring": false,
+    "operational_mapping": false,
+    "positive_mapping_witness_authoring": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "semantic_unit_carrier_pair_reclassification": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "external_handoff_requirements": {
+    "author_must_not_prefill_reviewer_decisions": true,
+    "author_must_not_synthesize_overall_decision": true,
+    "author_must_not_synthesize_reviewer_identity": true,
+    "author_must_not_synthesize_reviewer_notes": true,
+    "editable_manual_copy_must_start_byte_exactly_from_blank_packet": true,
+    "editable_manual_reviewer_packet_copy_required": true,
+    "external_reviewer_must_return_completed_packet": true,
+    "handoff_zip_required": true,
+    "zip_must_include_blank_rpr01_rpr08_reviewer_packet": true,
+    "zip_must_include_checksum_closure": true,
+    "zip_must_include_exact_review_package_v1": true,
+    "zip_must_include_portable_source_evidence": true,
+    "zip_must_include_safe_review_package_verifier": true,
+    "zip_must_include_sealed_repository_checkpoint_bundle": true
+  },
+  "handoff_state_after_authoring": "AWAITING_EXTERNAL_INDEPENDENT_HUMAN_REVIEW",
+  "next_boundary": "RUN_DECISION_0130_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_V1_AUTHORING",
+  "retired_verifier_constraints": {
+    "all_previously_retired_a02_verifier_reruns": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false
+  },
+  "sealed_repository_checkpoint_bundle": {
+    "bundle_manifest_sha256": "b1e2fc738646b49f679207b1d34c77940382634361afebb24742d19ba24a7d2a",
+    "bundle_sha256": "ab2aed74d6b082137d8560bd21578323faf5a543f335ccea45dfc361454ebacf",
+    "checkpoint_commit": "7f13e5569c5d25c9c104a9b1dd68516471b6017a",
+    "checkpoint_role": "DECISION_0128_PRE_REVIEW_PACKAGE_CHECKPOINT",
+    "intentionally_distinct_from_decision_0129_checkpoint": true
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED"
+}
