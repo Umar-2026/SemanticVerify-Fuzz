@@ -1,0 +1,13 @@
+{
+  "authorization_verifier_sha256": "d2fb2561246d32f13dabdc6366d0c8095047039fe6b1574d10895b481b9bc818",
+  "final_output_recorded_byte_exactly": true,
+  "final_output_sha256": "f47446dfd39c3ede36005b4386cc305e975450464e7599e099d8794ffc0c6ea2",
+  "final_output_size_bytes": 778,
+  "final_run_result": "PASS",
+  "governance_adoption_authoring_began_immediately_after_successful_run": true,
+  "must_never_be_rerun": true,
+  "previous_retired_a02_verifiers_remained_unexecuted": true,
+  "record_id": "SVF-DECISION-0124-GOVERNANCE-ADOPTION-AUTHORIZATION-VERIFIER-CONSUMPTION-V1",
+  "rerun_authorized": false,
+  "verifier_state_after_run": "PERMANENTLY_RETIRED"
+}

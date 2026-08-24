@@ -1,0 +1,61 @@
+{
+  "adopted_bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "decision_0124_a02": {
+    "final_output_sha256": "f47446dfd39c3ede36005b4386cc305e975450464e7599e099d8794ffc0c6ea2",
+    "final_output_size_bytes": 778,
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "governance_adoption_id": "SVF-SUCR-CLOSED-REVIEW-CHAIN-AND-BOUNDED-STUDY-V1-GOVERNANCE-ADOPTION-V1",
+  "meaning": {
+    "further_evidence_is_still_required": true,
+    "governance_adoption_does_not_create_operational_authority": true,
+    "governance_adoption_is_not_negative_impossibility_proof": true,
+    "governance_adoption_is_not_positive_mapping_proof": true,
+    "governance_adoption_is_not_whole_v4_exhaustiveness_proof": true,
+    "reviewed_bounded_result_is_now_governance_adopted": true
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_NEXT_BOUNDED_TECHNICAL_EVIDENCE_STEP_FOR_FURTHER_EVIDENCE_REQUIRED",
+  "review_chain_state": {
+    "closure_assessment_outcome": "PASS_CLOSED",
+    "focused_sucr01_c": "PASS",
+    "historical_findings_rewritten": false,
+    "historical_overall": "REVISION_REQUIRED",
+    "historical_sucr01": "REVISION_REQUIRED",
+    "historical_sucr02_through_sucr08": "PASS",
+    "review_chain_closed": true
+  },
+  "source_checkpoint": {
+    "corrective_successor_package_v2_git_tree": "dd34182886703f72fc5bfa4df899ad2bccbf4744",
+    "decision_0124_commit": "4b6bcccb6a33eb80eebf0760a437da370b2114a0",
+    "decision_0124_tree": "955466c845835ffecb92a47c4e5509620cd12ad4",
+    "focused_completed_rereview_v1_git_tree": "170c04d5dedf3a900edcf9d2a7ebc92b298b48a9",
+    "governance_adoption_authorization_v1_git_tree": "21d19a6a4223a712509fb0051ee94680d977667e",
+    "original_completed_review_v1_git_tree": "e8178b937ab376faca698d35cc57d6e3785fbbb5",
+    "review_chain_closure_assessment_v1_git_tree": "18d6b1b77994d6827b878a498e1556487921fda7",
+    "study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051"
+  },
+  "status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+  "study_governance_state": {
+    "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": true,
+    "governance_status": "APPROVED_WITH_BOUNDED_TECHNICAL_OUTCOME",
+    "original_study_artifact_modified": false,
+    "original_study_artifact_status": "AUTHOR_CANDIDATE"
+  },
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  }
+}
