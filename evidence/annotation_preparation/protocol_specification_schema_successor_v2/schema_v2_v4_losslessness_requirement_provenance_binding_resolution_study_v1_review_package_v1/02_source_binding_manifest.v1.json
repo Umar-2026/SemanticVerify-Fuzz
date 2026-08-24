@@ -1,0 +1,80 @@
+{
+  "all_source_git_blob_bindings_verified_at_package_authoring": true,
+  "all_source_sha256_bindings_verified": true,
+  "all_sources_portable": true,
+  "manifest_id": "SVF-V4-LOSSLESSNESS-PROVENANCE-STUDY-V1-PORTABLE-SOURCE-BINDING-MANIFEST",
+  "prohibited_evidence_accessed": false,
+  "records": [
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_authorization/01_exhaustive_admissible_existing_schema_v2_multifield_capability_study_authorization.v1.json",
+      "portable_package_relative_path": "portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_authorization/01_exhaustive_admissible_existing_schema_v2_multifield_capability_study_authorization.v1.json",
+      "portable_sha256": "a8ca219ee246c99c5d3c6ef2771eda7ec4fad2532358baf0cd592c1b00e6eab3",
+      "role": "AUTHORIZED_EXACT_17_NAME_LIST",
+      "source_git_blob": "f09f77a47292390a5caa27e2c56a892c96f5d575",
+      "source_sha256": "a8ca219ee246c99c5d3c6ef2771eda7ec4fad2532358baf0cd592c1b00e6eab3"
+    },
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_v1_review_package_v1/01_capability_study_v1.EXACT_COPY.json",
+      "portable_package_relative_path": "portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_v1_review_package_v1/01_capability_study_v1.EXACT_COPY.json",
+      "portable_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+      "role": "INDEPENDENT_EXACT_17_NAME_LIST_COPY",
+      "source_git_blob": "43933fb862d24b8a8bccaad5e6a564186b376772",
+      "source_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b"
+    },
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+      "portable_package_relative_path": "portable_sources/config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+      "portable_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+      "role": "PRIMARY_CANONICAL_LOSSLESSNESS_OBJECT",
+      "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+      "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070"
+    },
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+      "portable_package_relative_path": "portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+      "portable_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+      "role": "CORROBORATING_CANONICAL_DESIGN_SNAPSHOT",
+      "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+      "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90"
+    },
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+      "portable_package_relative_path": "portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+      "portable_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "role": "CORROBORATING_RESIDUAL_PROOF_SNAPSHOT",
+      "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+      "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0"
+    },
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+      "portable_package_relative_path": "portable_sources/config/annotation/curl_technical_protocol_working_draft.v4.json",
+      "portable_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "role": "APPROVED_CURL_V4_INPUT",
+      "source_git_blob": "c7bafecdf8d35395f183f8551e1318ebb13db92f",
+      "source_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8"
+    },
+    {
+      "byte_exact_portable_copy": true,
+      "independently_resolvable_from_package": true,
+      "original_repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/02_losslessness_requirement_binding_assessment.v1.json",
+      "portable_package_relative_path": "portable_sources/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/02_losslessness_requirement_binding_assessment.v1.json",
+      "portable_sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5",
+      "role": "HISTORICAL_UNRESOLVED_REQUIREMENT_BINDING_ASSESSMENT",
+      "source_git_blob": "6656b93dcae10c8cedb56fbc876cce02b3418103",
+      "source_sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5"
+    }
+  ],
+  "source_count": 7
+}

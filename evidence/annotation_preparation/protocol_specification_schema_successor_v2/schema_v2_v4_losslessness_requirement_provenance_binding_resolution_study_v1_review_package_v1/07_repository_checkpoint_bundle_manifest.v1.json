@@ -1,0 +1,12 @@
+{
+  "bound_authorization_git_tree": "4b188e43c8367baf983c3ad6ccd3838bb9d2b269",
+  "bound_study_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2",
+  "bundle_modifies_repository": false,
+  "bundle_scope": "DECISION_0128_CHECKPOINT_AND_REACHABLE_GIT_OBJECTS",
+  "bundle_sha256": "ab2aed74d6b082137d8560bd21578323faf5a543f335ccea45dfc361454ebacf",
+  "bundle_size_bytes": 9826990,
+  "checkpoint_commit": "7f13e5569c5d25c9c104a9b1dd68516471b6017a",
+  "checkpoint_tree": "f7cc59e65e75764a541d0b90a55df638bfa300ef",
+  "intended_review_use": "INDEPENDENT_GIT_OBJECT_AND_CHECKPOINT_RESOLUTION",
+  "manifest_id": "SVF-DECISION-0128-REPOSITORY-CHECKPOINT-BUNDLE-MANIFEST-V1"
+}

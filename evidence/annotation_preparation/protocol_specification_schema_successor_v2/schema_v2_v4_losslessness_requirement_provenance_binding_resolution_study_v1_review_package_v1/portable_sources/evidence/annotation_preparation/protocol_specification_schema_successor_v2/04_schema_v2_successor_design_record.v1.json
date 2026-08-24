@@ -1,0 +1,162 @@
+{
+  "approved_v4_basis": {
+    "human_review_record_sha256": "292a4a569139d4b09dc341579ab25bfdba0db60e44d7b42da36cf2ab0740e53d",
+    "losslessness_contract_canonical_sha256": "c869079bfbd395b479e2dd8f2f1bcc31aabeababe0e24fc1542c6d35d210602e",
+    "losslessness_contract_path": "$.formal_insufficiency_argument.required_losslessness_contract",
+    "losslessness_contract_snapshot": {
+      "all_10_v4_semantic_containers_preserved": true,
+      "all_3_exit_obligations_accounted_for": true,
+      "all_64_rule_records_accounted_for": true,
+      "complete_exact_v4_representation_policy_machine_checkably_bound": true,
+      "complete_exact_v4_representation_policy_preserved": true,
+      "forward_accounting_required": true,
+      "four_verdict_contract_preserved": true,
+      "membership_sensitive_semantics_preserved": true,
+      "normative_strength_uncertainty_policy_preserved": true,
+      "ownership_sensitive_semantics_preserved": true,
+      "path_sensitive_semantics_preserved": true,
+      "resource_centered_semantics_preserved": true,
+      "return_sensitive_semantics_preserved": true,
+      "reverse_accounting_required": true,
+      "set_valued_state_reasoning_preserved": true,
+      "synthetic_protocol_events_invented_false_policy_preserved": true,
+      "unknown_first_class_preserved": true
+    },
+    "losslessness_requirement_count": 17,
+    "mapping_contract_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+    "representation_policy_canonical_sha256": "dd645ad929e40bcfa2af2353817d55ad76596f464991f2417c4ac1b57c0be408",
+    "representation_policy_field_count": 10,
+    "representation_policy_path": "$.approved_v4_representation_policy_binding.exact_value",
+    "representation_policy_snapshot": {
+      "membership_sensitive": true,
+      "normative_strength_uncertainty_must_not_be_silently_strengthened": true,
+      "ownership_sensitive": true,
+      "path_sensitive": true,
+      "resource_centered": true,
+      "return_sensitive": true,
+      "set_valued_state_reasoning": "Known finite feasible state alternatives are evaluated explicitly; the existence of a set-valued state does not itself force UNKNOWN.",
+      "synthetic_protocol_events_invented": false,
+      "unknown_is_first_class": true,
+      "unknown_must_never_be_converted_to_valid": true
+    }
+  },
+  "author_level_claim": {
+    "curl_json_materialization_authorized": false,
+    "curl_v4_positive_mapping_approved": false,
+    "curl_v4_positive_mapping_defined": false,
+    "decision_0019_superseded": false,
+    "schema_v2_activated": false,
+    "schema_v2_is_structurally_capable_candidate": true
+  },
+  "authoring_authorization": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/01_schema_v2_successor_authoring_authorization.v1.json",
+    "sha256": "96da6d7c3ea3da6e235182f93e2a228931ad7f5002648242f7bd786742bfd6f7"
+  },
+  "four_obstruction_class_carriers": {
+    "O1_multi_resource_membership_relation": [
+      "/resource_model/resource_types",
+      "/resource_model/relation_types",
+      "/semantic_rules/*/resource_bindings",
+      "/semantic_rules/*/relation_bindings",
+      "/semantic_rules/*/preconditions/relation_state_requirements",
+      "/semantic_rules/*/effects/relation_updates"
+    ],
+    "O2_four_verdict_and_join_policy": [
+      "/semantic_policy/verdict_vocabulary",
+      "/semantic_policy/verdict_aggregation",
+      "/semantic_rules/*/verdict_if_violated",
+      "/exit_obligations/*/verdict_if_violated"
+    ],
+    "O3_path_and_set_valued_reasoning": [
+      "/semantic_policy/reasoning_model/path_sensitivity",
+      "/semantic_policy/reasoning_model/state_domain",
+      "/semantic_policy/reasoning_model/join_operator",
+      "/semantic_policy/reasoning_model/infeasible_path_handling",
+      "/semantic_policy/reasoning_model/unknown_handling",
+      "/semantic_rules/*/preconditions/path_conditions"
+    ],
+    "O4_structured_rule_payload": [
+      "/semantic_rules/*/trigger_event_ids",
+      "/semantic_rules/*/resource_bindings",
+      "/semantic_rules/*/relation_bindings",
+      "/semantic_rules/*/preconditions",
+      "/semantic_rules/*/effects",
+      "/semantic_rules/*/source_evidence"
+    ]
+  },
+  "frozen_v1_schema": {
+    "immutable": true,
+    "path": "config/schemas/protocol_specification.schema.json",
+    "protocol_specification_schema_version": "1.0.0",
+    "sha256": "7eb17eeb8f49b37420d0d1d71539cf0d7cb08241ecf133e7b4139fd130718b34"
+  },
+  "genericity_and_escape_controls": {
+    "curl_named_schema_fields": false,
+    "free_form_descriptive_strings_may_replace_required_structural_carriers": false,
+    "normative_objects_closed": true,
+    "opaque_payload_field": false,
+    "synthetic_event_kind": false
+  },
+  "hash_and_freeze_boundary": {
+    "current_v1_hash_contract_activated_for_v2": false,
+    "provenance_hash_carriers_preserved_from_v1": true,
+    "separate_hash_contract_review_required_before_v2_activation_if_needed": true,
+    "top_level_content_sha256_carrier_preserved": true,
+    "top_level_freeze_date_carrier_preserved": true
+  },
+  "independent_review_required": true,
+  "next_boundary": "CREATE_INDEPENDENT_REVIEW_PACKAGE_FOR_PROTOCOL_SPECIFICATION_SCHEMA_V2",
+  "record_id": "SVF-PROTOCOL-SPECIFICATION-SCHEMA-V2-SUCCESSOR-DESIGN-RECORD",
+  "recorded_at_utc": "2026-08-20T15:15:15Z",
+  "required_sensitive_semantics_carriers": {
+    "first_class_unknown": "/semantic_policy/verdict_vocabulary + /semantic_policy/verdict_aggregation",
+    "forward_accounting": "/semantic_accounting/forward_accounting",
+    "membership_sensitive": "/resource_model/relation_types + /semantic_rules/*/relation_bindings",
+    "ownership_sensitive": "/semantic_rules/*/effects/ownership_updates",
+    "return_sensitive": "/events/*/return_classes + /semantic_rules/*/preconditions/return_conditions",
+    "reverse_accounting": "/semantic_accounting/reverse_accounting",
+    "source_inventory_counts": "/semantic_accounting/inventory"
+  },
+  "retry_context": {
+    "current_candidate_byte_identical_to_previous_ephemeral_candidate": true,
+    "pre_authoring_authorization_verifier_rerun": false,
+    "previous_attempt_cleanup_passed": true,
+    "previous_attempt_committed": false,
+    "previous_ephemeral_candidate_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "previous_failure_class": "V4_BINDING_PATH_DISCOVERY_ONLY"
+  },
+  "schema_v2_candidate": {
+    "activated": false,
+    "approved": false,
+    "immutable_after_checkpoint": true,
+    "path": "config/schemas/protocol_specification.v2.schema.json",
+    "protocol_specification_schema_version": "2.0.0",
+    "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "size_bytes": 43030
+  },
+  "status": "AUTHOR_CHECKPOINT_INDEPENDENT_HUMAN_REVIEW_REQUIRED",
+  "v1_compatibility_inventory": {
+    "existing_zlib_libpcap_migration_authorized": false,
+    "existing_zlib_libpcap_rewrite_required": false,
+    "metadata_fields_reused_from_v1": [
+      "author",
+      "content_sha256",
+      "creation_date",
+      "freeze_date",
+      "library",
+      "library_revision",
+      "reviewer",
+      "specification_id",
+      "provenance"
+    ],
+    "v1_single_resource_fsm_fields_not_required_by_v2": [
+      "resource_kind",
+      "states",
+      "initial_state",
+      "transitions",
+      "obligations",
+      "permitted_exit_states"
+    ],
+    "v2_schema_version": "2.0.0"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "decision_0128_a02": {
+    "final_output_sha256": "5604b771dd5fa05d27db12a74103ce18738d11ceaa06cdfaaa44a2079e79229e",
+    "final_output_size_bytes": 1161,
+    "must_never_be_rerun": true,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "decision_0128_checkpoint": {
+    "authorization_git_tree": "4b188e43c8367baf983c3ad6ccd3838bb9d2b269",
+    "commit": "7f13e5569c5d25c9c104a9b1dd68516471b6017a",
+    "study_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2",
+    "tree": "f7cc59e65e75764a541d0b90a55df638bfa300ef"
+  },
+  "manifest_id": "SVF-V4-LOSSLESSNESS-PROVENANCE-STUDY-V1-REVIEW-SUBJECT-MANIFEST",
+  "package_state": "AUTHOR_CANDIDATE_REVIEW_PACKAGE",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_items": [
+    "RPR01",
+    "RPR02",
+    "RPR03",
+    "RPR04",
+    "RPR05",
+    "RPR06",
+    "RPR07",
+    "RPR08"
+  ],
+  "review_subject": {
+    "bound_composite_count": 0,
+    "bound_exact_count": 17,
+    "outcome_scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+    "requirement_count": 17,
+    "study_file_count": 8,
+    "study_files": [
+      {
+        "package_relative_path": "study_v1_exact/01_17_requirement_provenance_binding_matrix.v1.json",
+        "sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+        "size_bytes": 41169
+      },
+      {
+        "package_relative_path": "study_v1_exact/02_source_evidence_inventory.v1.json",
+        "sha256": "96bb1dc5a0d25621dc1736b3637a34a6af4c846464e6a8c1dc5535226d1e0853",
+        "size_bytes": 3560
+      },
+      {
+        "package_relative_path": "study_v1_exact/03_machine_readable_accounting.v1.json",
+        "sha256": "44fad8ce51ec19d3f87349460d44a867b3349b3c4f17130b994a8b603913bc07",
+        "size_bytes": 1788
+      },
+      {
+        "package_relative_path": "study_v1_exact/04_study_report.v1.md",
+        "sha256": "d86afc4b0b229b1db35c5c423565c9ef6af00992856d0b9e458333b7a153b13d",
+        "size_bytes": 2470
+      },
+      {
+        "package_relative_path": "study_v1_exact/05_decision0126_a02_final_output.EXACT_COPY.v1.txt",
+        "sha256": "aa7beb98d50f322d00069fb00fa75eb0d33a581a1b07bc8a7fe3343f08459e34",
+        "size_bytes": 864
+      },
+      {
+        "package_relative_path": "study_v1_exact/06_decision0126_a02_consumption_record.v1.json",
+        "sha256": "9b922a3b4c3b0553964a1644645c0ccf6ab7468742855860524f1918aab2f5f8",
+        "size_bytes": 605
+      },
+      {
+        "package_relative_path": "study_v1_exact/07_verify_v4_losslessness_requirement_provenance_binding_resolution_study.v1.py",
+        "sha256": "8e95ccffa89eba415bcf12e8c47e69b68486d181dde249dcb2c21b31223f177d",
+        "size_bytes": 9676
+      },
+      {
+        "package_relative_path": "study_v1_exact/08_v4_losslessness_requirement_provenance_binding_resolution_study.v1.SHA256SUMS",
+        "sha256": "a1e5f4ffad170b471f48a9cdd668bdac1582afc66bb6a635be4a1d626a7919f6",
+        "size_bytes": 790
+      }
+    ],
+    "study_outcome": "REQUIREMENT_PROVENANCE_RESOLVED",
+    "study_status": "AUTHOR_CANDIDATE",
+    "unresolved_count": 0
+  },
+  "reviewer_decision_present": false,
+  "reviewer_decision_synthesized": false
+}

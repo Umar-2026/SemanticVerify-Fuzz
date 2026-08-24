@@ -1,0 +1,61 @@
+{
+  "analyzer_output_accessed": false,
+  "artifact_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-SOURCE-INVENTORY-V1",
+  "baseline_output_accessed": false,
+  "canonical_losslessness_object_sha256": "c869079bfbd395b479e2dd8f2f1bcc31aabeababe0e24fc1542c6d35d210602e",
+  "compiler_log_semantic_contents_accessed": false,
+  "generated_driver_source_accessed": false,
+  "gold_label_accessed": false,
+  "llm_review_output_accessed": false,
+  "prohibited_evidence_accessed": false,
+  "raw_model_response_accessed": false,
+  "repair_output_accessed": false,
+  "selected_sample_membership_accessed": false,
+  "source_count": 7,
+  "source_scope": "APPROVED_IMMUTABLE_PROTOCOL_SPECIFICATION_AND_GOVERNANCE_EVIDENCE_ONLY",
+  "sources": [
+    {
+      "git_blob": "f09f77a47292390a5caa27e2c56a892c96f5d575",
+      "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_authorization/01_exhaustive_admissible_existing_schema_v2_multifield_capability_study_authorization.v1.json",
+      "role": "AUTHORIZED_EXACT_17_NAME_LIST",
+      "sha256": "a8ca219ee246c99c5d3c6ef2771eda7ec4fad2532358baf0cd592c1b00e6eab3"
+    },
+    {
+      "git_blob": "43933fb862d24b8a8bccaad5e6a564186b376772",
+      "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_v1_review_package_v1/01_capability_study_v1.EXACT_COPY.json",
+      "role": "INDEPENDENT_EXACT_17_NAME_LIST_COPY",
+      "sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b"
+    },
+    {
+      "git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+      "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+      "role": "PRIMARY_CANONICAL_LOSSLESSNESS_OBJECT",
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070"
+    },
+    {
+      "git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+      "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+      "role": "CORROBORATING_CANONICAL_DESIGN_SNAPSHOT",
+      "sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90"
+    },
+    {
+      "git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+      "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+      "role": "CORROBORATING_RESIDUAL_PROOF_SNAPSHOT",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0"
+    },
+    {
+      "git_blob": "c7bafecdf8d35395f183f8551e1318ebb13db92f",
+      "repo_relative_path": "config/annotation/curl_technical_protocol_working_draft.v4.json",
+      "role": "APPROVED_CURL_V4_INPUT",
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8"
+    },
+    {
+      "git_blob": "6656b93dcae10c8cedb56fbc876cce02b3418103",
+      "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/02_losslessness_requirement_binding_assessment.v1.json",
+      "role": "HISTORICAL_UNRESOLVED_REQUIREMENT_BINDING_ASSESSMENT",
+      "sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5"
+    }
+  ],
+  "status": "AUTHOR_CANDIDATE"
+}
