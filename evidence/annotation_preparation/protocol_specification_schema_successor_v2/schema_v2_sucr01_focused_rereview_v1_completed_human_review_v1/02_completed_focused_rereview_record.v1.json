@@ -1,0 +1,80 @@
+{
+  "completed_focused_review": {
+    "criterion": "SUCR01-C",
+    "crlf_count": 75,
+    "item_decision": "PASS",
+    "line_count": 76,
+    "overall_decision": "APPROVE_SUCR01_CORRECTIVE_PORTABLE_SOURCE_EVIDENCE_SUCCESSOR_PACKAGE_V2",
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "24 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "scope": "SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+    "sha256": "6cb5ce2104150229809c6a870623e47161d4b2415bb97e6222ec98d2e0b45736",
+    "size_bytes": 4916,
+    "source_filename": "25_SUCR01_relation_focused_rereview_packet.MANUAL_REVIEW_COPY.v1.md"
+  },
+  "historical_review_state": {
+    "SUCR01": "REVISION_REQUIRED",
+    "SUCR02": "PASS",
+    "SUCR03": "PASS",
+    "SUCR04": "PASS",
+    "SUCR05": "PASS",
+    "SUCR06": "PASS",
+    "SUCR07": "PASS",
+    "SUCR08": "PASS",
+    "historical_review_modified": false,
+    "original_overall": "REVISION_REQUIRED"
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_REVIEW_CHAIN_CLOSURE_ASSESSMENT_FOR_ORIGINAL_SUCR_REVIEW_AND_FOCUSED_SUCR01_C_PASS",
+  "record_id": "SVF-SUCR01-C-FOCUSED-REREVIEW-COMPLETED-HUMAN-REVIEW-V1",
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "decision_0110_a02": "PERMANENTLY_RETIRED",
+    "decision_0112_a02": "PERMANENTLY_RETIRED",
+    "decision_0114_a02": "PERMANENTLY_RETIRED",
+    "decision_0117_a02": "PERMANENTLY_RETIRED",
+    "decision_0119_a02": "PERMANENTLY_RETIRED"
+  },
+  "review_chain_state": {
+    "corrective_successor_package_v2_focused_approval_recorded": true,
+    "focused_sucr01_c_pass_recorded": true,
+    "focused_sucr01_c_rereview_completed": true,
+    "review_chain_closed": false,
+    "review_chain_closure_assessment_authorized": false,
+    "review_chain_closure_assessment_performed": false,
+    "study_governance_adopted": false
+  },
+  "source_checkpoint": {
+    "decision_0120_commit": "ba18c2341ac74889d06ee242cb040ebec1927fa2",
+    "decision_0120_tree": "3ffeb08b8838d8f2576db71f1c3a262e5b0b666d",
+    "focused_rereview_handoff_v1_git_tree": "184f3931575d2565422cec4965878553421108d8"
+  },
+  "source_external_handoff": {
+    "zip_entry_count": 66,
+    "zip_sha256": "9ea5bdda54f97797abb69f0cd9025cd2a243afcad89affe003cdb4a572a12374",
+    "zip_size_bytes": 585178
+  },
+  "status": "FOCUSED_SUCR01_C_PASS_RECORDED_WITHOUT_REVIEW_CHAIN_CLOSURE",
+  "study_state": {
+    "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "status": "AUTHOR_CANDIDATE"
+  },
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  }
+}
