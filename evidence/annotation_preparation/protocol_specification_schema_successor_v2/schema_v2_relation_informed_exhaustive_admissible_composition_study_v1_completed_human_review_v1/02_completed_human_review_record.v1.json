@@ -1,0 +1,70 @@
+{
+  "bounded_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_positive_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  },
+  "completed_review_binding": {
+    "crlf_count": 84,
+    "exact_copy_recorded": true,
+    "line_endings": "CRLF",
+    "sha256": "7730e555a2d85b96dae1c75d20ef23da7670831feb3f398eaac600c64d323d98",
+    "size_bytes": 9240,
+    "source_filename": "19_RIAC01_RIAC08_relation_reviewer_packet.MANUAL_REVIEW_COPY.v1.md"
+  },
+  "item_decisions": {
+    "RIAC01": "PASS",
+    "RIAC02": "PASS",
+    "RIAC03": "PASS",
+    "RIAC04": "PASS",
+    "RIAC05": "PASS",
+    "RIAC06": "PASS",
+    "RIAC07": "PASS",
+    "RIAC08": "PASS"
+  },
+  "next_boundary": "SEPARATELY_DECIDE_WHETHER_TO_GOVERNANCE_ADOPT_THE_COMPLETED_HUMAN_REVIEW_AND_APPROVED_BOUNDED_STUDY_V1_OUTCOME",
+  "overall_review_decision": "APPROVE_RELATION_INFORMED_EXHAUSTIVE_ADMISSIBLE_COMPOSITION_STUDY_V1",
+  "record_id": "SVF-SCHEMA-V2-RELATION-INFORMED-EXHAUSTIVE-ADMISSIBLE-COMPOSITION-STUDY-V1-COMPLETED-INDEPENDENT-HUMAN-REVIEW-V1",
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "retired_verifiers_executed_during_review_recording": false
+  },
+  "review_interpretation": {
+    "all_eight_review_items_passed": true,
+    "approval_scope": "INTEGRITY_AND_CONSERVATIVE_TECHNICAL_CONCLUSION_OF_STUDY_V1",
+    "independent_human_review_completed": true,
+    "overall_human_review_approval_recorded": true,
+    "study_governance_adopted": false,
+    "study_status_after_review_recording": "AUTHOR_CANDIDATE",
+    "study_technical_outcome_after_review_recording": "FURTHER_EVIDENCE_REQUIRED",
+    "technical_outcome_changed_by_review": false
+  },
+  "review_target": "Schema-V2 Relation-Informed Exhaustive Admissible Composition Study V1",
+  "reviewer": {
+    "date": "23 / August / 2026",
+    "name": "Abdul Raheem Shahzad",
+    "recorded_confirmation": "ARS",
+    "role": "Spec-Technical-Reviewer-1"
+  },
+  "source_checkpoint": {
+    "decision_0107_commit": "5bbd8d351cbf8ab8692b16431d9154f86c9946dc",
+    "decision_0107_sha256": "7a9610926c46ed3c9178363c70e6be9aa51ffe11429de1b9e38ac914c1b341af",
+    "decision_0107_tree": "a68b017326c0ddc2503671369374bec1d8f9ab3c",
+    "external_review_handoff_v1_git_tree": "d8bed4e6880e2891eef72d88983ec04d4043e78a",
+    "immutable_handoff_zip_sha256": "3d2be249244dee0b99fd0846d444ddb5484b98b5c57f1b691b7a4d2d7bb781d6",
+    "immutable_handoff_zip_size_bytes": 323790
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_NOT_GOVERNANCE_ADOPTED"
+}
