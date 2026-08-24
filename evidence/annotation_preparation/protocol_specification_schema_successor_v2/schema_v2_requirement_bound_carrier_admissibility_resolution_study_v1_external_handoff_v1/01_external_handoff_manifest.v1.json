@@ -1,0 +1,94 @@
+{
+  "decision_0141_a02": {
+    "final_output_sha256": "90db9912d7839da07f89e03191d00582df473678c3954297b1a5fe474d3fe1ca",
+    "final_output_size_bytes": 1037,
+    "must_never_be_rerun": true,
+    "rerun_authorized": false,
+    "result": "PASS",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "decision_0141_checkpoint": {
+    "commit": "d872e478c757c7a63a0a6f2bfb6d1f37893a3c75",
+    "external_handoff_authorization_v1_git_tree": "b91d4898500cb4a0d6f7fafc89c9d7f0a5025267",
+    "parent_decision_0140_commit": "cbce1a415bdca9ff8b32d47b5268a37504de35cc",
+    "review_package_v1_git_tree": "94a907e55c8473f434d8675a7b5e46c63aad7533",
+    "tree": "100559eddc9fb1cc606ffc6d9b847170ddb8c00b"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "historical_pair_reclassification": false,
+    "human_review_decision_synthesis": false,
+    "operational_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_crosswalk_authoring": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "study_governance_adoption": false
+  },
+  "external_delivery_contract": {
+    "editable_manual_reviewer_packet_required": true,
+    "immutable_zip_must_not_be_modified": true,
+    "immutable_zip_required": true,
+    "manual_packet_initial_bytes_must_equal_blank_packet": true,
+    "repository_blank_packet_must_not_be_modified": true,
+    "reviewer_may_modify_only_external_manual_packet": true
+  },
+  "governance_state": {
+    "human_review_completed": false,
+    "human_review_decision_recorded": false,
+    "study_governance_adopted": false
+  },
+  "handoff_id": "SVF-RBCA01-RBCA08-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-V1",
+  "handoff_status": "AWAITING_EXTERNAL_INDEPENDENT_HUMAN_REVIEW",
+  "next_boundary": "AWAIT_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_RETURN_FOR_RBCA01_RBCA08",
+  "review_package": {
+    "package_status": "AUTHOR_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+    "portable_source_count": 9,
+    "portable_source_resolvability": true,
+    "sealed_bundle_checkpoint_commit": "c9cf1bf0c9a3b59714e08f966f9c98acbd309fd7",
+    "sealed_bundle_checkpoint_role": "DECISION_0139_PRE_REVIEW_PACKAGE_CHECKPOINT",
+    "sealed_bundle_is_decision_0140_checkpoint": false,
+    "sealed_repository_checkpoint_bundle_sha256": "a5f9f0ced2ea7e057da8faaede9d58ce5428d420967c9b6715044f873ab27741",
+    "sealed_repository_checkpoint_bundle_size_bytes": 15194638
+  },
+  "review_subject": {
+    "author_candidate_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "name": "Schema-V2 Requirement-Bound Carrier Admissibility Resolution Study V1",
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_items": [
+      "RBCA01",
+      "RBCA02",
+      "RBCA03",
+      "RBCA04",
+      "RBCA05",
+      "RBCA06",
+      "RBCA07",
+      "RBCA08"
+    ],
+    "unresolved_count": 17
+  },
+  "reviewer_packet_initial_state": {
+    "external_editable_copy_initially_byte_exact": true,
+    "handoff_local_blank_copy_preserved": true,
+    "human_review_performed": false,
+    "package_local_blank_packet_preserved": true,
+    "reviewer_decision_present": false,
+    "reviewer_decision_synthesized": false,
+    "reviewer_identity_present": false,
+    "sha256": "4b0df835c5bfd59f2d023204f5a1a2ede11a293d7168f862413777ccd846210b",
+    "size_bytes": 4134,
+    "state": "BLANK"
+  },
+  "technical_nonclaims": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

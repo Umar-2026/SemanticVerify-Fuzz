@@ -1,0 +1,16 @@
+{
+  "accepted_explicit_cross_unit_constraint_count": 0,
+  "artifact_id": "SVF-SCHEMA-V2-REQUIREMENT-SEMANTIC-BINDING-GAP-V1",
+  "finding": "NO_AUTHORIZED_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_IDENTIFIED",
+  "governance_bound_requirement_count": 17,
+  "historical_pair_count": 18639,
+  "historical_pair_rows_with_requirement_binding": 0,
+  "historical_requirement_placeholder_authoritative_crosswalk": false,
+  "historical_requirement_placeholder_count": 17,
+  "next_evidence_need": "INDEPENDENTLY_REVIEWABLE_REQUIREMENT_TO_SEMANTIC_UNIT_SEMANTIC_BINDING_OR_EQUIVALENT_REQUIREMENT_SPECIFIC_CARRIER_DOMAIN_EVIDENCE",
+  "not_a_negative_mapping_impossibility_proof": true,
+  "not_a_positive_mapping_witness": true,
+  "not_a_schema_v2_losslessness_failure": true,
+  "not_a_whole_v4_exhaustiveness_result": true,
+  "status": "AUTHOR_CANDIDATE"
+}

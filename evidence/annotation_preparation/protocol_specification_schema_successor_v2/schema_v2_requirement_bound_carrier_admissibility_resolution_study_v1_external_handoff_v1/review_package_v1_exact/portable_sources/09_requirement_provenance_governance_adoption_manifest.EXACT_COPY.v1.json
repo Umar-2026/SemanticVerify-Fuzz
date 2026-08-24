@@ -1,0 +1,87 @@
+{
+  "adopted_governance_result": {
+    "adoption_is_bounded": true,
+    "bound_composite_count": 0,
+    "bound_exact_count": 17,
+    "existing_v4_losslessness_requirement_count": 17,
+    "outcome": "REQUIREMENT_PROVENANCE_RESOLVED",
+    "requirement_identity_and_source_provenance_governance_adopted": true,
+    "scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+    "unresolved_count": 0
+  },
+  "decision_0135_a02_lifecycle": {
+    "final_output_sha256": "fcc9533c9372ab597b2f159cffd82bc81b513fcdaa810b98056988a1389b6160",
+    "final_output_size_bytes": 1026,
+    "must_never_be_rerun": true,
+    "previous_retired_a02_verifiers_executed": false,
+    "rerun_authorized": false,
+    "result": "PASS",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "decision_0135_checkpoint": {
+    "commit": "92d745dd3186ef8a528196976b283f75d7bd43b8",
+    "completed_human_review_v1_git_tree": "d873ef00dceb359a2dc8dc25293ab8ec57518dd2",
+    "completed_review_packet_sha256": "f133c13bdaeb71055bd839663332c921556dc516544e19e655f204032d33af71",
+    "decision_0135_sha256": "4a122685d52069641bb8f37e33e3b4cb2a456f78db9042af96d27495b6968f78",
+    "governance_adoption_authorization_v1_git_tree": "8c62c8ec31bc4f6c4a3c0a6940d05f6e80349d79",
+    "parent_decision_0134_commit": "f36cd77ead4ee4f154b4bc7cfa2b88ce963a05d9",
+    "study_v1_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2",
+    "tree": "f1448fee627388b1cbf6857af4e891c320c4d6c8"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_conclusion": false,
+    "curl_json_creation": false,
+    "existing_18639_pair_state_modification": false,
+    "negative_mapping_impossibility_proof": false,
+    "operational_mapping": false,
+    "positive_mapping_witness": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "semantic_unit_carrier_pair_reclassification": false,
+    "whole_v4_exhaustiveness_claim": false
+  },
+  "governance_state_after_adoption": {
+    "adopted_scope": "REQUIREMENT_IDENTITY_AND_SOURCE_PROVENANCE_ONLY",
+    "completed_human_review_recorded": true,
+    "governance_adoption_authorized": true,
+    "governance_adoption_completed": true,
+    "study_governance_adopted": true
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_SUCCESSOR_STUDY",
+  "record_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-BOUNDED-GOVERNANCE-ADOPTION-V1",
+  "record_status": "GOVERNANCE_ADOPTION_COMPLETED",
+  "review_basis": {
+    "human_review_completed": true,
+    "human_reviewer_confirmation": "ARS",
+    "human_reviewer_date": "2026-08-24",
+    "human_reviewer_name": "Abdul Raheem Shahzad",
+    "human_reviewer_role": "Spec-Technical-Reviewer-1",
+    "overall_review_decision": "APPROVE_V4_LOSSLESSNESS_REQUIREMENT_PROVENANCE_BINDING_RESOLUTION_STUDY_V1",
+    "reviewer_decision_synthesized": false,
+    "rpr01": "PASS",
+    "rpr02": "PASS",
+    "rpr03": "PASS",
+    "rpr04": "PASS",
+    "rpr05": "PASS",
+    "rpr06": "PASS",
+    "rpr07": "PASS",
+    "rpr08": "PASS"
+  },
+  "study_v1_report_exact_copy": {
+    "sha256": "d86afc4b0b229b1db35c5c423565c9ef6af00992856d0b9e458333b7a153b13d",
+    "size_bytes": 2470
+  },
+  "technical_nonclaims_preserved": {
+    "carrier_admissibility_proven": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

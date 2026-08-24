@@ -1,0 +1,11 @@
+{
+  "artifact_id": "SVF-RBCA-REVIEW-PACKAGE-V1-SEALED-REPOSITORY-CHECKPOINT",
+  "bundle_contains_checkpoint_commit": true,
+  "bundle_created_before_decision_0140_commit": true,
+  "bundle_sha256": "a5f9f0ced2ea7e057da8faaede9d58ce5428d420967c9b6715044f873ab27741",
+  "bundle_size_bytes": 15194638,
+  "checkpoint_commit": "c9cf1bf0c9a3b59714e08f966f9c98acbd309fd7",
+  "checkpoint_parent_decision_0138": "27f3176e76d375297264b006a66f96e915fbf4b6",
+  "checkpoint_role": "DECISION_0139_PRE_REVIEW_PACKAGE_CHECKPOINT",
+  "checkpoint_tree": "561e0b72e6fe17d8d041201e45ce02f30fa6bf88"
+}
