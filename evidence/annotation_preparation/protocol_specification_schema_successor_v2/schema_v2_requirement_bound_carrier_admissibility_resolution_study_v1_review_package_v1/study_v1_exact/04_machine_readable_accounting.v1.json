@@ -1,0 +1,53 @@
+{
+  "artifact_id": "SVF-SCHEMA-V2-REQUIREMENT-BOUND-CARRIER-ADMISSIBILITY-STUDY-V1-ACCOUNTING",
+  "carrier_classification_counts": {
+    "ADMISSIBLE_COMPOSITE": 0,
+    "ADMISSIBLE_EXACT": 0,
+    "NO_ADMISSIBLE_CARRIER_PROVEN": 0,
+    "UNRESOLVED": 17
+  },
+  "decision_0137_a02": {
+    "final_output_sha256": "782cb09c9d0567e526f13b3f4b73f493d84464bae453dc42be76f7ea1d2f6798",
+    "final_output_size_bytes": 1064,
+    "rerun_authorized": false,
+    "result": "PASS",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "governance_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "historical_pair_reclassification": false,
+    "operational_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false
+  },
+  "historical_pair_count": 18639,
+  "independent_human_review_required": true,
+  "requirement_count": 17,
+  "requirement_to_semantic_unit_crosswalk_identified": false,
+  "schema_v2_property_path_count": 171,
+  "semantic_unit_count": 109,
+  "source_bindings": {
+    "authorization_git_tree": "1d6cde05ed8505b388cee61fa759392651589d38",
+    "decision_0137_commit": "f00e9750f98415783629e931e80caba847ea224f",
+    "governance_adoption_git_tree": "9893bd5dc8d7472f1177c373fa89d289de9ca59f",
+    "historical_carrier_study_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051",
+    "historical_pair_matrix_sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+    "historical_requirement_binding_sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5",
+    "requirement_matrix_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "requirement_provenance_study_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2"
+  },
+  "status": "AUTHOR_CANDIDATE",
+  "technical_nonclaims": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

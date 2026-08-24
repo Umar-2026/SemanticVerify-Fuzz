@@ -1,0 +1,127 @@
+{
+  "authorization_id": "SVF-REQUIREMENT-BOUND-CARRIER-ADMISSIBILITY-STUDY-V1-INDEPENDENT-HUMAN-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_type": "PRE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "authorized_package_contents": {
+    "blank_RBCA01_RBCA08_reviewer_packet": true,
+    "checksum_closure": true,
+    "decision_0138_exact_copy": true,
+    "immutable_study_v1_exact_copy": true,
+    "necessary_upstream_source_evidence": true,
+    "portable_source_binding_manifest": true,
+    "safe_review_package_verifier": true,
+    "sealed_repository_checkpoint_evidence": true
+  },
+  "decision_0138_checkpoint": {
+    "commit": "27f3176e76d375297264b006a66f96e915fbf4b6",
+    "decision_0137_authorization_git_tree": "1d6cde05ed8505b388cee61fa759392651589d38",
+    "historical_carrier_study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051",
+    "parent_decision_0137_commit": "f00e9750f98415783629e931e80caba847ea224f",
+    "requirement_provenance_governance_adoption_v1_git_tree": "9893bd5dc8d7472f1177c373fa89d289de9ca59f",
+    "requirement_provenance_study_v1_git_tree": "ee85980dcff85b5be3f21995f578b3b78cf39aa2",
+    "study_v1_git_tree": "ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3",
+    "tree": "fe2759bae2ed3fbd16e9dcf4517c90602f4bff0b"
+  },
+  "exact_study_artifact_bindings": {
+    "S01_sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+    "S02_sha256": "4cef2aa8e9eb145e70825f6bfc8a4f82f96d1ae6409f01b818cd216ace5940a0",
+    "S03_sha256": "f5cd7fa09115f429983b443915119f4723c6806ea418dde38d6675d5b23493c5",
+    "S04_sha256": "d376f321531b46e1c3ba67f3662ea1492e81cc7caf097a882a6812e998a42fb6",
+    "S05_sha256": "d246f576174b2a5cb0e430b315a0592038799cc16bdb1c824452dc070ca3cbeb",
+    "S06_sha256": "782cb09c9d0567e526f13b3f4b73f493d84464bae453dc42be76f7ea1d2f6798",
+    "S07_sha256": "606c9f5433925b081a98ffa4dca86f4c536a83bebd74fc03db0d463ced937e17",
+    "S08_sha256": "cd712c15c80441d94b36c7b9ce84c90f53c2f4c87f5491c22ceb30932bf74644",
+    "S09_sha256": "331897a41b6bd27e5630eeb13b865a33b75801eed054a1d8499deb1d5f3c31fe",
+    "decision_0138_sha256": "7f3dea07f91571be1b89de006a6f8982e1c5ce60cf6a8609cc374b45d31ccf94"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "historical_pair_reclassification": false,
+    "operational_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_crosswalk_authoring": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "study_governance_adoption": false
+  },
+  "human_reviewer_identity_synthesis_authorized": false,
+  "next_boundary": "RUN_DECISION_0139_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING",
+  "overall_review_decision_vocabulary": [
+    "APPROVE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "retired_verifier_policy": {
+    "any_previous_retired_a02_rerun": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false,
+    "decision_0130_a02_rerun": false,
+    "decision_0132_a02_rerun": false,
+    "decision_0135_a02_rerun": false,
+    "decision_0137_a02_rerun": false
+  },
+  "review_criteria": {
+    "RBCA01": "Exact Study V1 integrity, Decision-0138 checkpoint, immutable source bindings, and checksum closure.",
+    "RBCA02": "Correct use of the 17 governance-bound requirement identities without reconstructing or equating historical numeric placeholders.",
+    "RBCA03": "Correct preservation and accounting of the historical 109 x 171 = 18,639 carrier domain without pair mutation or reclassification.",
+    "RBCA04": "Soundness of the finding that no authorized requirement-to-semantic-unit crosswalk is present in the reviewed evidence.",
+    "RBCA05": "Soundness of keeping all 17 requirement-level carrier classifications UNRESOLVED rather than fabricating exact/composite witnesses.",
+    "RBCA06": "Soundness of not promoting absence of a witness into NO_ADMISSIBLE_CARRIER_PROVEN without requirement-specific exhaustive negative evidence.",
+    "RBCA07": "Soundness of the global FURTHER_EVIDENCE_REQUIRED outcome and preservation of positive-mapping, negative-impossibility, and whole-V4-exhaustiveness nonclaims.",
+    "RBCA08": "Decision-0137 A02 lifecycle, governance boundary, operational nonauthorizations, and requirement for subsequent independent governance adoption."
+  },
+  "review_decision_vocabulary": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "review_notes_synthesis_authorized": false,
+  "review_package_authoring_verifier_policy": {
+    "current_head_parent_must_equal_decision_0138": true,
+    "execution_checkpoint": "IMMEDIATE_SUCCESSOR_OF_DECISION_0138",
+    "must_not_execute_any_retired_a02": true,
+    "must_reverify_author_candidate_outcome": true,
+    "must_reverify_nonclaims": true,
+    "must_reverify_study_v1": true,
+    "new_one_time_verifier_required": true,
+    "successful_run_may_author_review_package_only": true
+  },
+  "review_package_boundary": {
+    "external_manual_copy_may_be_filled_only_by_real_human_reviewer": true,
+    "immutable_package_copy_must_remain_blank": true,
+    "review_date_must_not_be_prefilled": true,
+    "review_decisions_must_not_be_prefilled": true,
+    "review_packet_initial_state_must_be_blank": true,
+    "reviewer_name_must_not_be_prefilled": true,
+    "reviewer_signature_must_not_be_prefilled": true
+  },
+  "review_subject": {
+    "admissible_composite_count": 0,
+    "admissible_exact_count": 0,
+    "author_candidate_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "historical_pair_count": 18639,
+    "historical_pair_state_modified": false,
+    "name": "Schema-V2 Requirement-Bound Carrier Admissibility Resolution Study V1",
+    "no_admissible_carrier_proven_count": 0,
+    "requirement_count": 17,
+    "requirement_to_semantic_unit_crosswalk_identified": false,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "status": "AUTHOR_CANDIDATE",
+    "unresolved_count": 17
+  },
+  "reviewer_decision_synthesis_authorized": false,
+  "status": "AUTHORIZED_NOT_YET_PACKAGED",
+  "technical_nonclaims_preserved": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

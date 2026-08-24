@@ -1,0 +1,22 @@
+{
+  "artifact_id": "SVF-SCHEMA-V2-REQUIREMENT-BOUND-CARRIER-DOMAIN-ACCOUNTING-V1",
+  "complete_cartesian_coverage": true,
+  "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "historical_pair_classification_counts": {
+    "UNRESOLVED": 18639
+  },
+  "historical_pair_count": 18639,
+  "historical_pair_direct_requirement_binding_rows": 0,
+  "historical_pair_state_modified": false,
+  "requirement_count": 17,
+  "requirement_level_results": {
+    "ADMISSIBLE_COMPOSITE": 0,
+    "ADMISSIBLE_EXACT": 0,
+    "NO_ADMISSIBLE_CARRIER_PROVEN": 0,
+    "UNRESOLVED": 17
+  },
+  "schema_v2_property_path_count": 171,
+  "semantic_unit_count": 109,
+  "status": "AUTHOR_CANDIDATE",
+  "unique_historical_pair_count": 18639
+}

@@ -1,0 +1,70 @@
+{
+  "all_sources_package_local": true,
+  "artifact_id": "SVF-RBCA-REVIEW-PACKAGE-V1-PORTABLE-SOURCE-BINDING-MANIFEST",
+  "portable_source_count": 9,
+  "records": [
+    {
+      "package_path": "portable_sources/01_requirement_provenance_matrix.EXACT_COPY.v1.json",
+      "resolvable_from_review_package": true,
+      "sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+      "size_bytes": 41169,
+      "source_role": "evidence/.../schema_v2_v4_losslessness_requirement_provenance_binding_resolution_study_v1/01_17_requirement_provenance_binding_matrix.v1.json"
+    },
+    {
+      "package_path": "portable_sources/02_historical_carrier_pair_matrix.EXACT_COPY.v1.json",
+      "resolvable_from_review_package": true,
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+      "size_bytes": 11704978,
+      "source_role": "evidence/.../schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/01_semantic_unit_carrier_admissibility_matrix.v1.json"
+    },
+    {
+      "package_path": "portable_sources/03_historical_requirement_binding_assessment.EXACT_COPY.v1.json",
+      "resolvable_from_review_package": true,
+      "sha256": "c8c6fd120f7046ac7e747124821796d1a3686be3dcf6ea40e712b96cdd851ee5",
+      "size_bytes": 9153,
+      "source_role": "evidence/.../schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/02_losslessness_requirement_binding_assessment.v1.json"
+    },
+    {
+      "package_path": "portable_sources/04_historical_cross_unit_inventory.EXACT_COPY.v1.json",
+      "resolvable_from_review_package": true,
+      "sha256": "2b831650ec9d4af78f0a836150e79068846d1c70401251951593f9c9e341eb23",
+      "size_bytes": 1444,
+      "source_role": "evidence/.../schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/03_cross_unit_coherence_constraint_inventory.v1.json"
+    },
+    {
+      "package_path": "portable_sources/05_historical_carrier_accounting.EXACT_COPY.v1.json",
+      "resolvable_from_review_package": true,
+      "sha256": "f271db56cdd680f85a14d8fe3d4a4b1e820b1bb5276215bd2ca8cb7486e307db",
+      "size_bytes": 2540,
+      "source_role": "evidence/.../schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/04_machine_readable_accounting.v1.json"
+    },
+    {
+      "package_path": "portable_sources/06_active_schema_v2.EXACT_COPY.json",
+      "resolvable_from_review_package": true,
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030,
+      "source_role": "config/schemas/protocol_specification.v2.schema.json"
+    },
+    {
+      "package_path": "portable_sources/07_approved_curl_v4.EXACT_COPY.json",
+      "resolvable_from_review_package": true,
+      "sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+      "size_bytes": 41033,
+      "source_role": "config/annotation/curl_technical_protocol_working_draft.v4.json"
+    },
+    {
+      "package_path": "portable_sources/08_mapping_contract_v4.EXACT_COPY.json",
+      "resolvable_from_review_package": true,
+      "sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+      "size_bytes": 26601,
+      "source_role": "config/annotation/curl_canonical_representation_mapping_contract.v4.json"
+    },
+    {
+      "package_path": "portable_sources/09_requirement_provenance_governance_adoption_manifest.EXACT_COPY.v1.json",
+      "resolvable_from_review_package": true,
+      "sha256": "85c8ff309c728ce312ef2883861551dba658c5f99d6cad055996bd6233f75f0c",
+      "size_bytes": 3634,
+      "source_role": "evidence/.../schema_v2_v4_losslessness_requirement_provenance_binding_resolution_study_v1_governance_adoption_v1/01_bounded_governance_adoption_manifest.v1.json"
+    }
+  ]
+}
