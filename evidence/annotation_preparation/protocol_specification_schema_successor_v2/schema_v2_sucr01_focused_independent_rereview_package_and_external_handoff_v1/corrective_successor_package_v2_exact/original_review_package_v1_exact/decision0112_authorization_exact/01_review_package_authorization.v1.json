@@ -1,0 +1,124 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SEMANTIC_UNIT_CARRIER_ADMISSIBILITY_AND_REQUIREMENT_BINDING_STUDY_V1",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "authorization_id": "SVF-SCHEMA-V2-SEMANTIC-UNIT-CARRIER-ADMISSIBILITY-AND-REQUIREMENT-BINDING-STUDY-V1-REVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_run_state": "PERMANENTLY_RETIRED",
+    "initial_state": "ACTIVE_UNCONSUMED",
+    "may_execute_exactly_once_immediately_before_review_package_authoring": true,
+    "rerun_after_review_package_authoring_begins": false,
+    "successful_output_must_be_preserved_byte_exactly": true
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json": false,
+    "governance_adoption": false,
+    "human_review_decision": false,
+    "negative_existing_v2_mapping_impossibility": false,
+    "operational_mapping_contract": false,
+    "operational_v4_to_v2_mapping": false,
+    "positive_existing_v2_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "next_boundary": "RUN_DECISION_0112_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_REVIEW_PACKAGE_AUTHORING",
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "decision_0110_a02": "PERMANENTLY_RETIRED",
+    "retired_verifiers_must_not_be_executed": true
+  },
+  "review_items": {
+    "SUCR01": {
+      "criterion": "Verify exact Study V1 artifacts, Decision-0111 checkpoint, source bindings, checksum closure, and safe-verifier reproducibility without modifying the author-candidate study.",
+      "title": "Exact Study V1 integrity and source binding"
+    },
+    "SUCR02": {
+      "criterion": "Verify exactly 109 semantic units, 171 Schema-V2 property paths, and 18,639 unique unit/carrier pairs with complete Cartesian coverage and no missing or duplicate pairs.",
+      "title": "Complete semantic-unit/carrier Cartesian-domain correctness"
+    },
+    "SUCR03": {
+      "criterion": "Verify all 18,639 unit/carrier pairs remain UNRESOLVED and that field-class relations, candidate-family screening, lexical evidence, open-string capacity, and absence from screening were not automatically promoted to unit-context admissibility or losslessness proof.",
+      "title": "Conservative unit-level admissibility and anti-promotion policy"
+    },
+    "SUCR04": {
+      "criterion": "Verify exactly 17 requirements remain in scope, zero are claimed uniquely bound, all 17 remain UNRESOLVED_SOURCE_BINDING, and no requirement text was invented, reconstructed from memory, or inferred merely from the count 17.",
+      "title": "Seventeen-requirement provenance-binding correctness"
+    },
+    "SUCR05": {
+      "criterion": "Verify the recorded screening-hit count is two, zero explicit cross-unit constraints are accepted, screening is not promoted into semantic proof, the constraint inventory is not claimed complete, and whole-V4 composition enumeration was not performed.",
+      "title": "Cross-unit coherence screening and non-promotion correctness"
+    },
+    "SUCR06": {
+      "criterion": "Determine whether FURTHER_EVIDENCE_REQUIRED is a sound bounded outcome given unresolved unit-level admissibility, unresolved requirement provenance, unresolved cross-unit coherence, absence of a positive existing-V2 mapping witness, absence of negative impossibility proof, and absence of whole-V4 exhaustiveness.",
+      "title": "Soundness of FURTHER_EVIDENCE_REQUIRED"
+    },
+    "SUCR07": {
+      "criterion": "Verify the Decision-0110 A02 successful output is preserved byte-exactly, consumption is correctly recorded, A02 is permanently retired, and Study V1 can be verified without executing A02 again.",
+      "title": "Decision-0110 A02 lifecycle and reproducibility"
+    },
+    "SUCR08": {
+      "criterion": "Verify Study V1 remains AUTHOR_CANDIDATE and does not claim or authorize positive existing-V2 mapping, negative impossibility, whole-V4 exhaustiveness, operational mapping, active Schema-V2 modification, schema-successor authoring, version preselection, Schema V3, curl.json, analyzer implementation/execution, baseline execution, or repair.",
+      "title": "Governance boundary and technical nonclaims"
+    }
+  },
+  "review_package_requirements": {
+    "blank_editable_reviewer_packet": true,
+    "checksum_closure": true,
+    "decision_0110_a02_final_output_and_consumption": true,
+    "decision_0110_authorization_evidence": true,
+    "decision_0111_exact_copy": true,
+    "exact_study_v1_artifacts": true,
+    "overall_decision_must_not_be_prepopulated": true,
+    "review_package_manifest": true,
+    "reviewer_decisions_must_not_be_prepopulated": true,
+    "reviewer_identity_must_not_be_prepopulated": true,
+    "reviewer_notes_must_not_be_prepopulated": true,
+    "safe_study_verifier": true
+  },
+  "review_target": "Schema-V2 Semantic-Unit Carrier Admissibility and Requirement Binding Study V1",
+  "source_checkpoint": {
+    "decision_0110_authorization_git_tree": "e103964df3523d8ebdd30352a4e7895d9087e854",
+    "decision_0111_commit": "5afa21635960e63f018a0613f0cf0f2ed787b952",
+    "decision_0111_tree": "90d04b2e8e62a18ef90cbd3f0a83948646e613b1",
+    "study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051"
+  },
+  "status": "AUTHORIZED_FOR_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "study_facts_to_be_presented_without_promotion": {
+    "accepted_explicit_cross_unit_constraint_count": 0,
+    "candidate_admissible_count": 0,
+    "cross_unit_coherence_screening_hit_count": 2,
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "losslessness_requirement_count_in_scope": 17,
+    "not_admissible_count": 0,
+    "requirement_bound_count": 0,
+    "requirement_unresolved_source_binding_count": 17,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "unit_carrier_cartesian_pair_count": 18639,
+    "unresolved_count": 18639,
+    "whole_v4_composition_enumeration_performed": false
+  },
+  "study_state": {
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "independent_human_review_required": true,
+    "status": "AUTHOR_CANDIDATE"
+  }
+}

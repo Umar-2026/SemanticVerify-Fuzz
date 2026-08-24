@@ -1,0 +1,64 @@
+{
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_SUCR01_CORRECTIVE_PORTABLE_SOURCE_EVIDENCE_SUCCESSOR_PACKAGE_V2",
+    "REVISION_REQUIRED",
+    "FAIL"
+  ],
+  "blank_focused_reviewer_packet": {
+    "human_decision_exists": false,
+    "sha256": "ae189cf4bc861213a888772ad26cf3937bec7c92a11c0e48c4ff917b9e625376",
+    "size_bytes": 2768
+  },
+  "criterion": "SUCR01-C",
+  "decision_0119_a02": {
+    "final_output_sha256": "eb476d38c5b0ec3b58ce32458dfd3f9f015824744449381ca640a696c0f4b4e6",
+    "final_output_size_bytes": 1120,
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "external_delivery": {
+    "editable_reviewer_packet": "/openbayes/home/25_SUCR01_focused_rereview_packet.MANUAL_REVIEW_COPY.v1.md",
+    "immutable_zip": "/openbayes/home/25_sucr01_focused_rereview_handoff.v1.zip"
+  },
+  "handoff_id": "SVF-SUCR01-C-FOCUSED-INDEPENDENT-REREVIEW-PACKAGE-AND-EXTERNAL-HANDOFF-V1",
+  "next_boundary": "SEND_IMMUTABLE_FOCUSED_SUCR01_ZIP_AND_EDITABLE_PACKET_TO_SPEC_TECHNICAL_REVIEWER_1_AND_WAIT_FOR_COMPLETED_FOCUSED_REREVIEW",
+  "original_review_state": {
+    "SUCR01": "REVISION_REQUIRED",
+    "SUCR02": "PASS",
+    "SUCR03": "PASS",
+    "SUCR04": "PASS",
+    "SUCR05": "PASS",
+    "SUCR06": "PASS",
+    "SUCR07": "PASS",
+    "SUCR08": "PASS",
+    "overall": "REVISION_REQUIRED"
+  },
+  "required_reviewer_role": "Spec-Technical-Reviewer-1",
+  "review_chain_state": {
+    "focused_rereview_completed": false,
+    "review_chain_closed": false,
+    "study_governance_adopted": false
+  },
+  "scope": "SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+  "state": "BLANK_READY_FOR_FOCUSED_INDEPENDENT_HUMAN_REREVIEW",
+  "technical_nonclaims": {
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "curl_json_authorized": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "whole_v4_exhaustiveness_proven": false
+  },
+  "technical_state": {
+    "bounded_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "study_status": "AUTHOR_CANDIDATE"
+  }
+}

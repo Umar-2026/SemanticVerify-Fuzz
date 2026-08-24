@@ -1,0 +1,38 @@
+{
+  "artifact_id": "SVF-SUCR01-C-FOCUSED-REREVIEW-SOURCE-BINDING-MANIFEST-V1",
+  "corrective_successor_package_v2": {
+    "byte_exact": true,
+    "file_count": 54,
+    "portable_copy_path": "corrective_successor_package_v2_exact",
+    "source_git_tree": "dd34182886703f72fc5bfa4df899ad2bccbf4744"
+  },
+  "decision_0119_authorization": {
+    "byte_exact": true,
+    "file_count": 3,
+    "portable_copy_path": "decision0119_authorization_exact",
+    "source_git_tree": "3a73b4ebfdeb3f42afe2e293ee6d43b0923951c8"
+  },
+  "decision_0119_checkpoint": {
+    "authorization_git_tree": "3a73b4ebfdeb3f42afe2e293ee6d43b0923951c8",
+    "commit": "81d245c8a87c2175e51dc3ddcb12790358264c4a",
+    "tree": "767a621d2e2246b9d00ce30061b69d41f52d9c51"
+  },
+  "focused_rereview_scope": {
+    "criterion": "SUCR01-C",
+    "scope": "SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+    "sucr02_through_sucr08_reopened": false
+  },
+  "historical_review_state": {
+    "SUCR01": "REVISION_REQUIRED",
+    "SUCR02": "PASS",
+    "SUCR03": "PASS",
+    "SUCR04": "PASS",
+    "SUCR05": "PASS",
+    "SUCR06": "PASS",
+    "SUCR07": "PASS",
+    "SUCR08": "PASS",
+    "overall": "REVISION_REQUIRED"
+  },
+  "review_chain_closed": false,
+  "study_governance_adopted": false
+}

@@ -1,0 +1,127 @@
+{
+  "authorization_id": "SVF-SUCR01-CORRECTIVE-PORTABLE-SOURCE-EVIDENCE-SUCCESSOR-PACKAGE-V2-AUTHORIZATION-V1",
+  "authorization_verifier_lifecycle": {
+    "after_final_run_state": "PERMANENTLY_RETIRED",
+    "initial_state": "ACTIVE_UNCONSUMED",
+    "may_execute_exactly_once_immediately_before_corrective_successor_package_v2_authoring": true,
+    "rerun_after_package_authoring_begins": false,
+    "successful_output_must_be_preserved_byte_exactly": true
+  },
+  "corrective_scope": "SUCR01_ONLY_SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+  "corrective_successor_package_requirements": {
+    "active_schema_v2_must_be_included_byte_exactly": true,
+    "checksum_closure_required": true,
+    "completed_original_human_review_must_be_preserved_byte_exactly": true,
+    "decision_0109_must_be_included_byte_exactly": true,
+    "decision_0116_completed_review_record_must_be_bound": true,
+    "governance_adoption_evidence_must_be_included_as_exact_git_tree_copy": true,
+    "original_overall_revision_required_must_not_be_rewritten_as_approval": true,
+    "original_review_must_not_be_modified": true,
+    "original_review_package_v1_must_be_preserved_byte_exactly": true,
+    "package_authoring_does_not_close_review_chain": true,
+    "package_authoring_does_not_itself_authorize_focused_rereview": true,
+    "package_status_after_authoring": "AUTHOR_CANDIDATE_AWAITING_FOCUSED_SUCR01_REREVIEW",
+    "portable_resolvability_manifest_required": true,
+    "portable_source_binding_manifest_required": true,
+    "prior_relation_informed_study_v1_must_be_included_as_exact_git_tree_copy": true,
+    "relation_artifact_must_be_included_byte_exactly": true,
+    "safe_post_authoring_verifier_required": true,
+    "semantic_content_of_source_artifacts_must_not_be_modified": true,
+    "sucr02_through_sucr08_original_pass_findings_must_be_carried_forward_without_rereview": true,
+    "traceability_artifact_must_be_included_byte_exactly": true
+  },
+  "focused_corrective_target": {
+    "criterion": "SUCR01",
+    "deficiency": "SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+    "focused_rereview_authorized_by_this_decision": false,
+    "required_future_focused_question": "Whether the corrective successor package makes the exact source bindings independently portable and resolvable while preserving the original Study V1 and original review unchanged."
+  },
+  "next_boundary": "RUN_DECISION_0117_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_SUCR01_CORRECTIVE_SUCCESSOR_PACKAGE_V2_AUTHORING",
+  "required_portable_source_evidence": {
+    "active_schema_v2": {
+      "git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "kind": "file",
+      "repository_relative_path": "config/schemas/protocol_specification.v2.schema.json",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030
+    },
+    "decision_0109_governance_adoption": {
+      "kind": "file",
+      "repository_relative_path": "documentation/decisions/0109-governance-adopt-reviewed-bounded-outcome-of-relation-informed-study-v1.md",
+      "sha256": "1728f262195cd0f72bc744e566150a94c3fa28f1a6410150c5788bd24a8b5237",
+      "size_bytes": 3515
+    },
+    "governance_adoption_evidence_v1": {
+      "git_tree": "b5e2ccf604fc874cfa64e4831b66c22f669ade78",
+      "kind": "git_tree",
+      "repository_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_relation_informed_exhaustive_admissible_composition_study_v1_governance_adoption_v1"
+    },
+    "prior_relation_informed_study_v1": {
+      "git_tree": "bb55744db442f718daa56f8f38733e3ef4819b1a",
+      "kind": "git_tree",
+      "repository_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_relation_informed_exhaustive_admissible_composition_study_v1"
+    },
+    "semantic_role_relation_artifact": {
+      "kind": "file",
+      "repository_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/02_v4_field_class_to_schema_v2_property_path_relation.v1.json",
+      "sha256": "239e6492faca3bb6da0c79abdb980470e2ea76690fc1f081562ccdbf7f303a32",
+      "size_bytes": 10875847
+    },
+    "semantic_role_traceability_artifact": {
+      "kind": "file",
+      "repository_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "size_bytes": 732713
+    }
+  },
+  "retired_verifier_state": {
+    "decision_0102_a02": "PERMANENTLY_RETIRED",
+    "decision_0104_a02": "PERMANENTLY_RETIRED",
+    "decision_0106_a02": "PERMANENTLY_RETIRED",
+    "decision_0110_a02": "PERMANENTLY_RETIRED",
+    "decision_0112_a02": "PERMANENTLY_RETIRED",
+    "decision_0114_a02": "PERMANENTLY_RETIRED",
+    "retired_verifiers_must_not_be_executed": true
+  },
+  "review_state": {
+    "original_overall_review": "REVISION_REQUIRED",
+    "original_sucr01": "REVISION_REQUIRED",
+    "original_sucr02": "PASS",
+    "original_sucr03": "PASS",
+    "original_sucr04": "PASS",
+    "original_sucr05": "PASS",
+    "original_sucr06": "PASS",
+    "original_sucr07": "PASS",
+    "original_sucr08": "PASS",
+    "review_chain_closed": false,
+    "study_governance_adopted": false
+  },
+  "source_checkpoint": {
+    "completed_human_review_v1_git_tree": "e8178b937ab376faca698d35cc57d6e3785fbbb5",
+    "current_study_v1_git_tree": "3f04237bdc58c2be56e85628de5923b87578a051",
+    "decision_0116_commit": "5a55c0afe194a8bfb016f856ce9d1b97df5e5d87",
+    "decision_0116_tree": "6e2632bdeb8e5b73f09a2d108177509f8624750b",
+    "original_review_package_v1_git_tree": "e3d3c93a723b9d4c085a81ec0d0be11df852601a"
+  },
+  "status": "AUTHORIZED_FOR_SUCR01_CORRECTIVE_SUCCESSOR_PACKAGE_V2_AUTHORING_ONLY",
+  "study_state": {
+    "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "status": "AUTHOR_CANDIDATE"
+  },
+  "technical_nonclaims": {
+    "active_schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_created": false,
+    "negative_existing_v2_mapping_impossibility_proven": false,
+    "operational_mapping_authorized": false,
+    "positive_existing_v2_mapping_proven": false,
+    "repair_authorized": false,
+    "schema_successor_authoring_authorized": false,
+    "schema_v3_created": false,
+    "schema_version_preselected": false,
+    "whole_v4_admissible_composition_exhaustiveness_proven": false
+  }
+}

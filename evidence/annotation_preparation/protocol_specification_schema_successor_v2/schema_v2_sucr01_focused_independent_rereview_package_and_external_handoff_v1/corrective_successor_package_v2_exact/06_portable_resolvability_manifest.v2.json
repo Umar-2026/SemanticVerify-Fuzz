@@ -1,0 +1,50 @@
+{
+  "all_required_source_classes_portable": true,
+  "all_required_source_classes_resolvable_without_repository_access": true,
+  "artifact_id": "SVF-SUCR01-PORTABLE-RESOLVABILITY-MANIFEST-V2",
+  "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "corrective_evidence_classes": {
+    "active_schema_v2": {
+      "independently_resolvable_inside_package": true,
+      "present": true,
+      "verification_basis": "byte-exact file + SHA-256 + size + source Git blob"
+    },
+    "decision_0109_governance_adoption": {
+      "independently_resolvable_inside_package": true,
+      "present": true,
+      "verification_basis": "byte-exact decision file + SHA-256 + size + source Git blob"
+    },
+    "governance_adoption_evidence_v1": {
+      "independently_resolvable_inside_package": true,
+      "present": true,
+      "verification_basis": "complete exact directory + per-file SHA-256/size/mode inventory + source Git tree binding"
+    },
+    "prior_relation_informed_study_v1": {
+      "independently_resolvable_inside_package": true,
+      "present": true,
+      "verification_basis": "complete exact directory + per-file SHA-256/size/mode inventory + source Git tree binding"
+    },
+    "semantic_role_relation_artifact": {
+      "independently_resolvable_inside_package": true,
+      "present": true,
+      "verification_basis": "byte-exact file + SHA-256 + size + source Git blob"
+    },
+    "semantic_role_traceability_artifact": {
+      "independently_resolvable_inside_package": true,
+      "present": true,
+      "verification_basis": "byte-exact file + SHA-256 + size + source Git blob"
+    }
+  },
+  "criterion": "SUCR01",
+  "deficiency": "SOURCE_EVIDENCE_PORTABILITY_AND_RESOLVABILITY",
+  "focused_sucr01_rereview_authorized": false,
+  "focused_sucr01_rereview_performed": false,
+  "original_decision": "REVISION_REQUIRED",
+  "original_overall_review": "REVISION_REQUIRED",
+  "original_overall_review_rewritten": false,
+  "original_review_modified": false,
+  "review_chain_closed": false,
+  "study_governance_adopted": false,
+  "sucr02_through_sucr08_original_pass_findings_changed": false,
+  "technical_nonclaim": "This portability correction does not establish a positive mapping witness, negative mapping impossibility, or whole-V4 exhaustiveness."
+}
