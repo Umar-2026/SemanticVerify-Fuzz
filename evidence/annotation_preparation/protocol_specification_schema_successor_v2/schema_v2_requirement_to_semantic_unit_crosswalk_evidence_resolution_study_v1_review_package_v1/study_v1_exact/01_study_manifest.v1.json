@@ -1,0 +1,73 @@
+{
+  "adopted_prerequisite_governance": {
+    "adopted_result": "FURTHER_EVIDENCE_REQUIRED",
+    "decision_0146_path": "/openbayes/home/semanticverify-fuzz-research/documentation/decisions/0146-adopt-reviewed-requirement-bound-carrier-admissibility-study-v1-as-bounded-governance-evidence.md",
+    "decision_0146_sha256": "a1303c36141e5ed5e3436100179cd5529ba0b9ac425a865267b10f2db17bdce0"
+  },
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1",
+  "authorization": {
+    "decision": "0147",
+    "decision_path": "/openbayes/home/semanticverify-fuzz-research/documentation/decisions/0147-authorize-requirement-to-semantic-unit-crosswalk-evidence-resolution-study-v1.md",
+    "decision_sha256": "6fb765713b1adcbe70b7cd412b0c1d4cec87ee02e615ec04169302acb38f5359",
+    "pre_study_a02_executed_exactly_once": true,
+    "pre_study_a02_sha256": "e013514045bcaf08b741cde13c54a51760de37a6217129e5f74602f6a49356d2",
+    "pre_study_a02_state": "PERMANENTLY_RETIRED"
+  },
+  "canonical_requirement_domain": {
+    "count": 17,
+    "exact_copy": "02_canonical_requirement_inventory.EXACT_COPY.v1.json",
+    "source_path": "/openbayes/home/semanticverify-fuzz-research/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_v4_losslessness_requirement_provenance_binding_resolution_study_v1/01_17_requirement_provenance_binding_matrix.v1.json",
+    "source_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac"
+  },
+  "conservative_interpretation": {
+    "absence_of_positive_evidence_is_negative_proof": false,
+    "carrier_admissibility_is_pair_binding": false,
+    "domain_identity_is_pair_binding": false,
+    "historical_pair_relation_is_pair_binding": false,
+    "human_semantic_judgment_used": false
+  },
+  "non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json": false,
+    "historical_18639_pair_reclassification": false,
+    "operational_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3": false,
+    "schema_version_preselection": false
+  },
+  "pair_domain": {
+    "complete_cartesian_accounting": true,
+    "count": 1853,
+    "definition": "17 canonical requirements x 109 semantic units"
+  },
+  "result": {
+    "BOUND_COMPOSITE_UNITS": 0,
+    "BOUND_SINGLE_UNIT": 0,
+    "NOT_SUPPORTED_BINDING": 0,
+    "NO_AUTHORIZED_CROSSWALK_PROVEN": 0,
+    "SUPPORTED_BINDING": 0,
+    "UNRESOLVED_BINDING": 1853,
+    "UNRESOLVED_REQUIREMENTS": 17,
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED"
+  },
+  "review_state": {
+    "governance_adopted": false,
+    "independent_human_review_completed": false,
+    "independent_human_review_required": true
+  },
+  "semantic_unit_domain": {
+    "bounded_domain_authority": "TRANSITIVE_109_UNIT_DOMAIN_AUTHORITY_VIA_GOVERNANCE_ADOPTED_RELATION_INFORMED_STUDY",
+    "count": 109,
+    "inventory_exact_copy": "03_semantic_unit_inventory.EXACT_COPY.v1.json",
+    "inventory_source_path": "/openbayes/home/semanticverify-fuzz-research/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_exhaustive_admissible_multifield_capability_study_v1/02_v4_semantic_unit_inventory.v1.json",
+    "inventory_source_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "traceability_source_path": "/openbayes/home/semanticverify-fuzz-research/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+    "traceability_source_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "status": "AUTHOR_CANDIDATE"
+}

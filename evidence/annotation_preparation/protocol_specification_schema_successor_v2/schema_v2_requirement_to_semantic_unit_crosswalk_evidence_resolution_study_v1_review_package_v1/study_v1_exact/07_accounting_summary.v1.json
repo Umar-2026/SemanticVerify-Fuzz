@@ -1,0 +1,41 @@
+{
+  "active_schema_v2_modification_authorized": false,
+  "analyzer_execution_authorized": false,
+  "analyzer_implementation_authorized": false,
+  "artifact": "crosswalk_evidence_resolution_accounting_summary_v1",
+  "baseline_execution_authorized": false,
+  "carrier_admissibility_reclassification_performed": false,
+  "carrier_admissibility_resolved": false,
+  "curl_json_created": false,
+  "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "historical_18639_pair_matrix_read_only": true,
+  "historical_18639_pair_reclassification_performed": false,
+  "independent_human_review_completed_for_this_study": false,
+  "independent_human_review_required_before_governance_use": true,
+  "negative_mapping_impossibility_proven": false,
+  "operational_mapping_authorized": false,
+  "pair_classification_counts": {
+    "NOT_SUPPORTED_BINDING": 0,
+    "SUPPORTED_BINDING": 0,
+    "UNRESOLVED_BINDING": 1853
+  },
+  "pair_universe_count": 1853,
+  "partial_crosswalk_resolved": false,
+  "positive_schema_mapping_proven": false,
+  "repair_authorized": false,
+  "requirement_count": 17,
+  "requirement_rollup_counts": {
+    "BOUND_COMPOSITE_UNITS": 0,
+    "BOUND_SINGLE_UNIT": 0,
+    "NO_AUTHORIZED_CROSSWALK_PROVEN": 0,
+    "UNRESOLVED": 17
+  },
+  "requirement_to_semantic_unit_crosswalk_resolved_for_all_17": false,
+  "schema_successor_authoring_authorized": false,
+  "schema_v2_losslessness_proven": false,
+  "schema_v3_created": false,
+  "semantic_unit_count": 109,
+  "status": "AUTHOR_CANDIDATE",
+  "study_governance_adopted": false,
+  "whole_v4_exhaustiveness_proven": false
+}
