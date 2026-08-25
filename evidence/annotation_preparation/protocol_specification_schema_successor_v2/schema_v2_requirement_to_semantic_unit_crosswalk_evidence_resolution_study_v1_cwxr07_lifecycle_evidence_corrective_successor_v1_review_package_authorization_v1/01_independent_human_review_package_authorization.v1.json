@@ -1,0 +1,103 @@
+{
+  "artifact": "cwxr07_s1_corrective_successor_v1_independent_human_review_package_authorization_v1",
+  "authorization_type": "CWXR07_S1_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING",
+  "authorized_package_contents": {
+    "checksum_closure": true,
+    "decision0156_exact_copy": true,
+    "decision0157_exact_copy": true,
+    "decision0158_a02_consumption_record": true,
+    "decision0158_a02_output_exact_copy": true,
+    "initial_blank_cwxr07_s1_reviewer_packet_exact_copy": true,
+    "original_completed_review_exact_copy": true,
+    "package_manifest": true,
+    "reviewer_instructions": true,
+    "safe_review_package_verifier": true,
+    "successor_tree_exact_copy": true
+  },
+  "claim_boundary": {
+    "actual_external_process_execution_count_independently_proven": false,
+    "bounded_repository_contradiction_search_reviewable": true,
+    "git_identity_and_ancestry_reviewable": true,
+    "global_no_rerun_fact_independently_proven": false,
+    "preserved_record_integrity_reviewable": true,
+    "record_assertion_promoted_to_external_execution_fact": false,
+    "repository_internal_consistency_reviewable": true
+  },
+  "decision": "0158",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "external_handoff": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_completion": false,
+    "human_review_decision_synthesis": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "original_cwxr07_rewriting": false,
+    "original_review_rewriting": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "new_pre_package_authoring_verifier": {
+    "execution_authorized_now": false,
+    "execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_CWXR07_S1_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING",
+    "lifecycle_after_first_execution": "PERMANENTLY_RETIRED",
+    "may_execute_repeat_safe_successor_verifier": true,
+    "must_not_execute_decision0147_a02": true,
+    "must_not_execute_decision0153_a02": true,
+    "must_not_execute_decision0154_a02": true,
+    "must_not_execute_decision0156_a02": true,
+    "rerun_after_first_execution": false
+  },
+  "next_boundary": "RUN_DECISION_0158_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_AUTHORING_CWXR07_S1_INDEPENDENT_HUMAN_REVIEW_PACKAGE_V1",
+  "review_scope": {
+    "criterion": "CWXR07-S1",
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "original_overall_review_decision": "REVISION_REQUIRED",
+    "original_review_modified": false,
+    "passed_items_reopened": false,
+    "review_is_successor_review": true,
+    "scope": "CWXR07-S1_ONLY",
+    "successor_review_outcome_is_distinct_from_original_review": true
+  },
+  "reviewer_requirements": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "independent_human_review_required": true,
+    "item_count": 1,
+    "item_id": "CWXR07-S1",
+    "reviewer_must_not_certify_external_exactly_once_fact": true,
+    "reviewer_must_not_certify_global_no_rerun_fact": true,
+    "reviewer_must_respect_bounded_claim": true,
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "source_checkpoint": {
+    "decision0157_commit": "b0ae57379667f068c947ab3286a97ed9678590a3",
+    "decision0157_sha256": "3b4f770bce1b137a40b8d1155fd481d734144e6ad3148f629c9c8e7c56b35def",
+    "decision0157_tree": "71349006e681f03ef6b0471f8cd6fbd287d5ab1f",
+    "original_completed_review_sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91",
+    "successor_checksum_sha256": "2714f239950ed64a82a3da236f56e91a04599b0c080cf52c0b5fc04bbc499602",
+    "successor_git_tree": "5fdde69a9f860dcf53f94118f7fc0e0d8506f878",
+    "successor_manifest_sha256": "05a89d827f168e3603a775e15d476f0a9c0078839326e3d5aba2f9dc19fb7ed7",
+    "successor_repeat_safe_verifier_sha256": "3001186e41f4558e2b0162410d103d534c3ae3dd16dcb5a83cbd7e9d1a1c4a42"
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED"
+}
