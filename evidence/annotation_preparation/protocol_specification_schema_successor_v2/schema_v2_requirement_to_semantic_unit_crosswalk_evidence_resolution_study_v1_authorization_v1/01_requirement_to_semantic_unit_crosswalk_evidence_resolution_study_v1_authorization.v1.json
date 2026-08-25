@@ -1,0 +1,215 @@
+{
+  "authorization_id": "SVF-REQUIREMENT-TO-SEMANTIC-UNIT-CROSSWALK-EVIDENCE-RESOLUTION-STUDY-V1-AUTHORIZATION",
+  "authorization_type": "PRE_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_AUTHORING_ONLY",
+  "authorized_read_only_evidence_classes": [
+    "DECISION_0146_BOUNDED_GOVERNANCE_ADOPTION",
+    "DECISION_0144_COMPLETED_HUMAN_REVIEW_RECORD",
+    "GOVERNANCE_BOUND_REQUIREMENT_IDENTITY_AND_PROVENANCE_ARTIFACTS",
+    "EXISTING_109_SEMANTIC_UNIT_INVENTORY_AND_FORMALIZATION_ARTIFACTS",
+    "EXISTING_RELATION_AND_COMPOSITION_STUDY_ARTIFACTS",
+    "EXISTING_HISTORICAL_18639_SEMANTIC_UNIT_TO_SCHEMA_V2_PATH_PAIR_MATRIX",
+    "ACTIVE_SCHEMA_V2_READ_ONLY",
+    "APPROVED_CURL_V4_GOVERNANCE_ARTIFACTS_ALREADY_PRESENT_IN_THIS_EVIDENCE_DOMAIN"
+  ],
+  "authorized_study_goal": {
+    "candidate_pair_formula": "17_REQUIREMENTS_X_109_SEMANTIC_UNITS",
+    "candidate_pair_universe_size": 1853,
+    "primary_question": "CAN_EACH_OF_THE_17_CANONICAL_REQUIREMENTS_BE_EVIDENCE_BOUND_TO_ONE_OR_MORE_OF_THE_EXISTING_109_SEMANTIC_UNITS",
+    "study_may_create_new_crosswalk_evidence": true,
+    "study_may_not_classify_schema_carrier_admissibility": true,
+    "study_may_not_create_operational_mapping": true,
+    "study_may_not_modify_historical_18639_unit_to_schema_path_pairs": true,
+    "study_must_account_for_every_requirement": true,
+    "study_must_account_for_every_requirement_semantic_unit_pair": true
+  },
+  "canonical_requirement_universe": {
+    "count": 17,
+    "identity_reconstruction_from_numeric_count_allowed": false,
+    "identity_source_state": "PREVIOUSLY_GOVERNANCE_BOUND_AND_ADOPTED",
+    "requirement_ids": [
+      "all_10_v4_semantic_containers_preserved",
+      "all_3_exit_obligations_accounted_for",
+      "all_64_rule_records_accounted_for",
+      "complete_exact_v4_representation_policy_machine_checkably_bound",
+      "complete_exact_v4_representation_policy_preserved",
+      "forward_accounting_required",
+      "four_verdict_contract_preserved",
+      "membership_sensitive_semantics_preserved",
+      "normative_strength_uncertainty_policy_preserved",
+      "ownership_sensitive_semantics_preserved",
+      "path_sensitive_semantics_preserved",
+      "resource_centered_semantics_preserved",
+      "return_sensitive_semantics_preserved",
+      "reverse_accounting_required",
+      "set_valued_state_reasoning_preserved",
+      "synthetic_protocol_events_invented_false_policy_preserved",
+      "unknown_first_class_preserved"
+    ]
+  },
+  "decision_0146_checkpoint": {
+    "active_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "bounded_governance_adoption_v1_git_tree": "cf3df758ba19115e0cfffe1bf9b452e8520e7680",
+    "commit": "179f59732d0a68d115e7902794dddb512b5dc4c0",
+    "completed_human_review_record_v1_git_tree": "1b42cb3de3eb699c9e8a80387787250c6355d23b",
+    "external_handoff_v1_git_tree": "03cc454e001392c08684cb5f7b0483f10e529bb8",
+    "parent_decision_0145_commit": "089a1af716bc754c8594041467260c4c23579821",
+    "requirement_bound_carrier_study_v1_git_tree": "ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3",
+    "review_package_v1_git_tree": "94a907e55c8473f434d8675a7b5e46c63aad7533",
+    "tree": "ec9f6c79940b09afa3432ede511342cda48cb0f7"
+  },
+  "evidence_requirements": {
+    "every_not_supported_binding_requires_source_provenance": true,
+    "every_requirement_rollup_requires_machine_checkable_pair_accounting": true,
+    "every_supported_binding_requires_source_provenance": true,
+    "evidence_anchor_required": true,
+    "new_human_semantic_judgment_must_be_explicitly_labeled": true,
+    "reasoning_basis_required": true,
+    "source_artifact_path_required": true,
+    "source_artifact_sha256_required": true,
+    "unsupported_semantic_inference_prohibited": true
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "historical_18639_pair_reclassification": false,
+    "operational_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false
+  },
+  "governance_prerequisite": {
+    "adopted_governance_result": "FURTHER_EVIDENCE_REQUIRED",
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "remaining_blocking_gap": "NO_AUTHORIZED_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_IDENTIFIED",
+    "requirement_bound_carrier_study_v1_governance_adopted": true,
+    "whole_v4_exhaustiveness_proven": false
+  },
+  "historical_state_protection": {
+    "active_schema_v2_read_only": true,
+    "existing_governance_adoption_artifacts_read_only": true,
+    "existing_requirement_provenance_records_read_only": true,
+    "existing_review_artifacts_read_only": true,
+    "historical_18639_pair_records_read_only": true,
+    "historical_pair_reclassification_authorized": false
+  },
+  "next_boundary": "RUN_DECISION_0147_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_V1_AUTHORING",
+  "pair_level_classification_contract": {
+    "absence_of_positive_evidence_may_not_be_auto_promoted_to_not_supported": true,
+    "allowed_values": [
+      "SUPPORTED_BINDING",
+      "NOT_SUPPORTED_BINDING",
+      "UNRESOLVED_BINDING"
+    ],
+    "every_pair_must_have_exactly_one_classification": true,
+    "field_class_relation_may_not_be_auto_promoted": true,
+    "historical_carrier_pair_state_may_not_be_auto_promoted": true,
+    "lexical_similarity_may_not_be_auto_promoted": true,
+    "not_supported_binding_requires_negative_or_exclusion_evidence": true,
+    "open_string_capacity_may_not_be_auto_promoted": true,
+    "pair_count_required": 1853,
+    "supported_binding_requires_positive_evidence": true,
+    "unresolved_binding_required_when_evidence_is_insufficient": true
+  },
+  "prohibited_evidence_access": [
+    "GENERATED_DRIVER_SOURCE",
+    "SELECTED_SAMPLE_MEMBERSHIP",
+    "RAW_MODEL_RESPONSES",
+    "COMPILER_LOG_SEMANTIC_CONTENTS",
+    "GOLD_LABELS",
+    "ANALYZER_OUTPUT",
+    "BASELINE_OUTPUT",
+    "LLM_REVIEW_OUTPUT",
+    "REPAIR_OUTPUT"
+  ],
+  "required_study_artifacts": {
+    "canonical_requirement_inventory_exact_copy_or_hash_bound_reference": true,
+    "checksum_closure": true,
+    "crosswalk_accounting_summary": true,
+    "decision_0147_a02_consumption_record": true,
+    "decision_0147_a02_final_output_exact_copy": true,
+    "evidence_provenance_matrix": true,
+    "requirement_level_crosswalk_rollup_17": true,
+    "requirement_semantic_unit_pair_matrix_1853": true,
+    "safe_study_verifier": true,
+    "semantic_unit_inventory_exact_copy_or_hash_bound_reference": true,
+    "study_manifest": true
+  },
+  "requirement_level_rollup_contract": {
+    "BOUND_COMPOSITE_UNITS_rule": "MORE_THAN_ONE_SUPPORTED_BINDING_AND_ZERO_UNRESOLVED_BINDING_PAIRS",
+    "BOUND_SINGLE_UNIT_rule": "EXACTLY_ONE_SUPPORTED_BINDING_AND_ZERO_UNRESOLVED_BINDING_PAIRS",
+    "NO_AUTHORIZED_CROSSWALK_PROVEN_rule": "ZERO_SUPPORTED_BINDING_AND_ZERO_UNRESOLVED_BINDING_PAIRS_WITH_REQUIREMENT_SPECIFIC_EXHAUSTIVE_109_UNIT_ACCOUNTING",
+    "UNRESOLVED_rule": "ONE_OR_MORE_UNRESOLVED_BINDING_PAIRS_OR_INCOMPLETE_REQUIREMENT_SPECIFIC_ACCOUNTING",
+    "allowed_values": [
+      "BOUND_SINGLE_UNIT",
+      "BOUND_COMPOSITE_UNITS",
+      "NO_AUTHORIZED_CROSSWALK_PROVEN",
+      "UNRESOLVED"
+    ],
+    "binding_does_not_equal_carrier_admissibility": true,
+    "binding_does_not_equal_schema_mapping": true,
+    "no_authorized_crosswalk_proven_is_requirement_local_not_global_impossibility": true,
+    "requirement_count_required": 17
+  },
+  "retired_verifier_policy": {
+    "any_previous_retired_a02_rerun": false,
+    "decision_0126_a02_rerun": false,
+    "decision_0128_a02_rerun": false,
+    "decision_0130_a02_rerun": false,
+    "decision_0132_a02_rerun": false,
+    "decision_0135_a02_rerun": false,
+    "decision_0137_a02_rerun": false,
+    "decision_0139_a02_rerun": false,
+    "decision_0141_a02_rerun": false,
+    "decision_0143_a02_rerun": false,
+    "decision_0145_a02_rerun": false
+  },
+  "review_requirement": {
+    "author_may_not_synthesize_human_review": true,
+    "independent_human_review_required_before_governance_adoption": true,
+    "positive_or_negative_crosswalk_result_may_not_be_governance_adopted_without_separate_review_and_adoption": true,
+    "study_output_status_after_authoring": "AUTHOR_CANDIDATE"
+  },
+  "semantic_unit_universe": {
+    "count": 109,
+    "existing_semantic_unit_identity_may_be_rewritten": false,
+    "new_semantic_units_may_be_invented": false,
+    "universe_role": "GOVERNANCE_BOUND_EXISTING_SEMANTIC_UNIT_UNIVERSE"
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED",
+  "study_authoring_verifier_policy": {
+    "current_head_parent_must_equal_decision_0146": true,
+    "execution_checkpoint": "IMMEDIATE_SUCCESSOR_OF_DECISION_0146",
+    "must_not_execute_retired_a02": true,
+    "must_reverify_109_semantic_units": true,
+    "must_reverify_17_requirements": true,
+    "must_reverify_17_unresolved_prior_carrier_classifications": true,
+    "must_reverify_1853_candidate_pair_contract": true,
+    "must_reverify_active_schema_v2_unchanged": true,
+    "must_reverify_adopted_result_further_evidence_required": true,
+    "must_reverify_crosswalk_absent": true,
+    "must_reverify_decision_0146_governance_adoption": true,
+    "must_reverify_historical_pair_reclassification_not_authorized": true,
+    "new_one_time_verifier_required": true,
+    "successful_run_may_author_crosswalk_evidence_resolution_study_v1_only": true
+  },
+  "study_outcome_contract": {
+    "CROSSWALK_RESOLVED_FOR_ALL_17_rule": "ALL_17_REQUIREMENTS_HAVE_BOUND_SINGLE_UNIT_OR_BOUND_COMPOSITE_UNITS_AND_ALL_1853_PAIRS_ARE_ACCOUNTED_FOR_WITH_ZERO_UNRESOLVED_BINDINGS",
+    "FURTHER_EVIDENCE_REQUIRED_rule": "CROSSWALK_CANNOT_BE_ESTABLISHED_FOR_THE_COMPLETE_17_REQUIREMENT_UNIVERSE_FROM_AUTHORIZED_EVIDENCE",
+    "PARTIAL_CROSSWALK_FURTHER_EVIDENCE_REQUIRED_rule": "AT_LEAST_ONE_REQUIREMENT_IS_BOUND_AND_AT_LEAST_ONE_REQUIREMENT_REMAINS_UNRESOLVED_OR_HAS_NO_AUTHORIZED_CROSSWALK_PROVEN",
+    "allowed_global_outcomes": [
+      "CROSSWALK_RESOLVED_FOR_ALL_17",
+      "PARTIAL_CROSSWALK_FURTHER_EVIDENCE_REQUIRED",
+      "FURTHER_EVIDENCE_REQUIRED"
+    ],
+    "positive_crosswalk_does_not_authorize_operational_mapping": true,
+    "positive_crosswalk_does_not_prove_schema_v2_losslessness": true,
+    "positive_crosswalk_does_not_resolve_carrier_admissibility": true
+  }
+}
