@@ -1,0 +1,14 @@
+{
+  "artifact": "cwxr07_s1_reviewed_repository_a02_history_manifest_v1",
+  "claim_boundary": "Absence of a later tracked change to the A02 path does not prove absence of runtime rerun. It is repository-history evidence only.",
+  "history_scope": "Git history reachable from the reviewed repository HEAD for the tracked Decision-0147 A02 path.",
+  "no_tracked_path_change_after_decision0147": true,
+  "path_change_count_after_decision0147": 0,
+  "path_change_entries_after_decision0147": [],
+  "path_history_entries": [
+    "f083884cf9b4e44505a4481fb15d9748c530c65b|179f59732d0a68d115e7902794dddb512b5dc4c0|2026-08-25T09:29:27+00:00|study: authorize requirement-semantic-unit crosswalk evidence resolution"
+  ],
+  "path_history_entry_count": 1,
+  "reviewed_head": "b36502e3e100a15f9814a242fa62850793dc12d2",
+  "reviewed_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_authorization_v1/02_verify_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_authoring_authorization.v1.py"
+}

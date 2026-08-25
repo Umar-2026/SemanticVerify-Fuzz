@@ -1,0 +1,103 @@
+{
+  "artifact": "cwxr07_s1_corrective_successor_v1_independent_human_review_package_v1",
+  "claim_boundary": {
+    "actual_external_process_execution_count_independently_proven": false,
+    "bounded_repository_contradiction_search_reviewable": true,
+    "git_identity_and_ancestry_reviewable": true,
+    "global_no_rerun_fact_independently_proven": false,
+    "preserved_record_integrity_reviewable": true,
+    "record_assertion_promoted_to_external_execution_fact": false,
+    "repository_internal_consistency_reviewable": true
+  },
+  "decision0158_a02_lifecycle": {
+    "executed": true,
+    "execution_count_in_package_authoring_transaction": 1,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "pass": true,
+    "rerun_authorized": false
+  },
+  "exact_copy_bindings": {
+    "decision0156_sha256": "d86051713fdbcd0ac8a8a850b644553ec95f56bad455966d8cb8daf47575ae0b",
+    "decision0157_sha256": "3b4f770bce1b137a40b8d1155fd481d734144e6ad3148f629c9c8e7c56b35def",
+    "decision0158_a02_consumption_record_sha256": "2a70ca67a00de4be5452c56e7114f9d89879555b882ff418551da1305022f576",
+    "decision0158_a02_output_sha256": "ade208af508e160fc01d47b694b5bac674debf422b946ebc4900f500af35494e",
+    "initial_blank_cwxr07_s1_packet_sha256": "e48090854cb7ab71a057963e831f08fdeaf52b179398495c5ffbae34113a39e6",
+    "original_completed_review_sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_completion": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "original_cwxr07_rewriting": false,
+    "original_review_rewriting": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "reviewer_decision_synthesis": false,
+    "reviewer_identity_synthesis": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "external_handoff": {
+    "authorized": false,
+    "completed": false,
+    "editable_manual_review_copy_created": false
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_FOR_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+  "original_review_boundary": {
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "original_review_modified": false,
+    "overall_decision": "REVISION_REQUIRED",
+    "passed_items_reopened": false
+  },
+  "recording_decision": "0159",
+  "review_contract": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "criterion": "CWXR07-S1",
+    "human_review_completed": false,
+    "independent_human_review_required": true,
+    "item_count": 1,
+    "item_decision_recorded": false,
+    "overall_decision_recorded": false,
+    "reviewer_identity_recorded": false,
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "review_scope": "CWXR07-S1_ONLY",
+  "source_authorization": {
+    "a01_sha256": "efe7e2e356cf983448b94256a1e57952a68ef0c046a0c4be1ca5ee8336dc2c7c",
+    "a03_sha256": "a48909d2ef58d701e336bc1d113489acf94b7d3ff8ba678b4afd79548f0408d7",
+    "authorization_git_tree": "23d52a64b445195b385e8a5a8bf08625849ef8e5",
+    "commit": "2fb0cabcd42a1752bea80ea236dc2f49cd71e7ab",
+    "decision": "0158",
+    "decision_sha256": "35ee506ef5f8da5fb020e132665588fa3ad8f507f1c11d8a7695fce3a71bf7f3",
+    "one_time_a02_sha256": "35d5d6f7dca9af29dead0e4fba2e7295038024f96bbf509fdafc8117d23e874d",
+    "tree": "12fb16a555fe76e05eb47d74db2aabecdb62b822"
+  },
+  "status": "AUTHOR_CANDIDATE_AWAITING_EXTERNAL_HANDOFF_AND_INDEPENDENT_HUMAN_REVIEW",
+  "successor_binding": {
+    "source_successor_git_tree": "5fdde69a9f860dcf53f94118f7fc0e0d8506f878",
+    "successor_checksum_sha256": "2714f239950ed64a82a3da236f56e91a04599b0c080cf52c0b5fc04bbc499602",
+    "successor_manifest_sha256": "05a89d827f168e3603a775e15d476f0a9c0078839326e3d5aba2f9dc19fb7ed7",
+    "successor_repeat_safe_verifier_sha256": "3001186e41f4558e2b0162410d103d534c3ae3dd16dcb5a83cbd7e9d1a1c4a42",
+    "successor_tree_exact_copy_in_package": true
+  }
+}
