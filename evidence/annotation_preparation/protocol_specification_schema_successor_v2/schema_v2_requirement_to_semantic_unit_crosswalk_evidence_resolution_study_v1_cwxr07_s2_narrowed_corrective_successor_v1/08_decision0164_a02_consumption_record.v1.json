@@ -1,0 +1,42 @@
+{
+  "artifact": "decision0164_a02_consumption_record_v1",
+  "authoring_scope": "CWXR07-S2_NARROWED_CORRECTIVE_SUCCESSOR_ONLY",
+  "decision": "0164",
+  "decision0147_a02_executed": false,
+  "decision0153_a02_executed": false,
+  "decision0154_a02_rerun": false,
+  "decision0156_a02_rerun": false,
+  "decision0158_a02_rerun": false,
+  "decision0160_a02_rerun": false,
+  "decision0162_a02_rerun": false,
+  "execution_invocation_count_in_this_controlled_transaction": 1,
+  "external_execution_output": {
+    "path": "/openbayes/home/49_decision0164_a02_single_execution_output.v1.txt",
+    "sha256": "c5ca0058a91aa862d4af3559bd46624cafe7deb6b32221cf96e036ee9ed8b7ef",
+    "size_bytes": 1089
+  },
+  "full_repository_snapshot_authored": false,
+  "governance_adoption_authorized": false,
+  "historical_cwxr07_s1_decision": "REVISION_REQUIRED",
+  "historical_cwxr07_s1_modified": false,
+  "human_review_completed": false,
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "pass": true,
+  "repository_head_at_execution": "4de95773c75420a81c313738d1f497d38ba018a3",
+  "repository_tree_at_execution": "7f64952980741986132dbe07aa4f1121accdf64c",
+  "rerun_authorized": false,
+  "retired_a02_verifiers_executed": false,
+  "return_code": 0,
+  "reviewer_decision_synthesized": false,
+  "reviewer_identity_synthesized": false,
+  "sealed_git_bundle_authored": false,
+  "single_execution_reservation": {
+    "created_before_execution": true,
+    "exclusive_creation": true,
+    "path": "/openbayes/home/.svf_decision0164_a02_consumed.v1",
+    "sha256": "5cb616eea6ef3b01373dd1a2c5176a56ceb87ea831509fda1118ba10a063dba2",
+    "size_bytes": 406
+  },
+  "successor_approved": false,
+  "verifier_sha256": "a17de01974f63fd3dc735f6ed858072f2fe3d600e369fe4fb0bce8c830da8365"
+}
