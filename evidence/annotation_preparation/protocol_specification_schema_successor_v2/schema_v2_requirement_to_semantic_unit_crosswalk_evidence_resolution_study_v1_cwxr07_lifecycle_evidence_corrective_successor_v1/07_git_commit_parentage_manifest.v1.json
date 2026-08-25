@@ -1,0 +1,11 @@
+{
+  "artifact": "cwxr07_s1_git_commit_parentage_manifest_v1",
+  "claim_boundary": "This manifest establishes Git-object identity and ancestry only. It does not independently prove runtime execution count or a global absence of rerun.",
+  "decision0147_commit": "f083884cf9b4e44505a4481fb15d9748c530c65b",
+  "decision0147_is_ancestor_of_reviewed_head": true,
+  "decision0148_commit": "899dd232f5e49793472f9e8b7ac3a95185caa99d",
+  "decision0148_immediate_child_of_decision0147": true,
+  "decision0148_is_ancestor_of_reviewed_head": true,
+  "decision0148_parent": "f083884cf9b4e44505a4481fb15d9748c530c65b",
+  "reviewed_head": "b36502e3e100a15f9814a242fa62850793dc12d2"
+}

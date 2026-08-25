@@ -1,0 +1,91 @@
+{
+  "artifact": "cwxr07_lifecycle_evidence_corrective_successor_v1",
+  "claim_boundary": {
+    "actual_external_process_execution_count_independently_proven": false,
+    "bounded_repository_contradiction_search_assessable": true,
+    "git_identity_and_ancestry_assessable": true,
+    "global_no_rerun_fact_independently_proven": false,
+    "preserved_record_integrity_assessable": true,
+    "record_assertion_promoted_to_external_execution_fact": false,
+    "repository_internal_consistency_assessable": true
+  },
+  "corrective_strategy": "NARROWED_CRITERION_PLUS_ADDITIONAL_INDEPENDENTLY_REVIEWABLE_REPOSITORY_EVIDENCE",
+  "decision0156_a02_consumption": {
+    "consumption_record_sha256": "9d8c4fef72da82c7e5f2cb7f08565583e6e7c2afd33ba4427370a3ec6d30e083",
+    "executed": true,
+    "execution_count_in_authoring_transaction": 1,
+    "lifecycle": "PERMANENTLY_RETIRED",
+    "output_sha256": "723e7252656262646d1a59590cad7adaeee44d2f4142c6244972c740622225f4",
+    "pass": true,
+    "rerun_authorized": false
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "historical_18639_pair_reclassification": false,
+    "historical_decision0147_a02_execution": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "original_cwxr07_rewriting": false,
+    "original_review_rewriting": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "retired_verifier_execution": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "historical_evidence": {
+    "decision0147_a02_git_blob": "b1840d1b19e11ab5944a83fba289fd949d1e24bf",
+    "decision0147_a02_sha256": "e013514045bcaf08b741cde13c54a51760de37a6217129e5f74602f6a49356d2",
+    "decision0147_commit": "f083884cf9b4e44505a4481fb15d9748c530c65b",
+    "decision0147_decision_sha256": "6fb765713b1adcbe70b7cd412b0c1d4cec87ee02e615ec04169302acb38f5359",
+    "decision0148_commit": "899dd232f5e49793472f9e8b7ac3a95185caa99d",
+    "decision0148_decision_sha256": "9a48f45b74351cace9b4f1b2ee06fb037a3e71b5d0f268443270aed1f961adee",
+    "decision0148_study_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+    "preserved_a02_consumption_record_sha256": "2a2da4b046286211e4d744d0bdc2b56f133008e266bc012a5d5e4b1b26eb9ab0",
+    "preserved_a02_output_sha256": "f5a4e0f183ae8c86b34660aada18826a2aa24b80e8680f377311b5a8f92b2518"
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_FOR_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+  "original_review": {
+    "modified": false,
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "overall_decision": "REVISION_REQUIRED",
+    "passed_items_reopened": false,
+    "record_sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91"
+  },
+  "preserved_record_facts": {
+    "recorded_execution_count": 1,
+    "recorded_lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "recorded_pass_marker": true,
+    "recorded_rerun_authorized": false,
+    "recorded_return_code": 0
+  },
+  "recording_decision": "0157",
+  "review_requirement": {
+    "independent_human_review_required": true,
+    "review_completed": false,
+    "review_decision_recorded": false,
+    "review_scope": "CWXR07-S1_ONLY",
+    "reviewer_identity_recorded": false
+  },
+  "source_authorization": {
+    "a01_sha256": "74716d3a5b10dd7453e941ce38864afb0e69c2e3e73dbf2b1a40c36a4b1bedd9",
+    "a03_sha256": "1cbad38172925392495c128d4d4e3eead699a0ce286473e872992049a81eddb0",
+    "authorization_git_tree": "23879488dc64a39fe0fd321e498ef18f67fbf1ec",
+    "commit": "b36502e3e100a15f9814a242fa62850793dc12d2",
+    "decision": "0156",
+    "decision_sha256": "d86051713fdbcd0ac8a8a850b644553ec95f56bad455966d8cb8daf47575ae0b",
+    "one_time_a02_sha256": "cbdc19932c80ed9d680b31d47309e82e9107cf806fa2550650b99d4b77a3bd81",
+    "tree": "40430ba659ff57e1b44c5901010bbb6aa070ac51"
+  },
+  "status": "AUTHOR_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "successor_criterion": "CWXR07-S1"
+}

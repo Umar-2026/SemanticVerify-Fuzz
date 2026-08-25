@@ -1,0 +1,11 @@
+{
+  "artifact": "cwxr07_s1_study_tree_immutability_manifest_v1",
+  "claim_boundary": "This establishes tracked Study V1 tree identity between Decision-0148 and the reviewed HEAD. It is not independent runtime execution telemetry.",
+  "current_study_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+  "decision0148_commit": "899dd232f5e49793472f9e8b7ac3a95185caa99d",
+  "decision0148_study_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+  "expected_study_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+  "reviewed_head": "b36502e3e100a15f9814a242fa62850793dc12d2",
+  "study_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1",
+  "study_tree_identity_preserved": true
+}
