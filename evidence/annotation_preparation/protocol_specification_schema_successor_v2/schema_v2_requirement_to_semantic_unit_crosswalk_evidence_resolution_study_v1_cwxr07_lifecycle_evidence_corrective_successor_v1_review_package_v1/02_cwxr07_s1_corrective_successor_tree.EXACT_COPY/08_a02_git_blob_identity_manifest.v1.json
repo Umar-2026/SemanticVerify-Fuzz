@@ -1,0 +1,15 @@
+{
+  "artifact": "cwxr07_s1_a02_git_blob_identity_manifest_v1",
+  "blob_identity_preserved": true,
+  "byte_identity_preserved": true,
+  "claim_boundary": "This manifest establishes script Git-blob and byte identity. It does not establish runtime invocation count.",
+  "current_git_blob": "b1840d1b19e11ab5944a83fba289fd949d1e24bf",
+  "current_sha256": "e013514045bcaf08b741cde13c54a51760de37a6217129e5f74602f6a49356d2",
+  "decision0147_commit": "f083884cf9b4e44505a4481fb15d9748c530c65b",
+  "expected_git_blob": "b1840d1b19e11ab5944a83fba289fd949d1e24bf",
+  "expected_sha256": "e013514045bcaf08b741cde13c54a51760de37a6217129e5f74602f6a49356d2",
+  "historical_git_blob": "b1840d1b19e11ab5944a83fba289fd949d1e24bf",
+  "historical_sha256": "e013514045bcaf08b741cde13c54a51760de37a6217129e5f74602f6a49356d2",
+  "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_authorization_v1/02_verify_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_authoring_authorization.v1.py",
+  "reviewed_head": "b36502e3e100a15f9814a242fa62850793dc12d2"
+}

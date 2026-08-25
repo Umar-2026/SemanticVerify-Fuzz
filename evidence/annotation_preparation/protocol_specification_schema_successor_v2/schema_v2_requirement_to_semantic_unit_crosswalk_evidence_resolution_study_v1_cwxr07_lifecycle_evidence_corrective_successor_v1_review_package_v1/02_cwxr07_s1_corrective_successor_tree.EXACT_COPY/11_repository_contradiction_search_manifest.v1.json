@@ -1,0 +1,49 @@
+{
+  "artifact": "cwxr07_s1_repository_contradiction_search_manifest_v1",
+  "claim_boundary": "This bounded machine search does not prove a global no-rerun fact and is not an exhaustive semantic proof over all possible phrasing or external runtime activity.",
+  "contradiction_indicator_class": "Explicit machine-searchable repository statements that would affirm a later/rerun execution of Decision-0147 A02.",
+  "no_declared_contradiction_indicator_match": true,
+  "reviewed_head": "b36502e3e100a15f9814a242fa62850793dc12d2",
+  "search_results": [
+    {
+      "indicator": "DECISION_0147_A02_RERUN=YES",
+      "match_count": 0,
+      "matches": []
+    },
+    {
+      "indicator": "DECISION_0147_A02_EXECUTED_BY_THIS_VERIFIER=YES",
+      "match_count": 0,
+      "matches": []
+    },
+    {
+      "indicator": "DECISION_0147_A02_EXECUTED_BY_THIS_TRANSACTION=YES",
+      "match_count": 0,
+      "matches": []
+    },
+    {
+      "indicator": "\"decision0147_a02_executed_by_this_transaction\": true",
+      "match_count": 0,
+      "matches": []
+    },
+    {
+      "indicator": "\"decision_0147_a02_executed_by_this_transaction\": true",
+      "match_count": 0,
+      "matches": []
+    },
+    {
+      "indicator": "\"decision0147_a02_rerun\": true",
+      "match_count": 0,
+      "matches": []
+    },
+    {
+      "indicator": "\"decision_0147_a02_rerun\": true",
+      "match_count": 0,
+      "matches": []
+    }
+  ],
+  "search_scope_paths": [
+    "evidence/annotation_preparation/protocol_specification_schema_successor_v2",
+    "documentation/decisions"
+  ],
+  "total_contradiction_indicator_matches": 0
+}

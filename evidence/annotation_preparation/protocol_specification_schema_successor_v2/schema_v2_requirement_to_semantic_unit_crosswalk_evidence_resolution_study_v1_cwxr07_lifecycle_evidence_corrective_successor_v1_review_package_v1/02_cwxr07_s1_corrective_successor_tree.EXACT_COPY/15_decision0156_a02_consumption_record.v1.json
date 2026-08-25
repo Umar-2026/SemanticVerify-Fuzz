@@ -1,0 +1,31 @@
+{
+  "artifact": "decision0156_a02_consumption_record_v1",
+  "authoring_scope": "CWXR07-S1_CORRECTIVE_SUCCESSOR_V1_ONLY",
+  "decision": "0156",
+  "decision0153_a02_executed": false,
+  "decision0154_a02_rerun": false,
+  "does_not_prove_global_no_rerun_fact": true,
+  "does_not_prove_historical_external_process_execution_count": true,
+  "execution_invocation_count_in_this_controlled_transaction": 1,
+  "external_execution_output": {
+    "path": "/openbayes/home/44_decision0156_a02_single_execution_output.v1.txt",
+    "sha256": "723e7252656262646d1a59590cad7adaeee44d2f4142c6244972c740622225f4",
+    "size_bytes": 1160
+  },
+  "historical_decision0147_a02_executed": false,
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "pass": true,
+  "repository_head_at_execution": "b36502e3e100a15f9814a242fa62850793dc12d2",
+  "repository_tree_at_execution": "40430ba659ff57e1b44c5901010bbb6aa070ac51",
+  "rerun_authorized": false,
+  "retired_a02_verifiers_executed": false,
+  "return_code": 0,
+  "single_execution_reservation": {
+    "created_before_execution": true,
+    "exclusive_creation": true,
+    "path": "/openbayes/home/.svf_decision0156_a02_consumed.v1",
+    "sha256": "7d5e2382ad12e82442c9eac34f6788d858f175b60902f29be04f16f2a4e3a428",
+    "size_bytes": 406
+  },
+  "verifier_sha256": "cbdc19932c80ed9d680b31d47309e82e9107cf806fa2550650b99d4b77a3bd81"
+}
