@@ -1,0 +1,113 @@
+{
+  "artifact": "schema_v2_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_cwxr07_lifecycle_evidence_corrective_successor_authorization_v1",
+  "authoring_verifier": {
+    "execution_authorized_now": false,
+    "execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_CWXR07_LIFECYCLE_EVIDENCE_CORRECTIVE_SUCCESSOR_AUTHORING",
+    "lifecycle_after_first_execution": "PERMANENTLY_RETIRED",
+    "must_not_execute_decision0147_a02": true,
+    "must_not_execute_decision0153_a02": true,
+    "must_not_execute_decision0154_a02": true,
+    "rerun_after_first_execution": false
+  },
+  "authorization_type": "CWXR07_ONLY_CORRECTIVE_SUCCESSOR_AUTHORING",
+  "authorized_successor_evidence": {
+    "a02_git_blob_identity_manifest": true,
+    "bounded_claim_statement": true,
+    "checksum_closure": true,
+    "decision0147_a02_consumption_record_exact_copy": true,
+    "decision0147_a02_output_exact_copy": true,
+    "decision0147_exact_copy": true,
+    "decision0148_exact_copy": true,
+    "git_commit_identity_and_parentage_manifest": true,
+    "original_decision0147_a02_exact_copy": true,
+    "repository_contradiction_search_manifest": true,
+    "reviewed_repository_a02_history_manifest": true,
+    "study_tree_immutability_manifest": true,
+    "successor_cwxr07_reviewer_packet": true,
+    "successor_safe_verifier": true
+  },
+  "corrective_strategy": "NARROWED_CRITERION_PLUS_ADDITIONAL_INDEPENDENTLY_REVIEWABLE_REPOSITORY_EVIDENCE",
+  "decision": "0156",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "claim_actual_process_execution_count_exactly_one": false,
+    "claim_global_no_rerun_fact": false,
+    "curl_json_creation": false,
+    "historical_18639_pair_reclassification": false,
+    "historical_decision0147_a02_execution": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "original_cwxr07_decision_rewriting": false,
+    "original_human_review_rewriting": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "retired_verifier_execution": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "historical_bindings": {
+    "decision0147_a02_consumption_record_sha256": "2a2da4b046286211e4d744d0bdc2b56f133008e266bc012a5d5e4b1b26eb9ab0",
+    "decision0147_a02_output_sha256": "f5a4e0f183ae8c86b34660aada18826a2aa24b80e8680f377311b5a8f92b2518",
+    "decision0147_a02_sha256": "e013514045bcaf08b741cde13c54a51760de37a6217129e5f74602f6a49356d2",
+    "decision0147_commit": "f083884cf9b4e44505a4481fb15d9748c530c65b",
+    "decision0147_decision_sha256": "6fb765713b1adcbe70b7cd412b0c1d4cec87ee02e615ec04169302acb38f5359",
+    "decision0148_commit": "899dd232f5e49793472f9e8b7ac3a95185caa99d",
+    "decision0148_decision_sha256": "9a48f45b74351cace9b4f1b2ee06fb037a3e71b5d0f268443270aed1f961adee",
+    "decision0148_study_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e"
+  },
+  "next_boundary": "RUN_DECISION_0156_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_AUTHORING_CWXR07_ONLY_LIFECYCLE_EVIDENCE_CORRECTIVE_SUCCESSOR_V1",
+  "review_status": {
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "original_overall_decision": "REVISION_REQUIRED",
+    "original_review_modified": false,
+    "original_review_reinterpreted_as_approval": false,
+    "passed_items_preserved": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR08"
+    ],
+    "passed_items_reopened": false
+  },
+  "source_checkpoint": {
+    "completed_human_review_record_git_tree": "b4bb9b57ae25f90c5dc2506a90ade02e810c4388",
+    "decision_0155_commit": "1326a8584c31f941aca3fc946119f73114a08d62",
+    "decision_0155_sha256": "482168f8fb728293fcc17ee71d1a62e38003c01e53491afe5b9c3ef8ac0f56f9",
+    "decision_0155_tree": "d52c3d5dbcc84a0a6d3ac026a5c3506db7103f8e",
+    "returned_review_record_sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91"
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED",
+  "successor_cwxr07_criterion": {
+    "claim_boundary": {
+      "independently_proves_actual_process_execution_count": false,
+      "independently_proves_global_no_rerun_outside_repository_evidence": false,
+      "promotes_record_assertion_to_external_execution_fact": false,
+      "verifies_no_contradictory_repository_evidence_in_reviewed_history": true,
+      "verifies_preserved_record": true,
+      "verifies_repository_internal_consistency": true
+    },
+    "criterion_id": "CWXR07-S1",
+    "criterion_text": "Verify that the repository-preserved Decision-0147 A02 lifecycle record is internally consistent and independently reviewable: the original A02 script is byte-identical to the authorized Git object; Decision-0148 is the immediate child of Decision-0147; Study V1 preserves a byte-exact PASS output and consumption record; the consumption record states execution_count=1, return_code=0, lifecycle_after_execution=PERMANENTLY_RETIRED, and rerun_authorized=false; and the reviewed repository history contains no contradictory repository evidence of a later Decision-0147 A02 execution."
+  },
+  "successor_review_requirements": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "independent_human_review_required": true,
+    "review_scope": "CWXR07-S1_ONLY",
+    "successor_review_does_not_modify_original_review": true
+  }
+}
