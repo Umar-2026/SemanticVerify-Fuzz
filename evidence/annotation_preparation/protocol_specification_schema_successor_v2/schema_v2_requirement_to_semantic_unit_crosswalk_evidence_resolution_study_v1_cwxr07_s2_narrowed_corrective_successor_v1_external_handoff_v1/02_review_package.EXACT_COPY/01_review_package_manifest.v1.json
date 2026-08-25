@@ -1,0 +1,138 @@
+{
+  "artifact": "cwxr07_s2_independent_human_review_package_v1",
+  "authoring_decision": "0167",
+  "decision0166_a02_lifecycle": {
+    "consumption_record_sha256": "acdb751a40d608219106e93e7f2dc3d0f50b32e620d160c1636b54ec89dc561d",
+    "executed": true,
+    "execution_count_in_package_authoring_transaction": 1,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "output_sha256": "fb4bb0077c77aa6423c9561bb86530683ce241cf1833f1d3fd2697938634eab4",
+    "pass": true,
+    "rerun_authorized": false
+  },
+  "explicit_non_authorizations": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "external_editable_reviewer_copy_creation": false,
+    "external_handoff": false,
+    "external_zip_creation": false,
+    "full_repository_snapshot_authoring": false,
+    "governance_adoption": false,
+    "historical_s1_result_change": false,
+    "human_review_completion": false,
+    "repair": false,
+    "reviewer_decision_synthesis": false,
+    "reviewer_identity_synthesis": false,
+    "sealed_git_bundle_authoring": false,
+    "successor_approval": false
+  },
+  "historical_boundary": {
+    "cwxr01_to_cwxr06_and_cwxr08_reopened": false,
+    "cwxr07_s1_decision": "REVISION_REQUIRED",
+    "cwxr07_s1_modified": false,
+    "cwxr07_s1_upgraded": false
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_CWXR07_S2_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF",
+  "review_packet": {
+    "human_review_completed": false,
+    "initial_blank_exact_copy_sha256": "ad5333e4687a285f7fb87ce1ab427e25b4d00c8fa513b1f9ee1ae116c0fad5a2",
+    "reviewer_decision_prepopulated": false,
+    "reviewer_identity_prepopulated": false
+  },
+  "review_scope": "CWXR07-S2_ONLY",
+  "review_semantics": {
+    "pass_authorizes_analyzer": false,
+    "pass_authorizes_baseline": false,
+    "pass_authorizes_governance": false,
+    "pass_authorizes_repair": false,
+    "pass_changes_historical_s1_to_pass": false,
+    "pass_independently_proves_excluded_claims": false,
+    "pass_limited_to_cwxr07_s2_positive_scope": true
+  },
+  "source_authorization": {
+    "a01_sha256": "64844aa360094bbe8583004eef5eb6000ae5bdfd65619b108b5e658852c6f0ce",
+    "a03_sha256": "3f799da2ce547f2410b19c6d69a25ed4c41095d64fbb35498e8cf47a13ee8f19",
+    "authorization_git_tree": "690dc34521653581357279e3a561526409ed11a4",
+    "decision0166_commit": "3cf176308cc945f36f08ae1f52ae26a74629c47e",
+    "decision0166_sha256": "baf5573498e2529cd782feef6f447b7d55dd534c166adf5a58f0cf12ffed2300",
+    "decision0166_tree": "1c5fe68d05615a61ab91334356a5d093cc5d3726",
+    "one_time_a02_sha256": "835956e21ac938f54903f044bb3db0e61279120b62ecfc2adec4578f8e1e4a37"
+  },
+  "source_successor": {
+    "criterion_id": "CWXR07-S2",
+    "exact_copy_files": {
+      "01_cwxr07_s2_narrowed_corrective_successor_manifest.v1.json": {
+        "sha256": "c18a6c8e60b00dc9b67e96a454ba032dc5d8d99d86092f1819b2c9303487f725",
+        "size_bytes": 5878
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/01_completed_human_review_manifest.v1.json": {
+        "sha256": "86fff2558098bacc193192b83ecf2d13b029c7792df0f48c921bb4344ead1c17",
+        "size_bytes": 4060
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/02_returned_human_review.EXACT_COPY.v1.md": {
+        "sha256": "f5647d3532212830fc5f8100ec26aeac6ab38a626e9fc091473154567ff2f467",
+        "size_bytes": 4138
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/03_decision0161.EXACT_COPY.v1.md": {
+        "sha256": "37d54f33b7d9997b4a18b2d4102769a05b348466254ad6db1eaf16738f1852f9",
+        "size_bytes": 3636
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/04_external_handoff_manifest.EXACT_COPY.v1.json": {
+        "sha256": "def8bbc01056e819fe1edfc6b78e7c73947406fe5458ce7d065d355cb24bc390",
+        "size_bytes": 3330
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/05_decision0162_a02_final_output.EXACT_COPY.v1.txt": {
+        "sha256": "0e69e0c4ad150505ee1c07b111b1e6780481e6faff1f455675f21c7e54c7d3e9",
+        "size_bytes": 1347
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/06_decision0162_a02_consumption_record.v1.json": {
+        "sha256": "b29a352e1b9612ae8779b15c27a4fd8a6ea0b06fc908620cdb11711f188eba51",
+        "size_bytes": 1558
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/07_verify_completed_human_review_record_v1.py": {
+        "sha256": "97d03d33d8e1ee80fa4b175980a45f426192cf1da745cac44c540bafe81253be",
+        "size_bytes": 6192
+      },
+      "02_s1_completed_human_review_record.EXACT_COPY/08_completed_human_review_record_v1.SHA256SUMS": {
+        "sha256": "b9135ba8bb4a915121804aa806469dc58bac5b7a678ec535c7a875346989124e",
+        "size_bytes": 772
+      },
+      "03_decision0164.EXACT_COPY.v1.md": {
+        "sha256": "fd710f8b432da329be3ad9ccb594b00db4067ec335d8288d5b5ac151efccf7e7",
+        "size_bytes": 4179
+      },
+      "04_decision0164_authorization.EXACT_COPY.v1.json": {
+        "sha256": "62c6b2120b5864fd0c598db74012db28297604400f30c4e7f4613fc2bdc1e0b1",
+        "size_bytes": 4846
+      },
+      "05_cwxr07_s2_narrowed_criterion.v1.md": {
+        "sha256": "83e204708b4e4b660dcea638fcbb30d886f68ca5fbd398156c2d388702ef10c2",
+        "size_bytes": 2596
+      },
+      "06_CWXR07_S2_reviewer_packet.INITIAL_BLANK.v1.md": {
+        "sha256": "ad5333e4687a285f7fb87ce1ab427e25b4d00c8fa513b1f9ee1ae116c0fad5a2",
+        "size_bytes": 1555
+      },
+      "07_decision0164_a02_final_output.EXACT_COPY.v1.txt": {
+        "sha256": "c5ca0058a91aa862d4af3559bd46624cafe7deb6b32221cf96e036ee9ed8b7ef",
+        "size_bytes": 1089
+      },
+      "08_decision0164_a02_consumption_record.v1.json": {
+        "sha256": "0579064bc73221d7c7eacdea8ae400b0b172b0cfd1458ef9ed097b205244cd53",
+        "size_bytes": 1755
+      },
+      "09_verify_cwxr07_s2_narrowed_corrective_successor_v1.py": {
+        "sha256": "9c626b9409e563bae1a283f3819d1fcef2584d2f6608444812a78acd0791a698",
+        "size_bytes": 8599
+      },
+      "10_cwxr07_s2_narrowed_corrective_successor_v1.SHA256SUMS": {
+        "sha256": "d7c7b4b7e9adccc64fd6fc89f6d3afe16ca479337e24ef257fda6dc456462baf",
+        "size_bytes": 2172
+      }
+    },
+    "exact_copy_included": true,
+    "source_file_count": 17
+  },
+  "status": "AUTHOR_REVIEW_PACKAGE_AWAITING_EXTERNAL_HANDOFF"
+}

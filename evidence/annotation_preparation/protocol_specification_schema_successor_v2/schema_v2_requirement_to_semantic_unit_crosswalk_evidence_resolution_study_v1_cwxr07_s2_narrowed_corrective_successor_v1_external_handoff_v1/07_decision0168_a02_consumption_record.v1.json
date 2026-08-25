@@ -1,0 +1,36 @@
+{
+  "artifact": "decision0168_a02_consumption_record_v1",
+  "authoring_scope": "CWXR07-S2_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_ONLY",
+  "decision": "0168",
+  "execution_invocation_count_in_this_controlled_transaction": 1,
+  "external_execution_output": {
+    "path": "/openbayes/home/51_decision0168_a02_single_execution_output.v1.txt",
+    "sha256": "0bf7428bc2645509f9b8ed12a86d42cdfb36eb0ba40344e0fd6d8693f6b53651",
+    "size_bytes": 1079
+  },
+  "governance_adoption_authorized": false,
+  "historical_cwxr07_s1_decision": "REVISION_REQUIRED",
+  "historical_cwxr07_s1_modified": false,
+  "human_review_completed": false,
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "pass": true,
+  "repository_head_at_execution": "ee5ec20a1301bb15ad0fb8f29cadc06a486e7095",
+  "repository_tree_at_execution": "042091a29f0eea9ed5841aedc424cb58f44ed440",
+  "rerun_authorized": false,
+  "retired_a02_verifiers_executed": false,
+  "return_code": 0,
+  "review_scope": "CWXR07-S2_ONLY",
+  "reviewer_decision_recorded": false,
+  "reviewer_decision_synthesized": false,
+  "reviewer_identity_recorded": false,
+  "reviewer_identity_synthesized": false,
+  "single_execution_reservation": {
+    "created_before_execution": true,
+    "exclusive_creation": true,
+    "path": "/openbayes/home/.svf_decision0168_a02_consumed.v1",
+    "sha256": "39300af01135b1c7665d415d296ed9d051af1498cad120a4338a446af7c5a62e",
+    "size_bytes": 406
+  },
+  "successor_approved": false,
+  "verifier_sha256": "47995ba1a821dbd1cdc129df231f4f2e83b2e7995d56a7b797913ae4871ea3a6"
+}

@@ -1,0 +1,73 @@
+{
+  "artifact": "cwxr07_s1_external_independent_human_review_handoff_v1",
+  "claim_boundary": {
+    "actual_external_process_execution_count_independently_proven": false,
+    "global_no_rerun_fact_independently_proven": false,
+    "record_assertion_promoted_to_external_execution_fact": false
+  },
+  "decision0160_a02_lifecycle": {
+    "consumption_record_sha256": "4c92fe2aba4d984d2de556da64af770d3c33d14a7abe207d2702e04846caa3b1",
+    "executed": true,
+    "execution_count_in_handoff_transaction": 1,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "output_sha256": "95b2f07617555622149e0e36e176cbb5c8a6f673348b4b23eada7fa9da5539ce",
+    "pass": true,
+    "rerun_authorized": false
+  },
+  "external_artifacts": {
+    "editable_manual_review_copy_initial_sha256": "e48090854cb7ab71a057963e831f08fdeaf52b179398495c5ffbae34113a39e6",
+    "editable_manual_review_copy_initially_equals_blank_packet": true,
+    "editable_manual_review_copy_path": "/openbayes/home/46_CWXR07_S1_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "zip_path": "/openbayes/home/46_CWXR07_S1_independent_human_review_handoff.v1.zip"
+  },
+  "governance_adoption_authorized": false,
+  "human_review_state": {
+    "completed": false,
+    "item_decision_recorded": false,
+    "overall_decision_recorded": false,
+    "reviewer_identity_recorded": false
+  },
+  "next_boundary": "AWAIT_GENUINE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_RETURN_FOR_CWXR07_S1",
+  "original_review_boundary": {
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "original_review_modified": false,
+    "overall_decision": "REVISION_REQUIRED",
+    "passed_items_reopened": false
+  },
+  "recording_decision": "0161",
+  "review_contract": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "criterion": "CWXR07-S1",
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "review_scope": "CWXR07-S1_ONLY",
+  "source_authorization": {
+    "a01_sha256": "8dd3f6c496afc0958a3ea20f673acaec9c78a0ee4b6edb5daad386660076f532",
+    "a03_sha256": "3fbaf0212507b3cefd72bc5a69a41c5018994cf1580ea87633d056463ca4605b",
+    "authorization_git_tree": "a1cf838559d4753d690e22f045ec0c6b66af48f0",
+    "commit": "1a16c9b2f017ff7dd71fd6dd7e5bb7ba122439ee",
+    "decision": "0160",
+    "decision_sha256": "613567149d3bb9c6cdd0c3c36e6bea09f4527b90958a7c0c2581626b6be686ca",
+    "one_time_a02_sha256": "a3ae40e8ff33cd018497d433cda8904a15d43a1be69e47854d691e814b5f624e",
+    "tree": "008328dab91707a363335bf1d3a6891a3588ed51"
+  },
+  "source_review_package": {
+    "blank_reviewer_packet_sha256": "e48090854cb7ab71a057963e831f08fdeaf52b179398495c5ffbae34113a39e6",
+    "checksum_sha256": "4c3535e16bcf72c00c4b622dfd1be7b17f752200e94ae50a84e0202d45c830c1",
+    "git_tree": "bf898f97443395d16d9a7313c5125b9fcaeb7443",
+    "manifest_sha256": "77f6e68e6e320517e17e9d93d562af15436367225167ff6e5aed1f5a060b2737",
+    "repeat_safe_verifier_sha256": "ede6fd42bfad4c4292df6442d5e1ddc50d1c58fe56ca052385535b50e6b626ad",
+    "repository_exact_copy_present": true,
+    "reviewer_instructions_sha256": "506af9ce9ec851303e31d1edafe780efcd412d410027ad60593ae1cba48a8341"
+  },
+  "status": "HANDED_OFF_AWAITING_INDEPENDENT_HUMAN_REVIEW"
+}
