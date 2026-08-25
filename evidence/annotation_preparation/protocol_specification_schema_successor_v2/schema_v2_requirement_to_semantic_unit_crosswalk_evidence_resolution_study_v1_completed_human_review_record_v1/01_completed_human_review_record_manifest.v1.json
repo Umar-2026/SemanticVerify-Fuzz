@@ -1,0 +1,108 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_completed_human_review_record_v1",
+  "decision0153_a02": {
+    "consumption_count": 0,
+    "defective": true,
+    "executed": false,
+    "execution_authority": "SUPERSEDED",
+    "must_never_execute": true
+  },
+  "decision0154_a02_consumption": {
+    "consumption_record_sha256": "7cfa7015f0636698d1a76b3ad52609830b5164c544f76cc34a5c2e4632216f28",
+    "executed": true,
+    "execution_count_in_recording_transaction": 1,
+    "execution_output_sha256": "2d14e046a54cbecc3fdfe17c66f731452fc15c199a08416387558ac76eaeedde",
+    "execution_output_size_bytes": 1062,
+    "lifecycle": "PERMANENTLY_RETIRED",
+    "pass": true,
+    "rerun_authorized": false,
+    "return_code": 0
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "cwxr07_corrective_evidence_authoring": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_result_rewriting": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "human_review": {
+    "completed": true,
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 7,
+      "REVISION_REQUIRED": 1
+    },
+    "overall_decision": "REVISION_REQUIRED",
+    "per_item_decisions": {
+      "CWXR01": "PASS",
+      "CWXR02": "PASS",
+      "CWXR03": "PASS",
+      "CWXR04": "PASS",
+      "CWXR05": "PASS",
+      "CWXR06": "PASS",
+      "CWXR07": "REVISION_REQUIRED",
+      "CWXR08": "PASS"
+    },
+    "recorded_as_approval": false,
+    "review_item_count": 8,
+    "reviewer": {
+      "confirmation": "ARS",
+      "name": "Abdul Raheem Shahzad",
+      "review_date": "25 / August / 2026",
+      "role": "Spec-Technical-Reviewer-1"
+    }
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_CWXR07_ONLY_DECISION0147_A02_LIFECYCLE_EVIDENCE_CORRECTIVE_SUCCESSOR",
+  "recording_decision": "0155",
+  "returned_review_source": {
+    "byte_exact_copy": true,
+    "repository_exact_copy_sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91",
+    "sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91",
+    "size_bytes": 7703
+  },
+  "review_outcome_boundary": {
+    "corrective_action_required": true,
+    "corrective_scope": "CWXR07_ONLY",
+    "corrective_subject": "DECISION0147_A02_LIFECYCLE_EVIDENCE",
+    "cwxr07_corrective_evidence_authorized": false,
+    "cwxr07_corrective_evidence_requires_separate_authorization": true,
+    "governance_adoption_authorized": false,
+    "passed_items_reopened": false,
+    "study_governance_adopted": false
+  },
+  "source_authorization": {
+    "authorization_a01_sha256": "6a2a6f86608740412a2c61ee7850f1e132d2849d82b518188175d2036d31553d",
+    "authorization_a03_sha256": "05232b6662c6f2722cb7887db7e551842866c7197e04026defca477cbefaa20e",
+    "authorization_git_tree": "5aea7e16cd0241b9b3a4a36b5f290f1171818673",
+    "commit": "b2ecb595dddfc5363d582380f2911198f77c059d",
+    "decision": "0154",
+    "decision_sha256": "0bf183998ce86690704401d2e0a38a5007688c722d0850fd7bf3078eaed379ae",
+    "one_time_a02_sha256": "3c983ebda09b0f12b991c01f5d74fb7c7580b0e6cb32983d75f40f17dcb9d4bc",
+    "tree": "57baf862fc09093018e3d0e6a9af171fc19e2131"
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED",
+  "study_state_preserved": {
+    "not_supported_binding_count": 0,
+    "pair_universe": 1853,
+    "requirement_count": 17,
+    "semantic_unit_count": 109,
+    "study_global_result": "FURTHER_EVIDENCE_REQUIRED",
+    "supported_binding_count": 0,
+    "unresolved_binding_count": 1853,
+    "unresolved_requirement_rollup_count": 17
+  }
+}

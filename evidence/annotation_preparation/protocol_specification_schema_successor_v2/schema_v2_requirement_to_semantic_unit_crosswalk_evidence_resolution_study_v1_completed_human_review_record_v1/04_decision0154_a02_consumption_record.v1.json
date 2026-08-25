@@ -1,0 +1,30 @@
+{
+  "artifact": "decision0154_a02_consumption_record_v1",
+  "decision": "0154",
+  "decision0153_defective_a02_executed": false,
+  "decision0153_defective_a02_remains_superseded": true,
+  "does_not_establish_cwxr07_decision0147_a02_lifecycle_claim": true,
+  "execution_authority": "DECISION_0154",
+  "execution_invocation_count_in_this_controlled_transaction": 1,
+  "external_execution_output": {
+    "path": "/openbayes/home/42_decision0154_a02_single_execution_output.v1.txt",
+    "sha256": "2d14e046a54cbecc3fdfe17c66f731452fc15c199a08416387558ac76eaeedde",
+    "size_bytes": 1062
+  },
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "pass": true,
+  "repository_head_at_execution": "b2ecb595dddfc5363d582380f2911198f77c059d",
+  "repository_tree_at_execution": "57baf862fc09093018e3d0e6a9af171fc19e2131",
+  "rerun_authorized": false,
+  "retired_predecessor_a02_verifiers_executed": false,
+  "return_code": 0,
+  "scope": "PRE_COMPLETED_HUMAN_REVIEW_RECORDING_AUTHORIZATION_VERIFICATION_ONLY",
+  "single_execution_reservation": {
+    "created_before_execution": true,
+    "exclusive_creation": true,
+    "path": "/openbayes/home/.svf_decision0154_a02_consumed.v1",
+    "sha256": "7a49ad476629ace12c114afd84a5339dde1fdba89219297dc632fe032096a4b0",
+    "size_bytes": 406
+  },
+  "verifier_sha256": "3c983ebda09b0f12b991c01f5d74fb7c7580b0e6cb32983d75f40f17dcb9d4bc"
+}
