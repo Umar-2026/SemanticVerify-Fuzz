@@ -1,0 +1,42 @@
+{
+  "adopted_result_accounting": {
+    "admissible_composite_count": 0,
+    "admissible_exact_count": 0,
+    "governance_result": "FURTHER_EVIDENCE_REQUIRED",
+    "historical_carrier_pair_count": 18639,
+    "no_admissible_carrier_proven_count": 0,
+    "requirement_count": 17,
+    "requirement_to_semantic_unit_crosswalk_identified": false,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "unresolved_count": 17
+  },
+  "artifact_id": "SVF-REQUIREMENT-BOUND-CARRIER-STUDY-V1-ADOPTED-BOUNDED-RESULT-ACCOUNTING-V1",
+  "completed_human_review_sha256": "9ded6b54b04c438a9a0f5ac3b7557d5ab19283c812fa5f2f6b529c92ef2e7eb1",
+  "governance_adoption": {
+    "adopted": true,
+    "scope": "BOUNDED_REVIEWED_RESULT_ONLY"
+  },
+  "operational_permissions_granted": [],
+  "review_accounting": {
+    "RBCA01": "PASS",
+    "RBCA02": "PASS",
+    "RBCA03": "PASS",
+    "RBCA04": "PASS",
+    "RBCA05": "PASS",
+    "RBCA06": "PASS",
+    "RBCA07": "PASS",
+    "RBCA08": "PASS",
+    "fail_count": 0,
+    "overall_review_decision": "APPROVE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_STUDY_V1",
+    "pass_count": 8,
+    "revision_required_count": 0
+  },
+  "technical_nonclaims": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

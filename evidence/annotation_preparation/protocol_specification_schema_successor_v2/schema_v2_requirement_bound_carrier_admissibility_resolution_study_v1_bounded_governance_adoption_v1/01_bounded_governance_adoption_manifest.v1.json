@@ -1,0 +1,84 @@
+{
+  "adopted_bounded_result": {
+    "admissible_composite_count": 0,
+    "admissible_exact_count": 0,
+    "governance_result": "FURTHER_EVIDENCE_REQUIRED",
+    "historical_carrier_pair_count": 18639,
+    "no_admissible_carrier_proven_count": 0,
+    "requirement_count": 17,
+    "requirement_to_semantic_unit_crosswalk_identified": false,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "study": "Schema-V2 Requirement-Bound Carrier Admissibility Resolution Study V1",
+    "unresolved_count": 17
+  },
+  "adoption_id": "SVF-SCHEMA-V2-REQUIREMENT-BOUND-CARRIER-ADMISSIBILITY-STUDY-V1-BOUNDED-GOVERNANCE-ADOPTION-V1",
+  "adoption_status": "ADOPTED_AS_BOUNDED_GOVERNANCE_EVIDENCE",
+  "decision_0145_a02": {
+    "final_output_sha256": "b5d4ccea15982fc746b5558bb7320fb7c37547c6a14e5c5a7912c16e8599a951",
+    "final_output_size_bytes": 1035,
+    "must_never_be_rerun": true,
+    "rerun_authorized": false,
+    "result": "PASS",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "decision_0145_checkpoint": {
+    "bounded_governance_adoption_authorization_v1_git_tree": "4fae99ba8e159826e95aa4b8c5e804b18218cbae",
+    "commit": "089a1af716bc754c8594041467260c4c23579821",
+    "completed_human_review_record_v1_git_tree": "1b42cb3de3eb699c9e8a80387787250c6355d23b",
+    "external_handoff_v1_git_tree": "03cc454e001392c08684cb5f7b0483f10e529bb8",
+    "parent_decision_0144_commit": "e82a13b9ecb1ca611b3eb00be62cc7d203314de7",
+    "review_package_v1_git_tree": "94a907e55c8473f434d8675a7b5e46c63aad7533",
+    "study_v1_git_tree": "ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3",
+    "tree": "24ae896c8e273c6430cb78f95f25a341da20b6fc"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "historical_pair_reclassification": false,
+    "operational_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_crosswalk_authoring": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false
+  },
+  "governance_state": {
+    "adopted_governance_result": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adoption_does_not_establish_mapping": true,
+    "governance_adoption_does_not_resolve_carrier_admissibility": true,
+    "human_review_completed": true,
+    "human_review_recorded_in_repository": true,
+    "study_governance_adopted": true,
+    "study_governance_adoption_scope": "BOUNDED_REVIEWED_RESULT_ONLY"
+  },
+  "human_review_binding": {
+    "completed_review_packet_sha256": "9ded6b54b04c438a9a0f5ac3b7557d5ab19283c812fa5f2f6b529c92ef2e7eb1",
+    "fail_count": 0,
+    "human_review_completed": true,
+    "human_review_recorded_in_repository": true,
+    "overall_review_decision": "APPROVE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_STUDY_V1",
+    "pass_count": 8,
+    "review_item_count": 8,
+    "reviewer_decision_synthesized": false,
+    "reviewer_identity_synthesized": false,
+    "reviewer_notes_rewritten": false,
+    "revision_required_count": 0
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_V1",
+  "next_evidence_gap": {
+    "effect": "ALL_17_REQUIREMENT_LEVEL_CARRIER_CLASSIFICATIONS_REMAIN_UNRESOLVED",
+    "future_work_requires_separate_authorization": true,
+    "gap": "NO_AUTHORIZED_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_IDENTIFIED"
+  },
+  "technical_nonclaims": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}
