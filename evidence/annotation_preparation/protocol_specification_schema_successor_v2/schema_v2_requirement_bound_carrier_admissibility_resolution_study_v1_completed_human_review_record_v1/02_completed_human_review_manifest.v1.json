@@ -1,0 +1,92 @@
+{
+  "completed_human_review_packet": {
+    "byte_exact_to_validated_return": true,
+    "human_review_completed": true,
+    "human_review_recorded_in_repository": true,
+    "repository_record_path": "01_completed_RBCA01_RBCA08_human_review.EXACT_COPY.v1.md",
+    "reviewer_decision_synthesized": false,
+    "reviewer_identity_synthesized": false,
+    "reviewer_notes_rewritten": false,
+    "sha256": "9ded6b54b04c438a9a0f5ac3b7557d5ab19283c812fa5f2f6b529c92ef2e7eb1",
+    "size_bytes": 8794
+  },
+  "decision_0143_a02": {
+    "final_output_sha256": "144c45a23ebd7b422e1d54bbec56ba3e10b9a3f610f9b15dc29b97d843ace0bb",
+    "final_output_size_bytes": 1216,
+    "must_never_be_rerun": true,
+    "rerun_authorized": false,
+    "result": "PASS",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "decision_0143_checkpoint": {
+    "commit": "11a5043860f96ce90b611eff4b30193a887714ba",
+    "completed_review_recording_authorization_v1_git_tree": "4a6696294637bf5d8eed450ce5cae07939dff381",
+    "external_handoff_v1_git_tree": "03cc454e001392c08684cb5f7b0483f10e529bb8",
+    "parent_decision_0142_commit": "8e7cc325bbea4042bef8403b7f6e853c52456f38",
+    "review_package_v1_git_tree": "94a907e55c8473f434d8675a7b5e46c63aad7533",
+    "study_v1_git_tree": "ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3",
+    "tree": "a02edc6741da77e01c6abd713dff23e9da06e045"
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_creation": false,
+    "historical_pair_reclassification": false,
+    "operational_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_crosswalk_authoring": false,
+    "schema_successor_authoring": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "study_governance_adoption": false
+  },
+  "governance_state": {
+    "human_review_completed": true,
+    "human_review_recorded_in_repository": true,
+    "study_governance_adopted": false,
+    "study_governance_adoption_authorized": false
+  },
+  "human_review_result": {
+    "RBCA01": "PASS",
+    "RBCA02": "PASS",
+    "RBCA03": "PASS",
+    "RBCA04": "PASS",
+    "RBCA05": "PASS",
+    "RBCA06": "PASS",
+    "RBCA07": "PASS",
+    "RBCA08": "PASS",
+    "fail_count": 0,
+    "overall_review_decision": "APPROVE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_STUDY_V1",
+    "pass_count": 8,
+    "reviewer_confirmation": "ARS",
+    "reviewer_date": "24 / August / 2026",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "revision_required_count": 0
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_BOUNDED_GOVERNANCE_ADOPTION_OF_COMPLETED_RBCA01_RBCA08_REVIEWED_STUDY_V1",
+  "record_id": "SVF-SCHEMA-V2-REQUIREMENT-BOUND-CARRIER-ADMISSIBILITY-STUDY-V1-COMPLETED-HUMAN-REVIEW-RECORD-V1",
+  "record_status": "COMPLETED_HUMAN_REVIEW_RECORDED_PENDING_SEPARATE_GOVERNANCE_ADOPTION",
+  "reviewed_technical_result": {
+    "admissible_composite_count": 0,
+    "admissible_exact_count": 0,
+    "author_candidate_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "historical_pair_count": 18639,
+    "no_admissible_carrier_proven_count": 0,
+    "requirement_count": 17,
+    "requirement_to_semantic_unit_crosswalk_identified": false,
+    "schema_v2_property_path_count": 171,
+    "semantic_unit_count": 109,
+    "study": "Schema-V2 Requirement-Bound Carrier Admissibility Resolution Study V1",
+    "unresolved_count": 17
+  },
+  "technical_nonclaims": {
+    "carrier_admissibility_resolved": false,
+    "negative_mapping_impossibility_proven": false,
+    "positive_mapping_proven": false,
+    "schema_v2_losslessness_proven": false,
+    "whole_v4_exhaustiveness_proven": false
+  }
+}

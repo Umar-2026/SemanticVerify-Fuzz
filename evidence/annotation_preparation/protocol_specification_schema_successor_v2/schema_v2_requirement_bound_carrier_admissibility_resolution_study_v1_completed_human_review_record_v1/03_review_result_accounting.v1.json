@@ -1,0 +1,65 @@
+{
+  "approval_does_not_establish": [
+    "SCHEMA_V2_LOSSLESSNESS",
+    "CARRIER_ADMISSIBILITY_RESOLUTION",
+    "POSITIVE_MAPPING",
+    "NEGATIVE_MAPPING_IMPOSSIBILITY",
+    "WHOLE_V4_EXHAUSTIVENESS"
+  ],
+  "approved_bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "artifact_id": "SVF-RBCA01-RBCA08-COMPLETED-HUMAN-REVIEW-RESULT-ACCOUNTING-V1",
+  "fail_count": 0,
+  "item_results": [
+    {
+      "decision": "PASS",
+      "review_item": "RBCA01"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA02"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA03"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA04"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA05"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA06"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA07"
+    },
+    {
+      "decision": "PASS",
+      "review_item": "RBCA08"
+    }
+  ],
+  "overall_review_decision": "APPROVE_REQUIREMENT_BOUND_CARRIER_ADMISSIBILITY_RESOLUTION_STUDY_V1",
+  "pass_count": 8,
+  "recording_provenance": {
+    "decision_values_observed_from_completed_human_packet": true,
+    "reviewer_decision_synthesized": false,
+    "reviewer_identity_observed_from_completed_human_packet": true,
+    "reviewer_identity_synthesized": false,
+    "reviewer_notes_rewritten": false
+  },
+  "reviewer": {
+    "confirmation": "ARS",
+    "date": "24 / August / 2026",
+    "name": "Abdul Raheem Shahzad",
+    "role": "Spec-Technical-Reviewer-1"
+  },
+  "revision_required_count": 0,
+  "source_completed_review_sha256": "9ded6b54b04c438a9a0f5ac3b7557d5ab19283c812fa5f2f6b529c92ef2e7eb1",
+  "study_governance_adopted": false,
+  "study_governance_adoption_authorized": false
+}
