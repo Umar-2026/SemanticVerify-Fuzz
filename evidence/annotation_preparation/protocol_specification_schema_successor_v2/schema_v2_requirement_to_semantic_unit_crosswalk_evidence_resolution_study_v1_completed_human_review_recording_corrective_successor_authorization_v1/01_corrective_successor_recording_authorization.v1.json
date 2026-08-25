@@ -1,0 +1,108 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_completed_human_review_recording_corrective_successor_authorization_v1",
+  "authorization_type": "CORRECTIVE_SUCCESSOR_PRE_COMPLETED_HUMAN_REVIEW_RECORDING_ONLY",
+  "authorized_recording_scope": {
+    "cwxr07_corrective_evidence_authoring": false,
+    "cwxr07_corrective_evidence_requires_separate_authorization": true,
+    "passed_items_reopened": false,
+    "preserve_all_item_decisions": true,
+    "preserve_all_reviewer_text_without_rewriting": true,
+    "preserve_overall_revision_required_outcome": true,
+    "record_completed_human_review": true,
+    "record_returned_packet_byte_exactly": true,
+    "record_review_as_approved": false,
+    "study_governance_adoption": false
+  },
+  "corrective_review_boundary": {
+    "passed_items_preserved": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR08"
+    ],
+    "scope": "CWXR07_ONLY",
+    "subject": "DECISION0147_A02_LIFECYCLE_EVIDENCE"
+  },
+  "decision": "0154",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "cwxr07_corrective_evidence_authoring": false,
+    "decision0153_a02_execution": false,
+    "decision0153_in_place_edit": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_result_rewriting": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "reviewer_identity_rewriting": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "new_pre_recording_verifier": {
+    "execution_authorized_now": false,
+    "execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_COMPLETED_HUMAN_REVIEW_RECORDING",
+    "lifecycle_after_first_execution": "PERMANENTLY_RETIRED",
+    "may_execute_repeat_safe_handoff_verifier": true,
+    "must_not_execute_decision0147_a02": true,
+    "must_not_execute_decision0149_a02": true,
+    "must_not_execute_decision0151_a02": true,
+    "must_not_execute_decision0153_a02": true,
+    "rerun_after_first_execution": false
+  },
+  "next_boundary_after_authorization": "RUN_DECISION_0154_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_RECORDING_COMPLETED_CWXR01_CWXR08_HUMAN_REVIEW_WITH_REVISION_REQUIRED_OUTCOME",
+  "predecessor": {
+    "authorization_git_tree": "d6b1ea33fbfe8f7e91a8bc29e0057782970374c9",
+    "commit": "75ffaf3214ffbe4345d7290829c334b4a559ac07",
+    "decision": "0153",
+    "decision_sha256": "717da5bafedf3dd5f6c91e375b5ed66b43fb2d572a0b7ed54cc7288e9b50560f",
+    "defect": "UNQUOTED_HEREDOC_BACKTICK_COMMAND_SUBSTITUTION_REMOVED_DECISION_CAPTURE_REGEX",
+    "defective_pre_recording_verifier_consumption_count": 0,
+    "defective_pre_recording_verifier_executed": false,
+    "defective_pre_recording_verifier_execution_authority_superseded": true,
+    "defective_pre_recording_verifier_safe_to_execute": false,
+    "defective_pre_recording_verifier_sha256": "873bf03323b26cfbaa2a6223b3f0e461d1c38f5edfa701408a88d70b21c18522",
+    "predecessor_artifacts_modified": false,
+    "substantive_recording_authorization_preserved": true,
+    "tree": "f47da3cd50452b22fc7e1e3de96a27d53c9bc495"
+  },
+  "returned_human_review": {
+    "external_path": "/openbayes/home/41_CWXR01_CWXR08_manually_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "overall_decision": "REVISION_REQUIRED",
+    "per_item_decisions": {
+      "CWXR01": "PASS",
+      "CWXR02": "PASS",
+      "CWXR03": "PASS",
+      "CWXR04": "PASS",
+      "CWXR05": "PASS",
+      "CWXR06": "PASS",
+      "CWXR07": "REVISION_REQUIRED",
+      "CWXR08": "PASS"
+    },
+    "review_completed": true,
+    "reviewer": {
+      "confirmation": "ARS",
+      "name": "Abdul Raheem Shahzad",
+      "review_date": "25 / August / 2026",
+      "role": "Spec-Technical-Reviewer-1"
+    },
+    "sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91",
+    "size_bytes": 7703
+  },
+  "source_handoff": {
+    "git_tree": "ffa411b05857c7d77db70223f39887104f76afd8"
+  },
+  "status": "AUTHORIZED_NOT_YET_RECORDED"
+}
