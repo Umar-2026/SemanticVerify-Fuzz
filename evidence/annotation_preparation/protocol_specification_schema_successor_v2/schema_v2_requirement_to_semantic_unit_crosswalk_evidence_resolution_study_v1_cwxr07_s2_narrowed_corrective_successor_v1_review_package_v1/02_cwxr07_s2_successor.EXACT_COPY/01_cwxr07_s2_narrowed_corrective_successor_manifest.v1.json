@@ -1,0 +1,138 @@
+{
+  "artifact": "cwxr07_s2_narrowed_corrective_successor_v1",
+  "authoring_decision": "0165",
+  "corrective_strategy": {
+    "full_repository_snapshot_selected": false,
+    "reviewer_option": 2,
+    "sealed_git_bundle_selected": false,
+    "strategy": "FURTHER_NARROW_CRITERION_TO_BYTE_INTEGRITY_AND_INTERNAL_CONSISTENCY"
+  },
+  "criterion_id": "CWXR07-S2",
+  "decision0164_a02_lifecycle": {
+    "consumption_record_sha256": "0579064bc73221d7c7eacdea8ae400b0b172b0cfd1458ef9ed097b205244cd53",
+    "executed": true,
+    "execution_count_in_authoring_transaction": 1,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "output_sha256": "c5ca0058a91aa862d4af3559bd46624cafe7deb6b32221cf96e036ee9ed8b7ef",
+    "pass": true,
+    "rerun_authorized": false
+  },
+  "explicit_excluded_independent_proof_claims": [
+    "DECISION0147_TO_DECISION0148_GIT_PARENTAGE",
+    "DECISION0148_STUDY_V1_TREE_IDENTITY",
+    "TRACKED_DECISION0147_A02_PATH_HISTORY_CORRECTNESS",
+    "REPOSITORY_CONTRADICTION_SEARCH_CORRECTNESS_OR_COMPLETENESS",
+    "ACTUAL_EXTERNAL_PROCESS_EXACTLY_ONCE_EXECUTION",
+    "GLOBAL_NO_RERUN_FACT"
+  ],
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "analyzer_output_inspection": false,
+    "baseline_execution": false,
+    "baseline_output_inspection": false,
+    "carrier_admissibility_reclassification": false,
+    "compiler_log_semantic_inspection": false,
+    "curl_json_creation_or_inspection": false,
+    "full_repository_snapshot_authoring": false,
+    "generated_driver_source_inspection": false,
+    "gold_label_inspection": false,
+    "governance_adoption": false,
+    "historical_18639_pair_reclassification": false,
+    "llm_review_output_inspection": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "raw_model_response_inspection": false,
+    "repair": false,
+    "repair_output_inspection": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "sealed_git_bundle_authoring": false,
+    "selected_sample_membership_inspection": false,
+    "successor_approval": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "historical_s1_boundary": {
+    "cwxr01_to_cwxr06_and_cwxr08_reopened": false,
+    "cwxr07_s1_decision": "REVISION_REQUIRED",
+    "cwxr07_s1_modified": false,
+    "cwxr07_s1_upgraded": false,
+    "exact_copy_file_count": 8,
+    "exact_copy_of_completed_s1_record_included": true,
+    "exact_copy_source_files": {
+      "01_completed_human_review_manifest.v1.json": {
+        "sha256": "86fff2558098bacc193192b83ecf2d13b029c7792df0f48c921bb4344ead1c17",
+        "size_bytes": 4060
+      },
+      "02_returned_human_review.EXACT_COPY.v1.md": {
+        "sha256": "f5647d3532212830fc5f8100ec26aeac6ab38a626e9fc091473154567ff2f467",
+        "size_bytes": 4138
+      },
+      "03_decision0161.EXACT_COPY.v1.md": {
+        "sha256": "37d54f33b7d9997b4a18b2d4102769a05b348466254ad6db1eaf16738f1852f9",
+        "size_bytes": 3636
+      },
+      "04_external_handoff_manifest.EXACT_COPY.v1.json": {
+        "sha256": "def8bbc01056e819fe1edfc6b78e7c73947406fe5458ce7d065d355cb24bc390",
+        "size_bytes": 3330
+      },
+      "05_decision0162_a02_final_output.EXACT_COPY.v1.txt": {
+        "sha256": "0e69e0c4ad150505ee1c07b111b1e6780481e6faff1f455675f21c7e54c7d3e9",
+        "size_bytes": 1347
+      },
+      "06_decision0162_a02_consumption_record.v1.json": {
+        "sha256": "b29a352e1b9612ae8779b15c27a4fd8a6ea0b06fc908620cdb11711f188eba51",
+        "size_bytes": 1558
+      },
+      "07_verify_completed_human_review_record_v1.py": {
+        "sha256": "97d03d33d8e1ee80fa4b175980a45f426192cf1da745cac44c540bafe81253be",
+        "size_bytes": 6192
+      },
+      "08_completed_human_review_record_v1.SHA256SUMS": {
+        "sha256": "b9135ba8bb4a915121804aa806469dc58bac5b7a678ec535c7a875346989124e",
+        "size_bytes": 772
+      }
+    },
+    "historical_original_review_modified": false
+  },
+  "human_review": {
+    "human_review_completed": false,
+    "initial_blank_reviewer_packet_included": true,
+    "new_independent_human_review_required": true,
+    "reviewer_decision_recorded": false,
+    "reviewer_decision_synthesized": false,
+    "reviewer_identity_recorded": false,
+    "reviewer_identity_synthesized": false
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_CWXR07_S2_INDEPENDENT_HUMAN_REVIEW_PACKAGE",
+  "pass_semantics": {
+    "pass_authorizes_analyzer": false,
+    "pass_authorizes_baseline": false,
+    "pass_authorizes_governance_adoption": false,
+    "pass_authorizes_repair": false,
+    "pass_certifies_only_s2_positive_scope": true,
+    "pass_changes_s1_revision_required_to_pass": false,
+    "pass_independently_proves_excluded_claims": false
+  },
+  "positive_scope": [
+    "SUPPLIED_FILE_BYTE_INTEGRITY",
+    "CHECKSUM_CLOSURE_INTEGRITY",
+    "PRESERVED_A02_SCRIPT_OUTPUT_CONSUMPTION_BINDING_CONSISTENCY",
+    "INTERNAL_CONSISTENCY_OF_PRESERVED_REPOSITORY_RECORD_ASSERTIONS",
+    "BOUNDED_CLAIM_LANGUAGE_CONSISTENCY"
+  ],
+  "source_authorization": {
+    "a01_sha256": "62c6b2120b5864fd0c598db74012db28297604400f30c4e7f4613fc2bdc1e0b1",
+    "a03_sha256": "84792ee72bfe670b6e904f86190be84c3efd722b8f26da64f984ad9676d9c700",
+    "authorization_git_tree": "5a7d2a76085deb7d2b31e01386de64c376b45ef9",
+    "decision0164_commit": "4de95773c75420a81c313738d1f497d38ba018a3",
+    "decision0164_sha256": "fd710f8b432da329be3ad9ccb594b00db4067ec335d8288d5b5ac151efccf7e7",
+    "decision0164_tree": "7f64952980741986132dbe07aa4f1121accdf64c",
+    "one_time_a02_sha256": "a17de01974f63fd3dc735f6ed858072f2fe3d600e369fe4fb0bce8c830da8365"
+  },
+  "status": "AUTHOR_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_REVIEW"
+}

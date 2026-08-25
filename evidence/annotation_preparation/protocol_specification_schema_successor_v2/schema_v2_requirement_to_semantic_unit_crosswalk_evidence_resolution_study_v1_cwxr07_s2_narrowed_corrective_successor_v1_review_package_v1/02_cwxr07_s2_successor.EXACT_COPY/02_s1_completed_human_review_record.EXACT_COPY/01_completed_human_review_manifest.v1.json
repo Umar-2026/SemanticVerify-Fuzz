@@ -1,0 +1,90 @@
+{
+  "artifact": "cwxr07_s1_corrective_successor_v1_completed_human_review_record_v1",
+  "claim_boundary": {
+    "actual_external_process_exactly_once_certified": false,
+    "cwxr01_to_cwxr06_and_cwxr08_reopened": false,
+    "global_no_rerun_fact_certified": false,
+    "historical_cwxr07_modified": false,
+    "historical_original_review_modified": false,
+    "repository_assertion_promoted_to_external_fact": false
+  },
+  "decision0162_a02_lifecycle": {
+    "consumption_record_sha256": "b29a352e1b9612ae8779b15c27a4fd8a6ea0b06fc908620cdb11711f188eba51",
+    "executed": true,
+    "execution_count_in_recording_transaction": 1,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "output_sha256": "0e69e0c4ad150505ee1c07b111b1e6780481e6faff1f455675f21c7e54c7d3e9",
+    "pass": true,
+    "rerun_authorized": false
+  },
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "corrective_evidence_authoring": false,
+    "criterion_further_narrowing": false,
+    "curl_json_creation": false,
+    "governance_adoption": false,
+    "historical_18639_pair_reclassification": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "sealed_git_bundle_authoring": false,
+    "successor_approval": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "human_review": {
+    "corrective_evidence_request_present": true,
+    "cwxr07_s1_decision": "REVISION_REQUIRED",
+    "genuine_external_human_review": true,
+    "overall_successor_review_decision_field_required_by_form": false,
+    "overall_successor_review_decision_synthesized": false,
+    "returned_packet_sha256": "f5647d3532212830fc5f8100ec26aeac6ab38a626e9fc091473154567ff2f467",
+    "returned_packet_size_bytes": 4138,
+    "review_date": "25 / August / 2026",
+    "reviewer_attestation_present": true,
+    "reviewer_confirmation": "ARS",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "structurally_complete": true
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_CWXR07_S1_REVISION_REQUIRED_CORRECTIVE_EVIDENCE_RESPONSE",
+  "recording_decision": "0163",
+  "review_result": {
+    "corrective_evidence_required": true,
+    "review_result_rewritten": false,
+    "reviewer_decision_synthesized": false,
+    "revision_required": true,
+    "successor_approved": false
+  },
+  "review_scope": "CWXR07-S1_ONLY",
+  "reviewer_requested_remediation": {
+    "option_1": "CHECKSUM_BOUND_SEALED_GIT_BUNDLE_OR_EQUIVALENT_IMMUTABLE_REPOSITORY_SNAPSHOT",
+    "option_2": "FURTHER_NARROW_CWXR07_S1_TO_BYTE_INTEGRITY_AND_INTERNAL_CONSISTENCY",
+    "strategy_selected_by_author": false
+  },
+  "source_authorization": {
+    "a01_sha256": "64db63e5714113358b82c3649eccbb4c71938a22b641644520d7231b384d881d",
+    "a03_sha256": "55ffbdc985285abd8d548ce6420fcdf928d62f77de17c6665ce1d1d35e2234bc",
+    "authorization_git_tree": "f4b4e29d1f512cbbe0f302543365c63a02fc2670",
+    "commit": "d7083588220ae795e0baff8639c2d17594c9ecd9",
+    "decision": "0162",
+    "decision_sha256": "11751b75ba34be4b018d279e453b053b09f66124e2b12278cc0ec369bdc01df0",
+    "one_time_a02_sha256": "8851519b4d54dfef45eae633baf86a03b56b341a29a924f249bd605d6a073c4c",
+    "tree": "15ad3632036a724efbe6b55c623df4c3bee69e62"
+  },
+  "source_handoff": {
+    "checksum_sha256": "b9eb241bbd8cfe4ab9f7d18fd923451a970e7cc7cf8383199ece16423815545a",
+    "decision0161_sha256": "37d54f33b7d9997b4a18b2d4102769a05b348466254ad6db1eaf16738f1852f9",
+    "git_tree": "672ce477e011238bbbb57f16f354fe3952f33ecd",
+    "manifest_sha256": "def8bbc01056e819fe1edfc6b78e7c73947406fe5458ce7d065d355cb24bc390"
+  },
+  "status": "COMPLETED_HUMAN_REVIEW_RECORDED_REVISION_REQUIRED"
+}
