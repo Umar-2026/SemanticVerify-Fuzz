@@ -1,0 +1,18 @@
+{
+  "a02_execution_count": 1,
+  "a02_output_handoff_copy": "04_decision0151_a02_final_output.EXACT_COPY.v1.txt",
+  "a02_output_sha256": "4a4e9b4821a7eee07aefa9cab89e51053551d3263e931b0d1704b6e654530d8d",
+  "a02_output_size_bytes": 828,
+  "a02_pass_marker_present": true,
+  "a02_return_code": 0,
+  "a02_script_path": "/openbayes/home/semanticverify-fuzz-research/evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_external_handoff_authorization_v1/02_verify_external_independent_human_review_handoff_authoring_authorization.v1.py",
+  "a02_script_sha256": "c2af3262bf03cf5b977a3e6d928f1fd84cd338ed03f8112d3b283f4754bca76a",
+  "artifact": "decision0151_a02_consumption_record_v1",
+  "decision": "0151",
+  "decision0147_a02_executed_by_this_transaction": false,
+  "decision0149_a02_executed_by_this_transaction": false,
+  "external_handoff_authoring_started_immediately_after_pass": true,
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "rerun_authorized": false,
+  "retired_a02_verifier_execution_performed": false
+}

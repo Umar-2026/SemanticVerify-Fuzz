@@ -1,0 +1,301 @@
+{
+  "allowed_rollup_classifications": [
+    "BOUND_SINGLE_UNIT",
+    "BOUND_COMPOSITE_UNITS",
+    "NO_AUTHORIZED_CROSSWALK_PROVEN",
+    "UNRESOLVED"
+  ],
+  "artifact": "requirement_crosswalk_rollup_v1",
+  "records": [
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "all_10_v4_semantic_containers_preserved",
+      "requirement_ordinal": 1,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "all_3_exit_obligations_accounted_for",
+      "requirement_ordinal": 2,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "all_64_rule_records_accounted_for",
+      "requirement_ordinal": 3,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "complete_exact_v4_representation_policy_machine_checkably_bound",
+      "requirement_ordinal": 4,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "complete_exact_v4_representation_policy_preserved",
+      "requirement_ordinal": 5,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "forward_accounting_required",
+      "requirement_ordinal": 6,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "four_verdict_contract_preserved",
+      "requirement_ordinal": 7,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "membership_sensitive_semantics_preserved",
+      "requirement_ordinal": 8,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "normative_strength_uncertainty_policy_preserved",
+      "requirement_ordinal": 9,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "ownership_sensitive_semantics_preserved",
+      "requirement_ordinal": 10,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "path_sensitive_semantics_preserved",
+      "requirement_ordinal": 11,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "resource_centered_semantics_preserved",
+      "requirement_ordinal": 12,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "return_sensitive_semantics_preserved",
+      "requirement_ordinal": 13,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "reverse_accounting_required",
+      "requirement_ordinal": 14,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "set_valued_state_reasoning_preserved",
+      "requirement_ordinal": 15,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "synthetic_protocol_events_invented_false_policy_preserved",
+      "requirement_ordinal": 16,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    },
+    {
+      "canonical_value": true,
+      "classification": "UNRESOLVED",
+      "negative_global_impossibility_claimed": false,
+      "negative_requirement_specific_exhaustiveness_proven": false,
+      "pair_accounting": {
+        "all_109_units_accounted": true,
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "total_pair_count": 109,
+        "unresolved_binding_count": 109
+      },
+      "positive_crosswalk_claimed": false,
+      "requirement_id": "unknown_first_class_preserved",
+      "requirement_ordinal": 17,
+      "rollup_basis": "At least one UNRESOLVED_BINDING exists. Under the authorized rollup contract, any unresolved pair or incomplete requirement-specific accounting requires the requirement rollup to remain UNRESOLVED."
+    }
+  ],
+  "status": "AUTHOR_CANDIDATE"
+}

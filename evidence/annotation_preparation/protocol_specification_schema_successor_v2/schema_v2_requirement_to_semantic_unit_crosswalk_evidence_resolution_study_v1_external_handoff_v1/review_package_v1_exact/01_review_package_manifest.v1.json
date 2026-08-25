@@ -1,0 +1,104 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_independent_human_review_package_v1",
+  "decision0149_a02": {
+    "executed_exactly_once": true,
+    "lifecycle": "PERMANENTLY_RETIRED",
+    "output_sha256": "f2c715b2849e68d5c0e05e200bdd6113fb8d34a5631a898472afeddc470409de",
+    "rerun_authorized": false,
+    "script_sha256": "c4a44de60bcd961e635dcc21cd2fc62e6af28fc900d430b0436c63450d9d720d"
+  },
+  "governance_state": {
+    "external_handoff_authorized": false,
+    "study_governance_adopted": false
+  },
+  "non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "historical_18639_pair_reclassification": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "package_contents": {
+    "blank_reviewer_packet": "03_CWXR01_CWXR08_reviewer_packet.INITIAL_BLANK.v1.md",
+    "checksum_closure": "11_review_package_v1.SHA256SUMS",
+    "decision0147_exact_copy": "08_decision0147.EXACT_COPY.v1.md",
+    "decision0148_exact_copy": "07_decision0148.EXACT_COPY.v1.md",
+    "decision0149_a02_consumption": "05_decision0149_a02_consumption_record.v1.json",
+    "decision0149_a02_output": "04_decision0149_a02_final_output.EXACT_COPY.v1.txt",
+    "decision0149_exact_copy": "06_decision0149.EXACT_COPY.v1.md",
+    "exact_study_tree_copy": "study_v1_exact",
+    "portable_source_binding_manifest": "09_portable_source_binding_manifest.v1.json",
+    "portable_source_directory": "portable_sources",
+    "reviewer_instructions": "02_reviewer_instructions.v1.md",
+    "safe_package_verifier": "10_verify_independent_human_review_package.v1.py"
+  },
+  "review_scope": {
+    "overall_allowed_decisions": [
+      "APPROVE_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "per_item_allowed_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_item_ids": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR07",
+      "CWXR08"
+    ]
+  },
+  "review_state": {
+    "blank_reviewer_packet_present": true,
+    "independent_human_review_completed": false,
+    "overall_review_decision_recorded": false,
+    "reviewer_decisions_recorded": false,
+    "reviewer_identity_recorded": false
+  },
+  "source_checkpoint": {
+    "decision_0149_authorization_git_tree": "e754b9119e8e84d548e6cc615adaf6f2c8008bcc",
+    "decision_0149_commit": "7b1a5f54b257b3680f0d66c707b3213592c822ad",
+    "decision_0149_sha256": "eb2a538468325fc17c87240a2542e794fa109a8f7d729079cf5354805f727e83",
+    "decision_0149_tree": "c91bdd9d595215d5df7e58585cf9d2d26fe12738"
+  },
+  "source_study_result": {
+    "BOUND_COMPOSITE_UNITS": 0,
+    "BOUND_SINGLE_UNIT": 0,
+    "NOT_SUPPORTED_BINDING": 0,
+    "NO_AUTHORIZED_CROSSWALK_PROVEN": 0,
+    "SUPPORTED_BINDING": 0,
+    "UNRESOLVED_BINDING": 1853,
+    "UNRESOLVED_REQUIREMENTS": 17,
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "pair_universe_count": 1853,
+    "requirement_count": 17,
+    "semantic_unit_count": 109
+  },
+  "status": "AUTHOR_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "study_binding": {
+    "accounting_summary_sha256": "aa676f9482837936ecb4ea2901b811ed5c6fc8f2f8fdc35f06f7f4eac59c06d2",
+    "evidence_provenance_matrix_sha256": "0935a8bb7c02e9a31b419a56d9cd3ee391b1051603804b7ce2d3c4a8d9d58a69",
+    "pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "requirement_rollup_sha256": "77bded52d6a5883e7a27cd786bea981256d0dac8b22cfe4b945d30628dbbc070",
+    "study_manifest_sha256": "d8ce65985f33ced593f379f11eefa9b681fde6a10693c0bbc1a6a9fa347bb3e7",
+    "study_v1_git_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e"
+  }
+}

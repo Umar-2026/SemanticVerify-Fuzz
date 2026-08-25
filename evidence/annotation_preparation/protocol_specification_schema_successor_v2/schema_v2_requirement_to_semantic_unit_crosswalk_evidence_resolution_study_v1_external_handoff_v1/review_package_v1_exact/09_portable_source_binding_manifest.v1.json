@@ -1,0 +1,43 @@
+{
+  "all_required_source_classes_present": true,
+  "artifact": "crosswalk_study_v1_review_package_portable_source_binding_manifest_v1",
+  "interpretation": {
+    "carrier_admissibility_inferred": false,
+    "global_semantic_role_formalization_approval_claimed": false,
+    "operational_mapping_authority_inferred": false,
+    "portable_copy_existence_is_new_semantic_authority": false,
+    "requirement_to_unit_pair_binding_inferred": false
+  },
+  "portable_source_count": 7,
+  "source_semantics_modified": false,
+  "sources": {
+    "canonical_requirement_provenance_matrix": {
+      "package_path": "portable_sources/01_canonical_requirement_provenance_matrix.EXACT_COPY.v1.json",
+      "sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac"
+    },
+    "decision_0108": {
+      "package_path": "portable_sources/05_decision0108.EXACT_COPY.v1.md",
+      "sha256": "2ef3a1a1d8b73827bbc0c9d419e2db92aaa50cf402bd95a9c907a216ff84fe70"
+    },
+    "decision_0109": {
+      "package_path": "portable_sources/06_decision0109.EXACT_COPY.v1.md",
+      "sha256": "1728f262195cd0f72bc744e566150a94c3fa28f1a6410150c5788bd24a8b5237"
+    },
+    "historical_18639_pair_matrix": {
+      "package_path": "portable_sources/07_historical_18639_pair_matrix.EXACT_COPY.v1.json",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12"
+    },
+    "relation_informed_study_v1": {
+      "package_path": "portable_sources/04_relation_informed_study_v1.EXACT_COPY.v1.json",
+      "sha256": "a8d28b09e78e1466eb5bb0991289879b28b10abd1dd1f9197d138ca723718f6f"
+    },
+    "semantic_unit_inventory": {
+      "package_path": "portable_sources/02_semantic_unit_inventory.EXACT_COPY.v1.json",
+      "sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d"
+    },
+    "semantic_unit_traceability": {
+      "package_path": "portable_sources/03_semantic_unit_traceability.EXACT_COPY.v1.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+    }
+  }
+}

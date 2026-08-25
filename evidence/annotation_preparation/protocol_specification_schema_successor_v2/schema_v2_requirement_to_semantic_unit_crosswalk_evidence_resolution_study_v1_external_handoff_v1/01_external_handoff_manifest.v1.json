@@ -1,0 +1,91 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_external_independent_human_review_handoff_v1",
+  "decision0151_a02": {
+    "executed_exactly_once": true,
+    "lifecycle": "PERMANENTLY_RETIRED",
+    "output_sha256": "4a4e9b4821a7eee07aefa9cab89e51053551d3263e931b0d1704b6e654530d8d",
+    "rerun_authorized": false,
+    "script_sha256": "c2af3262bf03cf5b977a3e6d928f1fd84cd338ed03f8112d3b283f4754bca76a"
+  },
+  "external_outputs": {
+    "editable_packet_initial_sha256": "3e777294a87314a54658a0ce4156ab1324d7bb314529c3907ee47119e2234fdd",
+    "editable_packet_initially_byte_exact_to_repository_blank": true,
+    "editable_reviewer_packet_path": "/openbayes/home/41_CWXR01_CWXR08_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "immutable_zip_path": "/openbayes/home/41_CWXR01_CWXR08_independent_human_review_handoff.v1.zip"
+  },
+  "governance_state": {
+    "study_governance_adopted": false
+  },
+  "handoff_contents": {
+    "checksum_closure": "09_external_handoff_v1.SHA256SUMS",
+    "decision0150_exact_copy": "07_decision0150.EXACT_COPY.v1.md",
+    "decision0151_a02_consumption": "05_decision0151_a02_consumption_record.v1.json",
+    "decision0151_a02_output": "04_decision0151_a02_final_output.EXACT_COPY.v1.txt",
+    "decision0151_exact_copy": "06_decision0151.EXACT_COPY.v1.md",
+    "external_reviewer_instructions": "02_external_reviewer_instructions.v1.md",
+    "repository_blank_packet_exact_copy": "03_CWXR01_CWXR08_reviewer_packet.INITIAL_BLANK_EXACT_COPY.v1.md",
+    "review_package_exact_tree_copy": "review_package_v1_exact",
+    "safe_handoff_verifier": "08_verify_external_CWXR01_CWXR08_handoff.v1.py"
+  },
+  "non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "completed_human_review_recording": false,
+    "curl_json_creation": false,
+    "governance_adoption": false,
+    "historical_18639_pair_reclassification": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "review_scope": {
+    "overall_allowed_decisions": [
+      "APPROVE_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "per_item_allowed_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_item_ids": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR07",
+      "CWXR08"
+    ]
+  },
+  "review_state": {
+    "independent_human_review_completed": false,
+    "overall_review_decision_recorded_in_repository": false,
+    "returned_reviewer_packet_recorded": false,
+    "reviewer_decisions_recorded_in_repository": false,
+    "reviewer_identity_recorded_in_repository": false
+  },
+  "source_checkpoint": {
+    "decision_0151_authorization_git_tree": "893b6ba3478aad3ed2267d3e10ef4af888a6c18f",
+    "decision_0151_commit": "85359e87df4a67b44c81cc352d7833b0cb698cec",
+    "decision_0151_sha256": "77402a87f4046da20685a269f373de0ad8b739d53171ca893eb309028e7f23d6",
+    "decision_0151_tree": "2efd6d18fd4f920f343833e9c24c9d966cb7ae36",
+    "packaged_study_v1_git_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+    "repository_initial_blank_reviewer_packet_sha256": "3e777294a87314a54658a0ce4156ab1324d7bb314529c3907ee47119e2234fdd",
+    "review_package_git_tree": "0da42326cac4898131a01a8528dd21b3d530ef13",
+    "review_package_manifest_sha256": "f835275cd80fd52a8cd926cf410e635a5de86a968becce105a3719a8e77a6f2a"
+  },
+  "status": "EXTERNAL_HANDOFF_AUTHORED_AWAITING_INDEPENDENT_HUMAN_REVIEW"
+}
