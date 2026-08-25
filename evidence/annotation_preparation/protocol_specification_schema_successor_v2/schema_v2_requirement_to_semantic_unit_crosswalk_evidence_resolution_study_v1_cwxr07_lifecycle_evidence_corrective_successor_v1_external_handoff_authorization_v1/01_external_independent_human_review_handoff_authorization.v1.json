@@ -1,0 +1,94 @@
+{
+  "artifact": "cwxr07_s1_corrective_successor_v1_external_independent_human_review_handoff_authorization_v1",
+  "authorization_type": "CWXR07_S1_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING",
+  "claim_boundary": {
+    "actual_external_process_execution_count_independently_proven": false,
+    "global_no_rerun_fact_independently_proven": false,
+    "record_assertion_promoted_to_external_execution_fact": false
+  },
+  "decision": "0160",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_completion": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "original_cwxr07_rewriting": false,
+    "original_review_rewriting": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "reviewer_decision_synthesis": false,
+    "reviewer_identity_synthesis": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "handoff_scope": {
+    "criterion": "CWXR07-S1",
+    "editable_manual_review_copy_authorized": true,
+    "editable_manual_review_copy_path": "/openbayes/home/46_CWXR07_S1_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "external_zip_authorized": true,
+    "external_zip_path": "/openbayes/home/46_CWXR07_S1_independent_human_review_handoff.v1.zip",
+    "initial_manual_review_copy_must_equal_blank_packet": true,
+    "repository_handoff_record_authorized": true,
+    "review_scope": "CWXR07-S1_ONLY",
+    "source_review_package_must_be_exact_copy": true
+  },
+  "new_pre_handoff_verifier": {
+    "execution_authorized_now": false,
+    "execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING",
+    "lifecycle_after_first_execution": "PERMANENTLY_RETIRED",
+    "may_execute_repeat_safe_package_verifier": true,
+    "must_not_execute_decision0147_a02": true,
+    "must_not_execute_decision0153_a02": true,
+    "must_not_execute_decision0154_a02": true,
+    "must_not_execute_decision0156_a02": true,
+    "must_not_execute_decision0158_a02": true,
+    "rerun_after_first_execution": false
+  },
+  "next_boundary": "RUN_DECISION_0160_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_AUTHORING_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_FOR_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+  "original_review_boundary": {
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "original_review_modified": false,
+    "overall_decision": "REVISION_REQUIRED",
+    "passed_items_reopened": false
+  },
+  "review_contract": {
+    "allowed_item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "allowed_overall_decisions": [
+      "APPROVE_CWXR07_S1_CORRECTIVE_SUCCESSOR_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "human_review_completed_at_authorization": false,
+    "item_id": "CWXR07-S1",
+    "reviewer_decision_recorded_at_authorization": false,
+    "reviewer_identity_recorded_at_authorization": false,
+    "reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "source_checkpoint": {
+    "decision0159_commit": "54facedc1756ab12b9b41924b8ed86f100ac7af4",
+    "decision0159_sha256": "e6d264a7e34415e47713175770504baba1f24ccf473e2ee28335843831ebc43c",
+    "decision0159_tree": "8fa48446ab7286c880216f2d9b549e80df7a86e1",
+    "initial_blank_reviewer_packet_sha256": "e48090854cb7ab71a057963e831f08fdeaf52b179398495c5ffbae34113a39e6",
+    "original_completed_review_sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91",
+    "review_package_checksum_sha256": "4c3535e16bcf72c00c4b622dfd1be7b17f752200e94ae50a84e0202d45c830c1",
+    "review_package_git_tree": "bf898f97443395d16d9a7313c5125b9fcaeb7443",
+    "review_package_manifest_sha256": "77f6e68e6e320517e17e9d93d562af15436367225167ff6e5aed1f5a060b2737",
+    "review_package_repeat_safe_verifier_sha256": "ede6fd42bfad4c4292df6442d5e1ddc50d1c58fe56ca052385535b50e6b626ad",
+    "reviewer_instructions_sha256": "506af9ce9ec851303e31d1edafe780efcd412d410027ad60593ae1cba48a8341"
+  },
+  "status": "AUTHORIZED_NOT_YET_HANDED_OFF"
+}
