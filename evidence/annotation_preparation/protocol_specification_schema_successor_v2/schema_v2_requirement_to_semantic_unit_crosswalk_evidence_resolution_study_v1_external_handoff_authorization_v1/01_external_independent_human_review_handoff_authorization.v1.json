@@ -1,0 +1,123 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_external_independent_human_review_handoff_authorization_v1",
+  "authorization_type": "PRE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING_ONLY",
+  "authorized_external_handoff_outputs": {
+    "editable_packet_must_begin_as_byte_exact_copy_of_repository_blank_packet": true,
+    "editable_reviewer_packet_path": "/openbayes/home/41_CWXR01_CWXR08_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "immutable_zip_must_contain_complete_repository_handoff_directory": true,
+    "immutable_zip_path": "/openbayes/home/41_CWXR01_CWXR08_independent_human_review_handoff.v1.zip",
+    "repository_blank_packet_must_remain_immutable_and_unmodified": true
+  },
+  "decision": "0151",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "completed_human_review_repository_record": false,
+    "curl_json_creation": false,
+    "governance_adoption": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_completion_by_this_decision": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "reviewer_decision_recording": false,
+    "reviewer_identity_recording": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "external_reviewer_rules": {
+    "author_must_not_prefill_or_synthesize_human_review": true,
+    "reviewer_must_independently_edit_only_external_editable_packet": true,
+    "reviewer_must_supply_their_own_confirmation_or_signature": true,
+    "reviewer_must_supply_their_own_identity": true,
+    "reviewer_must_supply_their_own_notes": true,
+    "reviewer_must_supply_their_own_overall_decision": true,
+    "reviewer_must_supply_their_own_per_item_decisions": true,
+    "reviewer_must_supply_their_own_review_date": true,
+    "reviewer_must_supply_their_own_role_confirmation": true
+  },
+  "handoff_package_requirements": {
+    "a02_consumption_record_required": true,
+    "a02_output_exact_copy_required": true,
+    "checksum_closure_required": true,
+    "decision_0150_exact_copy_required": true,
+    "decision_0151_exact_copy_required_after_commit": true,
+    "external_reviewer_instructions_required": true,
+    "handoff_manifest_required": true,
+    "human_review_must_remain_incomplete_after_handoff_authoring": true,
+    "initial_blank_reviewer_packet_exact_copy_required": true,
+    "reviewer_decisions_must_remain_unrecorded_in_repository_after_handoff_authoring": true,
+    "reviewer_identity_must_remain_unrecorded_in_repository_after_handoff_authoring": true,
+    "safe_handoff_verifier_required": true,
+    "source_review_package_exact_tree_copy_required": true,
+    "study_governance_adoption_must_remain_false_after_handoff_authoring": true
+  },
+  "handoff_scope": {
+    "overall_allowed_decisions": [
+      "APPROVE_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "per_item_allowed_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_item_ids": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR07",
+      "CWXR08"
+    ]
+  },
+  "next_boundary_after_authorization": "RUN_DECISION_0151_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING",
+  "pre_handoff_verifier": {
+    "execution_authorized_now": false,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "may_execute_repeat_safe_review_package_verifier": true,
+    "must_not_execute_decision0147_a02": true,
+    "must_not_execute_decision0149_a02": true,
+    "required_execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_AUTHORING",
+    "rerun_after_first_execution": false
+  },
+  "review_interpretation_boundaries": {
+    "approval_if_later_returned_would_apply_only_to_bounded_study_result": true,
+    "approval_if_later_returned_would_not_itself_authorize_analyzer_execution": true,
+    "approval_if_later_returned_would_not_itself_authorize_baseline_execution": true,
+    "approval_if_later_returned_would_not_itself_authorize_operational_mapping": true,
+    "approval_if_later_returned_would_not_itself_authorize_repair": true,
+    "approval_if_later_returned_would_not_itself_authorize_schema_modification": true,
+    "handoff_is_not_governance_adoption": true,
+    "handoff_is_not_human_review_completion": true,
+    "handoff_is_not_review_approval": true
+  },
+  "review_package_binding": {
+    "decision0149_a02_consumption_record_sha256": "8d7b6f8a7dd0442ee65b442b8808f93d2babcdaf0ed78fafd493bb5e7a5abff9",
+    "decision0149_a02_output_sha256": "f2c715b2849e68d5c0e05e200bdd6113fb8d34a5631a898472afeddc470409de",
+    "initial_blank_reviewer_packet_sha256": "3e777294a87314a54658a0ce4156ab1324d7bb314529c3907ee47119e2234fdd",
+    "review_package_checksum_closure_sha256": "de8738227ea1b66c596f414df04ade6309e3b11d936d2f9a00ee6fd7de70f15d",
+    "review_package_manifest_sha256": "f835275cd80fd52a8cd926cf410e635a5de86a968becce105a3719a8e77a6f2a",
+    "reviewer_instructions_sha256": "023903216f56540c9d3ac03445624b08306ff5fb70585f256d802a21c9d4b328",
+    "safe_review_package_verifier_sha256": "8cc5e7e29354fb9b41edeb4d0c7dadab4edf1f01aed6ea20580574a64bdf0402"
+  },
+  "source_checkpoint": {
+    "decision_0150_commit": "2218a21de85bcb9db259732c2cbb63b84bfa7438",
+    "decision_0150_sha256": "2dbdc6c5cb8fbe0887fce73c65274ff913eab75f118fda3d88a7e817cdeae898",
+    "decision_0150_tree": "14b18e5cd133ca33aa7d30cb0838be2ba245e5f4",
+    "packaged_study_v1_git_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+    "review_package_git_tree": "0da42326cac4898131a01a8528dd21b3d530ef13"
+  },
+  "status": "AUTHORIZED_NOT_YET_HANDED_OFF"
+}
