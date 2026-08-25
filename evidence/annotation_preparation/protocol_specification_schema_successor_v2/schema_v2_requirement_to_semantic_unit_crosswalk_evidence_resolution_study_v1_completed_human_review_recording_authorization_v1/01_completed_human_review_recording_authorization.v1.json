@@ -1,0 +1,109 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_completed_human_review_recording_authorization_v1",
+  "authorization_type": "PRE_COMPLETED_HUMAN_REVIEW_RECORDING_ONLY",
+  "authorized_recording": {
+    "governance_adopt_study": false,
+    "preserve_all_eight_item_decisions": true,
+    "preserve_all_reviewer_text_without_rewriting": true,
+    "preserve_overall_revision_required_outcome": true,
+    "record_returned_packet_byte_exactly": true,
+    "record_review_as_approved": false,
+    "record_review_as_completed": true,
+    "reinterpret_revision_required_as_approval": false
+  },
+  "corrective_boundary": {
+    "corrective_action_required": true,
+    "corrective_scope": "CWXR07_ONLY",
+    "corrective_subject": "DECISION0147_A02_LIFECYCLE_EVIDENCE",
+    "corrective_successor_authorized_by_this_decision": false,
+    "corrective_successor_requires_separate_authorization": true,
+    "passed_items_preserved": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR08"
+    ],
+    "passed_items_reopened_by_this_authorization": false
+  },
+  "decision": "0153",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "curl_json_creation": false,
+    "cwxr07_corrective_successor_authoring": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_result_rewriting": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "reviewer_identity_rewriting": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "study_governance_adoption": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "next_boundary_after_authorization": "RUN_DECISION_0153_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_RECORDING_COMPLETED_CWXR01_CWXR08_HUMAN_REVIEW_WITH_REVISION_REQUIRED_OUTCOME",
+  "pre_recording_verifier": {
+    "execution_authorized_now": false,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "may_execute_repeat_safe_handoff_verifier": true,
+    "must_not_execute_decision0147_a02": true,
+    "must_not_execute_decision0149_a02": true,
+    "must_not_execute_decision0151_a02": true,
+    "required_execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_COMPLETED_HUMAN_REVIEW_RECORDING",
+    "rerun_after_first_execution": false
+  },
+  "returned_human_review": {
+    "decision_counts": {
+      "FAIL": 0,
+      "PASS": 7,
+      "REVISION_REQUIRED": 1
+    },
+    "external_path": "/openbayes/home/41_CWXR01_CWXR08_manually_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "overall_decision": "REVISION_REQUIRED",
+    "per_item_decisions": {
+      "CWXR01": "PASS",
+      "CWXR02": "PASS",
+      "CWXR03": "PASS",
+      "CWXR04": "PASS",
+      "CWXR05": "PASS",
+      "CWXR06": "PASS",
+      "CWXR07": "REVISION_REQUIRED",
+      "CWXR08": "PASS"
+    },
+    "review_completed": true,
+    "review_item_count": 8,
+    "reviewer": {
+      "confirmation": "ARS",
+      "name": "Abdul Raheem Shahzad",
+      "review_date": "25 / August / 2026",
+      "role": "Spec-Technical-Reviewer-1"
+    },
+    "sha256": "2b1727b97d97409b36f4cfcd921e1857157afcef43b41998abaf152a67ce5e91",
+    "size_bytes": 7703
+  },
+  "reviewer_objection_preservation": {
+    "accepted_scope": "The existing evidence establishes preservation and internal consistency of the lifecycle record but the reviewer requires independently reviewable lifecycle evidence, or a narrowed CWXR07 criterion.",
+    "strong_exactly_once_claim_independently_established_by_current_package": false,
+    "strong_no_rerun_claim_independently_established_by_current_package": false
+  },
+  "source_checkpoint": {
+    "decision_0152_commit": "4b5b9310e618e33fbd05a1667819d1f63be6003d",
+    "decision_0152_sha256": "9b016ab8990b85d7b360b29e3a12a11fae05221d3662bf8c7096a323e574be57",
+    "decision_0152_tree": "72b3e71304a44ba3110239f1307f4870df237d6a",
+    "external_handoff_checksum_sha256": "40ae71e8439193b5531e37ac9e588213a521eeee9c47635c38c47d77c12d2d70",
+    "external_handoff_git_tree": "ffa411b05857c7d77db70223f39887104f76afd8",
+    "external_handoff_manifest_sha256": "1ad53682ce5aebf3d03fade209b8ef0d6ab57ab54087f9b317405d7c4328f588",
+    "immutable_external_zip_sha256": "a5994de393786272a3100ff28df7a35bcc5e3183f613d8d2835c8007f3dd3fff"
+  },
+  "status": "AUTHORIZED_NOT_YET_RECORDED"
+}
