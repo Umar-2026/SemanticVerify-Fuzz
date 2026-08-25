@@ -1,0 +1,152 @@
+{
+  "artifact": "requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1_independent_human_review_package_authorization_v1",
+  "authorization_type": "PRE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING_ONLY",
+  "decision": "0149",
+  "explicit_non_authorizations": {
+    "active_schema_v2_modification": false,
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "carrier_admissibility_reclassification": false,
+    "completed_human_review_recording": false,
+    "curl_json_creation": false,
+    "external_handoff_by_this_decision": false,
+    "governance_adoption": false,
+    "historical_18639_pair_reclassification": false,
+    "human_review_decision": false,
+    "negative_mapping_impossibility": false,
+    "operational_mapping": false,
+    "positive_schema_mapping": false,
+    "repair": false,
+    "requirement_to_semantic_unit_pair_reclassification": false,
+    "schema_successor_authoring": false,
+    "schema_v2_losslessness": false,
+    "schema_v3_creation": false,
+    "schema_version_preselection": false,
+    "whole_v4_exhaustiveness": false
+  },
+  "next_boundary_after_authorization": "RUN_DECISION_0149_A02_EXACTLY_ONCE_IMMEDIATELY_BEFORE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING",
+  "pre_package_verifier": {
+    "execution_authorized_now": false,
+    "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+    "may_execute_repeat_safe_study_verifier": true,
+    "must_not_execute_decision0147_a02": true,
+    "required_execution_timing": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING",
+    "rerun_after_first_execution": false
+  },
+  "review_interpretation_rules": {
+    "all_1853_unresolved_pairs_are_reviewable_as_a_conservative_result": true,
+    "human_review_must_not_be_synthesized": true,
+    "review_approval_would_accept_only_the_bounded_study_result": true,
+    "review_approval_would_not_authorize_analyzer_execution": true,
+    "review_approval_would_not_authorize_baseline_execution": true,
+    "review_approval_would_not_authorize_operational_mapping": true,
+    "review_approval_would_not_authorize_repair": true,
+    "review_approval_would_not_authorize_schema_modification": true,
+    "review_approval_would_not_by_itself_governance_adopt_the_study": true,
+    "reviewer_must_assess_author_candidate_as_written": true,
+    "zero_not_supported_bindings_is_not_positive_mapping": true,
+    "zero_supported_bindings_is_not_global_mapping_impossibility": true
+  },
+  "review_package_requirements": {
+    "blank_reviewer_packet_must_not_prefill_overall_decision": true,
+    "blank_reviewer_packet_must_not_prefill_per_item_decisions": true,
+    "blank_reviewer_packet_must_not_prefill_review_date": true,
+    "blank_reviewer_packet_must_not_prefill_reviewer_name": true,
+    "blank_reviewer_packet_must_not_prefill_reviewer_notes": true,
+    "blank_reviewer_packet_must_not_prefill_signature_or_confirmation": true,
+    "blank_reviewer_packet_required": true,
+    "checksum_closure_required": true,
+    "decision_0147_exact_copy_required": true,
+    "decision_0148_exact_copy_required": true,
+    "governance_adoption_must_remain_false_after_package_authoring": true,
+    "human_review_must_remain_incomplete_after_package_authoring": true,
+    "package_manifest_required": true,
+    "package_status_after_authoring": "AUTHOR_CANDIDATE_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+    "portable_source_evidence_required": true,
+    "required_portable_sources": [
+      "canonical requirement provenance matrix exact source",
+      "109 semantic-unit inventory exact source",
+      "semantic-unit traceability exact source",
+      "relation-informed Study V1 exact source",
+      "Decision 0108 exact source",
+      "Decision 0109 exact source",
+      "historical 18,639 pair matrix exact source"
+    ],
+    "reviewer_instructions_required": true,
+    "safe_package_verifier_required": true,
+    "study_v1_exact_tree_copy_required": true
+  },
+  "review_scope": {
+    "items": {
+      "CWXR01": "Verify Study V1 identity, Decision-0148 binding, 11-file artifact integrity, checksum closure, and repeat-safe verifier result.",
+      "CWXR02": "Verify the exact 17-requirement and 109-semantic-unit domains and complete Cartesian accounting of exactly 1,853 requirement-to-semantic-unit pairs.",
+      "CWXR03": "Verify all 1,853 pair classifications are UNRESOLVED_BINDING and that no unsupported promotion to SUPPORTED_BINDING or NOT_SUPPORTED_BINDING occurred.",
+      "CWXR04": "Verify the 17 requirement-level rollups are all UNRESOLVED and conform exactly to the authorized rollup rules.",
+      "CWXR05": "Verify requirement provenance, semantic-unit source identity, and the bounded 109-unit-domain authority are represented without overstating global approval or pair-binding evidence.",
+      "CWXR06": "Verify historical 18,639 carrier-pair evidence remains read-only and no carrier-admissibility, operational mapping, Schema-V2 losslessness, negative mapping impossibility, or whole-V4 exhaustiveness conclusion is improperly inferred.",
+      "CWXR07": "Verify Decision-0147 A02 was consumed exactly once, its PASS output is preserved byte-exactly, and its lifecycle is PERMANENTLY_RETIRED with no rerun.",
+      "CWXR08": "Verify the global result FURTHER_EVIDENCE_REQUIRED, review-state boundaries, non-authorizations, and requirement for independent human review before any governance adoption."
+    },
+    "overall_allowed_decisions": [
+      "APPROVE_REQUIREMENT_TO_SEMANTIC_UNIT_CROSSWALK_EVIDENCE_RESOLUTION_STUDY_V1",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "per_item_allowed_decisions": [
+      "PASS",
+      "REVISION_REQUIRED",
+      "FAIL"
+    ],
+    "required_reviewer_role": "Spec-Technical-Reviewer-1",
+    "review_item_ids": [
+      "CWXR01",
+      "CWXR02",
+      "CWXR03",
+      "CWXR04",
+      "CWXR05",
+      "CWXR06",
+      "CWXR07",
+      "CWXR08"
+    ]
+  },
+  "source_artifact_bindings": {
+    "accounting_summary_sha256": "aa676f9482837936ecb4ea2901b811ed5c6fc8f2f8fdc35f06f7f4eac59c06d2",
+    "decision0147_a02_consumption_record_sha256": "2a2da4b046286211e4d744d0bdc2b56f133008e266bc012a5d5e4b1b26eb9ab0",
+    "decision0147_a02_output_sha256": "f5a4e0f183ae8c86b34660aada18826a2aa24b80e8680f377311b5a8f92b2518",
+    "evidence_provenance_matrix_sha256": "0935a8bb7c02e9a31b419a56d9cd3ee391b1051603804b7ce2d3c4a8d9d58a69",
+    "pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "requirement_rollup_sha256": "77bded52d6a5883e7a27cd786bea981256d0dac8b22cfe4b945d30628dbbc070",
+    "safe_study_verifier_sha256": "f3df50284eefc06c5db625607a3399451acbe0c8f1f5069496f1d4ac02f3d9d2",
+    "study_checksum_closure_sha256": "8d8e79bc543e71ebe7310e64c96c16a4c078e01ee0124b5817c844c12aaf6b75",
+    "study_manifest_sha256": "d8ce65985f33ced593f379f11eefa9b681fde6a10693c0bbc1a6a9fa347bb3e7"
+  },
+  "source_checkpoint": {
+    "crosswalk_study_v1_git_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+    "decision_0148_commit": "899dd232f5e49793472f9e8b7ac3a95185caa99d",
+    "decision_0148_sha256": "9a48f45b74351cace9b4f1b2ee06fb037a3e71b5d0f268443270aed1f961adee",
+    "decision_0148_tree": "f4967116fdc078aaf63460736c1f40dae321f190"
+  },
+  "source_study": {
+    "global_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adopted": false,
+    "independent_human_review_completed": false,
+    "independent_human_review_required": true,
+    "pair_classification_counts": {
+      "NOT_SUPPORTED_BINDING": 0,
+      "SUPPORTED_BINDING": 0,
+      "UNRESOLVED_BINDING": 1853
+    },
+    "pair_universe_count": 1853,
+    "requirement_count": 17,
+    "requirement_rollup_counts": {
+      "BOUND_COMPOSITE_UNITS": 0,
+      "BOUND_SINGLE_UNIT": 0,
+      "NO_AUTHORIZED_CROSSWALK_PROVEN": 0,
+      "UNRESOLVED": 17
+    },
+    "semantic_unit_count": 109,
+    "status": "AUTHOR_CANDIDATE"
+  },
+  "status": "AUTHORIZED_NOT_YET_AUTHORED"
+}
