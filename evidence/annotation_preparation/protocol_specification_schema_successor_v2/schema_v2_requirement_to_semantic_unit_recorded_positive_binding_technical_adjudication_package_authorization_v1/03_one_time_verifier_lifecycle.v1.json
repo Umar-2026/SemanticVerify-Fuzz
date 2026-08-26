@@ -1,0 +1,11 @@
+{
+  "artifact": "decision0183_a02_one_time_verifier_lifecycle_v1",
+  "decision": "Decision0183",
+  "verifier": "02_verify_technical_adjudication_package_authorization_once.v1.py",
+  "state": "ACTIVE_UNCONSUMED",
+  "execution_count": 0,
+  "authorized_execution_transaction": "Decision0184",
+  "retire_after_first_execution": true,
+  "rerun_authorized": false,
+  "purpose": "Verify the exact Decision0183 authorization boundary and 211-pair unresolved adjudication scope before authoring the neutral technical-adjudication package. It does not perform adjudication or reclassify any governed pair."
+}

@@ -1,0 +1,80 @@
+{
+  "artifact": "recorded_positive_binding_technical_adjudication_package_authorization_v1",
+  "decision": "Decision0183",
+  "authorization_status": "AUTHORIZED_FOR_SEPARATE_NEXT_TRANSACTION",
+  "authorization_scope": "AUTHOR_NEUTRAL_BOUNDED_TECHNICAL_ADJUDICATION_PACKAGE_FOR_EXACTLY_211_RECORDED_POSITIVE_BINDING_PROPOSALS",
+  "source_bindings": {
+    "recorded_candidate_human_evidence_packet": {
+      "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "size_bytes": 20425
+    },
+    "governed_requirement_semantic_unit_pair_matrix": {
+      "sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+      "pair_count": 1853,
+      "unresolved_binding_count": 1853,
+      "supported_binding_count": 0,
+      "not_supported_binding_count": 0
+    }
+  },
+  "bounded_scope": {
+    "recorded_positive_requirement_count": 15,
+    "recorded_unresolved_requirement_count": 2,
+    "candidate_positive_pair_count": 211,
+    "candidate_pairs_present_in_governed_universe": 211,
+    "candidate_pairs_currently_unresolved": 211,
+    "candidate_pairs_already_supported": 0,
+    "candidate_pairs_already_not_supported": 0
+  },
+  "authorized_package_design": {
+    "enumerate_exactly_the_211_recorded_candidate_positive_pairs": true,
+    "include_governed_requirement_id": true,
+    "include_governed_semantic_unit_id": true,
+    "include_recorded_reviewer_rationale_as_source_evidence_without_rewriting": true,
+    "include_governed_provenance_and_traceability_evidence": true,
+    "include_blank_technical_adjudication_fields": true,
+    "include_blank_adjudicator_identity_fields": true,
+    "prefill_technical_adjudication_outcomes": false,
+    "prefill_adjudicator_identity": false,
+    "author_or_model_select_additional_candidate_pairs": false,
+    "rank_candidate_pairs": false
+  },
+  "allowed_future_adjudication_states": [
+    "TECHNICAL_SUPPORT_CONFIRMED_PROMOTION_CANDIDATE",
+    "TECHNICAL_SUPPORT_NOT_ESTABLISHED",
+    "TECHNICAL_ADJUDICATION_UNRESOLVED"
+  ],
+  "state_semantics": {
+    "TECHNICAL_SUPPORT_CONFIRMED_PROMOTION_CANDIDATE": "Candidate technical support for a later separately governed promotion decision; does not itself create SUPPORTED_BINDING.",
+    "TECHNICAL_SUPPORT_NOT_ESTABLISHED": "Technical support was not established in the adjudication record; the governed pair remains UNRESOLVED_BINDING and this is not NOT_SUPPORTED_BINDING.",
+    "TECHNICAL_ADJUDICATION_UNRESOLVED": "Technical adjudication remains unresolved; the governed pair remains UNRESOLVED_BINDING."
+  },
+  "independence_contract": {
+    "independent_human_technical_adjudication_required_before_any_promotion": true,
+    "adjudicator_role_id": "Spec-Technical-Adjudicator-1",
+    "actual_adjudicator_identity_must_remain_blank_in_authored_package": true
+  },
+  "authorized_next_transaction": {
+    "transaction": "Decision0184",
+    "consume_decision0183_a02_exactly_once": true,
+    "author_neutral_bounded_technical_adjudication_package_v1": true,
+    "author_blank_human_adjudication_packet": true,
+    "perform_human_technical_adjudication": false,
+    "record_human_technical_adjudication_result": false
+  },
+  "explicitly_not_authorized": {
+    "pair_reclassification": true,
+    "automatic_promotion_of_reviewer_proposals": true,
+    "not_supported_binding": true,
+    "negative_classification_from_absence_or_rejection": true,
+    "technical_adjudication_execution_in_decision0183": true,
+    "operational_mapping": true,
+    "schema_v2_modification": true,
+    "schema_successor": true,
+    "curl_json": true,
+    "analyzer_implementation": true,
+    "analyzer_execution": true,
+    "baseline_execution": true,
+    "repair_implementation": true,
+    "repair_execution": true
+  }
+}
