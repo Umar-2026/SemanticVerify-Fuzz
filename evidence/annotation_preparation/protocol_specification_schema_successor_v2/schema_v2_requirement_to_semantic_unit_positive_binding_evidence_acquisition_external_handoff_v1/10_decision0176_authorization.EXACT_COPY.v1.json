@@ -1,0 +1,91 @@
+{
+  "analyzer_execution_authorized": false,
+  "analyzer_implementation_authorized": false,
+  "anti_anchoring_policy": {
+    "author_suggestion_shown_as_binding_recommendation": false,
+    "current_pair_classification_shown_as_recommendation": false,
+    "historical_carrier_pair_state_shown_as_binding_recommendation": false,
+    "lexical_similarity_shown_as_binding_recommendation": false,
+    "model_suggestion_shown_as_binding_recommendation": false
+  },
+  "artifact": "requirement_to_semantic_unit_positive_binding_evidence_acquisition_package_authorization_v1",
+  "authorization_decision": "Decision-0176",
+  "authorized_package": {
+    "allowed_no_positive_proposal_state": "UNRESOLVED_NO_POSITIVE_BINDING_PROPOSED",
+    "allowed_reviewer_positive_evidence": "EXPLICIT_REQUIREMENT_ID_TO_ONE_OR_MORE_SEMANTIC_UNIT_ID_PROPOSALS_WITH_RATIONALE",
+    "author_or_model_candidate_preselection_allowed": false,
+    "automatic_governance_promotion_allowed": false,
+    "automatic_pair_reclassification_allowed": false,
+    "human_completion_in_package_authoring_transaction": false,
+    "lexical_similarity_ranking_allowed": false,
+    "model_generated_binding_suggestions_allowed": false,
+    "name": "positive_requirement_to_semantic_unit_binding_evidence_acquisition_package_v1",
+    "negative_binding_judgments_allowed": false,
+    "not_supported_binding_judgments_allowed": false,
+    "purpose": "COLLECT_NEW_EXPLICIT_POSITIVE_REQUIREMENT_TO_SEMANTIC_UNIT_BINDING_EVIDENCE",
+    "review_domain": "17_CANONICAL_REQUIREMENTS_X_109_GOVERNED_SEMANTIC_UNITS",
+    "reviewer_decision_prefilled": false,
+    "reviewer_identity_prefilled": false,
+    "reviewer_rationale_prefilled": false
+  },
+  "baseline_execution_authorized": false,
+  "curl_json_authorized": false,
+  "evidence_promotion_policy": {
+    "completed_human_packet_is_candidate_evidence_only": true,
+    "human_selection_itself_reclassifies_governed_pair": false,
+    "separate_adjudication_or_review_required_before_promotion": true,
+    "separate_governance_authorization_required_before_pair_reclassification": true,
+    "separate_recording_required": true
+  },
+  "historical_pair_reclassification_authorized": false,
+  "human_review_executed": false,
+  "human_review_result_recorded": false,
+  "negative_binding_classification_authorized": false,
+  "not_supported_binding_authorized": false,
+  "operational_mapping_authorized": false,
+  "package_authored": false,
+  "package_authoring_authorized": true,
+  "pair_reclassification_authorized": false,
+  "pre_package_authoring_verifier_execution_authorized": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_POSITIVE_BINDING_EVIDENCE_ACQUISITION_PACKAGE_V1_AUTHORING",
+  "pre_package_authoring_verifier_sha256": "886fad115ff36edb5ba77127ddf24027b0265f3d33a0c34572c3a476c9009a79",
+  "pre_package_authoring_verifier_size": 8037,
+  "pre_package_authoring_verifier_state": "ACTIVE_UNCONSUMED",
+  "repair_execution_authorized": false,
+  "repair_implementation_authorized": false,
+  "schema_successor_authoring_authorized": false,
+  "schema_v2_modification_authorized": false,
+  "source_crosswalk_study_v1": {
+    "evidence_matrix_sha256": "0935a8bb7c02e9a31b419a56d9cd3ee391b1051603804b7ce2d3c4a8d9d58a69",
+    "git_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+    "manifest_sha256": "d8ce65985f33ced593f379f11eefa9b681fde6a10693c0bbc1a6a9fa347bb3e7",
+    "not_supported_binding_count": 0,
+    "pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "pair_universe_count": 1853,
+    "requirement_count": 17,
+    "semantic_unit_count": 109,
+    "supported_binding_count": 0,
+    "unresolved_binding_count": 1853
+  },
+  "source_decision0175": {
+    "commit": "930cdb7a90a4da2be8a4aef1adbeba57d7b2d4d3",
+    "tree": "c038cfe1bc9282f9f6d6b844503b193ac0b91174"
+  },
+  "source_domains": {
+    "requirement_provenance_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "semantic_unit_inventory_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "semantic_unit_traceability_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "source_governance_adoption": {
+    "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "git_tree": "1d86f9c1ad8ef932713cbb0a17e24a81d20bad7d",
+    "governance_record_sha256": "b3da01b981419e4742ecabee7c1dfe95b48601a365317b7241151cce278bfad6",
+    "study_governance_adopted": true
+  },
+  "status": "AUTHORIZED_NOT_AUTHORED",
+  "structural_feasibility_basis": {
+    "deterministic_provenance_only_crosswalk_supported": false,
+    "exact_locator_overlap_field_pair_count": 0,
+    "exact_locator_shared_value_occurrence_count": 0,
+    "new_semantic_binding_evidence_required": true
+  }
+}
