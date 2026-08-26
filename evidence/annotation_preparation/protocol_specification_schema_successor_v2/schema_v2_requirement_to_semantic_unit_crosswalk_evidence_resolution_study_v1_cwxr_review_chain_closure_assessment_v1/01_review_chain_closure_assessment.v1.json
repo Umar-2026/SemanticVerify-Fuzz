@@ -1,0 +1,82 @@
+{
+  "analyzer_authorized": false,
+  "artifact": "cwxr_review_chain_closure_assessment_v1",
+  "assessment_decision": "Decision-0173",
+  "baseline_authorized": false,
+  "bounded_nonclaims": {
+    "actual_external_exactly_once_execution_independently_proven": false,
+    "decision0147_to_decision0148_git_parentage_independently_proven": false,
+    "decision0148_study_tree_identity_independently_proven": false,
+    "global_no_rerun_fact_independently_proven": false,
+    "repository_contradiction_search_correctness_independently_proven": false,
+    "tracked_decision0147_a02_path_history_independently_proven": false
+  },
+  "closure_outcome": "PASS_CLOSED_WITH_BOUNDED_CWXR07_S2_SUCCESSOR",
+  "closure_reasoning": {
+    "chain_closed_for_governance_consideration": true,
+    "closure_basis": "SEPARATE_NARROWED_CWXR07_S2_SUCCESSOR_REVIEWED_PASS",
+    "historical_original_revision_required_erased": false,
+    "historical_s1_deficiency_erased": false,
+    "no_other_original_cwxr_items_require_correction": true,
+    "original_corrective_scope": "CWXR07_ONLY",
+    "original_cwxr07_deficiency_resolved_on_original_s1_scope": false
+  },
+  "curl_json_authorized": false,
+  "cwxr07_s2": {
+    "completed_review_git_tree": "b15036b779a21f0489d1d007f3af8b05b53750f6",
+    "criterion": "NARROWED_BOUNDED_INTERNAL_CONSISTENCY_CRITERION",
+    "decision": "PASS",
+    "retroactively_changes_original_review": false,
+    "retroactively_changes_s1": false,
+    "separate_corrective_successor": true,
+    "successor_git_tree": "e3e8b53823c6c1e132eba5c56a97f726a801f753"
+  },
+  "decision0172_a02": {
+    "consumption_record_sha256": "f3a3d371e0999e4f5f5506fb6107d1e106ee55d8399a8ada61dd78eec3c856bd",
+    "execution_count_in_decision0173_transaction": 1,
+    "final_output_sha256": "39a9ff85c49c132688c27119e579c6e101e7d738ff9db4918982e88991a64f29",
+    "repository_output_exact_copy_sha256": "39a9ff85c49c132688c27119e579c6e101e7d738ff9db4918982e88991a64f29",
+    "rerun_authorized": false,
+    "sha256": "35b2a4eacd33bf48c9db8fd7e5875d47018241f54558ac1c854afdf83f02bc04",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "governance_adoption_authorized": false,
+  "historical_cwxr07_s1": {
+    "completed_review_git_tree": "265da19aca751d98515ddcf7724180d6ebfd2f6e",
+    "decision": "REVISION_REQUIRED",
+    "modified": false,
+    "upgraded": false
+  },
+  "historical_original_review": {
+    "CWXR01": "PASS",
+    "CWXR02": "PASS",
+    "CWXR03": "PASS",
+    "CWXR04": "PASS",
+    "CWXR05": "PASS",
+    "CWXR06": "PASS",
+    "CWXR07": "REVISION_REQUIRED",
+    "CWXR08": "PASS",
+    "git_tree": "b4bb9b57ae25f90c5dc2506a90ade02e810c4388",
+    "modified": false,
+    "overall": "REVISION_REQUIRED",
+    "reopened": false
+  },
+  "historical_pair_reclassification_authorized": false,
+  "next_boundary": "SEPARATELY_AUTHORIZE_GOVERNANCE_ADOPTION_OF_CLOSED_CWXR_REVIEW_CHAIN_AND_BOUNDED_STUDY_V1_OUTCOME",
+  "operational_mapping_authorized": false,
+  "pair_reclassification_authorized": false,
+  "repair_authorized": false,
+  "review_chain_closed": true,
+  "schema_successor_authoring_authorized": false,
+  "schema_v2_modification_authorized": false,
+  "source_decision0172": {
+    "authorization_a01_sha256": "dd2c63e881dd5901fe5ff524626e405125061cec81952918903a18a8cb72ab84",
+    "authorization_a02_sha256": "35b2a4eacd33bf48c9db8fd7e5875d47018241f54558ac1c854afdf83f02bc04",
+    "authorization_a03_sha256": "0863c38d4bedb5f3801140b6018fa4b40300cd9a5a64530027728b78869c7d83",
+    "authorization_git_tree": "d2e5da77005cb797e2164df0b215621a601b90f6",
+    "commit": "140d3c7be8a6928ff557816e3ea1b281a8eb81e5",
+    "tree": "505c1308f1a9baaa70f40ace0b7e5be46eb8c7f8"
+  },
+  "status": "PASS_CLOSED_WITH_BOUNDED_CWXR07_S2_SUCCESSOR",
+  "study_governance_adopted": false
+}
