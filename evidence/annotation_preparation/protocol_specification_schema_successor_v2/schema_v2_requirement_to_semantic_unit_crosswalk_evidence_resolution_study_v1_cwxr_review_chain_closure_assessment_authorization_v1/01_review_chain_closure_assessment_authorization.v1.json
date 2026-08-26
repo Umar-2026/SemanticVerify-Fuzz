@@ -1,0 +1,56 @@
+{
+  "analyzer_authorized": false,
+  "artifact": "cwxr_review_chain_closure_assessment_authorization_v1",
+  "authorization_decision": "Decision-0172",
+  "baseline_authorized": false,
+  "closure_assessment_authored": false,
+  "closure_assessment_authorized": true,
+  "curl_json_authorized": false,
+  "governance_adoption_authorized": false,
+  "operational_mapping_authorized": false,
+  "pair_reclassification_authorized": false,
+  "pre_closure_assessment_verifier_execution_authorized": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_CWXR_REVIEW_CHAIN_CLOSURE_ASSESSMENT_V1_AUTHORING",
+  "pre_closure_assessment_verifier_sha256": "35b2a4eacd33bf48c9db8fd7e5875d47018241f54558ac1c854afdf83f02bc04",
+  "pre_closure_assessment_verifier_size": 7403,
+  "pre_closure_assessment_verifier_state": "ACTIVE_UNCONSUMED",
+  "repair_authorized": false,
+  "review_chain": {
+    "corrective_scope": "CWXR07_ONLY",
+    "cwxr07_s2_completed_review_git_tree": "b15036b779a21f0489d1d007f3af8b05b53750f6",
+    "cwxr07_s2_decision": "PASS",
+    "cwxr07_s2_is_separate_bounded_successor": true,
+    "cwxr07_s2_retroactively_changes_original_review": false,
+    "cwxr07_s2_retroactively_changes_s1": false,
+    "cwxr07_s2_successor_git_tree": "e3e8b53823c6c1e132eba5c56a97f726a801f753",
+    "historical_cwxr07_s1_completed_review_git_tree": "265da19aca751d98515ddcf7724180d6ebfd2f6e",
+    "historical_cwxr07_s1_decision": "REVISION_REQUIRED",
+    "no_other_original_cwxr_items_require_correction": true,
+    "original_completed_review_git_tree": "b4bb9b57ae25f90c5dc2506a90ade02e810c4388",
+    "original_decisions": {
+      "CWXR01": "PASS",
+      "CWXR02": "PASS",
+      "CWXR03": "PASS",
+      "CWXR04": "PASS",
+      "CWXR05": "PASS",
+      "CWXR06": "PASS",
+      "CWXR07": "REVISION_REQUIRED",
+      "CWXR08": "PASS",
+      "overall": "REVISION_REQUIRED"
+    }
+  },
+  "review_chain_closed": false,
+  "s2_completed_review_bindings": {
+    "checksum_sha256": "0fee794f36aa87f5d151ae958a23581be003c92f2dee4d6340adfbb6616f18c7",
+    "manifest_sha256": "edaf11cf9f172b5681cb70c39f300602657cb44157fc5caa637d3a755f07c8ad",
+    "repeat_safe_verifier_sha256": "932c2e47fb0cfa042eb0308a5bc75d5a2199576b1ffe232f2f106144927f9230"
+  },
+  "schema_successor_authoring_authorized": false,
+  "schema_v2_modification_authorized": false,
+  "source_decision0171": {
+    "commit": "4765b028fd8e559944247a1a040117ead67df3c1",
+    "tree": "2731e19124ed7bae89e472ebfe92d0644b4da515"
+  },
+  "status": "AUTHORIZED_NOT_ASSESSED",
+  "study_governance_adopted": false,
+  "supported_assessment_outcome": "PASS_CLOSED_WITH_BOUNDED_CWXR07_S2_SUCCESSOR"
+}
