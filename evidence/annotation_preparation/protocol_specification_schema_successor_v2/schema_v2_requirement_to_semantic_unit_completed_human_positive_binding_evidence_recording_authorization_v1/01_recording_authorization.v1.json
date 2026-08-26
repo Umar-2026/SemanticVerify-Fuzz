@@ -1,0 +1,49 @@
+{
+  "artifact": "completed_human_positive_binding_evidence_recording_authorization_v1",
+  "decision": "Decision0180",
+  "authorization_status": "AUTHORIZED_FOR_SEPARATE_NEXT_TRANSACTION",
+  "authorization_scope": "RECORD_EXACT_RETURNED_PACKET_AS_IMMUTABLE_CANDIDATE_HUMAN_EVIDENCE_ONLY",
+  "returned_packet": {
+    "external_path": "/openbayes/home/50_positive_binding_evidence_manually_packet.MANUAL_REVIEW_COPY.v1.md",
+    "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+    "size_bytes": 20425
+  },
+  "validated_returned_evidence_summary": {
+    "requirement_section_count": 17,
+    "semantic_unit_domain_count": 109,
+    "positive_binding_proposed_requirement_count": 15,
+    "unresolved_no_positive_binding_proposed_requirement_count": 2,
+    "positive_requirement_unit_pair_proposal_count": 211,
+    "unknown_semantic_unit_id_count": 0,
+    "positive_proposal_without_rationale_count": 0,
+    "invalid_evidence_state_count": 0,
+    "unresolved_section_with_unit_proposal_count": 0,
+    "static_prefix_preserved": true,
+    "reviewer_completion_fields_present": true
+  },
+  "bounded_interpretation": {
+    "candidate_human_evidence_only": true,
+    "positive_proposals_are_governed_pair_reclassifications": false,
+    "unresolved_no_positive_binding_is_negative_proof": false,
+    "not_supported_binding_created": false
+  },
+  "authorized_next_transaction": {
+    "consume_decision0180_a02_exactly_once": true,
+    "record_exact_returned_packet_bytes": true,
+    "author_immutable_recording_evidence": true,
+    "author_separate_recording_decision": true
+  },
+  "not_authorized": {
+    "pair_reclassification": true,
+    "technical_adjudication": true,
+    "operational_mapping": true,
+    "schema_v2_modification": true,
+    "schema_successor_authoring": true,
+    "curl_json": true,
+    "analyzer_implementation": true,
+    "analyzer_execution": true,
+    "baseline_execution": true,
+    "repair_implementation": true,
+    "repair_execution": true
+  }
+}

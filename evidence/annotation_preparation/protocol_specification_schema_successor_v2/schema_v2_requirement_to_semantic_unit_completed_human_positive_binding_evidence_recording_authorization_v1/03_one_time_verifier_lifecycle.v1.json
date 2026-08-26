@@ -1,0 +1,11 @@
+{
+  "artifact": "decision0180_a02_one_time_verifier_lifecycle_v1",
+  "decision": "Decision0180",
+  "verifier": "02_verify_recording_authorization_once.v1.py",
+  "state": "ACTIVE_UNCONSUMED",
+  "execution_count": 0,
+  "authorized_execution_transaction": "Decision0181",
+  "rerun_authorized": false,
+  "retire_after_first_execution": true,
+  "purpose": "Verify Decision0180 recording authorization and exact returned-packet binding before immutable recording. It does not record evidence or reclassify any governed pair."
+}
