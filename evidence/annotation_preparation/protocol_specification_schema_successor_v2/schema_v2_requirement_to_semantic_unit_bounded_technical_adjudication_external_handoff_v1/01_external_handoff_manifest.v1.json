@@ -1,0 +1,63 @@
+{
+  "artifact": "bounded_technical_adjudication_external_handoff_v1",
+  "decision": "Decision0186",
+  "handoff_status": "HANDOFF_AUTHORED_AWAITING_EXTERNAL_HUMAN_TECHNICAL_ADJUDICATION",
+  "bounded_pair_count": 211,
+  "technical_adjudicator_role_contract": "Spec-Technical-Adjudicator-1",
+  "authorized_external_human_editable_surface_count": 1,
+  "internal_blank_packet": {
+    "path": "02_blank_technical_adjudication_packet.EXACT_COPY.v1.md",
+    "sha256": "c135cd488c94be4aa94017c0684aa7a22993d9de923ff1ee3b5f389f40a7e6e0"
+  },
+  "external_editable_packet_initial_contract": {
+    "path": "/openbayes/home/50_bounded_technical_adjudication_packet.MANUAL_ADJUDICATION_COPY.v1.md",
+    "must_begin_byte_identical_to_internal_blank_packet": true,
+    "human_editable": true
+  },
+  "external_immutable_zip": {
+    "path": "/openbayes/home/50_bounded_technical_adjudication_external_handoff.v1.zip",
+    "human_editable": false,
+    "hash_and_size_bound_in_decision0186": true
+  },
+  "governed_source_bindings": {
+    "decision0184_package_tree": "ccf5fc04a9d80607767f79ed8c298a663378cb08",
+    "package_manifest_sha256": "c5e86f8354fc296adafcb4b33fef3f1979e37bd670c545dd8f64b20c58fd354b",
+    "candidate_pair_inventory_sha256": "8f77fe6454fef755317f3d590c80326f79d504308b2638416013ca2ba77ba8b9",
+    "blank_packet_sha256": "c135cd488c94be4aa94017c0684aa7a22993d9de923ff1ee3b5f389f40a7e6e0",
+    "adjudicator_instructions_sha256": "e3df28a1d65067a050fcc996f8df0aa45121a1b2430f470f807b8d226f003018",
+    "recorded_positive_binding_human_evidence_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+    "governed_pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "requirement_provenance_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "semantic_unit_inventory_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "semantic_unit_traceability_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "decision0185_a02": {
+    "verifier_sha256": "ffd8dd3b4beea31fcac8903c70f902f26038e200d82c0fdb4a829d9d40d46324",
+    "execution_count": 1,
+    "state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false,
+    "reservation_sentinel_sha256": "82cda9abec9cb94b0aded7786d8bce5d773b04856fc361e919b18c2b47482910",
+    "execution_output_sha256": "90d080fde3527d748bdd7a9aa522f476241d833c06afa48d2025b886490abbaa"
+  },
+  "blank_surface_state": {
+    "technical_adjudication_states_prefilled": 0,
+    "technical_adjudication_rationales_prefilled": 0,
+    "technical_adjudicator_notes_prefilled": 0,
+    "technical_adjudicator_identity_prefilled": false
+  },
+  "bounded_interpretation": {
+    "human_technical_adjudication_performed": false,
+    "human_adjudication_result_recorded": false,
+    "pair_reclassification_performed": false,
+    "pair_reclassification_authorized": false,
+    "supported_binding_created": false,
+    "not_supported_binding_created": false,
+    "automatic_promotion_authorized": false,
+    "negative_proof_created": false,
+    "operational_mapping_authorized": false,
+    "schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  }
+}

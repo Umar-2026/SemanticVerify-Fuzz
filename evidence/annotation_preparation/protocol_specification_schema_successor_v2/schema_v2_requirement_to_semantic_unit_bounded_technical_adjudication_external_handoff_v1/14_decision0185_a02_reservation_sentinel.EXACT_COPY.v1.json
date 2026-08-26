@@ -1,0 +1,12 @@
+{
+  "artifact": "decision0185_a02_single_execution_reservation_v1",
+  "authorized_head_at_execution": "1618e12518dc0bf6f2cd0da680fd37916ebf60fb",
+  "blank_adjudication_packet_sha256": "c135cd488c94be4aa94017c0684aa7a22993d9de923ff1ee3b5f389f40a7e6e0",
+  "bounded_pair_count": 211,
+  "decision": "Decision0185",
+  "execution_transaction": "Decision0186",
+  "rerun_authorized": false,
+  "reserved_at_utc": "2026-08-26T15:39:14.377114+00:00",
+  "state": "PERMANENTLY_RETIRED_AFTER_THIS_EXECUTION",
+  "technical_adjudication_package_tree": "ccf5fc04a9d80607767f79ed8c298a663378cb08"
+}
