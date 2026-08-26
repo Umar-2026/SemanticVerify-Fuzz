@@ -1,0 +1,10 @@
+{
+  "artifact": "decision0180_a02_single_execution_reservation_v1",
+  "authorized_head_at_execution": "b12612cf8e5dcab21c44cc878e836c50efdb63d8",
+  "decision": "Decision0180",
+  "execution_transaction": "Decision0181",
+  "rerun_authorized": false,
+  "reserved_at_utc": "2026-08-26T10:58:58.036248+00:00",
+  "returned_packet_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+  "state": "PERMANENTLY_RETIRED_AFTER_THIS_EXECUTION"
+}

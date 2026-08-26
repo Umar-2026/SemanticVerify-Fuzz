@@ -1,0 +1,54 @@
+{
+  "artifact": "completed_human_positive_binding_evidence_record_v1",
+  "decision": "Decision0181",
+  "record_status": "IMMUTABLE_CANDIDATE_HUMAN_EVIDENCE_RECORDED",
+  "source_returned_packet": {
+    "external_path": "/openbayes/home/50_positive_binding_evidence_manually_packet.MANUAL_REVIEW_COPY.v1.md",
+    "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+    "size_bytes": 20425
+  },
+  "recorded_packet": {
+    "path": "02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md",
+    "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+    "size_bytes": 20425,
+    "byte_identical_to_authorized_returned_packet": true
+  },
+  "governed_validation_sources": {
+    "requirement_provenance_exact_copy_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "semantic_unit_inventory_exact_copy_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d"
+  },
+  "validated_candidate_evidence_summary": {
+    "requirement_section_count": 17,
+    "semantic_unit_domain_count": 109,
+    "positive_binding_proposed_requirement_count": 15,
+    "unresolved_no_positive_binding_proposed_requirement_count": 2,
+    "positive_requirement_unit_pair_proposal_count": 211,
+    "unknown_semantic_unit_id_count": 0,
+    "positive_proposal_without_rationale_count": 0,
+    "invalid_evidence_state_count": 0,
+    "unresolved_section_with_unit_proposal_count": 0,
+    "static_prefix_preserved": true,
+    "reviewer_completion_fields_present": true
+  },
+  "decision0180_a02_consumption": {
+    "verifier_sha256": "51aac6bb34d5d6fd16d5198d1643e9e35a8d5d1a14f2ab73e34b4f83053527f7",
+    "execution_count": 1,
+    "execution_transaction": "Decision0181",
+    "state_after_execution": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false,
+    "reservation_sentinel_sha256": "2b2f542ea2ecb0d1663133db5f2d2f22d3b157509a0319c583a83f333f1929e5",
+    "reservation_sentinel_size_bytes": 457,
+    "output_sha256": "1d61008d8f6a1c8746131b35c89a5a355b0a6d9770f8c115b979370f09d99222",
+    "output_size_bytes": 760
+  },
+  "bounded_interpretation": {
+    "candidate_human_evidence_only": true,
+    "pair_reclassification_performed": false,
+    "pair_reclassification_authorized": false,
+    "technical_adjudication_performed": false,
+    "technical_adjudication_authorized": false,
+    "unresolved_no_positive_binding_is_negative_proof": false,
+    "not_supported_binding_created": false,
+    "operational_mapping_authorized": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "artifact": "decision0180_a02_consumption_record_v1",
+  "consumed_in_decision": "Decision0181",
+  "verifier_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_recording_authorization_v1/02_verify_recording_authorization_once.v1.py",
+  "verifier_sha256": "51aac6bb34d5d6fd16d5198d1643e9e35a8d5d1a14f2ab73e34b4f83053527f7",
+  "authorized_predecessor_state": "ACTIVE_UNCONSUMED",
+  "execution_count_before": 0,
+  "execution_count_after": 1,
+  "execution_result": "PASS",
+  "state_after_execution": "PERMANENTLY_RETIRED",
+  "rerun_authorized": false,
+  "reservation_sentinel": {
+    "external_path": "/openbayes/home/.semanticverify-fuzz-decision0180-a02-single-execution-reservation.v1.json",
+    "sha256": "2b2f542ea2ecb0d1663133db5f2d2f22d3b157509a0319c583a83f333f1929e5",
+    "size_bytes": 457,
+    "recorded_exact_copy": "05_decision0180_a02_reservation_sentinel.EXACT_COPY.v1.json"
+  },
+  "execution_output": {
+    "external_path": "/openbayes/home/decision0180_a02_single_execution_output.v1.txt",
+    "sha256": "1d61008d8f6a1c8746131b35c89a5a355b0a6d9770f8c115b979370f09d99222",
+    "size_bytes": 760,
+    "recorded_exact_copy": "04_decision0180_a02_output.EXACT_COPY.v1.txt"
+  },
+  "semantic_effect": {
+    "returned_packet_recorded_as_candidate_human_evidence": true,
+    "pair_reclassification_performed": false,
+    "technical_adjudication_performed": false,
+    "operational_mapping_created": false
+  }
+}
