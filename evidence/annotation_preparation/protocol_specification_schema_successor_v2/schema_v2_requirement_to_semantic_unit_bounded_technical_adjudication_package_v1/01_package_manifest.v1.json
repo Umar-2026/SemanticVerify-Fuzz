@@ -1,0 +1,48 @@
+{
+  "artifact": "bounded_technical_adjudication_package_v1",
+  "decision": "Decision0184",
+  "package_status": "AUTHOR_CANDIDATE_BLANK_AWAITING_EXTERNAL_HUMAN_TECHNICAL_ADJUDICATION",
+  "bounded_pair_count": 211,
+  "governed_pair_prestate": "UNRESOLVED_BINDING",
+  "recorded_positive_requirement_count": 15,
+  "recorded_unresolved_requirement_count": 2,
+  "adjudicator_role_contract": "Spec-Technical-Adjudicator-1",
+  "adjudicator_identity_prefilled": false,
+  "adjudication_outcomes_prefilled": false,
+  "author_or_model_additional_pair_selection": false,
+  "candidate_pair_ranking_performed": false,
+  "allowed_future_adjudication_states": [
+    "TECHNICAL_SUPPORT_CONFIRMED_PROMOTION_CANDIDATE",
+    "TECHNICAL_SUPPORT_NOT_ESTABLISHED",
+    "TECHNICAL_ADJUDICATION_UNRESOLVED"
+  ],
+  "decision0183_a02": {
+    "verifier_sha256": "924b9c1d38edf43cb59b308b091d9bbeebd63ef416f1feb1c5042c1865b6d333",
+    "execution_count": 1,
+    "state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false,
+    "output_sha256": "ab4ccabb99e55dc10ce5c48e67138506a3b2021ee3ea84d5798285d2c574bcf5",
+    "reservation_sentinel_sha256": "b648afa4b801c4682b5a09936a7bed582ce751617dee0608897598a3a30870b6"
+  },
+  "source_bindings": {
+    "recorded_packet_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+    "pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "requirement_provenance_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "semantic_unit_inventory_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "semantic_unit_traceability_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "bounded_interpretation": {
+    "human_technical_adjudication_performed": false,
+    "pair_reclassification_performed": false,
+    "pair_reclassification_authorized": false,
+    "automatic_promotion_authorized": false,
+    "supported_binding_created": false,
+    "not_supported_binding_created": false,
+    "negative_proof_created": false,
+    "operational_mapping_authorized": false,
+    "schema_v2_modification_authorized": false,
+    "analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "artifact": "decision0183_a02_consumption_record_v1",
+  "consumed_in_decision": "Decision0184",
+  "verifier_sha256": "924b9c1d38edf43cb59b308b091d9bbeebd63ef416f1feb1c5042c1865b6d333",
+  "execution_count_before": 0,
+  "execution_count_after": 1,
+  "execution_result": "PASS",
+  "state_after_execution": "PERMANENTLY_RETIRED",
+  "rerun_authorized": false,
+  "reservation_sentinel": {
+    "sha256": "b648afa4b801c4682b5a09936a7bed582ce751617dee0608897598a3a30870b6",
+    "size_bytes": 588,
+    "recorded_exact_copy": "08_decision0183_a02_reservation_sentinel.EXACT_COPY.v1.json"
+  },
+  "execution_output": {
+    "sha256": "ab4ccabb99e55dc10ce5c48e67138506a3b2021ee3ea84d5798285d2c574bcf5",
+    "size_bytes": 994,
+    "recorded_exact_copy": "07_decision0183_a02_output.EXACT_COPY.v1.txt"
+  },
+  "semantic_effect": {
+    "neutral_adjudication_package_authored": true,
+    "human_technical_adjudication_performed": false,
+    "pair_reclassification_performed": false,
+    "supported_binding_created": false,
+    "not_supported_binding_created": false,
+    "operational_mapping_created": false
+  }
+}

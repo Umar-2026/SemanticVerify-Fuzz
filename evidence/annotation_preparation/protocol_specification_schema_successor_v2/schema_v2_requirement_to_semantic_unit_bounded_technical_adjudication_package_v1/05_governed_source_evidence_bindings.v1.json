@@ -1,0 +1,31 @@
+{
+  "artifact": "bounded_technical_adjudication_governed_source_evidence_bindings_v1",
+  "recorded_human_positive_binding_packet": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md",
+    "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+    "size_bytes": 20425
+  },
+  "governed_pair_matrix": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_crosswalk_evidence_resolution_study_v1/04_requirement_semantic_unit_pair_matrix.v1.json",
+    "sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "size_bytes": 5098074,
+    "pair_count": 1853,
+    "unresolved_binding_count": 1853
+  },
+  "requirement_provenance": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_v4_losslessness_requirement_provenance_binding_resolution_study_v1/01_17_requirement_provenance_binding_matrix.v1.json",
+    "sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "size_bytes": 41169
+  },
+  "semantic_unit_inventory": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_positive_binding_evidence_acquisition_package_v1/06_semantic_unit_inventory.EXACT_COPY.v1.json",
+    "sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "size_bytes": 203561,
+    "semantic_unit_count": 109
+  },
+  "semantic_unit_traceability": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+    "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+    "size_bytes": 732713
+  }
+}
