@@ -1,0 +1,628 @@
+{
+  "allowed_classifications": [
+    "BOUND_EXACT",
+    "BOUND_COMPOSITE",
+    "UNRESOLVED"
+  ],
+  "artifact_id": "SVF-V4-LOSSLESSNESS-REQUIREMENT-PROVENANCE-BINDING-MATRIX-V1",
+  "authority_resolution": {
+    "approved_curl_v4_hash_chain_verified": true,
+    "candidate_lists_exact_order_equal": true,
+    "canonical_keyset_exactly_matches_authorized_17_name_list": true,
+    "canonical_object_hash_verified": true,
+    "design_record_observed_canonical_hash_path": "$.approved_v4_basis.losslessness_contract_canonical_sha256",
+    "design_record_observed_mapping_contract_path": "$.approved_v4_basis.mapping_contract_sha256",
+    "residual_proof_hash_chain_verified": true,
+    "three_canonical_objects_value_equal": true
+  },
+  "binding_policy": "EXACT_CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY_AND_VALUE_BINDING",
+  "canonical_losslessness_object_sha256": "c869079bfbd395b479e2dd8f2f1bcc31aabeababe0e24fc1542c6d35d210602e",
+  "existing_18639_pair_state_modified": false,
+  "historical_prior_binding_state": {
+    "all_prior_binding_status": "UNRESOLVED_SOURCE_BINDING",
+    "all_prior_requirement_text_null": true,
+    "placeholder_record_count": 17,
+    "prior_placeholder_index_to_canonical_name_mapping_claimed": false
+  },
+  "records": [
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 1,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.all_10_v4_semantic_containers_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.all_10_v4_semantic_containers_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.all_10_v4_semantic_containers_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "all_10_v4_semantic_containers_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 2,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.all_3_exit_obligations_accounted_for"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.all_3_exit_obligations_accounted_for"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.all_3_exit_obligations_accounted_for"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "all_3_exit_obligations_accounted_for",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 3,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.all_64_rule_records_accounted_for"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.all_64_rule_records_accounted_for"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.all_64_rule_records_accounted_for"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "all_64_rule_records_accounted_for",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 4,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.complete_exact_v4_representation_policy_machine_checkably_bound"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.complete_exact_v4_representation_policy_machine_checkably_bound"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.complete_exact_v4_representation_policy_machine_checkably_bound"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "complete_exact_v4_representation_policy_machine_checkably_bound",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 5,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.complete_exact_v4_representation_policy_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.complete_exact_v4_representation_policy_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.complete_exact_v4_representation_policy_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "complete_exact_v4_representation_policy_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 6,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.forward_accounting_required"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.forward_accounting_required"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.forward_accounting_required"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "forward_accounting_required",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 7,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.four_verdict_contract_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.four_verdict_contract_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.four_verdict_contract_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "four_verdict_contract_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 8,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.membership_sensitive_semantics_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.membership_sensitive_semantics_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.membership_sensitive_semantics_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "membership_sensitive_semantics_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 9,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.normative_strength_uncertainty_policy_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.normative_strength_uncertainty_policy_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.normative_strength_uncertainty_policy_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "normative_strength_uncertainty_policy_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 10,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.ownership_sensitive_semantics_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.ownership_sensitive_semantics_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.ownership_sensitive_semantics_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "ownership_sensitive_semantics_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 11,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.path_sensitive_semantics_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.path_sensitive_semantics_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.path_sensitive_semantics_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "path_sensitive_semantics_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 12,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.resource_centered_semantics_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.resource_centered_semantics_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.resource_centered_semantics_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "resource_centered_semantics_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 13,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.return_sensitive_semantics_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.return_sensitive_semantics_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.return_sensitive_semantics_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "return_sensitive_semantics_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 14,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.reverse_accounting_required"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.reverse_accounting_required"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.reverse_accounting_required"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "reverse_accounting_required",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 15,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.set_valued_state_reasoning_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.set_valued_state_reasoning_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.set_valued_state_reasoning_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "set_valued_state_reasoning_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 16,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.synthetic_protocol_events_invented_false_policy_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.synthetic_protocol_events_invented_false_policy_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.synthetic_protocol_events_invented_false_policy_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "synthetic_protocol_events_invented_false_policy_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    },
+    {
+      "author_inference_used_for_binding": false,
+      "binding_rationale": "Exact canonical V4 losslessness-object key and value are present in the primary mapping-contract source and value-equal corroborating immutable snapshots.",
+      "canonical_order_position": 17,
+      "canonical_value": true,
+      "canonical_value_sha256": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "classification": "BOUND_EXACT",
+      "coincidental_17_item_array_promoted": false,
+      "corroborating_bindings": [
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/04_schema_v2_successor_design_record.v1.json",
+          "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+          "source_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "structural_location": "$.approved_v4_basis.losslessness_contract_snapshot.unknown_first_class_preserved"
+        },
+        {
+          "repo_relative_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_residual_losslessness_insufficiency_review_package_v2/03_residual_insufficiency_proof_v1.EXACT_COPY.json",
+          "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+          "source_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "structural_location": "$.historical_losslessness_contract.unknown_first_class_preserved"
+        }
+      ],
+      "memory_reconstruction_used": false,
+      "numeric_count_used_as_identity_proof": false,
+      "primary_binding": {
+        "repo_relative_path": "config/annotation/curl_canonical_representation_mapping_contract.v4.json",
+        "source_git_blob": "231ec484927a58e9515bb54789ede6b6abb95ac0",
+        "source_sha256": "9a44120de8947369864b75fb04680b504b91ccfa478eeaeaea20162a6d97e070",
+        "structural_location": "$.formal_insufficiency_argument.required_losslessness_contract.unknown_first_class_preserved"
+      },
+      "prior_placeholder_index_semantic_equivalence_claimed": false,
+      "requirement_content_invented": false,
+      "requirement_id": "unknown_first_class_preserved",
+      "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEY"
+    }
+  ],
+  "requirement_count": 17,
+  "requirement_identity_basis": "CANONICAL_V4_LOSSLESSNESS_OBJECT_KEYS",
+  "semantic_unit_carrier_pair_reclassification_performed": false,
+  "status": "AUTHOR_CANDIDATE"
+}

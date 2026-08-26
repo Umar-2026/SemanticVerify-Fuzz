@@ -1,0 +1,98 @@
+{
+  "analyzer_execution_authorized": false,
+  "analyzer_implementation_authorized": false,
+  "artifact": "positive_requirement_to_semantic_unit_binding_evidence_acquisition_package_v1",
+  "authoring_decision": "Decision-0177",
+  "baseline_execution_authorized": false,
+  "blank_state": {
+    "evidence_states_populated": false,
+    "human_evidence_acquisition_performed": false,
+    "positive_rationales_populated": false,
+    "reviewer_attestation_populated": false,
+    "reviewer_identity_populated": false,
+    "reviewer_notes_populated": false,
+    "semantic_unit_proposals_populated": false
+  },
+  "curl_json_authorized": false,
+  "decision0176_a02": {
+    "consumption_record_sha256": "00d67ecefd011f618954a0a8cb287701a27bef9ce164bc9ef2fdc67c218f452f",
+    "execution_count_in_decision0177_transaction": 1,
+    "final_output_sha256": "37c89baff20dfe0e6c0f5ca7cc1e00a1dbe6d6266c8819d43a221bc80db27c04",
+    "rerun_authorized": false,
+    "sha256": "886fad115ff36edb5ba77127ddf24027b0265f3d33a0c34572c3a476c9009a79",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "evidence_promotion_boundary": {
+    "completed_external_packet_is_candidate_evidence_only": true,
+    "human_completion_reclassifies_pair": false,
+    "separate_governance_authorization_before_pair_reclassification": true,
+    "separate_recording_required": true,
+    "separate_technical_adjudication_or_review_required": true
+  },
+  "expected_checksum_entry_count": 13,
+  "expected_package_file_count": 14,
+  "external_editable_copy_created": false,
+  "external_human_evidence_acquisition_authorized": false,
+  "governance_binding": {
+    "bounded_technical_outcome": "FURTHER_EVIDENCE_REQUIRED",
+    "governance_adoption_sha256": "b3da01b981419e4742ecabee7c1dfe95b48601a365317b7241151cce278bfad6",
+    "study_governance_adopted": true
+  },
+  "human_evidence_result_recorded": false,
+  "negative_binding_classification_authorized": false,
+  "next_boundary": "SEPARATELY_AUTHORIZE_EXTERNAL_HUMAN_POSITIVE_BINDING_EVIDENCE_ACQUISITION_HANDOFF_V1",
+  "not_supported_binding_authorized": false,
+  "operational_mapping_authorized": false,
+  "package_content": {
+    "blank_evidence_packet_sha256": "3c1c842931ba6d9103f094a423833c4645eb6739ca340d62c717b0e68c46c4cf",
+    "decision0176_a02_consumption_record_sha256": "00d67ecefd011f618954a0a8cb287701a27bef9ce164bc9ef2fdc67c218f452f",
+    "decision0176_a02_final_output_sha256": "37c89baff20dfe0e6c0f5ca7cc1e00a1dbe6d6266c8819d43a221bc80db27c04",
+    "decision0176_authorization_exact_copy_sha256": "ff3073c3a79bbf9ddfa56dbae3bfddde5de6b150e537aed88af954c45d65cf7f",
+    "decision0176_exact_copy_sha256": "fb9abcdbaaaf23615234555b263ff051fd3578b8132f543dae6326b41ab7d2ca",
+    "governance_adoption_exact_copy_sha256": "b3da01b981419e4742ecabee7c1dfe95b48601a365317b7241151cce278bfad6",
+    "neutral_semantic_unit_index_sha256": "9b90bbbe7200c03ee63cfd482ab9dec88adb80875271e57b4076955cbea77b9c",
+    "requirement_provenance_exact_copy_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "reviewer_instructions_sha256": "de740bdc784d13300d57a221e7742c0cdb97d6f0a5498e2fc7506d66bb9af4a3",
+    "semantic_unit_inventory_exact_copy_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "semantic_unit_traceability_exact_copy_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "pair_reclassification_authorized": false,
+  "repair_execution_authorized": false,
+  "repair_implementation_authorized": false,
+  "review_contract": {
+    "allowed_evidence_states": [
+      "POSITIVE_BINDING_PROPOSED",
+      "UNRESOLVED_NO_POSITIVE_BINDING_PROPOSED"
+    ],
+    "author_candidate_preselection_present": false,
+    "lexical_ranking_present": false,
+    "mapping_impossibility_judgment_allowed": false,
+    "model_candidate_preselection_present": false,
+    "negative_binding_judgment_allowed": false,
+    "not_supported_binding_allowed": false,
+    "positive_proposal_requires_exact_unit_ids": true,
+    "positive_proposal_requires_rationale": true,
+    "required_reviewer_role": "Spec-Technical-Reviewer-1"
+  },
+  "schema_successor_authoring_authorized": false,
+  "schema_v2_modification_authorized": false,
+  "source_decision0176": {
+    "authorization_checksum_sha256": "8f08b40dff99675ee44740ae82bfba3a5e0a7d3e29ea4b8a14fcdf814db781a4",
+    "authorization_git_tree": "6277aeb5209d99583c98b115b8c0181c03bdbda9",
+    "authorization_sha256": "ff3073c3a79bbf9ddfa56dbae3bfddde5de6b150e537aed88af954c45d65cf7f",
+    "authorization_verifier_sha256": "886fad115ff36edb5ba77127ddf24027b0265f3d33a0c34572c3a476c9009a79",
+    "commit": "22d31dcb587920d1ed75b18715271b63ddfb6320",
+    "tree": "1fe9d09495fc828e536aaf85c129ae556c91e239"
+  },
+  "source_domain_bindings": {
+    "current_pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+    "current_unresolved_binding_count": 1853,
+    "pair_universe_count": 1853,
+    "requirement_count": 17,
+    "requirement_provenance_sha256": "a03a1c0d5e43a83d74534ed772503f46b3118cec9351f4324ac03ebeb51ae4ac",
+    "semantic_unit_count": 109,
+    "semantic_unit_inventory_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d",
+    "semantic_unit_traceability_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "status": "AUTHOR_CANDIDATE_BLANK_AWAITING_EXTERNAL_HUMAN_EVIDENCE_ACQUISITION"
+}
