@@ -1,0 +1,70 @@
+{
+  "artifact": "bounded_technical_adjudication_external_handoff_authorization_v1",
+  "decision": "Decision0185",
+  "authorization_status": "AUTHORIZED_FOR_SEPARATE_NEXT_TRANSACTION",
+  "authorization_scope": "AUTHOR_EXTERNAL_HUMAN_TECHNICAL_ADJUDICATION_HANDOFF_FOR_EXISTING_NEUTRAL_211_PAIR_PACKAGE_V1",
+  "bound_internal_package": {
+    "package_tree": "ccf5fc04a9d80607767f79ed8c298a663378cb08",
+    "package_manifest_sha256": "c5e86f8354fc296adafcb4b33fef3f1979e37bd670c545dd8f64b20c58fd354b",
+    "candidate_pair_inventory_sha256": "8f77fe6454fef755317f3d590c80326f79d504308b2638416013ca2ba77ba8b9",
+    "blank_adjudication_packet_sha256": "c135cd488c94be4aa94017c0684aa7a22993d9de923ff1ee3b5f389f40a7e6e0",
+    "adjudicator_instructions_sha256": "e3df28a1d65067a050fcc996f8df0aa45121a1b2430f470f807b8d226f003018",
+    "safe_package_verifier_sha256": "3f8fff762cd971fb1c5b687b8b3e8b392e799d57879ac34825b46d23e8f15971",
+    "checksum_sha256": "37ff75211e7fb4881d00189b2cf8f9ba5ad404abc36b7c44f7cc5f632df39737",
+    "bounded_pair_count": 211
+  },
+  "authorized_decision0186_handoff": {
+    "consume_decision0185_a02_exactly_once": true,
+    "author_internal_external_handoff_record": true,
+    "create_immutable_external_zip": true,
+    "create_one_external_editable_blank_adjudication_packet": true,
+    "editable_packet_must_begin_byte_identical_to_internal_blank_packet": true,
+    "include_adjudicator_instructions": true,
+    "include_governed_source_evidence_needed_for_independent_review": true,
+    "include_checksum_closure": true,
+    "include_safe_rerunnable_handoff_verifier": true
+  },
+  "external_editable_surface_contract": {
+    "number_of_authorized_editable_human_surfaces": 1,
+    "source_internal_blank_packet_sha256": "c135cd488c94be4aa94017c0684aa7a22993d9de923ff1ee3b5f389f40a7e6e0",
+    "technical_adjudicator_role_contract": "Spec-Technical-Adjudicator-1",
+    "author_or_model_may_prefill_identity": false,
+    "author_or_model_may_prefill_adjudication_state": false,
+    "author_or_model_may_prefill_adjudication_rationale": false,
+    "author_or_model_may_prefill_adjudicator_notes": false,
+    "author_or_model_may_add_remove_rank_or_recommend_pairs": false
+  },
+  "allowed_human_adjudication_states": [
+    "TECHNICAL_SUPPORT_CONFIRMED_PROMOTION_CANDIDATE",
+    "TECHNICAL_SUPPORT_NOT_ESTABLISHED",
+    "TECHNICAL_ADJUDICATION_UNRESOLVED"
+  ],
+  "bounded_semantics": {
+    "human_adjudication_result_is_candidate_technical_evidence_only": true,
+    "confirmed_promotion_candidate_is_supported_binding": false,
+    "support_not_established_is_not_supported_binding": false,
+    "support_not_established_is_negative_proof": false,
+    "external_handoff_itself_performs_adjudication": false,
+    "external_handoff_itself_reclassifies_pairs": false
+  },
+  "explicitly_not_authorized": {
+    "perform_human_technical_adjudication_in_decision0185": true,
+    "perform_human_technical_adjudication_in_decision0186": true,
+    "record_completed_human_adjudication_result_in_decision0185": true,
+    "record_completed_human_adjudication_result_in_decision0186": true,
+    "pair_reclassification": true,
+    "supported_binding": true,
+    "not_supported_binding": true,
+    "automatic_promotion": true,
+    "negative_classification_from_absence_or_lack_of_support": true,
+    "operational_mapping": true,
+    "schema_v2_modification": true,
+    "schema_successor": true,
+    "curl_json": true,
+    "analyzer_implementation": true,
+    "analyzer_execution": true,
+    "baseline_execution": true,
+    "repair_implementation": true,
+    "repair_execution": true
+  }
+}

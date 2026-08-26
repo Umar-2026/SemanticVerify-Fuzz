@@ -1,0 +1,11 @@
+{
+  "artifact": "decision0185_a02_one_time_verifier_lifecycle_v1",
+  "decision": "Decision0185",
+  "verifier": "02_verify_external_handoff_authorization_once.v1.py",
+  "state": "ACTIVE_UNCONSUMED",
+  "execution_count": 0,
+  "authorized_execution_transaction": "Decision0186",
+  "retire_after_first_execution": true,
+  "rerun_authorized": false,
+  "purpose": "Verify the Decision0185 external-human technical-adjudication handoff authorization, immutable Decision0184 package binding, 211-pair blank adjudication surface, and non-promotion boundaries before authoring the external handoff. It does not perform technical adjudication or reclassify any governed pair."
+}
