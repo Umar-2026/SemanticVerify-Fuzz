@@ -1,0 +1,65 @@
+{
+  "analyzer_authorized": false,
+  "artifact": "cwxr07_s2_completed_human_review_recording_authorization_v1",
+  "authorization_decision": "Decision-0170",
+  "baseline_authorized": false,
+  "completed_review_record_authored": false,
+  "criterion": {
+    "excluded_independent_proof_claims": [
+      "Decision-0147 to Decision-0148 Git parentage",
+      "Decision-0148 Study V1 tree identity",
+      "tracked Decision-0147 A02 path-history correctness",
+      "repository contradiction-search correctness or completeness",
+      "actual external-process exactly-once execution",
+      "global no-rerun fact"
+    ],
+    "positive_scope": [
+      "supplied-file byte integrity",
+      "checksum-closure integrity",
+      "preserved Decision-0147 A02 script/output/consumption binding internal consistency",
+      "internal consistency of supplied preserved repository-record assertions",
+      "bounded-claim-language consistency"
+    ],
+    "successor": "CWXR07-S2"
+  },
+  "governance_adoption_authorized": false,
+  "historical_cwxr07_s1_decision": "REVISION_REQUIRED",
+  "historical_cwxr07_s1_modified": false,
+  "historical_cwxr07_s1_upgraded": false,
+  "original_external_blank_copy": {
+    "modified": false,
+    "path": "/openbayes/home/50_CWXR07_S2_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "sha256": "ad5333e4687a285f7fb87ce1ab427e25b4d00c8fa513b1f9ee1ae116c0fad5a2",
+    "size": 1555
+  },
+  "recording_verifier_execution_authorized": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_RECORDING_GENUINE_CWXR07_S2_PASS_HUMAN_REVIEW",
+  "recording_verifier_sha256": "2ca68fcecc6627f3048cb4a277e36181e2c6c5efc4655e3abe2e59dea132b03f",
+  "recording_verifier_size": 6780,
+  "recording_verifier_state": "ACTIVE_UNCONSUMED",
+  "repair_authorized": false,
+  "returned_review": {
+    "decision": "PASS",
+    "decision_synthesized": false,
+    "identity_synthesized": false,
+    "path": "/openbayes/home/50_CWXR07_S2_Manually_reviewer_packet.MANUAL_REVIEW_COPY.v1.md",
+    "review_date": "25 / August / 2026",
+    "reviewer_confirmation": "ARS",
+    "reviewer_name": "Abdul Raheem Shahzad",
+    "reviewer_role": "Spec-Technical-Reviewer-1",
+    "sha256": "ad86241de11df01b65dd309097757e2f90c09f4ad08754dea680227fefde4da5",
+    "size": 2803,
+    "structurally_complete": true
+  },
+  "review_scope": "CWXR07-S2_ONLY",
+  "source_decision0169": {
+    "commit": "71e0469d4e971c283874d06fb48d3ec8fed1c164",
+    "tree": "665293e7ffd6bef218bc3ad9d9ee784e64619604"
+  },
+  "source_external_handoff": {
+    "checksum_sha256": "17663bdc850ce13defe7c5fbecab5cbf811851dd7f2c6a091ee3691f18da3699",
+    "git_tree": "122f65c1130d2e9b0f5e4cba67cea5f18a98369c",
+    "immutable": true
+  },
+  "status": "AUTHORIZED_NOT_RECORDED",
+  "successor_pass_recorded": false
+}
