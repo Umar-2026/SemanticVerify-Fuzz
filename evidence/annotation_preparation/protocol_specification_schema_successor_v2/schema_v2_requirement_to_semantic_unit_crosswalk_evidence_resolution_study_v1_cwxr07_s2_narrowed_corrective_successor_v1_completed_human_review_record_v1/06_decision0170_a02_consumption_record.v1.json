@@ -1,0 +1,24 @@
+{
+  "a02_final_output_sha256": "e808f3348602dd8411bea84368d36f7e9d6767989f7e42d84a6170b13e1d2e1c",
+  "a02_final_output_size": 622,
+  "a02_sha256": "2ca68fcecc6627f3048cb4a277e36181e2c6c5efc4655e3abe2e59dea132b03f",
+  "artifact": "decision0170_a02_consumption_record_v1",
+  "authorization_decision": "Decision-0170",
+  "decision0170_commit": "bd13598374772a41b4a787bc34d045da96863bf5",
+  "executed_immediately_before_completed_review_record_authoring": true,
+  "execution_claim_scope": "Decision-0171 transaction-local lifecycle record only; no global no-rerun fact is independently certified.",
+  "execution_count_in_decision0171_transaction": 1,
+  "global_no_rerun_fact_independently_certified": false,
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "other_a02_executed_in_this_transaction": false,
+  "pass_marker_present": true,
+  "recording_transaction": "Decision-0171",
+  "rerun_authorized": false,
+  "return_code": 0,
+  "returned_review_sha256": "ad86241de11df01b65dd309097757e2f90c09f4ad08754dea680227fefde4da5",
+  "single_execution_reservation": {
+    "path": "/openbayes/home/.semanticverify-fuzz-decision0170-a02-single-execution-reservation.v1.json",
+    "sha256": "9a2b84139dceb50d8c852838e3c886828ec4c7b43ab294c49c064afee954d2c6",
+    "size": 675
+  }
+}

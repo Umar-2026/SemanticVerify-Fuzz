@@ -1,0 +1,89 @@
+{
+  "analyzer_authorized": false,
+  "artifact": "cwxr07_s2_completed_human_review_record_v1",
+  "authorization_decision": "Decision-0170",
+  "baseline_authorized": false,
+  "completed_record_expected_checksum_entry_count": 7,
+  "completed_record_expected_file_count": 8,
+  "cwxr07_s2_bounded_criterion": {
+    "excluded_independent_proof_claims": [
+      "Decision-0147 to Decision-0148 Git parentage",
+      "Decision-0148 Study V1 tree identity",
+      "tracked Decision-0147 A02 path-history correctness",
+      "repository contradiction-search correctness or completeness",
+      "externally observed actual-process exactly-once execution",
+      "global no-rerun fact"
+    ],
+    "positive_scope": [
+      "supplied-file byte integrity",
+      "checksum-closure integrity",
+      "internal consistency of preserved Decision-0147 A02 script/output/consumption-record bindings",
+      "internal consistency among supplied preserved repository-record assertions",
+      "bounded-claim-language consistency"
+    ]
+  },
+  "cwxr07_s2_bounded_pass_recorded": true,
+  "decision0170_a02_lifecycle": {
+    "execution_count_in_decision0171_transaction": 1,
+    "global_no_rerun_fact_independently_certified": false,
+    "rerun_authorized": false,
+    "result": "PASS",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "decision0170_checkpoint": {
+    "authorization_a01_sha256": "ba4608c8db3d15c37863cacb05037d110207317b3bf758e3495de2341839e5c6",
+    "authorization_a02_sha256": "2ca68fcecc6627f3048cb4a277e36181e2c6c5efc4655e3abe2e59dea132b03f",
+    "authorization_a03_sha256": "fb37e68ece9b0bd921a8a2927230851178baee25b96fdcd7a002c33413d6353b",
+    "authorization_git_tree": "6ff538c4ba8c3526ca61e3ffc89c2f0dccca166b",
+    "commit": "bd13598374772a41b4a787bc34d045da96863bf5",
+    "parent_decision0169_commit": "71e0469d4e971c283874d06fb48d3ec8fed1c164",
+    "tree": "f38c3bee1984d044652bf9fe2b37ea4b5ec1bedd"
+  },
+  "governance_adoption_authorized": false,
+  "historical_cwxr07_s1_decision": "REVISION_REQUIRED",
+  "historical_cwxr07_s1_modified": false,
+  "historical_cwxr07_s1_upgraded": false,
+  "next_boundary": "SEPARATELY_ASSESS_AND_AUTHORIZE_CWXR07_S2_GOVERNANCE_ADOPTION",
+  "recording_decision": "Decision-0171",
+  "repair_authorized": false,
+  "returned_review": {
+    "decision_synthesized": false,
+    "identity_synthesized": false,
+    "repository_exact_copy": "02_returned_human_review.EXACT_COPY.v1.md",
+    "repository_exact_copy_sha256": "ad86241de11df01b65dd309097757e2f90c09f4ad08754dea680227fefde4da5",
+    "result_rewritten": false,
+    "sha256": "ad86241de11df01b65dd309097757e2f90c09f4ad08754dea680227fefde4da5",
+    "size": 2803
+  },
+  "review_decision": "PASS",
+  "review_scope": "CWXR07-S2_ONLY",
+  "reviewer": {
+    "attestation_present": true,
+    "confirmation": "ARS",
+    "name": "Abdul Raheem Shahzad",
+    "review_date": "25 / August / 2026",
+    "role": "Spec-Technical-Reviewer-1"
+  },
+  "source_exact_copies": {
+    "decision0169": {
+      "file": "03_decision0169.EXACT_COPY.v1.md",
+      "sha256": "7e8bf5908cfebf7b2f0ca37e8ae8e879277715686668b9013a00e44d5568ce64"
+    },
+    "decision0170_a02_consumption_record": {
+      "file": "06_decision0170_a02_consumption_record.v1.json",
+      "sha256": "c677c4dda4adc5465d6905842d9621cf7d3f62a0891d124e8de2c28fd26e7715"
+    },
+    "decision0170_a02_final_output": {
+      "file": "05_decision0170_a02_final_output.EXACT_COPY.v1.txt",
+      "sha256": "e808f3348602dd8411bea84368d36f7e9d6767989f7e42d84a6170b13e1d2e1c",
+      "source_output_sha256": "e808f3348602dd8411bea84368d36f7e9d6767989f7e42d84a6170b13e1d2e1c",
+      "source_output_size": 622
+    },
+    "external_handoff_manifest": {
+      "file": "04_external_handoff_manifest.EXACT_COPY.v1.json",
+      "sha256": "1f533706e27c6b2ff4fbe7b410e089298422a80f5cc40a484313a067d5298c4a"
+    }
+  },
+  "status": "GENUINE_EXTERNAL_HUMAN_REVIEW_RECORDED",
+  "study_governance_adopted": false
+}
