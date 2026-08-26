@@ -1,0 +1,52 @@
+{
+  "adoption_scope": "CLOSED_CWXR_REVIEW_CHAIN_AND_BOUNDED_STUDY_V1_OUTCOME_ONLY",
+  "analyzer_authorized": false,
+  "artifact": "cwxr_closed_review_chain_governance_adoption_authorization_v1",
+  "authorization_decision": "Decision-0174",
+  "baseline_authorized": false,
+  "bounded_study_v1_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "curl_json_authorized": false,
+  "excluded_stronger_facts_independently_certified": false,
+  "governance_adoption_authored": false,
+  "governance_adoption_authorized": true,
+  "historical_cwxr07_s1_modified": false,
+  "historical_cwxr07_s1_upgraded": false,
+  "historical_original_review_modified": false,
+  "historical_pair_reclassification_authorized": false,
+  "operational_mapping_authorized": false,
+  "pair_reclassification_authorized": false,
+  "pre_governance_adoption_verifier_execution_authorized": "EXACTLY_ONCE_IMMEDIATELY_BEFORE_BOUNDED_CWXR_GOVERNANCE_ADOPTION_V1_AUTHORING",
+  "pre_governance_adoption_verifier_sha256": "422bc688ce1cb1caf16d59306e4aba4e60447f1e02dc39d0906c198c0d803765",
+  "pre_governance_adoption_verifier_size": 7687,
+  "pre_governance_adoption_verifier_state": "ACTIVE_UNCONSUMED",
+  "repair_authorized": false,
+  "schema_successor_authoring_authorized": false,
+  "schema_v2_modification_authorized": false,
+  "source_decision0173": {
+    "commit": "dc803658410240de51c6ccf2d21d8ff219030927",
+    "tree": "5db965dc9882817499eb7b9d57ffe566d3067c33"
+  },
+  "source_review_chain": {
+    "closure_assessment_sha256": "4219eb8fc59589f3aa479f155ff4349885aa4d97af4ab919b51c842c2d2b4d20",
+    "closure_checksum_sha256": "ab6177a63128b8daf2a07f8e7e0114ab24a24974e9d10443fde10f12f4706ade",
+    "closure_git_tree": "cc65c5e2e99d7f8a361a1114f2045bdea6689ca0",
+    "closure_outcome": "PASS_CLOSED_WITH_BOUNDED_CWXR07_S2_SUCCESSOR",
+    "closure_safe_verifier_sha256": "0d09e4fc2087bb1f0ab42ed93979d00d45dabe4031b5febef496ca944114c933",
+    "cwxr07_s2_decision": "PASS",
+    "historical_cwxr07_s1_decision": "REVISION_REQUIRED",
+    "historical_decisions_rewritten": false,
+    "original_cwxr07_decision": "REVISION_REQUIRED",
+    "original_overall_review": "REVISION_REQUIRED",
+    "review_chain_closed": true
+  },
+  "source_study_v1": {
+    "artifact_status": "AUTHOR_CANDIDATE",
+    "git_tree": "6f12e8a4c2fa520fd36cced03241ea5b4666969e",
+    "manifest_sha256": "d8ce65985f33ced593f379f11eefa9b681fde6a10693c0bbc1a6a9fa347bb3e7",
+    "manifest_size": 3849,
+    "repeat_safe_verifier_sha256": "f3df50284eefc06c5db625607a3399451acbe0c8f1f5069496f1d4ac02f3d9d2",
+    "repeat_safe_verifier_size": 6507
+  },
+  "status": "AUTHORIZED_NOT_ADOPTED",
+  "study_governance_adopted": false
+}
