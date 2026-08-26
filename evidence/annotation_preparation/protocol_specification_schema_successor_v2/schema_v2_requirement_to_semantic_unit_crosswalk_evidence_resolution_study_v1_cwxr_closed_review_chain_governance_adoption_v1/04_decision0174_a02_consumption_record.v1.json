@@ -1,0 +1,22 @@
+{
+  "a02_final_output_sha256": "a2a1499280bb1c37ef41d6b977e7f059e22339ed41e541ef6f2da200548f9858",
+  "a02_final_output_size": 753,
+  "a02_sha256": "422bc688ce1cb1caf16d59306e4aba4e60447f1e02dc39d0906c198c0d803765",
+  "artifact": "decision0174_a02_consumption_record_v1",
+  "authorization_decision": "Decision-0174",
+  "decision0174_commit": "99e7f96b9bda0259378e6f228f3d3fa6bf814fac",
+  "executed_immediately_before_governance_adoption_authoring": true,
+  "execution_count_in_decision0175_transaction": 1,
+  "global_no_rerun_fact_independently_certified": false,
+  "governance_adoption_transaction": "Decision-0175",
+  "lifecycle_after_execution": "PERMANENTLY_RETIRED",
+  "other_a02_executed_in_this_transaction": false,
+  "pass_marker_present": true,
+  "rerun_authorized": false,
+  "return_code": 0,
+  "single_execution_reservation": {
+    "path": "/openbayes/home/.semanticverify-fuzz-decision0174-a02-single-execution-reservation.v1.json",
+    "sha256": "87815b295a92e38aa0efafbb1b0c121beffaa1f17b8b6bbdd7fe7d310e657f41",
+    "size": 460
+  }
+}
