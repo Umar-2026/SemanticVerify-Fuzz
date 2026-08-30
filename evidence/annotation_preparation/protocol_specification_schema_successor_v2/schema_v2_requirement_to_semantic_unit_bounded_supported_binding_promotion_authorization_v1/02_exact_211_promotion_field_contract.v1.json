@@ -1,0 +1,62 @@
+{
+  "contract_id": "SVF-EXACT-211-SUPPORTED-BINDING-PROMOTION-FIELD-CONTRACT-V1",
+  "contract_schema_version": 1,
+  "successor_artifact_kind": "BOUNDED_REQUIREMENT_TO_SEMANTIC_UNIT_CLASSIFICATION_SUCCESSOR",
+  "base_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+  "human_evidence_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+  "exact_candidate_count": 211,
+  "noncandidate_count": 1642,
+  "candidate_pair_transformation": {
+    "classification": {
+      "from": "UNRESOLVED_BINDING",
+      "to": "SUPPORTED_BINDING"
+    },
+    "classification_basis": "The exact requirement-to-semantic-unit pair has recorded POSITIVE_BINDING_PROPOSED human evidence and recorded TECHNICAL_SUPPORT_CONFIRMED_PROMOTION_CANDIDATE independent technical adjudication; Decision0190 authorizes bounded promotion of this exact pair to SUPPORTED_BINDING as a requirement-to-semantic-unit scope binding only.",
+    "evidence_gap": "The requirement-specific positive scope-binding evidence gap is resolved for this exact pair by the recorded human positive-binding evidence and independent technical adjudication. Downstream preservation, Schema-V2 losslessness, operational mapping, schema mapping, implementation, and execution authority remain outside this classification.",
+    "positive_binding_claimed": true,
+    "human_semantic_judgment_used": true,
+    "operational_mapping_authority": false,
+    "schema_mapping_inferred": false,
+    "negative_binding_exclusion_claimed": false,
+    "carrier_admissibility_inferred": false,
+    "field_class_relation_promoted": false,
+    "historical_18639_pair_reclassified": false,
+    "historical_carrier_pair_state_promoted": false,
+    "lexical_similarity_promoted": false,
+    "open_string_capacity_promoted": false
+  },
+  "candidate_fields_preserved_exactly": [
+    "requirement_id",
+    "requirement_ordinal",
+    "semantic_unit_id",
+    "semantic_unit_ordinal",
+    "requirement_evidence",
+    "semantic_unit_evidence"
+  ],
+  "noncandidate_rule": {
+    "pair_count": 1642,
+    "all_existing_pair_fields_preserved_exactly": true,
+    "classification_remains": "UNRESOLVED_BINDING"
+  },
+  "successor_policy": {
+    "absence_of_positive_evidence_promotes_to_not_supported": false,
+    "field_class_relation_may_auto_promote": false,
+    "historical_carrier_pair_state_may_auto_promote": false,
+    "human_semantic_judgment_used_for_exact_211_promotions": true,
+    "lexical_similarity_may_auto_promote": false,
+    "open_string_capacity_may_auto_promote": false
+  },
+  "explicitly_not_authorized": {
+    "not_supported_binding_creation": true,
+    "noncandidate_reclassification": true,
+    "operational_mapping_creation": true,
+    "schema_mapping_inference": true,
+    "schema_change": true,
+    "schema_successor": true,
+    "curl_json": true,
+    "analyzer_implementation": true,
+    "analyzer_execution": true,
+    "baseline_execution": true,
+    "repair": true
+  }
+}
