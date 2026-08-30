@@ -1,0 +1,56 @@
+{
+  "authorization_id": "SVF-D0194-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-INDEPENDENT-HUMAN-REVIEW-PACKAGE-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0194",
+  "status": "AUTHORIZED_TO_AUTHOR_INDEPENDENT_HUMAN_REVIEW_PACKAGE_ONLY",
+  "predecessor_decision": "0193",
+  "predecessor_commit": "bfa56e86ae24bf330a33b89cd70cb00fc5d9df4e",
+  "predecessor_tree": "593f7d7938cf89acaaa98ab462603e7cbaa811ca",
+  "study_binding": {
+    "study_sha256": "22c51d0d77f3faa086cb426788d057da15c5002a29b4ba68cd3177935aa80381",
+    "evidence_anchor_matrix_sha256": "a153d0979f4bda119928fb29fd8043088115793f164e268c6d0def6fe1203601",
+    "study_status": "AUTHOR_CANDIDATE",
+    "target_requirement_count": 2,
+    "target_pair_count": 218
+  },
+  "review_package_authorization": {
+    "author_blank_review_package": true,
+    "include_exact_study_copy": true,
+    "include_exact_evidence_anchor_matrix_copy": true,
+    "include_review_instructions": true,
+    "include_blank_human_review_form": true,
+    "include_package_checksums": true,
+    "prefill_reviewer_identity": false,
+    "prefill_reviewer_role": false,
+    "prefill_reviewer_decision": false,
+    "prefill_reviewer_notes": false,
+    "prefill_reviewer_signature_or_confirmation": false,
+    "prefill_review_date": false,
+    "prefill_attestation": false,
+    "perform_human_review": false,
+    "record_human_review": false,
+    "adopt_review_result": false
+  },
+  "technical_non_authorizations": {
+    "role_governance_adoption": false,
+    "accounting_satisfaction_establishment": false,
+    "pair_reclassification": false,
+    "supported_binding_creation": false,
+    "not_supported_binding_creation": false,
+    "operational_mapping": false,
+    "schema_v2_modification": false,
+    "schema_successor": false,
+    "curl_json": false,
+    "analyzer_implementation": false,
+    "analyzer_execution": false,
+    "baseline_execution": false,
+    "repair": false
+  },
+  "one_time_package_authorization_verifier": {
+    "execution_authorized_in_decision0194": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_REVIEW_PACKAGE_AUTHORING_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}

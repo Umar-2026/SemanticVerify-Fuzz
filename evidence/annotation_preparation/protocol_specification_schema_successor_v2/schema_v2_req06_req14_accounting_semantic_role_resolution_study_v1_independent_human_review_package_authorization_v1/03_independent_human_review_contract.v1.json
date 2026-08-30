@@ -1,0 +1,87 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-INDEPENDENT-HUMAN-REVIEW-CONTRACT",
+  "contract_schema_version": 1,
+  "review_subject": {
+    "study_status": "AUTHOR_CANDIDATE",
+    "target_requirements": [
+      "forward_accounting_required",
+      "reverse_accounting_required"
+    ],
+    "author_candidate_role_for_req06": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "author_candidate_role_for_req14": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "accounting_satisfaction_state_for_both": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+  },
+  "required_review_items": [
+    {
+      "review_item_id": "ASRR01",
+      "question": "Are the immutable study and evidence-anchor identities and scope correctly bound?",
+      "allowed_decisions": [
+        "PASS",
+        "REVISION_REQUIRED"
+      ]
+    },
+    {
+      "review_item_id": "ASRR02",
+      "question": "Does the bound evidence support the author-candidate Req06 role classification without relying on requirement-name or lexical similarity alone?",
+      "allowed_decisions": [
+        "PASS",
+        "REVISION_REQUIRED"
+      ]
+    },
+    {
+      "review_item_id": "ASRR03",
+      "question": "Does the bound evidence support the author-candidate Req14 role classification without relying on requirement-name or lexical similarity alone?",
+      "allowed_decisions": [
+        "PASS",
+        "REVISION_REQUIRED"
+      ]
+    },
+    {
+      "review_item_id": "ASRR04",
+      "question": "Is the distinction between semantic-role resolution and requirement-to-semantic-unit pair promotion correctly preserved?",
+      "allowed_decisions": [
+        "PASS",
+        "REVISION_REQUIRED"
+      ]
+    },
+    {
+      "review_item_id": "ASRR05",
+      "question": "Is the conclusion that accounting satisfaction still requires separate evidence technically justified and sufficiently bounded?",
+      "allowed_decisions": [
+        "PASS",
+        "REVISION_REQUIRED"
+      ]
+    },
+    {
+      "review_item_id": "ASRR06",
+      "question": "Are the operational-mapping, Schema-V2-losslessness, analyzer, baseline, and repair nonclaims correctly preserved?",
+      "allowed_decisions": [
+        "PASS",
+        "REVISION_REQUIRED"
+      ]
+    }
+  ],
+  "allowed_overall_review_decisions": [
+    "APPROVE_BOUNDED_ROLE_STUDY",
+    "REVISION_REQUIRED"
+  ],
+  "reviewer_independence_requirement": {
+    "independent_human_review_required": true,
+    "reviewer_must_not_be_the_author_of_the_author_candidate_study": true,
+    "reviewer_identity_must_be_human_supplied": true,
+    "reviewer_role_must_be_human_supplied": true,
+    "reviewer_decision_must_be_human_supplied": true,
+    "reviewer_notes_must_be_human_supplied": true,
+    "reviewer_confirmation_must_be_human_supplied": true,
+    "review_date_must_be_human_supplied": true,
+    "review_attestation_must_be_human_supplied": true
+  },
+  "review_non_effects": {
+    "blank_package_creates_no_review_decision": true,
+    "review_package_authoring_is_not_review_completion": true,
+    "review_completion_is_not_governance_adoption": true,
+    "review_completion_does_not_reclassify_pairs": true,
+    "review_completion_does_not_establish_accounting_satisfaction": true,
+    "review_completion_does_not_authorize_operational_mapping": true
+  }
+}
