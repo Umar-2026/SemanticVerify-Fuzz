@@ -1,0 +1,18 @@
+{
+  "authorization_commit": "ea0d312c72d41f44677178540c27c8b1c2aeb5a4",
+  "authorizing_decision": "0190",
+  "consuming_transaction": "0191",
+  "consumption_sentinel_sha256": "9a333bb1448125871428d92d7d8a594808a4f8e40338e87b5f728ddd42f0136d",
+  "consumption_sentinel_size_bytes": 920,
+  "decision0187_a02_rerun": false,
+  "decision0188_crlf_safe_successor_rerun": false,
+  "execution_count": 1,
+  "execution_output_sha256": "c9528c5df489bcad79f39a596ff95d8af2f2e9115ec556de1482fbfb51ac3fd7",
+  "execution_output_size_bytes": 749,
+  "execution_result": "PASS",
+  "lifecycle_state": "PERMANENTLY_RETIRED",
+  "record_id": "SVF-D0190-P03-CONSUMPTION-RECORD-V1",
+  "record_schema_version": 1,
+  "rerun_authorized": false,
+  "verifier_sha256": "08796576e58def2345db40129e0b9e4e1a95006d7ebaff3c2de9d16712aa2c60"
+}

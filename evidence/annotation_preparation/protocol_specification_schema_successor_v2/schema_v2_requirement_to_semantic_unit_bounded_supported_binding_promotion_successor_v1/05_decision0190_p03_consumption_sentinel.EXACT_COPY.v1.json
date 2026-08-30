@@ -1,0 +1,13 @@
+{
+  "authorization_commit": "ea0d312c72d41f44677178540c27c8b1c2aeb5a4",
+  "authorization_tree": "0f7f99d6bdf29ec90a254558714fced987032d99",
+  "authorized_execution_count": 1,
+  "authorizing_decision": "0190",
+  "base_pair_matrix_sha256": "389615002582964b97aa6eb717ceb520067cef78b18cf482cf257fe9b36f2515",
+  "consumption_state": "CONSUMPTION_STARTED_VERIFIER_MUST_NEVER_BE_RERUN",
+  "record_id": "SVF-D0190-P03-ONE-TIME-CONSUMPTION-SENTINEL-V1",
+  "recorded_human_evidence_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+  "rerun_authorized": false,
+  "verifier_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_authorization_v1/03_authorize_exact_211_supported_binding_successor_once.v1.py",
+  "verifier_sha256": "08796576e58def2345db40129e0b9e4e1a95006d7ebaff3c2de9d16712aa2c60"
+}
