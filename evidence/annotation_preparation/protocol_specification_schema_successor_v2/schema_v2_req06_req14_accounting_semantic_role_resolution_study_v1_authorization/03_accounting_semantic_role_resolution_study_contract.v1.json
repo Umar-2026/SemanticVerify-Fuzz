@@ -1,0 +1,61 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-RESOLUTION-STUDY-V1-CONTRACT",
+  "contract_schema_version": 1,
+  "study_scope": {
+    "target_requirement_count": 2,
+    "target_requirements": [
+      "forward_accounting_required",
+      "reverse_accounting_required"
+    ],
+    "target_pair_count": 218,
+    "existing_pair_state": "UNRESOLVED_BINDING",
+    "pair_reclassification_in_study": false
+  },
+  "study_question": "Determine from explicitly bound repository evidence whether each target requirement is best represented as a cross-cutting accounting/completeness constraint, a unit-bindable substantive requirement, or remains semantically unresolved.",
+  "allowed_author_candidate_role_states": [
+    "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "UNIT_BINDABLE_SUBSTANTIVE_REQUIREMENT",
+    "ROLE_UNRESOLVED"
+  ],
+  "evidence_rules": {
+    "active_schema_structure_may_be_used": true,
+    "schema_v2_successor_design_record_may_be_used": true,
+    "residual_accounting_boundary_may_be_used": true,
+    "historical_governance_adoption_may_be_used_only_with_original_nonclaims_preserved": true,
+    "prior_human_unresolved_positive_binding_record_may_be_used": true,
+    "lexical_similarity_alone_may_determine_role": false,
+    "requirement_name_alone_may_determine_role": false,
+    "absence_of_pair_binding_may_prove_negative_binding": false,
+    "current_211_supported_pairs_may_be_reclassified": false,
+    "current_1642_unresolved_pairs_may_be_reclassified": false
+  },
+  "critical_distinction": {
+    "role_resolution_is_not_pair_promotion": true,
+    "role_resolution_is_not_accounting_satisfaction": true,
+    "schema_support_is_not_instance_level_accounting_completion": true,
+    "accounting_completion_is_not_lossless_semantic_encoding_proof": true
+  },
+  "required_study_outputs": {
+    "separate_role_result_for_req06": true,
+    "separate_role_result_for_req14": true,
+    "exact_evidence_anchors": true,
+    "bounded_rationale": true,
+    "explicit_accounting_satisfaction_state": true,
+    "explicit_pair_reclassification_state": true,
+    "explicit_operational_mapping_nonclaim": true,
+    "independent_human_review_required_before_governance_adoption": true
+  },
+  "allowed_accounting_satisfaction_states": [
+    "NOT_ASSESSED_BY_ROLE_STUDY",
+    "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+  ],
+  "prohibited_study_outcomes": {
+    "SUPPORTED_BINDING": true,
+    "NOT_SUPPORTED_BINDING": true,
+    "OPERATIONAL_MAPPING": true,
+    "SCHEMA_V2_LOSSLESSNESS_PROVEN": true,
+    "ANALYZER_AUTHORIZATION": true,
+    "BASELINE_AUTHORIZATION": true,
+    "REPAIR_AUTHORIZATION": true
+  }
+}

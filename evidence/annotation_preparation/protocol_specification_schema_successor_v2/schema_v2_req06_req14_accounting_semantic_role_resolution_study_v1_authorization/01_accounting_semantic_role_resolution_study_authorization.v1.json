@@ -1,0 +1,57 @@
+{
+  "authorization_id": "SVF-D0192-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-RESOLUTION-STUDY-V1-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0192",
+  "status": "AUTHORIZED_TO_AUTHOR_REQ06_REQ14_ACCOUNTING_SEMANTIC_ROLE_RESOLUTION_STUDY_V1_ONLY",
+  "predecessor_decision": "0191",
+  "predecessor_commit": "119df8756fdb483d969b5a1b6b8ab2c7bba2d165",
+  "predecessor_tree": "3d88fc5ee24a933fa5fa2b0e4d720f44a150c5a2",
+  "target_requirements": [
+    {
+      "requirement_id": "forward_accounting_required",
+      "requirement_ordinal": 6,
+      "current_supported_binding_count": 0,
+      "current_unresolved_binding_count": 109
+    },
+    {
+      "requirement_id": "reverse_accounting_required",
+      "requirement_ordinal": 14,
+      "current_supported_binding_count": 0,
+      "current_unresolved_binding_count": 109
+    }
+  ],
+  "bound_facts": {
+    "active_schema_v2_contains_forward_accounting_carrier": true,
+    "active_schema_v2_contains_reverse_accounting_carrier": true,
+    "active_schema_v2_requires_forward_complete_true": true,
+    "active_schema_v2_requires_reverse_complete_true": true,
+    "residual_evidence_states_forward_accounting_supported_by_schema": true,
+    "residual_evidence_states_reverse_accounting_supported_by_schema": true,
+    "accounting_alone_proves_semantic_encoding": false,
+    "historical_carrier_adoption_remains_further_evidence_required": true,
+    "full_operational_mapping_proven": false
+  },
+  "authorized_activity": {
+    "author_semantic_role_resolution_study_v1": true,
+    "classify_role_in_decision0192": false,
+    "perform_pair_reclassification": false,
+    "create_supported_binding": false,
+    "create_not_supported_binding": false,
+    "claim_accounting_satisfaction": false,
+    "create_operational_mapping": false,
+    "modify_schema_v2": false,
+    "authorize_schema_successor": false,
+    "authorize_curl_json": false,
+    "authorize_analyzer_implementation": false,
+    "authorize_analyzer_execution": false,
+    "authorize_baseline_execution": false,
+    "authorize_repair": false
+  },
+  "one_time_authorization_verifier": {
+    "execution_authorized_in_decision0192": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_STUDY_AUTHORING_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}
