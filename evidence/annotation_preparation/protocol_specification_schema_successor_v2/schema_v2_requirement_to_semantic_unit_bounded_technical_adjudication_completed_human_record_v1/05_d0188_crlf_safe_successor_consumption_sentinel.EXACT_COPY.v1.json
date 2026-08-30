@@ -1,0 +1,13 @@
+{
+  "authorization_commit": "27debc8caac8271355e6c1d4cc79bfc92c3edd00",
+  "authorization_tree": "ab5ea63e52e7b0fcf29481ce96a29d0e9af2a809",
+  "authorizing_decision": "0188",
+  "consumption_state": "CONSUMPTION_STARTED_SUCCESSOR_MUST_NEVER_BE_RERUN",
+  "execution_count_authorized": 1,
+  "record_id": "SVF-D0188-CRLF-SAFE-SUCCESSOR-ONE-TIME-CONSUMPTION-SENTINEL-V1",
+  "rerun_authorized": false,
+  "retired_d0187_a02_rerun_authorized": false,
+  "returned_packet_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+  "successor_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_recording_recovery_v1/04_authorize_crlf_safe_recording_successor_once.v1.py",
+  "successor_sha256": "6d2048b557ddb55e47a6016cbb99b24a0c54524cc65fb693c4540a01615eaa26"
+}

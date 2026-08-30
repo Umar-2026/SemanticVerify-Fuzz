@@ -1,0 +1,18 @@
+{
+  "authorization_commit": "27debc8caac8271355e6c1d4cc79bfc92c3edd00",
+  "authorizing_decision": "0188",
+  "decision0187_a02_rerun": false,
+  "execution_count": 1,
+  "execution_result": "PASS",
+  "historical_retired_verifiers_rerun": false,
+  "lifecycle_state": "PERMANENTLY_RETIRED",
+  "output_sha256": "7953c8676437ca4f13e8f6de10d969992147117b13b47b27f08f474806904a85",
+  "output_size_bytes": 744,
+  "record_id": "SVF-D0188-CRLF-SAFE-SUCCESSOR-CONSUMPTION-RECORD-V1",
+  "record_schema_version": 1,
+  "recording_transaction": "0189",
+  "rerun_authorized": false,
+  "sentinel_sha256": "327202595ea35620c40fed5a59f76d96267f9a3bcc43015364e8f2469cdb6e7d",
+  "sentinel_size_bytes": 873,
+  "successor_sha256": "6d2048b557ddb55e47a6016cbb99b24a0c54524cc65fb693c4540a01615eaa26"
+}
