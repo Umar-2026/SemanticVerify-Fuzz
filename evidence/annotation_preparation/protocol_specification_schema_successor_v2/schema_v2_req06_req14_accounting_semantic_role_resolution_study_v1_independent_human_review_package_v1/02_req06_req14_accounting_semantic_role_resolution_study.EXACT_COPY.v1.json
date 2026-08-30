@@ -1,0 +1,96 @@
+{
+  "authorization_commit": "d8fb51e465b91c3e2d37dcdf2a1bdd1c3b6f5506",
+  "authorization_decision": "0192",
+  "explicit_nonclaims": {
+    "analyzer_execution_authorized": false,
+    "analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_authorized": false,
+    "full_17_requirement_pair_binding_coverage_claimed": false,
+    "full_1853_pair_resolution_claimed": false,
+    "negative_pair_binding_claimed": false,
+    "operational_mapping_established": false,
+    "repair_authorized": false,
+    "schema_successor_authorized": false,
+    "schema_v2_losslessness_established": false
+  },
+  "global_author_candidate_result": {
+    "accounting_satisfaction_established": false,
+    "governance_adopted": false,
+    "independent_human_review_required": true,
+    "next_evidence_gap": "CONCRETE_FORWARD_AND_REVERSE_ACCOUNTING_SATISFACTION_EVIDENCE",
+    "pair_promotion_needed_to_express_role": false,
+    "req06_req14_pair_records_remain_unresolved": true,
+    "req06_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "req14_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT"
+  },
+  "results": [
+    {
+      "accounting_satisfaction_established": false,
+      "accounting_satisfaction_rationale": "Schema support and the role classification do not demonstrate that a concrete forward-accounting instance is populated completely and correctly for the governed source-unit inventory.",
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+      "analyzer_authorized": false,
+      "author_candidate_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "baseline_authorized": false,
+      "current_pair_state": {
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "unresolved_binding_count": 109
+      },
+      "not_supported_binding_created": false,
+      "operational_mapping_created": false,
+      "pair_reclassification_performed": false,
+      "repair_authorized": false,
+      "requirement_id": "forward_accounting_required",
+      "requirement_ordinal": 6,
+      "role_basis": [
+        "Active Schema V2 defines forward_accounting as a collection of records keyed by source_unit_id and carrying one-or-more schema_carriers.",
+        "Active Schema V2 separately requires forward_complete=true.",
+        "The Schema-V2 design record identifies /semantic_accounting/forward_accounting as the dedicated forward-accounting carrier.",
+        "The requirement therefore governs the cross-cutting forward accounting relation and its completeness rather than asserting a semantic property of one particular semantic unit."
+      ],
+      "schema_mapping_inferred": false,
+      "schema_v2_losslessness_proven": false,
+      "semantic_encoding_nonclaim": "Even complete forward accounting would not by itself prove that every bound carrier preserves the source semantic losslessly.",
+      "supported_binding_created": false
+    },
+    {
+      "accounting_satisfaction_established": false,
+      "accounting_satisfaction_rationale": "Schema support and the role classification do not demonstrate that a concrete reverse-accounting instance is populated completely and correctly for all governed schema carriers and source-unit relations.",
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+      "analyzer_authorized": false,
+      "author_candidate_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "baseline_authorized": false,
+      "current_pair_state": {
+        "not_supported_binding_count": 0,
+        "supported_binding_count": 0,
+        "unresolved_binding_count": 109
+      },
+      "not_supported_binding_created": false,
+      "operational_mapping_created": false,
+      "pair_reclassification_performed": false,
+      "repair_authorized": false,
+      "requirement_id": "reverse_accounting_required",
+      "requirement_ordinal": 14,
+      "role_basis": [
+        "Active Schema V2 defines reverse_accounting as a collection of records keyed by schema_carrier and carrying one-or-more source_unit_ids.",
+        "Active Schema V2 separately requires reverse_complete=true.",
+        "The Schema-V2 design record identifies /semantic_accounting/reverse_accounting as the dedicated reverse-accounting carrier.",
+        "The requirement therefore governs the cross-cutting reverse accounting relation and its completeness rather than asserting a semantic property of one particular semantic unit."
+      ],
+      "schema_mapping_inferred": false,
+      "schema_v2_losslessness_proven": false,
+      "semantic_encoding_nonclaim": "Even complete reverse accounting would not by itself prove deterministic exact reconstruction of every source semantic.",
+      "supported_binding_created": false
+    }
+  ],
+  "role_vocabulary": [
+    "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "UNIT_BINDABLE_SUBSTANTIVE_REQUIREMENT",
+    "ROLE_UNRESOLVED"
+  ],
+  "status": "AUTHOR_CANDIDATE",
+  "study_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-RESOLUTION-STUDY-V1",
+  "target_pair_count": 218,
+  "target_requirement_count": 2
+}

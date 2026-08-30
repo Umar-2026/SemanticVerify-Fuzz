@@ -1,0 +1,121 @@
+{
+  "artifact": "req06_req14_accounting_role_evidence_anchor_matrix_v1",
+  "interpretation_boundary": {
+    "anchors_authorize_pair_reclassification": false,
+    "anchors_authorize_role_study": true,
+    "anchors_prove_accounting_satisfaction": false,
+    "anchors_prove_operational_mapping": false,
+    "anchors_prove_schema_v2_losslessness": false
+  },
+  "status": "AUTHOR_CANDIDATE_SUPPORTING_EVIDENCE",
+  "targets": [
+    {
+      "evidence_anchors": [
+        {
+          "artifact_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+          "establishes": "Dedicated forward accounting collection whose records identify a source unit and one-or-more schema carriers.",
+          "evidence_role": "ACTIVE_SCHEMA_ACCOUNTING_STRUCTURE",
+          "json_anchor": "$.properties.semantic_accounting.properties.forward_accounting"
+        },
+        {
+          "artifact_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+          "establishes": "Forward accounting completeness is a mandatory true schema condition.",
+          "evidence_role": "ACTIVE_SCHEMA_COMPLETENESS_FLAG",
+          "json_anchor": "$.properties.semantic_accounting.properties.forward_complete"
+        },
+        {
+          "artifact_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "establishes": "Dedicated design carrier /semantic_accounting/forward_accounting.",
+          "evidence_role": "DESIGN_CARRIER_BINDING",
+          "json_anchor": "$.required_sensitive_semantics_carriers.forward_accounting"
+        },
+        {
+          "artifact_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "establishes": "Forward accounting is schema-supported while accounting alone does not prove semantic encoding.",
+          "evidence_role": "RESIDUAL_ACCOUNTING_BOUNDARY",
+          "json_anchor": "$.semantic_accounting_boundary"
+        },
+        {
+          "artifact_sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+          "establishes": "Earlier requirement-bound carrier evidence remained unresolved and did not establish positive mapping.",
+          "evidence_role": "HISTORICAL_CARRIER_NONRESOLUTION",
+          "json_anchor": "$.records[5]"
+        },
+        {
+          "artifact_sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a",
+          "establishes": "Historical adoption did not establish mapping or carrier admissibility.",
+          "evidence_role": "HISTORICAL_GOVERNANCE_NONCLAIM",
+          "json_anchor": "$.governance_state"
+        },
+        {
+          "artifact_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+          "establishes": "Complete forward encoding and exact reverse reconstruction remain unproven.",
+          "evidence_role": "FULL_MAPPING_NONPROOF",
+          "json_anchor": "$.capability_findings"
+        },
+        {
+          "artifact_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+          "establishes": "Prior human evidence proposed no semantic-unit pair binding for Req06 and did not claim impossibility.",
+          "evidence_role": "PRIOR_HUMAN_PAIR_BINDING_UNRESOLVED",
+          "textual_anchor": "Requirement 06"
+        }
+      ],
+      "requirement_id": "forward_accounting_required",
+      "requirement_ordinal": 6
+    },
+    {
+      "evidence_anchors": [
+        {
+          "artifact_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+          "establishes": "Dedicated reverse accounting collection whose records identify a schema carrier and one-or-more source-unit IDs.",
+          "evidence_role": "ACTIVE_SCHEMA_ACCOUNTING_STRUCTURE",
+          "json_anchor": "$.properties.semantic_accounting.properties.reverse_accounting"
+        },
+        {
+          "artifact_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+          "establishes": "Reverse accounting completeness is a mandatory true schema condition.",
+          "evidence_role": "ACTIVE_SCHEMA_COMPLETENESS_FLAG",
+          "json_anchor": "$.properties.semantic_accounting.properties.reverse_complete"
+        },
+        {
+          "artifact_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+          "establishes": "Dedicated design carrier /semantic_accounting/reverse_accounting.",
+          "evidence_role": "DESIGN_CARRIER_BINDING",
+          "json_anchor": "$.required_sensitive_semantics_carriers.reverse_accounting"
+        },
+        {
+          "artifact_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+          "establishes": "Reverse accounting is schema-supported while accounting alone does not prove semantic encoding.",
+          "evidence_role": "RESIDUAL_ACCOUNTING_BOUNDARY",
+          "json_anchor": "$.semantic_accounting_boundary"
+        },
+        {
+          "artifact_sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+          "establishes": "Earlier requirement-bound carrier evidence remained unresolved and did not establish positive mapping.",
+          "evidence_role": "HISTORICAL_CARRIER_NONRESOLUTION",
+          "json_anchor": "$.records[13]"
+        },
+        {
+          "artifact_sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a",
+          "establishes": "Historical adoption did not establish mapping or carrier admissibility.",
+          "evidence_role": "HISTORICAL_GOVERNANCE_NONCLAIM",
+          "json_anchor": "$.governance_state"
+        },
+        {
+          "artifact_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+          "establishes": "Complete forward encoding and exact reverse reconstruction remain unproven.",
+          "evidence_role": "FULL_MAPPING_NONPROOF",
+          "json_anchor": "$.capability_findings"
+        },
+        {
+          "artifact_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+          "establishes": "Prior human evidence proposed no semantic-unit pair binding for Req14 and did not claim impossibility.",
+          "evidence_role": "PRIOR_HUMAN_PAIR_BINDING_UNRESOLVED",
+          "textual_anchor": "Requirement 14"
+        }
+      ],
+      "requirement_id": "reverse_accounting_required",
+      "requirement_ordinal": 14
+    }
+  ]
+}

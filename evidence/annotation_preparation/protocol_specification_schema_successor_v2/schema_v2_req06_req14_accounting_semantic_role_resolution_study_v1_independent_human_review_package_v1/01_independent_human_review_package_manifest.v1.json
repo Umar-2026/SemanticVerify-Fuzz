@@ -1,0 +1,58 @@
+{
+  "authorization_checkpoint": {
+    "commit": "f8a35333c6b9a943877828e89fab18064e9d3a7f",
+    "tree": "9a740b4f4be02a3664abd459741014cbe3d8b508"
+  },
+  "authorizing_decision": "0194",
+  "decision0194_a02_consumption": {
+    "consumption_sentinel_sha256": "88325f32d5ce157ec2aadfc66070bbd452de7a80c070fcf77803bac10096cfcf",
+    "execution_count": 1,
+    "execution_output_sha256": "834fba7a0dfbe113b2fbdd5db6c981d5cec239cd38ee53408af47d4fb5eec105",
+    "execution_result": "PASS",
+    "lifecycle_state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false
+  },
+  "human_field_state": {
+    "attestation_prefilled": false,
+    "overall_decision_prefilled": false,
+    "review_date_prefilled": false,
+    "review_item_decisions_prefilled": false,
+    "reviewer_confirmation_prefilled": false,
+    "reviewer_identity_prefilled": false,
+    "reviewer_notes_prefilled": false,
+    "reviewer_role_prefilled": false
+  },
+  "immutable_subject_bindings": {
+    "evidence_anchor_matrix_sha256": "a153d0979f4bda119928fb29fd8043088115793f164e268c6d0def6fe1203601",
+    "review_contract_sha256": "1d71a5afb82d7ea7ad5fb882a904879409f0ace0b4c71b0201cf59ea82fd0ac1",
+    "study_sha256": "22c51d0d77f3faa086cb426788d057da15c5002a29b4ba68cd3177935aa80381"
+  },
+  "package_authoring_decision": "0195",
+  "package_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-INDEPENDENT-HUMAN-REVIEW-PACKAGE-V1",
+  "package_schema_version": 1,
+  "review_state": {
+    "human_review_performed": false,
+    "human_review_recorded": false,
+    "role_governance_adopted": false
+  },
+  "review_subject": {
+    "req06_accounting_satisfaction": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+    "req06_author_candidate_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "req14_accounting_satisfaction": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+    "req14_author_candidate_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+    "review_item_count": 6,
+    "study_status": "AUTHOR_CANDIDATE"
+  },
+  "status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "technical_state": {
+    "accounting_satisfaction_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "not_supported_binding_created": false,
+    "operational_mapping_created": false,
+    "pair_reclassification_performed": false,
+    "repair_authorized": false,
+    "schema_v2_losslessness_proven": false,
+    "supported_binding_created": false
+  }
+}
