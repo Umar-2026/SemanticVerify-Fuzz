@@ -1,0 +1,57 @@
+{
+  "authorization_id": "SVF-D0196-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0196",
+  "status": "AUTHORIZED_TO_AUTHOR_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_ONLY",
+  "predecessor_decision": "0195",
+  "predecessor_commit": "a70ddd50d068bc91c69c99888b6db499cd8645ef",
+  "predecessor_tree": "d58fe0e31b60825c26715cb03836c869a4b89c11",
+  "review_package_binding": {
+    "package_tree": "4108a34611d17ba32448e2ce0d90de3515732adb",
+    "package_manifest_sha256": "5eda213520d4d4032d932ed3c03fe0fe8dd7a0d34eb6e89191bf624e4dec3da2",
+    "blank_review_form_sha256": "c1ccf931d1d34ddacf80bcba47bf0d9adf1d109db5926a7c9ad8e068ad9e7faa",
+    "package_status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+    "review_item_count": 6
+  },
+  "authorized_handoff_activity": {
+    "author_internal_handoff_record": true,
+    "create_external_zip_from_exact_review_package": true,
+    "create_external_editable_blank_review_form_copy": true,
+    "preserve_blank_review_form_content_initially": true,
+    "report_external_zip_sha256": true,
+    "report_external_editable_copy_initial_sha256": true,
+    "perform_human_review": false,
+    "prefill_reviewer_identity": false,
+    "prefill_reviewer_role": false,
+    "prefill_review_item_decisions": false,
+    "prefill_reviewer_notes": false,
+    "prefill_overall_review_decision": false,
+    "prefill_reviewer_confirmation": false,
+    "prefill_review_date": false,
+    "prefill_attestation": false,
+    "record_returned_review": false,
+    "adopt_review_result": false
+  },
+  "technical_non_authorizations": {
+    "role_governance_adoption": false,
+    "accounting_satisfaction_establishment": false,
+    "pair_reclassification": false,
+    "supported_binding_creation": false,
+    "not_supported_binding_creation": false,
+    "operational_mapping": false,
+    "schema_v2_modification": false,
+    "schema_successor": false,
+    "curl_json": false,
+    "analyzer_implementation": false,
+    "analyzer_execution": false,
+    "baseline_execution": false,
+    "repair": false
+  },
+  "one_time_handoff_authorization_verifier": {
+    "execution_authorized_in_decision0196": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_EXTERNAL_HANDOFF_AUTHORING_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}

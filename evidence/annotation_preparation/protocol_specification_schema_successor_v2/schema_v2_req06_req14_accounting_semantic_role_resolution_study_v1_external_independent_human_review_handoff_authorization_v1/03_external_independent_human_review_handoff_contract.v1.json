@@ -1,0 +1,53 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-CONTRACT",
+  "contract_schema_version": 1,
+  "external_handoff_outputs": {
+    "internal_handoff_manifest_required": true,
+    "exact_review_package_copy_or_archive_required": true,
+    "external_zip_required": true,
+    "external_editable_blank_review_form_required": true,
+    "external_editable_form_initially_byte_identical_to_internal_blank_form": true,
+    "external_zip_checksum_required": true,
+    "external_editable_form_initial_checksum_required": true
+  },
+  "external_editable_form_rule": {
+    "purpose": "The human reviewer may edit only the external review-form copy to supply genuine human review information.",
+    "initial_human_fields_must_be_blank": true,
+    "repository_blank_form_must_not_be_modified": true,
+    "returned_human_form_must_be_treated_as_external_evidence_until_separately_authorized_for_recording": true
+  },
+  "human_review_fields": [
+    "reviewer_name",
+    "reviewer_role",
+    "reviewer_confirmation_or_signature",
+    "review_date",
+    "independent_review_attestation",
+    "ASRR01_decision_and_notes",
+    "ASRR02_decision_and_notes",
+    "ASRR03_decision_and_notes",
+    "ASRR04_decision_and_notes",
+    "ASRR05_decision_and_notes",
+    "ASRR06_decision_and_notes",
+    "overall_review_decision",
+    "overall_reviewer_notes"
+  ],
+  "allowed_item_decisions": [
+    "PASS",
+    "REVISION_REQUIRED"
+  ],
+  "allowed_overall_decisions": [
+    "APPROVE_BOUNDED_ROLE_STUDY",
+    "REVISION_REQUIRED"
+  ],
+  "handoff_non_effects": {
+    "handoff_is_not_human_review_completion": true,
+    "handoff_is_not_review_recording": true,
+    "handoff_is_not_governance_adoption": true,
+    "handoff_does_not_reclassify_pairs": true,
+    "handoff_does_not_establish_accounting_satisfaction": true,
+    "handoff_does_not_authorize_operational_mapping": true,
+    "handoff_does_not_authorize_analyzer": true,
+    "handoff_does_not_authorize_baseline": true,
+    "handoff_does_not_authorize_repair": true
+  }
+}
