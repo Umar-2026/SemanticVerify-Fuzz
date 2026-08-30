@@ -1,0 +1,24 @@
+{
+  "decision0195_review_package": {
+    "blank_review_form_sha256": "c1ccf931d1d34ddacf80bcba47bf0d9adf1d109db5926a7c9ad8e068ad9e7faa",
+    "git_tree": "4108a34611d17ba32448e2ce0d90de3515732adb",
+    "manifest_sha256": "5eda213520d4d4032d932ed3c03fe0fe8dd7a0d34eb6e89191bf624e4dec3da2",
+    "package_status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW"
+  },
+  "external_editable_review_form": {
+    "human_reviewer_may_edit_external_copy": true,
+    "initial_sha256": "c1ccf931d1d34ddacf80bcba47bf0d9adf1d109db5926a7c9ad8e068ad9e7faa",
+    "initial_size_bytes": 2380,
+    "initially_byte_identical_to_repository_blank_form": true,
+    "path": "/openbayes/home/50_req06_req14_accounting_role_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md",
+    "repository_blank_form_must_remain_immutable": true
+  },
+  "external_zip": {
+    "contents_byte_identical_to_repository_review_package": true,
+    "entry_count": 11,
+    "path": "/openbayes/home/50_req06_req14_accounting_role_independent_human_review_handoff.v1.zip",
+    "sha256": "30a86e8058e9b4ea79c25cfb22f48b5f7ffae0a6805651de39c3425d55c6a756",
+    "size_bytes": 15355
+  },
+  "record_id": "SVF-REQ06-REQ14-ACCOUNTING-ROLE-REVIEW-EXTERNAL-HANDOFF-SOURCE-BINDING-V1"
+}

@@ -1,0 +1,60 @@
+{
+  "authoring_decision": "0197",
+  "authorization_checkpoint": {
+    "commit": "ff84067c0db78af1132550c88a1dc9107ded1ba7",
+    "tree": "b92b43333e04062425d7e1d766405ac8e8b6657f"
+  },
+  "authorizing_decision": "0196",
+  "decision0196_a02": {
+    "execution_count": 1,
+    "execution_result": "PASS",
+    "lifecycle_state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false
+  },
+  "external_artifacts": {
+    "editable_review_form": {
+      "initial_human_fields_blank": true,
+      "initial_sha256": "c1ccf931d1d34ddacf80bcba47bf0d9adf1d109db5926a7c9ad8e068ad9e7faa",
+      "initial_size_bytes": 2380,
+      "path": "/openbayes/home/50_req06_req14_accounting_role_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md"
+    },
+    "zip": {
+      "path": "/openbayes/home/50_req06_req14_accounting_role_independent_human_review_handoff.v1.zip",
+      "sha256": "30a86e8058e9b4ea79c25cfb22f48b5f7ffae0a6805651de39c3425d55c6a756",
+      "size_bytes": 15355
+    }
+  },
+  "governance_state": {
+    "accounting_satisfaction_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "not_supported_binding_created": false,
+    "operational_mapping_authorized": false,
+    "pair_reclassification_performed": false,
+    "repair_authorized": false,
+    "role_governance_adopted": false,
+    "supported_binding_created": false
+  },
+  "handoff_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-V1",
+  "handoff_schema_version": 1,
+  "human_review_state": {
+    "attestation_supplied": false,
+    "human_review_performed": false,
+    "human_review_recorded": false,
+    "overall_decision_supplied": false,
+    "review_date_supplied": false,
+    "review_item_decisions_supplied": false,
+    "reviewer_confirmation_supplied": false,
+    "reviewer_identity_supplied": false,
+    "reviewer_notes_supplied": false,
+    "reviewer_role_supplied": false
+  },
+  "next_boundary": "AWAIT_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_RETURN",
+  "review_package_binding": {
+    "blank_review_form_sha256": "c1ccf931d1d34ddacf80bcba47bf0d9adf1d109db5926a7c9ad8e068ad9e7faa",
+    "package_manifest_sha256": "5eda213520d4d4032d932ed3c03fe0fe8dd7a0d34eb6e89191bf624e4dec3da2",
+    "package_tree": "4108a34611d17ba32448e2ce0d90de3515732adb",
+    "review_item_count": 6
+  },
+  "status": "EXTERNAL_HANDOFF_AUTHORED_AWAITING_INDEPENDENT_HUMAN_REVIEW_RETURN"
+}
