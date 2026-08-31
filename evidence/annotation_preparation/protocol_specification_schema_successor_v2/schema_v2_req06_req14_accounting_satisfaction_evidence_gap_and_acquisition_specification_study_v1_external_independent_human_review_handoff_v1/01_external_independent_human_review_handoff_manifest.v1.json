@@ -1,0 +1,72 @@
+{
+  "authored_by_decision": "0207",
+  "authorized_by_decision": "0206",
+  "decision0206_a02": {
+    "consumption_sentinel_sha256": "fef21d1d5ddc54169786b05d1a99592477100c36dca2560b55fa05f3bc691de1",
+    "execution_count": 1,
+    "execution_output_sha256": "b662920af0f3c6dc18b0808507e748b39237b2e26f2dd7a3e2e67348488b34f6",
+    "execution_result": "PASS",
+    "lifecycle_state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false,
+    "sha256": "cfc3d857837cedcad1c4ebb0333888ab251613d6d5e3d2ce3fabf9f33d346c82"
+  },
+  "external_editable_review_form": {
+    "initial_bytes_equal_immutable_blank_form": true,
+    "initial_sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a",
+    "initial_size_bytes": 4023,
+    "path": "/openbayes/home/50_req06_req14_accounting_gap_study_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md",
+    "repository_blank_form_remains_immutable": true,
+    "subsequent_human_editing_expected": true
+  },
+  "external_zip": {
+    "all_entries_verified_byte_identical_to_repository_sources": true,
+    "entry_count": 14,
+    "path": "/openbayes/home/50_req06_req14_accounting_gap_study_independent_human_review_handoff.v1.zip",
+    "sha256": "8ed639649fe87eee323b40c6700314753978a06d81d09374efc220997d729751",
+    "size_bytes": 21254
+  },
+  "governance_state": {
+    "accounting_satisfaction_determination_authorized": false,
+    "accounting_satisfaction_established": false,
+    "actual_accounting_evidence_acquisition_authorized": false,
+    "actual_accounting_evidence_acquisition_performed": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "concrete_accounting_instance_created": false,
+    "not_supported_binding_count": 0,
+    "not_supported_binding_created": false,
+    "operational_mapping_authorized": false,
+    "pair_reclassification_performed": false,
+    "repair_authorized": false,
+    "req06_req14_unresolved_pair_count": 218,
+    "schema_v2_losslessness_proven": false,
+    "source_unit_to_schema_carrier_mapping_created": false,
+    "study_governance_adopted": false,
+    "supported_binding_count": 211,
+    "supported_binding_created": false,
+    "unresolved_binding_count": 1642
+  },
+  "handoff_id": "SVF-REQ06-REQ14-ACCOUNTING-GAP-STUDY-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-V1",
+  "handoff_schema_version": 1,
+  "handoff_status": "EXTERNAL_HANDOFF_AUTHORED_AWAITING_INDEPENDENT_HUMAN_REVIEW_RETURN",
+  "human_review_state": {
+    "human_review_performed": false,
+    "human_review_recorded": false,
+    "returned_completed_review_received": false,
+    "reviewer_identity_preassigned": false,
+    "reviewer_role_preassigned": false
+  },
+  "review_subject": {
+    "result": "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+    "review_item_count": 9,
+    "status": "AUTHOR_CANDIDATE"
+  },
+  "source_package": {
+    "blank_review_form_sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a",
+    "decision0205_commit": "1db96673ba363b81e34c29d646d1d38fa22c0254",
+    "decision0205_tree": "a22b8ef18ab67fff8d29574db9a927a9cb075927",
+    "package_checksum_manifest_sha256": "a5599dee0a634e262dc9a28ae666afb9d346c9be8d5c24cf73d26a318c18e658",
+    "package_manifest_sha256": "9964f0ba5ce9a78a4b21f77d29f59ba42a2e03c1c589e0aa4fc4ba4e70696e86",
+    "review_package_tree": "07777d8b68eec2537f530f9f10c6c295de8524aa"
+  }
+}

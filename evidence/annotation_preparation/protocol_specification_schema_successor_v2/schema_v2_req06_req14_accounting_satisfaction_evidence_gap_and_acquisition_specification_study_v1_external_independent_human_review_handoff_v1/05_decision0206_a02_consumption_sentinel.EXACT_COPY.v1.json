@@ -1,0 +1,11 @@
+{
+  "authorization_commit": "183ab9148f0ea0c80fd591170c6955fbe3de7e5c",
+  "authorization_subtree": "60319ca74fa005e38aab76bb516875cf4b1a5d0f",
+  "authorization_tree": "9fd58ef94fd8f6a05222fad5c467d40156deda86",
+  "authorized_execution_count": 1,
+  "authorizing_decision": "0206",
+  "consumption_state": "CONSUMPTION_STARTED_VERIFIER_MUST_NEVER_BE_RERUN",
+  "record_id": "SVF-D0206-A02-ONE-TIME-CONSUMPTION-SENTINEL-V1",
+  "rerun_authorized": false,
+  "verifier_sha256": "cfc3d857837cedcad1c4ebb0333888ab251613d6d5e3d2ce3fabf9f33d346c82"
+}

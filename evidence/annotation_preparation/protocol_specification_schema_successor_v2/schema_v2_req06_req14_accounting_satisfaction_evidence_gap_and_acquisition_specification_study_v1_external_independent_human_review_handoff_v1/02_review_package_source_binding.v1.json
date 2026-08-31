@@ -1,0 +1,68 @@
+{
+  "binding_id": "SVF-D0207-EXTERNAL-HANDOFF-REVIEW-PACKAGE-SOURCE-BINDING-V1",
+  "blank_review_form_sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a",
+  "files": [
+    {
+      "name": "01_independent_human_review_package_manifest.v1.json",
+      "sha256": "9964f0ba5ce9a78a4b21f77d29f59ba42a2e03c1c589e0aa4fc4ba4e70696e86"
+    },
+    {
+      "name": "02_accounting_satisfaction_evidence_gap_assessment.EXACT_COPY.v1.json",
+      "sha256": "6dd6540f0655c1ac064460560d2429fa62762ac4e6bb52e671283ff227f0b2a9"
+    },
+    {
+      "name": "03_future_accounting_evidence_acquisition_specification.EXACT_COPY.v1.json",
+      "sha256": "c4c77261ef19d929112ca56247d223ad7a04d9f6661dcc08860ff4a77dfabc83"
+    },
+    {
+      "name": "04_machine_checkable_accounting_satisfaction_criteria.EXACT_COPY.v1.json",
+      "sha256": "e74e58463659531a393c24a6a8de616f4efa9b688d13a24b67e876f4d0ca8436"
+    },
+    {
+      "name": "05_study_source_binding.EXACT_COPY.v1.json",
+      "sha256": "ec0e753dfc694ff8764d2452bceddf820cf3740f55b02c218bc661db7e75cf72"
+    },
+    {
+      "name": "06_study_boundary.EXACT_COPY.v1.md",
+      "sha256": "451e1648c6f5eeea38bcb485839c5bb03e3eba6cc378d3fd49970317dc10f963"
+    },
+    {
+      "name": "07_independent_human_review_contract.EXACT_COPY.v1.json",
+      "sha256": "8ad3ea2208ddc9bced6e709072eb6082fa0b269485fceaa842666375237b4ba1"
+    },
+    {
+      "name": "08_reviewer_instructions.v1.md",
+      "sha256": "bf60d25afd75a9d58e97bd09646029d8bc4a2d74a923049e349b070d1536899c"
+    },
+    {
+      "name": "09_blank_independent_human_review_form.v1.md",
+      "sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a"
+    },
+    {
+      "name": "10_decision0204_a02_consumption_record.v1.json",
+      "sha256": "fea273df4b81977bfe19e3fe5323a70128dc8dc691fdeb3b17e379f39864bd98"
+    },
+    {
+      "name": "11_decision0204_a02_execution_output.EXACT_COPY.v1.txt",
+      "sha256": "0fe914490b897922762a18a0b10b67c1a5e90ac72cfda8ecced491d17721ad7d"
+    },
+    {
+      "name": "12_decision0204_a02_consumption_sentinel.EXACT_COPY.v1.json",
+      "sha256": "e2cc935d500082edc5ad74598c6a77dc2a9ea3b6d3da144ca9fba94878e2563f"
+    },
+    {
+      "name": "13_verify_independent_human_review_package.v1.py",
+      "sha256": "ebf93b9089332f52372ba0e3fd32d91cb18253976b9232ff786e20948e444dc6"
+    },
+    {
+      "name": "14_independent_human_review_package.v1.SHA256SUMS",
+      "sha256": "a5599dee0a634e262dc9a28ae666afb9d346c9be8d5c24cf73d26a318c18e658"
+    }
+  ],
+  "package_status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "review_item_count": 9,
+  "source_commit": "1db96673ba363b81e34c29d646d1d38fa22c0254",
+  "source_decision": "0205",
+  "source_package_tree": "07777d8b68eec2537f530f9f10c6c295de8524aa",
+  "source_tree": "a22b8ef18ab67fff8d29574db9a927a9cb075927"
+}
