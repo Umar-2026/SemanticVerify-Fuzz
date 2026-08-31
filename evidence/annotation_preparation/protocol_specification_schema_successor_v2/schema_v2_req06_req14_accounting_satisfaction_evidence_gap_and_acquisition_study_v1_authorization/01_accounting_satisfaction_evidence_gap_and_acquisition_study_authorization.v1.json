@@ -1,0 +1,88 @@
+{
+  "authorization_id": "SVF-D0202-REQ06-REQ14-ACCOUNTING-SATISFACTION-EVIDENCE-GAP-AND-ACQUISITION-STUDY-V1-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0202",
+  "status": "AUTHORIZED_TO_AUTHOR_BOUNDED_ACCOUNTING_SATISFACTION_EVIDENCE_GAP_AND_ACQUISITION_SPECIFICATION_STUDY_ONLY",
+  "predecessor_decision": "0201",
+  "predecessor_commit": "b76886d774aacaaee50a899aefdf9e6b5209e20d",
+  "predecessor_tree": "12dc02aa8c55c02a623aef292fbc10fadcd41c73",
+  "governed_requirement_scope": {
+    "requirement_count": 2,
+    "Req06": {
+      "requirement_key": "forward_accounting_required",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "current_accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+    },
+    "Req14": {
+      "requirement_key": "reverse_accounting_required",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "current_accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+    }
+  },
+  "fixed_evidence_bindings": {
+    "active_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "carrier_admissibility_assessment_sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+    "carrier_admissibility_governance_adoption_sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a",
+    "exhaustive_multifield_capability_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+    "relation_informed_exhaustiveness_accounting_sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+    "schema_v2_successor_design_record_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+    "residual_schema_v2_insufficiency_proof_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+    "decision0201_governance_adoption_manifest_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e"
+  },
+  "current_evidence_finding": {
+    "active_schema_supports_forward_accounting": true,
+    "active_schema_supports_reverse_accounting": true,
+    "active_schema_requires_forward_complete_true": true,
+    "active_schema_requires_reverse_complete_true": true,
+    "existing_relation_evidence_contains_concrete_accounting_instance": false,
+    "constructive_full_exact_mapping_witness_complete": false,
+    "deterministic_complete_forward_encoding_proven": false,
+    "deterministic_exact_reverse_reconstruction_proven": false,
+    "accounting_alone_proves_semantic_encoding": false,
+    "current_immutable_evidence_structurally_sufficient_for_concrete_accounting_satisfaction_assessment": false
+  },
+  "authorized_study": {
+    "study_name": "Req06/Req14 Accounting Satisfaction Evidence Gap and Acquisition Specification Study V1",
+    "status": "AUTHOR_CANDIDATE",
+    "authoring_only": true,
+    "identify_current_evidence_gaps": true,
+    "specify_future_evidence_acquisition_requirements": true,
+    "define_future_machine_checkable_satisfaction_criteria": true,
+    "bind_current_immutable_evidence": true,
+    "independent_human_review_required_before_governance_adoption": true,
+    "actual_accounting_evidence_acquisition_authorized": false,
+    "concrete_accounting_instance_authoring_authorized": false,
+    "accounting_satisfaction_determination_authorized": false
+  },
+  "authorized_candidate_result_vocabulary": [
+    "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+    "EVIDENCE_GAP_REQUIRES_FURTHER_SCOPING"
+  ],
+  "prohibited_effects": {
+    "establish_accounting_satisfaction": false,
+    "create_concrete_forward_accounting_relation": false,
+    "create_concrete_reverse_accounting_relation": false,
+    "populate_semantic_accounting_instance": false,
+    "create_source_unit_to_schema_carrier_mapping": false,
+    "operational_mapping": false,
+    "modify_requirement_to_semantic_unit_pair_matrix": false,
+    "reclassify_requirement_to_semantic_unit_pairs": false,
+    "create_supported_binding": false,
+    "create_not_supported_binding": false,
+    "prove_schema_v2_losslessness": false,
+    "modify_schema_v2": false,
+    "authorize_schema_successor": false,
+    "authorize_curl_json": false,
+    "analyzer_implementation": false,
+    "analyzer_execution": false,
+    "baseline_execution": false,
+    "repair": false
+  },
+  "one_time_authorization_verifier": {
+    "execution_authorized_in_decision0202": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_ACCOUNTING_SATISFACTION_EVIDENCE_GAP_AND_ACQUISITION_STUDY_AUTHORING_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}

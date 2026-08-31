@@ -1,0 +1,88 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-SATISFACTION-EVIDENCE-GAP-AND-ACQUISITION-SPECIFICATION-STUDY-V1-CONTRACT",
+  "contract_schema_version": 1,
+  "study_status": "AUTHOR_CANDIDATE",
+  "target_requirements": {
+    "Req06": {
+      "requirement_key": "forward_accounting_required",
+      "governed_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT"
+    },
+    "Req14": {
+      "requirement_key": "reverse_accounting_required",
+      "governed_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT"
+    }
+  },
+  "current_state_to_preserve": {
+    "Req06_accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+    "Req14_accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+    "accounting_satisfaction_established": false
+  },
+  "required_gap_assessment_questions": [
+    "Is the governed source-unit domain explicitly and immutably enumerated for a future accounting instance?",
+    "Is the governed schema-carrier domain for a future accounting instance explicitly and immutably enumerated?",
+    "Does current immutable evidence contain a concrete forward-accounting relation over the governed source-unit domain?",
+    "Does current immutable evidence contain a concrete reverse-accounting relation over an explicitly governed schema-carrier domain?",
+    "Can forward completeness be independently recomputed from evidence rather than trusted from a declared forward_complete flag?",
+    "Can reverse completeness be independently recomputed from evidence rather than trusted from a declared reverse_complete flag?",
+    "Can forward and reverse relations be machine-checked for bidirectional consistency, valid identifiers, and absence of dangling references?",
+    "Is accounting satisfaction kept logically distinct from semantic losslessness and exact semantic reconstruction?"
+  ],
+  "required_future_evidence_acquisition_specification": {
+    "governed_source_unit_inventory_binding": true,
+    "governed_schema_carrier_domain_binding": true,
+    "forward_accounting_witness_requirement": true,
+    "reverse_accounting_witness_requirement": true,
+    "forward_completeness_recomputation_rule": true,
+    "reverse_completeness_recomputation_rule": true,
+    "bidirectional_consistency_rule": true,
+    "identifier_validity_rule": true,
+    "dangling_reference_rule": true,
+    "evidence_provenance_and_checksum_binding_rule": true,
+    "accounting_vs_losslessness_boundary": true
+  },
+  "completeness_semantics": {
+    "schema_forward_complete_const_true_is_not_itself_satisfaction_evidence": true,
+    "schema_reverse_complete_const_true_is_not_itself_satisfaction_evidence": true,
+    "future_forward_completeness_must_be_recomputed_against_explicit_governed_source_unit_domain": true,
+    "future_reverse_completeness_must_be_recomputed_against_an_explicit_governed_schema_carrier_domain": true,
+    "future_bidirectional_consistency_must_be_recomputed_from_forward_and_reverse_relations": true
+  },
+  "allowed_author_candidate_results": [
+    "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+    "EVIDENCE_GAP_REQUIRES_FURTHER_SCOPING"
+  ],
+  "forbidden_study_results": [
+    "ACCOUNTING_SATISFACTION_ESTABLISHED",
+    "FORWARD_ACCOUNTING_SATISFIED",
+    "REVERSE_ACCOUNTING_SATISFIED",
+    "SCHEMA_V2_LOSSLESSNESS_PROVEN",
+    "PAIR_RECLASSIFICATION_COMPLETED",
+    "OPERATIONAL_MAPPING_COMPLETED"
+  ],
+  "pair_state_invariance": {
+    "pair_reclassification_performed": false,
+    "supported_binding_created": false,
+    "not_supported_binding_created": false,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642,
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218
+  },
+  "technical_non_authorizations": {
+    "actual_accounting_evidence_acquisition": false,
+    "concrete_accounting_instance_authoring": false,
+    "source_unit_to_schema_carrier_mapping_creation": false,
+    "operational_mapping": false,
+    "schema_v2_losslessness_proof": false,
+    "schema_v2_modification": false,
+    "schema_successor": false,
+    "curl_json": false,
+    "analyzer": false,
+    "baseline": false,
+    "repair": false
+  },
+  "review_boundary": {
+    "study_requires_independent_human_review_before_governance_adoption": true,
+    "study_requires_separate_future_authorization_before_any_actual_accounting_evidence_acquisition": true
+  }
+}
