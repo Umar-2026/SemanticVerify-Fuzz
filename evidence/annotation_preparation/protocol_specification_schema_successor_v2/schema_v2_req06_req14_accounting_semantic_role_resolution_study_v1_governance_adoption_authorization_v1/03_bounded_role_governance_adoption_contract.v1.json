@@ -1,0 +1,55 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-BOUNDED-GOVERNANCE-ADOPTION-CONTRACT",
+  "contract_schema_version": 1,
+  "authorized_adoption_scope": {
+    "requirement_count": 2,
+    "Req06": {
+      "requirement_key": "forward_accounting_required",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+    },
+    "Req14": {
+      "requirement_key": "reverse_accounting_required",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+    }
+  },
+  "required_adoption_record_effects": {
+    "bounded_role_study_review_governance_adopted": true,
+    "req06_role_governance_adopted": true,
+    "req14_role_governance_adopted": true,
+    "accounting_satisfaction_established": false,
+    "req06_accounting_satisfaction_state_preserved": true,
+    "req14_accounting_satisfaction_state_preserved": true
+  },
+  "pair_state_invariance": {
+    "pair_reclassification_performed": false,
+    "supported_binding_created": false,
+    "not_supported_binding_created": false,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642,
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218
+  },
+  "technical_non_effects": {
+    "operational_mapping_authorized": false,
+    "schema_v2_losslessness_proven": false,
+    "schema_v2_modified": false,
+    "schema_successor_authorized": false,
+    "curl_json_authorized": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "repair_authorized": false
+  },
+  "immutability": {
+    "author_candidate_study_modified": false,
+    "recorded_review_modified": false,
+    "requirement_to_semantic_unit_pair_matrix_modified": false,
+    "governance_adoption_must_be_separate_record": true
+  },
+  "epistemic_boundary": {
+    "reviewer_identity_remains_packet_recorded_fact": true,
+    "human_identity_independently_verified": false,
+    "human_authorship_beyond_returned_artifact_independently_proven": false
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "authorization_id": "SVF-D0200-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-BOUNDED-GOVERNANCE-ADOPTION-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0200",
+  "status": "AUTHORIZED_TO_CREATE_BOUNDED_ROLE_GOVERNANCE_ADOPTION_RECORD_ONLY",
+  "predecessor_decision": "0199",
+  "predecessor_commit": "e97b83518790e9715c55dfe8348f8b31088a23f6",
+  "predecessor_tree": "91112f52498cb3491a6fdbd0f24d38a272b08e40",
+  "recorded_review_binding": {
+    "record_tree": "c43aa18b3f2be9285780af096b60632b52815dce",
+    "exact_review_sha256": "a3a9f38ed79b3fa450d6799677b986b690a02f235ef21acf93cb5b75d2423309",
+    "record_manifest_sha256": "1320dbec92e9ad18693802fe6f276185b279cc587b687d4ce5402d3a43a711c0",
+    "safe_record_verifier_sha256": "c3ee6605842cf1cf10e0e6294efe505bfe82c79efb56e51ec0ab1ed385cb9426",
+    "record_checksum_manifest_sha256": "dfa9c747ccf75eb2da6a3e11b9408d554697644e9200b3361f0b31636c0bc97f"
+  },
+  "reviewed_study_binding": {
+    "study_exact_copy_sha256": "22c51d0d77f3faa086cb426788d057da15c5002a29b4ba68cd3177935aa80381",
+    "evidence_anchor_matrix_sha256": "a153d0979f4bda119928fb29fd8043088115793f164e268c6d0def6fe1203601",
+    "independent_review_contract_sha256": "1d71a5afb82d7ea7ad5fb882a904879409f0ace0b4c71b0201cf59ea82fd0ac1"
+  },
+  "review_outcome_binding": {
+    "review_item_count": 6,
+    "pass_count": 6,
+    "revision_required_count": 0,
+    "overall_review_decision": "APPROVE_BOUNDED_ROLE_STUDY",
+    "packet_recorded_independence_attestation": true,
+    "human_identity_independently_verified": false,
+    "human_authorship_beyond_returned_artifact_independently_proven": false
+  },
+  "authorized_governance_adoption": {
+    "requirement_count": 2,
+    "requirements": {
+      "Req06": {
+        "requirement_key": "forward_accounting_required",
+        "role_to_adopt": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+        "accounting_satisfaction_state_to_preserve": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+      },
+      "Req14": {
+        "requirement_key": "reverse_accounting_required",
+        "role_to_adopt": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+        "accounting_satisfaction_state_to_preserve": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED"
+      }
+    },
+    "adopt_exact_reviewed_role_conclusions": true,
+    "create_separate_immutable_governance_adoption_record": true,
+    "preserve_source_study_immutability": true,
+    "preserve_recorded_review_immutability": true
+  },
+  "prohibited_effects": {
+    "modify_author_candidate_study": false,
+    "modify_recorded_human_review": false,
+    "establish_accounting_satisfaction": false,
+    "modify_requirement_to_semantic_unit_pair_matrix": false,
+    "reclassify_requirement_to_semantic_unit_pairs": false,
+    "create_supported_binding": false,
+    "create_not_supported_binding": false,
+    "operational_mapping": false,
+    "schema_v2_losslessness_proof": false,
+    "schema_v2_modification": false,
+    "schema_successor": false,
+    "curl_json": false,
+    "analyzer_implementation": false,
+    "analyzer_execution": false,
+    "baseline_execution": false,
+    "repair": false
+  },
+  "one_time_adoption_authorization_verifier": {
+    "execution_authorized_in_decision0200": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_BOUNDED_ROLE_GOVERNANCE_ADOPTION_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}
