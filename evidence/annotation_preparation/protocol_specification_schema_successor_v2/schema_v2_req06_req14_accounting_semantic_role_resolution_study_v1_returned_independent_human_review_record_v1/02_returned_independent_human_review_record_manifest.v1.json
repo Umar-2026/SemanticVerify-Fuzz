@@ -1,0 +1,96 @@
+{
+  "authorization_checkpoint": {
+    "commit": "b9669afcdcca6d175f1f1196cc304b2ce806fcee",
+    "tree": "2bec31ac7ae9f8946b1f513d5ad2bea892e93609"
+  },
+  "authorizing_decision": "0198",
+  "decision0198_a02": {
+    "consumption_sentinel_sha256": "3d33683cd6c1a0701ab5331cca8e05486e23faf825c05b63762e11c2e81e624b",
+    "consumption_sentinel_size_bytes": 761,
+    "execution_count": 1,
+    "execution_output_sha256": "8aae1836a07f67f4c39fca1212f6f596c145977f55a03f679cdc7556fe8a3705",
+    "execution_output_size_bytes": 710,
+    "execution_result": "PASS",
+    "lifecycle_state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false,
+    "rerun_performed_by_recovery": false,
+    "verifier_sha256": "e75ad34e85d7050ef27c41f285e08e01fc7e74685de3dda2ec7eb905b63264a4"
+  },
+  "epistemic_boundary": {
+    "human_authorship_beyond_returned_artifact_independently_proven": false,
+    "human_identity_independently_verified": false,
+    "packet_recorded_independence_attestation": true,
+    "reviewer_identity_recorded_from_returned_artifact": true
+  },
+  "exact_returned_review": {
+    "exact_byte_identity_preserved": true,
+    "line_ending": "CRLF",
+    "line_endings_normalized": false,
+    "recorded_repository_filename": "01_returned_independent_human_review.EXACT_COPY.v1.md",
+    "sha256": "a3a9f38ed79b3fa450d6799677b986b690a02f235ef21acf93cb5b75d2423309",
+    "size_bytes": 9578,
+    "source_external_path": "/openbayes/home/50_req06_req14_Nadeem_accounting_role_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md"
+  },
+  "governance_state": {
+    "accounting_satisfaction_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "not_supported_binding_count": 0,
+    "not_supported_binding_created": false,
+    "operational_mapping_authorized": false,
+    "pair_reclassification_performed": false,
+    "repair_authorized": false,
+    "req06_req14_unresolved_pair_count": 218,
+    "req06_role_governance_adopted": false,
+    "req14_role_governance_adopted": false,
+    "role_governance_adopted": false,
+    "schema_v2_losslessness_proven": false,
+    "supported_binding_count": 211,
+    "supported_binding_created": false,
+    "unresolved_binding_count": 1642
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_GOVERNANCE_ADOPTION_OF_RECORDED_BOUNDED_ROLE_STUDY_REVIEW",
+  "packet_recorded_review_facts": {
+    "all_item_notes_nonblank": true,
+    "independence_attestation_recorded": true,
+    "overall_review_decision": "APPROVE_BOUNDED_ROLE_STUDY",
+    "overall_reviewer_notes_nonblank": true,
+    "pass_count": 6,
+    "review_date": "31 / August / 2026",
+    "review_item_count": 6,
+    "review_item_decisions": {
+      "ASRR01": "PASS",
+      "ASRR02": "PASS",
+      "ASRR03": "PASS",
+      "ASRR04": "PASS",
+      "ASRR05": "PASS",
+      "ASRR06": "PASS"
+    },
+    "reviewer_confirmation": "MN_Lodhi",
+    "reviewer_name": "Muhammad Nadeem Nadir",
+    "reviewer_role": "Spec-Technical-Adjudicator-1",
+    "revision_required_count": 0
+  },
+  "record_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-RETURNED-INDEPENDENT-HUMAN-REVIEW-RECORD-V1",
+  "record_schema_version": 1,
+  "recording_decision": "0199",
+  "recording_recovery": {
+    "a02_rerun_performed": false,
+    "evidence_failure": false,
+    "governance_failure": false,
+    "prior_attempt_a02_consumed": true,
+    "prior_attempt_a02_result": "PASS",
+    "prior_attempt_commit_created": false,
+    "prior_attempt_failure_cause": "CRLF_EXACT_EVIDENCE_FLAGGED_AS_TRAILING_WHITESPACE",
+    "prior_attempt_failure_point": "GIT_DIFF_CACHED_CHECK",
+    "prior_attempt_started": true,
+    "recovery_method": "PRESERVE_EXACT_R01_BYTES_AND_WHITESPACE_CHECK_ONLY_AUTHORED_METADATA"
+  },
+  "recording_state": {
+    "new_human_review_performed_by_recording_transaction": false,
+    "returned_review_altered_or_normalized": false,
+    "returned_review_recorded": true,
+    "reviewer_text_rewritten": false
+  },
+  "status": "RETURNED_INDEPENDENT_HUMAN_REVIEW_RECORDED_AWAITING_SEPARATE_GOVERNANCE_ADOPTION_DECISION"
+}

@@ -1,0 +1,11 @@
+{
+  "authorization_commit": "b9669afcdcca6d175f1f1196cc304b2ce806fcee",
+  "authorization_tree": "2bec31ac7ae9f8946b1f513d5ad2bea892e93609",
+  "authorized_execution_count": 1,
+  "authorizing_decision": "0198",
+  "consumption_state": "CONSUMPTION_STARTED_VERIFIER_MUST_NEVER_BE_RERUN",
+  "record_id": "SVF-D0198-A02-ONE-TIME-CONSUMPTION-SENTINEL-V1",
+  "rerun_authorized": false,
+  "verifier_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_returned_independent_human_review_recording_authorization_v1/02_authorize_returned_independent_human_review_recording_once.v1.py",
+  "verifier_sha256": "e75ad34e85d7050ef27c41f285e08e01fc7e74685de3dda2ec7eb905b63264a4"
+}

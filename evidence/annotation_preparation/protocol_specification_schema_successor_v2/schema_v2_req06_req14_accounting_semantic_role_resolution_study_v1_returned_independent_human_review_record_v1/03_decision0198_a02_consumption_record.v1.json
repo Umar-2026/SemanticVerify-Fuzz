@@ -1,0 +1,39 @@
+{
+  "accounting_satisfaction_established": false,
+  "authorization_commit": "b9669afcdcca6d175f1f1196cc304b2ce806fcee",
+  "authorization_tree": "2bec31ac7ae9f8946b1f513d5ad2bea892e93609",
+  "authorizing_decision": "0198",
+  "consuming_transaction": "0199",
+  "consumption_sentinel_sha256": "3d33683cd6c1a0701ab5331cca8e05486e23faf825c05b63762e11c2e81e624b",
+  "consumption_sentinel_size_bytes": 761,
+  "decision0187_a02_rerun": false,
+  "decision0188_crlf_safe_successor_rerun": false,
+  "decision0190_p03_rerun": false,
+  "decision0192_a02_rerun": false,
+  "decision0194_a02_rerun": false,
+  "decision0196_a02_rerun": false,
+  "execution_count": 1,
+  "execution_output_sha256": "8aae1836a07f67f4c39fca1212f6f596c145977f55a03f679cdc7556fe8a3705",
+  "execution_output_size_bytes": 710,
+  "execution_result": "PASS",
+  "first_recording_attempt": {
+    "a02_consumed": true,
+    "a02_result": "PASS",
+    "commit_created": false,
+    "failure_cause": "CRLF_EXACT_EVIDENCE_FLAGGED_AS_TRAILING_WHITESPACE",
+    "failure_point": "GIT_DIFF_CACHED_CHECK"
+  },
+  "lifecycle_state": "PERMANENTLY_RETIRED",
+  "pair_reclassification_performed": false,
+  "record_id": "SVF-D0198-A02-CONSUMPTION-RECORD-V1",
+  "record_schema_version": 1,
+  "recovery_completion": {
+    "a02_rerun": false,
+    "uses_preserved_output_and_sentinel": true
+  },
+  "rerun_authorized": false,
+  "rerun_performed_by_recovery": false,
+  "returned_review_recorded": true,
+  "role_governance_adopted": false,
+  "verifier_sha256": "e75ad34e85d7050ef27c41f285e08e01fc7e74685de3dda2ec7eb905b63264a4"
+}
