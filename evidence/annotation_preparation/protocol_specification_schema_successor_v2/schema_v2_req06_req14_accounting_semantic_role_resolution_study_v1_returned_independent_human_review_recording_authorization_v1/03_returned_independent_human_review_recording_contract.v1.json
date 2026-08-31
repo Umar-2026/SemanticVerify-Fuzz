@@ -1,0 +1,49 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-RETURNED-INDEPENDENT-HUMAN-REVIEW-RECORDING-CONTRACT",
+  "contract_schema_version": 1,
+  "exact_external_review": {
+    "sha256": "a3a9f38ed79b3fa450d6799677b986b690a02f235ef21acf93cb5b75d2423309",
+    "size_bytes": 9578
+  },
+  "required_recorded_review_facts": {
+    "review_item_ids": [
+      "ASRR01",
+      "ASRR02",
+      "ASRR03",
+      "ASRR04",
+      "ASRR05",
+      "ASRR06"
+    ],
+    "required_item_decision": "PASS",
+    "required_pass_count": 6,
+    "required_revision_required_count": 0,
+    "required_overall_decision": "APPROVE_BOUNDED_ROLE_STUDY",
+    "all_item_notes_nonblank": true,
+    "overall_notes_nonblank": true
+  },
+  "packet_recorded_human_fields": {
+    "reviewer_name": "Muhammad Nadeem Nadir",
+    "reviewer_role": "Spec-Technical-Adjudicator-1",
+    "reviewer_confirmation": "MN_Lodhi",
+    "review_date": "31 / August / 2026",
+    "independence_attestation_required": true
+  },
+  "epistemic_boundary": {
+    "reviewer_identity_is_recorded_from_returned_artifact": true,
+    "reviewer_identity_independently_verified": false,
+    "human_authorship_beyond_returned_artifact_independently_proven": false,
+    "reviewer_decision_may_not_be_rewritten": true,
+    "reviewer_notes_may_not_be_rewritten": true
+  },
+  "recording_non_effects": {
+    "recording_is_not_governance_adoption": true,
+    "recording_does_not_reclassify_pairs": true,
+    "recording_does_not_establish_accounting_satisfaction": true,
+    "recording_does_not_create_supported_binding": true,
+    "recording_does_not_create_not_supported_binding": true,
+    "recording_does_not_authorize_operational_mapping": true,
+    "recording_does_not_authorize_analyzer": true,
+    "recording_does_not_authorize_baseline": true,
+    "recording_does_not_authorize_repair": true
+  }
+}

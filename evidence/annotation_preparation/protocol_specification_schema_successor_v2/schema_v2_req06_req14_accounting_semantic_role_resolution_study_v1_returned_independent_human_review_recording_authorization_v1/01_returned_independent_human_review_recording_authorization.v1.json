@@ -1,0 +1,76 @@
+{
+  "authorization_id": "SVF-D0198-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-STUDY-V1-RETURNED-INDEPENDENT-HUMAN-REVIEW-RECORDING-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0198",
+  "status": "AUTHORIZED_TO_RECORD_EXACT_RETURNED_INDEPENDENT_HUMAN_REVIEW_ONLY",
+  "predecessor_decision": "0197",
+  "predecessor_commit": "cd2c9cf591bd970642b85fbf935a64c68d68ae68",
+  "predecessor_tree": "1794605411686dc26710729731626ac2a65a0bd6",
+  "prior_failed_attempt": {
+    "cause": "DIAGNOSTIC_LOCAL_VARIABLE_NAME_ERROR",
+    "evidence_problem": false,
+    "governance_problem": false,
+    "repository_effect": "NONE",
+    "decision0198_a02_executed": false
+  },
+  "returned_review_binding": {
+    "external_path": "/openbayes/home/50_req06_req14_Nadeem_accounting_role_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md",
+    "sha256": "a3a9f38ed79b3fa450d6799677b986b690a02f235ef21acf93cb5b75d2423309",
+    "size_bytes": 9578,
+    "differs_from_initial_blank_form": true
+  },
+  "read_only_validation_result": {
+    "structural_and_vocabulary_validation": "PASS",
+    "review_item_count": 6,
+    "pass_count": 6,
+    "revision_required_count": 0,
+    "all_item_notes_nonblank": true,
+    "overall_notes_nonblank": true,
+    "overall_review_decision_recorded_in_returned_artifact": "APPROVE_BOUNDED_ROLE_STUDY",
+    "reviewer_name_recorded_in_returned_artifact": "Muhammad Nadeem Nadir",
+    "reviewer_role_recorded_in_returned_artifact": "Spec-Technical-Adjudicator-1",
+    "reviewer_confirmation_recorded_in_returned_artifact": "MN_Lodhi",
+    "review_date_recorded_in_returned_artifact": "31 / August / 2026",
+    "packet_recorded_independence_attestation": true,
+    "human_identity_independently_verified": false,
+    "human_authorship_beyond_returned_artifact_independently_proven": false
+  },
+  "authorized_recording_activity": {
+    "copy_exact_returned_review_into_new_immutable_repository_record": true,
+    "record_exact_returned_review_sha256_and_size": true,
+    "record_review_item_decisions_without_rewriting": true,
+    "record_reviewer_notes_without_rewriting": true,
+    "record_overall_decision_without_rewriting": true,
+    "record_overall_notes_without_rewriting": true,
+    "record_reviewer_identity_as_packet_recorded_fact": true,
+    "record_packet_independence_attestation_as_packet_recorded_fact": true,
+    "perform_new_human_review": false,
+    "alter_returned_review": false,
+    "rewrite_reviewer_notes": false,
+    "synthesize_reviewer_identity": false,
+    "synthesize_reviewer_decision": false,
+    "governance_adopt_role_study": false
+  },
+  "technical_non_authorizations": {
+    "role_governance_adoption": false,
+    "accounting_satisfaction_establishment": false,
+    "pair_reclassification": false,
+    "supported_binding_creation": false,
+    "not_supported_binding_creation": false,
+    "operational_mapping": false,
+    "schema_v2_modification": false,
+    "schema_successor": false,
+    "curl_json": false,
+    "analyzer_implementation": false,
+    "analyzer_execution": false,
+    "baseline_execution": false,
+    "repair": false
+  },
+  "one_time_recording_authorization_verifier": {
+    "execution_authorized_in_decision0198": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_RETURNED_REVIEW_RECORDING_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}
