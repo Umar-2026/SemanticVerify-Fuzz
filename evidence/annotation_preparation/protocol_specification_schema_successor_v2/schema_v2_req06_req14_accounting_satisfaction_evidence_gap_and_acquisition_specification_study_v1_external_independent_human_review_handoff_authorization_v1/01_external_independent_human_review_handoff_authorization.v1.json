@@ -1,0 +1,77 @@
+{
+  "authorization_id": "SVF-D0206-REQ06-REQ14-ACCOUNTING-GAP-STUDY-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-AUTHORIZATION-V1",
+  "authorization_schema_version": 1,
+  "authorized_external_outputs": {
+    "editable_review_form_initial_bytes_must_equal_internal_blank_form": true,
+    "editable_review_form_initial_sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a",
+    "editable_review_form_path": "/openbayes/home/50_req06_req14_accounting_gap_study_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md",
+    "handoff_zip_expected_internal_package_file_count": 14,
+    "handoff_zip_must_contain_exact_internal_review_package_files": true,
+    "handoff_zip_path": "/openbayes/home/50_req06_req14_accounting_gap_study_independent_human_review_handoff.v1.zip"
+  },
+  "authorized_internal_record": {
+    "author_checksum_manifest": true,
+    "author_external_handoff_record": true,
+    "author_safe_rerunnable_handoff_verifier": true,
+    "record_decision0206_a02_consumption_evidence": true,
+    "record_exact_external_zip_sha256_and_size": true,
+    "record_exact_package_source_bindings": true,
+    "record_initial_editable_form_sha256_and_size": true
+  },
+  "decision": "0206",
+  "explicit_non_authorizations": {
+    "accounting_satisfaction_determination": false,
+    "accounting_satisfaction_establishment": false,
+    "actual_accounting_evidence_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "completed_human_review_recording": false,
+    "concrete_accounting_instance_authoring": false,
+    "curl_json": false,
+    "not_supported_binding_creation": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "schema_successor": false,
+    "schema_v2_losslessness_proof": false,
+    "schema_v2_modification": false,
+    "source_unit_to_schema_carrier_mapping_creation": false,
+    "study_governance_adoption": false,
+    "supported_binding_creation": false
+  },
+  "human_boundary": {
+    "human_review_performed_by_handoff_transaction": false,
+    "human_review_recorded_by_handoff_transaction": false,
+    "independence_attestation_preassigned": false,
+    "review_date_preassigned": false,
+    "review_decisions_preassigned": false,
+    "reviewer_confirmation_preassigned": false,
+    "reviewer_identity_preassigned": false,
+    "reviewer_notes_preassigned": false,
+    "reviewer_role_preassigned": false
+  },
+  "one_time_handoff_authorization_verifier": {
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_TRANSACTION_ONLY",
+    "authorized_future_execution_count": 1,
+    "execution_authorized_in_decision0206": false,
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  },
+  "predecessor": {
+    "commit": "1db96673ba363b81e34c29d646d1d38fa22c0254",
+    "decision": "0205",
+    "review_package_tree": "07777d8b68eec2537f530f9f10c6c295de8524aa",
+    "tree": "a22b8ef18ab67fff8d29574db9a927a9cb075927"
+  },
+  "review_package": {
+    "blank_review_form_sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a",
+    "checksum_manifest_sha256": "a5599dee0a634e262dc9a28ae666afb9d346c9be8d5c24cf73d26a318c18e658",
+    "package_manifest_sha256": "9964f0ba5ce9a78a4b21f77d29f59ba42a2e03c1c589e0aa4fc4ba4e70696e86",
+    "package_status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+    "review_item_count": 9,
+    "review_subject_result": "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+    "review_subject_status": "AUTHOR_CANDIDATE",
+    "safe_package_verifier_sha256": "ebf93b9089332f52372ba0e3fd32d91cb18253976b9232ff786e20948e444dc6"
+  },
+  "status": "AUTHORIZED_FOR_ONE_EXTERNAL_INDEPENDENT_HUMAN_REVIEW_HANDOFF_TRANSACTION_ONLY"
+}

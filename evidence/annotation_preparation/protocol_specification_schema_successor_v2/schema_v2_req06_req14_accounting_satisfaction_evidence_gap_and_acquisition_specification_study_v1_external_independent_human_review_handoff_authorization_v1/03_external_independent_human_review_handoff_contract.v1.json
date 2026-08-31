@@ -1,0 +1,70 @@
+{
+  "contract_id": "SVF-REQ06-REQ14-ACCOUNTING-GAP-STUDY-EXTERNAL-INDEPENDENT-HUMAN-REVIEW-HANDOFF-CONTRACT-V1",
+  "contract_schema_version": 1,
+  "editable_review_form_contract": {
+    "initial_copy_must_be_byte_identical": true,
+    "initial_sha256": "718483ff141ee7787cf2d3d9d2e64f75a33e8ef2643e78df35de73f5e6da402a",
+    "purpose": "external human completion only",
+    "repository_blank_form_remains_immutable": true,
+    "source": "09_blank_independent_human_review_form.v1.md"
+  },
+  "external_zip_contract": {
+    "each_zip_entry_must_be_byte_identical_to_repository_source": true,
+    "file_count": 14,
+    "include_exact_files": [
+      "01_independent_human_review_package_manifest.v1.json",
+      "02_accounting_satisfaction_evidence_gap_assessment.EXACT_COPY.v1.json",
+      "03_future_accounting_evidence_acquisition_specification.EXACT_COPY.v1.json",
+      "04_machine_checkable_accounting_satisfaction_criteria.EXACT_COPY.v1.json",
+      "05_study_source_binding.EXACT_COPY.v1.json",
+      "06_study_boundary.EXACT_COPY.v1.md",
+      "07_independent_human_review_contract.EXACT_COPY.v1.json",
+      "08_reviewer_instructions.v1.md",
+      "09_blank_independent_human_review_form.v1.md",
+      "10_decision0204_a02_consumption_record.v1.json",
+      "11_decision0204_a02_execution_output.EXACT_COPY.v1.txt",
+      "12_decision0204_a02_consumption_sentinel.EXACT_COPY.v1.json",
+      "13_verify_independent_human_review_package.v1.py",
+      "14_independent_human_review_package.v1.SHA256SUMS"
+    ],
+    "source_directory": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v1_independent_human_review_package_v1"
+  },
+  "handoff_record_contract": {
+    "record_decision0206_a02_execution_once": true,
+    "record_human_review_performed_false": true,
+    "record_human_review_recorded_false": true,
+    "record_initial_editable_form_sha256": true,
+    "record_initial_editable_form_size": true,
+    "record_source_package_hashes": true,
+    "record_source_package_tree": true,
+    "record_zip_sha256": true,
+    "record_zip_size": true
+  },
+  "handoff_subject": {
+    "package_status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+    "review_item_count": 9,
+    "review_subject_result": "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+    "review_subject_status": "AUTHOR_CANDIDATE"
+  },
+  "human_review_return_contract": {
+    "completed_review_must_be_returned_as_external_human-authored artifact": true,
+    "returned_artifact_must_be separately machine-checked before recording": true,
+    "returned_artifact_recording_requires separate governance authorization": true,
+    "review_decisions_must_not_be synthesized": true,
+    "reviewer_identity_must_not_be synthesized": true,
+    "reviewer_notes_must_not_be synthesized": true,
+    "reviewer_role_must_not_be synthesized": true
+  },
+  "nonclaims": {
+    "accounting_satisfaction_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "human_review_performed": false,
+    "human_review_recorded": false,
+    "operational_mapping_authorized": false,
+    "pair_reclassification_performed": false,
+    "repair_authorized": false,
+    "schema_v2_losslessness_proven": false,
+    "study_governance_adopted": false
+  }
+}
