@@ -1,0 +1,73 @@
+{
+  "adoption_scope": {
+    "Req06": {
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "requirement_key": "forward_accounting_required",
+      "role_governance_adopted": true
+    },
+    "Req14": {
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "requirement_key": "reverse_accounting_required",
+      "role_governance_adopted": true
+    },
+    "requirement_count": 2
+  },
+  "authorizing_decision": "0200",
+  "decision0200_a02": {
+    "consumption_sentinel_sha256": "d6810c2967ec189188981c7cf6914891ed50d43e148c6b49494e71550490fc04",
+    "consumption_sentinel_size_bytes": 726,
+    "execution_count": 1,
+    "execution_output_sha256": "9b30f429a062a4ebda423183e9b4e519b867795b4d3898f563e45ffb2eb846b5",
+    "execution_output_size_bytes": 908,
+    "execution_result": "PASS",
+    "lifecycle_state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false,
+    "verifier_sha256": "31010dc5901c886524588139755f1d2a45d6b1effe985e32265fbc9494f1afc0"
+  },
+  "governance_state": {
+    "accounting_satisfaction_established": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "bounded_role_study_review_governance_adopted": true,
+    "curl_json_authorized": false,
+    "not_supported_binding_count": 0,
+    "not_supported_binding_created": false,
+    "operational_mapping_authorized": false,
+    "pair_reclassification_performed": false,
+    "repair_authorized": false,
+    "req06_accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+    "req06_req14_unresolved_pair_count": 218,
+    "req06_role_governance_adopted": true,
+    "req14_accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+    "req14_role_governance_adopted": true,
+    "role_governance_adopted": true,
+    "schema_successor_authorized": false,
+    "schema_v2_losslessness_proven": false,
+    "schema_v2_modified": false,
+    "supported_binding_count": 211,
+    "supported_binding_created": false,
+    "unresolved_binding_count": 1642
+  },
+  "immutability": {
+    "author_candidate_study_modified": false,
+    "recorded_human_review_modified": false,
+    "requirement_to_semantic_unit_pair_matrix_modified": false
+  },
+  "next_boundary": "SEPARATELY_AUTHORIZE_REQ06_REQ14_ACCOUNTING_SATISFACTION_EVIDENCE_STUDY",
+  "record_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-GOVERNANCE-ADOPTION-RECORD-V1",
+  "record_schema_version": 1,
+  "recording_decision": "0201",
+  "review_basis": {
+    "human_authorship_beyond_returned_artifact_independently_proven": false,
+    "human_identity_independently_verified": false,
+    "overall_review_decision": "APPROVE_BOUNDED_ROLE_STUDY",
+    "packet_recorded_independence_attestation": true,
+    "pass_count": 6,
+    "recorded_review_sha256": "a3a9f38ed79b3fa450d6799677b986b690a02f235ef21acf93cb5b75d2423309",
+    "review_item_count": 6,
+    "revision_required_count": 0
+  },
+  "status": "BOUNDED_ROLE_GOVERNANCE_ADOPTED_ACCOUNTING_SATISFACTION_EVIDENCE_STILL_REQUIRED"
+}

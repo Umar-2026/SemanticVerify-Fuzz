@@ -1,0 +1,23 @@
+{
+  "accounting_satisfaction_established": false,
+  "authorization_commit": "917474d0fa3d711e0afd105feeefe921a1a4d5b7",
+  "authorization_tree": "c15b8813d7f3bf9188756e852e516b45d177de37",
+  "authorizing_decision": "0200",
+  "bounded_role_governance_adoption_authorized": true,
+  "bounded_role_governance_adoption_completed": true,
+  "consuming_transaction": "0201",
+  "consumption_sentinel_sha256": "d6810c2967ec189188981c7cf6914891ed50d43e148c6b49494e71550490fc04",
+  "consumption_sentinel_size_bytes": 726,
+  "execution_count": 1,
+  "execution_output_sha256": "9b30f429a062a4ebda423183e9b4e519b867795b4d3898f563e45ffb2eb846b5",
+  "execution_output_size_bytes": 908,
+  "execution_result": "PASS",
+  "lifecycle_state": "PERMANENTLY_RETIRED",
+  "not_supported_binding_created": false,
+  "pair_reclassification_performed": false,
+  "record_id": "SVF-D0200-A02-CONSUMPTION-RECORD-V1",
+  "record_schema_version": 1,
+  "rerun_authorized": false,
+  "supported_binding_created": false,
+  "verifier_sha256": "31010dc5901c886524588139755f1d2a45d6b1effe985e32265fbc9494f1afc0"
+}

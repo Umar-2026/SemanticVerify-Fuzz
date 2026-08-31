@@ -1,0 +1,34 @@
+{
+  "binding_id": "SVF-REQ06-REQ14-ACCOUNTING-SEMANTIC-ROLE-GOVERNANCE-ADOPTION-SOURCE-BINDING-V1",
+  "binding_schema_version": 1,
+  "author_candidate_study": {
+    "sha256": "22c51d0d77f3faa086cb426788d057da15c5002a29b4ba68cd3177935aa80381"
+  },
+  "evidence_anchor_matrix": {
+    "sha256": "a153d0979f4bda119928fb29fd8043088115793f164e268c6d0def6fe1203601"
+  },
+  "independent_review_contract": {
+    "sha256": "1d71a5afb82d7ea7ad5fb882a904879409f0ace0b4c71b0201cf59ea82fd0ac1"
+  },
+  "recorded_independent_human_review": {
+    "sha256": "a3a9f38ed79b3fa450d6799677b986b690a02f235ef21acf93cb5b75d2423309",
+    "record_manifest_sha256": "1320dbec92e9ad18693802fe6f276185b279cc587b687d4ce5402d3a43a711c0",
+    "safe_record_verifier_sha256": "c3ee6605842cf1cf10e0e6294efe505bfe82c79efb56e51ec0ab1ed385cb9426",
+    "checksum_manifest_sha256": "dfa9c747ccf75eb2da6a3e11b9408d554697644e9200b3361f0b31636c0bc97f"
+  },
+  "decision0200_authorization": {
+    "commit": "917474d0fa3d711e0afd105feeefe921a1a4d5b7",
+    "tree": "c15b8813d7f3bf9188756e852e516b45d177de37",
+    "authorization_tree": "f158e2f11b2d82d1acf82bf69063d966263551d1",
+    "a01_sha256": "4baaa591c68c8f4a51648d762922cdb3543f3941bd2545a2103d854091568814",
+    "a02_sha256": "31010dc5901c886524588139755f1d2a45d6b1effe985e32265fbc9494f1afc0",
+    "a03_sha256": "b0b5cb6c6bd8b2f83ad7065ec64b74dc13135e47d3cbf93e0cca47c64468dbab",
+    "a04_sha256": "aa33667dd66bae233c28059ee1cf1b0eebe5dbcc570b5115b069032c2e0d1edb",
+    "decision_sha256": "3c0597d4768c05e6196a1c42103ffc86d260ac3675ff4335fa40a0b70d5bd0cf"
+  },
+  "review_outcome": {
+    "item_pass_count": 6,
+    "item_revision_required_count": 0,
+    "overall_decision": "APPROVE_BOUNDED_ROLE_STUDY"
+  }
+}
