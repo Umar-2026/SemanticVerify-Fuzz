@@ -1,0 +1,110 @@
+{
+  "authorized_by_decision": "0202",
+  "current_nonresults": {
+    "accounting_satisfaction_established": false,
+    "concrete_accounting_instance_created": false,
+    "forward_accounting_satisfied": false,
+    "operational_mapping_completed": false,
+    "pair_reclassification_performed": false,
+    "reverse_accounting_satisfied": false,
+    "schema_v2_losslessness_proven": false,
+    "source_unit_to_schema_carrier_mapping_created": false
+  },
+  "fixed_findings": {
+    "accounting_alone_proves_semantic_encoding": false,
+    "active_schema_requires_forward_complete_true": true,
+    "active_schema_requires_reverse_complete_true": true,
+    "active_schema_structurally_supports_forward_accounting": true,
+    "active_schema_structurally_supports_reverse_accounting": true,
+    "bound_relation_evidence_contains_concrete_accounting_instance": false,
+    "constructive_full_exact_mapping_witness_complete": false,
+    "current_immutable_evidence_structurally_sufficient_for_concrete_accounting_satisfaction_assessment": false,
+    "deterministic_complete_forward_encoding_proven": false,
+    "deterministic_exact_reverse_reconstruction_proven": false,
+    "schema_completeness_flags_are_not_independent_satisfaction_evidence": true
+  },
+  "gap_questions": [
+    {
+      "finding": "GAP_REQUIRES_EXPLICIT_GOVERNED_SOURCE_UNIT_DOMAIN_BINDING",
+      "id": "ASG01",
+      "question": "Is the governed source-unit domain explicitly and immutably bound for a future concrete accounting instance?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "GAP_REQUIRES_EXPLICIT_GOVERNED_SCHEMA_CARRIER_DOMAIN_BINDING",
+      "id": "ASG02",
+      "question": "Is the governed schema-carrier domain explicitly and immutably bound for a future concrete accounting instance?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "NO_CONCRETE_FORWARD_ACCOUNTING_RELATION_BOUND",
+      "id": "ASG03",
+      "question": "Does current immutable evidence contain a concrete forward accounting relation over the governed source-unit domain?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "NO_CONCRETE_REVERSE_ACCOUNTING_RELATION_BOUND",
+      "id": "ASG04",
+      "question": "Does current immutable evidence contain a concrete reverse accounting relation over a governed schema-carrier domain?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "NOT_CURRENTLY_ASSESSABLE_WITHOUT_BOUND_DOMAIN_AND_FORWARD_RELATION",
+      "id": "ASG05",
+      "question": "Can forward completeness currently be independently recomputed rather than trusted from a declared flag?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "NOT_CURRENTLY_ASSESSABLE_WITHOUT_BOUND_DOMAIN_AND_REVERSE_RELATION",
+      "id": "ASG06",
+      "question": "Can reverse completeness currently be independently recomputed rather than trusted from a declared flag?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "NOT_CURRENTLY_ASSESSABLE_WITHOUT_CONCRETE_RELATIONS",
+      "id": "ASG07",
+      "question": "Can forward and reverse relations currently be machine-checked for bidirectional consistency, valid identifiers, and dangling references?",
+      "satisfaction_effect": "NONE"
+    },
+    {
+      "finding": "BOUNDARY_ESTABLISHED_ACCOUNTING_ALONE_DOES_NOT_PROVE_SEMANTIC_ENCODING",
+      "id": "ASG08",
+      "question": "Is accounting satisfaction kept logically distinct from semantic losslessness and exact semantic reconstruction?",
+      "satisfaction_effect": "NONE"
+    }
+  ],
+  "gap_summary": {
+    "accounting_satisfaction_currently_determinable": false,
+    "evidence_gap_confirmed": true,
+    "further_scoping_required_before_specification": false,
+    "future_acquisition_specification_can_be_defined_without_creating_actual_accounting_evidence": true,
+    "question_count": 8
+  },
+  "governed_requirement_scope": {
+    "Req06": {
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "requirement_key": "forward_accounting_required"
+    },
+    "Req14": {
+      "accounting_satisfaction_state": "FURTHER_ACCOUNTING_SATISFACTION_EVIDENCE_REQUIRED",
+      "governance_role": "CROSS_CUTTING_ACCOUNTING_COMPLETENESS_CONSTRAINT",
+      "requirement_key": "reverse_accounting_required"
+    }
+  },
+  "pair_state": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "review_state": {
+    "governance_adopted": false,
+    "independent_human_review_completed": false,
+    "independent_human_review_required": true
+  },
+  "status": "AUTHOR_CANDIDATE",
+  "study_id": "SVF-REQ06-REQ14-ACCOUNTING-SATISFACTION-EVIDENCE-GAP-AND-ACQUISITION-SPECIFICATION-STUDY-V1",
+  "study_result": "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+  "study_schema_version": 1
+}
