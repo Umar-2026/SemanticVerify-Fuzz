@@ -1,0 +1,106 @@
+{
+  "authorization_id": "SVF-D0204-ACCOUNTING-SATISFACTION-EVIDENCE-GAP-AND-ACQUISITION-SPECIFICATION-STUDY-V1-INDEPENDENT-HUMAN-REVIEW-PACKAGE-AUTHORIZATION",
+  "authorization_schema_version": 1,
+  "decision": "0204",
+  "status": "AUTHORIZED_TO_AUTHOR_BLANK_INDEPENDENT_HUMAN_REVIEW_PACKAGE_ONLY",
+  "predecessor_decision": "0203",
+  "predecessor_commit": "70437180754f8248a5cc06d0af3e59c2c343520c",
+  "predecessor_tree": "f41d0f0a087cb78f56e618eab8b5ca17743e40f4",
+  "review_subject": {
+    "study_status": "AUTHOR_CANDIDATE",
+    "study_result": "EVIDENCE_GAP_CONFIRMED_ACQUISITION_SPECIFICATION_READY",
+    "study_artifact_count": 10,
+    "gap_question_count": 8,
+    "future_required_evidence_artifact_count": 5,
+    "machine_checkable_satisfaction_criteria_defined": true,
+    "machine_checkable_satisfaction_criteria_evaluated": false,
+    "independent_human_review_required": true,
+    "independent_human_review_completed": false,
+    "governance_adopted": false
+  },
+  "exact_study_bindings": {
+    "s01_sha256": "6dd6540f0655c1ac064460560d2429fa62762ac4e6bb52e671283ff227f0b2a9",
+    "s02_sha256": "c4c77261ef19d929112ca56247d223ad7a04d9f6661dcc08860ff4a77dfabc83",
+    "s03_sha256": "e74e58463659531a393c24a6a8de616f4efa9b688d13a24b67e876f4d0ca8436",
+    "s04_sha256": "ec0e753dfc694ff8764d2452bceddf820cf3740f55b02c218bc661db7e75cf72",
+    "s05_sha256": "b392b256a707b59e643b53322c684d9e1dc76be023e0f62700f282a0d915174d",
+    "s06_sha256": "dc2f03f4a0afa97f6c5a43cf6cc28eed7d65e43c2dbc31e2e98ce218cd3b8136",
+    "s07_sha256": "6718c7bbeec9ecdc411c7f53ff3de2db8aadc973647d2d26220b4f7072037486",
+    "s08_sha256": "451e1648c6f5eeea38bcb485839c5bb03e3eba6cc378d3fd49970317dc10f963",
+    "s09_sha256": "50c97680a709fefe0dd68b96ea06146df8f0bff92387bd6b704a360811642d2a",
+    "s10_sha256": "99223bf924883efbda6821dee0ab2afb86119517b8cc3eee844ca5e475841598",
+    "decision0203_sha256": "4d0a29bea5a1f76035f9f2aa2ea0dbe88ef2b6f19eb469885a28bbca2bdbea9c"
+  },
+  "authorized_review_package": {
+    "package_status": "BLANK_AWAITING_INDEPENDENT_HUMAN_REVIEW",
+    "review_item_count": 9,
+    "include_exact_gap_assessment": true,
+    "include_exact_future_acquisition_specification": true,
+    "include_exact_machine_checkable_satisfaction_criteria": true,
+    "include_exact_study_source_binding": true,
+    "include_exact_study_boundary": true,
+    "include_review_contract": true,
+    "include_reviewer_instructions": true,
+    "include_blank_human_review_form": true,
+    "include_decision0204_a02_consumption_evidence": true,
+    "include_safe_rerunnable_package_verifier": true,
+    "include_checksum_manifest": true
+  },
+  "human_review_form_requirements": {
+    "reviewer_name_must_be_blank_at_package_authoring": true,
+    "reviewer_role_must_be_blank_at_package_authoring": true,
+    "reviewer_confirmation_must_be_blank_at_package_authoring": true,
+    "review_date_must_be_blank_at_package_authoring": true,
+    "independent_review_attestation_must_be_blank_at_package_authoring": true,
+    "all_item_decisions_must_be_blank_at_package_authoring": true,
+    "all_reviewer_notes_must_be_blank_at_package_authoring": true,
+    "overall_review_decision_must_be_blank_at_package_authoring": true,
+    "overall_reviewer_notes_must_be_blank_at_package_authoring": true,
+    "reviewer_identity_preassigned": false,
+    "reviewer_role_preassigned": false
+  },
+  "allowed_review_vocabulary": {
+    "item_decisions": [
+      "PASS",
+      "REVISION_REQUIRED"
+    ],
+    "overall_decisions": [
+      "APPROVE_BOUNDED_EVIDENCE_GAP_AND_ACQUISITION_SPECIFICATION_STUDY",
+      "REVISION_REQUIRED"
+    ]
+  },
+  "independence_boundary": {
+    "genuine_independent_human_review_required": true,
+    "reviewer_must_not_be_author_of_author_candidate_study": true,
+    "specific_reviewer_identity_required_by_authorization": false,
+    "specific_reviewer_role_label_required_by_authorization": false
+  },
+  "explicit_non_authorizations": {
+    "human_review_performed": false,
+    "human_review_recorded": false,
+    "study_governance_adopted": false,
+    "actual_accounting_evidence_acquisition": false,
+    "concrete_accounting_instance_authoring": false,
+    "source_unit_to_schema_carrier_mapping_creation": false,
+    "accounting_satisfaction_determination": false,
+    "accounting_satisfaction_establishment": false,
+    "pair_reclassification": false,
+    "supported_binding_creation": false,
+    "not_supported_binding_creation": false,
+    "operational_mapping": false,
+    "schema_v2_losslessness_proof": false,
+    "schema_v2_modification": false,
+    "schema_successor": false,
+    "curl_json": false,
+    "analyzer": false,
+    "baseline": false,
+    "repair": false
+  },
+  "one_time_package_authoring_verifier": {
+    "execution_authorized_in_decision0204": false,
+    "authorized_future_execution_count": 1,
+    "authorized_consuming_transaction": "IMMEDIATELY_SUBSEQUENT_BLANK_INDEPENDENT_HUMAN_REVIEW_PACKAGE_AUTHORING_TRANSACTION_ONLY",
+    "permanently_retire_after_first_execution_regardless_of_result": true,
+    "rerun_authorized": false
+  }
+}
