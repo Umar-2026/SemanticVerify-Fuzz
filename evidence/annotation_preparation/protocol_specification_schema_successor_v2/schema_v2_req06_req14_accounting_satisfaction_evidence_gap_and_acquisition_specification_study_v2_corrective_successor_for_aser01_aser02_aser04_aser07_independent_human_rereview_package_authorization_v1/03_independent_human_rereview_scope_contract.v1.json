@@ -1,0 +1,37 @@
+{
+  "contract_id": "SVF-D0214-INDEPENDENT-HUMAN-REREVIEW-SCOPE-CONTRACT-V1",
+  "package_requirements": {
+    "blank_before_external_handoff": true,
+    "checksum_closure": true,
+    "exact_source_binding": true,
+    "independent_human_completion_required": true,
+    "no_synthetic_human_fields": true,
+    "safe_rerunnable_package_verification": true
+  },
+  "post_package_lifecycle": {
+    "separate_external_handoff_authorization_required": true,
+    "separate_governance_adoption_required_if_supported": true,
+    "separate_return_recording_authorization_required": true
+  },
+  "preserved_pass_items": [
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "required_rereview_items": [
+    "ASER01",
+    "ASER02",
+    "ASER04",
+    "ASER07"
+  ],
+  "rereview_decision_semantics": {
+    "absence_of_positive_support_is_not_negative_proof": true,
+    "every_corrective_item_requires_explicit_human_decision": true,
+    "overall_rereview_decision_requires_explicit_human_decision": true,
+    "rereview_does_not_itself_authorize_downstream_operations": true
+  },
+  "review_subject": "D0213_REQ06_REQ14_ACCOUNTING_GAP_CORRECTIVE_SUCCESSOR",
+  "subject_status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR"
+}

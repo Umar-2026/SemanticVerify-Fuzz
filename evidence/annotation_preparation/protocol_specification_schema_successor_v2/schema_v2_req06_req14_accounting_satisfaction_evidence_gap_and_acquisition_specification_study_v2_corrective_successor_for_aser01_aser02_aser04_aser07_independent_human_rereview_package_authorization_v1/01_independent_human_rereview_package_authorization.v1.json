@@ -1,0 +1,139 @@
+{
+  "authorization_id": "SVF-D0214-INDEPENDENT-HUMAN-REREVIEW-PACKAGE-AUTHORIZATION-V1",
+  "authorization_status": "AUTHORIZED_TO_AUTHOR_BLANK_INDEPENDENT_HUMAN_REREVIEW_PACKAGE_ONLY",
+  "authorized_package_contents": {
+    "blank_independent_human_rereview_form": true,
+    "checksum_manifest": true,
+    "decision0213_exact_copy": true,
+    "exact_d0213_corrective_successor_material": true,
+    "machine_readable_package_binding": true,
+    "predecessor_returned_revision_required_review_context": true,
+    "review_scope_and_instructions": true,
+    "safe_rerunnable_package_verifier": true
+  },
+  "decision": "0214",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_schema_carrier_domain_acquisition": false,
+    "actual_source_unit_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "corrective_successor_governance_adoption": false,
+    "curl_json_creation": false,
+    "external_rereview_handoff": false,
+    "forward_witness_acquisition": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "human_rereview_performance": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "returned_rereview_recording": false,
+    "reverse_witness_acquisition": false,
+    "schema_successor_creation": false,
+    "schema_v2_modification": false
+  },
+  "human_fields_must_remain_blank_until_external_review": [
+    "reviewer_name",
+    "reviewer_role",
+    "reviewer_confirmation_or_signature",
+    "review_date",
+    "independence_attestation",
+    "ASER01_decision",
+    "ASER01_notes",
+    "ASER02_decision",
+    "ASER02_notes",
+    "ASER04_decision",
+    "ASER04_notes",
+    "ASER07_decision",
+    "ASER07_notes",
+    "overall_rereview_decision",
+    "overall_rereview_notes"
+  ],
+  "next_lifecycle_step_if_package_authored": "SEPARATELY_AUTHORIZE_EXTERNAL_INDEPENDENT_HUMAN_REREVIEW_HANDOFF",
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "required_human_rereview_questions": {
+    "ASER01": {
+      "focus": [
+        "portable Git-object recomputation",
+        "commit-to-tree binding",
+        "tree-to-path resolution",
+        "blob-to-path binding",
+        "exact-copy SHA-256 and byte-size closure"
+      ],
+      "question": "Does the D0213 corrective package now provide independently recomputable provenance tying included exact-copy artifacts to authoritative D0203 Git commit/tree/blob objects and blob-to-path resolution without relying only on internal package assertions?"
+    },
+    "ASER02": {
+      "focus": [
+        "seven substantive fixed-evidence copies",
+        "canonical D0203 source paths",
+        "Git blob / SHA-256 / size binding",
+        "bounded absence claim",
+        "no new accounting evidence"
+      ],
+      "question": "Does the corrective package provide substantive exact copies of the seven fixed-evidence artifacts referenced by D0203 and appropriately bound the evidence-gap claim to the included D0203 evidence set without asserting unsupported exhaustive absence across a larger evidence universe?"
+    },
+    "ASER04": {
+      "focus": [
+        "authoritative enumeration sources",
+        "deterministic inclusion/exclusion rules",
+        "formal AEA01-AEA05 schemas",
+        "canonical serialization rules",
+        "identifier comparison rules",
+        "forward_complete / reverse_complete exact schema binding",
+        "active V2 hash-contract exact binding"
+      ],
+      "question": "Are the future acquisition controls now sufficiently deterministic and machine-verifiable for authoritative U/C enumeration, inclusion/exclusion accounting, AEA01-AEA05 artifact schemas, canonical serialization, identifier comparison, active Schema-V2 flag binding, and active V2 hash-contract provenance?"
+    },
+    "ASER07": {
+      "focus": [
+        "freeze-event metadata",
+        "predecessor hashes",
+        "derivation-input hashes",
+        "Git ancestry checks",
+        "immutable U/C digests",
+        "domain-before-relation ordering",
+        "witness noninterference with frozen domains"
+      ],
+      "question": "Do the corrective freeze/lineage controls provide a machine-verifiable future mechanism preventing selectively incomplete U/C scope and proving U/C freeze before forward and reverse relation-witness construction?"
+    }
+  },
+  "rereview_scope": {
+    "corrective_items_requiring_new_human_judgment": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "preserved_pass_items_are_not_reopened": true,
+    "preserved_pass_items_may_be_checked_for_non_regression": true,
+    "preserved_predecessor_pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ]
+  },
+  "review_nonclaim_boundary": {
+    "external_authentication_must_not_be_synthesized": true,
+    "human_decisions_must_not_be_synthesized": true,
+    "human_notes_must_not_be_synthesized": true,
+    "package_authoring_is_not_governance_adoption": true,
+    "package_authoring_is_not_human_review": true,
+    "package_authoring_is_not_review_approval": true,
+    "reviewer_identity_must_not_be_synthesized": true
+  },
+  "source_checkpoint": {
+    "decision0213_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+    "decision0213_successor_tree": "39267d65acd3ae64781e8e3b79419197cca8ae00",
+    "decision0213_tree": "25ef4c0979f9efa3ad85e72af3b466eaf4da151f",
+    "successor_status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR"
+  }
+}
