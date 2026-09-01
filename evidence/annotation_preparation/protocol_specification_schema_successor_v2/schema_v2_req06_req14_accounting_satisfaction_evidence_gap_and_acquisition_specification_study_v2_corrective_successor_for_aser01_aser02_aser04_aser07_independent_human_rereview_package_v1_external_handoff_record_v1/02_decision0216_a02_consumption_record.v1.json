@@ -1,0 +1,11 @@
+{
+  "authorization_commit": "722be8c26570870a39df255783d17543924c79c9",
+  "consumption_sentinel_sha256": "aa1aa1144710aaa90c83c28a412418a999671c62fd8385afe92258b3a04ae659",
+  "execution_attempt_count": 1,
+  "execution_output_sha256": "443d6454adc1b4729aec559b8c4dfa55fbf7b67983d66454804c7dd537e397d5",
+  "execution_result": "PASS",
+  "record_id": "SVF-D0216-A02-CONSUMPTION-RECORD-V1",
+  "rerun_authorized": false,
+  "state": "PERMANENTLY_RETIRED",
+  "verifier_sha256": "f0372a4d3c8a768d326044fdf142c976f01faedb4149aa80e908007564e4135d"
+}
