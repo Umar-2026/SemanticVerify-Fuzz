@@ -1,0 +1,42 @@
+{
+  "contract_id": "SVF-D0216-EXTERNAL-INDEPENDENT-HUMAN-REREVIEW-HANDOFF-SCOPE-CONTRACT-V1",
+  "future_return_boundary": {
+    "returned_completed_form_is_external_evidence_only_after_genuine_human_completion": true,
+    "separate_governance_adoption_required": true,
+    "separate_return_recording_authorization_required": true
+  },
+  "handoff_scope": {
+    "fresh_rereview_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "preserved_pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ]
+  },
+  "human_boundary": {
+    "human_review_is_later_external_activity": true,
+    "returned_review_not_recorded_by_handoff_transaction": true,
+    "review_decisions_not_authored_by_handoff_transaction": true,
+    "review_notes_not_authored_by_handoff_transaction": true,
+    "reviewer_identity_not_authored_by_handoff_transaction": true
+  },
+  "required_handoff_properties": {
+    "checksum_closure_required": true,
+    "committed_source_bytes_only": true,
+    "existing_external_targets_must_not_be_overwritten": true,
+    "manual_form_blank_at_creation_required": true,
+    "manual_form_initial_exact_copy_required": true,
+    "safe_rerunnable_handoff_verifier_required": true,
+    "zip_integrity_binding_required": true
+  },
+  "source_package": "D0215_BLANK_INDEPENDENT_HUMAN_REREVIEW_PACKAGE",
+  "source_package_status": "BLANK_AWAITING_EXTERNAL_HANDOFF_AUTHORIZATION",
+  "subject": "D0213_REQ06_REQ14_ACCOUNTING_GAP_CORRECTIVE_SUCCESSOR"
+}

@@ -1,0 +1,96 @@
+{
+  "authorization_id": "SVF-D0216-EXTERNAL-INDEPENDENT-HUMAN-REREVIEW-HANDOFF-AUTHORIZATION-V1",
+  "authorization_status": "AUTHORIZED_TO_CREATE_EXTERNAL_INDEPENDENT_HUMAN_REREVIEW_HANDOFF_ONLY",
+  "authorized_external_outputs": {
+    "handoff_zip": {
+      "must_not_overwrite_existing_target": true,
+      "path": "/openbayes/home/50_req06_req14_accounting_gap_corrective_successor_independent_human_rereview_handoff.v1.zip",
+      "purpose": "Immutable transport archive generated from the exact committed Decision0215 blank re-review package."
+    },
+    "manual_review_copy": {
+      "initial_bytes_must_match_committed_blank_form": true,
+      "may_be_completed_only_later_by_external_human_reviewer": true,
+      "must_be_blank_at_handoff_creation": true,
+      "must_not_overwrite_existing_target": true,
+      "path": "/openbayes/home/50_req06_req14_accounting_gap_corrective_successor_independent_human_rereview_form.MANUAL_REVIEW_COPY.v1.md",
+      "source": "Decision0215 committed blank independent-human re-review form"
+    }
+  },
+  "authorized_repository_recording_during_handoff_transaction": {
+    "archive_sha256_and_size": true,
+    "checksum_manifest": true,
+    "decision0216_a02_consumption_record": true,
+    "decision0216_a02_consumption_sentinel_exact_copy": true,
+    "decision0216_a02_execution_output_exact_copy": true,
+    "decision0217_handoff_record": true,
+    "handoff_manifest": true,
+    "manual_copy_initial_sha256_and_size": true,
+    "safe_rerunnable_handoff_verifier": true
+  },
+  "decision": "0216",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_schema_carrier_domain_acquisition": false,
+    "actual_source_unit_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "corrective_successor_governance_adoption": false,
+    "curl_json_creation": false,
+    "forward_witness_acquisition": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "human_field_population": false,
+    "human_rereview_decision_creation": false,
+    "human_rereview_performance": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "returned_rereview_recording": false,
+    "reverse_witness_acquisition": false,
+    "schema_successor_creation": false,
+    "schema_v2_modification": false
+  },
+  "handoff_construction_rules": {
+    "existing_external_targets_must_not_be_overwritten": true,
+    "human_decisions_must_not_be_synthesized": true,
+    "human_fields_must_remain_blank_during_handoff_creation": true,
+    "independence_attestation_completion_must_not_be_synthesized": true,
+    "manual_copy_source_must_be_exact_committed_blank_form": true,
+    "review_date_must_not_be_synthesized": true,
+    "reviewer_identity_must_not_be_synthesized": true,
+    "reviewer_notes_must_not_be_synthesized": true,
+    "reviewer_signature_or_confirmation_must_not_be_synthesized": true,
+    "working_tree_substitution_for_package_source_forbidden": true,
+    "zip_source_must_be_exact_committed_decision0215_package": true
+  },
+  "next_lifecycle_step_if_handoff_created": "AWAIT_GENUINE_EXTERNAL_INDEPENDENT_HUMAN_REREVIEW_RETURN",
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "review_scope": {
+    "fresh_human_rereview_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "preserved_pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "preserved_pass_items_reopened": false
+  },
+  "source_checkpoint": {
+    "decision0215_commit": "53d0ced3daa2aa1b3dc6464ac77a3793704905b8",
+    "decision0215_package_tree": "bb5427cc37ba328de88212d9cb1fab921cb8f026",
+    "decision0215_tree": "4ed102cdb1ef7571c0ac34c6e874c1bd34481077",
+    "package_status": "BLANK_AWAITING_EXTERNAL_HANDOFF_AUTHORIZATION"
+  }
+}
