@@ -1,0 +1,118 @@
+{
+  "actual_acquisition_authorized": false,
+  "actual_acquisition_performed": false,
+  "anti_circularity_rules": [
+    "forward_complete=true must not be used as proof of forward completeness",
+    "reverse_complete=true must not be used as proof of reverse completeness",
+    "carrier domain must not be silently inferred from the candidate forward relation during satisfaction evaluation",
+    "source-unit domain must not be silently reduced to units appearing in the candidate forward relation",
+    "reverse relation must not be treated as valid merely because it was mechanically copied from forward relation unless that derivation is explicitly authorized and independently verified",
+    "accounting completeness must not be promoted into semantic-losslessness proof"
+  ],
+  "concrete_accounting_instance_created": false,
+  "current_placeholders": {
+    "accounting_provenance_and_checksum_record": "NOT_ACQUIRED",
+    "forward_accounting_witness": "NOT_ACQUIRED",
+    "governed_schema_carrier_domain": "NOT_ACQUIRED",
+    "governed_source_unit_domain": "NOT_ACQUIRED",
+    "reverse_accounting_witness": "NOT_ACQUIRED"
+  },
+  "explicit_non_authorizations": {
+    "accounting_satisfaction_determination": false,
+    "actual_accounting_evidence_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_forward_relation_authoring": false,
+    "concrete_reverse_relation_authoring": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "schema_successor": false,
+    "schema_v2_modification": false,
+    "source_unit_to_schema_carrier_mapping_creation": false
+  },
+  "required_acquisition_order": [
+    "freeze governed_source_unit_domain",
+    "freeze governed_schema_carrier_domain",
+    "acquire or author forward_accounting witness under separate authorization",
+    "acquire or author reverse_accounting witness under separate authorization",
+    "freeze provenance and checksum closure",
+    "run separately authorized satisfaction verifier",
+    "record result without modifying source evidence"
+  ],
+  "required_future_evidence_artifacts": [
+    {
+      "current_status": "REQUIRED_NOT_ACQUIRED",
+      "id": "AEA01",
+      "name": "governed_source_unit_domain",
+      "purpose": "Bind the exact finite source-unit universe U against which forward-accounting completeness will be recomputed.",
+      "required_properties": [
+        "immutable artifact identity",
+        "SHA-256 binding",
+        "unique canonical source_unit_id for every in-scope unit",
+        "source_container for every source unit",
+        "source_unit_kind for every source unit",
+        "explicit cardinality",
+        "no duplicate source_unit_id"
+      ]
+    },
+    {
+      "current_status": "REQUIRED_NOT_ACQUIRED",
+      "id": "AEA02",
+      "name": "governed_schema_carrier_domain",
+      "purpose": "Bind the exact finite schema-carrier universe C against which reverse-accounting completeness will be recomputed.",
+      "required_properties": [
+        "immutable artifact identity",
+        "SHA-256 binding",
+        "canonical schema-carrier identifier vocabulary",
+        "explicit in-scope carrier membership",
+        "explicit cardinality",
+        "no duplicate carrier identifier",
+        "domain fixed before satisfaction evaluation"
+      ]
+    },
+    {
+      "current_status": "REQUIRED_NOT_ACQUIRED",
+      "id": "AEA03",
+      "name": "concrete_forward_accounting_witness",
+      "purpose": "Provide the candidate relation F from each governed source unit to one or more governed schema carriers.",
+      "required_properties": [
+        "one canonical forward record per governed source_unit_id",
+        "source_container matches governed source-unit domain",
+        "source_unit_kind matches governed source-unit domain",
+        "schema_carriers nonempty for every governed source unit",
+        "all referenced carriers belong to governed carrier domain",
+        "no duplicate carrier within a forward record"
+      ]
+    },
+    {
+      "current_status": "REQUIRED_NOT_ACQUIRED",
+      "id": "AEA04",
+      "name": "concrete_reverse_accounting_witness",
+      "purpose": "Provide the candidate inverse relation R from each governed schema carrier to its governed source units.",
+      "required_properties": [
+        "one canonical reverse record per governed schema carrier",
+        "all schema_carrier values belong to governed carrier domain",
+        "all source_unit_ids belong to governed source-unit domain",
+        "no duplicate source_unit_id within a reverse record"
+      ]
+    },
+    {
+      "current_status": "REQUIRED_NOT_ACQUIRED",
+      "id": "AEA05",
+      "name": "accounting_provenance_and_checksum_record",
+      "purpose": "Bind all domains and relation witnesses to exact immutable source identities before satisfaction evaluation.",
+      "required_properties": [
+        "SHA-256 for source-unit domain",
+        "SHA-256 for carrier domain",
+        "SHA-256 for forward witness",
+        "SHA-256 for reverse witness",
+        "generation or acquisition provenance",
+        "explicit governance authorization identifier"
+      ]
+    }
+  ],
+  "specification_id": "SVF-REQ06-REQ14-FUTURE-ACCOUNTING-EVIDENCE-ACQUISITION-SPECIFICATION-V1",
+  "specification_schema_version": 1,
+  "status": "AUTHOR_CANDIDATE_SPECIFICATION_ONLY"
+}

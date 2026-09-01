@@ -1,0 +1,11 @@
+{
+  "artifact_id": "SVF-D0214-A02-CONSUMPTION-RECORD-V1",
+  "authorization_commit": "92931e570827aadb32fb1717063e9dc56b2ac1ad",
+  "consumption_sentinel_sha256": "774424e3090a81f3fd15fafb899889f0e56ee39c984c9961dad914a6cda56f8a",
+  "execution_attempt_count": 1,
+  "execution_output_sha256": "adca2df25b0e01770d5ab0c9e3b1738aaed1701b8b1aab89e457d5036e60c343",
+  "execution_result": "PASS",
+  "rerun_authorized": false,
+  "state": "PERMANENTLY_RETIRED",
+  "verifier_sha256": "280bc36c2c9e83377eacdce0dcd5a27481e3221cf54d16d21d58a35d7c08d383"
+}

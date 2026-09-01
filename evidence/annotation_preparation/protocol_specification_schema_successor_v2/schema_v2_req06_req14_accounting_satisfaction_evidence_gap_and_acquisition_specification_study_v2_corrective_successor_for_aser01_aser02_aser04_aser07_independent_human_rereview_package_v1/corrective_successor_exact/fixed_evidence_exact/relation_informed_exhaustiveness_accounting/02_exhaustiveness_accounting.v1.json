@@ -1,0 +1,2879 @@
+{
+  "losslessness_requirement_inventory": {
+    "bound_17_item_inventory_found": false,
+    "inventory_path": null,
+    "item_hashes": [],
+    "required_count_from_authorization": 17
+  },
+  "matrix_field_classes": [
+    "EASY_HANDLE",
+    "EASY_MULTI_MEMBERSHIP",
+    "EXPLICIT_GLOBAL_CLEANUP_OBLIGATION",
+    "GLOBAL_RUNTIME_REFERENCE_STATE",
+    "MULTI_HANDLE",
+    "UNKNOWN",
+    "VALID",
+    "VIOLATION-MAY",
+    "VIOLATION-MUST",
+    "allowed_machine_verdicts",
+    "argument_scope",
+    "classification_note",
+    "cleanup_obligation_effect",
+    "condition",
+    "curl_easy_init",
+    "curl_easy_perform",
+    "curl_easy_setopt",
+    "curl_global_init",
+    "curl_multi_add_handle",
+    "curl_multi_cleanup",
+    "curl_multi_init",
+    "curl_multi_perform",
+    "curl_multi_remove_handle",
+    "defect",
+    "dependent_reasoning_policy",
+    "discharge_condition",
+    "effect",
+    "enforcement",
+    "excludes",
+    "fact",
+    "failed_cleanup_effect",
+    "feasible_state_join_policy",
+    "function",
+    "membership_sensitive",
+    "missing_cleanup_verdict",
+    "normative_strength_uncertainty_must_not_be_silently_strengthened",
+    "ownership_sensitive",
+    "path_sensitive",
+    "precedence",
+    "precondition",
+    "reason",
+    "recommendation",
+    "required_discharge",
+    "resource",
+    "resource_centered",
+    "return",
+    "return_behavior",
+    "return_note",
+    "return_sensitive",
+    "rule_id",
+    "runtime_post_state",
+    "set_valued_state_reasoning",
+    "structural_effect",
+    "synthetic_protocol_events_invented",
+    "unknown_is_first_class",
+    "unknown_must_never_be_converted_to_valid",
+    "verdict"
+  ],
+  "relation_domain": {
+    "array_path": "$.relations",
+    "classification_key": "classification",
+    "classification_totals": {
+      "NOT_SEMANTICALLY_RELATED": 969,
+      "SEMANTICALLY_RELATED": 113,
+      "UNRESOLVED": 8665
+    },
+    "matrix_field_class_count": 57,
+    "matrix_field_class_key": "v4_matrix_field_class",
+    "row_count": 9747,
+    "schema_path_key": "schema_v2_property_path",
+    "schema_v2_property_path_count": 171
+  },
+  "schema_paths": [
+    "$.author",
+    "$.content_sha256",
+    "$.creation_date",
+    "$.events",
+    "$.events[].affected_relation_type_ids",
+    "$.events[].affected_resource_type_ids",
+    "$.events[].event_id",
+    "$.events[].event_kind",
+    "$.events[].return_classes",
+    "$.events[].return_classes[].operands",
+    "$.events[].return_classes[].operator",
+    "$.events[].return_classes[].return_class_id",
+    "$.events[].symbol_or_condition",
+    "$.exit_obligations",
+    "$.exit_obligations[].exit_obligation_id",
+    "$.exit_obligations[].preconditions",
+    "$.exit_obligations[].preconditions.path_conditions",
+    "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+    "$.exit_obligations[].preconditions.path_conditions[].condition_kind",
+    "$.exit_obligations[].preconditions.path_conditions[].polarity",
+    "$.exit_obligations[].preconditions.path_conditions[].referenced_event_id",
+    "$.exit_obligations[].preconditions.relation_state_requirements",
+    "$.exit_obligations[].preconditions.relation_state_requirements[].allowed_states",
+    "$.exit_obligations[].preconditions.relation_state_requirements[].presence",
+    "$.exit_obligations[].preconditions.relation_state_requirements[].relation_binding_id",
+    "$.exit_obligations[].preconditions.resource_state_requirements",
+    "$.exit_obligations[].preconditions.resource_state_requirements[].allowed_states",
+    "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+    "$.exit_obligations[].preconditions.return_conditions",
+    "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+    "$.exit_obligations[].preconditions.return_conditions[].event_id",
+    "$.exit_obligations[].relation_bindings",
+    "$.exit_obligations[].relation_bindings[].binding_id",
+    "$.exit_obligations[].relation_bindings[].relation_type_id",
+    "$.exit_obligations[].relation_bindings[].source_resource_binding_id",
+    "$.exit_obligations[].relation_bindings[].target_resource_binding_id",
+    "$.exit_obligations[].required_relation_exit_states",
+    "$.exit_obligations[].required_relation_exit_states[].allowed_states",
+    "$.exit_obligations[].required_relation_exit_states[].presence",
+    "$.exit_obligations[].required_relation_exit_states[].relation_binding_id",
+    "$.exit_obligations[].required_resource_exit_states",
+    "$.exit_obligations[].required_resource_exit_states[].allowed_states",
+    "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+    "$.exit_obligations[].resource_bindings",
+    "$.exit_obligations[].resource_bindings[].binding_id",
+    "$.exit_obligations[].resource_bindings[].distinct_identity_from",
+    "$.exit_obligations[].resource_bindings[].resource_type_id",
+    "$.exit_obligations[].resource_bindings[].role",
+    "$.exit_obligations[].resource_bindings[].same_identity_as",
+    "$.exit_obligations[].semantic_container",
+    "$.exit_obligations[].source_evidence",
+    "$.exit_obligations[].verdict_if_violated",
+    "$.freeze_date",
+    "$.library",
+    "$.library_revision",
+    "$.provenance",
+    "$.provenance[].content_sha256",
+    "$.provenance[].evidence_id",
+    "$.provenance[].path_or_url",
+    "$.provenance[].quoted_or_paraphrased_rationale",
+    "$.provenance[].retrieval_date",
+    "$.provenance[].source_type",
+    "$.resource_model",
+    "$.resource_model.relation_types",
+    "$.resource_model.relation_types[].cardinality",
+    "$.resource_model.relation_types[].cardinality.source_max",
+    "$.resource_model.relation_types[].cardinality.source_min",
+    "$.resource_model.relation_types[].cardinality.target_max",
+    "$.resource_model.relation_types[].cardinality.target_min",
+    "$.resource_model.relation_types[].description",
+    "$.resource_model.relation_types[].initial_states",
+    "$.resource_model.relation_types[].relation_kind",
+    "$.resource_model.relation_types[].relation_type_id",
+    "$.resource_model.relation_types[].source_resource_type_id",
+    "$.resource_model.relation_types[].stateful",
+    "$.resource_model.relation_types[].states",
+    "$.resource_model.relation_types[].target_resource_type_id",
+    "$.resource_model.resource_types",
+    "$.resource_model.resource_types[].description",
+    "$.resource_model.resource_types[].identity_model",
+    "$.resource_model.resource_types[].initial_states",
+    "$.resource_model.resource_types[].ownership_tracking",
+    "$.resource_model.resource_types[].permitted_exit_states",
+    "$.resource_model.resource_types[].resource_kind",
+    "$.resource_model.resource_types[].resource_type_id",
+    "$.resource_model.resource_types[].states",
+    "$.reviewer",
+    "$.schema_version",
+    "$.semantic_accounting",
+    "$.semantic_accounting.forward_accounting",
+    "$.semantic_accounting.forward_accounting[].schema_carriers",
+    "$.semantic_accounting.forward_accounting[].source_container",
+    "$.semantic_accounting.forward_accounting[].source_unit_id",
+    "$.semantic_accounting.forward_accounting[].source_unit_kind",
+    "$.semantic_accounting.forward_complete",
+    "$.semantic_accounting.inventory",
+    "$.semantic_accounting.inventory.exit_obligation_count",
+    "$.semantic_accounting.inventory.losslessness_requirement_count",
+    "$.semantic_accounting.inventory.representation_policy_field_count",
+    "$.semantic_accounting.inventory.rule_count",
+    "$.semantic_accounting.inventory.semantic_container_count",
+    "$.semantic_accounting.reverse_accounting",
+    "$.semantic_accounting.reverse_accounting[].schema_carrier",
+    "$.semantic_accounting.reverse_accounting[].source_unit_ids",
+    "$.semantic_accounting.reverse_complete",
+    "$.semantic_policy",
+    "$.semantic_policy.reasoning_model",
+    "$.semantic_policy.reasoning_model.infeasible_path_handling",
+    "$.semantic_policy.reasoning_model.join_operator",
+    "$.semantic_policy.reasoning_model.membership_sensitivity",
+    "$.semantic_policy.reasoning_model.ownership_sensitivity",
+    "$.semantic_policy.reasoning_model.path_sensitivity",
+    "$.semantic_policy.reasoning_model.return_sensitivity",
+    "$.semantic_policy.reasoning_model.state_domain",
+    "$.semantic_policy.reasoning_model.unknown_handling",
+    "$.semantic_policy.verdict_aggregation",
+    "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid",
+    "$.semantic_policy.verdict_aggregation.unknown_when",
+    "$.semantic_policy.verdict_aggregation.valid_when",
+    "$.semantic_policy.verdict_aggregation.violation_may_when",
+    "$.semantic_policy.verdict_aggregation.violation_must_when",
+    "$.semantic_policy.verdict_vocabulary",
+    "$.semantic_rules",
+    "$.semantic_rules[].cleanup_responsibility",
+    "$.semantic_rules[].defect_category",
+    "$.semantic_rules[].effects",
+    "$.semantic_rules[].effects.ownership_updates",
+    "$.semantic_rules[].effects.ownership_updates[].effect",
+    "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+    "$.semantic_rules[].effects.ownership_updates[].transfer_target_resource_binding_id",
+    "$.semantic_rules[].effects.relation_updates",
+    "$.semantic_rules[].effects.relation_updates[].operation",
+    "$.semantic_rules[].effects.relation_updates[].relation_binding_id",
+    "$.semantic_rules[].effects.relation_updates[].to_states",
+    "$.semantic_rules[].effects.resource_state_updates",
+    "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+    "$.semantic_rules[].effects.resource_state_updates[].to_states",
+    "$.semantic_rules[].preconditions",
+    "$.semantic_rules[].preconditions.path_conditions",
+    "$.semantic_rules[].preconditions.path_conditions[].condition_id",
+    "$.semantic_rules[].preconditions.path_conditions[].condition_kind",
+    "$.semantic_rules[].preconditions.path_conditions[].polarity",
+    "$.semantic_rules[].preconditions.path_conditions[].referenced_event_id",
+    "$.semantic_rules[].preconditions.relation_state_requirements",
+    "$.semantic_rules[].preconditions.relation_state_requirements[].allowed_states",
+    "$.semantic_rules[].preconditions.relation_state_requirements[].presence",
+    "$.semantic_rules[].preconditions.relation_state_requirements[].relation_binding_id",
+    "$.semantic_rules[].preconditions.resource_state_requirements",
+    "$.semantic_rules[].preconditions.resource_state_requirements[].allowed_states",
+    "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id",
+    "$.semantic_rules[].preconditions.return_conditions",
+    "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids",
+    "$.semantic_rules[].preconditions.return_conditions[].event_id",
+    "$.semantic_rules[].relation_bindings",
+    "$.semantic_rules[].relation_bindings[].binding_id",
+    "$.semantic_rules[].relation_bindings[].relation_type_id",
+    "$.semantic_rules[].relation_bindings[].source_resource_binding_id",
+    "$.semantic_rules[].relation_bindings[].target_resource_binding_id",
+    "$.semantic_rules[].resource_bindings",
+    "$.semantic_rules[].resource_bindings[].binding_id",
+    "$.semantic_rules[].resource_bindings[].distinct_identity_from",
+    "$.semantic_rules[].resource_bindings[].resource_type_id",
+    "$.semantic_rules[].resource_bindings[].role",
+    "$.semantic_rules[].resource_bindings[].same_identity_as",
+    "$.semantic_rules[].rule_id",
+    "$.semantic_rules[].rule_kind",
+    "$.semantic_rules[].semantic_container",
+    "$.semantic_rules[].source_evidence",
+    "$.semantic_rules[].trigger_event_ids",
+    "$.semantic_rules[].verdict_if_violated",
+    "$.specification_id"
+  ],
+  "semantic_unit_summaries": [
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 0,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::EASY_HANDLE",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U001",
+      "traceability_field_classes": [
+        "cleanup_obligation",
+        "ownership",
+        "release",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 1,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::EASY_MULTI_MEMBERSHIP",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U002",
+      "traceability_field_classes": [
+        "ownership_transfer_on_add",
+        "relation",
+        "successful_add",
+        "successful_remove"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 2,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::EXPLICIT_GLOBAL_CLEANUP_OBLIGATION",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U003",
+      "traceability_field_classes": [
+        "established_by",
+        "missing_at_exit_normative_status",
+        "not_automatically_established_by",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 3,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::GLOBAL_RUNTIME_REFERENCE_STATE",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U004",
+      "traceability_field_classes": [
+        "notes",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 4,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RESOURCE::MULTI_HANDLE",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U005",
+      "traceability_field_classes": [
+        "cleanup_obligation",
+        "ownership",
+        "post_error_recovery",
+        "post_error_trigger",
+        "states"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 5,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::00",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U006",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 6,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::01",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U007",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 7,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::02",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U008",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 8,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::03",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U009",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 9,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::04",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U010",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 10,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::05",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U011",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 11,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::06",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U012",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 12,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::07",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U013",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 13,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::08",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U014",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 14,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::09",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U015",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 15,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::10",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U016",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 16,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "API_SURFACE::11",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U017",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 17,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_easy_init",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U018",
+      "traceability_field_classes": [
+        "failure",
+        "null_result_state_join_policy",
+        "success"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 18,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_easy_perform",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U019",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 19,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_easy_setopt",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U020",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 20,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_global_init",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U021",
+      "traceability_field_classes": [
+        "failure",
+        "success"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 21,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_add_handle",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U022",
+      "traceability_field_classes": [
+        "membership_change"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 22,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_cleanup",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U023",
+      "traceability_field_classes": [
+        "failure_condition",
+        "failure_effects",
+        "null_argument_behavior",
+        "success_condition",
+        "success_effects"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 23,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_init",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U024",
+      "traceability_field_classes": [
+        "failure",
+        "success"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 24,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_perform",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U025",
+      "traceability_field_classes": [
+        "normal_multi_state",
+        "post_error_multi_state"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 25,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RETURN_POLICY::curl_multi_remove_handle",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U026",
+      "traceability_field_classes": [
+        "documented_membership_change"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 26,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::membership_sensitive",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U027",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 27,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::normative_strength_uncertainty_must_not_be_silently_strengthened",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U028",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 28,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::ownership_sensitive",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U029",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 29,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::path_sensitive",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U030",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 30,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::resource_centered",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U031",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 31,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::return_sensitive",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U032",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 32,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::set_valued_state_reasoning",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U033",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 33,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::synthetic_protocol_events_invented",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U034",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 34,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::unknown_is_first_class",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U035",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 35,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "REPRESENTATION_POLICY::unknown_must_never_be_converted_to_valid",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U036",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 36,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::UNKNOWN",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U037",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 37,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::VALID",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U038",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 38,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::VIOLATION-MAY",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U039",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 39,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::VIOLATION-MUST",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U040",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 40,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::allowed_machine_verdicts",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U041",
+      "traceability_field_classes": []
+    },
+    {
+      "candidate_carrier_families": [
+        "semantic_policy"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 41,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "VERDICT_SEMANTICS::feasible_state_join_policy",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U042",
+      "traceability_field_classes": [
+        "all_feasible_states_same_verdict",
+        "mixed_VALID_and_enforceable_violation",
+        "normative_strength_or_model_coverage_unresolved",
+        "unknown_never_silently_becomes_valid"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 42,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G01",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U043",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 43,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G02",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U044",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 44,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G03",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U045",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 45,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G04",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U046",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 46,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G05",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U047",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 47,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G06",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U048",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 48,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G07",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U049",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 49,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G08",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U050",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 50,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G09",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U051",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 51,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::global_runtime_rules::G10",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U052",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 52,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E01",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U053",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 53,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E02",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U054",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 54,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E03",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U055",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 55,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E04",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U056",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "dependent_reasoning_policy",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "runtime_post_state"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 56,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E05",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U057",
+      "traceability_field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "return_note",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 57,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E06",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U058",
+      "traceability_field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "return_note",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 58,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E07",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U059",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 59,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E08",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U060",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 60,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E09",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U061",
+      "traceability_field_classes": [
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 61,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E10",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U062",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 62,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E11",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U063",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 63,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E12",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U064",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "excludes",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 64,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E13",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U065",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 65,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E14",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U066",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 66,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E15",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U067",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 67,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E16",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U068",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 68,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E17",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U069",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 69,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E18",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U070",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 70,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E19",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U071",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 71,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E20",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U072",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 72,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::easy_handle_rules::E21",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U073",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "precedence",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 73,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M01",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U074",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 74,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M02",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U075",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 75,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M03",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U076",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 76,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M04",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U077",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 77,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M05",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U078",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "reason",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 78,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M06",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U079",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 79,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M07",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U080",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 80,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M08",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U081",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 81,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M09",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U082",
+      "traceability_field_classes": [
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 82,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M10",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U083",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 83,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M11",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U084",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "precondition",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 84,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M12",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U085",
+      "traceability_field_classes": [
+        "classification_note",
+        "cleanup_obligation_effect",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 85,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M13",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U086",
+      "traceability_field_classes": [
+        "classification_note",
+        "cleanup_obligation_effect",
+        "condition",
+        "enforcement",
+        "function",
+        "recommendation",
+        "rule_id",
+        "structural_effect",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 86,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M14",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U087",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 87,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M15",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U088",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "excludes",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 88,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M16",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U089",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 89,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M17",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U090",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 90,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M18",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U091",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 91,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M19",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U092",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 92,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M20",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U093",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 93,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M21",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U094",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 94,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M22",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U095",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "return",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 95,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M23",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U096",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "enforcement",
+        "function",
+        "precedence",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 96,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M24",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U097",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 97,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M25",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U098",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "effect",
+        "enforcement",
+        "function",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 98,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M26",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U099",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 99,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M27",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U100",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 100,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M28",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U101",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 101,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::multi_handle_rules::M29",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U102",
+      "traceability_field_classes": [
+        "argument_scope",
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "function",
+        "return_behavior",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 102,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X01",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U103",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 103,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X02",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U104",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "effect",
+        "enforcement",
+        "rule_id",
+        "verdict"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 104,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X03",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U105",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "resource_model",
+        "semantic_rules"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 105,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "RULE::cross_resource_rules::X04",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U106",
+      "traceability_field_classes": [
+        "condition",
+        "enforcement",
+        "fact",
+        "rule_id"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "exit_obligations",
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 106,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "EXIT_OBLIGATION::00",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U107",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "exit_obligations",
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 107,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "EXIT_OBLIGATION::01",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U108",
+      "traceability_field_classes": [
+        "condition",
+        "defect",
+        "discharge_condition",
+        "failed_cleanup_effect",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ]
+    },
+    {
+      "candidate_carrier_families": [
+        "events",
+        "exit_obligations",
+        "resource_model"
+      ],
+      "outcome_reason": "No unit-level lossless composition witness is promoted from traceability or screening metadata alone.",
+      "screening_or_proof_flags": {
+        "candidate_screening_completed": true,
+        "negative_impossibility_proven": false,
+        "positive_exact_mapping_proven": false
+      },
+      "source_array_index": 108,
+      "source_identifier_key": "unit_id",
+      "source_identifier_value": "EXIT_OBLIGATION::02",
+      "study_outcome": "UNRESOLVED",
+      "study_unit_id": "U109",
+      "traceability_field_classes": [
+        "classification_note",
+        "condition",
+        "defect",
+        "enforcement",
+        "missing_cleanup_verdict",
+        "required_discharge",
+        "resource"
+      ]
+    }
+  ],
+  "traceability_domain": {
+    "leaf_fields_array_path": "$.reviewed_leaf_fields",
+    "leaf_record_count": 531,
+    "matrix_and_unit_vocabularies_equated": false,
+    "semantic_unit_count": 109,
+    "semantic_units_array_path": "$.semantic_unit_context_records",
+    "unit_inventory_field_class_vocabulary_count": 57
+  },
+  "unit_inventory_field_classes": [
+    "all_feasible_states_same_verdict",
+    "argument_scope",
+    "classification_note",
+    "cleanup_obligation",
+    "cleanup_obligation_effect",
+    "condition",
+    "defect",
+    "dependent_reasoning_policy",
+    "discharge_condition",
+    "documented_membership_change",
+    "effect",
+    "enforcement",
+    "established_by",
+    "excludes",
+    "fact",
+    "failed_cleanup_effect",
+    "failure",
+    "failure_condition",
+    "failure_effects",
+    "function",
+    "membership_change",
+    "missing_at_exit_normative_status",
+    "missing_cleanup_verdict",
+    "mixed_VALID_and_enforceable_violation",
+    "normal_multi_state",
+    "normative_strength_or_model_coverage_unresolved",
+    "not_automatically_established_by",
+    "notes",
+    "null_argument_behavior",
+    "null_result_state_join_policy",
+    "ownership",
+    "ownership_transfer_on_add",
+    "post_error_multi_state",
+    "post_error_recovery",
+    "post_error_trigger",
+    "precedence",
+    "precondition",
+    "reason",
+    "recommendation",
+    "relation",
+    "release",
+    "required_discharge",
+    "resource",
+    "return",
+    "return_behavior",
+    "return_note",
+    "rule_id",
+    "runtime_post_state",
+    "states",
+    "structural_effect",
+    "success",
+    "success_condition",
+    "success_effects",
+    "successful_add",
+    "successful_remove",
+    "unknown_never_silently_becomes_valid",
+    "verdict"
+  ]
+}

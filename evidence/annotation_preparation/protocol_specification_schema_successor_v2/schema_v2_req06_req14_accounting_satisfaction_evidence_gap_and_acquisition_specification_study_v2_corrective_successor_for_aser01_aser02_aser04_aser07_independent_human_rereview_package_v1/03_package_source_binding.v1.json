@@ -1,0 +1,868 @@
+{
+  "binding_id": "SVF-D0215-BLANK-INDEPENDENT-HUMAN-REREVIEW-PACKAGE-SOURCE-BINDING-V1",
+  "d0213_corrective_successor_file_count": 83,
+  "human_review_state": {
+    "external_handoff_authorized": false,
+    "human_fields_populated": false,
+    "performed": false
+  },
+  "package_status": "BLANK_AWAITING_EXTERNAL_HANDOFF_AUTHORIZATION",
+  "predecessor_returned_review_sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+  "source_record_count": 93,
+  "source_records": [
+    {
+      "package_path": "governance_exact/0213-author-bounded-corrective-successor-for-aser01-aser02-aser04-aser07.md",
+      "role": "DECISION0213",
+      "sha256": "d3a8af2351206a4a647b899a4120afd943f0b1693e17c5483cdcd29378e1c993",
+      "size_bytes": 3565,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "5c87149454129c2ef44d685bcc9a1c5614e63479",
+      "source_path": "documentation/decisions/0213-author-bounded-corrective-successor-for-aser01-aser02-aser04-aser07.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/01_corrective_delta_response.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "4bb63680e0cf2f22d31b9ae6c440aa9b0c07514b0ac7721e0ae48db5d2a9bf64",
+      "size_bytes": 2350,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "8368fc1d50fb3a9f695f9e8a2a03d24d0d0ffbca",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/01_corrective_delta_response.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/02_d0203_portable_git_provenance.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "67a7fd1ee456eafbf9a798322bcc4d96a687764dadf2543890aa5cb3cf1482bd",
+      "size_bytes": 31117,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "7f6abb4e40e8ecefe4e54ede423d86d2b26a80fc",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/02_d0203_portable_git_provenance.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/03_fixed_evidence_substantive_copy_binding.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "9b67138887310d3428c66930dd4dbedc4a068a9edeac05bdd3b9e8a84cc756f2",
+      "size_bytes": 5606,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "40ad5ff57fb9ae47f1f9c402dd30f269e89ed89e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/03_fixed_evidence_substantive_copy_binding.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/04_future_accounting_domain_construction_specification.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "1ff98f8aee27f382996810041f01176015409714e6d39fe8b8122227954613b8",
+      "size_bytes": 4124,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "d4f496a4d4eb5b6c2b6c4f82e0684d7f3ffa9aba",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/04_future_accounting_domain_construction_specification.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/05_future_AEA01_AEA05_artifact_schemas.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6cfdbab7484c6c02bb9f636a1b1e21bb3a2aadfe832fdc2371724bacb595d125",
+      "size_bytes": 14803,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "9f267a7120fa783e1d40ffdcdc5bfe15861deab4",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/05_future_AEA01_AEA05_artifact_schemas.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/06_canonicalization_and_identifier_comparison_rules.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "293b42c3ddb449a3ad2a516bda8dafdf1db3af5a755384ffcd767bd343fd6067",
+      "size_bytes": 4313,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "ec1dd03d8e8164eb65e09fccef8cb0fadd14372b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/06_canonicalization_and_identifier_comparison_rules.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/07_future_domain_freeze_lineage_and_ordering_control.v2.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "93550e5832d7c593c6f6a9c2332751ea4c2bd2e61165bbd2a3d6c8f9c18f1b18",
+      "size_bytes": 2641,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "138d7aa70e6553cf82b7442464d662d9fb4324b5",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/07_future_domain_freeze_lineage_and_ordering_control.v2.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/08_corrective_successor_boundary.v2.md",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "9a3eb7e3c9c3445c52fa391d7c17b1ba8bd279ccac45e9ea58c0578fe766f51e",
+      "size_bytes": 2984,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "da07d31641902d802a14a81169d9a93ec1eb5ac7",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/08_corrective_successor_boundary.v2.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/09_decision0212_a02_consumption_record.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "fad80554fb6eb5ba72379417e5866e64e4b7707272e9bbec6f97240f2b8c1d74",
+      "size_bytes": 541,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "088eaa191c500718e08dcefb855e1b35e9477c7f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/09_decision0212_a02_consumption_record.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/10_decision0212_a02_execution_output.EXACT_COPY.v1.txt",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "e4b33f765c20b3b73a30dd62988e5573db99e9360444995fc81b5ce15e232b35",
+      "size_bytes": 1342,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "e452d2d62c9b7140a8c0ca5373480af012ee0de9",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/10_decision0212_a02_execution_output.EXACT_COPY.v1.txt"
+    },
+    {
+      "package_path": "corrective_successor_exact/11_decision0212_a02_consumption_sentinel.EXACT_COPY.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "5e956d31ed91c8a24f2d8527c735cbd6193fe0d49e5ebf3143d69563ce484bba",
+      "size_bytes": 612,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "08e3358c6f6210c684a29939941bbbaa867c0b0c",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/11_decision0212_a02_consumption_sentinel.EXACT_COPY.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/12_verify_corrective_successor.v2.py",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "a3d466a4f7dae01ab23559e2ddda15f2cf8f97ebb24c8d544b985b85073ea4f5",
+      "size_bytes": 12735,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2eb497b54e95305db95688a6ff2d8de4cbf3e0bd",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/12_verify_corrective_successor.v2.py"
+    },
+    {
+      "package_path": "corrective_successor_exact/13_corrective_successor.v2.SHA256SUMS",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "e285568766ee7216ca83fb43a406f55aaf5d2c099373b574b686e03070abca18",
+      "size_bytes": 11569,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b49b9a9e25e24e6cf4d94a5305e09d6fababe72e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/13_corrective_successor.v2.SHA256SUMS"
+    },
+    {
+      "package_path": "corrective_successor_exact/canonicalization_sources_exact/01_active_v2_hash_contract.EXACT_COPY.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "size_bytes": 3154,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/canonicalization_sources_exact/01_active_v2_hash_contract.EXACT_COPY.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/canonicalization_sources_exact/02_human_approved_active_form.EXACT_COPY.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "size_bytes": 3154,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/canonicalization_sources_exact/02_human_approved_active_form.EXACT_COPY.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/canonicalization_sources_exact/03_source_reviewed_predecessor.EXACT_COPY.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+      "size_bytes": 3126,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b8d7bda44831dcd6913d5359b97358f2bf65713b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/canonicalization_sources_exact/03_source_reviewed_predecessor.EXACT_COPY.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/canonicalization_sources_exact/04_finalization_human_approval_record.EXACT_COPY.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a",
+      "size_bytes": 3810,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "a114e47cbfdd41913d06ad741266dc78a103d7a9",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/canonicalization_sources_exact/04_finalization_human_approval_record.EXACT_COPY.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/canonicalization_sources_exact/05_decision0065.EXACT_COPY.md",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ea7dba8c77b6c6ae75e81e68a817b551fb2d138e536a1ea15eab75e2c3c28d63",
+      "size_bytes": 2826,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "838dcac667bc21c983fc36cbbf8201953e8bae3b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/canonicalization_sources_exact/05_decision0065.EXACT_COPY.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/canonicalization_sources_exact/06_decision0066.EXACT_COPY.md",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6bd97e92f97f77d7e7e36bbc9a334ad115f1ebe8f8a2e9f3d0d2b2c361da65d2",
+      "size_bytes": 3253,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "8ba3c6590102267d694edf958456e2b855e821a6",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/canonicalization_sources_exact/06_decision0066.EXACT_COPY.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/01_accounting_satisfaction_evidence_gap_assessment.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6dd6540f0655c1ac064460560d2429fa62762ac4e6bb52e671283ff227f0b2a9",
+      "size_bytes": 4959,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "09bdbdc4df51616b5170580f315a5cb0a675b37f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/01_accounting_satisfaction_evidence_gap_assessment.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/02_future_accounting_evidence_acquisition_specification.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "c4c77261ef19d929112ca56247d223ad7a04d9f6661dcc08860ff4a77dfabc83",
+      "size_bytes": 5351,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b4916c084adb51bd1f6411e2644ee6ae6bb2db1b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/02_future_accounting_evidence_acquisition_specification.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/03_machine_checkable_accounting_satisfaction_criteria.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "e74e58463659531a393c24a6a8de616f4efa9b688d13a24b67e876f4d0ca8436",
+      "size_bytes": 4626,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "9ff3037e90a03cc23716fe2263edff0b5a6108de",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/03_machine_checkable_accounting_satisfaction_criteria.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/04_study_source_binding.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ec0e753dfc694ff8764d2452bceddf820cf3740f55b02c218bc661db7e75cf72",
+      "size_bytes": 2357,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "8ba0181d339689155536d9fedd5c2f56042e9242",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/04_study_source_binding.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/05_decision0202_a02_consumption_record.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "b392b256a707b59e643b53322c684d9e1dc76be023e0f62700f282a0d915174d",
+      "size_bytes": 1028,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2819690f295c272cd6708e90a609b9e2340e0343",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/05_decision0202_a02_consumption_record.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/06_decision0202_a02_execution_output.EXACT_COPY.v1.txt",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "dc2f03f4a0afa97f6c5a43cf6cc28eed7d65e43c2dbc31e2e98ce218cd3b8136",
+      "size_bytes": 1208,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "9d1aa51a4b7b02b2fda46d78097373ee9c5ac96a",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/06_decision0202_a02_execution_output.EXACT_COPY.v1.txt"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/07_decision0202_a02_consumption_sentinel.EXACT_COPY.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6718c7bbeec9ecdc411c7f53ff3de2db8aadc973647d2d26220b4f7072037486",
+      "size_bytes": 746,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "bdd84b69c57cf5d6a5a3897b01232baf87ab0e59",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/07_decision0202_a02_consumption_sentinel.EXACT_COPY.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/08_study_boundary.v1.md",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "451e1648c6f5eeea38bcb485839c5bb03e3eba6cc378d3fd49970317dc10f963",
+      "size_bytes": 2754,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "d7be43af4abab28f1162737edc73a1daea6139bd",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/08_study_boundary.v1.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/09_verify_accounting_satisfaction_evidence_gap_and_acquisition_specification_study.v1.py",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "50c97680a709fefe0dd68b96ea06146df8f0bff92387bd6b704a360811642d2a",
+      "size_bytes": 12845,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "361d2f52affb19537865b13215be373af1c8fddd",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/09_verify_accounting_satisfaction_evidence_gap_and_acquisition_specification_study.v1.py"
+    },
+    {
+      "package_path": "corrective_successor_exact/d0203_study_exact/10_accounting_satisfaction_evidence_gap_and_acquisition_specification_study.v1.SHA256SUMS",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "99223bf924883efbda6821dee0ab2afb86119517b8cc3eee844ca5e475841598",
+      "size_bytes": 1086,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "d240332ca5976b06c645936364e435b8f7a917d9",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/d0203_study_exact/10_accounting_satisfaction_evidence_gap_and_acquisition_specification_study.v1.SHA256SUMS"
+    },
+    {
+      "package_path": "corrective_successor_exact/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+      "size_bytes": 11704978,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/active_schema_v2/protocol_specification.v2.schema.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/active_schema_v2/protocol_specification.v2.schema.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/carrier_admissibility_assessment/01_requirement_bound_carrier_admissibility_assessment.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+      "size_bytes": 28407,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "1d8752d4e7634581f7026c4fbeb6fda5f229c10f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/carrier_admissibility_assessment/01_requirement_bound_carrier_admissibility_assessment.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/carrier_admissibility_governance_adoption/01_bounded_governance_adoption_manifest.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a",
+      "size_bytes": 3732,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "97b2dd262635601fe123f3e9190b6d60f6ee7e9e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/carrier_admissibility_governance_adoption/01_bounded_governance_adoption_manifest.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/exhaustive_multifield_capability/01_exhaustive_admissible_existing_schema_v2_multifield_capability_study.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+      "size_bytes": 7404,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "43933fb862d24b8a8bccaad5e6a564186b376772",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/exhaustive_multifield_capability/01_exhaustive_admissible_existing_schema_v2_multifield_capability_study.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/relation_informed_exhaustiveness_accounting/02_exhaustiveness_accounting.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+      "size_bytes": 98246,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b7bb278386ad20446525319f4dd98f32c3544b0e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/relation_informed_exhaustiveness_accounting/02_exhaustiveness_accounting.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/residual_schema_v2_insufficiency_proof/01_residual_schema_v2_losslessness_insufficiency_proof.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "size_bytes": 11911,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/residual_schema_v2_insufficiency_proof/01_residual_schema_v2_losslessness_insufficiency_proof.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/fixed_evidence_exact/schema_v2_successor_design_record/04_schema_v2_successor_design_record.v1.json",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+      "size_bytes": 7425,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/fixed_evidence_exact/schema_v2_successor_design_record/04_schema_v2_successor_design_record.v1.json"
+    },
+    {
+      "package_path": "corrective_successor_exact/governance_exact/0202-authorize-req06-req14-accounting-satisfaction-evidence-gap-and-acquisition-study-v1.md",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "50a4f98d47e53a4085499179a0e990887de6872e88edf87b57f041c23423f4c2",
+      "size_bytes": 4640,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2dfdcb9686fb32086c775b1f20acf29d1a694fee",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/governance_exact/0202-authorize-req06-req14-accounting-satisfaction-evidence-gap-and-acquisition-study-v1.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/governance_exact/0203-author-req06-req14-accounting-satisfaction-evidence-gap-and-acquisition-specification-study-v1.md",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "4d0a29bea5a1f76035f9f2aa2ea0dbe88ef2b6f19eb469885a28bbca2bdbea9c",
+      "size_bytes": 4397,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "ca0df1432ebb70de83e7b36ec539bead7b1de21f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/governance_exact/0203-author-req06-req14-accounting-satisfaction-evidence-gap-and-acquisition-specification-study-v1.md"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/09bdbdc4df51616b5170580f315a5cb0a675b37f.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6dd6540f0655c1ac064460560d2429fa62762ac4e6bb52e671283ff227f0b2a9",
+      "size_bytes": 4959,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "09bdbdc4df51616b5170580f315a5cb0a675b37f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/09bdbdc4df51616b5170580f315a5cb0a675b37f.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/1d8752d4e7634581f7026c4fbeb6fda5f229c10f.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+      "size_bytes": 28407,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "1d8752d4e7634581f7026c4fbeb6fda5f229c10f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/1d8752d4e7634581f7026c4fbeb6fda5f229c10f.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/245fc02f538c21cff5de25f4a6a3c297e915e40f.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+      "size_bytes": 43030,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "245fc02f538c21cff5de25f4a6a3c297e915e40f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/245fc02f538c21cff5de25f4a6a3c297e915e40f.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/2819690f295c272cd6708e90a609b9e2340e0343.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "b392b256a707b59e643b53322c684d9e1dc76be023e0f62700f282a0d915174d",
+      "size_bytes": 1028,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2819690f295c272cd6708e90a609b9e2340e0343",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/2819690f295c272cd6708e90a609b9e2340e0343.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/2d090d81442ff5141a2fba70c7b5e4bca557b93e.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+      "size_bytes": 11911,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2d090d81442ff5141a2fba70c7b5e4bca557b93e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/2d090d81442ff5141a2fba70c7b5e4bca557b93e.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/2dfdcb9686fb32086c775b1f20acf29d1a694fee.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "50a4f98d47e53a4085499179a0e990887de6872e88edf87b57f041c23423f4c2",
+      "size_bytes": 4640,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "2dfdcb9686fb32086c775b1f20acf29d1a694fee",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/2dfdcb9686fb32086c775b1f20acf29d1a694fee.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/31a088a0dea0802c680007439118026815eecdd5.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90",
+      "size_bytes": 7425,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "31a088a0dea0802c680007439118026815eecdd5",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/31a088a0dea0802c680007439118026815eecdd5.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/361d2f52affb19537865b13215be373af1c8fddd.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "50c97680a709fefe0dd68b96ea06146df8f0bff92387bd6b704a360811642d2a",
+      "size_bytes": 12845,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "361d2f52affb19537865b13215be373af1c8fddd",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/361d2f52affb19537865b13215be373af1c8fddd.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/43933fb862d24b8a8bccaad5e6a564186b376772.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+      "size_bytes": 7404,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "43933fb862d24b8a8bccaad5e6a564186b376772",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/43933fb862d24b8a8bccaad5e6a564186b376772.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/838dcac667bc21c983fc36cbbf8201953e8bae3b.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ea7dba8c77b6c6ae75e81e68a817b551fb2d138e536a1ea15eab75e2c3c28d63",
+      "size_bytes": 2826,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "838dcac667bc21c983fc36cbbf8201953e8bae3b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/838dcac667bc21c983fc36cbbf8201953e8bae3b.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/8ba0181d339689155536d9fedd5c2f56042e9242.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ec0e753dfc694ff8764d2452bceddf820cf3740f55b02c218bc661db7e75cf72",
+      "size_bytes": 2357,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "8ba0181d339689155536d9fedd5c2f56042e9242",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/8ba0181d339689155536d9fedd5c2f56042e9242.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/8ba3c6590102267d694edf958456e2b855e821a6.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6bd97e92f97f77d7e7e36bbc9a334ad115f1ebe8f8a2e9f3d0d2b2c361da65d2",
+      "size_bytes": 3253,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "8ba3c6590102267d694edf958456e2b855e821a6",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/8ba3c6590102267d694edf958456e2b855e821a6.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/97b2dd262635601fe123f3e9190b6d60f6ee7e9e.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a",
+      "size_bytes": 3732,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "97b2dd262635601fe123f3e9190b6d60f6ee7e9e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/97b2dd262635601fe123f3e9190b6d60f6ee7e9e.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/9d1aa51a4b7b02b2fda46d78097373ee9c5ac96a.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "dc2f03f4a0afa97f6c5a43cf6cc28eed7d65e43c2dbc31e2e98ce218cd3b8136",
+      "size_bytes": 1208,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "9d1aa51a4b7b02b2fda46d78097373ee9c5ac96a",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/9d1aa51a4b7b02b2fda46d78097373ee9c5ac96a.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/9ff3037e90a03cc23716fe2263edff0b5a6108de.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "e74e58463659531a393c24a6a8de616f4efa9b688d13a24b67e876f4d0ca8436",
+      "size_bytes": 4626,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "9ff3037e90a03cc23716fe2263edff0b5a6108de",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/9ff3037e90a03cc23716fe2263edff0b5a6108de.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/a114e47cbfdd41913d06ad741266dc78a103d7a9.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a",
+      "size_bytes": 3810,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "a114e47cbfdd41913d06ad741266dc78a103d7a9",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/a114e47cbfdd41913d06ad741266dc78a103d7a9.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/b4916c084adb51bd1f6411e2644ee6ae6bb2db1b.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "c4c77261ef19d929112ca56247d223ad7a04d9f6661dcc08860ff4a77dfabc83",
+      "size_bytes": 5351,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b4916c084adb51bd1f6411e2644ee6ae6bb2db1b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/b4916c084adb51bd1f6411e2644ee6ae6bb2db1b.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+      "size_bytes": 11704978,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/b7bb278386ad20446525319f4dd98f32c3544b0e.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+      "size_bytes": 98246,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b7bb278386ad20446525319f4dd98f32c3544b0e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/b7bb278386ad20446525319f4dd98f32c3544b0e.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/b8d7bda44831dcd6913d5359b97358f2bf65713b.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0",
+      "size_bytes": 3126,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "b8d7bda44831dcd6913d5359b97358f2bf65713b",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/b8d7bda44831dcd6913d5359b97358f2bf65713b.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/bdd84b69c57cf5d6a5a3897b01232baf87ab0e59.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "6718c7bbeec9ecdc411c7f53ff3de2db8aadc973647d2d26220b4f7072037486",
+      "size_bytes": 746,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "bdd84b69c57cf5d6a5a3897b01232baf87ab0e59",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/bdd84b69c57cf5d6a5a3897b01232baf87ab0e59.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/ca0df1432ebb70de83e7b36ec539bead7b1de21f.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "4d0a29bea5a1f76035f9f2aa2ea0dbe88ef2b6f19eb469885a28bbca2bdbea9c",
+      "size_bytes": 4397,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "ca0df1432ebb70de83e7b36ec539bead7b1de21f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/ca0df1432ebb70de83e7b36ec539bead7b1de21f.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/d240332ca5976b06c645936364e435b8f7a917d9.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "99223bf924883efbda6821dee0ab2afb86119517b8cc3eee844ca5e475841598",
+      "size_bytes": 1086,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "d240332ca5976b06c645936364e435b8f7a917d9",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/d240332ca5976b06c645936364e435b8f7a917d9.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/d7be43af4abab28f1162737edc73a1daea6139bd.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "451e1648c6f5eeea38bcb485839c5bb03e3eba6cc378d3fd49970317dc10f963",
+      "size_bytes": 2754,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "d7be43af4abab28f1162737edc73a1daea6139bd",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/d7be43af4abab28f1162737edc73a1daea6139bd.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/blob/fd9648f4e0eee7e4516927dc1e370a0d69920ea2.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+      "size_bytes": 3154,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/blob/fd9648f4e0eee7e4516927dc1e370a0d69920ea2.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/commit/70437180754f8248a5cc06d0af3e59c2c343520c.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ffb54ea2f1b664c51d40f2fda0396948858b70d326ff6166d5e1967a49ed09d7",
+      "size_bytes": 296,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "66044946c7fe5273ec7a0889cda5ec2f0a67c339",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/commit/70437180754f8248a5cc06d0af3e59c2c343520c.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/0ccf2deec0b6594f3c77a0380ea295702f1694a9.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "b9d6fc04d1a2c99ee7b9b9de3bdcac8f10778c3ff790924ea7bc108f4cc64a9f",
+      "size_bytes": 369,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "71b1c4abcb04ef15a97486cd01a6e3985cdca579",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/0ccf2deec0b6594f3c77a0380ea295702f1694a9.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/17d3320e8e39115f150366fe28c7ee4e09299304.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "518f2347d1b211f5c9c2d1908a719c4ad614bed972bc1bb9f74d7b256401e039",
+      "size_bytes": 721,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "986855ce260dbf626bce836e39454f737fa55364",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/17d3320e8e39115f150366fe28c7ee4e09299304.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/35474699b67e2ea0b94fe62febd56a18e84c5dda.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "8c35d65b6184e1f5a75b9c0442d6e9a38f241d9a52cf6cce8e1f3339e392c552",
+      "size_bytes": 1645,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "1243d69ee7abf5346aa2371a05c1facf1c2a8d3d",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/35474699b67e2ea0b94fe62febd56a18e84c5dda.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/3f04237bdc58c2be56e85628de5923b87578a051.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "8716ab2d78274188710630e0e085c516bae6fef224443ead15d6be134c53ae7d",
+      "size_bytes": 729,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "5f5d9e940f671b84ae2387b848f3e02bed1c62d7",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/3f04237bdc58c2be56e85628de5923b87578a051.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/670700d84cb41923bb73a6124d6dd8d5a8168347.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "8cb8cf698db978da07ddb68587edad871962b2cc8505b17fc0c712d14905932c",
+      "size_bytes": 171,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "e134554062a8274d96f1ebc4ee9700036fc4da3e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/670700d84cb41923bb73a6124d6dd8d5a8168347.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/93c875f619a49bff158b7384b6f0c4944427ada4.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "21ce4ae579da3b57fb895450b2365fddac53ad1c7cbeb41b9ea25c59411923fc",
+      "size_bytes": 19241,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "27eaf1a78abb32753eefd5fe5f63439c173f6886",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/93c875f619a49bff158b7384b6f0c4944427ada4.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/9a69b02a04e9eabc4d433ceef7f640eeb392a0d3.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "5c81ca578cf8f6b2c7b7c052b7fe3087a407263fcad994962a20db71ef6c8525",
+      "size_bytes": 1362,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "1dd745e4442d894cd3397f5acdfe6bad4a1af5e4",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/9a69b02a04e9eabc4d433ceef7f640eeb392a0d3.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/a0a0e45e5147b93fc9ab438322b34f083507599f.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "353ad0afdb428f911fd3e27f79833df44c7b9ec06d04a77f47965e3cc2973dc2",
+      "size_bytes": 1356,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "97a93c6cd118e1d71e686626966e7ff6be8e1f4a",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/a0a0e45e5147b93fc9ab438322b34f083507599f.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/a8b821834a9a7f409d38c15fbcc98504e75bdf37.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "5b375885fc50bd70c8642f4f816511563a5e45b2ef4ce4b0919b7864d24cf13c",
+      "size_bytes": 21112,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "e4e152e6849bf21528343529b0de03feedb4c131",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/a8b821834a9a7f409d38c15fbcc98504e75bdf37.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/a968ed604dcb639fe20f8c364676e2d222c2f8d7.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "99643690c6e7374ebc2cc0044f0e043ec76bd2ac697b33265ef71388d6061d2b",
+      "size_bytes": 540,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "d8d2fd22bfc9898777f5ddd7843af1961bcf34e1",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/a968ed604dcb639fe20f8c364676e2d222c2f8d7.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/b4046d983d58ebf7482d3b2db0de1d704f228a53.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "78c20e0e512c3d5ff5cc2aa66f1db9de608193465684eb232f93321a95849ce1",
+      "size_bytes": 547,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "9f750e34c50001325a7069d2372261fc66ca895d",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/b4046d983d58ebf7482d3b2db0de1d704f228a53.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/bb55744db442f718daa56f8f38733e3ef4819b1a.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "28405b418fd833b63172284a9da29c196579ac4e358b9951612070f9613fb76d",
+      "size_bytes": 576,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "3d2f76a8a170efcf8f2a350d9fe7955a27438bdb",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/bb55744db442f718daa56f8f38733e3ef4819b1a.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/cf3df758ba19115e0cfffe1bf9b452e8520e7680.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "abc4117c0f25135eedb74533368bae71dcede4efd50765abe9c3fb430a9f1ad2",
+      "size_bytes": 557,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "fe75b91501c2442abbf68e9096d0cae2d2135890",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/cf3df758ba19115e0cfffe1bf9b452e8520e7680.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/e06de103f9f84f464b3c488fa6a834f91ebf44a7.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "5c01ff7055fcb1b73af61c81b61f37fe30e41dedf1e09112c70c5a1012bcb132",
+      "size_bytes": 852,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "7730c33d2c06abb81af38496942f4a1fc1da2511",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/e06de103f9f84f464b3c488fa6a834f91ebf44a7.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/e35644b0ad27fbf6c6fe30690f10059d26d045dc.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "ee073acf99c30244774b48d7f17ed2af075484a15ff94861779ca9a8b0812d49",
+      "size_bytes": 128,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "eff848cb8713ca608f6b6e869cb093d3b9071230",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/e35644b0ad27fbf6c6fe30690f10059d26d045dc.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "2f669a2d386c6685b5c4a68a3a7e75d07ef5b812e7b5ebe6fbec6fe522f4b4b6",
+      "size_bytes": 692,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "62e59b92f0cd13a9b45cb12666b16fec03007012",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/ea4806ec69f51d2a81a2d1d3cc3663e8706dcaa3.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/f41d0f0a087cb78f56e618eab8b5ca17743e40f4.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "cad6cac41e138e3ae29fc6a1dfabed48fd08957d8980560da374743aec90276c",
+      "size_bytes": 286,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "86871de087b261c63e45c275dd414c5255f55f6a",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/f41d0f0a087cb78f56e618eab8b5ca17743e40f4.raw"
+    },
+    {
+      "package_path": "corrective_successor_exact/portable_git_objects/tree/fb3a1b69787d74fd5c8bbf1836e76291b6167228.raw",
+      "role": "D0213_CORRECTIVE_SUCCESSOR_ARTIFACT",
+      "sha256": "b6027691e17539a64a0a67ac2c3395be56d3feb8687a45933098b1cd3e3ce754",
+      "size_bytes": 1178,
+      "source_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+      "source_git_blob": "43cc748e6eeb8924a01c388bb439feaa49510a52",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/portable_git_objects/tree/fb3a1b69787d74fd5c8bbf1836e76291b6167228.raw"
+    },
+    {
+      "package_path": "predecessor_review_context_exact/04_decision0211.EXACT_COPY.md",
+      "role": "DECISION0211",
+      "sha256": "7aa2f6e9c426a91a96549a764ae97107c116816b7150379603147d478a4858ec",
+      "size_bytes": 3872,
+      "source_commit": "8fe5a8937d14d5ed645a14af0c634ff8fe8b90ad",
+      "source_git_blob": "3c55c07d3df12122265f2e8d0c450e9d9631648f",
+      "source_path": "documentation/decisions/0211-record-exact-returned-revision-required-independent-human-review-via-symlink-safe-successor-v1.md"
+    },
+    {
+      "package_path": "predecessor_review_context_exact/01_returned_independent_human_review.EXACT_COPY.v1.md",
+      "role": "PREDECESSOR_RETURNED_REVISION_REQUIRED_REVIEW",
+      "sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+      "size_bytes": 12281,
+      "source_commit": "8fe5a8937d14d5ed645a14af0c634ff8fe8b90ad",
+      "source_git_blob": "13ba908bcb35441aa54eb82ec77e1a513cd4c87d",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v1_returned_independent_human_review_record_v1/01_returned_independent_human_review.EXACT_COPY.v1.md"
+    },
+    {
+      "package_path": "predecessor_review_context_exact/02_returned_review_source_binding.v1.json",
+      "role": "PREDECESSOR_RETURNED_REVIEW_SOURCE_BINDING",
+      "sha256": "d68f9e7a7613bb9c18cceb108346d442f9507bf424764993237c4a68056b6b22",
+      "size_bytes": 2383,
+      "source_commit": "8fe5a8937d14d5ed645a14af0c634ff8fe8b90ad",
+      "source_git_blob": "0e9f2128b684aeda72461775fbfc4d1421e6a75e",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v1_returned_independent_human_review_record_v1/02_returned_review_source_binding.v1.json"
+    },
+    {
+      "package_path": "predecessor_review_context_exact/03_returned_review_record_boundary.v1.md",
+      "role": "PREDECESSOR_RETURNED_REVIEW_BOUNDARY",
+      "sha256": "3468dfff18d036b791188b867ccd0d45e13c015ebab2879df08ba5cc5ce50830",
+      "size_bytes": 2605,
+      "source_commit": "8fe5a8937d14d5ed645a14af0c634ff8fe8b90ad",
+      "source_git_blob": "c3acefd31235df243ef6b1b3c9ef6e27388cc10c",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v1_returned_independent_human_review_record_v1/06_returned_review_record_boundary.v1.md"
+    },
+    {
+      "package_path": "authorization_exact/0214-authorize-independent-human-rereview-package-for-d0213-corrective-successor.md",
+      "role": "DECISION0214",
+      "sha256": "3c18a2eec531c13f45edd6d3291d8eefc146df3c1934b756204d53c394c51e94",
+      "size_bytes": 3222,
+      "source_commit": "92931e570827aadb32fb1717063e9dc56b2ac1ad",
+      "source_git_blob": "be1867e6cf89d9fec95e429beeca393d7c485f8b",
+      "source_path": "documentation/decisions/0214-authorize-independent-human-rereview-package-for-d0213-corrective-successor.md"
+    },
+    {
+      "package_path": "authorization_exact/01_independent_human_rereview_package_authorization.v1.json",
+      "role": "D0214_AUTHORIZATION_A01",
+      "sha256": "81735d74ef60fc444d66e42c5507d62bbd3db01ce7e7e704acd6fac5f0c13230",
+      "size_bytes": 5694,
+      "source_commit": "92931e570827aadb32fb1717063e9dc56b2ac1ad",
+      "source_git_blob": "226545ef1694782171d125149be4fed18fe2cf95",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_independent_human_rereview_package_authorization_v1/01_independent_human_rereview_package_authorization.v1.json"
+    },
+    {
+      "package_path": "authorization_exact/02_authorize_independent_human_rereview_package_once.v1.py",
+      "role": "D0214_AUTHORIZATION_A02",
+      "sha256": "280bc36c2c9e83377eacdce0dcd5a27481e3221cf54d16d21d58a35d7c08d383",
+      "size_bytes": 5985,
+      "source_commit": "92931e570827aadb32fb1717063e9dc56b2ac1ad",
+      "source_git_blob": "76644ba13e7c3bab76b974c8ddb4312ea845bbed",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_independent_human_rereview_package_authorization_v1/02_authorize_independent_human_rereview_package_once.v1.py"
+    },
+    {
+      "package_path": "authorization_exact/03_independent_human_rereview_scope_contract.v1.json",
+      "role": "D0214_AUTHORIZATION_A03",
+      "sha256": "33ba2b333cf1a1513ba64e0c999108b82b27a16104dc04965783d4bca510e6aa",
+      "size_bytes": 1222,
+      "source_commit": "92931e570827aadb32fb1717063e9dc56b2ac1ad",
+      "source_git_blob": "be9a6ec97cb446446fd677f30fbb76351de03e8f",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_independent_human_rereview_package_authorization_v1/03_independent_human_rereview_scope_contract.v1.json"
+    },
+    {
+      "package_path": "authorization_exact/04_independent_human_rereview_package_authorization_boundary.v1.md",
+      "role": "D0214_AUTHORIZATION_A04",
+      "sha256": "c76d48310200fdc70633343972b1ac65ab4d86ebeb0b2d513d6c42bd21458a6b",
+      "size_bytes": 3310,
+      "source_commit": "92931e570827aadb32fb1717063e9dc56b2ac1ad",
+      "source_git_blob": "8be9d6afef59c90c1cc56d9915a7d49fdfcb3758",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_independent_human_rereview_package_authorization_v1/04_independent_human_rereview_package_authorization_boundary.v1.md"
+    }
+  ],
+  "subject": {
+    "corrective_successor_status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR",
+    "decision0213_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+    "fresh_rereview_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "preserved_pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ]
+  }
+}

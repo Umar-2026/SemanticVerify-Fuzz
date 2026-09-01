@@ -1,0 +1,70 @@
+{
+  "accounting_artifact_canonicalization": {
+    "duplicate_set_members": "FORBIDDEN",
+    "encoding": "UTF-8",
+    "floating_point_rule": "Future evidence schemas should avoid unconstrained floating-point values where an exact integer/count representation is available.",
+    "json_separators": "comma and colon with no insignificant whitespace",
+    "object_member_order": "lexicographic Unicode code-point order",
+    "relationship_to_active_schema_v2_contract": "The installed Schema-V2 contract is the authoritative bound Schema-V2 canonicalization provenance source. Future AEA evidence uses the following explicit accounting-evidence canonical rules; this successor does not claim the Schema-V2 protocol-specification contract automatically governs AEA artifacts.",
+    "set_like_arrays": "sort by canonical identifier before serialization",
+    "sha256_rule": "SHA-256 over complete canonical UTF-8 JSON bytes"
+  },
+  "active_schema_accounting_flag_binding": {
+    "active_schema_path": "config/schemas/protocol_specification.v2.schema.json",
+    "active_schema_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "flag_declarations_are_accounting_satisfaction_evidence": false,
+    "forward_complete": {
+      "json_pointer": "/properties/semantic_accounting/properties/forward_complete",
+      "schema_fragment": {
+        "const": true
+      },
+      "schema_fragment_canonical_sha256": "02e70d99380d0cc184f95bd0d4c286c1c4d5e530ba725618c6321376ec9480b9"
+    },
+    "reverse_complete": {
+      "json_pointer": "/properties/semantic_accounting/properties/reverse_complete",
+      "schema_fragment": {
+        "const": true
+      },
+      "schema_fragment_canonical_sha256": "02e70d99380d0cc184f95bd0d4c286c1c4d5e530ba725618c6321376ec9480b9"
+    }
+  },
+  "actual_accounting_artifact_serialized": false,
+  "artifact_id": "SVF-FUTURE-ACCOUNTING-CANONICALIZATION-AND-IDENTIFIER-RULES-V2",
+  "authoritative_active_schema_v2_hash_contract": {
+    "activation_decision": "documentation/decisions/0066-activate-schema-v2-and-adopt-decision-0019-successor.md",
+    "activation_decision_git_blob": "8ba3c6590102267d694edf958456e2b855e821a6",
+    "active_repository_path": "config/protocol_content_hash_canonicalization.v2.json",
+    "git_blob": "fd9648f4e0eee7e4516927dc1e370a0d69920ea2",
+    "human_approval_record": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/completed_hash_contract_finalization_human_review_v1/04_completed_hash_contract_finalization_human_approval_record.v1.json",
+    "human_approval_record_sha256": "ef3badda87817a6245b767ed38a8a6e6498b23d88ce98bc2267693b1b377ae8a",
+    "human_approved_active_form_sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "human_approved_active_form_source": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_hash_contract_finalization_package_v1/02_active_form_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "portable_copy": "canonicalization_sources_exact/01_active_v2_hash_contract.EXACT_COPY.json",
+    "sha256": "37f035bb617f5598a0e368ba3b60b4bf1e69e4e69ce2f1053d71c0fcc96619e9",
+    "source_commit": "70437180754f8248a5cc06d0af3e59c2c343520c"
+  },
+  "identifier_comparison_rules": {
+    "schema_carrier_id": {
+      "case_folding": false,
+      "comparison": "exact canonical identifier equality",
+      "implicit_jsonpath_jsonpointer_conversion": false,
+      "representation_conversion": "must be explicitly governed before AEA02 freeze",
+      "trim": false
+    },
+    "source_unit_id": {
+      "alias_expansion": "FORBIDDEN unless separately governed before AEA01 freeze",
+      "case_folding": false,
+      "comparison": "exact string equality",
+      "trim": false,
+      "unicode_normalization": "NONE"
+    }
+  },
+  "pre_finalization_provenance_source": {
+    "git_blob": "b8d7bda44831dcd6913d5359b97358f2bf65713b",
+    "is_active_installed_contract": false,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_activation_governance_package_v1/07_proposed_v2_hash_contract.REVIEW_CANDIDATE.json",
+    "role": "REVIEWED_PRE_FINALIZATION_PROVENANCE_SOURCE",
+    "sha256": "8fa63b0faea168e7dcc7701d94704d408dbd8d22e5d17d6c83cc3ab90095aab0"
+  },
+  "status": "SPECIFICATION_ONLY"
+}

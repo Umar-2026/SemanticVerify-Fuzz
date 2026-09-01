@@ -1,0 +1,49 @@
+{
+  "failure": {
+    "authorization_failure": false,
+    "cause": "Global git diff --cached --check rejected one new terminal blank line in the blank form and preserved CRLF/trailing-whitespace bytes in an immutable predecessor human-review EXACT_COPY.",
+    "class": "POSTCONSUMPTION_GIT_DIFF_CHECK_WHITESPACE_POLICY_CONFLICT",
+    "evidence_failure": false,
+    "human_review_failure": false
+  },
+  "first_transaction_state": {
+    "decision0214_a02_execution_attempt_count": 1,
+    "decision0214_a02_rerun_authorized": false,
+    "decision0214_a02_result": "PASS",
+    "decision0214_a02_state": "PERMANENTLY_RETIRED",
+    "decision0215_blank_form_validation": "PASS",
+    "decision0215_commit_created": false,
+    "decision0215_package_precommit_verifier": "PASS"
+  },
+  "governance_boundary": {
+    "accounting_evidence_acquisition_authorized": false,
+    "accounting_satisfaction_determination_authorized": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "concrete_mapping_authorized": false,
+    "corrective_successor_governance_adopted": false,
+    "external_rereview_handoff_authorized": false,
+    "human_rereview_performed": false,
+    "pair_reclassification_authorized": false,
+    "repair_authorized": false,
+    "returned_rereview_recording_authorized": false
+  },
+  "preserved_consumption_evidence": {
+    "consumption_sentinel_sha256": "774424e3090a81f3fd15fafb899889f0e56ee39c984c9961dad914a6cda56f8a",
+    "execution_output_sha256": "adca2df25b0e01770d5ab0c9e3b1738aaed1701b8b1aab89e457d5036e60c343"
+  },
+  "recovery_actions": {
+    "blank_form_sha256_after": "e2764446526d554da9d3e2022dd3782491d28b62bafdbe104dddc3bdaed57df4",
+    "blank_form_sha256_before": "a26edb10c5021ff5e4be831a22bec2ed3dd3fbad22e64ec46df411197c178a71",
+    "blank_form_terminal_newline_only_normalized": true,
+    "decision0214_a02_rerun": false,
+    "diff_check_policy": "Run normal staged diff whitespace check on every D0215 path except the immutable byte-exact predecessor returned-review copy; verify that excluded copy separately by exact D0211 SHA-256, byte identity, and CRLF count.",
+    "historical_predecessor_review_expected_sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+    "historical_predecessor_review_modified": false,
+    "human_fields_populated": false,
+    "human_fields_synthesized": false
+  },
+  "recovery_id": "SVF-D0215-POSTCONSUMPTION-WHITESPACE-CHECK-RECOVERY-V1",
+  "source_authorization_decision": "0214",
+  "target_package_decision": "0215"
+}

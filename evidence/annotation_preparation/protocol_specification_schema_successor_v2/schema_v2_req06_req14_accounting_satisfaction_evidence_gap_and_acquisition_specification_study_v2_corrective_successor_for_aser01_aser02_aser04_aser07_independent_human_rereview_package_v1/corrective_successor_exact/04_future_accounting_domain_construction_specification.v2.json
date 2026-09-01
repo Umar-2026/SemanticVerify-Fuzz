@@ -1,0 +1,70 @@
+{
+  "AEA01_governed_source_unit_domain": {
+    "authoritative_enumeration_source": {
+      "git_blob": "b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861",
+      "historical_unique_semantic_unit_count": 109,
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+      "source_commit": "70437180754f8248a5cc06d0af3e59c2c343520c",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/01_semantic_unit_carrier_admissibility_matrix.v1.json"
+    },
+    "current_status": "NOT_ACQUIRED",
+    "deterministic_enumeration_rule": [
+      "Read every row from the exact bound enumeration source.",
+      "Extract semantic_unit_id from every row.",
+      "Reject null, empty, or non-string identifiers.",
+      "Deduplicate only by exact identifier equality.",
+      "Sort identifiers by UTF-8 byte sequence.",
+      "Do not manually include, omit, sample, or semantically filter source units.",
+      "Verify exactly 109 unique historical source identifiers before any future governed freeze using this source."
+    ],
+    "future_freeze_required_before_relation_witness_creation": true
+  },
+  "AEA02_governed_schema_carrier_domain": {
+    "authoritative_candidate_enumeration_source": {
+      "candidate_identifier_field": "schema_v2_property_path",
+      "git_blob": "b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861",
+      "historical_unique_candidate_count": 171,
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+      "source_commit": "70437180754f8248a5cc06d0af3e59c2c343520c",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_unit_carrier_admissibility_and_requirement_binding_study_v1/01_semantic_unit_carrier_admissibility_matrix.v1.json"
+    },
+    "authoritative_governing_sources": [
+      {
+        "path": "config/schemas/protocol_specification.v2.schema.json",
+        "role": "active_schema_v2",
+        "sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956"
+      },
+      {
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_bound_carrier_admissibility_resolution_study_v1/01_requirement_bound_carrier_admissibility_assessment.v1.json",
+        "role": "carrier_admissibility_assessment",
+        "sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c"
+      },
+      {
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_bound_carrier_admissibility_resolution_study_v1_bounded_governance_adoption_v1/01_bounded_governance_adoption_manifest.v1.json",
+        "role": "carrier_admissibility_governance_adoption",
+        "sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a"
+      }
+    ],
+    "current_status": "NOT_ACQUIRED",
+    "deterministic_future_accounting_rule": [
+      "Begin from the complete exact candidate enumeration source.",
+      "Every candidate must receive exactly one governed disposition record.",
+      "Permitted disposition values are INCLUDED, EXCLUDED, or UNRESOLVED.",
+      "INCLUDED requires separately authorized future evidence satisfying the governed carrier-admissibility rule.",
+      "EXCLUDED requires a governed reason code and exact source binding.",
+      "UNRESOLVED candidates may not be silently promoted or omitted.",
+      "No manual subset may define the apparent carrier universe.",
+      "The final C-domain may be frozen only after every candidate is accounted for exactly once."
+    ],
+    "future_freeze_required_before_relation_witness_creation": true
+  },
+  "actual_domain_acquisition_performed": false,
+  "artifact_id": "SVF-FUTURE-ACCOUNTING-DOMAIN-CONSTRUCTION-SPECIFICATION-V2",
+  "concrete_mapping_created": false,
+  "historical_enumeration_consistency": {
+    "cartesian_pair_count": 18639,
+    "schema_property_candidate_count": 171,
+    "semantic_unit_count": 109
+  },
+  "status": "SPECIFICATION_ONLY_DOMAINS_NOT_ACQUIRED"
+}

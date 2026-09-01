@@ -1,0 +1,63 @@
+{
+  "authorization": {
+    "decision0210_commit": "d210414481fbe53ffc635b85f0a592d4be673cde",
+    "decision0210_recovery_tree": "6fb20c2704ac9a0eb160482002a86977d55eb4c7",
+    "decision0210_tree": "d060607062a03d9664a6d7ea1316e9266f54bd62",
+    "symlink_safe_successor_sha256": "5daf813882132beb325840aad00856a00acabafbdd0f9d5a2eba6c53eb2379d1"
+  },
+  "binding_id": "SVF-D0211-RETURNED-REVISION-REQUIRED-HUMAN-REVIEW-SOURCE-BINDING-V1",
+  "external_return": {
+    "crlf_count": 140,
+    "path": "/openbayes/home/50_req06_req14_accounting_gap_study_Nadeem_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md",
+    "sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+    "size_bytes": 12281
+  },
+  "recording_decision": "0211",
+  "repository_exact_copy": {
+    "byte_identity_required": true,
+    "crlf_count": 140,
+    "path": "01_returned_independent_human_review.EXACT_COPY.v1.md",
+    "sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+    "size_bytes": 12281
+  },
+  "retired_predecessor": {
+    "decision0208_a02_sha256": "b21d99ec4128e965e180d7f548a714807a8229a1843bd8869ab8d56b353fc62f",
+    "execution_attempt_count": 1,
+    "execution_result": "FAIL",
+    "failure_class": "PATH_ALIAS_CANONICALIZATION_DEFECT",
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "returned_packet_facts": {
+    "identity_or_authorship_independently_verified": false,
+    "independence_attestation_present": true,
+    "overall_review_decision": "REVISION_REQUIRED",
+    "pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "review_date": "01 / September / 2026",
+    "reviewer_confirmation": "MN_Lodhi",
+    "reviewer_name": "Muhammad Nadeem Nadir",
+    "reviewer_role": "Spec-Technical-Adjudicator-1",
+    "revision_required_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ]
+  },
+  "successor_consumption": {
+    "consumption_sentinel_sha256": "2496959717fd0b0d773e35805b09ae9edb95ded8d91a95a533db9d6035d9b875",
+    "consumption_sentinel_size_bytes": 655,
+    "execution_attempt_count": 1,
+    "execution_output_sha256": "e6667d28acc2a244dfb4092398db8dc563f81002bebe7363e337f3460a5e9fa3",
+    "execution_output_size_bytes": 1058,
+    "execution_result": "PASS",
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  }
+}

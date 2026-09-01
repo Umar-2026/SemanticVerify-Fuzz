@@ -1,0 +1,58 @@
+{
+  "authored_by_decision": "0215",
+  "authorized_by_decision": "0214",
+  "blank_form": {
+    "human_fields_populated": false,
+    "path": "05_independent_human_rereview_form.BLANK.v1.md",
+    "sha256": "e2764446526d554da9d3e2022dd3782491d28b62bafdbe104dddc3bdaed57df4"
+  },
+  "d0214_a02_consumption": {
+    "execution_attempt_count": 1,
+    "execution_output_sha256": "adca2df25b0e01770d5ab0c9e3b1738aaed1701b8b1aab89e457d5036e60c343",
+    "execution_result": "PASS",
+    "rerun_authorized": false,
+    "sentinel_sha256": "774424e3090a81f3fd15fafb899889f0e56ee39c984c9961dad914a6cda56f8a",
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "next_step": "SEPARATELY_AUTHORIZE_EXTERNAL_INDEPENDENT_HUMAN_REREVIEW_HANDOFF_FOR_D0213_CORRECTIVE_SUCCESSOR",
+  "non_authorizations": {
+    "accounting_evidence_acquisition": false,
+    "accounting_satisfaction_determination": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping": false,
+    "corrective_successor_governance_adoption": false,
+    "external_rereview_handoff": false,
+    "human_rereview": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "returned_rereview_recording": false
+  },
+  "package_id": "SVF-D0213-CORRECTIVE-SUCCESSOR-INDEPENDENT-HUMAN-REREVIEW-PACKAGE-V1",
+  "pair_state": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "review_scope": {
+    "fresh_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "preserved_pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ]
+  },
+  "status": "BLANK_AWAITING_EXTERNAL_HANDOFF_AUTHORIZATION",
+  "subject": {
+    "decision0213_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+    "successor_status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR"
+  }
+}

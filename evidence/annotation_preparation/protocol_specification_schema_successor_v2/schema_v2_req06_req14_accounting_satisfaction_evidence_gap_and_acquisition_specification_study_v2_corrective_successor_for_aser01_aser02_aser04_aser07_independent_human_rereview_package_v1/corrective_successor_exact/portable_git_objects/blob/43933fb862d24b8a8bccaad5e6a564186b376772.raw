@@ -1,0 +1,144 @@
+{
+  "analyzer_activity_authorized": false,
+  "artifact_bindings": {
+    "candidate_multifield_composition_matrix_sha256": "c064cfa8c7143b537dc3bb54b8af353f56bafba3e415e7ccdb2c17efaff30d45",
+    "schema_v2_carrier_inventory_sha256": "0f32fb87e1396da8c37e3f74c41059560338346ae54f29df0c2d38d72deb1d6d",
+    "semantic_unit_inventory_sha256": "2b39f5625658e41aeb906a1db8a4a472d9265dc3654572e60374827f0ce7fa7d"
+  },
+  "authorization_binding": {
+    "authorization_sha256": "a8ca219ee246c99c5d3c6ef2771eda7ec4fad2532358baf0cd592c1b00e6eab3",
+    "authorization_status": "AUTHORIZED_TO_AUTHOR_EXHAUSTIVE_ADMISSIBLE_EXISTING_SCHEMA_V2_MULTIFIELD_CAPABILITY_STUDY_V1_ONLY",
+    "decision_0083_commit": "fc5fb6899dfd061759d43d3baf9caa383b771d02",
+    "pre_study_authorization_verifier_final_run": "PASS",
+    "pre_study_authorization_verifier_final_run_output_sha256": "e6eb4748bdf804153be96498a8b8309a9f07a5d415b712281bf70cfd2174abcd",
+    "pre_study_authorization_verifier_permanently_retired_after_authoring": true,
+    "pre_study_authorization_verifier_sha256": "5f2cfa2a25fb70d9e804b5dfb93519fad63414c424ff408bbf491337043c1555"
+  },
+  "baseline_activity_authorized": false,
+  "capability_findings": {
+    "all_109_v4_semantic_units_inventoried": true,
+    "all_10_v4_semantic_containers_inventoried": true,
+    "all_171_schema_v2_property_paths_inventoried": true,
+    "all_57_v4_field_classes_screened": true,
+    "all_7_required_schema_v2_carrier_families_examined": true,
+    "all_admissible_semantically_related_multifield_compositions_machine_enumerated": false,
+    "all_v4_leaf_fields_inventoried": true,
+    "collision_freedom_for_complete_mapping_proven": false,
+    "constructive_full_exact_mapping_witness_complete": false,
+    "deterministic_complete_forward_encoding_proven": false,
+    "deterministic_exact_reverse_reconstruction_proven": false,
+    "multi_field_compositions_examined_at_composition_class_level": true,
+    "negative_exhaustive_elimination_complete": false,
+    "same_named_property_absence_treated_as_impossibility": false,
+    "semantic_noninterference_for_complete_mapping_proven": false,
+    "semantic_role_relation_formalization_complete": false
+  },
+  "curl_json_created": false,
+  "fixed_input_bindings": {
+    "active_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "completed_corrective_v2_human_review_record_sha256": "d6d1142315f3830abfd2f5d33ca4fff120d1c814d07f80b1b4eb6c96ae0378c1",
+    "curl_v4_sha256": "e17ae2ea5a70bdd790c946eb4b89ca37368d749cd7463159e69514d88a50cea8",
+    "residual_losslessness_proof_v1_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0"
+  },
+  "governance_effect": {
+    "independent_human_technical_review_required": true,
+    "study_result_is_author_candidate_only": true,
+    "study_result_may_not_be_used_to_authorize_positive_mapping_before_independent_review": true,
+    "study_result_may_not_be_used_to_authorize_schema_successor_before_independent_review": true
+  },
+  "human_review_basis": {
+    "corrective_assessment_v2_human_approved": true,
+    "no_successor_required_with_proven_v2_mapping_human_approved": false,
+    "prior_human_approved_current_position": "FURTHER_EVIDENCE_REQUIRED",
+    "schema_successor_required_human_approved": false
+  },
+  "inventory_results": {
+    "current_rule_only_defect_verdict_to_enforcement_ambiguity_group_count": 2,
+    "current_rule_only_verdict_to_enforcement_ambiguity_group_count": 2,
+    "distinct_enforcement_value_count": 15,
+    "rules_with_enforcement_count": 64,
+    "same_named_matches": [
+      "effect",
+      "rule_id"
+    ],
+    "same_named_v4_field_to_schema_property_count": 2,
+    "schema_v2_distinct_property_name_count": 123,
+    "schema_v2_open_unconstrained_string_path_count": 59,
+    "schema_v2_property_path_count": 171,
+    "v4_exit_obligation_count": 3,
+    "v4_field_class_count": 57,
+    "v4_leaf_field_count": 531,
+    "v4_representation_policy_field_count": 10,
+    "v4_rule_count": 64,
+    "v4_semantic_container_count": 10,
+    "v4_semantic_unit_count": 109
+  },
+  "mandatory_losslessness_requirements": [
+    "all_10_v4_semantic_containers_preserved",
+    "all_3_exit_obligations_accounted_for",
+    "all_64_rule_records_accounted_for",
+    "complete_exact_v4_representation_policy_machine_checkably_bound",
+    "complete_exact_v4_representation_policy_preserved",
+    "forward_accounting_required",
+    "four_verdict_contract_preserved",
+    "membership_sensitive_semantics_preserved",
+    "normative_strength_uncertainty_policy_preserved",
+    "ownership_sensitive_semantics_preserved",
+    "path_sensitive_semantics_preserved",
+    "resource_centered_semantics_preserved",
+    "return_sensitive_semantics_preserved",
+    "reverse_accounting_required",
+    "set_valued_state_reasoning_preserved",
+    "synthetic_protocol_events_invented_false_policy_preserved",
+    "unknown_first_class_preserved"
+  ],
+  "next_boundary": "SEPARATELY_AUTHORIZE_CAPABILITY_STUDY_V1_INDEPENDENT_HUMAN_TECHNICAL_REVIEW_PACKAGE",
+  "operational_positive_mapping_contract_created": false,
+  "outcome_logic": {
+    "exhaustiveness_established": false,
+    "negative_outcome_requirements_satisfied": false,
+    "positive_outcome_requirements_satisfied": false,
+    "required_outcome_under_decision_0083_contract": "FURTHER_EVIDENCE_REQUIRED"
+  },
+  "prohibited_evidence_accessed": false,
+  "repair_authorized": false,
+  "schema_successor_created": false,
+  "schema_v3_created": false,
+  "selected_outcome": "FURTHER_EVIDENCE_REQUIRED",
+  "selected_outcome_human_approved": false,
+  "status": "AUTHOR_CANDIDATE",
+  "study_id": "SVF-EXHAUSTIVE-ADMISSIBLE-EXISTING-SCHEMA-V2-MULTIFIELD-CAPABILITY-STUDY-V1",
+  "unresolved_exactness_classes": {
+    "additional_rule_or_exit_metadata_classes": [
+      "classification_note",
+      "reason",
+      "recommendation",
+      "dependent_reasoning_policy",
+      "excludes",
+      "fact",
+      "precedence",
+      "return_note",
+      "argument_scope",
+      "cleanup_obligation_effect",
+      "discharge_condition",
+      "failed_cleanup_effect"
+    ],
+    "historically_central": [
+      "enforcement",
+      "normative_strength_uncertainty_must_not_be_silently_strengthened",
+      "resource_centered",
+      "synthetic_protocol_events_invented"
+    ]
+  },
+  "why_negative_result_not_proven": [
+    "Schema V2 contains multiple structured and open string-valued semantically typed carriers that can participate in compositions.",
+    "The reviewed admissibility rule requires semantically related carriers but does not provide a complete machine-readable relation enumerating every admissible V4-field-to-Schema-V2-carrier composition.",
+    "Therefore all admissible semantically related multi-field compositions cannot currently be machine-enumerated and exhaustively eliminated.",
+    "Absence of a same-named property is not treated as proof that no admissible structured composition exists."
+  ],
+  "why_positive_result_not_proven": [
+    "No complete constructive analysis-only witness currently maps every V4 semantic unit into native semantically related Schema-V2 carriers.",
+    "No complete candidate currently passes deterministic exact forward encoding and deterministic exact reverse reconstruction for every V4 semantic unit.",
+    "Complete collision-freedom and semantic-noninterference have not been demonstrated for a full existing-V2 mapping."
+  ]
+}
