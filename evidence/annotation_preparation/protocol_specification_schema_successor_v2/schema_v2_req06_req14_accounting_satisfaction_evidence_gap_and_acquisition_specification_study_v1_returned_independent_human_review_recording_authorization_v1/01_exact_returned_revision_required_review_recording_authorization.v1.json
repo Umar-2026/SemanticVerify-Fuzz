@@ -1,0 +1,84 @@
+{
+  "authorization_id": "SVF-D0208-EXACT-RETURNED-REVISION-REQUIRED-REVIEW-RECORDING-AUTHORIZATION-V1",
+  "authorization_status": "AUTHORIZED_TO_RECORD_EXACT_RETURNED_REVISION_REQUIRED_HUMAN_REVIEW_ONLY",
+  "authorized_future_recording_transaction": {
+    "consume_decision0208_a02_exactly_once": true,
+    "record_exact_returned_review_bytes": true,
+    "record_packet_facts_without_identity_inference": true,
+    "record_reviewer_notes_exactly": true,
+    "record_revision_required_outcome": true,
+    "recording_only": true
+  },
+  "decision": "0208",
+  "explicit_nonauthorization": {
+    "accounting_evidence_acquisition": false,
+    "accounting_satisfaction_determination": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_accounting_instance_authoring": false,
+    "corrective_successor_authoring": false,
+    "corrective_successor_governance_adoption": false,
+    "curl_json": false,
+    "not_supported_binding_creation": false,
+    "operational_mapping": false,
+    "original_study_governance_adoption": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "schema_successor": false,
+    "schema_v2_losslessness_claim": false,
+    "schema_v2_modification": false,
+    "source_unit_to_schema_carrier_mapping_creation": false,
+    "supported_binding_creation": false
+  },
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "returned_packet_facts": {
+    "identity_or_authorship_independently_verified": false,
+    "independence_attestation_present": true,
+    "overall_review_decision": "REVISION_REQUIRED",
+    "pass_item_count": 5,
+    "pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "review_date": "01 / September / 2026",
+    "review_item_count": 9,
+    "reviewer_confirmation": "MN_Lodhi",
+    "reviewer_name": "Muhammad Nadeem Nadir",
+    "reviewer_role": "Spec-Technical-Adjudicator-1",
+    "revision_required_item_count": 4,
+    "revision_required_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ]
+  },
+  "returned_review": {
+    "content_rewriting_authorized": false,
+    "crlf_count": 140,
+    "exact_byte_recording_required": true,
+    "external_path": "/openbayes/home/50_req06_req14_accounting_gap_study_Nadeem_independent_human_review_form.MANUAL_REVIEW_COPY.v1.md",
+    "line_ending_normalization_authorized": false,
+    "sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+    "size_bytes": 12281
+  },
+  "review_interpretation": {
+    "accounting_unsatisfaction_proven": false,
+    "req06_failure_proven": false,
+    "req14_failure_proven": false,
+    "review_revision_required_means_corrective_response_required": true
+  },
+  "source_checkpoint": {
+    "decision0207_commit": "449bd5f22c617aed6204e536d07fb225534925f1",
+    "decision0207_handoff_tree": "96af9e8fc39eb4d2969324145353d741d056f5b6",
+    "decision0207_tree": "364ade4c7d918e1cee280da539572f702f63ed7b"
+  }
+}

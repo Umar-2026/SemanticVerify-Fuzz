@@ -1,0 +1,60 @@
+{
+  "contract_id": "SVF-D0208-EXACT-RETURNED-REVIEW-RECORDING-CONTRACT-V1",
+  "corrective_work_boundary": {
+    "corrective_successor_authored_by_decision0208": false,
+    "corrective_successor_authorized_by_decision0208": false,
+    "corrective_successor_must_be_separately_authorized": true,
+    "corrective_successor_required_if_process_continues": true
+  },
+  "downstream_nonauthorization": {
+    "accounting_evidence_acquisition": false,
+    "accounting_satisfaction_determination": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping": false,
+    "curl_json": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "schema_modification": false,
+    "schema_successor": false,
+    "schema_v2_losslessness": false
+  },
+  "recording_result_boundary": {
+    "accounting_unsatisfaction_proven": false,
+    "req06_failed": false,
+    "req14_failed": false,
+    "returned_review_recorded_after_future_transaction": true,
+    "review_result_after_recording": "REVISION_REQUIRED_CORRECTIVE_RESPONSE_REQUIRED",
+    "study_approved": false,
+    "study_governance_adopted": false
+  },
+  "recording_scope": "EXACT_RETURNED_REVISION_REQUIRED_REVIEW_ONLY",
+  "required_recording_properties": {
+    "independent_identity_verification_claim_forbidden": true,
+    "overall_result_must_remain_revision_required": true,
+    "pass_items_must_remain": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "repository_exact_copy_must_match_source_bytes": true,
+    "repository_exact_copy_must_match_source_sha256": true,
+    "repository_exact_copy_must_match_source_size": true,
+    "repository_exact_copy_must_preserve_crlf_bytes": true,
+    "reviewer_identity_fields_are_packet_facts_only": true,
+    "revision_required_items_must_remain": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ]
+  },
+  "required_source_review": {
+    "crlf_count": 140,
+    "sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+    "size_bytes": 12281
+  }
+}
