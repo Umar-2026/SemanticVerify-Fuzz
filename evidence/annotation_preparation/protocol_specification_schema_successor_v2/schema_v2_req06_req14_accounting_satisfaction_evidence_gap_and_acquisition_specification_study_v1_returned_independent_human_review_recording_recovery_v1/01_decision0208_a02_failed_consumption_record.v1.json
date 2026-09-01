@@ -1,0 +1,42 @@
+{
+  "authorization_commit": "0c28264942b874570066482a986517fbf01bc338",
+  "authorization_decision": "0208",
+  "authorization_tree": "ecd975eb27d377eb9b92395c9ca30357dbb93921",
+  "failure_classification": {
+    "class": "PATH_ALIAS_CANONICALIZATION_DEFECT",
+    "description": "The one-time verifier resolved its own path through the /openbayes/home symlink to /output and then attempted Path.relative_to() against the unresolved /openbayes/home repository alias.",
+    "governance_outcome_failure": false,
+    "returned_review_byte_identity_failure": false,
+    "review_content_failure": false
+  },
+  "original_consumption_sentinel": {
+    "created_during_failed_attempt": false,
+    "present_at_recovery_authoring": false
+  },
+  "preserved_execution_output": {
+    "external_path": "/openbayes/home/50_D0208_A02_execution_output.v1.txt",
+    "pass_marker_present": false,
+    "repository_exact_copy": "02_decision0208_a02_failed_execution_output.EXACT_COPY.v1.txt",
+    "sha256": "d853a667d047df4be9f7d4d75c2c1eb256e20730996cc8dda8263ebb7e76252b",
+    "size_bytes": 1076
+  },
+  "record_id": "SVF-D0210-D0208-A02-FAILED-FIRST-CONSUMPTION-RECORD-V1",
+  "recording_effect": {
+    "accounting_evidence_acquisition_authorized": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "corrective_successor_authorized": false,
+    "repair_authorized": false,
+    "returned_review_recorded": false,
+    "study_governance_adopted": false
+  },
+  "recovery_decision": "0210",
+  "retired_verifier": {
+    "execution_attempt_count": 1,
+    "execution_result": "FAIL",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v1_returned_independent_human_review_recording_authorization_v1/02_authorize_exact_returned_revision_required_review_recording_once.v1.py",
+    "rerun_authorized": false,
+    "sha256": "b21d99ec4128e965e180d7f548a714807a8229a1843bd8869ab8d56b353fc62f",
+    "state": "PERMANENTLY_RETIRED"
+  }
+}

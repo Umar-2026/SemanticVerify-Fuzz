@@ -1,0 +1,58 @@
+{
+  "contract_id": "SVF-D0210-SYMLINK-SAFE-RETURNED-REVIEW-RECORDING-SUCCESSOR-CONTRACT-V1",
+  "corrective_implementation": {
+    "defect": "PATH_ALIAS_CANONICALIZATION_DEFECT",
+    "required_fix": "Do not derive repository-relative commit scope by applying Path.resolve().relative_to() against an unresolved symlink alias.",
+    "successor_does_not_execute_retired_d0208_a02": true,
+    "successor_uses_hardcoded_repository_relative_scope": true
+  },
+  "explicit_nonauthorization": {
+    "accounting_evidence_acquisition": false,
+    "accounting_satisfaction_determination": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping": false,
+    "corrective_study_successor_authoring": false,
+    "curl_json": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "returned_review_recording_by_decision0210": false,
+    "schema_successor": false,
+    "schema_v2_losslessness_claim": false,
+    "schema_v2_modification": false,
+    "study_governance_adoption": false
+  },
+  "one_time_successor_lifecycle": {
+    "authored_by_decision0210": true,
+    "authorized_execution_count": 1,
+    "executed_by_decision0210": false,
+    "first_execution_attempt_consumes_successor": true,
+    "rerun_after_first_attempt_authorized": false
+  },
+  "returned_review_binding": {
+    "crlf_count": 140,
+    "overall_review_decision": "REVISION_REQUIRED",
+    "pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "revision_required_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412",
+    "size_bytes": 12281
+  },
+  "successor_scope": "EXACT_RETURNED_REVISION_REQUIRED_REVIEW_RECORDING_AUTHORIZATION_ONLY",
+  "supersedes_for_execution_only": {
+    "decision0208_a02_rerun_authorized": false,
+    "decision0208_a02_sha256": "b21d99ec4128e965e180d7f548a714807a8229a1843bd8869ab8d56b353fc62f",
+    "decision0208_a02_state": "PERMANENTLY_RETIRED"
+  }
+}
