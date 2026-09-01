@@ -1,0 +1,139 @@
+{
+  "authorization_id": "SVF-D0212-BOUNDED-CORRECTIVE-STUDY-SUCCESSOR-AUTHORIZATION-V1",
+  "authorization_status": "AUTHORIZED_TO_AUTHOR_BOUNDED_CORRECTIVE_STUDY_SUCCESSOR_ONLY",
+  "authorized_corrective_work": {
+    "author_corrective_successor_study": true,
+    "author_delta_response_for_aser01_aser02_aser04_aser07": true,
+    "author_machine_checkable_corrective_controls": true,
+    "bind_exact_flag_bearing_schema_artifact": true,
+    "create_d0203_commit_tree_blob_path_binding": true,
+    "create_git_object_or_bundle_based_portable_source_evidence": true,
+    "create_portable_provenance_support_from_existing_committed_repository_state": true,
+    "define_authoritative_schema_carrier_domain_enumeration_rules": true,
+    "define_authoritative_source_unit_domain_enumeration_rules": true,
+    "define_canonical_serialization_rules": true,
+    "define_derivation_input_hash_requirements": true,
+    "define_deterministic_inclusion_exclusion_rules": true,
+    "define_domain_before_relation_ordering_proof": true,
+    "define_formal_aea01_to_aea05_artifact_schemas": true,
+    "define_freeze_event_metadata_requirements": true,
+    "define_identifier_comparison_rules": true,
+    "define_machine_verifiable_freeze_and_lineage_chain": true,
+    "define_predecessor_hash_requirements": true,
+    "include_exact_substantive_copies_of_existing_fixed_evidence_referenced_by_d0203_source_binding": true
+  },
+  "corrective_constraints": {
+    "corrective_successor_must_be_new_artifacts": true,
+    "no_accounting_satisfaction_evaluation": true,
+    "no_actual_governed_schema_carrier_domain_acquisition": true,
+    "no_actual_governed_source_unit_domain_acquisition": true,
+    "no_claim_that_accounting_proves_semantic_losslessness": true,
+    "no_claim_that_corrective_controls_prove_accounting_satisfaction": true,
+    "no_concrete_source_unit_to_schema_carrier_mapping": true,
+    "no_forward_witness_acquisition": true,
+    "no_new_accounting_evidence_acquisition": true,
+    "no_pair_reclassification": true,
+    "no_reverse_witness_acquisition": true,
+    "original_d0203_artifacts_must_not_be_edited_in_place": true,
+    "returned_human_review_must_not_be_edited_in_place": true,
+    "use_existing_committed_evidence_only_for_provenance_and_substantive_copying": true
+  },
+  "corrective_scope": {
+    "pass_items_may_be_referenced_for_context_but_not_reopened": true,
+    "preserved_pass_items": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "revision_required_items": [
+      "ASER01",
+      "ASER02",
+      "ASER04",
+      "ASER07"
+    ],
+    "scope_is_revision_items_only": true
+  },
+  "decision": "0212",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "actual_accounting_evidence_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_accounting_instance_creation": false,
+    "curl_json_creation": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "schema_successor_creation": false,
+    "schema_v2_losslessness_claim": false,
+    "schema_v2_modification": false,
+    "source_unit_to_schema_carrier_mapping_creation": false
+  },
+  "future_review_state": {
+    "corrective_successor_is_author_candidate_only": true,
+    "external_handoff_authorized_by_decision0212": false,
+    "governance_adoption_authorized_by_decision0212": false,
+    "independent_human_rereview_required": true,
+    "review_package_authoring_authorized_by_decision0212": false
+  },
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "required_corrective_targets": {
+    "ASER01": {
+      "minimum_controls": [
+        "D0203 commit/tree binding",
+        "portable Git-object or bundle evidence",
+        "blob-to-path mapping",
+        "checksum/byte-size closure"
+      ],
+      "target": "independently reproducible provenance between the corrective package and authoritative D0203 repository objects"
+    },
+    "ASER02": {
+      "minimum_controls": [
+        "exact substantive copies of the existing fixed-evidence artifacts",
+        "source-path binding",
+        "source object/hash binding",
+        "no new experimental evidence"
+      ],
+      "target": "make the substantive fixed evidence referenced by the D0203 source binding independently inspectable within the bounded corrective evidence package"
+    },
+    "ASER04": {
+      "minimum_controls": [
+        "authoritative enumeration sources",
+        "deterministic inclusion/exclusion rules",
+        "formal artifact schemas",
+        "canonical serialization",
+        "identifier comparison rules",
+        "exact flag-bearing schema binding",
+        "freeze/provenance chain requirements"
+      ],
+      "target": "strengthen AEA01-AEA05 from high-level inventory into a deterministic and machine-verifiable future acquisition specification"
+    },
+    "ASER07": {
+      "minimum_controls": [
+        "freeze-event metadata",
+        "predecessor hashes",
+        "derivation-input hashes",
+        "domain lineage identifiers",
+        "machine-verifiable ordering proof",
+        "authoritative domain-enumeration rules"
+      ],
+      "target": "make domain independence and domain-before-relation ordering machine-verifiable rather than merely declarative"
+    }
+  },
+  "source_checkpoint": {
+    "decision0211_commit": "8fe5a8937d14d5ed645a14af0c634ff8fe8b90ad",
+    "decision0211_record_tree": "eaf642d9c842315632b6cec92d91a20b25455232",
+    "decision0211_tree": "24dbfa68996ebc2ef5bf5f0fad030211f368d977",
+    "overall_review_decision": "REVISION_REQUIRED",
+    "returned_review_sha256": "39155e0b54cf5372b4b289df50ba4f55730f575fe1b3a2af61b16fa498025412"
+  }
+}

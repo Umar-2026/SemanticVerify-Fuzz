@@ -1,0 +1,49 @@
+{
+  "contract_id": "SVF-D0212-BOUNDED-CORRECTIVE-STUDY-SUCCESSOR-SCOPE-CONTRACT-V1",
+  "corrective_items": [
+    "ASER01",
+    "ASER02",
+    "ASER04",
+    "ASER07"
+  ],
+  "preserved_pass_items": [
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "review_lifecycle": {
+    "independent_human_rereview_required": true,
+    "separate_external_handoff_authorization_required": true,
+    "separate_governance_adoption_required": true,
+    "separate_return_recording_authorization_required": true,
+    "separate_review_package_authorization_required": true,
+    "successor_status_after_authoring": "AUTHOR_CANDIDATE"
+  },
+  "review_result_under_correction": "REVISION_REQUIRED",
+  "successor_nonclaims": {
+    "does_not_acquire_actual_accounting_evidence": true,
+    "does_not_authorize_analyzer_baseline_or_repair": true,
+    "does_not_create_actual_domains": true,
+    "does_not_create_concrete_mapping": true,
+    "does_not_create_forward_or_reverse_accounting_witnesses": true,
+    "does_not_determine_accounting_satisfaction": true,
+    "does_not_prove_schema_v2_losslessness": true,
+    "does_not_reclassify_pairs": true
+  },
+  "successor_requirements": {
+    "canonicalization_and_identifier_rules": true,
+    "delta_traceability_to_each_revision_required_item": true,
+    "deterministic_future_domain_construction_specification": true,
+    "exact_active_schema_binding": true,
+    "exact_returned_review_preservation": true,
+    "formal_machine_readable_future_artifact_schemas": true,
+    "immutable_predecessor_preservation": true,
+    "machine_verifiable_domain_before_relation_ordering": true,
+    "machine_verifiable_domain_freeze_lineage": true,
+    "new_successor_artifacts_only": true,
+    "portable_d0203_provenance": true,
+    "substantive_existing_fixed_evidence_available": true
+  }
+}
