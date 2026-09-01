@@ -1,0 +1,18 @@
+{
+  "authorization_decision": "0210",
+  "consumption_record_id": "SVF-D0211-DECISION0210-SYMLINK-SAFE-SUCCESSOR-CONSUMPTION-RECORD-V1",
+  "consumption_sentinel_sha256": "2496959717fd0b0d773e35805b09ae9edb95ded8d91a95a533db9d6035d9b875",
+  "consumption_sentinel_size_bytes": 655,
+  "execution_attempt_count": 1,
+  "execution_output_sha256": "e6667d28acc2a244dfb4092398db8dc563f81002bebe7363e337f3460a5e9fa3",
+  "execution_output_size_bytes": 1058,
+  "execution_result": "PASS",
+  "first_execution_attempt_consumes_authorization": true,
+  "recording_decision": "0211",
+  "rerun_authorized": false,
+  "state": "PERMANENTLY_RETIRED",
+  "successor": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v1_returned_independent_human_review_recording_recovery_v1/05_authorize_exact_returned_review_recording_symlink_safe_successor_once.v1.py",
+    "sha256": "5daf813882132beb325840aad00856a00acabafbdd0f9d5a2eba6c53eb2379d1"
+  }
+}
