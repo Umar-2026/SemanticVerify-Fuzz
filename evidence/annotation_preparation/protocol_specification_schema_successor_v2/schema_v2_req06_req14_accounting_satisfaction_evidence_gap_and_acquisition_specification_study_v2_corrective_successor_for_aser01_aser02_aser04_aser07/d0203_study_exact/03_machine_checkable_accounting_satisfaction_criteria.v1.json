@@ -1,0 +1,107 @@
+{
+  "bidirectional_consistency_criteria": [
+    {
+      "id": "BC01",
+      "meaning": "Forward and reverse relations must be exact inverses over the frozen governed domains.",
+      "rule": "for every u in U and c in C: c in F(u) iff u in R(c)"
+    },
+    {
+      "id": "BC02",
+      "meaning": "Every governed carrier participates in the concrete accounting relation.",
+      "rule": "union over all u in U of F(u) == C"
+    },
+    {
+      "id": "BC03",
+      "meaning": "Multiplicity artifacts cannot manufacture completeness.",
+      "rule": "no duplicate source_unit_id, carrier identifier, or relation edge is present"
+    },
+    {
+      "id": "BC04",
+      "meaning": "All relation endpoints resolve to the frozen domains.",
+      "rule": "no dangling source-unit or carrier reference exists"
+    }
+  ],
+  "criteria_id": "SVF-REQ06-REQ14-FUTURE-MACHINE-CHECKABLE-ACCOUNTING-SATISFACTION-CRITERIA-V1",
+  "criteria_schema_version": 1,
+  "current_result": {
+    "accounting_satisfaction_established": false,
+    "criteria_defined": true,
+    "criteria_evaluated": false,
+    "forward_accounting_satisfied": false,
+    "reverse_accounting_satisfied": false
+  },
+  "forward_completeness_criteria": [
+    {
+      "id": "FC01",
+      "meaning": "Every governed source unit has exactly one forward record and no out-of-domain source unit has a forward record.",
+      "rule": "forward_record_source_unit_ids == U"
+    },
+    {
+      "id": "FC02",
+      "meaning": "Every governed source unit is accounted to at least one governed schema carrier.",
+      "rule": "for every u in U: F(u) is nonempty"
+    },
+    {
+      "id": "FC03",
+      "meaning": "No forward record contains an out-of-domain carrier.",
+      "rule": "for every u in U: F(u) is a subset of C"
+    },
+    {
+      "id": "FC04",
+      "meaning": "Forward records cannot silently relabel source units.",
+      "rule": "forward source_container and source_unit_kind metadata equal the frozen governed source-unit-domain metadata"
+    },
+    {
+      "id": "FC05",
+      "meaning": "The schema flag is necessary structural data but is not accepted as self-proving evidence.",
+      "rule": "declared forward_complete must equal true, but FC01-FC04 must independently pass"
+    }
+  ],
+  "future_req06_evaluation_rule": {
+    "current_evaluation": "NOT_EVALUATED_NO_CONCRETE_ACCOUNTING_EVIDENCE",
+    "future_satisfied_only_if": "all evidence preconditions and FC01-FC05 and BC01-BC04 pass",
+    "requirement": "Req06 / forward_accounting_required"
+  },
+  "future_req14_evaluation_rule": {
+    "current_evaluation": "NOT_EVALUATED_NO_CONCRETE_ACCOUNTING_EVIDENCE",
+    "future_satisfied_only_if": "all evidence preconditions and RC01-RC03 and BC01-BC04 pass",
+    "requirement": "Req14 / reverse_accounting_required"
+  },
+  "losslessness_boundary": {
+    "accounting_satisfaction_implies_exact_semantic_reconstruction": false,
+    "accounting_satisfaction_implies_schema_v2_losslessness": false,
+    "separate_semantic_losslessness_evidence_required": true
+  },
+  "notation": {
+    "C": "future separately authorized immutable governed schema-carrier domain",
+    "F(u)": "set of governed schema carriers recorded for source unit u in the future concrete forward-accounting witness",
+    "R(c)": "set of governed source units recorded for schema carrier c in the future concrete reverse-accounting witness",
+    "U": "future separately authorized immutable governed source-unit domain"
+  },
+  "preconditions_for_any_future_evaluation": [
+    "U is nonempty, finite, checksum-bound, and contains unique source_unit_id values",
+    "C is nonempty, finite, checksum-bound, and contains unique canonical carrier identifiers",
+    "forward witness is checksum-bound",
+    "reverse witness is checksum-bound",
+    "all four evidence identities are frozen before evaluation",
+    "evaluation is separately governance-authorized"
+  ],
+  "reverse_completeness_criteria": [
+    {
+      "id": "RC01",
+      "meaning": "Every governed carrier has exactly one reverse record and no out-of-domain carrier has a reverse record.",
+      "rule": "reverse_record_schema_carriers == C"
+    },
+    {
+      "id": "RC02",
+      "meaning": "No reverse record contains an out-of-domain source unit.",
+      "rule": "for every c in C: R(c) is a subset of U"
+    },
+    {
+      "id": "RC03",
+      "meaning": "The schema flag is necessary structural data but is not accepted as self-proving evidence.",
+      "rule": "declared reverse_complete must equal true, but RC01-RC02 and bidirectional criteria must independently pass"
+    }
+  ],
+  "status": "AUTHOR_CANDIDATE_CRITERIA_NOT_EVALUATED"
+}

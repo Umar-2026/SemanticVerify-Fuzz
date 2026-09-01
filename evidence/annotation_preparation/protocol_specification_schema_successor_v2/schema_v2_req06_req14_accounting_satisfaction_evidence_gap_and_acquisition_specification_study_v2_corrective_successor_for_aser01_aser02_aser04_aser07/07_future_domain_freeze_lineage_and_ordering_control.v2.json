@@ -1,0 +1,66 @@
+{
+  "anti_circularity_rules": [
+    "AEA01 may not be derived from AEA03 or AEA04.",
+    "AEA02 may not be derived from AEA03 or AEA04.",
+    "AEA03 may reference only frozen AEA01 and AEA02.",
+    "AEA04 may reference only frozen AEA01 and AEA02.",
+    "forward_complete=true may not create missing U coverage.",
+    "reverse_complete=true may not create missing C coverage.",
+    "Satisfaction evaluation occurs only after AEA05 closure."
+  ],
+  "artifact_id": "SVF-FUTURE-ACCOUNTING-DOMAIN-FREEZE-LINEAGE-CONTROL-V2",
+  "domain_freeze_record_required_fields": [
+    "freeze_id",
+    "freeze_timestamp_utc",
+    "freeze_commit",
+    "freeze_commit_parent",
+    "u_domain_path",
+    "u_domain_sha256",
+    "c_domain_path",
+    "c_domain_sha256",
+    "enumeration_source_sha256",
+    "carrier_candidate_source_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ],
+  "freeze_event_executed_by_this_successor": false,
+  "machine_verifiable_ordering_rules": [
+    "The domain-freeze commit must not contain AEA03 or AEA04 witness instances.",
+    "Each AEA03/AEA04 creation commit must be a strict descendant of the frozen U/C commit.",
+    "git merge-base --is-ancestor <domain_freeze_commit> <witness_commit> must succeed.",
+    "The U-domain SHA-256 at each witness commit must equal the frozen U-domain SHA-256.",
+    "The C-domain SHA-256 at each witness commit must equal the frozen C-domain SHA-256.",
+    "Witness derivation-input hashes must explicitly bind both frozen domain hashes.",
+    "Witness generation must not modify AEA01 or AEA02 bytes.",
+    "AEA05 must bind all predecessor and derivation-input hashes before any satisfaction evaluation."
+  ],
+  "required_phase_order": [
+    "PHASE_ENUMERATION_SOURCE_FREEZE",
+    "PHASE_U_DOMAIN_CONSTRUCTION",
+    "PHASE_C_DOMAIN_CONSTRUCTION",
+    "PHASE_UC_DOMAIN_FREEZE",
+    "PHASE_FORWARD_WITNESS_CONSTRUCTION",
+    "PHASE_REVERSE_WITNESS_CONSTRUCTION",
+    "PHASE_AEA05_PROVENANCE_CLOSURE",
+    "PHASE_SATISFACTION_EVALUATION"
+  ],
+  "satisfaction_evaluated_by_this_successor": false,
+  "status": "CONTROL_SPECIFICATION_ONLY_NOT_EXECUTED",
+  "timestamp_semantics": {
+    "primary_ordering_proof": "Git commit ancestry plus immutable SHA-256 artifact bindings",
+    "timestamps_alone_prove_order": false,
+    "timestamps_required": true
+  },
+  "witness_created_by_this_successor": false,
+  "witness_lineage_required_fields": [
+    "witness_id",
+    "creation_timestamp_utc",
+    "creation_commit",
+    "creation_commit_parent",
+    "domain_freeze_commit",
+    "u_domain_sha256",
+    "c_domain_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ]
+}

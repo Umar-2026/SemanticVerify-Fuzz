@@ -1,0 +1,63 @@
+{
+  "artifact_id": "SVF-REQ06-REQ14-ACCOUNTING-GAP-CORRECTIVE-SUCCESSOR-V2",
+  "bounded_claim": {
+    "accounting_satisfaction_established": false,
+    "accounting_unsatisfaction_proven": false,
+    "req06_failure_proven": false,
+    "req14_failure_proven": false,
+    "schema_v2_losslessness_proven": false
+  },
+  "corrective_scope": [
+    "ASER01",
+    "ASER02",
+    "ASER04",
+    "ASER07"
+  ],
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "preserved_pass_items": [
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "recorded_predecessor_review_decision": "REVISION_REQUIRED",
+  "responses": {
+    "ASER01": {
+      "approval_claimed": false,
+      "corrective_material": "Portable D0203 Git commit/tree/blob evidence, path-resolution evidence, exact source copies, SHA-256 and size closure.",
+      "review_result": "NOT_DETERMINED"
+    },
+    "ASER02": {
+      "approval_claimed": false,
+      "claim_scope": "Exact D0203 study plus explicitly D0203-bound fixed evidence.",
+      "complete_governed_evidence_universe_absence_claimed": false,
+      "complete_repository_absence_claimed": false,
+      "corrective_material": "Substantive exact copies of the seven fixed-evidence artifacts explicitly referenced by the D0203 source binding.",
+      "review_result": "NOT_DETERMINED"
+    },
+    "ASER04": {
+      "actual_domain_acquired": false,
+      "approval_claimed": false,
+      "corrective_material": "Authoritative future enumeration sources, deterministic inclusion/exclusion rules, formal AEA01-AEA05 JSON Schemas, canonicalization rules, identifier-comparison rules, exact active Schema-V2 completeness-flag binding and active Schema-V2 hash-contract binding.",
+      "review_result": "NOT_DETERMINED"
+    },
+    "ASER07": {
+      "actual_freeze_event_executed": false,
+      "approval_claimed": false,
+      "corrective_material": "Machine-verifiable future freeze/lineage and domain-before-relation ordering controls.",
+      "review_result": "NOT_DETERMINED"
+    }
+  },
+  "review_state": {
+    "governance_adopted": false,
+    "independent_human_rereview_required": true,
+    "rereview_performed": false
+  },
+  "status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR"
+}

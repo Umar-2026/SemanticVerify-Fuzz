@@ -1,0 +1,38 @@
+{
+  "binding_id": "SVF-REQ06-REQ14-ACCOUNTING-SATISFACTION-EVIDENCE-GAP-STUDY-SOURCE-BINDING-V1",
+  "binding_schema_version": 1,
+  "decision0201_governance_state": {
+    "commit": "b76886d774aacaaee50a899aefdf9e6b5209e20d",
+    "governance_adoption_manifest_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+    "tree": "12dc02aa8c55c02a623aef292fbc10fadcd41c73"
+  },
+  "decision0202_a02_consumption": {
+    "consumption_sentinel_sha256": "6718c7bbeec9ecdc411c7f53ff3de2db8aadc973647d2d26220b4f7072037486",
+    "consumption_sentinel_size_bytes": 746,
+    "execution_count": 1,
+    "execution_output_sha256": "dc2f03f4a0afa97f6c5a43cf6cc28eed7d65e43c2dbc31e2e98ce218cd3b8136",
+    "execution_output_size_bytes": 1208,
+    "execution_result": "PASS",
+    "lifecycle_state": "PERMANENTLY_RETIRED",
+    "rerun_authorized": false
+  },
+  "decision0202_authorization": {
+    "a01_sha256": "2e96d6525a5d12720e1e8242060009c1959d49cdc7ec5a7b52e9b0b4d3e6ef23",
+    "a02_sha256": "1a2c253e07ed9416f700c906872d10f99a4a2b19f05307ed6c4bc09301681581",
+    "a03_sha256": "1cd7debd76d95026b6ec5baeef5448de78e1cbb4eb8a56ab20d7aff81daf8445",
+    "a04_sha256": "86e7a4cee4ca1dd3d301225c686987e51892e59eda9374443884045d873e1265",
+    "authorization_tree": "0db47db682652adf5e985696141371770c9b1d1b",
+    "commit": "1c41f43cd610977a7c34db474bd4d0c691a1adfb",
+    "decision_sha256": "50a4f98d47e53a4085499179a0e990887de6872e88edf87b57f041c23423f4c2",
+    "tree": "14c6e82acb29ccc4080bd33579fce2b17bdb1014"
+  },
+  "fixed_evidence": {
+    "active_schema_v2_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "carrier_admissibility_assessment_sha256": "2c9ca9125aa89dd77f7f74950f7285657fcaee7dbd17ce0dca01012ad716263c",
+    "carrier_admissibility_governance_adoption_sha256": "d133548d4c3b7eef2436faabece406b3bfb815bab12c0a5c119c84258e84169a",
+    "exhaustive_multifield_capability_sha256": "9bf685bcd5d8286938f4e221bffd2cc1acc8b5da961d3b0e14f1b10a6a43b78b",
+    "relation_informed_exhaustiveness_accounting_sha256": "ae56e06b6668c301167efdd7e81ba937848446215b49be52d1268c69a2c5d643",
+    "residual_schema_v2_insufficiency_proof_sha256": "400f6806217f50b79d17ec77e41683d9077f64e07c63e5421c8b1922b49aaff0",
+    "schema_v2_successor_design_record_sha256": "eb0367a18ca2474084a90b0aaf44b769b2ac2855f270b0d94814b35590749e90"
+  }
+}

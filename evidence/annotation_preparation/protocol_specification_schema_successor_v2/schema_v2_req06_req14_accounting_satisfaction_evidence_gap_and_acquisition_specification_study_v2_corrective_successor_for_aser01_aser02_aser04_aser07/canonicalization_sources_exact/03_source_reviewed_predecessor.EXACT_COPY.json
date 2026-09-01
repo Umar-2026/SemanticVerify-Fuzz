@@ -1,0 +1,71 @@
+{
+  "canonical_json": {
+    "allow_nan": false,
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "insignificant_whitespace": false,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "trailing_lf": false
+  },
+  "computation_order": [
+    "freeze exact approved pinned provenance source artifact hashes",
+    "finalize complete Schema V2 specification object except top-level content_sha256",
+    "compute top-level specification content_sha256 using the V2 contract canonical JSON rule",
+    "verify schema-version dispatch, provenance hashes if present, and top-level content_sha256 before canonical freeze"
+  ],
+  "contract_id": "SVF-PROTOCOL-CONTENT-HASH-CANONICALIZATION-V2",
+  "dependencies": {
+    "activation_governance_authorization_sha256": "58778ad55c076ff3715ad218c6308514e274291d06e94fd95c4925ce5a9e963e",
+    "final_schema_v2_human_approval_record_sha256": "6a7c8c836071fe42522330f7b9ff75ec3cba3a855853756c3588c7a04844e1f8",
+    "protocol_specification_schema_path": "config/schemas/protocol_specification.v2.schema.json",
+    "protocol_specification_schema_sha256": "c6ebb5ef2214c4168283f9009d1f7ce6e88d2ff928853fe6a57ed1f7521c6956",
+    "schema_version_dispatch_value": "2.0.0"
+  },
+  "draft_boundary": {
+    "active_path_must_not_be_created_until_later_reviewed_activation_decision": true,
+    "final_hashes_computed_only_after_required_review_fields_are_fixed": true,
+    "review_candidate_is_not_active_contract": true,
+    "schema_conformance_alone_does_not_imply_freeze": true
+  },
+  "prohibited_effects": {
+    "activate_schema_v2": false,
+    "authorize_analyzer": false,
+    "authorize_baseline": false,
+    "authorize_repair": false,
+    "create_curl_json": false,
+    "define_positive_v4_to_v2_mapping": false,
+    "modify_schema_v2_candidate": false,
+    "modify_v1_hash_contract": false,
+    "rehash_or_migrate_frozen_v1_artifacts": false
+  },
+  "provenance_content_sha256": {
+    "algorithm": "SHA-256",
+    "excerpt_only_hash": false,
+    "input": "exact bytes of the cited approved pinned source artifact",
+    "json_record_hash": false,
+    "schema_carriers": [
+      "$.properties.provenance.items.properties.content_sha256"
+    ],
+    "whole_artifact_bytes": true
+  },
+  "reason": "Schema V2 differs structurally from Schema V1 and the frozen V1 hash contract is explicitly bound to the V1 schema. A separately versioned contract is therefore required before any V2 canonical artifact can be frozen.",
+  "schema_content_sha256_carriers": [
+    "$.properties.content_sha256",
+    "$.properties.provenance.items.properties.content_sha256"
+  ],
+  "schema_version": 2,
+  "specification_content_sha256": {
+    "algorithm": "SHA-256",
+    "input": "canonical JSON bytes of the complete specification object after omitting only the top-level content_sha256 field",
+    "nested_obligation_content_sha256_values_retained": true,
+    "provenance_content_sha256_values_retained": true,
+    "replacement_value_used": false,
+    "schema_carrier": "$.properties.content_sha256",
+    "top_level_content_sha256_field": "OMITTED"
+  },
+  "status": "REVIEW_CANDIDATE_NOT_ACTIVE"
+}
