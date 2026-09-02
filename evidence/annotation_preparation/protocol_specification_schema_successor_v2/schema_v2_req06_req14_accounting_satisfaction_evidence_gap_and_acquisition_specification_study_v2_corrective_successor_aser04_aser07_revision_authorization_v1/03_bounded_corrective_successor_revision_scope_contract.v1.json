@@ -1,0 +1,69 @@
+{
+  "contract_id": "SVF-D0220-BOUNDED-ASER04-ASER07-CORRECTIVE-SUCCESSOR-REVISION-SCOPE-CONTRACT-V1",
+  "corrective_items": [
+    "ASER04",
+    "ASER07"
+  ],
+  "nonregression": {
+    "aser01_pass_preserved": true,
+    "aser02_pass_preserved": true,
+    "aser03_pass_preserved": true,
+    "aser05_pass_preserved": true,
+    "aser06_pass_preserved": true,
+    "aser08_pass_preserved": true,
+    "aser09_pass_preserved": true
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "required_aser04_controls": {
+    "aea01_contains_source_container": true,
+    "aea03_contains_source_container_and_source_unit_kind": true,
+    "candidate_membership_bound_to_dispositions": true,
+    "coverage_bound_to_underlying_records": true,
+    "enumeration_metadata_derivation_is_deterministic": true,
+    "fc04_metadata_recomputable_from_conforming_artifacts": true,
+    "frozen_c_equals_exact_included_candidate_set": true,
+    "hash_self_reference_eliminated_by_formal_rule": true,
+    "numeric_and_string_canonicalization_complete": true,
+    "record_count_bound_to_underlying_arrays": true,
+    "source_candidate_forward_reverse_uniqueness_machine_enforced": true,
+    "zero_unresolved_required_before_c_freeze": true
+  },
+  "required_aser07_controls": {
+    "aea03_lineage_formally_constrained": true,
+    "aea04_lineage_formally_constrained": true,
+    "ancestry_evidence_bound_to_independently_recomputed_verifier_output": true,
+    "complete_freeze_event_metadata_required": true,
+    "frozen_c_exactly_matches_included_dispositions": true,
+    "immutable_domain_evidence_bound_to_independently_recomputed_verifier_output": true,
+    "separate_formal_freeze_record_schema_required": true,
+    "verifier_commands_commits_objects_results_identified": true,
+    "zero_unresolved_required_before_freeze": true
+  },
+  "review_lifecycle": {
+    "independent_human_rereview_required": true,
+    "separate_external_handoff_authorization_required": true,
+    "separate_governance_adoption_required": true,
+    "separate_return_recording_authorization_required": true,
+    "separate_review_package_authorization_required": true,
+    "successor_status_after_authoring": "AUTHOR_CANDIDATE"
+  },
+  "review_result_under_correction": "REVISION_REQUIRED",
+  "successor_nonclaims": {
+    "does_not_acquire_actual_accounting_evidence": true,
+    "does_not_acquire_actual_domains": true,
+    "does_not_authorize_analyzer_baseline_or_repair": true,
+    "does_not_create_concrete_mapping": true,
+    "does_not_create_forward_or_reverse_witnesses": true,
+    "does_not_determine_accounting_satisfaction": true,
+    "does_not_modify_active_schema_v2": true,
+    "does_not_reclassify_pairs": true
+  }
+}
