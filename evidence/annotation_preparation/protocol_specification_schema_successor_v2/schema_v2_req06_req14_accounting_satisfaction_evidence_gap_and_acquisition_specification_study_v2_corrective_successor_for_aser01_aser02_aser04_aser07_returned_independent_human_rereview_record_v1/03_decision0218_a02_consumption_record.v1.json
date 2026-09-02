@@ -1,0 +1,20 @@
+{
+  "authorization_commit": "98ff5268efa4a44a09c80f0028863256188a6bbe",
+  "authorization_decision": "0218",
+  "consumption_sentinel_sha256": "2c3b51611d9d9e5b40b0617419896aba1a5c09706cf6f8da3a453f700b82ae86",
+  "consumption_sentinel_size_bytes": 782,
+  "execution_attempt_count": 1,
+  "execution_exit_code": 0,
+  "execution_output_sha256": "5902e0c54049f66895e0937c15c2d6bb68bf975fb6ddad58e946fc8249ade72b",
+  "execution_output_size_bytes": 1173,
+  "execution_result": "PASS",
+  "first_execution_attempt_consumes_authorization": true,
+  "one_time_verifier": {
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_returned_independent_human_rereview_recording_authorization_v1/02_authorize_exact_returned_revision_required_rereview_recording_once.v1.py",
+    "sha256": "c31b145422921a13f3658abc509ae12ce610ea966df3c5f0ff97410dce72c257"
+  },
+  "record_id": "SVF-D0219-D0218-A02-CONSUMPTION-RECORD-V1",
+  "recording_decision": "0219",
+  "rerun_authorized": false,
+  "state": "PERMANENTLY_RETIRED"
+}

@@ -1,0 +1,16 @@
+{
+  "authorization_commit": "98ff5268efa4a44a09c80f0028863256188a6bbe",
+  "authorization_parent": "366b0846e637c71bf6ce947ba74ab4ac86307d97",
+  "authorization_parent_tree": "00028ed75eaafdc9e3ab69313a3ef83ef185ef03",
+  "consumed_at_utc": "2026-09-02T16:44:57.592729+00:00",
+  "execution_attempt_count": 1,
+  "execution_exit_code": 0,
+  "execution_result": "PASS",
+  "first_attempt_consumes_authorization": true,
+  "one_time_verifier_sha256": "c31b145422921a13f3658abc509ae12ce610ea966df3c5f0ff97410dce72c257",
+  "rerun_authorized": false,
+  "returned_review_sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+  "returned_review_size_bytes": 12091,
+  "sentinel_id": "SVF-D0218-A02-FIRST-AND-ONLY-CONSUMPTION-SENTINEL-V1",
+  "state": "PERMANENTLY_RETIRED"
+}

@@ -1,0 +1,72 @@
+{
+  "authorization": {
+    "decision0217_handoff_record_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_independent_human_rereview_package_v1_external_handoff_record_v1",
+    "decision0217_handoff_record_tree": "dae388040a574570aa7156667264abf2271e222c",
+    "decision0218_a02_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_returned_independent_human_rereview_recording_authorization_v1/02_authorize_exact_returned_revision_required_rereview_recording_once.v1.py",
+    "decision0218_a02_sha256": "c31b145422921a13f3658abc509ae12ce610ea966df3c5f0ff97410dce72c257",
+    "decision0218_commit": "98ff5268efa4a44a09c80f0028863256188a6bbe",
+    "decision0218_parent": "366b0846e637c71bf6ce947ba74ab4ac86307d97",
+    "decision0218_tree": "ce2b6e3316dbfcc9b913b50002c83a1ed3f6913e"
+  },
+  "binding_id": "SVF-D0219-RETURNED-REVISION-REQUIRED-INDEPENDENT-HUMAN-REREVIEW-SOURCE-BINDING-V1",
+  "external_return": {
+    "crlf_count": 114,
+    "final_newline_present": false,
+    "lf_count": 114,
+    "path": "/openbayes/home/50_req06_req14_accounting_gap_corrective_successor_Ndeem_independent_human_rereview_form.MANUAL_REVIEW_COPY.v1.md",
+    "sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+    "size_bytes": 12091
+  },
+  "interpretation": {
+    "accounting_unsatisfaction_proven": false,
+    "corrective_items": [
+      "ASER04",
+      "ASER07"
+    ],
+    "corrective_response_required": true,
+    "corrective_successor_governance_adopted": false,
+    "corrective_successor_revision_authorized_by_recording": false,
+    "req06_failure_proven": false,
+    "req14_failure_proven": false
+  },
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "recording_decision": "0219",
+  "repository_exact_copy": {
+    "byte_identity_required": true,
+    "crlf_count": 114,
+    "final_newline_present": false,
+    "lf_count": 114,
+    "path": "01_returned_independent_human_rereview.EXACT_COPY.v1.md",
+    "sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+    "size_bytes": 12091
+  },
+  "returned_packet_facts": {
+    "fresh_pass_items": [
+      "ASER01",
+      "ASER02"
+    ],
+    "fresh_revision_required_items": [
+      "ASER04",
+      "ASER07"
+    ],
+    "identity_or_authorship_independently_verified_by_repository": false,
+    "independence_attestation_present": true,
+    "overall_review_decision": "REVISION_REQUIRED",
+    "preserved_predecessor_pass_items_not_reopened": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "review_date": "02 / September / 2026",
+    "reviewer_confirmation": "MN_Lodhi",
+    "reviewer_name": "Muhammad Nadeem Nadir",
+    "reviewer_role": "Spec-Technical-Adjudicator-1"
+  }
+}
