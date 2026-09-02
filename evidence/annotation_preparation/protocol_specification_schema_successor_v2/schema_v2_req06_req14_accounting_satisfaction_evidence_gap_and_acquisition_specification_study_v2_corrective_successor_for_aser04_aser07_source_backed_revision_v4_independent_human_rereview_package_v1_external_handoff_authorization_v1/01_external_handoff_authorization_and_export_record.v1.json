@@ -1,0 +1,76 @@
+{
+  "artifact_id": "SVF-D0224-D0223-INDEPENDENT-HUMAN-REREVIEW-EXTERNAL-HANDOFF-AUTHORIZATION-AND-EXPORT-V1",
+  "decision": "0224",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_domain_acquisition": false,
+    "analyzer": false,
+    "authoring_reviewer_decision": false,
+    "authoring_reviewer_identity": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "returned_review_synthesis": false,
+    "reverse_witness_acquisition": false
+  },
+  "export": {
+    "archive_filename": "D0224_D0222_ASER04_ASER07_Independent_Human_Rereview_Package_39ce62ab.v1.zip",
+    "archive_path": "/openbayes/home/D0224_D0222_ASER04_ASER07_Independent_Human_Rereview_Package_39ce62ab.v1.zip",
+    "archive_root": "D0222_ASER04_ASER07_Independent_Human_Rereview_Package_v1",
+    "archive_sha256": "b055d65a9aab1664ae8ad868dc28d0305b68d4e5e25e819a0cfb850f5321abb1",
+    "archive_size_bytes": 126143,
+    "archived_file_count": 26,
+    "byte_identity_verified_against_d0223_package": true,
+    "deterministic_zip_metadata": true,
+    "export_prepared": true,
+    "sha256_sidecar_path": "/openbayes/home/D0224_D0222_ASER04_ASER07_Independent_Human_Rereview_Package_39ce62ab.v1.zip.SHA256",
+    "sha256_sidecar_sha256": "006ab9628e14b1fa16fe6b1549771ac160079ab2e678d2d9cc89180d4d9752b4"
+  },
+  "handoff_lifecycle": {
+    "corrective_successor_approved": false,
+    "external_handoff_authorized": true,
+    "external_handoff_export_prepared": true,
+    "external_handoff_performed": false,
+    "governance_adopted": false,
+    "handoff_timestamp_recorded": false,
+    "returned_rereview_received": false,
+    "returned_rereview_recorded": false,
+    "reviewer_recipient_recorded": false
+  },
+  "one_time_verifier_lifecycle": {
+    "d0220_a02_execution_attempt_count": 0,
+    "d0220_a02_execution_authorized": false,
+    "d0220_a02_state": "SUPERSEDED_UNEXECUTED",
+    "d0221_r03_execution_attempt_count": 1,
+    "d0221_r03_execution_result": "PASS",
+    "d0221_r03_rerun_authorized": false,
+    "d0221_r03_sentinel_sha256": "cfdbc66438b313b0c3e5924f51544a1b5ada65e70bcdf74a8a6791d0a9e1ed3d",
+    "d0221_r03_sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08",
+    "d0221_r03_state": "PERMANENTLY_RETIRED"
+  },
+  "review_package": {
+    "decision0223_commit": "39ce62ab8793c7a44dc6288da3238fa2e4738f5b",
+    "decision0223_tree": "40a33da66a5638ec93f46c86a977b79c05b7a63f",
+    "review_package_file_count": 26,
+    "review_package_manifest_sha256": "f872293903dcbef15d7b190a1ec774b8e700ca1a0816047718d08d27a16c2ead",
+    "review_scope": [
+      "ASER04",
+      "ASER07"
+    ]
+  },
+  "reviewer_content": {
+    "aser04_decision_prefilled": false,
+    "aser07_decision_prefilled": false,
+    "independence_attestation_checked": false,
+    "overall_decision_prefilled": false,
+    "review_date_prefilled": false,
+    "reviewer_identity_prefilled": false,
+    "reviewer_role_prefilled": false,
+    "reviewer_signature_prefilled": false
+  },
+  "status": "EXTERNAL_HANDOFF_AUTHORIZED_EXPORT_PREPARED_NOT_YET_PERFORMED"
+}
