@@ -1,0 +1,66 @@
+{
+  "contract_id": "SVF-D0218-EXACT-RETURNED-REREVIEW-RECORDING-CONTRACT-V1",
+  "downstream_nonauthorization": {
+    "accounting_evidence_acquisition": false,
+    "accounting_satisfaction_determination": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping": false,
+    "curl_json": false,
+    "domain_acquisition": false,
+    "forward_witness_acquisition": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false,
+    "schema_modification": false,
+    "schema_successor": false
+  },
+  "recording_result_boundary": {
+    "accounting_unsatisfaction_proven": false,
+    "corrective_items": [
+      "ASER04",
+      "ASER07"
+    ],
+    "corrective_response_required": true,
+    "corrective_successor_governance_adopted": false,
+    "corrective_successor_revision_authorized": false,
+    "req06_failed": false,
+    "req14_failed": false
+  },
+  "recording_scope": "EXACT_RETURNED_REVISION_REQUIRED_CORRECTIVE_SUCCESSOR_REREVIEW_ONLY",
+  "required_recording_properties": {
+    "final_newline_normalization_forbidden": true,
+    "fresh_pass_items_must_remain": [
+      "ASER01",
+      "ASER02"
+    ],
+    "fresh_revision_required_items_must_remain": [
+      "ASER04",
+      "ASER07"
+    ],
+    "line_ending_normalization_forbidden": true,
+    "overall_result_must_remain_revision_required": true,
+    "preserved_predecessor_pass_items_must_not_be_reopened": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "repository_exact_copy_must_match_source_bytes": true,
+    "repository_exact_copy_must_match_source_sha256": true,
+    "repository_exact_copy_must_match_source_size": true,
+    "reviewer_identity_fields_are_packet_facts_only": true,
+    "reviewer_identity_rewriting_forbidden": true,
+    "reviewer_note_rewriting_forbidden": true
+  },
+  "required_source_review": {
+    "crlf_count": 114,
+    "final_newline_present": false,
+    "lf_count": 114,
+    "sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+    "size_bytes": 12091
+  }
+}

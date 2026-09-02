@@ -1,0 +1,100 @@
+{
+  "authorization_id": "SVF-D0218-EXACT-RETURNED-REVISION-REQUIRED-REREVIEW-RECORDING-AUTHORIZATION-V1",
+  "authorization_status": "AUTHORIZED_TO_RECORD_EXACT_RETURNED_REVISION_REQUIRED_INDEPENDENT_HUMAN_REREVIEW_ONLY",
+  "authorized_future_recording_transaction": {
+    "consume_decision0218_a02_exactly_once": true,
+    "record_exact_returned_review_bytes": true,
+    "record_overall_revision_required_outcome": true,
+    "record_packet_facts_without_identity_inference": true,
+    "record_reviewer_notes_exactly": true,
+    "recording_only": true
+  },
+  "decision": "0218",
+  "explicit_nonauthorization": {
+    "accounting_evidence_acquisition": false,
+    "accounting_satisfaction_determination": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping": false,
+    "corrective_successor_governance_adoption": false,
+    "corrective_successor_revision_authoring": false,
+    "curl_json": false,
+    "domain_acquisition": false,
+    "forward_witness_acquisition": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false,
+    "schema_successor": false,
+    "schema_v2_modification": false
+  },
+  "one_time_verifier": {
+    "authorized_execution_count": 1,
+    "consumption_sentinel_path": "/openbayes/home/.svf_d0218_a02_returned_rereview_recording_consumption.v1.json",
+    "executed_by_decision0218": false,
+    "first_execution_attempt_consumes_authorization": true,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_returned_independent_human_rereview_recording_authorization_v1/02_authorize_exact_returned_revision_required_rereview_recording_once.v1.py",
+    "rerun_after_first_attempt_authorized": false,
+    "sha256": "c31b145422921a13f3658abc509ae12ce610ea966df3c5f0ff97410dce72c257"
+  },
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "returned_packet_facts": {
+    "fresh_pass_items": [
+      "ASER01",
+      "ASER02"
+    ],
+    "fresh_revision_required_items": [
+      "ASER04",
+      "ASER07"
+    ],
+    "identity_or_authorship_independently_verified_by_repository": false,
+    "independence_attestation_present": true,
+    "overall_review_decision": "REVISION_REQUIRED",
+    "preserved_predecessor_pass_items_not_reopened": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "review_date": "02 / September / 2026",
+    "reviewer_confirmation": "MN_Lodhi",
+    "reviewer_name": "Muhammad Nadeem Nadir",
+    "reviewer_role": "Spec-Technical-Adjudicator-1"
+  },
+  "returned_review": {
+    "content_rewriting_authorized": false,
+    "crlf_count": 114,
+    "exact_byte_recording_required": true,
+    "external_path": "/openbayes/home/50_req06_req14_accounting_gap_corrective_successor_Ndeem_independent_human_rereview_form.MANUAL_REVIEW_COPY.v1.md",
+    "final_newline_normalization_authorized": false,
+    "final_newline_present": false,
+    "lf_count": 114,
+    "line_ending_normalization_authorized": false,
+    "sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+    "size_bytes": 12091
+  },
+  "review_interpretation": {
+    "accounting_unsatisfaction_proven": false,
+    "corrective_items": [
+      "ASER04",
+      "ASER07"
+    ],
+    "corrective_response_required": true,
+    "corrective_successor_revision_authorized_by_decision0218": false,
+    "req06_failure_proven": false,
+    "req14_failure_proven": false
+  },
+  "source_checkpoint": {
+    "decision0217_commit": "366b0846e637c71bf6ce947ba74ab4ac86307d97",
+    "decision0217_handoff_record_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_independent_human_rereview_package_v1_external_handoff_record_v1",
+    "decision0217_handoff_record_tree": "dae388040a574570aa7156667264abf2271e222c",
+    "decision0217_tree": "00028ed75eaafdc9e3ab69313a3ef83ef185ef03"
+  }
+}
