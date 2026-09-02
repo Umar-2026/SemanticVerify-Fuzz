@@ -1,0 +1,15 @@
+{
+  "authorization_successor_commit": "25658132f010ce00fc9cce04f974c1d1a88c45b8",
+  "authorization_successor_parent": "57d84382ccdbe8784f06f33e9d99505192426c3a",
+  "consumed_at_utc": "2026-09-02T18:11:07.892283+00:00",
+  "execution_attempt_count": 1,
+  "execution_exit_code": 0,
+  "execution_result": "PASS",
+  "first_attempt_consumes_authorization": true,
+  "one_time_successor_verifier_sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08",
+  "rerun_authorized": false,
+  "returned_rereview_sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+  "sentinel_id": "SVF-D0221-R03-FIRST-AND-ONLY-CONSUMPTION-SENTINEL-V1",
+  "state": "PERMANENTLY_RETIRED",
+  "superseded_d0220_a02_sha256": "d38ed4efd7db411d9feb303f60b1f467dc4d057c99df5d47b9488295f940abca"
+}

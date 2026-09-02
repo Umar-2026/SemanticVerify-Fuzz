@@ -1,0 +1,123 @@
+{
+  "AEA01_governed_source_unit_domain": {
+    "enumeration_algorithm": [
+      "Read every row from the exact checksum-bound enumeration source.",
+      "Extract semantic_unit_id from every row.",
+      "Reject null, empty, or non-string identifiers.",
+      "Deduplicate only by exact identifier equality.",
+      "Sort identifiers by ascending UTF-8 byte sequence.",
+      "Require exactly 109 unique identifiers.",
+      "Read $.semantic_unit_context_records from the exact checksum-bound traceability source.",
+      "Index those records by exact unit_id.",
+      "Reject duplicate unit_id keys.",
+      "Require the traceability unit_id set to equal the enumeration semantic_unit_id set exactly.",
+      "For each source_unit_id u, locate exactly one traceability record r.",
+      "Set source_container = r.source_container.",
+      "Set source_path = r.source_path.",
+      "Set source_unit_kind = r.unit_kind.",
+      "Set source_provenance_sha256 = r.value_sha256."
+    ],
+    "failure_conditions": [
+      "enumeration unique identifier count != 109",
+      "traceability record count != 109",
+      "enumeration ID set != traceability unit_id set",
+      "missing traceability record",
+      "duplicate traceability unit_id",
+      "missing or invalid source_container",
+      "missing or invalid source_path",
+      "missing or invalid unit_kind",
+      "missing or malformed value_sha256"
+    ],
+    "historical_expected_source_unit_count": 109,
+    "metadata_derivation": {
+      "complete_traceability_artifact_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "source_container": "exact traceability record field source_container",
+      "source_path": "exact traceability record field source_path",
+      "source_provenance_sha256": "exact traceability record field value_sha256",
+      "source_unit_kind": "exact traceability record field unit_kind"
+    },
+    "record_count_rule": "record_count == number_of_object_members(sources) == 109",
+    "representation": "JSON object map keyed by source_unit_id",
+    "uniqueness_rule": "source_unit_id is the JSON object member name; duplicate identifiers are therefore structurally impossible in conforming JSON"
+  },
+  "AEA02_governed_schema_carrier_domain": {
+    "UNRESOLVED_allowed_in_finalized_AEA02": false,
+    "candidate_record_count_rule": "candidate_record_count == number_of_object_members(carrier_candidates)",
+    "carrier_count_rule": "carrier_count == number_of_object_members(carriers)",
+    "final_disposition_vocabulary": [
+      "INCLUDED",
+      "EXCLUDED"
+    ],
+    "frozen_C_rule": "keys(carriers) == exactly {c | carrier_candidates[c].disposition == INCLUDED}",
+    "representation": "JSON object maps keyed by canonical carrier identifier",
+    "uniqueness_rule": "candidate and carrier identifiers are JSON object member names; duplicate identifiers are structurally impossible",
+    "unresolved_count_rule": "unresolved_count == 0"
+  },
+  "AEA03_forward_witness": {
+    "FC04_metadata_rule": "for every u: AEA03.forward_records[u].source_container == AEA01.sources[u].source_container AND AEA03.forward_records[u].source_unit_kind == AEA01.sources[u].source_unit_kind",
+    "carrier_rule": "each schema_carriers array is nonempty, duplicate-free, canonically ordered, and a subset of keys(AEA02.carriers)",
+    "coverage_rule": "source_domain_count == len(AEA01.sources); forward_record_count == len(forward_records); covered_source_count == count(nonempty schema_carriers); uncovered_source_count == source_domain_count-covered_source_count; full forward coverage requires uncovered_source_count == 0",
+    "domain_rule": "keys(forward_records) == keys(AEA01.sources)",
+    "record_count_rule": "record_count == number_of_object_members(forward_records)",
+    "representation": "JSON object map keyed by source_unit_id"
+  },
+  "AEA04_reverse_witness": {
+    "coverage_rule": "carrier_domain_count == len(AEA02.carriers); reverse_record_count == len(reverse_records); covered_carrier_count == count(nonempty source_unit_ids); uncovered_carrier_count == carrier_domain_count-covered_carrier_count; full reverse coverage requires uncovered_carrier_count == 0",
+    "domain_rule": "keys(reverse_records) == keys(AEA02.carriers)",
+    "record_count_rule": "record_count == number_of_object_members(reverse_records)",
+    "representation": "JSON object map keyed by canonical schema carrier identifier",
+    "source_rule": "each source_unit_ids array is duplicate-free, canonically ordered, and a subset of keys(AEA01.sources)"
+  },
+  "AEA05_provenance_closure": {
+    "freeze_event_metadata_rule": "AEA05 embeds complete freeze-event metadata and that metadata must equal the bound complete freeze-record artifact field-for-field",
+    "must_bind": [
+      "AEA01 path and detached SHA-256",
+      "AEA02 path and detached SHA-256",
+      "AEA03 path and detached SHA-256",
+      "AEA04 path and detached SHA-256",
+      "complete domain-freeze record path and detached SHA-256",
+      "ancestry verifier-output path and SHA-256",
+      "immutable-domain verifier-output path and SHA-256",
+      "C-domain-closure verifier-output path and SHA-256"
+    ],
+    "satisfaction_evaluation_before_provenance_closure_allowed": false,
+    "self_declared_true_values_are_sufficient_evidence": false
+  },
+  "actual_domain_construction_performed": false,
+  "artifact_id": "SVF-D0222-FUTURE-ACCOUNTING-DOMAIN-CONSTRUCTION-SPECIFICATION-V4",
+  "nonclaims": {
+    "accounting_satisfaction_established": false,
+    "accounting_satisfaction_evaluated": false,
+    "active_schema_successor_created": false,
+    "active_schema_v2_modified": false,
+    "actual_accounting_evidence_acquisition_performed": false,
+    "actual_domain_freeze_performed": false,
+    "actual_schema_carrier_domain_created": false,
+    "actual_source_unit_domain_created": false,
+    "analyzer_executed": false,
+    "baseline_executed": false,
+    "concrete_mapping_created": false,
+    "forward_witness_created": false,
+    "pair_reclassification_performed": false,
+    "repair_executed": false,
+    "reverse_witness_created": false
+  },
+  "source_bindings": {
+    "enumeration_source": {
+      "identifier_field": "semantic_unit_id",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12"
+    },
+    "traceability_source": {
+      "container_path": "$.semantic_unit_context_records",
+      "identifier_key": "unit_id",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "source_container_key": "source_container",
+      "source_path_key": "source_path",
+      "source_provenance_sha256_key": "value_sha256",
+      "source_unit_kind_key": "unit_kind"
+    }
+  },
+  "status": "SPECIFICATION_ONLY_NO_DOMAIN_CREATED"
+}

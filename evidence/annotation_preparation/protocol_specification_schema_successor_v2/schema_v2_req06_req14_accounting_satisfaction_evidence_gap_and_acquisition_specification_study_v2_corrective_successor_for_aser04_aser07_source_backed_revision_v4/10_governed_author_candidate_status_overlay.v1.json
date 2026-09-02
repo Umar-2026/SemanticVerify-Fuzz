@@ -1,0 +1,69 @@
+{
+  "artifact_id": "SVF-D0222-GOVERNED-AUTHOR-CANDIDATE-STATUS-OVERLAY-V1",
+  "authorization": {
+    "d0221_r03_execution_attempt_count": 1,
+    "d0221_r03_execution_result": "PASS",
+    "d0221_r03_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_aser04_aser07_revision_authorization_v1_tree_binding_safe_successor_v1/03_authorize_bounded_corrective_successor_revision_once.v2.py",
+    "d0221_r03_rerun_authorized": false,
+    "d0221_r03_sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08",
+    "d0221_r03_state": "PERMANENTLY_RETIRED",
+    "decision0221_commit": "25658132f010ce00fc9cce04f974c1d1a88c45b8",
+    "decision0221_tree": "fa9536d486361589a7699cd893a3f9156de756a5"
+  },
+  "corrective_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "decision": "0222",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "accounting_satisfaction_establishment": false,
+    "active_schema_successor_creation": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_schema_carrier_domain_acquisition": false,
+    "actual_source_unit_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "curl_json_creation": false,
+    "domain_freeze_execution": false,
+    "forward_witness_acquisition": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "governance_adoption": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "governed_status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR",
+  "preconsumption_freeze": {
+    "binding_sha256": "58722158bcc4ec22a02e26f1187a83a7a3e413a7bfed0d71781ca055c88c436e",
+    "manifest_sha256": "f59555f88d27213e1883d73672d508132aa9d61980cc3bb45100b438a7f4a63e"
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "review_lifecycle": {
+    "governance_adopted": false,
+    "independent_human_rereview_required": true,
+    "rereview_completed": false
+  },
+  "source_bindings": {
+    "enumeration_source": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12"
+    },
+    "traceability_source": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+    }
+  },
+  "source_preconsumption_package_status_note": "The frozen V4 files retain their preconsumption PREBUILD status strings as exact historical bytes. Decision0222 and this overlay promote those exact frozen bytes, without rewriting them, to the governed AUTHOR_CANDIDATE corrective-successor state."
+}
