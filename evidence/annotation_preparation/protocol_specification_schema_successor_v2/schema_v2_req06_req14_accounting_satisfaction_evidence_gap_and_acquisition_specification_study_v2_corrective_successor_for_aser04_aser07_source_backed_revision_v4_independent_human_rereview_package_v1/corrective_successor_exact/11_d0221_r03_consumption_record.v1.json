@@ -1,0 +1,51 @@
+{
+  "artifact_id": "SVF-D0222-D0221-R03-FIRST-AND-ONLY-CONSUMPTION-RECORD-V1",
+  "authorization_source": {
+    "decision0219_commit": "f480347f329d89765db6a7d13d30ae6ebf929bb2",
+    "decision0220_commit": "57d84382ccdbe8784f06f33e9d99505192426c3a",
+    "decision0221_commit": "25658132f010ce00fc9cce04f974c1d1a88c45b8",
+    "decision0221_tree": "fa9536d486361589a7699cd893a3f9156de756a5"
+  },
+  "authorized_result": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "bounded_corrective_successor_revision_authoring": true,
+    "concrete_mapping": false,
+    "corrective_scope": [
+      "ASER04",
+      "ASER07"
+    ],
+    "pair_reclassification": false,
+    "repair": false
+  },
+  "consumption_sentinel": {
+    "exact_copy_path": "15_d0221_r03_consumption_sentinel.EXACT_COPY.v1.json",
+    "sha256": "cfdbc66438b313b0c3e5924f51544a1b5ada65e70bcdf74a8a6791d0a9e1ed3d",
+    "size_bytes": 801
+  },
+  "decision": "0222",
+  "execution_stderr": {
+    "exact_copy_path": "14_d0221_r03_execution_stderr.EXACT_COPY.v1.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  "execution_stdout": {
+    "exact_copy_path": "12_d0221_r03_execution_stdout.EXACT_COPY.v1.txt",
+    "sha256": "199ed76258688270626e986782fc11735bbcebd28be93107207691a73ee02a73",
+    "size_bytes": 1239
+  },
+  "one_time_verifier": {
+    "execution_attempt_count": 1,
+    "execution_result": "PASS",
+    "exit_code": 0,
+    "first_attempt_consumed_authorization": true,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_aser04_aser07_revision_authorization_v1_tree_binding_safe_successor_v1/03_authorize_bounded_corrective_successor_revision_once.v2.py",
+    "rerun_authorized": false,
+    "sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08",
+    "state_after_execution": "PERMANENTLY_RETIRED"
+  }
+}

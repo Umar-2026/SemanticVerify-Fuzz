@@ -1,0 +1,119 @@
+{
+  "artifact_id": "SVF-D0222-CORRECTED-SOURCE-BACKED-V4-PRECONSUMPTION-FREEZE-V1",
+  "authorization_checkpoint": {
+    "d0221_r03_executed": false,
+    "d0221_r03_execution_attempt_count": 0,
+    "d0221_r03_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_aser04_aser07_revision_authorization_v1_tree_binding_safe_successor_v1/03_authorize_bounded_corrective_successor_revision_once.v2.py",
+    "d0221_r03_sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08",
+    "d0221_r03_state": "AUTHORED_UNCONSUMED",
+    "decision0219_commit": "f480347f329d89765db6a7d13d30ae6ebf929bb2",
+    "decision0220_commit": "57d84382ccdbe8784f06f33e9d99505192426c3a",
+    "decision0221_commit": "25658132f010ce00fc9cce04f974c1d1a88c45b8",
+    "decision0221_tree": "fa9536d486361589a7699cd893a3f9156de756a5"
+  },
+  "corrected_v4_prebuild": {
+    "directory": "/tmp/svf_d0222_prebuilt_aser04_aser07_v4",
+    "file_count": 10,
+    "files": [
+      {
+        "name": "01_corrective_revision_delta_response.v4.json",
+        "sha256": "ec449c6b9cd5d649a346ff3f3ef639ea24066be99eb67a44525a2c8eb1eda8ac",
+        "size_bytes": 4891
+      },
+      {
+        "name": "02_future_accounting_domain_construction_specification.v4.json",
+        "sha256": "0bfe3365a924854511b0057a25b4df97dc9e97dfa8887994deb488cc4dc2f668",
+        "size_bytes": 7283
+      },
+      {
+        "name": "03_future_AEA01_AEA05_artifact_schemas.v4.json",
+        "sha256": "90f05d9b0ca6a740c90d43723323ffef2354d0c2d617b0519ea8413148fd45b3",
+        "size_bytes": 20022
+      },
+      {
+        "name": "04_accounting_evidence_canonicalization_and_detached_hash_rules.v4.json",
+        "sha256": "ba276c2d35f6bb80c820f79df5366761dc0cbeba8c01e225367fd7f9094d7f1e",
+        "size_bytes": 2338
+      },
+      {
+        "name": "05_future_domain_freeze_lineage_and_ordering_control.v4.json",
+        "sha256": "a0215aae4591e7375b0c8111c07b1293304a6831e048c7a6848ef2a38c52b166",
+        "size_bytes": 3407
+      },
+      {
+        "name": "06_complete_domain_freeze_record.schema.v2.json",
+        "sha256": "07dccab7f486edd64a2c222171157283cc4cfac68840edcf42019a869fba168b",
+        "size_bytes": 2278
+      },
+      {
+        "name": "07_independent_verifier_output_record.schema.v2.json",
+        "sha256": "3f41ed8822c57a18ae8787e7f1c14ca712fce62e93153b317a3d0a775c143d30",
+        "size_bytes": 2843
+      },
+      {
+        "name": "08_cross_artifact_machine_invariants.v2.json",
+        "sha256": "b5eff20289388dcb7c551db8100238cb7fffa966b826ae7530819e155797aa7f",
+        "size_bytes": 5201
+      },
+      {
+        "name": "09_corrective_revision_boundary.v4.md",
+        "sha256": "a75bcc8f5582a1304e6e8907e9d37ed5a16ebc774ce42feea90ec0626e6d074d",
+        "size_bytes": 2378
+      },
+      {
+        "name": "13_verify_corrective_revision.v4.py",
+        "sha256": "74f732f280421139915f96fb2062ae61e8d81ffed030550559b9593304d9e47b",
+        "size_bytes": 6858
+      }
+    ],
+    "manifest_path": "/tmp/svf_d0222_prebuilt_aser04_aser07_v4_preconsumption_freeze/01_corrected_v4_prebuild.SHA256SUMS",
+    "manifest_sha256": "f59555f88d27213e1883d73672d508132aa9d61980cc3bb45100b438a7f4a63e"
+  },
+  "corrective_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "preconsumption_assertions": {
+    "accounting_satisfaction_established": false,
+    "accounting_satisfaction_evaluated": false,
+    "active_schema_v2_modified": false,
+    "actual_accounting_evidence_acquired": false,
+    "actual_schema_carrier_domain_acquired": false,
+    "actual_source_unit_domain_acquired": false,
+    "analyzer_authorized": false,
+    "baseline_authorized": false,
+    "concrete_mapping_created": false,
+    "corrected_v4_specification_verifier_pass": true,
+    "forward_witness_created": false,
+    "git_mutation": false,
+    "governed_d0222_successor_authored": false,
+    "pair_reclassification_performed": false,
+    "r03_executed": false,
+    "r03_execution_attempt_count": 0,
+    "r03_preexecution_binding_verified": true,
+    "repair_authorized": false,
+    "repository_modified": false,
+    "reverse_witness_created": false,
+    "source_backing_revalidated": true
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "source_bindings": {
+    "enumeration_source": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12"
+    },
+    "traceability_source": {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+    }
+  },
+  "state": "PRECONSUMPTION_FROZEN_NOT_YET_GOVERNED"
+}

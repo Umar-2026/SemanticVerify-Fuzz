@@ -1,0 +1,97 @@
+{
+  "artifact_id": "SVF-D0222-ASER04-ASER07-SOURCE-BACKED-CORRECTIVE-REVISION-DELTA-V4",
+  "aser04_other_corrections": {
+    "complete_numeric_string_canonicalization_defined": true,
+    "coverage_bound_to_underlying_domains_and_records": true,
+    "final_AEA02_UNRESOLVED_forbidden": true,
+    "frozen_C_equals_exact_INCLUDED_candidate_set": true,
+    "hash_self_reference_removed": true,
+    "record_counts_bound_to_underlying_object_members": true,
+    "source_candidate_forward_reverse_uniqueness_machine_enforced": true
+  },
+  "aser04_source_metadata_correction": {
+    "duplicate_traceability_unit_id_is_construction_failure": true,
+    "enumeration_traceability_identifier_sets_must_match_exactly": true,
+    "lookup_failure_is_construction_failure": true,
+    "previous_rejected_v3_constant_kind_used": false,
+    "previous_rejected_v3_prefix_derivation_used": false,
+    "source_container_rule": "For source_unit_id u, locate the unique checksum-bound traceability record r where r.unit_id == u; source_container = r.source_container.",
+    "source_path_rule": "For source_unit_id u, source_path = r.source_path from the same unique checksum-bound traceability record.",
+    "source_provenance_sha256_rule": "For source_unit_id u, source_provenance_sha256 = r.value_sha256 from the same unique checksum-bound traceability record.",
+    "source_unit_kind_rule": "For source_unit_id u, source_unit_kind = r.unit_kind from the same unique checksum-bound traceability record.",
+    "traceability_artifact_binding_rule": "AEA01 separately binds the complete checksum-addressed traceability artifact SHA-256 so per-unit value hashes are not confused with the provenance artifact identity."
+  },
+  "aser07_corrections": {
+    "AEA03_lineage_closed_and_nine_fields_required": true,
+    "AEA04_lineage_closed_and_nine_fields_required": true,
+    "AEA05_freeze_metadata_must_equal_bound_freeze_record": true,
+    "C_domain_closure_independently_recomputed": true,
+    "ancestry_evidence_independently_recomputed": true,
+    "complete_freeze_event_metadata_required_inside_AEA05": true,
+    "frozen_C_exactly_equals_INCLUDED_dispositions": true,
+    "immutable_domain_evidence_independently_recomputed": true,
+    "separate_formal_complete_freeze_record_schema_supplied": true,
+    "verifier_commands_commits_objects_hashes_results_required": true,
+    "zero_unresolved_before_freeze": true
+  },
+  "authoritative_future_source_bindings": {
+    "source_unit_enumeration_source": {
+      "historical_unique_source_unit_count": 109,
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+      "semantic_unit_identifier_field": "semantic_unit_id",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12"
+    },
+    "source_unit_traceability_source": {
+      "container_path": "$.semantic_unit_context_records",
+      "historical_record_count": 109,
+      "identifier_key": "unit_id",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "source_container_key": "source_container",
+      "source_path_key": "source_path",
+      "source_provenance_sha256_key": "value_sha256",
+      "source_unit_kind_key": "unit_kind"
+    }
+  },
+  "authorization_checkpoint": {
+    "authorization_consumed": false,
+    "decision0221_commit": "25658132f010ce00fc9cce04f974c1d1a88c45b8"
+  },
+  "corrective_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "nonclaims": {
+    "accounting_satisfaction_established": false,
+    "accounting_satisfaction_evaluated": false,
+    "active_schema_successor_created": false,
+    "active_schema_v2_modified": false,
+    "actual_accounting_evidence_acquisition_performed": false,
+    "actual_domain_freeze_performed": false,
+    "actual_schema_carrier_domain_created": false,
+    "actual_source_unit_domain_created": false,
+    "analyzer_executed": false,
+    "baseline_executed": false,
+    "concrete_mapping_created": false,
+    "forward_witness_created": false,
+    "pair_reclassification_performed": false,
+    "repair_executed": false,
+    "reverse_witness_created": false
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "review_state": {
+    "aser04": "NOT_YET_REREVIEWED",
+    "aser07": "NOT_YET_REREVIEWED",
+    "governance_adopted": false,
+    "independent_human_rereview_required": true
+  },
+  "status": "AUTHOR_CANDIDATE_SPECIFICATION_ONLY_PREBUILD"
+}

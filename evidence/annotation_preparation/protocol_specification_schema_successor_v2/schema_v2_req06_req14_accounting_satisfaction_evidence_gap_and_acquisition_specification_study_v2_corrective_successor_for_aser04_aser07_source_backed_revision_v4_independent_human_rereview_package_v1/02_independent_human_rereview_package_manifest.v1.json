@@ -1,0 +1,98 @@
+{
+  "artifact_id": "SVF-D0223-D0222-BLANK-INDEPENDENT-HUMAN-REREVIEW-PACKAGE-V1",
+  "candidate_exact_copy": {
+    "directory": "corrective_successor_exact",
+    "file_count": 19,
+    "files": [
+      "01_corrective_revision_delta_response.v4.json",
+      "02_future_accounting_domain_construction_specification.v4.json",
+      "03_future_AEA01_AEA05_artifact_schemas.v4.json",
+      "04_accounting_evidence_canonicalization_and_detached_hash_rules.v4.json",
+      "05_future_domain_freeze_lineage_and_ordering_control.v4.json",
+      "06_complete_domain_freeze_record.schema.v2.json",
+      "07_independent_verifier_output_record.schema.v2.json",
+      "08_cross_artifact_machine_invariants.v2.json",
+      "09_corrective_revision_boundary.v4.md",
+      "10_governed_author_candidate_status_overlay.v1.json",
+      "11_d0221_r03_consumption_record.v1.json",
+      "12_d0221_r03_execution_stdout.EXACT_COPY.v1.txt",
+      "13_verify_corrective_revision.v4.py",
+      "14_d0221_r03_execution_stderr.EXACT_COPY.v1.txt",
+      "15_d0221_r03_consumption_sentinel.EXACT_COPY.v1.json",
+      "16_corrected_v4_preconsumption_manifest.EXACT_COPY.v1.SHA256SUMS",
+      "17_corrected_v4_preconsumption_binding.EXACT_COPY.v1.json",
+      "18_governed_corrective_successor_revision_v4.SHA256SUMS",
+      "19_verify_governed_corrective_successor_revision_v4.v1.py"
+    ]
+  },
+  "corrective_review_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "decision": "0223",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_schema_carrier_domain_acquisition": false,
+    "actual_source_unit_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "governed_candidate": {
+    "decision0222_commit": "d5ca6a74252a0a06591031fb515508dcd74f310f",
+    "decision0222_package_manifest_sha256": "fc35dc047816da91cb3c664840f640050349662a0badb179839d59cb1035f48c",
+    "decision0222_tree": "b3ced918fcee629355a48c516586acbe26f135ff",
+    "status": "AUTHOR_CANDIDATE_CORRECTIVE_SUCCESSOR"
+  },
+  "one_time_verifier_lifecycle": {
+    "consumption_sentinel_sha256": "cfdbc66438b313b0c3e5924f51544a1b5ada65e70bcdf74a8a6791d0a9e1ed3d",
+    "d0220_a02_execution_attempt_count": 0,
+    "d0220_a02_execution_authorized": false,
+    "d0220_a02_state": "SUPERSEDED_UNEXECUTED",
+    "d0221_r03_sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08",
+    "execution_attempt_count": 1,
+    "execution_result": "PASS",
+    "rerun_authorized": false,
+    "state": "PERMANENTLY_RETIRED"
+  },
+  "package_status": "BLANK_INDEPENDENT_HUMAN_REREVIEW_PACKAGE_AUTHORED_NOT_HANDED_OFF",
+  "predecessor_review_context": {
+    "path": "04_predecessor_returned_rereview.EXACT_COPY.v1.md",
+    "sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+    "size_bytes": 12091
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "review_lifecycle": {
+    "corrective_successor_approved": false,
+    "external_handoff_performed": false,
+    "governance_adopted": false,
+    "returned_review_received": false,
+    "returned_review_recorded": false,
+    "review_package_authored": true
+  },
+  "reviewer_fields": {
+    "ASER04_decision_prefilled": false,
+    "ASER07_decision_prefilled": false,
+    "independence_attestation_checked": false,
+    "overall_decision_prefilled": false,
+    "review_date_prefilled": false,
+    "reviewer_name_prefilled": false,
+    "reviewer_rationale_prefilled": false,
+    "reviewer_role_prefilled": false,
+    "reviewer_signature_prefilled": false
+  }
+}

@@ -1,0 +1,744 @@
+{
+  "AEA01": {
+    "$id": "urn:svf:aea01:governed-source-unit-domain:v4",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "artifact_id": {
+        "const": "AEA01"
+      },
+      "enumeration_source_binding": {
+        "additionalProperties": false,
+        "properties": {
+          "identifier_field": {
+            "const": "semantic_unit_id"
+          },
+          "path": {
+            "const": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json"
+          },
+          "sha256": {
+            "const": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "identifier_field"
+        ],
+        "type": "object"
+      },
+      "record_count": {
+        "const": 109
+      },
+      "sources": {
+        "additionalProperties": {
+          "additionalProperties": false,
+          "properties": {
+            "source_container": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_path": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_provenance_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "source_unit_kind": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source_container",
+            "source_path",
+            "source_unit_kind",
+            "source_provenance_sha256"
+          ],
+          "type": "object"
+        },
+        "maxProperties": 109,
+        "minProperties": 109,
+        "propertyNames": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "type": "object"
+      },
+      "traceability_source_binding": {
+        "additionalProperties": false,
+        "properties": {
+          "container_path": {
+            "const": "$.semantic_unit_context_records"
+          },
+          "identifier_key": {
+            "const": "unit_id"
+          },
+          "path": {
+            "const": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json"
+          },
+          "sha256": {
+            "const": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+          },
+          "source_container_key": {
+            "const": "source_container"
+          },
+          "source_path_key": {
+            "const": "source_path"
+          },
+          "source_provenance_sha256_key": {
+            "const": "value_sha256"
+          },
+          "source_unit_kind_key": {
+            "const": "unit_kind"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "container_path",
+          "identifier_key",
+          "source_container_key",
+          "source_path_key",
+          "source_unit_kind_key",
+          "source_provenance_sha256_key"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "artifact_id",
+      "enumeration_source_binding",
+      "traceability_source_binding",
+      "record_count",
+      "sources"
+    ],
+    "type": "object"
+  },
+  "AEA02": {
+    "$id": "urn:svf:aea02:governed-schema-carrier-domain:v4",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "artifact_id": {
+        "const": "AEA02"
+      },
+      "candidate_record_count": {
+        "minimum": 1,
+        "type": "integer"
+      },
+      "carrier_candidates": {
+        "additionalProperties": {
+          "additionalProperties": false,
+          "properties": {
+            "disposition": {
+              "enum": [
+                "INCLUDED",
+                "EXCLUDED"
+              ]
+            }
+          },
+          "required": [
+            "disposition"
+          ],
+          "type": "object"
+        },
+        "minProperties": 1,
+        "type": "object"
+      },
+      "carrier_count": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "carriers": {
+        "additionalProperties": {
+          "additionalProperties": false,
+          "type": "object"
+        },
+        "type": "object"
+      },
+      "unresolved_count": {
+        "const": 0
+      }
+    },
+    "required": [
+      "artifact_id",
+      "candidate_record_count",
+      "carrier_count",
+      "unresolved_count",
+      "carrier_candidates",
+      "carriers"
+    ],
+    "type": "object"
+  },
+  "AEA03": {
+    "$id": "urn:svf:aea03:forward-accounting-witness:v4",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "artifact_id": {
+        "const": "AEA03"
+      },
+      "coverage_summary": {
+        "additionalProperties": false,
+        "properties": {
+          "covered_source_count": {
+            "const": 109
+          },
+          "forward_record_count": {
+            "const": 109
+          },
+          "source_domain_count": {
+            "const": 109
+          },
+          "uncovered_source_count": {
+            "const": 0
+          }
+        },
+        "required": [
+          "source_domain_count",
+          "forward_record_count",
+          "covered_source_count",
+          "uncovered_source_count"
+        ],
+        "type": "object"
+      },
+      "forward_records": {
+        "additionalProperties": {
+          "additionalProperties": false,
+          "properties": {
+            "schema_carriers": {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array",
+              "uniqueItems": true
+            },
+            "source_container": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_unit_kind": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "source_container",
+            "source_unit_kind",
+            "schema_carriers"
+          ],
+          "type": "object"
+        },
+        "maxProperties": 109,
+        "minProperties": 109,
+        "type": "object"
+      },
+      "lineage": {
+        "additionalProperties": false,
+        "properties": {
+          "c_domain_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "creation_commit": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "creation_commit_parent": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "creation_timestamp_utc": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "derivation_input_hashes": {
+            "additionalProperties": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "minProperties": 2,
+            "type": "object"
+          },
+          "domain_freeze_commit": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "predecessor_hashes": {
+            "additionalProperties": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "minProperties": 1,
+            "type": "object"
+          },
+          "u_domain_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "witness_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "witness_id",
+          "creation_timestamp_utc",
+          "creation_commit",
+          "creation_commit_parent",
+          "domain_freeze_commit",
+          "u_domain_sha256",
+          "c_domain_sha256",
+          "predecessor_hashes",
+          "derivation_input_hashes"
+        ],
+        "type": "object"
+      },
+      "record_count": {
+        "const": 109
+      }
+    },
+    "required": [
+      "artifact_id",
+      "record_count",
+      "coverage_summary",
+      "lineage",
+      "forward_records"
+    ],
+    "type": "object"
+  },
+  "AEA04": {
+    "$id": "urn:svf:aea04:reverse-accounting-witness:v4",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "artifact_id": {
+        "const": "AEA04"
+      },
+      "coverage_summary": {
+        "additionalProperties": false,
+        "properties": {
+          "carrier_domain_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "covered_carrier_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "reverse_record_count": {
+            "minimum": 0,
+            "type": "integer"
+          },
+          "uncovered_carrier_count": {
+            "const": 0
+          }
+        },
+        "required": [
+          "carrier_domain_count",
+          "reverse_record_count",
+          "covered_carrier_count",
+          "uncovered_carrier_count"
+        ],
+        "type": "object"
+      },
+      "lineage": {
+        "additionalProperties": false,
+        "properties": {
+          "c_domain_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "creation_commit": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "creation_commit_parent": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "creation_timestamp_utc": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "derivation_input_hashes": {
+            "additionalProperties": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "minProperties": 2,
+            "type": "object"
+          },
+          "domain_freeze_commit": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "predecessor_hashes": {
+            "additionalProperties": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "minProperties": 1,
+            "type": "object"
+          },
+          "u_domain_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "witness_id": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "witness_id",
+          "creation_timestamp_utc",
+          "creation_commit",
+          "creation_commit_parent",
+          "domain_freeze_commit",
+          "u_domain_sha256",
+          "c_domain_sha256",
+          "predecessor_hashes",
+          "derivation_input_hashes"
+        ],
+        "type": "object"
+      },
+      "record_count": {
+        "minimum": 0,
+        "type": "integer"
+      },
+      "reverse_records": {
+        "additionalProperties": {
+          "additionalProperties": false,
+          "properties": {
+            "source_unit_ids": {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "minItems": 1,
+              "type": "array",
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "source_unit_ids"
+          ],
+          "type": "object"
+        },
+        "type": "object"
+      }
+    },
+    "required": [
+      "artifact_id",
+      "record_count",
+      "coverage_summary",
+      "lineage",
+      "reverse_records"
+    ],
+    "type": "object"
+  },
+  "AEA05": {
+    "$id": "urn:svf:aea05:accounting-provenance-closure:v4",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "additionalProperties": false,
+    "properties": {
+      "artifact_bindings": {
+        "additionalProperties": false,
+        "properties": {
+          "AEA01": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "AEA02": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "AEA03": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "AEA04": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "AEA01",
+          "AEA02",
+          "AEA03",
+          "AEA04"
+        ],
+        "type": "object"
+      },
+      "artifact_id": {
+        "const": "AEA05"
+      },
+      "domain_freeze_record_binding": {
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "type": "object"
+      },
+      "freeze_event_metadata": {
+        "additionalProperties": false,
+        "properties": {
+          "c_domain_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "c_domain_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "carrier_candidate_source_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "carrier_candidate_source_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "derivation_input_hashes": {
+            "additionalProperties": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "minProperties": 3,
+            "type": "object"
+          },
+          "enumeration_source_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "enumeration_source_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "freeze_commit": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "freeze_commit_parent": {
+            "pattern": "^[0-9a-f]{40}$",
+            "type": "string"
+          },
+          "freeze_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "freeze_timestamp_utc": {
+            "format": "date-time",
+            "type": "string"
+          },
+          "predecessor_hashes": {
+            "additionalProperties": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "minProperties": 1,
+            "type": "object"
+          },
+          "traceability_source_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "traceability_source_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "u_domain_path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_domain_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "freeze_id",
+          "freeze_timestamp_utc",
+          "freeze_commit",
+          "freeze_commit_parent",
+          "u_domain_path",
+          "u_domain_sha256",
+          "c_domain_path",
+          "c_domain_sha256",
+          "enumeration_source_path",
+          "enumeration_source_sha256",
+          "traceability_source_path",
+          "traceability_source_sha256",
+          "carrier_candidate_source_path",
+          "carrier_candidate_source_sha256",
+          "predecessor_hashes",
+          "derivation_input_hashes"
+        ],
+        "type": "object"
+      },
+      "verifier_evidence_bindings": {
+        "additionalProperties": false,
+        "properties": {
+          "ancestry": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "verification_role": {
+                "const": "ancestry"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "verification_role"
+            ],
+            "type": "object"
+          },
+          "c_domain_closure": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "verification_role": {
+                "const": "c_domain_closure"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "verification_role"
+            ],
+            "type": "object"
+          },
+          "immutable_domains": {
+            "additionalProperties": false,
+            "properties": {
+              "path": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "verification_role": {
+                "const": "immutable_domains"
+              }
+            },
+            "required": [
+              "path",
+              "sha256",
+              "verification_role"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "ancestry",
+          "immutable_domains",
+          "c_domain_closure"
+        ],
+        "type": "object"
+      }
+    },
+    "required": [
+      "artifact_id",
+      "freeze_event_metadata",
+      "domain_freeze_record_binding",
+      "artifact_bindings",
+      "verifier_evidence_bindings"
+    ],
+    "type": "object"
+  },
+  "artifact_id": "SVF-D0222-FUTURE-AEA01-AEA05-FORMAL-SCHEMAS-V4",
+  "cross_field_contract": "08_cross_artifact_machine_invariants.v2.json",
+  "cross_field_validation_required": true,
+  "schema_dialect": "https://json-schema.org/draft/2020-12/schema",
+  "status": "SPECIFICATION_ONLY"
+}

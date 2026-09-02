@@ -1,0 +1,56 @@
+{
+  "active_schema_v2_boundary": {
+    "active_hash_contract_modified": false,
+    "active_hash_contract_path": "config/protocol_content_hash_canonicalization.v2.json",
+    "active_schema_v2_modified": false
+  },
+  "array_semantics": {
+    "command_argv_arrays": "preserve exact original argument order; never sort",
+    "identifier_set_arrays": "sort ascending by exact UTF-8 bytes; duplicate values forbidden",
+    "phase_order_arrays": "preserve specification-defined order"
+  },
+  "artifact_id": "SVF-D0222-ACCOUNTING-EVIDENCE-CANONICALIZATION-DETACHED-HASH-CONTRACT-V4",
+  "hash_self_reference_rule": {
+    "AEA01_AEA05_may_contain_own_artifact_sha256": false,
+    "hash_binding_location": "a different provenance/checksum artifact or a checksum-bound verifier-output record",
+    "hash_target": "complete canonical UTF-8 JSON bytes of the artifact; the artifact contains no in-band self-hash field",
+    "self_field_exclusion_rule_required": false,
+    "self_reference_eliminated": true
+  },
+  "json_serialization": {
+    "boolean_tokens": [
+      "false",
+      "true"
+    ],
+    "duplicate_object_member_names_allowed": false,
+    "insignificant_whitespace": "NONE",
+    "member_separator": ",",
+    "name_value_separator": ":",
+    "null_token": "null"
+  },
+  "numeric_canonicalization": {
+    "allowed_numeric_type": "INTEGER_ONLY",
+    "count_fields_negative_allowed": false,
+    "exponent_notation_allowed": false,
+    "floating_point_allowed": false,
+    "integer_text": "base-10 shortest representation; '-' allowed only for negative values",
+    "leading_zeroes_allowed": false,
+    "negative_zero_allowed": false
+  },
+  "scope": "future AEA01-AEA05 accounting evidence artifacts and associated freeze/verifier evidence only",
+  "sha256": {
+    "algorithm": "SHA-256",
+    "digest_length_hex_chars": 64,
+    "hex_encoding": "lowercase"
+  },
+  "status": "SPECIFICATION_ONLY",
+  "string_canonicalization": {
+    "case_folding": false,
+    "comparison": "exact Unicode scalar-value sequence; no trimming and no case folding",
+    "encoding": "UTF-8",
+    "identifier_set_array_order": "ascending lexicographic order of exact UTF-8 byte sequences",
+    "object_member_order": "ascending lexicographic order of exact UTF-8 byte sequences of member names",
+    "trim_whitespace": false,
+    "unicode_normalization": "NONE"
+  }
+}
