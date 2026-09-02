@@ -1,0 +1,40 @@
+{
+  "decision": "0221",
+  "defective_d0220_a02": {
+    "consumed": false,
+    "execution_attempt_count": 0,
+    "execution_authorized_after_decision0221": false,
+    "execution_result": "NOT_EXECUTED",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_aser04_aser07_revision_authorization_v1/02_authorize_bounded_corrective_successor_revision_once.v1.py",
+    "predecessor_state": "AUTHORED_UNCONSUMED",
+    "sentinel_exists": false,
+    "sentinel_path": "/openbayes/home/.svf_d0220_a02_corrective_successor_revision_consumption.v1.json",
+    "sha256": "d38ed4efd7db411d9feb303f60b1f467dc4d057c99df5d47b9488295f940abca",
+    "successor_state": "SUPERSEDED_UNEXECUTED"
+  },
+  "governance_disposition": {
+    "consumed": false,
+    "detected_before_execution": true,
+    "executed": false,
+    "must_never_be_executed": true,
+    "substantive_d0220_scope_preserved": true,
+    "superseded_without_execution": true
+  },
+  "record_id": "SVF-D0221-D0220-A02-STATIC-DEFECT-UNEXECUTED-SUPERSESSION-V1",
+  "source_checkpoint": {
+    "decision0219_commit": "f480347f329d89765db6a7d13d30ae6ebf929bb2",
+    "decision0219_tree": "64ac36956e46d8307441ccef58b41f5ff4419303",
+    "decision0220_commit": "57d84382ccdbe8784f06f33e9d99505192426c3a",
+    "decision0220_tree": "dc9affb71e0b23c89f591e93997b842ffc90a528"
+  },
+  "static_defect": {
+    "correct_parent_tree": "64ac36956e46d8307441ccef58b41f5ff4419303",
+    "correct_rule": "derive explicit parent commit first and evaluate <parent-commit>^{tree}",
+    "defective_expression": "git rev-parse HEAD^{tree}",
+    "defective_expression_result": "dc9affb71e0b23c89f591e93997b842ffc90a528",
+    "expected_failure": "AUTHORIZATION_PARENT_TREE_MISMATCH",
+    "expected_parent_tree": "64ac36956e46d8307441ccef58b41f5ff4419303",
+    "type": "PARENT_TREE_BINDING_DEFECT",
+    "would_fail_if_executed": true
+  }
+}

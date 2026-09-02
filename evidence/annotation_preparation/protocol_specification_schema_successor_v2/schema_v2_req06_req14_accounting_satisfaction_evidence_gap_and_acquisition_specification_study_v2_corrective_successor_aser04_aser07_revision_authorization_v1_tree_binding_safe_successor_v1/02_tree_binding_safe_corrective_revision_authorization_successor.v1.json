@@ -1,0 +1,141 @@
+{
+  "authorization_id": "SVF-D0221-TREE-BINDING-SAFE-ASER04-ASER07-CORRECTIVE-REVISION-AUTHORIZATION-SUCCESSOR-V1",
+  "authorization_status": "TREE_BINDING_SAFE_SUCCESSOR_AUTHORED_UNCONSUMED",
+  "corrective_scope": {
+    "fresh_pass_items_preserved": [
+      "ASER01",
+      "ASER02"
+    ],
+    "pass_items_must_not_be_reopened": true,
+    "predecessor_pass_items_preserved": [
+      "ASER03",
+      "ASER05",
+      "ASER06",
+      "ASER08",
+      "ASER09"
+    ],
+    "revision_required_items": [
+      "ASER04",
+      "ASER07"
+    ],
+    "scope_is_revision_items_only": true
+  },
+  "decision": "0221",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "accounting_satisfaction_establishment": false,
+    "active_schema_successor_creation": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_schema_carrier_domain_acquisition": false,
+    "actual_source_unit_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "curl_json_creation": false,
+    "forward_witness_acquisition": false,
+    "generated_driver_inspection": false,
+    "gold_annotation": false,
+    "governance_adoption": false,
+    "operational_mapping": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false,
+    "schema_v2_losslessness_claim": false
+  },
+  "future_state": {
+    "corrective_revision_authored_by_decision0221": false,
+    "corrective_revision_status_if_later_authored": "AUTHOR_CANDIDATE",
+    "independent_human_rereview_required": true
+  },
+  "one_time_successor_verifier": {
+    "authorized_execution_count": 1,
+    "consumption_sentinel_path": "/openbayes/home/.svf_d0221_r03_tree_binding_safe_corrective_revision_authorization_consumption.v1.json",
+    "executed_by_decision0221": false,
+    "first_execution_attempt_consumes_authorization": true,
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_aser04_aser07_revision_authorization_v1_tree_binding_safe_successor_v1/03_authorize_bounded_corrective_successor_revision_once.v2.py",
+    "rerun_after_first_attempt_authorized": false,
+    "sha256": "04200a09526bffec25d77702f877b9d21b4ed7da407976c9e4510284e7ee6d08"
+  },
+  "pair_state_preserved": {
+    "not_supported_binding_count": 0,
+    "req06_req14_unresolved_pair_count": 218,
+    "supported_binding_count": 211,
+    "unresolved_binding_count": 1642
+  },
+  "preserved_d0220_substantive_authorization": {
+    "required_aser04_controls": {
+      "aea01_contains_source_container": true,
+      "aea03_contains_source_container_and_source_unit_kind": true,
+      "candidate_membership_bound_to_dispositions": true,
+      "coverage_bound_to_underlying_records": true,
+      "enumeration_metadata_derivation_is_deterministic": true,
+      "fc04_metadata_recomputable_from_conforming_artifacts": true,
+      "frozen_c_equals_exact_included_candidate_set": true,
+      "hash_self_reference_eliminated_by_formal_rule": true,
+      "numeric_and_string_canonicalization_complete": true,
+      "record_count_bound_to_underlying_arrays": true,
+      "source_candidate_forward_reverse_uniqueness_machine_enforced": true,
+      "zero_unresolved_required_before_c_freeze": true
+    },
+    "required_aser07_controls": {
+      "aea03_lineage_formally_constrained": true,
+      "aea04_lineage_formally_constrained": true,
+      "ancestry_evidence_bound_to_independently_recomputed_verifier_output": true,
+      "complete_freeze_event_metadata_required": true,
+      "frozen_c_exactly_matches_included_dispositions": true,
+      "immutable_domain_evidence_bound_to_independently_recomputed_verifier_output": true,
+      "separate_formal_freeze_record_schema_required": true,
+      "verifier_commands_commits_objects_results_identified": true,
+      "zero_unresolved_required_before_freeze": true
+    },
+    "review_lifecycle": {
+      "independent_human_rereview_required": true,
+      "separate_external_handoff_authorization_required": true,
+      "separate_governance_adoption_required": true,
+      "separate_return_recording_authorization_required": true,
+      "separate_review_package_authorization_required": true,
+      "successor_status_after_authoring": "AUTHOR_CANDIDATE"
+    },
+    "successor_nonclaims": {
+      "does_not_acquire_actual_accounting_evidence": true,
+      "does_not_acquire_actual_domains": true,
+      "does_not_authorize_analyzer_baseline_or_repair": true,
+      "does_not_create_concrete_mapping": true,
+      "does_not_create_forward_or_reverse_witnesses": true,
+      "does_not_determine_accounting_satisfaction": true,
+      "does_not_modify_active_schema_v2": true,
+      "does_not_reclassify_pairs": true
+    }
+  },
+  "source_checkpoint": {
+    "decision0219_commit": "f480347f329d89765db6a7d13d30ae6ebf929bb2",
+    "decision0219_tree": "64ac36956e46d8307441ccef58b41f5ff4419303",
+    "decision0220_commit": "57d84382ccdbe8784f06f33e9d99505192426c3a",
+    "decision0220_tree": "dc9affb71e0b23c89f591e93997b842ffc90a528",
+    "overall_rereview_decision": "REVISION_REQUIRED",
+    "returned_rereview_record_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07_returned_independent_human_rereview_record_v1",
+    "returned_rereview_record_tree": "3e20186e0a4b674c326b0dbab3e380a16a256020",
+    "returned_rereview_sha256": "8613f25eb8c971d6d38774ea7cd0ac97e8171f1e116854a843e3d346432b7618",
+    "returned_rereview_size_bytes": 12091
+  },
+  "superseded_d0220_a02": {
+    "consumed": false,
+    "consumption_sentinel_must_remain_absent": true,
+    "consumption_sentinel_path": "/openbayes/home/.svf_d0220_a02_corrective_successor_revision_consumption.v1.json",
+    "defect_detected_before_first_execution": true,
+    "execution_attempt_count": 0,
+    "execution_authorized": false,
+    "execution_result": "NOT_EXECUTED",
+    "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_aser04_aser07_revision_authorization_v1/02_authorize_bounded_corrective_successor_revision_once.v1.py",
+    "sha256": "d38ed4efd7db411d9feb303f60b1f467dc4d057c99df5d47b9488295f940abca",
+    "state": "SUPERSEDED_UNEXECUTED"
+  },
+  "tree_binding_safe_design": {
+    "ast_level_executable_git_call_validation": true,
+    "derive_explicit_parent_commit_first": true,
+    "derive_tree_from_explicit_commit": true,
+    "executable_HEAD_tree_parent_binding_forbidden": true,
+    "historical_defect_pattern_may_appear_only_as_nonexecuted_evidence_text": true
+  }
+}
