@@ -1,0 +1,25 @@
+{
+  "artifact_id": "SVF-D0227-EXISTING-SOURCE-COPY-PROVENANCE-V1",
+  "enumeration_source": {
+    "copied_path": "existing_source_copies_exact/01_semantic_unit_enumeration_source.EXACT_COPY.v1.json",
+    "git_blob": "b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861",
+    "last_path_commit": "18d744c0825ce436f28e17f1256cac525523e5c4",
+    "new_domain_acquisition": false,
+    "original_repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+    "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+    "size_bytes": 11704978
+  },
+  "new_mapping_created": false,
+  "purpose": "Resolve the returned human review ZIP-only limitation by including already-existing checksum-bound source bytes.",
+  "source_content_modified": false,
+  "status": "EXISTING_CHECKSUM_BOUND_SOURCE_COPIES_ONLY",
+  "traceability_source": {
+    "copied_path": "existing_source_copies_exact/02_semantic_unit_traceability_source.EXACT_COPY.v1.json",
+    "git_blob": "877225ffab98272684726b8a1caf5db5fe0946e5",
+    "last_path_commit": "55cdd77baf2cf9a44789dcc2625edb617dae4011",
+    "new_accounting_evidence_acquisition": false,
+    "original_repository_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+    "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+    "size_bytes": 732713
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "active_schema_v2_boundary": {
+    "active_hash_contract_modified": false,
+    "active_hash_contract_path": "config/protocol_content_hash_canonicalization.v2.json",
+    "active_schema_v2_modified": false
+  },
+  "array_semantics": {
+    "command_argv_arrays": "preserve exact original argument order; never sort",
+    "identifier_set_arrays": "sort ascending by exact UTF-8 bytes; duplicate values forbidden",
+    "phase_order_arrays": "preserve specification-defined order"
+  },
+  "artifact_id": "SVF-D0227-ACCOUNTING-EVIDENCE-CANONICALIZATION-DETACHED-HASH-CONTRACT-V5",
+  "canonical_json_string_serialization": {
+    "canonical_hash_target": "SHA-256 is computed over the complete canonical UTF-8 JSON artifact bytes after all values and member names have been serialized by these rules.",
+    "canonicalizer_id": "SVF_CANONICAL_JSON_UTF8_STRING_V1",
+    "control_character_rule": "Every U+0000 through U+001F character MUST be emitted using exactly six ASCII bytes: reverse solidus, lowercase 'u', and four lowercase hexadecimal digits. Short escapes such as \\b, \\t, \\n, \\f, and \\r are forbidden in canonical output.",
+    "hexadecimal_digit_case": "lowercase",
+    "input_semantics": "Canonicalization operates on the parsed Unicode scalar-value sequence after JSON escape decoding. Original source escape spelling is not retained.",
+    "member_name_rule": "JSON object member names use this exact same string-emission algorithm.",
+    "member_sort_key_rule": "Object members are sorted before escaping by ascending lexicographic order of the exact UTF-8 encoding of the parsed member-name Unicode scalar-value sequence.",
+    "non_ascii_rule": "Every valid Unicode scalar value above U+001F other than U+0022 and U+005C MUST be emitted directly using its shortest well-formed UTF-8 encoding. A \\uXXXX or surrogate-pair escape for such a value is forbidden in canonical output.",
+    "opening_and_closing_delimiter": "ASCII quotation mark U+0022",
+    "optional_escape_forms_allowed": false,
+    "quotation_mark_rule": "U+0022 MUST be emitted as exactly two ASCII bytes 5C 22 (reverse solidus followed by quotation mark).",
+    "reverse_solidus_rule": "U+005C MUST be emitted as exactly two ASCII bytes 5C 5C.",
+    "semantic_escape_equivalence_rule": "Different valid JSON source spellings that decode to the same Unicode scalar-value sequence MUST produce identical canonical UTF-8 bytes.",
+    "solidus_rule": "U+002F MUST be emitted unescaped as ASCII byte 2F.",
+    "test_vector_artifact": "03_canonical_json_string_test_vectors.v1.json",
+    "unicode_normalization": "NONE",
+    "unicode_scalar_requirement": "Unpaired UTF-16 surrogate code points U+D800 through U+DFFF are invalid input and MUST be rejected."
+  },
+  "hash_self_reference_rule": {
+    "AEA01_AEA05_may_contain_own_artifact_sha256": false,
+    "hash_binding_location": "a different provenance/checksum artifact or a checksum-bound verifier-output record",
+    "hash_target": "complete canonical UTF-8 JSON bytes of the artifact; the artifact contains no in-band self-hash field",
+    "self_field_exclusion_rule_required": false,
+    "self_reference_eliminated": true
+  },
+  "json_serialization": {
+    "boolean_tokens": [
+      "false",
+      "true"
+    ],
+    "duplicate_object_member_names_allowed": false,
+    "insignificant_whitespace": "NONE",
+    "member_separator": ",",
+    "name_value_separator": ":",
+    "null_token": "null"
+  },
+  "numeric_canonicalization": {
+    "allowed_numeric_type": "INTEGER_ONLY",
+    "count_fields_negative_allowed": false,
+    "exponent_notation_allowed": false,
+    "floating_point_allowed": false,
+    "integer_text": "base-10 shortest representation; '-' allowed only for negative values",
+    "leading_zeroes_allowed": false,
+    "negative_zero_allowed": false
+  },
+  "predecessor_binding": {
+    "artifact": "03_accounting_evidence_canonicalization_and_detached_hash_rules.v4.json",
+    "revision_scope": "ASER04_CANONICAL_JSON_STRING_AND_MEMBER_NAME_SERIALIZATION_ONLY",
+    "sha256": "ba276c2d35f6bb80c820f79df5366761dc0cbeba8c01e225367fd7f9094d7f1e"
+  },
+  "scope": "future AEA01-AEA05 accounting evidence artifacts and associated freeze/verifier evidence only",
+  "sha256": {
+    "algorithm": "SHA-256",
+    "digest_length_hex_chars": 64,
+    "hex_encoding": "lowercase"
+  },
+  "status": "AUTHOR_CANDIDATE_SPECIFICATION_ONLY_NOT_EXECUTED",
+  "string_canonicalization": {
+    "case_folding": false,
+    "comparison": "exact Unicode scalar-value sequence; no trimming and no case folding",
+    "encoding": "UTF-8",
+    "identifier_set_array_order": "ascending lexicographic order of exact UTF-8 byte sequences",
+    "object_member_order": "ascending lexicographic order of exact UTF-8 byte sequences of member names",
+    "trim_whitespace": false,
+    "unicode_normalization": "NONE"
+  }
+}

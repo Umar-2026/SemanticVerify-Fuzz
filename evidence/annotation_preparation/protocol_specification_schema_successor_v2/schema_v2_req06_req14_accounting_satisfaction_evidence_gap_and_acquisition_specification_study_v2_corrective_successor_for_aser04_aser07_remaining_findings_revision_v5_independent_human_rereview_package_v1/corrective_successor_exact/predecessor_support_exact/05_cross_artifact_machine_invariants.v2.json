@@ -1,0 +1,148 @@
+{
+  "all_invariants_must_pass_before_accounting_satisfaction_evaluation": true,
+  "artifact_id": "SVF-D0222-FUTURE-ACCOUNTING-CROSS-ARTIFACT-MACHINE-INVARIANTS-V2",
+  "evaluated_by_this_prebuild": false,
+  "invariants": [
+    {
+      "expression": "exact_unique_semantic_unit_ids(enumeration_source) has size 109",
+      "id": "U01"
+    },
+    {
+      "expression": "traceability unit_id set == enumeration semantic_unit_id set",
+      "id": "U02"
+    },
+    {
+      "expression": "keys(AEA01.sources) == enumeration semantic_unit_id set",
+      "id": "U03"
+    },
+    {
+      "expression": "AEA01.record_count == len(keys(AEA01.sources)) == 109",
+      "id": "U04"
+    },
+    {
+      "expression": "for each u: AEA01.sources[u].source_container == traceability[u].source_container",
+      "id": "U05"
+    },
+    {
+      "expression": "for each u: AEA01.sources[u].source_path == traceability[u].source_path",
+      "id": "U06"
+    },
+    {
+      "expression": "for each u: AEA01.sources[u].source_unit_kind == traceability[u].unit_kind",
+      "id": "U07"
+    },
+    {
+      "expression": "for each u: AEA01.sources[u].source_provenance_sha256 == traceability[u].value_sha256",
+      "id": "U08"
+    },
+    {
+      "expression": "AEA01.traceability_source_binding.sha256 == '6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4' and bound bytes recompute to that SHA-256",
+      "id": "U09"
+    },
+    {
+      "expression": "AEA01.enumeration_source_binding.sha256 == '44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12' and bound bytes recompute to that SHA-256",
+      "id": "U10"
+    },
+    {
+      "expression": "keys(AEA02.carrier_candidates) == exact candidate identifier set from frozen carrier-candidate source",
+      "id": "C01"
+    },
+    {
+      "expression": "every final disposition is INCLUDED or EXCLUDED",
+      "id": "C02"
+    },
+    {
+      "expression": "AEA02.unresolved_count == 0",
+      "id": "C03"
+    },
+    {
+      "expression": "keys(AEA02.carriers) == {c | AEA02.carrier_candidates[c].disposition == INCLUDED}",
+      "id": "C04"
+    },
+    {
+      "expression": "AEA02.candidate_record_count == len(keys(AEA02.carrier_candidates))",
+      "id": "C05"
+    },
+    {
+      "expression": "AEA02.carrier_count == len(keys(AEA02.carriers))",
+      "id": "C06"
+    },
+    {
+      "expression": "keys(AEA03.forward_records) == keys(AEA01.sources)",
+      "id": "F01"
+    },
+    {
+      "expression": "for each u: AEA03.forward_records[u].source_container == AEA01.sources[u].source_container",
+      "id": "F02"
+    },
+    {
+      "expression": "for each u: AEA03.forward_records[u].source_unit_kind == AEA01.sources[u].source_unit_kind",
+      "id": "F03"
+    },
+    {
+      "expression": "for each u: set(AEA03.forward_records[u].schema_carriers) is nonempty and subset of keys(AEA02.carriers)",
+      "id": "F04"
+    },
+    {
+      "expression": "AEA03.record_count == len(keys(AEA03.forward_records)) == 109",
+      "id": "F05"
+    },
+    {
+      "expression": "AEA03.coverage_summary is recomputed from AEA01 and AEA03.forward_records and uncovered_source_count == 0",
+      "id": "F06"
+    },
+    {
+      "expression": "keys(AEA04.reverse_records) == keys(AEA02.carriers)",
+      "id": "R01"
+    },
+    {
+      "expression": "for each c: set(AEA04.reverse_records[c].source_unit_ids) is nonempty and subset of keys(AEA01.sources)",
+      "id": "R02"
+    },
+    {
+      "expression": "AEA04.record_count == len(keys(AEA04.reverse_records))",
+      "id": "R03"
+    },
+    {
+      "expression": "AEA04.coverage_summary is recomputed from AEA02 and AEA04.reverse_records and uncovered_carrier_count == 0",
+      "id": "R04"
+    },
+    {
+      "expression": "for all u in U and c in C: c in F(u) iff u in R(c)",
+      "id": "B01"
+    },
+    {
+      "expression": "AEA01-AEA05 detached SHA-256 values are recomputed from complete canonical artifact bytes and no artifact relies on an in-band self-hash field",
+      "id": "H01"
+    },
+    {
+      "expression": "every AEA03/AEA04 lineage object contains exactly the nine required lineage fields",
+      "id": "L01"
+    },
+    {
+      "expression": "git merge-base --is-ancestor domain_freeze_commit witness_commit exits 0 for every witness",
+      "id": "L02"
+    },
+    {
+      "expression": "AEA01 and AEA02 detached SHA-256 values at every witness commit equal the complete freeze-record hashes",
+      "id": "L03"
+    },
+    {
+      "expression": "AEA05.freeze_event_metadata equals the canonical parsed content of the checksum-bound complete freeze-record artifact",
+      "id": "L04"
+    },
+    {
+      "expression": "AEA05 ancestry, immutable_domains, and c_domain_closure bindings each resolve to a checksum-valid verifier-output artifact",
+      "id": "V01"
+    },
+    {
+      "expression": "each verifier-output artifact identifies exact command argv, evaluated commits, evaluated Git objects, object SHA-256 values, check results, and exit code",
+      "id": "V02"
+    },
+    {
+      "expression": "satisfaction evaluation independently recomputes required checks and does not trust self-declared true booleans",
+      "id": "V03"
+    }
+  ],
+  "status": "SPECIFICATION_ONLY_NOT_EVALUATED"
+}

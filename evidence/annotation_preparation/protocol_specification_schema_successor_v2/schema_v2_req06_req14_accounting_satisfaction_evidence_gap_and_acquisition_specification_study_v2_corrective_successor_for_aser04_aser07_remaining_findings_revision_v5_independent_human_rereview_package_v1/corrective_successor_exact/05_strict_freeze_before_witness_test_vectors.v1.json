@@ -1,0 +1,56 @@
+{
+  "artifact_id": "SVF-D0227-STRICT-FREEZE-BEFORE-WITNESS-TEST-VECTORS-V1",
+  "pass_predicate": "freeze_commit != witness_commit AND ancestry_exit_code == 0 AND freeze_commit_binding_matches == true AND witness_commit_binding_matches == true",
+  "status": "SPECIFICATION_TEST_VECTORS",
+  "vectors": [
+    {
+      "ancestry_exit_code": 0,
+      "expected": "PASS",
+      "freeze_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "freeze_commit_binding_matches": true,
+      "id": "O01_DISTINCT_ANCESTOR_PASS",
+      "witness_commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "witness_commit_binding_matches": true
+    },
+    {
+      "ancestry_exit_code": 0,
+      "expected": "FAIL",
+      "failure_reason": "DISTINCT_COMMIT_PREDICATE",
+      "freeze_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "freeze_commit_binding_matches": true,
+      "id": "O02_IDENTICAL_COMMIT_COUNTEREXAMPLE",
+      "witness_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "witness_commit_binding_matches": true
+    },
+    {
+      "ancestry_exit_code": 1,
+      "expected": "FAIL",
+      "failure_reason": "ANCESTRY_PREDICATE",
+      "freeze_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "freeze_commit_binding_matches": true,
+      "id": "O03_DISTINCT_NOT_ANCESTOR",
+      "witness_commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "witness_commit_binding_matches": true
+    },
+    {
+      "ancestry_exit_code": 0,
+      "expected": "FAIL",
+      "failure_reason": "FREEZE_COMMIT_BINDING",
+      "freeze_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "freeze_commit_binding_matches": false,
+      "id": "O04_FREEZE_BINDING_MISMATCH",
+      "witness_commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "witness_commit_binding_matches": true
+    },
+    {
+      "ancestry_exit_code": 0,
+      "expected": "FAIL",
+      "failure_reason": "WITNESS_COMMIT_BINDING",
+      "freeze_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "freeze_commit_binding_matches": true,
+      "id": "O05_WITNESS_BINDING_MISMATCH",
+      "witness_commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "witness_commit_binding_matches": false
+    }
+  ]
+}

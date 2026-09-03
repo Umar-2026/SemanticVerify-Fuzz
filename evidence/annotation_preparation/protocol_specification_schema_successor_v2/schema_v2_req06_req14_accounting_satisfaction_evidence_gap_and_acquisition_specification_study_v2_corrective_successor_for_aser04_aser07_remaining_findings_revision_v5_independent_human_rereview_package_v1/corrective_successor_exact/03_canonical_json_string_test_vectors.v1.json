@@ -1,0 +1,128 @@
+{
+  "artifact_id": "SVF-D0227-CANONICAL-JSON-STRING-TEST-VECTORS-V1",
+  "canonicalizer_id": "SVF_CANONICAL_JSON_UTF8_STRING_V1",
+  "normalization_none_assertion": {
+    "canonical_bytes_must_differ": true,
+    "canonical_sha256_must_differ": true,
+    "composed_vector": "S09_COMPOSED_NO_NORMALIZATION",
+    "decomposed_vector": "S10_DECOMPOSED_NO_NORMALIZATION"
+  },
+  "status": "SPECIFICATION_TEST_VECTORS",
+  "vectors": [
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"\\u000a\"",
+      "expected_canonical_utf8_hex": "225c753030306122",
+      "expected_sha256": "46f7b04715e2e1f162a9f3cb90a946a48e653b15117c2de6ed7cf60c029d2219",
+      "id": "S01_NEWLINE_EQUIVALENT_ESCAPES",
+      "source_json_spellings": [
+        "\"\\n\"",
+        "\"\\u000a\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"\\u0009\"",
+      "expected_canonical_utf8_hex": "225c753030303922",
+      "expected_sha256": "c50273c7b1bd1f4bfa17d5e557987ae9685ab34312aba4e609540cebcd9f801a",
+      "id": "S02_TAB_EQUIVALENT_ESCAPES",
+      "source_json_spellings": [
+        "\"\\t\"",
+        "\"\\u0009\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"\\\"\"",
+      "expected_canonical_utf8_hex": "225c2222",
+      "expected_sha256": "0c926fba014b31b506cd4ceb60d646c0c867432650fa0671fcafed6b772614a3",
+      "id": "S03_QUOTATION_MARK",
+      "source_json_spellings": [
+        "\"\\\"\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"\\\\\"",
+      "expected_canonical_utf8_hex": "225c5c22",
+      "expected_sha256": "687a9ed5a2b7019504648f874bb683f56e7787e1a4738493d84349c8d4e72b23",
+      "id": "S04_REVERSE_SOLIDUS",
+      "source_json_spellings": [
+        "\"\\\\\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"A/B\"",
+      "expected_canonical_utf8_hex": "22412f4222",
+      "expected_sha256": "aafa38013a7831c95664c669e5f4084858bbf19ab582aae84ab926ea3cd26608",
+      "id": "S05_SOLIDUS_UNESCAPED",
+      "source_json_spellings": [
+        "\"A/B\"",
+        "\"A\\/B\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"é\"",
+      "expected_canonical_utf8_hex": "22c3a922",
+      "expected_sha256": "f2886017e9c7abacf804b54d64787dce2b611c9544ba21f3affdd126a6e50086",
+      "id": "S06_NONASCII_E_ACUTE",
+      "source_json_spellings": [
+        "\"é\"",
+        "\"\\u00e9\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "{\"a\\u000a\":\"x\"}",
+      "expected_canonical_utf8_hex": "7b22615c7530303061223a2278227d",
+      "expected_sha256": "3d717e234719ee2a103d88e1142a30e5f2eb767ee9a5fcac8fabb2bcf3b7dc9d",
+      "id": "S07_MEMBER_NAME_NEWLINE_EQUIVALENCE",
+      "source_json_spellings": [
+        "{\"a\\n\":\"x\"}",
+        "{\"a\\u000a\":\"x\"}"
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "{\"z\":2,\"é\":1}",
+      "expected_canonical_utf8_hex": "7b227a223a322c22c3a9223a317d",
+      "expected_sha256": "ebf5b3ac2125f90b74510656202151eacb0fa0dcdf14105494181e8969b802d5",
+      "id": "S08_MEMBER_ORDER_UTF8",
+      "source_json_spellings": [
+        "{\"é\":1,\"z\":2}"
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"é\"",
+      "expected_canonical_utf8_hex": "22c3a922",
+      "expected_sha256": "f2886017e9c7abacf804b54d64787dce2b611c9544ba21f3affdd126a6e50086",
+      "id": "S09_COMPOSED_NO_NORMALIZATION",
+      "source_json_spellings": [
+        "\"é\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"é\"",
+      "expected_canonical_utf8_hex": "2265cc8122",
+      "expected_sha256": "3d68ce21f2899a475713cdbe7562ba9bdb6b1dfde8af1f221bdff4a0935b53b2",
+      "id": "S10_DECOMPOSED_NO_NORMALIZATION",
+      "source_json_spellings": [
+        "\"e\\u0301\""
+      ]
+    },
+    {
+      "all_source_spellings_decode_to_same_value": true,
+      "expected_canonical_json_text": "\"\\u0008\\u0009\\u000a\\u000c\\u000d\"",
+      "expected_canonical_utf8_hex": "225c75303030385c75303030395c75303030615c75303030635c753030306422",
+      "expected_sha256": "ab08c43c0bf56c12b11eda5d0d61729b27b35e174ad3522afcca8c559cbe97aa",
+      "id": "S11_ALL_SHORT_ESCAPE_CONTROLS_CANONICALIZED",
+      "source_json_spellings": [
+        "\"\\b\\t\\n\\f\\r\""
+      ]
+    }
+  ]
+}
