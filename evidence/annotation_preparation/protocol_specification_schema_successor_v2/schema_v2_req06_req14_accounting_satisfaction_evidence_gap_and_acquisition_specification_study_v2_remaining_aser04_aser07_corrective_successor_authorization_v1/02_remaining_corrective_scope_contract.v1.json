@@ -1,0 +1,68 @@
+{
+  "artifact_id": "SVF-D0226-REMAINING-ASER04-ASER07-CORRECTIVE-SCOPE-CONTRACT-V1",
+  "corrective_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "ASER04": {
+    "remaining_finding": "CANONICAL_JSON_STRING_ESCAPING",
+    "authorized_successor_work": [
+      "define one exact canonical escaping representation for JSON string values",
+      "define one exact canonical escaping representation for JSON member names",
+      "define treatment of quotation mark and reverse solidus",
+      "define treatment of U+0000 through U+001F control characters",
+      "define treatment of optional JSON escapes",
+      "define treatment of non-ASCII Unicode characters",
+      "define interaction with the already-declared Unicode normalization policy",
+      "provide canonical input-to-byte test vectors",
+      "provide canonical byte-to-SHA256 test vectors",
+      "provide counterexample vectors demonstrating that semantically equal but differently escaped source spellings converge to one canonical representation"
+    ],
+    "not_authorized": [
+      "populating actual accounting evidence",
+      "changing human review outcomes",
+      "reopening preserved PASS items"
+    ]
+  },
+  "ASER07": {
+    "remaining_finding": "STRICT_FREEZE_BEFORE_WITNESS_ORDERING",
+    "authorized_successor_work": [
+      "require freeze_commit != witness_creation_commit",
+      "require git merge-base --is-ancestor freeze_commit witness_creation_commit to exit 0",
+      "bind the checked freeze commit to the complete freeze record",
+      "bind the checked witness commit to the witness lineage",
+      "prevent self-declared booleans from substituting for recomputation",
+      "retain anti-circular derivation constraints",
+      "define and verify a freeze-tree exclusion condition if the design requires witness artifacts to be absent from the freeze checkpoint",
+      "provide positive and negative ordering test vectors including the identical-commit counterexample"
+    ],
+    "not_authorized": [
+      "performing an actual domain freeze",
+      "constructing an actual witness",
+      "reclassifying any Req06/Req14 pair"
+    ]
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "successor_boundary": {
+    "actual_accounting_evidence_acquisition": false,
+    "actual_domain_acquisition": false,
+    "actual_domain_freeze": false,
+    "forward_witness_acquisition": false,
+    "reverse_witness_acquisition": false,
+    "concrete_mapping_creation": false,
+    "accounting_satisfaction_determination": false,
+    "pair_reclassification": false,
+    "active_schema_v2_modification": false,
+    "analyzer": false,
+    "baseline": false,
+    "repair": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "artifact_id": "SVF-D0226-NEXT-REREVIEW-PACKAGING-REQUIREMENTS-V1",
+  "purpose": "Address the ZIP-only verification limitation recorded in the returned D0225 human re-review without acquiring new accounting evidence or domains.",
+  "required_existing_source_copies": [
+    {
+      "source": "semantic-unit enumeration source",
+      "required_as_existing_checksum_bound_exact_copy": true
+    },
+    {
+      "source": "semantic-unit traceability source",
+      "required_as_existing_checksum_bound_exact_copy": true
+    }
+  ],
+  "requirements": {
+    "preserve_source_bytes_exactly": true,
+    "bind_each_copy_by_sha256": true,
+    "identify_original_repository_path": true,
+    "identify_original_git_object_or_commit_where_available": true,
+    "include_in_next_independent_human_rereview_package": true,
+    "new_accounting_evidence_acquisition": false,
+    "new_domain_acquisition": false,
+    "new_mapping_creation": false,
+    "source_content_modification": false
+  }
+}

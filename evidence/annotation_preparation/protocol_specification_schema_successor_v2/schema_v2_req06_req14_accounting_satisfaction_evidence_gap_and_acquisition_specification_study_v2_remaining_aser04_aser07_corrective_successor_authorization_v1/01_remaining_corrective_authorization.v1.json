@@ -1,0 +1,81 @@
+{
+  "artifact_id": "SVF-D0226-REMAINING-ASER04-ASER07-CORRECTIVE-SUCCESSOR-AUTHORIZATION-V1",
+  "authorization_state": "AUTHORED_UNCONSUMED",
+  "authorized_remaining_corrections": {
+    "ASER04": {
+      "canonical_byte_test_vectors": true,
+      "canonical_json_string_and_member_name_escaping": true,
+      "canonical_sha256_test_vectors": true,
+      "scope_excludes_populated_accounting_evidence": true
+    },
+    "ASER07": {
+      "checked_commits_bound_to_complete_freeze_record_and_witness_lineage": true,
+      "explicit_tree_state_exclusion_condition_if_required": true,
+      "freeze_and_witness_commits_must_be_distinct": true,
+      "scope_excludes_actual_freeze_or_witness_construction": true,
+      "strict_freeze_before_witness_ordering": true,
+      "successful_freeze_commit_ancestry": true
+    }
+  },
+  "corrective_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "decision": "0226",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_corrective_successor_authoring_before_r03_pass": false,
+    "actual_domain_freeze": false,
+    "actual_schema_carrier_domain_acquisition": false,
+    "actual_source_unit_domain_acquisition": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "governance_adoption": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "next_rereview_packaging_authorization": {
+    "copy_existing_sources_only": true,
+    "include_existing_checksum_bound_enumeration_source_copy": true,
+    "include_existing_checksum_bound_traceability_source_copy": true,
+    "new_accounting_evidence_acquisition": false,
+    "new_domain_acquisition": false
+  },
+  "one_time_authorizer": {
+    "executed": false,
+    "execution_attempt_count": 0,
+    "first_attempt_consumes_authorization": true,
+    "first_execution_authorized": true,
+    "path": "03_authorize_bounded_remaining_corrective_successor_once.v1.py",
+    "rerun_authorized_after_first_attempt": false,
+    "sentinel_path": "/openbayes/home/.svf_d0226_r03_remaining_aser04_aser07_corrective_successor_authorization_consumption.v1.json",
+    "sha256": "c2f87816e6e5b3bf299bec8af9a563959ccced0774dcef3117009e1f3f111bbd",
+    "state": "AUTHORED_UNCONSUMED"
+  },
+  "predecessor_checkpoint": {
+    "decision0225_commit": "7ce6da63d791a6e7aa3a5b85695b816ed852857e",
+    "decision0225_package_manifest_sha256": "311d1ff6b6002760db6c0c0b8d2ebd78dfc6416e92194b6ef6ee8fbc6966969c",
+    "decision0225_tree": "2a6fde07204636d2ba62bbba2baa9a4cabffa07c",
+    "returned_review_sha256": "daf3ac553885e3a8547cb48c9271015434d1b0c8f33cc51a3afd083f4e73627e",
+    "returned_review_size_bytes": 12445
+  },
+  "predecessor_review": {
+    "ASER04": "REVISION_REQUIRED",
+    "ASER07": "REVISION_REQUIRED",
+    "overall": "REVISION_REQUIRED"
+  },
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ]
+}
