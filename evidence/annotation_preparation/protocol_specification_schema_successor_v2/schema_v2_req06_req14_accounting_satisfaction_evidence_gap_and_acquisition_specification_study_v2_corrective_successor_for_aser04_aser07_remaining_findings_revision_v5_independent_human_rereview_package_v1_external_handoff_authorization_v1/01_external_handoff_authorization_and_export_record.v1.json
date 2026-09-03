@@ -1,0 +1,69 @@
+{
+  "artifact_id": "SVF-D0229-D0228-EXTERNAL-HANDOFF-AUTHORIZATION-EXPORT-V1",
+  "decision": "0229",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_domain_acquisition": false,
+    "actual_domain_freeze": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "export": {
+    "all_file_bytes_equal_governed_d0228_package": true,
+    "deterministic_zip_metadata": true,
+    "file_count": 30,
+    "path": "/openbayes/home/D0229_D0227_ASER04_ASER07_Independent_Human_Rereview_Package_35f94ae.v1.zip",
+    "prepared": true,
+    "sha256": "b4d4b3e5e314b2918e244026b3984f99d1441e06cdaa0b393b38cbbaf436b93a",
+    "sha256_sidecar_path": "/openbayes/home/D0229_D0227_ASER04_ASER07_Independent_Human_Rereview_Package_35f94ae.v1.zip.SHA256",
+    "sha256_sidecar_sha256": "b8677210996ad01098e84278123303dab906227373c8037df5eb7d957fed0ba8",
+    "size_bytes": 12573199
+  },
+  "lifecycle": {
+    "corrective_successor_approved": false,
+    "external_handoff_authorized": true,
+    "external_handoff_export_prepared": true,
+    "external_handoff_performed": false,
+    "governance_adopted": false,
+    "handoff_timestamp_recorded": false,
+    "returned_rereview_received": false,
+    "returned_rereview_recorded": false,
+    "reviewer_recipient_recorded": false
+  },
+  "review_target": {
+    "decision": "0227",
+    "decision0228_sha256": "559266055eebcdaf7ec059b85998587ad9e861747d80a400e8e11e09479afb0c",
+    "review_package_commit": "35f94ae640aa0456b99b873f9ee635a47d7700a2",
+    "review_package_decision": "0228",
+    "review_package_manifest_sha256": "f0772bfb024fa6fce885ef35d65d17922f0fd4ca4bac65388063013cc1612a42",
+    "review_package_parent": "c810519ddced4f66373aae1731856b9856620994",
+    "review_package_tree": "80c8b96768e5f3c1db6201fcf00e27a4a673a2a2",
+    "scope": [
+      "ASER04",
+      "ASER07"
+    ]
+  },
+  "reviewer_content": {
+    "ASER04_decision_prefilled": false,
+    "ASER07_decision_prefilled": false,
+    "independence_attestation_prefilled": false,
+    "overall_decision_prefilled": false,
+    "review_date_prefilled": false,
+    "reviewer_identity_prefilled": false,
+    "reviewer_role_prefilled": false,
+    "reviewer_signature_prefilled": false
+  },
+  "source_byte_availability": {
+    "both_present_in_export": true,
+    "enumeration_source_sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+    "traceability_source_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "status": "EXTERNAL_HANDOFF_AUTHORIZED_EXPORT_PREPARED_NOT_YET_PERFORMED"
+}
