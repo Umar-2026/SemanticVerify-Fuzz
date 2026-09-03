@@ -1,0 +1,98 @@
+{
+  "$id": "urn:svf:complete-domain-freeze-record:v2",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "c_domain_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "c_domain_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "carrier_candidate_source_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "carrier_candidate_source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "derivation_input_hashes": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minProperties": 3,
+      "type": "object"
+    },
+    "enumeration_source_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "enumeration_source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "freeze_commit": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "freeze_commit_parent": {
+      "pattern": "^[0-9a-f]{40}$",
+      "type": "string"
+    },
+    "freeze_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "freeze_timestamp_utc": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "predecessor_hashes": {
+      "additionalProperties": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "minProperties": 1,
+      "type": "object"
+    },
+    "traceability_source_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "traceability_source_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "u_domain_path": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "u_domain_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "freeze_id",
+    "freeze_timestamp_utc",
+    "freeze_commit",
+    "freeze_commit_parent",
+    "u_domain_path",
+    "u_domain_sha256",
+    "c_domain_path",
+    "c_domain_sha256",
+    "enumeration_source_path",
+    "enumeration_source_sha256",
+    "traceability_source_path",
+    "traceability_source_sha256",
+    "carrier_candidate_source_path",
+    "carrier_candidate_source_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ],
+  "type": "object"
+}

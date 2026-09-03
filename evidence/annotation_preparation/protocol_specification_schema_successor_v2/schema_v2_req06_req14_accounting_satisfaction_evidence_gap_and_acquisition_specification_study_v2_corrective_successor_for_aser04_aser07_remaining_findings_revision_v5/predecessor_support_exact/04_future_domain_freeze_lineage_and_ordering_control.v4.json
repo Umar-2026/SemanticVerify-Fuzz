@@ -1,0 +1,92 @@
+{
+  "actual_freeze_event_executed": false,
+  "actual_verifier_evidence_created": false,
+  "actual_witness_created": false,
+  "ancestry_verification": {
+    "algorithm": "git merge-base --is-ancestor <domain_freeze_commit> <witness_commit>",
+    "checksum_bound_recomputed_verifier_output_required": true,
+    "required_exit_code": 0,
+    "self_declared_boolean_sufficient": false
+  },
+  "artifact_id": "SVF-D0222-FUTURE-DOMAIN-FREEZE-LINEAGE-ORDERING-CONTROL-V4",
+  "c_domain_closure_verification": {
+    "checksum_bound_recomputed_verifier_output_required": true,
+    "must_recompute": [
+      "candidate identifier set",
+      "INCLUDED candidate identifier set",
+      "UNRESOLVED count",
+      "frozen C identifier set"
+    ],
+    "required_results": [
+      "UNRESOLVED count == 0",
+      "frozen C == INCLUDED candidate identifier set"
+    ]
+  },
+  "complete_freeze_record_required_fields": [
+    "freeze_id",
+    "freeze_timestamp_utc",
+    "freeze_commit",
+    "freeze_commit_parent",
+    "u_domain_path",
+    "u_domain_sha256",
+    "c_domain_path",
+    "c_domain_sha256",
+    "enumeration_source_path",
+    "enumeration_source_sha256",
+    "traceability_source_path",
+    "traceability_source_sha256",
+    "carrier_candidate_source_path",
+    "carrier_candidate_source_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ],
+  "immutable_domain_verification": {
+    "checksum_bound_recomputed_verifier_output_required": true,
+    "must_equal_complete_freeze_record": true,
+    "must_recompute": [
+      "AEA01 Git blob identity and detached SHA-256 at every witness commit",
+      "AEA02 Git blob identity and detached SHA-256 at every witness commit",
+      "enumeration-source SHA-256",
+      "traceability-source SHA-256"
+    ],
+    "self_declared_boolean_sufficient": false
+  },
+  "pre_freeze_machine_conditions": [
+    "AEA01 source identifier set equals exact enumeration identifier set",
+    "AEA01 traceability metadata for every source unit equals the unique checksum-bound traceability record",
+    "AEA02 candidate identifier set equals the exact frozen carrier-candidate source identifier set",
+    "every candidate has exactly one final INCLUDED or EXCLUDED disposition",
+    "UNRESOLVED candidate count equals zero",
+    "frozen C identifier set equals exactly the identifiers marked INCLUDED"
+  ],
+  "required_phase_order": [
+    "PHASE_ENUMERATION_SOURCE_FREEZE",
+    "PHASE_TRACEABILITY_SOURCE_FREEZE",
+    "PHASE_CARRIER_CANDIDATE_SOURCE_FREEZE",
+    "PHASE_U_DOMAIN_CONSTRUCTION",
+    "PHASE_C_DOMAIN_FINALIZATION",
+    "PHASE_UC_DOMAIN_FREEZE",
+    "PHASE_FORWARD_WITNESS_CONSTRUCTION",
+    "PHASE_REVERSE_WITNESS_CONSTRUCTION",
+    "PHASE_INDEPENDENT_VERIFIER_EVIDENCE_CLOSURE",
+    "PHASE_AEA05_PROVENANCE_CLOSURE",
+    "PHASE_SATISFACTION_EVALUATION"
+  ],
+  "required_source_bindings": {
+    "enumeration_source_sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+    "traceability_source_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "satisfaction_evaluated": false,
+  "status": "CONTROL_SPECIFICATION_ONLY_NOT_EXECUTED",
+  "witness_lineage_required_fields": [
+    "witness_id",
+    "creation_timestamp_utc",
+    "creation_commit",
+    "creation_commit_parent",
+    "domain_freeze_commit",
+    "u_domain_sha256",
+    "c_domain_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ]
+}

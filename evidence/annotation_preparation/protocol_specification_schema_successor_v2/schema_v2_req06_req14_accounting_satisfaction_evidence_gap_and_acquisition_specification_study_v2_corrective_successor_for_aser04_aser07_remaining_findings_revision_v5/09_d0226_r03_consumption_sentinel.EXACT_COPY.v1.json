@@ -1,0 +1,44 @@
+{
+  "accounting_satisfaction_determination_authorized": false,
+  "active_schema_v2_modification_authorized": false,
+  "actual_accounting_evidence_acquisition_authorized": false,
+  "actual_corrective_successor_authored_by_this_verifier": false,
+  "actual_domain_acquisition_authorized": false,
+  "analyzer_authorized": false,
+  "artifact_id": "SVF-D0226-R03-REMAINING-ASER04-ASER07-AUTHORIZATION-CONSUMPTION-V1",
+  "authorization_scope": [
+    "ASER04",
+    "ASER07"
+  ],
+  "authorization_successor_commit": "7d81279f26c700c38a010dbee7d69baabcc05fc4",
+  "authorization_successor_grandparent": "0e80b39bdec4c4ac98f198f67e64569a474a12c0",
+  "authorization_successor_parent": "7ce6da63d791a6e7aa3a5b85695b816ed852857e",
+  "authorization_successor_parent_tree": "2a6fde07204636d2ba62bbba2baa9a4cabffa07c",
+  "authorized_remaining_corrections": {
+    "ASER04": [
+      "canonical_json_string_and_member_name_escaping",
+      "canonical_byte_test_vectors",
+      "canonical_sha256_test_vectors"
+    ],
+    "ASER07": [
+      "strict_freeze_before_witness_ordering",
+      "distinct_freeze_and_witness_commits",
+      "successful_freeze_commit_ancestry",
+      "checked_commit_binding_to_freeze_record_and_witness_lineage",
+      "explicit_tree_state_exclusion_condition_if_required"
+    ]
+  },
+  "baseline_authorized": false,
+  "bounded_corrective_successor_authoring_authorized": true,
+  "concrete_mapping_authorized": false,
+  "execution_attempt_count": 1,
+  "execution_result": "PASS",
+  "first_attempt_consumes_authorization": true,
+  "forward_witness_acquisition_authorized": false,
+  "next_rereview_existing_source_copy_packaging_authorized": true,
+  "pair_reclassification_authorized": false,
+  "repair_authorized": false,
+  "rerun_authorized": false,
+  "reverse_witness_acquisition_authorized": false,
+  "state": "PERMANENTLY_RETIRED"
+}

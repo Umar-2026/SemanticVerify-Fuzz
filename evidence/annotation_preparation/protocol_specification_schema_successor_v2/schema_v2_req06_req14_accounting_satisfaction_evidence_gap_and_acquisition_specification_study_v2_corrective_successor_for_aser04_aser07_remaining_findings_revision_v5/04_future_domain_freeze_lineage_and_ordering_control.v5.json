@@ -1,0 +1,128 @@
+{
+  "actual_freeze_event_executed": false,
+  "actual_verifier_evidence_created": false,
+  "actual_witness_created": false,
+  "ancestry_verification": {
+    "ancestry_command": "git merge-base --is-ancestor <complete_freeze_record.freeze_commit> <witness_lineage.creation_commit>",
+    "checked_freeze_commit": "complete_freeze_record.freeze_commit",
+    "checked_witness_commit": "witness_lineage.creation_commit",
+    "checksum_bound_recomputed_verifier_output_required": true,
+    "distinct_commit_required": true,
+    "distinctness_predicate": "complete_freeze_record.freeze_commit != witness_lineage.creation_commit",
+    "evaluated_commit_binding": {
+      "freeze_commit": "must equal complete_freeze_record.freeze_commit",
+      "witness_commit": "must equal witness_lineage.creation_commit"
+    },
+    "required_ancestry_exit_code": 0,
+    "required_check_ids": [
+      "STRICT_ORDER_DISTINCT_COMMITS",
+      "STRICT_ORDER_FREEZE_ANCESTOR_OF_WITNESS",
+      "STRICT_ORDER_FREEZE_COMMIT_BINDING",
+      "STRICT_ORDER_WITNESS_COMMIT_BINDING"
+    ],
+    "required_evaluated_commit_keys": [
+      "freeze_commit",
+      "witness_commit"
+    ],
+    "same_commit_rule": "FAIL even when git merge-base --is-ancestor exits 0; distinctness is an independent mandatory predicate.",
+    "self_declared_boolean_sufficient": false,
+    "strict_order_pass_condition": "PASS iff commits are distinct, ancestry command exits 0, the evaluated freeze commit equals the checksum-bound complete freeze record freeze_commit, and the evaluated witness commit equals the checksum-bound witness lineage creation_commit.",
+    "test_vector_artifact": "05_strict_freeze_before_witness_test_vectors.v1.json"
+  },
+  "artifact_id": "SVF-D0227-FUTURE-DOMAIN-FREEZE-LINEAGE-ORDERING-CONTROL-V5",
+  "c_domain_closure_verification": {
+    "checksum_bound_recomputed_verifier_output_required": true,
+    "must_recompute": [
+      "candidate identifier set",
+      "INCLUDED candidate identifier set",
+      "UNRESOLVED count",
+      "frozen C identifier set"
+    ],
+    "required_results": [
+      "UNRESOLVED count == 0",
+      "frozen C == INCLUDED candidate identifier set"
+    ]
+  },
+  "complete_freeze_record_required_fields": [
+    "freeze_id",
+    "freeze_timestamp_utc",
+    "freeze_commit",
+    "freeze_commit_parent",
+    "u_domain_path",
+    "u_domain_sha256",
+    "c_domain_path",
+    "c_domain_sha256",
+    "enumeration_source_path",
+    "enumeration_source_sha256",
+    "traceability_source_path",
+    "traceability_source_sha256",
+    "carrier_candidate_source_path",
+    "carrier_candidate_source_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ],
+  "freeze_tree_exclusion_condition": {
+    "anti_circularity_preserved_by": [
+      "strict distinct freeze-before-witness ancestry",
+      "immutable-domain hash equality at witness commits",
+      "checksum-bound verifier evidence",
+      "existing specification phase order"
+    ],
+    "design_statement": "Generic absence of all historical witness artifacts from the freeze commit tree is not an independent acceptance condition. The required temporal guarantee is strict distinct ancestry plus exact binding of the checked commits to the freeze record and witness lineage.",
+    "required": false
+  },
+  "immutable_domain_verification": {
+    "checksum_bound_recomputed_verifier_output_required": true,
+    "must_equal_complete_freeze_record": true,
+    "must_recompute": [
+      "AEA01 Git blob identity and detached SHA-256 at every witness commit",
+      "AEA02 Git blob identity and detached SHA-256 at every witness commit",
+      "enumeration-source SHA-256",
+      "traceability-source SHA-256"
+    ],
+    "self_declared_boolean_sufficient": false
+  },
+  "pre_freeze_machine_conditions": [
+    "AEA01 source identifier set equals exact enumeration identifier set",
+    "AEA01 traceability metadata for every source unit equals the unique checksum-bound traceability record",
+    "AEA02 candidate identifier set equals the exact frozen carrier-candidate source identifier set",
+    "every candidate has exactly one final INCLUDED or EXCLUDED disposition",
+    "UNRESOLVED candidate count equals zero",
+    "frozen C identifier set equals exactly the identifiers marked INCLUDED"
+  ],
+  "predecessor_binding": {
+    "artifact": "04_future_domain_freeze_lineage_and_ordering_control.v4.json",
+    "revision_scope": "ASER07_STRICT_FREEZE_BEFORE_WITNESS_ORDERING_ONLY",
+    "sha256": "a0215aae4591e7375b0c8111c07b1293304a6831e048c7a6848ef2a38c52b166"
+  },
+  "required_phase_order": [
+    "PHASE_ENUMERATION_SOURCE_FREEZE",
+    "PHASE_TRACEABILITY_SOURCE_FREEZE",
+    "PHASE_CARRIER_CANDIDATE_SOURCE_FREEZE",
+    "PHASE_U_DOMAIN_CONSTRUCTION",
+    "PHASE_C_DOMAIN_FINALIZATION",
+    "PHASE_UC_DOMAIN_FREEZE",
+    "PHASE_FORWARD_WITNESS_CONSTRUCTION",
+    "PHASE_REVERSE_WITNESS_CONSTRUCTION",
+    "PHASE_INDEPENDENT_VERIFIER_EVIDENCE_CLOSURE",
+    "PHASE_AEA05_PROVENANCE_CLOSURE",
+    "PHASE_SATISFACTION_EVALUATION"
+  ],
+  "required_source_bindings": {
+    "enumeration_source_sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+    "traceability_source_sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4"
+  },
+  "satisfaction_evaluated": false,
+  "status": "AUTHOR_CANDIDATE_CONTROL_SPECIFICATION_ONLY_NOT_EXECUTED",
+  "witness_lineage_required_fields": [
+    "witness_id",
+    "creation_timestamp_utc",
+    "creation_commit",
+    "creation_commit_parent",
+    "domain_freeze_commit",
+    "u_domain_sha256",
+    "c_domain_sha256",
+    "predecessor_hashes",
+    "derivation_input_hashes"
+  ]
+}
