@@ -1,0 +1,163 @@
+# Decision 0233 — Design Bounded Req06 / Req14 Accounting Authorization Ladder Without Execution
+
+Date: 05 September 2026
+
+Status:
+
+`AUTHORIZATION_DESIGN_ONLY_NO_OPERATIONAL_AUTHORIZATION`
+
+## Governance basis
+
+Decision0232 commit:
+
+`e650ab69a7d9e450440f282514b6577a48269b3c`
+
+Decision0232 tree:
+
+`cf2db83c9baa3d2ccfb1ca89a3fa8f3cc408db6f`
+
+Decision0232 manifest:
+
+`baf93d156185a9981d471207ad928d711161704295e9a101a3cba0580b1cd998`
+
+Adopted governed corrective successor:
+
+`D0227`
+
+D0227 commit:
+
+`c810519ddced4f66373aae1731856b9856620994`
+
+D0227 tree:
+
+`80423c933bbe3906d251039bad78cab5ac01b8d9`
+
+D0227 manifest:
+
+`db90747fb8f586992c524e5c541a1414bb12349b874ca4fa8a709c4ae0f17ab8`
+
+## Selected design track
+
+Decision0233 selects only:
+
+`TRACK_B=REQ06_REQ14_ACCOUNTING_WORK`
+
+for authorization design.
+
+`TRACK_B_EXECUTION_AUTHORIZED=NO`
+
+## Track A excluded
+
+`TRACK_A=ACTIVE_SCHEMA_V2_MATERIALIZATION`
+
+is outside D0233.
+
+`ACTIVE_SCHEMA_V2_MATERIALIZATION_AUTHORIZED=NO`
+
+Track A requires a separate future governance decision.
+
+## Required Track-B authorization ladder
+
+The future authorization sequence is:
+
+`B1=ACCOUNTING_SOURCE_AND_DOMAIN_ACQUISITION`
+
+`B2=COMPLETE_ACCOUNTING_DOMAIN_FREEZE`
+
+`B3=FORWARD_WITNESS_ACQUISITION`
+
+`B4=REVERSE_WITNESS_ACQUISITION`
+
+`B5=CONCRETE_SOURCE_UNIT_CARRIER_MAPPING`
+
+`B6=REQ06_REQ14_ACCOUNTING_SATISFACTION_DETERMINATION`
+
+`B7=PAIR_RECLASSIFICATION_IF_JUSTIFIED`
+
+Each phase requires its own explicit governance scope.
+
+No phase is authorized by Decision0233.
+
+## Separation
+
+`TRACK_A_MUST_NOT_IMPLY_TRACK_B=YES`
+
+`TRACK_B_MUST_NOT_IMPLY_TRACK_A=YES`
+
+`ACCOUNTING_ACQUISITION_AND_ACCOUNTING_DETERMINATION_SEPARATE=YES`
+
+`DOMAIN_FREEZE_REQUIRES_EXPLICIT_AUTHORIZATION=YES`
+
+`FORWARD_WITNESS_ACQUISITION_REQUIRES_EXPLICIT_AUTHORIZATION=YES`
+
+`REVERSE_WITNESS_ACQUISITION_REQUIRES_EXPLICIT_AUTHORIZATION=YES`
+
+`CONCRETE_MAPPING_REQUIRES_EXPLICIT_AUTHORIZATION=YES`
+
+`PAIR_RECLASSIFICATION_REQUIRES_SEPARATE_POST_DETERMINATION_AUTHORIZATION=YES`
+
+## Recommended next future authorization
+
+The first candidate is B1:
+
+`ACCOUNTING_SOURCE_AND_DOMAIN_ACQUISITION`
+
+Decision0233 does not authorize B1.
+
+A separate future decision is required before B1 may occur.
+
+## No substantive result
+
+`REQ06_REQ14_SATISFACTION_ESTABLISHED=NO`
+
+`REQ06_REQ14_VIOLATION_ESTABLISHED=NO`
+
+`SCHEMA_V2_SEMANTIC_LOSSLESSNESS_ESTABLISHED=NO`
+
+## No operational authorization
+
+`ACTIVE_SCHEMA_V2_MATERIALIZATION_AUTHORIZED=NO`
+
+`ACTIVE_SCHEMA_V2_MODIFICATION_AUTHORIZED=NO`
+
+`ACCOUNTING_SOURCE_ACQUISITION_AUTHORIZED=NO`
+
+`ACCOUNTING_DOMAIN_ACQUISITION_AUTHORIZED=NO`
+
+`ACCOUNTING_DOMAIN_FREEZE_AUTHORIZED=NO`
+
+`FORWARD_WITNESS_ACQUISITION_AUTHORIZED=NO`
+
+`REVERSE_WITNESS_ACQUISITION_AUTHORIZED=NO`
+
+`CONCRETE_MAPPING_AUTHORIZED=NO`
+
+`ACCOUNTING_SATISFACTION_DETERMINATION_AUTHORIZED=NO`
+
+`PAIR_RECLASSIFICATION_AUTHORIZED=NO`
+
+`ANALYZER_AUTHORIZED=NO`
+
+`BASELINE_AUTHORIZED=NO`
+
+`REPAIR_AUTHORIZED=NO`
+
+`OPERATIONAL_EFFECT=NO`
+
+## Protected one-time verifier lifecycle
+
+D0226 R03 remains permanently retired and must never be rerun.
+
+D0221 R03 remains permanently retired and must never be rerun.
+
+D0220 A02 remains superseded unexecuted and must never be executed.
+
+## D0233 package
+
+Path:
+
+`evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0233_req06_req14_accounting_authorization_design_v1`
+
+Manifest SHA-256:
+
+`c608ad15a5a345cb0f525389cb70c9a478057c3e44fa265538ed259a150ccc0b`

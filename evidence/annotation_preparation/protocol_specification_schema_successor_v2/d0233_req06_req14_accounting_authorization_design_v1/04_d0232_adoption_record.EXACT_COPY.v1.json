@@ -1,0 +1,85 @@
+{
+  "adoption": {
+    "active_schema_v2_materialized": false,
+    "active_schema_v2_modified": false,
+    "adopted_governed_successor": true,
+    "adoption_accepts_d0231_approval": true,
+    "adoption_scope": "D0227_ASER04_ASER07_SPECIFICATION_CORRECTIVE_SUCCESSOR",
+    "governance_adopted": true,
+    "operational_authorization_created": false,
+    "operational_effect": false
+  },
+  "adoption_basis": {
+    "ASER04_resolution_accepted": true,
+    "ASER07_resolution_accepted": true,
+    "bounded_pass_scope": "SPECIFICATION_SUFFICIENCY_ONLY",
+    "corrective_successor_approved": true,
+    "d0231_approval_record_sha256": "5915079934e2fe74f41233ca5fde1ef8e44199933531268b22e5f608088283e6",
+    "d0231_commit": "715241558d6e0fed0f1b9f794aa235c798c3341e",
+    "d0231_decision_sha256": "6f2624e2b92ca9e7ee2600b06e5558c52ca74fb3087f718820336cd49c15f734",
+    "d0231_manifest_sha256": "8fe7172a3dd29646f85f237b3079796efd4bc7dbad578744124795ec3eae6e6d",
+    "d0231_parent": "8c654b9f38d3db07cd0bc1c1ac058cd7a7d45946",
+    "d0231_tree": "288cec9fb1baf9db1f0475b2c96dfcf65cfe8402",
+    "overall_human_rereview_decision": "PASS",
+    "returned_human_rereview_sha256": "357e5af3944d6a2ed9b47f28af395e02f2903acd29760fee1f6782f366f46fad"
+  },
+  "adoption_does_not_establish": {
+    "active_schema_v2_semantic_losslessness": true,
+    "actual_domain_freeze": true,
+    "concrete_mapping_completeness": true,
+    "new_accounting_evidence": true,
+    "new_domain_acquisition": true,
+    "pair_reclassification": true,
+    "req06_req14_satisfaction": true,
+    "req06_req14_violation": true,
+    "witness_existence": true
+  },
+  "adoption_target": {
+    "commit": "c810519ddced4f66373aae1731856b9856620994",
+    "corrective_successor_manifest_sha256": "db90747fb8f586992c524e5c541a1414bb12349b874ca4fa8a709c4ae0f17ab8",
+    "decision": "0227",
+    "decision0227_sha256": "237e93e08e1141a1d1f2cc3db85837998c95a326a0d5504eb685f469d36c80f8",
+    "scope": [
+      "ASER04",
+      "ASER07"
+    ],
+    "tree": "80423c933bbe3906d251039bad78cab5ac01b8d9"
+  },
+  "artifact_id": "SVF-D0232-D0227-GOVERNANCE-ADOPTION-V1",
+  "decision": "0232",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_materialization": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_domain_acquisition": false,
+    "actual_domain_freeze": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "lifecycle_after_d0232": {
+    "corrective_successor_approved": true,
+    "external_handoff_authorized": true,
+    "external_handoff_export_prepared": true,
+    "external_handoff_performed": true,
+    "governance_adopted": true,
+    "returned_rereview_received": true,
+    "returned_rereview_recorded": true
+  },
+  "next_governance_requirement": "Any active Schema V2 materialization or downstream accounting, analyzer, baseline, or repair activity requires a separate explicit authorization.",
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "status": "CORRECTIVE_SUCCESSOR_GOVERNANCE_ADOPTED_NO_OPERATIONAL_AUTHORIZATION"
+}
