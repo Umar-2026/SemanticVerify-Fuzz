@@ -1,0 +1,92 @@
+{
+  "artifact_id": "SVF-D0234-B1-ACCOUNTING-SOURCE-DOMAIN-ACQUISITION-AUTHORIZATION-V1",
+  "authorization": {
+    "authorization_scope": "EXACT_TWO_SOURCE_BOUNDED_ACCOUNTING_SOURCE_AND_DOMAIN_ACQUISITION",
+    "authorized_source_ids": [
+      "ENUMERATION",
+      "TRACEABILITY"
+    ],
+    "b1_authorized": true,
+    "b1_execution_performed_by_d0234": false,
+    "canonicalize_derived_b1_records_under_d0227_rules": true,
+    "create_new_source_unit_carrier_mapping": false,
+    "cross_source_join": false,
+    "derive_source_local_req06_req14_domain_input_records": true,
+    "expand_source_scope": false,
+    "package_b1_outputs_with_detached_hashes": true,
+    "parse_each_source_locally": true,
+    "read_exact_checksum_bound_source_bytes": true,
+    "record_source_byte_identity_and_provenance": true,
+    "use_unlisted_external_sources": false
+  },
+  "authorization_basis": {
+    "d0227_manifest_sha256": "db90747fb8f586992c524e5c541a1414bb12349b874ca4fa8a709c4ae0f17ab8",
+    "d0233_commit": "0db3754bb07e27b5895c15d3b2dddb05009ac647",
+    "d0233_decision_sha256": "4e76df6ab2ca7d9e95a299fa2464acd2a4e8ecaa527ac997114469ca64bedc21",
+    "d0233_design_record_sha256": "2c9038e42d3969ccfab541eccbd929a632318c88908493c08b13520919a80c3c",
+    "d0233_manifest_sha256": "c608ad15a5a345cb0f525389cb70c9a478057c3e44fa265538ed259a150ccc0b",
+    "d0233_parent": "e650ab69a7d9e450440f282514b6577a48269b3c",
+    "d0233_tree": "7dd9f21c914b41b9ad2d802fdf77561553e87dd4",
+    "phase": "B1",
+    "selected_track": "B"
+  },
+  "b1_output_boundary": {
+    "may_acquire_forward_witness": false,
+    "may_acquire_reverse_witness": false,
+    "may_assert_domain_frozen": false,
+    "may_create_concrete_source_unit_carrier_mapping": false,
+    "may_create_domain_freeze_commit": false,
+    "may_create_domain_freeze_record": false,
+    "may_determine_req06_req14_satisfaction": false,
+    "may_determine_req06_req14_violation": false,
+    "may_join_enumeration_and_traceability_records": false,
+    "may_reclassify_pairs": false,
+    "may_record_detached_hashes": true,
+    "may_record_source_local_domain_inputs": true,
+    "may_record_source_local_provenance": true
+  },
+  "decision": "0234",
+  "execution_constraint": {
+    "additional_execution_package_requires_new_authorization": true,
+    "canonical_sources_must_remain_unmodified": true,
+    "d0227_exact_source_copies_must_remain_unmodified": true,
+    "d0235_exists_at_d0234_authorization_time": false,
+    "designated_future_execution_package": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0235_b1_accounting_source_domain_acquisition_v1",
+    "future_execution_decision_required": true,
+    "write_scope_limited_to_future_b1_execution_package": true
+  },
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_materialization": false,
+    "active_schema_v2_modification": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "domain_freeze": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "later_phase_authorization": {
+    "B2_complete_accounting_domain_freeze": false,
+    "B3_forward_witness_acquisition": false,
+    "B4_reverse_witness_acquisition": false,
+    "B5_concrete_source_unit_carrier_mapping": false,
+    "B6_req06_req14_accounting_satisfaction_determination": false,
+    "B7_pair_reclassification_if_justified": false
+  },
+  "next_governance_requirement": "Read-only verification of D0234 is required before any separately authored D0235 B1 execution package may read or parse the authorized source bytes.",
+  "operational_authorization_created": true,
+  "operational_execution_performed": false,
+  "status": "B1_ACCOUNTING_SOURCE_AND_DOMAIN_ACQUISITION_AUTHORIZED_NOT_EXECUTED",
+  "substantive_results_established_by_d0234": {
+    "accounting_domain_completeness": false,
+    "forward_witness_existence": false,
+    "mapping_completeness": false,
+    "req06_req14_satisfaction": false,
+    "req06_req14_violation": false,
+    "reverse_witness_existence": false,
+    "schema_v2_semantic_losslessness": false
+  }
+}
