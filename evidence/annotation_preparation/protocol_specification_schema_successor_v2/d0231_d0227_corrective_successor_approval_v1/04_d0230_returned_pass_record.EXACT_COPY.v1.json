@@ -1,0 +1,96 @@
+{
+  "artifact_id": "SVF-D0230-CONFIRMED-HANDOFF-RETURNED-D0227-PASS-REREVIEW-V1",
+  "decision": "0230",
+  "explicit_nonauthorization": {
+    "accounting_satisfaction_determination": false,
+    "active_schema_v2_modification": false,
+    "actual_accounting_evidence_acquisition": false,
+    "actual_domain_acquisition": false,
+    "actual_domain_freeze": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "handoff": {
+    "delivery_channel": null,
+    "delivery_channel_known": false,
+    "delivery_recipient_metadata_explicitly_recorded": false,
+    "evidence_basis": "Returned signed independent human re-review contains package-specific technical findings and therefore establishes that the governed review material was received and reviewed.",
+    "exact_handoff_timestamp_known": false,
+    "export_path": "/openbayes/home/D0229_D0227_ASER04_ASER07_Independent_Human_Rereview_Package_35f94ae.v1.zip",
+    "export_sha256": "b4d4b3e5e314b2918e244026b3984f99d1441e06cdaa0b393b38cbbaf436b93a",
+    "export_size_bytes": 12573199,
+    "external_handoff_performed": true,
+    "handoff_timestamp": null,
+    "reviewer_identity_recorded_from_returned_review": true
+  },
+  "lifecycle_after_d0230": {
+    "corrective_successor_approved": false,
+    "external_handoff_authorized": true,
+    "external_handoff_export_prepared": true,
+    "external_handoff_performed": true,
+    "governance_adopted": false,
+    "returned_rereview_received": true,
+    "returned_rereview_recorded": true
+  },
+  "lineage": {
+    "d0227_corrective_successor_commit": "c810519ddced4f66373aae1731856b9856620994",
+    "d0227_corrective_successor_manifest_sha256": "db90747fb8f586992c524e5c541a1414bb12349b874ca4fa8a709c4ae0f17ab8",
+    "d0228_review_package_commit": "35f94ae640aa0456b99b873f9ee635a47d7700a2",
+    "d0228_review_package_manifest_sha256": "f0772bfb024fa6fce885ef35d65d17922f0fd4ca4bac65388063013cc1612a42",
+    "d0229_authorization_record_sha256": "079df35fc2271f365918dfa8105eca8bcbd26790a6ee33c7060379d4b0636f64",
+    "d0229_decision_sha256": "76b074dd0115da7712223290a2beb5b69abcd597003bf7c48ca1af4876e96cf9",
+    "d0229_handoff_authorization_commit": "f6bd7ebe9fa20defb17045ea2a257ac5cc505c32",
+    "d0229_handoff_authorization_tree": "847346bc80864f0ea39da69793d241e85a99a0ad",
+    "d0229_package_manifest_sha256": "b274e05868ef3d0b226c79164354bf31020d34aafd271ade5c2d21cd5909e06c"
+  },
+  "next_governance_requirement": "A separate explicit governance decision is required to approve or adopt the D0227 corrective successor.",
+  "preserved_pass_items": [
+    "ASER01",
+    "ASER02",
+    "ASER03",
+    "ASER05",
+    "ASER06",
+    "ASER08",
+    "ASER09"
+  ],
+  "returned_rereview": {
+    "bounded_pass_scope": "SPECIFICATION_SUFFICIENCY_ONLY",
+    "corrective_scope": [
+      "ASER04",
+      "ASER07"
+    ],
+    "decisions": {
+      "ASER04": "PASS",
+      "ASER07": "PASS",
+      "overall": "PASS"
+    },
+    "exact_copy_path": "01_returned_independent_human_rereview.EXACT_COPY.v1.md",
+    "received": true,
+    "recorded": true,
+    "review_target": "Decision0227",
+    "reviewer": {
+      "confirmation_signature": "MN_Lodhi",
+      "independence_attestation_checked": true,
+      "name": "Muhammad Nadeem Nadir",
+      "review_date": "05/September/2026",
+      "review_date_is_handoff_timestamp": false,
+      "role": "Spec-Tech-Reviewer-1"
+    },
+    "sha256": "357e5af3944d6a2ed9b47f28af395e02f2903acd29760fee1f6782f366f46fad",
+    "size_bytes": 4895,
+    "technical_findings_resolved": true
+  },
+  "review_does_not_establish": {
+    "new_accounting_evidence": true,
+    "new_domain_acquisition": true,
+    "req06_req14_satisfaction": true,
+    "req06_req14_violation": true,
+    "schema_v2_semantic_losslessness": true
+  },
+  "status": "CONFIRMED_HANDOFF_AND_RETURNED_PASS_REREVIEW_RECORDED_NOT_YET_APPROVED_OR_ADOPTED"
+}
