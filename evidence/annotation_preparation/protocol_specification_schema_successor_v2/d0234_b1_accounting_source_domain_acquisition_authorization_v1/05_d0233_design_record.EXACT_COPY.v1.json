@@ -1,0 +1,141 @@
+{
+  "artifact_id": "SVF-D0233-REQ06-REQ14-ACCOUNTING-AUTHORIZATION-DESIGN-V1",
+  "d0233_does_not_establish": {
+    "accounting_domain_completeness": true,
+    "forward_witness_existence": true,
+    "mapping_completeness": true,
+    "pair_reclassification": true,
+    "req06_req14_satisfaction": true,
+    "req06_req14_violation": true,
+    "reverse_witness_existence": true,
+    "schema_v2_semantic_losslessness": true
+  },
+  "decision": "0233",
+  "design_principles": {
+    "accounting_acquisition_separate_from_determination": true,
+    "accounting_determination_requires_explicit_authorization": true,
+    "concrete_mapping_requires_explicit_authorization": true,
+    "domain_freeze_requires_explicit_authorization": true,
+    "forward_witness_requires_explicit_authorization": true,
+    "pair_reclassification_requires_post_determination_authorization": true,
+    "reverse_witness_requires_explicit_authorization": true,
+    "track_A_must_not_imply_track_B": true,
+    "track_B_must_not_imply_track_A": true
+  },
+  "excluded_track": {
+    "authorized_for_execution": false,
+    "must_be_separately_authorized": true,
+    "name": "ACTIVE_SCHEMA_V2_MATERIALIZATION",
+    "selected_for_design": false,
+    "track_id": "A"
+  },
+  "explicit_nonauthorization": {
+    "accounting_domain_acquisition": false,
+    "accounting_domain_freeze": false,
+    "accounting_satisfaction_determination": false,
+    "accounting_source_acquisition": false,
+    "active_schema_v2_materialization": false,
+    "active_schema_v2_modification": false,
+    "analyzer": false,
+    "baseline": false,
+    "concrete_mapping_creation": false,
+    "forward_witness_acquisition": false,
+    "pair_reclassification": false,
+    "repair": false,
+    "reverse_witness_acquisition": false
+  },
+  "future_authorization_ladder": [
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": false,
+      "may_reclassify_pairs": false,
+      "name": "ACCOUNTING_SOURCE_AND_DOMAIN_ACQUISITION",
+      "phase_id": "B1",
+      "purpose": "Acquire only explicitly authorized Req06/Req14 accounting source/domain inputs under checksum-bound provenance."
+    },
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": false,
+      "may_reclassify_pairs": false,
+      "name": "COMPLETE_ACCOUNTING_DOMAIN_FREEZE",
+      "phase_id": "B2",
+      "purpose": "Freeze the complete governed accounting domain after acquisition, using an independently checkable freeze record."
+    },
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": false,
+      "may_reclassify_pairs": false,
+      "name": "FORWARD_WITNESS_ACQUISITION",
+      "phase_id": "B3",
+      "purpose": "Acquire forward accounting witnesses only after a valid distinct domain freeze."
+    },
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": false,
+      "may_reclassify_pairs": false,
+      "name": "REVERSE_WITNESS_ACQUISITION",
+      "phase_id": "B4",
+      "purpose": "Acquire reverse accounting witnesses independently of forward-witness conclusions."
+    },
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": false,
+      "may_reclassify_pairs": false,
+      "name": "CONCRETE_SOURCE_UNIT_CARRIER_MAPPING",
+      "phase_id": "B5",
+      "purpose": "Construct concrete checksum-bound source-unit to carrier mappings only from authorized frozen inputs and witnesses."
+    },
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": true,
+      "may_reclassify_pairs": false,
+      "name": "REQ06_REQ14_ACCOUNTING_SATISFACTION_DETERMINATION",
+      "phase_id": "B6",
+      "purpose": "Evaluate Req06/Req14 accounting satisfaction only after B1-B5 have separately completed and been verified."
+    },
+    {
+      "authorized_by_d0233": false,
+      "future_authorization_required": true,
+      "may_determine_satisfaction": false,
+      "may_reclassify_pairs": true,
+      "name": "PAIR_RECLASSIFICATION_IF_JUSTIFIED",
+      "phase_id": "B7",
+      "purpose": "Permit pair reclassification only under a separate post-determination authorization if a verified accounting result requires it."
+    }
+  ],
+  "governance_basis": {
+    "adopted_successor": "D0227",
+    "d0227_commit": "c810519ddced4f66373aae1731856b9856620994",
+    "d0227_manifest_sha256": "db90747fb8f586992c524e5c541a1414bb12349b874ca4fa8a709c4ae0f17ab8",
+    "d0227_tree": "80423c933bbe3906d251039bad78cab5ac01b8d9",
+    "d0232_adoption_record_sha256": "a2b15c064698e98e8ff01d511016275b64fd230a20027dc54d24d5c3490d7dde",
+    "d0232_commit": "e650ab69a7d9e450440f282514b6577a48269b3c",
+    "d0232_decision_sha256": "c56454c341ed66d781b989ad88956fa115535a4807228049c375eb85696f6b01",
+    "d0232_manifest_sha256": "baf93d156185a9981d471207ad928d711161704295e9a101a3cba0580b1cd998",
+    "d0232_parent": "715241558d6e0fed0f1b9f794aa235c798c3341e",
+    "d0232_tree": "cf2db83c9baa3d2ccfb1ca89a3fa8f3cc408db6f",
+    "governance_adopted": true
+  },
+  "next_governance_requirement": "A separate explicit B1 authorization decision is required before any Req06/Req14 accounting source or domain acquisition may occur.",
+  "operational_effect": false,
+  "recommended_next_future_authorization": {
+    "authorization_created_by_d0233": false,
+    "execution_created_by_d0233": false,
+    "must_be_authored_as_separate_future_governance_decision": true,
+    "name": "ACCOUNTING_SOURCE_AND_DOMAIN_ACQUISITION",
+    "phase_id": "B1"
+  },
+  "selected_design_track": {
+    "authorized_for_execution": false,
+    "name": "REQ06_REQ14_ACCOUNTING_WORK",
+    "selected_for_design": true,
+    "track_id": "B"
+  },
+  "status": "AUTHORIZATION_DESIGN_ONLY_NO_OPERATIONAL_AUTHORIZATION"
+}

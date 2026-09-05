@@ -1,0 +1,55 @@
+{
+  "additional_source_acquisition_authorized": false,
+  "artifact_id": "SVF-D0234-B1-SOURCE-IDENTITY-AND-SPEC-BINDING-V1",
+  "authorization_phase": "B1",
+  "d0227_manifest_sha256": "db90747fb8f586992c524e5c541a1414bb12349b874ca4fa8a709c4ae0f17ab8",
+  "governing_d0227_spec_dependencies": [
+    {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/02_accounting_evidence_canonicalization_and_detached_hash_rules.v5.json",
+      "role": "ACCOUNTING_CANONICALIZATION_RULES",
+      "sha256": "8169d6e1f47b0e1bb468a48cde4edffac8792b29f660a27a46a37662edd980a8"
+    },
+    {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/03_canonical_json_string_test_vectors.v1.json",
+      "role": "CANONICAL_JSON_TEST_VECTORS",
+      "sha256": "0da86267f782a9c1630516d946341c2d3ff1770c2588e5f5fbe27f1b6792287f"
+    },
+    {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/06_cross_artifact_machine_invariants.v3.json",
+      "role": "CROSS_ARTIFACT_MACHINE_INVARIANTS",
+      "sha256": "91284c99ad85ca939e3f250fe7f04faf44dd7f3cab5760852356305eecb0f580"
+    },
+    {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/07_existing_source_copy_provenance.v1.json",
+      "role": "EXISTING_SOURCE_COPY_PROVENANCE",
+      "sha256": "b70f4501938bf11002e6b25d2159fbc900bf2de7b1974d458c64a27c365eaad5"
+    },
+    {
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/14_corrective_successor_boundary.v5.md",
+      "role": "CORRECTIVE_SUCCESSOR_BOUNDARY",
+      "sha256": "b32d73bbde593ca2019b052021dbc04e7e2b02287cd6a6c48ee66d986e98cb80"
+    }
+  ],
+  "primary_sources": [
+    {
+      "canonical_and_d0227_copy_byte_equal": true,
+      "canonical_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser01_aser02_aser04_aser07/enumeration_sources_exact/01_semantic_unit_carrier_admissibility_matrix.v1.json",
+      "d0227_exact_copy_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/existing_source_copies_exact/01_semantic_unit_enumeration_source.EXACT_COPY.v1.json",
+      "git_blob": "b50e1bb81f7eb8842c7bdc9bd5cb9df5a56ed861",
+      "sha256": "44a6e8169f8515921a980cb727e106281f47bbe1a6bc9672e16146bab2832a12",
+      "size_bytes": 11704978,
+      "source_id": "ENUMERATION"
+    },
+    {
+      "canonical_and_d0227_copy_byte_equal": true,
+      "canonical_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_semantic_role_relation_formalization_v1/03_v4_semantic_unit_context_and_leaf_traceability.v1.json",
+      "d0227_exact_copy_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_satisfaction_evidence_gap_and_acquisition_specification_study_v2_corrective_successor_for_aser04_aser07_remaining_findings_revision_v5/existing_source_copies_exact/02_semantic_unit_traceability_source.EXACT_COPY.v1.json",
+      "git_blob": "877225ffab98272684726b8a1caf5db5fe0946e5",
+      "sha256": "6b4b30c958bc1e1dd0896fe086205e3ff58063583b2042bba962c8c59ba46bd4",
+      "size_bytes": 732713,
+      "source_id": "TRACEABILITY"
+    }
+  ],
+  "source_identity_record_is_not_b1_execution": true,
+  "source_scope_closed": true
+}
