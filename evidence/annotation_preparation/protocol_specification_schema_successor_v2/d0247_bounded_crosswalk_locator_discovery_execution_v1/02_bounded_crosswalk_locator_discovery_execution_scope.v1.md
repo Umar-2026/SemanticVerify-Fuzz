@@ -1,0 +1,54 @@
+# D0247 Bounded Crosswalk Locator Discovery Execution Scope V1
+
+Status: `EXECUTED — METADATA-ONLY LOCATOR DISCOVERY`
+
+D0247 executes the exact replacement discovery authorization frozen by D0246.
+
+Exactly three bound Git tree objects were enumerated once each using non-recursive tree metadata enumeration.
+
+`D0247_ROOT_ENUMERATION_COUNT=3`
+`D0247_ENUMERATED_IMMEDIATE_CHILD_COUNT=21`
+`D0247_LEXICAL_CANDIDATE_COUNT=10`
+`D0247_LEXICAL_NONCANDIDATE_COUNT=11`
+
+No discovered child file content was opened or read.
+
+`D0247_FILE_CONTENT_READ=NO`
+`D0247_DISCOVERED_FILE_BYTE_HASH_RECOMPUTATION=NO`
+`D0247_SUBDIRECTORY_RECURSION=NO`
+`D0247_FOLLOW_CANDIDATE=NO`
+`D0247_FOLLOW_SYMLINK=NO`
+`D0247_REFERENCED_TARGET_OPEN=NO`
+`D0247_REPOSITORY_WIDE_SEARCH=NO`
+`D0247_GIT_HISTORY_SEARCH=NO`
+`D0247_EXTERNAL_NETWORK_ACCESS=NO`
+`D0247_SEMANTIC_INTERPRETATION=NO`
+`D0247_CROSS_SOURCE_JOIN=NO`
+`D0247_CONCRETE_MAPPING=NO`
+
+Lexical candidates are locator candidates only. They do not establish source authority, semantic crosswalk validity, evidence adequacy, admissibility, or Req06/Req14 satisfaction.
+
+## Lexical candidate locators
+
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/06_verify_completed_human_positive_binding_evidence_record_v1.py`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/07_completed_human_positive_binding_evidence_record_v1.SHA256SUMS`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/02_returned_packet_source_binding.v1.json`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/06_verify_completed_human_technical_adjudication_record.v1.py`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/07_completed_human_technical_adjudication_record.v1.SHA256SUMS`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/06_verify_bounded_supported_binding_successor.v1.py`
+- `evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/07_bounded_supported_binding_successor.v1.SHA256SUMS`
+
+`C2_AUTHORIZED=NO`
+`C2_EXECUTED=NO`
+`C3_AUTHORIZED=NO`
+
+`B2_READINESS_ESTABLISHED=NO`
+`B2_AUTHORIZED=NO`
+`B2_EXECUTED=NO`
+
+Next required checkpoint:
+
+`SEPARATE_READ_ONLY_LOCATOR_CANDIDATE_QUALIFICATION_AND_IDENTITY_BINDING`
