@@ -1,0 +1,5 @@
+{"identity_verified":true,"source_record":"D0258","stage":"LOAD_AND_BIND_D0258_FROZEN_RESULT_RECORD"}
+{"identity_verified":true,"source_record":"D0260","stage":"LOAD_AND_BIND_D0260_FROZEN_RESULT_RECORD"}
+{"identity_verified":true,"source_record":"D0262","stage":"LOAD_AND_BIND_D0262_FROZEN_RESULT_RECORD"}
+{"candidate_index":8,"characterization_result":"DISCREPANCY_BASIS_CHARACTERIZED","discrepancy_basis_class":"MULTI_FACTOR_DIVERGENCE","stage":"CHARACTERIZE_CANDIDATE_008_DISCREPANCY_BASIS"}
+{"candidate_index":9,"characterization_result":"DISCREPANCY_BASIS_CHARACTERIZED","discrepancy_basis_class":"MULTI_FACTOR_DIVERGENCE","stage":"CHARACTERIZE_CANDIDATE_009_DISCREPANCY_BASIS"}
