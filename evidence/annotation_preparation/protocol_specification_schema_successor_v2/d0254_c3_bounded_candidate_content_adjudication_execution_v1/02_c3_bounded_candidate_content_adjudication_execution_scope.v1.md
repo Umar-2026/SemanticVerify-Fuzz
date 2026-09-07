@@ -1,0 +1,29 @@
+# D0254 C3 bounded candidate content adjudication execution
+
+- Authorization source: D0253 `7057c8a655229f2265ea120a1d6945d5afe092fc`.
+- Frozen D0251 snapshot universe: 10 candidates.
+- Snapshot-universe SHA-256: `dbb16ce946761f76490f86ee7f72a8be3871a72f3ea3c3d25d28ffb67307d7b5`.
+- Execution-mapping SHA-256: `04e0c3cfe4ffc59d3508e89c964edff61ef1645a3acd95ed6caf3b59a3977a79`.
+- Adjudication-logic SHA-256: `e12fa090ce097613d06a4b396270fe60c82358b7f7f98893d35511a42639e14c`.
+- Exact frozen snapshot reads performed: 10.
+- Original source blobs reopened: NO.
+- Repository-wide search: NO.
+- Git-history search: NO.
+- Network access: NO.
+- Reference following: NO.
+- Snapshot Python execution/import: NO.
+- C3 adjudication executed: YES.
+- Qualifying under bounded evidence: 0.
+- Does not qualify under bounded evidence: 1.
+- Indeterminate under bounded evidence: 9.
+- Result scope is limited to the exact ten frozen D0251 snapshots.
+- No repository-wide or external-source negative proof is established.
+- No authoritative Class06 source instance is automatically bound for operational use.
+- No C2 source-instance allowlist is automatically bound.
+- Req06/Req14 determination: NOT PERFORMED.
+- C4 authorization/execution: NO.
+- C5 authorization/execution: NO.
+- C6 authorization/execution: NO.
+- B2 readiness: NOT ESTABLISHED.
+- B2 authorization/execution: NO.
+- Next required checkpoint: independent read-only verification of D0254.
