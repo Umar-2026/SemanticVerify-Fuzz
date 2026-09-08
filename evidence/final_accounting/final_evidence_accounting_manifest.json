@@ -1,0 +1,26 @@
+{
+  "decision": "D0281",
+  "role": "FINAL_EVIDENCE_ACCOUNTING_MANIFEST",
+
+  "source_chain": {
+    "D0276": "02d8aaaf36fc6888b949fd4bf97ac8d8d24c8089",
+    "D0277_AUTHORIZATION": "9b7f85ce8fec675d45ea6274bafb240add3e032d",
+    "D0277_EXECUTION": "9ed3f5f5530b5e56103e964d7ea301f8c078719e",
+    "D0279": "7482da6f8634a5ac2c861ef98673186ee977d8ff",
+    "D0280": "4e9784cc10fff5e991fefc9c231eec695a13d5df"
+  },
+
+  "evidence_source": "D0276_MATERIALIZED_UNITS_ONLY",
+
+  "snapshot_reread": false,
+  "new_evidence": false,
+  "evidence_mutation": false,
+  "label_mutation": false,
+
+  "downstream_evaluation_authorized": true,
+
+  "freeze_status": {
+    "final_evidence_accounting_manifest_frozen": true,
+    "source_evidence_preserved": true
+  }
+}
