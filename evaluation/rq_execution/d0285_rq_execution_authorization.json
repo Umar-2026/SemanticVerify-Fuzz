@@ -1,0 +1,32 @@
+{
+  "decision": "D0285",
+  "role": "RQ_EVALUATION_EXECUTION_AUTHORIZATION",
+
+  "source": "D0284_FROZEN_EVALUATION_DATASET",
+
+  "authorized": true,
+
+  "research_questions": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ5"
+  ],
+
+  "allowed_operations": [
+    "experiment_execution",
+    "metric_computation",
+    "result_recording",
+    "evaluation_report_generation"
+  ],
+
+  "forbidden_operations": [
+    "new_evidence",
+    "evidence_mutation",
+    "dataset_mutation",
+    "label_mutation",
+    "repair_execution"
+  ],
+
+  "execution_started": false
+}
