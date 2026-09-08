@@ -1,0 +1,24 @@
+{
+  "decision": "D0277",
+  "role": "POSITIONAL_ADJUDICATION_RESULT",
+  "parent_commit": "9b7f85ce8fec675d45ea6274bafb240add3e032d",
+  "input_source": "D0276_MATERIALIZED_UNITS_ONLY",
+  "snapshot_reread": false,
+  "new_evidence": false,
+  "target_rejudgment": false,
+  "global_positional_status_assigned": false,
+  "candidate_results": [
+    {
+      "candidate_index": 6,
+      "positional_status": "INDETERMINATE"
+    },
+    {
+      "candidate_index": 8,
+      "positional_status": "INDETERMINATE"
+    },
+    {
+      "candidate_index": 9,
+      "positional_status": "INDETERMINATE"
+    }
+  ]
+}
