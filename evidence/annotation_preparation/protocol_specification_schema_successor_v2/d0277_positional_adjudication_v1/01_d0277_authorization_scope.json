@@ -1,0 +1,25 @@
+{
+  "decision": "D0277",
+  "role": "POSITIONAL_ADJUDICATION_AUTHORIZATION_ONLY",
+  "parent": "D0276",
+  "parent_commit": "02d8aaaf36fc6888b949fd4bf97ac8d8d24c8089",
+  "authorized": true,
+  "executed": false,
+  "snapshot_read": false,
+  "materialization": false,
+  "new_evidence": false,
+  "target_rejudgment": false,
+  "allowed_candidates": [6,8,9],
+  "allowed_output_status": [
+    "INDETERMINATE",
+    "NOT_REQUIRED",
+    "REQUIRED"
+  ],
+  "constraints": {
+    "D0251_reread": false,
+    "analyzer": false,
+    "baseline": false,
+    "repair": false,
+    "global_status_assignment": false
+  }
+}
