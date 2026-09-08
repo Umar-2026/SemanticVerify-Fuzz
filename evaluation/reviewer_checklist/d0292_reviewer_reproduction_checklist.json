@@ -1,0 +1,39 @@
+{
+  "decision": "D0292",
+  "role": "REVIEWER_REPRODUCTION_CHECKLIST_MANIFEST",
+
+  "source": "D0291_ARTIFACT_AVAILABILITY_STATEMENT",
+
+  "checklist_generated": true,
+
+  "reproduction_steps": [
+    "environment_setup",
+    "artifact_download",
+    "dataset_validation",
+    "experiment_execution",
+    "result_verification",
+    "provenance_validation"
+  ],
+
+  "rq_mapping": {
+    "RQ1": "defect_prevalence_reproduction",
+    "RQ2": "detection_performance_reproduction",
+    "RQ3": "path_sensitive_effectiveness_reproduction",
+    "RQ5": "cross_library_generalization_reproduction"
+  },
+
+  "provenance_chain": {
+    "D0291": "ef42d50",
+    "D0290": "902b1b0",
+    "D0289": "94eaa6f"
+  },
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "result_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
