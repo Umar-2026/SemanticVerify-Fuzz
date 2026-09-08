@@ -1,0 +1,29 @@
+{
+  "decision": "D0287",
+  "role": "RQ_EVALUATION_RESULT_FREEZE_MANIFEST",
+
+  "source": "D0286_RQ_EVALUATION_EXECUTION",
+
+  "results_frozen": true,
+
+  "frozen_results": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ5"
+  ],
+
+  "freeze_operations": [
+    "result_manifest_generation",
+    "metric_recording",
+    "experiment_output_freeze"
+  ],
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
