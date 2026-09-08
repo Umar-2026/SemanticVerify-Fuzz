@@ -1,0 +1,32 @@
+{
+  "decision": "D0291",
+  "role": "ARTIFACT_AVAILABILITY_STATEMENT_MANIFEST",
+
+  "source": "D0290_PUBLICATION_EVIDENCE_PACKAGE",
+
+  "statement_generated": true,
+
+  "availability_scope": [
+    "source_code",
+    "evaluation_dataset",
+    "experiment_configuration",
+    "evaluation_results",
+    "provenance_records"
+  ],
+
+  "provenance_chain": {
+    "D0290": "902b1b0",
+    "D0289": "94eaa6f",
+    "D0288": "80b3434",
+    "D0287": "30d0d80"
+  },
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "result_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
