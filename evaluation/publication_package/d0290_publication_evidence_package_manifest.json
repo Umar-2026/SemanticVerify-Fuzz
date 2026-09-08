@@ -1,0 +1,33 @@
+{
+  "decision": "D0290",
+  "role": "PUBLICATION_EVIDENCE_PACKAGE_MANIFEST",
+
+  "source": "D0289_PAPER_RESULTS_TRACEABILITY_MANIFEST",
+
+  "package_frozen": true,
+
+  "included_artifacts": [
+    "D0284_FROZEN_EVALUATION_DATASET",
+    "D0287_RQ_EVALUATION_RESULTS",
+    "D0288_FINAL_EVALUATION_REPORT_MANIFEST",
+    "D0289_PAPER_RESULTS_TRACEABILITY_MANIFEST"
+  ],
+
+  "provenance_chain": {
+    "D0289": "94eaa6f",
+    "D0288": "80b3434",
+    "D0287": "30d0d80",
+    "D0286": "1b2d549",
+    "D0284": "344c902",
+    "D0281": "2974826"
+  },
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "result_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
