@@ -1,0 +1,30 @@
+{
+  "decision": "D0283",
+  "role": "EVALUATION_DATASET_CONSTRUCTION_EXECUTION",
+
+  "source": "D0281_FINAL_EVIDENCE_ACCOUNTING_MANIFEST",
+
+  "dataset_constructed": true,
+
+  "operations": [
+    "dataset_index_creation",
+    "evidence_reference_mapping",
+    "evaluation_metadata_generation"
+  ],
+
+  "forbidden_executions": {
+    "new_evidence": false,
+    "snapshot_reread": false,
+    "evidence_mutation": false,
+    "label_mutation": false,
+    "analyzer_execution": false,
+    "repair_execution": false
+  },
+
+  "evaluation_targets": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ5"
+  ]
+}
