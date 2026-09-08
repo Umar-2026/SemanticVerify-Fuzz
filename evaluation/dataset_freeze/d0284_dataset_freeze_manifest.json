@@ -1,0 +1,23 @@
+{
+  "decision": "D0284",
+  "role": "EVALUATION_DATASET_FREEZE_MANIFEST",
+
+  "source": "D0283_EVALUATION_DATASET_CONSTRUCTION",
+
+  "dataset_frozen": true,
+
+  "freeze_operations": [
+    "dataset_manifest_generation",
+    "dataset_hash_recording",
+    "experiment_input_freeze"
+  ],
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "snapshot_reread": false,
+    "evidence_mutation": false,
+    "label_mutation": false,
+    "analyzer_execution": false,
+    "repair_execution": false
+  }
+}
