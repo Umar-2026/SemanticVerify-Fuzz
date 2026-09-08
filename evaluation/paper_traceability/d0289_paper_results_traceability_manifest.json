@@ -1,0 +1,45 @@
+{
+  "decision": "D0289",
+  "role": "PAPER_RESULTS_TRACEABILITY_MANIFEST",
+
+  "source": "D0288_FINAL_EVALUATION_REPORT_MANIFEST",
+
+  "traceability_generated": true,
+
+  "mapping": {
+    "RQ1": {
+      "claim": "API protocol violation prevalence characterization",
+      "paper_section": "Experimental Results - RQ1"
+    },
+
+    "RQ2": {
+      "claim": "SemanticVerify-Fuzz detection performance",
+      "paper_section": "Experimental Results - RQ2"
+    },
+
+    "RQ3": {
+      "claim": "Path-sensitive verification effectiveness",
+      "paper_section": "Experimental Results - RQ3"
+    },
+
+    "RQ5": {
+      "claim": "Cross-library generalization capability",
+      "paper_section": "Experimental Results - RQ5"
+    }
+  },
+
+  "artifact_chain": {
+    "D0288": "80b3434",
+    "D0287": "30d0d80",
+    "D0286": "1b2d549",
+    "D0284": "344c902"
+  },
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "result_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
