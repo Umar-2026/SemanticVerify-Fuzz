@@ -1,0 +1,32 @@
+{
+  "decision": "D0282",
+  "role": "EVALUATION_DATASET_CONSTRUCTION_AUTHORIZATION",
+
+  "source": "D0281_FINAL_EVIDENCE_ACCOUNTING_MANIFEST",
+
+  "source_frozen": true,
+
+  "operations": [
+    "dataset_index_creation",
+    "evaluation_metadata_generation",
+    "experiment_input_mapping"
+  ],
+
+  "forbidden": [
+    "new_evidence",
+    "snapshot_reread",
+    "evidence_mutation",
+    "label_mutation",
+    "analyzer_execution",
+    "repair_execution"
+  ],
+
+  "evaluation_targets": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ5"
+  ],
+
+  "authorized": true
+}
