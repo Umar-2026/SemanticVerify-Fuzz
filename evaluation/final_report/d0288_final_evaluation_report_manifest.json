@@ -1,0 +1,30 @@
+{
+  "decision": "D0288",
+  "role": "FINAL_EVALUATION_REPORT_MANIFEST",
+
+  "source": "D0287_RQ_EVALUATION_RESULT_FREEZE",
+
+  "report_generated": true,
+
+  "research_question_mapping": {
+    "RQ1": "defect_prevalence_evaluation",
+    "RQ2": "detection_performance_evaluation",
+    "RQ3": "path_sensitive_effectiveness_evaluation",
+    "RQ5": "cross_library_generalization_evaluation"
+  },
+
+  "provenance_chain": {
+    "D0287": "30d0d80",
+    "D0286": "1b2d549",
+    "D0284": "344c902",
+    "D0281": "2974826"
+  },
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
