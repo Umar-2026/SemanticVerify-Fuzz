@@ -1,0 +1,29 @@
+{
+  "decision": "D0286",
+  "role": "RQ_EVALUATION_EXECUTION_RESULT",
+
+  "source": "D0284_FROZEN_EVALUATION_DATASET",
+
+  "execution_completed": true,
+
+  "research_questions": {
+    "RQ1": "executed",
+    "RQ2": "executed",
+    "RQ3": "executed",
+    "RQ5": "executed"
+  },
+
+  "operations": [
+    "analyzer_execution",
+    "metric_computation",
+    "result_recording"
+  ],
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "evidence_mutation": false,
+    "dataset_mutation": false,
+    "label_mutation": false,
+    "repair_execution": false
+  }
+}
