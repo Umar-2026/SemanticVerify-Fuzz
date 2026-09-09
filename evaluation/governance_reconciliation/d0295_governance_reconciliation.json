@@ -1,0 +1,21 @@
+{
+  "decision": "D0295",
+
+  "role": "SCHEMA_V2_GOVERNANCE_RECONCILIATION",
+
+  "authoritative_activation": "Decision-0066",
+
+  "schema_v2_status": "ALREADY_ACTIVE",
+
+  "duplicate_activation_resolution": "NON_AUTHORITATIVE_RECORD",
+
+  "forbidden_operations": {
+    "schema_mutation": false,
+    "hash_contract_mutation": false,
+    "dispatch_mutation": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "result_mutation": false,
+    "repair_execution": false
+  }
+}
