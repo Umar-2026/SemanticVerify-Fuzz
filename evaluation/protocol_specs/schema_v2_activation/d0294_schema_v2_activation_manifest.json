@@ -1,0 +1,42 @@
+{
+  "decision": "D0294",
+
+  "role": "SCHEMA_V2_ACTIVATION_MANIFEST",
+
+  "source": "D0293_PROTOCOL_SPECIFICATION_REPAIR",
+
+  "schema_version": "V2",
+
+  "activation": true,
+
+  "canonical_representation": true,
+
+  "supported_libraries": [
+    "zlib",
+    "libpcap"
+  ],
+
+  "activation_scope": [
+    "obligation_representation",
+    "resource_model",
+    "protocol_state_model",
+    "defect_mapping"
+  ],
+
+  "provenance_chain": {
+    "D0293": "CURRENT",
+    "D0292": "34612fb",
+    "D0291": "ef42d50",
+    "D0290": "902b1b0"
+  },
+
+  "forbidden_operations": {
+    "new_evidence": false,
+    "dataset_mutation": false,
+    "evidence_mutation": false,
+    "result_mutation": false,
+    "label_mutation": false,
+    "analyzer_execution": false,
+    "repair_execution": false
+  }
+}
