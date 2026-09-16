@@ -1,0 +1,11 @@
+{
+  "population": 487,
+  "outcomes": {
+    "VALID": 414,
+    "UNKNOWN": 73
+  },
+  "percentages": {
+    "VALID": 85.01,
+    "UNKNOWN": 14.99
+  }
+}
