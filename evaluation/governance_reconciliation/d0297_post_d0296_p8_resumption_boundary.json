@@ -1,0 +1,139 @@
+{
+  "artifact_id": "SVF-D0297-POST-D0296-P8-RESUMPTION-BOUNDARY-V1",
+  "c4_boundary": {
+    "C4_authorized": false,
+    "C4_entry_readiness_established": false,
+    "C4_executed": false,
+    "C4_zero_unresolved_closure_established": false
+  },
+  "decision": "D0297",
+  "downstream_boundary": {
+    "B2_authorized": false,
+    "B2_executed": false,
+    "B2_readiness_established": false,
+    "C5_authorized": false,
+    "C5_executed": false,
+    "C6_authorized": false,
+    "C6_executed": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "repair_authorized": false
+  },
+  "historical_execution_state": {
+    "C1_execution_occurred": true,
+    "C2_execution_occurred": true,
+    "C3_execution_occurred": true,
+    "D0276_D0278_bounded_chain_closed_by_D0279": true,
+    "bounded_post_C3_successor_processing_occurred": true
+  },
+  "next_required_checkpoint": "DESIGN_BOUNDED_PRE_C4_SUCCESSOR_FOR_REMAINING_GOVERNED_INDETERMINACY_WITHOUT_EXECUTION_AUTHORIZATION",
+  "observed_governed_indeterminacy": {
+    "D0270_sufficiency_indeterminate_candidates": [
+      1,
+      2
+    ],
+    "D0278_global_positional_status_assigned": false,
+    "D0278_positional_indeterminate_candidates": [
+      6,
+      8,
+      9
+    ],
+    "governance_effect": "THE_CURRENT_RECORD_DOES_NOT_JUSTIFY_INFERRING_C4_ZERO_UNRESOLVED_CLOSURE",
+    "semantic_caution": "THESE_BRANCH_AND_POSITIONAL_INDETERMINATE_RESULTS_ARE_NOT_AUTOMATICALLY_EQUIVALENT_TO_FINAL_CARRIER_ADMISSIBILITY_OUTCOMES"
+  },
+  "protected_boundary": {
+    "Class06_reclassification": false,
+    "D0251_snapshot_content_read_by_D0297": false,
+    "D0276_retained_evidence_content_read_by_D0297": false,
+    "new_evidence_acquisition": false,
+    "one_time_verifier_execution": false,
+    "positional_reassignment": false,
+    "result_reselection": false,
+    "semantic_readjudgment": false
+  },
+  "resumption_classification": "POST_C3_PRE_C4_C4_ZERO_UNRESOLVED_CLOSURE_NOT_ESTABLISHED",
+  "scientific_stage_state": {
+    "P10": "NOT_STARTED",
+    "P11": "NOT_STARTED",
+    "P12": "NOT_STARTED",
+    "P13": "BLOCKED_OUTSIDE_CURRENT_PAPER1_STAGE_A",
+    "P8": "BLOCKED_NOT_COMPLETED",
+    "P9": "NOT_COMPLETED"
+  },
+  "source_checkpoint": {
+    "head": "dc9f0d5403eb333b3ee2706af0428ec40038da2d",
+    "origin_main": "dc9f0d5403eb333b3ee2706af0428ec40038da2d"
+  },
+  "source_decision_bindings": {
+    "D0241": {
+      "git_blob_oid_at_d0297_source_checkpoint": "1792e5e854b0eeada667c055fba2aa2a2fcca57f",
+      "path": "documentation/decisions/0241-design-carrier-admissibility-evidence-closure-before-b2-without-execution-authorization.md",
+      "sha256": "64ca946cc05f8b0295c7e9e6c73600f406a26885ce2d9abc12d1e2a08ea83e7c"
+    },
+    "D0243": {
+      "git_blob_oid_at_d0297_source_checkpoint": "dec5e1be29a08152c45b0671649b4fe09eee8365",
+      "path": "documentation/decisions/0243-execute-c1-exact-existing-evidence-inventory-binding.md",
+      "sha256": "5ffaf3d10e784dc1de0b0bccace10c1b01a747b71ac6d71b6f4242b313c8dc22"
+    },
+    "D0250": {
+      "git_blob_oid_at_d0297_source_checkpoint": "c40d61e02bedff66abe6ae1a9df354c7d91a0886",
+      "path": "documentation/decisions/0250-authorize-c2-bounded-candidate-content-acquisition-without-execution.md",
+      "sha256": "ed01185bd88925561175bdc00d4713eb7d616554ee897a9ab80bdc7daabab55d"
+    },
+    "D0251": {
+      "git_blob_oid_at_d0297_source_checkpoint": "744d4327e149402e031181667c1e23d05b67707a",
+      "path": "documentation/decisions/0251-execute-c2-bounded-candidate-content-acquisition.md",
+      "sha256": "89e237a6db1beba6f90e4b89a7f7ffa49dcb0be36770c4f3860f06d6d8c59234"
+    },
+    "D0253": {
+      "git_blob_oid_at_d0297_source_checkpoint": "9fc181464138fa5129373d0031ba7a8384b9fbe9",
+      "path": "documentation/decisions/0253-authorize-c3-bounded-candidate-content-adjudication-without-execution.md",
+      "sha256": "9700838b89150120bc0a9b1c4ac960b977b8f5ffc46d74d5d2321ebda75104a9"
+    },
+    "D0254": {
+      "git_blob_oid_at_d0297_source_checkpoint": "daee6033b6573901668a18271248fbc45fc0c7f4",
+      "path": "documentation/decisions/0254-execute-c3-bounded-candidate-content-adjudication-from-frozen-d0251-snapshots.md",
+      "sha256": "17951397d4bbcd6673660a457e322769aae3140fc949d8100f2c2fc8ae529d5b"
+    },
+    "D0269": {
+      "git_blob_oid_at_d0297_source_checkpoint": "dc04a38ac12b32c64155bfafe18363cb0b207330",
+      "path": "documentation/decisions/0269-authorize-successor-result-universe-materialization-from-frozen-resolved-components-without-execution.md",
+      "sha256": "2840505df215ed9f3eaeb9415ac6c1edd71543e2012df16a9c4e6827c4a14bda"
+    },
+    "D0270": {
+      "git_blob_oid_at_d0297_source_checkpoint": "b869f8b9c20c1f981e79a45704fe5929412fe9b7",
+      "path": "documentation/decisions/0270-execute-successor-result-universe-materialization-from-frozen-resolved-components.md",
+      "sha256": "4d75ed15e22df13859b1324a3e738096549335e84cdc622cb5e905471761f763"
+    },
+    "D0277": {
+      "git_blob_oid_at_d0297_source_checkpoint": "21202aaa89d8713d22c5da1a08397ba19b9f29d8",
+      "path": "documentation/decisions/0277-authorize-positional-adjudication-after-d0276-freeze-without-execution.md",
+      "sha256": "8a9fe5d0dd06eb0598dc1b1e1d5fd1e482c4cedf817706f1ab0b9d63425bb120"
+    },
+    "D0278": {
+      "git_blob_oid_at_d0297_source_checkpoint": "f3e71dc5054e500b47274c7898d4932b325dc9d9",
+      "path": "documentation/decisions/0278-execute-d0277-positional-adjudication-from-d0276-materialized-evidence-only.md",
+      "sha256": "697a7dfd18a14b6a3df6ff1b2dd4e88f3a038bbebaad3663fe3f4f32cb63e61c"
+    },
+    "D0279": {
+      "git_blob_oid_at_d0297_source_checkpoint": "f8addcbd8f2a8906463ed389725d5a64c5f09963",
+      "path": "documentation/decisions/0279-close-d0276-d0277-bounded-evidence-adjudication-chain.md",
+      "sha256": "efb141cdc8d87a844f6a49654293182f281db4dd8dc6174ba0e35209d943cc63"
+    },
+    "D0280": {
+      "git_blob_oid_at_d0297_source_checkpoint": "9ead765b94fc695a1360ad5335c594e5612ac92a",
+      "path": "documentation/decisions/0280-integrate-closed-d0276-d0279-evidence-chain-into-final-evidence-accounting.md",
+      "sha256": "9814c8f1ae3b95d127353620d440282b2b2025c542e4c572f2471c8dd5b2807d"
+    },
+    "D0296": {
+      "git_blob_oid_at_d0297_source_checkpoint": "c9dbe22e57faa74cd5d7f81d55665e997a574e0f",
+      "path": "documentation/decisions/0296-reconcile-scientific-authority-after-administrative-evaluation-chain-and-exploratory-prototype.md",
+      "sha256": "655c549b4c9d303d528d5c22422372c805376dfa3d8a8aa3a2caaaad5d5b2d0a"
+    }
+  },
+  "status": "AUTHOR_CANDIDATE_NOT_INDEPENDENTLY_VERIFIED_OR_FROZEN"
+}
