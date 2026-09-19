@@ -1,0 +1,148 @@
+{
+  "artifact_id": "SVF-D0298-BOUNDED-PRE-C4-CLOSURE-ACCOUNTING-DESIGN-V1",
+  "authoritative_pre_c4_state": {
+    "C4_entry_readiness_established": false,
+    "C4_zero_unresolved_closure_established": false,
+    "authoritative_candidate_identifier_count": 171,
+    "historical_not_supported_binding_count": 0,
+    "historical_pair_universe_count": 1853,
+    "historical_supported_binding_count": 211,
+    "historical_unresolved_binding_count": 1642,
+    "req06_req14_unresolved_pair_count": 218,
+    "requirement_level_carrier_admissibility_unresolved_count": 17
+  },
+  "decision": "D0298",
+  "design_purpose": "DEFINE_A_BOUNDED_PRE_C4_CLOSURE_ACCOUNTING_SUCCESSOR_WITHOUT_AUTHORIZING_EXECUTION_OR_SEMANTIC_PROMOTION",
+  "explicit_nonauthorization": {
+    "B2_execution": false,
+    "B2_readiness_determination": false,
+    "C4_execution": false,
+    "C5_execution": false,
+    "C6_execution": false,
+    "P10_gold_annotation": false,
+    "P11_analyzer_execution": false,
+    "P11_analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_materialization": false,
+    "positive_v4_to_v2_mapping_execution": false,
+    "pre_c4_closure_accounting_execution": false,
+    "repair_execution": false
+  },
+  "future_successor_design": {
+    "allowed_future_ledger_statuses_if_later_authorized": [
+      "DIRECT_EXPLICIT_CLOSURE_WITNESS_PRESENT",
+      "DIRECT_EXPLICIT_CLOSURE_WITNESS_NOT_ESTABLISHED",
+      "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED"
+    ],
+    "execution_authorized_by_D0298": false,
+    "fail_closed_rule": "IF_ANY_REQUIRED_C4_CLOSURE_RELATION_IS_NOT_EXPLICITLY_ESTABLISHED_THEN_C4_ENTRY_READINESS_REMAINS_FALSE",
+    "phase_name": "PRE_C4_CLOSURE_ACCOUNTING",
+    "post_execution_rule_if_later_authorized": "EVEN_A_ZERO_UNRESOLVED_ACCOUNTING_RESULT_REQUIRES_SEPARATE_INDEPENDENT_VERIFICATION_AND_SEPARATE_C4_AUTHORIZATION",
+    "prohibited_future_shortcuts": [
+      "PROMOTE_D0270_SUFFICIENCY_STATUS_TO_CARRIER_ADMISSIBILITY",
+      "PROMOTE_D0278_POSITIONAL_STATUS_TO_CARRIER_ADMISSIBILITY",
+      "CONVERT_UNRESOLVED_TO_EXCLUDED",
+      "CONVERT_ABSENCE_OF_EVIDENCE_TO_NEGATIVE_PROOF",
+      "INFER_REQ06_REQ14_SATISFACTION_FROM_CARRIER_CLOSURE",
+      "INFER_CONCRETE_V4_TO_V2_MAPPING_FROM_CARRIER_CLOSURE"
+    ],
+    "required_input_classes": [
+      "FROZEN_AUTHORITATIVE_CANDIDATE_UNIVERSE",
+      "FROZEN_HISTORICAL_BINDING_ACCOUNTING",
+      "FROZEN_GOVERNED_POST_C3_RESULT_RECORDS",
+      "FROZEN_D0297_RESUMPTION_BOUNDARY"
+    ],
+    "required_output_artifacts_if_later_separately_authorized": [
+      "EXACT_CLOSURE_UNIVERSE_MANIFEST",
+      "PER_ITEM_EXPLICIT_CLOSURE_WITNESS_LEDGER",
+      "UNRESOLVED_OR_UNESTABLISHED_RELATION_LEDGER",
+      "C4_ENTRY_READINESS_REPORT"
+    ]
+  },
+  "next_governance_checkpoint": "INDEPENDENT_READ_ONLY_VERIFY_D0298_DESIGN_AUTHOR_CANDIDATE_BEFORE_COMMIT_OR_PUSH",
+  "next_scientific_successor_after_D0298_freeze": "SEPARATELY_AUTHORIZE_BOUNDED_PRE_C4_CLOSURE_ACCOUNTING_EXECUTION_IF_JUSTIFIED",
+  "protected_boundary": {
+    "Class06_reclassification_by_D0298": false,
+    "D0251_snapshot_content_read_by_D0298": false,
+    "D0276_retained_evidence_content_read_by_D0298": false,
+    "concrete_mapping_by_D0298": false,
+    "new_evidence_acquisition_by_D0298": false,
+    "pair_reclassification_by_D0298": false,
+    "positional_reassignment_by_D0298": false,
+    "req06_req14_determination_by_D0298": false,
+    "result_reselection_by_D0298": false,
+    "semantic_adjudication_by_D0298": false
+  },
+  "semantic_invariants": [
+    "SUPPORTED_BINDING_IS_NOT_AUTOMATICALLY_INCLUDED",
+    "UNRESOLVED_BINDING_IS_NOT_AUTOMATICALLY_EXCLUDED",
+    "ABSENCE_OF_POSITIVE_EVIDENCE_IS_NOT_NEGATIVE_PROOF",
+    "BOUNDED_SUFFICIENCY_STATUS_IS_NOT_AUTOMATICALLY_A_CARRIER_ADMISSIBILITY_DISPOSITION",
+    "POSITIONAL_STATUS_IS_NOT_AUTOMATICALLY_A_CARRIER_ADMISSIBILITY_DISPOSITION",
+    "BOUNDED_CHAIN_CLOSURE_IS_NOT_C4_ZERO_UNRESOLVED_CLOSURE",
+    "CARRIER_ADMISSIBILITY_CLOSURE_IS_NOT_CONCRETE_MAPPING",
+    "CARRIER_ADMISSIBILITY_CLOSURE_IS_NOT_REQ06_REQ14_SATISFACTION_DETERMINATION"
+  ],
+  "source_checkpoint": {
+    "head": "5d854f7cb209402070635fc15656eff356e52024",
+    "origin_main": "5d854f7cb209402070635fc15656eff356e52024"
+  },
+  "source_decision_bindings": {
+    "D0191": {
+      "git_blob_oid_at_d0298_source_checkpoint": "6920a16927c07a58b4771e68325fd13288b1c16d",
+      "path": "documentation/decisions/0191-create-exact-211-bounded-supported-binding-successor.md",
+      "sha256": "85832a107f47e146e1046c8e00118094430a1ad74e971ab5ee79fb5dc276bafd"
+    },
+    "D0233": {
+      "git_blob_oid_at_d0298_source_checkpoint": "c5095c233e59bd104987ebcb1f227975f7d3a6b7",
+      "path": "documentation/decisions/0233-design-bounded-req06-req14-accounting-authorization-ladder-without-execution.md",
+      "sha256": "4e76df6ab2ca7d9e95a299fa2464acd2a4e8ecaa527ac997114469ca64bedc21"
+    },
+    "D0240": {
+      "git_blob_oid_at_d0298_source_checkpoint": "0d42f205aaa3d040b0ec88b9e60d980a9590f0fc",
+      "path": "documentation/decisions/0240-govern-b2-authoritative-input-bindings-without-b2-authorization.md",
+      "sha256": "03e34ea61a69741e3267b768e5dad0b0bd9704b48c78b17c1f74b7b16be79359"
+    },
+    "D0241": {
+      "git_blob_oid_at_d0298_source_checkpoint": "1792e5e854b0eeada667c055fba2aa2a2fcca57f",
+      "path": "documentation/decisions/0241-design-carrier-admissibility-evidence-closure-before-b2-without-execution-authorization.md",
+      "sha256": "64ca946cc05f8b0295c7e9e6c73600f406a26885ce2d9abc12d1e2a08ea83e7c"
+    },
+    "D0243": {
+      "git_blob_oid_at_d0298_source_checkpoint": "dec5e1be29a08152c45b0671649b4fe09eee8365",
+      "path": "documentation/decisions/0243-execute-c1-exact-existing-evidence-inventory-binding.md",
+      "sha256": "5ffaf3d10e784dc1de0b0bccace10c1b01a747b71ac6d71b6f4242b313c8dc22"
+    },
+    "D0270": {
+      "git_blob_oid_at_d0298_source_checkpoint": "b869f8b9c20c1f981e79a45704fe5929412fe9b7",
+      "path": "documentation/decisions/0270-execute-successor-result-universe-materialization-from-frozen-resolved-components.md",
+      "sha256": "4d75ed15e22df13859b1324a3e738096549335e84cdc622cb5e905471761f763"
+    },
+    "D0278": {
+      "git_blob_oid_at_d0298_source_checkpoint": "f3e71dc5054e500b47274c7898d4932b325dc9d9",
+      "path": "documentation/decisions/0278-execute-d0277-positional-adjudication-from-d0276-materialized-evidence-only.md",
+      "sha256": "697a7dfd18a14b6a3df6ff1b2dd4e88f3a038bbebaad3663fe3f4f32cb63e61c"
+    },
+    "D0279": {
+      "git_blob_oid_at_d0298_source_checkpoint": "f8addcbd8f2a8906463ed389725d5a64c5f09963",
+      "path": "documentation/decisions/0279-close-d0276-d0277-bounded-evidence-adjudication-chain.md",
+      "sha256": "efb141cdc8d87a844f6a49654293182f281db4dd8dc6174ba0e35209d943cc63"
+    },
+    "D0280": {
+      "git_blob_oid_at_d0298_source_checkpoint": "9ead765b94fc695a1360ad5335c594e5612ac92a",
+      "path": "documentation/decisions/0280-integrate-closed-d0276-d0279-evidence-chain-into-final-evidence-accounting.md",
+      "sha256": "9814c8f1ae3b95d127353620d440282b2b2025c542e4c572f2471c8dd5b2807d"
+    },
+    "D0296": {
+      "git_blob_oid_at_d0298_source_checkpoint": "c9dbe22e57faa74cd5d7f81d55665e997a574e0f",
+      "path": "documentation/decisions/0296-reconcile-scientific-authority-after-administrative-evaluation-chain-and-exploratory-prototype.md",
+      "sha256": "655c549b4c9d303d528d5c22422372c805376dfa3d8a8aa3a2caaaad5d5b2d0a"
+    },
+    "D0297": {
+      "git_blob_oid_at_d0298_source_checkpoint": "109ddc98cb58e8545b714f8f8fd00658ce8d06e2",
+      "path": "documentation/decisions/0297-establish-post-d0296-p8-resumption-boundary-before-c4-without-downstream-authorization.md",
+      "sha256": "3c8927874fe68258f06209c9229cb166bd96092f0311fd2a0dd63561f9c5a73a"
+    }
+  },
+  "status": "DESIGN_ONLY_AUTHOR_CANDIDATE_NOT_INDEPENDENTLY_VERIFIED_OR_FROZEN"
+}
