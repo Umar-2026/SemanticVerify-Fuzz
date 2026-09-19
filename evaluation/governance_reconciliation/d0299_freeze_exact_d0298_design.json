@@ -1,0 +1,76 @@
+{
+  "artifact_id": "SVF-D0299-FREEZE-EXACT-D0298-DESIGN-V1",
+  "decision": "D0299",
+  "freeze_effect_at_authoring": {
+    "D0298_freeze_effective": false,
+    "reason": "D0299_IS_ONLY_AN_UNCOMMITTED_AUTHOR_CANDIDATE_AND_REQUIRES_INDEPENDENT_READ_ONLY_VERIFICATION_BEFORE_COMMIT_OR_PUSH"
+  },
+  "freeze_intent": {
+    "freeze_d0298_content_without_modification": true,
+    "freeze_d0298_fail_closed_rule_without_modification": true,
+    "freeze_d0298_nonauthorization_boundary_without_modification": true,
+    "freeze_d0298_semantic_invariants_without_modification": true,
+    "freeze_d0298_source_bindings_without_modification": true,
+    "freeze_exact_d0298_design_checkpoint": true
+  },
+  "freeze_subject": {
+    "artifact_git_blob_oid": "74dc342f39a8a4e8ed231ba6cee8019aabf6e8f5",
+    "artifact_path": "evaluation/governance_reconciliation/d0298_bounded_pre_c4_closure_accounting_design.json",
+    "artifact_sha256": "aa842f3ad99e7f71a619e81c7fa4bf0275a2a4549fca9d142f48f5b547cea87d",
+    "commit": "69700193346eed8627c9f760396091e3e69a11f0",
+    "decision": "D0298",
+    "decision_git_blob_oid": "1a30a0bd95172ee95008dca6ad4af264943d23ad",
+    "decision_path": "documentation/decisions/0298-design-bounded-pre-c4-closure-accounting-successor-without-execution-authorization.md",
+    "decision_sha256": "0bf61237754f6a81f48e0e7a0829e60cf8eb2bbe07ebdfd7ed365f586d13346a",
+    "origin_main_at_authoring": "69700193346eed8627c9f760396091e3e69a11f0",
+    "parent": "5d854f7cb209402070635fc15656eff356e52024",
+    "tree": "a8eb90974a920157861c856862cf06988d710dbc"
+  },
+  "next_governance_checkpoint": "INDEPENDENT_READ_ONLY_VERIFY_D0299_FREEZE_AUTHOR_CANDIDATE_BEFORE_COMMIT_OR_PUSH",
+  "next_scientific_checkpoint_after_effective_freeze": "SEPARATELY_CONSIDER_AUTHORIZATION_OF_BOUNDED_PRE_C4_CLOSURE_ACCOUNTING_EXECUTION_IF_JUSTIFIED",
+  "preserved_scientific_state": {
+    "B2_authorized": false,
+    "B2_executed": false,
+    "B2_readiness_established": false,
+    "C4_authorized": false,
+    "C4_entry_readiness_established": false,
+    "C4_executed": false,
+    "C4_zero_unresolved_closure_established": false,
+    "C5_authorized": false,
+    "C5_executed": false,
+    "C6_authorized": false,
+    "C6_executed": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "pre_c4_closure_accounting_executed": false,
+    "pre_c4_closure_accounting_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "prospective_effect_after_independent_verification_commit_and_publication": {
+    "B2_authorization_created": false,
+    "C4_authorization_created": false,
+    "D0298_exact_design_checkpoint_frozen": true,
+    "analyzer_authorization_created": false,
+    "annotation_authorization_created": false,
+    "execution_authorization_created": false,
+    "mapping_authorization_created": false
+  },
+  "protected_boundary": {
+    "Class06_reclassification_by_D0299": false,
+    "D0251_snapshot_content_read_by_D0299": false,
+    "D0276_retained_evidence_content_read_by_D0299": false,
+    "D0298_content_mutated_by_D0299": false,
+    "concrete_mapping_by_D0299": false,
+    "new_evidence_acquisition_by_D0299": false,
+    "pair_reclassification_by_D0299": false,
+    "positional_reassignment_by_D0299": false,
+    "req06_req14_determination_by_D0299": false,
+    "result_reselection_by_D0299": false,
+    "semantic_adjudication_by_D0299": false
+  },
+  "status": "AUTHOR_CANDIDATE_FREEZE_RECORD_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED"
+}
