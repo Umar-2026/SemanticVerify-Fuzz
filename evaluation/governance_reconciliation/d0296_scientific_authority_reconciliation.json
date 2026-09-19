@@ -1,0 +1,231 @@
+{
+  "administrative_evaluation_chain": {
+    "authorization_specificity_discontinuity": {
+      "D0285_allowed_operations": [
+        "experiment_execution",
+        "metric_computation",
+        "result_recording",
+        "evaluation_report_generation"
+      ],
+      "D0285_explicit_analyzer_execution_authorization": false,
+      "D0286_recorded_operations": [
+        "analyzer_execution",
+        "metric_computation",
+        "result_recording"
+      ],
+      "D0286_records_analyzer_execution": true,
+      "classification": "D0286_ANALYZER_EXECUTION_CLAIM_LACKS_EXPLICIT_D0285_ANALYZER_EXECUTION_AUTHORIZATION",
+      "interpretation": "DO_NOT_RETROACTIVELY_INFER_EXPLICIT_ANALYZER_AUTHORIZATION_FROM_GENERIC_EXPERIMENT_EXECUTION_WORDING",
+      "scientific_effect": "D0286_CANNOT_SERVE_AS_EXPLICIT_AUTHORIZATION_OR_AS_STANDALONE_EMPIRICAL_PROOF_OF_PROPOSAL_ANALYZER_EXECUTION"
+    },
+    "classification": "HISTORICAL_ADMINISTRATIVE_DECLARATIVE_CHAIN_NOT_EMPIRICAL_STAGE_A_RESULT_EVIDENCE",
+    "decisions": [
+      "D0281",
+      "D0282",
+      "D0283",
+      "D0284",
+      "D0285",
+      "D0286",
+      "D0287",
+      "D0288",
+      "D0289",
+      "D0290",
+      "D0291",
+      "D0292"
+    ],
+    "may_establish_analyzer_execution": false,
+    "may_establish_cross_library_generalization": false,
+    "may_establish_detection_accuracy": false,
+    "may_establish_gate_v_or_final_evaluation_freeze": false,
+    "may_establish_path_sensitivity_effectiveness": false,
+    "may_establish_rq1_rq2_rq3_rq5_results": false,
+    "may_support_empirical_paper_results": false,
+    "reason": [
+      "No concrete precision/recall/F1/confusion-matrix/bootstrap result artifacts are present in the D0285-D0288 evaluation areas.",
+      "No per-driver gold-versus-prediction comparison artifacts are present in the D0285-D0288 evaluation areas.",
+      "No proposal-level Clang LibTooling plus Clang CFG implementation is present in src.",
+      "D0283 records analyzer execution as false before the later declarative D0286 execution record.",
+      "D0286 records operation names and RQ execution states but does not itself supply concrete empirical measurements."
+    ]
+  },
+  "annotation_scaffolding": {
+    "annotation_protocol_sha256": "ec6ca966be182082d64b65419d2e5fadcc60d2c069360ecd7687340adb35cfdc",
+    "classification": "DRAFT_SCAFFOLDING_NOT_GOVERNED_P10_GOLD_ANNOTATION",
+    "framework_commit": "f29e9894343a29027ad856277626c75a92cf277d",
+    "gold_labels_nonempty": false,
+    "p10_started_by_these_artifacts": false,
+    "protocol_commit": "9185a71e7932f0cab3707a1d131731c072567c2f"
+  },
+  "artifact_id": "SVF-D0296-SCIENTIFIC-AUTHORITY-RECONCILIATION-V1",
+  "author_candidate_revision": {
+    "previous_uncommitted_artifact_sha256": "d21262084589f4690bfa0634939d85867ae4be0509e7e56804431bc032feca7f",
+    "previous_uncommitted_decision_sha256": "1cd70c2f66472872df0249f3d58e1298a9271f41a10479138d4cf1fa7dde8e6c",
+    "review_findings_addressed": [
+      "D0281_D0292_EXACT_SHA_BINDINGS_NOT_EMBEDDED",
+      "D0285_D0286_ANALYZER_AUTHORIZATION_SPECIFICITY_GAP",
+      "D0240_NOT_EXPLICITLY_PROVENANCE_BOUND",
+      "D0241_NOT_EXPLICITLY_PROVENANCE_BOUND"
+    ],
+    "revision": 2,
+    "triggering_independent_review_verdict": "REVISION_REQUIRED_BEFORE_COMMIT"
+  },
+  "decision": "D0296",
+  "explicit_nonauthorization": {
+    "analyzer_execution": false,
+    "analyzer_implementation": false,
+    "baseline_execution": false,
+    "curl_json_materialization": false,
+    "gold_annotation_execution": false,
+    "positive_v4_to_v2_mapping_execution": false,
+    "repair_execution": false,
+    "repair_implementation": false,
+    "rq_evaluation_execution": false
+  },
+  "exploratory_prototype": {
+    "classification": "PRE_P11_EXPLORATORY_PYTHON_REGEX_FSM_PROTOTYPE_NONAUTHORITATIVE_FOR_PAPER_RESULTS",
+    "implementation_commit": "2b634265534de398e450771452d0bef54a46e89c",
+    "path_sensitive_clang_cfg_analyzer_established": false,
+    "proposal_analyzer_equivalent": false,
+    "verification_results": {
+      "classification": "EXPLORATORY_DIAGNOSTIC_OUTPUT_NOT_EMPIRICAL_PAPER_RESULT",
+      "nonzero_trace_rows": 73,
+      "path": "evaluation/verification_results.jsonl",
+      "row_count": 487,
+      "sha256": "15e48e0b256fb1bfca315d4434bd9621f8206437e99f968b00124b3a517ccb1e",
+      "status_counts": {
+        "UNKNOWN": 61,
+        "VALID": 414,
+        "VIOLATION-MUST": 12
+      },
+      "zero_trace_rows": 414
+    },
+    "verification_summary": {
+      "classification": "EXPLORATORY_DIAGNOSTIC_SUMMARY_NOT_EMPIRICAL_PAPER_RESULT",
+      "path": "evaluation/verification_summary.json",
+      "sha256": "595fa348b3f6929d4f898fdb381a035770210d578374761b8a708826c2aee2a3"
+    }
+  },
+  "historical_d0281_d0292_exact_bindings": {
+    "D0281": {
+      "git_blob_oid_at_source_checkpoint": "efbc9e2d91083249e9eeada9c0157af1349d98fe",
+      "path": "documentation/decisions/0281-freeze-final-evidence-accounting-manifest.md",
+      "sha256": "8edf04f012bcc9e74d2ec894526d4f4fd8278d77ca760ee8d68407b7313028be"
+    },
+    "D0282": {
+      "git_blob_oid_at_source_checkpoint": "f441e0cefb9d38f242f55c742effea6abebd2c3d",
+      "path": "documentation/decisions/0282-authorize-evaluation-dataset-construction-from-frozen-evidence-accounting-manifest.md",
+      "sha256": "f5bb22f96097e6c4fd6e86ef51eea57d130fa605743eb300446a5dfc5fae969e"
+    },
+    "D0283": {
+      "git_blob_oid_at_source_checkpoint": "cb45267fbc428c3a0a17703167c51e753d6c3fda",
+      "path": "documentation/decisions/0283-execute-evaluation-dataset-construction-from-frozen-accounting-manifest.md",
+      "sha256": "c8ed088371a61e6706ef234578c9afd0a199051558ed2fc49e9a764a565277cb"
+    },
+    "D0284": {
+      "git_blob_oid_at_source_checkpoint": "ebef2da492115d7aed0bd64b6aee875ad673cff6",
+      "path": "documentation/decisions/0284-freeze-evaluation-dataset-artifact.md",
+      "sha256": "7ec815a677673068e87d6c166714856897df73bb2e24ec02f9c47a043df1be14"
+    },
+    "D0285": {
+      "git_blob_oid_at_source_checkpoint": "4f8379d92e345a7d0d5e82a4f0763d42bf46662a",
+      "path": "documentation/decisions/0285-authorize-rq-evaluation-execution-from-frozen-dataset.md",
+      "sha256": "6501732a1f6c620945d526957bda3bc184b97d7608aa6e7969c9e5676c526f0b"
+    },
+    "D0286": {
+      "git_blob_oid_at_source_checkpoint": "adfe935f1b4d0426598fbbe163d4bab376ef4ab1",
+      "path": "documentation/decisions/0286-execute-rq-evaluation-from-frozen-dataset.md",
+      "sha256": "93db22e3aa812e18ccf1cb86e2c93b381beb5566182954938bcd05dcd6046451"
+    },
+    "D0287": {
+      "git_blob_oid_at_source_checkpoint": "cb533557248416e3cbcc366be9b3f497e9fcc796",
+      "path": "documentation/decisions/0287-freeze-rq-evaluation-results.md",
+      "sha256": "c4a2d4ca8933cf667516c59a0d5c933c31920c8e14d6cc9607275ce611442f9d"
+    },
+    "D0288": {
+      "git_blob_oid_at_source_checkpoint": "2ba135cfc31d9d654bcd23dc71915b2355e67172",
+      "path": "documentation/decisions/0288-generate-final-evaluation-report-manifest.md",
+      "sha256": "1e933ed4fecd19e1ef6cf91199cfa9aec7c1015aa478a3153b406c8b01614e92"
+    },
+    "D0289": {
+      "git_blob_oid_at_source_checkpoint": "b20a9287404158728ccbe6dcb1c50802475e3225",
+      "path": "documentation/decisions/0289-generate-paper-results-traceability-manifest.md",
+      "sha256": "0ab0c86f6b3a9b12aa81d500c7dfefe56cd94920eb489386e9ecdfd6c0cf947c"
+    },
+    "D0290": {
+      "git_blob_oid_at_source_checkpoint": "ab5d31cd996b113ed2132588382ad7b5d3805cf5",
+      "path": "documentation/decisions/0290-freeze-publication-evidence-package.md",
+      "sha256": "ca0f4a41611fc31006c8c76c308c32b3edf4b81d8c4de0cbecb5eb7c169f54e2"
+    },
+    "D0291": {
+      "git_blob_oid_at_source_checkpoint": "49695ed08ed269062bd9c25e777456bfd7266ae8",
+      "path": "documentation/decisions/0291-generate-artifact-availability-statement.md",
+      "sha256": "460b3e502b9ba940c5a6b058e4e0d3f7dab6b9462c6b43a34d65d086bf0f549c"
+    },
+    "D0292": {
+      "git_blob_oid_at_source_checkpoint": "ea6825edf30df6f5628ab15c87b600dff3b82974",
+      "path": "documentation/decisions/0292-generate-reviewer-reproduction-checklist.md",
+      "sha256": "23b68bf0aeff9078fa8049c037ee23cfd57c8ce43a06e9ca6d3306a7983341b5"
+    }
+  },
+  "historical_preservation": {
+    "delete_historical_decisions": false,
+    "historical_git_objects_remain_immutable": true,
+    "mutate_historical_results": false,
+    "rewrite_history": false
+  },
+  "next_required_checkpoint": "INDEPENDENT_READ_ONLY_VERIFY_REVISED_D0296_AUTHOR_CANDIDATE_BEFORE_COMMIT_OR_PUSH",
+  "prerequisite_state": {
+    "active_schema_v2_materialization_authorized": false,
+    "b2_authorized": false,
+    "b2_readiness_established": false,
+    "curl_json_present": false,
+    "governed_gold_labels_present": false,
+    "positive_v4_to_v2_operational_mapping_established": false,
+    "proposal_level_clang_analyzer_present": false
+  },
+  "scientific_stage_state": {
+    "P10": "NOT_STARTED",
+    "P11": "NOT_STARTED",
+    "P12": "NOT_STARTED",
+    "P13": "BLOCKED_OUTSIDE_CURRENT_PAPER1_STAGE_A",
+    "P8": "BLOCKED_NOT_COMPLETED",
+    "P9": "NOT_COMPLETED"
+  },
+  "source_checkpoint": {
+    "head": "9185a71e7932f0cab3707a1d131731c072567c2f",
+    "origin_main": "9185a71e7932f0cab3707a1d131731c072567c2f"
+  },
+  "status": "AUTHOR_CANDIDATE_NOT_INDEPENDENTLY_VERIFIED_OR_FROZEN",
+  "upstream_governance_bindings": {
+    "D0066": {
+      "git_blob_oid_at_source_checkpoint": "8ba3c6590102267d694edf958456e2b855e821a6",
+      "path": "documentation/decisions/0066-activate-schema-v2-and-adopt-decision-0019-successor.md",
+      "role": "AUTHORITATIVE_SCHEMA_V2_ACTIVATION_AND_POSITIVE_V4_TO_V2_NONAUTHORIZATION_BOUNDARY",
+      "sha256": "6bd97e92f97f77d7e7e36bbc9a334ad115f1ebe8f8a2e9f3d0d2b2c361da65d2"
+    },
+    "D0240": {
+      "decision_git_blob_oid_at_source_checkpoint": "0d42f205aaa3d040b0ec88b9e60d980a9590f0fc",
+      "decision_path": "documentation/decisions/0240-govern-b2-authoritative-input-bindings-without-b2-authorization.md",
+      "decision_sha256": "03e34ea61a69741e3267b768e5dad0b0bd9704b48c78b17c1f74b7b16be79359",
+      "machine_artifact_git_blob_oid_at_source_checkpoint": "88ca3d1b06048de1025e5aafe10cc8c48faff14f",
+      "machine_artifact_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0240_b2_authoritative_input_binding_governance_v1/01_b2_authoritative_input_binding_governance.v1.json",
+      "machine_artifact_sha256": "41bc880c8a028301242a03440b899ed4d1aa6638a7be98813308a5a578533da8",
+      "machine_fields_confirmed": {
+        "B2_execution_authorized": false,
+        "B2_readiness": false,
+        "active_schema_v2_materialization_authorized": false,
+        "analyzer_authorized": false,
+        "baseline_authorized": false,
+        "concrete_source_unit_carrier_mapping_authorized": false,
+        "repair_authorized": false
+      },
+      "role": "B2_AUTHORITATIVE_INPUT_BINDING_ONLY_NO_B2_AUTHORIZATION"
+    },
+    "D0241": {
+      "git_blob_oid_at_source_checkpoint": "1792e5e854b0eeada667c055fba2aa2a2fcca57f",
+      "path": "documentation/decisions/0241-design-carrier-admissibility-evidence-closure-before-b2-without-execution-authorization.md",
+      "role": "PRE_B2_CARRIER_ADMISSIBILITY_EVIDENCE_CLOSURE_DESIGN_ONLY_NO_OPERATIONAL_AUTHORIZATION",
+      "sha256": "64ca946cc05f8b0295c7e9e6c73600f406a26885ce2d9abc12d1e2a08ea83e7c"
+    }
+  }
+}
