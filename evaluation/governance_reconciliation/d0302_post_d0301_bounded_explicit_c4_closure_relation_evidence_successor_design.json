@@ -1,0 +1,210 @@
+{
+  "artifact_id": "SVF-D0302-POST-D0301-BOUNDED-EXPLICIT-C4-CLOSURE-RELATION-EVIDENCE-SUCCESSOR-DESIGN-V1",
+  "decision": "D0302",
+  "downstream_authorization": {
+    "B2_authorized": false,
+    "B2_executed": false,
+    "B2_readiness_established": false,
+    "C4_authorized": false,
+    "C4_entry_readiness_established": false,
+    "C4_executed": false,
+    "C4_zero_unresolved_closure_established": false,
+    "C5_authorized": false,
+    "C6_authorized": false,
+    "E0_execution_authorized": false,
+    "E1_execution_authorized": false,
+    "E2_execution_authorized": false,
+    "E3_execution_authorized": false,
+    "E4_execution_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "frozen_post_D0301_state": {
+    "C4_entry_readiness_established": false,
+    "C4_zero_unresolved_closure_established": false,
+    "D0300_remaining_successful_execution_transactions": 0,
+    "D0301_reexecution_allowed": false,
+    "candidate_universe_count": 171,
+    "candidate_universe_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "candidate_universe_reselection_allowed": false,
+    "candidate_universe_source": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0301_bounded_pre_c4_closure_accounting_execution_v1/01_exact_closure_universe_manifest.v1.json",
+    "candidate_universe_subsetting_allowed": false,
+    "direct_explicit_closure_witness_not_established_count": 0,
+    "direct_explicit_closure_witness_present_count": 0,
+    "relation_to_C4_closure_criterion_not_established_count": 171,
+    "unresolved_or_unestablished_relation_count": 171
+  },
+  "future_successor_design": {
+    "E0_required_freeze_elements": [
+      "EXACT_171_CANDIDATE_UNIVERSE",
+      "EXPLICIT_C4_CLOSURE_RELATION_TARGET_DEFINITION",
+      "CLOSED_OR_EXPLICITLY_BOUNDED_EVIDENCE_SOURCE_UNIVERSE",
+      "IMMUTABLE_SOURCE_IDENTITY_SCHEME",
+      "UNIFORM_EXTRACTION_PROTOCOL",
+      "PREDECLARED_ESCALATION_RULE_IF_ANY",
+      "EVIDENCE_UNIT_LOCATOR_AND_HASH_SCHEME",
+      "INDEPENDENT_ADJUDICATION_PROTOCOL"
+    ],
+    "E1_minimum_evidence_unit_schema": [
+      "candidate_ordinal",
+      "schema_v2_property_path",
+      "source_id",
+      "source_sha256_or_equivalent_immutable_identity",
+      "locator_kind",
+      "locator_value",
+      "extracted_evidence_unit_text_or_structured_unit",
+      "extracted_evidence_unit_sha256",
+      "relation_target_id",
+      "extraction_rule_id"
+    ],
+    "E2_allowed_evidence_unit_judgments": [
+      "EXPLICIT_C4_CLOSURE_RELATION_SUPPORT_ESTABLISHED",
+      "EXPLICIT_C4_CLOSURE_RELATION_SUPPORT_NOT_ESTABLISHED",
+      "EVIDENCE_UNIT_REMAINS_AMBIGUOUS"
+    ],
+    "E2_judgment_semantics": {
+      "EVIDENCE_UNIT_REMAINS_AMBIGUOUS": "THE_BOUNDED_EVIDENCE_UNIT_CANNOT_BE_SAFELY_CLASSIFIED_AS_EXPLICIT_SUPPORT_OR_NON_SUPPORT_WITHIN_THE_FROZEN_RELATION_TARGET",
+      "EXPLICIT_C4_CLOSURE_RELATION_SUPPORT_ESTABLISHED": "THE_BOUNDED_EVIDENCE_UNIT_EXPLICITLY_SUPPORTS_THE_FROZEN_RELATION_TARGET_WITHOUT_REQUIRING_SCHEMA_MAPPING_CARRIER_INFERENCE_OR_OTHER_SEMANTIC_PROMOTION",
+      "EXPLICIT_C4_CLOSURE_RELATION_SUPPORT_NOT_ESTABLISHED": "THE_BOUNDED_EVIDENCE_UNIT_DOES_NOT_ITSELF_ESTABLISH_THE_TARGET_RELATION_THIS_IS_NOT_NEGATIVE_PROOF_NOT_EXCLUSION_AND_NOT_A_MAPPING_DECISION"
+    },
+    "E3_allowed_final_closure_statuses": [
+      "DIRECT_EXPLICIT_CLOSURE_WITNESS_PRESENT",
+      "DIRECT_EXPLICIT_CLOSURE_WITNESS_NOT_ESTABLISHED",
+      "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED"
+    ],
+    "E3_mapping_constraints": [
+      "DIRECT_EXPLICIT_CLOSURE_WITNESS_PRESENT_REQUIRES_AT_LEAST_ONE_GOVERNED_EXPLICIT_SUPPORT_RECORD_AND_ALL_REQUIRED_RELATION_PROVENANCE_TO_BE_EXPLICITLY_BOUND",
+      "SUPPORT_NOT_ESTABLISHED_MUST_NOT_BE_INTERPRETED_AS_NEGATIVE_PROOF_OR_EXCLUSION",
+      "AMBIGUITY_MUST_NOT_BE_PROMOTED_TO_A_POSITIVE_OR_NEGATIVE_CLOSURE_CLAIM",
+      "ANY_MISSING_UNBOUND_OR_AMBIGUOUS_REQUIRED_RELATION_MUST_FAIL_CLOSED",
+      "NO_CANDIDATE_SPECIFIC_SOURCE_EXPANSION_AFTER_E0_FREEZE_EXCEPT_BY_A_PREDECLARED_SYMMETRIC_ESCALATION_RULE"
+    ],
+    "candidate_universe": {
+      "candidate_specific_search_policy_allowed": false,
+      "identifier_count": 171,
+      "identifier_namespace": "SCHEMA_V2_PROPERTY_PATH",
+      "reselection_allowed": false,
+      "source": "D0301_EXACT_CLOSURE_UNIVERSE_MANIFEST",
+      "subsetting_allowed": false
+    },
+    "execution_authorized_by_D0302": false,
+    "fail_closed_rule": "IF_ANY_REQUIRED_C4_CLOSURE_RELATION_IS_NOT_EXPLICITLY_ESTABLISHED_THEN_C4_ENTRY_READINESS_REMAINS_FALSE",
+    "future_stage_sequence_if_each_stage_is_separately_authorized": [
+      {
+        "execution_authorized_by_D0302": false,
+        "purpose": "FREEZE_THE_EXACT_C4_RELATION_TARGET_ALLOWED_SOURCE_UNIVERSE_SOURCE_IDENTITIES_RETRIEVAL_RULES_AND_ESCALATION_RULES_BEFORE_ANY_CANDIDATE_LEVEL_CONTENT_ADJUDICATION",
+        "stage": "E0_EVIDENCE_UNIVERSE_AND_RELATION_TARGET_FREEZE"
+      },
+      {
+        "execution_authorized_by_D0302": false,
+        "purpose": "APPLY_THE_SAME_FROZEN_EXTRACTION_PROTOCOL_TO_ALL_171_CANDIDATES_AND_MATERIALIZE_PROVENANCE_BOUND_EVIDENCE_UNITS_WITHOUT_SEMANTIC_JUDGMENT",
+        "stage": "E1_UNIFORM_BOUNDED_EVIDENCE_EXTRACTION"
+      },
+      {
+        "execution_authorized_by_D0302": false,
+        "purpose": "INDEPENDENTLY_JUDGE_ONLY_WHETHER_EACH_EXTRACTED_EVIDENCE_UNIT_EXPLICITLY_SUPPORTS_THE_FROZEN_C4_CLOSURE_RELATION_TARGET",
+        "stage": "E2_INDEPENDENT_RELATION_EVIDENCE_ADJUDICATION"
+      },
+      {
+        "execution_authorized_by_D0302": false,
+        "purpose": "MATERIALIZE_PER_CANDIDATE_CLOSURE_STATUS_FROM_ONLY_FROZEN_E0_E1_E2_RECORDS_WITHOUT_RESELECTION_OR_SEMANTIC_PROMOTION",
+        "stage": "E3_DETERMINISTIC_PER_CANDIDATE_CLOSURE_ACCOUNTING"
+      },
+      {
+        "execution_authorized_by_D0302": false,
+        "purpose": "INDEPENDENTLY_VERIFY_COMPLETE_171_ITEM_ACCOUNTING_AND_ONLY_THEN_SEPARATELY_REASSESS_C4_ENTRY_READINESS",
+        "stage": "E4_INDEPENDENT_VERIFICATION_AND_C4_READINESS_REASSESSMENT"
+      }
+    ],
+    "phase_name": "POST_D0301_EXPLICIT_C4_CLOSURE_RELATION_EVIDENCE",
+    "post_future_execution_rule": "ANY_FUTURE_EXECUTION_REQUIRES_SEPARATE_INDEPENDENT_VERIFICATION_AND_SEPARATE_GOVERNANCE_BEFORE_C4_READINESS_OR_C4_AUTHORIZATION_CAN_CHANGE",
+    "readiness_rule": "D0302_DOES_NOT_ESTABLISH_C4_READINESS_AND_NO_FUTURE_STAGE_MAY_AUTOAUTHORIZE_C4_EVEN_IF_ALL_171_RELATIONS_ARE_LATER_EXPLICITLY_ESTABLISHED"
+  },
+  "governance_basis": {
+    "D0298_design": {
+      "git_blob_oid": "74dc342f39a8a4e8ed231ba6cee8019aabf6e8f5",
+      "path": "evaluation/governance_reconciliation/d0298_bounded_pre_c4_closure_accounting_design.json",
+      "sha256": "aa842f3ad99e7f71a619e81c7fa4bf0275a2a4549fca9d142f48f5b547cea87d",
+      "size_bytes": 7860
+    },
+    "D0300_execution_authorization": {
+      "git_blob_oid": "fef2b6d8c977473e0e544c1be8f44942e724d18f",
+      "path": "evaluation/governance_reconciliation/d0300_bounded_pre_c4_closure_accounting_execution_authorization.json",
+      "sha256": "224a489cde490d2da6a139db82f0db5b4aca095878e91fbb774a3a2ef85b545c",
+      "size_bytes": 12841
+    },
+    "D0301_published_execution_outputs": [
+      {
+        "git_blob_oid": "31583c3b2677666e691c3276bf1579764aeabd64",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0301_bounded_pre_c4_closure_accounting_execution_v1/01_exact_closure_universe_manifest.v1.json",
+        "sha256": "f2fd041261131fd07ecab99c3cd062df94f34d5af9ef03425d1cb76e5acfdf25",
+        "size_bytes": 16153
+      },
+      {
+        "git_blob_oid": "ddd5dab113cb99230fcea84a168fb7c1ddcd78fe",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0301_bounded_pre_c4_closure_accounting_execution_v1/02_per_item_explicit_closure_witness_ledger.v1.json",
+        "sha256": "e9bb94aee7f7638aeed749360c1efafa18cbb7e66583668841b6f4da1ec2db5b",
+        "size_bytes": 232690
+      },
+      {
+        "git_blob_oid": "3101be55041e2878aac5a43db527f787bf16d54b",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0301_bounded_pre_c4_closure_accounting_execution_v1/03_unresolved_or_unestablished_relation_ledger.v1.json",
+        "sha256": "27f261b9129da6a891e1c193a2b44b10acc375abe2acac7bd71874352d9195e4",
+        "size_bytes": 76217
+      },
+      {
+        "git_blob_oid": "d7ec35c055878127d1009172dfdac755fdd3599b",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/d0301_bounded_pre_c4_closure_accounting_execution_v1/04_c4_entry_readiness_report.v1.json",
+        "sha256": "fd42e1e526dbbb69079ddeb1c9cd7b5687dd6d740a7aa0dbe2bc2bb0bf14a284",
+        "size_bytes": 2498
+      }
+    ]
+  },
+  "next_governance_checkpoint": "INDEPENDENT_READ_ONLY_VERIFY_D0302_DESIGN_AUTHOR_CANDIDATE_BEFORE_COMMIT_OR_PUSH",
+  "next_scientific_checkpoint_after_effective_design_freeze": "SEPARATELY_DESIGN_AND_AUTHORIZE_E0_EVIDENCE_UNIVERSE_AND_RELATION_TARGET_FREEZE_IF_JUSTIFIED",
+  "prohibited_shortcuts": [
+    "DO_NOT_REEXECUTE_D0301",
+    "DO_NOT_CONVERT_ABSENCE_OF_EVIDENCE_TO_NEGATIVE_PROOF",
+    "DO_NOT_CONVERT_UNESTABLISHED_RELATION_TO_EXCLUSION",
+    "DO_NOT_PROMOTE_D0191_SUPPORTED_BINDING_TO_CARRIER_ADMISSIBILITY",
+    "DO_NOT_PROMOTE_POST_C3_CANDIDATE_INDEX_TO_AEA02_PROPERTY_PATH",
+    "DO_NOT_RESELECT_OR_SUBSET_THE_171_CANDIDATES",
+    "DO_NOT_USE_CANDIDATE_SPECIFIC_AD_HOC_SOURCE_EXPANSION",
+    "DO_NOT_PERFORM_SCHEMA_V4_TO_V2_MAPPING",
+    "DO_NOT_CREATE_CURL_JSON",
+    "DO_NOT_START_GOLD_ANNOTATION",
+    "DO_NOT_IMPLEMENT_OR_EXECUTE_THE_P11_ANALYZER",
+    "DO_NOT_EXECUTE_BASELINE_OR_REPAIR"
+  ],
+  "protected_boundary": {
+    "Class06_reclassification_authorized": false,
+    "D0251_snapshot_content_read_authorized": false,
+    "D0276_retained_evidence_content_read_authorized": false,
+    "D0301_reexecution_authorized": false,
+    "Req06_Req14_determination_authorized": false,
+    "concrete_mapping_authorized": false,
+    "historical_one_time_verifier_execution_authorized": false,
+    "network_evidence_acquisition_authorized": false,
+    "new_evidence_acquisition_authorized": false,
+    "pair_reclassification_authorized": false,
+    "positional_reassignment_authorized": false,
+    "result_reselection_authorized": false,
+    "schema_v4_to_v2_mapping_authorized": false,
+    "semantic_adjudication_authorized": false
+  },
+  "scientific_problem_statement": {
+    "non_solution": "ABSENCE_OF_AN_EXPLICIT_RELATION_MUST_NOT_BE_CONVERTED_TO_EXCLUSION_NEGATIVE_PROOF_CARRIER_ADMISSIBILITY_SCHEMA_MAPPING_OR_CONCRETE_MAPPING",
+    "problem": "THE_FROZEN_D0301_ACCOUNTING_ESTABLISHES_THAT_NONE_OF_THE_171_AEA02_CANDIDATES_HAS_AN_EXPLICITLY_GOVERNED_RELATION_TO_THE_REQUIRED_C4_CLOSURE_CRITERION_WITHIN_THE_D0300_BOUND_INPUTS",
+    "required_successor_capability": "A_SEPARATELY_GOVERNED_BOUNDED_AND_SYMMETRIC_EVIDENCE_PROCESS_MUST_FREEZE_THE_EVIDENCE_UNIVERSE_BEFORE_CONTENT_ADJUDICATION_AND_THEN_TEST_THE_SAME_EXPLICIT_C4_CLOSURE_RELATION_TARGET_FOR_ALL_171_CANDIDATES"
+  },
+  "source_checkpoint": {
+    "classification": "POST_D0301_FAIL_CLOSED_PRE_C4",
+    "commit": "938ce81287fe02efe59ff76266941dc463e5d662"
+  },
+  "status": "DESIGN_ONLY_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED"
+}
