@@ -1,0 +1,1384 @@
+{
+  "all_records_fail_closed": true,
+  "artifact_id": "SVF-D0301-UNRESOLVED-OR-UNESTABLISHED-RELATION-LEDGER-V1",
+  "authorization_binding": {
+    "decision": "D0300",
+    "machine_authorization_path": "evaluation/governance_reconciliation/d0300_bounded_pre_c4_closure_accounting_execution_authorization.json",
+    "machine_authorization_sha256": "224a489cde490d2da6a139db82f0db5b4aca095878e91fbb774a3a2ef85b545c",
+    "maximum_successful_execution_transaction_count": 1,
+    "published_commit": "89cc3c54ddcd6f9f17523d058db7840b1225cca9"
+  },
+  "execution_id": "SVF-D0301-BOUNDED-PRE-C4-CLOSURE-ACCOUNTING-EXECUTION-V1",
+  "record_count": 171,
+  "records": [
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 1,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.author",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 2,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.content_sha256",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 3,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.creation_date",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 4,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 5,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].affected_relation_type_ids",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 6,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].affected_resource_type_ids",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 7,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].event_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 8,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].event_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 9,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].return_classes",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 10,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].return_classes[].operands",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 11,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].return_classes[].operator",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 12,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].return_classes[].return_class_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 13,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.events[].symbol_or_condition",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 14,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 15,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].exit_obligation_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 16,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 17,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.path_conditions",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 18,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.path_conditions[].condition_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 19,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.path_conditions[].condition_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 20,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.path_conditions[].polarity",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 21,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.path_conditions[].referenced_event_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 22,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.relation_state_requirements",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 23,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.relation_state_requirements[].allowed_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 24,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.relation_state_requirements[].presence",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 25,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.relation_state_requirements[].relation_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 26,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.resource_state_requirements",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 27,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.resource_state_requirements[].allowed_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 28,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.resource_state_requirements[].resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 29,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.return_conditions",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 30,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.return_conditions[].allowed_return_class_ids",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 31,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].preconditions.return_conditions[].event_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 32,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].relation_bindings",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 33,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].relation_bindings[].binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 34,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].relation_bindings[].relation_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 35,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].relation_bindings[].source_resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 36,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].relation_bindings[].target_resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 37,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_relation_exit_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 38,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_relation_exit_states[].allowed_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 39,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_relation_exit_states[].presence",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 40,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_relation_exit_states[].relation_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 41,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_resource_exit_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 42,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_resource_exit_states[].allowed_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 43,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].required_resource_exit_states[].resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 44,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].resource_bindings",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 45,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].resource_bindings[].binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 46,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].resource_bindings[].distinct_identity_from",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 47,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].resource_bindings[].resource_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 48,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].resource_bindings[].role",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 49,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].resource_bindings[].same_identity_as",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 50,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].semantic_container",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 51,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].source_evidence",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 52,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.exit_obligations[].verdict_if_violated",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 53,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.freeze_date",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 54,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.library",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 55,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.library_revision",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 56,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 57,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance[].content_sha256",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 58,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance[].evidence_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 59,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance[].path_or_url",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 60,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance[].quoted_or_paraphrased_rationale",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 61,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance[].retrieval_date",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 62,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.provenance[].source_type",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 63,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 64,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 65,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].cardinality",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 66,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].cardinality.source_max",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 67,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].cardinality.source_min",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 68,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].cardinality.target_max",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 69,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].cardinality.target_min",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 70,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].description",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 71,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].initial_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 72,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].relation_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 73,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].relation_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 74,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].source_resource_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 75,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].stateful",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 76,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 77,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.relation_types[].target_resource_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 78,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 79,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].description",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 80,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].identity_model",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 81,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].initial_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 82,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].ownership_tracking",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 83,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].permitted_exit_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 84,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].resource_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 85,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].resource_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 86,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.resource_model.resource_types[].states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 87,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.reviewer",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 88,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.schema_version",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 89,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 90,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.forward_accounting",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 91,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.forward_accounting[].schema_carriers",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 92,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.forward_accounting[].source_container",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 93,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.forward_accounting[].source_unit_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 94,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.forward_accounting[].source_unit_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 95,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.forward_complete",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 96,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.inventory",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 97,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.inventory.exit_obligation_count",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 98,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.inventory.losslessness_requirement_count",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 99,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.inventory.representation_policy_field_count",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 100,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.inventory.rule_count",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 101,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.inventory.semantic_container_count",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 102,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.reverse_accounting",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 103,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.reverse_accounting[].schema_carrier",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 104,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.reverse_accounting[].source_unit_ids",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 105,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_accounting.reverse_complete",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 106,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 107,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 108,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.infeasible_path_handling",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 109,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.join_operator",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 110,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.membership_sensitivity",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 111,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.ownership_sensitivity",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 112,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.path_sensitivity",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 113,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.return_sensitivity",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 114,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.state_domain",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 115,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.reasoning_model.unknown_handling",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 116,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_aggregation",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 117,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_aggregation.unknown_must_not_collapse_to_valid",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 118,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_aggregation.unknown_when",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 119,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_aggregation.valid_when",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 120,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_aggregation.violation_may_when",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 121,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_aggregation.violation_must_when",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 122,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_policy.verdict_vocabulary",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 123,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 124,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].cleanup_responsibility",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 125,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].defect_category",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 126,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 127,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.ownership_updates",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 128,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.ownership_updates[].effect",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 129,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.ownership_updates[].resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 130,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.ownership_updates[].transfer_target_resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 131,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.relation_updates",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 132,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.relation_updates[].operation",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 133,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.relation_updates[].relation_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 134,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.relation_updates[].to_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 135,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.resource_state_updates",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 136,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.resource_state_updates[].resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 137,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].effects.resource_state_updates[].to_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 138,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 139,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.path_conditions",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 140,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.path_conditions[].condition_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 141,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.path_conditions[].condition_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 142,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.path_conditions[].polarity",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 143,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.path_conditions[].referenced_event_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 144,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.relation_state_requirements",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 145,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.relation_state_requirements[].allowed_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 146,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.relation_state_requirements[].presence",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 147,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.relation_state_requirements[].relation_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 148,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.resource_state_requirements",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 149,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.resource_state_requirements[].allowed_states",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 150,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.resource_state_requirements[].resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 151,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.return_conditions",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 152,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.return_conditions[].allowed_return_class_ids",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 153,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].preconditions.return_conditions[].event_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 154,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].relation_bindings",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 155,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].relation_bindings[].binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 156,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].relation_bindings[].relation_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 157,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].relation_bindings[].source_resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 158,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].relation_bindings[].target_resource_binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 159,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].resource_bindings",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 160,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].resource_bindings[].binding_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 161,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].resource_bindings[].distinct_identity_from",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 162,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].resource_bindings[].resource_type_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 163,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].resource_bindings[].role",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 164,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].resource_bindings[].same_identity_as",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 165,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].rule_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 166,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].rule_kind",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 167,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].semantic_container",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 168,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].source_evidence",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 169,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].trigger_event_ids",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 170,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.semantic_rules[].verdict_if_violated",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    },
+    {
+      "closure_status": "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED",
+      "closure_universe_ordinal": 171,
+      "required_C4_closure_relation_explicitly_established": false,
+      "schema_v2_property_path": "$.specification_id",
+      "semantic_promotion_used": false,
+      "unresolved_or_unestablished_reason_code": "NO_EXPLICIT_C4_CLOSURE_RELATION_ESTABLISHED_WITHIN_D0300_BOUND_INPUTS"
+    }
+  ],
+  "status": "D0301_171_REQUIRED_C4_RELATIONS_NOT_EXPLICITLY_ESTABLISHED"
+}

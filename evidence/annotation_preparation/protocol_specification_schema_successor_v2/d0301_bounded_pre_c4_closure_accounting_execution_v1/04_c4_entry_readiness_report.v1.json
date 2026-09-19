@@ -1,0 +1,51 @@
+{
+  "artifact_id": "SVF-D0301-C4-ENTRY-READINESS-REPORT-V1",
+  "authorization_binding": {
+    "decision": "D0300",
+    "machine_authorization_path": "evaluation/governance_reconciliation/d0300_bounded_pre_c4_closure_accounting_execution_authorization.json",
+    "machine_authorization_sha256": "224a489cde490d2da6a139db82f0db5b4aca095878e91fbb774a3a2ef85b545c",
+    "maximum_successful_execution_transaction_count": 1,
+    "published_commit": "89cc3c54ddcd6f9f17523d058db7840b1225cca9"
+  },
+  "closure_accounting_summary": {
+    "C4_entry_readiness_established": false,
+    "DIRECT_EXPLICIT_CLOSURE_WITNESS_NOT_ESTABLISHED": 0,
+    "DIRECT_EXPLICIT_CLOSURE_WITNESS_PRESENT": 0,
+    "RELATION_TO_C4_CLOSURE_CRITERION_NOT_ESTABLISHED": 171,
+    "all_required_C4_closure_relations_explicitly_established": false,
+    "closure_universe_count": 171,
+    "unresolved_or_unestablished_relation_count": 171,
+    "zero_unresolved_closure_established": false
+  },
+  "execution_accounting": {
+    "maximum_successful_execution_transaction_count": 1,
+    "pre_c4_closure_accounting_executed": true,
+    "pre_c4_closure_accounting_execution_authorized": true,
+    "remaining_authorized_successful_execution_transactions": 0,
+    "successful_execution_transaction_count": 1
+  },
+  "execution_id": "SVF-D0301-BOUNDED-PRE-C4-CLOSURE-ACCOUNTING-EXECUTION-V1",
+  "fail_closed_rule": "IF_ANY_REQUIRED_C4_CLOSURE_RELATION_IS_NOT_EXPLICITLY_ESTABLISHED_THEN_C4_ENTRY_READINESS_REMAINS_FALSE",
+  "fail_closed_rule_triggered": true,
+  "governance_effect": {
+    "B2_authorized": false,
+    "B2_executed": false,
+    "B2_readiness_established": false,
+    "C4_authorized": false,
+    "C4_entry_readiness_established": false,
+    "C4_executed": false,
+    "C4_zero_unresolved_closure_established": false,
+    "C5_authorized": false,
+    "C6_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "next_governance_checkpoint": "INDEPENDENT_READ_ONLY_VERIFY_EXACT_D0301_EXECUTION_OUTPUTS_BEFORE_COMMIT_OR_ANY_C4_ACTION",
+  "post_execution_rule": "D0301_OUTPUTS_REQUIRE_SEPARATE_INDEPENDENT_VERIFICATION_BEFORE_ANY_C4_READINESS_OR_C4_AUTHORIZATION_GOVERNANCE_ACTION",
+  "status": "C4_ENTRY_READINESS_FALSE_FAIL_CLOSED"
+}
