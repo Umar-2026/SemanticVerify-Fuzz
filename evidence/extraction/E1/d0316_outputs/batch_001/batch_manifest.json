@@ -1,0 +1,20 @@
+{
+  "batch_id": "E1_BATCH_001",
+
+  "execution_id": "D0310_E1_SINGLE_RUN",
+
+  "artifact_range": {
+    "start": 1,
+    "end": 10
+  },
+
+  "artifact_count_expected": 10,
+
+  "semantic_adjudication": false,
+
+  "firewall": {
+    "classification": false,
+    "repair": false,
+    "E2": false
+  }
+}
