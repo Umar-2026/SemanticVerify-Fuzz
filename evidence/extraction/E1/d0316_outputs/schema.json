@@ -1,0 +1,20 @@
+{
+  "artifact_type": "E1 evidence extraction unit",
+
+  "required_fields": {
+    "candidate_id": "",
+    "source_id": "",
+    "execution_id": "D0310_E1_SINGLE_RUN",
+    "evidence_units": [],
+    "provenance": {}
+  },
+
+  "forbidden_fields": [
+    "judgment",
+    "violation_type",
+    "severity",
+    "repair",
+    "VALID",
+    "VIOLATION"
+  ]
+}
