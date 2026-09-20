@@ -1,0 +1,20 @@
+{
+  "artifact_id": "D0316_E1_PILOT_VALIDATION",
+
+  "execution_id": "D0310_E1_SINGLE_RUN",
+
+  "validation": {
+    "artifact_count_checked": 1,
+    "schema_validation": true,
+    "provenance_validation": true,
+    "forbidden_field_check": true
+  },
+
+  "firewall": {
+    "semantic_adjudication": false,
+    "classification": false,
+    "repair_analysis": false
+  },
+
+  "status": "PILOT_VALIDATION_PASS"
+}
