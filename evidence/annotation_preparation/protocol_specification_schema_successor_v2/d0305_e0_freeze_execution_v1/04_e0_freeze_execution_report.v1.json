@@ -1,0 +1,82 @@
+{
+  "artifact_id": "SVF-D0305-E0-FREEZE-EXECUTION-REPORT-V1",
+  "authorization": {
+    "authorization_consumed_by_successful_atomic_publication": true,
+    "decision": "D0304",
+    "maximum_successful_execution_transactions": 1,
+    "published_authorization_commit": "f916ecc968e308098cd34c46d042323fa5a20cc0",
+    "reexecution_after_success_authorized": false,
+    "remaining_successful_execution_transaction_count_after_this_execution": 0,
+    "successful_execution_transaction_count_after_this_execution": 1
+  },
+  "downstream_authorization_after_execution": {
+    "B2_authorized": false,
+    "B2_executed": false,
+    "B2_readiness_established": false,
+    "C4_authorized": false,
+    "C4_entry_readiness_established": false,
+    "C4_executed": false,
+    "C4_zero_unresolved_closure_established": false,
+    "E1_extraction_authorized": false,
+    "E2_adjudication_authorized": false,
+    "E3_accounting_authorized": false,
+    "E4_readiness_reassessment_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "baseline_execution_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "execution_id": "SVF-D0305-E0-FREEZE-EXECUTION-V1",
+  "execution_result": {
+    "E0_FREEZE_EXECUTION_COMPLETED": true,
+    "all_bound_identities_validated": true,
+    "candidate_count": 171,
+    "future_E1_pair_domain_count": 684,
+    "governance_support_source_count": 5,
+    "inventory_member_count": 9,
+    "output_file_names": [
+      "01_frozen_candidate_universe_manifest.v1.json",
+      "02_frozen_evidence_source_universe_manifest.v1.json",
+      "03_frozen_relation_target_and_protocol_manifest.v1.json",
+      "04_e0_freeze_execution_report.v1.json"
+    ],
+    "required_output_file_count": 4,
+    "substantive_evidence_source_count": 4
+  },
+  "first_three_output_sha256": {
+    "01_frozen_candidate_universe_manifest.v1.json": "6e3973a8ca5b9724e60f66c3abaad244c39e2bce9458b897dacd9a8bccdef542",
+    "02_frozen_evidence_source_universe_manifest.v1.json": "ff9b9ee2e6061f84cfee7246dcf261ef7e69317c9f70e5b6bd0292b203d6c679",
+    "03_frozen_relation_target_and_protocol_manifest.v1.json": "671b75874c2a29c1a4203b5f93862bb4869f0d8838875f08363d276fe3e207a2"
+  },
+  "governance_firewall": {
+    "Class06_reclassification_performed": false,
+    "E1_execution_performed": false,
+    "E2_execution_performed": false,
+    "E3_accounting_performed": false,
+    "E4_readiness_reassessment_performed": false,
+    "P10_gold_annotation_executed": false,
+    "P11_analyzer_execution_performed": false,
+    "P11_analyzer_implementation_executed": false,
+    "Req06_Req14_determination_performed": false,
+    "baseline_execution_performed": false,
+    "candidate_identifier_occurrence_search_performed": false,
+    "candidate_reselection_performed": false,
+    "candidate_subsetting_performed": false,
+    "carrier_admissibility_disposition_performed": false,
+    "concrete_mapping_performed": false,
+    "curl_json_created": false,
+    "network_evidence_acquired": false,
+    "new_evidence_acquired": false,
+    "pair_reclassification_performed": false,
+    "positional_reassignment_performed": false,
+    "repair_execution_performed": false,
+    "schema_v4_to_v2_mapping_performed": false,
+    "semantic_adjudication_performed": false,
+    "substantive_evidence_extraction_performed": false,
+    "substantive_source_content_search_performed": false
+  },
+  "next_checkpoint": "INDEPENDENT_READ_ONLY_VERIFY_EXACT_D0305_OUTPUTS_BEFORE_COMMIT_PUBLICATION_OR_ANY_E1_GOVERNANCE"
+}
