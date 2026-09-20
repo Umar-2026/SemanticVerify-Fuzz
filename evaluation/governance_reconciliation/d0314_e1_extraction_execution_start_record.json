@@ -1,0 +1,47 @@
+{
+  "artifact_id": "D0314",
+  "type": "E1 extraction execution start record",
+
+  "source_checkpoints": {
+    "D0308": "add396bc894a0f1e8c84a469d81eb23d192f6f8c",
+    "D0309": "8aceba2d20a8da3972b28a5d3a7501a93f309e65",
+    "D0310": "2adb1efa6bfd100fbbeb768ce518590c049ff1fc",
+    "D0311": "891e8ce09101f283ed738105546f8ae503dfff88",
+    "D0312": "b4094f14337c6ebf1683e205728d2aa110368be4",
+    "D0313": "68f6643faef22c7e36a552944055494454fad658"
+  },
+
+  "execution": {
+    "execution_id": "D0310_E1_SINGLE_RUN",
+    "E1_started": true,
+    "E1_completed": false
+  },
+
+  "authorization_consumption": {
+    "maximum_successful_E1_executions": 1,
+    "successful_E1_executions_consumed": 1
+  },
+
+  "frozen_scope": {
+    "candidate_universe_count": 171,
+    "source_universe_count": 9,
+    "substantive_source_count": 4,
+    "governance_support_source_count": 5,
+    "candidate_source_pair_domain_count": 684
+  },
+
+  "firewall": {
+    "evidence_extraction_completed": false,
+    "semantic_adjudication_performed": false,
+    "E2_execution": false,
+    "C4_execution": false,
+    "B2_execution": false,
+    "P8_execution": false,
+    "repair_execution": false
+  },
+
+  "state": {
+    "execution_started": true,
+    "execution_completed": false
+  }
+}
