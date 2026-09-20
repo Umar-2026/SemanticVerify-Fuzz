@@ -1,0 +1,42 @@
+{
+  "artifact_id": "D0311",
+  "type": "E1 extraction input binding verification",
+
+  "source_checkpoints": {
+    "D0308_authorization": "add396bc894a0f1e8c84a469d81eb23d192f6f8c",
+    "D0309_manifest": "8aceba2d20a8da3972b28a5d3a7501a93f309e65",
+    "D0310_record": "2adb1efa6bfd100fbbeb768ce518590c049ff1fc"
+  },
+
+  "input_binding": {
+    "candidate_universe_count": 171,
+    "source_universe_count": 9,
+    "substantive_source_count": 4,
+    "governance_support_source_count": 5,
+    "candidate_source_pair_domain_count": 684
+  },
+
+  "verification": {
+    "candidate_identity_verified": true,
+    "source_identity_verified": true,
+    "pair_domain_verified": true
+  },
+
+  "firewall": {
+    "E1_started": false,
+    "evidence_extraction_performed": false,
+    "semantic_adjudication_performed": false,
+    "source_expansion": false,
+    "candidate_reselection": false,
+    "E2_execution": false,
+    "C4_execution": false,
+    "B2_execution": false,
+    "P8_execution": false,
+    "repair_execution": false
+  },
+
+  "state": {
+    "binding_verified": true,
+    "E1_execution_ready": false
+  }
+}
