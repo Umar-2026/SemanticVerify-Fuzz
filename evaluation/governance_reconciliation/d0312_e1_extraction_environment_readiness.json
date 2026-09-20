@@ -1,0 +1,44 @@
+{
+  "artifact_id": "D0312",
+  "type": "E1 extraction environment readiness verification",
+
+  "source_checkpoints": {
+    "D0308_authorization": "add396bc894a0f1e8c84a469d81eb23d192f6f8c",
+    "D0309_manifest": "8aceba2d20a8da3972b28a5d3a7501a93f309e65",
+    "D0310_record": "2adb1efa6bfd100fbbeb768ce518590c049ff1fc",
+    "D0311_binding": "891e8ce09101f283ed738105546f8ae503dfff88"
+  },
+
+  "environment": {
+    "repository_fixed": true,
+    "branch_fixed": true,
+    "input_boundary_fixed": true,
+    "output_location_fixed": true,
+    "execution_identifier_fixed": true
+  },
+
+  "execution": {
+    "execution_id": "D0310_E1_SINGLE_RUN",
+    "E1_started": false,
+    "E1_completed": false
+  },
+
+  "firewall": {
+    "evidence_extraction_performed": false,
+    "evidence_content_read": false,
+    "semantic_adjudication_performed": false,
+    "candidate_reselection": false,
+    "source_expansion": false,
+    "external_search": false,
+    "E2_execution": false,
+    "C4_execution": false,
+    "B2_execution": false,
+    "P8_execution": false,
+    "repair_execution": false
+  },
+
+  "state": {
+    "environment_ready": true,
+    "E1_execution_started": false
+  }
+}
