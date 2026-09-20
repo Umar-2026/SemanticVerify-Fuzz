@@ -1,0 +1,40 @@
+{
+  "artifact_id": "D0309",
+  "type": "E1 extraction execution manifest",
+
+  "source_checkpoint": "add396bc894a0f1e8c84a469d81eb23d192f6f8c",
+
+  "authorization": {
+    "D0308_authorization_present": true,
+    "E1_execution_authorized": true,
+    "E1_execution_performed": false,
+    "maximum_successful_E1_executions": 1,
+    "successful_E1_executions_consumed": 0
+  },
+
+  "frozen_scope": {
+    "candidate_universe_count": 171,
+    "source_universe_count": 9,
+    "substantive_source_count": 4,
+    "governance_support_source_count": 5,
+    "future_E1_pair_domain_count": 684
+  },
+
+  "execution_boundary": {
+    "read_frozen_sources_only": true,
+    "candidate_reselection": false,
+    "source_expansion": false,
+    "external_search": false,
+    "semantic_adjudication": false,
+    "E2_execution": false,
+    "C4_execution": false,
+    "B2_execution": false,
+    "P8_execution": false,
+    "repair_execution": false
+  },
+
+  "state": {
+    "manifest_created": true,
+    "E1_started": false
+  }
+}
