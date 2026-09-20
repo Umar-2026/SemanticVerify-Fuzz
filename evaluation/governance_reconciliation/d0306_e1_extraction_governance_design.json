@@ -1,0 +1,35 @@
+{
+  "artifact_id": "D0306",
+  "type": "E1 extraction governance design candidate",
+  "source_checkpoint": "84def67d96be8e62f4738958b6b75a1ad081f458",
+
+  "authorization": {
+    "design_created": true,
+    "E1_extraction_authorized": false,
+    "E1_execution_performed": false
+  },
+
+  "frozen_scope": {
+    "candidate_universe_count": 171,
+    "source_universe_count": 9,
+    "substantive_source_count": 4,
+    "governance_support_source_count": 5,
+    "future_E1_pair_domain_count": 684
+  },
+
+  "firewall": {
+    "evidence_content_read": false,
+    "evidence_extraction_performed": false,
+    "semantic_adjudication_performed": false,
+    "gold_annotation_executed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+
+  "downstream_authorization": {
+    "E2_authorized": false,
+    "C4_authorized": false,
+    "B2_authorized": false,
+    "P8_authorized": false
+  }
+}
