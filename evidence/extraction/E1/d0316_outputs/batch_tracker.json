@@ -1,0 +1,20 @@
+{
+  "execution_id": "D0310_E1_SINGLE_RUN",
+
+  "status": "BATCH_EXTRACTION_IN_PROGRESS",
+
+  "pilot_completed": true,
+
+  "artifacts": {
+    "generated": 1,
+    "expected_domain": 684
+  },
+
+  "semantic_adjudication": false,
+
+  "firewall": {
+    "classification": false,
+    "repair": false,
+    "E2": false
+  }
+}
