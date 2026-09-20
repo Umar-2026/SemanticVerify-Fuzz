@@ -1,0 +1,36 @@
+{
+  "artifact_id": "D0307",
+  "type": "bounded E1 extraction execution authorization candidate",
+  "source_checkpoint": "d2ca620e972579e1dd13b5e5023f80ed49c36e49",
+
+  "authorization": {
+    "design_created": true,
+    "E1_execution_authorized": false,
+    "E1_extraction_performed": false
+  },
+
+  "frozen_scope": {
+    "candidate_universe_count": 171,
+    "source_universe_count": 9,
+    "substantive_source_count": 4,
+    "governance_support_source_count": 5,
+    "future_E1_pair_domain_count": 684
+  },
+
+  "firewall": {
+    "evidence_content_read": false,
+    "evidence_extraction_performed": false,
+    "semantic_adjudication_performed": false,
+    "candidate_reselection_performed": false,
+    "source_expansion_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+
+  "downstream_authorization": {
+    "E2_authorized": false,
+    "C4_authorized": false,
+    "B2_authorized": false,
+    "P8_authorized": false
+  }
+}
