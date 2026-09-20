@@ -1,0 +1,34 @@
+{
+  "artifact_id": "D0316",
+  "type": "E1 extraction artifact execution record",
+
+  "source_checkpoint": {
+    "D0315": "b459f3b7097e657bbb1d05bd995596cd3725c2c9"
+  },
+
+  "execution": {
+    "execution_id": "D0310_E1_SINGLE_RUN",
+    "E1_started": true,
+    "E1_completed": false
+  },
+
+  "output": {
+    "artifact_directory": "evidence/extraction/E1/d0316_outputs/",
+    "artifact_count": 0
+  },
+
+  "scope": {
+    "candidate_universe_count": 171,
+    "source_universe_count": 9,
+    "candidate_source_pair_domain_count": 684
+  },
+
+  "firewall": {
+    "semantic_adjudication": false,
+    "E2_execution": false,
+    "C4_execution": false,
+    "B2_execution": false,
+    "P8_execution": false,
+    "repair_execution": false
+  }
+}
