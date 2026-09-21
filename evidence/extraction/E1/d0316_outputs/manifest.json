@@ -1,0 +1,17 @@
+{
+"artifact_id": "D0316_E1_OUTPUT_MANIFEST",
+"execution_id": "D0310_E1_SINGLE_RUN",
+"status": "E1_EXTRACTION_IN_PROGRESS",
+"scope": {
+"candidate_universe_count": 171,
+"source_universe_count": 9,
+"candidate_source_pair_domain_count": 684
+},
+"artifact_count": 71,
+"semantic_labels_generated": false,
+"firewall": {
+"semantic_adjudication": false,
+"violation_classification": false,
+"repair_analysis": false
+}
+}
