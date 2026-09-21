@@ -1,0 +1,17 @@
+{
+"candidate_id": "candidate_410",
+"source_id": "source_410",
+"execution_id": "D0310_E1_SINGLE_RUN",
+"evidence_units": [
+{
+"locator": "",
+"text": "",
+"context": ""
+}
+],
+"provenance": {
+"extraction_stage": "E1",
+"semantic_adjudication": false,
+"source_expansion": false
+}
+}
