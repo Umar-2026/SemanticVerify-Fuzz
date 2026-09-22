@@ -1,0 +1,189 @@
+{
+  "artifact_id": "SVF-D0320-PREAUTHORIZATION-INTEGRITY-PASS-RESULT-V1",
+  "status": "INTEGRITY_RESULT_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "source_checkpoint": {
+    "effective_D0319_commit": "02c91795c26815ece846c08d760b7fcf1ecbe704",
+    "D0319_decision_sha256": "73690c98e9bbac8d0756eec49c062c1bf1a617182d342335e80e42d03de48fad",
+    "D0319_machine_artifact_sha256": "b23d41f3a5916c7ac63fd3eeb83f5f90879ac1490df87c8cab4ed22ee32277f3",
+    "D0319_authorization_effective": true
+  },
+  "recorded_integrity_transaction": {
+    "transaction_class": "PREAUTHORIZATION_INTEGRITY_VERIFICATION_NON_EXTRACTION_NON_CONSUMING",
+    "repository_head": "02c91795c26815ece846c08d760b7fcf1ecbe704",
+    "origin_main": "02c91795c26815ece846c08d760b7fcf1ecbe704",
+    "pass_check_count": 47,
+    "fail_check_count": 0,
+    "integrity_finding_count": 0,
+    "verdict": "PASS",
+    "substantive_source_bytes_read_for_integrity_verification": true,
+    "substantive_source_bytes_read_for_extraction": false,
+    "candidate_matching_performed": false,
+    "occurrence_detection_performed": false,
+    "evidence_extraction_performed": false,
+    "evidence_unit_construction_performed": false,
+    "pair_record_write_performed": false,
+    "semantic_adjudication_performed": false,
+    "mapping_performed": false,
+    "repair_performed": false,
+    "authorization_consumed": false,
+    "corrected_E1_attempt_started": false
+  },
+  "manifest_reverification_results": {
+    "candidate_manifest": {
+      "expected_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+      "observed_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+      "record_count": 171,
+      "verification_passed": true
+    },
+    "source_manifest": {
+      "expected_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+      "observed_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+      "record_count": 4,
+      "verification_passed": true
+    },
+    "pair_manifest": {
+      "expected_sha256": "fdb49a7bca9a56ea54bd52a7fd63c07df06738cd03db95928d0f1ccf3f3de398",
+      "observed_sha256": "fdb49a7bca9a56ea54bd52a7fd63c07df06738cd03db95928d0f1ccf3f3de398",
+      "record_count": 684,
+      "pair_id_range": "E1P0001..E1P0684",
+      "verification_passed": true
+    }
+  },
+  "frozen_source_identity_verification_results": [
+    {
+      "member_id": "C1-S01",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md",
+      "expected_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "observed_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "expected_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "observed_head_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "observed_worktree_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "path_exists": true,
+      "git_tracked": true,
+      "verification_passed": true
+    },
+    {
+      "member_id": "C1-S02",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md",
+      "expected_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "observed_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "expected_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "observed_head_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "observed_worktree_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "path_exists": true,
+      "git_tracked": true,
+      "verification_passed": true
+    },
+    {
+      "member_id": "C1-S03",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json",
+      "expected_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "observed_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "expected_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "observed_head_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "observed_worktree_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "path_exists": true,
+      "git_tracked": true,
+      "verification_passed": true
+    },
+    {
+      "member_id": "C1-S04",
+      "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json",
+      "expected_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "observed_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "expected_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "observed_head_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "observed_worktree_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "path_exists": true,
+      "git_tracked": true,
+      "verification_passed": true
+    }
+  ],
+  "corrected_output_root_verification": {
+    "path": "evidence/extraction/E1/corrected_run_v1",
+    "observed_exists": false,
+    "preexisting_pair_record_json_count": 0,
+    "clean_output_root_condition_passed": true
+  },
+  "integrity_result": {
+    "all_four_frozen_source_identities_verified": true,
+    "candidate_manifest_hash_verified": true,
+    "source_manifest_hash_verified": true,
+    "pair_manifest_hash_verified": true,
+    "clean_corrected_output_root_verified": true,
+    "preauthorization_integrity_verdict": "PASS",
+    "corrected_E1_attempt_start_prerequisites_satisfied": true
+  },
+  "authorization_state_after_recorded_integrity_transaction": {
+    "D0319_corrected_E1_authorization_effective": true,
+    "maximum_authorized_attempts": 1,
+    "authorization_consumed": false,
+    "corrected_E1_attempt_started": false,
+    "remaining_unstarted_authorized_attempt_capacity": 1,
+    "D0320_grants_new_or_additional_execution_authorization": false,
+    "D0320_consumes_D0319_authorization": false,
+    "D0320_replaces_D0319_authorization": false,
+    "D0308_authorization_reuse_allowed": false
+  },
+  "execution_boundary": {
+    "execution_id": "SVF-E1-CORRECTED-RUN-001",
+    "candidate_count": 171,
+    "substantive_source_count": 4,
+    "pair_domain_count": 684,
+    "pair_id_range": "E1P0001..E1P0684",
+    "output_root": "evidence/extraction/E1/corrected_run_v1",
+    "authorization_consumption_event": "ATOMICALLY_AT_FIRST_EXTRACTION_PURPOSE_SOURCE_CONTENT_READ_OR_FIRST_OUTPUT_RECORD_WRITE_WHICHEVER_OCCURS_FIRST",
+    "actual_extraction_purpose_source_read_performed": false,
+    "actual_output_record_write_performed": false
+  },
+  "downstream_authorization": {
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "C5_authorized": false,
+    "C6_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "protected_boundary": {
+    "D0251_snapshot_content_read_authorized": false,
+    "D0276_retained_evidence_content_read_authorized": false,
+    "D0301_reexecution_authorized": false,
+    "historical_one_time_verifier_execution_authorized": false,
+    "Class06_reclassification_authorized": false,
+    "positional_reassignment_authorized": false,
+    "pair_reclassification_authorized": false,
+    "Req06_Req14_determination_authorized": false,
+    "carrier_admissibility_disposition_authorized": false,
+    "concrete_mapping_authorized": false,
+    "schema_v4_to_v2_mapping_authorized": false
+  },
+  "D0320_authoring_transaction_state": {
+    "substantive_source_content_read": false,
+    "integrity_verification_reperformed": false,
+    "candidate_matching_performed": false,
+    "occurrence_detection_performed": false,
+    "evidence_extraction_performed": false,
+    "corrected_E1_attempt_started": false,
+    "authorization_consumed": false,
+    "output_root_created": false,
+    "pair_records_written": 0,
+    "evidence_units_extracted": 0,
+    "E2_adjudication_performed": false,
+    "C4_execution_performed": false,
+    "B2_execution_performed": false,
+    "P8_mapping_performed": false,
+    "gold_annotation_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0320_PREAUTH_INTEGRITY_RESULT_AUTHOR_CANDIDATE"
+}
