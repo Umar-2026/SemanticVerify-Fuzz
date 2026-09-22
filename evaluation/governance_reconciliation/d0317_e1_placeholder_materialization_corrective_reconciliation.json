@@ -1,0 +1,139 @@
+{
+  "artifact_id": "SVF-D0317-E1-PLACEHOLDER-MATERIALIZATION-CORRECTIVE-RECONCILIATION-V1",
+  "status": "CORRECTIVE_RECONCILIATION_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "source_checkpoint": {
+    "commit": "f99a69e3dabc06030c3649ffe9705c5db75f3d41",
+    "head_equals_origin_main_before_authoring": true
+  },
+  "governing_e1_contract": {
+    "candidate_universe_count": 171,
+    "candidate_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "substantive_source_count": 4,
+    "substantive_source_ids": [
+      "C1-S01",
+      "C1-S02",
+      "C1-S03",
+      "C1-S04"
+    ],
+    "candidate_source_pair_domain_count": 684,
+    "pair_domain_rule": "CARTESIAN_PRODUCT_OF_171_FROZEN_CANDIDATES_AND_4_FROZEN_SUBSTANTIVE_SOURCES",
+    "candidate_reselection_allowed": false,
+    "source_expansion_allowed": false,
+    "semantic_adjudication_during_E1_allowed": false
+  },
+  "forensic_audit": {
+    "batch_directory_count": 44,
+    "batch_artifact_file_count": 440,
+    "parse_failure_count": 0,
+    "unique_candidate_id_count": 440,
+    "unique_source_id_count": 440,
+    "unique_candidate_source_pair_count": 440,
+    "empty_evidence_artifact_count": 440,
+    "nonempty_evidence_artifact_count": 0,
+    "frozen_substantive_source_ids_observed_in_batch_artifacts": [],
+    "synthetic_candidate_id_count": 440,
+    "synthetic_candidate_ids_above_171_count": 270,
+    "synthetic_source_ids_outside_frozen_four_count": 440,
+    "missing_manifest_batches": [],
+    "missing_validation_batches": [
+      "batch_012"
+    ],
+    "range_mismatches": [
+      {
+        "batch": "batch_001",
+        "manifest_start": 1,
+        "manifest_end": 10,
+        "actual_artifact_numbers": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "pilot_artifact_count": 1,
+    "pilot_meaningful_evidence_present": false
+  },
+  "classification": {
+    "batch_001_through_044": "HISTORICAL_PLACEHOLDER_SCAFFOLDING_NOT_GOVERNED_E1_EVIDENCE_EXTRACTION",
+    "valid_governed_E1_pair_completions_credited_from_batch_001_through_044": 0,
+    "placeholder_file_count_is_E1_progress": false,
+    "llm_generation_attempt_count_800_is_E1_denominator": false,
+    "frozen_E1_denominator": 684
+  },
+  "d0314_consumption_reconciliation": {
+    "historical_D0314_E1_started": true,
+    "historical_D0314_E1_completed": false,
+    "historical_D0314_successful_executions_consumed_field": 1,
+    "successful_governed_E1_execution_established_by_audit": false,
+    "D0314_mutated_by_D0317": false,
+    "authorization_consumption_state": "AMBIGUOUS_REQUIRES_SEPARATE_SUCCESSOR_GOVERNANCE",
+    "previous_authorization_may_be_reused_automatically": false
+  },
+  "preservation": {
+    "historical_placeholder_files_deleted": false,
+    "historical_placeholder_files_rewritten": false,
+    "D0314_rewritten": false,
+    "D0315_rewritten": false,
+    "D0316_rewritten": false,
+    "preserve_for_auditability": true
+  },
+  "authorization": {
+    "batch_045_authorized": false,
+    "E1_reexecution_authorized": false,
+    "corrected_E1_extraction_authorized": false,
+    "source_expansion_authorized": false,
+    "candidate_reselection_authorized": false,
+    "semantic_adjudication_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "C5_authorized": false,
+    "C6_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "required_successor_before_corrected_E1": {
+    "exact_171_candidate_binding": true,
+    "exact_four_substantive_source_binding": true,
+    "source_path_sha256_git_blob_binding": true,
+    "exact_684_pair_cartesian_ordering": true,
+    "markdown_extraction_rule_binding": true,
+    "json_extraction_rule_binding": true,
+    "zero_occurrence_record_format_binding": true,
+    "locator_format_binding": true,
+    "extracted_unit_sha256_rule_binding": true,
+    "output_schema_binding": true,
+    "deterministic_pair_identifier_binding": true,
+    "replacement_execution_identifier_binding": true,
+    "clean_output_location_distinct_from_placeholder_tree": true,
+    "one_shot_authorization_semantics_binding": true,
+    "independent_pre_execution_verification_required": true
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0317_CORRECTIVE_RECONCILIATION_AUTHOR_CANDIDATE",
+  "authoring_transaction_side_effects": {
+    "existing_files_mutated": false,
+    "E1_extraction_performed": false,
+    "E2_adjudication_performed": false,
+    "C4_execution_performed": false,
+    "B2_execution_performed": false,
+    "P8_mapping_performed": false,
+    "gold_annotation_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  }
+}
