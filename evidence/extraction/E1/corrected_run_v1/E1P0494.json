@@ -1,0 +1,20 @@
+{
+  "artifact_type": "SVF_E1_CORRECTED_PAIR_EXTRACTION_RECORD_V1",
+  "contract_id": "SVF-D0318-CORRECTED-E1-EXTRACTION-CONTRACT-V1",
+  "execution_id": "SVF-E1-CORRECTED-RUN-001",
+  "pair_ordinal": 494,
+  "pair_id": "E1P0494",
+  "candidate_ordinal": 124,
+  "schema_v2_property_path": "$.semantic_rules[].cleanup_responsibility",
+  "source_ordinal": 2,
+  "source_member_id": "C1-S02",
+  "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md",
+  "source_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+  "source_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+  "source_format": "MARKDOWN",
+  "relation_target_id": "SVF-C4-EXPLICIT-CARRIER-CLOSURE-RELATION-TARGET-V1",
+  "extraction_rule_id": "D0318-E1-MARKDOWN-EXACT-ID-PARAGRAPH-V1",
+  "locator_kind": "LINE_RANGE_1_BASED_IN_FROZEN_GIT_BLOB",
+  "exact_identifier_occurrence_count": 0,
+  "evidence_units": []
+}

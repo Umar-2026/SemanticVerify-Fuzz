@@ -1,0 +1,20 @@
+{
+  "artifact_type": "SVF_E1_CORRECTED_PAIR_EXTRACTION_RECORD_V1",
+  "contract_id": "SVF-D0318-CORRECTED-E1-EXTRACTION-CONTRACT-V1",
+  "execution_id": "SVF-E1-CORRECTED-RUN-001",
+  "pair_ordinal": 19,
+  "pair_id": "E1P0019",
+  "candidate_ordinal": 5,
+  "schema_v2_property_path": "$.events[].affected_relation_type_ids",
+  "source_ordinal": 3,
+  "source_member_id": "C1-S03",
+  "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json",
+  "source_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+  "source_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+  "source_format": "JSON",
+  "relation_target_id": "SVF-C4-EXPLICIT-CARRIER-CLOSURE-RELATION-TARGET-V1",
+  "extraction_rule_id": "D0318-E1-JSON-EXACT-STRING-SMALLEST-ENCLOSING-UNIT-V1",
+  "locator_kind": "RFC6901_JSON_POINTER_TO_MATCH_PLUS_ENCLOSING_UNIT_POINTER",
+  "exact_identifier_occurrence_count": 0,
+  "evidence_units": []
+}

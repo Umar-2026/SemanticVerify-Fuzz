@@ -1,0 +1,20 @@
+{
+  "artifact_type": "SVF_E1_CORRECTED_PAIR_EXTRACTION_RECORD_V1",
+  "contract_id": "SVF-D0318-CORRECTED-E1-EXTRACTION-CONTRACT-V1",
+  "execution_id": "SVF-E1-CORRECTED-RUN-001",
+  "pair_ordinal": 412,
+  "pair_id": "E1P0412",
+  "candidate_ordinal": 103,
+  "schema_v2_property_path": "$.semantic_accounting.reverse_accounting[].schema_carrier",
+  "source_ordinal": 4,
+  "source_member_id": "C1-S04",
+  "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json",
+  "source_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+  "source_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+  "source_format": "JSON",
+  "relation_target_id": "SVF-C4-EXPLICIT-CARRIER-CLOSURE-RELATION-TARGET-V1",
+  "extraction_rule_id": "D0318-E1-JSON-EXACT-STRING-SMALLEST-ENCLOSING-UNIT-V1",
+  "locator_kind": "RFC6901_JSON_POINTER_TO_MATCH_PLUS_ENCLOSING_UNIT_POINTER",
+  "exact_identifier_occurrence_count": 0,
+  "evidence_units": []
+}

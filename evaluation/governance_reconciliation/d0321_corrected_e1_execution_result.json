@@ -1,0 +1,110 @@
+{
+  "artifact_id": "SVF-D0321-CORRECTED-E1-EXECUTION-RESULT-V1",
+  "status": "EXECUTION_RESULT_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "source_checkpoint": {
+    "effective_D0320_commit": "23a45f2d6a05e46a7714174f86c02b14e71aa34e",
+    "D0319_authorization_checkpoint": "02c91795c26815ece846c08d760b7fcf1ecbe704",
+    "D0319_authorization_was_effective_before_execution": true,
+    "D0320_integrity_result_was_effective_before_execution": true
+  },
+  "execution_identity": {
+    "execution_id": "SVF-E1-CORRECTED-RUN-001",
+    "corrected_output_root": "evidence/extraction/E1/corrected_run_v1",
+    "candidate_count": 171,
+    "substantive_source_count": 4,
+    "pair_domain_count": 684,
+    "pair_id_range": "E1P0001..E1P0684",
+    "candidate_manifest_canonical_json_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "source_manifest_canonical_json_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+    "pair_manifest_canonical_json_sha256": "fdb49a7bca9a56ea54bd52a7fd63c07df06738cd03db95928d0f1ccf3f3de398"
+  },
+  "one_shot_authorization_result": {
+    "authorization_consumed": true,
+    "authorization_consumption_event": "FIRST_EXTRACTION_PURPOSE_SOURCE_CONTENT_READ",
+    "corrected_E1_attempt_started": true,
+    "corrected_E1_execution_completed": true,
+    "corrected_E1_successful_completion": true,
+    "automatic_rerun_authorized": false,
+    "remaining_authorized_attempt_capacity": 0,
+    "D0319_may_be_reused": false
+  },
+  "materialized_output_result": {
+    "pair_record_count": 684,
+    "zero_occurrence_pair_count": 684,
+    "nonzero_occurrence_pair_count": 0,
+    "total_exact_identifier_occurrences": 0,
+    "evidence_unit_count": 0,
+    "execution_state_relative_path": "_execution_state.json",
+    "execution_state_sha256": "eefea216f9d9c3fa79736374c81945fa74a675108a3d8defeb0258b475ab13c5",
+    "pair_file_manifest_canonical_json_sha256": "d02e8ccf424ddc077aaae1de4be282ff96f0f6699e2bb2d460298cf65f5cd146",
+    "output_tree_file_count": 685,
+    "output_tree_manifest_canonical_json_sha256": "91038deb5b85f993ce102f77061c841376c02109bbc3e7bf6bdd18bc09357c48"
+  },
+  "exact_match_result_interpretation_boundary": {
+    "all_684_pairs_recorded_zero_exact_identifier_occurrences": true,
+    "no_E1_evidence_units_extracted": true,
+    "zero_occurrence_is_negative_semantic_judgment": false,
+    "zero_occurrence_is_candidate_exclusion": false,
+    "zero_occurrence_establishes_candidate_relation_failure": false,
+    "zero_occurrence_establishes_C4_failure": false,
+    "zero_occurrence_authorizes_source_expansion": false,
+    "zero_occurrence_authorizes_query_rewrite": false,
+    "zero_occurrence_authorizes_fuzzy_or_semantic_matching": false,
+    "zero_occurrence_authorizes_mapping": false
+  },
+  "execution_scope_result": {
+    "semantic_adjudication_performed": false,
+    "candidate_disposition_performed": false,
+    "cross_source_join_performed": false,
+    "mapping_performed": false,
+    "repair_performed": false
+  },
+  "downstream_authorization": {
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "C5_authorized": false,
+    "C6_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "protected_boundary": {
+    "D0251_snapshot_content_read_authorized": false,
+    "D0276_retained_evidence_content_read_authorized": false,
+    "D0301_reexecution_authorized": false,
+    "historical_one_time_verifier_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "candidate_reselection_authorized": false,
+    "candidate_subsetting_authorized": false,
+    "source_expansion_authorized": false,
+    "semantic_adjudication_authorized": false,
+    "Class06_reclassification_authorized": false,
+    "positional_reassignment_authorized": false,
+    "pair_reclassification_authorized": false,
+    "Req06_Req14_determination_authorized": false,
+    "carrier_admissibility_disposition_authorized": false,
+    "concrete_mapping_authorized": false,
+    "schema_v4_to_v2_mapping_authorized": false
+  },
+  "D0321_authoring_transaction_state": {
+    "substantive_source_content_read": false,
+    "corrected_E1_reexecuted": false,
+    "pair_records_rematerialized": false,
+    "evidence_units_reextracted": false,
+    "semantic_adjudication_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "gold_annotation_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0321_CORRECTED_E1_EXECUTION_RESULT_AUTHOR_CANDIDATE"
+}
