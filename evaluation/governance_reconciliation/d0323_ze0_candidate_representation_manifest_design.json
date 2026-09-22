@@ -1,0 +1,253 @@
+{
+  "artifact_id": "SVF-D0323-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-DESIGN-V1",
+  "status": "DESIGN_ONLY_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "source_checkpoint": {
+    "effective_D0322_commit": "6e193d8e5d0095e488bb6da36824e72a9b2119bc",
+    "D0322_decision_sha256": "9070a0deab08fb9f4d94356ceeec61d6134ad596943c96b96c7a86d3d5a92b41",
+    "D0322_machine_artifact_sha256": "329ddc3449cb0f9afb16df2d407abca378967937b523bfedc2b7cb41853e2736",
+    "D0322_remote_publication_previously_verified": true
+  },
+  "ZE0_contract": {
+    "contract_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-CONTRACT-V1",
+    "contract_role": "DETERMINISTIC_CANDIDATE_SIDE_REPRESENTATION_SPECIFICATION",
+    "execution_authorized": false,
+    "candidate_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "candidate_count": 171,
+    "candidate_manifest_canonical_json_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "candidate_order": "EXACT_FROZEN_CANDIDATE_ORDINAL_ORDER",
+    "manifest_record_count_if_later_authorized": 171,
+    "source_content_required": false,
+    "source_content_read_allowed": false,
+    "source_side_inventory_allowed": false,
+    "candidate_to_source_comparison_allowed": false,
+    "semantic_support_judgment_allowed": false,
+    "mapping_allowed": false
+  },
+  "representation_grammar": {
+    "grammar_id": "SVF-ZE0-DET-REP-GRAMMAR-V1",
+    "input": "EXACT_SCHEMA_V2_PROPERTY_PATH_STRING",
+    "general_rules": {
+      "raw_input_must_be_preserved_byte_for_byte": true,
+      "candidate_specific_rule_branching_allowed": false,
+      "candidate_specific_alias_invention_allowed": false,
+      "manual_rewrite_allowed": false,
+      "semantic_paraphrase_allowed": false,
+      "synonym_expansion_allowed": false,
+      "abbreviation_expansion_allowed": false,
+      "stemming_allowed": false,
+      "lemmatization_allowed": false,
+      "LLM_generated_representation_allowed": false,
+      "embedding_generated_representation_allowed": false
+    },
+    "path_segmentation_rule": {
+      "rule_id": "ZE0-R-PATH-DOT-SPLIT-V1",
+      "operation": "Split the exact raw property-path string on literal ASCII period '.' from left to right.",
+      "empty_segments": "PRESERVE",
+      "segment_text_mutation": "NONE",
+      "ordering": "SOURCE_STRING_ORDER"
+    },
+    "identifier_lexicalization_rule": {
+      "rule_id": "ZE0-R-ASCII-IDENTIFIER-LEXICALIZATION-V1",
+      "operation_sequence": [
+        "Within each exact dot segment, scan left-to-right.",
+        "Treat ASCII underscore '_' and ASCII hyphen '-' as lexical separators.",
+        "Split between ASCII lowercase letter or decimal digit followed by ASCII uppercase letter.",
+        "Split acronym boundary before an ASCII uppercase letter when it is preceded by ASCII uppercase and followed by ASCII lowercase.",
+        "Apply ASCII-only A-Z to a-z lowercasing to derived lexical tokens.",
+        "Preserve decimal digits.",
+        "Preserve all non-ASCII code points without semantic normalization.",
+        "Discard zero-length lexical tokens created only by separators."
+      ],
+      "unicode_normalization": "NONE",
+      "case_normalization": "ASCII_UPPERCASE_TO_LOWERCASE_ONLY",
+      "semantic_normalization": "NONE"
+    },
+    "representation_forms": [
+      {
+        "representation_id": "ZE0-F0-RAW-PATH-EXACT",
+        "value_type": "STRING",
+        "definition": "Exact frozen schema-V2 property-path string with no transformation.",
+        "semantic_status": "LEXICAL_DIAGNOSTIC_ONLY"
+      },
+      {
+        "representation_id": "ZE0-F1-DOT-SEGMENT-SEQUENCE-EXACT",
+        "value_type": "ARRAY_OF_STRINGS",
+        "definition": "Ordered result of literal-dot segmentation with segment bytes otherwise unchanged.",
+        "semantic_status": "STRUCTURAL_DIAGNOSTIC_ONLY"
+      },
+      {
+        "representation_id": "ZE0-F2-LEAF-SEGMENT-EXACT",
+        "value_type": "STRING",
+        "definition": "Final element of ZE0-F1, including an empty final element if the raw path ends with a literal period.",
+        "semantic_status": "LEXICAL_DIAGNOSTIC_ONLY"
+      },
+      {
+        "representation_id": "ZE0-F3-PARENT-LEAF-SEQUENCE-EXACT",
+        "value_type": "ARRAY_OF_STRINGS",
+        "definition": "Last two ZE0-F1 elements when at least two exist; otherwise the one-element ZE0-F1 sequence.",
+        "semantic_status": "STRUCTURAL_DIAGNOSTIC_ONLY"
+      },
+      {
+        "representation_id": "ZE0-F4-LEAF-LEXICAL-TOKENS",
+        "value_type": "ARRAY_OF_STRINGS",
+        "definition": "ZE0-R-ASCII-IDENTIFIER-LEXICALIZATION-V1 applied only to ZE0-F2.",
+        "semantic_status": "LEXICAL_DIAGNOSTIC_ONLY"
+      },
+      {
+        "representation_id": "ZE0-F5-PARENT-LEAF-LEXICAL-TOKEN-SEQUENCES",
+        "value_type": "ARRAY_OF_ARRAYS_OF_STRINGS",
+        "definition": "Lexicalization applied independently and in order to each segment in ZE0-F3.",
+        "semantic_status": "STRUCTURAL_LEXICAL_DIAGNOSTIC_ONLY"
+      },
+      {
+        "representation_id": "ZE0-F6-ALL-SEGMENT-LEXICAL-TOKEN-SEQUENCES",
+        "value_type": "ARRAY_OF_ARRAYS_OF_STRINGS",
+        "definition": "Lexicalization applied independently and in order to every ZE0-F1 segment.",
+        "semantic_status": "STRUCTURAL_LEXICAL_DIAGNOSTIC_ONLY"
+      }
+    ],
+    "representation_order": [
+      "ZE0-F0-RAW-PATH-EXACT",
+      "ZE0-F1-DOT-SEGMENT-SEQUENCE-EXACT",
+      "ZE0-F2-LEAF-SEGMENT-EXACT",
+      "ZE0-F3-PARENT-LEAF-SEQUENCE-EXACT",
+      "ZE0-F4-LEAF-LEXICAL-TOKENS",
+      "ZE0-F5-PARENT-LEAF-LEXICAL-TOKEN-SEQUENCES",
+      "ZE0-F6-ALL-SEGMENT-LEXICAL-TOKEN-SEQUENCES"
+    ]
+  },
+  "future_manifest_schema": {
+    "artifact_type": "SVF_ZE0_CANDIDATE_REPRESENTATION_MANIFEST_V1",
+    "required_top_level_fields": [
+      "artifact_type",
+      "contract_id",
+      "source_checkpoint_commit",
+      "candidate_namespace",
+      "candidate_manifest_canonical_json_sha256",
+      "record_count",
+      "records",
+      "manifest_canonical_json_sha256"
+    ],
+    "record_order": "EXACT_FROZEN_CANDIDATE_ORDINAL_ORDER",
+    "required_record_fields": [
+      "candidate_ordinal",
+      "schema_v2_property_path",
+      "representation_grammar_id",
+      "representations"
+    ],
+    "representation_record_policy": {
+      "all_seven_representation_ids_required": true,
+      "representation_order_must_match_contract": true,
+      "no_candidate_may_be_omitted": true,
+      "no_candidate_may_be_added": true,
+      "no_candidate_may_be_reordered": true,
+      "raw_path_must_equal_frozen_input_exactly": true
+    }
+  },
+  "collision_and_empty_value_policy": {
+    "identical_derived_values_across_candidates": "RETAIN_AND_ACCOUNT_LATER_WITHOUT_DISAMBIGUATION",
+    "identical_values_across_representation_forms": "RETAIN_UNDER_DISTINCT_REPRESENTATION_IDS",
+    "empty_exact_segment": "RETAIN",
+    "empty_lexical_token_sequence": "RETAIN_AS_EMPTY_ARRAY",
+    "collision_is_semantic_equivalence": false,
+    "collision_is_mapping": false,
+    "collision_authorizes_alias_creation": false,
+    "empty_value_is_semantic_non_support": false
+  },
+  "future_ZE0_execution_invariants": {
+    "input_candidate_count_must_equal": 171,
+    "input_candidate_manifest_sha256_must_equal": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "output_record_count_must_equal": 171,
+    "source_files_may_be_read": false,
+    "candidate_specific_branching_allowed": false,
+    "manual_edit_after_generation_allowed": false,
+    "semantic_judgment_allowed": false,
+    "source_comparison_allowed": false,
+    "matching_allowed": false,
+    "mapping_allowed": false,
+    "execution_must_fail_closed_on_input_identity_mismatch": true
+  },
+  "scientific_boundaries": {
+    "representation_form_is_evidence": false,
+    "representation_form_is_semantic_support": false,
+    "representation_form_is_mapping": false,
+    "lexical_overlap_would_establish_support": false,
+    "lexical_non_overlap_would_establish_non_support": false,
+    "candidate_collision_would_establish_equivalence": false,
+    "ZE0_output_would_modify_D0321_zero_evidence_result": false
+  },
+  "future_lifecycle": {
+    "ZE0_design_frozen_by_D0323": true,
+    "ZE0_execution_authorized_by_D0323": false,
+    "future_ZE0_execution_requires_separate_authorization": true,
+    "future_ZE0_execution_requires_preexecution_identity_check": true,
+    "future_ZE0_result_requires_separate_result_checkpoint": true,
+    "ZE1_may_not_start_automatically_after_ZE0": true
+  },
+  "downstream_authorization": {
+    "ZE0_execution_authorized": false,
+    "ZE1_execution_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "candidate_representation_manifest_materialization_authorized": false,
+    "source_representation_inventory_authorized": false,
+    "representation_overlap_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "successor_extraction_execution_authorized": false,
+    "source_expansion_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "protected_boundary": {
+    "substantive_source_content_read_authorized": false,
+    "D0251_snapshot_content_read_authorized": false,
+    "D0276_retained_evidence_content_read_authorized": false,
+    "D0301_reexecution_authorized": false,
+    "D0319_reuse_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "candidate_reselection_authorized": false,
+    "candidate_subsetting_authorized": false,
+    "source_expansion_authorized": false,
+    "semantic_adjudication_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "candidate_specific_query_rewrite_authorized": false,
+    "Class06_reclassification_authorized": false,
+    "positional_reassignment_authorized": false,
+    "pair_reclassification_authorized": false,
+    "Req06_Req14_determination_authorized": false,
+    "carrier_admissibility_disposition_authorized": false,
+    "concrete_mapping_authorized": false,
+    "schema_v4_to_v2_mapping_authorized": false
+  },
+  "D0323_authoring_transaction_state": {
+    "substantive_source_content_read": false,
+    "candidate_representation_manifest_generated": false,
+    "candidate_representation_values_generated": false,
+    "candidate_list_reselected": false,
+    "source_representation_inventory_generated": false,
+    "representation_overlap_diagnostic_executed": false,
+    "corrected_E1_reexecuted": false,
+    "semantic_adjudication_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "gold_annotation_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0323_ZE0_CANDIDATE_REPRESENTATION_MANIFEST_DESIGN_AUTHOR_CANDIDATE"
+}
