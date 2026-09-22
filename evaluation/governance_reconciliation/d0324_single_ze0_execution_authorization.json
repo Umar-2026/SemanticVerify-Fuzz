@@ -1,0 +1,264 @@
+{
+  "artifact_id": "SVF-D0324-SINGLE-ZE0-EXECUTION-AUTHORIZATION-V1",
+  "status": "AUTHORIZATION_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "source_checkpoint": {
+    "effective_D0323_commit": "ed1b6c5fd78b8690560d472b1241fa9bcfda3635",
+    "D0323_decision_sha256": "df0671d41f21e6014bfbe445b1e7f18567598ffd65b8b58dcdba3d4c5b54cb07",
+    "D0323_machine_artifact_sha256": "a7ca71ba4570c23ae89b3536aab729fdc194f3c92cccf74d733a8358eca7fefa",
+    "D0323_remote_publication_previously_verified": true
+  },
+  "authorization_scope": {
+    "authorization_id": "SVF-D0324-ZE0-ONE-SHOT-AUTH-V1",
+    "authorized_execution_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-RUN-001",
+    "authorized_contract_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-CONTRACT-V1",
+    "authorized_representation_grammar_id": "SVF-ZE0-DET-REP-GRAMMAR-V1",
+    "authorized_stage": "ZE0",
+    "maximum_execution_attempts_after_effectiveness": 1,
+    "successful_execution_capacity": 1,
+    "authorization_currently_effective": false,
+    "authorization_consumed": false,
+    "remaining_authorized_attempt_capacity_if_published": 1
+  },
+  "frozen_input_identity": {
+    "candidate_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "candidate_count": 171,
+    "candidate_manifest_canonical_json_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "candidate_source_governance_artifact_path": "evaluation/governance_reconciliation/d0318_corrected_e1_successor_design.json",
+    "candidate_source_governance_artifact_sha256": "0216b4c5b40627bd5fdf80e7258c7c16169bedd3adb956e71118c733170243d7",
+    "candidate_order": "EXACT_FROZEN_CANDIDATE_ORDINAL_ORDER",
+    "candidate_reselection_allowed": false,
+    "candidate_subsetting_allowed": false,
+    "candidate_addition_allowed": false,
+    "candidate_reordering_allowed": false
+  },
+  "preauthorization_integrity_verification": {
+    "required": true,
+    "must_occur_after_D0324_publication": true,
+    "separate_result_checkpoint_required_before_ZE0_execution": true,
+    "is_execution": false,
+    "is_authorization_consumption": false,
+    "permitted_operations": [
+      "Verify effective D0324 publication identity.",
+      "Verify D0323 decision and machine-artifact identities.",
+      "Verify frozen D0318 governance-artifact path and byte identity.",
+      "Resolve the frozen 171-candidate list from the governed candidate source.",
+      "Verify candidate count equals 171.",
+      "Recompute and verify the canonical candidate-manifest SHA-256.",
+      "Verify exact candidate ordinal ordering.",
+      "Verify ZE0 output root does not yet exist.",
+      "Execute only the frozen implementation test vectors on synthetic strings."
+    ],
+    "prohibited_operations": [
+      "Generate any ZE0 representation value for an actual frozen candidate.",
+      "Write any ZE0 candidate record.",
+      "Create the ZE0 output root.",
+      "Read any substantive source file.",
+      "Perform candidate-to-source comparison.",
+      "Perform matching or semantic adjudication.",
+      "Execute ZE1, ZE2, E2, mapping, analyzer, baseline, or repair."
+    ],
+    "failure_semantics": "FAIL_CLOSED_BEFORE_ZE0_ATTEMPT_START_WITHOUT_AUTHORIZATION_CONSUMPTION"
+  },
+  "implementation_conformance_test_vectors": {
+    "rule_set": "SVF-ZE0-DET-REP-GRAMMAR-V1",
+    "must_pass_before_execution": true,
+    "synthetic_only": true,
+    "vectors": [
+      {
+        "input": "foo.barBaz",
+        "expected_F1": [
+          "foo",
+          "barBaz"
+        ],
+        "expected_F2": "barBaz",
+        "expected_F4": [
+          "bar",
+          "baz"
+        ]
+      },
+      {
+        "input": "foo.HTTPServer",
+        "expected_F1": [
+          "foo",
+          "HTTPServer"
+        ],
+        "expected_F2": "HTTPServer",
+        "expected_F4": [
+          "http",
+          "server"
+        ]
+      },
+      {
+        "input": "foo.x1Y2",
+        "expected_F1": [
+          "foo",
+          "x1Y2"
+        ],
+        "expected_F2": "x1Y2",
+        "expected_F4": [
+          "x1",
+          "y2"
+        ]
+      },
+      {
+        "input": "foo.foo_bar-baz",
+        "expected_F1": [
+          "foo",
+          "foo_bar-baz"
+        ],
+        "expected_F2": "foo_bar-baz",
+        "expected_F4": [
+          "foo",
+          "bar",
+          "baz"
+        ]
+      },
+      {
+        "input": ".a.",
+        "expected_F1": [
+          "",
+          "a",
+          ""
+        ],
+        "expected_F2": "",
+        "expected_F4": []
+      }
+    ],
+    "test_vector_failure_semantics": "FAIL_CLOSED_BEFORE_ZE0_ATTEMPT_START_WITHOUT_AUTHORIZATION_CONSUMPTION"
+  },
+  "one_shot_consumption_semantics": {
+    "attempt_start_condition": "FIRST_ACTUAL_CANDIDATE_REPRESENTATION_GENERATION_OR_FIRST_ZE0_OUTPUT_WRITE_WHICHEVER_OCCURS_FIRST",
+    "representation_generation_definition": "Applying any D0323 ZE0 path-segmentation, lexicalization, or representation-form construction rule to an actual frozen candidate property path for materialization purposes.",
+    "preauthorization_candidate_identity_read_is_consuming": false,
+    "synthetic_test_vector_execution_is_consuming": false,
+    "first_actual_candidate_representation_generation_is_consuming": true,
+    "first_ZE0_output_write_is_consuming": true,
+    "consumption_is_atomic": true,
+    "automatic_retry_after_consumption_authorized": false,
+    "rerun_after_success_authorized": false,
+    "failed_or_incomplete_started_attempt_requires_successor_authorization": true
+  },
+  "execution_contract": {
+    "execution_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-RUN-001",
+    "candidate_count": 171,
+    "output_record_count": 171,
+    "representation_form_count_per_candidate": 7,
+    "representation_ids_in_order": [
+      "ZE0-F0-RAW-PATH-EXACT",
+      "ZE0-F1-DOT-SEGMENT-SEQUENCE-EXACT",
+      "ZE0-F2-LEAF-SEGMENT-EXACT",
+      "ZE0-F3-PARENT-LEAF-SEQUENCE-EXACT",
+      "ZE0-F4-LEAF-LEXICAL-TOKENS",
+      "ZE0-F5-PARENT-LEAF-LEXICAL-TOKEN-SEQUENCES",
+      "ZE0-F6-ALL-SEGMENT-LEXICAL-TOKEN-SEQUENCES"
+    ],
+    "source_checkpoint_commit_for_manifest": "ed1b6c5fd78b8690560d472b1241fa9bcfda3635",
+    "substantive_source_content_read_allowed": false,
+    "candidate_to_source_comparison_allowed": false,
+    "matching_allowed": false,
+    "semantic_judgment_allowed": false,
+    "mapping_allowed": false,
+    "manual_post_generation_edit_allowed": false
+  },
+  "output_contract": {
+    "output_root": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1",
+    "manifest_path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/candidate_representation_manifest.json",
+    "execution_state_path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/_execution_state.json",
+    "manifest_artifact_type": "SVF_ZE0_CANDIDATE_REPRESENTATION_MANIFEST_V1",
+    "preexisting_output_root_allowed": false,
+    "partial_output_after_started_failure_may_be_deleted_or_overwritten": false,
+    "successful_output_mutation_or_rerun_allowed": false
+  },
+  "successful_completion_requirements": {
+    "candidate_count_exact": 171,
+    "manifest_record_count_exact": 171,
+    "all_candidates_preserved": true,
+    "candidate_order_preserved": true,
+    "all_seven_representation_forms_present": true,
+    "raw_path_preserved_exactly": true,
+    "representation_values_generated_only_by_D0323_rules": true,
+    "synthetic_conformance_tests_passed_before_attempt_start": true,
+    "substantive_source_reads": 0,
+    "candidate_source_comparisons": 0,
+    "matching_operations": 0,
+    "semantic_judgments": 0,
+    "mapping_operations": 0,
+    "execution_state_status": "COMPLETED",
+    "result_checkpoint_required_after_completion": true
+  },
+  "scientific_interpretation_boundary": {
+    "ZE0_manifest_is_evidence": false,
+    "ZE0_manifest_is_semantic_support": false,
+    "ZE0_manifest_is_mapping": false,
+    "ZE0_manifest_establishes_C4": false,
+    "ZE0_manifest_changes_D0321_zero_evidence_result": false,
+    "representation_collision_is_semantic_equivalence": false
+  },
+  "downstream_authorization": {
+    "ZE0_preauthorization_integrity_verification_authorized_after_D0324_publication": true,
+    "ZE0_execution_authorized_after_D0324_publication_and_integrity_PASS": true,
+    "ZE1_execution_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "source_representation_inventory_authorized": false,
+    "representation_overlap_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "source_expansion_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "protected_boundary": {
+    "D0251_snapshot_content_read_authorized": false,
+    "D0276_retained_evidence_content_read_authorized": false,
+    "D0301_reexecution_authorized": false,
+    "D0319_reuse_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "substantive_source_content_read_authorized": false,
+    "candidate_reselection_authorized": false,
+    "candidate_subsetting_authorized": false,
+    "source_expansion_authorized": false,
+    "semantic_adjudication_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "candidate_specific_query_rewrite_authorized": false,
+    "Class06_reclassification_authorized": false,
+    "positional_reassignment_authorized": false,
+    "pair_reclassification_authorized": false,
+    "Req06_Req14_determination_authorized": false,
+    "carrier_admissibility_disposition_authorized": false,
+    "concrete_mapping_authorized": false,
+    "schema_v4_to_v2_mapping_authorized": false
+  },
+  "D0324_authoring_transaction_state": {
+    "candidate_list_enumerated": false,
+    "actual_candidate_representation_generated": false,
+    "ZE0_output_root_created": false,
+    "ZE0_execution_started": false,
+    "ZE0_execution_completed": false,
+    "authorization_consumed": false,
+    "substantive_source_content_read": false,
+    "matching_performed": false,
+    "semantic_adjudication_performed": false,
+    "ZE1_execution_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "gold_annotation_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0324_SINGLE_ZE0_EXECUTION_AUTHORIZATION_AUTHOR_CANDIDATE"
+}
