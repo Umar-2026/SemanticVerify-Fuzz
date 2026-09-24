@@ -1,0 +1,451 @@
+{
+  "artifact_id": "SVF-D0327-ZE1-CANDIDATE-BLIND-SOURCE-INVENTORY-DESIGN-V1",
+  "status": "DESIGN_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "design_id": "SVF-ZE1-CANDIDATE-BLIND-SOURCE-REPRESENTATION-INVENTORY-CONTRACT-V1",
+  "representation_grammar_id": "SVF-ZE1-CANDIDATE-BLIND-SOURCE-REPRESENTATION-GRAMMAR-V1",
+  "reserved_future_execution_id": "SVF-ZE1-SOURCE-REPRESENTATION-INVENTORY-RUN-001",
+  "source_checkpoint": {
+    "effective_D0326_commit": "0de94e0b532dcad4184b6eb32d46a3e475fcf616",
+    "D0318_governance_artifact": "evaluation/governance_reconciliation/d0318_corrected_e1_successor_design.json",
+    "D0318_governance_artifact_sha256": "0216b4c5b40627bd5fdf80e7258c7c16169bedd3adb956e71118c733170243d7"
+  },
+  "pre_authoring_reconciliation": {
+    "previous_generic_resolver_failure": true,
+    "previous_generic_resolver_failure_class": "SOURCE_BINDING_SCHEMA_RESOLVER_MISMATCH",
+    "previous_corrected_verifier_field_failure": true,
+    "previous_corrected_verifier_field_failure_class": "NATIVE_git_blob_oid_FIELD_NOT_ACCEPTED_BY_VERIFIER",
+    "previous_failures_created_D0327_files": false,
+    "previous_failures_started_ZE1": false,
+    "previous_failures_read_substantive_source_content": false,
+    "previous_failures_consumed_execution_authorization": false,
+    "native_source_binding_verification_passed": true
+  },
+  "frozen_substantive_source_binding": {
+    "authoritative_json_path": "$.frozen_substantive_source_binding",
+    "authoritative_source_list_json_path": "$.frozen_substantive_source_binding.sources",
+    "source_manifest_identity_mode": "USE_D0318_FROZEN_CANONICAL_HASH_NO_RENORMALIZATION",
+    "source_manifest_canonical_json_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+    "source_count": 4,
+    "source_member_ids_in_order": [
+      "C1-S01",
+      "C1-S02",
+      "C1-S03",
+      "C1-S04"
+    ],
+    "required_identity_fields": [
+      "member_id",
+      "class",
+      "role",
+      "path",
+      "sha256",
+      "git_blob_oid"
+    ],
+    "network_search_allowed": false,
+    "external_search_allowed": false,
+    "repository_wide_open_ended_search_allowed": false,
+    "source_expansion_allowed": false,
+    "native_source_records": [
+      {
+        "member_id": "C1-S01",
+        "class": "SUBSTANTIVE_EXISTING_EVIDENCE",
+        "role": "RECORDED_HUMAN_POSITIVE_BINDING_EVIDENCE_SOURCE",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md",
+        "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+        "git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+        "source_ordinal": 1,
+        "source_format": "MARKDOWN",
+        "extraction_rule_id": "D0318-E1-MARKDOWN-EXACT-ID-PARAGRAPH-V1",
+        "locator_kind": "LINE_RANGE_1_BASED_IN_FROZEN_GIT_BLOB"
+      },
+      {
+        "member_id": "C1-S02",
+        "class": "SUBSTANTIVE_EXISTING_EVIDENCE",
+        "role": "GOVERNED_HUMAN_TECHNICAL_ADJUDICATION_EVIDENCE",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md",
+        "sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+        "git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+        "source_ordinal": 2,
+        "source_format": "MARKDOWN",
+        "extraction_rule_id": "D0318-E1-MARKDOWN-EXACT-ID-PARAGRAPH-V1",
+        "locator_kind": "LINE_RANGE_1_BASED_IN_FROZEN_GIT_BLOB"
+      },
+      {
+        "member_id": "C1-S03",
+        "class": "SUBSTANTIVE_EXISTING_EVIDENCE",
+        "role": "GOVERNED_SUPPORTED_BINDING_CLASSIFICATION_EVIDENCE",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json",
+        "sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+        "git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+        "source_ordinal": 3,
+        "source_format": "JSON",
+        "extraction_rule_id": "D0318-E1-JSON-EXACT-STRING-SMALLEST-ENCLOSING-UNIT-V1",
+        "locator_kind": "RFC6901_JSON_POINTER_TO_MATCH_PLUS_ENCLOSING_UNIT_POINTER"
+      },
+      {
+        "member_id": "C1-S04",
+        "class": "SUBSTANTIVE_EXISTING_EVIDENCE",
+        "role": "GOVERNED_REQ06_REQ14_SEMANTIC_ROLE_ADOPTION",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json",
+        "sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+        "git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+        "source_ordinal": 4,
+        "source_format": "JSON",
+        "extraction_rule_id": "D0318-E1-JSON-EXACT-STRING-SMALLEST-ENCLOSING-UNIT-V1",
+        "locator_kind": "RFC6901_JSON_POINTER_TO_MATCH_PLUS_ENCLOSING_UNIT_POINTER"
+      }
+    ]
+  },
+  "candidate_blindness_contract": {
+    "ZE0_manifest_read_permitted_during_ZE1_execution": false,
+    "D0318_candidate_records_read_permitted_during_ZE1_execution": false,
+    "candidate_property_path_read_permitted_during_ZE1_execution": false,
+    "candidate_representation_value_read_permitted_during_ZE1_execution": false,
+    "candidate_specific_query_permitted": false,
+    "candidate_specific_filter_permitted": false,
+    "candidate_specific_source_subsetting_permitted": false,
+    "candidate_specific_tokenization_change_permitted": false,
+    "candidate_specific_rule_change_permitted": false,
+    "semantic_relevance_filtering_permitted": false
+  },
+  "future_source_read_contract": {
+    "source_content_read_authorized_by_D0327": false,
+    "future_execution_requires_separate_authorization": true,
+    "future_source_universe": "EXACT_FOUR_FROZEN_D0318_SUBSTANTIVE_SOURCES_ONLY",
+    "future_source_bytes": "EXACT_FROZEN_BYTES_ONLY",
+    "UTF8_decoding": "STRICT",
+    "Unicode_normalization": "NONE",
+    "Unicode_casefold": "NONE",
+    "stemming": "NONE",
+    "synonym_expansion": "NONE",
+    "stopword_removal": "NONE",
+    "semantic_parsing": "NONE",
+    "source_specific_semantic_querying": "NONE"
+  },
+  "source_atom_grammar": {
+    "scan_order": "LEFT_TO_RIGHT_DECODED_CHARACTER_ORDER",
+    "atom_definition": "A maximal contiguous character span in which each code point is either Unicode General Category Letter (L*), Unicode General Category Number (N*), literal '_', literal '-', or literal '.'.",
+    "discard_rule": "Discard a maximal allowed-character span if it contains no Unicode Letter (L*) or Number (N*) code point.",
+    "authoritative_occurrence_deduplication": false,
+    "all_occurrences_retained": true,
+    "runtime_Unicode_database_version_must_be_recorded": true,
+    "character_offset_basis": "ZERO_BASED_PYTHON_DECODED_UNICODE_CODE_POINT_INDEX",
+    "line_number_basis": "ONE_BASED",
+    "column_number_basis": "ONE_BASED_DECODED_CHARACTER_COLUMN",
+    "required_atom_locator_fields": [
+      "source_member_id",
+      "atom_ordinal",
+      "start_character_offset_zero_based",
+      "end_character_offset_exclusive",
+      "start_line_one_based",
+      "start_column_one_based"
+    ]
+  },
+  "source_representation_forms": [
+    {
+      "representation_id": "ZE1-SF0-RAW-ATOM-EXACT",
+      "definition": "Exact retained source atom string with no normalization."
+    },
+    {
+      "representation_id": "ZE1-SF1-DOT-SEGMENT-SEQUENCE-EXACT",
+      "definition": "Split ZE1-SF0 on literal '.' and preserve leading, internal, and trailing empty dot segments."
+    },
+    {
+      "representation_id": "ZE1-SF2-PER-SEGMENT-LEXICAL-TOKEN-SEQUENCES",
+      "definition": "For every ZE1-SF1 dot segment independently: '_' and '-' are separators; split ASCII lowercase-or-digit to ASCII uppercase boundaries; split ASCII acronym boundaries before the uppercase character that begins a capitalized word; lowercase ASCII A-Z only; preserve digits and non-ASCII code points; discard separator-created empty lexical tokens."
+    },
+    {
+      "representation_id": "ZE1-SF3-FLATTENED-LEXICAL-TOKEN-SEQUENCE",
+      "definition": "Concatenate ZE1-SF2 lexical-token sequences in original dot-segment order."
+    }
+  ],
+  "ordered_token_occurrence_stream": {
+    "required": true,
+    "definition": "Emit each ZE1-SF3 token occurrence in deterministic source order while retaining source member, atom ordinal, dot-segment ordinal, lexical-token ordinal, and source-atom locator.",
+    "candidate_comparison_performed_during_stream_creation": false,
+    "semantic_grouping_performed_during_stream_creation": false,
+    "token_occurrence_deduplication": false
+  },
+  "collision_and_absence_semantics": {
+    "repeated_raw_atom_occurrences_retained": true,
+    "repeated_token_occurrences_retained": true,
+    "dot_created_empty_segments_retained": true,
+    "separator_created_empty_lexical_tokens_discarded": true,
+    "representation_collision_establishes_semantic_equivalence": false,
+    "representation_collision_establishes_protocol_support": false,
+    "inventory_absence_establishes_semantic_non_support": false
+  },
+  "synthetic_conformance_test_vectors": {
+    "synthetic_only": true,
+    "executed_during_D0327_authoring": false,
+    "must_be_executed_only_under_a_separately_governed_non_consuming_integrity_check": true,
+    "vector_count": 5,
+    "vectors": [
+      {
+        "vector_id": "ZE1-TV01",
+        "input_text": "foo.barBaz",
+        "expected_atoms": [
+          {
+            "raw_atom": "foo.barBaz",
+            "dot_segments": [
+              "foo",
+              "barBaz"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "foo"
+              ],
+              [
+                "bar",
+                "baz"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "foo",
+              "bar",
+              "baz"
+            ]
+          }
+        ]
+      },
+      {
+        "vector_id": "ZE1-TV02",
+        "input_text": "HTTPServer",
+        "expected_atoms": [
+          {
+            "raw_atom": "HTTPServer",
+            "dot_segments": [
+              "HTTPServer"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "http",
+                "server"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "http",
+              "server"
+            ]
+          }
+        ]
+      },
+      {
+        "vector_id": "ZE1-TV03",
+        "input_text": "x1Y2",
+        "expected_atoms": [
+          {
+            "raw_atom": "x1Y2",
+            "dot_segments": [
+              "x1Y2"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "x1",
+                "y2"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "x1",
+              "y2"
+            ]
+          }
+        ]
+      },
+      {
+        "vector_id": "ZE1-TV04",
+        "input_text": ".a.",
+        "expected_atoms": [
+          {
+            "raw_atom": ".a.",
+            "dot_segments": [
+              "",
+              "a",
+              ""
+            ],
+            "per_segment_lexical_tokens": [
+              [],
+              [
+                "a"
+              ],
+              []
+            ],
+            "flattened_lexical_tokens": [
+              "a"
+            ]
+          }
+        ]
+      },
+      {
+        "vector_id": "ZE1-TV05",
+        "input_text": "foo, barBaz\nHTTPServer --- x1Y2",
+        "expected_atoms": [
+          {
+            "raw_atom": "foo",
+            "dot_segments": [
+              "foo"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "foo"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "foo"
+            ]
+          },
+          {
+            "raw_atom": "barBaz",
+            "dot_segments": [
+              "barBaz"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "bar",
+                "baz"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "bar",
+              "baz"
+            ]
+          },
+          {
+            "raw_atom": "HTTPServer",
+            "dot_segments": [
+              "HTTPServer"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "http",
+                "server"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "http",
+              "server"
+            ]
+          },
+          {
+            "raw_atom": "x1Y2",
+            "dot_segments": [
+              "x1Y2"
+            ],
+            "per_segment_lexical_tokens": [
+              [
+                "x1",
+                "y2"
+              ]
+            ],
+            "flattened_lexical_tokens": [
+              "x1",
+              "y2"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "future_output_contract": {
+    "output_root": "evidence/representation_alignment/ZE1/source_representation_inventory_v1",
+    "inventory_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json",
+    "execution_state_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/_execution_state.json",
+    "output_root_must_not_preexist": true,
+    "source_record_count": 4,
+    "source_order": [
+      "C1-S01",
+      "C1-S02",
+      "C1-S03",
+      "C1-S04"
+    ],
+    "all_atom_occurrences_must_be_retained": true,
+    "all_token_occurrences_must_be_retained": true,
+    "execution_state_must_record_source_counts": true,
+    "execution_state_must_record_atom_counts": true,
+    "execution_state_must_record_token_occurrence_counts": true,
+    "execution_state_must_record_output_hashes": true
+  },
+  "future_preauthorization_integrity_contract": {
+    "required": true,
+    "D0327_itself_authorizes_integrity_execution": false,
+    "future_integrity_checkpoint_requires_separate_governance": true,
+    "permitted_non_consuming_checks": [
+      "effective D0327 publication identity",
+      "exact D0318 source-manifest canonical identity",
+      "exact four source member IDs and order",
+      "exact frozen source paths from governance metadata",
+      "exact Git blob OIDs through Git tree metadata only",
+      "future ZE1 output-root absence",
+      "synthetic-only grammar conformance"
+    ],
+    "prohibited_during_non_consuming_integrity_check": [
+      "opening substantive frozen source bytes",
+      "reading ZE0 candidate-representation manifest",
+      "traversing D0318 candidate records",
+      "reading candidate property-path values",
+      "candidate-source comparison",
+      "representation overlap matching",
+      "semantic adjudication"
+    ],
+    "failure_rule": "FAIL_CLOSED_BEFORE_ZE1_ATTEMPT_START"
+  },
+  "future_one_shot_execution_semantics": {
+    "D0327_authorizes_ZE1_execution": false,
+    "separate_ZE1_execution_authorization_required": true,
+    "recommended_maximum_execution_attempts": 1,
+    "recommended_consumption_event": "FIRST_SUBSTANTIVE_SOURCE_CONTENT_READ_OR_FIRST_ZE1_OUTPUT_WRITE_WHICHEVER_OCCURS_FIRST",
+    "automatic_retry_after_consumption_recommended": false,
+    "source_SHA256_must_be_verified_when_source_bytes_are_first_authorized_to_be_read": true
+  },
+  "scientific_interpretation_boundary": {
+    "ZE1_inventory_is_semantic_evidence": false,
+    "ZE1_inventory_is_protocol_support": false,
+    "ZE1_inventory_is_semantic_non_support": false,
+    "ZE1_inventory_is_mapping": false,
+    "ZE1_inventory_establishes_C4": false,
+    "ZE1_inventory_changes_D0321_zero_evidence_result": false,
+    "ZE1_inventory_alone_establishes_representation_mismatch": false
+  },
+  "downstream_authorization": {
+    "ZE1_execution_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "representation_overlap_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "source_expansion_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "D0327_authoring_transaction": {
+    "substantive_source_content_read": false,
+    "ZE0_manifest_read": false,
+    "candidate_list_traversed": false,
+    "candidate_value_read": false,
+    "candidate_representation_value_read": false,
+    "synthetic_vectors_executed": false,
+    "source_representation_inventory_performed": false,
+    "candidate_source_comparison_performed": false,
+    "matching_performed": false,
+    "semantic_adjudication_performed": false,
+    "ZE1_execution_performed": false,
+    "ZE2_execution_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0327_ZE1_CANDIDATE_BLIND_SOURCE_INVENTORY_DESIGN_AUTHOR_CANDIDATE"
+}
