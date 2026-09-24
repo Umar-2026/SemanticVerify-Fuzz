@@ -1,0 +1,510 @@
+{
+  "execution_id": "SVF-ZE1-PREAUTH-INTEGRITY-RUN-001",
+  "authorization_id": "SVF-D0328-ZE1-PREAUTH-INTEGRITY-ONE-SHOT-AUTH-V1",
+  "corrective_successor_id": "SVF-D0329-D0328-PREEXECUTION-PREFLIGHT-CORRECTIVE-SUCCESSOR-V1",
+  "status": "COMPLETED_SINGLE_GOVERNED_PREAUTH_INTEGRITY_ATTEMPT",
+  "attempt_started": true,
+  "attempt_start_event_observed": "FIRST_SYNTHETIC_CONFORMANCE_VECTOR_EVALUATION",
+  "authorization_consumed": true,
+  "remaining_authorized_integrity_attempt_capacity": 0,
+  "automatic_retry_authorized": false,
+  "overall_verdict": "PASS",
+  "pass_check_count": 7,
+  "fail_check_count": 0,
+  "findings": [],
+  "check_group_results": [
+    {
+      "check_id": "ZE1-PI01-PUBLICATION-CHAIN-IDENTITY",
+      "pass": true
+    },
+    {
+      "check_id": "ZE1-PI02-D0327-BYTE-IDENTITY",
+      "pass": true
+    },
+    {
+      "check_id": "ZE1-PI03-SOURCE-MANIFEST-IDENTITY",
+      "pass": true
+    },
+    {
+      "check_id": "ZE1-PI04-GIT-TREE-BLOB-IDENTITY",
+      "pass": true
+    },
+    {
+      "check_id": "ZE1-PI05-OUTPUT-ROOT-ABSENCE",
+      "pass": true
+    },
+    {
+      "check_id": "ZE1-PI06-SYNTHETIC-GRAMMAR-CONFORMANCE",
+      "pass": true
+    },
+    {
+      "check_id": "ZE1-PI07-RUNTIME-UNICODE-VERSION",
+      "pass": true
+    }
+  ],
+  "publication_chain_identity_passed": true,
+  "D0327_commit": "47c9135987178ce51179949d7b333b5bd2aa7492",
+  "D0327_decision_sha256": "4a6c38ccd1093a0002dd924f506b72a21a3a7940af7e7eb9e70e2c2a12931835",
+  "D0327_artifact_sha256": "30f29c230a09779200615125334967ba6ae7e9c8a81d9230b187189b2071e336",
+  "D0328_commit": "e7f23d577df73fdd97bdb78f516d747e8f9eb4a4",
+  "D0328_decision_sha256": "d1a3f9f6f84f579b4acd363230b7f6aa6941e7ac363618c02933e9d9df6ef396",
+  "D0328_artifact_sha256": "53d70d4ced40b6223fa8b094ef8b71715c8c55e0ac83bcd58c04142ef8674153",
+  "D0329_commit": "089654d630e7959f0b61f998007f7f58259b184c",
+  "D0329_decision_sha256": "ae2488fa8fb5a48809db09c2401e59427386427fce5754d526451dc9ccf572d6",
+  "D0329_artifact_sha256": "6317cbf153d53417eeef0e3ef8d11c799e1e1915e1f9a5628039f617301fe251",
+  "source_manifest_canonical_json_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+  "source_member_ids": [
+    "C1-S01",
+    "C1-S02",
+    "C1-S03",
+    "C1-S04"
+  ],
+  "source_git_blob_oid_checks": [
+    {
+      "source_member_id": "C1-S01",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md",
+      "source_format": "MARKDOWN",
+      "recorded_source_sha256_metadata": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "expected_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "observed_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "pass": true,
+      "substantive_source_content_read": false
+    },
+    {
+      "source_member_id": "C1-S02",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md",
+      "source_format": "MARKDOWN",
+      "recorded_source_sha256_metadata": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "expected_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "observed_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "pass": true,
+      "substantive_source_content_read": false
+    },
+    {
+      "source_member_id": "C1-S03",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json",
+      "source_format": "JSON",
+      "recorded_source_sha256_metadata": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "expected_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "observed_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "pass": true,
+      "substantive_source_content_read": false
+    },
+    {
+      "source_member_id": "C1-S04",
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json",
+      "source_format": "JSON",
+      "recorded_source_sha256_metadata": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "expected_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "observed_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "pass": true,
+      "substantive_source_content_read": false
+    }
+  ],
+  "source_sha256_values_treated_as_frozen_metadata_only": true,
+  "substantive_source_bytes_opened_for_sha_recomputation": false,
+  "ZE1_output_root_absent": true,
+  "synthetic_vector_count": 5,
+  "synthetic_vector_canonical_sha256": "b05010befdd0531373c4594793cbad50dfea394dc2083da73afd60d181cfd773",
+  "synthetic_vector_results": [
+    {
+      "vector_id": "ZE1-TV01",
+      "pass": true,
+      "input_text": "foo.barBaz",
+      "expected_atoms": [
+        {
+          "raw_atom": "foo.barBaz",
+          "dot_segments": [
+            "foo",
+            "barBaz"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "foo"
+            ],
+            [
+              "bar",
+              "baz"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "foo",
+            "bar",
+            "baz"
+          ]
+        }
+      ],
+      "observed_atoms": [
+        {
+          "raw_atom": "foo.barBaz",
+          "dot_segments": [
+            "foo",
+            "barBaz"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "foo"
+            ],
+            [
+              "bar",
+              "baz"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "foo",
+            "bar",
+            "baz"
+          ]
+        }
+      ],
+      "observed_atom_locators": [
+        {
+          "atom_ordinal": 1,
+          "start_character_offset_zero_based": 0,
+          "end_character_offset_exclusive": 10,
+          "start_line_one_based": 1,
+          "start_column_one_based": 1
+        }
+      ]
+    },
+    {
+      "vector_id": "ZE1-TV02",
+      "pass": true,
+      "input_text": "HTTPServer",
+      "expected_atoms": [
+        {
+          "raw_atom": "HTTPServer",
+          "dot_segments": [
+            "HTTPServer"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "http",
+              "server"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "http",
+            "server"
+          ]
+        }
+      ],
+      "observed_atoms": [
+        {
+          "raw_atom": "HTTPServer",
+          "dot_segments": [
+            "HTTPServer"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "http",
+              "server"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "http",
+            "server"
+          ]
+        }
+      ],
+      "observed_atom_locators": [
+        {
+          "atom_ordinal": 1,
+          "start_character_offset_zero_based": 0,
+          "end_character_offset_exclusive": 10,
+          "start_line_one_based": 1,
+          "start_column_one_based": 1
+        }
+      ]
+    },
+    {
+      "vector_id": "ZE1-TV03",
+      "pass": true,
+      "input_text": "x1Y2",
+      "expected_atoms": [
+        {
+          "raw_atom": "x1Y2",
+          "dot_segments": [
+            "x1Y2"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "x1",
+              "y2"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "x1",
+            "y2"
+          ]
+        }
+      ],
+      "observed_atoms": [
+        {
+          "raw_atom": "x1Y2",
+          "dot_segments": [
+            "x1Y2"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "x1",
+              "y2"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "x1",
+            "y2"
+          ]
+        }
+      ],
+      "observed_atom_locators": [
+        {
+          "atom_ordinal": 1,
+          "start_character_offset_zero_based": 0,
+          "end_character_offset_exclusive": 4,
+          "start_line_one_based": 1,
+          "start_column_one_based": 1
+        }
+      ]
+    },
+    {
+      "vector_id": "ZE1-TV04",
+      "pass": true,
+      "input_text": ".a.",
+      "expected_atoms": [
+        {
+          "raw_atom": ".a.",
+          "dot_segments": [
+            "",
+            "a",
+            ""
+          ],
+          "per_segment_lexical_tokens": [
+            [],
+            [
+              "a"
+            ],
+            []
+          ],
+          "flattened_lexical_tokens": [
+            "a"
+          ]
+        }
+      ],
+      "observed_atoms": [
+        {
+          "raw_atom": ".a.",
+          "dot_segments": [
+            "",
+            "a",
+            ""
+          ],
+          "per_segment_lexical_tokens": [
+            [],
+            [
+              "a"
+            ],
+            []
+          ],
+          "flattened_lexical_tokens": [
+            "a"
+          ]
+        }
+      ],
+      "observed_atom_locators": [
+        {
+          "atom_ordinal": 1,
+          "start_character_offset_zero_based": 0,
+          "end_character_offset_exclusive": 3,
+          "start_line_one_based": 1,
+          "start_column_one_based": 1
+        }
+      ]
+    },
+    {
+      "vector_id": "ZE1-TV05",
+      "pass": true,
+      "input_text": "foo, barBaz\nHTTPServer --- x1Y2",
+      "expected_atoms": [
+        {
+          "raw_atom": "foo",
+          "dot_segments": [
+            "foo"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "foo"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "foo"
+          ]
+        },
+        {
+          "raw_atom": "barBaz",
+          "dot_segments": [
+            "barBaz"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "bar",
+              "baz"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "bar",
+            "baz"
+          ]
+        },
+        {
+          "raw_atom": "HTTPServer",
+          "dot_segments": [
+            "HTTPServer"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "http",
+              "server"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "http",
+            "server"
+          ]
+        },
+        {
+          "raw_atom": "x1Y2",
+          "dot_segments": [
+            "x1Y2"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "x1",
+              "y2"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "x1",
+            "y2"
+          ]
+        }
+      ],
+      "observed_atoms": [
+        {
+          "raw_atom": "foo",
+          "dot_segments": [
+            "foo"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "foo"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "foo"
+          ]
+        },
+        {
+          "raw_atom": "barBaz",
+          "dot_segments": [
+            "barBaz"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "bar",
+              "baz"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "bar",
+            "baz"
+          ]
+        },
+        {
+          "raw_atom": "HTTPServer",
+          "dot_segments": [
+            "HTTPServer"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "http",
+              "server"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "http",
+            "server"
+          ]
+        },
+        {
+          "raw_atom": "x1Y2",
+          "dot_segments": [
+            "x1Y2"
+          ],
+          "per_segment_lexical_tokens": [
+            [
+              "x1",
+              "y2"
+            ]
+          ],
+          "flattened_lexical_tokens": [
+            "x1",
+            "y2"
+          ]
+        }
+      ],
+      "observed_atom_locators": [
+        {
+          "atom_ordinal": 1,
+          "start_character_offset_zero_based": 0,
+          "end_character_offset_exclusive": 3,
+          "start_line_one_based": 1,
+          "start_column_one_based": 1
+        },
+        {
+          "atom_ordinal": 2,
+          "start_character_offset_zero_based": 5,
+          "end_character_offset_exclusive": 11,
+          "start_line_one_based": 1,
+          "start_column_one_based": 6
+        },
+        {
+          "atom_ordinal": 3,
+          "start_character_offset_zero_based": 12,
+          "end_character_offset_exclusive": 22,
+          "start_line_one_based": 2,
+          "start_column_one_based": 1
+        },
+        {
+          "atom_ordinal": 4,
+          "start_character_offset_zero_based": 27,
+          "end_character_offset_exclusive": 31,
+          "start_line_one_based": 2,
+          "start_column_one_based": 16
+        }
+      ]
+    }
+  ],
+  "runtime_unicode_database_version": "13.0.0",
+  "substantive_source_content_read": false,
+  "ZE0_manifest_read": false,
+  "candidate_list_traversed": false,
+  "candidate_value_read": false,
+  "candidate_representation_value_read": false,
+  "source_representation_inventory_performed": false,
+  "matching_performed": false,
+  "ZE1_execution_performed": false,
+  "E2_execution_performed": false,
+  "mapping_performed": false,
+  "analyzer_execution_performed": false,
+  "repair_execution_performed": false,
+  "ZE1_execution_authorized": false,
+  "substantive_source_content_read_authorized": false,
+  "source_representation_inventory_authorized": false,
+  "ZE2_execution_authorized": false,
+  "E2_authorized": false,
+  "C4_status": "UNRESOLVED",
+  "P8_mapping_authorized": false,
+  "passing_result_autoauthorizes_ZE1": false,
+  "passing_result_requires_successor_checkpoint": "D0330_RECORD_ZE1_PREAUTH_INTEGRITY_RESULT_WITHOUT_ZE1_START"
+}

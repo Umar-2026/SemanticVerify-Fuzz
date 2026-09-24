@@ -1,0 +1,148 @@
+{
+  "artifact_id": "SVF-D0330-ZE1-PREAUTH-INTEGRITY-RESULT-RECORD-V1",
+  "decision": "D0330",
+  "status": "RESULT_RECORD_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "record_scope": "RECORD_AND_FREEZE_ALREADY_COMPLETED_ZE1_PREAUTH_INTEGRITY_RESULT_ONLY",
+  "record_id": "SVF-D0330-ZE1-PREAUTH-INTEGRITY-RESULT-RECORD-V1",
+  "governing_lineage": {
+    "D0327_commit": "47c9135987178ce51179949d7b333b5bd2aa7492",
+    "D0327_decision_sha256": "4a6c38ccd1093a0002dd924f506b72a21a3a7940af7e7eb9e70e2c2a12931835",
+    "D0327_artifact_sha256": "30f29c230a09779200615125334967ba6ae7e9c8a81d9230b187189b2071e336",
+    "D0328_commit": "e7f23d577df73fdd97bdb78f516d747e8f9eb4a4",
+    "D0328_decision_sha256": "d1a3f9f6f84f579b4acd363230b7f6aa6941e7ac363618c02933e9d9df6ef396",
+    "D0328_artifact_sha256": "53d70d4ced40b6223fa8b094ef8b71715c8c55e0ac83bcd58c04142ef8674153",
+    "D0329_commit": "089654d630e7959f0b61f998007f7f58259b184c",
+    "D0329_decision_sha256": "ae2488fa8fb5a48809db09c2401e59427386427fce5754d526451dc9ccf572d6",
+    "D0329_artifact_sha256": "6317cbf153d53417eeef0e3ef8d11c799e1e1915e1f9a5628039f617301fe251",
+    "authorization_id": "SVF-D0328-ZE1-PREAUTH-INTEGRITY-ONE-SHOT-AUTH-V1",
+    "corrective_successor_id": "SVF-D0329-D0328-PREEXECUTION-PREFLIGHT-CORRECTIVE-SUCCESSOR-V1",
+    "execution_id": "SVF-ZE1-PREAUTH-INTEGRITY-RUN-001"
+  },
+  "recorded_integrity_result": {
+    "path": "evaluation/governance_reconciliation/ze1_preauthorization_integrity_v1/d0328_preauthorization_integrity_execution_result.json",
+    "sha256": "704c3ffbedf18486715752fb0adccaa435287eccb1cc5cc37c142da9316ab045",
+    "execution_status": "COMPLETED_SINGLE_GOVERNED_PREAUTH_INTEGRITY_ATTEMPT",
+    "overall_verdict": "PASS",
+    "pass_check_count": 7,
+    "fail_check_count": 0,
+    "finding_count": 0,
+    "check_group_ids": [
+      "ZE1-PI01-PUBLICATION-CHAIN-IDENTITY",
+      "ZE1-PI02-D0327-BYTE-IDENTITY",
+      "ZE1-PI03-SOURCE-MANIFEST-IDENTITY",
+      "ZE1-PI04-GIT-TREE-BLOB-IDENTITY",
+      "ZE1-PI05-OUTPUT-ROOT-ABSENCE",
+      "ZE1-PI06-SYNTHETIC-GRAMMAR-CONFORMANCE",
+      "ZE1-PI07-RUNTIME-UNICODE-VERSION"
+    ],
+    "all_check_groups_passed": true,
+    "synthetic_vector_count": 5,
+    "synthetic_vector_ids": [
+      "ZE1-TV01",
+      "ZE1-TV02",
+      "ZE1-TV03",
+      "ZE1-TV04",
+      "ZE1-TV05"
+    ],
+    "synthetic_vector_pass_count": 5,
+    "synthetic_vector_fail_count": 0,
+    "runtime_unicode_database_version": "13.0.0",
+    "publication_chain_identity_passed": true,
+    "ZE1_output_root_absent": true
+  },
+  "frozen_binding": {
+    "source_manifest_canonical_json_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+    "synthetic_vector_canonical_sha256": "b05010befdd0531373c4594793cbad50dfea394dc2083da73afd60d181cfd773"
+  },
+  "one_shot_consumption_record": {
+    "attempt_started": true,
+    "attempt_start_event": "FIRST_SYNTHETIC_CONFORMANCE_VECTOR_EVALUATION",
+    "authorization_consumed": true,
+    "remaining_integrity_attempt_capacity": 0,
+    "automatic_retry_authorized": false,
+    "integrity_reexecution_authorized": false
+  },
+  "execution_side_effect_record": {
+    "substantive_source_content_read": false,
+    "ZE0_manifest_read": false,
+    "candidate_list_traversed": false,
+    "candidate_value_read": false,
+    "candidate_representation_value_read": false,
+    "source_representation_inventory_performed": false,
+    "matching_performed": false,
+    "ZE1_execution_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "scientific_interpretation_boundary": {
+    "integrity_pass_means": "THE_FROZEN_ZE1_GRAMMAR_AND_PREAUTHORIZATION_INTEGRITY_CONTRACT_PASSED_THE_GOVERNED_SYNTHETIC_AND_IDENTITY_CHECKS",
+    "integrity_pass_does_not_mean_source_support": true,
+    "integrity_pass_does_not_mean_representation_overlap_exists": true,
+    "integrity_pass_does_not_mean_ZE1_was_executed": true,
+    "integrity_pass_does_not_resolve_C4": true,
+    "integrity_pass_does_not_authorize_P8_mapping": true,
+    "integrity_pass_is_not_analyzer_evidence": true,
+    "integrity_pass_is_not_repair_evidence": true
+  },
+  "downstream_authorization": {
+    "integrity_reexecution_authorized": false,
+    "ZE1_execution_authorized": false,
+    "substantive_source_content_read_authorized": false,
+    "source_representation_inventory_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "representation_overlap_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "source_expansion_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "D0330_activation_rule": {
+    "authoring_alone_makes_record_effective": false,
+    "local_commit_alone_makes_record_effective": false,
+    "must_pass_independent_precommit_review": true,
+    "must_be_committed": true,
+    "must_pass_independent_postcommit_review": true,
+    "must_be_published_with_exact_remote_readback": true,
+    "publication_freezes_result_record": true,
+    "publication_autoauthorizes_ZE1": false,
+    "later_successor_governance_required_before_ZE1": true
+  },
+  "future_commit_contract": {
+    "exact_file_count": 3,
+    "files": [
+      "evaluation/governance_reconciliation/ze1_preauthorization_integrity_v1/d0328_preauthorization_integrity_execution_result.json",
+      "documentation/decisions/0330-record-ze1-preauth-integrity-result-without-ze1-start.md",
+      "evaluation/governance_reconciliation/d0330_ze1_preauthorization_integrity_result_record.json"
+    ]
+  },
+  "D0330_authoring_transaction": {
+    "integrity_result_modified": false,
+    "integrity_reexecution_performed": false,
+    "synthetic_vector_reexecution_performed": false,
+    "substantive_source_content_read": false,
+    "ZE0_manifest_read": false,
+    "candidate_list_traversed": false,
+    "candidate_value_read": false,
+    "matching_performed": false,
+    "ZE1_execution_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0330_RESULT_RECORD_AUTHOR_CANDIDATE"
+}
