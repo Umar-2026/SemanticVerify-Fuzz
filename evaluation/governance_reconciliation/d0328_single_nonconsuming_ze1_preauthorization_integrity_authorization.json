@@ -1,0 +1,264 @@
+{
+  "artifact_id": "SVF-D0328-SINGLE-NONCONSUMING-ZE1-PREAUTH-INTEGRITY-AUTHORIZATION-V1",
+  "status": "AUTHORIZATION_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "decision": "D0328",
+  "authorization_id": "SVF-D0328-ZE1-PREAUTH-INTEGRITY-ONE-SHOT-AUTH-V1",
+  "authorized_future_integrity_execution_id": "SVF-ZE1-PREAUTH-INTEGRITY-RUN-001",
+  "governing_D0327": {
+    "commit": "47c9135987178ce51179949d7b333b5bd2aa7492",
+    "design_id": "SVF-ZE1-CANDIDATE-BLIND-SOURCE-REPRESENTATION-INVENTORY-CONTRACT-V1",
+    "grammar_id": "SVF-ZE1-CANDIDATE-BLIND-SOURCE-REPRESENTATION-GRAMMAR-V1",
+    "artifact_path": "evaluation/governance_reconciliation/d0327_ze1_candidate_blind_source_representation_inventory_design.json",
+    "artifact_sha256": "30f29c230a09779200615125334967ba6ae7e9c8a81d9230b187189b2071e336",
+    "source_manifest_canonical_json_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52"
+  },
+  "authorization_scope": {
+    "preauthorization_integrity_verification_authorized": true,
+    "maximum_integrity_attempts": 1,
+    "successful_integrity_executions_consumed_at_authoring": 0,
+    "remaining_authorized_integrity_attempt_capacity_at_authoring": 1,
+    "ZE1_execution_authorized": false,
+    "substantive_source_content_read_authorized": false,
+    "source_representation_inventory_authorized": false,
+    "ZE2_overlap_execution_authorized": false
+  },
+  "nonconsuming_semantics_relative_to_ZE1": {
+    "integrity_transaction_consumes_future_ZE1_execution_capacity": false,
+    "integrity_transaction_starts_ZE1_execution": false,
+    "integrity_transaction_may_create_ZE1_output_root": false,
+    "integrity_transaction_may_open_substantive_source_bytes": false
+  },
+  "D0328_integrity_authorization_consumption": {
+    "preflight_repo_and_output_root_checks_before_attempt_start_are_consuming": false,
+    "attempt_start_event": "FIRST_SYNTHETIC_CONFORMANCE_VECTOR_EVALUATION_OR_FIRST_INTEGRITY_RESULT_ARTIFACT_WRITE_WHICHEVER_OCCURS_FIRST",
+    "authorization_consumed_at_attempt_start": true,
+    "automatic_retry_after_attempt_start": false,
+    "failed_or_incomplete_started_attempt_requires_successor_governance": true
+  },
+  "permitted_nonconsuming_preflight_checks": [
+    "local HEAD equals effective published D0327 commit",
+    "remote main readback equals effective published D0327 commit",
+    "repository worktree and index are clean",
+    "D0327 decision and machine-artifact byte identities are exact",
+    "reserved ZE1 output root is absent",
+    "reserved integrity-result path is absent"
+  ],
+  "authorized_integrity_checks": [
+    {
+      "check_id": "ZE1-PI01-D0327-PUBLICATION-IDENTITY",
+      "description": "Verify exact local and remote D0327 publication identity.",
+      "source_content_required": false
+    },
+    {
+      "check_id": "ZE1-PI02-D0327-BYTE-IDENTITY",
+      "description": "Verify exact D0327 decision and machine-artifact SHA-256 identities.",
+      "source_content_required": false
+    },
+    {
+      "check_id": "ZE1-PI03-SOURCE-MANIFEST-IDENTITY",
+      "description": "Verify the D0327-frozen source-manifest canonical identity, exact four member IDs, order, paths, formats, and recorded source SHA-256 metadata.",
+      "source_content_required": false
+    },
+    {
+      "check_id": "ZE1-PI04-GIT-TREE-BLOB-IDENTITY",
+      "description": "Resolve each frozen source path to its Git blob OID through Git tree metadata only and compare with the frozen git_blob_oid.",
+      "source_content_required": false
+    },
+    {
+      "check_id": "ZE1-PI05-OUTPUT-ROOT-ABSENCE",
+      "description": "Verify that the reserved ZE1 output root does not exist.",
+      "source_content_required": false
+    },
+    {
+      "check_id": "ZE1-PI06-SYNTHETIC-GRAMMAR-CONFORMANCE",
+      "description": "Execute only the five D0327-frozen synthetic conformance vectors against an implementation of the exact D0327 source atomization and lexicalization grammar.",
+      "source_content_required": false,
+      "governed_candidate_content_required": false
+    },
+    {
+      "check_id": "ZE1-PI07-RUNTIME-UNICODE-VERSION",
+      "description": "Record the runtime Unicode database version used by the synthetic-only grammar implementation.",
+      "source_content_required": false
+    }
+  ],
+  "frozen_source_identity_projection": {
+    "source_count": 4,
+    "source_member_ids": [
+      "C1-S01",
+      "C1-S02",
+      "C1-S03",
+      "C1-S04"
+    ],
+    "D0318_D0327_source_manifest_canonical_json_sha256": "b6c97642ee0a3bc8de5839209a0a8546feb61beedc198c24a8c43c44b6534b52",
+    "sources": [
+      {
+        "source_ordinal": 1,
+        "member_id": "C1-S01",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md",
+        "sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+        "git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+        "source_format": "MARKDOWN"
+      },
+      {
+        "source_ordinal": 2,
+        "member_id": "C1-S02",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md",
+        "sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+        "git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+        "source_format": "MARKDOWN"
+      },
+      {
+        "source_ordinal": 3,
+        "member_id": "C1-S03",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json",
+        "sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+        "git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+        "source_format": "JSON"
+      },
+      {
+        "source_ordinal": 4,
+        "member_id": "C1-S04",
+        "path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json",
+        "sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+        "git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+        "source_format": "JSON"
+      }
+    ]
+  },
+  "frozen_synthetic_vector_binding": {
+    "vector_count": 5,
+    "vector_ids": [
+      "ZE1-TV01",
+      "ZE1-TV02",
+      "ZE1-TV03",
+      "ZE1-TV04",
+      "ZE1-TV05"
+    ],
+    "D0328_specific_vector_canonicalization": "JSON_SORT_KEYS_TRUE_SEPARATORS_COMMA_COLON_UTF8_NO_ASCII_ESCAPE",
+    "D0328_specific_synthetic_vector_canonical_sha256": "b05010befdd0531373c4594793cbad50dfea394dc2083da73afd60d181cfd773",
+    "this_hash_does_not_replace_any_D0327_or_D0318_identity": true,
+    "vectors_executed_during_D0328_authoring": false
+  },
+  "strictly_prohibited_during_authorized_integrity_execution": [
+    "opening or reading any substantive C1-S01..C1-S04 source blob bytes",
+    "git show or equivalent content extraction of any substantive frozen source path",
+    "reading the ZE0 candidate-representation manifest",
+    "traversing D0318 candidate records",
+    "reading any governed schema-v2 candidate property-path value",
+    "reading any governed candidate representation value",
+    "candidate-specific source query construction",
+    "source representation inventory construction",
+    "candidate-source representation comparison",
+    "representation overlap matching",
+    "fuzzy matching",
+    "semantic matching",
+    "embedding matching",
+    "LLM-based matching",
+    "semantic adjudication",
+    "E2 execution",
+    "E3 execution",
+    "E4 execution",
+    "C4 determination",
+    "positive V4-to-V2 mapping",
+    "curl.json materialization",
+    "P10 gold annotation",
+    "P11 analyzer implementation or execution",
+    "baseline execution",
+    "repair execution"
+  ],
+  "authorized_write_boundary": {
+    "integrity_result_write_authorized": true,
+    "exact_integrity_result_path": "evaluation/governance_reconciliation/ze1_preauthorization_integrity_v1/d0328_preauthorization_integrity_execution_result.json",
+    "other_repository_file_writes_authorized": false,
+    "ZE1_output_root_write_authorized": false,
+    "source_file_mutation_authorized": false,
+    "candidate_file_mutation_authorized": false
+  },
+  "future_integrity_result_minimum_fields": [
+    "execution_id",
+    "authorization_id",
+    "attempt_started",
+    "authorization_consumed",
+    "overall_verdict",
+    "pass_check_count",
+    "fail_check_count",
+    "findings",
+    "D0327_commit",
+    "D0327_decision_sha256",
+    "D0327_artifact_sha256",
+    "source_manifest_canonical_json_sha256",
+    "source_member_ids",
+    "source_git_blob_oid_checks",
+    "ZE1_output_root_absent",
+    "synthetic_vector_count",
+    "synthetic_vector_results",
+    "runtime_unicode_database_version",
+    "substantive_source_content_read",
+    "ZE0_manifest_read",
+    "candidate_value_read",
+    "matching_performed",
+    "ZE1_execution_performed"
+  ],
+  "integrity_success_criterion": {
+    "overall_verdict_required": "PASS",
+    "fail_check_count_required": 0,
+    "findings_required": [],
+    "all_seven_authorized_check_groups_must_pass": true,
+    "all_five_synthetic_vectors_must_pass": true,
+    "ZE1_output_root_must_remain_absent": true,
+    "substantive_source_content_read_must_remain_false": true,
+    "ZE0_manifest_read_must_remain_false": true,
+    "candidate_value_read_must_remain_false": true,
+    "matching_performed_must_remain_false": true,
+    "ZE1_execution_performed_must_remain_false": true
+  },
+  "post_integrity_governance": {
+    "passing_integrity_result_autoauthorizes_ZE1": false,
+    "passing_integrity_result_autoauthorizes_source_content_read": false,
+    "passing_integrity_result_autoauthorizes_source_inventory": false,
+    "passing_integrity_result_must_be_recorded_and_published_by_separate_successor_checkpoint_before_ZE1_authorization": true,
+    "expected_successor_if_integrity_passes": "D0329_RECORD_ZE1_PREAUTH_INTEGRITY_RESULT_WITHOUT_ZE1_START",
+    "failed_or_incomplete_integrity_attempt_autoauthorizes_retry": false
+  },
+  "downstream_authorization": {
+    "ZE1_execution_authorized": false,
+    "substantive_source_content_read_authorized": false,
+    "source_representation_inventory_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "representation_overlap_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "source_expansion_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "D0328_authoring_transaction": {
+    "integrity_execution_performed": false,
+    "synthetic_vector_execution_performed": false,
+    "integrity_result_written": false,
+    "substantive_source_content_read": false,
+    "ZE0_manifest_read": false,
+    "candidate_list_traversed": false,
+    "candidate_value_read": false,
+    "candidate_representation_value_read": false,
+    "source_representation_inventory_performed": false,
+    "matching_performed": false,
+    "ZE1_execution_performed": false,
+    "E2_execution_performed": false,
+    "mapping_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0328_AUTHORIZATION_AUTHOR_CANDIDATE"
+}
