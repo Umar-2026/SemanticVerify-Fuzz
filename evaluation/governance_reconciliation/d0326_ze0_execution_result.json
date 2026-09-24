@@ -1,0 +1,123 @@
+{
+  "artifact_id": "SVF-D0326-ZE0-EXECUTION-RESULT-V1",
+  "status": "RESULT_AUTHOR_CANDIDATE_NOT_EFFECTIVE_UNTIL_INDEPENDENTLY_VERIFIED_COMMITTED_AND_PUBLISHED",
+  "source_publication_checkpoint": {
+    "D0325_commit": "bd6ab0ea1b19918b9bb8983a2b04d5dd44595d6c",
+    "D0325_published": true
+  },
+  "ZE0_execution_identity": {
+    "execution_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-RUN-001",
+    "authorization_id": "SVF-D0324-ZE0-ONE-SHOT-AUTH-V1",
+    "contract_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-CONTRACT-V1",
+    "grammar_id": "SVF-ZE0-DET-REP-GRAMMAR-V1"
+  },
+  "ZE0_execution_result": {
+    "result": "SUCCESS",
+    "authorization_consumed": true,
+    "attempt_started": true,
+    "attempt_completed": true,
+    "consumption_event": "FIRST_ACTUAL_CANDIDATE_REPRESENTATION_GENERATION",
+    "remaining_authorized_attempt_capacity": 0,
+    "automatic_retry_authorized": false,
+    "ZE0_rerun_authorized": false
+  },
+  "ZE0_output_identity": {
+    "output_root": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1",
+    "manifest_path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/candidate_representation_manifest.json",
+    "execution_state_path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/_execution_state.json",
+    "manifest_sha256": "556096b6b6adc0708aee4903c5a4eb033231c04d7abe125d14f9dd5ad9760693",
+    "execution_state_sha256": "bc3257530de6be661c21f3cefd5e48fb75ed2e8fe60fde91bf748e77b1957f13",
+    "output_file_count": 2
+  },
+  "candidate_representation_accounting": {
+    "candidate_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "candidate_count": 171,
+    "record_count": 171,
+    "candidate_manifest_canonical_json_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "representation_forms_per_candidate": 7,
+    "total_representation_values": 1197
+  },
+  "post_execution_reconciliation": {
+    "result": "PASS",
+    "pass_check_count": 60,
+    "fail_check_count": 0,
+    "review_finding_count": 0,
+    "first_ZE0_run_success": true,
+    "accidental_second_invocation_occurred": true,
+    "accidental_second_invocation_execution_started": false,
+    "accidental_second_invocation_changed_ZE0_outputs": false,
+    "accidental_second_invocation_consumed_additional_attempt": false
+  },
+  "scientific_interpretation_boundary": {
+    "ZE0_manifest_is_semantic_evidence": false,
+    "ZE0_manifest_is_protocol_support": false,
+    "ZE0_manifest_is_semantic_non_support": false,
+    "ZE0_manifest_is_mapping": false,
+    "ZE0_manifest_establishes_C4": false,
+    "ZE0_manifest_changes_D0321_zero_evidence_result": false,
+    "representation_collision_is_semantic_equivalence": false
+  },
+  "operations_not_performed": {
+    "substantive_source_content_read": true,
+    "source_representation_inventory": true,
+    "candidate_source_comparison": true,
+    "representation_overlap_matching": true,
+    "fuzzy_matching": true,
+    "semantic_matching": true,
+    "semantic_adjudication": true,
+    "mapping": true,
+    "ZE1_execution": true,
+    "ZE2_execution": true,
+    "ZE3_execution": true,
+    "ZE4_execution": true,
+    "E2_execution": true,
+    "analyzer_execution": true,
+    "repair_execution": true
+  },
+  "downstream_authorization": {
+    "ZE0_rerun_authorized": false,
+    "ZE1_execution_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "source_representation_inventory_authorized": false,
+    "representation_overlap_execution_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "source_expansion_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "C4_authorized": false,
+    "B2_authorized": false,
+    "positive_v4_to_v2_mapping_authorized": false,
+    "curl_json_materialization_authorized": false,
+    "P8_mapping_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "current_scientific_state": {
+    "C4_status": "UNRESOLVED",
+    "P8_status": "BLOCKED_PENDING_SEPARATELY_GOVERNED_SUCCESSOR_WORK",
+    "ZE1_status": "NOT_STARTED_UNAUTHORIZED"
+  },
+  "D0326_authoring_transaction": {
+    "ZE0_rerun_performed": false,
+    "actual_candidate_representation_generation_performed": false,
+    "source_content_read": false,
+    "source_representation_inventory_performed": false,
+    "candidate_source_comparison_performed": false,
+    "matching_performed": false,
+    "semantic_adjudication_performed": false,
+    "mapping_performed": false,
+    "ZE1_execution_performed": false,
+    "E2_execution_performed": false,
+    "analyzer_execution_performed": false,
+    "repair_execution_performed": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0326_ZE0_EXECUTION_RESULT_AUTHOR_CANDIDATE"
+}
