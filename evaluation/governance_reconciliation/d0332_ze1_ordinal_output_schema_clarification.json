@@ -1,0 +1,330 @@
+{
+  "D0331_existing_capacity": {
+    "authorization_consumed": false,
+    "automatic_retry_after_consumption_authorized": false,
+    "consumption_event": "FIRST_SUBSTANTIVE_SOURCE_CONTENT_READ_OR_FIRST_ZE1_OUTPUT_WRITE_WHICHEVER_OCCURS_FIRST",
+    "new_capacity_from_D0332": 0,
+    "remaining_attempt_capacity": 1,
+    "total_execution_capacity": 1
+  },
+  "D0332_authoring_transaction": {
+    "ZE0_manifest_read": false,
+    "ZE1_authorization_consumed": false,
+    "ZE1_execution_performed": false,
+    "ZE1_output_write_performed": false,
+    "candidate_record_read": false,
+    "candidate_representation_read": false,
+    "candidate_value_read": false,
+    "commit_performed": false,
+    "matching_performed": false,
+    "push_performed": false,
+    "source_sha256_recomputed_from_source_bytes": false,
+    "substantive_source_content_read": false
+  },
+  "activation_rule": {
+    "authoring_alone_effective": false,
+    "local_commit_alone_effective": false,
+    "publication_autoauthorizes_ZE1_execution": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed D0332 commit to origin/main",
+      "exact remote readback confirmation"
+    ],
+    "separate_successor_required_before_ZE1_consumption": true
+  },
+  "artifact_type": "ZE1_DETERMINISTIC_SERIALIZATION_AND_ORDINAL_CLARIFICATION",
+  "authoring_status": "REVISED_AUTHOR_CANDIDATE_PENDING_INDEPENDENT_PRE_COMMIT_REVIEW",
+  "checkpoint": "D0332",
+  "clarification_id": "SVF-D0332-ZE1-ORDINAL-OUTPUT-SCHEMA-CLARIFICATION-V1",
+  "created_utc": "2026-09-25T11:57:10+00:00",
+  "downstream_authorization": {
+    "C4_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P8_mapping_authorized": false,
+    "ZE0_manifest_read_authorized": false,
+    "ZE1_execution_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "candidate_comparison_authorized": false,
+    "candidate_representation_read_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "fuzzy_matching_authorized": false,
+    "governed_candidate_read_authorized": false,
+    "integrity_reexecution_authorized": false,
+    "repair_execution_authorized": false,
+    "representation_overlap_matching_authorized": false,
+    "semantic_matching_authorized": false,
+    "semantic_relevance_filtering_authorized": false,
+    "source_expansion_authorized": false
+  },
+  "execution_hold": {
+    "ZE1_execution_authorized_by_D0332": false,
+    "ZE1_output_write_authorized_by_D0332": false,
+    "later_successor_must_not_increase_total_attempt_capacity": true,
+    "later_successor_reconciliation_required": true,
+    "reason": "D0332_CLARIFIES_PREVIOUSLY_UNSPECIFIED_DETERMINISTIC_SERIALIZATION_AND_ORDINAL_SEMANTICS",
+    "substantive_source_read_authorized_by_D0332": false
+  },
+  "execution_state_schema": {
+    "completed_status_literal": "COMPLETED",
+    "count_map_keys_exact": [
+      "C1-S01",
+      "C1-S02",
+      "C1-S03",
+      "C1-S04"
+    ],
+    "execution_state_full_file_sha256_recorded_externally": "NEXT_RESULT_CHECKPOINT",
+    "fixed_identity_values": {
+      "authorization_id": "SVF-D0331-ZE1-SINGLE-EXECUTION-AUTH-V1",
+      "clarification_id": "SVF-D0332-ZE1-ORDINAL-OUTPUT-SCHEMA-CLARIFICATION-V1",
+      "execution_id": "SVF-ZE1-SOURCE-REPRESENTATION-INVENTORY-RUN-001"
+    },
+    "output_hash_keys_exact": [
+      "inventory_file_sha256",
+      "inventory_canonical_json_sha256",
+      "execution_state_full_file_sha256_recorded_externally"
+    ],
+    "path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/_execution_state.json",
+    "scientific_interpretation_boundary_fixed_values": {
+      "ZE1_inventory_alone_establishes_representation_mismatch": false,
+      "ZE1_inventory_changes_D0321_zero_evidence_result": false,
+      "ZE1_inventory_establishes_C4": false,
+      "ZE1_inventory_is_mapping": false,
+      "ZE1_inventory_is_protocol_support": false,
+      "ZE1_inventory_is_semantic_evidence": false,
+      "ZE1_inventory_is_semantic_non_support": false
+    },
+    "scientific_interpretation_boundary_keys_exact": [
+      "ZE1_inventory_is_semantic_evidence",
+      "ZE1_inventory_is_protocol_support",
+      "ZE1_inventory_is_semantic_non_support",
+      "ZE1_inventory_is_mapping",
+      "ZE1_inventory_establishes_C4",
+      "ZE1_inventory_changes_D0321_zero_evidence_result",
+      "ZE1_inventory_alone_establishes_representation_mismatch"
+    ],
+    "source_identity_verification_keys_exact": [
+      "source_member_id",
+      "source_ordinal",
+      "source_path",
+      "expected_sha256",
+      "observed_sha256",
+      "sha256_match",
+      "expected_git_blob_oid"
+    ],
+    "top_level_keys_exact": [
+      "execution_id",
+      "authorization_id",
+      "clarification_id",
+      "status",
+      "runtime_unicode_database_version",
+      "source_record_count",
+      "source_order",
+      "source_identity_verification",
+      "per_source_atom_counts",
+      "per_source_token_occurrence_counts",
+      "total_atom_occurrence_count",
+      "total_token_occurrence_count",
+      "output_hashes",
+      "scientific_interpretation_boundary"
+    ]
+  },
+  "governing_lineage": {
+    "D0327_artifact_sha256": "30f29c230a09779200615125334967ba6ae7e9c8a81d9230b187189b2071e336",
+    "D0327_commit": "47c9135987178ce51179949d7b333b5bd2aa7492",
+    "D0327_decision_sha256": "4a6c38ccd1093a0002dd924f506b72a21a3a7940af7e7eb9e70e2c2a12931835",
+    "D0331_artifact_sha256": "4c2172a412f7fa005dfceabc4ed55579b7ed52375b91cba429d42ea93f5c90f2",
+    "D0331_commit": "ac5b5edb93e8693f34537bcff298e8b3ab0fc39a",
+    "D0331_decision_sha256": "62d92c1f7536abf865645f230985a422788efb0f21d49ba59b218a01118c488d"
+  },
+  "inventory_hash_semantics": {
+    "execution_state_self_hash_rule": "FULL_EXECUTION_STATE_FILE_SHA256_NOT_SELF_EMBEDDED;RECORDED_BY_NEXT_RESULT_CHECKPOINT",
+    "inventory_canonical_json_sha256": {
+      "appended_newline": false,
+      "encoding": "UTF-8",
+      "serialization": "json.dumps(obj,sort_keys=True,separators=(',',':'),ensure_ascii=False)"
+    },
+    "inventory_file_sha256": "SHA256_OF_EXACT_WRITTEN_UTF8_FILE_BYTES_INCLUDING_SINGLE_FINAL_NEWLINE"
+  },
+  "inventory_schema": {
+    "atom_occurrence_keys_exact": [
+      "atom_ordinal",
+      "raw_atom",
+      "source_atom_locator",
+      "dot_segments",
+      "sf3_flattened_lexical_tokens"
+    ],
+    "candidate_comparison": false,
+    "dot_segment_keys_exact": [
+      "dot_segment_ordinal",
+      "raw_segment",
+      "lexical_tokens"
+    ],
+    "fixed_identity_values": {
+      "clarification_id": "SVF-D0332-ZE1-ORDINAL-OUTPUT-SCHEMA-CLARIFICATION-V1",
+      "design_id": "SVF-ZE1-CANDIDATE-BLIND-SOURCE-REPRESENTATION-INVENTORY-CONTRACT-V1",
+      "execution_id": "SVF-ZE1-SOURCE-REPRESENTATION-INVENTORY-RUN-001",
+      "grammar_id": "SVF-ZE1-CANDIDATE-BLIND-SOURCE-REPRESENTATION-GRAMMAR-V1"
+    },
+    "lexical_token_keys_exact": [
+      "lexical_token_ordinal",
+      "token"
+    ],
+    "ordered_token_occurrence_keys_exact": [
+      "source_member_id",
+      "source_ordinal",
+      "atom_ordinal",
+      "dot_segment_ordinal",
+      "lexical_token_ordinal",
+      "token",
+      "source_atom_locator"
+    ],
+    "ordered_token_occurrence_sort_order": [
+      "SOURCE_ORDINAL",
+      "ATOM_ORDINAL",
+      "DOT_SEGMENT_ORDINAL",
+      "LEXICAL_TOKEN_ORDINAL"
+    ],
+    "path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json",
+    "semantic_grouping": false,
+    "source_atom_locator_keys_exact": [
+      "source_member_id",
+      "atom_ordinal",
+      "start_character_offset_zero_based",
+      "end_character_offset_exclusive",
+      "start_line_one_based",
+      "start_column_one_based"
+    ],
+    "source_record_keys_exact": [
+      "source_member_id",
+      "source_ordinal",
+      "source_path",
+      "source_sha256",
+      "git_blob_oid",
+      "source_format",
+      "atom_occurrences"
+    ],
+    "token_occurrence_deduplication": false,
+    "top_level_keys_exact": [
+      "design_id",
+      "grammar_id",
+      "clarification_id",
+      "execution_id",
+      "runtime_unicode_database_version",
+      "source_records",
+      "ordered_token_occurrence_stream"
+    ]
+  },
+  "json_serialization": {
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "final_newline_count": 1,
+    "indent_spaces": 2,
+    "sort_keys": true,
+    "trailing_whitespace_permitted": false
+  },
+  "ordinal_bases": {
+    "atom_ordinal": {
+      "assignment_order": "LEFT_TO_RIGHT_RETAINED_SOURCE_ATOM_OCCURRENCE_ORDER",
+      "basis": "ONE_BASED_PER_SOURCE",
+      "discarded_spans_receive_ordinal": false
+    },
+    "dot_segment_ordinal": {
+      "basis": "ONE_BASED_PER_ATOM",
+      "empty_dot_segments_receive_ordinal": true
+    },
+    "lexical_token_ordinal": {
+      "basis": "ONE_BASED_WITHIN_DOT_SEGMENT",
+      "separator_created_empty_tokens_receive_ordinal": false
+    },
+    "source_ordinal": {
+      "basis": "ONE_BASED_GLOBAL_IN_FROZEN_SOURCE_ORDER",
+      "values": {
+        "C1-S01": 1,
+        "C1-S02": 2,
+        "C1-S03": 3,
+        "C1-S04": 4
+      }
+    }
+  },
+  "precommit_revision_reconciliation": {
+    "D0327_lexical_representation_transformations_changed": false,
+    "D0331_attempt_capacity_changed": false,
+    "D0331_consumption_event_changed": false,
+    "candidate_blindness_changed": false,
+    "new_execution_capacity_granted": 0,
+    "prior_D0332_artifact_sha256": "a40204acab85ad4e4ddf3b82be953fc3b47123b5415b39d6d3fb959a14e44076",
+    "prior_D0332_decision_sha256": "f71c2571bc03d43c8397446d5d4e2917ac5a4052434a523cd8940d01ddf69e15",
+    "prior_independent_precommit_verdict": "REVISION_REQUIRED",
+    "prior_review_fail_check_count": 4,
+    "prior_review_finding_count": 4,
+    "prior_review_pass_check_count": 151,
+    "resolved_findings": [
+      "ATOM_ORDINAL_CLARIFICATION_PROVENANCE_EXPLICITLY_DISTINGUISHED",
+      "INVENTORY_FIXED_IDENTITY_VALUES_MACHINE_READABLE",
+      "EXECUTION_STATE_FIXED_IDENTITY_VALUES_MACHINE_READABLE",
+      "EXECUTION_STATE_SCIENTIFIC_BOUNDARY_NESTED_SCHEMA_EXPLICIT"
+    ],
+    "scientific_scope_changed": false,
+    "source_universe_changed": false
+  },
+  "reconciliation_basis": {
+    "ZE0_manifest_read": false,
+    "ZE1_execution_performed": false,
+    "ZE1_output_write_performed": false,
+    "additional_clarification_fields_not_listed_by_classifier": [
+      "ATOM_ORDINAL_BASIS"
+    ],
+    "atom_ordinal_provenance": {
+      "classifier_output_rewritten": false,
+      "included_in_prior_classifier_missing_contract_fields": false,
+      "prior_reconciliation_explicit_answer": false,
+      "prior_reconciliation_explicit_question": "ATOM_ORDINAL_EXPLICITLY_BASED",
+      "reason_for_D0332_clarification": "EXPLICIT_READ_ONLY_RECONCILIATION_QUESTION_REPORTED_NO_FROZEN_ATOM_ORDINAL_BASIS_EVEN_THOUGH_THE_AUTOMATED_FINAL_CLASSIFIER_DID_NOT_INCLUDE_IT_IN_ITS_THREE_ITEM_MISSING_LIST"
+    },
+    "candidate_values_read": false,
+    "classification": "UNDER_SPECIFIED_DO_NOT_CONSUME_ZE1_AUTHORIZATION",
+    "matching_performed": false,
+    "missing_contract_fields": [
+      "DOT_SEGMENT_ORDINAL_BASIS",
+      "LEXICAL_TOKEN_ORDINAL_BASIS",
+      "EXACT_INVENTORY_RECORD_SCHEMA"
+    ],
+    "source_sha256_recomputed_from_source_bytes": false,
+    "substantive_source_bytes_read": false
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "clarification_establishes_C4": false,
+    "clarification_establishes_representation_mismatch": false,
+    "clarification_establishes_representation_overlap": false,
+    "clarification_is_mapping": false,
+    "clarification_is_new_scientific_contribution": false,
+    "clarification_is_protocol_support": false,
+    "clarification_is_semantic_evidence": false,
+    "clarification_is_semantic_non_support": false
+  },
+  "scientific_scope_preservation": {
+    "D0327_lexical_representation_transformations_changed": false,
+    "D0331_consumption_event_changed": false,
+    "D0331_total_attempt_capacity_changed": false,
+    "candidate_blindness_changed": false,
+    "clarification_scope": "DETERMINISTIC_INDEXING_AND_SERIALIZATION_ONLY",
+    "collision_absence_semantics_changed": false,
+    "new_attempt_capacity_granted": 0,
+    "scientific_interpretation_boundary_changed": false,
+    "source_bytes_changed": false,
+    "source_order_changed": false,
+    "source_universe_changed": false
+  }
+}
