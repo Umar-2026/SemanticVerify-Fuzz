@@ -1,0 +1,182 @@
+{
+  "D0334_authoring_transaction": {
+    "ZE0_manifest_read": false,
+    "ZE1_output_modified": false,
+    "ZE1_rerun_performed": false,
+    "candidate_record_read": false,
+    "commit_performed": false,
+    "matching_performed": false,
+    "push_performed": false,
+    "source_sha256_recomputed_from_source_bytes": false,
+    "substantive_source_content_read": false
+  },
+  "activation_rule": {
+    "activation_does_not_restore_ZE1_capacity": true,
+    "authoring_alone_effective": false,
+    "local_commit_alone_effective": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit of four-file result set",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed commit",
+      "exact remote readback confirmation"
+    ],
+    "required_commit_files": [
+      "documentation/decisions/0334-record-ze1-source-representation-inventory-result.md",
+      "evaluation/governance_reconciliation/d0334_ze1_source_representation_inventory_result_record.json",
+      "evidence/representation_alignment/ZE1/source_representation_inventory_v1/_execution_state.json",
+      "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json"
+    ]
+  },
+  "artifact_type": "ZE1_SOURCE_REPRESENTATION_INVENTORY_RESULT_RECORD",
+  "authoring_status": "AUTHOR_CANDIDATE_PENDING_INDEPENDENT_PRE_COMMIT_REVIEW",
+  "candidate_blindness_execution_result": {
+    "ZE0_manifest_read_performed": false,
+    "candidate_record_read_performed": false,
+    "candidate_representation_value_read_performed": false,
+    "candidate_source_overlap_evaluation_performed": false,
+    "candidate_value_read_performed": false,
+    "fuzzy_matching_performed": false,
+    "matching_performed": false,
+    "semantic_matching_performed": false
+  },
+  "checkpoint": "D0334",
+  "checkpoint_id": "SVF-D0334-ZE1-SOURCE-REPRESENTATION-INVENTORY-RESULT-RECORD-V1",
+  "created_utc": "2026-09-25T16:15:09+00:00",
+  "downstream_authorization": {
+    "C4_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P8_mapping_authorized": false,
+    "ZE1_rerun_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "candidate_source_matching_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "execution_attempt_accounting": {
+    "authorization_consumed": true,
+    "automatic_retry_after_consumption_authorized": false,
+    "consuming_attempts_used": 1,
+    "consumption_event": "FIRST_SUBSTANTIVE_SOURCE_CONTENT_READ",
+    "consumption_source": "C1-S01",
+    "remaining_attempt_capacity": 0,
+    "rerun_authorized": false,
+    "total_authorized_consuming_attempt_capacity": 1
+  },
+  "execution_lineage": {
+    "D0333_effective_commit": "86edf44dbc88d4a8503f4d192046599f4e9f87f8",
+    "authorization_id": "SVF-D0331-ZE1-SINGLE-EXECUTION-AUTH-V1",
+    "clarification_id": "SVF-D0332-ZE1-ORDINAL-OUTPUT-SCHEMA-CLARIFICATION-V1",
+    "execution_id": "SVF-ZE1-SOURCE-REPRESENTATION-INVENTORY-RUN-001"
+  },
+  "execution_result": {
+    "per_source_atom_occurrence_counts": {
+      "C1-S01": 1931,
+      "C1-S02": 37365,
+      "C1-S03": 262665,
+      "C1-S04": 121
+    },
+    "per_source_token_occurrence_counts": {
+      "C1-S01": 2677,
+      "C1-S02": 42403,
+      "C1-S03": 529443,
+      "C1-S04": 301
+    },
+    "runtime_unicode_database_version": "13.0.0",
+    "source_SHA256_verification_result": "PASS_ALL_FOUR",
+    "source_format_bindings": {
+      "C1-S01": "MARKDOWN",
+      "C1-S02": "MARKDOWN",
+      "C1-S03": "JSON",
+      "C1-S04": "JSON"
+    },
+    "source_record_count": 4,
+    "status": "COMPLETED",
+    "total_atom_occurrence_count": 302082,
+    "total_token_occurrence_count": 574824
+  },
+  "output_artifacts": {
+    "execution_state_full_file_sha256": "4abc3f43a922cbe024c02dcb62543d930895a80299467274bd9caf01d10399f4",
+    "execution_state_internal_external_hash_marker": "NEXT_RESULT_CHECKPOINT",
+    "execution_state_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/_execution_state.json",
+    "inventory_canonical_json_sha256": "1a732561d11f83ebbe3dde3386239dea3654dbf00e5a664a94e74dea39a6e4d8",
+    "inventory_file_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+    "inventory_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json",
+    "output_file_count": 2,
+    "output_root": "evidence/representation_alignment/ZE1/source_representation_inventory_v1"
+  },
+  "preconsumption_abort_history": {
+    "ZE1_output_write_by_abort": false,
+    "abort_class": "PROCEDURAL_SOURCE_FORMAT_LOOKUP_FAILURE",
+    "authorization_consumed_by_abort": false,
+    "execution_procedure_correction_required": true,
+    "frozen_source_format_bindings": {
+      "C1-S01": "MARKDOWN",
+      "C1-S02": "MARKDOWN",
+      "C1-S03": "JSON",
+      "C1-S04": "JSON"
+    },
+    "preconsumption_abort_observed": true,
+    "reconciliation_result": "EXACT_FROZEN_BINDING_FOUND",
+    "remaining_attempt_capacity_after_abort": 1,
+    "scientific_or_governance_clarification_required": false,
+    "substantive_source_content_read_by_abort": false
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "ZE1_inventory_alone_establishes_representation_mismatch": false,
+    "ZE1_inventory_changes_D0321_zero_evidence_result": false,
+    "ZE1_inventory_establishes_C4": false,
+    "ZE1_inventory_is_mapping": false,
+    "ZE1_inventory_is_protocol_support": false,
+    "ZE1_inventory_is_semantic_evidence": false,
+    "ZE1_inventory_is_semantic_non_support": false
+  },
+  "source_identity_verification": [
+    {
+      "expected_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "expected_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "observed_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "sha256_match": true,
+      "source_member_id": "C1-S01",
+      "source_ordinal": 1,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md"
+    },
+    {
+      "expected_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "expected_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "observed_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "sha256_match": true,
+      "source_member_id": "C1-S02",
+      "source_ordinal": 2,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md"
+    },
+    {
+      "expected_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "expected_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "observed_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "sha256_match": true,
+      "source_member_id": "C1-S03",
+      "source_ordinal": 3,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json"
+    },
+    {
+      "expected_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "expected_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "observed_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "sha256_match": true,
+      "source_member_id": "C1-S04",
+      "source_ordinal": 4,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json"
+    }
+  ]
+}

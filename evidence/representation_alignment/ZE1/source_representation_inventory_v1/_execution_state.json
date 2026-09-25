@@ -1,0 +1,80 @@
+{
+  "authorization_id": "SVF-D0331-ZE1-SINGLE-EXECUTION-AUTH-V1",
+  "clarification_id": "SVF-D0332-ZE1-ORDINAL-OUTPUT-SCHEMA-CLARIFICATION-V1",
+  "execution_id": "SVF-ZE1-SOURCE-REPRESENTATION-INVENTORY-RUN-001",
+  "output_hashes": {
+    "execution_state_full_file_sha256_recorded_externally": "NEXT_RESULT_CHECKPOINT",
+    "inventory_canonical_json_sha256": "1a732561d11f83ebbe3dde3386239dea3654dbf00e5a664a94e74dea39a6e4d8",
+    "inventory_file_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c"
+  },
+  "per_source_atom_counts": {
+    "C1-S01": 1931,
+    "C1-S02": 37365,
+    "C1-S03": 262665,
+    "C1-S04": 121
+  },
+  "per_source_token_occurrence_counts": {
+    "C1-S01": 2677,
+    "C1-S02": 42403,
+    "C1-S03": 529443,
+    "C1-S04": 301
+  },
+  "runtime_unicode_database_version": "13.0.0",
+  "scientific_interpretation_boundary": {
+    "ZE1_inventory_alone_establishes_representation_mismatch": false,
+    "ZE1_inventory_changes_D0321_zero_evidence_result": false,
+    "ZE1_inventory_establishes_C4": false,
+    "ZE1_inventory_is_mapping": false,
+    "ZE1_inventory_is_protocol_support": false,
+    "ZE1_inventory_is_semantic_evidence": false,
+    "ZE1_inventory_is_semantic_non_support": false
+  },
+  "source_identity_verification": [
+    {
+      "expected_git_blob_oid": "7f0ea290e6f49c06fd7102d7b0eef5bd306697a5",
+      "expected_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "observed_sha256": "effd2848702219741e3814d2dc283284c92ab07f49980cd799fde351ecb8b685",
+      "sha256_match": true,
+      "source_member_id": "C1-S01",
+      "source_ordinal": 1,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_completed_human_positive_binding_evidence_record_v1/02_completed_human_positive_binding_evidence_packet.EXACT_COPY.v1.md"
+    },
+    {
+      "expected_git_blob_oid": "cc14c8f9424caae4a85660c83a74491651d29c1b",
+      "expected_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "observed_sha256": "ad35ddfefea1d79db79e36f24ef823407f977a682efcdf23a98a1cbc5ffd7eda",
+      "sha256_match": true,
+      "source_member_id": "C1-S02",
+      "source_ordinal": 2,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_technical_adjudication_completed_human_record_v1/01_returned_human_technical_adjudication.EXACT_COPY.v1.md"
+    },
+    {
+      "expected_git_blob_oid": "336573866fc84ab4b4379ee4f331fb448252acfb",
+      "expected_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "observed_sha256": "c74240135454c6746b0829306d60c5a818c67d06a4148116de0f21891669a940",
+      "sha256_match": true,
+      "source_member_id": "C1-S03",
+      "source_ordinal": 3,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_requirement_to_semantic_unit_bounded_supported_binding_promotion_successor_v1/01_bounded_supported_binding_successor_matrix.v1.json"
+    },
+    {
+      "expected_git_blob_oid": "ab93158e0b44e3d4143d578040f73e34ba4eba8f",
+      "expected_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "observed_sha256": "5c7b3c8dd77cd427ffd74a21f6e818daa99e4d02461635d76192ac0c2c08767e",
+      "sha256_match": true,
+      "source_member_id": "C1-S04",
+      "source_ordinal": 4,
+      "source_path": "evidence/annotation_preparation/protocol_specification_schema_successor_v2/schema_v2_req06_req14_accounting_semantic_role_resolution_study_v1_governance_adoption_record_v1/01_bounded_role_governance_adoption_manifest.v1.json"
+    }
+  ],
+  "source_order": [
+    "C1-S01",
+    "C1-S02",
+    "C1-S03",
+    "C1-S04"
+  ],
+  "source_record_count": 4,
+  "status": "COMPLETED",
+  "total_atom_occurrence_count": 302082,
+  "total_token_occurrence_count": 574824
+}
