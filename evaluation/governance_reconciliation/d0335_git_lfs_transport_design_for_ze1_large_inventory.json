@@ -1,0 +1,138 @@
+{
+  "D0334_activation_transport_clarification": {
+    "D0334_artifact_bytes_changed": false,
+    "D0334_commit_authorized_now": false,
+    "D0334_decision_bytes_changed": false,
+    "D0334_scientific_result_changed": false,
+    "clarification_scope": "TRANSPORT_ONLY",
+    "execution_state_bytes_changed": false,
+    "future_LFS_inventory_commit_permitted_after_D0335_activation": true,
+    "inventory_staging_authorized_now": false,
+    "inventory_worktree_bytes_changed": false,
+    "required_pre_staging_conditions": {
+      "D0334_artifact_sha256_exact": "528dcf01bd65a23db2165a080d0e5c924b492679107a7edd781ef494220ab84d",
+      "D0334_decision_sha256_exact": "4a7d60ce7f5b0df8c5d0d972db46555360dbc91b81f19fc7b6c5ce85f41cd3be",
+      "ZE1_rerun_performed": false,
+      "candidate_read_performed": false,
+      "exact_inventory_path_filter_is_lfs": true,
+      "execution_state_sha256_exact": "4abc3f43a922cbe024c02dcb62543d930895a80299467274bd9caf01d10399f4",
+      "git_lfs_installed_and_functional": true,
+      "inventory_worktree_sha256_exact": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+      "inventory_worktree_size_exact": 570156431,
+      "lfs_object_oid_exact": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+      "lfs_pointer_size_exact": 570156431,
+      "matching_performed": false,
+      "no_other_result_path_converted_to_LFS": true,
+      "scientific_transformation_performed": false
+    }
+  },
+  "D0335_authoring_transaction": {
+    "D0334_result_bytes_modified": false,
+    "ZE1_rerun_performed": false,
+    "candidate_read_performed": false,
+    "commit_performed": false,
+    "git_add_performed": false,
+    "git_lfs_install_command_performed": false,
+    "git_lfs_installation_performed": false,
+    "inventory_staged": false,
+    "matching_performed": false,
+    "push_performed": false,
+    "substantive_source_content_read": false
+  },
+  "activation_rule": {
+    "authoring_alone_effective": false,
+    "exact_D0335_commit_paths": [
+      ".gitattributes",
+      "documentation/decisions/0335-design-git-lfs-transport-for-ze1-large-inventory.md",
+      "evaluation/governance_reconciliation/d0335_git_lfs_transport_design_for_ze1_large_inventory.json"
+    ],
+    "existing_D0334_ZE1_result_files_must_not_be_in_D0335_commit": true,
+    "local_commit_alone_effective": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit of three-file D0335 transport-control set",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed D0335 commit",
+      "exact remote readback confirmation"
+    ]
+  },
+  "artifact_type": "ZE1_LARGE_INVENTORY_GIT_LFS_TRANSPORT_CONTROL",
+  "authoring_status": "AUTHOR_CANDIDATE_PENDING_INDEPENDENT_PRE_COMMIT_REVIEW",
+  "checkpoint": "D0335",
+  "checkpoint_id": "SVF-D0335-ZE1-LARGE-INVENTORY-GIT-LFS-TRANSPORT-CONTROL-V1",
+  "downstream_authorization": {
+    "C4_authorized": false,
+    "E2_authorized": false,
+    "E3_authorized": false,
+    "E4_authorized": false,
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P8_mapping_authorized": false,
+    "ZE1_rerun_authorized": false,
+    "ZE2_execution_authorized": false,
+    "ZE3_execution_authorized": false,
+    "ZE4_execution_authorized": false,
+    "baseline_execution_authorized": false,
+    "candidate_source_matching_authorized": false,
+    "corrected_E1_reexecution_authorized": false,
+    "repair_execution_authorized": false
+  },
+  "execution_capacity": {
+    "ZE1_execution_completed": true,
+    "ZE1_rerun_authorized": false,
+    "authorization_consumed": true,
+    "remaining_attempt_capacity": 0,
+    "transport_handling_can_restore_capacity": false
+  },
+  "expected_LFS_identity": {
+    "canonical_pointer_sha256": "ea8a2b251e551a45bf3f4ef4e06f274d7cabdbf9d18de9e2267fd97a45803d29",
+    "canonical_pointer_text": "version https://git-lfs.github.com/spec/v1\noid sha256:5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c\nsize 570156431\n",
+    "lfs_object_oid": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+    "lfs_object_oid_algorithm": "sha256",
+    "lfs_object_size_bytes": 570156431,
+    "pointer_is_scientific_inventory_content": false,
+    "scientific_inventory_identity_is_restored_worktree_bytes": true
+  },
+  "frozen_D0334_result_bindings": {
+    "D0334_artifact_sha256": "528dcf01bd65a23db2165a080d0e5c924b492679107a7edd781ef494220ab84d",
+    "D0334_decision_sha256": "4a7d60ce7f5b0df8c5d0d972db46555360dbc91b81f19fc7b6c5ce85f41cd3be",
+    "execution_state_full_file_sha256": "4abc3f43a922cbe024c02dcb62543d930895a80299467274bd9caf01d10399f4",
+    "inventory_size_bytes": 570156431,
+    "inventory_worktree_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+    "scientific_result_bytes_may_change": false
+  },
+  "post_activation_next_scope": {
+    "D0334_commit_authorized_before_postinstall_reconciliation_PASS": false,
+    "inventory_staging_authorized_before_postinstall_reconciliation": false,
+    "postinstall_prestaging_reconciliation_required": true,
+    "separate_git_lfs_installation_and_transport_preparation_authorized": true
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "ZE1_inventory_alone_establishes_representation_mismatch": false,
+    "ZE1_inventory_establishes_C4": false,
+    "ZE1_inventory_is_mapping": false,
+    "ZE1_inventory_is_protocol_support": false,
+    "ZE1_inventory_is_semantic_evidence": false,
+    "ZE1_inventory_is_semantic_non_support": false
+  },
+  "transport_design": {
+    "gitattributes_exact_line": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json filter=lfs diff=lfs merge=lfs -text",
+    "gitattributes_path": ".gitattributes",
+    "mechanism": "GIT_LFS",
+    "other_paths_LFS_authorized_by_D0335": false,
+    "tracked_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json",
+    "wildcard_tracking_authorized": false
+  },
+  "triggering_finding": {
+    "git_lfs_installed_before_D0335": false,
+    "head_gitattributes_present_before_D0335": false,
+    "inventory_lfs_tracked_before_D0335": false,
+    "inventory_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json",
+    "inventory_size_bytes": 570156431,
+    "inventory_worktree_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+    "regular_git_publication_blocked_in_current_GitHub_workflow": true
+  }
+}
