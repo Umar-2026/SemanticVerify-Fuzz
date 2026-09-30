@@ -1,0 +1,120 @@
+{
+  "D0337_authorization_state": {
+    "authorization_consumed": false,
+    "authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "new_execution_attempt_capacity_from_D0342": 0,
+    "remaining_execution_attempt_capacity": 1,
+    "retry_after_consumption_authorized": false,
+    "total_execution_attempt_capacity": 1
+  },
+  "activation_rule": {
+    "authoring_alone_effective": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed commit to origin/main",
+      "exact remote readback confirmation"
+    ]
+  },
+  "artifact_id": "SVF-D0342-ZE2-PREEXISTING-PROVENANCE-ROUTE-EXHAUSTION-V1",
+  "authoring_noninterference": {
+    "D0318_raw_candidate_record_read_performed": false,
+    "ZE0_scientific_payload_read_performed": false,
+    "ZE1_scientific_payload_read_performed": false,
+    "ZE2_execution_authorization_consumed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "candidate_source_comparison_performed": false,
+    "commit_performed": false,
+    "git_add_performed": false,
+    "push_performed": false,
+    "representation_overlap_performed": false
+  },
+  "bounded_preexisting_provenance_search": {
+    "D0318_raw_candidate_records_read": false,
+    "ZE0_scientific_manifest_payload_read": false,
+    "ZE1_scientific_inventory_payload_read": false,
+    "current_tracked_ZE0_implementation_provenance_hit_count": 0,
+    "current_tracked_implementation_code_search_performed": true,
+    "governance_checkpoints_examined": [
+      "D0322",
+      "D0323",
+      "D0324",
+      "D0325",
+      "D0326",
+      "D0336",
+      "D0337",
+      "D0340",
+      "D0341"
+    ],
+    "historical_ZE0_implementation_provenance_hits": "NONE",
+    "historical_implementation_code_search_performed": true
+  },
+  "checkpoint": "D0342",
+  "gap_A_adjudication": {
+    "D0323_explicit_inner_layout_key_count": 0,
+    "D0323_representation_order_frozen": true,
+    "D0323_representation_value_types_frozen": true,
+    "D0323_representations_member_required": true,
+    "D0323_seven_representation_ids_frozen": true,
+    "D0324_synthetic_vector_layout_relevant_keypath_count": 0,
+    "D0324_synthetic_vectors_exist": true,
+    "closure_requirement": "EXPLICIT_PREEXISTING_SERIALIZED_LAYOUT_CONTRACT_OR_PREEXISTING_IMPLEMENTATION",
+    "gap_id": "ZE0_REPRESENTATIONS_SERIALIZED_INNER_LAYOUT",
+    "layout_guessing_allowed": false,
+    "preexisting_implementation_provenance_established": false,
+    "preexisting_provenance_closure": "NOT_ESTABLISHED",
+    "underlying_gap_closed": false
+  },
+  "gap_B_adjudication": {
+    "D0324_requires_recomputation": true,
+    "D0325_records_successful_recomputed_value": true,
+    "closure_requirement": "EXPLICIT_PREEXISTING_CANONICALIZATION_BYTE_PROCEDURE_OR_PREEXISTING_IMPLEMENTATION",
+    "exact_byte_canonicalization_procedure_established": false,
+    "gap_id": "ZE0_CANDIDATE_CANONICAL_BYTE_RECOMPUTATION_PROCEDURE",
+    "hash_value_alone_satisfies_procedure": false,
+    "historical_expected_candidate_canonical_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "preexisting_implementation_provenance_established": false,
+    "preexisting_provenance_closure": "NOT_ESTABLISHED",
+    "underlying_gap_closed": false,
+    "word_recompute_alone_satisfies_procedure": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0342_ROUTE_1_EXHAUSTION_AUTHOR_CANDIDATE",
+  "prohibited_D0342_effects": {
+    "authorize_D0318_raw_candidate_access": false,
+    "authorize_ZE2_execution": false,
+    "authorize_additional_ZE2_attempt": false,
+    "define_ZE0_serialized_layout": false,
+    "define_generic_recursive_decoder": false,
+    "inspect_ZE0_payload_to_discover_layout": false,
+    "redefine_D0337_step_3": false,
+    "substitute_manifest_field_equality_for_historical_recomputation": false
+  },
+  "route_adjudication": {
+    "prospective_correction_designed_by_D0342": false,
+    "route_1": "ESTABLISH_PREEXISTING_EXACT_PROVENANCE",
+    "route_1_absolute_nonexistence_claimed": false,
+    "route_1_scope": "BOUNDED_GOVERNED_REPOSITORY_PROVENANCE_SEARCH",
+    "route_1_status": "EXHAUSTED_WITHOUT_CLOSURE",
+    "route_2": "SEPARATELY_GOVERN_AND_REVIEW_A_PROSPECTIVE_OPERATIONAL_CORRECTION",
+    "route_2_selected_as_next_design_path": true
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "mapping_established": false,
+    "protocol_support_established": false,
+    "representation_overlap_established": false,
+    "semantic_evidence_established": false,
+    "semantic_non_support_established": false,
+    "source_universe_insufficiency_established": false,
+    "source_universe_sufficiency_established": false
+  },
+  "source_checkpoint": {
+    "D0341_commit": "1de30f0907ab9173ab5d734d8799cb304b73e886",
+    "D0341_effective": true
+  },
+  "status": "AUTHOR_CANDIDATE_NOT_EFFECTIVE"
+}
