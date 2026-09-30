@@ -1,0 +1,340 @@
+{
+  "activation_rule": {
+    "authoring_alone_effective": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed commit to origin/main",
+      "exact remote readback confirmation"
+    ]
+  },
+  "artifact_id": "SVF-D0343-ZE2-PROSPECTIVE-ZE0-OPERATIONAL-CORRECTION-V1",
+  "authoring_noninterference": {
+    "D0318_raw_candidate_record_read_performed": false,
+    "ZE0_scientific_payload_read_performed": false,
+    "ZE1_scientific_payload_read_performed": false,
+    "ZE2_execution_authorization_consumed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "candidate_source_comparison_performed": false,
+    "commit_performed": false,
+    "git_add_performed": false,
+    "push_performed": false,
+    "representation_overlap_performed": false
+  },
+  "authorization_state": {
+    "authorization_consumed": false,
+    "authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "current_effective_D0337_sequence_unchanged_by_D0343": true,
+    "new_execution_attempt_capacity_from_D0343": 0,
+    "remaining_execution_attempt_capacity": 1,
+    "successor_authorization_amendment_authored_by_D0343": false,
+    "successor_authorization_amendment_effective": false,
+    "total_execution_attempt_capacity": 1
+  },
+  "checkpoint": "D0343",
+  "execution_gate": {
+    "D0343_activation_alone_authorizes_execution": false,
+    "D0343_is_D0337_authorization_amendment": false,
+    "ZE2_execution_go_during_D0343": false,
+    "current_D0337_sequence_changed_by_D0343": false,
+    "readiness_reconciliation_alone_can_change_D0337": false,
+    "readiness_reconciliation_may_occur_only_after_successor_authorization_effective": true,
+    "required_future_order": [
+      "ACTIVATE_D0343",
+      "AUTHOR_REVIEW_COMMIT_PUBLISH_AND_REMOTE_CONFIRM_SEPARATE_SUCCESSOR_AUTHORIZATION_AMENDMENT",
+      "RUN_SEPARATE_NONCONSUMING_IMPLEMENTATION_PREEXECUTION_READINESS_RECONCILIATION",
+      "ONLY_THEN_CONSIDER_ZE2_EXECUTION"
+    ],
+    "separate_nonconsuming_implementation_readiness_reconciliation_required": true,
+    "separate_successor_authorization_amendment_required": true,
+    "successor_authorization_amendment_effective": false
+  },
+  "frozen_D0323_operational_derivation": {
+    "F0": {
+      "operation": "EXACT_RAW_PROPERTY_PATH_NO_TRANSFORMATION",
+      "representation_id": "ZE0-F0-RAW-PATH-EXACT"
+    },
+    "F1": {
+      "operation": "SPLIT_ON_LITERAL_ASCII_PERIOD_LEFT_TO_RIGHT",
+      "preserve_empty_segments": true,
+      "representation_id": "ZE0-F1-DOT-SEGMENT-SEQUENCE-EXACT",
+      "segment_text_mutation": "NONE"
+    },
+    "F2": {
+      "operation": "FINAL_F1_SEGMENT",
+      "representation_id": "ZE0-F2-LEAF-SEGMENT-EXACT"
+    },
+    "F3": {
+      "operation": "FINAL_TWO_F1_SEGMENTS_IF_AT_LEAST_TWO_ELSE_SINGLE_F1_SEGMENT",
+      "representation_id": "ZE0-F3-PARENT-LEAF-SEQUENCE-EXACT"
+    },
+    "F4": {
+      "operation": "LEXICALIZE_F2",
+      "representation_id": "ZE0-F4-LEAF-LEXICAL-TOKENS"
+    },
+    "F5": {
+      "operation": "LEXICALIZE_EACH_F3_SEGMENT_IN_ORDER",
+      "representation_id": "ZE0-F5-PARENT-LEAF-LEXICAL-TOKEN-SEQUENCES"
+    },
+    "F6": {
+      "operation": "LEXICALIZE_EACH_F1_SEGMENT_IN_ORDER",
+      "representation_id": "ZE0-F6-ALL-SEGMENT-LEXICAL-TOKEN-SEQUENCES"
+    },
+    "lexicalization": {
+      "ASCII_separators": [
+        "_",
+        "-"
+      ],
+      "abbreviation_expansion": false,
+      "case_normalization": "ASCII_UPPERCASE_TO_LOWERCASE_ONLY",
+      "decimal_digits_preserved": true,
+      "lemmatization": false,
+      "non_ASCII_preserved_without_normalization": true,
+      "rule_id": "ZE0-R-ASCII-IDENTIFIER-LEXICALIZATION-V1",
+      "scan_order": "LEFT_TO_RIGHT",
+      "semantic_normalization": "NONE",
+      "separator_created_zero_length_tokens_discarded": true,
+      "split_acronym_boundary_before_upper_preceded_by_upper_followed_by_lower": true,
+      "split_lower_or_digit_before_upper": true,
+      "stemming": false,
+      "synonym_expansion": false,
+      "unicode_normalization": "NONE"
+    }
+  },
+  "frozen_ZE0_identity": {
+    "artifact_type": "SVF_ZE0_CANDIDATE_REPRESENTATION_MANIFEST_V1",
+    "candidate_count": 171,
+    "candidate_identity_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "candidate_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "contract_id": "SVF-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-CONTRACT-V1",
+    "execution_state_sha256": "bc3257530de6be661c21f3cefd5e48fb75ed2e8fe60fde91bf748e77b1957f13",
+    "manifest_file_sha256": "556096b6b6adc0708aee4903c5a4eb033231c04d7abe125d14f9dd5ad9760693",
+    "manifest_path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/candidate_representation_manifest.json"
+  },
+  "frozen_governance_identity": {
+    "D0323_representation_grammar_id": "SVF-ZE0-DET-REP-GRAMMAR-V1",
+    "D0326_commit": "0de94e0b532dcad4184b6eb32d46a3e475fcf616",
+    "D0326_decision_sha256": "dd172b110472d080cc7e0b78f2c246061ca0e5a6e2a2af009c7919b6b07ac36d",
+    "D0326_machine_artifact_sha256": "0cf4f0233664d8abe69e55f41fbcaa28815257ac479d14a5ff13a980e237009e",
+    "D0337_authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "D0340_candidate_binding_preserved": true
+  },
+  "gap_A_prospective_correction": {
+    "D0336_candidate_value_semantics_prospective_supersession_explicit": true,
+    "D0336_exact_superseded_field": "reserved_future_output_contract.candidate_form_record_schema.candidate_representation_value_semantics",
+    "D0336_exact_superseded_value": "PRESERVE_EXACT_STORED_ZE0_REPRESENTATION_VALUE_WITHOUT_MUTATION",
+    "D0336_prospective_replacement_value": "DETERMINISTICALLY_REGENERATE_FROM_EXACT_STORED_schema_v2_property_path_USING_FROZEN_D0323_GRAMMAR",
+    "D0336_supersession_scope": "FUTURE_ZE2_OPERATIONAL_CANDIDATE_VALUE_SOURCE_ONLY",
+    "all_other_D0336_contracts_unchanged_except_explicit_candidate_value_source": true,
+    "candidate_ordinals_required": "EXACT_INTEGER_SEQUENCE_1_THROUGH_171_IN_STORED_RECORD_ORDER",
+    "candidate_record_count": 171,
+    "candidate_value_source_after_correction": "DETERMINISTICALLY_REGENERATE_FROM_EXACT_STORED_schema_v2_property_path_USING_FROZEN_D0323_GRAMMAR",
+    "candidate_value_source_before_correction": "DECODE_EXACT_STORED_ZE0_REPRESENTATION_VALUE",
+    "correction_kind": "BYPASS_OPAQUE_REPRESENTATIONS_LAYOUT_BY_DETERMINISTIC_REGENERATION",
+    "layout_adaptation_after_payload_read_allowed": false,
+    "manual_layout_discovery_allowed": false,
+    "property_path_type": "JSON_STRING",
+    "property_paths_must_be_unique": true,
+    "recursive_search_inside_representations_allowed": false,
+    "representation_grammar_id_required": "SVF-ZE0-DET-REP-GRAMMAR-V1",
+    "representation_order": [
+      "ZE0-F0-RAW-PATH-EXACT",
+      "ZE0-F1-DOT-SEGMENT-SEQUENCE-EXACT",
+      "ZE0-F2-LEAF-SEGMENT-EXACT",
+      "ZE0-F3-PARENT-LEAF-SEQUENCE-EXACT",
+      "ZE0-F4-LEAF-LEXICAL-TOKENS",
+      "ZE0-F5-PARENT-LEAF-LEXICAL-TOKEN-SEQUENCES",
+      "ZE0-F6-ALL-SEGMENT-LEXICAL-TOKEN-SEQUENCES"
+    ],
+    "required_candidate_record_fields": [
+      "candidate_ordinal",
+      "schema_v2_property_path",
+      "representation_grammar_id",
+      "representations"
+    ],
+    "stored_representations_inner_layout_interpreted": false,
+    "stored_representations_member_must_exist": true,
+    "supersession_execution_effect_requires_effective_successor_authorization_amendment": true
+  },
+  "gap_B_prospective_correction": {
+    "D0343_changes_current_effective_D0337_sequence": false,
+    "D0343_is_D0337_authorization_amendment": false,
+    "current_D0337_step3_operation": "VERIFY_ZE0_CANDIDATE_CANONICAL_SHA256",
+    "field_equality_alone_sufficient": false,
+    "historical_recomputation_recovered": false,
+    "prerequisites": {
+      "ZE0_full_file_sha256": "556096b6b6adc0708aee4903c5a4eb033231c04d7abe125d14f9dd5ad9760693",
+      "ZE0_full_file_sha256_must_pass_first": true
+    },
+    "replacement_verification_id": "VERIFY_ZE0_CANDIDATE_IDENTITY_BY_FROZEN_ARTIFACT_ATTESTATION_V1",
+    "required_attestation_checks": [
+      {
+        "expected": "SVF_ZE0_CANDIDATE_REPRESENTATION_MANIFEST_V1",
+        "field": "artifact_type"
+      },
+      {
+        "expected": "SVF-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-CONTRACT-V1",
+        "field": "contract_id"
+      },
+      {
+        "expected": "SCHEMA_V2_PROPERTY_PATH",
+        "field": "candidate_namespace"
+      },
+      {
+        "expected": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+        "field": "candidate_manifest_canonical_json_sha256"
+      },
+      {
+        "expected": 171,
+        "field": "record_count"
+      },
+      {
+        "expected": "EXACTLY_171_RECORDS",
+        "field": "records"
+      },
+      {
+        "expected": "EXACT_ORDERED_INTEGER_SEQUENCE_1_THROUGH_171",
+        "field": "candidate_ordinal"
+      },
+      {
+        "expected": "ALL_JSON_STRINGS_AND_ALL_UNIQUE",
+        "field": "schema_v2_property_path"
+      },
+      {
+        "expected": "SVF-ZE0-DET-REP-GRAMMAR-V1_FOR_EVERY_RECORD",
+        "field": "representation_grammar_id"
+      },
+      {
+        "expected": "FROZEN_D0326_BINDS_EXACT_ZE0_ARTIFACT_TO_c274_CANDIDATE_IDENTITY",
+        "field": "D0326_provenance_attestation"
+      }
+    ],
+    "separate_successor_authorization_amendment_required": true,
+    "successor_authorization_amendment_must_explicitly_replace_step3": true,
+    "successor_authorization_amendment_required_before_attestation_use": true,
+    "verification_is_historical_hash_recomputation": false,
+    "verification_semantics": "PROSPECTIVE_FROZEN_ARTIFACT_ATTESTATION"
+  },
+  "historical_gap_status": {
+    "D0343_claims_historical_reconstruction": false,
+    "ZE0_candidate_canonical_recomputation_procedure": "UNRESOLVED",
+    "ZE0_representations_serialized_layout": "UNRESOLVED"
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_CORRECTED_D0343_PROSPECTIVE_OPERATIONAL_CORRECTION_AUTHOR_CANDIDATE",
+  "precommit_review_correction": {
+    "corrective_authoring_consumes_D0337": false,
+    "corrective_authoring_reads_scientific_payload": false,
+    "findings": [
+      {
+        "finding": "AMBIGUOUS_D0336_CANDIDATE_VALUE_SEMANTICS_SUPERSESSION",
+        "finding_id": "D0343-PR-001",
+        "resolution": "EXPLICITLY_IDENTIFY_EXACT_D0336_FIELD_AND_FROZEN_VALUE_AND_DEFINE_NARROW_PROSPECTIVE_SUPERSESSION",
+        "resolved_in_corrected_author_candidate": true
+      },
+      {
+        "finding": "D0337_AUTHORIZATION_SEQUENCE_CHANGE_NOT_GOVERNED_BY_EXPLICIT_AUTHORIZATION_AMENDMENT",
+        "finding_id": "D0343-PR-002",
+        "resolution": "D0343_DECLARED_DESIGN_ONLY_AND_REQUIRES_SEPARATE_SUCCESSOR_AUTHORIZATION_AMENDMENT_BEFORE_EXECUTION_USE",
+        "resolved_in_corrected_author_candidate": true
+      }
+    ],
+    "prior_author_candidate_artifact_sha256": "86329fb4f8d9a9ca06af67c2583ebbf6870b14a7fce4b587ae822f8d9151352e",
+    "prior_author_candidate_decision_sha256": "8a471d922881dde02dd5d05fc50869744e22557b95002ab214ff027dd701a03c",
+    "prior_precommit_review_finding_count": 2,
+    "prior_precommit_review_verdict": "REVISION_REQUIRED"
+  },
+  "preserved_contracts": {
+    "D0336_JSON_serialization_contract": "UNCHANGED",
+    "D0336_candidate_count": 171,
+    "D0336_candidate_form_record_count": 1197,
+    "D0336_candidate_order": true,
+    "D0336_candidate_value_byte_serializer": "UNCHANGED",
+    "D0336_exact_equality_matching": "UNCHANGED",
+    "D0336_execution_state_schema": "UNCHANGED",
+    "D0336_match_ordering": "UNCHANGED",
+    "D0336_output_manifest_schema": "UNCHANGED",
+    "D0336_representation_order": [
+      "ZE0-F0-RAW-PATH-EXACT",
+      "ZE0-F1-DOT-SEGMENT-SEQUENCE-EXACT",
+      "ZE0-F2-LEAF-SEGMENT-EXACT",
+      "ZE0-F3-PARENT-LEAF-SEQUENCE-EXACT",
+      "ZE0-F4-LEAF-LEXICAL-TOKENS",
+      "ZE0-F5-PARENT-LEAF-LEXICAL-TOKEN-SEQUENCES",
+      "ZE0-F6-ALL-SEGMENT-LEXICAL-TOKEN-SEQUENCES"
+    ],
+    "D0336_scientific_interpretation_boundary": "UNCHANGED",
+    "D0336_source_locator_semantics": "UNCHANGED",
+    "D0336_source_side_ZE1_surfaces": "UNCHANGED",
+    "D0336_zero_match_retention": "UNCHANGED",
+    "D0337_one_shot_consumption_semantics": "UNCHANGED",
+    "D0337_retry_after_consumption": "PROHIBITED",
+    "D0340_candidate_index_binding": "candidate_index := candidate_ordinal"
+  },
+  "proposed_successor_authorization_consumed_sequence": [
+    {
+      "consumes_D0337": true,
+      "operation": "READ_ZE0_MANIFEST_FULL_SCIENTIFIC_PAYLOAD",
+      "step": 1
+    },
+    {
+      "operation": "VERIFY_ZE0_FULL_FILE_SHA256",
+      "step": 2
+    },
+    {
+      "operation": "VERIFY_ZE0_CANDIDATE_IDENTITY_BY_FROZEN_ARTIFACT_ATTESTATION_V1",
+      "step": 3
+    },
+    {
+      "operation": "DERIVE_F0_THROUGH_F6_FROM_EXACT_STORED_schema_v2_property_path_USING_D0323_GRAMMAR",
+      "step": 4
+    },
+    {
+      "operation": "READ_ZE1_INVENTORY_FULL_SCIENTIFIC_PAYLOAD",
+      "step": 5
+    },
+    {
+      "operation": "VERIFY_ZE1_FULL_FILE_SHA256",
+      "step": 6
+    },
+    {
+      "operation": "VERIFY_ZE1_CANONICAL_JSON_SHA256",
+      "step": 7
+    },
+    {
+      "operation": "BEGIN_D0336_EXACT_CANDIDATE_SOURCE_COMPARISON",
+      "requires_all_prior_checks_pass": true,
+      "step": 8
+    }
+  ],
+  "proposed_successor_authorization_scope": {
+    "D0343_itself_is_authorization_amendment": false,
+    "current_effective_D0337_remains_unchanged": true,
+    "proposal_only_during_D0343": true,
+    "readiness_reconciliation_alone_may_change_D0337": false,
+    "separate_successor_authorization_amendment_required": true,
+    "successor_amendment_may_add_execution_attempt_capacity": false,
+    "successor_amendment_must_preserve_existing_one_shot_capacity": true,
+    "successor_amendment_must_preserve_first_ZE0_payload_read_consumption_boundary": true
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "mapping_established": false,
+    "protocol_support_established": false,
+    "representation_overlap_established": false,
+    "semantic_evidence_established": false,
+    "semantic_non_support_established": false,
+    "source_universe_insufficiency_established": false,
+    "source_universe_sufficiency_established": false
+  },
+  "source_checkpoint": {
+    "D0342_commit": "b38cf8a8a9891861ecfeae0de8378fd8c196b9ff",
+    "D0342_effective": true,
+    "route_1_status": "EXHAUSTED_WITHOUT_CLOSURE",
+    "route_2_selected": true
+  },
+  "status": "CORRECTED_AUTHOR_CANDIDATE_NOT_EFFECTIVE"
+}
