@@ -1,0 +1,392 @@
+{
+  "D0343_attestation_readiness_semantics": {
+    "historical_candidate_hash_recomputation_required": false,
+    "must_verify_candidate_ordinals_exact_1_through_171": true,
+    "must_verify_full_file_SHA_precedes_attestation_in_future_execution": true,
+    "must_verify_record_count_171": true,
+    "must_verify_recorded_candidate_identity_SHA256_exact": true,
+    "must_verify_representation_grammar_id_exact": true,
+    "must_verify_required_record_fields": true,
+    "must_verify_schema_v2_property_paths_are_strings": true,
+    "must_verify_schema_v2_property_paths_are_unique": true,
+    "real_ZE0_payload_read_allowed": false,
+    "synthetic_fixture_only": true
+  },
+  "D0343_regeneration_readiness_semantics": {
+    "LLM_matching": false,
+    "casefold": false,
+    "decode_stored_representations": false,
+    "embedding": false,
+    "frozen_grammar_source": "D0323",
+    "fuzzy_matching": false,
+    "input_source": "schema_v2_property_path",
+    "lemmatization": false,
+    "manual_aliases": false,
+    "real_ZE0_payload_read_allowed": false,
+    "representation_ids_required": [
+      "F0_RAW_PATH",
+      "F1_DOT_SEGMENT_SEQUENCE",
+      "F2_LEAF_SEGMENT",
+      "F3_PARENT_LEAF_SEGMENT_SEQUENCE",
+      "F4_LEAF_LEXICAL_TOKEN_SEQUENCE",
+      "F5_PARENT_LEAF_LEXICAL_TOKEN_SEQUENCES",
+      "F6_ALL_SEGMENT_LEXICAL_TOKEN_SEQUENCES"
+    ],
+    "semantic_expansion": false,
+    "stemming": false,
+    "synthetic_fixture_only": true,
+    "unicode_normalization": false
+  },
+  "activation_rule": {
+    "activation_itself_starts_readiness_attempt": false,
+    "effective_at_authoring": false,
+    "exact_commit_required": true,
+    "exact_remote_readback_required": true,
+    "implementation_freeze_checkpoint_effective_at_authoring": false,
+    "implementation_freeze_checkpoint_required_after_D0345_activation": true,
+    "independent_postcommit_review_required": true,
+    "independent_precommit_review_required": true,
+    "maximum_readiness_attempt_capacity_after_full_activation": 1,
+    "publication_required": true,
+    "readiness_attempt_authorized_at_authoring": false,
+    "readiness_attempt_capacity_after_full_activation": 1,
+    "readiness_attempt_capacity_available_at_authoring": 0,
+    "readiness_attempt_exercisable_immediately_after_D0345_activation": false,
+    "required_post_D0345_order": [
+      "ACTIVATE_D0345",
+      "AUTHOR_REVIEW_COMMIT_PUBLISH_AND_REMOTE_CONFIRM_ZE2_OPERATIONAL_IMPLEMENTATION_FREEZE_CHECKPOINT",
+      "RUN_NONCONSUMING_D0345_TRANSPORT_PREFLIGHT",
+      "START_AND_CONSUME_SINGLE_D0345_READINESS_ATTEMPT",
+      "RETURN_TERMINAL_READINESS_EVIDENCE",
+      "AUTHOR_REVIEW_COMMIT_PUBLISH_AND_REMOTE_CONFIRM_READINESS_RESULT_CHECKPOINT",
+      "ONLY_THEN_CONSIDER_LATER_ZE2_EXECUTION_ELIGIBILITY"
+    ],
+    "transport_preflight_allowed_before_implementation_freeze_effective": false
+  },
+  "artifact_type": "D0345_POST_AMENDMENT_ZE2_READINESS_RECONCILIATION_AUTHORIZATION",
+  "authoring_noninterference": {
+    "ZE2_execution_authorization_consumed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "candidate_source_comparison_performed": false,
+    "readiness_attempt_performed": false,
+    "remote_access_performed": false,
+    "remote_write_performed": false,
+    "representation_overlap_performed": false,
+    "scientific_payload_read_performed": false,
+    "synthetic_conformance_execution_performed": false
+  },
+  "authorization_id": "SVF-D0345-ZE2-POST-AMENDMENT-READINESS-AUTH-V1",
+  "closed_required_check_set": {
+    "all_checks_must_pass": true,
+    "checks": [
+      "D0344_EFFECTIVE_SUCCESSOR_AUTHORIZATION_BINDING_EXACT",
+      "D0343_PROSPECTIVE_OPERATIONAL_CORRECTION_BINDING_EXACT",
+      "D0340_CANDIDATE_INDEX_BINDING_EXACT",
+      "D0336_ZE2_OUTPUT_CONTRACT_BINDING_EXACT",
+      "ZE0_GIT_PATH_AND_BLOB_IDENTITY_EXACT",
+      "ZE1_GIT_PATH_AND_LFS_POINTER_IDENTITY_EXACT",
+      "GIT_LFS_RUNTIME_AND_REPOSITORY_HOOK_BINDING_EXACT",
+      "ZE2_RESERVED_OUTPUT_ROOT_ABSENT",
+      "D0343_ZE0_ATTESTATION_IMPLEMENTATION_CONFORMANCE_PASS",
+      "D0343_F0_THROUGH_F6_REGENERATION_IMPLEMENTATION_CONFORMANCE_PASS",
+      "D0337_CANDIDATE_VALUE_SERIALIZER_SYNTHETIC_CONFORMANCE_PASS",
+      "D0337_EXACT_MATCHER_SYNTHETIC_CONFORMANCE_PASS",
+      "D0344_SUCCESSOR_CONSUMED_SEQUENCE_CONFORMANCE_PASS",
+      "D0344_ZE2_EXECUTION_STATE_AUTHORIZATION_ID_BINDING_CONFORMANCE_PASS",
+      "NO_SCIENTIFIC_PAYLOAD_READ_DURING_READINESS"
+    ],
+    "insertion_allowed_after_activation": false,
+    "removal_allowed_after_activation": false,
+    "reordering_allowed": false,
+    "required_check_count": 15
+  },
+  "consumption_semantics": {
+    "attempt_start_event": "FIRST_EXECUTION_OF_ANY_CLOSED_REQUIRED_READINESS_CHECK_AFTER_SUCCESSFUL_TRANSPORT_PREFLIGHT_OR_FIRST_SYNTHETIC_CONFORMANCE_VECTOR_WHICHEVER_OCCURS_FIRST",
+    "automatic_retry_after_consumption_authorized": false,
+    "consumption_is_atomic": true,
+    "first_closed_required_check_after_successful_transport_preflight_is_consuming": true,
+    "first_synthetic_conformance_vector_after_successful_transport_preflight_is_consuming": true,
+    "pre_attempt_governance_metadata_reads_are_consuming": false,
+    "remaining_attempt_capacity_after_consumption": 0,
+    "transport_preflight_is_consuming": false
+  },
+  "contract_bindings": {
+    "D0344_reserved_execution_id": "SVF-ZE2-DETERMINISTIC-REPRESENTATION-OVERLAP-RUN-001",
+    "D0344_successor_authorization_id": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "ZE2_execution_state_authorization_id_required_value": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "candidate_index_binding": "candidate_index := candidate_ordinal",
+    "candidate_representation_source": "DETERMINISTICALLY_REGENERATE_FROM_EXACT_STORED_schema_v2_property_path_USING_FROZEN_D0323_GRAMMAR",
+    "stored_ZE0_representations_decoding_allowed": false
+  },
+  "current_state": {
+    "C4_status": "UNRESOLVED",
+    "D0344_effective": true,
+    "D0345_effective": false,
+    "D0345_readiness_authorization_effective": false,
+    "P8_mapping_authorized": false,
+    "ZE2_authorization_lineage_consumed": false,
+    "ZE2_execution_go": false,
+    "ZE2_execution_state_write_authorized": false,
+    "ZE2_remaining_attempt_capacity": 1,
+    "implementation_freeze_checkpoint_effective": false,
+    "readiness_attempt_authorized": false,
+    "readiness_attempt_capacity_available": 0,
+    "readiness_attempt_exercisable": false,
+    "readiness_authorization_consumed": false,
+    "readiness_reconciliation_performed": false,
+    "separate_ZE2_operational_implementation_authoring_and_freeze_checkpoint_required": true
+  },
+  "frozen_readiness_metadata_identities": {
+    "ZE0": {
+      "manifest_git_blob_oid": "09f333b71a4b8d85a68a5d54a8f32b50bb80c1a0",
+      "manifest_path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/candidate_representation_manifest.json",
+      "scientific_payload_read_required_for_identity_check": false
+    },
+    "ZE1": {
+      "full_scientific_payload_read_required_for_identity_check": false,
+      "inventory_lfs_oid_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+      "inventory_lfs_size": 570156431,
+      "inventory_path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json",
+      "inventory_pointer_git_blob_oid": "3a033de80a9945f9f3f79c84a3cf72e03c54e703"
+    },
+    "ZE2": {
+      "reserved_output_root": "evidence/representation_alignment/ZE2/deterministic_candidate_source_overlap_v1",
+      "root_absence_test_allowed_after_readiness_attempt_start": true,
+      "root_absence_test_allowed_during_transport_preflight": false
+    },
+    "runtime_and_repository": {
+      "alternate_runtime_or_hook_identity_allowed": false,
+      "git_lfs_dpkg_version": "3.0.2-1ubuntu0.3",
+      "git_lfs_path": "/usr/bin/git-lfs",
+      "local_git_config_sha256": "186015dcc776c1fa85d4f65e3c76a8eceb6b58528c1949e4a90844007efbf036",
+      "post_commit_hook_sha256": "796dd3beaafc4b715b655d759a841eb133b22512f8b17a252fd68780bae215d7",
+      "pre_push_hook_sha256": "193f2f6be35f2285fe7b965c22b01319b6b1e2b666280d8235371e8fd3e26aeb"
+    }
+  },
+  "implementation_freeze_gate": {
+    "D0345_authoring_authors_ZE2_implementation": false,
+    "D0345_guesses_implementation_path_or_hash": false,
+    "ZE2_execution_must_use_same_frozen_implementation": true,
+    "bounded_ZE2_operational_implementation_marker_file_count": 0,
+    "existing_exact_ZE2_implementation_binding_established_by_bounded_diagnosis": false,
+    "future_checkpoint_consumes_D0345_readiness_capacity": false,
+    "future_checkpoint_consumes_ZE2_execution_capacity": false,
+    "future_checkpoint_may_read_ZE0_scientific_payload": false,
+    "future_checkpoint_may_read_ZE1_scientific_payload": false,
+    "future_checkpoint_must_freeze": [
+      "COMPLETE_TRACKED_IMPLEMENTATION_FILE_SET",
+      "EACH_IMPLEMENTATION_REPOSITORY_PATH",
+      "EACH_IMPLEMENTATION_GIT_BLOB_OID",
+      "EACH_IMPLEMENTATION_SHA256",
+      "DESIGNATED_EXECUTION_ENTRYPOINT",
+      "D0343_PROSPECTIVE_CORRECTION_BINDING",
+      "D0344_SUCCESSOR_AUTHORIZATION_BINDING"
+    ],
+    "future_checkpoint_requires_exact_commit": true,
+    "future_checkpoint_requires_exact_remote_readback": true,
+    "future_checkpoint_requires_independent_review": true,
+    "future_checkpoint_requires_publication": true,
+    "implementation_freeze_checkpoint_effective_at_D0345_authoring": false,
+    "implementation_identity_change_blocks_readiness_exercisability": true,
+    "post_freeze_silent_implementation_rebinding_allowed": false,
+    "readiness_attempt_exercisable_before_checkpoint_effective": false,
+    "readiness_must_test_exact_frozen_implementation": true,
+    "separate_ZE2_operational_implementation_authoring_and_freeze_checkpoint_required": true,
+    "transport_preflight_allowed_before_checkpoint_effective": false
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_CORRECTED_D0345_POST_AMENDMENT_READINESS_AUTHORIZATION_AUTHOR_CANDIDATE",
+  "pre_attempt_transport_preflight": {
+    "Git_LFS_runtime_identity_check_required": true,
+    "ZE0_scientific_payload_read_allowed": false,
+    "ZE1_scientific_payload_read_allowed": false,
+    "ZE2_reserved_output_root_test_allowed": false,
+    "automatic_same_transaction_preflight_retry_authorized": false,
+    "candidate_source_comparison_allowed": false,
+    "consumes_D0345_readiness_authorization": false,
+    "consumes_ZE2_execution_authorization": false,
+    "effective_D0345_commit_must_be_parent_of_implementation_freeze_commit": true,
+    "failed_preflight_blocks_readiness_attempt_start": true,
+    "failed_preflight_consumes_readiness_authorization": false,
+    "failed_preflight_may_be_retried_in_later_separate_transaction": true,
+    "frozen_implementation_identity_check_required": true,
+    "frozen_runtime_and_hook_identity_check_required": true,
+    "is_readiness_attempt_start": false,
+    "later_preflight_is_readiness_attempt_retry": false,
+    "later_preflight_requires_separate_recovery_transaction": true,
+    "permitted_operation": "AUTHENTICATED_EXACT_origin/main_READ_USING_PER_COMMAND_HTTP_1_1",
+    "representation_overlap_allowed": false,
+    "required": true,
+    "required_local_HEAD": "EFFECTIVE_PUBLISHED_ZE2_OPERATIONAL_IMPLEMENTATION_FREEZE_COMMIT",
+    "required_local_parent": "EFFECTIVE_PUBLISHED_D0345_COMMIT",
+    "required_remote_main": "EFFECTIVE_PUBLISHED_ZE2_OPERATIONAL_IMPLEMENTATION_FREEZE_COMMIT",
+    "synthetic_conformance_execution_allowed": false
+  },
+  "precommit_review_correction": {
+    "findings": [
+      {
+        "classification": "SUBSTANTIVE_EXECUTABILITY_GAP",
+        "finding": "FROZEN_READINESS_INPUT_IDENTITIES_NOT_EXPLICITLY_BOUND",
+        "finding_id": "D0345-PR-001",
+        "resolution": "FREEZE_EXACT_ZE0_GIT_IDENTITY_ZE1_GIT_LFS_IDENTITY_AND_ZE2_RESERVED_OUTPUT_ROOT",
+        "resolved_in_corrected_author_candidate": true
+      },
+      {
+        "classification": "SUBSTANTIVE_RUNTIME_IDENTITY_GAP",
+        "finding": "GIT_LFS_AND_HOOK_EXACT_EXPECTATIONS_NOT_FROZEN",
+        "finding_id": "D0345-PR-002",
+        "resolution": "FREEZE_EXACT_GIT_LFS_PATH_VERSION_LOCAL_CONFIG_AND_HOOK_BYTE_IDENTITIES",
+        "resolved_in_corrected_author_candidate": true
+      },
+      {
+        "bounded_provenance_diagnosis": {
+          "ZE2_operational_implementation_marker_file_count": 0,
+          "existing_exact_ZE2_implementation_binding_established": false
+        },
+        "classification": "SUBSTANTIVE_IMPLEMENTATION_BINDING_GAP",
+        "finding": "READINESS_IMPLEMENTATION_UNBOUND",
+        "finding_id": "D0345-PR-003",
+        "resolution": "REQUIRE_SEPARATE_GOVERNED_ZE2_OPERATIONAL_IMPLEMENTATION_AUTHORING_AND_FREEZE_CHECKPOINT_BEFORE_TRANSPORT_PREFLIGHT_OR_READINESS_ATTEMPT",
+        "resolved_in_corrected_author_candidate": true
+      },
+      {
+        "classification": "SUBSTANTIVE_RETRY_SEMANTICS_GAP",
+        "finding": "PREFLIGHT_FAILURE_RECOVERY_SEMANTICS_UNSPECIFIED",
+        "finding_id": "D0345-PR-004",
+        "resolution": "FAILED_NONCONSUMING_PREFLIGHT_MAY_BE_RETRIED_ONLY_IN_A_LATER_SEPARATE_TRANSACTION_AFTER_SEPARATE_RECOVERY_OR_RECONCILIATION",
+        "resolved_in_corrected_author_candidate": true
+      },
+      {
+        "classification": "SUBSTANTIVE_EXECUTION_GATE_GAP",
+        "finding": "RESULT_CHECKPOINT_NOT_EXPLICITLY_AN_EXECUTION_GATE",
+        "finding_id": "D0345-PR-005",
+        "resolution": "TERMINAL_READINESS_PASS_ALONE_DOES_NOT_AUTHORIZE_ZE2_AND_ZE2_REMAINS_BLOCKED_UNTIL_RESULT_CHECKPOINT_EFFECTIVE",
+        "resolved_in_corrected_author_candidate": true
+      }
+    ],
+    "review_finding_count": 5,
+    "review_verdict": "REVISION_REQUIRED",
+    "source_author_candidate_artifact_sha256": "a2c4d4f353745cb13191317e78b17eb913c93e63ea69ab91a6e8f7e74f77374a",
+    "source_author_candidate_decision_sha256": "236caf5b218295d01c286e65b5e1faf8500f0b27b46aefd0963fbceee12e53ea"
+  },
+  "preserved_ZE2_execution_authorization": {
+    "D0345_readiness_FAIL_consumes_ZE2_execution_authorization": false,
+    "D0345_readiness_PASS_consumes_ZE2_execution_authorization": false,
+    "D0345_readiness_consumes_ZE2_execution_authorization": false,
+    "D0345_readiness_interruption_consumes_ZE2_execution_authorization": false,
+    "authorization_id": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "execution_id": "SVF-ZE2-DETERMINISTIC-REPRESENTATION-OVERLAP-RUN-001",
+    "lineage_consumed_at_D0345_authoring": false,
+    "new_ZE2_execution_attempt_capacity_from_D0345": 0,
+    "remaining_execution_attempt_capacity": 1,
+    "total_lineage_capacity": 1
+  },
+  "prior_readiness_authorization": {
+    "D0345_is_retry_of_prior_readiness_authorization": false,
+    "D0345_reuses_prior_readiness_capacity": false,
+    "reusable": false,
+    "status": "CONSUMED_EXHAUSTED_NOT_REUSABLE"
+  },
+  "readiness_attempt_capacity": {
+    "attempts_consumed_at_authoring": 0,
+    "authorization_consumed_at_authoring": false,
+    "automatic_retry_after_consumption_authorized": false,
+    "failed_consumed_attempt_may_retry": false,
+    "interrupted_consumed_attempt_may_retry": false,
+    "maximum_attempt_capacity": 1,
+    "remaining_attempt_capacity_after_activation_before_attempt_start": 1,
+    "remaining_attempt_capacity_after_attempt_start": 0,
+    "remaining_attempt_capacity_at_authoring": 0,
+    "second_attempt_under_same_authorization_allowed": false
+  },
+  "readiness_reconciliation_id": "SVF-D0345-ZE2-POST-AMENDMENT-PREEXECUTION-READINESS-V1",
+  "readiness_result_handling": {
+    "ZE2_consuming_permissions_exercisable_before_result_checkpoint_effective": false,
+    "ZE2_execution_go_before_result_checkpoint_effective": false,
+    "readiness_PASS_alone_authorizes_ZE2_execution": false,
+    "readiness_transaction_may_author_governance_files": false,
+    "readiness_transaction_may_commit": false,
+    "readiness_transaction_may_push": false,
+    "result_checkpoint_effectiveness_required_before_later_ZE2_execution_eligibility_consideration": true,
+    "result_checkpoint_itself_executes_ZE2": false,
+    "result_checkpoint_requires_own_review_commit_publication_and_remote_readback": true,
+    "separate_result_checkpoint_required": true,
+    "terminal_result_return_required_first": true
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "readiness_PASS_establishes_mapping": false,
+    "readiness_PASS_establishes_protocol_support": false,
+    "readiness_PASS_establishes_representation_overlap": false,
+    "readiness_PASS_establishes_semantic_evidence": false,
+    "readiness_PASS_establishes_semantic_non_support": false,
+    "readiness_PASS_is_ZE2_execution": false,
+    "readiness_PASS_resolves_C4": false
+  },
+  "scientific_payload_firewall": {
+    "D0318_raw_candidate_record_read_allowed": false,
+    "Git_LFS_pointer_metadata_reads_allowed": true,
+    "Git_blob_OID_reads_allowed": true,
+    "Git_tree_name_reads_allowed": true,
+    "P8_mapping_allowed": false,
+    "ZE0_scientific_manifest_payload_read_allowed": false,
+    "ZE1_full_scientific_inventory_payload_read_allowed": false,
+    "ZE2_execution_state_write_allowed": false,
+    "ZE2_scientific_output_write_allowed": false,
+    "candidate_source_comparison_allowed": false,
+    "fuzzy_matching_allowed": false,
+    "governance_artifact_reads_allowed": true,
+    "repository_hook_metadata_reads_allowed": true,
+    "representation_overlap_allowed": false,
+    "reserved_output_root_existence_test_allowed_after_attempt_start": true,
+    "runtime_metadata_reads_allowed": true,
+    "semantic_matching_allowed": false,
+    "source_universe_expansion_allowed": false,
+    "synthetic_only_conformance_fixtures_allowed_after_attempt_start": true
+  },
+  "source_checkpoint": {
+    "D0344_artifact_sha256": "c19ced5a7c888eaef5bec945e209d2faa3176179a47b52f72a86f1c4824749a2",
+    "D0344_commit": "bf851ffea0b73978d55ef2b7da0896ed2b5731b7",
+    "D0344_decision_sha256": "da95b0060b69f6b12e5e364f13a6d830db567f3ccf90ded15b40164276897dc7",
+    "D0344_effective": true,
+    "D0344_exact_remote_readback_confirmed": true
+  },
+  "status": "CORRECTED_AUTHOR_CANDIDATE_NOT_EFFECTIVE",
+  "synthetic_conformance_basis": {
+    "D0337_candidate_value_serializer_contract_id": "SVF-ZE2-CANDIDATE-REPRESENTATION-VALUE-BYTES-V1",
+    "D0337_exact_matcher_vector_count": 12,
+    "D0337_exact_matcher_vector_ids": [
+      "MAT-001",
+      "MAT-002",
+      "MAT-003",
+      "MAT-004",
+      "MAT-005",
+      "MAT-006",
+      "MAT-007",
+      "MAT-008",
+      "MAT-009",
+      "MAT-010",
+      "MAT-011",
+      "MAT-012"
+    ],
+    "D0337_serializer_vector_count": 11,
+    "D0337_serializer_vector_ids": [
+      "SER-001",
+      "SER-002",
+      "SER-003",
+      "SER-004",
+      "SER-005",
+      "SER-006",
+      "SER-007",
+      "SER-008",
+      "SER-009",
+      "SER-010",
+      "SER-011"
+    ],
+    "D0337_vector_definitions_are_unchanged": true,
+    "this_is_not_a_rerun_under_consumed_D0339_authorization": true,
+    "vectors_are_executed_under_new_D0345_authorization": true
+  }
+}
