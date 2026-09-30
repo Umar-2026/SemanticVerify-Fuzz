@@ -1,0 +1,196 @@
+{
+  "activation_lifecycle": {
+    "corrective_successor_executable_before_full_activation": false,
+    "effective_only_after_all_steps": true,
+    "steps": [
+      "independent pre-commit verification PASS",
+      "exact local commit containing only D0339 decision and machine artifact",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed D0339 commit",
+      "exact remote readback of published D0339 commit"
+    ]
+  },
+  "artifact_id": "SVF-D0339-CORRECTIVE-SUCCESSOR-AUTHORIZATION-V1",
+  "authoring_side_effect_firewall": {
+    "D0338_successor_reconciliation_rerun_performed": false,
+    "ZE0_manifest_scientific_payload_read": false,
+    "ZE1_full_inventory_scientific_payload_read": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "candidate_source_comparison_performed": false,
+    "closed_required_check_executed": false,
+    "commit_performed": false,
+    "corrective_successor_reconciliation_executed": false,
+    "git_add_performed": false,
+    "push_performed": false,
+    "remote_access_performed": false,
+    "representation_overlap_performed": false,
+    "synthetic_conformance_vector_executed": false
+  },
+  "corrective_successor_reconciliation_authorization": {
+    "FAIL_does_not_consume_ZE2_execution_authorization": true,
+    "PASS_does_not_consume_ZE2_execution_authorization": true,
+    "PASS_makes_preserved_ZE2_consuming_permissions_exercisable": true,
+    "adds_ZE2_execution_attempt_capacity": 0,
+    "all_required_checks_must_pass": true,
+    "authorized_only_after_D0339_effective": true,
+    "automatic_retry_after_reconciliation_consumption_authorized": false,
+    "closed_required_checks_after_transport_preflight": [
+      "D0336_EFFECTIVE_BINDING_EXACT",
+      "ZE0_GIT_PATH_AND_BLOB_IDENTITY_EXACT",
+      "ZE1_GIT_PATH_AND_LFS_POINTER_IDENTITY_EXACT",
+      "ZE2_RESERVED_OUTPUT_ROOT_ABSENT",
+      "CANDIDATE_VALUE_SERIALIZER_SYNTHETIC_CONFORMANCE_PASS",
+      "EXACT_MATCHER_SYNTHETIC_CONFORMANCE_PASS",
+      "NO_SCIENTIFIC_PAYLOAD_READ_DURING_RECONCILIATION"
+    ],
+    "consumes_original_ZE2_execution_authorization": false,
+    "failed_or_interrupted_successor_reconciliation_may_retry": false,
+    "failure_or_interruption_blocks_ZE2_consuming_permissions": true,
+    "interruption_does_not_consume_ZE2_execution_authorization": true,
+    "maximum_reconciliation_attempt_capacity": 1,
+    "pre_attempt_metadata_only_firewall": {
+      "attempt_start_log_can_postpone_consumption_boundary": false,
+      "attempt_start_log_is_evidentiary_only": true,
+      "execute_any_closed_required_check_before_attempt_start": false,
+      "execute_any_synthetic_conformance_vector_before_attempt_start": false,
+      "permitted_metadata_readiness": [
+        "governance artifact parsing",
+        "commit parent branch and worktree metadata verification",
+        "Git-LFS runtime metadata verification",
+        "mandatory non-consuming transport preflight"
+      ],
+      "test_ZE2_reserved_output_root_absence_before_attempt_start": false
+    },
+    "pre_attempt_transport_preflight": {
+      "automatic_same_transaction_preflight_retry_authorized": false,
+      "consumes_ZE2_execution_authorization": false,
+      "consumes_successor_reconciliation_authorization": false,
+      "credential_storage_configuration_allowed": false,
+      "effective_D0339_commit_resolved_only_after_full_activation": true,
+      "expected_remote_main_resolution_rule": "REMOTE_MAIN_EQUALS_EFFECTIVE_PUBLISHED_D0339_COMMIT",
+      "failed_preflight_consumes_ZE2_execution_authorization": false,
+      "failed_preflight_consumes_reconciliation_authorization": false,
+      "git_config_mutation_allowed": false,
+      "git_http_version_override": "HTTP/1.1",
+      "is_reconciliation_attempt_start": false,
+      "later_preflight_requires_separate_read_only_recovery_reconciliation": true,
+      "permitted_operation": "authenticated exact origin/main read using per-command HTTP/1.1 override",
+      "preflight_local_binding_requirement": "LOCAL_HEAD_MUST_EQUAL_EFFECTIVE_D0339_COMMIT_AND_ITS_PARENT_MUST_EQUAL_D0338_COMMIT",
+      "preflight_must_pass_before_attempt_start": true,
+      "required": true
+    },
+    "reconciliation_attempt_start_event": "FIRST_EXECUTION_OF_ANY_CLOSED_REQUIRED_CHECK_AFTER_SUCCESSFUL_TRANSPORT_PREFLIGHT_OR_FIRST_SYNTHETIC_CONFORMANCE_VECTOR_WHICHEVER_OCCURS_FIRST",
+    "reconciliation_attempts_consumed_at_D0339_authoring": 0,
+    "reconciliation_authorization_consumed_at_D0339_authoring": false,
+    "reconciliation_authorization_consumed_at_attempt_start": true,
+    "reconciliation_id": "SVF-D0339-ZE2-POSTPUBLICATION-PREEXECUTION-RECONCILIATION-SUCCESSOR-V1",
+    "remaining_reconciliation_attempt_capacity_after_attempt_start": 0,
+    "required_check_set_is_closed": true,
+    "runtime_substitution_or_omission_allowed": false,
+    "second_successor_reconciliation_attempt_under_same_authorization_allowed": false
+  },
+  "decision_id": "D0339",
+  "frozen_input_bindings": {
+    "ZE0_candidate_representation_manifest": {
+      "git_blob_oid": "09f333b71a4b8d85a68a5d54a8f32b50bb80c1a0",
+      "path": "evidence/representation_alignment/ZE0/candidate_representation_manifest_v1/candidate_representation_manifest.json"
+    },
+    "ZE1_source_representation_inventory": {
+      "full_scientific_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+      "full_scientific_size_bytes": 570156431,
+      "git_lfs_pointer_blob_oid": "3a033de80a9945f9f3f79c84a3cf72e03c54e703",
+      "path": "evidence/representation_alignment/ZE1/source_representation_inventory_v1/source_representation_inventory.json"
+    }
+  },
+  "frozen_predecessor_binding": {
+    "D0336_commit": "40561ff59630f82e9fa7427632c87894ca95e08d",
+    "D0337_commit": "0d9bf0db43e94a09375439a287985dc34eaed715",
+    "D0338_commit": "2357ffc0b3da08e689102bcd38e4df51645a0312",
+    "D0338_decision_sha256": "64ca4b4612e74b5ce8f3a62a44debeb34ac359ee761d44a9adb3f355c4f310c4",
+    "D0338_machine_artifact_sha256": "9000fcc20440df74c10029e9640156f89bf48ed5b459aa246267903123c1c08f"
+  },
+  "frozen_synthetic_conformance_binding": {
+    "contract_id": "SVF-D0337-ZE2-PREEXECUTION-SYNTHETIC-CONFORMANCE-V1",
+    "exact_matcher_vector_count": 12,
+    "matcher_shape_tokens_exact": [
+      "STRING",
+      "SEQUENCE_OF_STRINGS",
+      "SEQUENCE_OF_SEQUENCE_OF_STRINGS"
+    ],
+    "new_synthetic_vectors_authored_by_D0339": 0,
+    "serializer_value_type_tokens_exact": [
+      "STRING",
+      "SEQUENCE_OF_STRINGS",
+      "SEQUENCE_OF_SEQUENCE_OF_STRINGS"
+    ],
+    "serializer_vector_count": 11,
+    "source_machine_artifact": "evaluation/governance_reconciliation/d0337_single_ze2_deterministic_overlap_execution_authorization.json",
+    "source_machine_artifact_sha256": "78cd6c174fe872167d1269d7a73737b62bd477bcb25b3d30b4dbf06abd67621b"
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0339_CORRECTIVE_SUCCESSOR_AUTHORIZATION_CANDIDATE",
+  "preserved_original_ZE2_execution_authorization": {
+    "authorization_consumed": false,
+    "consumed_execution_attempts": 0,
+    "consuming_permissions_exercisable_before_D0339_successor_PASS": false,
+    "execution_id": "SVF-ZE2-DETERMINISTIC-REPRESENTATION-OVERLAP-RUN-001",
+    "new_ZE2_execution_attempt_capacity_granted_by_D0339": 0,
+    "remaining_execution_attempt_capacity": 1,
+    "same_original_attempt_is_preserved": true,
+    "source_authorization": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "total_execution_attempt_capacity": 1
+  },
+  "purpose": "Record the consumed/interrupted D0338 successor reconciliation and authorize one fresh corrective successor reconciliation while preserving the original unconsumed single D0337 ZE2 execution attempt.",
+  "recorded_D0338_successor_incident": {
+    "attempt_start_event": "FIRST_EXECUTION_OF_ANY_CLOSED_REQUIRED_CHECK_AFTER_SUCCESSFUL_TRANSPORT_PREFLIGHT_OR_FIRST_SYNTHETIC_CONFORMANCE_VECTOR_WHICHEVER_OCCURS_FIRST",
+    "attempt_started": true,
+    "authorization_consumed": true,
+    "explicit_attempt_start_log_had_not_yet_been_emitted": true,
+    "explicit_log_marker_defines_consumption_boundary": false,
+    "full_closed_required_check_set_completed": false,
+    "later_duplicate_reserved_root_probes_under_mistaken_unconsumed_assumption": {
+      "constitute_valid_D0338_retry": false,
+      "exact_count_asserted": false,
+      "occurred": true,
+      "restore_consumed_capacity": false
+    },
+    "later_local_parser_abort": {
+      "occurred": true,
+      "reason": "local readiness parser did not recognize the frozen exact value_type token SEQUENCE_OF_SEQUENCE_OF_STRINGS",
+      "scientific_contract_defect": false
+    },
+    "reconciliation_PASS": false,
+    "remaining_reconciliation_attempt_capacity": 0,
+    "retry_under_D0338_allowed": false,
+    "scientific_noninterference": {
+      "ZE0_manifest_scientific_payload_read": false,
+      "ZE1_full_inventory_scientific_payload_read": false,
+      "ZE2_execution_performed": false,
+      "ZE2_output_written": false,
+      "candidate_source_comparison_performed": false,
+      "representation_overlap_performed": false
+    },
+    "terminal_status": "CONSUMED_AND_INTERRUPTED_BEFORE_FULL_REQUIRED_CHECK_SET_COMPLETION",
+    "transport_preflight_had_passed": true,
+    "triggering_check_observed_result": "PASS",
+    "triggering_closed_required_check": "ZE2_RESERVED_OUTPUT_ROOT_ABSENT",
+    "triggering_operation": "reserved_ZE2_output_root_absence_probe_executed_during_intended_pre_attempt_readiness"
+  },
+  "scientific_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P10_gold_annotation_authorized": false,
+    "P11_analyzer_execution_authorized": false,
+    "P11_analyzer_implementation_authorized": false,
+    "P8_mapping_authorized": false,
+    "baseline_execution_authorized": false,
+    "establishes_C4": false,
+    "establishes_mapping": false,
+    "establishes_protocol_support": false,
+    "establishes_representation_overlap": false,
+    "establishes_semantic_evidence": false,
+    "establishes_semantic_non_support": false,
+    "repair_authorized": false
+  },
+  "status": "AUTHOR_CANDIDATE_NOT_EFFECTIVE"
+}
