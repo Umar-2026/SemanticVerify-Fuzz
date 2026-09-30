@@ -1,0 +1,339 @@
+{
+  "D0336_operational_supersession": {
+    "all_other_D0336_contracts_unchanged": true,
+    "exact_field": "reserved_future_output_contract.candidate_form_record_schema.candidate_representation_value_semantics",
+    "historical_artifact_rewritten": false,
+    "historical_value": "PRESERVE_EXACT_STORED_ZE0_REPRESENTATION_VALUE_WITHOUT_MUTATION",
+    "override_scope": "SINGLE_RESERVED_ZE2_EXECUTION_UNDER_D0344_SUCCESSOR_AUTHORIZATION",
+    "successor_operational_value": "DETERMINISTICALLY_REGENERATE_FROM_EXACT_STORED_schema_v2_property_path_USING_FROZEN_D0323_GRAMMAR"
+  },
+  "D0337_step3_amendment": {
+    "amendment_authority_checkpoint": "D0344",
+    "effective_only_after_D0344_activation": true,
+    "historical_artifact_rewritten": false,
+    "historical_step3": "VERIFY_ZE0_CANDIDATE_CANONICAL_SHA256",
+    "successor_step3": "VERIFY_ZE0_CANDIDATE_IDENTITY_BY_FROZEN_ARTIFACT_ATTESTATION_V1"
+  },
+  "D0340_binding": {
+    "array_position_derived_identifier_allowed": false,
+    "candidate_index_binding": "candidate_index := candidate_ordinal",
+    "renumbering_allowed": false,
+    "zero_based_conversion_allowed": false
+  },
+  "ZE0_frozen_identity": {
+    "candidate_count": 171,
+    "candidate_identity_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "execution_state_sha256": "bc3257530de6be661c21f3cefd5e48fb75ed2e8fe60fde91bf748e77b1957f13",
+    "manifest_file_sha256": "556096b6b6adc0708aee4903c5a4eb033231c04d7abe125d14f9dd5ad9760693"
+  },
+  "ZE1_frozen_identity": {
+    "execution_state_sha256": "4abc3f43a922cbe024c02dcb62543d930895a80299467274bd9caf01d10399f4",
+    "inventory_canonical_json_sha256": "1a732561d11f83ebbe3dde3386239dea3654dbf00e5a664a94e74dea39a6e4d8",
+    "inventory_file_sha256": "5077ad7cfbe393c3a6000348aa667ed2a0d439e11538ec65c08999537f524d7c",
+    "source_universe_expansion_authorized": false
+  },
+  "ZE2_execution_state_authorization_id_binding": {
+    "binding_adds_ZE2_execution_attempt_capacity": false,
+    "binding_adds_execution_state_field": false,
+    "binding_changes_D0336_JSON_serialization_contract": false,
+    "binding_changes_other_D0336_execution_state_schema_terms": false,
+    "binding_consumes_ZE2_execution_authorization": false,
+    "binding_operational_only_after_D0344_effective": true,
+    "binding_operational_only_after_required_readiness_PASS": true,
+    "binding_removes_execution_state_field": false,
+    "execution_state_file": "_execution_state.json",
+    "execution_state_write_authorized_during_D0344_authoring": false,
+    "field_required_by_D0336": true,
+    "future_readiness_authorization_id_allowed_as_output_value": false,
+    "predecessor_authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "predecessor_authorization_id_allowed_as_future_output_value": false,
+    "readiness_authorization_is_not_ZE2_execution_authorization": true,
+    "required_value": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "top_level_field": "authorization_id",
+    "value_semantics": "EFFECTIVE_SUCCESSOR_ZE2_EXECUTION_AUTHORIZATION_ID"
+  },
+  "activation_rule": {
+    "authoring_alone_effective": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed commit to origin/main",
+      "exact remote readback confirmation"
+    ]
+  },
+  "artifact_id": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+  "authoring_noninterference": {
+    "D0318_raw_candidate_record_read_performed": false,
+    "ZE0_scientific_payload_read_performed": false,
+    "ZE1_scientific_payload_read_performed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "authorization_lineage_consumed": false,
+    "candidate_source_comparison_performed": false,
+    "commit_performed": false,
+    "git_add_performed": false,
+    "push_performed": false,
+    "readiness_reconciliation_performed": false,
+    "representation_overlap_performed": false
+  },
+  "authorization_lineage": {
+    "capacity_semantics": "SAME_SINGLE_UNCONSUMED_ATTEMPT_NOT_ADDITIVE",
+    "lineage_consumed": false,
+    "new_capacity_from_D0344": 0,
+    "predecessor_authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "predecessor_historical_record_remains_immutable": true,
+    "predecessor_independently_exercisable_after_D0344_activation": false,
+    "remaining_lineage_capacity": 1,
+    "reserved_execution_id": "SVF-ZE2-DETERMINISTIC-REPRESENTATION-OVERLAP-RUN-001",
+    "same_reserved_execution": true,
+    "successor_authorization_id": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "successor_directly_exercisable_immediately_after_activation": false,
+    "successor_exercise_requires_readiness_pass": true,
+    "total_lineage_capacity": 1
+  },
+  "candidate_identity_attestation": {
+    "full_file_sha_must_pass_first": true,
+    "historical_hash_recomputation": false,
+    "required_checks": [
+      {
+        "check": "artifact_type",
+        "expected": "SVF_ZE0_CANDIDATE_REPRESENTATION_MANIFEST_V1"
+      },
+      {
+        "check": "contract_id",
+        "expected": "SVF-ZE0-CANDIDATE-REPRESENTATION-MANIFEST-CONTRACT-V1"
+      },
+      {
+        "check": "candidate_namespace",
+        "expected": "SCHEMA_V2_PROPERTY_PATH"
+      },
+      {
+        "check": "candidate_manifest_canonical_json_sha256",
+        "expected": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908"
+      },
+      {
+        "check": "record_count",
+        "expected": 171
+      },
+      {
+        "check": "records_length",
+        "expected": 171
+      },
+      {
+        "check": "candidate_ordinals",
+        "expected": "EXACT_ORDERED_INTEGER_SEQUENCE_1_THROUGH_171"
+      },
+      {
+        "check": "schema_v2_property_path_types",
+        "expected": "ALL_JSON_STRINGS"
+      },
+      {
+        "check": "schema_v2_property_path_uniqueness",
+        "expected": true
+      },
+      {
+        "check": "representation_grammar_id",
+        "expected": "SVF-ZE0-DET-REP-GRAMMAR-V1_FOR_EVERY_RECORD"
+      },
+      {
+        "check": "D0326_provenance_binding",
+        "expected": "EXACT_FROZEN_ZE0_ARTIFACT_BOUND_TO_RECORDED_c274_CANDIDATE_IDENTITY"
+      }
+    ],
+    "verification_id": "VERIFY_ZE0_CANDIDATE_IDENTITY_BY_FROZEN_ARTIFACT_ATTESTATION_V1"
+  },
+  "checkpoint": "D0344",
+  "consumption_semantics": {
+    "ZE2_output_write_trigger_preservation_authorizes_out_of_order_output_write": false,
+    "automatic_retry_after_consumption_authorized": false,
+    "boundary": "FIRST_ZE0_MANIFEST_SCIENTIFIC_PAYLOAD_READ_OR_FIRST_ZE1_INVENTORY_SCIENTIFIC_PAYLOAD_READ_OR_FIRST_ZE2_OUTPUT_WRITE_WHICHEVER_OCCURS_FIRST",
+    "capacity_after_boundary": 0,
+    "capacity_before_boundary": 1,
+    "consumption_event": "FIRST_ZE0_MANIFEST_SCIENTIFIC_PAYLOAD_READ_OR_FIRST_ZE1_INVENTORY_SCIENTIFIC_PAYLOAD_READ_OR_FIRST_ZE2_OUTPUT_WRITE_WHICHEVER_OCCURS_FIRST",
+    "consumption_is_atomic": true,
+    "consumption_triggers": [
+      "FIRST_ZE0_MANIFEST_SCIENTIFIC_PAYLOAD_READ",
+      "FIRST_ZE1_INVENTORY_SCIENTIFIC_PAYLOAD_READ",
+      "FIRST_ZE2_OUTPUT_WRITE"
+    ],
+    "failure_after_consumption_restores_capacity": false,
+    "first_ZE0_manifest_scientific_payload_read_is_consuming": true,
+    "first_ZE1_inventory_scientific_payload_read_is_consuming": true,
+    "first_ZE2_output_write_is_consuming": true,
+    "later_trigger_after_consumption_consumes_additional_attempt": false,
+    "trigger_semantics": "WHICHEVER_OCCURS_FIRST"
+  },
+  "current_execution_state": {
+    "D0344_effective": false,
+    "ZE2_execution_go": false,
+    "ZE2_execution_state_authorization_id_binding": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "ZE2_execution_state_write_authorized": false,
+    "new_readiness_attempt_capacity_from_D0344": 0,
+    "prior_readiness_authorization_status": "CONSUMED_EXHAUSTED_NOT_REUSABLE",
+    "readiness_attempt_authorized": false,
+    "readiness_reconciliation_completed": false,
+    "separate_post_amendment_readiness_authorization_effective": false,
+    "separate_post_amendment_readiness_authorization_required": true,
+    "successor_authorization_amendment_effective": false
+  },
+  "historical_gap_status": {
+    "D0344_is_historical_reconstruction": false,
+    "gap_A": "UNRESOLVED",
+    "gap_B": "UNRESOLVED"
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_THIRD_CORRECTED_D0344_SUCCESSOR_AUTHORIZATION_AMENDMENT_AUTHOR_CANDIDATE",
+  "precommit_review_correction": {
+    "corrective_authoring_consumes_authorization_lineage": false,
+    "corrective_authoring_reads_scientific_payload": false,
+    "current_authoring_state": {
+      "authorization_lineage_consumed": false,
+      "remaining_authorization_lineage_capacity": 1
+    },
+    "findings": [
+      {
+        "classification": "SUBSTANTIVE_AUTHOR_CANDIDATE_DEFECT",
+        "finding": "PREDECESSOR_ONE_SHOT_CONSUMPTION_BOUNDARY_NOT_PRESERVED",
+        "finding_id": "D0344-PR-001",
+        "resolution": "RESTORE_EXACT_FROZEN_D0337_THREE_TRIGGER_ATOMIC_CONSUMPTION_EVENT",
+        "resolved_in_corrected_author_candidate": true
+      },
+      {
+        "candidate_semantic_defect": false,
+        "classification": "CONTEXT_INSENSITIVE_REVIEW_HARNESS_FALSE_POSITIVE",
+        "finding": "GLOBAL_FORBIDDEN_TOKEN_CHECK_MATCHED_A_REQUIRED_FUTURE_POSTCONSUMPTION_STATE",
+        "finding_id": "D0344-REVIEW-FORBIDDEN_TOKEN_ABSENT_AUTHORIZATION_LINEAGE_CONSUMED=YES",
+        "resolution": "PRESERVE_REQUIRED_FUTURE_CONSUMED_STATE_AND_REQUIRE_CONTEXT_AWARE_CURRENT_STATE_REVIEW",
+        "resolved_by_adjudication": true
+      }
+    ],
+    "prior_author_candidate_artifact_sha256": "436f80064083d6079e6c03e3ad83dbb6b816d0448378b72807f80879a4a08196",
+    "prior_author_candidate_decision_sha256": "279f9187e1ace3a78c01c27a2c204a6a0da94b985b43f039daf2e5d7513faeb3",
+    "prior_precommit_review_finding_count": 2,
+    "prior_precommit_review_verdict": "REVISION_REQUIRED"
+  },
+  "readiness_gate": {
+    "D0344_grants_new_readiness_attempt_capacity": 0,
+    "D0344_itself_authorizes_readiness_attempt": false,
+    "execution_go_before_readiness_pass": false,
+    "future_readiness_authorization_must_define_attempt_start_consumption_semantics": true,
+    "future_readiness_authorization_must_define_bounded_attempt_capacity": true,
+    "future_readiness_authorization_must_define_retry_and_interruption_semantics": true,
+    "future_readiness_authorization_must_freeze_closed_required_check_set": true,
+    "future_readiness_authorization_must_not_add_ZE2_execution_capacity": true,
+    "future_readiness_authorization_must_not_consume_ZE2_execution_authorization": true,
+    "future_readiness_authorization_must_preserve_scientific_payload_firewall": true,
+    "must_be_nonconsuming": true,
+    "must_precede_any_ZE0_or_ZE1_scientific_payload_read": true,
+    "prior_readiness_authorization_reusable": false,
+    "prior_readiness_authorization_status": "CONSUMED_EXHAUSTED_NOT_REUSABLE",
+    "readiness_completed_during_D0344_authoring": false,
+    "readiness_consumes_authorization_capacity": false,
+    "readiness_execution_allowed_before_separate_authorization_effective": false,
+    "readiness_may_amend_D0344": false,
+    "required_after_D0344_activation": true,
+    "required_governance_order": [
+      "ACTIVATE_D0344",
+      "AUTHOR_REVIEW_COMMIT_PUBLISH_AND_REMOTE_CONFIRM_SEPARATE_POST_AMENDMENT_READINESS_AUTHORIZATION",
+      "RUN_EXACTLY_THE_AUTHORIZED_BOUNDED_READINESS_ATTEMPT",
+      "REQUIRE_READINESS_PASS",
+      "ONLY_THEN_CONSIDER_ZE2_EXECUTION_GO"
+    ],
+    "separate_post_amendment_readiness_authorization_checkpoint_required": true,
+    "separate_post_amendment_readiness_authorization_effective": false
+  },
+  "reserved_ZE2_output_write_consumption_trigger": {
+    "first_ZE2_output_write_is_consuming_if_not_already_consumed": true,
+    "trigger_adds_execution_capacity": false,
+    "trigger_authorizes_out_of_order_output_write": false,
+    "trigger_is_preserved_from_frozen_D0337": true
+  },
+  "scientific_interpretation_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "mapping_established": false,
+    "protocol_support_established": false,
+    "representation_overlap_established": false,
+    "semantic_evidence_established": false,
+    "semantic_non_support_established": false,
+    "source_universe_insufficiency_established": false,
+    "source_universe_sufficiency_established": false
+  },
+  "second_precommit_review_correction": {
+    "D0344_grants_new_readiness_attempt_capacity": 0,
+    "D0344_itself_authorizes_readiness_attempt": false,
+    "D0344_reuses_prior_readiness_authorization": false,
+    "finding": {
+      "classification": "SUBSTANTIVE_AUTHORIZATION_GAP",
+      "finding": "FRESH_POST_AMENDMENT_READINESS_AUTHORITY_NOT_GOVERNED",
+      "finding_id": "D0344-PR-002",
+      "prior_readiness_authorization_status": "CONSUMED_EXHAUSTED_NOT_REUSABLE",
+      "resolution": "D0344_GRANTS_ZERO_NEW_READINESS_CAPACITY_AND_REQUIRES_A_LATER_SEPARATE_BOUNDED_POST_AMENDMENT_READINESS_AUTHORIZATION_CHECKPOINT_BEFORE_ANY_READINESS_ATTEMPT",
+      "resolved_in_second_corrected_author_candidate": true
+    },
+    "review_finding_count": 1,
+    "review_verdict": "REVISION_REQUIRED",
+    "separate_post_amendment_readiness_authorization_effective": false,
+    "separate_post_amendment_readiness_authorization_required": true,
+    "source_corrected_artifact_sha256": "08fa7e6b8175a2029a41c8b3cf8e1b098cfe404e1a7b858ed3955c532615602b",
+    "source_corrected_decision_sha256": "889802ea5a01f63639ef1a3e2ff47b28e98792320c94b58f1dc4030e16056d52"
+  },
+  "source_checkpoint": {
+    "D0343_artifact_sha256": "b46d306eddb0cec622e8309645d69411c9e134bdabdec1015f606c849b9922b3",
+    "D0343_commit": "28160c3cb9fa0184b7b260f210fffa8202c6ee28",
+    "D0343_decision_sha256": "8eb3949f45a4e6f462df9234b517ad6d82d2d79900005b0917798a46e35361a2",
+    "D0343_effective": true
+  },
+  "status": "THIRD_CORRECTED_AUTHOR_CANDIDATE_NOT_EFFECTIVE",
+  "successor_consumed_execution_sequence": [
+    {
+      "consumes_authorization_lineage_if_not_already_consumed": true,
+      "operation": "READ_ZE0_MANIFEST_FULL_SCIENTIFIC_PAYLOAD",
+      "step": 1
+    },
+    {
+      "operation": "VERIFY_ZE0_FULL_FILE_SHA256",
+      "step": 2
+    },
+    {
+      "operation": "VERIFY_ZE0_CANDIDATE_IDENTITY_BY_FROZEN_ARTIFACT_ATTESTATION_V1",
+      "step": 3
+    },
+    {
+      "operation": "DERIVE_F0_THROUGH_F6_FROM_EXACT_STORED_schema_v2_property_path_USING_D0323_GRAMMAR",
+      "step": 4
+    },
+    {
+      "consumes_authorization_lineage_if_not_already_consumed": true,
+      "operation": "READ_ZE1_INVENTORY_FULL_SCIENTIFIC_PAYLOAD",
+      "step": 5
+    },
+    {
+      "operation": "VERIFY_ZE1_FULL_FILE_SHA256",
+      "step": 6
+    },
+    {
+      "operation": "VERIFY_ZE1_CANONICAL_JSON_SHA256",
+      "step": 7
+    },
+    {
+      "operation": "BEGIN_D0336_EXACT_CANDIDATE_SOURCE_COMPARISON",
+      "requires_all_prior_checks_pass": true,
+      "step": 8
+    }
+  ],
+  "third_precommit_review_correction": {
+    "finding": {
+      "classification": "SUBSTANTIVE_OUTPUT_CONTRACT_BINDING_GAP",
+      "finding": "ZE2_EXECUTION_STATE_AUTHORIZATION_ID_BINDING_UNRESOLVED",
+      "finding_id": "D0344-PR-003",
+      "resolution": "BIND_FUTURE_ZE2_EXECUTION_STATE_TOP_LEVEL_authorization_id_TO_EFFECTIVE_D0344_SUCCESSOR_ZE2_EXECUTION_AUTHORIZATION_ID",
+      "resolved_in_third_corrected_author_candidate": true
+    },
+    "review_finding_count": 1,
+    "review_verdict": "REVISION_REQUIRED",
+    "source_second_corrected_artifact_sha256": "79cd643c41683c470591850ce5caeed76b0e18f06711c0a551979bc5c9078582",
+    "source_second_corrected_decision_sha256": "5e786b8a4091d63e6f3ccaf80668d631f0c7f69c4a9fa1f8bb43d9e06e84c630"
+  }
+}
