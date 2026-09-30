@@ -1,0 +1,128 @@
+{
+  "D0337_authorization_state": {
+    "authorization_consumed": false,
+    "authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "consumption_boundary_changed": false,
+    "new_execution_attempt_capacity_from_D0341": 0,
+    "remaining_execution_attempt_capacity": 1,
+    "retry_after_consumption_authorized": false,
+    "total_execution_attempt_capacity": 1
+  },
+  "D0340_preservation": {
+    "ZE0_input_field": "candidate_ordinal",
+    "ZE2_output_field": "candidate_index",
+    "binding_operation": "EXACT_VALUE_COPY",
+    "record_position_substitution_allowed": false,
+    "renumbering_allowed": false
+  },
+  "activation_rule": {
+    "ZE2_execution_GO_after_D0341_effectiveness": false,
+    "authoring_alone_effective": false,
+    "reason_ZE2_remains_blocked": "BOTH_ZE0_SERIALIZED_LAYOUT_AND_CANDIDATE_CANONICAL_RECOMPUTATION_PROVENANCE_REMAIN_UNRESOLVED",
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed commit to origin/main",
+      "exact remote readback confirmation"
+    ]
+  },
+  "artifact_id": "SVF-D0341-ZE2-PREEXECUTION-PROVENANCE-GAP-CORRECTIVE-RECORD-V1",
+  "authoring_status": "CORRECTED_AUTHOR_CANDIDATE_NOT_EFFECTIVE",
+  "checkpoint": "D0341",
+  "correction_basis": {
+    "prior_author_candidate_artifact_sha256": "a1df8db95e9558bdc09fc00efc0710ea073cf110f09226f4af667a45154f5efd",
+    "prior_author_candidate_decision_sha256": "1cb9cbcc661a68ec6f1d6e030bf23db146e61bd616333c7ee19133288dfd3a74",
+    "prior_review_verdict": "REVISION_REQUIRED",
+    "review_finding_count": 2,
+    "review_finding_ids": [
+      "D0341-PR-001",
+      "D0341-PR-002"
+    ]
+  },
+  "corrective_authoring_noninterference": {
+    "D0318_raw_candidate_record_read_performed": false,
+    "ZE0_scientific_payload_read_performed": false,
+    "ZE1_scientific_payload_read_performed": false,
+    "ZE2_execution_authorization_consumed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "candidate_source_comparison_performed": false,
+    "commit_performed": false,
+    "git_add_performed": false,
+    "push_performed": false,
+    "representation_overlap_performed": false
+  },
+  "frozen_ZE0_facts_preserved": {
+    "ZE0_full_manifest_sha256": "556096b6b6adc0708aee4903c5a4eb033231c04d7abe125d14f9dd5ad9760693",
+    "all_property_paths_strings": true,
+    "all_property_paths_unique": true,
+    "candidate_canonical_identity_sha256": "c2746447215aa5aa2be0abea3bb631043eb0bb12745cc54309881d88a5a1f908",
+    "candidate_count": 171,
+    "candidate_form_count": 1197,
+    "candidate_namespace": "SCHEMA_V2_PROPERTY_PATH",
+    "candidate_ordinals": "EXACT_1_THROUGH_171",
+    "forms_per_candidate": 7,
+    "representation_ids_and_order_frozen": true,
+    "representation_value_types_frozen": true
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_CORRECTED_D0341_PROVENANCE_GAP_RECORD",
+  "remaining_provenance_gaps": {
+    "ZE0_candidate_canonical_recomputation_procedure": {
+      "recomputation_implementation_authorized": false,
+      "safe_to_substitute_manifest_field_equality": false,
+      "status": "UNRESOLVED"
+    },
+    "ZE0_representations_serialized_layout": {
+      "decoder_implementation_authorized": false,
+      "safe_to_guess": false,
+      "status": "UNRESOLVED"
+    }
+  },
+  "required_next_governance_action": {
+    "D0341_selects_closure_route": false,
+    "ZE2_execution_GO": false,
+    "allowed_closure_routes": [
+      "ESTABLISH_PREEXISTING_EXACT_PROVENANCE",
+      "SEPARATELY_GOVERN_AND_REVIEW_A_PROSPECTIVE_OPERATIONAL_CORRECTION"
+    ],
+    "both_gaps_must_close_before_GO": true
+  },
+  "review_finding_resolutions": {
+    "D0341-PR-001": {
+      "concrete_decoder_forms_authorized": false,
+      "finding_class": "UNSUPPORTED_NEW_DECODER_CONTRACT",
+      "object_key_layout_authorized": false,
+      "ordered_entry_layout_authorized": false,
+      "position_only_inference_authorized": false,
+      "recursive_layout_discovery_authorized": false,
+      "representation_value_regeneration_authorized": false,
+      "resolution": "RETRACT_ALL_INVENTED_ZE0_REPRESENTATIONS_DECODER_FORMS",
+      "review_finding_resolved": true,
+      "two_element_array_layout_authorized": false,
+      "type_only_inference_authorized": false,
+      "underlying_serialized_layout_gap_closed": false
+    },
+    "D0341-PR-002": {
+      "D0337_operation_redefined": false,
+      "candidate_hash_recomputation_algorithm_claimed": false,
+      "finding_class": "UNSUPPORTED_HASH_VERIFICATION_SUBSTITUTION",
+      "manifest_field_equality_declared_equivalent_to_frozen_hash_algorithm": false,
+      "resolution": "RETRACT_MANIFEST_FIELD_EQUALITY_AS_SUBSTITUTE_FOR_D0337_CANONICAL_SHA_VERIFICATION",
+      "review_finding_resolved": true,
+      "underlying_candidate_canonical_algorithm_gap_closed": false
+    }
+  },
+  "scientific_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "mapping_established": false,
+    "protocol_support_established": false,
+    "representation_overlap_established": false,
+    "semantic_evidence_established": false,
+    "semantic_non_support_established": false,
+    "source_universe_insufficiency_established": false,
+    "source_universe_sufficiency_established": false
+  }
+}
