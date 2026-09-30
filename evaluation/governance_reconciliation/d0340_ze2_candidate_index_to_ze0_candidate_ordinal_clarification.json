@@ -1,0 +1,114 @@
+{
+  "ZE2_authorization_state": {
+    "authorization_consumed": false,
+    "authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "execution_performed": false,
+    "new_execution_attempt_capacity_from_D0340": 0,
+    "remaining_execution_attempt_capacity": 1,
+    "total_execution_attempt_capacity": 1
+  },
+  "activation_rule": {
+    "ZE2_execution_blocked_until_D0340_effective": true,
+    "authoring_alone_effective": false,
+    "local_commit_alone_effective": false,
+    "required_activation_sequence": [
+      "independent pre-commit verification PASS",
+      "exact local commit of D0340 decision and machine artifact",
+      "independent post-commit verification PASS",
+      "publication of exact reviewed D0340 commit to origin/main",
+      "exact remote readback confirmation"
+    ]
+  },
+  "artifact_id": "SVF-D0340-ZE2-CANDIDATE-IDENTIFIER-CLARIFICATION-V1",
+  "authoring_noninterference": {
+    "ZE0_scientific_payload_read_performed": false,
+    "ZE1_scientific_payload_read_performed": false,
+    "ZE2_execution_authorization_consumed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_write_performed": false,
+    "ZE2_reserved_output_root_test_performed": false,
+    "candidate_source_comparison_performed": false,
+    "commit_performed": false,
+    "git_add_performed": false,
+    "push_performed": false,
+    "representation_overlap_performed": false
+  },
+  "authoring_status": "AUTHOR_CANDIDATE_NOT_EFFECTIVE",
+  "checkpoint": "D0340",
+  "clarification": {
+    "D0336_erroneous_semantics": "PRESERVE_EXACT_CANDIDATE_INDEX_VALUE_FROM_FROZEN_ZE0_MANIFEST;DO_NOT_RENUMBER",
+    "ZE0_input_field": "candidate_ordinal",
+    "ZE2_output_field": "candidate_index",
+    "binding_operation": "EXACT_VALUE_COPY",
+    "candidate_reordering_allowed": false,
+    "classification": "DETERMINISTIC_SCHEMA_FIELD_BINDING_CORRECTION_ONLY",
+    "effective_after_D0340_activation_semantics": "COPY_EXACT_STORED_candidate_ordinal_FROM_THE_CORRESPONDING_FROZEN_ZE0_MANIFEST_RECORD_INTO_ZE2_OUTPUT_FIELD_candidate_index;DO_NOT_RENUMBER_OR_DERIVE_FROM_RECORD_POSITION",
+    "enumeration_derived_value_allowed": false,
+    "record_position_substitution_allowed": false,
+    "renumbering_allowed": false,
+    "semantic_mapping_created": false,
+    "zero_based_conversion_allowed": false
+  },
+  "defect_evidence": {
+    "ZE0_contract_requires_candidate_index": false,
+    "ZE0_contract_requires_candidate_ordinal": true,
+    "ZE2_contract_requires_candidate_index": true,
+    "ZE2_identifier_contract_mismatch_established": true,
+    "identifier_provenance_previously_established": false,
+    "irreversible_ZE2_execution_GO_before_clarification": false,
+    "pre_D0336_governance_candidate_index_file_count": 0,
+    "pre_D0336_governance_files_containing_both_index_and_ordinal": 0
+  },
+  "fail_closed_future_execution_requirements": {
+    "candidate_index_must_not_derive_from_record_position": true,
+    "expected_candidate_ordinal_sequence": {
+      "count": 171,
+      "first": 1,
+      "last": 171,
+      "order": "EXACT_FROZEN_ZE0_MANIFEST_RECORD_ORDER"
+    },
+    "failure_after_D0337_consumption_boundary_is_retryable": false,
+    "verify_candidate_index_equals_stored_candidate_ordinal": true,
+    "verify_candidate_ordinal_field_present": true,
+    "verify_candidate_ordinal_is_integer": true,
+    "verify_frozen_candidate_ordinal_sequence": true
+  },
+  "frozen_counts": {
+    "candidate_form_record_count": 1197,
+    "candidate_record_count": 171,
+    "per_representation_candidate_form_record_count": 171,
+    "representation_forms_per_candidate": 7
+  },
+  "governing_lineage": {
+    "D0336_contract_id": "SVF-ZE2-DETERMINISTIC-STRUCTURAL-REPRESENTATION-OVERLAP-V1",
+    "D0336_effective_commit": "40561ff59630f82e9fa7427632c87894ca95e08d",
+    "D0337_authorization_id": "SVF-D0337-ZE2-SINGLE-EXECUTION-AUTH-V1",
+    "D0339_effective_commit": "59ae0b1b7613d4e14b3a4707c5c5531942ca89e6",
+    "ZE2_execution_id": "SVF-ZE2-DETERMINISTIC-REPRESENTATION-OVERLAP-RUN-001"
+  },
+  "next_action": "INDEPENDENT_PRE_COMMIT_VERIFY_D0340_ZE2_CANDIDATE_IDENTIFIER_CLARIFICATION_AUTHOR_CANDIDATE",
+  "preserved_D0336_contract": {
+    "candidate_form_output_field_name_changed": false,
+    "candidate_form_record_order_changed": false,
+    "candidate_representation_values_changed": false,
+    "candidate_value_hash_contract_changed": false,
+    "compatibility_matrix_changed": false,
+    "count_invariants_changed": false,
+    "equality_semantics_changed": false,
+    "manifest_top_level_schema_changed": false,
+    "output_paths_changed": false,
+    "scientific_interpretation_boundary_changed": false,
+    "serialization_contract_changed": false,
+    "source_occurrence_locator_schema_changed": false,
+    "source_occurrence_order_changed": false
+  },
+  "scientific_boundary": {
+    "C4_status": "UNRESOLVED",
+    "P8_mapping_authorized": false,
+    "mapping_established": false,
+    "protocol_support_established": false,
+    "representation_overlap_established": false,
+    "semantic_evidence_established": false,
+    "semantic_non_support_established": false
+  }
+}
