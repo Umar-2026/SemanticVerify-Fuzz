@@ -1,0 +1,118 @@
+{
+  "artifact_type": "ZE2_OPERATIONAL_IMPLEMENTATION_FREEZE_AUTHOR_CANDIDATE",
+  "bound_governance": {
+    "D0336_contract_id": "SVF-ZE2-DETERMINISTIC-STRUCTURAL-REPRESENTATION-OVERLAP-V1",
+    "D0343_commit": "28160c3cb9fa0184b7b260f210fffa8202c6ee28",
+    "D0344_commit": "bf851ffea0b73978d55ef2b7da0896ed2b5731b7",
+    "D0345_commit": "06ab9ff6f9563c7f854a538bcb7124279bab2347",
+    "ZE2_execution_authorization_id": "SVF-D0344-ZE2-SUCCESSOR-AUTHORIZATION-AMENDMENT-V1",
+    "ZE2_reserved_execution_id": "SVF-ZE2-DETERMINISTIC-REPRESENTATION-OVERLAP-RUN-001",
+    "candidate_index_binding": "candidate_index := candidate_ordinal",
+    "candidate_value_source": "D0343_DETERMINISTIC_F0_THROUGH_F6_REGENERATION"
+  },
+  "checkpoint": "D0346",
+  "complete_implementation_file_set_count": 1,
+  "corrective_authoring": {
+    "corrected_source_candidate_requires_independent_validation": true,
+    "frozen_D0345_closed_check_count_changed": false,
+    "future_readiness_result_check_order_binding": "EXACT_D0345_CLOSED_15_CHECK_IDS_IN_FROZEN_ORDER",
+    "future_readiness_result_checkpoint_required_fields": [
+      "readiness_result",
+      "readiness_authorization_id",
+      "readiness_authorization_consumed",
+      "remaining_readiness_attempt_capacity",
+      "required_check_count",
+      "passed_check_count",
+      "failed_check_count",
+      "implementation_freeze_commit",
+      "passed_check_ids"
+    ],
+    "new_scientific_authorization_capacity_added": 0,
+    "one_shot_execution_during_authoring": false,
+    "preflight_evidence_outside_repository": true,
+    "preflight_receipt_evidence_boundary": {
+      "fresh_authenticated_remote_main_readback_required": true,
+      "local_receipt_alone_is_authenticated_remote_proof": false,
+      "readiness_consumed_by_this_authoring": false,
+      "separate_preflight_terminal_evidence_review_required": true
+    },
+    "prior_independent_review_finding_count": 7,
+    "prior_independent_review_result": "REVISION_REQUIRED",
+    "second_independent_review": {
+      "ZE2_execution_performed": false,
+      "correction_targets": [
+        "RV007_PREFLIGHT_RECEIPT_AUTHENTICITY",
+        "RV009_READINESS_RESULT_FULL_CHECK_IDENTITY",
+        "RV011_PR004_COMPLETE_FILE_READ_MEDIATION",
+        "RV017_PR006_SOURCE_LOCATOR_VALUES_VERIFIED",
+        "RV018_PR006_COMPATIBILITY_RELATION_AND_SURFACE"
+      ],
+      "postcorrection_independent_review_performed": false,
+      "prior_finding_count": 5,
+      "prior_pass_count": 14,
+      "prior_review_note_count": 2,
+      "prior_verdict": "REVISION_REQUIRED",
+      "readiness_attempt_performed": false,
+      "review_script_class_lookup_issue_noted": true,
+      "synthetic_execution_performed": false
+    },
+    "separate_preflight_mode_added": true,
+    "source_correction_targets": [
+      "PR001_D0326_PROVENANCE_ACTUALLY_VERIFIED",
+      "PR002_INDEPENDENT_PREFLIGHT_EVIDENCE_BOUND",
+      "PR003_CONSUMPTION_BOUNDARY_AT_FIRST_PAYLOAD_READ",
+      "PR004_READINESS_SCIENTIFIC_FIREWALL_SUBSTANTIVE",
+      "PR005_IMPLEMENTED_SUCCESSOR_SEQUENCE_CONFORMANCE",
+      "PR006_EXACT_D0336_OUTPUT_CONTRACT_CONFORMANCE",
+      "PR007_EFFECTIVE_READINESS_RESULT_GATE_VERIFIED"
+    ]
+  },
+  "current_authoring_noninterference": {
+    "ZE2_authorization_consumed": false,
+    "ZE2_execution_performed": false,
+    "ZE2_output_root_test_performed": false,
+    "ZE2_output_write_performed": false,
+    "git_add_performed": false,
+    "git_commit_performed": false,
+    "git_push_performed": false,
+    "readiness_attempt_performed": false,
+    "readiness_authorization_consumed": false,
+    "remote_access_performed": false,
+    "scientific_payload_read": false,
+    "synthetic_vector_execution": false
+  },
+  "current_state": {
+    "C4_status": "UNRESOLVED",
+    "D0345_effective": true,
+    "D0346_effective": false,
+    "P8_mapping_authorized": false,
+    "ZE2_attempt_capacity_remaining": 1,
+    "ZE2_execution_go": false,
+    "implementation_freeze_effective": false,
+    "readiness_attempt_capacity_remaining": 1,
+    "readiness_attempt_exercisable": false
+  },
+  "designated_execution_entrypoint": "python3 scripts/ze2_deterministic_overlap_v1.py",
+  "implementation_file_set": [
+    {
+      "blob_identity_status": "PROSPECTIVE_READ_ONLY_HASH_AFTER_SECOND_CORRECTIVE_AUTHORING",
+      "git_blob_oid": "4ec95d0e21995e59cc620f2342090dbb4f968ca9",
+      "repository_path": "scripts/ze2_deterministic_overlap_v1.py",
+      "sha256": "42ce966e66ea855e7a701277f907dda585d33831773b6f9b35c9c5aed528c935"
+    }
+  ],
+  "required_activation_sequence": [
+    "INDEPENDENT_D0346_PRECOMMIT_REVIEW",
+    "SEPARATE_D0346_LOCAL_COMMIT",
+    "INDEPENDENT_D0346_POSTCOMMIT_REVIEW",
+    "SEPARATE_D0346_PUBLICATION_PUSH",
+    "SEPARATE_D0346_EXACT_REMOTE_READBACK",
+    "ONLY_THEN_SEPARATE_D0345_NONCONSUMING_TRANSPORT_PREFLIGHT",
+    "ONLY_THEN_SINGLE_D0345_READINESS_ATTEMPT",
+    "SEPARATE_EFFECTIVE_READINESS_RESULT_CHECKPOINT",
+    "ONLY_THEN_CONSIDER_ZE2_EXECUTION_ELIGIBILITY"
+  ],
+  "source_checkpoint": "D0345",
+  "source_effective_commit": "06ab9ff6f9563c7f854a538bcb7124279bab2347",
+  "status": "SECOND_REVISED_AUTHOR_CANDIDATE_PENDING_INDEPENDENT_PRECOMMIT_REVIEW"
+}
