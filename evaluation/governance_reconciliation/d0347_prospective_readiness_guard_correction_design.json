@@ -1,0 +1,83 @@
+{
+  "C4_status": "UNRESOLVED",
+  "D0345_readiness_authorization_consumed": false,
+  "D0345_readiness_executed": false,
+  "P8_mapping_authorized": false,
+  "ZE2_authorization_consumed": false,
+  "ZE2_executed": false,
+  "ZE2_execution_go": false,
+  "artifact_id": "SVF-D0347-PROSPECTIVE-D0345-READINESS-GUARD-AND-ATTESTATION-COVERAGE-CORRECTION-DESIGN-V1",
+  "code_patch_authorized": false,
+  "commit_authorized": false,
+  "decision": "D0347",
+  "existing_ZE2_attempt_capacity_remaining": 1,
+  "existing_effective_freeze_commit": "db02f5bc49f95182d29690438fb62b8d9fe992de",
+  "existing_effective_freeze_parent": "06ab9ff6f9563c7f854a538bcb7124279bab2347",
+  "existing_implementation_sha256": "42ce966e66ea855e7a701277f907dda585d33831773b6f9b35c9c5aed528c935",
+  "existing_preflight_receipt_sha256": "b83a2af73b56dde23f5c3d2280db50b81d30b79d2beae808462cd2295ce83020",
+  "existing_readiness_attempt_capacity_remaining": 1,
+  "findings": [
+    {
+      "consumption_boundary": "The first identified subprocess path precedes the one-shot start marker; subsequent metadata checks also occur after the start marker.",
+      "evidence": "Readiness installs the audit hook before verify_freeze_identity; the guard rejects non-path open arguments; subprocess.check_output creates pipes using integer file descriptors.",
+      "id": "D0347-F1",
+      "implementation_authorized": false,
+      "must_preserve": [
+        "NO_ZE0_OR_ZE1_SCIENTIFIC_PAYLOAD_READ",
+        "EXACT_EXISTING_SUBPROCESS_COMMAND_ALLOWLIST",
+        "EXACT_EXISTING_GOVERNANCE_FILE_READ_ALLOWLIST",
+        "NO_UNRESTRICTED_INTEGER_FD_EXEMPTION",
+        "READINESS_CHECK_15_FIREWALL_ACCOUNTING"
+      ],
+      "proposed_correction": "Permit only explicitly validated integer pipe descriptors associated with the existing bounded metadata subprocess operations. Require an os.fstat-based FIFO check and a scoped subprocess provenance control. Retain default-deny handling for all other descriptors and paths.",
+      "risk": "Required Git metadata subprocess operations may fail because opening a pipe descriptor is rejected.",
+      "type": "READINESS_AUDIT_HOOK_FILE_DESCRIPTOR_CONFLICT"
+    },
+    {
+      "evidence": "The positive synthetic fixture supplies representations=None; attest_ze0 requires field presence but does not validate representation contents.",
+      "id": "D0347-F2",
+      "implementation_authorized": false,
+      "must_preserve": [
+        "D0343_FROZEN_ARTIFACT_ATTESTATION_SEMANTICS",
+        "NO_ZE0_SCIENTIFIC_READ_DURING_READINESS",
+        "NO_EXTRA_D0345_READINESS_ATTEMPT",
+        "EXACT_FROZEN_171_CANDIDATE_REQUIREMENT"
+      ],
+      "proposed_correction": "Specify bounded synthetic positive and negative attestation cases for frozen artifact-identity binding, candidate ordinal ordering, unique property paths, grammar identity and mandatory field presence. Do not silently introduce representation-content validation that conflicts with D0343's regeneration-from-property-path rule.",
+      "risk": "A positive-only synthetic case is insufficient to establish all intended attestation invariants.",
+      "type": "CHECK9_SYNTHETIC_ATTESTATION_COVERAGE_GAP"
+    },
+    {
+      "evidence": "D0345 requires its effective commit to be the direct parent of the implementation-freeze commit. D0346 is already effective, so a later correction commit will not automatically satisfy that frozen direct-parent relationship.",
+      "id": "D0347-F3",
+      "implementation_authorized": false,
+      "proposed_correction": "Design and independently approve a prospective successor authorization/amendment defining the corrected implementation lineage, preserving historical D0345/D0346 artifacts and both unconsumed one-shot capacities.",
+      "risk": "A corrected successor implementation cannot reuse D0345 effectiveness assumptions without an explicitly reviewed governance transition.",
+      "type": "SUCCESSOR_FREEZE_PARENT_RULE_CONFLICT"
+    },
+    {
+      "evidence": "The existing non-consuming preflight receipt binds the effective D0346 commit and its exact implementation SHA-256.",
+      "id": "D0347-F4",
+      "implementation_authorized": false,
+      "proposed_correction": "Keep the existing receipt immutable. Under a future separately authorized successor freeze, produce and independently review a new non-consuming implementation-specific preflight receipt; never rewrite or relabel the old one.",
+      "type": "PREFLIGHT_RECEIPT_VERSION_BINDING"
+    }
+  ],
+  "frozen_scientific_contracts_changed": false,
+  "new_authorization_established": false,
+  "proposed_successor_gates": [
+    "INDEPENDENT_REVIEW_OF_D0347_DESIGN",
+    "SEPARATE_DESIGN_COMMIT",
+    "INDEPENDENT_POSTCOMMIT_REVIEW",
+    "SEPARATE_PUBLICATION_AND_EXACT_REMOTE_READBACK",
+    "SEPARATE_SUCCESSOR_GOVERNANCE_AUTHORIZATION",
+    "SEPARATE_CORRECTED_IMPLEMENTATION_AUTHORING",
+    "INDEPENDENT_CORRECTED_SOURCE_REVIEW",
+    "SEPARATE_CORRECTED_IMPLEMENTATION_FREEZE_AND_PUBLICATION",
+    "NEW_NONCONSUMING_PREFLIGHT_AND_INDEPENDENT_RECEIPT_REVIEW",
+    "SEPARATE_PRE_READINESS_SAFETY_DISPOSITION",
+    "ONLY_THEN_CONSIDER_SINGLE_REMAINING_READINESS_ATTEMPT"
+  ],
+  "scope": "PROSPECTIVE_CORRECTION_DESIGN_ONLY",
+  "status": "UNREVIEWED_DESIGN_AUTHOR_CANDIDATE"
+}
