@@ -1,0 +1,150 @@
+{
+  "C4_status": "UNRESOLVED",
+  "D0345_readiness_authorization_consumed": false,
+  "D0345_readiness_executed": false,
+  "D0345_remaining_readiness_attempt_capacity": 1,
+  "P8_mapping_authorized": false,
+  "ZE2_executed": false,
+  "ZE2_execution_GO_now": false,
+  "ZE2_execution_authorization_consumed": false,
+  "ZE2_remaining_execution_attempt_capacity": 1,
+  "artifact_id": "SVF-D0349-PROSPECTIVE-SUCCESSOR-CORRECTION-AUTHORIZATION-CANDIDATE-V1",
+  "authorization_state": "PROPOSED_NOT_EFFECTIVE",
+  "correction_safety_contract": {
+    "F1_subprocess_pipe_fd": {
+      "allow_blanket_integer_fd_exemption": false,
+      "audit_hook_is_kernel_security_boundary": false,
+      "fifo_type_alone_proves_provenance": false,
+      "require_authorized_metadata_subprocess_provenance": true,
+      "require_bounded_fd_lifecycle": true,
+      "require_default_deny_for_unrecognized_reads": true,
+      "require_independent_static_source_review": true,
+      "require_preservation_of_path_and_command_allowlists": true
+    },
+    "F2_synthetic_attestation": {
+      "add_bounded_negative_structural_cases": true,
+      "allow_new_representation_content_semantics": false,
+      "change_D0343_property_path_regeneration": false,
+      "execute_vectors_before_readiness": false,
+      "positive_fixture_with_representations_none": true
+    },
+    "readiness_and_science": {
+      "C4_status": "UNRESOLVED",
+      "P8_mapping_authorized": false,
+      "change_check_identities_or_order": false,
+      "execute_ZE2_now": false,
+      "frozen_check_count": 15,
+      "read_ZE0_or_ZE1_scientific_payload_now": false,
+      "test_ZE2_root_now": false
+    }
+  },
+  "decision": "D0349",
+  "effective_commit_sha": null,
+  "effectiveness_condition": "Independent precommit review; separate D0349 commit; independent postcommit review; separate GitHub push; independent exact refs/heads/main SHA readback.",
+  "evidence_sha256": {
+    "D0345_governance": "800a0b3f06ea1619975298cc8e0bb7dc23287d25737b169227cbfeed1c27e29b",
+    "D0346_freeze": "a4f3e411db487bb9b2b66e3dfba91f292f6df3b010a67ea98693d167f3c60a0f",
+    "D0346_implementation": "42ce966e66ea855e7a701277f907dda585d33831773b6f9b35c9c5aed528c935",
+    "D0346_original_preflight_receipt": "b83a2af73b56dde23f5c3d2280db50b81d30b79d2beae808462cd2295ce83020",
+    "D0347_decision": "228710b99398539815ae1365a10522d451f1802efbcddfa4b12f32f5f976bf55",
+    "D0347_design": "09c70bf8f7335a6b3294b7bc07933b6b94a483686023b5ca8cf11ddea8c6ddf8",
+    "D0348_decision": "46e88bea60e7e7edaf2e46f39203d9a48939a28ce398ccf5fa9ae8f4c75715fe",
+    "D0348_design": "d4690896947ab6ca23e579a291f55a371a0f9a146bb6ac91bc5b6fccb87bf491"
+  },
+  "frozen_predecessor_commits": {
+    "D0345": "06ab9ff6f9563c7f854a538bcb7124279bab2347",
+    "D0346": "db02f5bc49f95182d29690438fb62b8d9fe992de",
+    "D0347": "9a3baecf71b108ed554d8c5221bd9ca3075cf36e",
+    "D0348": "918d91e2aba41e39e51358df622012d8272c8c2e"
+  },
+  "future_required_separate_gates": [
+    "INDEPENDENT_D0349_PRECOMMIT_AUTHORIZATION_REVIEW",
+    "SEPARATE_D0349_LOCAL_COMMIT",
+    "INDEPENDENT_D0349_POSTCOMMIT_REVIEW",
+    "SEPARATE_D0349_GITHUB_PUBLICATION",
+    "INDEPENDENT_D0349_EXACT_REMOTE_READBACK",
+    "SEPARATE_BOUNDED_CORRECTED_SOURCE_AUTHORING",
+    "INDEPENDENT_CORRECTED_SOURCE_STATIC_REVIEW",
+    "SEPARATE_CORRECTED_FREEZE_AUTHORIZATION_AND_COMMIT",
+    "INDEPENDENT_CORRECTED_FREEZE_POSTCOMMIT_REVIEW",
+    "SEPARATE_CORRECTED_FREEZE_GITHUB_PUBLICATION",
+    "INDEPENDENT_CORRECTED_FREEZE_REMOTE_READBACK",
+    "NEW_NONCONSUMING_PREFLIGHT_AND_RECEIPT",
+    "INDEPENDENT_SUCCESSOR_PREFLIGHT_RECEIPT_REVIEW",
+    "SEPARATE_PRE_READINESS_SAFETY_DISPOSITION",
+    "ONLY_THEN_CONSIDER_ONE_REMAINING_READINESS_ATTEMPT",
+    "ONLY_AFTER_EFFECTIVE_READINESS_CONSIDER_ZE2"
+  ],
+  "implementation_correction_authorized_now": false,
+  "new_successor_authorization_established_now": false,
+  "next_required_gate": "SEPARATE_INDEPENDENT_D0349_PRECOMMIT_AUTHORIZATION_REVIEW",
+  "one_shot_handoff_performed": false,
+  "prohibited_now": [
+    "MODIFY_EXISTING_D0345_TO_D0348_ARTIFACTS",
+    "MODIFY_FROZEN_D0346_IMPLEMENTATION",
+    "MODIFY_OR_REUSE_D0346_PREFLIGHT_RECEIPT",
+    "AUTHOR_CORRECTED_IMPLEMENTATION",
+    "COMMIT_OR_PUBLISH_CORRECTED_IMPLEMENTATION",
+    "RUN_PREFLIGHT",
+    "RUN_READINESS",
+    "RUN_SYNTHETIC_VECTORS",
+    "READ_ZE0_OR_ZE1_SCIENTIFIC_PAYLOAD",
+    "TEST_ZE2_RESERVED_OUTPUT_ROOT",
+    "RUN_ZE2",
+    "RECLASSIFY_C4",
+    "AUTHORIZE_P8_MAPPING"
+  ],
+  "prospective_authoring_grant_if_effective": {
+    "ZE2_execution_immediately_authorized": false,
+    "corrected_freeze_commit_immediately_authorized": false,
+    "corrected_source_authoring": true,
+    "corrected_source_scope": [
+      "D0347-F1_SCOPED_SUBPROCESS_PIPE_FD_CORRECTION",
+      "D0347-F2_EXISTING_ATTESTATION_SYNTHETIC_COVERAGE"
+    ],
+    "independent_corrected_source_static_review": true,
+    "preflight_execution_immediately_authorized": false,
+    "readiness_attempt_immediately_authorized": false
+  },
+  "readiness_exercisable_now": false,
+  "scope": "PROSPECTIVE_SUCCESSOR_CORRECTION_GOVERNANCE",
+  "six_explicit_successor_governance_decisions": [
+    {
+      "effect_if_independently_approved_and_effective": "Permits only separately staged corrected implementation authoring and independent static review within the explicit F1/F2 correction scope. It does not itself permit corrected freeze publication, readiness, synthetic execution or ZE2 execution.",
+      "id": "D0349-A1",
+      "proposed_resolution": "D0349 is a new, non-retroactive prospective authorization candidate. It becomes effective only after independent precommit review, separate local commit, independent postcommit review, non-forced GitHub publication, and separate exact remote readback verifying the resulting D0349 commit SHA on refs/heads/main. The effective SHA cannot be predetermined.",
+      "topic": "SUCCESSOR_AUTHORIZATION_ID_AND_EFFECTIVE_PUBLICATION_GATE"
+    },
+    {
+      "effect_if_independently_approved_and_effective": "Allows a future freeze eligibility review against this new ancestry rule, but does not itself authorize a freeze commit or its publication.",
+      "id": "D0349-A2",
+      "proposed_resolution": "The prospective corrected implementation freeze must have the independently verified effective D0349 commit as its exact direct parent, and must preserve the D0345-D0346-D0347-D0348-D0349 ancestry. This is a narrowly scoped prospective successor to the original D0345 direct-parent requirement, not a retroactive alteration of D0345 or D0346. Any intervening commit requires a separate reviewed and effective governance amendment.",
+      "topic": "CORRECTED_FREEZE_EXACT_PARENT_OR_ANCESTRY_RULE"
+    },
+    {
+      "effect_if_independently_approved_and_effective": "Establishes the proposed handoff contract only; does not perform a handoff, grant a second attempt or make the existing attempt exercisable.",
+      "id": "D0349-A3",
+      "proposed_resolution": "The original remaining readiness attempt stays unconsumed and non-exercisable. No additional attempt is created. Any later exclusive rebind to the corrected freeze requires a separately effective pre-readiness safety disposition after corrected freeze publication, new preflight, independent receipt review and proof that no competing D0346/D0345 readiness route remains executable. The rebind and any one-shot consumption must be recorded atomically at the authorized readiness boundary under a unique successor identity.",
+      "topic": "D0345_SINGLE_ATTEMPT_HANDOFF_OR_SUPERSESSION_SEMANTICS"
+    },
+    {
+      "effect_if_independently_approved_and_effective": "Defines the required new receipt binding and review contract; does not execute a preflight.",
+      "id": "D0349-A4",
+      "proposed_resolution": "A future new non-consuming preflight must bind the exact corrected freeze commit SHA, its parent, corrected source SHA-256, authorization lineage, frozen runtime and Git hook identities, applicable readiness-check contract and non-consumption status. Its evidence must be independently reviewed before the readiness safety disposition. The historical D0346 receipt remains immutable and is never reused, renamed or overwritten.",
+      "topic": "CORRECTED_PREFLIGHT_RECEIPT_SCHEMA_AND_BINDINGS"
+    },
+    {
+      "effect_if_independently_approved_and_effective": "Provides a bounded authoring scope only. Requires separate source review, approved freeze and later safety verification.",
+      "id": "D0349-A5",
+      "proposed_resolution": "Preserve the identities and order of all fifteen D0345 readiness checks, D0343 F0-F6 regeneration, D0336 matching/output semantics and D0344 execution ordering. Allow source changes only to resolve D0347-F1 scoped subprocess pipe-FD handling and D0347-F2 positive/negative synthetic attestation coverage. Deny generic integer-FD exemptions, semantic relaxation and unrelated behavior changes.",
+      "topic": "FROZEN_CHECK_SET_PRESERVATION_AND_ALLOWED_CORRECTION_SCOPE"
+    },
+    {
+      "effect_if_independently_approved_and_effective": "Specifies verification prerequisites only; does not consume or activate either one-shot capacity.",
+      "id": "D0349-A6",
+      "proposed_resolution": "Before any remaining readiness attempt can begin, require effective D0349 publication, independently reviewed corrected source, separately committed and published corrected freeze, exact remote readback, new non-consuming preflight, independent receipt review, explicit old-route exclusion and separate pre-readiness safety approval. Only the readiness transaction may run the frozen synthetic vectors or test the ZE2 reserved output root at its prescribed check. ZE2 scientific execution remains a later, separate authorization gate.",
+      "topic": "INDEPENDENT_VERIFICATION_BEFORE_ONE_SHOT_CONSUMPTION"
+    }
+  ],
+  "status": "UNREVIEWED_AUTHORIZATION_AUTHOR_CANDIDATE"
+}
