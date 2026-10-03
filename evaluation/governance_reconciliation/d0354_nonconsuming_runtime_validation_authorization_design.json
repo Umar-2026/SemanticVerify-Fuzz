@@ -1,0 +1,209 @@
+{
+  "artifact_id": "SVF-D0354-NONCONSUMING-RUNTIME-VALIDATION-AUTHORIZATION-DESIGN-V1",
+  "authoring_baseline_commit": "bc9e9a056de91b8dce50df842e6c7d06403c86b8",
+  "corrected_freeze_authorized_now": false,
+  "current_governance_boundaries": {
+    "C4_status": "UNRESOLVED",
+    "D0353_manifest_committed": false,
+    "D0354_design_only": true,
+    "P8_mapping_authorized": false,
+    "V3_source_committed": false,
+    "ZE2_execution_GO": false,
+    "corrected_freeze_authorized": false,
+    "corrected_freeze_created": false,
+    "new_runtime_test_authorization_effective": false,
+    "one_shot_handoff_performed": false,
+    "preflight_authorized": false,
+    "preflight_executed": false,
+    "readiness_exercisable": false,
+    "remaining_ZE2_execution_capacity": 1,
+    "remaining_readiness_attempt_capacity": 1,
+    "runtime_test_executed": false,
+    "synthetic_fixture_executed": false
+  },
+  "decision": "D0354",
+  "design_effective": false,
+  "exact_input_identities": {
+    "D0346_V1_path": "scripts/ze2_deterministic_overlap_v1.py",
+    "D0346_V1_sha256": "42ce966e66ea855e7a701277f907dda585d33831773b6f9b35c9c5aed528c935",
+    "D0346_original_receipt_sha256": "b83a2af73b56dde23f5c3d2280db50b81d30b79d2beae808462cd2295ce83020",
+    "D0350_V2_path": "scripts/ze2_deterministic_overlap_v2.py",
+    "D0350_V2_sha256": "1ba6cf7825692a6b0c35d8a6baa3cabc2a4f629db06e80d99d1ef7d7ca0e0a1f",
+    "D0350_manifest_sha256": "59e91f3dca7393aa8348eb6b00805ad1d075fa5640ac9dacfc0bb2c7832b4283",
+    "D0351_design_sha256": "4f0b3ea1d48fa1686f86f68bc10fd1559e04111b994958d14d627b3ca2d90454",
+    "D0352_authorization_sha256": "9d1e4c36b5a9d8ae143dd719a44503ac1404fc41300337c3aada435fac740d5d",
+    "D0353_V3_path": "scripts/ze2_deterministic_overlap_v3.py",
+    "D0353_V3_sha256": "f483b4fa0ae16f516c59cc5c6edc49aa50d518eba6795ea3c1bb383dcc43bb40",
+    "D0353_manifest_sha256": "718cad0049f88e449fe4f2bb237dd50b4566410d9c6fdb57aace6d809d4312c8"
+  },
+  "execution_isolation_requirements": {
+    "actual_ZE0_ZE1_scientific_data_mounted": false,
+    "actual_ZE2_output_root_access": false,
+    "actual_ZE2_root_stat_or_existence_test": false,
+    "fail_closed_if_isolation_cannot_be_verified": true,
+    "independent_isolation_precheck_required": true,
+    "no_actual_test_harness_authored_now": true,
+    "no_test_execution_now": true,
+    "production_ZE2_invocation": false,
+    "production_git_hooks_execution": false,
+    "production_git_remote_access": false,
+    "production_one_shot_entrypoint_invocation": false,
+    "production_preflight_invocation": false,
+    "production_readiness_invocation": false,
+    "production_repository_git_mutation": false,
+    "production_repository_modification": false,
+    "reusable_production_interpreter": false,
+    "temporary_disposable_fixture_namespace_required": true,
+    "test_process_model": "FRESH_SHORT_LIVED_ISOLATED_PROCESS_PER_RUNTIME_CASE"
+  },
+  "frozen_contracts": {
+    "D0336_matching_semantics_unchanged": true,
+    "D0343_F0_F6_and_ZE0_attestation_unchanged": true,
+    "D0344_consumed_sequence_unchanged": true,
+    "D0345_readiness_check_count": 15,
+    "D0345_readiness_check_order_unchanged": true,
+    "D0346_frozen_V1_immutable": true,
+    "D0346_original_receipt_immutable": true,
+    "D0350_V2_and_manifest_immutable": true,
+    "D0353_V3_and_manifest_not_modified_now": true,
+    "no_blanket_integer_FD_exception": true,
+    "no_subprocess_allowlist_generalization": true
+  },
+  "future_separate_gates": [
+    "D0354_INDEPENDENT_PRECOMMIT_DESIGN_REVIEW",
+    "D0354_SEPARATE_DESIGN_ONLY_LOCAL_COMMIT",
+    "D0354_INDEPENDENT_POSTCOMMIT_DESIGN_REVIEW",
+    "D0354_SEPARATE_GITHUB_DESIGN_PUBLICATION",
+    "D0354_INDEPENDENT_EXACT_REMOTE_READBACK",
+    "SEPARATE_EXPLICIT_RUNTIME_TEST_AUTHORIZATION_AUTHORING",
+    "INDEPENDENT_RUNTIME_TEST_AUTHORIZATION_REVIEW",
+    "SEPARATE_AUTHORIZATION_COMMIT_AND_PUBLICATION",
+    "INDEPENDENT_EXACT_AUTHORIZATION_REMOTE_READBACK",
+    "SEPARATE_ISOLATED_TEST_HARNESS_AUTHORING",
+    "INDEPENDENT_TEST_HARNESS_AND_ISOLATION_REVIEW",
+    "SEPARATELY_AUTHORIZED_NONCONSUMING_TEST_EXECUTION",
+    "INDEPENDENT_TEST_RESULT_EVIDENCE_REVIEW",
+    "SEPARATE_SOURCE_REMEDIATION_AUTHORIZATION_IF_NEEDED",
+    "SEPARATE_CORRECTED_FREEZE_AUTHORIZATION_GATE",
+    "SEPARATE_NEW_PREFLIGHT_AUTHORIZATION_GATE",
+    "SEPARATE_ONE_SHOT_READINESS_HANDOFF_GATE",
+    "SEPARATE_ZE2_EXECUTION_GATE"
+  ],
+  "minimum_future_test_evidence": {
+    "actual_result_and_exact_error_code_required": true,
+    "evidence_exists_now": false,
+    "fixture_identity_and_expected_result_required": true,
+    "independent_result_review_required": true,
+    "isolated_process_identity_required": true,
+    "no_one_shot_consumption_attestation_required": true,
+    "no_production_payload_access_attestation_required": true,
+    "no_repository_mutation_attestation_required": true,
+    "observed_subprocess_and_fd_provenance_required": true,
+    "test_harness_identity_required": true
+  },
+  "new_runtime_test_authorization_established": false,
+  "next_required_gate": "SEPARATE_INDEPENDENT_D0354_PRECOMMIT_DESIGN_REVIEW",
+  "prior_static_review": {
+    "D0353_findings": 0,
+    "D0353_review_checks": 82,
+    "D0353_review_pass": 82,
+    "review_scope": "STATIC_ONLY",
+    "runtime_compatibility_verified": false,
+    "synthetic_fixtures_executed": false
+  },
+  "runtime_testing_authorized_now": false,
+  "source_commit_authorized_now": false,
+  "status": "UNREVIEWED_DESIGN_AUTHOR_CANDIDATE",
+  "synthetic_execution_authorized_now": false,
+  "unresolved_risks": [
+    {
+      "id": "U1",
+      "observed": "D0350 and D0353 static reviews do not establish that process-lifetime audit hooks will allow legitimate Popen pipe construction at runtime.",
+      "required_disposition": "Separately authorized isolated runtime evidence and independent review before any readiness path.",
+      "resolved_now": false,
+      "topic": "PIPE_FD_RUNTIME_COMPATIBILITY"
+    },
+    {
+      "id": "U2",
+      "observed": "Synthetic fixtures have not been executed against the D0353 V3 implementation.",
+      "required_disposition": "Evidence of one positive and all ten negative cases, without actual scientific inputs.",
+      "resolved_now": false,
+      "topic": "F2_NEGATIVE_FIXTURE_RUNTIME_EVIDENCE"
+    },
+    {
+      "id": "U3",
+      "observed": "A Git direct-parent and ancestry check alone cannot establish the contents, independent approval or publication of a future freeze-specific authorization.",
+      "required_disposition": "Define and independently review an exact authorization-evidence binding. Do not infer approval solely from commit ancestry or a caller-supplied commit SHA. Any necessary source changes require a separate authorization.",
+      "resolved_now": false,
+      "topic": "FREEZE_AUTHORIZATION_PROOF_AUTHENTICITY"
+    },
+    {
+      "id": "U4",
+      "observed": "Readiness and ZE2 paths contain irreversible one-shot boundaries. A test must not enter those paths or touch real ZE0/ZE1 payloads.",
+      "required_disposition": "Demonstrate isolation and prohibit production entrypoints before independently authorizing any non-consuming runtime validation.",
+      "resolved_now": false,
+      "topic": "ONE_SHOT_FIREWALL_AND_TEST_ISOLATION"
+    }
+  ],
+  "validation_groups": [
+    {
+      "id": "F1",
+      "name": "SUBPROCESS_PIPE_FD_PROVENANCE",
+      "prohibited_shortcuts": [
+        "BLANKET_INTEGER_FD_ALLOW",
+        "FIFO_TYPE_ONLY_ALLOW",
+        "SUBPROCESS_WILDCARD_ALLOWLIST",
+        "DISABLE_OR_REMOVE_AUDIT_HOOK"
+      ],
+      "purpose": "Independently determine whether narrowly permitted subprocess stdout/stderr pipes are accepted without allowing unrelated integer file descriptors.",
+      "required_scenarios": [
+        "AUTHORIZED_STDOUT_PIPE_SUCCESS",
+        "AUTHORIZED_STDERR_PIPE_SUCCESS",
+        "UNAUTHORIZED_INTEGER_FD_REJECTED",
+        "WRONG_POPEN_OWNER_REJECTED",
+        "WRONG_PIPE_ROLE_REJECTED",
+        "WRONG_OPEN_MODE_REJECTED",
+        "REUSED_SINGLE_USE_FD_REJECTED",
+        "NON_FIFO_OR_WRONG_IDENTITY_REJECTED",
+        "DISALLOWED_SUBPROCESS_ARGV_REJECTED"
+      ],
+      "result_now": "NOT_EXECUTED",
+      "target": "V3_READINESS_READ_GUARD"
+    },
+    {
+      "id": "F2",
+      "name": "SYNTHETIC_ZE0_ATTESTATION_CONFORMANCE",
+      "negative_fixture_count_not_verified_by_runtime": true,
+      "purpose": "Check the existing synthetic positive fixture and ten structurally distinct negative fixture rejections, preserving D0350 F2 semantics.",
+      "real_ZE0_payload_allowed": false,
+      "real_ZE1_payload_allowed": false,
+      "required_negative_fixture_count": 10,
+      "required_positive_fixture_count": 1,
+      "result_now": "NOT_EXECUTED",
+      "target": "IN_MEMORY_SYNTHETIC_MANIFESTS_ONLY"
+    },
+    {
+      "actual_git_remote_operations_allowed": false,
+      "id": "B1_B5",
+      "name": "SUCCESSOR_OPERATIONAL_BINDING_NEGATIVE_TESTS",
+      "purpose": "Verify fail-closed behavior for source path, hash, Git blob, freeze parent, authorization identity, receipt binding, readiness result binding and exact audit-command path.",
+      "real_preflight_execution_allowed": false,
+      "real_readiness_execution_allowed": false,
+      "required_scenarios": [
+        "INCORRECT_V3_SOURCE_PATH_REJECTED",
+        "INCORRECT_SOURCE_SHA256_REJECTED",
+        "INCORRECT_SOURCE_GIT_BLOB_REJECTED",
+        "INCORRECT_FREEZE_PARENT_REJECTED",
+        "MISSING_FREEZE_AUTHORIZATION_REJECTED",
+        "UNVERIFIED_FREEZE_GRANT_EVIDENCE_REJECTED",
+        "INCORRECT_FREEZE_ARTIFACT_BINDING_REJECTED",
+        "HISTORICAL_PREFLIGHT_RECEIPT_REUSE_REJECTED",
+        "INCORRECT_SUCCESSOR_RECEIPT_REJECTED",
+        "INCORRECT_READINESS_RESULT_BINDING_REJECTED",
+        "UNAPPROVED_AUDIT_COMMAND_PATH_REJECTED"
+      ],
+      "result_now": "NOT_EXECUTED",
+      "target": "MOCKED_IN_MEMORY_GOVERNANCE_FIXTURES"
+    }
+  ]
+}
