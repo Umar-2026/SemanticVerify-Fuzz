@@ -1,0 +1,100 @@
+{
+  "C4_status": "UNRESOLVED",
+  "D0345_readiness_authorization_consumed": false,
+  "D0345_readiness_executed": false,
+  "P8_mapping_authorized": false,
+  "ZE2_authorization_consumed": false,
+  "ZE2_executed": false,
+  "ZE2_execution_authorized": false,
+  "artifact_id": "SVF-D0348-PROSPECTIVE-SUCCESSOR-GOVERNANCE-AUTHORIZATION-DESIGN-V1",
+  "commit_authorized_by_this_design": false,
+  "decision": "D0348",
+  "frozen_predecessor_lineage": {
+    "D0345_commit": "06ab9ff6f9563c7f854a538bcb7124279bab2347",
+    "D0346_commit": "db02f5bc49f95182d29690438fb62b8d9fe992de",
+    "D0347_commit": "9a3baecf71b108ed554d8c5221bd9ca3075cf36e",
+    "D0347_parent": "db02f5bc49f95182d29690438fb62b8d9fe992de"
+  },
+  "frozen_scientific_contracts_changed": false,
+  "governance_problem": "The D0345 frozen direct-parent requirement was satisfied by the effective D0346 implementation freeze. A later corrected implementation cannot automatically inherit that exact requirement or D0346 receipt binding.",
+  "implementation_correction_authorized": false,
+  "new_successor_authorization_established": false,
+  "next_required_gate": "SEPARATE_INDEPENDENT_D0348_PRECOMMIT_DESIGN_REVIEW",
+  "one_shot_readiness_authorized": false,
+  "prohibited_now": [
+    "MODIFY_D0345_GOVERNANCE",
+    "MODIFY_D0346_FROZEN_IMPLEMENTATION",
+    "MODIFY_D0347_EFFECTIVE_DESIGN",
+    "OVERWRITE_D0346_PREFLIGHT_RECEIPT",
+    "AUTHOR_OR_EXECUTE_CORRECTED_IMPLEMENTATION",
+    "RUN_D0345_READINESS",
+    "RUN_SYNTHETIC_CONFORMANCE_VECTORS",
+    "READ_ZE0_OR_ZE1_SCIENTIFIC_PAYLOAD",
+    "TEST_ZE2_RESERVED_OUTPUT_ROOT",
+    "RUN_ZE2",
+    "RECLASSIFY_C4",
+    "AUTHORIZE_P8_MAPPING"
+  ],
+  "proposed_successor_rules": [
+    {
+      "id": "D0348-R1",
+      "requirement": "Any successor must be created under a separately reviewed, committed, published and independently remote-verified prospective authorization. Historical D0345/D0346/D0347 artifacts remain immutable.",
+      "title": "Non-retroactive governance transition"
+    },
+    {
+      "id": "D0348-R2",
+      "requirement": "A future corrected implementation must have an exact recorded Git ancestry and an explicitly authorized effective-freeze predecessor. The old D0345 direct-parent rule must not be silently reused, bypassed or retroactively edited.",
+      "title": "Explicit successor commit lineage"
+    },
+    {
+      "id": "D0348-R3",
+      "requirement": "Address the integer subprocess pipe-FD conflict without introducing an unrestricted FD exemption. Require explicit metadata-subprocess provenance, narrow FD lifecycle control, FIFO validation where applicable, default-deny behavior and preserved subprocess/file allowlists.",
+      "title": "Strictly bounded audit-hook correction"
+    },
+    {
+      "id": "D0348-R4",
+      "requirement": "Preserve D0343 property-path-based F0–F6 regeneration, frozen artifact attestation semantics, D0336 exact matching/output rules and D0344 successor execution ordering. Add only bounded positive/negative synthetic attestation coverage for existing structural checks.",
+      "title": "Frozen scientific semantics"
+    },
+    {
+      "id": "D0348-R5",
+      "requirement": "No new or additional D0345 readiness attempt is granted. Any future transfer or supersession of the remaining single attempt requires explicit successor authorization, unique identity and single-consumption accounting. The original authorization cannot be assumed executable against corrected code.",
+      "title": "Single-attempt authorization continuity"
+    },
+    {
+      "id": "D0348-R6",
+      "requirement": "After a separately authorized corrected freeze becomes effective, create a new authenticated, non-consuming preflight receipt bound to the exact successor commit and implementation SHA-256. The D0346 receipt remains historical evidence and must not be rewritten or reused.",
+      "title": "New implementation-specific preflight"
+    },
+    {
+      "id": "D0348-R7",
+      "requirement": "Preserve all fifteen D0345 check identities, order and scientific-read restrictions unless a future separate explicit amendment precisely authorizes a change. Synthetic vectors cannot be executed ahead of the authorized one-shot consumption boundary.",
+      "title": "Readiness scientific firewall"
+    },
+    {
+      "id": "D0348-R8",
+      "requirement": "Keep authorization, source authoring, static review, freeze commit, postcommit review, GitHub publication, exact remote readback, preflight, receipt review, readiness and ZE2 execution in distinct governed stages.",
+      "title": "Separate publication and execution gates"
+    }
+  ],
+  "remaining_D0345_readiness_attempt_capacity": 1,
+  "remaining_ZE2_execution_attempt_capacity": 1,
+  "required_future_explicit_decisions": [
+    "SUCCESSOR_AUTHORIZATION_ID_AND_EFFECTIVE_PUBLICATION_GATE",
+    "CORRECTED_FREEZE_EXACT_PARENT_OR_ANCESTRY_RULE",
+    "D0345_SINGLE_ATTEMPT_HANDOFF_OR_SUPERSESSION_SEMANTICS",
+    "CORRECTED_PREFLIGHT_RECEIPT_SCHEMA_AND_BINDINGS",
+    "FROZEN_CHECK_SET_PRESERVATION_AND_ALLOWED_CORRECTION_SCOPE",
+    "INDEPENDENT_VERIFICATION_BEFORE_ONE_SHOT_CONSUMPTION"
+  ],
+  "scope": "PROSPECTIVE_GOVERNANCE_DESIGN_ONLY",
+  "source_evidence": {
+    "D0345_governance_sha256": "800a0b3f06ea1619975298cc8e0bb7dc23287d25737b169227cbfeed1c27e29b",
+    "D0346_freeze_sha256": "a4f3e411db487bb9b2b66e3dfba91f292f6df3b010a67ea98693d167f3c60a0f",
+    "D0346_implementation_sha256": "42ce966e66ea855e7a701277f907dda585d33831773b6f9b35c9c5aed528c935",
+    "D0346_preflight_receipt_sha256": "b83a2af73b56dde23f5c3d2280db50b81d30b79d2beae808462cd2295ce83020",
+    "D0347_decision_sha256": "228710b99398539815ae1365a10522d451f1802efbcddfa4b12f32f5f976bf55",
+    "D0347_design_sha256": "09c70bf8f7335a6b3294b7bc07933b6b94a483686023b5ca8cf11ddea8c6ddf8"
+  },
+  "status": "UNREVIEWED_DESIGN_AUTHOR_CANDIDATE"
+}
