@@ -1,0 +1,467 @@
+# SemanticVerify-Fuzz
+## PRE-C4 Authoritative Rule Existence and Gap-Resolution — Inspection Scope V1
+
+**Scope ID:** `SVF-PRE-C4-AUTHORITY-GAP-SCOPE-V1`
+
+**Parent design:** `SVF-PRE-C4-AUTHORITY-GAP-V2`
+
+**Parent review:** `DESIGN_ACCEPTED_FOR_SEPARATE_AUTHORIZATION_CONSIDERATION`
+
+**Status:** `DESIGN ONLY — AUTHOR-CANDIDATE — NOT INDEPENDENTLY VERIFIED, FROZEN OR AUTHORIZED`
+
+**Research stage:** `STAGE_A_VERIFICATION`
+
+**Repository:** `/openbayes/home/semanticverify-fuzz-research`
+
+**Branch:** `main`
+
+**Previously reported frozen HEAD:** `1b111f399355a85c2ef69d06735d2bf286af3a93`
+
+**Current disposition:** `MAINTAIN_HOLD`
+
+**Repository inspection authorized:** `NO`
+
+**Scientific execution authorized:** `NO`
+
+---
+
+## 1. Purpose and governing boundary
+
+This scope candidate defines a finite documentary inspection for the six unresolved requirements in the independently design-accepted `SVF-PRE-C4-AUTHORITY-GAP-V2`.
+
+The proposed inspection would determine whether the expressly included existing governance documents establish sufficient, applicable and effective authority for those requirements.
+
+Its purpose is **authority discovery and documentary gap classification**, not scientific decision-making.
+
+The inspection must distinguish:
+
+1. A complete, independently supported existing authority.
+2. Relevant but partial or unverified authority.
+3. No relevant provision identified within a completed, declared scope.
+4. Independently established material conflict.
+
+No negative global-existence conclusion may be drawn from a bounded unsuccessful search.
+
+The inspection cannot create missing scientific rules, resolve scientific classifications, activate governance permissions, or change the repository.
+
+**This scope candidate itself grants no inspection permission.**
+
+## 2. Authoritative baseline and retained findings
+
+The following historical findings remain unchanged:
+
+- D0270 records bounded evidence-sufficiency classifications.
+- D0272 defines bounded positional-assignment semantics.
+- D0278 records bounded positional adjudication without a global positional assignment.
+- D0241 and successor decisions govern carrier-admissibility closure before B2.
+- D0301's historical bounded closure-accounting execution is reported consumed and must not be rerun.
+- D0301's four output artifacts have documented local Git-tree provenance.
+- D0317–D0318 establish corrected E1 identity and extraction constraints.
+- D0356 remains an unactivated isolated nonconsuming harness candidate with 17 unresolved blockers.
+- C4 zero-unresolved closure has not been established.
+- P8 curl V4-to-V2 mapping remains blocked.
+- Repair implementation is prohibited.
+
+Prior independent reviews and terminal inspection transcripts may be cited as existing documentary evidence. They must not be treated as independently authenticated scientific results.
+
+This checkpoint must not repeat historical one-shot executions or previously completed reviewer transactions.
+
+## 3. Exact proposed governance-document source register
+
+Only the following 15 original governance decision documents are included in the proposed new documentary inspection.
+
+The paths and SHA-256 values below are **previously reported bindings**. They are expected identities for a future separately authorized inspection, not newly authenticated results from this scope-design transaction.
+
+All paths are relative to:
+
+`/openbayes/home/semanticverify-fuzz-research/`
+
+### Source register A — Foundational governance and positional authority
+
+| ID | Decision | Exact relative path |
+|---|---|---|
+| S01 | D0233 | `documentation/decisions/0233-design-bounded-req06-req14-accounting-authorization-ladder-without-execution.md` |
+| S02 | D0240 | `documentation/decisions/0240-govern-b2-authoritative-input-bindings-without-b2-authorization.md` |
+| S03 | D0241 | `documentation/decisions/0241-design-carrier-admissibility-evidence-closure-before-b2-without-execution-authorization.md` |
+| S04 | D0254 | `documentation/decisions/0254-execute-c3-bounded-candidate-content-adjudication-from-frozen-d0251-snapshots.md` |
+| S05 | D0270 | `documentation/decisions/0270-execute-successor-result-universe-materialization-from-frozen-resolved-components.md` |
+| S06 | D0272 | `documentation/decisions/0272-establish-positional-assignment-semantics-and-redesignate-execution-to-d0273-without-execution.md` |
+| S07 | D0278 | `documentation/decisions/0278-execute-d0277-positional-adjudication-from-d0276-materialized-evidence-only.md` |
+| S08 | D0281 | `documentation/decisions/0281-freeze-final-evidence-accounting-manifest.md` |
+
+**Previously reported SHA-256 bindings:**
+
+- S01: `4e76df6ab2ca7d9e95a299fa2464acd2a4e8ecaa527ac997114469ca64bedc21`
+- S02: `03e34ea61a69741e3267b768e5dad0b0bd9704b48c78b17c1f74b7b16be79359`
+- S03: `64ca946cc05f8b0295c7e9e6c73600f406a26885ce2d9abc12d1e2a08ea83e7c`
+- S04: `17951397d4bbcd6673660a457e322769aae3140fc949d8100f2c2fc8ae529d5b`
+- S05: `4d75ed15e22df13859b1324a3e738096549335e84cdc622cb5e905471761f763`
+- S06: `5e018371cb3f9621d39f13dd75c498e644be37496070f37a725c2fa2688bbbb7`
+- S07: `697a7dfd18a14b6a3df6ff1b2dd4e88f3a038bbebaad3663fe3f4f32cb63e61c`
+- S08: `8edf04f012bcc9e74d2ec894526d4f4fd8278d77ca760ee8d68407b7313028be`
+
+### Source register B — C4 closure, authority lineage and corrected E1 contracts
+
+| ID | Decision | Exact relative path |
+|---|---|---|
+| S09 | D0298 | `documentation/decisions/0298-design-bounded-pre-c4-closure-accounting-successor-without-execution-authorization.md` |
+| S10 | D0299 | `documentation/decisions/0299-freeze-exact-d0298-pre-c4-closure-accounting-design-without-execution-authorization.md` |
+| S11 | D0300 | `documentation/decisions/0300-authorize-bounded-pre-c4-closure-accounting-execution-without-execution.md` |
+| S12 | D0302 | `documentation/decisions/0302-design-post-d0301-bounded-explicit-c4-closure-relation-evidence-successor-without-authorization.md` |
+| S13 | D0303 | `documentation/decisions/0303-design-e0-evidence-universe-and-explicit-c4-relation-target-freeze-without-execution-authorization.md` |
+| S14 | D0317 | `documentation/decisions/0317-reconcile-invalid-e1-placeholder-materialization-and-suspend-e1-resumption.md` |
+| S15 | D0318 | `documentation/decisions/0318-design-corrected-e1-successor-with-exact-171x4-binding.md` |
+
+**Previously reported SHA-256 bindings:**
+
+- S09: `0bf61237754f6a81f48e0e7a0829e60cf8eb2bbe07ebdfd7ed365f586d13346a`
+- S10: `460fe43d5b6fddab2c22bb20878ddd2f256fa61c657d1f9d98e7e083241ed4c7`
+- S11: `5d6f547819fc853a32406880d17b7de800a6b76d698000dee1cd46f1580598f7`
+- S12: `fd5744c29d8d0e0f9471a8797d8ea507786e8c3723f8531d0857ad48e1aab7fb`
+- S13: `d511f3b48ed027f2e13baa0257fbdf281b45de059915525a24e183f3183df611`
+- S14: `355c2a4639c2e47d4808f21cf512ef23036185437a47568150026b73ed2fbaff`
+- S15: `531b844f85246a10d5b585de4119a427c2d6be1aecbeefa64263a7d06cb7c57b`
+
+### Source-universe constraints
+
+- Exactly these 15 paths are proposed for new content inspection.
+- Previously accepted excerpts may be reused without replaying earlier inspections.
+- No directory traversal, keyword-based repository-wide search or automatic expansion is permitted.
+- No machine-readable scientific artifact may be opened merely because a governance document references it.
+- Source references outside the whitelist must be recorded as unresolved external dependencies.
+- Adding a source requires a separately reviewed scope amendment and applicable authorization.
+- An omitted source must not be declared irrelevant or nonexistent solely because it was excluded from this deliberately bounded inspection.
+
+This source register must be independently accepted and frozen before any inspection authorization can become effective.
+
+## 4. GAP-to-source inspection matrix
+
+The proposed inspection is restricted to the following source-question relationships.
+
+| GAP | Primary sources | Exact governing question |
+|---|---|---|
+| **GAP-01 — Global C-RULE** | S04, S06, S07, S08 | Do the included records establish a complete effective global positional-status rule beyond bounded assignment semantics? |
+| **GAP-02 — Identifier correspondence** | S02, S05, S07, S12, S14, S15 | Are D0270, D0278, AEA02, corrected E1, and relevant requirement/semantic-unit identities explicitly and authoritatively related? |
+| **GAP-03 — C4 witness sufficiency** | S03, S09, S11, S12, S13 | What documentary criteria distinguish an explicit admissible closure witness from mere occurrence, provenance or absence? |
+| **GAP-04 — C4 reconciliation** | S01, S02, S03, S09, S11, S12, S13 | Do complete effective rules connect candidate closure, historical bindings and requirement-level carrier-admissibility outcomes? |
+| **GAP-05 — Authority/effectiveness** | S10, S11, S12, S13, S14, S15 | Which independent verification, freeze, authorization, publication and applicability requirements are specified and actually evidenced? |
+| **GAP-06 — D0301 lineage** | S10, S11, S12 | What activation, consumption, integrity and publication requirements are documented, and which are independently supported? |
+
+A source may support multiple GAPs, but the same statement must not be elevated beyond its original scope.
+
+For example, a D0318 candidate ordinal may support corrected E1 deterministic ordering without establishing D0270/D0278 identity correspondence.
+
+The previously supplied D0301 local Git metadata report may be cited for GAP-06. Its already reviewed metadata checks must not be rerun as part of this scoped inspection.
+
+## 5. Identifier and population boundaries
+
+The future assessment must maintain separate records for:
+
+| Domain | Governing distinction |
+|---|---|
+| D0270 candidate identifiers | Bounded evidence-sufficiency candidate domain |
+| D0278 positional identifiers | Positional-adjudication identifiers; their source namespace must be independently established |
+| AEA02 property paths | Frozen 171-candidate carrier enumeration |
+| Corrected E1 ordinals | Lexicographically ordered AEA02 candidate positions |
+| Historical binding pairs | Reported 1,853-pair accounting population |
+| Historical unresolved bindings | Reported 1,642 `UNRESOLVED_BINDING` pairs |
+| Semantic-unit/carrier matrix | Reported 109 × 171 matrix |
+| Corrected E1 pairs | Reported 171 × 4 candidate-source domain |
+| Req06/Req14 pairs | Separately governed requirement-accounting population |
+
+**No correspondence may be accepted merely because identifiers have the same number, similar label or matching position.**
+
+A supported correspondence requires an explicit governing relation with exact source-defined identity, namespace, coverage, integrity and applicable authority.
+
+If only an ordinal or a property-path string is available, the missing semantic correspondence remains `NOT_VERIFIED`.
+
+## 6. Permitted documentary activities — prospective only
+
+If and only if a separate authorization becomes independently effective, the scope would permit:
+
+1. Verifying the exact baseline branch and commit identity through local read-only Git metadata.
+2. Checking that the 15 whitelisted source paths are tracked, accessible and regular files rather than symlinks.
+3. Comparing each source's SHA-256 against the frozen expected binding.
+4. Reading relevant governance-level clauses in the whitelisted documents, with exact line attribution.
+5. Inspecting additional context within the same whitelisted document only where needed to avoid misleading interpretation.
+6. Recording reported source-to-source references without opening non-whitelisted targets.
+7. Distinguishing historical, prospective, descriptive, authorization-only and operationally effective statements.
+8. Recording unresolved provenance, correspondence, publication and scientific-authority dependencies.
+
+For each source:
+
+- Maximum source-file size: 256 KiB.
+- Expected encoding: UTF-8.
+- Missing paths, symlinks, tracking mismatches, checksum mismatches and decoding failures must fail closed.
+- A source failure makes every materially dependent GAP assessment incomplete unless a separately approved procedure establishes otherwise.
+- Truncated excerpts, omitted clauses and uninspected references must be disclosed.
+- No output may claim complete source review when only selected excerpts were examined.
+
+No source content outside the declared governance-only boundary may be processed.
+
+If a whitelisted document contains embedded protected scientific evidence rather than a governance provision, inspection of that payload must stop and the dependency must be escalated for separate authorization.
+
+## 7. Explicit exclusions
+
+The following materials and operations are outside this scope:
+
+**Excluded material**
+
+- Original scientific input matrices.
+- Protected candidate evidence and source snapshots.
+- D0251 scientific snapshot contents.
+- D0276 retained scientific evidence contents.
+- D0301's four scientific-output JSON contents.
+- Corrected E1 extraction outputs.
+- ZE0, ZE1 and ZE2 scientific representation inventories and outputs.
+- D0356 execution harness and scientific runtime artifacts.
+- Analyzer, baseline, repair and gold-annotation outputs.
+
+**Excluded operations**
+
+- Broad repository searches.
+- External network access or remote Git fetching.
+- New evidence acquisition.
+- Source-content extraction from scientific artifacts.
+- Semantic adjudication.
+- Candidate reclassification.
+- C4 zero-unresolved closure execution.
+- B2 readiness determination.
+- P8 concrete mapping.
+- ZE2 execution.
+- Any historical one-shot replay.
+- Repository file creation or modification.
+- Git staging, commit, push or tag creation.
+
+A future finding that excluded material is needed must produce an explicit unresolved-dependency record, not an unauthorized attempt to access it.
+
+## 8. Source integrity and publication/effectiveness controls
+
+The future inspection must distinguish five separate claims:
+
+1. **Source identification:** The exact path and expected source identity are specified.
+2. **Local integrity:** The approved read-only inspection reports whether exact source bytes match the expected digest.
+3. **Governing applicability:** The source's own operative scope covers the assessed requirement.
+4. **Independent authorization/effectiveness:** The required review, freeze, activation and publication lineage is independently supported.
+5. **Scientific validity:** Any scientific result has the independent verification required by its governing protocol.
+
+None of these claims automatically establishes the next.
+
+In particular:
+
+- SHA-256 agreement is not evidence of scientific correctness.
+- Local Git-object existence is not proof of remote publication.
+- A decision's author-candidate text is not effective merely because it is present in the repository.
+- A successor's statement that a prior event was consumed is documentary support, not automatic independent authentication of that event.
+- An authoritative source may be substantively relevant while its effectiveness remains unverified.
+
+Because remote publication verification is not included in this bounded scope, unresolved remote evidence must remain `NOT_VERIFIED`.
+
+If effectiveness cannot be established from authorized sources, the corresponding GAP must not receive `EXISTING_AUTHORITY_SUPPORTED`.
+
+## 9. Claim-level assessment format
+
+Each assessed claim must include:
+
+| Field | Required content |
+|---|---|
+| `claim_id` | Unique claim identifier |
+| `gap_id` | GAP-01 through GAP-06 |
+| `source_id` | S01–S15 |
+| `source_path` | Exact approved path |
+| `source_sha256_status` | Match, mismatch or not verified |
+| `source_line_range` | Exact supporting clause |
+| `source_scope` | Historical, bounded, prospective or effective |
+| `identifier_namespace` | Exact source-defined namespace, if applicable |
+| `population_coverage` | Exact documented population |
+| `claim_text` | Narrow source-supported assertion |
+| `documentary_result` | DOCUMENTARY_PASS, NOT_VERIFIED or FAIL |
+| `authority_effectiveness` | Established or not verified |
+| `unresolved_dependencies` | Explicit qualifications |
+
+The output must not invent omitted data or treat a source reference as an independently authenticated source.
+
+## 10. GAP disposition and assessment completeness
+
+The V2 parent design's mutually exclusive disposition procedure is incorporated **without modification**.
+
+For a completed and adequately scoped GAP assessment, apply the following order:
+
+1. `CONTRADICTION_REQUIRING_RESOLUTION`
+2. `EXISTING_AUTHORITY_SUPPORTED`
+3. `PARTIAL_OR_UNVERIFIED_AUTHORITY`
+4. `NOT_IDENTIFIED_WITHIN_DECLARED_SCOPE`
+
+The first applicable condition determines the single completed-assessment disposition.
+
+A relevant but incomplete governing fragment belongs in `PARTIAL_OR_UNVERIFIED_AUTHORITY`, not `NOT_IDENTIFIED_WITHIN_DECLARED_SCOPE`.
+
+If required inspection work is incomplete, a mandatory source is inaccessible, or a necessary integrity condition fails, use:
+
+`ASSESSMENT_INCOMPLETE — MAINTAIN_HOLD`
+
+This is a procedural hold, not a fifth completed-assessment disposition.
+
+An unsuccessful complete bounded inspection does not prove that a rule is absent from the repository or scientific record.
+
+## 11. Proposed documentary output package
+
+A separately authorized future inspection should produce the following in-memory or otherwise independently approved documentary outputs:
+
+**A. Exact source-integrity report**
+
+Coverage of S01–S15, expected and observed source identities, and every mismatch, omission or source limitation.
+
+**B. Six-GAP authority matrix**
+
+For each GAP: relevant clauses, scope, coverage, integrity, effectiveness, conflicts, uncertainties and applicable disposition.
+
+**C. Namespace/correspondence register**
+
+Separate identification of D0270, D0278, AEA02, corrected E1 and requirement/semantic-unit domains, including only independently supported relationships.
+
+**D. Missing-governance dependency ledger**
+
+Every absent, partial, unauthenticated, inaccessible or unresolved requirement must remain visible.
+
+**E. Independent-review packet**
+
+The exact inspected sources, integrity evidence, source-line references, bounded findings and nonauthorization declaration.
+
+These deliverables are proposed inspection outputs, not permission to create files in the repository.
+
+## 12. Acceptance criteria for Scope V1
+
+The independent scope reviewer must determine whether:
+
+1. The included source universe is exact, finite and independently verifiable.
+2. The supplied path/hash bindings are treated as reported expectations rather than silently authenticated facts.
+3. All six GAPs have explicitly identified source-question coverage.
+4. D0270 and D0278 identifier systems are kept separate.
+5. The 171-candidate, 1,853-pair, 1,642-unresolved, 109 × 171 and 171 × 4 domains remain distinct.
+6. The proposed inspection distinguishes documentary support from authority effectiveness.
+7. The read-only permissions do not include protected scientific evidence.
+8. Previously completed one-shot operations cannot be repeated.
+9. Missing sources and incomplete inspection cannot generate false completed dispositions.
+10. Out-of-scope dependencies cannot trigger silent scope expansion.
+11. Existing V2 dispositions and acceptance precedence remain unchanged.
+12. The design explicitly withholds execution, repository mutation and downstream authorization.
+
+A substantiated mandatory design defect requires `REVISION_REQUIRED`.
+
+If all mandatory criteria pass, the scope may be accepted **for separate freeze and authorization consideration only**.
+
+If the mandatory design criteria cannot be adequately assessed and no substantiated design FAIL is present, use `INSUFFICIENT_GOVERNANCE_EVIDENCE`.
+
+## 13. Required governance sequence
+
+This scope design does not combine governance transactions.
+
+The prospective sequence is:
+
+**Step A — Scope authoring**
+
+Prepare the scope candidate without scientific execution.
+
+**Step B — Independent scope review**
+
+Assess exact sources, integrity boundaries, GAP coverage and nonauthorization.
+
+**Step C — Separate source-scope freeze**
+
+If approved, freeze the exact source universe through a separately governed transaction.
+
+**Step D — Separate effective inspection authorization**
+
+Establish the applicable independent approval, activation and publication evidence before inspection.
+
+**Step E — Authorized read-only authority assessment**
+
+Perform only the authorized documentary work.
+
+**Step F — Independent findings review**
+
+Verify provenance, completeness, qualifications and each proposed GAP disposition.
+
+**Step G — Separate future governance decision, if warranted**
+
+Determine whether existing authority is sufficient or a new prospective governing-contract proposal is required.
+
+No step authorizes a later step automatically.
+
+## 14. Explicit nonauthorization
+
+`SCOPE_DESIGN_ACCEPTANCE_DOES_NOT_EQUAL_SCOPE_FREEZE=YES`
+
+`SCOPE_FREEZE_DOES_NOT_EQUAL_INSPECTION_AUTHORIZATION=YES`
+
+`INSPECTION_AUTHORIZATION_ESTABLISHED=NO`
+
+`PROTECTED_SCIENTIFIC_PAYLOAD_ACCESS_AUTHORIZED=NO`
+
+`ONE_SHOT_REPLAY_AUTHORIZED=NO`
+
+`GLOBAL_POSITIONAL_ASSIGNMENT_AUTHORIZED=NO`
+
+`C4_RECONCILIATION_EXECUTION_AUTHORIZED=NO`
+
+`C4_ZERO_UNRESOLVED_CLOSURE_ESTABLISHED=NO`
+
+`B2_READINESS_AUTHORIZED=NO`
+
+`ZE2_EXECUTION_AUTHORIZED=NO`
+
+`P8_MAPPING_AUTHORIZED=NO`
+
+`CURL_JSON_MATERIALIZATION_AUTHORIZED=NO`
+
+`REPOSITORY_MUTATION_AUTHORIZED=NO`
+
+`GIT_COMMIT_OR_PUSH_AUTHORIZED=NO`
+
+`REPAIR_IMPLEMENTATION_ALLOWED=NO`
+
+`CURRENT_STAGE=STAGE_A_VERIFICATION`
+
+`GOVERNANCE_DISPOSITION=MAINTAIN_HOLD`
+
+---
+
+## 15. Independent Scope V1 review request
+
+Please perform an independent **design-only review** of:
+
+`SVF-PRE-C4-AUTHORITY-GAP-SCOPE-V1`
+
+The parent design, `SVF-PRE-C4-AUTHORITY-GAP-V2`, has already received:
+
+`DESIGN_ACCEPTED_FOR_SEPARATE_AUTHORIZATION_CONSIDERATION`
+
+Do not reopen previously accepted V2 design criteria unless the new scope creates a concrete contradiction or regression.
+
+Please assess:
+
+1. Whether the 15-document whitelist is appropriately bounded, exact and source-identifiable.
+2. Whether all supplied SHA-256 bindings are explicitly provisional until independently checked.
+3. Whether the GAP-01 through GAP-06 source mappings are substantively appropriate for documentary authority discovery.
+4. Whether any mandatory governance authority source has been unjustifiably omitted from the proposed scope, considering the stated inspection purpose.
+5. Whether D0270 and D0278 namespace identities remain independently distinguishable.
+6. Whether the scope can produce defensible incomplete or negative bounded-discovery findings without inferring global rule nonexistence.
+7. Whether integrity, activation, publication and scientific validity remain distinct.
+8. Whether protected scientific artifacts, one-shot executions and Git mutation are excluded.
+9. Whether source failure, missing evidence and incomplete coverage cause a fail-closed hold.
+10. Whether scope design, independent review, freeze, effective inspection authorization and execution remain separate governance transactions.
+
+Return `PASS`, `FAIL` or `NOT_VERIFIED` for each criterion, citing exact design sections.
+
+Identify every mandatory correction explicitly.
+
+Provide exactly one final recommendation:
+
+- `DESIGN_ACCEPTED_FOR_SEPARATE_AUTHORIZATION_CONSIDERATION`
+- `REVISION_REQUIRED`
+- `INSUFFICIENT_GOVERNANCE_EVIDENCE`
+
+Do not inspect the repository, open protected evidence, execute commands, adjudicate candidates, freeze the scope, grant inspection authorization or modify any existing scientific artifact during this review.
+
+**Maintain `MAINTAIN_HOLD` until separately governed authorization and subsequent independently verified results establish otherwise.**
