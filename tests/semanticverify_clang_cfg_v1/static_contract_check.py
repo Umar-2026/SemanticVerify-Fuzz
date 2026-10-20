@@ -28,7 +28,7 @@ for hardcoded_return_constant in ["Z_OK", "Z_STREAM_END"]:
 
 # Required development fixtures are zlib-only and use the real header.
 fixtures = sorted(FIX.glob("*.c"))
-assert len(fixtures) == 22, len(fixtures)
+assert len(fixtures) == 26, len(fixtures)
 for p in fixtures:
     text = p.read_text(encoding="utf-8")
     assert '#include "zlib.h"' in text
@@ -51,7 +51,7 @@ for heldout in ["curl", "cJSON", "libtiff", "libvpx", "c-ares", "lcms"]:
 print("STATIC_SPEC_DRIVEN_EVENT_LOADING=PASS")
 print("STATIC_NO_REGEX_SOURCE_SCANNER=PASS")
 print("STATIC_NO_HARDCODED_ZLIB_API_IDENTITIES=PASS")
-print("STATIC_TWENTY_TWO_ZLIB_ONLY_FIXTURES=PASS")
+print("STATIC_TWENTY_SIX_ZLIB_ONLY_FIXTURES=PASS")
 print("STATIC_NO_HELDOUT_REFERENCES=PASS")
 
 
@@ -61,7 +61,7 @@ for rule in ["ZLIB-R01", "ZLIB-R02", "ZLIB-R03", "ZLIB-R04", "ZLIB-R07", "ZLIB-R
     assert rule in rule_ids, rule
 for rule in ["ZLIB-R05", "ZLIB-R06"]:
     assert rule in rule_ids, rule
-for rule in ["ZLIB-R10", "ZLIB-R11", "ZLIB-R12", "ZLIB-R14"]:
+for rule in ["ZLIB-R09", "ZLIB-R10", "ZLIB-R11", "ZLIB-R12", "ZLIB-R14"]:
     assert rule in rule_ids, rule
 
 # Verify event semantic roles can be derived from frozen transitions rather than API-name tables.
@@ -142,4 +142,5 @@ print("STATIC_MILESTONE2_R05_R06_RULES_PRESENT=PASS")
 print("STATIC_MILESTONE3_R10_R12_RULES_PRESENT=PASS")
 print("STATIC_MILESTONE4_R14_RULE_PRESENT=PASS")
 print("STATIC_MILESTONE5_R11_RULE_PRESENT=PASS")
+print("STATIC_MILESTONE6_R09_RULE_PRESENT=PASS")
 print("STATIC_EVENT_ROLES_DERIVED_FROM_FROZEN_TRANSITIONS=PASS")

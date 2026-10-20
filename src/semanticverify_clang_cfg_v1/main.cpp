@@ -139,6 +139,7 @@ struct RuleSpec {
   std::string precondition;
   std::string returnPredicate;
   std::string cleanupResponsibility;
+  std::vector<std::string> permittedTransitions;
 };
 
 enum class EventSemanticKind {
@@ -161,6 +162,7 @@ struct EventSpec {
   std::string successState;
   std::string failureState;
   std::string releaseState;
+  std::string prerequisiteResourceRole;
 };
 
 struct SpecModel {
@@ -254,6 +256,32 @@ struct SpecModel {
   }
 
 
+  std::string ruleForAcquisition(
+      const std::string &Category,
+      const std::string &Family,
+      const std::string &AcquisitionEvent,
+      bool FunctionExitOnly = false) const {
+    for (const auto &T : transitions) {
+      if (T.eventId != AcquisitionEvent ||
+          T.ownershipEffect != "ACQUIRE")
+        continue;
+      for (const auto &R : rules) {
+        if (R.defectCategory != Category) continue;
+        if (FunctionExitOnly &&
+            R.trigger.find("FUNCTION_EXIT") ==
+                std::string::npos)
+          continue;
+        if (std::find(
+                R.permittedTransitions.begin(),
+                R.permittedTransitions.end(),
+                T.id) !=
+            R.permittedTransitions.end())
+          return R.id;
+      }
+    }
+    return ruleFor(Category, Family, FunctionExitOnly);
+  }
+
   std::string conditionedCleanupRule() const {
     for (const auto &R : rules) {
       if (R.defectCategory == "D8") return R.id;
@@ -302,15 +330,37 @@ static std::string familyFromStates(const TransitionSpec &T) {
   return "";
 }
 
-static std::string parseSimpleReturnConstant(const std::string &Predicate,
-                                             const std::string &Operator) {
-  std::string Prefix = "return " + Operator + " ";
+static std::string parseSimpleReturnConstant(
+    const std::string &Predicate,
+    const std::string &Operator) {
+  std::string Needle = "return " + Operator + " ";
   std::string P = trimCopy(Predicate);
-  if (P.rfind(Prefix, 0) != 0) return "";
-  std::string Tail = trimCopy(P.substr(Prefix.size()));
-  size_t Space = Tail.find_first_of(" ;&|");
-  if (Space != std::string::npos) Tail = Tail.substr(0, Space);
-  return isIdentifier(Tail) ? Tail : "";
+  size_t Pos = P.find(Needle);
+  while (Pos != std::string::npos) {
+    bool AtPredicateStart = Pos == 0;
+    bool AfterConjunction =
+        Pos >= 5 && P.compare(Pos - 5, 5, " and ") == 0;
+    if (AtPredicateStart || AfterConjunction) {
+      std::string Tail =
+          trimCopy(P.substr(Pos + Needle.size()));
+      size_t Space = Tail.find_first_of(" ;&|");
+      if (Space != std::string::npos)
+        Tail = Tail.substr(0, Space);
+      if (isIdentifier(Tail)) return Tail;
+    }
+    Pos = P.find(Needle, Pos + 1);
+  }
+  return "";
+}
+
+static std::string parseValidResourcePrerequisite(
+    const std::string &Predicate) {
+  std::string P = trimCopy(Predicate);
+  const std::string Marker = " valid and return == ";
+  size_t Pos = P.find(Marker);
+  if (Pos == std::string::npos) return "";
+  std::string Role = trimCopy(P.substr(0, Pos));
+  return isIdentifier(Role) ? Role : "";
 }
 
 static std::vector<std::string> parseEventSymbols(const std::string &Condition) {
@@ -391,6 +441,8 @@ static SpecModel loadSpecAndContract(const std::string &SpecFile,
     R.precondition = requireString(*O, "required_pre_state_or_exit_condition");
     if (auto P = O->getString("return_predicate")) R.returnPredicate = P->str();
     R.cleanupResponsibility = requireString(*O, "cleanup_responsibility");
+    R.permittedTransitions =
+        stringArray(*O, "permitted_transitions");
     M.rules.push_back(std::move(R));
   }
 
@@ -419,6 +471,18 @@ static SpecModel loadSpecAndContract(const std::string &SpecFile,
       if (E.family.empty()) E.family = familyFromStates(T);
       std::string EqC = parseSimpleReturnConstant(T.returnPredicate, "==");
       std::string NeC = parseSimpleReturnConstant(T.returnPredicate, "!=");
+      std::string RequiredRole =
+          parseValidResourcePrerequisite(T.returnPredicate);
+      if (!RequiredRole.empty()) {
+        if (!E.prerequisiteResourceRole.empty() &&
+            E.prerequisiteResourceRole != RequiredRole) {
+          llvm::errs()
+              << "SPEC_ERROR: conflicting valid-resource "
+              << "prerequisites for " << E.id << "\n";
+          std::exit(35);
+        }
+        E.prerequisiteResourceRole = RequiredRole;
+      }
       if (!EqC.empty()) EqConstants.insert(EqC);
       if (!NeC.empty()) NeConstants.insert(NeC);
       if (T.ownershipEffect == "ACQUIRE") {
@@ -688,6 +752,10 @@ struct CallRecord {
   bool resultUsedDirectlyInCondition = false;
   std::string directConditionText;
   int cfgBlock = -1;
+  std::string prerequisiteResourceExpression;
+  std::string prerequisiteResourceId;
+  std::string prerequisiteResourceLimitationCode;
+  std::string prerequisiteResourceLimitationReason;
 };
 
 struct NonEventCall {
@@ -788,6 +856,48 @@ class CallCollector : public RecursiveASTVisitor<CallCollector> {
       R.resourceLimitationCode = "U05_MISSING_EVIDENCE";
       R.resourceLimitationReason =
           "unable to identify a unique z_stream resource parameter from the real API declaration";
+    }
+
+    if (!Event->prerequisiteResourceRole.empty()) {
+      std::string RequiredRole =
+          Event->prerequisiteResourceRole;
+      std::transform(
+          RequiredRole.begin(), RequiredRole.end(),
+          RequiredRole.begin(),
+          [](unsigned char C) { return std::tolower(C); });
+
+      std::optional<unsigned> PrerequisiteIndex;
+      for (unsigned I : ResourceIndexes) {
+        std::string ParameterName =
+            Callee->getParamDecl(I)->getNameAsString();
+        std::transform(
+            ParameterName.begin(), ParameterName.end(),
+            ParameterName.begin(),
+            [](unsigned char C) { return std::tolower(C); });
+        if (ParameterName == RequiredRole) {
+          PrerequisiteIndex = I;
+          break;
+        }
+      }
+
+      if (PrerequisiteIndex &&
+          *PrerequisiteIndex < CE->getNumArgs()) {
+        ResourceIdentity PI = normalizeResourceExpr(
+            CE->getArg(*PrerequisiteIndex), SM, LO);
+        R.prerequisiteResourceExpression = PI.expression;
+        R.prerequisiteResourceId = PI.id;
+        R.prerequisiteResourceLimitationCode =
+            PI.limitationCode;
+        R.prerequisiteResourceLimitationReason =
+            PI.limitationReason;
+      } else {
+        R.prerequisiteResourceLimitationCode =
+            "U05_MISSING_EVIDENCE";
+        R.prerequisiteResourceLimitationReason =
+            "unable to identify the specification-required "
+            "valid-resource parameter from the real API "
+            "declaration";
+      }
     }
 
     AssignmentBinding AB = findAssignmentAndCondition(CE, Ctx, SM, LO);
@@ -1293,6 +1403,61 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
               S.analysisUnknown = true; Next.push_back(std::move(S));
               continue;
             }
+            bool PrerequisiteDefinitelyInvalid = false;
+            if (!C->event->prerequisiteResourceRole.empty()) {
+              if (C->prerequisiteResourceId.empty()) {
+                Observation O;
+                O.status = "UNKNOWN";
+                O.reason =
+                    C->prerequisiteResourceLimitationReason.empty()
+                        ? "required valid-resource identity is unavailable"
+                        : C->prerequisiteResourceLimitationReason;
+                O.function = F.name;
+                O.resourceId = C->resourceId;
+                O.eventId = C->event->id;
+                O.location = C->location;
+                O.blockPath = S.blockPath;
+                O.witness = S.witness;
+                O.limitationCode =
+                    C->prerequisiteResourceLimitationCode.empty()
+                        ? "U05_MISSING_EVIDENCE"
+                        : C->prerequisiteResourceLimitationCode;
+                CallObs[std::to_string(C->location.offset)]
+                    [semanticKey(S)] = std::move(O);
+                S.analysisUnknown = true;
+                Next.push_back(std::move(S));
+                continue;
+              }
+
+              auto PI =
+                  S.resources.find(
+                      C->prerequisiteResourceId);
+              if (PI != S.resources.end() &&
+                  PI->second.unknown) {
+                Observation O;
+                O.status = "UNKNOWN";
+                O.reason =
+                    "required valid resource has an uncertain state";
+                O.function = F.name;
+                O.resourceId = C->resourceId;
+                O.eventId = C->event->id;
+                O.location = C->location;
+                O.blockPath = S.blockPath;
+                O.witness = S.witness;
+                O.limitationCode = "U01_UNSUPPORTED_SEMANTICS";
+                CallObs[std::to_string(C->location.offset)]
+                    [semanticKey(S)] = std::move(O);
+                S.analysisUnknown = true;
+                Next.push_back(std::move(S));
+                continue;
+              }
+
+              PrerequisiteDefinitelyInvalid =
+                  PI == S.resources.end() ||
+                  !isLiveAcquired(PI->second) ||
+                  PI->second.family != C->event->family;
+            }
+
             PathState Success = S, Failure = S;
             ResourceSnapshot RS = Current;
             RS.family = C->event->family;
@@ -1328,8 +1493,12 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
             Success.witness.push_back(WS);
             WS.stateAfter = RF.state; WS.note = "spec-derived failed acquisition branch";
             Failure.witness.push_back(WS);
-            Next.push_back(std::move(Success));
-            Next.push_back(std::move(Failure));
+            if (PrerequisiteDefinitelyInvalid) {
+              Next.push_back(std::move(Failure));
+            } else {
+              Next.push_back(std::move(Success));
+              Next.push_back(std::move(Failure));
+            }
             continue;
           }
 
@@ -1752,7 +1921,8 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
       Observation O;
       O.function = F.name; O.resourceId = Resource; O.eventId = "E11_FUNCTION_EXIT";
       O.location = R.acquisitionLocation; O.blockPath = S.blockPath; O.witness = S.witness;
-      O.ruleId = Spec.ruleFor("D5", R.family, true);
+      O.ruleId = Spec.ruleForAcquisition(
+          "D5", R.family, R.acquisitionEvent, true);
       O.defectCategory = "D5";
       if (R.unknown || S.analysisUnknown) {
         O.status = "UNKNOWN";

@@ -211,6 +211,39 @@ def main() -> int:
         resource_id="local:destination",
     )
 
+    # Successful copy acquires destination ownership.
+    assert_verdict(
+        cases["23_valid_inflate_copy_cleanup.c"],
+        "VALID",
+        rule_id="ZLIB-R09",
+        resource_id="local:destination",
+    )
+    assert_verdict(
+        cases["24_inflate_copy_missing_destination_cleanup.c"],
+        "VIOLATION-MUST",
+        rule_id="ZLIB-R09",
+        resource_id="local:destination",
+    )
+    assert_verdict(
+        cases["25_inflate_copy_then_use_destination.c"],
+        "VALID",
+        rule_id="ZLIB-R09",
+        resource_id="local:destination",
+    )
+
+    invalid_source_copy = (
+        cases["26_inflate_copy_uninitialized_source.c"]
+    )
+    assert any(
+        call["event_id"] == "E10_INFLATE_COPY"
+        for call in invalid_source_copy["calls"]
+    )
+    assert not judgments(
+        invalid_source_copy,
+        rule_id="ZLIB-R09",
+        resource_id="local:destination",
+    )
+
     # Dictionary ordering.
     assert_verdict(
         cases["20_valid_deflate_dictionary_ready.c"],
@@ -275,6 +308,7 @@ def main() -> int:
     print("TEST_WITNESS_SOURCE_LOCATIONS=PASS")
     print("TEST_PINNED_ZLIB_HEADER_IDENTITY=PASS")
     print("TEST_CLANG_RESOURCE_DIR=PASS")
+    print("TEST_R09_INFLATE_COPY_OWNERSHIP=PASS")
     return 0
 
 
