@@ -28,7 +28,7 @@ for hardcoded_return_constant in ["Z_OK", "Z_STREAM_END"]:
 
 # Required development fixtures are zlib-only and use the real header.
 fixtures = sorted(FIX.glob("*.c"))
-assert len(fixtures) == 26, len(fixtures)
+assert len(fixtures) == 27, len(fixtures)
 for p in fixtures:
     text = p.read_text(encoding="utf-8")
     assert '#include "zlib.h"' in text
@@ -51,7 +51,7 @@ for heldout in ["curl", "cJSON", "libtiff", "libvpx", "c-ares", "lcms"]:
 print("STATIC_SPEC_DRIVEN_EVENT_LOADING=PASS")
 print("STATIC_NO_REGEX_SOURCE_SCANNER=PASS")
 print("STATIC_NO_HARDCODED_ZLIB_API_IDENTITIES=PASS")
-print("STATIC_TWENTY_SIX_ZLIB_ONLY_FIXTURES=PASS")
+print("STATIC_TWENTY_SEVEN_ZLIB_ONLY_FIXTURES=PASS")
 print("STATIC_NO_HELDOUT_REFERENCES=PASS")
 
 
@@ -143,4 +143,12 @@ print("STATIC_MILESTONE3_R10_R12_RULES_PRESENT=PASS")
 print("STATIC_MILESTONE4_R14_RULE_PRESENT=PASS")
 print("STATIC_MILESTONE5_R11_RULE_PRESENT=PASS")
 print("STATIC_MILESTONE6_R09_RULE_PRESENT=PASS")
+for required_source_marker in [
+    "modeledReturnWriteCounts",
+    "hasOnlyModeledReturnWrites",
+    "returnFacts.erase",
+    "spec-derived failed state-transition return",
+]:
+    assert required_source_marker in source, required_source_marker
+print("STATIC_REUSED_RETURN_VARIABLE_REFINEMENT_PRESENT=PASS")
 print("STATIC_EVENT_ROLES_DERIVED_FROM_FROZEN_TRANSITIONS=PASS")

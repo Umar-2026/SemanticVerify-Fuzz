@@ -277,6 +277,57 @@ def main() -> int:
         for j in active_dictionary
     ), active_dictionary
 
+    # Reused return variable: each modeled API write must
+    # supersede the earlier reaching return fact.
+    reused_rc = cases[
+        "27_reused_return_variable_reset_ready.c"
+    ]
+    assert {
+        call["assigned_return_variable"]
+        for call in reused_rc["calls"]
+        if call["assigned_return_variable"]
+    } == {"rc"}
+
+    assert_verdict(
+        reused_rc,
+        "VALID",
+        rule_id="ZLIB-R12",
+        resource_id="local:stream",
+    )
+    assert_verdict(
+        reused_rc,
+        "VALID",
+        rule_id="ZLIB-R11",
+        resource_id="local:stream",
+    )
+
+    reused_r11 = judgments(
+        reused_rc,
+        event_id="E05_DEFLATE_SET_DICTIONARY",
+        rule_id="ZLIB-R11",
+        resource_id="local:stream",
+    )
+    assert any(
+        judgment["verdict"] == "VALID"
+        and any(
+            step["event_id"] == "E04_DEFLATE_RESET"
+            and step["state_after"] == "DEFLATE_READY"
+            for step in judgment["witness"]
+        )
+        for judgment in reused_r11
+    ), reused_r11
+
+    assert not any(
+        step.get("state_after") == "INIT_FAILED"
+        for judgment in reused_rc["judgments"]
+        if judgment["event_id"] in {
+            "E02_DEFLATE",
+            "E04_DEFLATE_RESET",
+            "E05_DEFLATE_SET_DICTIONARY",
+        }
+        for step in judgment["witness"]
+    ), reused_rc["judgments"]
+
     # Cleanup obligations and path quantification.
     assert_verdict(cases["05_missing_cleanup_one_exit.c"], "VIOLATION-MAY", rule_id="ZLIB-R07", resource_id="local:strm")
     assert_verdict(cases["06_cleanup_all_exits.c"], "VALID", rule_id="ZLIB-R07", resource_id="local:strm")
@@ -309,6 +360,7 @@ def main() -> int:
     print("TEST_PINNED_ZLIB_HEADER_IDENTITY=PASS")
     print("TEST_CLANG_RESOURCE_DIR=PASS")
     print("TEST_R09_INFLATE_COPY_OWNERSHIP=PASS")
+    print("TEST_REUSED_RETURN_VARIABLE_REFINEMENT=PASS")
     return 0
 
 

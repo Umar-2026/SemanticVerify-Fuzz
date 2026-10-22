@@ -512,9 +512,12 @@ static SpecModel loadSpecAndContract(const std::string &SpecFile,
              AllStatePreserving &&
              !M.ruleForEvent("D6", E).empty())
       E.semanticKind = EventSemanticKind::OrderedConfiguration;
-    else if (TransitionCount == 1)
+    else if (TransitionCount == 1) {
       E.semanticKind = EventSemanticKind::StateTransition;
-    else E.semanticKind = EventSemanticKind::Unsupported;
+      if (E.successConstant.empty() &&
+          EqConstants.size() == 1)
+        E.successConstant = *EqConstants.begin();
+    } else E.semanticKind = EventSemanticKind::Unsupported;
   }
 
   auto ContractBuf = llvm::MemoryBuffer::getFile(ContractFile);
@@ -969,8 +972,21 @@ struct FunctionModel {
   std::vector<NonEventCall> otherCalls;
   std::vector<Limitation> limitations;
   std::map<std::string, unsigned> variableWriteCounts;
+  std::map<std::string, unsigned> modeledReturnWriteCounts;
   bool containsZlibEvent = false;
 };
+
+static bool hasOnlyModeledReturnWrites(
+    const FunctionModel &F,
+    const std::string &Variable) {
+  if (Variable.empty()) return false;
+  auto All = F.variableWriteCounts.find(Variable);
+  auto Modeled = F.modeledReturnWriteCounts.find(Variable);
+  return All != F.variableWriteCounts.end() &&
+         Modeled != F.modeledReturnWriteCounts.end() &&
+         All->second > 0 &&
+         All->second == Modeled->second;
+}
 
 static void mapCallsToBlocks(FunctionModel &F) {
   std::map<const CallExpr *, int> Mapping;
@@ -1012,6 +1028,12 @@ static FunctionModel buildFunctionModel(FunctionDecl *FD, ASTContext &Ctx,
   F.containsZlibEvent = !F.calls.empty();
   VariableWriteCollector VW(F.variableWriteCounts);
   VW.TraverseStmt(FD->getBody());
+
+  for (const auto &C : F.calls) {
+    if (!C.assignedReturnVariable.empty())
+      ++F.modeledReturnWriteCounts[
+          C.assignedReturnVariable];
+  }
 
   for (const CFGBlock *B : *F.cfg) {
     if (!B) continue;
@@ -1288,6 +1310,12 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
       for (const CallRecord *C : CI->second) {
         std::vector<PathState> Next;
         for (PathState S : States) {
+          // A modeled call-result write supersedes the
+          // earlier reaching return fact for this variable.
+          if (!C->assignedReturnVariable.empty())
+            S.returnFacts.erase(
+                C->assignedReturnVariable);
+
           if (C->resourceId.empty()) {
             Observation O;
             O.status = "UNKNOWN";
@@ -1470,8 +1498,9 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
             RF.state = C->event->failureState;
             RF.acquired = false; RF.released = false; RF.unknown = false;
             Failure.resources[C->resourceId] = RF;
-            bool Stable = !C->assignedReturnVariable.empty() &&
-                F.variableWriteCounts[C->assignedReturnVariable] == 1;
+            bool Stable =
+                hasOnlyModeledReturnWrites(
+                    F, C->assignedReturnVariable);
             if (!C->assignedReturnVariable.empty()) {
               Success.returnFacts[C->assignedReturnVariable] =
                   {C->resourceId, C->event->id, C->event->successConstant,
@@ -1517,8 +1546,9 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
               O.ruleId = Spec.ruleFor("D1", C->event->family, false);
               O.defectCategory = "D1";
               O.reason = "stateful use is preceded by a spec-supported successful live state";
-              bool StableReturnFact = !C->assignedReturnVariable.empty() &&
-                  F.variableWriteCounts[C->assignedReturnVariable] == 1;
+              bool StableReturnFact =
+                  hasOnlyModeledReturnWrites(
+                      F, C->assignedReturnVariable);
               for (const TransitionSpec *T : TS) {
                 if (T->toStates.empty()) continue;
                 PathState N = S;
@@ -1763,11 +1793,47 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
                 O.limitationCode = "U05_MISSING_EVIDENCE";
                 Next.push_back(std::move(S));
               } else {
-                PathState N = S;
+                PathState Success = S;
+                PathState Failure = S;
                 ResourceSnapshot RN = Current;
                 RN.state = Selected->toStates.front();
                 RN.family = C->event->family;
-                N.resources[C->resourceId] = RN;
+                Success.resources[C->resourceId] = RN;
+
+                bool HasReturnSplit =
+                    !C->assignedReturnVariable.empty() &&
+                    !C->event->successConstant.empty();
+                bool StableReturnFact =
+                    HasReturnSplit &&
+                    hasOnlyModeledReturnWrites(
+                        F, C->assignedReturnVariable);
+
+                if (HasReturnSplit) {
+                  Success.returnFacts[
+                      C->assignedReturnVariable] =
+                      {C->resourceId, C->event->id,
+                       C->event->successConstant,
+                       ReturnOutcome::Success,
+                       StableReturnFact};
+                  Failure.returnFacts[
+                      C->assignedReturnVariable] =
+                      {C->resourceId, C->event->id,
+                       C->event->successConstant,
+                       ReturnOutcome::Failure,
+                       StableReturnFact};
+
+                  if (!StableReturnFact) {
+                    Limitation L{
+                        "U07_UNSUPPORTED_SIDE_EFFECT",
+                        "state-transition return variable "
+                        "has unmodeled writes; branch "
+                        "refinement disabled",
+                        F.name, C->location,
+                        C->event->id};
+                    A.limitations.push_back(
+                        std::move(L));
+                  }
+                }
 
                 WitnessStep WS;
                 WS.block = W.block;
@@ -1776,14 +1842,34 @@ static FunctionAnalysis analyzeFunction(FunctionModel &F, ASTContext &Ctx,
                 WS.resourceId = C->resourceId;
                 WS.stateBefore = Current.state;
                 WS.stateAfter = RN.state;
-                WS.note = "spec-derived ownership-preserving state transition";
-                N.witness.push_back(std::move(WS));
+                WS.note =
+                    "spec-derived successful "
+                    "ownership-preserving state transition";
+                Success.witness.push_back(WS);
 
                 O.status = "VALID";
                 O.ruleId = TransitionRule;
-                O.defectCategory = categoryForRule(Spec, O.ruleId);
-                O.reason = "state-transition event has a permitted frozen transition from a live state";
-                Next.push_back(std::move(N));
+                O.defectCategory =
+                    categoryForRule(Spec, O.ruleId);
+                O.reason =
+                    "state-transition event has a permitted "
+                    "frozen transition from a live state";
+
+                if (HasReturnSplit) {
+                  WitnessStep WF = WS;
+                  WF.stateAfter = Current.state;
+                  WF.note =
+                      "spec-derived failed state-transition return; "
+                      "prior resource state retained";
+                  Failure.witness.push_back(
+                      std::move(WF));
+                  Next.push_back(
+                      std::move(Failure));
+                }
+
+                // Keep success last so the call observation
+                // retains its successful transition witness.
+                Next.push_back(std::move(Success));
               }
             }
 
