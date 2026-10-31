@@ -1,0 +1,120 @@
+{
+  "artifact_id": "SVF-GATE3-CANDIDATE-FREEZE-CLOSEOUT-V1",
+  "candidate_freeze": {
+    "analyzer_configuration_frozen": true,
+    "analyzer_sha256": "ca46dfd3d61b525ace5ed39f7d7a0ba2c2223226ef16aaae96aca80054764325",
+    "driver_path_resolution_sha256": "d2d316b76d2b243e198fa99c9d3dc5cd4de25612c475b95875d709cc16d85d8a",
+    "final_human_gold_frozen": true,
+    "final_human_gold_sha256": "200bc55afc7267be4c166ae7b51d4c9fb6b9aafb733bd8f55b70aa4a1483e3a7",
+    "libpcap_specification_frozen": true,
+    "libpcap_specification_sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+    "protocol_contract_sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf",
+    "sample_draw_sha256": "1062d5cb06ef75a42ad299dbd1a92ca4aa3d753c7b6f315d1fc14e6f47951e2d",
+    "sample_freeze_sha256": "3308046193184f9da4df7d469523971517513d2b4e81f1b6a560fdbf84f0929a",
+    "selected_bundle_serialization_sha256": "1759d9d4d97cbca1ad1f9c7b7b87bf4c18ad9cea97d0ff1bff992488c3c2307c",
+    "validation_sample_frozen": true
+  },
+  "governance": {
+    "analyzer_executed_on_validation_sample": false,
+    "analyzer_tuning_after_freeze_authorized": false,
+    "candidate_freeze": "ESTABLISHED",
+    "gate3_complete": true,
+    "libpcap_validation_executed": false,
+    "paper_effectiveness_result_established": false,
+    "ready_for_gate4": true
+  },
+  "recorded_at_utc": "2026-10-31T08:33:53.094445+00:00",
+  "repository": {
+    "head": "81d25135b7eb7f424abcc1a16c47bc74684b915e",
+    "index_clean": true,
+    "origin_main": "81d25135b7eb7f424abcc1a16c47bc74684b915e",
+    "tracked_worktree_clean": true
+  },
+  "schema": "svf/gate3/candidate-freeze-closeout/v1",
+  "source_artifacts": {
+    "adjudicator_v2_submission_freeze": {
+      "path": "/openbayes/home/SVF_Gate3_Adjudicator_Submissions/Adjudicator-Freeze-v2/ADJUDICATOR_V2_SUBMISSION_FREEZE_MANIFEST.json",
+      "sha256": "92785be6a0adb6afabfd24ea6db0e62001c9b7daf834fc4b20d6d0ddfdd937f7",
+      "size_bytes": 2328
+    },
+    "analyzer_binary": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/build/semanticverify_clang_cfg_v1_r11/svf_clang_cfg_v1",
+      "sha256": "ca46dfd3d61b525ace5ed39f7d7a0ba2c2223226ef16aaae96aca80054764325",
+      "size_bytes": 1599296
+    },
+    "blind_packet_pre_release_freeze": {
+      "path": "/openbayes/home/svf_gate3_2s_pre_release_packet_freeze_v1/PRE_RELEASE_PACKET_FREEZE_MANIFEST.json",
+      "sha256": "133849c96318ff5834923699b80ffed332dbec73b35f971a65d39fd3dca6c00b",
+      "size_bytes": 2653
+    },
+    "deterministic_sample_draw": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/annotation_preparation/sampling_draw_v1/deterministic_gold_sample_draw.140.v1.json",
+      "sha256": "1062d5cb06ef75a42ad299dbd1a92ca4aa3d753c7b6f315d1fc14e6f47951e2d",
+      "size_bytes": 137763
+    },
+    "final_human_gold_freeze_manifest": {
+      "path": "/openbayes/home/svf_gate3_final_human_gold_v3/FINAL_HUMAN_GOLD_FREEZE_MANIFEST.json",
+      "sha256": "844d61deddcadf0d457cdb312f7f2d44c19483d8a908d6af7eeb2a3ecac0fcb0",
+      "size_bytes": 4383
+    },
+    "final_human_gold_records": {
+      "path": "/openbayes/home/svf_gate3_final_human_gold_v3/FINAL_HUMAN_GOLD_RECORDS.jsonl",
+      "sha256": "200bc55afc7267be4c166ae7b51d4c9fb6b9aafb733bd8f55b70aa4a1483e3a7",
+      "size_bytes": 565693
+    },
+    "final_human_gold_summary": {
+      "path": "/openbayes/home/svf_gate3_final_human_gold_v3/FINAL_HUMAN_GOLD_SUMMARY.json",
+      "sha256": "2562e698e4f03b588a1b6d47199de82b01cebcb6c81e430db25336ba7d8a205a",
+      "size_bytes": 848
+    },
+    "inter_rater_agreement_summary": {
+      "path": "/openbayes/home/svf_gate3_inter_rater_agreement_v1/INTER_RATER_AGREEMENT_SUMMARY.json",
+      "sha256": "9354b32d34e1fc3d2d0d75d0e7c56cf81be93174c324e4c2bc0b89eaa7e37622",
+      "size_bytes": 3948
+    },
+    "libpcap_driver_path_resolution": {
+      "path": "/openbayes/home/svf_gate3_libpcap_driver_path_resolution_v1/libpcap_driver_path_resolution.json",
+      "sha256": "d2d316b76d2b243e198fa99c9d3dc5cd4de25612c475b95875d709cc16d85d8a",
+      "size_bytes": 14397
+    },
+    "libpcap_protocol_specification": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/config/protocol_specifications/libpcap.json",
+      "sha256": "b2877713a3d8c38ecf135544f4cab7a2230e39b4ed73e18a7965497b3901ef73",
+      "size_bytes": 47285
+    },
+    "protocol_obligation_contract": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/config/protocol_obligation_contract.json",
+      "sha256": "d376667acc8c6f11e3fc66370c48796de3afce1ab23687620b82c32424935acf",
+      "size_bytes": 8880
+    },
+    "sampling_freeze_manifest": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/annotation_preparation/sampling_draw_v1/freeze_manifest.v1.json",
+      "sha256": "3308046193184f9da4df7d469523971517513d2b4e81f1b6a560fdbf84f0929a",
+      "size_bytes": 1861
+    },
+    "selected_bundle_serialization": {
+      "path": "/openbayes/home/svf_gate3_selected_bundle_serialization_v1/selected_bundle_serialization.json",
+      "sha256": "1759d9d4d97cbca1ad1f9c7b7b87bf4c18ad9cea97d0ff1bff992488c3c2307c",
+      "size_bytes": 1155
+    }
+  },
+  "validation_population": {
+    "adjudicated_record_count": 28,
+    "agreement_record_count": 392,
+    "anonymized_driver_count": 21,
+    "canonical_rule_count": 20,
+    "discovery_counts": {
+      "ABSENT": 152,
+      "PRESENT": 268
+    },
+    "eligibility_counts": {
+      "IN_SCOPE": 268,
+      "OUT_OF_SCOPE": 152
+    },
+    "gold_record_count": 420,
+    "verdict_counts": {
+      "VALID": 268,
+      "null": 152
+    }
+  }
+}

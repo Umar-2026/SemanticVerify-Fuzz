@@ -1,0 +1,29 @@
+{
+  "adjudicated_record_count": 28,
+  "adjudication_case_evidence_sha256": "68e82a7578cddfe9f2021b4a5e5a008a7cbeb13fad8afc5c26b54fde4c92626e",
+  "analyzer_executed": false,
+  "annotator_agreement_record_count": 392,
+  "artifact_id": "SVF-GATE3-FINAL-HUMAN-GOLD-SUMMARY-V3",
+  "discovery_counts": {
+    "ABSENT": 152,
+    "PRESENT": 268
+  },
+  "driver_count": 21,
+  "eligibility_counts": {
+    "IN_SCOPE": 268,
+    "OUT_OF_SCOPE": 152
+  },
+  "inter_rater_agreement_evidence_sha256": "9354b32d34e1fc3d2d0d75d0e7c56cf81be93174c324e4c2bc0b89eaa7e37622",
+  "negative_and_unknown_results_preserved": true,
+  "record_count": 420,
+  "resolution_counts": {
+    "ADJUDICATOR_C": 28,
+    "ANNOTATOR_A_B_AGREEMENT": 392
+  },
+  "rule_count": 20,
+  "schema": "svf/gate3/final-human-gold-summary/v1",
+  "verdict_counts": {
+    "VALID": 268,
+    "null": 152
+  }
+}

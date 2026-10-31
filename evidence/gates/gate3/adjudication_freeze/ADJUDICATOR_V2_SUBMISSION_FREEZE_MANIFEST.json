@@ -1,0 +1,71 @@
+{
+  "analyzer_sha256": "ca46dfd3d61b525ace5ed39f7d7a0ba2c2223226ef16aaae96aca80054764325",
+  "archive_validation": {
+    "completed_form_count": 28,
+    "discovery_counts": {
+      "ABSENT": 28
+    },
+    "duplicate_case_ids": [],
+    "eligibility_counts": {
+      "OUT_OF_SCOPE": 28
+    },
+    "file_count": 187,
+    "form_errors": [],
+    "json_file_count": 166,
+    "json_parse_count": 166,
+    "prohibited_hits": {},
+    "rule_counts": {
+      "LIBPCAP-R12": 18,
+      "LIBPCAP-R13": 2,
+      "LIBPCAP-R19": 8
+    },
+    "structural_errors": [],
+    "unique_case_id_count": 28,
+    "unsafe_paths": [],
+    "verdict_null_count": 28
+  },
+  "artifact_id": "SVF-GATE3-ADJUDICATOR-V2-SUBMISSION-FREEZE",
+  "checks": {
+    "aggregate_matches_forms": true,
+    "all_json_files_valid": true,
+    "archive_path_safety": true,
+    "completed_form_count_28": true,
+    "confirmed_case_set_matches": true,
+    "form_semantics_consistent": true,
+    "human_review_completed": true,
+    "human_review_signed_off": true,
+    "no_duplicate_case_ids": true,
+    "prohibited_identity_or_model_literals_absent": true,
+    "receipt_checks_pass": true,
+    "revision_note_valid": true,
+    "structural_errors_absent": true,
+    "unique_case_ids_28": true,
+    "validation_report_pass": true
+  },
+  "disposition": "PASS",
+  "receipt_validation": {
+    "adjudicator_name_present": true,
+    "original_package_sha_present": true,
+    "receipt_date_present": true,
+    "typed_signature_present": true
+  },
+  "received_files": {
+    "completed_archive": {
+      "path": "/openbayes/home/SVF_Gate3_Adjudicator_Submissions/Received-v2/SVF_LIBPCAP_ADJUDICATION_C_COMPLETED_V2.zip",
+      "sha256": "f683b90f37428b144400f431a8d0fda15a37a140fb6179f26a47b7c60c20a23d",
+      "size_bytes": 371903
+    },
+    "receipt_confirmation": {
+      "path": "/openbayes/home/SVF_Gate3_Adjudicator_Submissions/Received-v2/Adjudicator-C_Abdul_Raheem_Shazad_Receipt_and_Independence_Confirmation.md",
+      "sha256": "11d147f19d08fb5fb4066f8e7ec6b71faa3d77327be49af54ff17d1119326fe2",
+      "size_bytes": 1977
+    }
+  },
+  "repository_head": "81d25135b7eb7f424abcc1a16c47bc74684b915e",
+  "workflow_state": {
+    "adjudicator_v2_submission_frozen": true,
+    "analyzer_executed": false,
+    "final_human_gold_freeze": "NOT_ESTABLISHED",
+    "gate3_complete": false
+  }
+}

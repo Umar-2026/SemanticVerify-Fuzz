@@ -1,0 +1,98 @@
+{
+  "analyzer_sha256": "ca46dfd3d61b525ace5ed39f7d7a0ba2c2223226ef16aaae96aca80054764325",
+  "artifact_id": "SVF-GATE3-FINAL-HUMAN-GOLD-FREEZE-V3",
+  "freeze_recorded_at_utc": "2026-10-31T08:17:44.095552+00:00",
+  "frozen_outputs": {
+    "records": {
+      "path": "/openbayes/home/svf_gate3_final_human_gold_v3/FINAL_HUMAN_GOLD_RECORDS.jsonl",
+      "record_count": 420,
+      "sha256": "200bc55afc7267be4c166ae7b51d4c9fb6b9aafb733bd8f55b70aa4a1483e3a7"
+    },
+    "summary": {
+      "path": "/openbayes/home/svf_gate3_final_human_gold_v3/FINAL_HUMAN_GOLD_SUMMARY.json",
+      "sha256": "2562e698e4f03b588a1b6d47199de82b01cebcb6c81e430db25336ba7d8a205a"
+    }
+  },
+  "merge_validation": {
+    "adjudicator_c_record_count": 28,
+    "adjudicator_case_bindings_verified": true,
+    "agreed_present_verdicts_verified": true,
+    "agreement_record_count": 392,
+    "annotator_a_duplicate_copy_count": 420,
+    "annotator_a_raw_record_count": 840,
+    "annotator_a_unique_record_count": 420,
+    "annotator_b_discovery_record_count": 420,
+    "annotator_b_verdict_record_count": 296,
+    "blind_normalization_fields": [
+      "annotator_role",
+      "machine_output_exposure",
+      "phase",
+      "record_id",
+      "submitted_at_utc"
+    ],
+    "blind_normalization_scientific_content_unchanged": true,
+    "disagreement_record_count": 28,
+    "driver_count": 21,
+    "private_disagreement_bindings_verified": true,
+    "record_count": 420,
+    "rule_count": 20
+  },
+  "repository_head": "81d25135b7eb7f424abcc1a16c47bc74684b915e",
+  "schema": "svf/gate3/final-human-gold-freeze/v1",
+  "source_artifacts": {
+    "adjudicator_c_receipt": {
+      "path": "/openbayes/home/SVF_Gate3_Adjudicator_Submissions/Received-v2/Adjudicator-C_Abdul_Raheem_Shazad_Receipt_and_Independence_Confirmation.md",
+      "sha256": "11d147f19d08fb5fb4066f8e7ec6b71faa3d77327be49af54ff17d1119326fe2",
+      "size_bytes": 1977
+    },
+    "adjudicator_c_submission_freeze": {
+      "path": "/openbayes/home/SVF_Gate3_Adjudicator_Submissions/Adjudicator-Freeze-v2/ADJUDICATOR_V2_SUBMISSION_FREEZE_MANIFEST.json",
+      "sha256": "92785be6a0adb6afabfd24ea6db0e62001c9b7daf834fc4b20d6d0ddfdd937f7",
+      "size_bytes": 2328
+    },
+    "adjudicator_c_submission_v2": {
+      "path": "/openbayes/home/SVF_Gate3_Adjudicator_Submissions/Received-v2/SVF_LIBPCAP_ADJUDICATION_C_COMPLETED_V2.zip",
+      "sha256": "f683b90f37428b144400f431a8d0fda15a37a140fb6179f26a47b7c60c20a23d",
+      "size_bytes": 371903
+    },
+    "annotator_a_submission": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Annotator-A/Annotator-A-Asad-annotations.tar.gz",
+      "sha256": "75bbba097c3d75ad99d82d4aa70c3dcc3f8d3895d94335308dbb272c8cd5c936",
+      "size_bytes": 44846
+    },
+    "annotator_b_submission": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Annotator-B/Annotator_B_Nadeem_Annotation.zip",
+      "sha256": "f81c7748dc97b39e72d7ec67e359670a130f4bd6cec43f9af7c493d953579749",
+      "size_bytes": 527437
+    },
+    "annotator_confirmation_freeze": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Confirmation-Freeze-v1/ANNOTATOR_CONFIRMATION_FREEZE_MANIFEST.json",
+      "sha256": "b3e90ee448fd2b99063d0274ac0216a0d44b29f8707b74c682a0e10f8e7991b1",
+      "size_bytes": 2107
+    },
+    "annotator_submission_freeze": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Submission-Freeze-v1/ANNOTATION_SUBMISSION_FREEZE_MANIFEST.json",
+      "sha256": "cafe6cd1b7419460b2ec7bd0a38a2c91c4d20f4bca37006c67ab942411304c38",
+      "size_bytes": 2417
+    },
+    "inter_rater_agreement_summary": {
+      "path": "/openbayes/home/svf_gate3_inter_rater_agreement_v1/INTER_RATER_AGREEMENT_SUMMARY.json",
+      "sha256": "9354b32d34e1fc3d2d0d75d0e7c56cf81be93174c324e4c2bc0b89eaa7e37622",
+      "size_bytes": 3948
+    },
+    "private_disagreement_cases": {
+      "path": "/openbayes/home/svf_gate3_inter_rater_agreement_v1/PRIVATE_DISAGREEMENT_CASES.json",
+      "sha256": "68e82a7578cddfe9f2021b4a5e5a008a7cbeb13fad8afc5c26b54fde4c92626e",
+      "size_bytes": 72226
+    }
+  },
+  "workflow_state": {
+    "analyzer_executed": false,
+    "failed_v1_preserved": true,
+    "failed_v2_preserved": true,
+    "final_human_gold_freeze": "ESTABLISHED",
+    "gate3_complete": false,
+    "libpcap_validation_executed": false,
+    "paper_effectiveness_result_established": false
+  }
+}

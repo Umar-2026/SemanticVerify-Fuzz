@@ -1,0 +1,61 @@
+{
+  "artifact_id": "SVF-GATE3-2S-PRE-RELEASE-PACKET-FREEZE-V1",
+  "authorities": {
+    "packet_construction_manifest": {
+      "path": "/openbayes/home/svf_gate3_libpcap_packet_construction_v1/packet_construction_manifest.json",
+      "sha256": "b06cc5177613e9e7dae71acf979af8a65b03f14de50aaf8d3ef7fb97ba5b7fdb"
+    },
+    "packet_set_checksums": {
+      "path": "/openbayes/home/svf_gate3_libpcap_blind_packets_v1/SHA256SUMS",
+      "sha256": "1d96d3f3330f45fc8054daa3ae58b427317a9f1f1a44920b6656d5dee54a9045"
+    },
+    "packet_set_manifest": {
+      "path": "/openbayes/home/svf_gate3_libpcap_blind_packets_v1/PACKET_SET_MANIFEST.json",
+      "sha256": "f24b70eabc04892ca3d1d6aa421bb6e45c57c4e0e3b5a27d6bffb55d57e3360e"
+    },
+    "post_construction_integrity_v2": {
+      "path": "/openbayes/home/svf_gate3_2r2_post_construction_integrity_v2/post_construction_integrity.v2.json",
+      "sha256": "91474e5a13c4c9939acf270fb9171a0ef0fb8d037dfc8f8a9dc917fb34cdead5",
+      "status": "ESTABLISHED"
+    }
+  },
+  "next_boundary": "VERIFY_EXPOSURE_REGISTRY_AND_SEPARATE_PACKET_RELEASE_GATE",
+  "packet_tree": {
+    "file_count": 107,
+    "sha256sums_path": "/openbayes/home/svf_gate3_2s_pre_release_packet_freeze_v1/PACKET_TREE_SHA256SUMS",
+    "sha256sums_sha256": "da932a7d9b889ee9ed495666762ee1aa9812caf27154b1f8e47d5ea9543f2ab4",
+    "top_level_packet_directory_count": 21
+  },
+  "private_mapping": {
+    "included_in_annotator_packet_set": false,
+    "path": "/openbayes/home/svf_gate3_libpcap_private_mapping_v1/private_anonymization_mapping.json",
+    "physically_separate_from_release_package": true,
+    "sha256": "7f04f8652df1978101fb2743d7af1fddfc155bbb9aa696add4339f8aa501558d"
+  },
+  "prohibitions_until_separate_release_gate": [
+    "DO_NOT_DISTRIBUTE_BLIND_PACKETS_TO_ANNOTATORS",
+    "DO_NOT_OPEN_SELECTED_DRIVER_SOURCE_FOR_HUMAN_ANNOTATION",
+    "DO_NOT_START_GOLD_ANNOTATION",
+    "DO_NOT_EXPOSE_ANALYZER_OUTPUT",
+    "DO_NOT_RUN_ANALYZER_VS_GOLD_COMPARISON"
+  ],
+  "release_boundary": {
+    "analyzer_validation_executed": false,
+    "annotation_started": false,
+    "human_driver_source_inspection_started": false,
+    "independent_annotation_completed": false,
+    "packet_construction_established": true,
+    "packet_release_authorized": false,
+    "packet_released": false,
+    "post_construction_integrity_established": true,
+    "pre_release_package_frozen": true,
+    "source_cryptographic_binding_established": true
+  },
+  "scope": {
+    "blind_packet_count": 21,
+    "library": "libpcap",
+    "private_mapping_entry_count": 21,
+    "selected_driver_count": 21
+  },
+  "status": "FROZEN_PRE_RELEASE_PACKET_PACKAGE_NOT_RELEASED"
+}

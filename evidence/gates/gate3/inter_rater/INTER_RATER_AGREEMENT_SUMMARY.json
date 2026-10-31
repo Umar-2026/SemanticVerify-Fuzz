@@ -1,0 +1,121 @@
+{
+  "adjudication": {
+    "disagreement_case_count": 28,
+    "driver_count_requiring_adjudication": 18,
+    "drivers_requiring_adjudication": [
+      "SVF-GOLD-0022",
+      "SVF-GOLD-0023",
+      "SVF-GOLD-0024",
+      "SVF-GOLD-0026",
+      "SVF-GOLD-0027",
+      "SVF-GOLD-0028",
+      "SVF-GOLD-0029",
+      "SVF-GOLD-0030",
+      "SVF-GOLD-0031",
+      "SVF-GOLD-0032",
+      "SVF-GOLD-0033",
+      "SVF-GOLD-0034",
+      "SVF-GOLD-0036",
+      "SVF-GOLD-0037",
+      "SVF-GOLD-0038",
+      "SVF-GOLD-0039",
+      "SVF-GOLD-0040",
+      "SVF-GOLD-0041"
+    ],
+    "required": true,
+    "status": "NOT_STARTED"
+  },
+  "agreement": {
+    "discovery": {
+      "agreement_count": 392,
+      "annotator_a_distribution": {
+        "ABSENT": 152,
+        "PRESENT": 268
+      },
+      "annotator_b_distribution": {
+        "ABSENT": 124,
+        "PRESENT": 296
+      },
+      "cohen_kappa": 0.8496625076702803,
+      "disagreement_count": 28,
+      "kappa_unavailable_reason": null,
+      "percent_agreement": 93.33333333333333,
+      "total": 420
+    },
+    "eligibility_on_common_present": {
+      "agreement_count": 268,
+      "annotator_a_distribution": {
+        "IN_SCOPE": 268
+      },
+      "annotator_b_distribution": {
+        "IN_SCOPE": 268
+      },
+      "cohen_kappa": null,
+      "disagreement_count": 0,
+      "kappa_unavailable_reason": "SINGLE_CATEGORY_OR_NO_VARIANCE",
+      "percent_agreement": 100.0,
+      "total": 268
+    },
+    "verdict_on_common_in_scope": {
+      "agreement_count": 268,
+      "annotator_a_distribution": {
+        "VALID": 268
+      },
+      "annotator_b_distribution": {
+        "VALID": 268
+      },
+      "cohen_kappa": null,
+      "disagreement_count": 0,
+      "kappa_unavailable_reason": "SINGLE_CATEGORY_OR_NO_VARIANCE",
+      "percent_agreement": 100.0,
+      "total": 268
+    }
+  },
+  "artifact_id": "SVF-GATE3-LIBPCAP-INTER-RATER-AGREEMENT-V1",
+  "authority_bindings": {
+    "annotator_a_archive": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Annotator-A/Annotator-A-Asad-annotations.tar.gz",
+      "sha256": "75bbba097c3d75ad99d82d4aa70c3dcc3f8d3895d94335308dbb272c8cd5c936"
+    },
+    "annotator_b_archive": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Annotator-B/Annotator_B_Nadeem_Annotation.zip",
+      "sha256": "f81c7748dc97b39e72d7ec67e359670a130f4bd6cec43f9af7c493d953579749"
+    },
+    "confirmation_freeze": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Confirmation-Freeze-v1/ANNOTATOR_CONFIRMATION_FREEZE_MANIFEST.json",
+      "sha256": "b3e90ee448fd2b99063d0274ac0216a0d44b29f8707b74c682a0e10f8e7991b1"
+    },
+    "submission_freeze": {
+      "path": "/openbayes/home/SVF_Gate3_Annotation_Submissions/Submission-Freeze-v1/ANNOTATION_SUBMISSION_FREEZE_MANIFEST.json",
+      "sha256": "cafe6cd1b7419460b2ec7bd0a38a2c91c4d20f4bca37006c67ab942411304c38"
+    }
+  },
+  "boundaries": {
+    "analyzer_executed": false,
+    "analyzer_results_accessed": false,
+    "archives_extracted_to_filesystem": false,
+    "final_human_gold_freeze": "NOT_ESTABLISHED",
+    "gate3_complete": false,
+    "private_disagreement_file_release_authorized": false
+  },
+  "created_at_utc": "2026-10-30T11:26:30.523537+00:00",
+  "frozen_analyzer_sha256": "ca46dfd3d61b525ace5ed39f7d7a0ba2c2223226ef16aaae96aca80054764325",
+  "normalization": {
+    "annotator_a_format": "COMBINED_DISCOVERY_AND_VERDICT_RECORD",
+    "annotator_b_format": "SEPARATE_DISCOVERY_AND_VERDICT_RECORDS",
+    "comparison_key": [
+      "anonymized_driver_id",
+      "rule_or_candidate_id"
+    ],
+    "original_archives_modified": false
+  },
+  "record_counts": {
+    "annotator_a_combined_records": 420,
+    "annotator_b_discovery_records": 420,
+    "annotator_b_verdict_records": 296,
+    "common_in_scope_records": 268,
+    "common_present_records": 268
+  },
+  "repository_commit": "81d25135b7eb7f424abcc1a16c47bc74684b915e",
+  "schema": "svf/gate3/inter-rater-agreement/v1"
+}

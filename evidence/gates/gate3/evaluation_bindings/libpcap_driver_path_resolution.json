@@ -1,0 +1,299 @@
+{
+  "artifact_id": "SVF-GATE3-LIBPCAP-DRIVER-PATH-RESOLUTION-V1",
+  "bindings": [
+    {
+      "actual_driver_sha256": "740e0f4b920d62c5dd65209cab48668fa1fbf37e9401c9e70ee93771c550c13f",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0123/driver.c"
+      ],
+      "declared_driver_sha256": "740e0f4b920d62c5dd65209cab48668fa1fbf37e9401c9e70ee93771c550c13f",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0123",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0123/driver.c",
+      "sha256_match": true,
+      "slot_number": "0123",
+      "source_size_bytes": 1879
+    },
+    {
+      "actual_driver_sha256": "e4a64fce9fb124d5934360bb2d89c279d108a40b7f749336658af12796aec0b4",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0103/driver.c"
+      ],
+      "declared_driver_sha256": "e4a64fce9fb124d5934360bb2d89c279d108a40b7f749336658af12796aec0b4",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0103",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0103/driver.c",
+      "sha256_match": true,
+      "slot_number": "0103",
+      "source_size_bytes": 2812
+    },
+    {
+      "actual_driver_sha256": "636565529733a56e83b3791b957ce4aa9faa3ea13f87167dbb5e1376b8235c89",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0141/driver.c"
+      ],
+      "declared_driver_sha256": "636565529733a56e83b3791b957ce4aa9faa3ea13f87167dbb5e1376b8235c89",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0141",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0141/driver.c",
+      "sha256_match": true,
+      "slot_number": "0141",
+      "source_size_bytes": 1152
+    },
+    {
+      "actual_driver_sha256": "2171591291fee6d79f92f471b2e416ca5efd041ae2a012f4d77a3ff081dec94c",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0189/driver.c"
+      ],
+      "declared_driver_sha256": "2171591291fee6d79f92f471b2e416ca5efd041ae2a012f4d77a3ff081dec94c",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0189",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0189/driver.c",
+      "sha256_match": true,
+      "slot_number": "0189",
+      "source_size_bytes": 3563
+    },
+    {
+      "actual_driver_sha256": "388a33540f3178f654797b8ddf0e7239d0f0117dd16cb74665a10830aade918b",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0167/driver.c"
+      ],
+      "declared_driver_sha256": "388a33540f3178f654797b8ddf0e7239d0f0117dd16cb74665a10830aade918b",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0167",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0167/driver.c",
+      "sha256_match": true,
+      "slot_number": "0167",
+      "source_size_bytes": 1747
+    },
+    {
+      "actual_driver_sha256": "f012470c62e61c1122a7b35ee9d4543404ccdf82a18ddd093b2dbda0e8fef0cd",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0119/driver.c"
+      ],
+      "declared_driver_sha256": "f012470c62e61c1122a7b35ee9d4543404ccdf82a18ddd093b2dbda0e8fef0cd",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0119",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0119/driver.c",
+      "sha256_match": true,
+      "slot_number": "0119",
+      "source_size_bytes": 2372
+    },
+    {
+      "actual_driver_sha256": "9edda8840308bfc6d9c220fc2febd890c38c584fc824afa0807ddc8af4952b86",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0171/driver.c"
+      ],
+      "declared_driver_sha256": "9edda8840308bfc6d9c220fc2febd890c38c584fc824afa0807ddc8af4952b86",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0171",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0171/driver.c",
+      "sha256_match": true,
+      "slot_number": "0171",
+      "source_size_bytes": 1927
+    },
+    {
+      "actual_driver_sha256": "fdb1475c7914084598bf62d390f74023b46063677d77599f574c9e409aba1cbe",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0147/driver.c"
+      ],
+      "declared_driver_sha256": "fdb1475c7914084598bf62d390f74023b46063677d77599f574c9e409aba1cbe",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0147",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0147/driver.c",
+      "sha256_match": true,
+      "slot_number": "0147",
+      "source_size_bytes": 1178
+    },
+    {
+      "actual_driver_sha256": "e58a7e4f7358c733ce24ff490039544316e38c7215c207ed6d4300620a5048d8",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0181/driver.c"
+      ],
+      "declared_driver_sha256": "e58a7e4f7358c733ce24ff490039544316e38c7215c207ed6d4300620a5048d8",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0181",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0181/driver.c",
+      "sha256_match": true,
+      "slot_number": "0181",
+      "source_size_bytes": 2706
+    },
+    {
+      "actual_driver_sha256": "72ceba26b2b635b7e484b6be4d89cee2f2f674bab4bfb337adbe2a056591cb8f",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0191/driver.c"
+      ],
+      "declared_driver_sha256": "72ceba26b2b635b7e484b6be4d89cee2f2f674bab4bfb337adbe2a056591cb8f",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0191",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0191/driver.c",
+      "sha256_match": true,
+      "slot_number": "0191",
+      "source_size_bytes": 3740
+    },
+    {
+      "actual_driver_sha256": "d609c56c3907af77645bc84a4075c835e2e7f580339f9595a536539b7a179e73",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0155/driver.c"
+      ],
+      "declared_driver_sha256": "d609c56c3907af77645bc84a4075c835e2e7f580339f9595a536539b7a179e73",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0155",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0155/driver.c",
+      "sha256_match": true,
+      "slot_number": "0155",
+      "source_size_bytes": 2969
+    },
+    {
+      "actual_driver_sha256": "6c236d9179371e97917e029eb20381d1d8d3ecb4e7670d7cef8db6cca4ae8953",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0115/driver.c"
+      ],
+      "declared_driver_sha256": "6c236d9179371e97917e029eb20381d1d8d3ecb4e7670d7cef8db6cca4ae8953",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0115",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0115/driver.c",
+      "sha256_match": true,
+      "slot_number": "0115",
+      "source_size_bytes": 2146
+    },
+    {
+      "actual_driver_sha256": "bab015067e59e107ec2ec92740b38ce7e9af394104b500fa3a418f5196f902ef",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0157/driver.c"
+      ],
+      "declared_driver_sha256": "bab015067e59e107ec2ec92740b38ce7e9af394104b500fa3a418f5196f902ef",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0157",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0157/driver.c",
+      "sha256_match": true,
+      "slot_number": "0157",
+      "source_size_bytes": 2051
+    },
+    {
+      "actual_driver_sha256": "6547bb44f5041ac43a229540e4c38b6226672f93baa293177888e805abcbe26f",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0159/driver.c"
+      ],
+      "declared_driver_sha256": "6547bb44f5041ac43a229540e4c38b6226672f93baa293177888e805abcbe26f",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0159",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0159/driver.c",
+      "sha256_match": true,
+      "slot_number": "0159",
+      "source_size_bytes": 2486
+    },
+    {
+      "actual_driver_sha256": "ee4a8f831c366878674511e1ab62b792c7faacc98287c74dae62883a1049ce16",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0122/driver.c"
+      ],
+      "declared_driver_sha256": "ee4a8f831c366878674511e1ab62b792c7faacc98287c74dae62883a1049ce16",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0122",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0122/driver.c",
+      "sha256_match": true,
+      "slot_number": "0122",
+      "source_size_bytes": 827
+    },
+    {
+      "actual_driver_sha256": "d7de8f5e8aecfac53e29ee082152776f4caccb46108ea37cb78dea88069b8eff",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0158/driver.c"
+      ],
+      "declared_driver_sha256": "d7de8f5e8aecfac53e29ee082152776f4caccb46108ea37cb78dea88069b8eff",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0158",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0158/driver.c",
+      "sha256_match": true,
+      "slot_number": "0158",
+      "source_size_bytes": 1256
+    },
+    {
+      "actual_driver_sha256": "14a87728a0095329b9d4cbc5e09f7515aabc0e4c33be21b5c9e409ce127fa0cf",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0198/driver.c"
+      ],
+      "declared_driver_sha256": "14a87728a0095329b9d4cbc5e09f7515aabc0e4c33be21b5c9e409ce127fa0cf",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0198",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0198/driver.c",
+      "sha256_match": true,
+      "slot_number": "0198",
+      "source_size_bytes": 1550
+    },
+    {
+      "actual_driver_sha256": "158f036446aec11a281eef7a55175f70bbb151fae54a89c4d21ea7a7922518a9",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0144/driver.c"
+      ],
+      "declared_driver_sha256": "158f036446aec11a281eef7a55175f70bbb151fae54a89c4d21ea7a7922518a9",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0144",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0144/driver.c",
+      "sha256_match": true,
+      "slot_number": "0144",
+      "source_size_bytes": 783
+    },
+    {
+      "actual_driver_sha256": "623c624064a3d2e2ce42e0422e7d6a6327c13b18809adc28be35d5181b935546",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0188/driver.c"
+      ],
+      "declared_driver_sha256": "623c624064a3d2e2ce42e0422e7d6a6327c13b18809adc28be35d5181b935546",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0188",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0188/driver.c",
+      "sha256_match": true,
+      "slot_number": "0188",
+      "source_size_bytes": 946
+    },
+    {
+      "actual_driver_sha256": "4c3bf19b15c48f93265bf513ceabc5e3769fdd7d0e2aff831b2804cf0a71f332",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0120/driver.c"
+      ],
+      "declared_driver_sha256": "4c3bf19b15c48f93265bf513ceabc5e3769fdd7d0e2aff831b2804cf0a71f332",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0120",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0120/driver.c",
+      "sha256_match": true,
+      "slot_number": "0120",
+      "source_size_bytes": 950
+    },
+    {
+      "actual_driver_sha256": "f0edb0d2f573c294a0292a2dce25ecf656debb10682d10387dc2ee50f2b4c0f4",
+      "candidate_path_count": 1,
+      "candidate_paths": [
+        "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0134/driver.c"
+      ],
+      "declared_driver_sha256": "f0edb0d2f573c294a0292a2dce25ecf656debb10682d10387dc2ee50f2b4c0f4",
+      "driver_id": "SVF-PRIMARY-800-V1-SLOT-0134",
+      "resolved_relative_path": "evidence/primary_generation/SVF-PRIMARY-800-V1/slots/SVF-PRIMARY-800-V1-SLOT-0134/driver.c",
+      "sha256_match": true,
+      "slot_number": "0134",
+      "source_size_bytes": 1164
+    }
+  ],
+  "content_boundaries": {
+    "analyzer_executed": false,
+    "annotation_or_gold_label_read": false,
+    "heldout_driver_bytes_read": false,
+    "non_libpcap_driver_bytes_read": false,
+    "packet_created": false,
+    "selected_libpcap_driver_bytes_hashed": true,
+    "selected_libpcap_driver_content_displayed": false,
+    "selected_libpcap_driver_content_human_inspected": false
+  },
+  "disposition": {
+    "driver_path_resolution": "PASS",
+    "packet_build_readiness": "PASS",
+    "packet_construction": "AUTHORIZED",
+    "packet_release": "NOT_AUTHORIZED"
+  },
+  "errors": [],
+  "resolved_binding_count": 21,
+  "selected_libpcap_count": 21,
+  "tracked_primary_driver_path_count": 668,
+  "unique_resolved_path_count": 21
+}

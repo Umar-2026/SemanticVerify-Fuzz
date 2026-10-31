@@ -1,0 +1,33 @@
+{
+  "artifact_id": "SVF-GATE3-SELECTED-BUNDLE-SERIALIZATION-V1",
+  "candidate_serialization_count": 50,
+  "content_boundaries": {
+    "analyzer_executed": false,
+    "annotation_or_gold_label_read": false,
+    "driver_source_read": false,
+    "previous_analyzer_result_read": false,
+    "prompt_or_response_content_read": false,
+    "sample_redrawn": false
+  },
+  "declared_selected_driver_id_bundle_sha256": "32e32609340737a18d0357a0f3baa19f078a8664776439a5189ea88918d455c3",
+  "disposition": {
+    "authorized_libpcap_sample": "ESTABLISHED",
+    "independent_annotation_completed": false,
+    "independent_annotation_personnel": "ESTABLISHED"
+  },
+  "freeze": {
+    "draw_sha256": "1062d5cb06ef75a42ad299dbd1a92ca4aa3d753c7b6f315d1fc14e6f47951e2d",
+    "sample_frozen": true,
+    "selection_recomputation_pass": true
+  },
+  "matching_serializations": [
+    {
+      "serialization": "ordered_newline_final",
+      "sha256": "32e32609340737a18d0357a0f3baa19f078a8664776439a5189ea88918d455c3"
+    }
+  ],
+  "previous_identity_evidence_pass": true,
+  "selected_driver_id_unique_count": 140,
+  "selected_record_count": 140,
+  "serialization_resolved": true
+}
