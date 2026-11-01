@@ -1,0 +1,32 @@
+{
+  "closeout_version": "v1",
+  "comparison_freeze_manifest": {
+    "path": "/openbayes/home/svf_gate4_libpcap_gold_comparison_freeze_v1/GATE4_LIBPCAP_GOLD_COMPARISON_FREEZE_MANIFEST.json",
+    "sha256": "506a6b21057c271ca9f614d00dd67216378c1c4c1afe9e7adff2776a6f1f11e5"
+  },
+  "controls": {
+    "baseline_results_accessed": false,
+    "heldout_six_library_data_accessed": false,
+    "post_validation_tuning_permitted": false,
+    "validation_output_preserved": true
+  },
+  "gate": "GATE4",
+  "gate4_libpcap_closeout": "COMPLETE",
+  "interpretation": {
+    "all_eligible_obligations_unknown": true,
+    "primary_failure_mode": "ZERO_SCORABLE_DECISION_COVERAGE",
+    "result_must_not_be_interpreted_as_268_negative_misclassifications": true
+  },
+  "repository_head": "161d3b8dd1edd888ebfc1ea0aac93c2da4c163b4",
+  "validation_library": "libpcap",
+  "validation_result": {
+    "confirmatory_sensitivity_claim": "WITHHELD",
+    "decision_coverage": 0.0,
+    "gold_negative_count": 268,
+    "gold_positive_count": 0,
+    "sensitivity": "NOT_ESTIMABLE_ZERO_GOLD_POSITIVES",
+    "status": "NEGATIVE_LIBPCAP_VALIDATION_RESULT_ESTABLISHED",
+    "superiority_claim": "WITHHELD",
+    "unknown_rate": 1.0
+  }
+}

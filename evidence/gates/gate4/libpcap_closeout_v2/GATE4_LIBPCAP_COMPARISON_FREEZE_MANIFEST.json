@@ -1,0 +1,160 @@
+{
+  "additional_engine_tuning_authorized": false,
+  "analyzer_executed_by_freeze": false,
+  "artifact_id": "SVF-GATE4-LIBPCAP-COMPARISON-FREEZE-V1",
+  "authority_bindings": {
+    "corrected_analyzer": {
+      "mode": "0o755",
+      "path": "/openbayes/home/semanticverify-fuzz-research/build/semanticverify_clang_cfg_v1_gate4_aligned_v1/svf_clang_cfg_v1",
+      "sha256": "2233d7b8accbce80b96c177c7da68e0f9f1af7e81e45b0c068ea403e5d8dd102",
+      "size_bytes": 1599320
+    },
+    "corrected_candidate_freeze": {
+      "mode": "0o444",
+      "path": "/openbayes/home/svf_gate4_final_corrected_candidate_freeze_v2/GATE4_FINAL_CORRECTED_CANDIDATE_FREEZE_MANIFEST.v2.json",
+      "sha256": "828a67f948d535338f6cf95cd602e6f6566295ae6f78000f66f8a2e3ba5b7d33",
+      "size_bytes": 3250
+    },
+    "corrected_candidate_qualification": {
+      "mode": "0o444",
+      "path": "/openbayes/home/svf_gate4_aligned_candidate_qualification_v5/GATE4_ALIGNED_CANDIDATE_QUALIFICATION_MANIFEST.v5.json",
+      "sha256": "e06f11815955cda296f3770d1bc3a4a534052d063f9473471d7aa2127cfe4063",
+      "size_bytes": 3234
+    },
+    "corrected_raw_output_freeze": {
+      "mode": "0o444",
+      "path": "/openbayes/home/svf_gate4_corrected_raw_output_freeze_v1/GATE4_CORRECTED_RAW_OUTPUT_FREEZE_MANIFEST.json",
+      "sha256": "b1b1898e033a156ab5ecc42b27d4724725c92ad3d954cf9e8c97cba74be90e27",
+      "size_bytes": 1979
+    },
+    "corrected_source": {
+      "mode": "0o644",
+      "path": "/openbayes/home/semanticverify-fuzz-research/src/semanticverify_clang_cfg_v1/main.cpp",
+      "sha256": "9a27128410971fdbabb30219a4b9f0ad75d391d5aaff86eac0ee8cd297e5abf4",
+      "size_bytes": 90671
+    },
+    "final_human_gold_freeze": {
+      "mode": "0o444",
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/gates/gate3/final_human_gold/FINAL_HUMAN_GOLD_FREEZE_MANIFEST.json",
+      "sha256": "844d61deddcadf0d457cdb312f7f2d44c19483d8a908d6af7eeb2a3ecac0fcb0",
+      "size_bytes": 4383
+    },
+    "schema_policy_report": {
+      "mode": "0o400",
+      "path": "/openbayes/home/svf_gate4_gold_comparison_schema_policy_v1/GATE4_GOLD_COMPARISON_SCHEMA_POLICY_REPORT.json",
+      "sha256": "6f90221c634db193cede511d28ec9b6cb16337f739b7a90f6b6650cf67d1bd52",
+      "size_bytes": 23802
+    }
+  },
+  "baseline_results_accessed": false,
+  "comparison_artifacts": {
+    "comparison": {
+      "mode": "0o444",
+      "path": "/openbayes/home/svf_gate4_libpcap_gold_comparison_v1/GATE4_LIBPCAP_GOLD_COMPARISON.json",
+      "sha256": "e544800232047764627846003f4e17244a06aee077b35d35d4cc59cf457cf4e7",
+      "size_bytes": 12566
+    },
+    "comparison_checksums": {
+      "mode": "0o444",
+      "path": "/openbayes/home/svf_gate4_libpcap_gold_comparison_v1/SHA256SUMS",
+      "sha256": "73ddfff74acfcc66daef3c9f9f545341f08682c0fc51fb6e08abdcb0d1deddf1",
+      "size_bytes": 299
+    },
+    "obligation_projection": {
+      "mode": "0o400",
+      "path": "/openbayes/home/svf_gate4_libpcap_gold_comparison_v1/OBLIGATION_LEVEL_COMPARISON.jsonl",
+      "sha256": "bc0a62dfedf0bbaf22b4e19e29cdfc17137933373f687acac1395f7501de2323",
+      "size_bytes": 182448
+    },
+    "paper_summary": {
+      "mode": "0o444",
+      "path": "/openbayes/home/svf_gate4_libpcap_gold_comparison_v1/GATE4_LIBPCAP_RESULT_SUMMARY.md",
+      "sha256": "1f42a4d8e0f504478ecce491f393e210c621c9f21851c3ff7c1dc6b3beea148e",
+      "size_bytes": 1395
+    }
+  },
+  "comparison_result_modification_authorized": false,
+  "confirmatory_sensitivity_claim": "WITHHELD",
+  "freeze_status": "ESTABLISHED",
+  "frozen_claim_guards": {
+    "minimum_decision_coverage": {
+      "observed": 0.0,
+      "pass": false,
+      "threshold": 0.75
+    },
+    "minimum_positive_libraries": {
+      "observed": 0,
+      "pass": false,
+      "threshold": 5
+    },
+    "minimum_positive_obligations": {
+      "observed": 0,
+      "pass": false,
+      "threshold": 30
+    },
+    "minimum_precision": {
+      "observed": 0.0,
+      "pass": false,
+      "threshold": 0.8
+    }
+  },
+  "frozen_counts": {
+    "driver_count": 21,
+    "eligible_decided_count": 0,
+    "eligible_gold_count": 268,
+    "eligible_unknown_count": 268,
+    "gold_negative_count": 268,
+    "gold_positive_count": 0,
+    "gold_record_count": 420,
+    "out_of_scope_excluded_count": 152,
+    "raw_decided_judgment_count": 0,
+    "raw_rule_identifier_count": 0,
+    "raw_run1_judgment_count": 216,
+    "raw_unknown_judgment_count": 216
+  },
+  "frozen_metrics": {
+    "accuracy_under_registered_unknown_scoring": 0.0,
+    "bootstrap": {
+      "confidence_interval": "two-sided percentile 95%",
+      "intervals": {
+        "accuracy": {
+          "lower_2_5_percent": 0.0,
+          "upper_97_5_percent": 0.0
+        },
+        "decision_coverage": {
+          "lower_2_5_percent": 0.0,
+          "upper_97_5_percent": 0.0
+        },
+        "f1": {
+          "lower_2_5_percent": 0.0,
+          "upper_97_5_percent": 0.0
+        },
+        "precision": {
+          "lower_2_5_percent": 0.0,
+          "upper_97_5_percent": 0.0
+        }
+      },
+      "random_seed": 2026080601,
+      "replicates": 2000,
+      "resampling_unit": "driver"
+    },
+    "decided_case_accuracy": null,
+    "decided_case_accuracy_status": "NOT_ESTIMABLE_ZERO_DECIDED_CASES",
+    "decision_coverage": 0.0,
+    "library_f1": 0.0,
+    "library_f1_rule": "ZERO_POSITIVE_LIBRARY_F1_EQUALS_ZERO",
+    "pessimistic_sensitivity_bound": null,
+    "pessimistic_sensitivity_bound_status": "NOT_ESTIMABLE_ZERO_GOLD_POSITIVES",
+    "precision_under_registered_unknown_scoring": 0.0,
+    "sensitivity": null,
+    "sensitivity_status": "NOT_ESTIMABLE_ZERO_GOLD_POSITIVES",
+    "specificity_under_registered_unknown_scoring": 0.0,
+    "unknown_rate": 1.0
+  },
+  "frozen_result_disposition": "NEGATIVE_VALIDATION_RESULT_ALL_ELIGIBLE_INSTANCES_UNKNOWN",
+  "heldout_six_library_data_accessed": false,
+  "negative_and_unknown_results_preserved": true,
+  "paper_effectiveness_result": "NEGATIVE_LIBPCAP_VALIDATION_RESULT_ESTABLISHED",
+  "scope": "LIBPCAP_VALIDATION_LIBRARY_ONLY",
+  "superiority_claim": "WITHHELD"
+}

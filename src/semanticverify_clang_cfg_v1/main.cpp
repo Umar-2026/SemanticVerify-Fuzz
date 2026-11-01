@@ -593,19 +593,15 @@ static std::string immediateMacroName(const Expr *E, const SourceManager &SM,
   return Lexer::getImmediateMacroName(L, SM, LO).str();
 }
 
-static bool isZStreamRecord(QualType T) {
+static bool isCanonicalRecord(QualType T) {
   QualType C = T.getCanonicalType().getUnqualifiedType();
-  if (const auto *RT = C->getAs<RecordType>()) {
-    const RecordDecl *RD = RT->getDecl();
-    return RD && RD->getName() == "z_stream_s";
-  }
-  return false;
+  return C->getAs<RecordType>() != nullptr;
 }
 
-static bool isZStreamPointer(QualType T) {
+static bool isCanonicalRecordPointer(QualType T) {
   QualType C = T.getCanonicalType().getUnqualifiedType();
   if (const auto *PT = C->getAs<PointerType>())
-    return isZStreamRecord(PT->getPointeeType());
+    return isCanonicalRecord(PT->getPointeeType());
   return false;
 }
 
@@ -633,7 +629,8 @@ static ResourceIdentity normalizeResourceExpr(const Expr *Arg,
       const Expr *Sub = U->getSubExpr()->IgnoreParenImpCasts();
       if (const auto *D = dyn_cast<DeclRefExpr>(Sub)) {
         if (const auto *VD = dyn_cast<VarDecl>(D->getDecl())) {
-          if (!isa<ParmVarDecl>(VD) && VD->hasLocalStorage() && isZStreamRecord(VD->getType())) {
+          if (!isa<ParmVarDecl>(VD) && VD->hasLocalStorage() &&
+              isCanonicalRecord(VD->getType())) {
             R.supported = true;
             R.id = "local:" + VD->getNameAsString();
             return R;
@@ -644,15 +641,22 @@ static ResourceIdentity normalizeResourceExpr(const Expr *Arg,
   }
   if (const auto *D = dyn_cast<DeclRefExpr>(E)) {
     if (const auto *VD = dyn_cast<VarDecl>(D->getDecl())) {
-      if (isZStreamPointer(VD->getType())) {
+      if (isCanonicalRecordPointer(VD->getType())) {
+        if (!isa<ParmVarDecl>(VD) && VD->hasLocalStorage()) {
+          R.supported = true;
+          R.id = "local:" + VD->getNameAsString();
+          return R;
+        }
         R.limitationCode = "U02_UNRESOLVED_ALIAS";
-        R.limitationReason = "z_stream pointer/parameter alias is outside the initial direct-local identity slice";
+        R.limitationReason =
+            "record-pointer parameter alias is outside the direct-local identity slice";
         return R;
       }
     }
   }
   R.limitationCode = "U02_UNRESOLVED_ALIAS";
-  R.limitationReason = "resource expression is not a supported direct &local-z_stream identity";
+  R.limitationReason =
+      "resource expression is not a supported direct local record identity";
   return R;
 }
 
@@ -678,6 +682,7 @@ static bool stmtContainsCall(const Stmt *S, const CallExpr *CE) {
 
 struct AssignmentBinding {
   std::string variable;
+  bool variableIsDirectLocalRecordPointer = false;
   bool resultUsedDirectlyInCondition = false;
   std::string conditionText;
 };
@@ -693,15 +698,23 @@ static AssignmentBinding findAssignmentAndCondition(const CallExpr *CE,
     if (Parents.empty()) break;
     const DynTypedNode &P = Parents[0];
     if (const auto *VD = P.get<VarDecl>()) {
-      if (VD->hasInit() && stmtContainsCall(VD->getInit(), CE))
+      if (VD->hasInit() && stmtContainsCall(VD->getInit(), CE)) {
         B.variable = VD->getNameAsString();
+        B.variableIsDirectLocalRecordPointer =
+            !isa<ParmVarDecl>(VD) && VD->hasLocalStorage() &&
+            isCanonicalRecordPointer(VD->getType());
+      }
     }
     if (const auto *BO = P.get<BinaryOperator>()) {
       if (BO->isAssignmentOp() && stmtContainsCall(BO->getRHS(), CE)) {
         const Expr *L = BO->getLHS()->IgnoreParenImpCasts();
         if (const auto *D = dyn_cast<DeclRefExpr>(L)) {
-          if (const auto *VD = dyn_cast<VarDecl>(D->getDecl()))
+          if (const auto *VD = dyn_cast<VarDecl>(D->getDecl())) {
             B.variable = VD->getNameAsString();
+            B.variableIsDirectLocalRecordPointer =
+                !isa<ParmVarDecl>(VD) && VD->hasLocalStorage() &&
+                isCanonicalRecordPointer(VD->getType());
+          }
         }
       }
     }
@@ -827,11 +840,20 @@ class CallCollector : public RecursiveASTVisitor<CallCollector> {
     R.spelledCallee = Spelled;
     R.function = FD->getQualifiedNameAsString();
     R.location = sourcePoint(CE->getExprLoc(), SM);
-    for (const Expr *A : CE->arguments()) R.arguments.push_back(sourceText(A, SM, LO));
+    for (const Expr *A : CE->arguments())
+      R.arguments.push_back(sourceText(A, SM, LO));
+
+    AssignmentBinding AB = findAssignmentAndCondition(CE, Ctx, SM, LO);
+    R.assignedReturnVariable = AB.variable;
+    R.resultUsedDirectlyInCondition = AB.resultUsedDirectlyInCondition;
+    R.directConditionText = AB.conditionText;
 
     std::vector<unsigned> ResourceIndexes;
-    for (unsigned I = 0; I < Callee->getNumParams() && I < CE->getNumArgs(); ++I) {
-      if (isZStreamPointer(Callee->getParamDecl(I)->getType())) ResourceIndexes.push_back(I);
+    for (unsigned I = 0;
+         I < Callee->getNumParams() && I < CE->getNumArgs(); ++I) {
+      if (isCanonicalRecordPointer(
+              Callee->getParamDecl(I)->getType()))
+        ResourceIndexes.push_back(I);
     }
     std::optional<unsigned> ResourceIndex;
     if (ResourceIndexes.size() == 1) {
@@ -850,15 +872,22 @@ class CallCollector : public RecursiveASTVisitor<CallCollector> {
       }
     }
     if (ResourceIndex && *ResourceIndex < CE->getNumArgs()) {
-      ResourceIdentity RI = normalizeResourceExpr(CE->getArg(*ResourceIndex), SM, LO);
+      ResourceIdentity RI =
+          normalizeResourceExpr(CE->getArg(*ResourceIndex), SM, LO);
       R.resourceExpression = RI.expression;
       R.resourceId = RI.id;
       R.resourceLimitationCode = RI.limitationCode;
       R.resourceLimitationReason = RI.limitationReason;
+    } else if (ResourceIndexes.empty() &&
+               Event->semanticKind == EventSemanticKind::Init &&
+               isCanonicalRecordPointer(Callee->getReturnType()) &&
+               AB.variableIsDirectLocalRecordPointer && !AB.variable.empty()) {
+      R.resourceExpression = AB.variable;
+      R.resourceId = "local:" + AB.variable;
     } else {
       R.resourceLimitationCode = "U05_MISSING_EVIDENCE";
       R.resourceLimitationReason =
-          "unable to identify a unique z_stream resource parameter from the real API declaration";
+          "unable to identify a unique canonical record-pointer resource";
     }
 
     if (!Event->prerequisiteResourceRole.empty()) {
@@ -903,10 +932,6 @@ class CallCollector : public RecursiveASTVisitor<CallCollector> {
       }
     }
 
-    AssignmentBinding AB = findAssignmentAndCondition(CE, Ctx, SM, LO);
-    R.assignedReturnVariable = AB.variable;
-    R.resultUsedDirectlyInCondition = AB.resultUsedDirectlyInCondition;
-    R.directConditionText = AB.conditionText;
     Calls.push_back(std::move(R));
     return true;
   }

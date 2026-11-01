@@ -1,0 +1,59 @@
+{
+  "artifact_id": "SVF-GATE4-REPOSITORY-EVIDENCE-BINDING-V2",
+  "authoritative_v2_bindings": {
+    "comparison_freeze": {
+      "corrected_analyzer_sha256": "2233d7b8accbce80b96c177c7da68e0f9f1af7e81e45b0c068ea403e5d8dd102",
+      "gold_comparison_sha256": "e544800232047764627846003f4e17244a06aee077b35d35d4cc59cf457cf4e7",
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/gates/gate4/libpcap_closeout_v2/GATE4_LIBPCAP_COMPARISON_FREEZE_MANIFEST.json",
+      "sha256": "5ab2824916677118dcf2e717cfdd928511d76676de27116b07b0bb39f0b3c5d9"
+    },
+    "gate4_closeout": {
+      "corrected_analyzer_sha256": "2233d7b8accbce80b96c177c7da68e0f9f1af7e81e45b0c068ea403e5d8dd102",
+      "gold_comparison_sha256": "e544800232047764627846003f4e17244a06aee077b35d35d4cc59cf457cf4e7",
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/gates/gate4/libpcap_closeout_v2/GATE4_CLOSEOUT_RECORD.json",
+      "sha256": "23be7cfedd2a2c6cde21015ec2f053ee9c8da01efe8e9733f06b36520bf08756"
+    }
+  },
+  "controls": {
+    "additional_engine_tuning_performed": false,
+    "analyzer_executed": false,
+    "analyzer_modified": false,
+    "baseline_results_accessed": false,
+    "heldout_six_library_data_accessed": false,
+    "negative_and_unknown_results_preserved": true,
+    "scientific_result_modified": false,
+    "source_artifacts_copied_byte_for_byte": true
+  },
+  "correction_reason": "V1 closeout referenced its comparison freeze, but that freeze did not directly or transitively bind the frozen corrected analyzer SHA256. V2 copies the authoritative freeze and closeout that bind both the corrected analyzer and gold comparison.",
+  "gate4_complete": true,
+  "purpose": "Correct repository evidence binding while preserving V1.",
+  "repository_checkpoint_pending": true,
+  "scientific_result": {
+    "confirmatory_sensitivity_claim": "WITHHELD",
+    "decided_obligations": 0,
+    "decision_coverage": 0.0,
+    "effectiveness_result": "NEGATIVE_LIBPCAP_VALIDATION_RESULT_ESTABLISHED",
+    "eligible_obligations": 268,
+    "library": "libpcap",
+    "library_f1": 0.0,
+    "superiority_claim": "WITHHELD",
+    "unknown_obligations": 268,
+    "unknown_rate": 1.0
+  },
+  "v1_preservation": {
+    "preserved": true,
+    "v1_binding_disposition": "INSUFFICIENT_ANALYZER_BINDING_PRESERVED_FOR_AUDIT",
+    "v1_checksums": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/gates/gate4/libpcap_closeout_v1/SHA256SUMS",
+      "sha256": "8176bd71cebd2aa17bae139755d792b5018cf90b5be66c7728cdacc4041b1cb8"
+    },
+    "v1_closeout": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/gates/gate4/libpcap_closeout_v1/GATE4_LIBPCAP_CLOSEOUT.json",
+      "sha256": "29b12ef0d8b220efba0f9eb27918bfc8dd79f46b666c3edeaae616b7d438f4b1"
+    },
+    "v1_summary": {
+      "path": "/openbayes/home/semanticverify-fuzz-research/evidence/gates/gate4/libpcap_closeout_v1/GATE4_LIBPCAP_CLOSEOUT_SUMMARY.md",
+      "sha256": "7ddeb0cad91a4085c3d1afe86a1694d93ab715dbdf241513da44fd56fd09a960"
+    }
+  }
+}
