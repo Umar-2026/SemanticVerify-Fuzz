@@ -1,0 +1,1333 @@
+{
+  "author": "Umar",
+  "content_sha256": "d0bcf7d2683228842fe5f0d954e65b5e163e3f24b01344114d221136e3f6b98e",
+  "creation_date": "2026-11-09",
+  "events": [
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_INIT",
+      "event_kind": "API_CALL",
+      "return_classes": [
+        {
+          "operands": [],
+          "operator": "IS_NON_NULL",
+          "return_class_id": "INIT_NON_NULL"
+        },
+        {
+          "operands": [],
+          "operator": "IS_NULL",
+          "return_class_id": "INIT_NULL"
+        }
+      ],
+      "symbol_or_condition": "curl_easy_init"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_DUP",
+      "event_kind": "API_CALL",
+      "return_classes": [
+        {
+          "operands": [],
+          "operator": "IS_NON_NULL",
+          "return_class_id": "DUP_NON_NULL"
+        },
+        {
+          "operands": [],
+          "operator": "IS_NULL",
+          "return_class_id": "DUP_NULL"
+        }
+      ],
+      "symbol_or_condition": "curl_easy_duphandle"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_SETOPT",
+      "event_kind": "API_CALL",
+      "return_classes": [
+        {
+          "operands": [
+            "CURLE_OK"
+          ],
+          "operator": "EQ",
+          "return_class_id": "SETOPT_OK"
+        },
+        {
+          "operands": [
+            "CURLE_OK"
+          ],
+          "operator": "NE",
+          "return_class_id": "SETOPT_ERROR"
+        }
+      ],
+      "symbol_or_condition": "curl_easy_setopt"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_PERFORM",
+      "event_kind": "API_CALL",
+      "return_classes": [
+        {
+          "operands": [
+            "CURLE_OK"
+          ],
+          "operator": "EQ",
+          "return_class_id": "PERFORM_OK"
+        },
+        {
+          "operands": [
+            "CURLE_OK"
+          ],
+          "operator": "NE",
+          "return_class_id": "PERFORM_ERROR"
+        }
+      ],
+      "symbol_or_condition": "curl_easy_perform"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_RESET",
+      "event_kind": "API_CALL",
+      "return_classes": [],
+      "symbol_or_condition": "curl_easy_reset"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_CLEANUP",
+      "event_kind": "API_CALL",
+      "return_classes": [],
+      "symbol_or_condition": "curl_easy_cleanup"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "DRIVER_FUNCTION_EXIT",
+      "event_kind": "FUNCTION_EXIT",
+      "return_classes": [],
+      "symbol_or_condition": "driver_function_exit"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_CLEANUP_ARGUMENT_NULL",
+      "event_kind": "BRANCH",
+      "return_classes": [],
+      "symbol_or_condition": "curl_easy_cleanup argument == NULL"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_CLEANUP_ARGUMENT_LIVE",
+      "event_kind": "BRANCH",
+      "return_classes": [],
+      "symbol_or_condition": "curl_easy_cleanup argument is non-NULL and denotes a tracked LIVE easy handle"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_CLEANUP_ARGUMENT_RELEASED",
+      "event_kind": "BRANCH",
+      "return_classes": [],
+      "symbol_or_condition": "curl_easy_cleanup argument is non-NULL and denotes a tracked RELEASED easy handle"
+    },
+    {
+      "affected_relation_type_ids": [],
+      "affected_resource_type_ids": [
+        "CURL_EASY_HANDLE"
+      ],
+      "event_id": "CURL_E_CLEANUP_ARGUMENT_UNTRACKED_NON_NULL",
+      "event_kind": "BRANCH",
+      "return_classes": [],
+      "symbol_or_condition": "curl_easy_cleanup argument is non-NULL but is not a tracked valid easy handle"
+    }
+  ],
+  "exit_obligations": [
+    {
+      "exit_obligation_id": "CURL-EASY-X01",
+      "preconditions": {
+        "path_conditions": [
+          {
+            "condition_id": "DRIVER_EXIT_REACHED",
+            "condition_kind": "FUNCTION_EXIT_REACHED",
+            "polarity": true,
+            "referenced_event_id": "DRIVER_FUNCTION_EXIT"
+          }
+        ],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "required_relation_exit_states": [],
+      "required_resource_exit_states": [
+        {
+          "allowed_states": [
+            "RELEASED"
+          ],
+          "resource_binding_id": "handle"
+        }
+      ],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "semantic_container": "driver.function.exit",
+      "source_evidence": [
+        "E001",
+        "E002",
+        "E003"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    }
+  ],
+  "freeze_date": "2026-11-09",
+  "library": "curl",
+  "library_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+  "provenance": [
+    {
+      "content_sha256": "59b98da718399b47958e3e1d812accaa05b9a1016c62797bf490dd215e6b1927",
+      "evidence_id": "E001",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#docs/libcurl/curl_easy_init.md:L19-L36",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E001 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "OFFICIAL_API_DOCUMENTATION"
+    },
+    {
+      "content_sha256": "d39b972fe61d57d72ab60c310d8fe8ea06b253cb008bceee7535fbaed36851a7",
+      "evidence_id": "E002",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#docs/libcurl/curl_easy_cleanup.md:L19-L54",
+      "quoted_or_paraphrased_rationale": "The content SHA-256 binds the complete pinned file; the exact cited line span is separately bound in PROVENANCE_SPAN_LEDGER.json.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "OFFICIAL_API_DOCUMENTATION"
+    },
+    {
+      "content_sha256": "a8f3f0cfce53968557274d3d1031e05cb3a59df58bb63d3660681fe05b675e55",
+      "evidence_id": "E003",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#docs/libcurl/curl_easy_duphandle.md:L19-L77",
+      "quoted_or_paraphrased_rationale": "The content SHA-256 binds the complete pinned file; the exact cited line span is separately bound in PROVENANCE_SPAN_LEDGER.json.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "OFFICIAL_API_DOCUMENTATION"
+    },
+    {
+      "content_sha256": "8b6f4283da3eb20a16f320cd90baaa9d8276b585750a782916451422e87cc951",
+      "evidence_id": "E004",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#docs/libcurl/curl_easy_setopt.md:L23-L52",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E004 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "OFFICIAL_API_DOCUMENTATION"
+    },
+    {
+      "content_sha256": "6fe91c0b04879dcaac1036bc1307bb3fb85be6102d47d788af7f2c620ba098c7",
+      "evidence_id": "E005",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#docs/libcurl/curl_easy_perform.md:L20-L42",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E005 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "OFFICIAL_API_DOCUMENTATION"
+    },
+    {
+      "content_sha256": "d2b6932349acbdf4d3e230ecda20cf13edf66520e47b3d43bffa87b2948e7cc0",
+      "evidence_id": "E006",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#docs/libcurl/curl_easy_reset.md:L19-L34",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E006 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "OFFICIAL_API_DOCUMENTATION"
+    },
+    {
+      "content_sha256": "f101da02dd373151ea7b00082cb62c9d6e482361ab26b6d430ee96aab1b71565",
+      "evidence_id": "E007",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#include/curl/easy.h:L41-L44",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E007 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "PUBLIC_HEADER"
+    },
+    {
+      "content_sha256": "f101da02dd373151ea7b00082cb62c9d6e482361ab26b6d430ee96aab1b71565",
+      "evidence_id": "E008",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#include/curl/easy.h:L62-L86",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E008 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "PUBLIC_HEADER"
+    },
+    {
+      "content_sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483",
+      "evidence_id": "E009",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#lib/easy.c:L327-L331",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E009 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+    },
+    {
+      "content_sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483",
+      "evidence_id": "E010",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#lib/easy.c:L834-L847",
+      "quoted_or_paraphrased_rationale": "The content SHA-256 binds the complete pinned file; the exact cited cleanup implementation span is separately bound in PROVENANCE_SPAN_LEDGER.json.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+    },
+    {
+      "content_sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483",
+      "evidence_id": "E011",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#lib/easy.c:L949-L1082",
+      "quoted_or_paraphrased_rationale": "The content SHA-256 binds the complete pinned file; the exact cited duplication implementation span is separately bound in PROVENANCE_SPAN_LEDGER.json.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+    },
+    {
+      "content_sha256": "2c00a68e4cff5f8c69d4078f2a07316b553a9bdd0b1520f3246e3b1448bae483",
+      "evidence_id": "E012",
+      "path_or_url": "git+https://github.com/curl/curl.git@68720b4837284335b2d63cb358f8f6ce65f5bc55#lib/easy.c:L1086-L1090",
+      "quoted_or_paraphrased_rationale": "Primary-source evidence for the core easy-handle lifecycle; exact excerpt E012 is independently hash-bound.",
+      "retrieval_date": "2026-11-09",
+      "source_type": "PINNED_IMPLEMENTATION_SOURCE"
+    }
+  ],
+  "resource_model": {
+    "relation_types": [],
+    "resource_types": [
+      {
+        "description": "A CURL easy-session handle returned by curl_easy_init or curl_easy_duphandle.",
+        "identity_model": "SYMBOLIC_HANDLE",
+        "initial_states": [
+          "UNACQUIRED"
+        ],
+        "ownership_tracking": "TRACKED",
+        "permitted_exit_states": [
+          "UNACQUIRED",
+          "RELEASED"
+        ],
+        "resource_kind": "CURL_POINTER",
+        "resource_type_id": "CURL_EASY_HANDLE",
+        "states": [
+          "UNACQUIRED",
+          "LIVE",
+          "RELEASED"
+        ]
+      }
+    ]
+  },
+  "reviewer": "PENDING_INDEPENDENT_REREVIEW",
+  "schema_version": "2.0.0",
+  "semantic_accounting": {
+    "forward_accounting": [
+      {
+        "schema_carriers": [
+          "/resource_model/resource_types/0"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RESOURCE:CURL_EASY_HANDLE",
+        "source_unit_kind": "RESOURCE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_policy"
+        ],
+        "source_container": "semantic_policy",
+        "source_unit_id": "POLICY:CORE",
+        "source_unit_kind": "POLICY"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/0"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R01",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/1"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R02-SOURCE-LIVE",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/2"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R02-NONNULL-ACQUIRE",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/3"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R02-NULL-NO-ACQUIRE",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/4"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R03-SETOPT",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/5"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R03-PERFORM",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/6"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R03-RESET",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/7"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R04-LIVE-RELEASE",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/8"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R04-NULL-NOOP",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/9"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R04-RELEASED-DOUBLE-RELEASE",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/10"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R04-UNTRACKED-NONNULL-UNKNOWN",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/semantic_rules/11"
+        ],
+        "source_container": "curl.easy_handle.lifecycle",
+        "source_unit_id": "RULE:CURL-EASY-R05",
+        "source_unit_kind": "RULE"
+      },
+      {
+        "schema_carriers": [
+          "/exit_obligations/0"
+        ],
+        "source_container": "driver.function.exit",
+        "source_unit_id": "EXIT:CURL-EASY-X01",
+        "source_unit_kind": "EXIT_OBLIGATION"
+      }
+    ],
+    "forward_complete": true,
+    "inventory": {
+      "exit_obligation_count": 1,
+      "losslessness_requirement_count": 16,
+      "representation_policy_field_count": 16,
+      "rule_count": 12,
+      "semantic_container_count": 3
+    },
+    "reverse_accounting": [
+      {
+        "schema_carrier": "/resource_model/resource_types/0",
+        "source_unit_ids": [
+          "RESOURCE:CURL_EASY_HANDLE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_policy",
+        "source_unit_ids": [
+          "POLICY:CORE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/0",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R01"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/1",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R02-SOURCE-LIVE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/2",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R02-NONNULL-ACQUIRE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/3",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R02-NULL-NO-ACQUIRE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/4",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R03-SETOPT"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/5",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R03-PERFORM"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/6",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R03-RESET"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/7",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R04-LIVE-RELEASE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/8",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R04-NULL-NOOP"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/9",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R04-RELEASED-DOUBLE-RELEASE"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/10",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R04-UNTRACKED-NONNULL-UNKNOWN"
+        ]
+      },
+      {
+        "schema_carrier": "/semantic_rules/11",
+        "source_unit_ids": [
+          "RULE:CURL-EASY-R05"
+        ]
+      },
+      {
+        "schema_carrier": "/exit_obligations/0",
+        "source_unit_ids": [
+          "EXIT:CURL-EASY-X01"
+        ]
+      }
+    ],
+    "reverse_complete": true
+  },
+  "semantic_policy": {
+    "reasoning_model": {
+      "infeasible_path_handling": "EXCLUDE",
+      "join_operator": "UNION_OF_FEASIBLE_STATES",
+      "membership_sensitivity": "RELATION_MEMBERSHIP_SENSITIVE",
+      "ownership_sensitivity": "RESOURCE_OWNERSHIP_SENSITIVE",
+      "path_sensitivity": "PATH_SENSITIVE",
+      "return_sensitivity": "RETURN_PREDICATE_SENSITIVE",
+      "state_domain": "SET_OF_FEASIBLE_STATES",
+      "unknown_handling": "FIRST_CLASS_PRESERVE"
+    },
+    "verdict_aggregation": {
+      "unknown_must_not_collapse_to_valid": true,
+      "unknown_when": "EVIDENCE_OR_MODEL_INSUFFICIENT_FOR_SAFE_CLASSIFICATION",
+      "valid_when": "NO_FEASIBLE_PATH_VIOLATES_AND_EVIDENCE_SUFFICIENT",
+      "violation_may_when": "SOME_BUT_NOT_ALL_FEASIBLE_PATHS_VIOLATE",
+      "violation_must_when": "ALL_FEASIBLE_PATHS_VIOLATE"
+    },
+    "verdict_vocabulary": [
+      "VALID",
+      "VIOLATION-MUST",
+      "VIOLATION-MAY",
+      "UNKNOWN"
+    ]
+  },
+  "semantic_rules": [
+    {
+      "cleanup_responsibility": "The acquired handle requires curl_easy_cleanup.",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "ACQUIRE",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [],
+        "return_conditions": [
+          {
+            "allowed_return_class_ids": [
+              "INIT_NON_NULL"
+            ],
+            "event_id": "CURL_E_INIT"
+          }
+        ]
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R01",
+      "rule_kind": "RETURN_DEPENDENT",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E001",
+        "E007",
+        "E009"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_INIT"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "The source handle must be live for every duplication attempt and remains independently owned.",
+      "defect_category": "D6",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "source",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "source",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "source"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "source",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SOURCE",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R02-SOURCE-LIVE",
+      "rule_kind": "STATE_PRECONDITION",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E003",
+        "E008",
+        "E011"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_DUP"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "A non-NULL duplicate is a distinct owned handle; source and duplicate each require cleanup.",
+      "defect_category": "D7",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "source",
+            "transfer_target_resource_binding_id": null
+          },
+          {
+            "effect": "ACQUIRE",
+            "resource_binding_id": "duplicate",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "source",
+            "to_states": [
+              "LIVE"
+            ]
+          },
+          {
+            "resource_binding_id": "duplicate",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "source"
+          }
+        ],
+        "return_conditions": [
+          {
+            "allowed_return_class_ids": [
+              "DUP_NON_NULL"
+            ],
+            "event_id": "CURL_E_DUP"
+          }
+        ]
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "source",
+          "distinct_identity_from": [
+            "duplicate"
+          ],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SOURCE",
+          "same_identity_as": []
+        },
+        {
+          "binding_id": "duplicate",
+          "distinct_identity_from": [
+            "source"
+          ],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "TARGET",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R02-NONNULL-ACQUIRE",
+      "rule_kind": "RETURN_DEPENDENT",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E003",
+        "E008",
+        "E011"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_DUP"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "A NULL result acquires no duplicate; the original source remains live and owned.",
+      "defect_category": "D7",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "source",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "source",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "source"
+          }
+        ],
+        "return_conditions": [
+          {
+            "allowed_return_class_ids": [
+              "DUP_NULL"
+            ],
+            "event_id": "CURL_E_DUP"
+          }
+        ]
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "source",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SOURCE",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R02-NULL-NO-ACQUIRE",
+      "rule_kind": "RETURN_DEPENDENT",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E003",
+        "E008",
+        "E011"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_DUP"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R03-SETOPT",
+      "rule_kind": "STATE_PRECONDITION",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E004",
+        "E007"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_SETOPT"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R03-PERFORM",
+      "rule_kind": "STATE_PRECONDITION",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E005",
+        "E007",
+        "E010"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_PERFORM"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R03-RESET",
+      "rule_kind": "STATE_PRECONDITION",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E006",
+        "E008",
+        "E012"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_RESET"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "A tracked non-NULL LIVE easy handle is validly released exactly once and transitions to RELEASED.",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RELEASE",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "RELEASED"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [
+          {
+            "condition_id": "CLEANUP_ARGUMENT_IS_TRACKED_LIVE",
+            "condition_kind": "BRANCH_TAKEN",
+            "polarity": true,
+            "referenced_event_id": "CURL_E_CLEANUP_ARGUMENT_LIVE"
+          }
+        ],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R04-LIVE-RELEASE",
+      "rule_kind": "CLEANUP",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E002",
+        "E007",
+        "E010"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_CLEANUP_ARGUMENT_LIVE"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "Passing NULL is a permitted no-op: it acquires nothing, releases nothing, and creates no defect.",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "NONE",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "UNACQUIRED"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [
+          {
+            "condition_id": "CLEANUP_ARGUMENT_NULL",
+            "condition_kind": "BRANCH_TAKEN",
+            "polarity": true,
+            "referenced_event_id": "CURL_E_CLEANUP_ARGUMENT_NULL"
+          }
+        ],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "UNACQUIRED"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R04-NULL-NOOP",
+      "rule_kind": "CLEANUP",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E002",
+        "E010"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_CLEANUP"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "Cleanup of a tracked non-NULL handle already in RELEASED is prohibited and classified only as D4 double release.",
+      "defect_category": "D4",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "NONE",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "RELEASED"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [
+          {
+            "condition_id": "CLEANUP_ARGUMENT_IS_TRACKED_RELEASED",
+            "condition_kind": "BRANCH_TAKEN",
+            "polarity": true,
+            "referenced_event_id": "CURL_E_CLEANUP_ARGUMENT_RELEASED"
+          }
+        ],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R04-RELEASED-DOUBLE-RELEASE",
+      "rule_kind": "CLEANUP",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E002",
+        "E007",
+        "E010"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_CLEANUP_ARGUMENT_RELEASED"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    },
+    {
+      "cleanup_responsibility": "The untracked non-NULL branch cannot satisfy the normative tracked-LIVE precondition; under semantic_policy.unknown_when its insufficient model evidence therefore yields UNKNOWN unconditionally and is not collapsed to VALID or D8.",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "NONE",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "UNACQUIRED"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [
+          {
+            "condition_id": "CLEANUP_ARGUMENT_IS_UNTRACKED_NON_NULL",
+            "condition_kind": "BRANCH_TAKEN",
+            "polarity": true,
+            "referenced_event_id": "CURL_E_CLEANUP_ARGUMENT_UNTRACKED_NON_NULL"
+          }
+        ],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R04-UNTRACKED-NONNULL-UNKNOWN",
+      "rule_kind": "CLEANUP",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E002",
+        "E010"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_CLEANUP_ARGUMENT_UNTRACKED_NON_NULL"
+      ],
+      "verdict_if_violated": "UNKNOWN"
+    },
+    {
+      "cleanup_responsibility": "Reset does not discharge the cleanup obligation.",
+      "effects": {
+        "ownership_updates": [
+          {
+            "effect": "RETAIN",
+            "resource_binding_id": "handle",
+            "transfer_target_resource_binding_id": null
+          }
+        ],
+        "relation_updates": [],
+        "resource_state_updates": [
+          {
+            "resource_binding_id": "handle",
+            "to_states": [
+              "LIVE"
+            ]
+          }
+        ]
+      },
+      "preconditions": {
+        "path_conditions": [],
+        "relation_state_requirements": [],
+        "resource_state_requirements": [
+          {
+            "allowed_states": [
+              "LIVE"
+            ],
+            "resource_binding_id": "handle"
+          }
+        ],
+        "return_conditions": []
+      },
+      "relation_bindings": [],
+      "resource_bindings": [
+        {
+          "binding_id": "handle",
+          "distinct_identity_from": [],
+          "resource_type_id": "CURL_EASY_HANDLE",
+          "role": "SUBJECT",
+          "same_identity_as": []
+        }
+      ],
+      "rule_id": "CURL-EASY-R05",
+      "rule_kind": "STATE_TRANSITION",
+      "semantic_container": "curl.easy_handle.lifecycle",
+      "source_evidence": [
+        "E006",
+        "E001"
+      ],
+      "trigger_event_ids": [
+        "CURL_E_RESET"
+      ],
+      "verdict_if_violated": "VIOLATION-MUST"
+    }
+  ],
+  "specification_id": "curl.easy_handle.lifecycle.v4.candidate"
+}

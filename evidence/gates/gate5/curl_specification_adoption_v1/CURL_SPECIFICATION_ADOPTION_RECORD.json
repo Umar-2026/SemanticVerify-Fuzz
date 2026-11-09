@@ -1,0 +1,37 @@
+{
+  "adopted_repository_path": "config/protocol_specifications/curl.json",
+  "adopted_specification": {
+    "canonical_content_sha256": "d0bcf7d2683228842fe5f0d954e65b5e163e3f24b01344114d221136e3f6b98e",
+    "file_sha256": "f01081381688dd242af1eb08becea66eeb8922d7450ab2761f5f00483fb41ca8",
+    "library": "curl",
+    "library_revision": "68720b4837284335b2d63cb358f8f6ce65f5bc55",
+    "schema_version": "2.0.0",
+    "specification_id_preserved_byte_identically": "curl.easy_handle.lifecycle.v4.candidate"
+  },
+  "adoption_authorities": {
+    "adoption_decision_sha256": "bc669bb05af8dc1069d6c25b33041d7493768c8f00a8583358e0a84bcf64c3f7",
+    "materialization_manifest_sha256": "240080cd3dfee54030773b88edd32cc02fc7496204589497eef07f8a3cec83d6",
+    "severity_registration_sha256": "ec134994f6c584e1da8fe640c0763b735c260df54d37fd6b3dd29f5a5e3a18de",
+    "successor_v6_manifest_sha256": "a80401ce8d1ff2b84786a34cba2d21f1ce963f6905b674213b567b5f90f1b2f1"
+  },
+  "analyzer_executed": false,
+  "artifact_id": "SVF-CURL-TRACKED-SPECIFICATION-ADOPTION-RECORD-V1",
+  "candidate_execution_authorized": false,
+  "heldout_data_accessed": false,
+  "independent_review": {
+    "decision": "PASS_FOR_ADOPTION_CONSIDERATION",
+    "external_reviewer_identity_verification": "NOT_PERFORMED",
+    "reviewer": "Muhammad Zaheer Khan",
+    "reviewer_asserted_independence": true,
+    "submission_freeze_sha256": "73373acc07938cb220b97fa63aecafca981eca02ef71eb247dd18700c08d14b0"
+  },
+  "parent_repository_commit": "dd7c361a74631e82fc0d52d9e5fb17e0674b7f87",
+  "private_review_documents_committed": false,
+  "severity_policy": {
+    "cross_category_ranking": false,
+    "metric_weighting": false,
+    "registered_value": "UNSPECIFIED",
+    "status": "ESTABLISHED"
+  },
+  "tracked_checkpoint_state": "LOCAL_COMMIT_PENDING"
+}
