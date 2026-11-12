@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0.0",
+  "specification_id": "libvpx.decoder-context.lifecycle.v2.candidate",
+  "library": "libvpx",
+  "library_revision": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+  "resource_kind": "libvpx.vpx_codec_ctx_t.decoder_context",
+  "initial_state": "UNINITIALIZED",
+  "states": [
+    "UNINITIALIZED",
+    "INIT_FAILED",
+    "DECODER_LIVE",
+    "RELEASED"
+  ],
+  "permitted_exit_states": [
+    "UNINITIALIZED",
+    "INIT_FAILED",
+    "RELEASED"
+  ],
+  "events": [
+    {
+      "event_id": "E01_DECODER_INIT",
+      "event_kind": "API_CALL",
+      "symbol_or_condition": "vpx_codec_dec_init or vpx_codec_dec_init_ver"
+    },
+    {
+      "event_id": "E02_DECODE",
+      "event_kind": "API_CALL",
+      "symbol_or_condition": "vpx_codec_decode"
+    },
+    {
+      "event_id": "E03_DESTROY",
+      "event_kind": "API_CALL",
+      "symbol_or_condition": "vpx_codec_destroy"
+    }
+  ],
+  "transitions": [
+    {
+      "transition_id": "T01_INIT_SUCCESS",
+      "event_id": "E01_DECODER_INIT",
+      "from_states": [
+        "UNINITIALIZED"
+      ],
+      "to_states": [
+        "DECODER_LIVE"
+      ],
+      "ownership_effect": "ACQUIRE",
+      "return_predicate": "return == VPX_CODEC_OK"
+    },
+    {
+      "transition_id": "T02_INIT_FAILURE",
+      "event_id": "E01_DECODER_INIT",
+      "from_states": [
+        "UNINITIALIZED"
+      ],
+      "to_states": [
+        "INIT_FAILED"
+      ],
+      "ownership_effect": "NONE",
+      "return_predicate": "return != VPX_CODEC_OK"
+    },
+    {
+      "transition_id": "T03_DECODE_SUCCESS",
+      "event_id": "E02_DECODE",
+      "from_states": [
+        "DECODER_LIVE"
+      ],
+      "to_states": [
+        "DECODER_LIVE"
+      ],
+      "ownership_effect": "NONE",
+      "return_predicate": "return == VPX_CODEC_OK"
+    },
+    {
+      "transition_id": "T04_DECODE_NONOK",
+      "event_id": "E02_DECODE",
+      "from_states": [
+        "DECODER_LIVE"
+      ],
+      "to_states": [
+        "DECODER_LIVE"
+      ],
+      "ownership_effect": "NONE",
+      "return_predicate": "return != VPX_CODEC_OK"
+    },
+    {
+      "transition_id": "T05_DESTROY",
+      "event_id": "E03_DESTROY",
+      "from_states": [
+        "DECODER_LIVE"
+      ],
+      "to_states": [
+        "RELEASED"
+      ],
+      "ownership_effect": "RELEASE",
+      "return_predicate": "return == VPX_CODEC_OK"
+    }
+  ],
+  "obligations": [
+    {
+      "library_revision": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+      "creation_date": "2026-11-11",
+      "freeze_date": "2026-11-11",
+      "severity": "UNSPECIFIED",
+      "specification_author": "Spec-Author-1",
+      "rule_id": "LIBVPX-V2-R01",
+      "defect_category": "D1",
+      "resource_kind": "libvpx.vpx_codec_ctx_t.decoder_context",
+      "triggering_event_or_function_exit": "API_CALL:vpx_codec_decode",
+      "required_pre_state_or_exit_condition": "vpx_codec_decode requires DECODER_LIVE, established by successful decoder initialization.",
+      "return_predicate": "prior decoder initialization return == VPX_CODEC_OK",
+      "cleanup_responsibility": "Successful initialization establishes a live caller-owned decoder context whose matching destroy remains required.",
+      "ownership_effect": "NONE",
+      "permitted_transitions": [
+        "T03_DECODE_SUCCESS",
+        "T04_DECODE_NONOK"
+      ],
+      "source_evidence": [
+        "EV-LIBVPX-H-DECODER-002",
+        "EV-LIBVPX-C-DECODER-003",
+        "EV-LIBVPX-EX-SIMPLE-005",
+        "EV-LIBVPX-TEST-DECODE-006"
+      ],
+      "content_sha256": "447e8b07a470ecd0184d4a30ec20ef4bdaa8bd10ae3dbfdb7bc18deeb33a6e0d"
+    },
+    {
+      "library_revision": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+      "creation_date": "2026-11-11",
+      "freeze_date": "2026-11-11",
+      "severity": "UNSPECIFIED",
+      "specification_author": "Spec-Author-1",
+      "rule_id": "LIBVPX-V2-R02",
+      "defect_category": "D3",
+      "resource_kind": "libvpx.vpx_codec_ctx_t.decoder_context",
+      "triggering_event_or_function_exit": "API_CALL:vpx_codec_decode after vpx_codec_destroy",
+      "required_pre_state_or_exit_condition": "RELEASED is not a live decoder state. Decode after a successful destroy is invalid for the released resource instance.",
+      "return_predicate": null,
+      "cleanup_responsibility": "Successful destroy terminates the current modeled decoder resource instance.",
+      "ownership_effect": "NONE",
+      "permitted_transitions": [],
+      "source_evidence": [
+        "EV-LIBVPX-H-CODEC-001",
+        "EV-LIBVPX-H-DECODER-002",
+        "EV-LIBVPX-C-DECODER-003",
+        "EV-LIBVPX-C-CODEC-004"
+      ],
+      "content_sha256": "f79206e94e071dbf10d89f7528ac56969697e93039fae25434cbbef9e3316c5e"
+    },
+    {
+      "library_revision": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+      "creation_date": "2026-11-11",
+      "freeze_date": "2026-11-11",
+      "severity": "UNSPECIFIED",
+      "specification_author": "Spec-Author-1",
+      "rule_id": "LIBVPX-V2-R03",
+      "defect_category": "D4",
+      "resource_kind": "libvpx.vpx_codec_ctx_t.decoder_context",
+      "triggering_event_or_function_exit": "API_CALL:vpx_codec_destroy",
+      "required_pre_state_or_exit_condition": "vpx_codec_destroy requires a currently live decoder context. A second destroy after RELEASED is not a valid second release.",
+      "return_predicate": "successful release return == VPX_CODEC_OK",
+      "cleanup_responsibility": "Exactly one successful matching destroy is required for each currently-live acquisition.",
+      "ownership_effect": "RELEASE",
+      "permitted_transitions": [
+        "T05_DESTROY"
+      ],
+      "source_evidence": [
+        "EV-LIBVPX-H-CODEC-001",
+        "EV-LIBVPX-C-CODEC-004"
+      ],
+      "content_sha256": "0f560c4fa9e7c0db9abb895bbb2c12f957e402bca5dbe73e52565dc022e2a314"
+    },
+    {
+      "library_revision": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+      "creation_date": "2026-11-11",
+      "freeze_date": "2026-11-11",
+      "severity": "UNSPECIFIED",
+      "specification_author": "Spec-Author-1",
+      "rule_id": "LIBVPX-V2-R04",
+      "defect_category": "D5",
+      "resource_kind": "libvpx.vpx_codec_ctx_t.decoder_context",
+      "triggering_event_or_function_exit": "FUNCTION_EXIT",
+      "required_pre_state_or_exit_condition": "Every successful decoder initialization that establishes DECODER_LIVE must reach RELEASED through vpx_codec_destroy on every relevant normal or error exit.",
+      "return_predicate": "decoder initialization return == VPX_CODEC_OK",
+      "cleanup_responsibility": "The caller must destroy each successfully initialized decoder context. Decode errors do not release the context.",
+      "ownership_effect": "RELEASE",
+      "permitted_transitions": [
+        "T05_DESTROY"
+      ],
+      "source_evidence": [
+        "EV-LIBVPX-H-CODEC-001",
+        "EV-LIBVPX-H-DECODER-002",
+        "EV-LIBVPX-C-DECODER-003",
+        "EV-LIBVPX-C-CODEC-004",
+        "EV-LIBVPX-EX-SIMPLE-005",
+        "EV-LIBVPX-TEST-DECODE-006"
+      ],
+      "content_sha256": "1dab0e2553d5d2f860234fec9bbd20049bcc763cefd09342dddb8dc411b9f884"
+    }
+  ],
+  "provenance": [
+    {
+      "evidence_id": "EV-LIBVPX-H-CODEC-001",
+      "source_type": "PUBLIC_HEADER",
+      "path_or_url": "/output/svf-gate1c-source-qualification-v1/libvpx/vpx/vpx_codec.h",
+      "content_sha256": "713a1a1a82968c084f5aab4e7026891001e67b98af420ca3896c7fbdcb0c1890",
+      "retrieval_date": "2026-11-11",
+      "quoted_or_paraphrased_rationale": "Public codec-context declaration, error-status enumeration, and vpx_codec_destroy contract including successful destruction and not-initialized error semantics."
+    },
+    {
+      "evidence_id": "EV-LIBVPX-H-DECODER-002",
+      "source_type": "PUBLIC_HEADER",
+      "path_or_url": "/output/svf-gate1c-source-qualification-v1/libvpx/vpx/vpx_decoder.h",
+      "content_sha256": "f92cf0500090bb0f2752e5b35464d1b285dcbaf5acd79ee0cffa9f501552c37e",
+      "retrieval_date": "2026-11-11",
+      "quoted_or_paraphrased_rationale": "Public decoder initialization, decode, and frame-iteration contracts. Successful initialization is VPX_CODEC_OK; frame observations are valid after decode and until the next decode call."
+    },
+    {
+      "evidence_id": "EV-LIBVPX-C-DECODER-003",
+      "source_type": "PINNED_IMPLEMENTATION_SOURCE",
+      "path_or_url": "/output/svf-gate1c-source-qualification-v1/libvpx/vpx/src/vpx_decoder.c",
+      "content_sha256": "efedaa74f48c6d59e582bcb4ffbb49d3fc34970720febf5d4bb98614f3c8e916",
+      "retrieval_date": "2026-11-11",
+      "quoted_or_paraphrased_rationale": "Pinned decoder implementation showing initialization validation, cleanup after codec-specific init failure, live-context checks for decode/get_frame, and preservation of decoder context across decode return statuses."
+    },
+    {
+      "evidence_id": "EV-LIBVPX-C-CODEC-004",
+      "source_type": "PINNED_IMPLEMENTATION_SOURCE",
+      "path_or_url": "/output/svf-gate1c-source-qualification-v1/libvpx/vpx/src/vpx_codec.c",
+      "content_sha256": "aa4a30998250101bfdfcf9f4def2ac9cc908b69224a0fae802d54456fb4a732b",
+      "retrieval_date": "2026-11-11",
+      "quoted_or_paraphrased_rationale": "Pinned destroy implementation showing that successful destruction clears iface, name, and priv, and subsequent non-live destroy attempts return VPX_CODEC_ERROR."
+    },
+    {
+      "evidence_id": "EV-LIBVPX-EX-SIMPLE-005",
+      "source_type": "PREDECLARED_UPSTREAM_EXAMPLE",
+      "path_or_url": "/output/svf-gate1c-source-qualification-v1/libvpx/examples/simple_decoder.c",
+      "content_sha256": "9fc9fb15a5455b57141bceb55564a87a9823fcc6a95de0a02f0913c507e5577d",
+      "retrieval_date": "2026-11-11",
+      "quoted_or_paraphrased_rationale": "Pinned upstream proper-use decoder lifecycle: successful decoder initialization, decode, get_frame iteration, and final destroy."
+    },
+    {
+      "evidence_id": "EV-LIBVPX-TEST-DECODE-006",
+      "source_type": "PINNED_UPSTREAM_TEST",
+      "path_or_url": "/output/svf-gate1c-source-qualification-v1/libvpx/test/decode_api_test.cc",
+      "content_sha256": "0bb5ae18a029c2ffa2ba53d05b514be1efc112602bb49333d80b491dd7cc74f5",
+      "retrieval_date": "2026-11-11",
+      "quoted_or_paraphrased_rationale": "Pinned tests demonstrating invalid parameters, successful decoder initialization, decode error returns, null frame observations after decode failures, and successful destroy of still-live decoder contexts."
+    }
+  ],
+  "author": "Spec-Author-1",
+  "reviewer": "PENDING_INDEPENDENT_REVIEW",
+  "creation_date": "2026-11-11",
+  "freeze_date": "2026-11-11",
+  "content_sha256": "6ca2359f04b2cdd237d5f8e78a8135fcb1e1e64ca37428cfe2af9abeb17fde7c"
+}

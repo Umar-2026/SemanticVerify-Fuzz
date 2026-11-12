@@ -1,0 +1,35 @@
+{
+  "adopted_scope": [
+    "initialization",
+    "decode_D1",
+    "decode_D3",
+    "destroy_D4",
+    "function_exit_cleanup_D5"
+  ],
+  "analyzer_executed": false,
+  "artifact_id": "GATE5-LIBVPX-SPECIFICATION-ADOPTION-RECORD-V1",
+  "authority_bindings": {
+    "adoption_decision_sha256": "fdad6cb7ecebc976ff6ea5d1f030524d112809556bf0577568cf367e76470fac",
+    "independent_review_validation_sha256": "8c0d379260d9c89e3372611863a37c386eca5cb8046d3f66e916ad4dbc53fa21",
+    "materialization_manifest_sha256": "b25af918f83ab9835aebfd3ce356a1ed691698a37243f62a079df4b2e8ff9d74",
+    "severity_registration_sha256": "b3c5dc1ca71b2bd730be2e8650968e0ad6b55f6b035a42dc5e87332091ee3011"
+  },
+  "created_at_utc": "2026-11-12T09:41:53+00:00",
+  "excluded_scope": [
+    "D2_after_failed_initialization",
+    "get_frame_enforcement",
+    "heldout_effectiveness",
+    "broader_libvpx_lifecycle_claims"
+  ],
+  "heldout_data_accessed": false,
+  "independent_review_decision": "ACCEPT_BOUNDED_SUCCESSOR_V2_AS_SOURCE_AND_FROZEN_ANALYZER_SUPPORTED",
+  "library_revision": "1024874c5919305883187e2953de8fcb4c3d7fa6",
+  "parent_commit": "bbadf72e3c44cd13273126541296d1f94b57597f",
+  "private_review_documents_committed": false,
+  "remote_publication": "PENDING",
+  "repository_path": "config/protocol_specifications/libvpx.json",
+  "severity_policy": "UNSPECIFIED",
+  "specification_content_sha256": "6ca2359f04b2cdd237d5f8e78a8135fcb1e1e64ca37428cfe2af9abeb17fde7c",
+  "specification_file_sha256": "7f07120c167622e73cf0a983c7f140425ab3c9e68f6d2a39daa3569befc1f2f9",
+  "specification_id": "libvpx.decoder-context.lifecycle.v2.candidate"
+}
